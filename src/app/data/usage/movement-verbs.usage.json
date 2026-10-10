@@ -45,116 +45,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key movement verbs 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to movement verbs in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Walk", "Run", "Jog"],
-          "scenario": "During an outdoor activity, adults demonstrate walk, run, and jog at a safe pace. The highlighted participant is doing walk.",
+          "scenario": "Nora moves on foot at an ordinary pace to walk. A run is faster; a jog is a slow steady run.",
           "check": {
-            "question": "What movement should the learner identify?",
+            "question": "Which verb describes moving at the ordinary walking pace?",
             "options": ["Walk", "Run", "Jog"],
             "expectedAnswer": "Walk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During an outdoor activity, adults demonstrate walk, run, and jog at a safe pace. The highlighted participant is doing walk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Walk, Run, Jog in a natural setting."
+          "imageBrief": "Adult walking along level park path. Written context distinguishes speed; no multi-person comparison, text or health claim.",
+          "imageAlt": "Adult walking along level park path."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sprint", "March", "Stroll"],
-          "scenario": "During a fitness class, adults demonstrate sprint, march, and stroll at a safe pace. The highlighted participant is doing sprint.",
+          "scenario": "The athlete runs as fast as possible for a short distance to sprint. To march means take regular steps; to stroll means walk in a relaxed way.",
           "check": {
-            "question": "Which verb describes the person's movement?",
+            "question": "Which verb describes the short fast run?",
             "options": ["March", "Stroll", "Sprint"],
             "expectedAnswer": "Sprint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a fitness class, adults demonstrate sprint, march, and stroll at a safe pace. The highlighted participant is doing sprint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Sprint, March, Stroll in a natural setting."
+          "imageBrief": "Adult runner on clear athletics track. No claim of safe exertion, other simultaneous actions or text.",
+          "imageAlt": "Adult runner on clear athletics track."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hike", "Trek", "Pace"],
-          "scenario": "During a park exercise, adults demonstrate hike, trek, and pace at a safe pace. The highlighted participant is doing hike.",
+          "scenario": "Nora takes a long countryside walk to hike. A trek is a long difficult journey; to pace can mean walk back and forth.",
           "check": {
-            "question": "Which action matches the person's body position?",
+            "question": "Which verb describes Nora’s countryside walk?",
             "options": ["Pace", "Hike", "Trek"],
             "expectedAnswer": "Hike"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a park exercise, adults demonstrate hike, trek, and pace at a safe pace. The highlighted participant is doing hike. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Hike, Trek, Pace in a natural setting."
+          "imageBrief": "Adult walker on broad countryside path carrying small bag. Context supplies duration, no cliff crossing, pace instruction or text.",
+          "imageAlt": "Adult walker on broad countryside path carrying small bag."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Stride", "Jump", "Hop"],
-          "scenario": "During a swimming session, adults demonstrate stride, jump, and hop at a safe pace. The highlighted participant is doing stride.",
+          "scenario": "Nora walks with long steps to stride. She does not jump into the air or hop on one foot.",
           "check": {
-            "question": "Which verb describes the person's movement in the example with stride, jump?",
+            "question": "Which verb describes walking with long steps?",
             "options": ["Stride", "Jump", "Hop"],
             "expectedAnswer": "Stride"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a swimming session, adults demonstrate stride, jump, and hop at a safe pace. The highlighted participant is doing stride. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Stride, Jump, Hop in a natural setting."
+          "imageBrief": "Adult taking long step along level path. No swimming setting, body distortion, labels or text.",
+          "imageAlt": "Adult taking long step along level path."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Skip", "Leap", "Bounce"],
-          "scenario": "During a mobility class, adults demonstrate skip, leap, and bounce at a safe pace. The highlighted participant is doing skip.",
+          "scenario": "At rehearsal Nora alternates a step and a hop to skip. A leap is a long or high jump; a ball may bounce after hitting the floor.",
           "check": {
-            "question": "What movement is the person demonstrating?",
+            "question": "Which verb describes alternating a step and a hop?",
             "options": ["Leap", "Bounce", "Skip"],
             "expectedAnswer": "Skip"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a mobility class, adults demonstrate skip, leap, and bounce at a safe pace. The highlighted participant is doing skip. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Skip, Leap, Bounce in a natural setting."
+          "imageBrief": "Adult rehearsal room with performer in ordinary moving posture on clear floor. Sequence comes from narration; no arrows, ball collision or text.",
+          "imageAlt": "Adult rehearsal room with performer in ordinary moving posture on clear floor."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Movement Verbs 1: Adult Movement Class",
-      "text": "At a supervised adult movement class, the instructor demonstrates actions at a comfortable pace. The warm-up includes walk, run, jog, sprint, and march. The next part practises stroll, hike, trek, pace, and stride. The final section may include jump, hop, skip, leap, and bounce. Participants stop if a movement does not feel safe or comfortable.",
-      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+      "text": "Nora likes to walk, jog or run in the park. An athlete may sprint; a marching group may march. Nora prefers to stroll. Outdoors she can hike, while a long difficult journey is a trek. Waiting, she may pace; long steps form a stride. At rehearsal she sees performers jump, hop, skip and leap. A ball can bounce.",
+      "imageBrief": "Adult observer beside a level park path or rehearsal floor with ordinary clear space. Narration supplies actions and speed; no specialist stunts, exercise prescriptions, cliff/water risks, arrows or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Walk"
+        "prompt": "Nora moves on foot at an ordinary pace to walk. A run is faster; a jog is a slow steady run.\nWhich verb describes moving at the ordinary walking pace?",
+        "answer": "Walk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sprint"
+        "prompt": "The athlete runs as fast as possible for a short distance to sprint. To march means take regular steps; to stroll means walk in a relaxed way.\nWhich verb describes the short fast run?",
+        "answer": "Sprint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Hike"
+        "prompt": "Nora takes a long countryside walk to hike. A trek is a long difficult journey; to pace can mean walk back and forth.\nWhich verb describes Nora’s countryside walk?",
+        "answer": "Hike",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Stride"
+        "prompt": "Nora walks with long steps to stride. She does not jump into the air or hop on one foot.\nWhich verb describes walking with long steps?",
+        "answer": "Stride",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Skip"
+        "prompt": "At rehearsal Nora alternates a step and a hop to skip. A leap is a long or high jump; a ball may bounce after hitting the floor.\nWhich verb describes alternating a step and a hop?",
+        "answer": "Skip",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Walk"
+        "prompt": "Read the passage: Nora likes to walk, jog or run in the park. An athlete may sprint; a marching group may march. Nora prefers to stroll. Outdoors she can hike, while a long difficult journey is a trek. Waiting, she may pace; long steps form a stride. At rehearsal she sees performers jump, hop, skip and leap. A ball can bounce.\nWhat can bounce in the passage?",
+        "answer": "A ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Run"
+        "prompt": "Say that you like to walk in the park.",
+        "answer": "I like to walk in the park.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Stroll"
+        "prompt": "A person walks with long steps. Name the action.",
+        "answer": "Stride",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Movement Verbs: See It, Say It",
-      "idea": "30–50 second contextual video set in a playground. Show walk, run, jog, sprint, and march naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During an outdoor activity, adults demonstrate walk, run, and jog at a safe pace. The highlighted participant is doing walk."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora moves on foot at an ordinary pace to walk. A run is faster; a jog is a slow steady run."
     },
     "spacedReview": "1 lesson(s) back: Tower, Church from giving-directions-4\n3 lesson(s) back: Northwest, Southeast from giving-directions-2\n7 lesson(s) back: Cake, Pie from market-4"
   },
@@ -188,7 +212,7 @@
     "targetWordsArabic": [
       "يتسلق",
       "يزحف أو يحبو",
-      "يتسلق قمة عالية",
+      "يتسلق سطحًا عاليًا أو شديد الانحدار",
       "يقفز فوق حاجز",
       "يقفز فوق الحواجز",
       "يسبح",
@@ -204,116 +228,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key movement verbs 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to movement verbs in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Climb", "Crawl", "Scale"],
-          "scenario": "During a fitness class, adults demonstrate climb, crawl, and scale at a safe pace. The highlighted participant is doing climb.",
+          "scenario": "In the description the climber moves upwards to climb. To crawl means move on hands and knees; to scale means climb a high or steep surface.",
           "check": {
-            "question": "What movement is the person demonstrating in the example with climb, crawl?",
+            "question": "Which verb means move upwards in this description?",
             "options": ["Crawl", "Scale", "Climb"],
             "expectedAnswer": "Climb"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a fitness class, adults demonstrate climb, crawl, and scale at a safe pace. The highlighted participant is doing climb. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Climb, Crawl, Scale in a natural setting."
+          "imageBrief": "Empty climbing wall with equipment stored at its base. Context describes climbing, no actionable rope technique, unsupported safety claim or text.",
+          "imageAlt": "Empty climbing wall with equipment stored at its base."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vault", "Hurdle", "Swim"],
-          "scenario": "During a park exercise, adults demonstrate vault, hurdle, and swim at a safe pace. The highlighted participant is doing vault.",
+          "scenario": "The sports report says the gymnast uses hand support to vault over an obstacle. A runner may hurdle a barrier; a swimmer moves through water to swim.",
           "check": {
-            "question": "What movement should the learner identify in the example with vault, hurdle?",
+            "question": "Which verb names the gymnast’s supported jump?",
             "options": ["Swim", "Vault", "Hurdle"],
             "expectedAnswer": "Vault"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a park exercise, adults demonstrate vault, hurdle, and swim at a safe pace. The highlighted participant is doing vault. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Vault, Hurdle, Swim in a natural setting."
+          "imageBrief": "Gym sports equipment displayed without active jump. Written report supplies movement; no amateur stunt, swimming inside gym, text or arrows.",
+          "imageAlt": "Gym sports equipment displayed without active jump."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Float", "Dive", "Paddle"],
-          "scenario": "During a swimming session, adults demonstrate float, dive, and paddle at a safe pace. The highlighted participant is doing float.",
+          "scenario": "A piece of wood rests on the water without sinking: it floats. A diver can dive below the surface; a canoeist can paddle a canoe.",
           "check": {
-            "question": "What movement is the person demonstrating in the example with float, dive?",
+            "question": "Which verb describes the wood staying on the water?",
             "options": ["Float", "Dive", "Paddle"],
             "expectedAnswer": "Float"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a swimming session, adults demonstrate float, dive, and paddle at a safe pace. The highlighted participant is doing float. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Float, Dive, Paddle in a natural setting."
+          "imageBrief": "Small wooden piece floating on still water beside shore. No unprotected person in water, diving demonstration or text.",
+          "imageAlt": "Small wooden piece floating on still water beside shore."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wade", "Splash", "Surf"],
-          "scenario": "During a mobility class, adults demonstrate wade, splash, and surf at a safe pace. The highlighted participant is doing wade.",
+          "scenario": "The story says a visitor walks through shallow water to wade. Water may splash in drops; a surfer rides waves to surf.",
           "check": {
-            "question": "What movement should the learner identify in the example with wade, splash?",
+            "question": "Which verb means walking through the shallow water?",
             "options": ["Splash", "Surf", "Wade"],
             "expectedAnswer": "Wade"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a mobility class, adults demonstrate wade, splash, and surf at a safe pace. The highlighted participant is doing wade. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Wade, Splash, Surf in a natural setting."
+          "imageBrief": "Empty shallow-water shoreline with visible stones. Written story supplies the action, no claim the location is safe to enter, surfer montage or text.",
+          "imageAlt": "Empty shallow-water shoreline with visible stones."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Row", "Sail", "Snorkel"],
-          "scenario": "During an outdoor activity, adults demonstrate row, sail, and snorkel at a safe pace. The highlighted participant is doing row.",
+          "scenario": "In the boat description the rower uses oars to row. A sailor travels by boat to sail; a snorkeller uses a breathing tube near the surface.",
           "check": {
-            "question": "Which verb describes the person's movement in the example with row, sail?",
+            "question": "Which verb names moving the boat with oars?",
             "options": ["Snorkel", "Row", "Sail"],
             "expectedAnswer": "Row"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During an outdoor activity, adults demonstrate row, sail, and snorkel at a safe pace. The highlighted participant is doing row. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Row, Sail, Snorkel in a natural setting."
+          "imageBrief": "Rowboat with paired oars resting at a dock. No person in unsupported water, snorkelling technique, text or labels.",
+          "imageAlt": "Rowboat with paired oars resting at a dock."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Movement Verbs 2: Adult Movement Class",
-      "text": "At a supervised adult movement class, the instructor demonstrates actions at a comfortable pace. The warm-up includes climb, crawl, scale, vault, and hurdle. The next part practises swim, float, dive, paddle, and wade. The final section may include splash, surf, row, sail, and snorkel. Participants stop if a movement does not feel safe or comfortable.",
-      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+      "text": "A sports report describes climbers who climb and scale a wall. A performer crawls on a mat. Gymnasts vault; runners hurdle barriers. Another report shows swimmers who swim, float and dive. Canoeists paddle, visitors wade and water splashes. Surfers surf on waves. Rowers row with oars, sailors sail, and swimmers may snorkel near the surface.",
+      "imageBrief": "Adult observer beside a level park path or rehearsal floor with ordinary clear space. Narration supplies actions and speed; no specialist stunts, exercise prescriptions, cliff/water risks, arrows or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Climb"
+        "prompt": "In the description the climber moves upwards to climb. To crawl means move on hands and knees; to scale means climb a high or steep surface.\nWhich verb means move upwards in this description?",
+        "answer": "Climb",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Vault"
+        "prompt": "The sports report says the gymnast uses hand support to vault over an obstacle. A runner may hurdle a barrier; a swimmer moves through water to swim.\nWhich verb names the gymnast’s supported jump?",
+        "answer": "Vault",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Float"
+        "prompt": "A piece of wood rests on the water without sinking: it floats. A diver can dive below the surface; a canoeist can paddle a canoe.\nWhich verb describes the wood staying on the water?",
+        "answer": "Float",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Wade"
+        "prompt": "The story says a visitor walks through shallow water to wade. Water may splash in drops; a surfer rides waves to surf.\nWhich verb means walking through the shallow water?",
+        "answer": "Wade",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Row"
+        "prompt": "In the boat description the rower uses oars to row. A sailor travels by boat to sail; a snorkeller uses a breathing tube near the surface.\nWhich verb names moving the boat with oars?",
+        "answer": "Row",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Climb"
+        "prompt": "Read the passage: A sports report describes climbers who climb and scale a wall. A performer crawls on a mat. Gymnasts vault; runners hurdle barriers. Another report shows swimmers who swim, float and dive. Canoeists paddle, visitors wade and water splashes. Surfers surf on waves. Rowers row with oars, sailors sail, and swimmers may snorkel near the surface.\nWhat do rowers use to row?",
+        "answer": "Oars",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Crawl"
+        "prompt": "Say that rowers use oars.",
+        "answer": "Rowers row with oars.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Swim"
+        "prompt": "A canoeist uses a paddle. Name the boat action.",
+        "answer": "Paddle",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Movement Verbs: See It, Say It",
-      "idea": "30–50 second contextual video set in a playground. Show climb, crawl, scale, vault, and hurdle naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a fitness class, adults demonstrate climb, crawl, and scale at a safe pace. The highlighted participant is doing climb."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "In the description the climber moves upwards to climb. To crawl means move on hands and knees; to scale means climb a high or steep surface."
     },
     "spacedReview": "1 lesson(s) back: Walk, Run from movement-verbs-1\n3 lesson(s) back: Intersection, Corner from giving-directions-3\n7 lesson(s) back: Barcode, Shopping Bag from market-5"
   },
@@ -347,14 +395,14 @@
     "targetWordsArabic": [
       "يرقص",
       "يدور بسرعة",
-      "يدور بخفة",
+      "يدير أو يدور بخفة",
       "ينزلق",
       "يتدحرج",
       "يتدحرج ساقطًا",
       "يتأرجح",
       "يتشقلب",
       "يتشقلب جانبيًا",
-      "يدور على أطراف الأصابع",
+      "يدور على قدم واحدة",
       "يقف",
       "يجلس",
       "يستلقي",
@@ -363,116 +411,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key movement verbs 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to movement verbs in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dance", "Spin", "Twirl"],
-          "scenario": "During a park exercise, adults demonstrate dance, spin, and twirl at a safe pace. The highlighted participant is doing dance.",
+          "scenario": "Nora moves rhythmically to music to dance. She may spin around or twirl a ribbon during the performance.",
           "check": {
-            "question": "Which verb describes the person's movement in the example with dance, spin?",
+            "question": "Which verb names moving rhythmically to music?",
             "options": ["Twirl", "Dance", "Spin"],
             "expectedAnswer": "Dance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a park exercise, adults demonstrate dance, spin, and twirl at a safe pace. The highlighted participant is doing dance. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Dance, Spin, Twirl in a natural setting."
+          "imageBrief": "Adult dancer in rehearsal room in ordinary pose. Narration supplies music, no readable score, body distortion or text.",
+          "imageAlt": "Adult dancer in rehearsal room in ordinary pose."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Slide", "Roll", "Tumble"],
-          "scenario": "During a swimming session, adults demonstrate slide, roll, and tumble at a safe pace. The highlighted participant is doing slide.",
+          "scenario": "A small box moves smoothly across the table to slide. A ball can roll; stones may tumble down a slope.",
           "check": {
-            "question": "Which action matches the person's body position in the example with slide, roll?",
+            "question": "Which verb describes the box’s smooth movement?",
             "options": ["Slide", "Roll", "Tumble"],
             "expectedAnswer": "Slide"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a swimming session, adults demonstrate slide, roll, and tumble at a safe pace. The highlighted participant is doing slide. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Slide, Roll, Tumble in a natural setting."
+          "imageBrief": "Small box on level clear tabletop beside round ball. Context supplies movement; no falling person, wet floor demonstration or text.",
+          "imageAlt": "Small box on level clear tabletop beside round ball."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Swing", "Somersault", "Cartwheel"],
-          "scenario": "During a mobility class, adults demonstrate swing, somersault, and cartwheel at a safe pace. The highlighted participant is doing swing.",
+          "scenario": "The empty hanging seat moves back and forth to swing. A somersault and cartwheel are different gymnastic movements.",
           "check": {
-            "question": "Which verb describes the person's movement in the example with swing, somersault?",
+            "question": "Which verb describes the seat’s back-and-forth movement?",
             "options": ["Somersault", "Cartwheel", "Swing"],
             "expectedAnswer": "Swing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a mobility class, adults demonstrate swing, somersault, and cartwheel at a safe pace. The highlighted participant is doing swing. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Swing, Somersault, Cartwheel in a natural setting."
+          "imageBrief": "Empty swing hanging from frame in park. Narration supplies motion, no gymnastics instruction, motion arrows or text.",
+          "imageAlt": "Empty swing hanging from frame in park."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pirouette", "Stand", "Sit"],
-          "scenario": "During an outdoor activity, adults demonstrate pirouette, stand, and sit at a safe pace. The highlighted participant is doing pirouette.",
+          "scenario": "The dancer turns on one foot to pirouette. Afterwards she can stand upright or sit on a chair.",
           "check": {
-            "question": "What movement is the person demonstrating in the example with pirouette, stand?",
+            "question": "Which verb names the dancer’s turn?",
             "options": ["Sit", "Pirouette", "Stand"],
             "expectedAnswer": "Pirouette"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During an outdoor activity, adults demonstrate pirouette, stand, and sit at a safe pace. The highlighted participant is doing pirouette. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Pirouette, Stand, Sit in a natural setting."
+          "imageBrief": "Adult dancer in rehearsal pose with empty chair apart from clear floor. Context supplies exact turn; no motion trails, technique instructions or text.",
+          "imageAlt": "Adult dancer in rehearsal pose with empty chair apart from clear floor."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Lie Down", "Kneel", "Crouch"],
-          "scenario": "During a fitness class, adults demonstrate lie down, kneel, and crouch at a safe pace. The highlighted participant is doing lie down.",
+          "scenario": "Nora chooses to lie down horizontally on a mat. To kneel is to rest on the knees; to crouch is to lower the body with bent knees.",
           "check": {
-            "question": "What movement should the learner identify in the example with lie down, kneel?",
+            "question": "Which phrase means to put the body horizontally on the mat?",
             "options": ["Lie Down", "Kneel", "Crouch"],
             "expectedAnswer": "Lie Down"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a fitness class, adults demonstrate lie down, kneel, and crouch at a safe pace. The highlighted participant is doing lie down. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Lie Down, Kneel, Crouch in a natural setting."
+          "imageBrief": "Clothed adult lying on ordinary mat on clear indoor floor. No therapeutic claim, exercise prescription or text.",
+          "imageAlt": "Clothed adult lying on ordinary mat on clear indoor floor."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Movement Verbs 3: Adult Movement Class",
-      "text": "At a supervised adult movement class, the instructor demonstrates actions at a comfortable pace. The warm-up includes dance, spin, twirl, slide, and roll. The next part practises tumble, swing, somersault, cartwheel, and pirouette. The final section may include stand, sit, lie down, kneel, and crouch. Participants stop if a movement does not feel safe or comfortable.",
-      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+      "text": "Nora watches performers dance, spin and twirl. A box can slide, a ball can roll and stones can tumble. A hanging seat can swing. Gymnasts somersault or cartwheel; a ballet dancer may pirouette. At rehearsal the performers also stand, sit, lie down, kneel and crouch. Nora names the actions without copying the specialist movements.",
+      "imageBrief": "Adult observer beside a level park path or rehearsal floor with ordinary clear space. Narration supplies actions and speed; no specialist stunts, exercise prescriptions, cliff/water risks, arrows or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Dance"
+        "prompt": "Nora moves rhythmically to music to dance. She may spin around or twirl a ribbon during the performance.\nWhich verb names moving rhythmically to music?",
+        "answer": "Dance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Slide"
+        "prompt": "A small box moves smoothly across the table to slide. A ball can roll; stones may tumble down a slope.\nWhich verb describes the box’s smooth movement?",
+        "answer": "Slide",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Swing"
+        "prompt": "The empty hanging seat moves back and forth to swing. A somersault and cartwheel are different gymnastic movements.\nWhich verb describes the seat’s back-and-forth movement?",
+        "answer": "Swing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pirouette"
+        "prompt": "The dancer turns on one foot to pirouette. Afterwards she can stand upright or sit on a chair.\nWhich verb names the dancer’s turn?",
+        "answer": "Pirouette",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Lie Down"
+        "prompt": "Nora chooses to lie down horizontally on a mat. To kneel is to rest on the knees; to crouch is to lower the body with bent knees.\nWhich phrase means to put the body horizontally on the mat?",
+        "answer": "Lie Down",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Dance"
+        "prompt": "Read the passage: Nora watches performers dance, spin and twirl. A box can slide, a ball can roll and stones can tumble. A hanging seat can swing. Gymnasts somersault or cartwheel; a ballet dancer may pirouette. At rehearsal the performers also stand, sit, lie down, kneel and crouch. Nora names the actions without copying the specialist movements.\nWho may pirouette?",
+        "answer": "A ballet dancer",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Spin"
+        "prompt": "Say that the dancer can pirouette.",
+        "answer": "The dancer can pirouette.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Tumble"
+        "prompt": "A box moves smoothly along a table without rolling. Name its action.",
+        "answer": "Slide",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Movement Verbs: See It, Say It",
-      "idea": "30–50 second contextual video set in a playground. Show dance, spin, twirl, slide, and roll naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a park exercise, adults demonstrate dance, spin, and twirl at a safe pace. The highlighted participant is doing dance."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora moves rhythmically to music to dance. She may spin around or twirl a ribbon during the performance."
     },
     "spacedReview": "1 lesson(s) back: Climb, Crawl from movement-verbs-2\n3 lesson(s) back: Tower, Church from giving-directions-4\n7 lesson(s) back: Customer, Butcher from market-6"
   },
@@ -490,68 +562,83 @@
     "targetWordsArabic": ["ينحني أو يثني", "يتمدد", "يتكئ أو يميل", "يجلس القرفصاء", "يتوازن"],
     "usage": {
       "goal": "Learn to recognize and use key movement verbs 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to movement verbs in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bend", "Stretch", "Lean"],
-          "scenario": "During a swimming session, adults demonstrate bend, stretch, and lean at a safe pace. The highlighted participant is doing bend.",
+          "scenario": "Nora bends her arm at the elbow to bend it. To stretch means extend it; to lean means incline the body.",
           "check": {
-            "question": "What movement should the learner identify in the example with bend, stretch?",
+            "question": "Which verb means to change the arm’s angle at the elbow?",
             "options": ["Bend", "Stretch", "Lean"],
             "expectedAnswer": "Bend"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a swimming session, adults demonstrate bend, stretch, and lean at a safe pace. The highlighted participant is doing bend. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Bend, Stretch, Lean in a natural setting."
+          "imageBrief": "Clothed adult with one bent elbow in ordinary neutral posture. No heavy lifting, medical diagram or text.",
+          "imageAlt": "Clothed adult with one bent elbow in ordinary neutral posture."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Squat", "Balance"],
-          "scenario": "During a mobility class, adults demonstrate squat and balance at a safe pace. The highlighted participant is doing squat.",
+          "scenario": "The description says Nora bends her knees deeply to squat. To balance means stay steady without falling.",
           "check": {
-            "question": "What movement is the person demonstrating in the example with squat, balance?",
+            "question": "Which verb names the deeply bent-knee position?",
             "options": ["Balance", "Bend", "Squat"],
             "expectedAnswer": "Squat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a movement verbs context illustrating this situation: During a mobility class, adults demonstrate squat and balance at a safe pace. The highlighted participant is doing squat. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult movement verbs scene showing lesson-related items or actions including Squat, Balance in a natural setting."
+          "imageBrief": "Adult in ordinary lowered bent-knee posture on level clear floor. No weights, balance beam, claim of safe technique or text.",
+          "imageAlt": "Adult in ordinary lowered bent-knee posture on level clear floor."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Movement Verbs 4: Adult Movement Class",
-      "text": "At a supervised adult movement class, the instructor demonstrates actions at a comfortable pace. The warm-up includes bend, stretch, lean, squat, and balance. Participants stop if a movement does not feel safe or comfortable. The vocabulary is used in a realistic movement verbs context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered movement verbs scene supporting the reading and showing the first six target words."
+      "text": "At rehearsal Nora bends an arm, stretches it and leans slightly. Later the script describes a performer who squats and balances. Nora learns the words for bend, stretch, lean, squat and balance from the descriptions. She watches the demonstration; the vocabulary lesson does not prescribe an exercise routine.",
+      "imageBrief": "Adult observer beside a level park path or rehearsal floor with ordinary clear space. Narration supplies actions and speed; no specialist stunts, exercise prescriptions, cliff/water risks, arrows or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bend"
+        "prompt": "Nora bends her arm at the elbow to bend it. To stretch means extend it; to lean means incline the body.\nWhich verb means to change the arm’s angle at the elbow?",
+        "answer": "Bend",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Squat"
+        "prompt": "The description says Nora bends her knees deeply to squat. To balance means stay steady without falling.\nWhich verb names the deeply bent-knee position?",
+        "answer": "Squat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Bend"
+        "prompt": "Read the passage: At rehearsal Nora bends an arm, stretches it and leans slightly. Later the script describes a performer who squats and balances. Nora learns the words for bend, stretch, lean, squat and balance from the descriptions. She watches the demonstration; the vocabulary lesson does not prescribe an exercise routine.\nDoes the vocabulary lesson prescribe an exercise routine?",
+        "answer": "No",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Stretch"
+        "prompt": "Describe changing your arm’s angle using bend.",
+        "answer": "I bend my arm.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Balance"
+        "prompt": "Someone stays steady without falling. Name the action.",
+        "answer": "Balance",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Movement Verbs: See It, Say It",
-      "idea": "30–50 second contextual video set in a playground. Show bend, stretch, lean, squat, and balance naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a swimming session, adults demonstrate bend, stretch, and lean at a safe pace. The highlighted participant is doing bend."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora bends her arm at the elbow to bend it. To stretch means extend it; to lean means incline the body."
     },
     "spacedReview": "1 lesson(s) back: Dance, Spin from movement-verbs-3\n3 lesson(s) back: Walk, Run from movement-verbs-1\n7 lesson(s) back: Left, Right from giving-directions-1"
   }

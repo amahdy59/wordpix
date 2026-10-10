@@ -28,7 +28,7 @@
     ],
     "targetWordsArabic": [
       "شاشة",
-      "قاعة محاضرات",
+      "قاعة الجمهور",
       "ردهة",
       "شباك التذاكر",
       "منضدة الوجبات الخفيفة",
@@ -44,132 +44,115 @@
       "حامل أكواب"
     ],
     "usage": {
-      "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the public cultural venue.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "120-150 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["screen", "auditorium", "lobby", "box office"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare screen, auditorium, lobby, and box office and choose the option that fits the situation.",
+          "scenario": "The screen is the surface displaying the projected film. Auditorium is the audience room, lobby the entrance area, and box office the ticket facility. Screen means the image surface here, rather than a barrier hiding something.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which surface displays the projected film?",
             "options": ["screen", "auditorium", "lobby"],
             "expectedAnswer": "screen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the screen as the central item; include screen, auditorium, and lobby naturally where visually appropriate, but make the real-world use of screen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing screen as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["concession stand", "hallway", "emergency exit", "projection room"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare concession stand, hallway, emergency exit, and projection room and choose the option that fits the situation.",
+          "scenario": "The concession stand sells snacks and drinks. Hallway connects interior areas, emergency exit is the designated way out, and projection room contains film-projection equipment. The visitor buys refreshments at the concession stand.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Where does the visitor buy refreshments?",
             "options": ["concession stand", "hallway", "emergency exit"],
             "expectedAnswer": "concession stand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the concession stand as the central item; include concession stand, hallway, and emergency exit naturally where visually appropriate, but make the real-world use of concession stand the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing concession stand as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["restroom", "parking lot", "seat", "row"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare restroom, parking lot, seat, and row and choose the option that fits the situation.",
+          "scenario": "The restroom provides toilet and washing facilities. Parking lot stores vehicles, seat supports one seated visitor, and row is a line of seats. The visitor asks for the restroom before entering the audience room.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which facility provides toilets and washing?",
             "options": ["restroom", "parking lot", "seat"],
             "expectedAnswer": "restroom"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the restroom as the central item; include restroom, parking lot, and seat naturally where visually appropriate, but make the real-world use of restroom the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing restroom as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["aisle", "armrest", "cup holder"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare aisle, armrest, and cup holder and choose the option that fits the situation.",
+          "scenario": "The aisle is the passage between seating areas. Armrest supports an arm, and cup holder supports a drink container. Visitors keep the aisle clear under the venue’s arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which passage lies between seating areas?",
             "options": ["aisle", "armrest", "cup holder"],
             "expectedAnswer": "aisle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the aisle as the central item; include aisle, armrest, and cup holder naturally where visually appropriate, but make the real-world use of aisle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing aisle as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Cinema: Practical Information",
-      "text": "At the cinema, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers screen, auditorium, lobby, and box office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers concession stand, hallway, emergency exit, and projection room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers restroom, parking lot, seat, and row. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers aisle, armrest, and cup holder. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The auditorium and its facilities",
+      "text": "The screen is the surface displaying the projected film. Auditorium is the audience room, lobby the entrance area, and box office the ticket facility. Screen means the image surface here, rather than a barrier hiding something. The concession stand sells snacks and drinks. Hallway connects interior areas, emergency exit is the designated way out, and projection room contains film-projection equipment. The visitor buys refreshments at the concession stand. The restroom provides toilet and washing facilities. Parking lot stores vehicles, seat supports one seated visitor, and row is a line of seats. The visitor asks for the restroom before entering the audience room. The aisle is the passage between seating areas. Armrest supports an arm, and cup holder supports a drink container. Visitors keep the aisle clear under the venue’s arrangements.",
+      "imageBrief": "Use independently inspected word references to support The auditorium and its facilities; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare screen, auditorium, lobby, and box office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The screen is the surface displaying the projected film. Auditorium is the audience room, lobby the entrance area, and box office the ticket facility. Screen means the image surface here, rather than a barrier hiding something.\nWhich surface displays the projected film?",
         "answer": "screen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare concession stand, hallway, emergency exit, and projection room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The concession stand sells snacks and drinks. Hallway connects interior areas, emergency exit is the designated way out, and projection room contains film-projection equipment. The visitor buys refreshments at the concession stand.\nWhere does the visitor buy refreshments?",
         "answer": "concession stand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare restroom, parking lot, seat, and row and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The restroom provides toilet and washing facilities. Parking lot stores vehicles, seat supports one seated visitor, and row is a line of seats. The visitor asks for the restroom before entering the audience room.\nWhich facility provides toilets and washing?",
         "answer": "restroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare aisle, armrest, and cup holder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The aisle is the passage between seating areas. Armrest supports an arm, and cup holder supports a drink container. Visitors keep the aisle clear under the venue’s arrangements.\nWhich passage lies between seating areas?",
         "answer": "aisle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The screen is the surface displaying the projected film. Auditorium is the audience room, lobby the entrance area, and box office the ticket facility. Screen means the image surface here, rather than a barrier hiding something. The concession stand sells snacks and drinks. Hallway connects interior areas, emergency exit is the designated way out, and projection room contains film-projection equipment. The visitor buys refreshments at the concession stand. The restroom provides toilet and washing facilities. Parking lot stores vehicles, seat supports one seated visitor, and row is a line of seats. The visitor asks for the restroom before entering the audience room. The aisle is the passage between seating areas. Armrest supports an arm, and cup holder supports a drink container. Visitors keep the aisle clear under the venue’s arrangements.\nCompare “screen” and “auditorium” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "screen"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "box office"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Podium” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 cinema task. Use screen, auditorium, lobby, box office, concession stand, hallway, emergency exit, projection room, restroom, parking lot, seat, row, aisle, armrest, and cup holder in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using screen, auditorium, lobby, box office, concession stand, hallway, emergency exit, projection room, restroom, parking lot, seat, row, aisle, armrest, cup holder in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Cinema: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The auditorium and its facilities",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The screen is the surface displaying the projected film. Auditorium is the audience room, lobby the entrance area, and box office the ticket facility. Screen means the image surface here, rather than a barrier hiding something. Which surface displays the projected film?"
     },
     "spacedReview": "1 lesson(s) back: Podium, Symphony from orchestra-5\n3 lesson(s) back: Drum, Snare Drum from orchestra-3\n7 lesson(s) back: Sound Technician, Costume Designer from theater-4"
   },
@@ -211,139 +194,122 @@
       "ناتشوز",
       "حلوى",
       "هوت دوغ؛ نقانق في خبز",
-      "كريمة ثلج",
+      "آيس كريم؛ مثلجات",
       "بريتزل",
       "مشروب سلاش مثلج",
       "زجاجة ماء",
       "وجبة كومبو"
     ],
     "usage": {
-      "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the public cultural venue.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "133-163 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["3D glasses", "recliner", "balcony", "front row"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D glasses, recliner, balcony, and front row and choose the option that fits the situation.",
+          "scenario": "3D glasses support the depth effect of a compatible film system. Recliner names an adjustable seat, balcony an upper seating level, and front row the seats nearest the screen. Glasses alone do not create the intended effect without compatible presentation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item supports the compatible film’s depth effect?",
             "options": ["3D glasses", "recliner", "balcony"],
             "expectedAnswer": "3D glasses"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the 3D glasses as the central item; include 3D glasses, recliner, and balcony naturally where visually appropriate, but make the real-world use of 3D glasses the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing 3D glasses as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["back row", "popcorn", "soda", "nachos"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare back row, popcorn, soda, and nachos and choose the option that fits the situation.",
+          "scenario": "The back row is farthest from the screen in this auditorium. Popcorn, soda and nachos are refreshment names. The visitor chooses the back row for seating, then separately buys refreshments.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the farthest seating row?",
             "options": ["back row", "popcorn", "soda"],
             "expectedAnswer": "back row"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the back row as the central item; include back row, popcorn, and soda naturally where visually appropriate, but make the real-world use of back row the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing back row as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["candy", "hot dog", "ice cream", "pretzel"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare candy, hot dog, ice cream, and pretzel and choose the option that fits the situation.",
+          "scenario": "Candy names sweet confectionery. Hot dog is a sausage commonly served in a bread roll, ice cream a frozen dessert, and pretzel a baked snack. Recipes and ingredients vary; the cinema account does not promise an allergen-free product.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which general target names sweet confectionery?",
             "options": ["candy", "hot dog", "ice cream"],
             "expectedAnswer": "candy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the candy as the central item; include candy, hot dog, and ice cream naturally where visually appropriate, but make the real-world use of candy the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing candy as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["slushie", "water bottle", "combo meal"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare slushie, water bottle, and combo meal and choose the option that fits the situation.",
+          "scenario": "A slushie is a drink containing crushed ice and flavored liquid. Water bottle is the container for water, while combo meal bundles food or drink items. The visitor orders the crushed-ice drink called a slushie.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which drink contains the described crushed ice?",
             "options": ["slushie", "water bottle", "combo meal"],
             "expectedAnswer": "slushie"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the slushie as the central item; include slushie, water bottle, and combo meal naturally where visually appropriate, but make the real-world use of slushie the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing slushie as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Cinema",
-      "text": "At the cinema, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers 3D glasses, recliner, balcony, and front row. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers back row, popcorn, soda, and nachos. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers candy, hot dog, ice cream, and pretzel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers slushie, water bottle, and combo meal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Seating and refreshments",
+      "text": "3D glasses support the depth effect of a compatible film system. Recliner names an adjustable seat, balcony an upper seating level, and front row the seats nearest the screen. Glasses alone do not create the intended effect without compatible presentation. The back row is farthest from the screen in this auditorium. Popcorn, soda and nachos are refreshment names. The visitor chooses the back row for seating, then separately buys refreshments. Candy names sweet confectionery. Hot dog is a sausage commonly served in a bread roll, ice cream a frozen dessert, and pretzel a baked snack. Recipes and ingredients vary; the cinema account does not promise an allergen-free product. A slushie is a drink containing crushed ice and flavored liquid. Water bottle is the container for water, while combo meal bundles food or drink items. The visitor orders the crushed-ice drink called a slushie.",
+      "imageBrief": "Use independently inspected word references to support Seating and refreshments; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D glasses, recliner, balcony, and front row and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "3D glasses support the depth effect of a compatible film system. Recliner names an adjustable seat, balcony an upper seating level, and front row the seats nearest the screen. Glasses alone do not create the intended effect without compatible presentation.\nWhich item supports the compatible film’s depth effect?",
         "answer": "3D glasses",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare back row, popcorn, soda, and nachos and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The back row is farthest from the screen in this auditorium. Popcorn, soda and nachos are refreshment names. The visitor chooses the back row for seating, then separately buys refreshments.\nWhich target names the farthest seating row?",
         "answer": "back row",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare candy, hot dog, ice cream, and pretzel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Candy names sweet confectionery. Hot dog is a sausage commonly served in a bread roll, ice cream a frozen dessert, and pretzel a baked snack. Recipes and ingredients vary; the cinema account does not promise an allergen-free product.\nWhich general target names sweet confectionery?",
         "answer": "candy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare slushie, water bottle, and combo meal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A slushie is a drink containing crushed ice and flavored liquid. Water bottle is the container for water, while combo meal bundles food or drink items. The visitor orders the crushed-ice drink called a slushie.\nWhich drink contains the described crushed ice?",
         "answer": "slushie",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "3D glasses support the depth effect of a compatible film system. Recliner names an adjustable seat, balcony an upper seating level, and front row the seats nearest the screen. Glasses alone do not create the intended effect without compatible presentation. The back row is farthest from the screen in this auditorium. Popcorn, soda and nachos are refreshment names. The visitor chooses the back row for seating, then separately buys refreshments. Candy names sweet confectionery. Hot dog is a sausage commonly served in a bread roll, ice cream a frozen dessert, and pretzel a baked snack. Recipes and ingredients vary; the cinema account does not promise an allergen-free product. A slushie is a drink containing crushed ice and flavored liquid. Water bottle is the container for water, while combo meal bundles food or drink items. The visitor orders the crushed-ice drink called a slushie.\nCompare “3D Glasses” and “recliner” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "3D glasses"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "front row"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “screen” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 cinema task. Use 3D Glasses, recliner, balcony, front row, back row, popcorn, soda, nachos, candy, hot dog, ice cream, pretzel, slushie, water bottle, and combo meal in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using 3D Glasses, recliner, balcony, front row, back row, popcorn, soda, nachos, candy, hot dog, ice cream, pretzel, slushie, water bottle, combo meal in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Cinema: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Seating and refreshments",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "3D glasses support the depth effect of a compatible film system. Recliner names an adjustable seat, balcony an upper seating level, and front row the seats nearest the screen. Glasses alone do not create the intended effect without compatible presentation. Which item supports the compatible film’s depth effect?"
     },
     "spacedReview": "1 lesson(s) back: screen, auditorium from cinema-1\n3 lesson(s) back: Sheet Music, Score from orchestra-4\n7 lesson(s) back: Wing, Orchestra Pit from theater-5"
   },
@@ -376,7 +342,7 @@
     ],
     "targetWordsArabic": [
       "فيلم",
-      "مقطورة",
+      "إعلان تشويقي لفيلم",
       "أسماء المشاركين في الفيلم",
       "مخرج",
       "ممثل",
@@ -387,137 +353,120 @@
       "رسوم متحركة",
       "فيلم كوميدي",
       "فيلم درامي",
-      "فعل",
+      "فيلم حركة",
       "فيلم رعب",
       "فيلم رومانسي"
     ],
     "usage": {
-      "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the public cultural venue.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "140-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["movie", "trailer", "credits", "director"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare movie, trailer, credits, and director and choose the option that fits the situation.",
+          "scenario": "The movie is the film itself. Trailer names a promotional preview here, credits list contributors, and director guides the film’s artistic creation. Trailer does not mean a road vehicle in this cinema account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the film itself?",
             "options": ["movie", "trailer", "credits"],
             "expectedAnswer": "movie"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the movie as the central item; include movie, trailer, and credits naturally where visually appropriate, but make the real-world use of movie the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing movie as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["actor", "actress", "scene", "soundtrack"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare actor, actress, scene, and soundtrack and choose the option that fits the situation.",
+          "scenario": "Actor names a performer portraying a character and can apply to any gender. Actress specifically names a female performer. Scene is a section of the film, while soundtrack comprises its accompanying recorded sound and music. The account uses actor as the general performer term.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What exact general performer term does the account use?",
             "options": ["actor", "actress", "scene"],
             "expectedAnswer": "actor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the actor as the central item; include actor, actress, and scene naturally where visually appropriate, but make the real-world use of actor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing actor as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["subtitle", "animation", "comedy", "drama"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare subtitle, animation, comedy, and drama and choose the option that fits the situation.",
+          "scenario": "A subtitle displays dialogue text or a translation. Animation creates apparent movement from a sequence of designed images. Comedy uses humor, while drama addresses serious situations in this comparison. Genres can overlap; subtitle is the displayed dialogue text.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the displayed dialogue text?",
             "options": ["subtitle", "animation", "comedy"],
             "expectedAnswer": "subtitle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the subtitle as the central item; include subtitle, animation, and comedy naturally where visually appropriate, but make the real-world use of subtitle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing subtitle as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["action", "horror", "romance"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare action, horror, and romance and choose the option that fits the situation.",
+          "scenario": "Action names a film genre emphasizing physical events and movement. Horror aims to frighten, while romance centers on a romantic relationship. A film can combine genres; the account specifies action for its emphasized physical events.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which genre emphasizes the stated physical events and movement?",
             "options": ["action", "horror", "romance"],
             "expectedAnswer": "action"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the action as the central item; include action, horror, and romance naturally where visually appropriate, but make the real-world use of action the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing action as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: Cinema",
-      "text": "At the cinema, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers movie, trailer, credits, and director. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers actor, actress, scene, and soundtrack. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers subtitle, animation, comedy, and drama. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers action, horror, and romance. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Film creation and genre terms",
+      "text": "The movie is the film itself. Trailer names a promotional preview here, credits list contributors, and director guides the film’s artistic creation. Trailer does not mean a road vehicle in this cinema account. Actor names a performer portraying a character and can apply to any gender. Actress specifically names a female performer. Scene is a section of the film, while soundtrack comprises its accompanying recorded sound and music. The account uses actor as the general performer term. A subtitle displays dialogue text or a translation. Animation creates apparent movement from a sequence of designed images. Comedy uses humor, while drama addresses serious situations in this comparison. Genres can overlap; subtitle is the displayed dialogue text. Action names a film genre emphasizing physical events and movement. Horror aims to frighten, while romance centers on a romantic relationship. A film can combine genres; the account specifies action for its emphasized physical events.",
+      "imageBrief": "Use independently inspected word references to support Film creation and genre terms; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare movie, trailer, credits, and director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The movie is the film itself. Trailer names a promotional preview here, credits list contributors, and director guides the film’s artistic creation. Trailer does not mean a road vehicle in this cinema account.\nWhich target names the film itself?",
         "answer": "movie",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare actor, actress, scene, and soundtrack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Actor names a performer portraying a character and can apply to any gender. Actress specifically names a female performer. Scene is a section of the film, while soundtrack comprises its accompanying recorded sound and music. The account uses actor as the general performer term.\nWhat exact general performer term does the account use?",
         "answer": "actor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare subtitle, animation, comedy, and drama and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A subtitle displays dialogue text or a translation. Animation creates apparent movement from a sequence of designed images. Comedy uses humor, while drama addresses serious situations in this comparison. Genres can overlap; subtitle is the displayed dialogue text.\nWhich target names the displayed dialogue text?",
         "answer": "subtitle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare action, horror, and romance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Action names a film genre emphasizing physical events and movement. Horror aims to frighten, while romance centers on a romantic relationship. A film can combine genres; the account specifies action for its emphasized physical events.\nWhich genre emphasizes the stated physical events and movement?",
         "answer": "action",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The movie is the film itself. Trailer names a promotional preview here, credits list contributors, and director guides the film’s artistic creation. Trailer does not mean a road vehicle in this cinema account. Actor names a performer portraying a character and can apply to any gender. Actress specifically names a female performer. Scene is a section of the film, while soundtrack comprises its accompanying recorded sound and music. The account uses actor as the general performer term. A subtitle displays dialogue text or a translation. Animation creates apparent movement from a sequence of designed images. Comedy uses humor, while drama addresses serious situations in this comparison. Genres can overlap; subtitle is the displayed dialogue text. Action names a film genre emphasizing physical events and movement. Horror aims to frighten, while romance centers on a romantic relationship. A film can combine genres; the account specifies action for its emphasized physical events.\nCompare “movie” and “trailer” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "movie"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "director"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “3D glasses” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 cinema task. Use movie, trailer, credits, director, actor, actress, scene, soundtrack, subtitle, animation, comedy, drama, action, horror, and romance in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using movie, trailer, credits, director, actor, actress, scene, soundtrack, subtitle, animation, comedy, drama, action, horror, romance in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Cinema: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Film creation and genre terms",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The movie is the film itself. Trailer names a promotional preview here, credits list contributors, and director guides the film’s artistic creation. Trailer does not mean a road vehicle in this cinema account. Which target names the film itself?"
     },
     "spacedReview": "1 lesson(s) back: 3D glasses, recliner from cinema-2\n3 lesson(s) back: Podium, Symphony from orchestra-5\n7 lesson(s) back: Violin, Viola from orchestra-1"
   },
@@ -566,132 +515,115 @@
       "استراحة"
     ],
     "usage": {
-      "goal": "Develop the language needed to discuss events, venue features, and practical visitor arrangements in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the public cultural venue.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["thriller", "documentary", "fantasy", "science fiction"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thriller, documentary, fantasy, and science fiction and choose the option that fits the situation.",
+          "scenario": "A thriller emphasizes suspense. Documentary presents factual subjects, fantasy imagined worlds or supernatural elements, and science fiction speculative science or technology. Genre boundaries overlap; the account identifies the suspense emphasis as thriller.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which genre emphasizes suspense in the account?",
             "options": ["thriller", "documentary", "fantasy"],
             "expectedAnswer": "thriller"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the thriller as the central item; include thriller, documentary, and fantasy naturally where visually appropriate, but make the real-world use of thriller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing thriller as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["musical", "ticket", "showtime", "premiere"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare musical, ticket, showtime, and premiere and choose the option that fits the situation.",
+          "scenario": "The musical incorporates songs into the film. Ticket authorizes admission under venue terms, showtime gives the scheduled start, and premiere is the first official public showing. The songs identify the genre rather than the ticket or start time.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which genre incorporates songs into the film?",
             "options": ["musical", "ticket", "showtime"],
             "expectedAnswer": "musical"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the musical as the central item; include musical, ticket, and showtime naturally where visually appropriate, but make the real-world use of musical the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing musical as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["poster", "marquee", "rating", "review"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare poster, marquee, rating, and review and choose the option that fits the situation.",
+          "scenario": "The poster is the displayed promotional sheet. Marquee is an entrance display or sign, rating classifies the film under a specified system, and review evaluates it. Rating systems depend on jurisdiction and are different from a reviewer’s score.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the promotional sheet?",
             "options": ["poster", "marquee", "rating"],
             "expectedAnswer": "poster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the poster as the central item; include poster, marquee, and rating naturally where visually appropriate, but make the real-world use of poster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing poster as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["audience", "applause", "intermission"],
-          "scenario": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare audience, applause, and intermission and choose the option that fits the situation.",
+          "scenario": "The audience is the group watching the film. Applause is hand-clapping approval, and intermission a break where the screening includes one. The group may applaud, but applause does not name the people themselves.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the group watching the film?",
             "options": ["audience", "applause", "intermission"],
             "expectedAnswer": "audience"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a public cultural venue. Show an adult using or examining the audience as the central item; include audience, applause, and intermission naturally where visually appropriate, but make the real-world use of audience the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a public cultural venue completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the cinema account, showing audience as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Cinema: Practical Information",
-      "text": "At the cinema, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers thriller, documentary, fantasy, and science fiction. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers musical, ticket, showtime, and premiere. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers poster, marquee, rating, and review. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers audience, applause, and intermission. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Cinema. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Genres and audience information",
+      "text": "A thriller emphasizes suspense. Documentary presents factual subjects, fantasy imagined worlds or supernatural elements, and science fiction speculative science or technology. Genre boundaries overlap; the account identifies the suspense emphasis as thriller. The musical incorporates songs into the film. Ticket authorizes admission under venue terms, showtime gives the scheduled start, and premiere is the first official public showing. The songs identify the genre rather than the ticket or start time. The poster is the displayed promotional sheet. Marquee is an entrance display or sign, rating classifies the film under a specified system, and review evaluates it. Rating systems depend on jurisdiction and are different from a reviewer’s score. The audience is the group watching the film. Applause is hand-clapping approval, and intermission a break where the screening includes one. The group may applaud, but applause does not name the people themselves.",
+      "imageBrief": "Use independently inspected word references to support Genres and audience information; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thriller, documentary, fantasy, and science fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A thriller emphasizes suspense. Documentary presents factual subjects, fantasy imagined worlds or supernatural elements, and science fiction speculative science or technology. Genre boundaries overlap; the account identifies the suspense emphasis as thriller.\nWhich genre emphasizes suspense in the account?",
         "answer": "thriller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare musical, ticket, showtime, and premiere and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The musical incorporates songs into the film. Ticket authorizes admission under venue terms, showtime gives the scheduled start, and premiere is the first official public showing. The songs identify the genre rather than the ticket or start time.\nWhich genre incorporates songs into the film?",
         "answer": "musical",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare poster, marquee, rating, and review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The poster is the displayed promotional sheet. Marquee is an entrance display or sign, rating classifies the film under a specified system, and review evaluates it. Rating systems depend on jurisdiction and are different from a reviewer’s score.\nWhich target names the promotional sheet?",
         "answer": "poster",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 cinema setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare audience, applause, and intermission and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The audience is the group watching the film. Applause is hand-clapping approval, and intermission a break where the screening includes one. The group may applaud, but applause does not name the people themselves.\nWhich target names the group watching the film?",
         "answer": "audience",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A thriller emphasizes suspense. Documentary presents factual subjects, fantasy imagined worlds or supernatural elements, and science fiction speculative science or technology. Genre boundaries overlap; the account identifies the suspense emphasis as thriller. The musical incorporates songs into the film. Ticket authorizes admission under venue terms, showtime gives the scheduled start, and premiere is the first official public showing. The songs identify the genre rather than the ticket or start time. The poster is the displayed promotional sheet. Marquee is an entrance display or sign, rating classifies the film under a specified system, and review evaluates it. Rating systems depend on jurisdiction and are different from a reviewer’s score. The audience is the group watching the film. Applause is hand-clapping approval, and intermission a break where the screening includes one. The group may applaud, but applause does not name the people themselves.\nCompare “thriller” and “documentary” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "thriller"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "science fiction"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “movie” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 cinema task. Use thriller, documentary, fantasy, science fiction, musical, ticket, showtime, premiere, poster, marquee, rating, review, audience, applause, and intermission in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using thriller, documentary, fantasy, science fiction, musical, ticket, showtime, premiere, poster, marquee, rating, review, audience, applause, intermission in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Cinema: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Genres and audience information",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A thriller emphasizes suspense. Documentary presents factual subjects, fantasy imagined worlds or supernatural elements, and science fiction speculative science or technology. Genre boundaries overlap; the account identifies the suspense emphasis as thriller. Which genre emphasizes suspense in the account?"
     },
     "spacedReview": "1 lesson(s) back: movie, trailer from cinema-3\n3 lesson(s) back: screen, auditorium from cinema-1\n7 lesson(s) back: Recorder, Saxophone from orchestra-2"
   }

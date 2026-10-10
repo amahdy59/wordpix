@@ -29,8 +29,8 @@
     "targetWordsArabic": [
       "بار رياضي",
       "بار شعبي بسيط",
-      "حانة نبيذ",
-      "حانة سرية أو مستوحاة من الحانات السرية",
+      "حانة متخصصة في النبيذ",
+      "حانة سرية أو مستوحاة من طرازها",
       "بار على السطح",
       "بار بطابع استوائي",
       "حانة",
@@ -44,136 +44,122 @@
       "جولة مشروبات للمجموعة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sports Bar", "Dive Bar", "Wine Bar", "Speakeasy"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Bar, Dive Bar, Wine Bar, and Speakeasy and choose the option that fits the situation.",
+          "scenario": "Sports bar emphasizes sports viewing. Dive bar, wine bar and speakeasy describe other venue characteristics or histories.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which venue description emphasizes sports viewing?",
             "options": ["Sports Bar", "Dive Bar", "Wine Bar"],
             "expectedAnswer": "Sports Bar"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Sports Bar as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty venue with a large blank display and seating; purpose comes from the written description. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rooftop Bar", "Tiki Bar", "Pub", "Tavern"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rooftop Bar, Tiki Bar, Pub, and Tavern and choose the option that fits the situation.",
+          "scenario": "Rooftop bar identifies a roof or upper-terrace location. Tiki bar, pub and tavern use other descriptions, not that location term.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which venue term identifies the rooftop location?",
             "options": ["Rooftop Bar", "Tiki Bar", "Pub"],
             "expectedAnswer": "Rooftop Bar"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Rooftop Bar as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty roof-terrace service counter with city skyline, no people or branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Brewpub", "Lounge", "Happy Hour", "Last Call"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brewpub, Lounge, Happy Hour, and Last Call and choose the option that fits the situation.",
+          "scenario": "Brewpub combines brewing with hospitality. Lounge concerns a relaxed setting, happy hour a promotion, and last call an approaching service end.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which venue combines brewing with hospitality?",
             "options": ["Brewpub", "Lounge", "Happy Hour"],
             "expectedAnswer": "Brewpub"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Brewpub as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty venue with visible closed brewing vessels; actual operation is given in writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tab", "Tip", "Round of Drinks"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Tip, and Round of Drinks and choose the option that fits the situation.",
+          "scenario": "The tab records purchases for later payment. Tip is additional service money, and round of drinks is a set ordered for a group.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the open bill?",
             "options": ["Tab", "Tip", "Round of Drinks"],
             "expectedAnswer": "Tab"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Tab as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty billing counter with blank receipt paper; no invented prices or personal data. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Bar Culture: Practical Information",
-      "text": "At the bar culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sports Bar, Dive Bar, Wine Bar, and Speakeasy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rooftop Bar, Tiki Bar, Pub, and Tavern. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brewpub, Lounge, Happy Hour, and Last Call. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tab, Tip, and Round of Drinks. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Bar Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Understanding venue and billing terms",
+      "text": "A workplace English worksheet compares venue descriptions. Sports bar emphasizes sports viewing; dive bar is an informal label for an unpretentious bar. Wine bar specializes in wine, while speakeasy may describe a historical illicit venue or a modern venue inspired by that style. Rooftop bar identifies location. Tiki bar describes a themed design rather than authentic representation of all Pacific cultures. Pub, tavern, brewpub and lounge have different regional uses; brewpub combines brewing and hospitality. Happy hour is a promotional period, and last call announces an approaching end to service. A tab is an open bill, a tip additional money for service, and a round of drinks a set ordered for a group. The learner asks about the actual bill and policies without assuming a promotion, tipping rule or opening time is universal.",
+      "imageBrief": "Support for Understanding venue and billing terms. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Bar, Dive Bar, Wine Bar, and Speakeasy and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "Sports bar emphasizes sports viewing. Dive bar, wine bar and speakeasy describe other venue characteristics or histories.\nWhich venue description emphasizes sports viewing?",
         "answer": "Sports Bar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rooftop Bar, Tiki Bar, Pub, and Tavern and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "Rooftop bar identifies a roof or upper-terrace location. Tiki bar, pub and tavern use other descriptions, not that location term.\nWhich venue term identifies the rooftop location?",
         "answer": "Rooftop Bar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brewpub, Lounge, Happy Hour, and Last Call and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Brewpub combines brewing with hospitality. Lounge concerns a relaxed setting, happy hour a promotion, and last call an approaching service end.\nWhich venue combines brewing with hospitality?",
         "answer": "Brewpub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tab, Tip, and Round of Drinks and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The tab records purchases for later payment. Tip is additional service money, and round of drinks is a set ordered for a group.\nWhich term names the open bill?",
         "answer": "Tab",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A workplace English worksheet compares venue descriptions. Sports bar emphasizes sports viewing; dive bar is an informal label for an unpretentious bar. Wine bar specializes in wine, while speakeasy may describe a historical illicit venue or a modern venue inspired by that style. Rooftop bar identifies location. Tiki bar describes a themed design rather than authentic representation of all Pacific cultures. Pub, tavern, brewpub and lounge have different regional uses; brewpub combines brewing and hospitality. Happy hour is a promotional period, and last call announces an approaching end to service. A tab is an open bill, a tip additional money for service, and a round of drinks a set ordered for a group. The learner asks about the actual bill and policies without assuming a promotion, tipping rule or opening time is universal.\nWhy does the learner ask about actual policies?",
+        "answer": "Venue labels do not establish universal prices, tipping rules or service times.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Sports Bar"
+        "prompt": "Explain the difference between “Sports Bar” and “Dive Bar” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Wine Bar"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “On the Rocks” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bar culture task. Use Sports Bar, Dive Bar, Wine Bar, Speakeasy, Rooftop Bar, Tiki Bar, Pub, Tavern, Brewpub, Lounge, Happy Hour, Last Call, Tab, Tip, and Round of Drinks in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Sports Bar” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Sports bar emphasizes sports viewing. Dive bar, wine bar and speakeasy describe other venue characteristics or histories.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Bar Culture: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from bar culture in cultural or industry texts."
+      "title": "Understanding venue and billing terms",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A workplace English worksheet compares venue descriptions. Sports bar emphasizes sports viewing; dive bar is an informal label for an unpretentious bar. Wine bar specializes in wine, while speakeasy may describe a historical illicit venue or a modern venue inspired by that style. Rooftop bar identifies location. Tiki bar describes a themed design rather than authentic representation of all Pacific cultures. Pub, tavern, brewpub and lounge have different regional uses; brewpub combines brewing and hospitality. Happy hour is a promotional period, and last call announces an approaching end to service. A tab is an open bill, a tip additional money for service, and a round of drinks a set ordered for a group. The learner asks about the actual bill and policies without assuming a promotion, tipping rule or opening time is universal. Ask: Why does the learner ask about actual policies?"
     },
     "spacedReview": "1 lesson(s) back: On the Rocks, Neat from classic-cocktails-3\n3 lesson(s) back: Martini, Old Fashioned from classic-cocktails-1\n7 lesson(s) back: Bartender, Barback from cocktail-bar-3"
   },
@@ -205,8 +191,8 @@
       "Big Screen"
     ],
     "targetWordsArabic": [
-      "يحمّص",
-      "تحية أو شكر",
+      "كلمة تهنئة أو تمنيات طيبة",
+      "في صحتك عند رفع الكأس؛ وشكرًا في استعمال بريطاني",
       "سائق متفق عليه لا يشرب الكحول",
       "حساب مفتوح في البار",
       "رسم دخول",
@@ -214,144 +200,130 @@
       "كاريوكي",
       "ليلة مسابقة معلومات",
       "لوحة رمي السهام",
-      "طاولة مسبح",
-      "آلة موسيقى تعمل بالعملات",
+      "طاولة بلياردو",
+      "آلة اختيار الموسيقى",
       "ليلة كوميديا",
       "فعالية ميكروفون مفتوح",
       "ساحة رقص",
       "شاشة كبيرة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Toast", "Cheers", "Designated Driver", "Bar Tab"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toast, Cheers, Designated Driver, and Bar Tab and choose the option that fits the situation.",
+          "scenario": "The toast is the message of goodwill. Cheers can accompany it; designated driver names an assigned non-drinking driver, and bar tab records purchases.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the message of goodwill?",
             "options": ["Toast", "Cheers", "Designated Driver"],
             "expectedAnswer": "Toast"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Toast as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A quiet empty event table; the spoken message is supplied by the text, no drinking scene. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cover Charge", "Live Music", "Karaoke", "Trivia Night"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cover Charge, Live Music, Karaoke, and Trivia Night and choose the option that fits the situation.",
+          "scenario": "Cover charge is the admission fee. Live music, karaoke and trivia night name different event activities.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the admission fee?",
             "options": ["Cover Charge", "Live Music", "Karaoke"],
             "expectedAnswer": "Cover Charge"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cover Charge as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty venue entrance with no prices or signs; fee terms are written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dart Board", "Pool Table", "Jukebox", "Comedy Night"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dart Board, Pool Table, Jukebox, and Comedy Night and choose the option that fits the situation.",
+          "scenario": "Dart board is the target for darts. Pool table supports a cue sport, jukebox selects recorded music, and comedy night presents comedy.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the target for darts?",
             "options": ["Dart Board", "Pool Table", "Jukebox"],
             "expectedAnswer": "Dart Board"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Dart Board as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One circular dart board with segment pattern but no readable numbers or logos. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Open Mic", "Dance Floor", "Big Screen"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Open Mic, Dance Floor, and Big Screen and choose the option that fits the situation.",
+          "scenario": "Open mic allows sign-up performances. Dance floor and big screen instead describe physical venue features.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which event allows participants to sign up to perform?",
             "options": ["Open Mic", "Dance Floor", "Big Screen"],
             "expectedAnswer": "Open Mic"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Open Mic as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty small performance area with microphone stand; sign-up policy comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: Bar Culture",
-      "text": "At the bar culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Toast, Cheers, Designated Driver, and Bar Tab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cover Charge, Live Music, Karaoke, and Trivia Night. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dart Board, Pool Table, Jukebox, and Comedy Night. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Open Mic, Dance Floor, and Big Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Bar Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing event activities and charges",
+      "text": "The learner reads a fictional event announcement. A toast is a message of goodwill; cheers can accompany it and also means thank you in some British usage. A designated driver is assigned to avoid alcohol and drive the group, while fitness to drive remains necessary. Bar tab records purchases, and cover charge names an admission fee separate from orders. Live music involves performers; karaoke involves singing with accompaniment. Trivia night is a quiz event. Dart board and pool table name game equipment, and a jukebox offers recorded-music selection. Comedy night presents comedy; open mic allows participants to sign up for short performances. Dance floor and big screen describe venue features. The learner checks the announcement rather than assumes that one photograph proves the schedule, entry cost or anyone's participation.",
+      "imageBrief": "Support for Comparing event activities and charges. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toast, Cheers, Designated Driver, and Bar Tab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The toast is the message of goodwill. Cheers can accompany it; designated driver names an assigned non-drinking driver, and bar tab records purchases.\nWhich term names the message of goodwill?",
         "answer": "Toast",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cover Charge, Live Music, Karaoke, and Trivia Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Cover charge is the admission fee. Live music, karaoke and trivia night name different event activities.\nWhich term names the admission fee?",
         "answer": "Cover Charge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dart Board, Pool Table, Jukebox, and Comedy Night and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dart board is the target for darts. Pool table supports a cue sport, jukebox selects recorded music, and comedy night presents comedy.\nWhich item is the target for darts?",
         "answer": "Dart Board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Open Mic, Dance Floor, and Big Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Open mic allows sign-up performances. Dance floor and big screen instead describe physical venue features.\nWhich event allows participants to sign up to perform?",
         "answer": "Open Mic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The learner reads a fictional event announcement. A toast is a message of goodwill; cheers can accompany it and also means thank you in some British usage. A designated driver is assigned to avoid alcohol and drive the group, while fitness to drive remains necessary. Bar tab records purchases, and cover charge names an admission fee separate from orders. Live music involves performers; karaoke involves singing with accompaniment. Trivia night is a quiz event. Dart board and pool table name game equipment, and a jukebox offers recorded-music selection. Comedy night presents comedy; open mic allows participants to sign up for short performances. Dance floor and big screen describe venue features. The learner checks the announcement rather than assumes that one photograph proves the schedule, entry cost or anyone's participation.\nHow does cover charge differ from bar tab?",
+        "answer": "Cover charge is an admission fee; bar tab records ordered items.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Toast"
+        "prompt": "Explain the difference between “Toast” and “Cheers” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Designated Driver"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sports Bar” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bar culture task. Use Toast, Cheers, Designated Driver, Bar Tab, Cover Charge, Live Music, Karaoke, Trivia Night, Dart Board, Pool Table, Jukebox, Comedy Night, Open Mic, Dance Floor, and Big Screen in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Toast” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The toast is the message of goodwill. Cheers can accompany it; designated driver names an assigned non-drinking driver, and bar tab records purchases.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Bar Culture: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from bar culture in cultural or industry texts."
+      "title": "Comparing event activities and charges",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The learner reads a fictional event announcement. A toast is a message of goodwill; cheers can accompany it and also means thank you in some British usage. A designated driver is assigned to avoid alcohol and drive the group, while fitness to drive remains necessary. Bar tab records purchases, and cover charge names an admission fee separate from orders. Live music involves performers; karaoke involves singing with accompaniment. Trivia night is a quiz event. Dart board and pool table name game equipment, and a jukebox offers recorded-music selection. Comedy night presents comedy; open mic allows participants to sign up for short performances. Dance floor and big screen describe venue features. The learner checks the announcement rather than assumes that one photograph proves the schedule, entry cost or anyone's participation. Ask: How does cover charge differ from bar tab?"
     },
     "spacedReview": "1 lesson(s) back: Sports Bar, Dive Bar from bar-culture-1\n3 lesson(s) back: Tom Collins, Paloma from classic-cocktails-2\n7 lesson(s) back: Vodka, Gin from spirits-liqueurs-1"
   },
@@ -384,121 +356,107 @@
       "تمهّل",
       "تناول الطعام مسبقًا",
       "فحص بطاقة الهوية",
-      "عمر قانوني",
+      "السن القانونية للنشاط",
       "إيقاف تقديم المشروبات الكحولية"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Moderation", "Ride Share", "Water Break", "Know Your Limit"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moderation, Ride Share, Water Break, and Know Your Limit and choose the option that fits the situation.",
+          "scenario": "Moderation means limiting an amount. Ride share names booked transport, water break a pause for water, and know your limit a general message rather than a driving-fitness test.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term means limiting the amount?",
             "options": ["Moderation", "Ride Share", "Water Break"],
             "expectedAnswer": "Moderation"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Moderation as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A neutral policy-discussion desk with blank pages; no consumption amount or health guarantee. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pace Yourself", "Eat Before", "ID Check", "Legal Age"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pace Yourself, Eat Before, ID Check, and Legal Age and choose the option that fits the situation.",
+          "scenario": "Pace yourself means proceed at a controlled rate. Eat before names an action before an activity, ID check verifies documents, and legal age depends on local requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression means proceed at a controlled rate?",
             "options": ["Pace Yourself", "Eat Before", "ID Check"],
             "expectedAnswer": "Pace Yourself"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Pace Yourself as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty neutral reception area; the instruction is given in text without a drinking plan. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cut Off"],
-          "scenario": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cut Off and choose the option that fits the situation.",
+          "scenario": "Cut off in this policy means refuse further alcohol service. It does not mean cut an object or determine the person's condition from appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression means refuse further alcohol service in this context?",
             "options": ["Cut Off", "Moderation", "Ride Share"],
             "expectedAnswer": "Cut Off"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cut Off as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty service counter with closed unbranded containers; refusal and personal condition are written facts. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Bar Culture",
-      "text": "At the bar culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Moderation, Ride Share, Water Break, and Know Your Limit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pace Yourself, Eat Before, ID Check, and Legal Age. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cut Off. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Bar Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Interpreting responsible-service language",
+      "text": "The learner interprets a venue-policy example rather than receives a personal drinking plan. Moderation concerns limiting an amount, ride share a booked transport option, and water break a pause for water. Know your limit is a general message, not an objective test of fitness to drive. Pace yourself means proceed at a controlled rate. Eat before names an action before an activity; food and water do not establish that someone is sober. ID check concerns checking documents, and legal age depends on the activity and jurisdiction. Cut off here means refuse further alcohol service under the venue's rules or law. Choosing an alcohol-free option or declining service is valid. The learner asks which policy applies and arranges transport without relying on a photograph, self-estimated limit or menu label as proof of safety.",
+      "imageBrief": "Support for Interpreting responsible-service language. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moderation, Ride Share, Water Break, and Know Your Limit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Moderation means limiting an amount. Ride share names booked transport, water break a pause for water, and know your limit a general message rather than a driving-fitness test.\nWhich term means limiting the amount?",
         "answer": "Moderation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pace Yourself, Eat Before, ID Check, and Legal Age and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Pace yourself means proceed at a controlled rate. Eat before names an action before an activity, ID check verifies documents, and legal age depends on local requirements.\nWhich expression means proceed at a controlled rate?",
         "answer": "Pace Yourself",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bar culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cut Off and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Cut off in this policy means refuse further alcohol service. It does not mean cut an object or determine the person's condition from appearance.\nWhich expression means refuse further alcohol service in this context?",
         "answer": "Cut Off",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The learner interprets a venue-policy example rather than receives a personal drinking plan. Moderation concerns limiting an amount, ride share a booked transport option, and water break a pause for water. Know your limit is a general message, not an objective test of fitness to drive. Pace yourself means proceed at a controlled rate. Eat before names an action before an activity; food and water do not establish that someone is sober. ID check concerns checking documents, and legal age depends on the activity and jurisdiction. Cut off here means refuse further alcohol service under the venue's rules or law. Choosing an alcohol-free option or declining service is valid. The learner asks which policy applies and arranges transport without relying on a photograph, self-estimated limit or menu label as proof of safety.\nDoes food or water establish sobriety?",
+        "answer": "No; the policy example does not treat them as proof of sobriety.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Moderation"
+        "prompt": "Explain the difference between “Moderation” and “Ride Share” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Water Break"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Toast” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bar culture task. Use Moderation, Ride Share, Water Break, Know Your Limit, Pace Yourself, Eat Before, ID Check, Legal Age, and Cut Off in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Moderation” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Moderation means limiting an amount. Ride share names booked transport, water break a pause for water, and know your limit a general message rather than a driving-fitness test.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Bar Culture: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from bar culture in cultural or industry texts."
+      "title": "Interpreting responsible-service language",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The learner interprets a venue-policy example rather than receives a personal drinking plan. Moderation concerns limiting an amount, ride share a booked transport option, and water break a pause for water. Know your limit is a general message, not an objective test of fitness to drive. Pace yourself means proceed at a controlled rate. Eat before names an action before an activity; food and water do not establish that someone is sober. ID check concerns checking documents, and legal age depends on the activity and jurisdiction. Cut off here means refuse further alcohol service under the venue's rules or law. Choosing an alcohol-free option or declining service is valid. The learner asks which policy applies and arranges transport without relying on a photograph, self-estimated limit or menu label as proof of safety. Ask: Does food or water establish sobriety?"
     },
     "spacedReview": "1 lesson(s) back: Toast, Cheers from bar-culture-2\n3 lesson(s) back: On the Rocks, Neat from classic-cocktails-3\n7 lesson(s) back: Chartreuse, Campari from spirits-liqueurs-2"
   }

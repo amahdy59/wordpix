@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "123-153 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Startup", "Founder", "Co-Founder", "CEO"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Startup, Founder, Co-Founder, and CEO and choose the option that fits the situation.",
+          "scenario": "Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Startup", "Founder", "Co-Founder"],
-            "expectedAnswer": "Startup"
+            "question": "Which role describes someone who started the company with Nadia?",
+            "options": ["Co-Founder", "Startup", "Founder"],
+            "expectedAnswer": "Co-Founder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Startup as the central item; include Startup, Founder, and Co-Founder naturally where visually appropriate, but make the real-world use of Startup the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Co-Founder in a startup culture context. Use the written scenario as the source of meaning: Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["CTO", "MVP", "Pitch Deck", "Business Plan"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare CTO, MVP, Pitch Deck, and Business Plan and choose the option that fits the situation.",
+          "scenario": "The CTO leads technology decisions. The team builds an MVP, an early usable product for testing its idea. The Pitch Deck presents the business briefly, while the Business Plan explains goals and planned actions in more detail.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["CTO", "MVP", "Pitch Deck"],
-            "expectedAnswer": "CTO"
+            "question": "Which term names the early usable product for testing the idea?",
+            "options": ["MVP", "CTO", "Pitch Deck"],
+            "expectedAnswer": "MVP"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the CTO as the central item; include CTO, MVP, and Pitch Deck naturally where visually appropriate, but make the real-world use of CTO the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for MVP in a startup culture context. Use the written scenario as the source of meaning: The CTO leads technology decisions. The team builds an MVP, an early usable product for testing its idea. The Pitch Deck presents the business briefly, while the Business Plan explains goals and planned actions in more detail. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mission Statement", "Vision", "Seed Round", "Series A"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mission Statement, Vision, Seed Round, and Series A and choose the option that fits the situation.",
+          "scenario": "Nadia’s Mission Statement explains the company’s purpose. Its Vision describes a hoped-for future. A Seed Round and Series A are names for funding stages, whose terms depend on the actual financing arrangement.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which statement explains the company’s purpose?",
             "options": ["Mission Statement", "Vision", "Seed Round"],
             "expectedAnswer": "Mission Statement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Mission Statement through a realistic adult task; include Mission Statement, Vision, and Seed Round naturally where visually appropriate, but make the real-world use of Mission Statement the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mission Statement in a startup culture context. Use the written scenario as the source of meaning: Nadia’s Mission Statement explains the company’s purpose. Its Vision describes a hoped-for future. A Seed Round and Series A are names for funding stages, whose terms depend on the actual financing arrangement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Angel Investor", "Venture Capital", "Crowdfunding"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Angel Investor, Venture Capital, and Crowdfunding and choose the option that fits the situation.",
+          "scenario": "The team compares an Angel Investor providing private investment, Venture Capital supplied by investment firms or funds, and Crowdfunding raising money from many backers. None of these options guarantees business success.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Angel Investor", "Venture Capital", "Crowdfunding"],
-            "expectedAnswer": "Angel Investor"
+            "question": "Which method raises money from many backers?",
+            "options": ["Crowdfunding", "Angel Investor", "Venture Capital"],
+            "expectedAnswer": "Crowdfunding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Angel Investor as the central item; include Angel Investor, Venture Capital, and Crowdfunding naturally where visually appropriate, but make the real-world use of Angel Investor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Crowdfunding in a startup culture context. Use the written scenario as the source of meaning: The team compares an Angel Investor providing private investment, Venture Capital supplied by investment firms or funds, and Crowdfunding raising money from many backers. None of these options guarantees business success. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Startup Culture",
-      "text": "At the startup culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Startup, Founder, Co-Founder, and CEO. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers CTO, MVP, Pitch Deck, and Business Plan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mission Statement, Vision, Seed Round, and Series A. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Angel Investor, Venture Capital, and Crowdfunding. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Startup Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Startup Culture: A visitor’s questions",
+      "text": "Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance. The CTO leads technology decisions. The team builds an MVP, an early usable product for testing its idea. The Pitch Deck presents the business briefly, while the Business Plan explains goals and planned actions in more detail. Nadia’s Mission Statement explains the company’s purpose. Its Vision describes a hoped-for future. A Seed Round and Series A are names for funding stages, whose terms depend on the actual financing arrangement. The team compares an Angel Investor providing private investment, Venture Capital supplied by investment firms or funds, and Crowdfunding raising money from many backers. None of these options guarantees business success.",
+      "imageBrief": "One uncluttered startup culture setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Startup, Founder, Co-Founder, and CEO and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Startup",
+        "prompt": "Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance.\nWhich role describes someone who started the company with Nadia?",
+        "answer": "Co-Founder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare CTO, MVP, Pitch Deck, and Business Plan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "CTO",
+        "prompt": "The CTO leads technology decisions. The team builds an MVP, an early usable product for testing its idea. The Pitch Deck presents the business briefly, while the Business Plan explains goals and planned actions in more detail.\nWhich term names the early usable product for testing the idea?",
+        "answer": "MVP",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mission Statement, Vision, Seed Round, and Series A and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Nadia’s Mission Statement explains the company’s purpose. Its Vision describes a hoped-for future. A Seed Round and Series A are names for funding stages, whose terms depend on the actual financing arrangement.\nWhich statement explains the company’s purpose?",
         "answer": "Mission Statement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Angel Investor, Venture Capital, and Crowdfunding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Angel Investor",
+        "prompt": "The team compares an Angel Investor providing private investment, Venture Capital supplied by investment firms or funds, and Crowdfunding raising money from many backers. None of these options guarantees business success.\nWhich method raises money from many backers?",
+        "answer": "Crowdfunding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance. The CTO leads technology decisions. The team builds an MVP, an early usable product for testing its idea. The Pitch Deck presents the business briefly, while the Business Plan explains goals and planned actions in more detail. Nadia’s Mission Statement explains the company’s purpose. Its Vision describes a hoped-for future. A Seed Round and Series A are names for funding stages, whose terms depend on the actual financing arrangement. The team compares an Angel Investor providing private investment, Venture Capital supplied by investment firms or funds, and Crowdfunding raising money from many backers. None of these options guarantees business success.\nExplain the difference between Startup and Founder using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Startup"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Networking Event” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the startup culture task. Use Startup, Founder, Co-Founder, CEO, CTO, MVP, Pitch Deck, Business Plan, Mission Statement, Vision, Seed Round, Series A, Angel Investor, Venture Capital, and Crowdfunding in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Startup, Founder, Co-Founder, CEO, CTO, MVP, Pitch Deck, Business Plan, Mission Statement, Vision, Seed Round, Series A, Angel Investor, Venture Capital, Crowdfunding to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Startup Culture: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Startup Culture: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Startup and Founder, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Nadia’s Startup develops a booking product. As Founder she started the company; her Co-Founder started it with her. The CEO oversees the business. A title describes an organizational role, not a person’s appearance. Pause and answer: Which role describes someone who started the company with Nadia?"
     },
     "spacedReview": "1 lesson(s) back: Networking Event, Workshop from coworking-space-3\n3 lesson(s) back: Hot Desk, Dedicated Desk from coworking-space-1\n7 lesson(s) back: Padded Envelope, Return Label from office-supplies-4"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bootstrap", "Valuation", "Equity", "Dilution"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bootstrap, Valuation, Equity, and Dilution and choose the option that fits the situation.",
+          "scenario": "Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Bootstrap", "Valuation", "Equity"],
-            "expectedAnswer": "Bootstrap"
+            "question": "Which term describes the reduction in an existing owner’s proportion?",
+            "options": ["Dilution", "Bootstrap", "Valuation"],
+            "expectedAnswer": "Dilution"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult clearly carrying out the action Bootstrap; include Bootstrap, Valuation, and Equity naturally where visually appropriate, but make the real-world use of Bootstrap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dilution in a startup culture context. Use the written scenario as the source of meaning: Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Term Sheet", "Traction", "User Acquisition", "Retention"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Term Sheet, Traction, User Acquisition, and Retention and choose the option that fits the situation.",
+          "scenario": "A proposed Term Sheet summarizes investment terms. Traction indicates customer use or demand; User Acquisition brings in new users, while Retention concerns keeping users over time.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Term Sheet", "Traction", "User Acquisition"],
-            "expectedAnswer": "Term Sheet"
+            "question": "Which term concerns keeping existing users?",
+            "options": ["Retention", "Term Sheet", "Traction"],
+            "expectedAnswer": "Retention"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Term Sheet as the central item; include Term Sheet, Traction, and User Acquisition naturally where visually appropriate, but make the real-world use of Term Sheet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Retention in a startup culture context. Use the written scenario as the source of meaning: A proposed Term Sheet summarizes investment terms. Traction indicates customer use or demand; User Acquisition brings in new users, while Retention concerns keeping users over time. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Churn Rate", "Growth Hacking", "Product-Market Fit", "Pivot"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Churn Rate, Growth Hacking, Product-Market Fit, and Pivot and choose the option that fits the situation.",
+          "scenario": "The team monitors Churn Rate as users leave the service. It discusses Growth Hacking experiments and Product-Market Fit. After learning that customers need a different service, Nadia chooses to Pivot by changing the strategy.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Churn Rate", "Growth Hacking", "Product-Market Fit"],
-            "expectedAnswer": "Churn Rate"
+            "question": "Which verb describes changing the business strategy after learning from customers?",
+            "options": ["Pivot", "Churn Rate", "Growth Hacking"],
+            "expectedAnswer": "Pivot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Churn Rate through a realistic adult task; include Churn Rate, Growth Hacking, and Product-Market Fit naturally where visually appropriate, but make the real-world use of Churn Rate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pivot in a startup culture context. Use the written scenario as the source of meaning: The team monitors Churn Rate as users leave the service. It discusses Growth Hacking experiments and Product-Market Fit. After learning that customers need a different service, Nadia chooses to Pivot by changing the strategy. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Scale", "Runway", "Burn Rate"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Runway, and Burn Rate and choose the option that fits the situation.",
+          "scenario": "Before trying to Scale the company, Nadia examines cash. Burn Rate describes how quickly it uses available cash, while Runway describes the time it can continue before that cash runs out under the stated assumptions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Scale", "Runway", "Burn Rate"],
-            "expectedAnswer": "Scale"
+            "question": "Which term describes the estimated time before available cash runs out?",
+            "options": ["Runway", "Scale", "Burn Rate"],
+            "expectedAnswer": "Runway"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Scale as the central item; include Scale, Runway, and Burn Rate naturally where visually appropriate, but make the real-world use of Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Runway in a startup culture context. Use the written scenario as the source of meaning: Before trying to Scale the company, Nadia examines cash. Burn Rate describes how quickly it uses available cash, while Runway describes the time it can continue before that cash runs out under the stated assumptions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Startup Culture",
-      "text": "At the startup culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bootstrap, Valuation, Equity, and Dilution. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Term Sheet, Traction, User Acquisition, and Retention. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Churn Rate, Growth Hacking, Product-Market Fit, and Pivot. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Scale, Runway, and Burn Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Startup Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Startup Culture: Understanding the different roles",
+      "text": "Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued. A proposed Term Sheet summarizes investment terms. Traction indicates customer use or demand; User Acquisition brings in new users, while Retention concerns keeping users over time. The team monitors Churn Rate as users leave the service. It discusses Growth Hacking experiments and Product-Market Fit. After learning that customers need a different service, Nadia chooses to Pivot by changing the strategy. Before trying to Scale the company, Nadia examines cash. Burn Rate describes how quickly it uses available cash, while Runway describes the time it can continue before that cash runs out under the stated assumptions.",
+      "imageBrief": "One uncluttered startup culture setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bootstrap, Valuation, Equity, and Dilution and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Bootstrap",
+        "prompt": "Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued.\nWhich term describes the reduction in an existing owner’s proportion?",
+        "answer": "Dilution",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Term Sheet, Traction, User Acquisition, and Retention and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Term Sheet",
+        "prompt": "A proposed Term Sheet summarizes investment terms. Traction indicates customer use or demand; User Acquisition brings in new users, while Retention concerns keeping users over time.\nWhich term concerns keeping existing users?",
+        "answer": "Retention",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Churn Rate, Growth Hacking, Product-Market Fit, and Pivot and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Churn Rate",
+        "prompt": "The team monitors Churn Rate as users leave the service. It discusses Growth Hacking experiments and Product-Market Fit. After learning that customers need a different service, Nadia chooses to Pivot by changing the strategy.\nWhich verb describes changing the business strategy after learning from customers?",
+        "answer": "Pivot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Runway, and Burn Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Scale",
+        "prompt": "Before trying to Scale the company, Nadia examines cash. Burn Rate describes how quickly it uses available cash, while Runway describes the time it can continue before that cash runs out under the stated assumptions.\nWhich term describes the estimated time before available cash runs out?",
+        "answer": "Runway",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued. A proposed Term Sheet summarizes investment terms. Traction indicates customer use or demand; User Acquisition brings in new users, while Retention concerns keeping users over time. The team monitors Churn Rate as users leave the service. It discusses Growth Hacking experiments and Product-Market Fit. After learning that customers need a different service, Nadia chooses to Pivot by changing the strategy. Before trying to Scale the company, Nadia examines cash. Burn Rate describes how quickly it uses available cash, while Runway describes the time it can continue before that cash runs out under the stated assumptions.\nExplain the difference between Bootstrap and Valuation using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Bootstrap"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Startup” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the startup culture task. Use Bootstrap, Valuation, Equity, Dilution, Term Sheet, Traction, User Acquisition, Retention, Churn Rate, Growth Hacking, Product-Market Fit, Pivot, Scale, Runway, and Burn Rate in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Bootstrap, Valuation, Equity, Dilution, Term Sheet, Traction, User Acquisition, Retention, Churn Rate, Growth Hacking, Product-Market Fit, Pivot, Scale, Runway, Burn Rate to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Startup Culture: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Startup Culture: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Bootstrap and Valuation, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Nadia initially chooses to Bootstrap using the founders’ resources. A later Valuation estimates the company’s value. Equity represents ownership, and Dilution reduces an existing owner’s proportion when new shares are issued. Pause and answer: Which term describes the reduction in an existing owner’s proportion?"
     },
     "spacedReview": "1 lesson(s) back: Startup, Founder from startup-culture-1\n3 lesson(s) back: Bike Storage, Shower from coworking-space-2\n7 lesson(s) back: Email, Memo from business-communication-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "107-137 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Disrupt", "Iterate", "Lean", "Agile"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Disrupt, Iterate, Lean, and Agile and choose the option that fits the situation.",
+          "scenario": "The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Disrupt", "Iterate", "Lean"],
-            "expectedAnswer": "Disrupt"
+            "question": "Which verb means improve through repeated testing and revision?",
+            "options": ["Iterate", "Disrupt", "Lean"],
+            "expectedAnswer": "Iterate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult clearly carrying out the action Disrupt; include Disrupt, Iterate, and Lean naturally where visually appropriate, but make the real-world use of Disrupt the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Iterate in a startup culture context. Use the written scenario as the source of meaning: The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sprint", "Standup", "Retrospective", "OKR"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sprint, Standup, Retrospective, and OKR and choose the option that fits the situation.",
+          "scenario": "A Sprint is a focused development period. The team holds a short Standup to discuss progress, then a Retrospective to review its work and choose improvements. Its OKR pairs an objective with measurable key results. Standing is not a requirement for every short team meeting.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sprint", "Standup", "Retrospective"],
-            "expectedAnswer": "Sprint"
+            "question": "Which meeting reviews past work and identifies improvements?",
+            "options": ["Retrospective", "Sprint", "Standup"],
+            "expectedAnswer": "Retrospective"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Sprint as the central item; include Sprint, Standup, and Retrospective naturally where visually appropriate, but make the real-world use of Sprint the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Retrospective in a startup culture context. Use the written scenario as the source of meaning: A Sprint is a focused development period. The team holds a short Standup to discuss progress, then a Retrospective to review its work and choose improvements. Its OKR pairs an objective with measurable key results. Standing is not a requirement for every short team meeting. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["North Star", "Unicorn"],
-          "scenario": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare North Star, and Unicorn and choose the option that fits the situation.",
+          "scenario": "The team uses a North Star measure to guide progress. It discusses the term Unicorn for a private startup valued at one billion US dollars or more. That valuation label does not establish profitability or investment safety.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["North Star", "Unicorn", "Disrupt"],
-            "expectedAnswer": "North Star"
+            "question": "Which term describes the private startup with this billion-dollar valuation?",
+            "options": ["Unicorn", "North Star"],
+            "expectedAnswer": "Unicorn"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the North Star as the central item; include North Star, Unicorn, and Disrupt naturally where visually appropriate, but make the real-world use of North Star the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Unicorn in a startup culture context. Use the written scenario as the source of meaning: The team uses a North Star measure to guide progress. It discusses the term Unicorn for a private startup valued at one billion US dollars or more. That valuation label does not establish profitability or investment safety. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written startup culture situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Startup Culture",
-      "text": "At the startup culture, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Disrupt, Iterate, Lean, and Agile. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sprint, Standup, Retrospective, and OKR. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers North Star and Unicorn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Startup Culture. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Startup Culture: Comparing the equipment",
+      "text": "The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback. A Sprint is a focused development period. The team holds a short Standup to discuss progress, then a Retrospective to review its work and choose improvements. Its OKR pairs an objective with measurable key results. Standing is not a requirement for every short team meeting. The team uses a North Star measure to guide progress. It discusses the term Unicorn for a private startup valued at one billion US dollars or more. That valuation label does not establish profitability or investment safety.",
+      "imageBrief": "One uncluttered startup culture setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Disrupt, Iterate, Lean, and Agile and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Disrupt",
+        "prompt": "The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback.\nWhich verb means improve through repeated testing and revision?",
+        "answer": "Iterate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sprint, Standup, Retrospective, and OKR and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sprint",
+        "prompt": "A Sprint is a focused development period. The team holds a short Standup to discuss progress, then a Retrospective to review its work and choose improvements. Its OKR pairs an objective with measurable key results. Standing is not a requirement for every short team meeting.\nWhich meeting reviews past work and identifies improvements?",
+        "answer": "Retrospective",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the startup culture setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare North Star, and Unicorn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "North Star",
+        "prompt": "The team uses a North Star measure to guide progress. It discusses the term Unicorn for a private startup valued at one billion US dollars or more. That valuation label does not establish profitability or investment safety.\nWhich term describes the private startup with this billion-dollar valuation?",
+        "answer": "Unicorn",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback. A Sprint is a focused development period. The team holds a short Standup to discuss progress, then a Retrospective to review its work and choose improvements. Its OKR pairs an objective with measurable key results. Standing is not a requirement for every short team meeting. The team uses a North Star measure to guide progress. It discusses the term Unicorn for a private startup valued at one billion US dollars or more. That valuation label does not establish profitability or investment safety.\nExplain the difference between Disrupt and Iterate using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Disrupt"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bootstrap” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the startup culture task. Use Disrupt, Iterate, Lean, Agile, Sprint, Standup, Retrospective, OKR, North Star, and Unicorn in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Disrupt, Iterate, Lean, Agile, Sprint, Standup, Retrospective, OKR, North Star, Unicorn to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Startup Culture: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Startup Culture: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Disrupt and Iterate, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The team hopes to Disrupt an established market with a different approach. It will Iterate through testing and revision. Lean emphasizes reducing waste and testing assumptions, while Agile emphasizes adapting through incremental work and feedback. Pause and answer: Which verb means improve through repeated testing and revision?"
     },
     "spacedReview": "1 lesson(s) back: Bootstrap, Valuation from startup-culture-2\n3 lesson(s) back: Networking Event, Workshop from coworking-space-3\n7 lesson(s) back: KPI, ROI from business-communication-2"
   }

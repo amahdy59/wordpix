@@ -28,152 +28,138 @@
     ],
     "targetWordsArabic": [
       "رف زجاجات نبيذ",
-      "عامل ضابط درجة الحرارة",
-      "عامل ضابط رطوبة",
+      "التحكم في درجة الحرارة",
+      "التحكم في الرطوبة",
       "جدار حجر",
       "باب القبو",
       "طاولة تذوّق",
       "إضاءة خافتة",
       "تهوية",
-      "عزل",
+      "عزل حراري",
       "ثلاجة نبيذ",
       "تخزين أفقي",
       "زجاجة",
       "فلين",
-      "كبسولة",
-      "علامة"
+      "غطاء عنق الزجاجة",
+      "ملصق تعريف"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wine Rack", "Temperature Control", "Humidity Control", "Stone Wall"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Rack, Temperature Control, Humidity Control, and Stone Wall and choose the option that fits the situation.",
+          "scenario": "The wine rack supports bottles. Temperature control concerns temperature, humidity control moisture in air, and stone wall the room's material structure.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item supports the bottles?",
             "options": ["Wine Rack", "Temperature Control", "Humidity Control"],
             "expectedAnswer": "Wine Rack"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Wine Rack as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One empty bottle-storage rack with supports clearly visible, no branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cellar Door", "Tasting Table", "Dim Lighting", "Ventilation"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cellar Door, Tasting Table, Dim Lighting, and Ventilation and choose the option that fits the situation.",
+          "scenario": "The cellar door provides room access. The tasting table supports comparisons, dim lighting describes low illumination, and ventilation concerns air exchange.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which feature provides access to the room?",
             "options": ["Cellar Door", "Tasting Table", "Dim Lighting"],
             "expectedAnswer": "Cellar Door"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Cellar Door as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A plain cellar entrance door with no sign, people or security-code detail. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Insulation", "Wine Fridge", "Horizontal Storage", "Bottle"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insulation, Wine Fridge, Horizontal Storage, and Bottle and choose the option that fits the situation.",
+          "scenario": "Insulation limits heat transfer. A wine fridge provides controlled bottle storage, horizontal storage means lying on the side, and bottle names the container.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature limits heat transfer?",
             "options": ["Insulation", "Wine Fridge", "Horizontal Storage"],
             "expectedAnswer": "Insulation"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Insulation as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. An unlettered wall cutaway showing insulation between layers; no thermal-performance certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cork", "Capsule", "Label"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cork, Capsule, and Label and choose the option that fits the situation.",
+          "scenario": "The cork is the bottle closure. The capsule covers the neck, and the label carries identification information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the closure rather than the neck covering or label?",
             "options": ["Cork", "Capsule", "Label"],
             "expectedAnswer": "Cork"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cork as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One bottle cork isolated on a neutral surface, no letters or logos. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Wine Cellar: Practical Information",
-      "text": "At the wine cellar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wine Rack, Temperature Control, Humidity Control, and Stone Wall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cellar Door, Tasting Table, Dim Lighting, and Ventilation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Insulation, Wine Fridge, Horizontal Storage, and Bottle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cork, Capsule, and Label. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Wine Cellar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing a storage room",
+      "text": "The learner studies an empty storage-room plan. A wine rack supports bottles. Temperature control and humidity control regulate different environmental conditions. A stone wall is part of the room; the cellar door provides access. A tasting table serves organized comparison, while dim lighting describes low illumination without guaranteeing safe movement. Ventilation exchanges air, and insulation limits heat transfer. A wine fridge provides controlled bottle storage. Horizontal storage means keeping bottles on their sides where suitable for the closure and product. Bottle names the container; cork names a closure, capsule a neck covering, and label printed identification information. The learner asks what the actual storage records require. The lesson provides words for describing the room rather than a universal temperature, humidity or storage prescription.",
+      "imageBrief": "Support for Describing a storage room. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Rack, Temperature Control, Humidity Control, and Stone Wall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The wine rack supports bottles. Temperature control concerns temperature, humidity control moisture in air, and stone wall the room's material structure.\nWhich item supports the bottles?",
         "answer": "Wine Rack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cellar Door, Tasting Table, Dim Lighting, and Ventilation and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The cellar door provides room access. The tasting table supports comparisons, dim lighting describes low illumination, and ventilation concerns air exchange.\nWhich feature provides access to the room?",
         "answer": "Cellar Door",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insulation, Wine Fridge, Horizontal Storage, and Bottle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Insulation limits heat transfer. A wine fridge provides controlled bottle storage, horizontal storage means lying on the side, and bottle names the container.\nWhich feature limits heat transfer?",
         "answer": "Insulation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cork, Capsule, and Label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The cork is the bottle closure. The capsule covers the neck, and the label carries identification information.\nWhich item is the closure rather than the neck covering or label?",
         "answer": "Cork",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The learner studies an empty storage-room plan. A wine rack supports bottles. Temperature control and humidity control regulate different environmental conditions. A stone wall is part of the room; the cellar door provides access. A tasting table serves organized comparison, while dim lighting describes low illumination without guaranteeing safe movement. Ventilation exchanges air, and insulation limits heat transfer. A wine fridge provides controlled bottle storage. Horizontal storage means keeping bottles on their sides where suitable for the closure and product. Bottle names the container; cork names a closure, capsule a neck covering, and label printed identification information. The learner asks what the actual storage records require. The lesson provides words for describing the room rather than a universal temperature, humidity or storage prescription.\nWhy does the learner consult actual storage records?",
+        "answer": "The vocabulary does not specify universal conditions for every product or closure.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Wine Rack"
+        "prompt": "Explain the difference between “Wine Rack” and “Temperature Control” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Humidity Control"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Main Course” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the wine cellar task. Use Wine Rack, Temperature Control, Humidity Control, Stone Wall, Cellar Door, Tasting Table, Dim Lighting, Ventilation, Insulation, Wine Fridge, Horizontal Storage, Bottle, Cork, Capsule, and Label in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Wine Rack” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The wine rack supports bottles. Temperature control concerns temperature, humidity control moisture in air, and stone wall the room's material structure.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Wine Cellar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the wine cellar in cultural or industry texts."
+      "title": "Describing a storage room",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The learner studies an empty storage-room plan. A wine rack supports bottles. Temperature control and humidity control regulate different environmental conditions. A stone wall is part of the room; the cellar door provides access. A tasting table serves organized comparison, while dim lighting describes low illumination without guaranteeing safe movement. Ventilation exchanges air, and insulation limits heat transfer. A wine fridge provides controlled bottle storage. Horizontal storage means keeping bottles on their sides where suitable for the closure and product. Bottle names the container; cork names a closure, capsule a neck covering, and label printed identification information. The learner asks what the actual storage records require. The lesson provides words for describing the room rather than a universal temperature, humidity or storage prescription. Ask: Why does the learner consult actual storage records?"
     },
     "spacedReview": "1 lesson(s) back: Main Course, Palate Cleanser from wine-tasting-4\n3 lesson(s) back: Earthy, Spicy from wine-tasting-2\n7 lesson(s) back: Crushing, Pressing from winemaking-1"
   },
@@ -205,153 +191,139 @@
       "Wine Thermometer"
     ],
     "targetWordsArabic": [
-      "سنة الإنتاج",
+      "سنة حصاد العنب",
       "رقم خانة التخزين",
       "سجل القبو",
-      "مخزون",
+      "مخزون أو سجل المخزون",
       "مجموعة",
       "دورق تقديم",
       "كأس نبيذ",
-      "فتاحة زجاجات (مفتاح الفلين)",
+      "فتّاحة سدادات الفلين",
       "فتّاحة زجاجات نبيذ",
-      "مهوي",
+      "أداة تهوية النبيذ",
       "سدادة زجاجة نبيذ",
       "فوهة صب للنبيذ",
-      "ناي فلوت شمبانيا",
+      "كأس طويل ضيق",
       "دلو ثلج",
       "مقياس حرارة للنبيذ"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Vintage", "Bin Number", "Cellar Book", "Inventory"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vintage, Bin Number, Cellar Book, and Inventory and choose the option that fits the situation.",
+          "scenario": "Vintage identifies the grape-harvest year in this worksheet. Bin number identifies location, cellar book records storage, and inventory names stock or its record.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term identifies the grape-harvest year?",
             "options": ["Vintage", "Bin Number", "Cellar Book"],
             "expectedAnswer": "Vintage"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Vintage as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A closed neutral bottle beside a blank record book; year comes from the written record. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Collection", "Decanter", "Wine Glass", "Corkscrew"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collection, Decanter, Wine Glass, and Corkscrew and choose the option that fits the situation.",
+          "scenario": "Collection names the grouped bottles. Decanter is a serving vessel, wine glass a glass, and corkscrew a cork-removal tool.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the grouped set of bottles?",
             "options": ["Collection", "Decanter", "Wine Glass"],
             "expectedAnswer": "Collection"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Collection as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A small organized set of unlettered closed bottles on a rack, no ownership or value claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wine Opener", "Aerator", "Wine Stopper", "Wine Pourer"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Opener, Aerator, Wine Stopper, and Wine Pourer and choose the option that fits the situation.",
+          "scenario": "Wine opener is the broader tool label. Aerator exposes liquid to air, wine stopper reseals a bottle, and wine pourer controls flow.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term is the broader label for the opening tool?",
             "options": ["Wine Opener", "Aerator", "Wine Stopper"],
             "expectedAnswer": "Wine Opener"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Wine Opener as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One plain lever-style bottle opener with closure-removal parts clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Champagne Flute", "Ice Bucket", "Wine Thermometer"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Ice Bucket, and Wine Thermometer and choose the option that fits the situation.",
+          "scenario": "The Champagne flute is the slender tall-bowled glass. Ice bucket holds ice or cools a bottle, and wine thermometer measures temperature.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the slender tall-bowled glass?",
             "options": ["Champagne Flute", "Ice Bucket", "Wine Thermometer"],
             "expectedAnswer": "Champagne Flute"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Champagne Flute as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One empty slender stemmed flute glass on a neutral surface, no brand or beverage. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Wine Cellar",
-      "text": "At the wine cellar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vintage, Bin Number, Cellar Book, and Inventory. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Collection, Decanter, Wine Glass, and Corkscrew. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wine Opener, Aerator, Wine Stopper, and Wine Pourer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Champagne Flute, Ice Bucket, and Wine Thermometer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Wine Cellar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading inventory and equipment records",
+      "text": "The cellar worksheet separates records from serving equipment. Vintage usually identifies the grape-harvest year in this context. A bin number identifies a storage location, while the cellar book records items and their locations. Inventory names the stock or its record; collection refers to a grouped set of bottles. A decanter is a serving vessel, and a wine glass is a drinking glass. A corkscrew removes corks; wine opener is the broader tool label. An aerator exposes liquid to air, a wine stopper closes an opened bottle, and a wine pourer controls flow. A Champagne flute is a slender tall-bowled glass. An ice bucket holds ice or cools a bottle, and a wine thermometer measures temperature. The learner interprets the list without assuming that equipment guarantees preservation or product quality.",
+      "imageBrief": "Support for Reading inventory and equipment records. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vintage, Bin Number, Cellar Book, and Inventory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Vintage identifies the grape-harvest year in this worksheet. Bin number identifies location, cellar book records storage, and inventory names stock or its record.\nWhich term identifies the grape-harvest year?",
         "answer": "Vintage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collection, Decanter, Wine Glass, and Corkscrew and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Collection names the grouped bottles. Decanter is a serving vessel, wine glass a glass, and corkscrew a cork-removal tool.\nWhich term names the grouped set of bottles?",
         "answer": "Collection",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wine Opener, Aerator, Wine Stopper, and Wine Pourer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Wine opener is the broader tool label. Aerator exposes liquid to air, wine stopper reseals a bottle, and wine pourer controls flow.\nWhich term is the broader label for the opening tool?",
         "answer": "Wine Opener",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Ice Bucket, and Wine Thermometer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Champagne flute is the slender tall-bowled glass. Ice bucket holds ice or cools a bottle, and wine thermometer measures temperature.\nWhich item is the slender tall-bowled glass?",
         "answer": "Champagne Flute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The cellar worksheet separates records from serving equipment. Vintage usually identifies the grape-harvest year in this context. A bin number identifies a storage location, while the cellar book records items and their locations. Inventory names the stock or its record; collection refers to a grouped set of bottles. A decanter is a serving vessel, and a wine glass is a drinking glass. A corkscrew removes corks; wine opener is the broader tool label. An aerator exposes liquid to air, a wine stopper closes an opened bottle, and a wine pourer controls flow. A Champagne flute is a slender tall-bowled glass. An ice bucket holds ice or cools a bottle, and a wine thermometer measures temperature. The learner interprets the list without assuming that equipment guarantees preservation or product quality.\nWhat is the bin number used for?",
+        "answer": "Identifying the storage location, rather than the grape-harvest year.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Vintage"
+        "prompt": "Explain the difference between “Vintage” and “Bin Number” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Cellar Book"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wine Rack” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the wine cellar task. Use Vintage, Bin Number, Cellar Book, Inventory, Collection, Decanter, Wine Glass, Corkscrew, Wine Opener, Aerator, Wine Stopper, Wine Pourer, Champagne Flute, Ice Bucket, and Wine Thermometer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Vintage” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Vintage identifies the grape-harvest year in this worksheet. Bin number identifies location, cellar book records storage, and inventory names stock or its record.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Wine Cellar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the wine cellar in cultural or industry texts."
+      "title": "Reading inventory and equipment records",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The cellar worksheet separates records from serving equipment. Vintage usually identifies the grape-harvest year in this context. A bin number identifies a storage location, while the cellar book records items and their locations. Inventory names the stock or its record; collection refers to a grouped set of bottles. A decanter is a serving vessel, and a wine glass is a drinking glass. A corkscrew removes corks; wine opener is the broader tool label. An aerator exposes liquid to air, a wine stopper closes an opened bottle, and a wine pourer controls flow. A Champagne flute is a slender tall-bowled glass. An ice bucket holds ice or cools a bottle, and a wine thermometer measures temperature. The learner interprets the list without assuming that equipment guarantees preservation or product quality. Ask: What is the bin number used for?"
     },
     "spacedReview": "1 lesson(s) back: Wine Rack, Temperature Control from wine-cellar-1\n3 lesson(s) back: Dry, Sweet from wine-tasting-3\n7 lesson(s) back: Destemmer, Pump from winemaking-2"
   },
@@ -378,129 +350,115 @@
       "Mosel"
     ],
     "targetWordsArabic": [
-      "بوردو",
-      "بورغوندي",
-      "شمبانيا",
+      "منطقة بوردو",
+      "منطقة بورغوندي",
+      "منطقة شمبانيا",
       "توسكانا",
       "وادي نابا",
-      "ريوخا",
+      "منطقة ريوخا",
       "وادي باروسا",
       "مندوزا",
-      "وادي دورو",
-      "منطقة موزِل"
+      "وادي دورو في البرتغال",
+      "منطقة موزِل الألمانية"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bordeaux", "Burgundy", "Champagne", "Tuscany"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bordeaux, Burgundy, Champagne, and Tuscany and choose the option that fits the situation.",
+          "scenario": "The worksheet places Bordeaux in France, alongside the separately named Burgundy and Champagne regions. Tuscany is the Italian region in this group.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which French region is named first in this group?",
             "options": ["Bordeaux", "Burgundy", "Champagne"],
             "expectedAnswer": "Bordeaux"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Bordeaux as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A neutral vineyard landscape; Bordeaux origin requires independent geographical evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Napa Valley", "Rioja", "Barossa Valley", "Mendoza"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Napa Valley, Rioja, Barossa Valley, and Mendoza and choose the option that fits the situation.",
+          "scenario": "The worksheet places Napa Valley in California. Rioja is in Spain, Barossa Valley in South Australia, and Mendoza in Argentina.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed region is in California?",
             "options": ["Napa Valley", "Rioja", "Barossa Valley"],
             "expectedAnswer": "Napa Valley"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Napa Valley as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A vineyard landscape; California origin cannot be inferred from a generic photograph. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Douro Valley", "Mosel"],
-          "scenario": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Douro Valley, and Mosel and choose the option that fits the situation.",
+          "scenario": "The worksheet places Douro Valley in Portugal in this wine-region context. It separately identifies Mosel as a German wine-growing region.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed valley is in Portugal in this context?",
             "options": ["Douro Valley", "Mosel", "Bordeaux"],
             "expectedAnswer": "Douro Valley"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Douro Valley as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A terraced river-valley vineyard inspired by the Douro; location requires verified records. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Wine Cellar",
-      "text": "At the wine cellar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bordeaux, Burgundy, Champagne, and Tuscany. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Napa Valley, Rioja, Barossa Valley, and Mendoza. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Douro Valley and Mosel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Wine Cellar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Interpreting regional names",
+      "text": "The geography worksheet treats names as regions rather than bottle-color clues. Bordeaux, Burgundy and Champagne are French regions associated with wine production. Champagne also has a protected product designation; not every sparkling wine is Champagne. Tuscany is in Italy. Napa Valley is in California, while Rioja is in Spain. Barossa Valley is in South Australia, and Mendoza is in Argentina. The Douro Valley in Portugal is associated with Port and other wines. Mosel names a major German wine-growing region along the Moselle River. A regional name can have several related uses, so the learner reads the context. A generic vineyard photograph cannot establish origin or protected status. Maps and verified records support geographical claims without requiring a product purchase or consumption.",
+      "imageBrief": "Support for Interpreting regional names. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bordeaux, Burgundy, Champagne, and Tuscany and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The worksheet places Bordeaux in France, alongside the separately named Burgundy and Champagne regions. Tuscany is the Italian region in this group.\nWhich French region is named first in this group?",
         "answer": "Bordeaux",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Napa Valley, Rioja, Barossa Valley, and Mendoza and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The worksheet places Napa Valley in California. Rioja is in Spain, Barossa Valley in South Australia, and Mendoza in Argentina.\nWhich listed region is in California?",
         "answer": "Napa Valley",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the wine cellar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Douro Valley, and Mosel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The worksheet places Douro Valley in Portugal in this wine-region context. It separately identifies Mosel as a German wine-growing region.\nWhich listed valley is in Portugal in this context?",
         "answer": "Douro Valley",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The geography worksheet treats names as regions rather than bottle-color clues. Bordeaux, Burgundy and Champagne are French regions associated with wine production. Champagne also has a protected product designation; not every sparkling wine is Champagne. Tuscany is in Italy. Napa Valley is in California, while Rioja is in Spain. Barossa Valley is in South Australia, and Mendoza is in Argentina. The Douro Valley in Portugal is associated with Port and other wines. Mosel names a major German wine-growing region along the Moselle River. A regional name can have several related uses, so the learner reads the context. A generic vineyard photograph cannot establish origin or protected status. Maps and verified records support geographical claims without requiring a product purchase or consumption.\nCan a generic vineyard photograph establish a region?",
+        "answer": "No; geographical origin needs a map or verified record.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Bordeaux"
+        "prompt": "Explain the difference between “Bordeaux” and “Burgundy” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Champagne"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Vintage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the wine cellar task. Use Bordeaux, Burgundy, Champagne, Tuscany, Napa Valley, Rioja, Barossa Valley, Mendoza, Douro Valley, and Mosel in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Bordeaux” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The worksheet places Bordeaux in France, alongside the separately named Burgundy and Champagne regions. Tuscany is the Italian region in this group.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Wine Cellar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the wine cellar in cultural or industry texts."
+      "title": "Interpreting regional names",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The geography worksheet treats names as regions rather than bottle-color clues. Bordeaux, Burgundy and Champagne are French regions associated with wine production. Champagne also has a protected product designation; not every sparkling wine is Champagne. Tuscany is in Italy. Napa Valley is in California, while Rioja is in Spain. Barossa Valley is in South Australia, and Mendoza is in Argentina. The Douro Valley in Portugal is associated with Port and other wines. Mosel names a major German wine-growing region along the Moselle River. A regional name can have several related uses, so the learner reads the context. A generic vineyard photograph cannot establish origin or protected status. Maps and verified records support geographical claims without requiring a product purchase or consumption. Ask: Can a generic vineyard photograph establish a region?"
     },
     "spacedReview": "1 lesson(s) back: Vintage, Bin Number from wine-cellar-2\n3 lesson(s) back: Main Course, Palate Cleanser from wine-tasting-4\n7 lesson(s) back: Red Wine, White Wine from winemaking-3"
   }

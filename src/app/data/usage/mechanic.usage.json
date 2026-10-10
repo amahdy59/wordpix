@@ -47,129 +47,112 @@
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the vehicle service center.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "110-140 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wrench", "Screwdriver", "Socket Set", "Pliers"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.",
+          "scenario": "During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wrench", "Screwdriver", "Socket Set"],
-            "expectedAnswer": "Wrench"
+            "question": "Which tool turns screws?",
+            "options": ["Screwdriver", "Wrench", "Socket Set"],
+            "expectedAnswer": "Screwdriver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Wrench as the central item; include Wrench, Screwdriver, and Socket Set naturally where visually appropriate, but make the real-world use of Wrench the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Screwdriver in a mechanic context. Use the written scenario as the source of meaning: During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Jack", "Torque Wrench", "Hammer", "Pry Bar"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.",
+          "scenario": "The technician explains that a Jack raises a vehicle and a Torque Wrench measures applied turning force. A Hammer is a striking tool, while a Pry Bar provides leverage. Only trained staff demonstrate their use.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Jack", "Torque Wrench", "Hammer"],
-            "expectedAnswer": "Jack"
+            "question": "Which tool measures the turning force applied to a fastener?",
+            "options": ["Torque Wrench", "Jack", "Hammer"],
+            "expectedAnswer": "Torque Wrench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Jack as the central item; include Jack, Torque Wrench, and Hammer naturally where visually appropriate, but make the real-world use of Jack the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Torque Wrench in a mechanic context. Use the written scenario as the source of meaning: The technician explains that a Jack raises a vehicle and a Torque Wrench measures applied turning force. A Hammer is a striking tool, while a Pry Bar provides leverage. Only trained staff demonstrate their use. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Multimeter", "Drill", "Engine", "Tire"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.",
+          "scenario": "On the workbench, a Multimeter is available for electrical measurements, while a Drill makes holes. The vehicle’s Engine powers the car, and a Tire surrounds a road wheel.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument measures electrical quantities?",
             "options": ["Multimeter", "Drill", "Engine"],
             "expectedAnswer": "Multimeter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Multimeter as the central item; include Multimeter, Drill, and Engine naturally where visually appropriate, but make the real-world use of Multimeter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Multimeter in a mechanic context. Use the written scenario as the source of meaning: On the workbench, a Multimeter is available for electrical measurements, while a Drill makes holes. The vehicle’s Engine powers the car, and a Tire surrounds a road wheel. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Brake Pad", "Battery", "Alternator"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.",
+          "scenario": "The service report mentions a worn Brake Pad, a weak Battery, and an Alternator that needs inspection. The adviser explains that the Alternator supplies electrical power while the engine runs.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Brake Pad", "Battery", "Alternator"],
-            "expectedAnswer": "Brake Pad"
+            "question": "Which component supplies electrical power while the engine runs?",
+            "options": ["Alternator", "Brake Pad", "Battery"],
+            "expectedAnswer": "Alternator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Pad as the central item; include Brake Pad, Battery, and Alternator naturally where visually appropriate, but make the real-world use of Brake Pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Alternator in a mechanic context. Use the written scenario as the source of meaning: The service report mentions a worn Brake Pad, a weak Battery, and an Alternator that needs inspection. The adviser explains that the Alternator supplies electrical power while the engine runs. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Mechanic: Practical Information",
-      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Wrench, Screwdriver, Socket Set, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Jack, Torque Wrench, Hammer, and Pry Bar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Multimeter, Drill, Engine, and Tire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Pad, Battery, and Alternator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Mechanic: A visitor’s questions",
+      "text": "During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts. The technician explains that a Jack raises a vehicle and a Torque Wrench measures applied turning force. A Hammer is a striking tool, while a Pry Bar provides leverage. Only trained staff demonstrate their use. On the workbench, a Multimeter is available for electrical measurements, while a Drill makes holes. The vehicle’s Engine powers the car, and a Tire surrounds a road wheel. The service report mentions a worn Brake Pad, a weak Battery, and an Alternator that needs inspection. The adviser explains that the Alternator supplies electrical power while the engine runs.",
+      "imageBrief": "One uncluttered mechanic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Socket Set, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wrench",
+        "prompt": "During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts.\nWhich tool turns screws?",
+        "answer": "Screwdriver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jack, Torque Wrench, Hammer, and Pry Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Jack",
+        "prompt": "The technician explains that a Jack raises a vehicle and a Torque Wrench measures applied turning force. A Hammer is a striking tool, while a Pry Bar provides leverage. Only trained staff demonstrate their use.\nWhich tool measures the turning force applied to a fastener?",
+        "answer": "Torque Wrench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Multimeter, Drill, Engine, and Tire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "On the workbench, a Multimeter is available for electrical measurements, while a Drill makes holes. The vehicle’s Engine powers the car, and a Tire surrounds a road wheel.\nWhich instrument measures electrical quantities?",
         "answer": "Multimeter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Pad, Battery, and Alternator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Brake Pad",
+        "prompt": "The service report mentions a worn Brake Pad, a weak Battery, and an Alternator that needs inspection. The adviser explains that the Alternator supplies electrical power while the engine runs.\nWhich component supplies electrical power while the engine runs?",
+        "answer": "Alternator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts. The technician explains that a Jack raises a vehicle and a Torque Wrench measures applied turning force. A Hammer is a striking tool, while a Pry Bar provides leverage. Only trained staff demonstrate their use. On the workbench, a Multimeter is available for electrical measurements, while a Drill makes holes. The vehicle’s Engine powers the car, and a Tire surrounds a road wheel. The service report mentions a worn Brake Pad, a weak Battery, and an Alternator that needs inspection. The adviser explains that the Alternator supplies electrical power while the engine runs.\nExplain the difference between Wrench and Screwdriver using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Wrench"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Pliers"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “service window” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Wrench, Screwdriver, Socket Set, Pliers, Jack, Torque Wrench, Hammer, Pry Bar, Multimeter, Drill, Engine, Tire, Brake Pad, Battery, and Alternator in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Wrench, Screwdriver, Socket Set, Pliers, Jack, Torque Wrench, Hammer, Pry Bar, Multimeter, Drill, Engine, Tire, Brake Pad, Battery, Alternator to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Mechanic: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Mechanic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Wrench and Screwdriver, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During a garage orientation, a technician compares a Wrench for nuts, a Screwdriver for screws, a Socket Set for different fastener sizes, and Pliers for gripping parts. Pause and answer: Which tool turns screws?"
     },
     "spacedReview": "1 lesson(s) back: service window, PO box from post-office-4\n3 lesson(s) back: counter, scale from post-office-2\n7 lesson(s) back: Playlist, Jingle from radio-station-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the vehicle service center.",
       "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "readingTarget": "103-133 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Radiator", "Muffler", "Spark Plug", "Air Filter"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.",
+          "scenario": "An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which component releases heat from the engine’s coolant?",
             "options": ["Radiator", "Muffler", "Spark Plug"],
             "expectedAnswer": "Radiator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Radiator as the central item; include Radiator, Muffler, and Spark Plug naturally where visually appropriate, but make the real-world use of Radiator the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Radiator in a mechanic context. Use the written scenario as the source of meaning: An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Oil Filter", "Transmission", "Suspension", "Exhaust"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.",
+          "scenario": "The adviser distinguishes the Oil Filter, Transmission, Suspension, and Exhaust. The Transmission passes power onward through selected gears; the Suspension supports the body and absorbs road movement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Oil Filter", "Transmission", "Suspension"],
-            "expectedAnswer": "Oil Filter"
+            "question": "Which assembly passes power through selected gears?",
+            "options": ["Transmission", "Oil Filter", "Suspension"],
+            "expectedAnswer": "Transmission"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Oil Filter as the central item; include Oil Filter, Transmission, and Suspension naturally where visually appropriate, but make the real-world use of Oil Filter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Transmission in a mechanic context. Use the written scenario as the source of meaning: The adviser distinguishes the Oil Filter, Transmission, Suspension, and Exhaust. The Transmission passes power onward through selected gears; the Suspension supports the body and absorbs road movement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cooling System", "Steering", "Fuel System", "Electrical"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.",
+          "scenario": "The report separates the Cooling System, Steering, Fuel System, and Electrical work. The owner asks about controlling the vehicle’s direction, so the adviser points to the Steering entry.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cooling System", "Steering", "Fuel System"],
-            "expectedAnswer": "Cooling System"
+            "question": "Which system controls the direction of travel?",
+            "options": ["Steering", "Cooling System", "Fuel System"],
+            "expectedAnswer": "Steering"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Cooling System as the central item; include Cooling System, Steering, and Fuel System naturally where visually appropriate, but make the real-world use of Cooling System the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Steering in a mechanic context. Use the written scenario as the source of meaning: The report separates the Cooling System, Steering, Fuel System, and Electrical work. The owner asks about controlling the vehicle’s direction, so the adviser points to the Steering entry. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Brakes", "Drivetrain", "Ac System"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.",
+          "scenario": "The owner asks why the cabin air is no longer cooling. The adviser recommends a professional inspection of the Ac System, while noting that Brakes and Drivetrain are separate systems.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Brakes", "Drivetrain", "Ac System"],
-            "expectedAnswer": "Brakes"
+            "question": "Which system concerns cooling the cabin air?",
+            "options": ["Ac System", "Brakes", "Drivetrain"],
+            "expectedAnswer": "Ac System"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brakes as the central item; include Brakes, Drivetrain, and Ac System naturally where visually appropriate, but make the real-world use of Brakes the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ac System in a mechanic context. Use the written scenario as the source of meaning: The owner asks why the cabin air is no longer cooling. The adviser recommends a professional inspection of the Ac System, while noting that Brakes and Drivetrain are separate systems. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Mechanic",
-      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Radiator, Muffler, Spark Plug, and Air Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Oil Filter, Transmission, Suspension, and Exhaust. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooling System, Steering, Fuel System, and Electrical. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brakes, Drivetrain, and Ac System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Mechanic: Understanding the different roles",
+      "text": "An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt. The adviser distinguishes the Oil Filter, Transmission, Suspension, and Exhaust. The Transmission passes power onward through selected gears; the Suspension supports the body and absorbs road movement. The report separates the Cooling System, Steering, Fuel System, and Electrical work. The owner asks about controlling the vehicle’s direction, so the adviser points to the Steering entry. The owner asks why the cabin air is no longer cooling. The adviser recommends a professional inspection of the Ac System, while noting that Brakes and Drivetrain are separate systems.",
+      "imageBrief": "One uncluttered mechanic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radiator, Muffler, Spark Plug, and Air Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt.\nWhich component releases heat from the engine’s coolant?",
         "answer": "Radiator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Filter, Transmission, Suspension, and Exhaust and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Oil Filter",
+        "prompt": "The adviser distinguishes the Oil Filter, Transmission, Suspension, and Exhaust. The Transmission passes power onward through selected gears; the Suspension supports the body and absorbs road movement.\nWhich assembly passes power through selected gears?",
+        "answer": "Transmission",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooling System, Steering, Fuel System, and Electrical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cooling System",
+        "prompt": "The report separates the Cooling System, Steering, Fuel System, and Electrical work. The owner asks about controlling the vehicle’s direction, so the adviser points to the Steering entry.\nWhich system controls the direction of travel?",
+        "answer": "Steering",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brakes, Drivetrain, and Ac System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Brakes",
+        "prompt": "The owner asks why the cabin air is no longer cooling. The adviser recommends a professional inspection of the Ac System, while noting that Brakes and Drivetrain are separate systems.\nWhich system concerns cooling the cabin air?",
+        "answer": "Ac System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt. The adviser distinguishes the Oil Filter, Transmission, Suspension, and Exhaust. The Transmission passes power onward through selected gears; the Suspension supports the body and absorbs road movement. The report separates the Cooling System, Steering, Fuel System, and Electrical work. The owner asks about controlling the vehicle’s direction, so the adviser points to the Steering entry. The owner asks why the cabin air is no longer cooling. The adviser recommends a professional inspection of the Ac System, while noting that Brakes and Drivetrain are separate systems.\nExplain the difference between Radiator and Muffler using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Radiator"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Air Filter"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wrench” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Radiator, Muffler, Spark Plug, Air Filter, Oil Filter, Transmission, Suspension, Exhaust, Cooling System, Steering, Fuel System, Electrical, Brakes, Drivetrain, and Ac System in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Radiator, Muffler, Spark Plug, Air Filter, Oil Filter, Transmission, Suspension, Exhaust, Cooling System, Steering, Fuel System, Electrical, Brakes, Drivetrain, Ac System to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Mechanic: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Mechanic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Radiator and Muffler, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: An adviser explains the report: the Radiator releases heat, the Muffler reduces exhaust noise, and a Spark Plug produces an ignition spark. The Air Filter removes airborne dirt. Pause and answer: Which component releases heat from the engine’s coolant?"
     },
     "spacedReview": "1 lesson(s) back: Wrench, Screwdriver from mechanic-1\n3 lesson(s) back: courier, customer from post-office-3\n7 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4"
   },
@@ -395,129 +361,112 @@
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the vehicle service center.",
       "textType": "workplace-email",
-      "readingTarget": "90-130 words",
+      "readingTarget": "114-144 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lift", "Diagnostic Scanner", "Air Compressor", "Creeper"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.",
+          "scenario": "The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Lift", "Diagnostic Scanner", "Air Compressor"],
-            "expectedAnswer": "Lift"
+            "question": "Which item is the low wheeled platform?",
+            "options": ["Creeper", "Lift", "Diagnostic Scanner"],
+            "expectedAnswer": "Creeper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Lift as the central item; include Lift, Diagnostic Scanner, and Air Compressor naturally where visually appropriate, but make the real-world use of Lift the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Creeper in a mechanic context. Use the written scenario as the source of meaning: The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Toolbox", "Oil Drain", "Tire Changer", "Balancer"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.",
+          "scenario": "At another workstation, a Toolbox holds hand tools and an Oil Drain collects used oil. A Tire Changer removes and fits tires, while a Balancer checks uneven wheel weight.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Toolbox", "Oil Drain", "Tire Changer"],
-            "expectedAnswer": "Toolbox"
+            "question": "Which machine removes and fits tires?",
+            "options": ["Tire Changer", "Toolbox", "Oil Drain"],
+            "expectedAnswer": "Tire Changer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Toolbox as the central item; include Toolbox, Oil Drain, and Tire Changer naturally where visually appropriate, but make the real-world use of Toolbox the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tire Changer in a mechanic context. Use the written scenario as the source of meaning: At another workstation, a Toolbox holds hand tools and an Oil Drain collects used oil. A Tire Changer removes and fits tires, while a Balancer checks uneven wheel weight. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Welder", "Grinder", "Motor Oil", "Coolant"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.",
+          "scenario": "A Welder works in a separate authorized area with a Grinder nearby. The stock list distinguishes Motor Oil for lubrication from Coolant for carrying heat away from the engine.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Welder", "Grinder", "Motor Oil"],
-            "expectedAnswer": "Welder"
+            "question": "Which listed fluid carries heat away from the engine?",
+            "options": ["Coolant", "Welder", "Grinder"],
+            "expectedAnswer": "Coolant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Welder as the central item; include Welder, Grinder, and Motor Oil naturally where visually appropriate, but make the real-world use of Welder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Coolant in a mechanic context. Use the written scenario as the source of meaning: A Welder works in a separate authorized area with a Grinder nearby. The stock list distinguishes Motor Oil for lubrication from Coolant for carrying heat away from the engine. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Brake Fluid", "Transmission Fluid", "Grease"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.",
+          "scenario": "The technician distinguishes Brake Fluid for hydraulic brakes, Transmission Fluid for transmission systems, and Grease for suitable lubrication tasks. Customers ask professionals about compatibility rather than choosing fluids from appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which fluid is associated with hydraulic brakes?",
             "options": ["Brake Fluid", "Transmission Fluid", "Grease"],
             "expectedAnswer": "Brake Fluid"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Brake Fluid as the central item; include Brake Fluid, Transmission Fluid, and Grease naturally where visually appropriate, but make the real-world use of Brake Fluid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Brake Fluid in a mechanic context. Use the written scenario as the source of meaning: The technician distinguishes Brake Fluid for hydraulic brakes, Transmission Fluid for transmission systems, and Grease for suitable lubrication tasks. Customers ask professionals about compatibility rather than choosing fluids from appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lift, Diagnostic Scanner, Air Compressor, and Creeper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toolbox, Oil Drain, Tire Changer, and Balancer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Welder, Grinder, Motor Oil, and Coolant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brake Fluid, Transmission Fluid, and Grease. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Mechanic: Comparing the equipment",
+      "text": "The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle. At another workstation, a Toolbox holds hand tools and an Oil Drain collects used oil. A Tire Changer removes and fits tires, while a Balancer checks uneven wheel weight. A Welder works in a separate authorized area with a Grinder nearby. The stock list distinguishes Motor Oil for lubrication from Coolant for carrying heat away from the engine. The technician distinguishes Brake Fluid for hydraulic brakes, Transmission Fluid for transmission systems, and Grease for suitable lubrication tasks. Customers ask professionals about compatibility rather than choosing fluids from appearance.",
+      "imageBrief": "One uncluttered mechanic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lift, Diagnostic Scanner, Air Compressor, and Creeper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Lift",
+        "prompt": "The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle.\nWhich item is the low wheeled platform?",
+        "answer": "Creeper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toolbox, Oil Drain, Tire Changer, and Balancer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Toolbox",
+        "prompt": "At another workstation, a Toolbox holds hand tools and an Oil Drain collects used oil. A Tire Changer removes and fits tires, while a Balancer checks uneven wheel weight.\nWhich machine removes and fits tires?",
+        "answer": "Tire Changer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Welder, Grinder, Motor Oil, and Coolant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Welder",
+        "prompt": "A Welder works in a separate authorized area with a Grinder nearby. The stock list distinguishes Motor Oil for lubrication from Coolant for carrying heat away from the engine.\nWhich listed fluid carries heat away from the engine?",
+        "answer": "Coolant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brake Fluid, Transmission Fluid, and Grease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The technician distinguishes Brake Fluid for hydraulic brakes, Transmission Fluid for transmission systems, and Grease for suitable lubrication tasks. Customers ask professionals about compatibility rather than choosing fluids from appearance.\nWhich fluid is associated with hydraulic brakes?",
         "answer": "Brake Fluid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle. At another workstation, a Toolbox holds hand tools and an Oil Drain collects used oil. A Tire Changer removes and fits tires, while a Balancer checks uneven wheel weight. A Welder works in a separate authorized area with a Grinder nearby. The stock list distinguishes Motor Oil for lubrication from Coolant for carrying heat away from the engine. The technician distinguishes Brake Fluid for hydraulic brakes, Transmission Fluid for transmission systems, and Grease for suitable lubrication tasks. Customers ask professionals about compatibility rather than choosing fluids from appearance.\nExplain the difference between Lift and Diagnostic Scanner using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Lift"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Creeper"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Radiator” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Lift, Diagnostic Scanner, Air Compressor, Creeper, Toolbox, Oil Drain, Tire Changer, Balancer, Welder, Grinder, Motor Oil, Coolant, Brake Fluid, Transmission Fluid, and Grease in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Lift, Diagnostic Scanner, Air Compressor, Creeper, Toolbox, Oil Drain, Tire Changer, Balancer, Welder, Grinder, Motor Oil, Coolant, Brake Fluid, Transmission Fluid, Grease to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Mechanic: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Mechanic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Lift and Diagnostic Scanner, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The workshop tour shows a Lift for raising cars, a Diagnostic Scanner for system data, and an Air Compressor for compressed air. A low wheeled Creeper lets a trained worker lie beneath a properly supported vehicle. Pause and answer: Which item is the low wheeled platform?"
     },
     "spacedReview": "1 lesson(s) back: Radiator, Muffler from mechanic-2\n3 lesson(s) back: service window, PO box from post-office-4\n7 lesson(s) back: Turntable, Speaker from radio-station-5"
   },
@@ -569,129 +518,112 @@
       "goal": "Develop the language needed to understand non-technical service information and discuss vehicle maintenance safely in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the vehicle service center.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "101-131 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gasket", "Bolt", "Nut", "Washer"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.",
+          "scenario": "On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gasket", "Bolt", "Nut"],
-            "expectedAnswer": "Gasket"
+            "question": "Which part is the flat ring beneath a fastener head?",
+            "options": ["Washer", "Gasket", "Bolt"],
+            "expectedAnswer": "Washer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Gasket as the central item; include Gasket, Bolt, and Nut naturally where visually appropriate, but make the real-world use of Gasket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Washer in a mechanic context. Use the written scenario as the source of meaning: On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hose Clamp", "Oil Change", "Tire Rotation", "Brake Repair"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.",
+          "scenario": "The written estimate lists a Hose Clamp replacement, an Oil Change, Tire Rotation, and Brake Repair. The adviser explains that Tire Rotation changes the tires’ positions on the vehicle.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hose Clamp", "Oil Change", "Tire Rotation"],
-            "expectedAnswer": "Hose Clamp"
+            "question": "Which service changes the tires’ positions?",
+            "options": ["Tire Rotation", "Hose Clamp", "Oil Change"],
+            "expectedAnswer": "Tire Rotation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Hose Clamp as the central item; include Hose Clamp, Oil Change, and Tire Rotation naturally where visually appropriate, but make the real-world use of Hose Clamp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tire Rotation in a mechanic context. Use the written scenario as the source of meaning: The written estimate lists a Hose Clamp replacement, an Oil Change, Tire Rotation, and Brake Repair. The adviser explains that Tire Rotation changes the tires’ positions on the vehicle. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tune Up", "Alignment", "Inspection", "Bodywork"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.",
+          "scenario": "The owner discusses a Tune Up, Alignment, Inspection, and Bodywork. The adviser explains that Alignment concerns the wheels’ angles, while Bodywork concerns the vehicle’s exterior body.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tune Up", "Alignment", "Inspection"],
-            "expectedAnswer": "Tune Up"
+            "question": "Which service concerns the wheels’ angles?",
+            "options": ["Alignment", "Tune Up", "Inspection"],
+            "expectedAnswer": "Alignment"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Tune Up as the central item; include Tune Up, Alignment, and Inspection naturally where visually appropriate, but make the real-world use of Tune Up the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Alignment in a mechanic context. Use the written scenario as the source of meaning: The owner discusses a Tune Up, Alignment, Inspection, and Bodywork. The adviser explains that Alignment concerns the wheels’ angles, while Bodywork concerns the vehicle’s exterior body. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Paint Job", "Tow Truck", "Estimate"],
-          "scenario": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.",
+          "scenario": "A Tow Truck has brought in the damaged car. Before approving a Paint Job, the customer requests an Estimate showing the likely cost of the work.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Paint Job", "Tow Truck", "Estimate"],
-            "expectedAnswer": "Paint Job"
+            "question": "What document gives the likely cost before approval?",
+            "options": ["Estimate", "Paint Job", "Tow Truck"],
+            "expectedAnswer": "Estimate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a vehicle service center. Show an adult using or examining the Paint Job as the central item; include Paint Job, Tow Truck, and Estimate naturally where visually appropriate, but make the real-world use of Paint Job the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a vehicle service center completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Estimate in a mechanic context. Use the written scenario as the source of meaning: A Tow Truck has brought in the damaged car. Before approving a Paint Job, the customer requests an Estimate showing the likely cost of the work. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written mechanic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Mechanic: Practical Information",
-      "text": "At the mechanic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Gasket, Bolt, Nut, and Washer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hose Clamp, Oil Change, Tire Rotation, and Brake Repair. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tune Up, Alignment, Inspection, and Bodywork. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Paint Job, Tow Truck, and Estimate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Mechanic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Mechanic: A guided walk",
+      "text": "On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load. The written estimate lists a Hose Clamp replacement, an Oil Change, Tire Rotation, and Brake Repair. The adviser explains that Tire Rotation changes the tires’ positions on the vehicle. The owner discusses a Tune Up, Alignment, Inspection, and Bodywork. The adviser explains that Alignment concerns the wheels’ angles, while Bodywork concerns the vehicle’s exterior body. A Tow Truck has brought in the damaged car. Before approving a Paint Job, the customer requests an Estimate showing the likely cost of the work.",
+      "imageBrief": "One uncluttered mechanic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gasket, Bolt, Nut, and Washer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gasket",
+        "prompt": "On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load.\nWhich part is the flat ring beneath a fastener head?",
+        "answer": "Washer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hose Clamp, Oil Change, Tire Rotation, and Brake Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hose Clamp",
+        "prompt": "The written estimate lists a Hose Clamp replacement, an Oil Change, Tire Rotation, and Brake Repair. The adviser explains that Tire Rotation changes the tires’ positions on the vehicle.\nWhich service changes the tires’ positions?",
+        "answer": "Tire Rotation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tune Up, Alignment, Inspection, and Bodywork and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tune Up",
+        "prompt": "The owner discusses a Tune Up, Alignment, Inspection, and Bodywork. The adviser explains that Alignment concerns the wheels’ angles, while Bodywork concerns the vehicle’s exterior body.\nWhich service concerns the wheels’ angles?",
+        "answer": "Alignment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the mechanic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Paint Job, Tow Truck, and Estimate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Paint Job",
+        "prompt": "A Tow Truck has brought in the damaged car. Before approving a Paint Job, the customer requests an Estimate showing the likely cost of the work.\nWhat document gives the likely cost before approval?",
+        "answer": "Estimate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load. The written estimate lists a Hose Clamp replacement, an Oil Change, Tire Rotation, and Brake Repair. The adviser explains that Tire Rotation changes the tires’ positions on the vehicle. The owner discusses a Tune Up, Alignment, Inspection, and Bodywork. The adviser explains that Alignment concerns the wheels’ angles, while Bodywork concerns the vehicle’s exterior body. A Tow Truck has brought in the damaged car. Before approving a Paint Job, the customer requests an Estimate showing the likely cost of the work.\nExplain the difference between Gasket and Bolt using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Gasket"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Washer"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lift” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the mechanic task. Use Gasket, Bolt, Nut, Washer, Hose Clamp, Oil Change, Tire Rotation, Brake Repair, Tune Up, Alignment, Inspection, Bodywork, Paint Job, Tow Truck, and Estimate in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Gasket, Bolt, Nut, Washer, Hose Clamp, Oil Change, Tire Rotation, Brake Repair, Tune Up, Alignment, Inspection, Bodywork, Paint Job, Tow Truck, Estimate to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Mechanic: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Mechanic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Gasket and Bolt, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: On a parts tray, a Gasket seals a joint. A Bolt threads into a Nut. A flat ring called a Washer sits beneath a fastener head to spread the load. Pause and answer: Which part is the flat ring beneath a fastener head?"
     },
     "spacedReview": "1 lesson(s) back: Lift, Diagnostic Scanner from mechanic-3\n3 lesson(s) back: Wrench, Screwdriver from mechanic-1\n7 lesson(s) back: letter, envelope from post-office-1"
   }

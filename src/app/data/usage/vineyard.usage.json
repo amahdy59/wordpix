@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "عنب كابيرنيه سوفينيون",
       "ميرلو",
-      "شاردونيه",
+      "عنب شاردونيه",
       "عنب بينو نوار",
       "عنب سوفينيون بلان",
       "ريسلينغ",
@@ -44,136 +44,122 @@
       "منحدر"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cabernet Sauvignon", "Merlot", "Chardonnay", "Pinot Noir"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cabernet Sauvignon, Merlot, Chardonnay, and Pinot Noir and choose the option that fits the situation.",
+          "scenario": "The first record names Cabernet Sauvignon. It lists Merlot, Chardonnay and Pinot Noir separately as other grape varieties.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which variety is named first in the record?",
             "options": ["Cabernet Sauvignon", "Merlot", "Chardonnay"],
             "expectedAnswer": "Cabernet Sauvignon"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cabernet Sauvignon as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One dark grape cluster; hold exact-variety approval without diagnostic visible evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sauvignon Blanc", "Riesling", "Syrah", "Malbec"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sauvignon Blanc, Riesling, Syrah, and Malbec and choose the option that fits the situation.",
+          "scenario": "The second block begins with Sauvignon Blanc, followed by Riesling, Syrah and Malbec. The written planting record supplies the identities.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which variety begins the second block?",
             "options": ["Sauvignon Blanc", "Riesling", "Syrah"],
             "expectedAnswer": "Sauvignon Blanc"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Sauvignon Blanc as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One pale grape cluster; exact cultivar identity is a written fact, not inferred from color. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tempranillo", "Zinfandel", "Vine", "Trellis"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tempranillo, Zinfandel, Vine, and Trellis and choose the option that fits the situation.",
+          "scenario": "The third block names Tempranillo before Zinfandel. The planted vine grows along a supporting trellis.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which variety is named first in this third block?",
             "options": ["Tempranillo", "Zinfandel", "Vine"],
             "expectedAnswer": "Tempranillo"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Tempranillo as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One dark grape cluster on a vine; no invented varietal or geographical proof. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Row", "Terroir", "Slope"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Terroir, and Slope and choose the option that fits the situation.",
+          "scenario": "The row is a line of planted vines. Terroir names the growing-place context; the slope is inclined ground.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the line of plantings?",
             "options": ["Row", "Terroir", "Slope"],
             "expectedAnswer": "Row"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Row as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A clear single straight vineyard row with trellis supports, no people or labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Vineyard: Practical Information",
-      "text": "At the vineyard, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cabernet Sauvignon, Merlot, Chardonnay, and Pinot Noir. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sauvignon Blanc, Riesling, Syrah, and Malbec. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tempranillo, Zinfandel, Vine, and Trellis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Row, Terroir, and Slope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Vineyard. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a vineyard planting record",
+      "text": "An agricultural student compares the vineyard's written planting records. The list names Cabernet Sauvignon, Merlot, Chardonnay and Pinot Noir as grape varieties, not guaranteed flavors. A second block contains Sauvignon Blanc, Riesling, Syrah and Malbec. Another block contains Tempranillo and Zinfandel. The vine is the grape plant; a trellis supports it, and a row is a line of plantings. Terroir concerns the growing place's combined environmental and human context. A slope is inclined ground, not necessarily a mountain. The student asks which record supports a variety's identity. Similar grape clusters can be difficult to distinguish in a photograph, and location alone does not establish the variety. The lesson practices interpreting agricultural descriptions without prescribing cultivation or consumption.",
+      "imageBrief": "Support for Reading a vineyard planting record. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cabernet Sauvignon, Merlot, Chardonnay, and Pinot Noir and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The first record names Cabernet Sauvignon. It lists Merlot, Chardonnay and Pinot Noir separately as other grape varieties.\nWhich variety is named first in the record?",
         "answer": "Cabernet Sauvignon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sauvignon Blanc, Riesling, Syrah, and Malbec and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The second block begins with Sauvignon Blanc, followed by Riesling, Syrah and Malbec. The written planting record supplies the identities.\nWhich variety begins the second block?",
         "answer": "Sauvignon Blanc",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tempranillo, Zinfandel, Vine, and Trellis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The third block names Tempranillo before Zinfandel. The planted vine grows along a supporting trellis.\nWhich variety is named first in this third block?",
         "answer": "Tempranillo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Row, Terroir, and Slope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The row is a line of planted vines. Terroir names the growing-place context; the slope is inclined ground.\nWhich term names the line of plantings?",
         "answer": "Row",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "An agricultural student compares the vineyard's written planting records. The list names Cabernet Sauvignon, Merlot, Chardonnay and Pinot Noir as grape varieties, not guaranteed flavors. A second block contains Sauvignon Blanc, Riesling, Syrah and Malbec. Another block contains Tempranillo and Zinfandel. The vine is the grape plant; a trellis supports it, and a row is a line of plantings. Terroir concerns the growing place's combined environmental and human context. A slope is inclined ground, not necessarily a mountain. The student asks which record supports a variety's identity. Similar grape clusters can be difficult to distinguish in a photograph, and location alone does not establish the variety. The lesson practices interpreting agricultural descriptions without prescribing cultivation or consumption.\nWhy does the student use planting records?",
+        "answer": "Similar grape clusters cannot reliably establish the variety by appearance alone.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Cabernet Sauvignon"
+        "prompt": "Explain the difference between “Cabernet Sauvignon” and “Merlot” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Chardonnay"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Fashion Editor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the vineyard task. Use Cabernet Sauvignon, Merlot, Chardonnay, Pinot Noir, Sauvignon Blanc, Riesling, Syrah, Malbec, Tempranillo, Zinfandel, Vine, Trellis, Row, Terroir, and Slope in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Cabernet Sauvignon” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The first record names Cabernet Sauvignon. It lists Merlot, Chardonnay and Pinot Noir separately as other grape varieties.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Vineyard: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the vineyard in cultural or industry texts."
+      "title": "Reading a vineyard planting record",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "An agricultural student compares the vineyard's written planting records. The list names Cabernet Sauvignon, Merlot, Chardonnay and Pinot Noir as grape varieties, not guaranteed flavors. A second block contains Sauvignon Blanc, Riesling, Syrah and Malbec. Another block contains Tempranillo and Zinfandel. The vine is the grape plant; a trellis supports it, and a row is a line of plantings. Terroir concerns the growing place's combined environmental and human context. A slope is inclined ground, not necessarily a mountain. The student asks which record supports a variety's identity. Similar grape clusters can be difficult to distinguish in a photograph, and location alone does not establish the variety. The lesson practices interpreting agricultural descriptions without prescribing cultivation or consumption. Ask: Why does the student use planting records?"
     },
     "spacedReview": "1 lesson(s) back: Fashion Editor, Photographer from runway-show-3\n3 lesson(s) back: Catwalk, Backstage from runway-show-1\n7 lesson(s) back: Bleach, Tumble Dry from fabrics-textiles-4"
   },
@@ -206,7 +192,7 @@
     ],
     "targetWordsArabic": [
       "ريّ",
-      "مظلّة",
+      "المجموع الخضري للكرمة",
       "أصل نباتي للتطعيم",
       "تطعيم نباتي",
       "تقليم",
@@ -214,7 +200,7 @@
       "إزهار",
       "بداية نضج العنب وتغيّر لونه",
       "حصاد",
-      "يسحق",
+      "مرحلة هرس العنب",
       "موسم النمو",
       "سكون نباتي",
       "حماية من الصقيع",
@@ -222,136 +208,122 @@
       "قطف يدوي"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Irrigation", "Canopy", "Root Stock", "Grafting"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Canopy, Root Stock, and Grafting and choose the option that fits the situation.",
+          "scenario": "Irrigation supplies water to the planting. The canopy is the vine's leaves and shoots, root stock is the rooted graft base, and grafting joins compatible plant parts.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the water supply activity?",
             "options": ["Irrigation", "Canopy", "Root Stock"],
             "expectedAnswer": "Irrigation"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Irrigation as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A vineyard irrigation line beside vines, no specific scheduling or water-quality claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pruning", "Bud Break", "Flowering", "Veraison"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pruning, Bud Break, Flowering, and Veraison and choose the option that fits the situation.",
+          "scenario": "Pruning removes selected vine growth. Bud break starts new shoots, flowering produces flowers, and veraison marks the onset of ripening.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity removes selected growth?",
             "options": ["Pruning", "Bud Break", "Flowering"],
             "expectedAnswer": "Pruning"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Pruning through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A pruned dormant vine with a few cut stems visible, no tools in use or instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Harvest", "Crush", "Growing Season", "Dormancy"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harvest, Crush, Growing Season, and Dormancy and choose the option that fits the situation.",
+          "scenario": "Harvest gathers the crop. Crush is the berry-breaking processing stage; growing season concerns active growth, and dormancy concerns greatly reduced activity.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names gathering the crop?",
             "options": ["Harvest", "Crush", "Growing Season"],
             "expectedAnswer": "Harvest"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Harvest as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. Grape-filled harvest crates beside an otherwise empty vine row, no consumption scene. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Frost Protection", "Netting", "Hand Picking"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost Protection, Netting, and Hand Picking and choose the option that fits the situation.",
+          "scenario": "Frost protection names measures intended to reduce freezing damage. Netting protects crops from some hazards, and hand picking names manual collection.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term concerns reducing freezing damage?",
             "options": ["Frost Protection", "Netting", "Hand Picking"],
             "expectedAnswer": "Frost Protection"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Frost Protection as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A vineyard frost-protection installation; effectiveness and operating conditions come from written evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Vineyard",
-      "text": "At the vineyard, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Irrigation, Canopy, Root Stock, and Grafting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pruning, Bud Break, Flowering, and Veraison. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Harvest, Crush, Growing Season, and Dormancy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Frost Protection, Netting, and Hand Picking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Vineyard. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing the vine's annual cycle",
+      "text": "The student follows a narrated annual-cycle display. Irrigation supplies water, while the canopy is the vine's leaves and shoots. Root stock forms the rooted base used in grafting, the joining of compatible plant parts. Pruning removes selected growth. Bud break starts new growth from dormant buds; flowering produces flowers, and veraison marks the onset of grape ripening. Harvest gathers the crop. Crush refers here to the stage of breaking grape berries for processing. The growing season is the active growth period, whereas dormancy involves greatly reduced activity. Frost protection names measures intended to reduce freezing damage. Netting can help protect the crop, and hand picking means collecting it manually. The student discusses the terms without treating the display as advice for a particular site or a universal schedule.",
+      "imageBrief": "Support for Discussing the vine's annual cycle. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, Canopy, Root Stock, and Grafting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Irrigation supplies water to the planting. The canopy is the vine's leaves and shoots, root stock is the rooted graft base, and grafting joins compatible plant parts.\nWhich term names the water supply activity?",
         "answer": "Irrigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pruning, Bud Break, Flowering, and Veraison and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Pruning removes selected vine growth. Bud break starts new shoots, flowering produces flowers, and veraison marks the onset of ripening.\nWhich activity removes selected growth?",
         "answer": "Pruning",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harvest, Crush, Growing Season, and Dormancy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Harvest gathers the crop. Crush is the berry-breaking processing stage; growing season concerns active growth, and dormancy concerns greatly reduced activity.\nWhich term names gathering the crop?",
         "answer": "Harvest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frost Protection, Netting, and Hand Picking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Frost protection names measures intended to reduce freezing damage. Netting protects crops from some hazards, and hand picking names manual collection.\nWhich term concerns reducing freezing damage?",
         "answer": "Frost Protection",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The student follows a narrated annual-cycle display. Irrigation supplies water, while the canopy is the vine's leaves and shoots. Root stock forms the rooted base used in grafting, the joining of compatible plant parts. Pruning removes selected growth. Bud break starts new growth from dormant buds; flowering produces flowers, and veraison marks the onset of grape ripening. Harvest gathers the crop. Crush refers here to the stage of breaking grape berries for processing. The growing season is the active growth period, whereas dormancy involves greatly reduced activity. Frost protection names measures intended to reduce freezing damage. Netting can help protect the crop, and hand picking means collecting it manually. The student discusses the terms without treating the display as advice for a particular site or a universal schedule.\nHow do growing season and dormancy differ?",
+        "answer": "One concerns active growth; the other concerns greatly reduced growth activity.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Irrigation"
+        "prompt": "Explain the difference between “Irrigation” and “Canopy” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Root Stock"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cabernet Sauvignon” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the vineyard task. Use Irrigation, Canopy, Root Stock, Grafting, Pruning, Bud Break, Flowering, Veraison, Harvest, Crush, Growing Season, Dormancy, Frost Protection, Netting, and Hand Picking in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Irrigation” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Irrigation supplies water to the planting. The canopy is the vine's leaves and shoots, root stock is the rooted graft base, and grafting joins compatible plant parts.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Vineyard: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the vineyard in cultural or industry texts."
+      "title": "Discussing the vine's annual cycle",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The student follows a narrated annual-cycle display. Irrigation supplies water, while the canopy is the vine's leaves and shoots. Root stock forms the rooted base used in grafting, the joining of compatible plant parts. Pruning removes selected growth. Bud break starts new growth from dormant buds; flowering produces flowers, and veraison marks the onset of grape ripening. Harvest gathers the crop. Crush refers here to the stage of breaking grape berries for processing. The growing season is the active growth period, whereas dormancy involves greatly reduced activity. Frost protection names measures intended to reduce freezing damage. Netting can help protect the crop, and hand picking means collecting it manually. The student discusses the terms without treating the display as advice for a particular site or a universal schedule. Ask: How do growing season and dormancy differ?"
     },
     "spacedReview": "1 lesson(s) back: Cabernet Sauvignon, Merlot from vineyard-1\n3 lesson(s) back: Dressing, Lineup from runway-show-2\n7 lesson(s) back: Seam, Dart from fashion-design-1"
   },
@@ -378,10 +350,10 @@
       "Négociant"
     ],
     "targetWordsArabic": [
-      "منتج نبيذ",
+      "منتج أو تاجر نبيذ",
       "أخصائي زراعة كروم",
       "مسؤول القبو",
-      "ساقي نبيذ متخصص",
+      "متخصص في اختيار النبيذ وتقديمه",
       "مدير الكرم",
       "صانع نبيذ",
       "فريق الحصاد",
@@ -390,117 +362,103 @@
       "تاجر نبيذ (نيغوسيان)"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Vintner", "Viticulturist", "Cellar Master", "Sommelier"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vintner, Viticulturist, Cellar Master, and Sommelier and choose the option that fits the situation.",
+          "scenario": "The chart uses vintner for its wine producer or seller. Viticulturist concerns grape growing, cellar master concerns cellar operations, and sommelier concerns service and selection.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term does this chart use for the producer or seller?",
             "options": ["Vintner", "Viticulturist", "Cellar Master"],
             "expectedAnswer": "Vintner"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Vintner as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. An empty production-office desk with closed records; role identity is written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vineyard Manager", "Winemaker", "Harvest Crew", "Enologist"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vineyard Manager, Winemaker, Harvest Crew, and Enologist and choose the option that fits the situation.",
+          "scenario": "The vineyard manager coordinates cultivation and maintenance. The winemaker produces wine, the harvest crew gathers grapes, and the enologist studies wine production.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who coordinates the vineyard's cultivation in the chart?",
             "options": ["Vineyard Manager", "Winemaker", "Harvest Crew"],
             "expectedAnswer": "Vineyard Manager"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff working with or speaking to the Vineyard Manager, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. An empty vineyard planning station beside a vine row, no occupational identity claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cooper", "Négociant"],
-          "scenario": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooper, and Négociant and choose the option that fits the situation.",
+          "scenario": "The cooper makes or repairs wooden barrels. The négociant instead purchases products from other growers or producers for sale under the business's name.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who makes or repairs the wooden barrels?",
             "options": ["Cooper", "Négociant", "Vintner"],
             "expectedAnswer": "Cooper"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cooper as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One modest male craftsperson assembling wooden barrel staves, no labels or bystanders. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Vineyard",
-      "text": "At the vineyard, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vintner, Viticulturist, Cellar Master, and Sommelier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vineyard Manager, Winemaker, Harvest Crew, and Enologist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cooper and Négociant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Vineyard. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Identifying assigned industry roles",
+      "text": "A fictional business chart distinguishes several wine-industry roles. Vintner can mean a producer or seller of wine. The viticulturist specializes in grape growing, while the cellar master supervises cellar operations. A sommelier specializes in wine service and selection. The vineyard manager coordinates cultivation and maintenance; the winemaker produces wine. The harvest crew gathers grapes. An enologist studies wine and its production, and a cooper makes or repairs wooden barrels. A négociant buys grapes, juice or wine from others and markets wine under the business's name. Responsibilities can overlap, so the student checks the chart's actual assignments. Neither clothing nor a barrel in the background establishes a person's occupation. The vocabulary supports professional reading without requiring a learner to drink or work in the industry.",
+      "imageBrief": "Support for Identifying assigned industry roles. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vintner, Viticulturist, Cellar Master, and Sommelier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The chart uses vintner for its wine producer or seller. Viticulturist concerns grape growing, cellar master concerns cellar operations, and sommelier concerns service and selection.\nWhich term does this chart use for the producer or seller?",
         "answer": "Vintner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vineyard Manager, Winemaker, Harvest Crew, and Enologist and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "The vineyard manager coordinates cultivation and maintenance. The winemaker produces wine, the harvest crew gathers grapes, and the enologist studies wine production.\nWho coordinates the vineyard's cultivation in the chart?",
         "answer": "Vineyard Manager",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the vineyard setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooper, and Négociant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The cooper makes or repairs wooden barrels. The négociant instead purchases products from other growers or producers for sale under the business's name.\nWho makes or repairs the wooden barrels?",
         "answer": "Cooper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A fictional business chart distinguishes several wine-industry roles. Vintner can mean a producer or seller of wine. The viticulturist specializes in grape growing, while the cellar master supervises cellar operations. A sommelier specializes in wine service and selection. The vineyard manager coordinates cultivation and maintenance; the winemaker produces wine. The harvest crew gathers grapes. An enologist studies wine and its production, and a cooper makes or repairs wooden barrels. A négociant buys grapes, juice or wine from others and markets wine under the business's name. Responsibilities can overlap, so the student checks the chart's actual assignments. Neither clothing nor a barrel in the background establishes a person's occupation. The vocabulary supports professional reading without requiring a learner to drink or work in the industry.\nWhy does the student check actual assignments?",
+        "answer": "Some role names overlap and appearance cannot establish an occupation.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Vintner"
+        "prompt": "Explain the difference between “Vintner” and “Viticulturist” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Cellar Master"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Irrigation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the vineyard task. Use Vintner, Viticulturist, Cellar Master, Sommelier, Vineyard Manager, Winemaker, Harvest Crew, Enologist, Cooper, and Négociant in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Vintner” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The chart uses vintner for its wine producer or seller. Viticulturist concerns grape growing, cellar master concerns cellar operations, and sommelier concerns service and selection.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Vineyard: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the vineyard in cultural or industry texts."
+      "title": "Identifying assigned industry roles",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A fictional business chart distinguishes several wine-industry roles. Vintner can mean a producer or seller of wine. The viticulturist specializes in grape growing, while the cellar master supervises cellar operations. A sommelier specializes in wine service and selection. The vineyard manager coordinates cultivation and maintenance; the winemaker produces wine. The harvest crew gathers grapes. An enologist studies wine and its production, and a cooper makes or repairs wooden barrels. A négociant buys grapes, juice or wine from others and markets wine under the business's name. Responsibilities can overlap, so the student checks the chart's actual assignments. Neither clothing nor a barrel in the background establishes a person's occupation. The vocabulary supports professional reading without requiring a learner to drink or work in the industry. Ask: Why does the student check actual assignments?"
     },
     "spacedReview": "1 lesson(s) back: Irrigation, Canopy from vineyard-2\n3 lesson(s) back: Fashion Editor, Photographer from runway-show-3\n7 lesson(s) back: Buckle, Lace-Up from fashion-design-2"
   }

@@ -28,14 +28,14 @@
     ],
     "targetWordsArabic": [
       "قاعة محاضرات",
-      "-",
+      "مكتبة",
       "مختبر",
       "سكن طلابي",
-      "مركز طالب",
+      "مركز الطلاب",
       "صالة رياضية",
       "كافتيريا",
       "إدارة الجامعة",
-      "قاعة محاضرات",
+      "قاعة عروض ومحاضرات",
       "مصلى مسيحي",
       "ساحة جامعية محاطة بمبانٍ",
       "فناء",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lecture Hall", "Library", "Laboratory", "Dormitory"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.",
+          "scenario": "During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Lecture Hall", "Library", "Laboratory"],
-            "expectedAnswer": "Lecture Hall"
+            "question": "Which building provides Farah’s accommodation?",
+            "options": ["Dormitory", "Lecture Hall", "Library"],
+            "expectedAnswer": "Dormitory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Lecture Hall as the main location; include Lecture Hall, Library, and Laboratory naturally where visually appropriate, but make the real-world use of Lecture Hall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dormitory in a university campus context. Use the written scenario as the source of meaning: During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Student Center", "Gymnasium", "Cafeteria", "Administration"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.",
+          "scenario": "The campus map lists the Student Center for student activities, Gymnasium for sport, and Cafeteria for meals. Farah contacts Administration, the staff managing university operations, about her enrollment record.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Student Center", "Gymnasium", "Cafeteria"],
-            "expectedAnswer": "Student Center"
+            "question": "Which group manages university operations?",
+            "options": ["Administration", "Student Center", "Gymnasium"],
+            "expectedAnswer": "Administration"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Student Center as the main location; include Student Center, Gymnasium, and Cafeteria naturally where visually appropriate, but make the real-world use of Student Center the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Administration in a university campus context. Use the written scenario as the source of meaning: The campus map lists the Student Center for student activities, Gymnasium for sport, and Cafeteria for meals. Farah contacts Administration, the staff managing university operations, about her enrollment record. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Auditorium", "Chapel", "Quad", "Courtyard"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.",
+          "scenario": "The guide points out an Auditorium for audiences and a Chapel used for Christian worship. The Quad is an open campus courtyard surrounded by buildings; another smaller Courtyard is behind the library.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Auditorium", "Chapel", "Quad"],
-            "expectedAnswer": "Auditorium"
+            "question": "Which named open campus courtyard is surrounded by buildings?",
+            "options": ["Quad", "Auditorium", "Chapel"],
+            "expectedAnswer": "Quad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Auditorium as the central item; include Auditorium, Chapel, and Quad naturally where visually appropriate, but make the real-world use of Auditorium the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Quad in a university campus context. Use the written scenario as the source of meaning: The guide points out an Auditorium for audiences and a Chapel used for Christian worship. The Quad is an open campus courtyard surrounded by buildings; another smaller Courtyard is behind the library. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fountain", "Statue", "Clock Tower"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.",
+          "scenario": "At the center of campus, a Fountain sends water upward and a Statue depicts a former researcher. A Clock Tower displays a clock high on its exterior. A statue can be carved, cast, or made by other methods.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Fountain", "Statue", "Clock Tower"],
-            "expectedAnswer": "Fountain"
+            "question": "Which structure displays a clock high above the ground?",
+            "options": ["Clock Tower", "Fountain", "Statue"],
+            "expectedAnswer": "Clock Tower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Fountain as the central item; include Fountain, Statue, and Clock Tower naturally where visually appropriate, but make the real-world use of Fountain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Clock Tower in a university campus context. Use the written scenario as the source of meaning: At the center of campus, a Fountain sends water upward and a Statue depicts a former researcher. A Clock Tower displays a clock high on its exterior. A statue can be carved, cast, or made by other methods. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The University Campus",
-      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Lecture Hall, Library, Laboratory, and Dormitory. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Student Center, Gymnasium, Cafeteria, and Administration. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Auditorium, Chapel, Quad, and Courtyard. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Fountain, Statue, and Clock Tower. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The University Campus: A visitor’s questions",
+      "text": "During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation. The campus map lists the Student Center for student activities, Gymnasium for sport, and Cafeteria for meals. Farah contacts Administration, the staff managing university operations, about her enrollment record. The guide points out an Auditorium for audiences and a Chapel used for Christian worship. The Quad is an open campus courtyard surrounded by buildings; another smaller Courtyard is behind the library. At the center of campus, a Fountain sends water upward and a Statue depicts a former researcher. A Clock Tower displays a clock high on its exterior. A statue can be carved, cast, or made by other methods.",
+      "imageBrief": "One uncluttered university campus setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lecture Hall, Library, Laboratory, and Dormitory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Lecture Hall",
+        "prompt": "During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation.\nWhich building provides Farah’s accommodation?",
+        "answer": "Dormitory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Center, Gymnasium, Cafeteria, and Administration and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Student Center",
+        "prompt": "The campus map lists the Student Center for student activities, Gymnasium for sport, and Cafeteria for meals. Farah contacts Administration, the staff managing university operations, about her enrollment record.\nWhich group manages university operations?",
+        "answer": "Administration",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditorium, Chapel, Quad, and Courtyard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Auditorium",
+        "prompt": "The guide points out an Auditorium for audiences and a Chapel used for Christian worship. The Quad is an open campus courtyard surrounded by buildings; another smaller Courtyard is behind the library.\nWhich named open campus courtyard is surrounded by buildings?",
+        "answer": "Quad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fountain, Statue, and Clock Tower and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Fountain",
+        "prompt": "At the center of campus, a Fountain sends water upward and a Statue depicts a former researcher. A Clock Tower displays a clock high on its exterior. A statue can be carved, cast, or made by other methods.\nWhich structure displays a clock high above the ground?",
+        "answer": "Clock Tower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation. The campus map lists the Student Center for student activities, Gymnasium for sport, and Cafeteria for meals. Farah contacts Administration, the staff managing university operations, about her enrollment record. The guide points out an Auditorium for audiences and a Chapel used for Christian worship. The Quad is an open campus courtyard surrounded by buildings; another smaller Courtyard is behind the library. At the center of campus, a Fountain sends water upward and a Statue depicts a former researcher. A Clock Tower displays a clock high on its exterior. A statue can be carved, cast, or made by other methods.\nExplain the difference between Lecture Hall and Library using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Lecture Hall"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Trader” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the university campus task. Use Lecture Hall, Library, Laboratory, Dormitory, Student Center, Gymnasium, Cafeteria, Administration, Auditorium, Chapel, Quad, Courtyard, Fountain, Statue, and Clock Tower in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Lecture Hall, Library, Laboratory, Dormitory, Student Center, Gymnasium, Cafeteria, Administration, Auditorium, Chapel, Quad, Courtyard, Fountain, Statue, Clock Tower to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The University Campus: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The University Campus: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Lecture Hall and Library, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During orientation, Farah visits a Lecture Hall for large classes, the Library for study resources, and a Laboratory for scientific practical work. Her Dormitory provides student accommodation. Pause and answer: Which building provides Farah’s accommodation?"
     },
     "spacedReview": "1 lesson(s) back: Trader, Broker from stock-exchange-3\n3 lesson(s) back: Bull Market, Bear Market from stock-exchange-1\n7 lesson(s) back: 401k, IRA from financial-services-3"
   },
@@ -202,8 +185,8 @@
     ],
     "targetWordsArabic": [
       "بوابة",
-      "ممر",
-      "-",
+      "ممر للمشاة",
+      "حديقة",
       "موقف سيارات",
       "ملعب رياضي",
       "مختبر حاسوب",
@@ -211,7 +194,7 @@
       "غرفة موسيقى",
       "مسرح",
       "مسبح سباحة",
-      "مسار",
+      "مضمار جري",
       "ملعب تنس",
       "مركز صحي",
       "مركز إرشاد",
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "118-148 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gate", "Pathway", "Garden", "Parking Lot"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.",
+          "scenario": "Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gate", "Pathway", "Garden"],
-            "expectedAnswer": "Gate"
+            "question": "Which route does Farah follow on foot?",
+            "options": ["Pathway", "Gate", "Garden"],
+            "expectedAnswer": "Pathway"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Gate as the central item; include Gate, Pathway, and Garden naturally where visually appropriate, but make the real-world use of Gate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pathway in a university campus context. Use the written scenario as the source of meaning: Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sports Field", "Computer Lab", "Art Studio", "Music Room"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.",
+          "scenario": "The tour passes a Sports Field for outdoor games and a Computer Lab for computer work. In the Art Studio, students create visual art, while the Music Room is reserved for practice and lessons.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Sports Field", "Computer Lab", "Art Studio"],
-            "expectedAnswer": "Sports Field"
+            "question": "Which workspace is used for making visual art?",
+            "options": ["Art Studio", "Sports Field", "Computer Lab"],
+            "expectedAnswer": "Art Studio"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Sports Field as the main location; include Sports Field, Computer Lab, and Art Studio naturally where visually appropriate, but make the real-world use of Sports Field the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Art Studio in a university campus context. Use the written scenario as the source of meaning: The tour passes a Sports Field for outdoor games and a Computer Lab for computer work. In the Art Studio, students create visual art, while the Music Room is reserved for practice and lessons. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Theater", "Swimming Pool", "Track", "Tennis Court"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.",
+          "scenario": "The Theater hosts performances. The Swimming Pool is for swimming, the Track is a marked running course, and the Tennis Court has a net for tennis. Facility access depends on the campus’s own arrangements.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Theater", "Swimming Pool", "Track"],
-            "expectedAnswer": "Theater"
+            "question": "Which area is the marked running course?",
+            "options": ["Track", "Theater", "Swimming Pool"],
+            "expectedAnswer": "Track"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Theater as the main location; include Theater, Swimming Pool, and Track naturally where visually appropriate, but make the real-world use of Theater the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Track in a university campus context. Use the written scenario as the source of meaning: The Theater hosts performances. The Swimming Pool is for swimming, the Track is a marked running course, and the Tennis Court has a net for tennis. Facility access depends on the campus’s own arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Health Center", "Counseling Center", "Career Center"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.",
+          "scenario": "Farah compares services at the Health Center and Counseling Center with the Career Center, which helps students prepare job applications and plan employment goals. The lesson describes services rather than providing healthcare advice.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Health Center", "Counseling Center", "Career Center"],
-            "expectedAnswer": "Health Center"
+            "question": "Which service helps with employment planning and job applications?",
+            "options": ["Career Center", "Health Center", "Counseling Center"],
+            "expectedAnswer": "Career Center"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Health Center as the main location; include Health Center, Counseling Center, and Career Center naturally where visually appropriate, but make the real-world use of Health Center the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Career Center in a university campus context. Use the written scenario as the source of meaning: Farah compares services at the Health Center and Counseling Center with the Career Center, which helps students prepare job applications and plan employment goals. The lesson describes services rather than providing healthcare advice. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The University Campus",
-      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Gate, Pathway, Garden, and Parking Lot. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Sports Field, Computer Lab, Art Studio, and Music Room. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Theater, Swimming Pool, Track, and Tennis Court. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Health Center, Counseling Center, and Career Center. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The University Campus: Understanding the different roles",
+      "text": "Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces. The tour passes a Sports Field for outdoor games and a Computer Lab for computer work. In the Art Studio, students create visual art, while the Music Room is reserved for practice and lessons. The Theater hosts performances. The Swimming Pool is for swimming, the Track is a marked running course, and the Tennis Court has a net for tennis. Facility access depends on the campus’s own arrangements. Farah compares services at the Health Center and Counseling Center with the Career Center, which helps students prepare job applications and plan employment goals. The lesson describes services rather than providing healthcare advice.",
+      "imageBrief": "One uncluttered university campus setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Pathway, Garden, and Parking Lot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gate",
+        "prompt": "Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces.\nWhich route does Farah follow on foot?",
+        "answer": "Pathway",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Field, Computer Lab, Art Studio, and Music Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Sports Field",
+        "prompt": "The tour passes a Sports Field for outdoor games and a Computer Lab for computer work. In the Art Studio, students create visual art, while the Music Room is reserved for practice and lessons.\nWhich workspace is used for making visual art?",
+        "answer": "Art Studio",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Theater, Swimming Pool, Track, and Tennis Court and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Theater",
+        "prompt": "The Theater hosts performances. The Swimming Pool is for swimming, the Track is a marked running course, and the Tennis Court has a net for tennis. Facility access depends on the campus’s own arrangements.\nWhich area is the marked running course?",
+        "answer": "Track",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Health Center, Counseling Center, and Career Center and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Health Center",
+        "prompt": "Farah compares services at the Health Center and Counseling Center with the Career Center, which helps students prepare job applications and plan employment goals. The lesson describes services rather than providing healthcare advice.\nWhich service helps with employment planning and job applications?",
+        "answer": "Career Center",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces. The tour passes a Sports Field for outdoor games and a Computer Lab for computer work. In the Art Studio, students create visual art, while the Music Room is reserved for practice and lessons. The Theater hosts performances. The Swimming Pool is for swimming, the Track is a marked running course, and the Tennis Court has a net for tennis. Facility access depends on the campus’s own arrangements. Farah compares services at the Health Center and Counseling Center with the Career Center, which helps students prepare job applications and plan employment goals. The lesson describes services rather than providing healthcare advice.\nExplain the difference between Gate and Pathway using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Gate"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lecture Hall” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the university campus task. Use Gate, Pathway, Garden, Parking Lot, Sports Field, Computer Lab, Art Studio, Music Room, Theater, Swimming Pool, Track, Tennis Court, Health Center, Counseling Center, and Career Center in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Gate, Pathway, Garden, Parking Lot, Sports Field, Computer Lab, Art Studio, Music Room, Theater, Swimming Pool, Track, Tennis Court, Health Center, Counseling Center, Career Center to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The University Campus: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The University Campus: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Gate and Pathway, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Farah enters through the Gate and follows a Pathway toward the Garden. The Parking Lot has spaces for vehicles; the walking route is separate from those spaces. Pause and answer: Which route does Farah follow on foot?"
     },
     "spacedReview": "1 lesson(s) back: Lecture Hall, Library from university-campus-1\n3 lesson(s) back: Spread, Limit Order from stock-exchange-2\n7 lesson(s) back: US Dollar, Euro from currency-payment-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "87-117 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Orientation", "Registration", "Move-In Day", "Commencement"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.",
+          "scenario": "The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which program introduces new students to campus life?",
             "options": ["Orientation", "Registration", "Move-In Day"],
             "expectedAnswer": "Orientation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Orientation through a realistic adult task; include Orientation, Registration, and Move-In Day naturally where visually appropriate, but make the real-world use of Orientation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Orientation in a university campus context. Use the written scenario as the source of meaning: The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Homecoming", "Spring Break", "Finals Week", "Study Abroad"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.",
+          "scenario": "The university calendar lists Homecoming for returning graduates, Spring Break as a spring pause in classes, and Finals Week for end-of-term examinations. Study Abroad lets eligible students study in another country. Names and arrangements vary between institutions.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Homecoming", "Spring Break", "Finals Week"],
-            "expectedAnswer": "Homecoming"
+            "question": "Which period is devoted to end-of-term examinations?",
+            "options": ["Finals Week", "Homecoming", "Spring Break"],
+            "expectedAnswer": "Finals Week"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Homecoming through a realistic adult task; include Homecoming, Spring Break, and Finals Week naturally where visually appropriate, but make the real-world use of Homecoming the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Finals Week in a university campus context. Use the written scenario as the source of meaning: The university calendar lists Homecoming for returning graduates, Spring Break as a spring pause in classes, and Finals Week for end-of-term examinations. Study Abroad lets eligible students study in another country. Names and arrangements vary between institutions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Internship Fair", "Alumni Weekend"],
-          "scenario": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.",
+          "scenario": "At the Internship Fair, students meet organizations offering placements. Alumni Weekend brings former students back for campus events. A placement’s conditions require the organization’s actual information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Internship Fair", "Alumni Weekend", "Orientation"],
+            "question": "Which event connects students with organizations offering placements?",
+            "options": ["Internship Fair", "Alumni Weekend"],
             "expectedAnswer": "Internship Fair"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Internship Fair as the central item; include Internship Fair, Alumni Weekend, and Orientation naturally where visually appropriate, but make the real-world use of Internship Fair the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Internship Fair in a university campus context. Use the written scenario as the source of meaning: At the Internship Fair, students meet organizations offering placements. Alumni Weekend brings former students back for campus events. A placement’s conditions require the organization’s actual information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written university campus situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The University Campus",
-      "text": "At the university campus, a student handles a real-world responsibility and must make a clear decision. First, the student considers Orientation, Registration, Move-In Day, and Commencement. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Homecoming, Spring Break, Finals Week, and Study Abroad. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Internship Fair and Alumni Weekend. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The University Campus. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The University Campus: Comparing the equipment",
+      "text": "The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example. The university calendar lists Homecoming for returning graduates, Spring Break as a spring pause in classes, and Finals Week for end-of-term examinations. Study Abroad lets eligible students study in another country. Names and arrangements vary between institutions. At the Internship Fair, students meet organizations offering placements. Alumni Weekend brings former students back for campus events. A placement’s conditions require the organization’s actual information.",
+      "imageBrief": "One uncluttered university campus setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orientation, Registration, Move-In Day, and Commencement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example.\nWhich program introduces new students to campus life?",
         "answer": "Orientation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Homecoming, Spring Break, Finals Week, and Study Abroad and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Homecoming",
+        "prompt": "The university calendar lists Homecoming for returning graduates, Spring Break as a spring pause in classes, and Finals Week for end-of-term examinations. Study Abroad lets eligible students study in another country. Names and arrangements vary between institutions.\nWhich period is devoted to end-of-term examinations?",
+        "answer": "Finals Week",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the university campus setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Internship Fair, and Alumni Weekend and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "At the Internship Fair, students meet organizations offering placements. Alumni Weekend brings former students back for campus events. A placement’s conditions require the organization’s actual information.\nWhich event connects students with organizations offering placements?",
         "answer": "Internship Fair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example. The university calendar lists Homecoming for returning graduates, Spring Break as a spring pause in classes, and Finals Week for end-of-term examinations. Study Abroad lets eligible students study in another country. Names and arrangements vary between institutions. At the Internship Fair, students meet organizations offering placements. Alumni Weekend brings former students back for campus events. A placement’s conditions require the organization’s actual information.\nExplain the difference between Orientation and Registration using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Orientation"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Gate” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the university campus task. Use Orientation, Registration, Move-In Day, Commencement, Homecoming, Spring Break, Finals Week, Study Abroad, Internship Fair, and Alumni Weekend in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Orientation, Registration, Move-In Day, Commencement, Homecoming, Spring Break, Finals Week, Study Abroad, Internship Fair, Alumni Weekend to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The University Campus: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The University Campus: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Orientation and Registration, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The new-student timetable starts with Orientation to introduce campus life. Registration officially enrolls students or selects courses, Move-In Day brings belongings into housing, and Commencement is a graduation ceremony in this US campus example. Pause and answer: Which program introduces new students to campus life?"
     },
     "spacedReview": "1 lesson(s) back: Gate, Pathway from university-campus-2\n3 lesson(s) back: Trader, Broker from stock-exchange-3\n7 lesson(s) back: Mobile Payment, Contactless from currency-payment-2"
   }

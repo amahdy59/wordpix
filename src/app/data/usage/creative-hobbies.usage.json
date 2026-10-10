@@ -30,7 +30,7 @@
       "تصوير",
       "تحرير الفيديو",
       "تصميم جرافيكي",
-      "رسوم متحركة",
+      "تحريك الصور أو الرسوم",
       "إنتاج البودكاست",
       "تدوين",
       "برمجة",
@@ -44,140 +44,134 @@
       "ترقيع مبطن"
     ],
     "usage": {
-      "goal": "Learn to use creative hobbies 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to creative hobbies.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish creative activities by their stated tools, materials and purpose.",
+      "canDoStatement": "Can identify a creative activity in a supported account and explain one distinction. Technical and specialist craft names extend the supported task level; this is vocabulary learning rather than procedural training.",
+      "textType": "adult-creative-club-account",
+      "readingTarget": "Supported linked adult creative account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Photography", "Video Editing", "Graphic Design"],
-          "scenario": "During a routine creative hobbies task, an adult compares Photography, Video Editing, Graphic Design. The person selects Photography for the next step.",
+          "scenario": "At an adult media club, photography means making pictures with a camera. Video editing arranges and changes recorded clips. Graphic design combines visual elements to communicate a message, such as a poster layout.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity arranges recorded clips?",
             "options": ["Photography", "Video Editing", "Graphic Design"],
-            "expectedAnswer": "Photography"
+            "expectedAnswer": "Video Editing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Photography, Video Editing, Graphic Design. The person selects Photography for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Photography, Video Editing, Graphic Design in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults reviewing photographs and an unreadable video-editing screen at a media-club desk. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults reviewing photographs and an unreadable video-editing screen at a media-club desk."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Animation", "Podcasting", "Blogging"],
-          "scenario": "During a routine creative hobbies task, an adult compares Animation, Podcasting, Blogging. The person selects Animation for the next step.",
+          "scenario": "The club makes animation by arranging images to create apparent movement. Podcasting produces recorded programs, mainly audio, for an audience. Blogging adds posts to a website. These are publishing activities, not a promise of popularity.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity mainly produces recorded audio programs?",
             "options": ["Animation", "Podcasting", "Blogging"],
-            "expectedAnswer": "Animation"
+            "expectedAnswer": "Podcasting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Animation, Podcasting, Blogging. The person selects Animation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Animation, Podcasting, Blogging in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults with a microphone, headphones and a computer at a media-club desk. No readable websites or copyrighted characters. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults with a microphone, headphones and a computer at a media-club desk. No readable websites or copyrighted characters."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Coding", "3D Modeling", "Music Production"],
-          "scenario": "During a routine creative hobbies task, an adult compares Coding, 3D Modeling, Music Production. The person selects Coding for the next step.",
+          "scenario": "Karim practices coding, writing instructions for computer software. His friend uses 3D modeling to build a digital object with depth. Music production combines work such as recording, arranging and mixing music. Each person describes a different project.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity builds the digital object with depth?",
             "options": ["Coding", "3D Modeling", "Music Production"],
-            "expectedAnswer": "Coding"
+            "expectedAnswer": "3D Modeling"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Coding, 3D Modeling, Music Production. The person selects Coding for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Coding, 3D Modeling, Music Production in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing a simple unbranded three-dimensional model on a computer, with audio equipment nearby. No readable code. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing a simple unbranded three-dimensional model on a computer, with audio equipment nearby. No readable code."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Digital Art", "Knitting", "Crocheting"],
-          "scenario": "During a routine creative hobbies task, an adult compares Digital Art, Knitting, Crocheting. The person selects Digital Art for the next step.",
+          "scenario": "Digital art uses electronic tools to create artwork. Knitting forms fabric from loops of yarn, commonly using two needles. Crocheting uses a hook to make looped stitches. The club compares tools without judging one craft as better.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which craft uses a hook?",
             "options": ["Digital Art", "Knitting", "Crocheting"],
-            "expectedAnswer": "Digital Art"
+            "expectedAnswer": "Crocheting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Digital Art, Knitting, Crocheting. The person selects Digital Art for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Digital Art, Knitting, Crocheting in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult craft table with a digital drawing tablet, knitting needles and yarn, and a crochet hook. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult craft table with a digital drawing tablet, knitting needles and yarn, and a crochet hook."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sewing", "Embroidery", "Quilting"],
-          "scenario": "During a routine creative hobbies task, an adult compares Sewing, Embroidery, Quilting. The person selects Sewing for the next step.",
+          "scenario": "Sewing joins or works fabric with thread. Embroidery adds decorative stitches to a surface. Quilting stitches through layers, usually fabric and filling. A quilt may include embroidery, so the activities can overlap.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity stitches through layers?",
             "options": ["Sewing", "Embroidery", "Quilting"],
-            "expectedAnswer": "Sewing"
+            "expectedAnswer": "Quilting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Sewing, Embroidery, Quilting. The person selects Sewing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Sewing, Embroidery, Quilting in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults examining fabric samples showing a seam, decorative embroidery and a quilted layered piece. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults examining fabric samples showing a seam, decorative embroidery and a quilted layered piece."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Creative Hobbies: Email",
-      "text": "Omar has an everyday task connected to creative hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with photography, video editing, and graphic design. Each term has a clear role in making, performing, or presenting the work. During the creative session, the group works with animation, podcasting, and blogging. Each term has a clear role in making, performing, or presenting the work.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Creative Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Making and sharing",
+      "text": "At an adult creative club, members introduce their projects. Photography supplies pictures, while video editing arranges clips. Graphic design helps a message take visual form. Another table discusses animation, podcasting and blogging. Karim works on coding, his friend on 3D modeling, and another member on music production. Digital art uses electronic tools. At the textile table, adults compare knitting with crocheting, then sewing, embroidery and quilting. Some projects combine techniques. The club welcomes beginners and does not measure creativity by expensive equipment, online attention or how quickly a person learns.",
+      "imageBrief": "Photorealistic scene: Adults reviewing photographs and an unreadable video-editing screen at a media-club desk. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Photography, Video Editing, Graphic Design. The person selects Photography for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Photography",
+        "prompt": "At an adult media club, photography means making pictures with a camera. Video editing arranges and changes recorded clips. Graphic design combines visual elements to communicate a message, such as a poster layout.\nWhich activity arranges recorded clips?",
+        "answer": "Video Editing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Animation, Podcasting, Blogging. The person selects Animation for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Animation",
+        "prompt": "The club makes animation by arranging images to create apparent movement. Podcasting produces recorded programs, mainly audio, for an audience. Blogging adds posts to a website. These are publishing activities, not a promise of popularity.\nWhich activity mainly produces recorded audio programs?",
+        "answer": "Podcasting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Coding, 3D Modeling, Music Production. The person selects Coding for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Coding",
+        "prompt": "Karim practices coding, writing instructions for computer software. His friend uses 3D modeling to build a digital object with depth. Music production combines work such as recording, arranging and mixing music. Each person describes a different project.\nWhich activity builds the digital object with depth?",
+        "answer": "3D Modeling",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Digital Art, Knitting, Crocheting. The person selects Digital Art for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Digital Art",
+        "prompt": "Digital art uses electronic tools to create artwork. Knitting forms fabric from loops of yarn, commonly using two needles. Crocheting uses a hook to make looped stitches. The club compares tools without judging one craft as better.\nWhich craft uses a hook?",
+        "answer": "Crocheting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Sewing, Embroidery, Quilting. The person selects Sewing for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Sewing",
+        "prompt": "Sewing joins or works fabric with thread. Embroidery adds decorative stitches to a surface. Quilting stitches through layers, usually fabric and filling. A quilt may include embroidery, so the activities can overlap.\nWhich activity stitches through layers?",
+        "answer": "Quilting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Photography"
+        "prompt": "At an adult creative club, members introduce their projects. Photography supplies pictures, while video editing arranges clips. Graphic design helps a message take visual form. Another table discusses animation, podcasting and blogging. Karim works on coding, his friend on 3D modeling, and another member on music production. Digital art uses electronic tools. At the textile table, adults compare knitting with crocheting, then sewing, embroidery and quilting. Some projects combine techniques. The club welcomes beginners and does not measure creativity by expensive equipment, online attention or how quickly a person learns.\nDoes the club measure creativity by online attention?",
+        "answer": "No; it welcomes different projects and beginners",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Animation"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Stamps” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At an adult media club, photography means making pictures with a camera. Video editing arranges and changes recorded clips. Graphic design combines visual elements to communicate a message, such as a poster layout.\nExplain one activity in a complete sentence using the stated information.",
+        "answer": "Video editing arranges and changes recorded clips.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Creative Hobbies: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Making and sharing",
+      "idea": "Narrate the adult creative-club account and pause for one purpose or material distinction. Demonstrate no preservation method, bee handling, wildlife capture or wild-mushroom eating.",
+      "scriptStarter": "At an adult media club, photography means making pictures with a camera. Video editing arranges and changes recorded clips. Graphic design combines visual elements to communicate a message, such as a poster layout."
     },
     "spacedReview": "1 lesson(s) back: Stamps, Coins from indoor-hobbies-3\n3 lesson(s) back: Novel, Comic Book from indoor-hobbies-1\n7 lesson(s) back: Kind, Generous from personality-character-1"
   },
@@ -214,11 +208,11 @@
       "التطريز بغرزة الصليب",
       "تلبيد",
       "صباغة بالربط",
-      "خبز",
+      "الخبز في الفرن",
       "تزيين الكعك",
       "صناعة الخبز",
       "تخمير",
-      "تعليب",
+      "تعليب أو حفظ محكم بمعالجة مناسبة",
       "التخليل",
       "صناعة الشوكولاتة",
       "صناعة المعكرونة",
@@ -226,140 +220,134 @@
       "صناعة المربّى"
     ],
     "usage": {
-      "goal": "Learn to use creative hobbies 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to creative hobbies.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish creative activities by their stated tools, materials and purpose.",
+      "canDoStatement": "Can identify a creative activity in a supported account and explain one distinction. Technical and specialist craft names extend the supported task level; this is vocabulary learning rather than procedural training.",
+      "textType": "adult-creative-club-account",
+      "readingTarget": "Supported linked adult creative account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Weaving", "Macramé", "Cross-Stitch"],
-          "scenario": "During a routine creative hobbies task, an adult compares Weaving, Macramé, Cross-Stitch. The person selects Weaving for the next step.",
+          "scenario": "At a textile club, weaving crosses threads over and under one another. Macramé makes patterns with knots in cord. Cross-stitch is embroidery using small X-shaped stitches. The tutor shows examples of each.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which craft makes patterns with knots?",
             "options": ["Weaving", "Macramé", "Cross-Stitch"],
-            "expectedAnswer": "Weaving"
+            "expectedAnswer": "Macramé"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Weaving, Macramé, Cross-Stitch. The person selects Weaving for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Weaving, Macramé, Cross-Stitch in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult tutor showing a small woven sample, knotted cord hanging and cross-stitch sampler without readable text. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult tutor showing a small woven sample, knotted cord hanging and cross-stitch sampler without readable text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Felting", "Tie-Dye", "Baking"],
-          "scenario": "During a routine creative hobbies task, an adult compares Felting, Tie-Dye, Baking. The person selects Felting for the next step.",
+          "scenario": "Felting joins wool fibers into fabric or shapes. Tie-dye colors fabric after parts are tied or secured to resist dye. Baking cooks food using dry heat, usually in an oven. The exhibition shows finished samples rather than teaching chemical or oven procedures.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity belongs to food preparation rather than textiles?",
             "options": ["Felting", "Tie-Dye", "Baking"],
-            "expectedAnswer": "Felting"
+            "expectedAnswer": "Baking"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Felting, Tie-Dye, Baking. The person selects Felting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Felting, Tie-Dye, Baking in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult exhibition table with a felt shape, finished tie-dyed cloth and baked bread on a separate dish. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult exhibition table with a felt shape, finished tie-dyed cloth and baked bread on a separate dish."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cake Decorating", "Bread Making", "Fermentation"],
-          "scenario": "During a routine creative hobbies task, an adult compares Cake Decorating, Bread Making, Fermentation. The person selects Cake Decorating for the next step.",
+          "scenario": "At a cooking introduction, cake decorating adds icing and decoration. Bread making prepares and bakes dough. Fermentation is a process in which microorganisms change food ingredients; it is relevant to some breads and other foods. A picture alone does not prove safe fermentation.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the process involving microorganisms?",
             "options": ["Cake Decorating", "Bread Making", "Fermentation"],
-            "expectedAnswer": "Cake Decorating"
+            "expectedAnswer": "Fermentation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Cake Decorating, Bread Making, Fermentation. The person selects Cake Decorating for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Cake Decorating, Bread Making, Fermentation in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult instructor discussing a decorated cake and bread at a clean demonstration table. No fermentation recipe or safety claim from appearance. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult instructor discussing a decorated cake and bread at a clean demonstration table. No fermentation recipe or safety claim from appearance."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Canning", "Pickling", "Chocolate Making"],
-          "scenario": "During a routine creative hobbies task, an adult compares Canning, Pickling, Chocolate Making. The person selects Canning for the next step.",
+          "scenario": "The instructor distinguishes canning, preserving food with suitable processing in sealed containers, from pickling, preparing food in an acidic liquid or through controlled fermentation. Chocolate making prepares or shapes chocolate. Preservation needs tested methods; this vocabulary session provides no recipe or processing times.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which craft prepares or shapes chocolate?",
             "options": ["Canning", "Pickling", "Chocolate Making"],
-            "expectedAnswer": "Canning"
+            "expectedAnswer": "Chocolate Making"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Canning, Pickling, Chocolate Making. The person selects Canning for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Canning, Pickling, Chocolate Making in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult instructor at a table with empty jars and shaped chocolates. No improvised preservation process or shelf-stability claim. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult instructor at a table with empty jars and shaped chocolates. No improvised preservation process or shelf-stability claim."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Pasta Making", "Sushi Rolling", "Jam Making"],
-          "scenario": "During a routine creative hobbies task, an adult compares Pasta Making, Sushi Rolling, Jam Making. The person selects Pasta Making for the next step.",
+          "scenario": "Pasta making prepares dough and shapes it into pasta. Sushi rolling forms rice and fillings into rolls; fillings need not include raw fish. Jam making cooks fruit into a spread, often with sugar. Storage and food safety depend on a suitable tested method, not a photograph.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity forms rice and fillings into rolls?",
             "options": ["Pasta Making", "Sushi Rolling", "Jam Making"],
-            "expectedAnswer": "Pasta Making"
+            "expectedAnswer": "Sushi Rolling"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Pasta Making, Sushi Rolling, Jam Making. The person selects Pasta Making for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Pasta Making, Sushi Rolling, Jam Making in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult instructor showing finished pasta, vegetable-filled sushi rolls and a small dish of jam at a clean table. No preservation or raw-fish handling procedure. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult instructor showing finished pasta, vegetable-filled sushi rolls and a small dish of jam at a clean table. No preservation or raw-fish handling procedure."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Creative Hobbies: Personal Message",
-      "text": "Omar has an everyday task connected to creative hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with weaving, macramé, and cross-stitch. Each term has a clear role in making, performing, or presenting the work. The learner connects felting, tie-dye, and baking to the main activity and explains what each term means in context. The learner connects cake decorating, bread making, and fermentation to the main activity and explains what each term means in context.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Creative Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "An exhibition of techniques",
+      "text": "Adults visit a community exhibition. Textile examples show weaving, macramé and cross-stitch. Finished samples illustrate felting and tie-dye. A separate food table introduces baking, cake decorating and bread making. The instructor explains fermentation, canning and pickling as different processes, with food safety depending on tested methods. Chocolate making, pasta making, sushi rolling and jam making are also discussed. This is a vocabulary introduction, not a recipe. The exhibition supplies no processing times, preservation instructions or guarantee that food is safe from a photograph. Learners identify a craft by its stated purpose and materials.",
+      "imageBrief": "Photorealistic scene: Adult tutor showing a small woven sample, knotted cord hanging and cross-stitch sampler without readable text. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Weaving, Macramé, Cross-Stitch. The person selects Weaving for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Weaving",
+        "prompt": "At a textile club, weaving crosses threads over and under one another. Macramé makes patterns with knots in cord. Cross-stitch is embroidery using small X-shaped stitches. The tutor shows examples of each.\nWhich craft makes patterns with knots?",
+        "answer": "Macramé",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Felting, Tie-Dye, Baking. The person selects Felting for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Felting",
+        "prompt": "Felting joins wool fibers into fabric or shapes. Tie-dye colors fabric after parts are tied or secured to resist dye. Baking cooks food using dry heat, usually in an oven. The exhibition shows finished samples rather than teaching chemical or oven procedures.\nWhich activity belongs to food preparation rather than textiles?",
+        "answer": "Baking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Cake Decorating, Bread Making, Fermentation. The person selects Cake Decorating for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Cake Decorating",
+        "prompt": "At a cooking introduction, cake decorating adds icing and decoration. Bread making prepares and bakes dough. Fermentation is a process in which microorganisms change food ingredients; it is relevant to some breads and other foods. A picture alone does not prove safe fermentation.\nWhich term names the process involving microorganisms?",
+        "answer": "Fermentation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Canning, Pickling, Chocolate Making. The person selects Canning for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Canning",
+        "prompt": "The instructor distinguishes canning, preserving food with suitable processing in sealed containers, from pickling, preparing food in an acidic liquid or through controlled fermentation. Chocolate making prepares or shapes chocolate. Preservation needs tested methods; this vocabulary session provides no recipe or processing times.\nWhich craft prepares or shapes chocolate?",
+        "answer": "Chocolate Making",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Pasta Making, Sushi Rolling, Jam Making. The person selects Pasta Making for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Pasta Making",
+        "prompt": "Pasta making prepares dough and shapes it into pasta. Sushi rolling forms rice and fillings into rolls; fillings need not include raw fish. Jam making cooks fruit into a spread, often with sugar. Storage and food safety depend on a suitable tested method, not a photograph.\nWhich activity forms rice and fillings into rolls?",
+        "answer": "Sushi Rolling",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Weaving"
+        "prompt": "Adults visit a community exhibition. Textile examples show weaving, macramé and cross-stitch. Finished samples illustrate felting and tie-dye. A separate food table introduces baking, cake decorating and bread making. The instructor explains fermentation, canning and pickling as different processes, with food safety depending on tested methods. Chocolate making, pasta making, sushi rolling and jam making are also discussed. This is a vocabulary introduction, not a recipe. The exhibition supplies no processing times, preservation instructions or guarantee that food is safe from a photograph. Learners identify a craft by its stated purpose and materials.\nDoes this exhibition provide preservation instructions?",
+        "answer": "No; it is a vocabulary introduction",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Felting"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Photography” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At a textile club, weaving crosses threads over and under one another. Macramé makes patterns with knots in cord. Cross-stitch is embroidery using small X-shaped stitches. The tutor shows examples of each.\nExplain one activity in a complete sentence using the stated information.",
+        "answer": "Macramé makes patterns with knots in cord.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Creative Hobbies: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "An exhibition of techniques",
+      "idea": "Narrate the adult creative-club account and pause for one purpose or material distinction. Demonstrate no preservation method, bee handling, wildlife capture or wild-mushroom eating.",
+      "scriptStarter": "At a textile club, weaving crosses threads over and under one another. Macramé makes patterns with knots in cord. Cross-stitch is embroidery using small X-shaped stitches. The tutor shows examples of each."
     },
     "spacedReview": "1 lesson(s) back: Photography, Video Editing from creative-hobbies-1\n3 lesson(s) back: Calligraphy, Pottery from indoor-hobbies-2\n7 lesson(s) back: Lazy, Reckless from personality-character-2"
   },
@@ -398,121 +386,119 @@
       "جمع الفطر البري"
     ],
     "usage": {
-      "goal": "Learn to use creative hobbies 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to creative hobbies.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish creative activities by their stated tools, materials and purpose.",
+      "canDoStatement": "Can identify a creative activity in a supported account and explain one distinction. Technical and specialist craft names extend the supported task level; this is vocabulary learning rather than procedural training.",
+      "textType": "adult-creative-club-account",
+      "readingTarget": "Supported linked adult creative account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gardening", "Bonsai", "Terrarium"],
-          "scenario": "During a routine creative hobbies task, an adult compares Gardening, Bonsai, Terrarium. The person selects Gardening for the next step.",
+          "scenario": "At an adult garden club, gardening means cultivating plants. Bonsai develops a tree or shrub kept small through careful cultivation. A terrarium keeps plants in a glass container. The glass container, rather than size alone, identifies the terrarium here.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the plant display in a glass container?",
             "options": ["Gardening", "Bonsai", "Terrarium"],
-            "expectedAnswer": "Gardening"
+            "expectedAnswer": "Terrarium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Gardening, Bonsai, Terrarium. The person selects Gardening for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Gardening, Bonsai, Terrarium in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults examining a small cultivated tree and a planted glass terrarium in a garden-club room. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults examining a small cultivated tree and a planted glass terrarium in a garden-club room."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bird Watching", "Butterfly Catching", "Flower Arranging"],
-          "scenario": "During a routine creative hobbies task, an adult compares Bird Watching, Butterfly Catching, Flower Arranging. The person selects Bird Watching for the next step.",
+          "scenario": "The nature club chooses bird watching and photography to observe wildlife. Butterfly catching means capturing butterflies, but this club does not do it; rules and conservation needs vary. Flower arranging uses flowers to make a decorative display.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity does the club choose for observing birds?",
             "options": ["Bird Watching", "Butterfly Catching", "Flower Arranging"],
             "expectedAnswer": "Bird Watching"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Bird Watching, Butterfly Catching, Flower Arranging. The person selects Bird Watching for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Bird Watching, Butterfly Catching, Flower Arranging in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults observing birds through binoculars from a path, with butterflies left undisturbed. No nets or wildlife capture. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults observing birds through binoculars from a path, with butterflies left undisturbed. No nets or wildlife capture."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Herb Growing", "Composting", "Beekeeping"],
-          "scenario": "During a routine creative hobbies task, an adult compares Herb Growing, Composting, Beekeeping. The person selects Herb Growing for the next step.",
+          "scenario": "Herb growing cultivates plants such as basil for everyday uses. Composting turns suitable organic material into a soil-improving material through decomposition. Beekeeping manages bee colonies. The group learns the terms; it does not approach hives or give beginners handling instructions.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity manages bee colonies?",
             "options": ["Herb Growing", "Composting", "Beekeeping"],
-            "expectedAnswer": "Herb Growing"
+            "expectedAnswer": "Beekeeping"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Herb Growing, Composting, Beekeeping. The person selects Herb Growing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Herb Growing, Composting, Beekeeping in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult garden-club instructor discussing herb pots and a closed compost container. Any hive is distant; no bee handling. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult garden-club instructor discussing herb pots and a closed compost container. Any hive is distant; no bee handling."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mushroom Foraging"],
-          "scenario": "During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step.",
+          "scenario": "Mushroom foraging means searching for wild mushrooms. The club discusses the term without collecting or eating any mushrooms. Some poisonous species resemble edible ones; an image, app or simple description cannot establish that a wild mushroom is safe to eat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Mushroom Foraging", "Gardening", "Bonsai"],
-            "expectedAnswer": "Mushroom Foraging"
+            "question": "What does this club avoid doing?",
+            "options": [
+              "Collecting or eating wild mushrooms",
+              "Drawing photographs of furniture",
+              "Reading a personal diary"
+            ],
+            "expectedAnswer": "Collecting or eating wild mushrooms"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a creative hobbies context illustrating this situation: During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult creative hobbies scene showing lesson-related items or actions including Mushroom Foraging in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult nature guide discussing fungi from a path with adult visitors. Mushrooms remain untouched in the ground; no edible-species identification cues. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult nature guide discussing fungi from a path with adult visitors. Mushrooms remain untouched in the ground; no edible-species identification cues."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Creative Hobbies: Short Dialogue",
-      "text": "Omar has an everyday task connected to creative hobbies. The new vocabulary helps him follow the situation and respond clearly. During the creative session, the group works with gardening, bonsai, and terrarium. Each term has a clear role in making, performing, or presenting the work. The learner connects bird watching, butterfly catching, and flower arranging to the main activity and explains what each term means in context. The learner connects herb growing, composting, and beekeeping to the main activity and explains what each term means in context.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Creative Hobbies. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "A garden club’s choices",
+      "text": "The adult garden club discusses gardening, bonsai and a terrarium. Members choose bird watching and photography to enjoy wildlife. They explain butterfly catching as a term but do not capture butterflies. At a table, flower arranging uses already supplied flowers. Herb growing, composting and beekeeping are other interests; hive handling needs separate training. The group discusses mushroom foraging without collecting or eating wild mushrooms. The guide explains that appearance alone cannot prove a mushroom safe to eat. Members respect local rules and conservation needs while choosing activities suited to their experience.",
+      "imageBrief": "Photorealistic scene: Adults examining a small cultivated tree and a planted glass terrarium in a garden-club room. Natural adult community-club composition. Written context establishes process, intention and safety limits. Do not depict improvised preservation, wildlife capture, mushroom consumption, chemical procedures or bee handling. No readable recipe, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Gardening, Bonsai, Terrarium. The person selects Gardening for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Gardening",
+        "prompt": "At an adult garden club, gardening means cultivating plants. Bonsai develops a tree or shrub kept small through careful cultivation. A terrarium keeps plants in a glass container. The glass container, rather than size alone, identifies the terrarium here.\nWhich term names the plant display in a glass container?",
+        "answer": "Terrarium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Bird Watching, Butterfly Catching, Flower Arranging. The person selects Bird Watching for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The nature club chooses bird watching and photography to observe wildlife. Butterfly catching means capturing butterflies, but this club does not do it; rules and conservation needs vary. Flower arranging uses flowers to make a decorative display.\nWhich activity does the club choose for observing birds?",
         "answer": "Bird Watching",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Herb Growing, Composting, Beekeeping. The person selects Herb Growing for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Herb Growing",
+        "prompt": "Herb growing cultivates plants such as basil for everyday uses. Composting turns suitable organic material into a soil-improving material through decomposition. Beekeeping manages bee colonies. The group learns the terms; it does not approach hives or give beginners handling instructions.\nWhich activity manages bee colonies?",
+        "answer": "Beekeeping",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine creative hobbies task, an adult compares Mushroom Foraging, Gardening, Bonsai. The person selects Mushroom Foraging for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Mushroom Foraging",
+        "prompt": "Mushroom foraging means searching for wild mushrooms. The club discusses the term without collecting or eating any mushrooms. Some poisonous species resemble edible ones; an image, app or simple description cannot establish that a wild mushroom is safe to eat.\nWhat does this club avoid doing?",
+        "answer": "Collecting or eating wild mushrooms",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Gardening"
+        "prompt": "The adult garden club discusses gardening, bonsai and a terrarium. Members choose bird watching and photography to enjoy wildlife. They explain butterfly catching as a term but do not capture butterflies. At a table, flower arranging uses already supplied flowers. Herb growing, composting and beekeeping are other interests; hive handling needs separate training. The group discusses mushroom foraging without collecting or eating wild mushrooms. The guide explains that appearance alone cannot prove a mushroom safe to eat. Members respect local rules and conservation needs while choosing activities suited to their experience.\nHow does this club observe wildlife?",
+        "answer": "By bird watching and photography rather than capture",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Bird Watching"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Weaving” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At an adult garden club, gardening means cultivating plants. Bonsai develops a tree or shrub kept small through careful cultivation. A terrarium keeps plants in a glass container. The glass container, rather than size alone, identifies the terrarium here.\nExplain one activity in a complete sentence using the stated information.",
+        "answer": "A terrarium keeps plants in a glass container.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Creative Hobbies: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "A garden club’s choices",
+      "idea": "Narrate the adult creative-club account and pause for one purpose or material distinction. Demonstrate no preservation method, bee handling, wildlife capture or wild-mushroom eating.",
+      "scriptStarter": "At an adult garden club, gardening means cultivating plants. Bonsai develops a tree or shrub kept small through careful cultivation. A terrarium keeps plants in a glass container. The glass container, rather than size alone, identifies the terrarium here."
     },
     "spacedReview": "1 lesson(s) back: Weaving, Macramé from creative-hobbies-2\n3 lesson(s) back: Stamps, Coins from indoor-hobbies-3\n7 lesson(s) back: Hardworking, Creative from personality-character-3"
   }

@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key vegetables 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to vegetables in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named vegetable and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,7 +59,15 @@
             "expectedAnswer": "Carrot"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup. Question: What does the shopper choose in the example with carrot, potato? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Carrot, Potato, Sweet Potato in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Carrot, Potato, Sweet Potato in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup.",
+            "sourceQuestion": "What does the shopper choose in the example with carrot, potato?",
+            "sourceAnswer": "Carrot",
+            "scenario": "Hala chooses a carrot for soup. The carrot is an orange tapered root beside a potato and sweet potato.",
+            "question": "Which vegetable does Hala choose?",
+            "imageBrief": "Distinct orange carrot, potato tuber and sweet potato on produce table. No labels or assumption all varieties have identical colour."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,7 +79,15 @@
             "expectedAnswer": "Beet"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options. Question: What goes into the basket in the example with beet, turnip? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Beet, Turnip, Radish in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Beet, Turnip, Radish in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the fresh-vegetable display, a shopper sees beet, turnip, and radish and compares beet with the other options.",
+            "sourceQuestion": "What goes into the basket in the example with beet, turnip?",
+            "sourceAnswer": "Beet",
+            "scenario": "Hala puts a beet in her basket. This cut beet has red flesh; a turnip and radish stay on the counter.",
+            "question": "Which vegetable does Hala put in the basket?",
+            "imageBrief": "Cut red beet beside pale turnip and small red radish, all distinct. No highlighted object, label or nutritional claim."
+          }
         },
         {
           "chunkNumber": 3,
@@ -83,7 +99,15 @@
             "expectedAnswer": "Parsnip"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the organic vegetable market, a bunch of cream-colored parsnips with tapered root ends is bundled with garden twine. Question: Which pale, cream-colored root vegetable is bundled with twine? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Parsnip, Ginger, Yam in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Parsnip, Ginger, Yam in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the organic vegetable market, a bunch of cream-colored parsnips with tapered root ends is bundled with garden twine.",
+            "sourceQuestion": "Which pale, cream-colored root vegetable is bundled with twine?",
+            "sourceAnswer": "Parsnip",
+            "scenario": "The seller names the pale tapered root as parsnip. Ginger is a knobbly underground stem; yam is a starchy tuber.",
+            "question": "Which pale root does the seller name?",
+            "imageBrief": "Pale tapered parsnip beside knobbly ginger rhizome and rough-skinned yam tuber. No species substitution, knife or labels."
+          }
         },
         {
           "chunkNumber": 4,
@@ -95,7 +119,15 @@
             "expectedAnswer": "Rutabaga"
           },
           "imageBrief": "Adult learning visual support for this exact situation: In the root vegetable basket, a solid round rutabaga displays its characteristic yellow-brown skin and purple-tinged top. Question: Which dense, round root vegetable has yellow flesh and a purple crown? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Rutabaga, Lettuce, Spinach in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Rutabaga, Lettuce, Spinach in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "In the root vegetable basket, a solid round rutabaga displays its characteristic yellow-brown skin and purple-tinged top.",
+            "sourceQuestion": "Which dense, round root vegetable has yellow flesh and a purple crown?",
+            "sourceAnswer": "Rutabaga",
+            "scenario": "Hala compares a round rutabaga with lettuce and spinach. The seller identifies the yellow-fleshed root as rutabaga.",
+            "question": "Which root does the seller identify?",
+            "imageBrief": "Rutabaga with purple crown and cut yellow flesh beside lettuce and spinach bunches. No label, taste or nutrition inference."
+          }
         },
         {
           "chunkNumber": 5,
@@ -107,15 +139,23 @@
             "expectedAnswer": "Kale"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Arranged in the leafy greens crate, a vibrant bunch of curly green kale displays crinkled, nutrient-dense leaves. Question: Which hardy dark green vegetable has tightly crinkled, ruffled leaves? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Kale, Arugula, Cabbage in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Kale, Arugula, Cabbage in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "Arranged in the leafy greens crate, a vibrant bunch of curly green kale displays crinkled, nutrient-dense leaves.",
+            "sourceQuestion": "Which hardy dark green vegetable has tightly crinkled, ruffled leaves?",
+            "sourceAnswer": "Kale",
+            "scenario": "The seller names the curly leafy vegetable as kale. Arugula has separate leaves and cabbage forms a head. This kale variety has ruffled leaves.",
+            "question": "Which curly leafy vegetable does the seller name?",
+            "imageBrief": "Curly kale beside distinct arugula leaves and headed cabbage. No text or claim all kale varieties are curly."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Vegetables 1: Planning Meals with Vegetables",
-      "text": "A shopper plans several meals and compares vegetables at the market. For roasting and soups, the list includes carrot, potato, sweet potato, beet, and turnip. For salads and greens, the shopper checks radish, parsnip, ginger, yam, and rutabaga. For a cooked main dish, the options include lettuce, spinach, kale, arugula, and cabbage. The shopper chooses fresh items and avoids buying more than needed.",
-      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+      "text": "Hala buys carrot, potato, sweet potato, beet and turnip for soup. A parsnip and a piece of ginger are for another recipe. She compares yam with rutabaga but leaves both today. Lettuce, arugula and radish are for a salad; spinach, kale and cabbage are for a cooked dish. She checks her list before paying.",
+      "imageBrief": "Vegetable stall with carrots, potatoes, sweet potatoes, beet, turnip, lettuce, arugula, spinach, kale and ginger in distinct piles."
     },
     "exercises": [
       {
@@ -154,32 +194,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Carrot” in a different everyday situation.",
-        "answer": "At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup.",
+        "prompt": "Read the passage: Hala buys carrot, potato, sweet potato, beet and turnip for soup. A parsnip and a piece of ginger are for another recipe. She compares yam with rutabaga but leaves both today. Lettuce, arugula and radish are for a salad; spinach, kale and cabbage are for a cooked dish. She checks her list before paying.\nWhich two ingredients are for another recipe?",
+        "answer": "a parsnip and a piece of ginger",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
+      },
+      {
+        "prompt": "Ask for a carrot for your soup.",
+        "answer": "I would like a carrot for my soup.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-1-personal-use"
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Carrot” mean here?",
+        "prompt": "Tell a colleague you chose cabbage for a cooked dish.",
+        "answer": "I chose cabbage for a cooked dish.",
         "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-1-transfer"
-      },
-      {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Potato"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Radish"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Vegetables: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show carrot, potato, sweet potato, beet, and turnip naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the kitchen prep table, a shopper sees carrot, potato, and sweet potato and sets carrot aside for soup."
+      "title": "Choosing Vegetables at the Market",
+      "idea": "Adult produce market with distinct varieties and a separate ornamental-gourd display. Seller narration supplies names. No claims of nutrient density, health effects, taste, pepper heat or edibility based only on appearance.",
+      "scriptStarter": "Hala chooses a carrot for soup. The carrot is an orange tapered root beside a potato and sweet potato."
     },
     "spacedReview": "1 lesson(s) back: Fig, Olive from fruits-4\n3 lesson(s) back: Mulberry, Boysenberry from fruits-2\n7 lesson(s) back: Floor Lamp, Table Lamp from living-room-3"
   },
@@ -229,8 +268,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key vegetables 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to vegetables in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named vegetable and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -243,19 +282,27 @@
             "expectedAnswer": "Chard"
           },
           "imageBrief": "Adult learning visual support for this exact situation: In the organic farm box, a bunch of Swiss chard displays crisp dark green leaves supported by bright ruby and golden stalks. Question: Which leafy green vegetable features vibrant colorful red and yellow stems? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Chard, Collard Greens, Romaine in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Chard, Collard Greens, Romaine in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "In the organic farm box, a bunch of Swiss chard displays crisp dark green leaves supported by bright ruby and golden stalks.",
+            "sourceQuestion": "Which leafy green vegetable features vibrant colorful red and yellow stems?",
+            "sourceAnswer": "Chard",
+            "scenario": "Omar buys chard with red and yellow stalks. Collard greens and romaine are other leafy vegetables on the stall.",
+            "question": "Which vegetable does Omar buy?",
+            "imageBrief": "Rainbow chard with red/yellow stalks beside broad collard leaves and long romaine lettuce. No labels or inference of taste."
+          }
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Watercress", "Bok Choy", "Broccoli"],
-          "scenario": "Prepared for a fresh salad, delicate sprigs of crisp peppery watercress with small round leaves are rinsed in a stainless colander.",
+          "scenario": "The seller identifies the small round leaves as watercress. Bok choy has thicker pale stalks, and broccoli has clusters of flower buds.",
           "check": {
-            "question": "Which peppery aquatic salad green has tiny round leaves and tender stems?",
+            "question": "Which leafy vegetable does the seller identify?",
             "options": ["Watercress", "Bok Choy", "Broccoli"],
             "expectedAnswer": "Watercress"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: Prepared for a fresh salad, delicate sprigs of crisp peppery watercress with small round leaves are rinsed in a stainless colander. Question: Which peppery aquatic salad green has tiny round leaves and tender stems? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the vegetables situation; the final visible-content description requires image review."
+          "imageBrief": "Cultivated watercress sprigs beside bok choy and broccoli, clean produce counter. No wild harvesting or raw tasting, labels or text.",
+          "imageAlt": "Cultivated watercress sprigs beside bok choy and broccoli, clean produce counter."
         },
         {
           "chunkNumber": 3,
@@ -267,7 +314,15 @@
             "expectedAnswer": "Cauliflower"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower. Question: Which produce item is the focus of the purchase in the example with cauliflower, brussels sprouts? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Cauliflower, Brussels Sprouts, Kohlrabi in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Cauliflower, Brussels Sprouts, Kohlrabi in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the market counter, a shopper sees cauliflower, brussels sprouts, and kohlrabi and asks how to cook cauliflower.",
+            "sourceQuestion": "Which produce item is the focus of the purchase in the example with cauliflower, brussels sprouts?",
+            "sourceAnswer": "Cauliflower",
+            "scenario": "Omar asks for cauliflower, the compact head of flower buds. Brussels sprouts are smaller tight buds, and kohlrabi has a swollen stem.",
+            "question": "Which vegetable does Omar request?",
+            "imageBrief": "White cauliflower head beside Brussels sprouts and kohlrabi with visible swollen stem. No label or nutritional claim."
+          }
         },
         {
           "chunkNumber": 4,
@@ -279,7 +334,15 @@
             "expectedAnswer": "Rapini"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the Italian grocer, a bundle of fresh rapini displays slender green stems topped with tender leaves and small broccoli-like florets. Question: Which bitter green vegetable has tender leafy stems and tiny florets? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Rapini, Napa Cabbage, Red Cabbage in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Rapini, Napa Cabbage, Red Cabbage in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the Italian grocer, a bundle of fresh rapini displays slender green stems topped with tender leaves and small broccoli-like florets.",
+            "sourceQuestion": "Which bitter green vegetable has tender leafy stems and tiny florets?",
+            "sourceAnswer": "Rapini",
+            "scenario": "The seller names the leafy stems with small buds as rapini. Napa cabbage and red cabbage are headed vegetables beside it.",
+            "question": "Which vegetable does the seller name?",
+            "imageBrief": "Rapini leafy stems with small florets beside long napa-cabbage head and red-cabbage head. No labels, bitterness or aroma inference."
+          }
         },
         {
           "chunkNumber": 5,
@@ -291,15 +354,23 @@
             "expectedAnswer": "Savoy Cabbage"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the vegetable market table, a round head of Savoy cabbage features intricate, deeply crinkled and textured emerald leaves. Question: Which cabbage variety is recognized by its crinkled, textured ruffled leaves? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Savoy Cabbage, Romanesco, Broccolini in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Savoy Cabbage, Romanesco, Broccolini in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "On the vegetable market table, a round head of Savoy cabbage features intricate, deeply crinkled and textured emerald leaves.",
+            "sourceQuestion": "Which cabbage variety is recognized by its crinkled, textured ruffled leaves?",
+            "sourceAnswer": "Savoy Cabbage",
+            "scenario": "Omar chooses savoy cabbage, the round head with crinkled leaves. Romanesco has pointed spiral florets, and broccolini has long slender stems.",
+            "question": "Which headed cabbage does Omar choose?",
+            "imageBrief": "Savoy cabbage with crinkled leaves beside romanesco spiral florets and long-stemmed broccolini. Exact species, no labels or highlighted answer."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Vegetables 2: Planning Meals with Vegetables",
-      "text": "A shopper plans several meals and compares vegetables at the market. For roasting and soups, the list includes chard, collard greens, romaine, watercress, and bok choy. For salads and greens, the shopper checks broccoli, cauliflower, brussels sprouts, kohlrabi, and rapini. For a cooked main dish, the options include napa cabbage, red cabbage, savoy cabbage, romanesco, and broccolini. The shopper chooses fresh items and avoids buying more than needed.",
-      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+      "text": "Omar chooses broccoli and cauliflower for dinner. He compares Brussels sprouts with kohlrabi. The stall has chard, collard greens, romaine, watercress and bok choy in separate bunches. Red cabbage, napa cabbage and savoy cabbage are nearby. He asks the seller about rapini, romanesco and broccolini before buying the broccoli today.",
+      "imageBrief": "Vegetable counter with distinct broccoli, cauliflower, Brussels sprouts, kohlrabi, chard, bok choy, red cabbage and napa cabbage. Do not confuse leaves and roots."
     },
     "exercises": [
       {
@@ -310,7 +381,7 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Prepared for a fresh salad, delicate sprigs of crisp peppery watercress with small round leaves are rinsed in a stainless colander.\nWhich peppery aquatic salad green has tiny round leaves and tender stems?",
+        "prompt": "The seller identifies the small round leaves as watercress. Bok choy has thicker pale stalks, and broccoli has clusters of flower buds.\nWhich leafy vegetable does the seller identify?",
         "answer": "Watercress",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -338,32 +409,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Chard” in a different everyday situation.",
-        "answer": "In the organic farm box, a bunch of Swiss chard displays crisp dark green leaves supported by bright ruby and golden stalks.",
+        "prompt": "Read the passage: Omar chooses broccoli and cauliflower for dinner. He compares Brussels sprouts with kohlrabi. The stall has chard, collard greens, romaine, watercress and bok choy in separate bunches. Red cabbage, napa cabbage and savoy cabbage are nearby. He asks the seller about rapini, romanesco and broccolini before buying the broccoli today.\nWhich vegetable does Omar buy today?",
+        "answer": "broccoli",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
+      },
+      {
+        "prompt": "Ask the seller which bunch is chard.",
+        "answer": "Which bunch is chard?",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-2-personal-use"
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Chard” mean here?",
+        "prompt": "Ask whether the headed vegetable is savoy cabbage.",
+        "answer": "Is this savoy cabbage?",
         "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-2-transfer"
-      },
-      {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Collard Greens"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Broccoli"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Vegetables: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show chard, collard greens, romaine, watercress, and bok choy naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the fresh-vegetable display, a shopper sees chard, collard greens, and romaine and compares chard with the other options."
+      "title": "Choosing Vegetables at the Market",
+      "idea": "Adult produce market with distinct varieties and a separate ornamental-gourd display. Seller narration supplies names. No claims of nutrient density, health effects, taste, pepper heat or edibility based only on appearance.",
+      "scriptStarter": "Omar buys chard with red and yellow stalks. Collard greens and romaine are other leafy vegetables on the stall."
     },
     "spacedReview": "1 lesson(s) back: Carrot, Potato from vegetables-1\n3 lesson(s) back: Lemon, Lime from fruits-3\n7 lesson(s) back: Tablecloth, Placemat from living-room-4"
   },
@@ -413,8 +483,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key vegetables 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to vegetables in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named vegetable and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -427,7 +497,15 @@
             "expectedAnswer": "Zucchini"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal. Question: What goes into the basket in the example with zucchini, pumpkin? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Zucchini, Pumpkin, Butternut Squash in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Zucchini, Pumpkin, Butternut Squash in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal.",
+            "sourceQuestion": "What goes into the basket in the example with zucchini, pumpkin?",
+            "sourceAnswer": "Zucchini",
+            "scenario": "Sara chooses zucchini for dinner. This zucchini is a long green summer squash; pumpkin and butternut squash stay on the stall.",
+            "question": "Which squash does Sara choose?",
+            "imageBrief": "Long green zucchini beside orange pumpkin and tan butternut squash with bulb-shaped lower end. No text or all-variety colour claim."
+          }
         },
         {
           "chunkNumber": 2,
@@ -439,7 +517,15 @@
             "expectedAnswer": "Acorn Squash"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash. Question: What is the shopper comparing with the alternatives in the example with acorn squash, spaghetti squash? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Acorn Squash, Spaghetti Squash, Cucumber in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Acorn Squash, Spaghetti Squash, Cucumber in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the market counter, a shopper sees acorn squash, spaghetti squash, and cucumber and asks how to cook acorn squash.",
+            "sourceQuestion": "What is the shopper comparing with the alternatives in the example with acorn squash, spaghetti squash?",
+            "sourceAnswer": "Acorn Squash",
+            "scenario": "Sara asks about acorn squash, the deeply ribbed winter squash. Spaghetti squash and cucumber are other items nearby.",
+            "question": "Which ribbed squash does Sara ask about?",
+            "imageBrief": "Ribbed dark-green acorn squash beside yellow oblong spaghetti squash and green cucumber. No labels or cooked-strand inference from whole fruit."
+          }
         },
         {
           "chunkNumber": 3,
@@ -451,7 +537,15 @@
             "expectedAnswer": "Gourd"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the autumn harvest stand, an ornamental curved hard-shelled gourd displays colorful striped and bumpy skin. Question: Which decorative hard-shelled autumn vegetable has a unique curved shape? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Gourd, Chayote, Bitter Melon in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Gourd, Chayote, Bitter Melon in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "On the autumn harvest stand, an ornamental curved hard-shelled gourd displays colorful striped and bumpy skin.",
+            "sourceQuestion": "Which decorative hard-shelled autumn vegetable has a unique curved shape?",
+            "sourceAnswer": "Gourd",
+            "scenario": "The seller calls the curved hard-shelled decoration a gourd. This ornamental gourd is for decoration, while chayote and bitter melon are sold as cooking ingredients.",
+            "question": "Which word names the hard-shelled decoration?",
+            "imageBrief": "Ornamental curved hard-shelled gourd on separate decoration stand, apart from pale-green chayote and bumpy bitter melon. No food preparation of ornamental gourd, labels or taste claims."
+          }
         },
         {
           "chunkNumber": 4,
@@ -463,7 +557,15 @@
             "expectedAnswer": "Delicata"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup. Question: Which item does the shopper ask about in the example with delicata, tomato? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Delicata, Tomato, Bell Pepper in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Delicata, Tomato, Bell Pepper in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the kitchen prep table, a shopper sees delicata, tomato, and bell pepper and sets delicata aside for soup.",
+            "sourceQuestion": "Which item does the shopper ask about in the example with delicata, tomato?",
+            "sourceAnswer": "Delicata",
+            "scenario": "Sara asks for delicata squash, the small squash with striped cream-coloured skin. Tomato and bell pepper remain on the counter.",
+            "question": "Which striped squash does Sara request?",
+            "imageBrief": "Cream delicata squash with green stripes beside tomato and bell pepper. No labelled package, text or claimed taste."
+          }
         },
         {
           "chunkNumber": 5,
@@ -475,15 +577,23 @@
             "expectedAnswer": "Chili Pepper"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the spice counter, several glossy bright red chili peppers with green stems lie beside a wooden cutting board. Question: Which slender, pungent red pepper is used to add heat to cooking? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Chili Pepper, Eggplant, Jalapeño in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Chili Pepper, Eggplant, Jalapeño in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "On the spice counter, several glossy bright red chili peppers with green stems lie beside a wooden cutting board.",
+            "sourceQuestion": "Which slender, pungent red pepper is used to add heat to cooking?",
+            "sourceAnswer": "Chili Pepper",
+            "scenario": "The seller identifies a slender red fruit as a chili pepper. Eggplant is a different cooking vegetable; jalapeño is another type of chili pepper.",
+            "question": "Which general pepper term does the seller use?",
+            "imageBrief": "Slender red chili pepper beside purple eggplant and green jalapeño. Text supplies identity; no heat rating, tasting or bare-eye burning implication."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Vegetables 3: Planning Meals with Vegetables",
-      "text": "A shopper plans several meals and compares vegetables at the market. For roasting and soups, the list includes zucchini, pumpkin, butternut squash, acorn squash, and spaghetti squash. For salads and greens, the shopper checks cucumber, gourd, chayote, bitter melon, and delicata. For a cooked main dish, the options include tomato, bell pepper, chili pepper, eggplant, and jalapeño. The shopper chooses fresh items and avoids buying more than needed.",
-      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+      "text": "Sara chooses zucchini, pumpkin, butternut squash, acorn squash and spaghetti squash for roasted dishes. A cucumber and tomato are for a fresh salad. She sees an ornamental gourd on a separate decoration stand, then compares chayote and asks about bitter melon and delicata squash. She adds bell pepper and eggplant for another meal. A chili pepper and jalapeño stay on the stall because she wants mild recipes.",
+      "imageBrief": "Kitchen preparation table with zucchini, pumpkin, butternut squash, cucumber, tomato, bell pepper and eggplant. Chili pepper separate; no assertions that appearance proves heat level."
     },
     "exercises": [
       {
@@ -522,32 +632,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Zucchini” in a different everyday situation.",
-        "answer": "At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal.",
+        "prompt": "Read the passage: Sara chooses zucchini, pumpkin, butternut squash, acorn squash and spaghetti squash for roasted dishes. A cucumber and tomato are for a fresh salad. She sees an ornamental gourd on a separate decoration stand, then compares chayote and asks about bitter melon and delicata squash. She adds bell pepper and eggplant for another meal. A chili pepper and jalapeño stay on the stall because she wants mild recipes.\nWhy does Sara leave the chili pepper?",
+        "answer": "because she wants a mild meal",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
+      },
+      {
+        "prompt": "Tell the seller that you want zucchini for dinner.",
+        "answer": "I would like zucchini for dinner.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-3-personal-use"
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Zucchini” mean here?",
+        "prompt": "Explain that the ornamental gourd is for decoration.",
+        "answer": "This ornamental gourd is for decoration.",
         "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-3-transfer"
-      },
-      {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Pumpkin"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Cucumber"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Vegetables: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show zucchini, pumpkin, butternut squash, acorn squash, and spaghetti squash naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the neighbourhood produce stall, a shopper sees zucchini, pumpkin, and butternut squash and chooses zucchini for tonight's meal."
+      "title": "Choosing Vegetables at the Market",
+      "idea": "Adult produce market with distinct varieties and a separate ornamental-gourd display. Seller narration supplies names. No claims of nutrient density, health effects, taste, pepper heat or edibility based only on appearance.",
+      "scriptStarter": "Sara chooses zucchini for dinner. This zucchini is a long green summer squash; pumpkin and butternut squash stay on the stall."
     },
     "spacedReview": "1 lesson(s) back: Chard, Collard Greens from vegetables-2\n3 lesson(s) back: Fig, Olive from fruits-4\n7 lesson(s) back: Lamp, Phone from living-room-5"
   },
@@ -597,8 +706,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key vegetables 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to vegetables in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named vegetable and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -611,7 +720,15 @@
             "expectedAnswer": "Habanero"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the market counter, a shopper sees habanero, serrano, and poblano and asks how to cook habanero. Question: Which item is set aside for the meal in the example with habanero, serrano? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Habanero, Serrano, Poblano in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Habanero, Serrano, Poblano in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the market counter, a shopper sees habanero, serrano, and poblano and asks how to cook habanero.",
+            "sourceQuestion": "Which item is set aside for the meal in the example with habanero, serrano?",
+            "sourceAnswer": "Habanero",
+            "scenario": "The seller names a small orange pepper as habanero. Serrano and poblano peppers are in separate baskets. Its exact variety comes from the seller’s statement.",
+            "question": "Which pepper variety does the seller name?",
+            "imageBrief": "Orange habanero beside separate slender serrano and broad dark-green poblano peppers. No claimed heat level from colour, labels or tasting."
+          }
         },
         {
           "chunkNumber": 2,
@@ -623,7 +740,15 @@
             "expectedAnswer": "Cayenne"
           },
           "imageBrief": "Adult learning visual support for this exact situation: In the fresh pepper basket, slender elongated red cayenne peppers are harvested for drying and seasoning. Question: Which long, slender fiery red pepper is harvested for pungent seasoning? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Cayenne, Paprika, Onion in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Cayenne, Paprika, Onion in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "In the fresh pepper basket, slender elongated red cayenne peppers are harvested for drying and seasoning.",
+            "sourceQuestion": "Which long, slender fiery red pepper is harvested for pungent seasoning?",
+            "sourceAnswer": "Cayenne",
+            "scenario": "The seller names the long slender red pepper as cayenne. Paprika is a ground pepper spice and onion is a bulb vegetable.",
+            "question": "Which pepper variety does the seller name?",
+            "imageBrief": "Long slender red cayenne pepper beside plain closed paprika jar and onion. No labels or heat inferred from photograph."
+          }
         },
         {
           "chunkNumber": 3,
@@ -635,7 +760,15 @@
             "expectedAnswer": "Garlic"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the kitchen prep table, a shopper sees garlic, leek, and shallot and sets garlic aside for soup. Question: What does the shopper choose in the example with garlic, leek? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Garlic, Leek, Shallot in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Garlic, Leek, Shallot in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the kitchen prep table, a shopper sees garlic, leek, and shallot and sets garlic aside for soup.",
+            "sourceQuestion": "What does the shopper choose in the example with garlic, leek?",
+            "sourceAnswer": "Garlic",
+            "scenario": "The cook chooses a garlic bulb made of several cloves. Leek and shallot are other ingredients for the soup.",
+            "question": "Which ingredient is a bulb made of several cloves?",
+            "imageBrief": "Whole garlic bulb and separate garlic clove beside leek and shallot. No knife action, labels or nutrition claims."
+          }
         },
         {
           "chunkNumber": 4,
@@ -647,7 +780,15 @@
             "expectedAnswer": "Scallion"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the prep board, a fresh bunch of green scallions features crisp white root ends transitioning into long, hollow green stalks. Question: Which slender green spring onion has white bulbous bases and long green tops? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Scallion, Chive, Asparagus in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Scallion, Chive, Asparagus in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "On the prep board, a fresh bunch of green scallions features crisp white root ends transitioning into long, hollow green stalks.",
+            "sourceQuestion": "Which slender green spring onion has white bulbous bases and long green tops?",
+            "sourceAnswer": "Scallion",
+            "scenario": "The cook names the young onion with a white base and long green top as scallion. A chive is thinner and asparagus has a pointed spear tip.",
+            "question": "Which young onion does the cook name?",
+            "imageBrief": "Scallion with white base and green hollow top beside thin chive and asparagus spear. No labels or species substitution."
+          }
         },
         {
           "chunkNumber": 5,
@@ -659,15 +800,23 @@
             "expectedAnswer": "Celery"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Beside the salad bowl, a fresh head of celery stands upright with crisp, ribbed pale-green stalks and leafy tops. Question: Which crunchy, ribbed pale-green vegetable stalk is commonly chopped for soups and salads? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Celery, Artichoke, Fennel in a natural setting."
+          "imageAlt": "Adult vegetables scene showing lesson-related items or actions including Celery, Artichoke, Fennel in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "Beside the salad bowl, a fresh head of celery stands upright with crisp, ribbed pale-green stalks and leafy tops.",
+            "sourceQuestion": "Which crunchy, ribbed pale-green vegetable stalk is commonly chopped for soups and salads?",
+            "sourceAnswer": "Celery",
+            "scenario": "The cook chooses celery for soup. Its long stalks have visible ribs. Artichoke is an immature flower head and fennel has feathery leaves.",
+            "question": "Which vegetable does the cook choose for soup?",
+            "imageBrief": "Ribbed celery stalks beside artichoke flower head and bulb fennel with feathery leaves. No text, taste or nutritional claim."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Vegetables 4: Planning Meals with Vegetables",
-      "text": "A shopper plans several meals and compares vegetables at the market. For roasting and soups, the list includes habanero, serrano, poblano, cayenne, and paprika. For salads and greens, the shopper checks onion, garlic, leek, shallot, and scallion. For a cooked main dish, the options include chive, asparagus, celery, artichoke, and fennel. The shopper chooses fresh items and avoids buying more than needed.",
-      "imageBrief": "One uncluttered vegetables scene supporting the reading and showing the first six target words."
+      "text": "A cook prepares soup with onion, garlic, leek, shallot and scallion. One chive goes on the finished dish as a garnish. Celery and fennel go in the pot, while asparagus and artichoke are for another meal. Habanero, serrano and poblano peppers stay in a separate basket. Cayenne and paprika are in small spice jars, but the soup does not need them today.",
+      "imageBrief": "Kitchen counter with onion, garlic, leek, shallot, scallions, chives, celery and fennel; small separate peppers and unlabelled paprika jar. No heat-level diagnosis from appearance."
     },
     "exercises": [
       {
@@ -706,32 +855,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Habanero” in a different everyday situation.",
-        "answer": "At the market counter, a shopper sees habanero, serrano, and poblano and asks how to cook habanero.",
+        "prompt": "Read the passage: A cook prepares soup with onion, garlic, leek, shallot and scallion. One chive goes on the finished dish as a garnish. Celery and fennel go in the pot, while asparagus and artichoke are for another meal. Habanero, serrano and poblano peppers stay in a separate basket. Cayenne and paprika are in small spice jars, but the soup does not need them today.\nWhat goes on the finished dish as a garnish?",
+        "answer": "one chive",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
+      },
+      {
+        "prompt": "Ask for a bulb of garlic.",
+        "answer": "Could I have a bulb of garlic, please?",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-4-personal-use"
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Habanero” mean here?",
+        "prompt": "Ask the seller to name the pepper variety.",
+        "answer": "What variety is this pepper?",
         "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "vegetables-4-transfer"
-      },
-      {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Serrano"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Onion"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Vegetables: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show habanero, serrano, poblano, cayenne, and paprika naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the market counter, a shopper sees habanero, serrano, and poblano and asks how to cook habanero."
+      "title": "Choosing Vegetables at the Market",
+      "idea": "Adult produce market with distinct varieties and a separate ornamental-gourd display. Seller narration supplies names. No claims of nutrient density, health effects, taste, pepper heat or edibility based only on appearance.",
+      "scriptStarter": "The seller names a small orange pepper as habanero. Serrano and poblano peppers are in separate baskets. Its exact variety comes from the seller’s statement."
     },
     "spacedReview": "1 lesson(s) back: Zucchini, Pumpkin from vegetables-3\n3 lesson(s) back: Carrot, Potato from vegetables-1\n7 lesson(s) back: Apple, Banana from fruits-1"
   }

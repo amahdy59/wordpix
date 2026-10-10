@@ -1,14 +1,43 @@
 {
-  "version": "0.1.11",
+  "version": "0.1.12",
   "notes": [
-    "More precise airport phrases and clearer 3D printing explanations.",
-    "Lesson questions now include the context needed to answer them."
+    "Clearer lesson situations, readings and practice across the vocabulary curriculum.",
+    "More complete Arabic meanings and examples, with clearer distinctions between similar words."
   ],
   "notesAr": [
-    "عبارات أدق للمطار وشروح أوضح لمفردات الطباعة ثلاثية الأبعاد.",
-    "تتضمن أسئلة الدروس الآن السياق اللازم للإجابة عنها."
+    "مواقف وقراءات وتدريبات أوضح في دروس المفردات.",
+    "معانٍ وأمثلة عربية أكثر اكتمالًا، مع توضيح الفروق بين الكلمات المتشابهة."
   ],
   "releases": [
+    {
+      "id": "0.1.12",
+      "version": "0.1.12",
+      "date": "2026-10-10",
+      "title": {
+        "en": "Clearer vocabulary lessons and Arabic support",
+        "ar": "دروس مفردات أوضح ودعم عربي أفضل"
+      },
+      "changes": [
+        {
+          "id": "curriculum-context-review",
+          "category": "improved",
+          "en": "Vocabulary lessons across all 200 units now use more specific situations, readings and practice questions, with answers grounded in the supplied context.",
+          "ar": "تستخدم دروس المفردات في جميع الوحدات البالغ عددها 200 مواقف وقراءات وأسئلة تدريب أكثر تحديدًا، مع إجابات تستند إلى السياق المقدّم."
+        },
+        {
+          "id": "bilingual-word-senses",
+          "category": "improved",
+          "en": "Expanded Arabic meanings, English definitions and examples clarify object, action and worker senses, including food and shopping vocabulary.",
+          "ar": "توضّح المعاني العربية والتعريفات الإنجليزية والأمثلة الموسّعة معاني الأشياء والأفعال والمهن، بما فيها مفردات الطعام والتسوّق."
+        },
+        {
+          "id": "protected-picture-context",
+          "category": "fixed",
+          "en": "Written questions paired with existing vocabulary pictures use clearer context while retaining those picture references. New pictures remain subject to individual visual review.",
+          "ar": "تستخدم الأسئلة المكتوبة المصاحبة لصور المفردات الحالية سياقًا أوضح مع الاحتفاظ بمراجع الصور. وتظل الصور الجديدة خاضعة للمراجعة البصرية الفردية."
+        }
+      ]
+    },
     {
       "id": "0.1.11",
       "version": "0.1.11",

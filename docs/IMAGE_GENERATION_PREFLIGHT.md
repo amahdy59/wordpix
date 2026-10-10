@@ -13,7 +13,7 @@ node scripts/audit_image_generation_readiness.mjs --output=output/image-generati
 node scripts/build_image_generation_queue.mjs --units=everyday-clothing,accessories-jewelry,footwear --output=output/clothing-review.json
 ```
 
-4. Copy the relevant `reviewTemplates` records into a review document with an `items` array. Complete each check only after reviewing the actual content. Each record needs `unitId`, `lessonId`, `status: "approved"`, `lessonSha256`, `reviewedBy`, `reviewedAt` (`YYYY-MM-DD`), all eight `checks` set to `approved`, and two distinct HTTPS evidence URLs in `sources`. The digest covers the entire lesson and its phrase records. Reading, exercise, Arabic, option or brief edits invalidate the approval. Never blanket-approve records to make a queue pass.
+4. The queue builder loads tracked `docs/content-review/*-review.json` ledgers by default. For new reviews, copy the relevant `reviewTemplates` into a document with an `items` array. Complete each check only after reviewing the actual content. Each record needs `unitId`, `lessonId`, `status: "approved"`, `lessonSha256`, `reviewedBy`, `reviewedAt` (`YYYY-MM-DD`), all eight `checks` set to `approved`, and two distinct HTTPS evidence URLs in `sources`. The digest covers the raw lesson (including learning-context anchors and image holds), its phrase records and the unit bilingual catalog. Reading, exercise, Arabic, option or brief edits invalidate the approval. Never blanket-approve records to make a queue pass.
 5. Rebuild with the review document and inspect the resulting prompts:
 
 ```powershell
@@ -31,7 +31,9 @@ The runner defaults to a dry run. An empty queue fails without a service request
 
 Queues built here produce `word-reference` support. The written context supplies dialogue, intent, sequence, quantity, price and hidden product characteristics. A photograph cannot prove non-GMO status, gluten content, an unnamed worker's role, payment terms or container capacity. For an assessment that depends on several visible alternatives, author and review a full scene explicitly; do not pass a single-object reference off as complete visual evidence.
 
-Zero readable text includes package labels, calendar names, screen content, signs and currency denominations. A barcode's parallel-line pattern may be necessary for its concept, but omit digits and other print. Resolve clock numeral/count requirements in an explicit brief review before generation; do not silently waive the visual policy.
+Zero readable text includes numbers, mathematical glyphs, package labels, calendar names, screen content, signs and currency denominations. Historical `imageSymbols` exceptions are rejected. A barcode's parallel-line pattern may be necessary for its concept, but omit digits and other print. Clocks must use unnumbered faces; visible object groups may teach small counts, subject to exact-count inspection. Hold briefs that require text rather than replacing the target with a blank card.
+
+An `imageGenerationHold` preserves an approved written lesson while excluding its scene from paid requests. Queues report `held` separately from content-review `blocked` jobs and existing `covered` references. The runner rejects held scenes even in an older queue. The readiness report's `generationApproved` field describes whole-lesson content approval, not eligibility of every image; inspect `heldScenes` and the bounded queue before proceeding. A generic desk cannot depict a medicine category, and a blank phone cannot establish an application's identity. Do not weaken the exact-concept visual gate to accommodate them.
 
 ## Resume and retries
 
@@ -39,4 +41,4 @@ Use `scripts/generate_reviewed_scene_batch.mjs`, which checks content before sel
 
 Do not use primary-checkout `generate_scene.cjs`, `run_batch_auto.cjs` or `run_batch_fast_parallel.cjs`: their historical plans and retry/status behavior have not been brought into this review gate. Do not rebuild historical manifests over source evidence. Preserve originals and create a newly dated queue from current content.
 
-Run `node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs` when changing these tools. Follow the mandatory TypeScript, Vitest, lint and relevant build/E2E gates before committing software/content updates; preserve bilingual release history.
+Run `node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs` when changing these tools. These guards also run in the pre-push gate. Follow the mandatory TypeScript, Vitest, lint and relevant build/E2E gates before committing software/content updates; preserve bilingual release history.

@@ -1,16 +1,16 @@
 {
   "module": {
-    "definition": "One of the inherent cognitive or perceptual powers of the mind.",
-    "arabicTranslation": "وحدة"
+    "definition": "A separate structural section of a space station designed for a particular function.",
+    "arabicTranslation": "وحدة محطة فضائية"
   },
   "airlock": {
-    "definition": "A chamber that provides access to space where air is under pressure.",
+    "definition": "A chamber with controlled pressure and separate doors that permits passage between different pressure environments.",
     "arabicTranslation": "غرفة معادلة ضغط"
   },
   "solar-array": {
     "definition": "An electrical device made from many connected solar cells that convert sunlight into electricity.",
     "arabicTranslation": "مجموعة ألواح شمسية",
-    "exampleUsage": "The solar array was used during the activity."
+    "exampleUsage": "The station’s solar array generated electrical power from sunlight."
   },
   "docking-port": {
     "definition": "A connection point on a spacecraft or space station where another spacecraft can attach securely.",
@@ -18,12 +18,12 @@
     "arabicTranslation": "منفذ التحام"
   },
   "cupola": {
-    "definition": "A vertical cylindrical furnace for melting iron for casting.",
+    "definition": "A windowed observation module providing views outside the station.",
     "arabicTranslation": "قبة مراقبة"
   },
   "truss": {
-    "definition": "(medicine) a bandage consisting of a pad and belt.",
-    "arabicTranslation": "جمالون"
+    "definition": "A supporting framework that holds external station equipment such as solar arrays and radiators.",
+    "arabicTranslation": "هيكل شبكي داعم"
   },
   "radiator-panel": {
     "definition": "A panel that releases excess heat from a spacecraft into space.",
@@ -33,7 +33,7 @@
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
     "arabicTranslation": "هوائي",
-    "exampleUsage": "The antenna was used during the activity."
+    "exampleUsage": "The antenna carried signals for the supported communication system."
   },
   "hatch": {
     "arabicTranslation": "فتحة دخول",
@@ -48,13 +48,13 @@
     "arabicTranslation": "خوذة"
   },
   "gloves": {
-    "definition": "The handwear used by fielders in playing baseball.",
-    "arabicTranslation": "قفازات"
+    "definition": "Protective hand coverings worn with a spacesuit.",
+    "arabicTranslation": "قفازات بدلة الفضاء"
   },
   "boots": {
-    "definition": "Compartment in an automobile that carries luggage or shopping or tools.",
-    "arabicTranslation": "أحذية طويلة",
-    "exampleUsage": "The boots was used during the activity."
+    "definition": "Foot coverings forming part of the astronaut’s clothing or spacesuit in this context.",
+    "arabicTranslation": "أحذية بدلة فضاء",
+    "exampleUsage": "The astronaut’s boots formed part of the spacesuit."
   },
   "tether": {
     "arabicTranslation": "حبل أمان",
@@ -68,11 +68,11 @@
   "tool-belt": {
     "definition": "A belt worn around the waist keeps hand tools close in pockets and loops. It is useful for carpentry, repairs, and crafts.",
     "arabicTranslation": "حزام أدوات",
-    "exampleUsage": "The tool belt was used during the activity."
+    "exampleUsage": "The tool belt kept the worker’s tools close to hand."
   },
   "visor": {
-    "definition": "A piece of armor plate (with eye slits) fixed or hinged to a medieval helmet to protect the face.",
-    "arabicTranslation": "واقٍ للعين"
+    "definition": "A protective transparent or tinted screen on a spacesuit helmet.",
+    "arabicTranslation": "واقي الوجه في خوذة الفضاء"
   },
   "oxygen-tank": {
     "definition": "A strong container used to store oxygen gas for controlled use in equipment or life-support systems.",
@@ -90,8 +90,8 @@
     "arabicTranslation": "كبسولة نوم"
   },
   "galley": {
-    "definition": "The area for food preparation on a ship.",
-    "arabicTranslation": "مطبخ صغير"
+    "definition": "The station area used for food storage and preparation.",
+    "arabicTranslation": "مطبخ المحطة"
   },
   "exercise-machine": {
     "definition": "A piece of equipment designed for physical exercise or fitness training.",
@@ -103,8 +103,8 @@
     "arabicTranslation": "مرحاض"
   },
   "shower-bag": {
-    "definition": "A small container used for washing hands or cleaning surfaces.",
-    "arabicTranslation": "كيس دُش"
+    "definition": "A bag used to contain supplies or washing material in a specified spacecraft hygiene arrangement; it does not imply an Earth-style shower on the ISS.",
+    "arabicTranslation": "كيس مستلزمات الاغتسال"
   },
   "velcro-strip": {
     "definition": "A fastener used to fasten clothing or bags.",
@@ -141,14 +141,14 @@
   "water-recycler": {
     "definition": "A device that recycles water from waste streams.",
     "arabicTranslation": "جهاز إعادة تدوير الماء",
-    "exampleUsage": "The water recycler was used during the activity."
+    "exampleUsage": "The water recycler recovered water through the station’s treatment system."
   },
   "air-filter": {
-    "definition": "A component that removes dust from air as the air flows through it.",
-    "arabicTranslation": "يرشّح هواء"
+    "definition": "A component that removes specified particles or contaminants from circulating air.",
+    "arabicTranslation": "مرشح هواء"
   },
   "spectrometer": {
-    "definition": "Spectroscope for obtaining a mass spectrum by deflecting ions into a thin slit and measuring the ion current with an electrometer.",
+    "definition": "An instrument that measures a spectrum to investigate properties of a sample or radiation.",
     "arabicTranslation": "مطياف"
   },
   "sample-container": {
@@ -158,7 +158,7 @@
   "data-logger": {
     "definition": "An electronic device automatically records and saves measurements from sensors over time, allowing people to study and track changes later.",
     "arabicTranslation": "جهاز تسجيل بيانات",
-    "exampleUsage": "The data logger was used during the activity."
+    "exampleUsage": "The data logger saved measurements from the experiment over time."
   },
   "experiment-rack": {
     "definition": "A frame or cabinet that holds scientific experiment equipment.",
@@ -167,25 +167,25 @@
   "control-panel": {
     "definition": "A flat section of a device holds the buttons, switches, and dials that control its operation.",
     "arabicTranslation": "لوحة تحكم",
-    "exampleUsage": "The control panel was used during the activity."
+    "exampleUsage": "The control panel contained the system’s switches and controls."
   },
   "monitor": {
-    "definition": "Display produced by a device that takes signals and displays them on a television screen or a computer monitor.",
+    "definition": "A screen that displays information from a computer or instrument.",
     "arabicTranslation": "شاشة مراقبة",
-    "exampleUsage": "The monitor was used during the activity."
+    "exampleUsage": "The monitor displayed the file that the technician had opened."
   },
   "keyboard": {
     "definition": "Device consisting of a set of keys on a piano or organ or typewriter or typesetting machine or computer or the like.",
     "arabicTranslation": "لوحة مفاتيح",
-    "exampleUsage": "The keyboard was used during the activity."
+    "exampleUsage": "She entered the sample number using the keyboard."
   },
   "joystick": {
     "definition": "A movable control stick used to operate equipment.",
     "arabicTranslation": "عصا تحكم"
   },
   "radio": {
-    "arabicTranslation": "إذاعة",
-    "definition": "A device used to send and receive messages by radio waves."
+    "arabicTranslation": "جهاز لاسلكي",
+    "definition": "A device for communication using radio waves."
   },
   "map-display": {
     "definition": "A screen showing a map for reference or navigation.",
@@ -196,7 +196,7 @@
     "arabicTranslation": "كاميرا"
   },
   "alarm": {
-    "definition": "To fill with apprehension or alarm.",
+    "definition": "A signal or device warning the crew of a possible problem.",
     "arabicTranslation": "إنذار"
   },
   "checklist": {
@@ -208,7 +208,7 @@
     "arabicTranslation": "منظر الأرض من الفضاء"
   },
   "stars": {
-    "definition": "Any celestial body visible (as a point of light) from the Earth at night.",
+    "definition": "Luminous astronomical bodies that produce energy through processes including nuclear fusion.",
     "arabicTranslation": "نجوم"
   },
   "moon": {
@@ -222,7 +222,7 @@
   "satellite": {
     "definition": "A machine sent into space to collect information and send it back.",
     "arabicTranslation": "قمر صناعي",
-    "exampleUsage": "The satellite was used during the activity."
+    "exampleUsage": "The artificial satellite followed its orbit around Earth."
   },
   "space-debris": {
     "definition": "Human-made objects or fragments in space that are no longer in use.",
@@ -237,7 +237,7 @@
     "arabicTranslation": "ذراع آلية"
   },
   "solar-flare": {
-    "definition": "A sudden burst of intense radiation from the Sun, often arising near sunspots, may also hurl high-energy particles into space.",
+    "definition": "A sudden intense release of electromagnetic radiation from the Sun associated with magnetic activity.",
     "arabicTranslation": "توهج شمسي"
   },
   "aurora": {
@@ -245,16 +245,16 @@
     "arabicTranslation": "شفق قطبي"
   },
   "lab-module": {
-    "definition": "A separate lab unit can be replaced or rearranged within a workstation or larger system to support different experiments and work processes.",
-    "arabicTranslation": "وحدة مختبر"
+    "definition": "A section of the space station containing facilities for scientific experiments.",
+    "arabicTranslation": "وحدة مختبر فضائي"
   },
   "crew-quarters": {
     "definition": "The areas where crew members sleep and keep personal belongings.",
     "arabicTranslation": "أماكن إقامة الطاقم"
   },
   "node": {
-    "definition": "(botany) the small swelling that is the part of a plant stem from which one or more leaves emerge.",
-    "arabicTranslation": "عقدة"
+    "definition": "A connecting module joining other station sections and providing access between them.",
+    "arabicTranslation": "وحدة ربط"
   },
   "jetpack": {
     "definition": "A device worn on the back that produces thrust to move a person.",
@@ -263,7 +263,7 @@
   "treadmill": {
     "definition": "An exercise device consisting of an endless belt on which a person can walk or jog without changing place.",
     "arabicTranslation": "جهاز مشي",
-    "exampleUsage": "The treadmill was used during the activity."
+    "exampleUsage": "The astronaut used the station treadmill with its required restraint system."
   },
   "oxygen-generator": {
     "definition": "Equipment that produces oxygen for the crew to breathe.",
@@ -278,35 +278,47 @@
     "arabicTranslation": "نافذة مشاهدة"
   },
   "spacewalk": {
-    "definition": "To move in space outside a space craft.",
+    "definition": "An activity in which an astronaut works outside a spacecraft while wearing the required protective suit.",
     "arabicTranslation": "سير في الفضاء"
   },
   "experiment": {
     "arabicTranslation": "تجربة",
-    "definition": "A test carried out to learn or prove something."
+    "definition": "A planned investigation used to test an idea or study a phenomenon."
   },
   "dock": {
-    "definition": "Landing in a harbor next to a pier where ships are loaded and unloaded or repaired.",
-    "arabicTranslation": "التحام"
+    "definition": "To connect a spacecraft securely to a compatible spacecraft or station interface.",
+    "arabicTranslation": "يلتحم"
   },
   "orbit": {
     "arabicTranslation": "مدار",
     "definition": "The curved path one object follows around another in space."
   },
   "float": {
-    "arabicTranslation": "مشروب مع آيس كريم",
-    "definition": "To stay suspended in air or water without falling or sinking."
+    "arabicTranslation": "يطفو في حالة انعدام الوزن الظاهري",
+    "definition": "To remain suspended or drift in the station without standing on a floor."
   },
   "exercise": {
-    "arabicTranslation": "تمرين",
-    "definition": "Physical activity done to improve or maintain health."
+    "arabicTranslation": "يمارس الرياضة",
+    "definition": "To perform planned physical activity to maintain fitness in this verb list."
   },
   "repair": {
-    "arabicTranslation": "إصلاح",
-    "definition": "To fix something that is damaged or not working."
+    "arabicTranslation": "يصلح",
+    "definition": "To fix something damaged or not working in this verb list."
   },
   "communicate": {
     "arabicTranslation": "يتواصل",
     "definition": "To share information or ideas with someone."
+  },
+  "window": {
+    "definition": "An opening fitted with transparent material to admit light or provide a view.",
+    "arabicTranslation": "نافذة"
+  },
+  "laptop": {
+    "definition": "A portable computer with a built-in screen and keyboard.",
+    "arabicTranslation": "حاسوب محمول"
+  },
+  "clock": {
+    "definition": "A device that shows or measures time.",
+    "arabicTranslation": "ساعة"
   }
 }

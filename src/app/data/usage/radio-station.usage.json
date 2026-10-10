@@ -29,7 +29,7 @@
     "targetWordsArabic": [
       "ميكروفون",
       "منضدة مزج صوتي",
-      "سماعات الرأس (هيدفونز)",
+      "سماعات رأس",
       "سماعة مراقبة صوتية",
       "جهاز إرسال",
       "هوائي",
@@ -40,136 +40,119 @@
       "كابينة صوت",
       "لوح معالجة صوتية",
       "لافتة على الهواء",
-      "مكتب",
-      "كرسي"
+      "مكتب استوديو",
+      "كرسي استوديو"
     ],
     "usage": {
-      "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the media workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "170-200 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Microphone", "Mixing Console", "Headphones", "Monitor Speaker"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.",
+          "scenario": "A broadcast studio microphone converts acoustic vocal sound waves into electrical audio signals for amplification, mixing, and radio transmission. A mixing console routes channels, and headphones let hosts monitor audio. The radio host speaks directly into the cardioid condenser microphone.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which acoustic transducer converts vocal speech into electrical audio signals?",
             "options": ["Microphone", "Mixing Console", "Headphones"],
             "expectedAnswer": "Microphone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Microphone as the central item; include Microphone, Mixing Console, and Headphones naturally where visually appropriate, but make the real-world use of Microphone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Microphone as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Transmitter", "Antenna", "Amplifier", "Equalizer"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.",
+          "scenario": "A radio transmitter modulates audio signals onto an assigned radio frequency carrier wave and amplifies the signal for radiation through the transmission tower. An antenna radiates waves, and an amplifier boosts power. The chief engineer monitors the power output of the FM radio transmitter.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which electronic equipment modulates audio onto a carrier wave for broadcast?",
             "options": ["Transmitter", "Antenna", "Amplifier"],
             "expectedAnswer": "Transmitter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Transmitter as the central item; include Transmitter, Antenna, and Amplifier naturally where visually appropriate, but make the real-world use of Transmitter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Transmitter as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Compressor", "Pop Filter", "Sound Booth", "Acoustic Panel"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.",
+          "scenario": "An audio compressor is a dynamic processing unit that automatically narrows the volume difference between loud peaks and soft whispers to ensure consistent radio loudness. A pop filter stops breath puffs, and acoustic panels absorb echo. The sound engineer inserts a compressor on the vocal chain to control voice peaks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which dynamic audio processor balances volume differences to maintain consistent broadcast loudness?",
             "options": ["Compressor", "Pop Filter", "Sound Booth"],
             "expectedAnswer": "Compressor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Compressor as the central item; include Compressor, Pop Filter, and Sound Booth naturally where visually appropriate, but make the real-world use of Compressor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Compressor as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["On-Air Sign", "Desk", "Chair"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.",
+          "scenario": "An on-air sign is an illuminated warning light fixture mounted outside the broadcast studio that glows red to signal that studio microphones are active and quiet is required. Studio desks hold hardware, and chairs provide seating. The on-air sign illuminates bright red as the broadcast begins.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which illuminated warning fixture glows red to indicate active studio microphones?",
             "options": ["On-Air Sign", "Desk", "Chair"],
             "expectedAnswer": "On-Air Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the On-Air Sign as the central item; include On-Air Sign, Desk, and Chair naturally where visually appropriate, but make the real-world use of On-Air Sign the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing On-Air Sign as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Radio Station",
-      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microphone, Mixing Console, Headphones, and Monitor Speaker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Transmitter, Antenna, Amplifier, and Equalizer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Compressor, Pop Filter, Sound Booth, and Acoustic Panel. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers On-Air Sign, Desk, and Chair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Broadcast microphones, transmitters and signal equipment",
+      "text": "A broadcast studio microphone converts acoustic vocal sound waves into electrical audio signals for amplification, mixing, and radio transmission. A mixing console routes channels, and headphones let hosts monitor audio. The radio host speaks directly into the cardioid condenser microphone. A radio transmitter modulates audio signals onto an assigned radio frequency carrier wave and amplifies the signal for radiation through the transmission tower. An antenna radiates waves, and an amplifier boosts power. The chief engineer monitors the power output of the FM radio transmitter. An audio compressor is a dynamic processing unit that automatically narrows the volume difference between loud peaks and soft whispers to ensure consistent radio loudness. A pop filter stops breath puffs, and acoustic panels absorb echo. The sound engineer inserts a compressor on the vocal chain to control voice peaks. An on-air sign is an illuminated warning light fixture mounted outside the broadcast studio that glows red to signal that studio microphones are active and quiet is required. Studio desks hold hardware, and chairs provide seating. The on-air sign illuminates bright red as the broadcast begins.",
+      "imageBrief": "Use independently inspected word references to support Broadcast microphones, transmitters and signal equipment; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microphone, Mixing Console, Headphones, and Monitor Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A broadcast studio microphone converts acoustic vocal sound waves into electrical audio signals for amplification, mixing, and radio transmission. A mixing console routes channels, and headphones let hosts monitor audio. The radio host speaks directly into the cardioid condenser microphone.\nWhich acoustic transducer converts vocal speech into electrical audio signals?",
         "answer": "Microphone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transmitter, Antenna, Amplifier, and Equalizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A radio transmitter modulates audio signals onto an assigned radio frequency carrier wave and amplifies the signal for radiation through the transmission tower. An antenna radiates waves, and an amplifier boosts power. The chief engineer monitors the power output of the FM radio transmitter.\nWhich electronic equipment modulates audio onto a carrier wave for broadcast?",
         "answer": "Transmitter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compressor, Pop Filter, Sound Booth, and Acoustic Panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An audio compressor is a dynamic processing unit that automatically narrows the volume difference between loud peaks and soft whispers to ensure consistent radio loudness. A pop filter stops breath puffs, and acoustic panels absorb echo. The sound engineer inserts a compressor on the vocal chain to control voice peaks.\nWhich dynamic audio processor balances volume differences to maintain consistent broadcast loudness?",
         "answer": "Compressor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On-Air Sign, Desk, and Chair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An on-air sign is an illuminated warning light fixture mounted outside the broadcast studio that glows red to signal that studio microphones are active and quiet is required. Studio desks hold hardware, and chairs provide seating. The on-air sign illuminates bright red as the broadcast begins.\nWhich illuminated warning fixture glows red to indicate active studio microphones?",
         "answer": "On-Air Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A broadcast studio microphone converts acoustic vocal sound waves into electrical audio signals for amplification, mixing, and radio transmission. A mixing console routes channels, and headphones let hosts monitor audio. The radio host speaks directly into the cardioid condenser microphone. A radio transmitter modulates audio signals onto an assigned radio frequency carrier wave and amplifies the signal for radiation through the transmission tower. An antenna radiates waves, and an amplifier boosts power. The chief engineer monitors the power output of the FM radio transmitter. An audio compressor is a dynamic processing unit that automatically narrows the volume difference between loud peaks and soft whispers to ensure consistent radio loudness. A pop filter stops breath puffs, and acoustic panels absorb echo. The sound engineer inserts a compressor on the vocal chain to control voice peaks. An on-air sign is an illuminated warning light fixture mounted outside the broadcast studio that glows red to signal that studio microphones are active and quiet is required. Studio desks hold hardware, and chairs provide seating. The on-air sign illuminates bright red as the broadcast begins.\nCompare “Microphone” and “Mixing Console” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Microphone"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Monitor Speaker"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Monitor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the radio station task. Use Microphone, Mixing Console, Headphones, Monitor Speaker, Transmitter, Antenna, Amplifier, Equalizer, Compressor, Pop Filter, Sound Booth, Acoustic Panel, On-Air Sign, Desk, and Chair in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Microphone, Mixing Console, Headphones, Monitor Speaker, Transmitter, Antenna, Amplifier, Equalizer, Compressor, Pop Filter, Sound Booth, Acoustic Panel, On-Air Sign, Desk, Chair in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Radio Station: In Context",
-      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Broadcast microphones, transmitters and signal equipment",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A broadcast studio microphone converts acoustic vocal sound waves into electrical audio signals for amplification, mixing, and radio transmission. A mixing console routes channels, and headphones let hosts monitor audio. The radio host speaks directly into the cardioid condenser microphone. Which acoustic transducer converts vocal speech into electrical audio signals?"
     },
     "spacedReview": "1 lesson(s) back: Monitor, Boom Mic from tv-studio-5\n3 lesson(s) back: Live Broadcast, Recording from tv-studio-3\n7 lesson(s) back: Ink, Paper Roll from newspaper-office-4"
   },
@@ -202,7 +185,7 @@
     ],
     "targetWordsArabic": [
       "حاسوب",
-      "ساعة حائط / ساعة",
+      "ساعة استوديو دقيقة",
       "حامل نص",
       "زجاج ماء",
       "تنظيم الكابلات",
@@ -218,132 +201,115 @@
       "زر التسجيل"
     ],
     "usage": {
-      "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the media workplace.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "165-195 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Computer", "Clock", "Script Stand", "Water Glass"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.",
+          "scenario": "A studio broadcast computer runs digital automation software, plays scheduled music libraries, triggers commercial carts, and displays live presenter notes. A clock shows broadcast time, and a script stand holds notes. The radio presenter clicks the automation cart on the studio computer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which digital machine runs station automation software and plays music libraries?",
             "options": ["Computer", "Clock", "Script Stand"],
             "expectedAnswer": "Computer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Computer as the central item; include Computer, Clock, and Script Stand naturally where visually appropriate, but make the real-world use of Computer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Computer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cable Management", "Audio Interface", "Digital Recorder", "Sound Card"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.",
+          "scenario": "Studio cable management systems use conduits, Velcro ties, and under-desk raceways to route XLR, power, and Ethernet cables neatly without tangles or signal interference. An audio interface digitizes sound, and a sound card processes audio. The technician organizes studio wiring using cable management raceways.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which organizing system routes studio cables neatly through raceways to prevent tangles?",
             "options": ["Cable Management", "Audio Interface", "Digital Recorder"],
             "expectedAnswer": "Cable Management"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Cable Management as the central item; include Cable Management, Audio Interface, and Digital Recorder naturally where visually appropriate, but make the real-world use of Cable Management the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Cable Management as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Phantom Power", "XLR Cable", "Headphone Amplifier", "Audio Software"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.",
+          "scenario": "Phantom power is a standard 48-volt direct current power supply sent through balanced XLR microphone cables to energize internal active circuits in condenser microphones. An XLR cable carries audio, and a headphone amplifier drives headphones. The audio engineer engages 48-volt phantom power on the mixing board.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which 48-volt DC power supply sent through XLR cables powers condenser microphones?",
             "options": ["Phantom Power", "XLR Cable", "Headphone Amplifier"],
             "expectedAnswer": "Phantom Power"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Phantom Power as the central item; include Phantom Power, XLR Cable, and Headphone Amplifier naturally where visually appropriate, but make the real-world use of Phantom Power the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Phantom Power as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Waveform", "Playback Button", "Record Button"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.",
+          "scenario": "An audio waveform is a graphical visual representation displayed in audio editing software that plots sound wave amplitude fluctuations over elapsed time. A playback button starts audio, and a record button captures input. The producer trims silent pauses visible in the vocal waveform.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which graphical representation displays sound amplitude fluctuations over time in software?",
             "options": ["Waveform", "Playback Button", "Record Button"],
             "expectedAnswer": "Waveform"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Waveform as the central item; include Waveform, Playback Button, and Record Button naturally where visually appropriate, but make the real-world use of Waveform the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Waveform as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Radio Station",
-      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Computer, Clock, Script Stand, and Water Glass. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cable Management, Audio Interface, Digital Recorder, and Sound Card. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Waveform, Playback Button, and Record Button. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Studio computing, audio wiring and digital waveforms",
+      "text": "A studio broadcast computer runs digital automation software, plays scheduled music libraries, triggers commercial carts, and displays live presenter notes. A clock shows broadcast time, and a script stand holds notes. The radio presenter clicks the automation cart on the studio computer. Studio cable management systems use conduits, Velcro ties, and under-desk raceways to route XLR, power, and Ethernet cables neatly without tangles or signal interference. An audio interface digitizes sound, and a sound card processes audio. The technician organizes studio wiring using cable management raceways. Phantom power is a standard 48-volt direct current power supply sent through balanced XLR microphone cables to energize internal active circuits in condenser microphones. An XLR cable carries audio, and a headphone amplifier drives headphones. The audio engineer engages 48-volt phantom power on the mixing board. An audio waveform is a graphical visual representation displayed in audio editing software that plots sound wave amplitude fluctuations over elapsed time. A playback button starts audio, and a record button captures input. The producer trims silent pauses visible in the vocal waveform.",
+      "imageBrief": "Use independently inspected word references to support Studio computing, audio wiring and digital waveforms; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer, Clock, Script Stand, and Water Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A studio broadcast computer runs digital automation software, plays scheduled music libraries, triggers commercial carts, and displays live presenter notes. A clock shows broadcast time, and a script stand holds notes. The radio presenter clicks the automation cart on the studio computer.\nWhich digital machine runs station automation software and plays music libraries?",
         "answer": "Computer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Management, Audio Interface, Digital Recorder, and Sound Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Studio cable management systems use conduits, Velcro ties, and under-desk raceways to route XLR, power, and Ethernet cables neatly without tangles or signal interference. An audio interface digitizes sound, and a sound card processes audio. The technician organizes studio wiring using cable management raceways.\nWhich organizing system routes studio cables neatly through raceways to prevent tangles?",
         "answer": "Cable Management",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phantom Power, XLR Cable, Headphone Amplifier, and Audio Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Phantom power is a standard 48-volt direct current power supply sent through balanced XLR microphone cables to energize internal active circuits in condenser microphones. An XLR cable carries audio, and a headphone amplifier drives headphones. The audio engineer engages 48-volt phantom power on the mixing board.\nWhich 48-volt DC power supply sent through XLR cables powers condenser microphones?",
         "answer": "Phantom Power",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Waveform, Playback Button, and Record Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An audio waveform is a graphical visual representation displayed in audio editing software that plots sound wave amplitude fluctuations over elapsed time. A playback button starts audio, and a record button captures input. The producer trims silent pauses visible in the vocal waveform.\nWhich graphical representation displays sound amplitude fluctuations over time in software?",
         "answer": "Waveform",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A studio broadcast computer runs digital automation software, plays scheduled music libraries, triggers commercial carts, and displays live presenter notes. A clock shows broadcast time, and a script stand holds notes. The radio presenter clicks the automation cart on the studio computer. Studio cable management systems use conduits, Velcro ties, and under-desk raceways to route XLR, power, and Ethernet cables neatly without tangles or signal interference. An audio interface digitizes sound, and a sound card processes audio. The technician organizes studio wiring using cable management raceways. Phantom power is a standard 48-volt direct current power supply sent through balanced XLR microphone cables to energize internal active circuits in condenser microphones. An XLR cable carries audio, and a headphone amplifier drives headphones. The audio engineer engages 48-volt phantom power on the mixing board. An audio waveform is a graphical visual representation displayed in audio editing software that plots sound wave amplitude fluctuations over elapsed time. A playback button starts audio, and a record button captures input. The producer trims silent pauses visible in the vocal waveform.\nCompare “Computer” and “Clock” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Computer"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Water Glass"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Microphone” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the radio station task. Use Computer, Clock, Script Stand, Water Glass, Cable Management, Audio Interface, Digital Recorder, Sound Card, Phantom Power, XLR Cable, Headphone Amplifier, Audio Software, Waveform, Playback Button, and Record Button in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Computer, Clock, Script Stand, Water Glass, Cable Management, Audio Interface, Digital Recorder, Sound Card, Phantom Power, XLR Cable, Headphone Amplifier, Audio Software, Waveform, Playback Button, Record Button in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Radio Station: In Context",
-      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Studio computing, audio wiring and digital waveforms",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A studio broadcast computer runs digital automation software, plays scheduled music libraries, triggers commercial carts, and displays live presenter notes. A clock shows broadcast time, and a script stand holds notes. The radio presenter clicks the automation cart on the studio computer. Which digital machine runs station automation software and plays music libraries?"
     },
     "spacedReview": "1 lesson(s) back: Microphone, Mixing Console from radio-station-1\n3 lesson(s) back: Sound Board, Clip-On Mic from tv-studio-4\n7 lesson(s) back: Classified, Cartoon from newspaper-office-5"
   },
@@ -392,132 +358,115 @@
       "مذيع أخبار"
     ],
     "usage": {
-      "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the media workplace.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "173-203 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Playlist", "Jingle", "Sound Effect", "Station ID"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.",
+          "scenario": "A station playlist is an ordered schedule of songs, instrumental pieces, and promotional clips programmed by the music director for specific broadcast dayparts. A jingle is a short musical slogan, and a station ID identifies the station. The host reviews the afternoon pop playlist on the console screen.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which scheduled sequence of songs and audio tracks is programmed for a broadcast show?",
             "options": ["Playlist", "Jingle", "Sound Effect"],
             "expectedAnswer": "Playlist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Playlist as the central item; include Playlist, Jingle, and Sound Effect naturally where visually appropriate, but make the real-world use of Playlist the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Playlist as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Commercial Break", "News Bulletin", "Weather Update", "Traffic Report"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.",
+          "scenario": "A commercial break is an allotted interval during a radio broadcast when programming pauses to air paid sponsor advertisements and station promotional spots. A news bulletin reports current events, and a traffic report covers road conditions. The presenter introduces a two-minute commercial break.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which scheduled broadcast interval pauses programming to air paid sponsor advertisements?",
             "options": ["Commercial Break", "News Bulletin", "Weather Update"],
             "expectedAnswer": "Commercial Break"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Commercial Break as the central item; include Commercial Break, News Bulletin, and Weather Update naturally where visually appropriate, but make the real-world use of Commercial Break the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Commercial Break as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Interview Segment", "Music Block", "Radio Host", "DJ"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.",
+          "scenario": "An interview segment is a dedicated broadcast feature during which the radio presenter questions a guest on a topic before returning to music or news. A music block plays songs, and a DJ introduces tracks. The radio host conducts a ten-minute interview segment with the guest author.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which program feature consists of a host questioning an invited guest on air?",
             "options": ["Interview Segment", "Music Block", "Radio Host"],
             "expectedAnswer": "Interview Segment"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Interview Segment as the central item; include Interview Segment, Music Block, and Radio Host naturally where visually appropriate, but make the real-world use of Interview Segment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Interview Segment as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Producer", "Sound Engineer", "News Anchor"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.",
+          "scenario": "A radio producer is a senior production coordinator responsible for planning program content, booking interview guests, timing commercial breaks, and directing on-air talent. A sound engineer manages audio levels, and a news anchor reads news. The show producer cues the presenter through the intercom headphones.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which production professional coordinates show planning, books guests and directs talent?",
             "options": ["Producer", "Sound Engineer", "News Anchor"],
             "expectedAnswer": "Producer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Producer as the central item; include Producer, Sound Engineer, and News Anchor naturally where visually appropriate, but make the real-world use of Producer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Producer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Radio Station",
-      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Playlist, Jingle, Sound Effect, and Station ID. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Commercial Break, News Bulletin, Weather Update, and Traffic Report. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Interview Segment, Music Block, Radio Host, and DJ. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Producer, Sound Engineer, and News Anchor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Program playlists, commercial breaks and production staff",
+      "text": "A station playlist is an ordered schedule of songs, instrumental pieces, and promotional clips programmed by the music director for specific broadcast dayparts. A jingle is a short musical slogan, and a station ID identifies the station. The host reviews the afternoon pop playlist on the console screen. A commercial break is an allotted interval during a radio broadcast when programming pauses to air paid sponsor advertisements and station promotional spots. A news bulletin reports current events, and a traffic report covers road conditions. The presenter introduces a two-minute commercial break. An interview segment is a dedicated broadcast feature during which the radio presenter questions a guest on a topic before returning to music or news. A music block plays songs, and a DJ introduces tracks. The radio host conducts a ten-minute interview segment with the guest author. A radio producer is a senior production coordinator responsible for planning program content, booking interview guests, timing commercial breaks, and directing on-air talent. A sound engineer manages audio levels, and a news anchor reads news. The show producer cues the presenter through the intercom headphones.",
+      "imageBrief": "Use independently inspected word references to support Program playlists, commercial breaks and production staff; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Playlist, Jingle, Sound Effect, and Station ID and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A station playlist is an ordered schedule of songs, instrumental pieces, and promotional clips programmed by the music director for specific broadcast dayparts. A jingle is a short musical slogan, and a station ID identifies the station. The host reviews the afternoon pop playlist on the console screen.\nWhich scheduled sequence of songs and audio tracks is programmed for a broadcast show?",
         "answer": "Playlist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Commercial Break, News Bulletin, Weather Update, and Traffic Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A commercial break is an allotted interval during a radio broadcast when programming pauses to air paid sponsor advertisements and station promotional spots. A news bulletin reports current events, and a traffic report covers road conditions. The presenter introduces a two-minute commercial break.\nWhich scheduled broadcast interval pauses programming to air paid sponsor advertisements?",
         "answer": "Commercial Break",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Interview Segment, Music Block, Radio Host, and DJ and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An interview segment is a dedicated broadcast feature during which the radio presenter questions a guest on a topic before returning to music or news. A music block plays songs, and a DJ introduces tracks. The radio host conducts a ten-minute interview segment with the guest author.\nWhich program feature consists of a host questioning an invited guest on air?",
         "answer": "Interview Segment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Producer, Sound Engineer, and News Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A radio producer is a senior production coordinator responsible for planning program content, booking interview guests, timing commercial breaks, and directing on-air talent. A sound engineer manages audio levels, and a news anchor reads news. The show producer cues the presenter through the intercom headphones.\nWhich production professional coordinates show planning, books guests and directs talent?",
         "answer": "Producer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A station playlist is an ordered schedule of songs, instrumental pieces, and promotional clips programmed by the music director for specific broadcast dayparts. A jingle is a short musical slogan, and a station ID identifies the station. The host reviews the afternoon pop playlist on the console screen. A commercial break is an allotted interval during a radio broadcast when programming pauses to air paid sponsor advertisements and station promotional spots. A news bulletin reports current events, and a traffic report covers road conditions. The presenter introduces a two-minute commercial break. An interview segment is a dedicated broadcast feature during which the radio presenter questions a guest on a topic before returning to music or news. A music block plays songs, and a DJ introduces tracks. The radio host conducts a ten-minute interview segment with the guest author. A radio producer is a senior production coordinator responsible for planning program content, booking interview guests, timing commercial breaks, and directing on-air talent. A sound engineer manages audio levels, and a news anchor reads news. The show producer cues the presenter through the intercom headphones.\nCompare “Playlist” and “Jingle” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Playlist"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Station ID"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Computer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the radio station task. Use Playlist, Jingle, Sound Effect, Station ID, Commercial Break, News Bulletin, Weather Update, Traffic Report, Interview Segment, Music Block, Radio Host, DJ, Producer, Sound Engineer, and News Anchor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Playlist, Jingle, Sound Effect, Station ID, Commercial Break, News Bulletin, Weather Update, Traffic Report, Interview Segment, Music Block, Radio Host, DJ, Producer, Sound Engineer, News Anchor in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Radio Station: In Context",
-      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Program playlists, commercial breaks and production staff",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A station playlist is an ordered schedule of songs, instrumental pieces, and promotional clips programmed by the music director for specific broadcast dayparts. A jingle is a short musical slogan, and a station ID identifies the station. The host reviews the afternoon pop playlist on the console screen. Which scheduled sequence of songs and audio tracks is programmed for a broadcast show?"
     },
     "spacedReview": "1 lesson(s) back: Computer, Clock from radio-station-2\n3 lesson(s) back: Monitor, Boom Mic from tv-studio-5\n7 lesson(s) back: Camera, Tripod from tv-studio-1"
   },
@@ -566,10 +515,10 @@
       "جهاز ضبط النغم"
     ],
     "usage": {
-      "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the media workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "181-211 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -579,124 +528,107 @@
             "Sales Manager",
             "Program Director"
           ],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.",
+          "scenario": "A traffic reporter is an on-air specialist who monitors road sensor networks and transit updates to broadcast timely highway congestion and detour warnings to commuters. A weather presenter forecasts weather, and a sales manager sells airtime. The morning traffic reporter advises commuters of bridge delays.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which broadcast specialist reports road congestion and highway delays to listeners?",
             "options": ["Traffic Reporter", "Weather Presenter", "Sales Manager"],
             "expectedAnswer": "Traffic Reporter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Traffic Reporter as the central item; include Traffic Reporter, Weather Presenter, and Sales Manager naturally where visually appropriate, but make the real-world use of Traffic Reporter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Traffic Reporter as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Intern", "Radio Receiver", "Car Radio", "Portable Radio"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.",
+          "scenario": "A station intern is a university student or trainee who assists with studio research, answers listener telephone lines, and shadows production engineers during training. A car radio plays in vehicles, and a portable radio is handheld. The radio station intern logs listener requests at the reception desk.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which trainee or student assists with research and shadows production staff at a station?",
             "options": ["Intern", "Radio Receiver", "Car Radio"],
             "expectedAnswer": "Intern"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Intern as the central item; include Intern, Radio Receiver, and Car Radio naturally where visually appropriate, but make the real-world use of Intern the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Intern as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Smartphone App", "Podcast", "Streaming", "Listener"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.",
+          "scenario": "A smartphone app is a mobile software application provided by a broadcaster allowing listeners to stream live radio broadcasts and on-demand podcasts on portable mobile phones. A podcast is an episodic audio file, and streaming plays audio online. The commuter opens the station’s smartphone app to stream the show.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which mobile software application streams live radio and podcasts on mobile devices?",
             "options": ["Smartphone App", "Podcast", "Streaming"],
             "expectedAnswer": "Smartphone App"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Smartphone App as the central item; include Smartphone App, Podcast, and Streaming naturally where visually appropriate, but make the real-world use of Smartphone App the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Smartphone App as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Frequency Dial", "Volume Knob", "Tuner"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.",
+          "scenario": "A radio frequency dial is a calibrated analog scale or digital readout on a radio receiver used to adjust and locate specific carrier broadcast frequencies in megahertz. A volume knob controls sound level, and a tuner receives radio waves. The listener rotates the tuner knob across the FM frequency dial.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which calibrated receiver readout or scale shows tuned broadcast frequencies?",
             "options": ["Frequency Dial", "Volume Knob", "Tuner"],
             "expectedAnswer": "Frequency Dial"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Frequency Dial as the central item; include Frequency Dial, Volume Knob, and Tuner naturally where visually appropriate, but make the real-world use of Frequency Dial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Frequency Dial as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Radio Station",
-      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Traffic Reporter, Weather Presenter, Sales Manager, and Program Director. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Intern, Radio Receiver, Car Radio, and Portable Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Smartphone App, Podcast, Streaming, and Listener. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency Dial, Volume Knob, and Tuner. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Station personnel, digital listening apps and radio tuners",
+      "text": "A traffic reporter is an on-air specialist who monitors road sensor networks and transit updates to broadcast timely highway congestion and detour warnings to commuters. A weather presenter forecasts weather, and a sales manager sells airtime. The morning traffic reporter advises commuters of bridge delays. A station intern is a university student or trainee who assists with studio research, answers listener telephone lines, and shadows production engineers during training. A car radio plays in vehicles, and a portable radio is handheld. The radio station intern logs listener requests at the reception desk. A smartphone app is a mobile software application provided by a broadcaster allowing listeners to stream live radio broadcasts and on-demand podcasts on portable mobile phones. A podcast is an episodic audio file, and streaming plays audio online. The commuter opens the station’s smartphone app to stream the show. A radio frequency dial is a calibrated analog scale or digital readout on a radio receiver used to adjust and locate specific carrier broadcast frequencies in megahertz. A volume knob controls sound level, and a tuner receives radio waves. The listener rotates the tuner knob across the FM frequency dial.",
+      "imageBrief": "Use independently inspected word references to support Station personnel, digital listening apps and radio tuners; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Traffic Reporter, Weather Presenter, Sales Manager, and Program Director and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A traffic reporter is an on-air specialist who monitors road sensor networks and transit updates to broadcast timely highway congestion and detour warnings to commuters. A weather presenter forecasts weather, and a sales manager sells airtime. The morning traffic reporter advises commuters of bridge delays.\nWhich broadcast specialist reports road congestion and highway delays to listeners?",
         "answer": "Traffic Reporter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intern, Radio Receiver, Car Radio, and Portable Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A station intern is a university student or trainee who assists with studio research, answers listener telephone lines, and shadows production engineers during training. A car radio plays in vehicles, and a portable radio is handheld. The radio station intern logs listener requests at the reception desk.\nWhich trainee or student assists with research and shadows production staff at a station?",
         "answer": "Intern",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone App, Podcast, Streaming, and Listener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A smartphone app is a mobile software application provided by a broadcaster allowing listeners to stream live radio broadcasts and on-demand podcasts on portable mobile phones. A podcast is an episodic audio file, and streaming plays audio online. The commuter opens the station’s smartphone app to stream the show.\nWhich mobile software application streams live radio and podcasts on mobile devices?",
         "answer": "Smartphone App",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency Dial, Volume Knob, and Tuner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A radio frequency dial is a calibrated analog scale or digital readout on a radio receiver used to adjust and locate specific carrier broadcast frequencies in megahertz. A volume knob controls sound level, and a tuner receives radio waves. The listener rotates the tuner knob across the FM frequency dial.\nWhich calibrated receiver readout or scale shows tuned broadcast frequencies?",
         "answer": "Frequency Dial",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A traffic reporter is an on-air specialist who monitors road sensor networks and transit updates to broadcast timely highway congestion and detour warnings to commuters. A weather presenter forecasts weather, and a sales manager sells airtime. The morning traffic reporter advises commuters of bridge delays. A station intern is a university student or trainee who assists with studio research, answers listener telephone lines, and shadows production engineers during training. A car radio plays in vehicles, and a portable radio is handheld. The radio station intern logs listener requests at the reception desk. A smartphone app is a mobile software application provided by a broadcaster allowing listeners to stream live radio broadcasts and on-demand podcasts on portable mobile phones. A podcast is an episodic audio file, and streaming plays audio online. The commuter opens the station’s smartphone app to stream the show. A radio frequency dial is a calibrated analog scale or digital readout on a radio receiver used to adjust and locate specific carrier broadcast frequencies in megahertz. A volume knob controls sound level, and a tuner receives radio waves. The listener rotates the tuner knob across the FM frequency dial.\nCompare “Traffic Reporter” and “Weather Presenter” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Traffic Reporter"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Program Director"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Playlist” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the radio station task. Use Traffic Reporter, Weather Presenter, Sales Manager, Program Director, Intern, Radio Receiver, Car Radio, Portable Radio, Smartphone App, Podcast, Streaming, Listener, Frequency Dial, Volume Knob, and Tuner in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Traffic Reporter, Weather Presenter, Sales Manager, Program Director, Intern, Radio Receiver, Car Radio, Portable Radio, Smartphone App, Podcast, Streaming, Listener, Frequency Dial, Volume Knob, Tuner in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Radio Station: In Context",
-      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Station personnel, digital listening apps and radio tuners",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A traffic reporter is an on-air specialist who monitors road sensor networks and transit updates to broadcast timely highway congestion and detour warnings to commuters. A weather presenter forecasts weather, and a sales manager sells airtime. The morning traffic reporter advises commuters of bridge delays. Which broadcast specialist reports road congestion and highway delays to listeners?"
     },
     "spacedReview": "1 lesson(s) back: Playlist, Jingle from radio-station-3\n3 lesson(s) back: Microphone, Mixing Console from radio-station-1\n7 lesson(s) back: Props, Clock from tv-studio-2"
   },
@@ -726,7 +658,7 @@
     ],
     "targetWordsArabic": [
       "مشغل أسطوانات",
-      "مكبر صوت (سبيكر / سماعة)",
+      "مكبر صوت",
       "كابينة عازلة للصوت",
       "ضوء البث المباشر",
       "غرفة عامل ضابط",
@@ -739,113 +671,96 @@
       "مقابلة"
     ],
     "usage": {
-      "goal": "Develop the language needed to exchange information about media production, deadlines, and equipment in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the media workplace.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "143-173 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Turntable", "Speaker", "Soundproof Booth", "On-Air Light"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.",
+          "scenario": "A professional broadcast turntable is a precision direct-drive phonograph deck fitted with a slipmat and stylus used to cue and spin vinyl record discs on air. A speaker emits sound, and a soundproof booth prevents external noise. The DJ cues up an analog vinyl record on the studio turntable.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which direct-drive phonograph deck plays vinyl records in a broadcast studio?",
             "options": ["Turntable", "Speaker", "Soundproof Booth"],
             "expectedAnswer": "Turntable"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Turntable as the central item; include Turntable, Speaker, and Soundproof Booth naturally where visually appropriate, but make the real-world use of Turntable the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Turntable as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Control Room", "Recording Booth", "Cue Card", "Script"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.",
+          "scenario": "The master control room is the technical studio hub housing the primary audio routing switcher, transmitter monitors, and engineering consoles overlooking the broadcast booth through soundproof glass. A recording booth isolates voices, and cue cards hold prompts. The technical director supervises the live transmission from the master control room.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which central technical room houses switching consoles and oversees studio booths?",
             "options": ["Control Room", "Recording Booth", "Cue Card"],
             "expectedAnswer": "Control Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or approaching the Control Room as the main location; include Control Room, Recording Booth, and Cue Card naturally where visually appropriate, but make the real-world use of Control Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Control Room as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Frequency", "Channel", "Commercial", "Interview"],
-          "scenario": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.",
+          "scenario": "A radio frequency is the specific electromagnetic carrier wave rate, measured in kilohertz for AM or megahertz for FM, legally assigned to a radio station for broadcasting. A channel is an assigned frequency band, and an interview is a question-and-answer feature. The radio announcer reminds listeners to tune their receivers to the station’s FM frequency.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which assigned electromagnetic carrier wave rate identifies a radio broadcast signal?",
             "options": ["Frequency", "Channel", "Commercial"],
             "expectedAnswer": "Frequency"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a media workplace. Show an adult using or examining the Frequency as the central item; include Frequency, Channel, and Commercial naturally where visually appropriate, but make the real-world use of Frequency the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a media workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the radio station account, showing Frequency as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Radio Station",
-      "text": "At the radio station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Turntable, Speaker, Soundproof Booth, and On-Air Light. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Control Room, Recording Booth, Cue Card, and Script. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Frequency, Channel, Commercial, and Interview. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Radio Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Turntable playback, master control rooms and broadcast frequencies",
+      "text": "A professional broadcast turntable is a precision direct-drive phonograph deck fitted with a slipmat and stylus used to cue and spin vinyl record discs on air. A speaker emits sound, and a soundproof booth prevents external noise. The DJ cues up an analog vinyl record on the studio turntable. The master control room is the technical studio hub housing the primary audio routing switcher, transmitter monitors, and engineering consoles overlooking the broadcast booth through soundproof glass. A recording booth isolates voices, and cue cards hold prompts. The technical director supervises the live transmission from the master control room. A radio frequency is the specific electromagnetic carrier wave rate, measured in kilohertz for AM or megahertz for FM, legally assigned to a radio station for broadcasting. A channel is an assigned frequency band, and an interview is a question-and-answer feature. The radio announcer reminds listeners to tune their receivers to the station’s FM frequency.",
+      "imageBrief": "Use independently inspected word references to support Turntable playback, master control rooms and broadcast frequencies; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turntable, Speaker, Soundproof Booth, and On-Air Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A professional broadcast turntable is a precision direct-drive phonograph deck fitted with a slipmat and stylus used to cue and spin vinyl record discs on air. A speaker emits sound, and a soundproof booth prevents external noise. The DJ cues up an analog vinyl record on the studio turntable.\nWhich direct-drive phonograph deck plays vinyl records in a broadcast studio?",
         "answer": "Turntable",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Recording Booth, Cue Card, and Script and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The master control room is the technical studio hub housing the primary audio routing switcher, transmitter monitors, and engineering consoles overlooking the broadcast booth through soundproof glass. A recording booth isolates voices, and cue cards hold prompts. The technical director supervises the live transmission from the master control room.\nWhich central technical room houses switching consoles and oversees studio booths?",
         "answer": "Control Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the radio station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frequency, Channel, Commercial, and Interview and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A radio frequency is the specific electromagnetic carrier wave rate, measured in kilohertz for AM or megahertz for FM, legally assigned to a radio station for broadcasting. A channel is an assigned frequency band, and an interview is a question-and-answer feature. The radio announcer reminds listeners to tune their receivers to the station’s FM frequency.\nWhich assigned electromagnetic carrier wave rate identifies a radio broadcast signal?",
         "answer": "Frequency",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A professional broadcast turntable is a precision direct-drive phonograph deck fitted with a slipmat and stylus used to cue and spin vinyl record discs on air. A speaker emits sound, and a soundproof booth prevents external noise. The DJ cues up an analog vinyl record on the studio turntable. The master control room is the technical studio hub housing the primary audio routing switcher, transmitter monitors, and engineering consoles overlooking the broadcast booth through soundproof glass. A recording booth isolates voices, and cue cards hold prompts. The technical director supervises the live transmission from the master control room. A radio frequency is the specific electromagnetic carrier wave rate, measured in kilohertz for AM or megahertz for FM, legally assigned to a radio station for broadcasting. A channel is an assigned frequency band, and an interview is a question-and-answer feature. The radio announcer reminds listeners to tune their receivers to the station’s FM frequency.\nCompare “Turntable” and “Speaker” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Turntable"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "On-Air Light"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Traffic Reporter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the radio station task. Use Turntable, Speaker, Soundproof Booth, On-Air Light, Control Room, Recording Booth, Cue Card, Script, Frequency, Channel, Commercial, and Interview in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Turntable, Speaker, Soundproof Booth, On-Air Light, Control Room, Recording Booth, Cue Card, Script, Frequency, Channel, Commercial, Interview in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Radio Station: In Context",
-      "idea": "40-60 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Turntable playback, master control rooms and broadcast frequencies",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A professional broadcast turntable is a precision direct-drive phonograph deck fitted with a slipmat and stylus used to cue and spin vinyl record discs on air. A speaker emits sound, and a soundproof booth prevents external noise. The DJ cues up an analog vinyl record on the studio turntable. Which direct-drive phonograph deck plays vinyl records in a broadcast studio?"
     },
     "spacedReview": "1 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4\n3 lesson(s) back: Computer, Clock from radio-station-2\n7 lesson(s) back: Live Broadcast, Recording from tv-studio-3"
   }

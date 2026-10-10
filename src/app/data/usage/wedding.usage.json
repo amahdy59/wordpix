@@ -33,7 +33,7 @@
       "خواتم",
       "من يجري مراسم الزواج",
       "شمعة الوحدة",
-      "قراءة مراسمية",
+      "قراءة مقطع في المراسم",
       "دعاء بالبركة",
       "قبلة",
       "موكب الخروج",
@@ -44,140 +44,134 @@
       "ربطة فراشة"
     ],
     "usage": {
-      "goal": "Learn to use the wedding 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the wedding.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify practical details in an adult wedding plan while distinguishing optional customs.",
+      "canDoStatement": "Can identify roles, objects and arrangements in a supported wedding account. Customs vary; specialist ceremony terms extend the supported task level rather than receiving individual CEFR certification.",
+      "textType": "wedding-planning-account",
+      "readingTarget": "Supported linked adult wedding plan",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Altar", "Aisle", "Vows"],
-          "scenario": "During a routine the wedding task, an adult compares Altar, Aisle, Vows. The person selects Altar for the next step.",
+          "scenario": "At a church wedding rehearsal, the organizer points out the altar, the ceremonial table at the front. The aisle is the passage between the seats. The couple will speak their vows, solemn marriage promises, during the ceremony.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the passage between the seats?",
             "options": ["Altar", "Aisle", "Vows"],
-            "expectedAnswer": "Altar"
+            "expectedAnswer": "Aisle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Altar, Aisle, Vows. The person selects Altar for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Altar, Aisle, Vows in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult organizers checking a church seating aisle at a rehearsal. Preserve a coherent church setting; do not mix objects from unrelated faith traditions. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult organizers checking a church seating aisle at a rehearsal. Preserve a coherent church setting; do not mix objects from unrelated faith traditions."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rings", "Officiant", "Unity Candle"],
-          "scenario": "During a routine the wedding task, an adult compares Rings, Officiant, Unity Candle. The person selects Rings for the next step.",
+          "scenario": "The officiant leads this wedding ceremony. The couple prepares rings to exchange. They discuss a unity candle, a symbolic candle used in some weddings, but this ceremony will not include that custom.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Who leads this ceremony?",
             "options": ["Rings", "Officiant", "Unity Candle"],
-            "expectedAnswer": "Rings"
+            "expectedAnswer": "Officiant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Rings, Officiant, Unity Candle. The person selects Rings for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Rings, Officiant, Unity Candle in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult couple speaking with an adult ceremony leader beside a table holding a closed ring box. No lit unity candle. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult couple speaking with an adult ceremony leader beside a table holding a closed ring box. No lit unity candle."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Reading", "Blessing", "Kiss"],
-          "scenario": "During a routine the wedding task, an adult compares Reading, Blessing, Kiss. The person selects Reading for the next step.",
+          "scenario": "During rehearsal, a relative practices a reading, a passage spoken aloud for the guests. The officiant explains the blessing, words of prayer or good wishes. The couple discusses a kiss as their chosen expression of affection; it is not a requirement of every wedding.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the passage spoken aloud?",
             "options": ["Reading", "Blessing", "Kiss"],
             "expectedAnswer": "Reading"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Reading, Blessing, Kiss. The person selects Reading for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Reading, Blessing, Kiss in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult practicing from a book before other adults in a ceremony hall. No readable page or staged religious ritual. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult practicing from a book before other adults in a ceremony hall. No readable page or staged religious ritual."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Recessional", "Wedding Dress", "Veil"],
-          "scenario": "During a routine the wedding task, an adult compares Recessional, Wedding Dress, Veil. The person selects Recessional for the next step.",
+          "scenario": "The recessional is the group’s exit after the ceremony. Before rehearsal ends, the clothing adviser shows a wedding dress and a veil, a light covering worn over the head or face in some wedding styles. Clothing choices depend on the couple and tradition.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the group’s exit?",
             "options": ["Recessional", "Wedding Dress", "Veil"],
             "expectedAnswer": "Recessional"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Recessional, Wedding Dress, Veil. The person selects Recessional for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Recessional, Wedding Dress, Veil in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing ceremony clothing beside a displayed wedding dress and separate light veil. Do not infer marital status from clothing alone. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing ceremony clothing beside a displayed wedding dress and separate light veil. Do not infer marital status from clothing alone."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Suit", "Tuxedo", "Bow Tie"],
-          "scenario": "During a routine the wedding task, an adult compares Suit, Tuxedo, Bow Tie. The person selects Suit for the next step.",
+          "scenario": "At a formalwear shop, a suit includes a matching jacket and trousers or skirt. A tuxedo is a formal evening suit. A bow tie is neckwear tied or shaped into two loops. The adviser shows different choices rather than assigning clothes by gender.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is neckwear shaped into two loops?",
             "options": ["Suit", "Tuxedo", "Bow Tie"],
-            "expectedAnswer": "Suit"
+            "expectedAnswer": "Bow Tie"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Suit, Tuxedo, Bow Tie. The person selects Suit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Suit, Tuxedo, Bow Tie in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult adviser showing a suit jacket, tuxedo jacket and bow tie on a formalwear display. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult adviser showing a suit jacket, tuxedo jacket and bow tie on a formalwear display."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Wedding: Email",
-      "text": "Omar has an everyday task connected to the wedding. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss altar, aisle, and vows. The context makes the relationship between the words clear. In the social situation, the people experience or discuss rings, officiant, and unity candle. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Wedding. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking the ceremony",
+      "text": "At a church rehearsal, the organizer shows the altar and aisle. The couple discusses vows and rings with the officiant. A unity candle belongs to some wedding customs, but they do not choose it. A relative practices a reading, and the officiant explains the blessing. The couple chooses whether to include a kiss. The recessional will take them out at the end. Later, a clothing adviser shows a wedding dress, veil, suit, tuxedo and bow tie. These words describe possible choices, not requirements for every couple. The organizer checks the couple’s own plan rather than combining unrelated customs from photographs.",
+      "imageBrief": "Photorealistic scene: Adult organizers checking a church seating aisle at a rehearsal. Preserve a coherent church setting; do not mix objects from unrelated faith traditions. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the wedding task, an adult compares Altar, Aisle, Vows. The person selects Altar for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Altar",
+        "prompt": "At a church wedding rehearsal, the organizer points out the altar, the ceremonial table at the front. The aisle is the passage between the seats. The couple will speak their vows, solemn marriage promises, during the ceremony.\nWhich term names the passage between the seats?",
+        "answer": "Aisle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Rings, Officiant, Unity Candle. The person selects Rings for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Rings",
+        "prompt": "The officiant leads this wedding ceremony. The couple prepares rings to exchange. They discuss a unity candle, a symbolic candle used in some weddings, but this ceremony will not include that custom.\nWho leads this ceremony?",
+        "answer": "Officiant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Reading, Blessing, Kiss. The person selects Reading for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "During rehearsal, a relative practices a reading, a passage spoken aloud for the guests. The officiant explains the blessing, words of prayer or good wishes. The couple discusses a kiss as their chosen expression of affection; it is not a requirement of every wedding.\nWhich term names the passage spoken aloud?",
         "answer": "Reading",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Recessional, Wedding Dress, Veil. The person selects Recessional for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The recessional is the group’s exit after the ceremony. Before rehearsal ends, the clothing adviser shows a wedding dress and a veil, a light covering worn over the head or face in some wedding styles. Clothing choices depend on the couple and tradition.\nWhich term names the group’s exit?",
         "answer": "Recessional",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Suit, Tuxedo, Bow Tie. The person selects Suit for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Suit",
+        "prompt": "At a formalwear shop, a suit includes a matching jacket and trousers or skirt. A tuxedo is a formal evening suit. A bow tie is neckwear tied or shaped into two loops. The adviser shows different choices rather than assigning clothes by gender.\nWhich item is neckwear shaped into two loops?",
+        "answer": "Bow Tie",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Altar"
+        "prompt": "At a church rehearsal, the organizer shows the altar and aisle. The couple discusses vows and rings with the officiant. A unity candle belongs to some wedding customs, but they do not choose it. A relative practices a reading, and the officiant explains the blessing. The couple chooses whether to include a kiss. The recessional will take them out at the end. Later, a clothing adviser shows a wedding dress, veil, suit, tuxedo and bow tie. These words describe possible choices, not requirements for every couple. The organizer checks the couple’s own plan rather than combining unrelated customs from photographs.\nWill this couple include a unity candle?",
+        "answer": "No; they do not choose that custom",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Rings"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Party Horn” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At a church wedding rehearsal, the organizer points out the altar, the ceremonial table at the front. The aisle is the passage between the seats. The couple will speak their vows, solemn marriage promises, during the ceremony.\nExplain one object or role in a complete sentence using this account.",
+        "answer": "The aisle is the passage between the seats.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Wedding: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking the ceremony",
+      "idea": "Narrate the stated adult wedding plan, pause for one practical question, and acknowledge that customs and roles differ. Do not mix traditions or identify roles by appearance.",
+      "scriptStarter": "At a church wedding rehearsal, the organizer points out the altar, the ceremonial table at the front. The aisle is the passage between the seats. The couple will speak their vows, solemn marriage promises, during the ceremony."
     },
     "spacedReview": "1 lesson(s) back: Party Horn, Whistle from birthday-party-4\n3 lesson(s) back: Popcorn, Juice Box from birthday-party-2\n7 lesson(s) back: Getting Married, Having a Baby from life-events-2"
   },
@@ -209,157 +203,151 @@
       "Sparkler"
     ],
     "targetWordsArabic": [
-      "باقة عطرية",
+      "باقة زهور",
       "زهرة عروة السترة",
       "تاج صغير",
       "أزرار أكمام",
       "أحذية",
       "كعكة",
       "الرقصة الأولى",
-      "يحمّص",
+      "كلمة لرفع الكأس وتقديم التمنيات",
       "منسق موسيقى",
-      "حلقة",
-      "قطعة زينة مركزية",
+      "فرقة موسيقية",
+      "قطعة زينة وسط المائدة",
       "ترتيب المائدة",
       "ساحة رقص",
       "ركن تصوير",
       "عود شرر احتفالي"
     ],
     "usage": {
-      "goal": "Learn to use the wedding 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the wedding.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify practical details in an adult wedding plan while distinguishing optional customs.",
+      "canDoStatement": "Can identify roles, objects and arrangements in a supported wedding account. Customs vary; specialist ceremony terms extend the supported task level rather than receiving individual CEFR certification.",
+      "textType": "wedding-planning-account",
+      "readingTarget": "Supported linked adult wedding plan",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bouquet", "Boutonniere", "Tiara"],
-          "scenario": "During a routine the wedding task, an adult compares Bouquet, Boutonniere, Tiara. The person selects Bouquet for the next step.",
+          "scenario": "The florist prepares a bouquet, flowers arranged to be held. A boutonniere is a small flower worn on a jacket. A tiara is a small ornamental headpiece. The couple chooses accessories according to personal preference.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which flower accessory is worn on a jacket?",
             "options": ["Bouquet", "Boutonniere", "Tiara"],
-            "expectedAnswer": "Bouquet"
+            "expectedAnswer": "Boutonniere"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Bouquet, Boutonniere, Tiara. The person selects Bouquet for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Bouquet, Boutonniere, Tiara in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult florist arranging a hand-held bouquet beside a small lapel flower and an ornamental tiara on a table. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult florist arranging a hand-held bouquet beside a small lapel flower and an ornamental tiara on a table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cufflinks", "Shoes", "Cake"],
-          "scenario": "During a routine the wedding task, an adult compares Cufflinks, Shoes, Cake. The person selects Cufflinks for the next step.",
+          "scenario": "Before the reception, an adult checks cufflinks, small fasteners for shirt cuffs, and formal shoes. Another volunteer places the cake on a serving table. The cake is food, while cufflinks and shoes belong to clothing.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item fastens shirt cuffs?",
             "options": ["Cufflinks", "Shoes", "Cake"],
             "expectedAnswer": "Cufflinks"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Cufflinks, Shoes, Cake. The person selects Cufflinks for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Cufflinks, Shoes, Cake in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult adjusting cufflinks near a pair of formal shoes; a cake rests on a separate serving table. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult adjusting cufflinks near a pair of formal shoes; a cake rests on a separate serving table."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["First Dance", "Toast", "Dj"],
-          "scenario": "During a routine the wedding task, an adult compares First Dance, Toast, Dj. The person selects First Dance for the next step.",
+          "scenario": "At this reception, the first dance is the newly married couple’s planned dance. A friend gives a toast, a short speech of good wishes. The DJ plays recorded music, while a band will perform live music later. Not every reception includes these activities.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which performer plays recorded music here?",
             "options": ["First Dance", "Toast", "Dj"],
-            "expectedAnswer": "First Dance"
+            "expectedAnswer": "Dj"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares First Dance, Toast, Dj. The person selects First Dance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including First Dance, Toast, Dj in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult DJ working with ordinary sound equipment beside an empty dance floor. No readable screen or logos. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult DJ working with ordinary sound equipment beside an empty dance floor. No readable screen or logos."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Band", "Centerpiece", "Table Setting"],
-          "scenario": "During a routine the wedding task, an adult compares Band, Centerpiece, Table Setting. The person selects Band for the next step.",
+          "scenario": "The organizer checks the centerpiece, a decorative arrangement in the middle of a table. The table setting includes plates, cutlery and glasses. The dance floor is a separate open space where guests may dance.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which arrangement includes plates, cutlery and glasses?",
             "options": ["Band", "Centerpiece", "Table Setting"],
-            "expectedAnswer": "Band"
+            "expectedAnswer": "Table Setting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Band, Centerpiece, Table Setting. The person selects Band for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Band, Centerpiece, Table Setting in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult organizer checking a dining table setting with a floral centerpiece; an open dance area remains clear nearby. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult organizer checking a dining table setting with a floral centerpiece; an open dance area remains clear nearby."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dance Floor", "Photo Booth", "Sparkler"],
-          "scenario": "During a routine the wedding task, an adult compares Dance Floor, Photo Booth, Sparkler. The person selects Dance Floor for the next step.",
+          "scenario": "Guests may take pictures in a photo booth, a designated picture-taking area. The planner also explains a sparkler, a small firework that makes sparks, but the venue’s plan uses ordinary lights instead. No guest needs to use a firework to take part.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which area is designated for pictures?",
             "options": ["Dance Floor", "Photo Booth", "Sparkler"],
-            "expectedAnswer": "Dance Floor"
+            "expectedAnswer": "Photo Booth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Dance Floor, Photo Booth, Sparkler. The person selects Dance Floor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Dance Floor, Photo Booth, Sparkler in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests posing in a simple photo booth area with electric decorative lights. No lit or handled fireworks. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult guests posing in a simple photo booth area with electric decorative lights. No lit or handled fireworks."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Wedding: Personal Message",
-      "text": "Omar has an everyday task connected to the wedding. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss bouquet, boutonniere, and tiara. The context makes the relationship between the words clear. In the social situation, the people experience or discuss cufflinks, shoes, and cake. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Wedding. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Planning the reception",
+      "text": "The couple visits the florist, who shows a bouquet and boutonniere. They also consider a tiara, cufflinks and shoes. At the reception hall, the cake will stand on a serving table. Their first dance comes before a friend’s toast. A DJ plays recorded music, and a band performs live music later. The organizer checks each centerpiece and table setting, leaving the dance floor clear. Guests can use a photo booth. The planner explains a sparkler, but the venue chooses ordinary lights instead of fireworks. People can enjoy the reception without dancing, drinking alcohol or joining every activity.",
+      "imageBrief": "Photorealistic scene: Adult florist arranging a hand-held bouquet beside a small lapel flower and an ornamental tiara on a table. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the wedding task, an adult compares Bouquet, Boutonniere, Tiara. The person selects Bouquet for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Bouquet",
+        "prompt": "The florist prepares a bouquet, flowers arranged to be held. A boutonniere is a small flower worn on a jacket. A tiara is a small ornamental headpiece. The couple chooses accessories according to personal preference.\nWhich flower accessory is worn on a jacket?",
+        "answer": "Boutonniere",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Cufflinks, Shoes, Cake. The person selects Cufflinks for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Before the reception, an adult checks cufflinks, small fasteners for shirt cuffs, and formal shoes. Another volunteer places the cake on a serving table. The cake is food, while cufflinks and shoes belong to clothing.\nWhich item fastens shirt cuffs?",
         "answer": "Cufflinks",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares First Dance, Toast, Dj. The person selects First Dance for the next step.\nWhich option does the person select for the next step?",
-        "answer": "First Dance",
+        "prompt": "At this reception, the first dance is the newly married couple’s planned dance. A friend gives a toast, a short speech of good wishes. The DJ plays recorded music, while a band will perform live music later. Not every reception includes these activities.\nWhich performer plays recorded music here?",
+        "answer": "Dj",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Band, Centerpiece, Table Setting. The person selects Band for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Band",
+        "prompt": "The organizer checks the centerpiece, a decorative arrangement in the middle of a table. The table setting includes plates, cutlery and glasses. The dance floor is a separate open space where guests may dance.\nWhich arrangement includes plates, cutlery and glasses?",
+        "answer": "Table Setting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Dance Floor, Photo Booth, Sparkler. The person selects Dance Floor for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dance Floor",
+        "prompt": "Guests may take pictures in a photo booth, a designated picture-taking area. The planner also explains a sparkler, a small firework that makes sparks, but the venue’s plan uses ordinary lights instead. No guest needs to use a firework to take part.\nWhich area is designated for pictures?",
+        "answer": "Photo Booth",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bouquet"
+        "prompt": "The couple visits the florist, who shows a bouquet and boutonniere. They also consider a tiara, cufflinks and shoes. At the reception hall, the cake will stand on a serving table. Their first dance comes before a friend’s toast. A DJ plays recorded music, and a band performs live music later. The organizer checks each centerpiece and table setting, leaving the dance floor clear. Guests can use a photo booth. The planner explains a sparkler, but the venue chooses ordinary lights instead of fireworks. People can enjoy the reception without dancing, drinking alcohol or joining every activity.\nWhich music is recorded rather than performed live?",
+        "answer": "The music played by the DJ",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Cufflinks"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Altar” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "The florist prepares a bouquet, flowers arranged to be held. A boutonniere is a small flower worn on a jacket. A tiara is a small ornamental headpiece. The couple chooses accessories according to personal preference.\nExplain one object or role in a complete sentence using this account.",
+        "answer": "The boutonniere is a small flower worn on a jacket.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Wedding: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Planning the reception",
+      "idea": "Narrate the stated adult wedding plan, pause for one practical question, and acknowledge that customs and roles differ. Do not mix traditions or identify roles by appearance.",
+      "scriptStarter": "The florist prepares a bouquet, flowers arranged to be held. A boutonniere is a small flower worn on a jacket. A tiara is a small ornamental headpiece. The couple chooses accessories according to personal preference."
     },
     "spacedReview": "1 lesson(s) back: Altar, Aisle from wedding-1\n3 lesson(s) back: Present, Wrapping Paper from birthday-party-3\n7 lesson(s) back: Award, Certificate from life-events-3"
   },
@@ -403,145 +391,139 @@
       "مصور",
       "زهور",
       "شموع",
-      "قوس",
+      "قوس زينة",
       "لافتة",
       "بالون"
     ],
     "usage": {
-      "goal": "Learn to use the wedding 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the wedding.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify practical details in an adult wedding plan while distinguishing optional customs.",
+      "canDoStatement": "Can identify roles, objects and arrangements in a supported wedding account. Customs vary; specialist ceremony terms extend the supported task level rather than receiving individual CEFR certification.",
+      "textType": "wedding-planning-account",
+      "readingTarget": "Supported linked adult wedding plan",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bride", "Groom", "Bridesmaid"],
-          "scenario": "During a routine the wedding task, an adult compares Bride, Groom, Bridesmaid. The person selects Bride for the next step.",
+          "scenario": "In this wedding plan, the bride is the woman marrying and the groom is the man marrying. A bridesmaid supports the bride before and during the event. The planner identifies roles from the couple’s account, rather than guessing from clothing.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Who supports the bride in the role described?",
             "options": ["Bride", "Groom", "Bridesmaid"],
-            "expectedAnswer": "Bride"
+            "expectedAnswer": "Bridesmaid"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Bride, Groom, Bridesmaid. The person selects Bride for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Bride, Groom, Bridesmaid in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult couple meeting an adult attendant and wedding planner at a table. Written context establishes the roles. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult couple meeting an adult attendant and wedding planner at a table. Written context establishes the roles."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Groomsman", "Flower Girl", "Ring Bearer"],
-          "scenario": "During a routine the wedding task, an adult compares Groomsman, Flower Girl, Ring Bearer. The person selects Groomsman for the next step.",
+          "scenario": "The planner explains three possible attendants. A groomsman supports the groom. A flower girl is a child who carries flowers or petals in some ceremonies. A ring bearer carries rings or a symbolic holder and may be a child or an adult. These roles are optional.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which role carries the rings or a symbolic holder?",
             "options": ["Groomsman", "Flower Girl", "Ring Bearer"],
-            "expectedAnswer": "Groomsman"
+            "expectedAnswer": "Ring Bearer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Groomsman, Flower Girl, Ring Bearer. The person selects Groomsman for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Groomsman, Flower Girl, Ring Bearer in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult planner showing a small flower basket and an empty ring cushion to adult clients. No child-focused composition or inferred roles. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult planner showing a small flower basket and an empty ring cushion to adult clients. No child-focused composition or inferred roles."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Best Man", "Maid Of Honor", "Guest"],
-          "scenario": "During a routine the wedding task, an adult compares Best Man, Maid Of Honor, Guest. The person selects Best Man for the next step.",
+          "scenario": "In this plan, the best man is the groom’s principal supporting attendant. The maid of honor is the bride’s principal supporting attendant. A guest is someone invited to attend. Names and duties can differ across wedding traditions.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which role is simply invited to attend, rather than assigned a supporting duty?",
             "options": ["Best Man", "Maid Of Honor", "Guest"],
-            "expectedAnswer": "Best Man"
+            "expectedAnswer": "Guest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Best Man, Maid Of Honor, Guest. The person selects Best Man for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Best Man, Maid Of Honor, Guest in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing their roles at a reception-planning table. No implied rank from clothing, gender or appearance. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing their roles at a reception-planning table. No implied rank from clothing, gender or appearance."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Photographer", "Flowers", "Candles"],
-          "scenario": "During a routine the wedding task, an adult compares Photographer, Flowers, Candles. The person selects Photographer for the next step.",
+          "scenario": "The photographer prepares to take pictures of the wedding. Flowers decorate a side table, and candles provide part of the chosen decoration. Photos of people are taken with their agreement; a photographer need not be a newspaper reporter.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Who prepares to take the wedding pictures?",
             "options": ["Photographer", "Flowers", "Candles"],
             "expectedAnswer": "Photographer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Photographer, Flowers, Candles. The person selects Photographer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Photographer, Flowers, Candles in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult photographer speaking with adult guests beside flowers and unlit candles on a table. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult photographer speaking with adult guests beside flowers and unlit candles on a table."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Arch", "Banner", "Balloon"],
-          "scenario": "During a routine the wedding task, an adult compares Arch, Banner, Balloon. The person selects Arch for the next step.",
+          "scenario": "The organizer places an arch over the ceremony area. A banner decorates one wall, and a balloon is tied to a stand. The arch is a curved decorative structure here, rather than a stone passage in a building.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which decoration forms a curved structure over the ceremony area?",
             "options": ["Arch", "Banner", "Balloon"],
             "expectedAnswer": "Arch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Arch, Banner, Balloon. The person selects Arch for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Arch, Banner, Balloon in a natural setting."
+          "imageBrief": "Photorealistic scene: Decorative curved wedding arch, blank fabric banner and a securely tied balloon in a ceremony space. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Decorative curved wedding arch, blank fabric banner and a securely tied balloon in a ceremony space."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Wedding: Short Dialogue",
-      "text": "Omar has an everyday task connected to the wedding. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss bride, groom, and bridesmaid. The context makes the relationship between the words clear. In the social situation, the people experience or discuss groomsman, flower girl, and ring bearer. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Wedding. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "People and decorations",
+      "text": "A planner confirms the bride, groom and bridesmaid named in the couple’s account. She discusses a groomsman and the optional roles of flower girl and ring bearer. The best man and maid of honor help with the plans, while each invited guest chooses how to participate. A photographer agrees when to take pictures. Flowers and candles decorate a side table. An arch marks the ceremony area, with a banner and balloon nearby. The planner does not identify anyone’s role by clothing alone. Duties, titles and decorations vary, so she checks this wedding’s agreed plan.",
+      "imageBrief": "Photorealistic scene: Adult couple meeting an adult attendant and wedding planner at a table. Written context establishes the roles. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the wedding task, an adult compares Bride, Groom, Bridesmaid. The person selects Bride for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Bride",
+        "prompt": "In this wedding plan, the bride is the woman marrying and the groom is the man marrying. A bridesmaid supports the bride before and during the event. The planner identifies roles from the couple’s account, rather than guessing from clothing.\nWho supports the bride in the role described?",
+        "answer": "Bridesmaid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Groomsman, Flower Girl, Ring Bearer. The person selects Groomsman for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Groomsman",
+        "prompt": "The planner explains three possible attendants. A groomsman supports the groom. A flower girl is a child who carries flowers or petals in some ceremonies. A ring bearer carries rings or a symbolic holder and may be a child or an adult. These roles are optional.\nWhich role carries the rings or a symbolic holder?",
+        "answer": "Ring Bearer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Best Man, Maid Of Honor, Guest. The person selects Best Man for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Best Man",
+        "prompt": "In this plan, the best man is the groom’s principal supporting attendant. The maid of honor is the bride’s principal supporting attendant. A guest is someone invited to attend. Names and duties can differ across wedding traditions.\nWhich role is simply invited to attend, rather than assigned a supporting duty?",
+        "answer": "Guest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Photographer, Flowers, Candles. The person selects Photographer for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The photographer prepares to take pictures of the wedding. Flowers decorate a side table, and candles provide part of the chosen decoration. Photos of people are taken with their agreement; a photographer need not be a newspaper reporter.\nWho prepares to take the wedding pictures?",
         "answer": "Photographer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Arch, Banner, Balloon. The person selects Arch for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The organizer places an arch over the ceremony area. A banner decorates one wall, and a balloon is tied to a stand. The arch is a curved decorative structure here, rather than a stone passage in a building.\nWhich decoration forms a curved structure over the ceremony area?",
         "answer": "Arch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bride"
+        "prompt": "A planner confirms the bride, groom and bridesmaid named in the couple’s account. She discusses a groomsman and the optional roles of flower girl and ring bearer. The best man and maid of honor help with the plans, while each invited guest chooses how to participate. A photographer agrees when to take pictures. Flowers and candles decorate a side table. An arch marks the ceremony area, with a banner and balloon nearby. The planner does not identify anyone’s role by clothing alone. Duties, titles and decorations vary, so she checks this wedding’s agreed plan.\nHow does the planner confirm people’s roles?",
+        "answer": "From the couple’s account and agreed plan",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Groomsman"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bouquet” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "In this wedding plan, the bride is the woman marrying and the groom is the man marrying. A bridesmaid supports the bride before and during the event. The planner identifies roles from the couple’s account, rather than guessing from clothing.\nExplain one object or role in a complete sentence using this account.",
+        "answer": "The bridesmaid supports the bride before and during this wedding.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Wedding: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "People and decorations",
+      "idea": "Narrate the stated adult wedding plan, pause for one practical question, and acknowledge that customs and roles differ. Do not mix traditions or identify roles by appearance.",
+      "scriptStarter": "In this wedding plan, the bride is the woman marrying and the groom is the man marrying. A bridesmaid supports the bride before and during the event. The planner identifies roles from the couple’s account, rather than guessing from clothing."
     },
     "spacedReview": "1 lesson(s) back: Bouquet, Boutonniere from wedding-2\n3 lesson(s) back: Party Horn, Whistle from birthday-party-4\n7 lesson(s) back: Oath, Pledge from life-events-4"
   },
@@ -573,14 +555,14 @@
       "Guest Book"
     ],
     "targetWordsArabic": [
-      "شريط",
+      "شريط زينة",
       "سلسلة أضواء صغيرة",
       "فانوس",
       "قصاصات احتفال",
       "مفرش طاولة طولي",
       "دعوة",
-      "يرجى تأكيد الحضور",
-      "خريطة ملاحية أماكن جلوس",
+      "يرجى الرد لتأكيد الحضور أو الاعتذار",
+      "مخطط توزيع المقاعد",
       "قائمة الطعام",
       "مكان الاحتفال",
       "متعهد طعام",
@@ -590,140 +572,134 @@
       "سجل الضيوف"
     ],
     "usage": {
-      "goal": "Learn to use the wedding 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the wedding.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify practical details in an adult wedding plan while distinguishing optional customs.",
+      "canDoStatement": "Can identify roles, objects and arrangements in a supported wedding account. Customs vary; specialist ceremony terms extend the supported task level rather than receiving individual CEFR certification.",
+      "textType": "wedding-planning-account",
+      "readingTarget": "Supported linked adult wedding plan",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ribbon", "Fairy Lights", "Lantern"],
-          "scenario": "During a routine the wedding task, an adult compares Ribbon, Fairy Lights, Lantern. The person selects Ribbon for the next step.",
+          "scenario": "A decorator ties ribbon around a vase. Fairy lights are a string of small electric lights. A lantern holds a light inside a protective decorative case. These objects create the chosen atmosphere without defining a particular tradition.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the string of small electric lights?",
             "options": ["Ribbon", "Fairy Lights", "Lantern"],
-            "expectedAnswer": "Ribbon"
+            "expectedAnswer": "Fairy Lights"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Ribbon, Fairy Lights, Lantern. The person selects Ribbon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Ribbon, Fairy Lights, Lantern in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult decorator arranging a vase with ribbon, a string of small electric lights and an electric lantern. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult decorator arranging a vase with ribbon, a string of small electric lights and an electric lantern."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Confetti", "Table Runner", "Invitation"],
-          "scenario": "During a routine the wedding task, an adult compares Confetti, Table Runner, Invitation. The person selects Confetti for the next step.",
+          "scenario": "The table runner is the long narrow cloth along the middle of the table. Confetti is small decorative pieces scattered for celebration. An invitation asks a guest to attend the wedding; it carries practical information rather than being table decoration.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item asks a guest to attend?",
             "options": ["Confetti", "Table Runner", "Invitation"],
-            "expectedAnswer": "Confetti"
+            "expectedAnswer": "Invitation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Confetti, Table Runner, Invitation. The person selects Confetti for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Confetti, Table Runner, Invitation in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult organizer checking a table runner, a small bowl of paper confetti and closed invitation envelopes. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult organizer checking a table runner, a small bowl of paper confetti and closed invitation envelopes."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Rsvp", "Seating Chart", "Menu"],
-          "scenario": "During a routine the wedding task, an adult compares Rsvp, Seating Chart, Menu. The person selects Rsvp for the next step.",
+          "scenario": "The invitation asks for an RSVP: a reply saying whether the guest will attend. A seating chart assigns guests to places. A menu lists the planned food. The reply helps the organizer know how many places and meals to prepare.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item shows assigned places for guests?",
             "options": ["Rsvp", "Seating Chart", "Menu"],
-            "expectedAnswer": "Rsvp"
+            "expectedAnswer": "Seating Chart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Rsvp, Seating Chart, Menu. The person selects Rsvp for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Rsvp, Seating Chart, Menu in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult planner arranging blank place cards beside a blank seating-plan sheet and menu booklet. No readable names or food list. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult planner arranging blank place cards beside a blank seating-plan sheet and menu booklet. No readable names or food list."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Venue", "Caterer", "Florist"],
-          "scenario": "During a routine the wedding task, an adult compares Venue, Caterer, Florist. The person selects Venue for the next step.",
+          "scenario": "The venue is the place where the wedding takes place. The caterer supplies the food and meal service. The florist supplies and arranges flowers. The planner confirms which work each provider is responsible for.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Who supplies the food and meal service?",
             "options": ["Venue", "Caterer", "Florist"],
-            "expectedAnswer": "Venue"
+            "expectedAnswer": "Caterer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Venue, Caterer, Florist. The person selects Venue for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Venue, Caterer, Florist in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult planner talking with catering and flower-arranging providers in a reception hall. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult planner talking with catering and flower-arranging providers in a reception hall."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dj Booth", "Gift Table", "Guest Book"],
-          "scenario": "During a routine the wedding task, an adult compares Dj Booth, Gift Table, Guest Book. The person selects Dj Booth for the next step.",
+          "scenario": "At the reception, the DJ booth is the area for recorded-music equipment. A gift table holds presents and cards. The guest book lets visitors leave names or messages. Guests can choose whether to write a personal message.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item lets visitors leave names or messages?",
             "options": ["Dj Booth", "Gift Table", "Guest Book"],
-            "expectedAnswer": "Dj Booth"
+            "expectedAnswer": "Guest Book"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the wedding context illustrating this situation: During a routine the wedding task, an adult compares Dj Booth, Gift Table, Guest Book. The person selects Dj Booth for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the wedding scene showing lesson-related items or actions including Dj Booth, Gift Table, Guest Book in a natural setting."
+          "imageBrief": "Photorealistic scene: Reception layout with a sound-equipment area, a gift table and an open guest book showing blank pages. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Reception layout with a sound-equipment area, a gift table and an open guest book showing blank pages."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Wedding: Everyday Description",
-      "text": "Omar has an everyday task connected to the wedding. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss ribbon, fairy lights, and lantern. The context makes the relationship between the words clear. In the social situation, the people experience or discuss confetti, table runner, and invitation. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Wedding. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Practical arrangements",
+      "text": "Before the event, the organizer checks ribbon, fairy lights and a lantern. A table runner covers the center of a table, with a small amount of confetti for decoration. Each invitation asks for an RSVP by a stated date. Replies help the planner prepare the seating chart and confirm the menu. The venue hosts the event; the caterer prepares food, and the florist arranges flowers. Inside, the DJ booth has sound equipment. A gift table holds presents and cards, while the guest book offers space for messages. The organizer follows up politely with guests who have not replied.",
+      "imageBrief": "Photorealistic scene: Adult decorator arranging a vase with ribbon, a string of small electric lights and an electric lantern. Natural adult-focused composition. Personal roles and ceremony choices are established in written context. Show only the stated tradition and setting; do not invent or combine sacred rituals. No readable text, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the wedding task, an adult compares Ribbon, Fairy Lights, Lantern. The person selects Ribbon for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Ribbon",
+        "prompt": "A decorator ties ribbon around a vase. Fairy lights are a string of small electric lights. A lantern holds a light inside a protective decorative case. These objects create the chosen atmosphere without defining a particular tradition.\nWhich term names the string of small electric lights?",
+        "answer": "Fairy Lights",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Confetti, Table Runner, Invitation. The person selects Confetti for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Confetti",
+        "prompt": "The table runner is the long narrow cloth along the middle of the table. Confetti is small decorative pieces scattered for celebration. An invitation asks a guest to attend the wedding; it carries practical information rather than being table decoration.\nWhich item asks a guest to attend?",
+        "answer": "Invitation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Rsvp, Seating Chart, Menu. The person selects Rsvp for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Rsvp",
+        "prompt": "The invitation asks for an RSVP: a reply saying whether the guest will attend. A seating chart assigns guests to places. A menu lists the planned food. The reply helps the organizer know how many places and meals to prepare.\nWhich item shows assigned places for guests?",
+        "answer": "Seating Chart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Venue, Caterer, Florist. The person selects Venue for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Venue",
+        "prompt": "The venue is the place where the wedding takes place. The caterer supplies the food and meal service. The florist supplies and arranges flowers. The planner confirms which work each provider is responsible for.\nWho supplies the food and meal service?",
+        "answer": "Caterer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the wedding task, an adult compares Dj Booth, Gift Table, Guest Book. The person selects Dj Booth for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dj Booth",
+        "prompt": "At the reception, the DJ booth is the area for recorded-music equipment. A gift table holds presents and cards. The guest book lets visitors leave names or messages. Guests can choose whether to write a personal message.\nWhich item lets visitors leave names or messages?",
+        "answer": "Guest Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Ribbon"
+        "prompt": "Before the event, the organizer checks ribbon, fairy lights and a lantern. A table runner covers the center of a table, with a small amount of confetti for decoration. Each invitation asks for an RSVP by a stated date. Replies help the planner prepare the seating chart and confirm the menu. The venue hosts the event; the caterer prepares food, and the florist arranges flowers. Inside, the DJ booth has sound equipment. A gift table holds presents and cards, while the guest book offers space for messages. The organizer follows up politely with guests who have not replied.\nWhy are RSVP replies useful to the organizer?",
+        "answer": "They help prepare places and meals",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Confetti"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bride” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A decorator ties ribbon around a vase. Fairy lights are a string of small electric lights. A lantern holds a light inside a protective decorative case. These objects create the chosen atmosphere without defining a particular tradition.\nExplain one object or role in a complete sentence using this account.",
+        "answer": "Fairy lights are a string of small electric lights.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Wedding: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Practical arrangements",
+      "idea": "Narrate the stated adult wedding plan, pause for one practical question, and acknowledge that customs and roles differ. Do not mix traditions or identify roles by appearance.",
+      "scriptStarter": "A decorator ties ribbon around a vase. Fairy lights are a string of small electric lights. A lantern holds a light inside a protective decorative case. These objects create the chosen atmosphere without defining a particular tradition."
     },
     "spacedReview": "1 lesson(s) back: Bride, Groom from wedding-3\n3 lesson(s) back: Altar, Aisle from wedding-1\n7 lesson(s) back: Balloon, Banner from birthday-party-1"
   }

@@ -30,7 +30,7 @@
       "شاشة عرض",
       "مؤشر ليزر",
       "ميكروفون",
-      "مكبر صوت (سبيكر / سماعة)",
+      "مكبّر صوت",
       "كاميرا",
       "لوح ورقي للعروض",
       "قلم تعليم",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "94-124 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Projector Screen", "Laser Pointer", "Microphone", "Speaker"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.",
+          "scenario": "At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Projector Screen", "Laser Pointer", "Microphone"],
-            "expectedAnswer": "Projector Screen"
+            "question": "Which device captures the presenter’s speech?",
+            "options": ["Microphone", "Projector Screen", "Laser Pointer"],
+            "expectedAnswer": "Microphone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Projector Screen as the central item; include Projector Screen, Laser Pointer, and Microphone naturally where visually appropriate, but make the real-world use of Projector Screen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Microphone in a meeting room context. Use the written scenario as the source of meaning: At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Camera", "Flip Chart", "Marker", "Remote Clicker"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.",
+          "scenario": "A Camera records the authorized rehearsal. A Flip Chart and Marker support handwritten notes. The presenter uses a Remote Clicker to advance slides without returning to the computer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Camera", "Flip Chart", "Marker"],
-            "expectedAnswer": "Camera"
+            "question": "Which device advances the slides remotely?",
+            "options": ["Remote Clicker", "Camera", "Flip Chart"],
+            "expectedAnswer": "Remote Clicker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Camera as the central item; include Camera, Flip Chart, and Marker naturally where visually appropriate, but make the real-world use of Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Remote Clicker in a meeting room context. Use the written scenario as the source of meaning: A Camera records the authorized rehearsal. A Flip Chart and Marker support handwritten notes. The presenter uses a Remote Clicker to advance slides without returning to the computer. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Name Plate", "Agenda", "Staff Meeting", "Board Meeting"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.",
+          "scenario": "Each seat has a Name Plate. The organizer distributes an Agenda listing discussion items for the Staff Meeting. A Board Meeting is a different meeting involving directors.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Name Plate", "Agenda", "Staff Meeting"],
-            "expectedAnswer": "Name Plate"
+            "question": "Which document lists the discussion items?",
+            "options": ["Agenda", "Name Plate", "Staff Meeting"],
+            "expectedAnswer": "Agenda"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Name Plate as the central item; include Name Plate, Agenda, and Staff Meeting naturally where visually appropriate, but make the real-world use of Name Plate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Agenda in a meeting room context. Use the written scenario as the source of meaning: Each seat has a Name Plate. The organizer distributes an Agenda listing discussion items for the Staff Meeting. A Board Meeting is a different meeting involving directors. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["One-on-One", "Brainstorm", "Stand-Up"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.",
+          "scenario": "The manager schedules a One-on-One for two participants. A Brainstorm involves sharing ideas, while a Stand-Up is a short team update.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which meeting is intended for two participants?",
             "options": ["One-on-One", "Brainstorm", "Stand-Up"],
             "expectedAnswer": "One-on-One"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the One-on-One as the central item; include One-on-One, Brainstorm, and Stand-Up naturally where visually appropriate, but make the real-world use of One-on-One the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for One-on-One in a meeting room context. Use the written scenario as the source of meaning: The manager schedules a One-on-One for two participants. A Brainstorm involves sharing ideas, while a Stand-Up is a short team update. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Meeting Room",
-      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Projector Screen, Laser Pointer, Microphone, and Speaker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Camera, Flip Chart, Marker, and Remote Clicker. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Name Plate, Agenda, Staff Meeting, and Board Meeting. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers One-on-One, Brainstorm, and Stand-Up. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Meeting Room: A visitor’s questions",
+      "text": "At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud. A Camera records the authorized rehearsal. A Flip Chart and Marker support handwritten notes. The presenter uses a Remote Clicker to advance slides without returning to the computer. Each seat has a Name Plate. The organizer distributes an Agenda listing discussion items for the Staff Meeting. A Board Meeting is a different meeting involving directors. The manager schedules a One-on-One for two participants. A Brainstorm involves sharing ideas, while a Stand-Up is a short team update.",
+      "imageBrief": "One uncluttered meeting room setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector Screen, Laser Pointer, Microphone, and Speaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Projector Screen",
+        "prompt": "At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud.\nWhich device captures the presenter’s speech?",
+        "answer": "Microphone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Flip Chart, Marker, and Remote Clicker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Camera",
+        "prompt": "A Camera records the authorized rehearsal. A Flip Chart and Marker support handwritten notes. The presenter uses a Remote Clicker to advance slides without returning to the computer.\nWhich device advances the slides remotely?",
+        "answer": "Remote Clicker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Name Plate, Agenda, Staff Meeting, and Board Meeting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Name Plate",
+        "prompt": "Each seat has a Name Plate. The organizer distributes an Agenda listing discussion items for the Staff Meeting. A Board Meeting is a different meeting involving directors.\nWhich document lists the discussion items?",
+        "answer": "Agenda",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare One-on-One, Brainstorm, and Stand-Up and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The manager schedules a One-on-One for two participants. A Brainstorm involves sharing ideas, while a Stand-Up is a short team update.\nWhich meeting is intended for two participants?",
         "answer": "One-on-One",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud. A Camera records the authorized rehearsal. A Flip Chart and Marker support handwritten notes. The presenter uses a Remote Clicker to advance slides without returning to the computer. Each seat has a Name Plate. The organizer distributes an Agenda listing discussion items for the Staff Meeting. A Board Meeting is a different meeting involving directors. The manager schedules a One-on-One for two participants. A Brainstorm involves sharing ideas, while a Stand-Up is a short team update.\nExplain the difference between Projector Screen and Laser Pointer using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Projector Screen"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Remote Work” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Projector Screen, Laser Pointer, Microphone, Speaker, Camera, Flip Chart, Marker, Remote Clicker, Name Plate, Agenda, Staff Meeting, Board Meeting, One-on-One, Brainstorm, and Stand-Up in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Projector Screen, Laser Pointer, Microphone, Speaker, Camera, Flip Chart, Marker, Remote Clicker, Name Plate, Agenda, Staff Meeting, Board Meeting, One-on-One, Brainstorm, Stand-Up to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Meeting Room: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Meeting Room: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Projector Screen and Laser Pointer, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At the presentation rehearsal, a Projector Screen displays slides. A Laser Pointer stays off while participants settle. The presenter’s Microphone captures speech, and a Speaker plays it aloud. Pause and answer: Which device captures the presenter’s speech?"
     },
     "spacedReview": "1 lesson(s) back: Remote Work, Flex Hours from office-4\n3 lesson(s) back: Scanner, Projector from office-2\n7 lesson(s) back: molecule, atom from science-lab-2"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "86-116 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Town Hall", "Workshop", "Webinar", "Kick-Off"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.",
+          "scenario": "The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Town Hall", "Workshop", "Webinar"],
-            "expectedAnswer": "Town Hall"
+            "question": "Which session is held online as a seminar?",
+            "options": ["Webinar", "Town Hall", "Workshop"],
+            "expectedAnswer": "Webinar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Town Hall as the main location; include Town Hall, Workshop, and Webinar naturally where visually appropriate, but make the real-world use of Town Hall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Webinar in a meeting room context. Use the written scenario as the source of meaning: The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Retrospective", "Slide Deck", "Handout", "Report"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.",
+          "scenario": "After delivery, the team holds a Retrospective to review what worked and what needs improving. A Slide Deck presents findings; a Handout and Report provide reference material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which meeting reviews completed work to identify improvements?",
             "options": ["Retrospective", "Slide Deck", "Handout"],
             "expectedAnswer": "Retrospective"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Retrospective as the central item; include Retrospective, Slide Deck, and Handout naturally where visually appropriate, but make the real-world use of Retrospective the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Retrospective in a meeting room context. Use the written scenario as the source of meaning: After delivery, the team holds a Retrospective to review what worked and what needs improving. A Slide Deck presents findings; a Handout and Report provide reference material. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Chart", "Graph", "Diagram", "Flowchart"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.",
+          "scenario": "A Chart and Graph present measurements. A Diagram explains a design. A Flowchart shows the sequence of actions and decisions in a process.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chart", "Graph", "Diagram"],
-            "expectedAnswer": "Chart"
+            "question": "Which display shows a sequence of process actions and decisions?",
+            "options": ["Flowchart", "Chart", "Graph"],
+            "expectedAnswer": "Flowchart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Chart as the central item; include Chart, Graph, and Diagram naturally where visually appropriate, but make the real-world use of Chart the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Flowchart in a meeting room context. Use the written scenario as the source of meaning: A Chart and Graph present measurements. A Diagram explains a design. A Flowchart shows the sequence of actions and decisions in a process. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Timeline", "Spreadsheet", "Dashboard"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.",
+          "scenario": "The team compares a Timeline showing tasks in date order, a Spreadsheet holding rows of figures, and a Dashboard summarizing status.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which display arranges tasks in date order?",
             "options": ["Timeline", "Spreadsheet", "Dashboard"],
             "expectedAnswer": "Timeline"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Timeline as the central item; include Timeline, Spreadsheet, and Dashboard naturally where visually appropriate, but make the real-world use of Timeline the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Timeline in a meeting room context. Use the written scenario as the source of meaning: The team compares a Timeline showing tasks in date order, a Spreadsheet holding rows of figures, and a Dashboard summarizing status. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Meeting Room",
-      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Town Hall, Workshop, Webinar, and Kick-Off. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Retrospective, Slide Deck, Handout, and Report. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Chart, Graph, Diagram, and Flowchart. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Timeline, Spreadsheet, and Dashboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Meeting Room: Understanding the different roles",
+      "text": "The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project. After delivery, the team holds a Retrospective to review what worked and what needs improving. A Slide Deck presents findings; a Handout and Report provide reference material. A Chart and Graph present measurements. A Diagram explains a design. A Flowchart shows the sequence of actions and decisions in a process. The team compares a Timeline showing tasks in date order, a Spreadsheet holding rows of figures, and a Dashboard summarizing status.",
+      "imageBrief": "One uncluttered meeting room setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Town Hall, Workshop, Webinar, and Kick-Off and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Town Hall",
+        "prompt": "The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project.\nWhich session is held online as a seminar?",
+        "answer": "Webinar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retrospective, Slide Deck, Handout, and Report and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "After delivery, the team holds a Retrospective to review what worked and what needs improving. A Slide Deck presents findings; a Handout and Report provide reference material.\nWhich meeting reviews completed work to identify improvements?",
         "answer": "Retrospective",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chart, Graph, Diagram, and Flowchart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chart",
+        "prompt": "A Chart and Graph present measurements. A Diagram explains a design. A Flowchart shows the sequence of actions and decisions in a process.\nWhich display shows a sequence of process actions and decisions?",
+        "answer": "Flowchart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timeline, Spreadsheet, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The team compares a Timeline showing tasks in date order, a Spreadsheet holding rows of figures, and a Dashboard summarizing status.\nWhich display arranges tasks in date order?",
         "answer": "Timeline",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project. After delivery, the team holds a Retrospective to review what worked and what needs improving. A Slide Deck presents findings; a Handout and Report provide reference material. A Chart and Graph present measurements. A Diagram explains a design. A Flowchart shows the sequence of actions and decisions in a process. The team compares a Timeline showing tasks in date order, a Spreadsheet holding rows of figures, and a Dashboard summarizing status.\nExplain the difference between Town Hall and Workshop using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Town Hall"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Projector Screen” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Town Hall, Workshop, Webinar, Kick-Off, Retrospective, Slide Deck, Handout, Report, Chart, Graph, Diagram, Flowchart, Timeline, Spreadsheet, and Dashboard in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Town Hall, Workshop, Webinar, Kick-Off, Retrospective, Slide Deck, Handout, Report, Chart, Graph, Diagram, Flowchart, Timeline, Spreadsheet, Dashboard to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Meeting Room: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Meeting Room: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Town Hall and Workshop, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The plan distinguishes a Town Hall for questions, a Workshop for practical group work, and a Webinar held online. A Kick-Off begins a new project. Pause and answer: Which session is held online as a seminar?"
     },
     "spacedReview": "1 lesson(s) back: Projector Screen, Laser Pointer from meeting-room-1\n3 lesson(s) back: Reception, Lobby from office-3\n7 lesson(s) back: tissue, organ from science-lab-3"
   },
@@ -377,17 +343,17 @@
     "targetWordsArabic": [
       "يقدّم عرضًا",
       "يناقش",
-      "تصويت",
+      "يصوّت",
       "يوافق",
       "يرفض",
       "يؤجّل المناقشة (أمريكي)؛ يطرح رسميًا (بريطاني)",
-      "متابعة",
-      "يكلف",
+      "يتابع",
+      "يكلّف",
       "يدون محضر الاجتماع",
       "يرفع الجلسة",
       "زوم",
       "مايكروسوفت تيمز",
-      "مشاركة الشاشة",
+      "يشارك الشاشة",
       "يكتم الصوت",
       "يلغي كتم الصوت"
     ],
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "117-147 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Present", "Discuss", "Vote", "Approve"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.",
+          "scenario": "Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Present", "Discuss", "Vote"],
-            "expectedAnswer": "Present"
+            "question": "Which action records the participants’ choices?",
+            "options": ["Vote", "Present", "Discuss"],
+            "expectedAnswer": "Vote"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Present as the central item; include Present, Discuss, and Vote naturally where visually appropriate, but make the real-world use of Present the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Vote in a meeting room context. Use the written scenario as the source of meaning: Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Reject", "Table", "Follow Up", "Assign"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.",
+          "scenario": "One member wants to Reject a second proposal. In this US meeting, the chair decides to Table it, meaning postpone discussion. The secretary will Follow Up later, and the chair will Assign the review task.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Reject", "Table", "Follow Up"],
-            "expectedAnswer": "Reject"
+            "question": "Which verb means postpone discussion in this stated US context?",
+            "options": ["Table", "Reject", "Follow Up"],
+            "expectedAnswer": "Table"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult clearly carrying out the action Reject; include Reject, Table, and Follow Up naturally where visually appropriate, but make the real-world use of Reject the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Table in a meeting room context. Use the written scenario as the source of meaning: One member wants to Reject a second proposal. In this US meeting, the chair decides to Table it, meaning postpone discussion. The secretary will Follow Up later, and the chair will Assign the review task. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Minute", "Adjourn", "Zoom", "Teams"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.",
+          "scenario": "The secretary will Minute the decisions before the chair can Adjourn. Remote participants use Zoom or Teams to join the conversation. Here Minute is a verb meaning record the meeting’s decisions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which verb means record the meeting’s decisions?",
             "options": ["Minute", "Adjourn", "Zoom"],
             "expectedAnswer": "Minute"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Minute as the central item; include Minute, Adjourn, and Zoom naturally where visually appropriate, but make the real-world use of Minute the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Minute in a meeting room context. Use the written scenario as the source of meaning: The secretary will Minute the decisions before the chair can Adjourn. Remote participants use Zoom or Teams to join the conversation. Here Minute is a verb meaning record the meeting’s decisions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Screen Share", "Mute", "Unmute"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.",
+          "scenario": "During Screen Share, a participant selects Mute to stop transmitting microphone sound. Later, they select Unmute before speaking. The steps describe the vocabulary, not a promise that every app has identical controls.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Screen Share", "Mute", "Unmute"],
-            "expectedAnswer": "Screen Share"
+            "question": "Which command stops transmitting microphone sound?",
+            "options": ["Mute", "Screen Share", "Unmute"],
+            "expectedAnswer": "Mute"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Screen Share as the central item; include Screen Share, Mute, and Unmute naturally where visually appropriate, but make the real-world use of Screen Share the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mute in a meeting room context. Use the written scenario as the source of meaning: During Screen Share, a participant selects Mute to stop transmitting microphone sound. Later, they select Unmute before speaking. The steps describe the vocabulary, not a promise that every app has identical controls. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Meeting Room",
-      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Present, Discuss, Vote, and Approve. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reject, Table, Follow Up, and Assign. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Minute, Adjourn, Zoom, and Teams. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Screen Share, Mute, and Unmute. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Meeting Room: Comparing the equipment",
+      "text": "Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result. One member wants to Reject a second proposal. In this US meeting, the chair decides to Table it, meaning postpone discussion. The secretary will Follow Up later, and the chair will Assign the review task. The secretary will Minute the decisions before the chair can Adjourn. Remote participants use Zoom or Teams to join the conversation. Here Minute is a verb meaning record the meeting’s decisions. During Screen Share, a participant selects Mute to stop transmitting microphone sound. Later, they select Unmute before speaking. The steps describe the vocabulary, not a promise that every app has identical controls.",
+      "imageBrief": "One uncluttered meeting room setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Present, Discuss, Vote, and Approve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Present",
+        "prompt": "Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result.\nWhich action records the participants’ choices?",
+        "answer": "Vote",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reject, Table, Follow Up, and Assign and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Reject",
+        "prompt": "One member wants to Reject a second proposal. In this US meeting, the chair decides to Table it, meaning postpone discussion. The secretary will Follow Up later, and the chair will Assign the review task.\nWhich verb means postpone discussion in this stated US context?",
+        "answer": "Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Minute, Adjourn, Zoom, and Teams and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The secretary will Minute the decisions before the chair can Adjourn. Remote participants use Zoom or Teams to join the conversation. Here Minute is a verb meaning record the meeting’s decisions.\nWhich verb means record the meeting’s decisions?",
         "answer": "Minute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screen Share, Mute, and Unmute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Screen Share",
+        "prompt": "During Screen Share, a participant selects Mute to stop transmitting microphone sound. Later, they select Unmute before speaking. The steps describe the vocabulary, not a promise that every app has identical controls.\nWhich command stops transmitting microphone sound?",
+        "answer": "Mute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result. One member wants to Reject a second proposal. In this US meeting, the chair decides to Table it, meaning postpone discussion. The secretary will Follow Up later, and the chair will Assign the review task. The secretary will Minute the decisions before the chair can Adjourn. Remote participants use Zoom or Teams to join the conversation. Here Minute is a verb meaning record the meeting’s decisions. During Screen Share, a participant selects Mute to stop transmitting microphone sound. Later, they select Unmute before speaking. The steps describe the vocabulary, not a promise that every app has identical controls.\nExplain the difference between Present and Discuss using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Present"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Town Hall” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Present, Discuss, Vote, Approve, Reject, Table, Follow Up, Assign, Minute, Adjourn, Zoom, Teams, Screen Share, Mute, and Unmute in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Present, Discuss, Vote, Approve, Reject, Table, Follow Up, Assign, Minute, Adjourn, Zoom, Teams, Screen Share, Mute, Unmute to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Meeting Room: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Meeting Room: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Present and Discuss, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Participants Present the proposal and Discuss concerns. They then Vote on the decision; a majority Approve the proposal in this fictional meeting. The written account supplies the voting result. Pause and answer: Which action records the participants’ choices?"
     },
     "spacedReview": "1 lesson(s) back: Town Hall, Workshop from meeting-room-2\n3 lesson(s) back: Remote Work, Flex Hours from office-4\n7 lesson(s) back: lever, spring from science-lab-4"
   },
@@ -543,91 +492,74 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "60-78 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chat", "Breakout Room", "Waiting Room", "Recording"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.",
+          "scenario": "Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chat", "Breakout Room", "Waiting Room"],
-            "expectedAnswer": "Chat"
+            "question": "Which space supports a smaller discussion group?",
+            "options": ["Breakout Room", "Chat", "Waiting Room"],
+            "expectedAnswer": "Breakout Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Chat as the central item; include Chat, Breakout Room, and Waiting Room naturally where visually appropriate, but make the real-world use of Chat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Breakout Room in a meeting room context. Use the written scenario as the source of meaning: Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Virtual Background"],
-          "scenario": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.",
+          "scenario": "The presenter chooses a Virtual Background to display a digital scene behind them. It changes the displayed background rather than moving the presenter to a real new location.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Virtual Background", "Chat", "Breakout Room"],
+            "question": "What term names the digital scene displayed behind the presenter?",
+            "options": ["Virtual Background"],
             "expectedAnswer": "Virtual Background"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Virtual Background as the central item; include Virtual Background, Chat, and Breakout Room naturally where visually appropriate, but make the real-world use of Virtual Background the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Virtual Background in a meeting room context. Use the written scenario as the source of meaning: The presenter chooses a Virtual Background to display a digital scene behind them. It changes the displayed background rather than moving the presenter to a real new location. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written meeting room situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Meeting Room",
-      "text": "At the meeting room, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Chat, Breakout Room, Waiting Room, and Recording. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Virtual Background. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Meeting Room. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Meeting Room: A guided walk",
+      "text": "Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice. The presenter chooses a Virtual Background to display a digital scene behind them. It changes the displayed background rather than moving the presenter to a real new location.",
+      "imageBrief": "One uncluttered meeting room setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chat, Breakout Room, Waiting Room, and Recording and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chat",
+        "prompt": "Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice.\nWhich space supports a smaller discussion group?",
+        "answer": "Breakout Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the meeting room setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Virtual Background and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The presenter chooses a Virtual Background to display a digital scene behind them. It changes the displayed background rather than moving the presenter to a real new location.\nWhat term names the digital scene displayed behind the presenter?",
         "answer": "Virtual Background",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice. The presenter chooses a Virtual Background to display a digital scene behind them. It changes the displayed background rather than moving the presenter to a real new location.\nExplain the difference between Chat and Breakout Room using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Chat"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Present” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the meeting room task. Use Chat, Breakout Room, Waiting Room, Recording, and Virtual Background in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Chat, Breakout Room, Waiting Room, Recording, Virtual Background to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Meeting Room: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Meeting Room: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Chat and Breakout Room, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Participants exchange written messages in Chat, then join a Breakout Room for small-group discussion. New arrivals wait in a Waiting Room. Any Recording requires the organization’s appropriate permission and notice. Pause and answer: Which space supports a smaller discussion group?"
     },
     "spacedReview": "1 lesson(s) back: Present, Discuss from meeting-room-3\n3 lesson(s) back: Projector Screen, Laser Pointer from meeting-room-1\n7 lesson(s) back: Desk, Office Chair from office-1"
   }

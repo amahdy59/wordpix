@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "128-158 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Showroom", "Lot", "Service Center", "Parts Department"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.",
+          "scenario": "At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Showroom", "Lot", "Service Center"],
-            "expectedAnswer": "Showroom"
+            "question": "Which department supplies replacement components?",
+            "options": ["Parts Department", "Showroom", "Lot"],
+            "expectedAnswer": "Parts Department"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Showroom as the central item; include Showroom, Lot, and Service Center naturally where visually appropriate, but make the real-world use of Showroom the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Parts Department in a auto dealership context. Use the written scenario as the source of meaning: At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Finance Office", "Waiting Room", "Detail Bay", "Test Drive Route"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.",
+          "scenario": "The guide points out the Finance Office and Waiting Room. A Detail Bay is used for thorough vehicle cleaning, while the Test Drive Route is a planned route for evaluating a car under the dealership’s arrangements.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Finance Office", "Waiting Room", "Detail Bay"],
-            "expectedAnswer": "Finance Office"
+            "question": "Which work area is used for thorough vehicle cleaning?",
+            "options": ["Detail Bay", "Finance Office", "Waiting Room"],
+            "expectedAnswer": "Detail Bay"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or approaching the Finance Office as the main location; include Finance Office, Waiting Room, and Detail Bay naturally where visually appropriate, but make the real-world use of Finance Office the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Detail Bay in a auto dealership context. Use the written scenario as the source of meaning: The guide points out the Finance Office and Waiting Room. A Detail Bay is used for thorough vehicle cleaning, while the Test Drive Route is a planned route for evaluating a car under the dealership’s arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Reception", "Manager's Office", "Test Drive", "Trade-In"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.",
+          "scenario": "At Reception, Karim asks for the Manager's Office. Before a Test Drive, he discusses a Trade-In: offering his current car as part of payment for another vehicle. The written account provides the payment arrangement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Reception", "Manager's Office", "Test Drive"],
-            "expectedAnswer": "Reception"
+            "question": "Which term describes offering the existing car as part of payment?",
+            "options": ["Trade-In", "Reception", "Manager's Office"],
+            "expectedAnswer": "Trade-In"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Reception as the central item; include Reception, Manager's Office, and Test Drive naturally where visually appropriate, but make the real-world use of Reception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Trade-In in a auto dealership context. Use the written scenario as the source of meaning: At Reception, Karim asks for the Manager's Office. Before a Test Drive, he discusses a Trade-In: offering his current car as part of payment for another vehicle. The written account provides the payment arrangement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Financing", "Lease", "Down Payment"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.",
+          "scenario": "The Finance Office compares Financing with a Lease allowing use of a vehicle for an agreed period and payments. A Down Payment is an initial contribution. Karim asks for the complete terms rather than judging the agreement from the monthly amount alone.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Financing", "Lease", "Down Payment"],
-            "expectedAnswer": "Financing"
+            "question": "Which arrangement allows use for an agreed period and payments?",
+            "options": ["Lease", "Financing", "Down Payment"],
+            "expectedAnswer": "Lease"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult illustrating Financing through a realistic adult task; include Financing, Lease, and Down Payment naturally where visually appropriate, but make the real-world use of Financing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lease in a auto dealership context. Use the written scenario as the source of meaning: The Finance Office compares Financing with a Lease allowing use of a vehicle for an agreed period and payments. A Down Payment is an initial contribution. Karim asks for the complete terms rather than judging the agreement from the monthly amount alone. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Auto Dealership: Practical Information",
-      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Showroom, Lot, Service Center, and Parts Department. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Finance Office, Waiting Room, Detail Bay, and Test Drive Route. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reception, Manager's Office, Test Drive, and Trade-In. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Financing, Lease, and Down Payment. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Auto Dealership: A visitor’s questions",
+      "text": "At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components. The guide points out the Finance Office and Waiting Room. A Detail Bay is used for thorough vehicle cleaning, while the Test Drive Route is a planned route for evaluating a car under the dealership’s arrangements. At Reception, Karim asks for the Manager's Office. Before a Test Drive, he discusses a Trade-In: offering his current car as part of payment for another vehicle. The written account provides the payment arrangement. The Finance Office compares Financing with a Lease allowing use of a vehicle for an agreed period and payments. A Down Payment is an initial contribution. Karim asks for the complete terms rather than judging the agreement from the monthly amount alone.",
+      "imageBrief": "One uncluttered auto dealership setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showroom, Lot, Service Center, and Parts Department and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Showroom",
+        "prompt": "At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components.\nWhich department supplies replacement components?",
+        "answer": "Parts Department",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Finance Office, Waiting Room, Detail Bay, and Test Drive Route and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Finance Office",
+        "prompt": "The guide points out the Finance Office and Waiting Room. A Detail Bay is used for thorough vehicle cleaning, while the Test Drive Route is a planned route for evaluating a car under the dealership’s arrangements.\nWhich work area is used for thorough vehicle cleaning?",
+        "answer": "Detail Bay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Manager's Office, Test Drive, and Trade-In and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Reception",
+        "prompt": "At Reception, Karim asks for the Manager's Office. Before a Test Drive, he discusses a Trade-In: offering his current car as part of payment for another vehicle. The written account provides the payment arrangement.\nWhich term describes offering the existing car as part of payment?",
+        "answer": "Trade-In",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Financing, Lease, and Down Payment and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Financing",
+        "prompt": "The Finance Office compares Financing with a Lease allowing use of a vehicle for an agreed period and payments. A Down Payment is an initial contribution. Karim asks for the complete terms rather than judging the agreement from the monthly amount alone.\nWhich arrangement allows use for an agreed period and payments?",
+        "answer": "Lease",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components. The guide points out the Finance Office and Waiting Room. A Detail Bay is used for thorough vehicle cleaning, while the Test Drive Route is a planned route for evaluating a car under the dealership’s arrangements. At Reception, Karim asks for the Manager's Office. Before a Test Drive, he discusses a Trade-In: offering his current car as part of payment for another vehicle. The written account provides the payment arrangement. The Finance Office compares Financing with a Lease allowing use of a vehicle for an agreed period and payments. A Down Payment is an initial contribution. Karim asks for the complete terms rather than judging the agreement from the monthly amount alone.\nExplain the difference between Showroom and Lot using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Showroom"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Power Steering Fluid” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Showroom, Lot, Service Center, Parts Department, Finance Office, Waiting Room, Detail Bay, Test Drive Route, Reception, Manager's Office, Test Drive, Trade-In, Financing, Lease, and Down Payment in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Showroom, Lot, Service Center, Parts Department, Finance Office, Waiting Room, Detail Bay, Test Drive Route, Reception, Manager's Office, Test Drive, Trade-In, Financing, Lease, Down Payment to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Auto Dealership: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Auto Dealership: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Showroom and Lot, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At the Showroom, Karim views display vehicles and then visits the Lot outdoors. The Service Center performs professional maintenance, while the Parts Department supplies replacement components. Pause and answer: Which department supplies replacement components?"
     },
     "spacedReview": "1 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4\n3 lesson(s) back: Roof, Windshield from car-parts-mechanics-2\n7 lesson(s) back: Sedan, Hatchback from car-types-1"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "127-157 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Monthly Payment", "MSRP", "Sticker Price", "Negotiation"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.",
+          "scenario": "Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Monthly Payment", "MSRP", "Sticker Price"],
-            "expectedAnswer": "Monthly Payment"
+            "question": "Which term means manufacturer’s suggested retail price?",
+            "options": ["MSRP", "Monthly Payment", "Sticker Price"],
+            "expectedAnswer": "MSRP"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Monthly Payment as the central item; include Monthly Payment, MSRP, and Sticker Price naturally where visually appropriate, but make the real-world use of Monthly Payment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for MSRP in a auto dealership context. Use the written scenario as the source of meaning: Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Closing", "New", "Used", "Certified Pre-Owned"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.",
+          "scenario": "Before Closing, the guide compares New and Used vehicles with Certified Pre-Owned vehicles meeting a particular inspection program’s requirements. Certification conditions depend on the actual program and do not guarantee an absence of defects.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Closing", "New", "Used"],
-            "expectedAnswer": "Closing"
+            "question": "Which label refers to the vehicle meeting the specified inspection program?",
+            "options": ["Certified Pre-Owned", "Closing", "New"],
+            "expectedAnswer": "Certified Pre-Owned"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult illustrating Closing through a realistic adult task; include Closing, New, and Used naturally where visually appropriate, but make the real-world use of Closing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Certified Pre-Owned in a auto dealership context. Use the written scenario as the source of meaning: Before Closing, the guide compares New and Used vehicles with Certified Pre-Owned vehicles meeting a particular inspection program’s requirements. Certification conditions depend on the actual program and do not guarantee an absence of defects. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Demo", "Mileage", "Carfax", "Warranty"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.",
+          "scenario": "A Demo has been used for demonstrations, and Mileage records traveled distance. Carfax is a vehicle-history report brand, while a Warranty states specified coverage and obligations. A history report may omit events that were never reported.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Demo", "Mileage", "Carfax"],
-            "expectedAnswer": "Demo"
+            "question": "Which target names the vehicle-history report brand?",
+            "options": ["Carfax", "Demo", "Mileage"],
+            "expectedAnswer": "Carfax"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Demo as the central item; include Demo, Mileage, and Carfax naturally where visually appropriate, but make the real-world use of Demo the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Carfax in a auto dealership context. Use the written scenario as the source of meaning: A Demo has been used for demonstrations, and Mileage records traveled distance. Carfax is a vehicle-history report brand, while a Warranty states specified coverage and obligations. A history report may omit events that were never reported. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Extended Warranty", "Recall", "Lemon Law"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.",
+          "scenario": "An Extended Warranty or service contract has specific coverage terms. A Recall concerns a defect or safety problem requiring the manufacturer’s response. Lemon Law remedies depend on the jurisdiction and applicable circumstances.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Extended Warranty", "Recall", "Lemon Law"],
-            "expectedAnswer": "Extended Warranty"
+            "question": "Which term names the manufacturer’s defect-related action?",
+            "options": ["Recall", "Extended Warranty", "Lemon Law"],
+            "expectedAnswer": "Recall"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Extended Warranty as the central item; include Extended Warranty, Recall, and Lemon Law naturally where visually appropriate, but make the real-world use of Extended Warranty the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Recall in a auto dealership context. Use the written scenario as the source of meaning: An Extended Warranty or service contract has specific coverage terms. A Recall concerns a defect or safety problem requiring the manufacturer’s response. Lemon Law remedies depend on the jurisdiction and applicable circumstances. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Auto Dealership",
-      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monthly Payment, MSRP, Sticker Price, and Negotiation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing, New, Used, and Certified Pre-Owned. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Demo, Mileage, Carfax, and Warranty. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Extended Warranty, Recall, and Lemon Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Auto Dealership: Understanding the different roles",
+      "text": "Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost. Before Closing, the guide compares New and Used vehicles with Certified Pre-Owned vehicles meeting a particular inspection program’s requirements. Certification conditions depend on the actual program and do not guarantee an absence of defects. A Demo has been used for demonstrations, and Mileage records traveled distance. Carfax is a vehicle-history report brand, while a Warranty states specified coverage and obligations. A history report may omit events that were never reported. An Extended Warranty or service contract has specific coverage terms. A Recall concerns a defect or safety problem requiring the manufacturer’s response. Lemon Law remedies depend on the jurisdiction and applicable circumstances.",
+      "imageBrief": "One uncluttered auto dealership setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monthly Payment, MSRP, Sticker Price, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Monthly Payment",
+        "prompt": "Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost.\nWhich term means manufacturer’s suggested retail price?",
+        "answer": "MSRP",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing, New, Used, and Certified Pre-Owned and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Closing",
+        "prompt": "Before Closing, the guide compares New and Used vehicles with Certified Pre-Owned vehicles meeting a particular inspection program’s requirements. Certification conditions depend on the actual program and do not guarantee an absence of defects.\nWhich label refers to the vehicle meeting the specified inspection program?",
+        "answer": "Certified Pre-Owned",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Demo, Mileage, Carfax, and Warranty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Demo",
+        "prompt": "A Demo has been used for demonstrations, and Mileage records traveled distance. Carfax is a vehicle-history report brand, while a Warranty states specified coverage and obligations. A history report may omit events that were never reported.\nWhich target names the vehicle-history report brand?",
+        "answer": "Carfax",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Extended Warranty, Recall, and Lemon Law and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Extended Warranty",
+        "prompt": "An Extended Warranty or service contract has specific coverage terms. A Recall concerns a defect or safety problem requiring the manufacturer’s response. Lemon Law remedies depend on the jurisdiction and applicable circumstances.\nWhich term names the manufacturer’s defect-related action?",
+        "answer": "Recall",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost. Before Closing, the guide compares New and Used vehicles with Certified Pre-Owned vehicles meeting a particular inspection program’s requirements. Certification conditions depend on the actual program and do not guarantee an absence of defects. A Demo has been used for demonstrations, and Mileage records traveled distance. Carfax is a vehicle-history report brand, while a Warranty states specified coverage and obligations. A history report may omit events that were never reported. An Extended Warranty or service contract has specific coverage terms. A Recall concerns a defect or safety problem requiring the manufacturer’s response. Lemon Law remedies depend on the jurisdiction and applicable circumstances.\nExplain the difference between Monthly Payment and MSRP using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Monthly Payment"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Showroom” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Monthly Payment, MSRP, Sticker Price, Negotiation, Closing, New, Used, Certified Pre-Owned, Demo, Mileage, Carfax, Warranty, Extended Warranty, Recall, and Lemon Law in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Monthly Payment, MSRP, Sticker Price, Negotiation, Closing, New, Used, Certified Pre-Owned, Demo, Mileage, Carfax, Warranty, Extended Warranty, Recall, Lemon Law to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Auto Dealership: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Auto Dealership: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Monthly Payment and MSRP, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Karim compares the Monthly Payment with MSRP, the manufacturer’s suggested retail price, and the Sticker Price displayed for the vehicle. Negotiation can change proposed terms; none of these labels alone states the total financing cost. Pause and answer: Which term means manufacturer’s suggested retail price?"
     },
     "spacedReview": "1 lesson(s) back: Showroom, Lot from auto-dealership-1\n3 lesson(s) back: Tire, Wheel from car-parts-mechanics-3\n7 lesson(s) back: Dump Truck, Flatbed from car-types-2"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "72-102 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sales Associate", "Finance Manager", "Service Advisor", "Technician"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.",
+          "scenario": "A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sales Associate", "Finance Manager", "Service Advisor"],
-            "expectedAnswer": "Sales Associate"
+            "question": "Who discusses maintenance needs with customers?",
+            "options": ["Service Advisor", "Sales Associate", "Finance Manager"],
+            "expectedAnswer": "Service Advisor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Sales Associate as the central item; include Sales Associate, Finance Manager, and Service Advisor naturally where visually appropriate, but make the real-world use of Sales Associate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Service Advisor in a auto dealership context. Use the written scenario as the source of meaning: A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["General Manager", "Receptionist", "Detailer", "Parts Specialist"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.",
+          "scenario": "The General Manager oversees operations, and the Receptionist welcomes visitors. A Detailer cleans and finishes vehicles, while a Parts Specialist identifies and supplies components. Roles are described in text rather than assumed from clothing.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["General Manager", "Receptionist", "Detailer"],
-            "expectedAnswer": "General Manager"
+            "question": "Who thoroughly cleans and finishes vehicles?",
+            "options": ["Detailer", "General Manager", "Receptionist"],
+            "expectedAnswer": "Detailer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult working with or speaking to the General Manager; include General Manager, Receptionist, and Detailer naturally where visually appropriate, but make the real-world use of General Manager the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Detailer in a auto dealership context. Use the written scenario as the source of meaning: The General Manager oversees operations, and the Receptionist welcomes visitors. A Detailer cleans and finishes vehicles, while a Parts Specialist identifies and supplies components. Roles are described in text rather than assumed from clothing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Lot Attendant", "Title Clerk"],
-          "scenario": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.",
+          "scenario": "The Lot Attendant moves and prepares vehicles on the lot. A Title Clerk handles vehicle-ownership documents under the applicable process.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Lot Attendant", "Title Clerk", "Sales Associate"],
-            "expectedAnswer": "Lot Attendant"
+            "question": "Who handles vehicle-ownership documents?",
+            "options": ["Title Clerk", "Lot Attendant"],
+            "expectedAnswer": "Title Clerk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Lot Attendant as the central item; include Lot Attendant, Title Clerk, and Sales Associate naturally where visually appropriate, but make the real-world use of Lot Attendant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Title Clerk in a auto dealership context. Use the written scenario as the source of meaning: The Lot Attendant moves and prepares vehicles on the lot. A Title Clerk handles vehicle-ownership documents under the applicable process. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written auto dealership situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Auto Dealership",
-      "text": "At the auto dealership, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sales Associate, Finance Manager, Service Advisor, and Technician. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers General Manager, Receptionist, Detailer, and Parts Specialist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lot Attendant and Title Clerk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Auto Dealership. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Auto Dealership: Comparing the equipment",
+      "text": "A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults. The General Manager oversees operations, and the Receptionist welcomes visitors. A Detailer cleans and finishes vehicles, while a Parts Specialist identifies and supplies components. Roles are described in text rather than assumed from clothing. The Lot Attendant moves and prepares vehicles on the lot. A Title Clerk handles vehicle-ownership documents under the applicable process.",
+      "imageBrief": "One uncluttered auto dealership setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sales Associate, Finance Manager, Service Advisor, and Technician and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sales Associate",
+        "prompt": "A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults.\nWho discusses maintenance needs with customers?",
+        "answer": "Service Advisor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Manager, Receptionist, Detailer, and Parts Specialist and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "General Manager",
+        "prompt": "The General Manager oversees operations, and the Receptionist welcomes visitors. A Detailer cleans and finishes vehicles, while a Parts Specialist identifies and supplies components. Roles are described in text rather than assumed from clothing.\nWho thoroughly cleans and finishes vehicles?",
+        "answer": "Detailer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the auto dealership setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lot Attendant, and Title Clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Lot Attendant",
+        "prompt": "The Lot Attendant moves and prepares vehicles on the lot. A Title Clerk handles vehicle-ownership documents under the applicable process.\nWho handles vehicle-ownership documents?",
+        "answer": "Title Clerk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults. The General Manager oversees operations, and the Receptionist welcomes visitors. A Detailer cleans and finishes vehicles, while a Parts Specialist identifies and supplies components. Roles are described in text rather than assumed from clothing. The Lot Attendant moves and prepares vehicles on the lot. A Title Clerk handles vehicle-ownership documents under the applicable process.\nExplain the difference between Sales Associate and Finance Manager using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sales Associate"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Monthly Payment” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the auto dealership task. Use Sales Associate, Finance Manager, Service Advisor, Technician, General Manager, Receptionist, Detailer, Parts Specialist, Lot Attendant, and Title Clerk in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Sales Associate, Finance Manager, Service Advisor, Technician, General Manager, Receptionist, Detailer, Parts Specialist, Lot Attendant, Title Clerk to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Auto Dealership: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Auto Dealership: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Sales Associate and Finance Manager, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Sales Associate explains available vehicles, and the Finance Manager handles financing documents. The Service Advisor discusses maintenance needs with customers, while the Technician diagnoses and repairs faults. Pause and answer: Who discusses maintenance needs with customers?"
     },
     "spacedReview": "1 lesson(s) back: Monthly Payment, MSRP from auto-dealership-2\n3 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4\n7 lesson(s) back: Motorcycle, Scooter from car-types-3"
   }

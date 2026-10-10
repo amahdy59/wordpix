@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "125-155 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["US Dollar", "Euro", "British Pound", "Japanese Yen"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare US Dollar, Euro, British Pound, and Japanese Yen and choose the option that fits the situation.",
+          "scenario": "At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["US Dollar", "Euro", "British Pound"],
-            "expectedAnswer": "US Dollar"
+            "question": "Which named currency is used in Japan?",
+            "options": ["Japanese Yen", "US Dollar", "Euro"],
+            "expectedAnswer": "Japanese Yen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the US Dollar as the central item; include US Dollar, Euro, and British Pound naturally where visually appropriate, but make the real-world use of US Dollar the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Japanese Yen in a currency payment context. Use the written scenario as the source of meaning: At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Chinese Yuan", "Swiss Franc", "Canadian Dollar", "Australian Dollar"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar and choose the option that fits the situation.",
+          "scenario": "The next examples name the Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The Swiss Franc is the currency used in Switzerland. The written glossary supplies the countries rather than relying on a flag or color.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chinese Yuan", "Swiss Franc", "Canadian Dollar"],
-            "expectedAnswer": "Chinese Yuan"
+            "question": "Which named currency is used in Switzerland?",
+            "options": ["Swiss Franc", "Chinese Yuan", "Canadian Dollar"],
+            "expectedAnswer": "Swiss Franc"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Chinese Yuan as the central item; include Chinese Yuan, Swiss Franc, and Canadian Dollar naturally where visually appropriate, but make the real-world use of Chinese Yuan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Swiss Franc in a currency payment context. Use the written scenario as the source of meaning: The next examples name the Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The Swiss Franc is the currency used in Switzerland. The written glossary supplies the countries rather than relying on a flag or color. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Indian Rupee", "Brazilian Real", "Cash", "Credit Card"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indian Rupee, Brazilian Real, Cash, and Credit Card and choose the option that fits the situation.",
+          "scenario": "The class compares the Indian Rupee and Brazilian Real as currencies. For payment methods, Cash means physical notes and coins, while a Credit Card permits borrowing under the issuer’s terms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Indian Rupee", "Brazilian Real", "Cash"],
-            "expectedAnswer": "Indian Rupee"
+            "question": "Which payment method means physical notes and coins?",
+            "options": ["Cash", "Indian Rupee", "Brazilian Real"],
+            "expectedAnswer": "Cash"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Indian Rupee as the central item; include Indian Rupee, Brazilian Real, and Cash naturally where visually appropriate, but make the real-world use of Indian Rupee the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cash in a currency payment context. Use the written scenario as the source of meaning: The class compares the Indian Rupee and Brazilian Real as currencies. For payment methods, Cash means physical notes and coins, while a Credit Card permits borrowing under the issuer’s terms. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Debit Card", "Check", "Wire Transfer"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Debit Card, Check, and Wire Transfer and choose the option that fits the situation.",
+          "scenario": "A Debit Card normally uses funds in the linked account. A Check is a written payment instruction, while a Wire Transfer moves money electronically through the relevant service. Fees and settlement depend on the provider.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which card normally uses funds in the linked account?",
             "options": ["Debit Card", "Check", "Wire Transfer"],
             "expectedAnswer": "Debit Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Debit Card as the central item; include Debit Card, Check, and Wire Transfer naturally where visually appropriate, but make the real-world use of Debit Card the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Debit Card in a currency payment context. Use the written scenario as the source of meaning: A Debit Card normally uses funds in the linked account. A Check is a written payment instruction, while a Wire Transfer moves money electronically through the relevant service. Fees and settlement depend on the provider. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Currency & Payment: Practical Information",
-      "text": "At the currency & payment, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers US Dollar, Euro, British Pound, and Japanese Yen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Indian Rupee, Brazilian Real, Cash, and Credit Card. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Debit Card, Check, and Wire Transfer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Currency & Payment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Currency & Payment: A visitor’s questions",
+      "text": "At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration. The next examples name the Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The Swiss Franc is the currency used in Switzerland. The written glossary supplies the countries rather than relying on a flag or color. The class compares the Indian Rupee and Brazilian Real as currencies. For payment methods, Cash means physical notes and coins, while a Credit Card permits borrowing under the issuer’s terms. A Debit Card normally uses funds in the linked account. A Check is a written payment instruction, while a Wire Transfer moves money electronically through the relevant service. Fees and settlement depend on the provider.",
+      "imageBrief": "One uncluttered currency payment setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare US Dollar, Euro, British Pound, and Japanese Yen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "US Dollar",
+        "prompt": "At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration.\nWhich named currency is used in Japan?",
+        "answer": "Japanese Yen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chinese Yuan",
+        "prompt": "The next examples name the Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The Swiss Franc is the currency used in Switzerland. The written glossary supplies the countries rather than relying on a flag or color.\nWhich named currency is used in Switzerland?",
+        "answer": "Swiss Franc",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indian Rupee, Brazilian Real, Cash, and Credit Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Indian Rupee",
+        "prompt": "The class compares the Indian Rupee and Brazilian Real as currencies. For payment methods, Cash means physical notes and coins, while a Credit Card permits borrowing under the issuer’s terms.\nWhich payment method means physical notes and coins?",
+        "answer": "Cash",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Debit Card, Check, and Wire Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Debit Card normally uses funds in the linked account. A Check is a written payment instruction, while a Wire Transfer moves money electronically through the relevant service. Fees and settlement depend on the provider.\nWhich card normally uses funds in the linked account?",
         "answer": "Debit Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration. The next examples name the Chinese Yuan, Swiss Franc, Canadian Dollar, and Australian Dollar. The Swiss Franc is the currency used in Switzerland. The written glossary supplies the countries rather than relying on a flag or color. The class compares the Indian Rupee and Brazilian Real as currencies. For payment methods, Cash means physical notes and coins, while a Credit Card permits borrowing under the issuer’s terms. A Debit Card normally uses funds in the linked account. A Check is a written payment instruction, while a Wire Transfer moves money electronically through the relevant service. Fees and settlement depend on the provider.\nExplain the difference between US Dollar and Euro using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "US Dollar"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “401k” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the currency & payment task. Use US Dollar, Euro, British Pound, Japanese Yen, Chinese Yuan, Swiss Franc, Canadian Dollar, Australian Dollar, Indian Rupee, Brazilian Real, Cash, Credit Card, Debit Card, Check, and Wire Transfer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms US Dollar, Euro, British Pound, Japanese Yen, Chinese Yuan, Swiss Franc, Canadian Dollar, Australian Dollar, Indian Rupee, Brazilian Real, Cash, Credit Card, Debit Card, Check, Wire Transfer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Currency & Payment: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Currency & Payment: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between US Dollar and Euro, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At an international-payment workshop, the glossary compares the US Dollar, Euro, British Pound, and Japanese Yen. The Japanese Yen is Japan’s currency. No exchange rate or financial value is shown in the illustration. Pause and answer: Which named currency is used in Japan?"
     },
     "spacedReview": "1 lesson(s) back: 401k, IRA from financial-services-3\n3 lesson(s) back: Mortgage, Auto Loan from financial-services-1\n7 lesson(s) back: Scrubs, Lab Coat from formal-business-wear-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "119-149 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mobile Payment", "Contactless", "Apple Pay", "PayPal"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mobile Payment, Contactless, Apple Pay, and PayPal and choose the option that fits the situation.",
+          "scenario": "The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Mobile Payment", "Contactless", "Apple Pay"],
-            "expectedAnswer": "Mobile Payment"
+            "question": "Which term describes payment without inserting the card into the terminal?",
+            "options": ["Contactless", "Mobile Payment", "Apple Pay"],
+            "expectedAnswer": "Contactless"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Mobile Payment through a realistic adult task; include Mobile Payment, Contactless, and Apple Pay naturally where visually appropriate, but make the real-world use of Mobile Payment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Contactless in a currency payment context. Use the written scenario as the source of meaning: The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cryptocurrency", "Receipt", "Invoice", "Statement"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cryptocurrency, Receipt, Invoice, and Statement and choose the option that fits the situation.",
+          "scenario": "A customer compares Cryptocurrency with traditional payment methods, then organizes a Receipt, Invoice, and Statement. The Invoice requests or lists money owed; the Receipt records payment already made.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cryptocurrency", "Receipt", "Invoice"],
-            "expectedAnswer": "Cryptocurrency"
+            "question": "Which document requests or lists money owed?",
+            "options": ["Invoice", "Cryptocurrency", "Receipt"],
+            "expectedAnswer": "Invoice"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Cryptocurrency as the central item; include Cryptocurrency, Receipt, and Invoice naturally where visually appropriate, but make the real-world use of Cryptocurrency the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Invoice in a currency payment context. Use the written scenario as the source of meaning: A customer compares Cryptocurrency with traditional payment methods, then organizes a Receipt, Invoice, and Statement. The Invoice requests or lists money owed; the Receipt records payment already made. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Balance", "Overdraft", "Minimum Payment", "Due Date"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Overdraft, Minimum Payment, and Due Date and choose the option that fits the situation.",
+          "scenario": "The Statement lists Balance, Overdraft information, Minimum Payment, and Due Date. The Due Date states when the required payment must be made. Paying a minimum amount does not necessarily clear the entire debt.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Balance", "Overdraft", "Minimum Payment"],
-            "expectedAnswer": "Balance"
+            "question": "Which entry states when the required payment must be made?",
+            "options": ["Due Date", "Balance", "Overdraft"],
+            "expectedAnswer": "Due Date"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Balance through a realistic adult task; include Balance, Overdraft, and Minimum Payment naturally where visually appropriate, but make the real-world use of Balance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Due Date in a currency payment context. Use the written scenario as the source of meaning: The Statement lists Balance, Overdraft information, Minimum Payment, and Due Date. The Due Date states when the required payment must be made. Paying a minimum amount does not necessarily clear the entire debt. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Late Fee", "Refund", "Chargeback"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Late Fee, Refund, and Chargeback and choose the option that fits the situation.",
+          "scenario": "The provider distinguishes a Late Fee, Refund, and Chargeback. A Refund returns money to a customer; a Chargeback is a payment reversal pursued through the card issuer’s dispute process. Neither is automatically available for every purchase.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Late Fee", "Refund", "Chargeback"],
-            "expectedAnswer": "Late Fee"
+            "question": "Which term names money returned to the customer?",
+            "options": ["Refund", "Late Fee", "Chargeback"],
+            "expectedAnswer": "Refund"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Late Fee as the central item; include Late Fee, Refund, and Chargeback naturally where visually appropriate, but make the real-world use of Late Fee the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Refund in a currency payment context. Use the written scenario as the source of meaning: The provider distinguishes a Late Fee, Refund, and Chargeback. A Refund returns money to a customer; a Chargeback is a payment reversal pursued through the card issuer’s dispute process. Neither is automatically available for every purchase. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Currency & Payment",
-      "text": "At the currency & payment, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mobile Payment, Contactless, Apple Pay, and PayPal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cryptocurrency, Receipt, Invoice, and Statement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Balance, Overdraft, Minimum Payment, and Due Date. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Late Fee, Refund, and Chargeback. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Currency & Payment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Currency & Payment: Understanding the different roles",
+      "text": "The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way. A customer compares Cryptocurrency with traditional payment methods, then organizes a Receipt, Invoice, and Statement. The Invoice requests or lists money owed; the Receipt records payment already made. The Statement lists Balance, Overdraft information, Minimum Payment, and Due Date. The Due Date states when the required payment must be made. Paying a minimum amount does not necessarily clear the entire debt. The provider distinguishes a Late Fee, Refund, and Chargeback. A Refund returns money to a customer; a Chargeback is a payment reversal pursued through the card issuer’s dispute process. Neither is automatically available for every purchase.",
+      "imageBrief": "One uncluttered currency payment setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mobile Payment, Contactless, Apple Pay, and PayPal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Mobile Payment",
+        "prompt": "The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way.\nWhich term describes payment without inserting the card into the terminal?",
+        "answer": "Contactless",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cryptocurrency, Receipt, Invoice, and Statement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cryptocurrency",
+        "prompt": "A customer compares Cryptocurrency with traditional payment methods, then organizes a Receipt, Invoice, and Statement. The Invoice requests or lists money owed; the Receipt records payment already made.\nWhich document requests or lists money owed?",
+        "answer": "Invoice",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Overdraft, Minimum Payment, and Due Date and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Balance",
+        "prompt": "The Statement lists Balance, Overdraft information, Minimum Payment, and Due Date. The Due Date states when the required payment must be made. Paying a minimum amount does not necessarily clear the entire debt.\nWhich entry states when the required payment must be made?",
+        "answer": "Due Date",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Late Fee, Refund, and Chargeback and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Late Fee",
+        "prompt": "The provider distinguishes a Late Fee, Refund, and Chargeback. A Refund returns money to a customer; a Chargeback is a payment reversal pursued through the card issuer’s dispute process. Neither is automatically available for every purchase.\nWhich term names money returned to the customer?",
+        "answer": "Refund",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way. A customer compares Cryptocurrency with traditional payment methods, then organizes a Receipt, Invoice, and Statement. The Invoice requests or lists money owed; the Receipt records payment already made. The Statement lists Balance, Overdraft information, Minimum Payment, and Due Date. The Due Date states when the required payment must be made. Paying a minimum amount does not necessarily clear the entire debt. The provider distinguishes a Late Fee, Refund, and Chargeback. A Refund returns money to a customer; a Chargeback is a payment reversal pursued through the card issuer’s dispute process. Neither is automatically available for every purchase.\nExplain the difference between Mobile Payment and Contactless using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Mobile Payment"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “US Dollar” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the currency & payment task. Use Mobile Payment, Contactless, Apple Pay, PayPal, Cryptocurrency, Receipt, Invoice, Statement, Balance, Overdraft, Minimum Payment, Due Date, Late Fee, Refund, and Chargeback in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Mobile Payment, Contactless, Apple Pay, PayPal, Cryptocurrency, Receipt, Invoice, Statement, Balance, Overdraft, Minimum Payment, Due Date, Late Fee, Refund, Chargeback to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Currency & Payment: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Currency & Payment: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Mobile Payment and Contactless, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The class discusses Mobile Payment, Contactless payment, Apple Pay, and PayPal. Contactless describes a payment connection without inserting the card into the terminal; not every mobile or online payment works this way. Pause and answer: Which term describes payment without inserting the card into the terminal?"
     },
     "spacedReview": "1 lesson(s) back: US Dollar, Euro from currency-payment-1\n3 lesson(s) back: Premium, Deductible from financial-services-2\n7 lesson(s) back: Lobby, Teller Window from bank-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "84-114 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Online Banking", "Mobile App", "Digital Wallet", "Blockchain"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Online Banking, Mobile App, Digital Wallet, and Blockchain and choose the option that fits the situation.",
+          "scenario": "The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Online Banking", "Mobile App", "Digital Wallet"],
-            "expectedAnswer": "Online Banking"
+            "question": "Which app-based tool stores payment details?",
+            "options": ["Digital Wallet", "Online Banking", "Mobile App"],
+            "expectedAnswer": "Digital Wallet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Online Banking through a realistic adult task; include Online Banking, Mobile App, and Digital Wallet naturally where visually appropriate, but make the real-world use of Online Banking the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Digital Wallet in a currency payment context. Use the written scenario as the source of meaning: The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bitcoin", "Ethereum", "NFT", "Fintech"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bitcoin, Ethereum, NFT, and Fintech and choose the option that fits the situation.",
+          "scenario": "The class names Bitcoin, Ethereum, NFT, and Fintech. An NFT is a non-fungible blockchain token; owning a token does not automatically give copyright over an associated image. Ethereum is a network, and ether is its native currency.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bitcoin", "Ethereum", "NFT"],
-            "expectedAnswer": "Bitcoin"
+            "question": "Which term names a non-fungible blockchain token?",
+            "options": ["NFT", "Bitcoin", "Ethereum"],
+            "expectedAnswer": "NFT"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Bitcoin as the central item; include Bitcoin, Ethereum, and NFT naturally where visually appropriate, but make the real-world use of Bitcoin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for NFT in a currency payment context. Use the written scenario as the source of meaning: The class names Bitcoin, Ethereum, NFT, and Fintech. An NFT is a non-fungible blockchain token; owning a token does not automatically give copyright over an associated image. Ethereum is a network, and ether is its native currency. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Peer-to-Peer", "Crowdfunding"],
-          "scenario": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peer-to-Peer, and Crowdfunding and choose the option that fits the situation.",
+          "scenario": "The workshop contrasts Peer-to-Peer interaction with Crowdfunding. Crowdfunding raises contributions from many backers. The exercise explains vocabulary rather than endorsing any investment, project, or platform.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Peer-to-Peer", "Crowdfunding", "Online Banking"],
-            "expectedAnswer": "Peer-to-Peer"
+            "question": "Which term names funding from many backers?",
+            "options": ["Crowdfunding", "Peer-to-Peer"],
+            "expectedAnswer": "Crowdfunding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Peer-to-Peer as the central item; include Peer-to-Peer, Crowdfunding, and Online Banking naturally where visually appropriate, but make the real-world use of Peer-to-Peer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Crowdfunding in a currency payment context. Use the written scenario as the source of meaning: The workshop contrasts Peer-to-Peer interaction with Crowdfunding. Crowdfunding raises contributions from many backers. The exercise explains vocabulary rather than endorsing any investment, project, or platform. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written currency payment situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the currency & payment, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Online Banking, Mobile App, Digital Wallet, and Blockchain. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bitcoin, Ethereum, NFT, and Fintech. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Peer-to-Peer and Crowdfunding. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Currency & Payment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Currency & Payment: Comparing the equipment",
+      "text": "The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse. The class names Bitcoin, Ethereum, NFT, and Fintech. An NFT is a non-fungible blockchain token; owning a token does not automatically give copyright over an associated image. Ethereum is a network, and ether is its native currency. The workshop contrasts Peer-to-Peer interaction with Crowdfunding. Crowdfunding raises contributions from many backers. The exercise explains vocabulary rather than endorsing any investment, project, or platform.",
+      "imageBrief": "One uncluttered currency payment setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Online Banking, Mobile App, Digital Wallet, and Blockchain and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Online Banking",
+        "prompt": "The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse.\nWhich app-based tool stores payment details?",
+        "answer": "Digital Wallet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bitcoin, Ethereum, NFT, and Fintech and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bitcoin",
+        "prompt": "The class names Bitcoin, Ethereum, NFT, and Fintech. An NFT is a non-fungible blockchain token; owning a token does not automatically give copyright over an associated image. Ethereum is a network, and ether is its native currency.\nWhich term names a non-fungible blockchain token?",
+        "answer": "NFT",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the currency & payment setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peer-to-Peer, and Crowdfunding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Peer-to-Peer",
+        "prompt": "The workshop contrasts Peer-to-Peer interaction with Crowdfunding. Crowdfunding raises contributions from many backers. The exercise explains vocabulary rather than endorsing any investment, project, or platform.\nWhich term names funding from many backers?",
+        "answer": "Crowdfunding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse. The class names Bitcoin, Ethereum, NFT, and Fintech. An NFT is a non-fungible blockchain token; owning a token does not automatically give copyright over an associated image. Ethereum is a network, and ether is its native currency. The workshop contrasts Peer-to-Peer interaction with Crowdfunding. Crowdfunding raises contributions from many backers. The exercise explains vocabulary rather than endorsing any investment, project, or platform.\nExplain the difference between Online Banking and Mobile App using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Online Banking"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Mobile Payment” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the currency & payment task. Use Online Banking, Mobile App, Digital Wallet, Blockchain, Bitcoin, Ethereum, NFT, Fintech, Peer-to-Peer, and Crowdfunding in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Online Banking, Mobile App, Digital Wallet, Blockchain, Bitcoin, Ethereum, NFT, Fintech, Peer-to-Peer, Crowdfunding to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Currency & Payment: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Currency & Payment: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Online Banking and Mobile App, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The tutor compares Online Banking, a Mobile App, Digital Wallet, and Blockchain. A Digital Wallet stores payment details for electronic purchases; Blockchain describes a linked shared record rather than a physical purse. Pause and answer: Which app-based tool stores payment details?"
     },
     "spacedReview": "1 lesson(s) back: Mobile Payment, Contactless from currency-payment-2\n3 lesson(s) back: 401k, IRA from financial-services-3\n7 lesson(s) back: Money Market, Retirement Account from bank-2"
   }

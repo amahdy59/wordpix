@@ -44,10 +44,10 @@
       "بصل"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "77-107 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -58,8 +58,8 @@
             "options": ["Orange", "Apple", "Banana"],
             "expectedAnswer": "Apple"
           },
-          "imageBrief": "A natural apple at an unbranded fruit stall. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Apple as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -70,8 +70,8 @@
             "options": ["Grape", "Strawberry", "Watermelon"],
             "expectedAnswer": "Grape"
           },
-          "imageBrief": "A small bunch of fresh grapes, with individual grapes visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Grape as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -82,8 +82,8 @@
             "options": ["Pear", "Peach", "Mango"],
             "expectedAnswer": "Mango"
           },
-          "imageBrief": "A botanically accurate mango, whole and cut, with its large stone visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Mango as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -94,8 +94,8 @@
             "options": ["Lime", "Pineapple", "Lemon"],
             "expectedAnswer": "Pineapple"
           },
-          "imageBrief": "A pineapple with its distinctive crown and patterned skin. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Pineapple as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
@@ -106,16 +106,16 @@
             "options": ["Carrot", "Broccoli", "Onion"],
             "expectedAnswer": "Carrot"
           },
-          "imageBrief": "A carrot with its tapered orange root visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Carrot as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 1: Maya’s shopping trip",
+      "title": "Maya’s fresh produce and fruit selection",
       "text": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall. Maya wants grapes for a snack. She chooses a small bunch rather than a strawberry or a piece of watermelon. Maya buys a ripe mango for a fruit salad. She already has a pear and a peach at home. Maya asks the fruit seller for a pineapple. The lemon and lime are for a different recipe. Maya needs a carrot for soup. She keeps the broccoli and onion for tomorrow.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Maya’s fresh produce and fruit selection; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -154,31 +154,24 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Apple” in a different everyday situation.",
-        "answer": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall.",
+        "prompt": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall. Maya wants grapes for a snack. She chooses a small bunch rather than a strawberry or a piece of watermelon. Maya buys a ripe mango for a fruit salad. She already has a pear and a peach at home. Maya asks the fruit seller for a pineapple. The lemon and lime are for a different recipe. Maya needs a carrot for soup. She keeps the broccoli and onion for tomorrow.\nCompare “Apple” and “Banana” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Apple, Banana, Orange, Grape, Strawberry, Watermelon, Mango, Pear, Peach, Pineapple, Lemon, Lime, Carrot, Broccoli, Onion in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-1-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Apple” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-1-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show apple, banana, orange, grape, and strawberry naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: On the bakery shelf, a shopper sees apple, banana, and orange and puts apple into the basket."
+      "title": "Maya’s fresh produce and fruit selection",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Maya puts an apple in her basket. She leaves the banana and orange on the fruit stall. Which fruit does Maya put in her basket?"
     },
     "spacedReview": "1 lesson(s) back: Bicycle, Skateboard from toys-games-3\n3 lesson(s) back: Doll, Teddy Bear from toys-games-1\n7 lesson(s) back: Sheet of Paper, Sticky Note from classroom-2"
   },
@@ -210,7 +203,7 @@
       "Sausage"
     ],
     "targetWordsArabic": [
-      "فلفل (فلفل أسود)",
+      "فلفل أسود",
       "طماطم",
       "خيار",
       "خس",
@@ -227,10 +220,10 @@
       "نقانق"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "79-109 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -241,8 +234,8 @@
             "options": ["Pepper", "Tomato", "Cucumber"],
             "expectedAnswer": "Pepper"
           },
-          "imageBrief": "Ground black pepper and peppercorns beside an unbranded pepper mill; no capsicum or bell pepper. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Pepper as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -253,8 +246,8 @@
             "options": ["Potato", "Mushroom", "Lettuce"],
             "expectedAnswer": "Lettuce"
           },
-          "imageBrief": "A lettuce with leafy details visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Lettuce as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -265,8 +258,8 @@
             "options": ["Corn", "Spinach", "Garlic"],
             "expectedAnswer": "Spinach"
           },
-          "imageBrief": "Fresh spinach leaves at a vegetable stall. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Spinach as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -277,8 +270,8 @@
             "options": ["Chicken", "Beef", "Pork"],
             "expectedAnswer": "Chicken"
           },
-          "imageBrief": "Unbranded chicken portions in a refrigerated food display. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Chicken as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
@@ -289,16 +282,16 @@
             "options": ["Shrimp", "Sausage", "Fish"],
             "expectedAnswer": "Fish"
           },
-          "imageBrief": "A whole identifiable fish in a clean chilled seafood display, with no readable packaging. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Fish as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 2: Maya’s shopping trip",
+      "title": "Salad vegetables and butchery counter orders",
       "text": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper. Maya buys lettuce for a salad. The potato and mushroom are for a hot meal. Maya picks spinach from the vegetable stall. She will cook it with garlic and serve it with corn. At the meat counter, Maya asks for chicken. She does not need beef or pork today. At the seafood counter, Maya chooses a whole fish. She leaves the shrimp there and buys sausage at another stall.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Salad vegetables and butchery counter orders; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -337,31 +330,24 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Pepper” in a different everyday situation.",
-        "answer": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper.",
+        "prompt": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper. Maya buys lettuce for a salad. The potato and mushroom are for a hot meal. Maya picks spinach from the vegetable stall. She will cook it with garlic and serve it with corn. At the meat counter, Maya asks for chicken. She does not need beef or pork today. At the seafood counter, Maya chooses a whole fish. She leaves the shrimp there and buys sausage at another stall.\nCompare “Pepper” and “Tomato” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Pepper, Tomato, Cucumber, Lettuce, Potato, Mushroom, Spinach, Garlic, Corn, Chicken, Beef, Pork, Fish, Shrimp, Sausage in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-2-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Pepper” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-2-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show pepper, tomato, cucumber, lettuce, and potato naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the fresh-food counter, a shopper sees pepper, tomato, and cucumber and chooses pepper for tonight's meal."
+      "title": "Salad vegetables and butchery counter orders",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Maya seasons a tomato and cucumber salad with ground black pepper. Here, pepper is a spice, not a bell pepper. Which ground spice does Maya add to the salad?"
     },
     "spacedReview": "1 lesson(s) back: Apple, Banana from market-1\n3 lesson(s) back: Playing Cards, Dice from toys-games-2\n7 lesson(s) back: Backpack, Scissors from classroom-3"
   },
@@ -399,21 +385,21 @@
       "سلمون",
       "تونة",
       "لحم ضأن",
-      "حليب (لبن)",
-      "جبن / جبنة",
+      "حليب",
+      "جبن",
       "زبادي",
       "زبدة",
       "كريمة",
-      "خبز (عيش)",
+      "خبز",
       "رغيف صغير",
       "خبز بيغل",
       "كرواسون"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "74-104 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -424,8 +410,8 @@
             "options": ["Bacon", "Turkey", "Ham"],
             "expectedAnswer": "Ham"
           },
-          "imageBrief": "Slices of ham in a clean deli display. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Ham as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -436,8 +422,8 @@
             "options": ["Lamb", "Salmon", "Tuna"],
             "expectedAnswer": "Salmon"
           },
-          "imageBrief": "A salmon portion with characteristic flesh visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Salmon as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -448,8 +434,8 @@
             "options": ["Milk", "Cheese", "Yogurt"],
             "expectedAnswer": "Milk"
           },
-          "imageBrief": "An unbranded milk bottle beside a clear glass of milk. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Milk as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -460,8 +446,8 @@
             "options": ["Cream", "Bread", "Butter"],
             "expectedAnswer": "Butter"
           },
-          "imageBrief": "Butter beside a plain slice of bread, with a spread visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Butter as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
@@ -472,16 +458,16 @@
             "options": ["Croissant", "Roll", "Bagel"],
             "expectedAnswer": "Roll"
           },
-          "imageBrief": "One small bread roll, distinct from a ring-shaped bagel or a flaky croissant. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Roll as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 3: Maya’s shopping trip",
+      "title": "Deli meats, dairy staples and bakery rolls",
       "text": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home. Maya buys salmon from the fish counter. She compares it with tuna, then asks where the lamb is sold. At the dairy stall, Maya buys milk to drink. She chooses cheese and yogurt for a separate meal. Maya spreads butter on bread. She saves the cream for a dessert. Maya buys a small bread roll for lunch. A bagel and a croissant remain in the bakery basket.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Deli meats, dairy staples and bakery rolls; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -520,31 +506,24 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Ham” in a different everyday situation.",
-        "answer": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home.",
+        "prompt": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home. Maya buys salmon from the fish counter. She compares it with tuna, then asks where the lamb is sold. At the dairy stall, Maya buys milk to drink. She chooses cheese and yogurt for a separate meal. Maya spreads butter on bread. She saves the cream for a dessert. Maya buys a small bread roll for lunch. A bagel and a croissant remain in the bakery basket.\nCompare “Ham” and “Bacon” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Ham, Bacon, Turkey, Salmon, Tuna, Lamb, Milk, Cheese, Yogurt, Butter, Cream, Bread, Roll, Bagel, Croissant in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-3-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Ham” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-3-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show ham, bacon, turkey, salmon, and tuna naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In the weekly grocery aisle, a shopper sees ham, bacon, and turkey and checks the price of ham."
+      "title": "Deli meats, dairy staples and bakery rolls",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "At the deli counter, Maya asks for sliced ham. She already has bacon and turkey at home. Which meat does Maya ask the deli worker to slice?"
     },
     "spacedReview": "1 lesson(s) back: Pepper, Tomato from market-2\n3 lesson(s) back: Bicycle, Skateboard from toys-games-3\n7 lesson(s) back: Printer, USB Drive from classroom-4"
   },
@@ -581,7 +560,7 @@
       "بسكويت",
       "قسم الخضار والفاكهة",
       "منضدة الأطعمة الجاهزة",
-      "مخبز (قسم المخبوزات)",
+      "مخبز",
       "أطعمة مجمدة",
       "صندوق المحاسبة",
       "ممر",
@@ -593,10 +572,10 @@
       "إيصال"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "88-118 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -607,8 +586,8 @@
             "options": ["Cookie", "Cake", "Pie"],
             "expectedAnswer": "Cake"
           },
-          "imageBrief": "A simple unbranded cake with no candles, lettering or decorations that resemble text. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Cake as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -619,8 +598,8 @@
             "options": ["Produce Section", "Deli Counter", "Bakery"],
             "expectedAnswer": "Produce Section"
           },
-          "imageBrief": "An unbranded produce display with fruit and vegetables in open crates. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Produce Section as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -631,8 +610,8 @@
             "options": ["Checkout", "Aisle", "Frozen Foods"],
             "expectedAnswer": "Frozen Foods"
           },
-          "imageBrief": "Unbranded freezer cabinets with plain frozen-food packages; no readable labels. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Frozen Foods as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -643,8 +622,8 @@
             "options": ["Cash Register", "Shopping Cart", "Basket"],
             "expectedAnswer": "Shopping Cart"
           },
-          "imageBrief": "An empty supermarket shopping cart with all four wheels visible. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Shopping Cart as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
@@ -655,16 +634,16 @@
             "options": ["Scale", "Price Tag", "Receipt"],
             "expectedAnswer": "Scale"
           },
-          "imageBrief": "A weighing scale with a tray of vegetables; display blank or too indistinct to read. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Scale as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 4: Maya’s shopping trip",
+      "title": "Celebration cakes, aisles and produce weighing",
       "text": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day. Maya looks for fresh fruit and vegetables in the produce section. She will visit the deli counter and bakery later. Maya takes frozen peas from the frozen foods section. Then she walks along an aisle towards the checkout. Maya uses a shopping cart for her groceries. A basket is too small, and the cash register stays at the checkout. Maya puts vegetables on a scale to find their weight. She checks a price tag before paying and keeps the receipt afterwards.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Celebration cakes, aisles and produce weighing; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -703,31 +682,24 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Cake” in a different everyday situation.",
-        "answer": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day.",
+        "prompt": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day. Maya looks for fresh fruit and vegetables in the produce section. She will visit the deli counter and bakery later. Maya takes frozen peas from the frozen foods section. Then she walks along an aisle towards the checkout. Maya uses a shopping cart for her groceries. A basket is too small, and the cash register stays at the checkout. Maya puts vegetables on a scale to find their weight. She checks a price tag before paying and keeps the receipt afterwards.\nCompare “Cake” and “Pie” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Cake, Pie, Cookie, Produce Section, Deli Counter, Bakery, Frozen Foods, Checkout, Aisle, Shopping Cart, Basket, Cash Register, Scale, Price Tag, Receipt in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-4-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Cake” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-4-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show cake, pie, cookie, produce section, and deli counter naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In a supermarket, a customer is dealing with cake, pie, and cookie. The highlighted part of the shopping trip is the cake."
+      "title": "Celebration cakes, aisles and produce weighing",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Maya orders a cake for a celebration. She buys a pie and a cookie for another day. Which dessert does Maya order for the celebration?"
     },
     "spacedReview": "1 lesson(s) back: Ham, Bacon from market-3\n3 lesson(s) back: Apple, Banana from market-1\n7 lesson(s) back: Homework, Test from classroom-5"
   },
@@ -776,10 +748,10 @@
       "أمين صندوق"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 5 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "90-120 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -790,8 +762,8 @@
             "options": ["Barcode", "Shopping Bag", "Coupon"],
             "expectedAnswer": "Barcode"
           },
-          "imageBrief": "A plausible barcode pattern of parallel lines on a plain package, without digits, brand names or other readable text. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Barcode as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -802,8 +774,8 @@
             "options": ["Credit Card", "Cash", "Shopping List"],
             "expectedAnswer": "Shopping List"
           },
-          "imageBrief": "A blank paper note beside groceries. The reference cannot prove a list’s contents; retain the written context. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Shopping List as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -814,8 +786,8 @@
             "options": ["Cherry", "Change", "Wallet"],
             "expectedAnswer": "Change"
           },
-          "imageBrief": "Generic coins with no readable denomination or identifiable currency. The written context establishes that the coins are change. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Change as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -826,8 +798,8 @@
             "options": ["Kiwi", "Muffin", "Shelf"],
             "expectedAnswer": "Kiwi"
           },
-          "imageBrief": "A whole brown fuzzy kiwi beside a cut kiwi with green flesh and black seeds. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Kiwi as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
@@ -838,16 +810,16 @@
             "options": ["Counter", "Cashier", "Freezer"],
             "expectedAnswer": "Freezer"
           },
-          "imageBrief": "A plain commercial freezer with no readable labels or incidental people. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Freezer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 5: Maya’s shopping trip",
+      "title": "Barcode scanning, shopping lists and payment change",
       "text": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon. Maya writes a shopping list before leaving home. At the market, she checks this list and pays with cash rather than a credit card. Maya pays with cash. The cashier gives her change, which she puts in her wallet before eating a cherry. Maya chooses a kiwi with brown skin and green flesh. She leaves a muffin on the bakery shelf. The cashier takes a frozen dessert from a freezer behind the counter. Maya asks how to carry it home.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Barcode scanning, shopping lists and payment change; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -886,31 +858,24 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Write or say one sentence using “Barcode” in a different everyday situation.",
-        "answer": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon.",
+        "prompt": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon. Maya writes a shopping list before leaving home. At the market, she checks this list and pays with cash rather than a credit card. Maya pays with cash. The cashier gives her change, which she puts in her wallet before eating a cherry. Maya chooses a kiwi with brown skin and green flesh. She leaves a muffin on the bakery shelf. The cashier takes a frozen dessert from a freezer behind the counter. Maya asks how to carry it home.\nCompare “Barcode” and “Shopping Bag” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Barcode, Shopping Bag, Coupon, Shopping List, Credit Card, Cash, Change, Wallet, Cherry, Kiwi, Muffin, Shelf, Freezer, Counter, Cashier in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-5-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Barcode” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-5-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show barcode, shopping bag, coupon, shopping list, and credit card naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the checkout area, a customer uses or sees barcode, shopping bag, and coupon. The highlighted item is the barcode."
+      "title": "Barcode scanning, shopping lists and payment change",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "The cashier scans the barcode on Maya’s package. Maya puts the package in a shopping bag and saves her coupon. Which pattern on the package does the cashier scan?"
     },
     "spacedReview": "1 lesson(s) back: Cake, Pie from market-4\n3 lesson(s) back: Pepper, Tomato from market-2\n7 lesson(s) back: Doll, Teddy Bear from toys-games-1"
   },
@@ -951,10 +916,10 @@
       "كيس"
     ],
     "usage": {
-      "goal": "Learn to recognize and use key the market 6 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to the market in very simple everyday situations.",
-      "textType": "narrative",
-      "readingTarget": "35-60 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "60-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -965,8 +930,8 @@
             "options": ["Butcher", "Baker", "Customer"],
             "expectedAnswer": "Customer"
           },
-          "imageBrief": "One modest adult man shopping. The written story distinguishes the customer from a store worker. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Customer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
@@ -977,8 +942,8 @@
             "options": ["Security Guard", "Manager", "Stock Clerk"],
             "expectedAnswer": "Manager"
           },
-          "imageBrief": "A modest adult man in a supermarket setting; the written story establishes his managerial role. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Manager as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
@@ -989,8 +954,8 @@
             "options": ["Delivery Driver", "Shopper", "Child"],
             "expectedAnswer": "Delivery Driver"
           },
-          "imageBrief": "One modest adult male delivery driver unloading plain crates from an unbranded van; no incidental people or children. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Delivery Driver as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
@@ -1001,16 +966,16 @@
             "options": ["Bag", "Customer", "Cart"],
             "expectedAnswer": "Cart"
           },
-          "imageBrief": "A wheeled shopping cart holding a plain grocery bag. This is supporting vocabulary reference media. The written context supplies quantities, dialogue and hidden properties. No readable text, logos, watermarks, answer highlighting or incidental people.",
-          "imageAlt": "Vocabulary reference; a description of actual visible details is required after image review."
+          "imageBrief": "Accurate word-reference image supporting the market account, showing Cart as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Market 6: Maya’s shopping trip",
+      "title": "Market staff roles, deliveries and grocery carts",
       "text": "A customer buys food at the market. The butcher sells meat, and the baker sells bread. The manager organises the market team. A stock clerk fills shelves, and a security guard watches the entrance. A delivery driver brings crates to the market. A shopper arrives to buy food; the word child means a young person. Maya puts a bag of groceries in her cart and wheels it towards the exit.",
-      "imageBrief": "One uncluttered the market scene supporting the reading and showing the first six target words."
+      "imageBrief": "Use independently inspected word references to support Market staff roles, deliveries and grocery carts; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
@@ -1042,31 +1007,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Write or say one sentence using “Customer” in a different everyday situation.",
-        "answer": "A customer buys food at the market. The butcher sells meat, and the baker sells bread.",
+        "prompt": "A customer buys food at the market. The butcher sells meat, and the baker sells bread. The manager organises the market team. A stock clerk fills shelves, and a security guard watches the entrance. A delivery driver brings crates to the market. A shopper arrives to buy food; the word child means a young person. Maya puts a bag of groceries in her cart and wheels it towards the exit.\nCompare “Customer” and “Butcher” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
+      },
+      {
+        "prompt": "Write an original short account using Customer, Butcher, Baker, Manager, Stock Clerk, Security Guard, Delivery Driver, Shopper, Child, Cart, Bag in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "market-6-personal-use"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Customer” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "market-6-transfer"
-      },
-      {
-        "prompt": "Why does Maya visit this market?",
-        "answer": "to buy food and other groceries",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Market: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show customer, butcher, baker, manager, and stock clerk naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a busy shopping period, the scene includes customer, butcher, and baker. The highlighted person or item is the customer."
+      "title": "Market staff roles, deliveries and grocery carts",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A customer buys food at the market. The butcher sells meat, and the baker sells bread. Who is buying food in this story?"
     },
     "spacedReview": "1 lesson(s) back: Barcode, Shopping Bag from market-5\n3 lesson(s) back: Ham, Bacon from market-3\n7 lesson(s) back: Playing Cards, Dice from toys-games-2"
   }

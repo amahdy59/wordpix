@@ -33,7 +33,7 @@
       "طاولة الدفاع",
       "طاولة الادعاء",
       "مقاعد الجمهور",
-      "حانة",
+      "حاجز قاعة المحكمة",
       "مكتب كاتب المحكمة",
       "موقع حاجب المحكمة",
       "منصة خطاب",
@@ -44,136 +44,122 @@
       "شاهد"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Judge's Bench", "Witness Stand", "Jury Box", "Defense Table"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.",
+          "scenario": "On the model, the judge's bench is the raised place where the judge sits. The witness stand and jury box have different functions; the defense table is for a legal team.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Which raised place is assigned to the judge?",
             "options": ["Judge's Bench", "Witness Stand", "Jury Box"],
             "expectedAnswer": "Judge's Bench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Judge's Bench; include Judge's Bench, Witness Stand, and Jury Box naturally where visually appropriate, but make the real-world use of Judge's Bench the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty courtroom model with a raised judicial bench, no labels. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Prosecution Table", "Gallery", "Bar", "Clerk's Desk"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.",
+          "scenario": "The guide identifies the prosecution table as the table assigned to the prosecuting legal team in this criminal-case example. The public gallery is behind the bar, and records are at the clerk's desk.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which table is assigned to the prosecuting team in this example?",
             "options": ["Prosecution Table", "Gallery", "Bar"],
             "expectedAnswer": "Prosecution Table"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Prosecution Table as the central item; include Prosecution Table, Gallery, and Bar naturally where visually appropriate, but make the real-world use of Prosecution Table the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty courtroom counsel table; written context supplies which team uses it. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bailiff's Post", "Podium", "Judge", "Jury"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.",
+          "scenario": "The guide marks the bailiff's post near the courtroom entrance. The podium is for a speaker; the judge and jury sit elsewhere.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Which position is assigned to the courtroom security officer?",
             "options": ["Bailiff's Post", "Podium", "Judge"],
             "expectedAnswer": "Bailiff's Post"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Bailiff's Post; include Bailiff's Post, Podium, and Judge naturally where visually appropriate, but make the real-world use of Bailiff's Post the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty courtroom entrance with a small officer station, no signs. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Plaintiff", "Defendant", "Witness"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.",
+          "scenario": "In the civil-case example, the plaintiff starts the claim against the defendant. A witness later gives evidence about what happened.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Which party starts the civil claim in this example?",
             "options": ["Plaintiff", "Defendant", "Witness"],
             "expectedAnswer": "Plaintiff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Plaintiff; include Plaintiff, Defendant, and Witness naturally where visually appropriate, but make the real-world use of Plaintiff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain empty courtroom meeting table; party identity is written information. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Courtroom Trial",
-      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Judge's Bench, Witness Stand, Jury Box, and Defense Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Prosecution Table, Gallery, Bar, and Clerk's Desk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bailiff's Post, Podium, Judge, and Jury. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plaintiff, Defendant, and Witness. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Visiting a courtroom",
+      "text": "On a courthouse education visit, Mira studies a model courtroom. The judge's bench is raised above the witness stand. The jury box faces the lawyers' tables. In the criminal-case example, the defense table and prosecution table are on opposite sides. Visitors sit in the gallery behind the bar, a barrier rather than a place serving drinks. Records are kept at the clerk's desk, and the bailiff's post is near the entrance. A speaker uses the podium. The guide then distinguishes the judge, jury and witness. In a separate civil-case example, the plaintiff brings a claim against the defendant. Mira learns the layout without assuming that every country's courts use the same arrangement.",
+      "imageBrief": "Support for Visiting a courtroom. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge's Bench, Witness Stand, Jury Box, and Defense Table and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "On the model, the judge's bench is the raised place where the judge sits. The witness stand and jury box have different functions; the defense table is for a legal team.\nWhich raised place is assigned to the judge?",
         "answer": "Judge's Bench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Gallery, Bar, and Clerk's Desk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide identifies the prosecution table as the table assigned to the prosecuting legal team in this criminal-case example. The public gallery is behind the bar, and records are at the clerk's desk.\nWhich table is assigned to the prosecuting team in this example?",
         "answer": "Prosecution Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff's Post, Podium, Judge, and Jury and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "The guide marks the bailiff's post near the courtroom entrance. The podium is for a speaker; the judge and jury sit elsewhere.\nWhich position is assigned to the courtroom security officer?",
         "answer": "Bailiff's Post",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plaintiff, Defendant, and Witness and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In the civil-case example, the plaintiff starts the claim against the defendant. A witness later gives evidence about what happened.\nWhich party starts the civil claim in this example?",
         "answer": "Plaintiff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "On a courthouse education visit, Mira studies a model courtroom. The judge's bench is raised above the witness stand. The jury box faces the lawyers' tables. In the criminal-case example, the defense table and prosecution table are on opposite sides. Visitors sit in the gallery behind the bar, a barrier rather than a place serving drinks. Records are kept at the clerk's desk, and the bailiff's post is near the entrance. A speaker uses the podium. The guide then distinguishes the judge, jury and witness. In a separate civil-case example, the plaintiff brings a claim against the defendant. Mira learns the layout without assuming that every country's courts use the same arrangement.\nWhy does the guide use two separate examples?",
+        "answer": "To distinguish the criminal-case layout from the civil-case parties.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Judge's Bench"
+        "prompt": "Explain the difference between “Judge's Bench” and “Witness Stand” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Jury Box"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Consult” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Judge's Bench, Witness Stand, Jury Box, Defense Table, Prosecution Table, Gallery, Bar, Clerk's Desk, Bailiff's Post, Podium, Judge, Jury, Plaintiff, Defendant, and Witness in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Judge's Bench” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: On the model, the judge's bench is the raised place where the judge sits. The witness stand and jury box have different functions; the defense table is for a legal team.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Courtroom Trial: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Visiting a courtroom",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "On a courthouse education visit, Mira studies a model courtroom. The judge's bench is raised above the witness stand. The jury box faces the lawyers' tables. In the criminal-case example, the defense table and prosecution table are on opposite sides. Visitors sit in the gallery behind the bar, a barrier rather than a place serving drinks. Records are kept at the clerk's desk, and the bailiff's post is near the entrance. A speaker uses the podium. The guide then distinguishes the judge, jury and witness. In a separate civil-case example, the plaintiff brings a claim against the defendant. Mira learns the layout without assuming that every country's courts use the same arrangement. Ask: Why does the guide use two separate examples?"
     },
     "spacedReview": "1 lesson(s) back: Consult, Represent from law-firm-3\n3 lesson(s) back: Lawyer, Attorney from law-firm-1\n7 lesson(s) back: Microscope, Centrifuge from space-station-3"
   },
@@ -207,151 +193,137 @@
     "targetWordsArabic": [
       "مسؤول أمن المحكمة",
       "كاتب محضر المحكمة",
-      "موظف",
-      "رئيس عمال",
+      "كاتب المحكمة",
+      "رئيس هيئة المحلفين",
       "شاهد خبير",
-      "مرافعة افتتاحية",
+      "بيان افتتاحي",
       "شهادة",
       "استجواب مضاد",
       "اعتراض",
       "مقبول من القاضي",
       "مرفوض من القاضي",
       "المرافعة الختامية",
-      "مداولة",
+      "مداولة هيئة المحلفين",
       "قرار هيئة المحلفين",
       "إصدار الحكم بالعقوبة"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bailiff", "Court Reporter", "Clerk", "Foreman"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.",
+          "scenario": "The educator assigns the bailiff to maintain courtroom order. The court reporter records proceedings, the clerk handles records, and the foreman speaks for the jury.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who is assigned to maintain courtroom order?",
             "options": ["Bailiff", "Court Reporter", "Clerk"],
             "expectedAnswer": "Bailiff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Bailiff; include Bailiff, Court Reporter, and Clerk naturally where visually appropriate, but make the real-world use of Bailiff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. One modest adult male court officer at an empty doorway; role comes from written context. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Expert Witness", "Opening Statement", "Testimony", "Cross-Examination"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.",
+          "scenario": "An expert witness gives an opinion based on specialist knowledge. The opening statement introduces a side's case; testimony is evidence from a witness, and cross-examination is questioning by the opposing side.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Which person gives the specialist opinion?",
             "options": ["Expert Witness", "Opening Statement", "Testimony"],
             "expectedAnswer": "Expert Witness"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Expert Witness; include Expert Witness, Opening Statement, and Testimony naturally where visually appropriate, but make the real-world use of Expert Witness the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain empty witness stand; expertise cannot be established by appearance. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Objection", "Sustained", "Overruled", "Closing Argument"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.",
+          "scenario": "A lawyer makes an objection to a question. The judge says sustained, accepting it, rather than overruled, rejecting it. The closing argument will come later.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "What is the lawyer's formal challenge to the question called?",
             "options": ["Objection", "Sustained", "Overruled"],
             "expectedAnswer": "Objection"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Objection through a realistic adult task; include Objection, Sustained, and Overruled naturally where visually appropriate, but make the real-world use of Objection the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An unused courtroom podium and blank notes, no legal ruling visible. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deliberation", "Verdict", "Sentencing"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.",
+          "scenario": "The jury discusses the evidence in private. This deliberation comes before its verdict. Sentencing belongs to a later stage of a criminal case after conviction.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "What is the jury's discussion before its decision called?",
             "options": ["Deliberation", "Verdict", "Sentencing"],
             "expectedAnswer": "Deliberation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Deliberation through a realistic adult task; include Deliberation, Verdict, and Sentencing naturally where visually appropriate, but make the real-world use of Deliberation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty jury discussion table; the procedural stage is supplied by the text. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Courtroom Trial",
-      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bailiff, Court Reporter, Clerk, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Expert Witness, Opening Statement, Testimony, and Cross-Examination. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Objection, Sustained, Overruled, and Closing Argument. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deliberation, Verdict, and Sentencing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Following a mock hearing",
+      "text": "The adult class follows a mock hearing with an educator. The bailiff maintains order, the court reporter records the words spoken, and the clerk manages the documents. The jury foreman, also called the foreperson, speaks for the jury. An expert witness explains a specialist issue; the explanation is testimony, not proof that must automatically be accepted. An opening statement introduces one side's case, while cross-examination questions a witness. When a lawyer raises an objection, the judge may say sustained or overruled. After the closing argument, the jury's discussion is deliberation and its decision is the verdict. Sentencing is a separate stage after conviction in a criminal case. The class does not predict a real case's outcome.",
+      "imageBrief": "Support for Following a mock hearing. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Clerk, and Foreman and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "The educator assigns the bailiff to maintain courtroom order. The court reporter records proceedings, the clerk handles records, and the foreman speaks for the jury.\nWho is assigned to maintain courtroom order?",
         "answer": "Bailiff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Expert Witness, Opening Statement, Testimony, and Cross-Examination and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "An expert witness gives an opinion based on specialist knowledge. The opening statement introduces a side's case; testimony is evidence from a witness, and cross-examination is questioning by the opposing side.\nWhich person gives the specialist opinion?",
         "answer": "Expert Witness",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Sustained, Overruled, and Closing Argument and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A lawyer makes an objection to a question. The judge says sustained, accepting it, rather than overruled, rejecting it. The closing argument will come later.\nWhat is the lawyer's formal challenge to the question called?",
         "answer": "Objection",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberation, Verdict, and Sentencing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The jury discusses the evidence in private. This deliberation comes before its verdict. Sentencing belongs to a later stage of a criminal case after conviction.\nWhat is the jury's discussion before its decision called?",
         "answer": "Deliberation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The adult class follows a mock hearing with an educator. The bailiff maintains order, the court reporter records the words spoken, and the clerk manages the documents. The jury foreman, also called the foreperson, speaks for the jury. An expert witness explains a specialist issue; the explanation is testimony, not proof that must automatically be accepted. An opening statement introduces one side's case, while cross-examination questions a witness. When a lawyer raises an objection, the judge may say sustained or overruled. After the closing argument, the jury's discussion is deliberation and its decision is the verdict. Sentencing is a separate stage after conviction in a criminal case. The class does not predict a real case's outcome.\nDoes the class treat an expert opinion as automatically proved?",
+        "answer": "No; the opinion still has to be considered as evidence.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Bailiff"
+        "prompt": "Explain the difference between “Bailiff” and “Court Reporter” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Clerk"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Judge's Bench” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Bailiff, Court Reporter, Clerk, Foreman, Expert Witness, Opening Statement, Testimony, Cross-Examination, Objection, Sustained, Overruled, Closing Argument, Deliberation, Verdict, and Sentencing in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Bailiff” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The educator assigns the bailiff to maintain courtroom order. The court reporter records proceedings, the clerk handles records, and the foreman speaks for the jury.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Courtroom Trial: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Following a mock hearing",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "The adult class follows a mock hearing with an educator. The bailiff maintains order, the court reporter records the words spoken, and the clerk manages the documents. The jury foreman, also called the foreperson, speaks for the jury. An expert witness explains a specialist issue; the explanation is testimony, not proof that must automatically be accepted. An opening statement introduces one side's case, while cross-examination questions a witness. When a lawyer raises an objection, the judge may say sustained or overruled. After the closing argument, the jury's discussion is deliberation and its decision is the verdict. Sentencing is a separate stage after conviction in a criminal case. The class does not predict a real case's outcome. Ask: Does the class treat an expert opinion as automatically proved?"
     },
     "spacedReview": "1 lesson(s) back: Judge's Bench, Witness Stand from courtroom-trial-1\n3 lesson(s) back: Filing Room, War Room from law-firm-2\n7 lesson(s) back: Clock, Map Display from space-station-4"
   },
@@ -384,121 +356,107 @@
       "دليل الحمض النووي",
       "بصمة إصبع",
       "إفادة خطية مشفوعة بالقسم",
-      "شهادة مسجلة تحت القسم خارج جلسة المحاكمة",
-      "أدلة جنائية علمية"
+      "شهادة مسجلة تحت القسم قبل المحاكمة",
+      "أدلة علمية جنائية"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Exhibit", "Document", "Photograph", "Video"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.",
+          "scenario": "The class calls an item offered as court evidence an exhibit. In this practice file, the exhibit is a document; a photograph and video are listed as other possible formats.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What is the general term for the item offered as evidence?",
             "options": ["Exhibit", "Document", "Photograph"],
             "expectedAnswer": "Exhibit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Exhibit as the central item; include Exhibit, Document, and Photograph naturally where visually appropriate, but make the real-world use of Exhibit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A closed evidence folder with blank inserts; legal status comes from written context. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["DNA Evidence", "Fingerprint", "Affidavit", "Deposition"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.",
+          "scenario": "The written report describes DNA evidence obtained from genetic material. A fingerprint is a different trace; an affidavit is a sworn written statement and a deposition is recorded testimony.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which evidence comes from examining genetic material?",
             "options": ["DNA Evidence", "Fingerprint", "Affidavit"],
             "expectedAnswer": "DNA Evidence"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating DNA Evidence through a realistic adult task; include DNA Evidence, Fingerprint, and Affidavit naturally where visually appropriate, but make the real-world use of DNA Evidence the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. Closed unmarked laboratory sample containers, no identity or matching result claim. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Forensic Evidence"],
-          "scenario": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.",
+          "scenario": "The instructor groups results of scientific examinations under forensic evidence. The phrase names the method-based category rather than a particular document's appearance.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which phrase names this category of scientific evidence?",
             "options": ["Forensic Evidence", "Exhibit", "Document"],
             "expectedAnswer": "Forensic Evidence"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Forensic Evidence through a realistic adult task; include Forensic Evidence, Exhibit, and Document naturally where visually appropriate, but make the real-world use of Forensic Evidence the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An unused forensic laboratory workbench with closed containers, no identification result. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the courtroom trial, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Exhibit, Document, Photograph, and Video. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers DNA Evidence, Fingerprint, Affidavit, and Deposition. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Forensic Evidence. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Courtroom Trial. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Distinguishing evidence records",
+      "text": "In a classroom case file, an exhibit may be a document, photograph or video offered as evidence. The instructor asks learners to separate the item from any claim about what it proves. DNA evidence comes from analysis of genetic material; a fingerprint is a pattern left by a finger. An affidavit is a written statement made under oath, whereas a deposition usually records testimony taken before trial. Forensic evidence is a broader term for information obtained through scientific examination. The class checks the descriptions and asks which source supports each claim. A photograph of a sample cannot establish its identity, reliability or legal admissibility on its own. Those questions require records, analysis and the relevant court's rules.",
+      "imageBrief": "Support for Distinguishing evidence records. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exhibit, Document, Photograph, and Video and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The class calls an item offered as court evidence an exhibit. In this practice file, the exhibit is a document; a photograph and video are listed as other possible formats.\nWhat is the general term for the item offered as evidence?",
         "answer": "Exhibit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA Evidence, Fingerprint, Affidavit, and Deposition and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The written report describes DNA evidence obtained from genetic material. A fingerprint is a different trace; an affidavit is a sworn written statement and a deposition is recorded testimony.\nWhich evidence comes from examining genetic material?",
         "answer": "DNA Evidence",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom trial setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Forensic Evidence and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The instructor groups results of scientific examinations under forensic evidence. The phrase names the method-based category rather than a particular document's appearance.\nWhich phrase names this category of scientific evidence?",
         "answer": "Forensic Evidence",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "In a classroom case file, an exhibit may be a document, photograph or video offered as evidence. The instructor asks learners to separate the item from any claim about what it proves. DNA evidence comes from analysis of genetic material; a fingerprint is a pattern left by a finger. An affidavit is a written statement made under oath, whereas a deposition usually records testimony taken before trial. Forensic evidence is a broader term for information obtained through scientific examination. The class checks the descriptions and asks which source supports each claim. A photograph of a sample cannot establish its identity, reliability or legal admissibility on its own. Those questions require records, analysis and the relevant court's rules.\nWhy is a sample photograph insufficient on its own?",
+        "answer": "It does not establish identity, reliability or admissibility.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Exhibit"
+        "prompt": "Explain the difference between “Exhibit” and “Document” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Photograph"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bailiff” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom trial task. Use Exhibit, Document, Photograph, Video, DNA Evidence, Fingerprint, Affidavit, Deposition, and Forensic Evidence in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Exhibit” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The class calls an item offered as court evidence an exhibit. In this practice file, the exhibit is a document; a photograph and video are listed as other possible formats.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Courtroom Trial: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Distinguishing evidence records",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "In a classroom case file, an exhibit may be a document, photograph or video offered as evidence. The instructor asks learners to separate the item from any claim about what it proves. DNA evidence comes from analysis of genetic material; a fingerprint is a pattern left by a finger. An affidavit is a written statement made under oath, whereas a deposition usually records testimony taken before trial. Forensic evidence is a broader term for information obtained through scientific examination. The class checks the descriptions and asks which source supports each claim. A photograph of a sample cannot establish its identity, reliability or legal admissibility on its own. Those questions require records, analysis and the relevant court's rules. Ask: Why is a sample photograph insufficient on its own?"
     },
     "spacedReview": "1 lesson(s) back: Bailiff, Court Reporter from courtroom-trial-2\n3 lesson(s) back: Consult, Represent from law-firm-3\n7 lesson(s) back: Lab Module, Crew Quarters from space-station-5"
   }

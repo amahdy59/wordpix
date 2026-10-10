@@ -30,150 +30,136 @@
       "مخطط هندسي",
       "مخطط طابق",
       "واجهة معمارية",
-      "قطاع مقطع",
-      "نموذج مقياس رسم",
+      "قطاع معماري",
+      "نموذج مصغّر بمقياس رسم",
       "إخراج بصري",
       "رسم تخطيطي",
       "برنامج تصميم بمساعدة الحاسوب",
       "نموذج ثلاثي الأبعاد",
       "مخطط موقع",
       "مسطرة على شكل T",
-      "مثلث",
-      "بوصلة",
+      "مسطرة مثلثة",
+      "فرجار رسم",
       "منقلة",
       "مسطرة مقياس رسم"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Blueprint", "Floor Plan", "Elevation", "Cross-Section"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.",
+          "scenario": "Dina asks for the blueprint, the detailed building drawing in the project file. A floor plan shows the room arrangement from above; an elevation shows a face and a cross-section shows an imagined cut.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the detailed building drawing she requests?",
             "options": ["Blueprint", "Floor Plan", "Elevation"],
             "expectedAnswer": "Blueprint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Blueprint as the central item; include Blueprint, Floor Plan, and Elevation naturally where visually appropriate, but make the real-world use of Blueprint the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One building drawing on a desk, unlettered linework; the written description supplies its document type. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Scale Model", "Rendering", "Sketch", "CAD Software"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.",
+          "scenario": "Dina picks up the scale model, a reduced physical version of the building. The rendering is an image, the sketch is a preliminary drawing, and CAD software is a computer tool.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which representation can Dina pick up as a reduced physical building?",
             "options": ["Scale Model", "Rendering", "Sketch"],
             "expectedAnswer": "Scale Model"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Scale Model as the central item; include Scale Model, Rendering, and Sketch naturally where visually appropriate, but make the real-world use of Scale Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A clearly reduced physical architectural model on a plain base, no labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["3D Model", "Site Plan", "T-Square", "Triangle"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.",
+          "scenario": "In CAD software, Dina rotates the digital 3D model. The site plan instead shows the site arrangement, and the T-square and triangle are manual drawing tools.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which representation does she rotate digitally?",
             "options": ["3D Model", "Site Plan", "T-Square"],
             "expectedAnswer": "3D Model"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the 3D Model as the central item; include 3D Model, Site Plan, and T-Square naturally where visually appropriate, but make the real-world use of 3D Model the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A screen showing an unlettered three-dimensional building model, no interface text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compass", "Protractor", "Scale Ruler"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.",
+          "scenario": "Dina uses a drawing compass to make a circle. The protractor measures an angle, and the scale ruler helps read reduced lengths.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which drawing tool makes the circle?",
             "options": ["Compass", "Protractor", "Scale Ruler"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Compass as the central item; include Compass, Protractor, and Scale Ruler naturally where visually appropriate, but make the real-world use of Compass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A metal drawing compass with two hinged legs, one pointed and one holding a pencil, no hands. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Architect's Studio",
-      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Blueprint, Floor Plan, Elevation, and Cross-Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scale Model, Rendering, Sketch, and CAD Software. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers 3D Model, Site Plan, T-Square, and Triangle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Compass, Protractor, and Scale Ruler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing a drawing or model",
+      "text": "At a design review, Dina compares a blueprint with a floor plan. The floor plan shows rooms from above; an elevation shows a building face, and a cross-section shows a cut through it. A scale model is a reduced physical representation, while a rendering communicates the proposed appearance. Dina makes a sketch before opening CAD software. Her digital 3D model differs from the physical model on the desk. The site plan shows the building in its surroundings. At the drafting station, a T-square guides straight lines, a triangle provides fixed angles, and a compass draws circles. A protractor measures angles; a scale ruler helps interpret reduced dimensions. Dina checks what each representation shows before comparing the proposal's effects.",
+      "imageBrief": "Support for Choosing a drawing or model. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blueprint, Floor Plan, Elevation, and Cross-Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina asks for the blueprint, the detailed building drawing in the project file. A floor plan shows the room arrangement from above; an elevation shows a face and a cross-section shows an imagined cut.\nWhich term names the detailed building drawing she requests?",
         "answer": "Blueprint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale Model, Rendering, Sketch, and CAD Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina picks up the scale model, a reduced physical version of the building. The rendering is an image, the sketch is a preliminary drawing, and CAD software is a computer tool.\nWhich representation can Dina pick up as a reduced physical building?",
         "answer": "Scale Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Model, Site Plan, T-Square, and Triangle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In CAD software, Dina rotates the digital 3D model. The site plan instead shows the site arrangement, and the T-square and triangle are manual drawing tools.\nWhich representation does she rotate digitally?",
         "answer": "3D Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Protractor, and Scale Ruler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina uses a drawing compass to make a circle. The protractor measures an angle, and the scale ruler helps read reduced lengths.\nWhich drawing tool makes the circle?",
         "answer": "Compass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At a design review, Dina compares a blueprint with a floor plan. The floor plan shows rooms from above; an elevation shows a building face, and a cross-section shows a cut through it. A scale model is a reduced physical representation, while a rendering communicates the proposed appearance. Dina makes a sketch before opening CAD software. Her digital 3D model differs from the physical model on the desk. The site plan shows the building in its surroundings. At the drafting station, a T-square guides straight lines, a triangle provides fixed angles, and a compass draws circles. A protractor measures angles; a scale ruler helps interpret reduced dimensions. Dina checks what each representation shows before comparing the proposal's effects.\nWhy does Dina check the type of representation first?",
+        "answer": "Different representations show different aspects of the proposal.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Blueprint"
+        "prompt": "Explain the difference between “Blueprint” and “Floor Plan” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Elevation"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Treaty” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Blueprint, Floor Plan, Elevation, Cross-Section, Scale Model, Rendering, Sketch, CAD Software, 3D Model, Site Plan, T-Square, Triangle, Compass, Protractor, and Scale Ruler in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Blueprint” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina asks for the blueprint, the detailed building drawing in the project file. A floor plan shows the room arrangement from above; an elevation shows a face and a cross-section shows an imagined cut.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Architect's Studio: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing a drawing or model",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a design review, Dina compares a blueprint with a floor plan. The floor plan shows rooms from above; an elevation shows a building face, and a cross-section shows a cut through it. A scale model is a reduced physical representation, while a rendering communicates the proposed appearance. Dina makes a sketch before opening CAD software. Her digital 3D model differs from the physical model on the desk. The site plan shows the building in its surroundings. At the drafting station, a T-square guides straight lines, a triangle provides fixed angles, and a compass draws circles. A protractor measures angles; a scale ruler helps interpret reduced dimensions. Dina checks what each representation shows before comparing the proposal's effects. Ask: Why does Dina check the type of representation first?"
     },
     "spacedReview": "1 lesson(s) back: Treaty, Convention from rights-regulations-3\n3 lesson(s) back: Freedom of Speech, Right to Privacy from rights-regulations-1\n7 lesson(s) back: Exhibit, Document from courtroom-trial-3"
   },
@@ -216,142 +202,128 @@
       "توازن",
       "إيقاع",
       "تباين",
-      "وحدة",
-      "تأكيد بصري",
-      "فضاء",
+      "وحدة التصميم",
+      "إبراز بصري",
+      "حيّز معماري",
       "شكل"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Drafting Table", "Tracing Paper", "Pencil Set", "Eraser Shield"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.",
+          "scenario": "Dina works at an adjustable drafting table. Tracing paper is the translucent sheet; the pencil set provides drawing pencils, and the eraser shield covers nearby lines.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the adjustable work surface?",
             "options": ["Drafting Table", "Tracing Paper", "Pencil Set"],
             "expectedAnswer": "Drafting Table"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Drafting Table as the central item; include Drafting Table, Tracing Paper, and Pencil Set naturally where visually appropriate, but make the real-world use of Drafting Table the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An empty adjustable architectural drafting table, sloping work surface clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["French Curve", "Proportion", "Scale", "Symmetry"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.",
+          "scenario": "Dina selects a French curve for a smooth irregular drawn line. The review then distinguishes proportion, relative sizes, from scale, the size relationship with the actual building, and symmetry, correspondence across an axis.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which drawing tool guides the irregular curve?",
             "options": ["French Curve", "Proportion", "Scale"],
             "expectedAnswer": "French Curve"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the French Curve as the central item; include French Curve, Proportion, and Scale naturally where visually appropriate, but make the real-world use of French Curve the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A single transparent French curve template with curved edges on a blank surface. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Balance", "Rhythm", "Contrast", "Unity"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.",
+          "scenario": "Dina calls the distribution of visual weight balance. Rhythm comes from repeated elements, contrast makes elements different, and unity makes the design feel connected.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term concerns the distribution of visual weight?",
             "options": ["Balance", "Rhythm", "Contrast"],
             "expectedAnswer": "Balance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Balance through a realistic adult task; include Balance, Rhythm, and Contrast naturally where visually appropriate, but make the real-world use of Balance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An unlettered abstract architectural composition with visually balanced masses; no engineering claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Emphasis", "Space", "Form"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.",
+          "scenario": "The entrance receives emphasis so that it attracts attention. Dina then discusses space, the arrangement of areas, and form, the three-dimensional shape.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which design term means directing attention to the entrance?",
             "options": ["Emphasis", "Space", "Form"],
             "expectedAnswer": "Emphasis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Emphasis through a realistic adult task; include Emphasis, Space, and Form naturally where visually appropriate, but make the real-world use of Emphasis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A simple building model with one prominent entrance; no arrows or answer labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Architect's Studio",
-      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers French Curve, Proportion, Scale, and Symmetry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Balance, Rhythm, Contrast, and Unity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Emphasis, Space, and Form. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Explaining visual relationships",
+      "text": "Dina prepares a draft on a drafting table. Tracing paper lets her compare an earlier layout with a new one. A pencil set offers different marks, and an eraser shield protects neighboring lines while she erases a small area. A French curve guides a smooth irregular curve. During the critique, proportion concerns relative sizes, while scale relates the representation to the actual building. Symmetry means corresponding parts across an axis; balance concerns the distribution of visual weight. Repeated elements create rhythm. Contrast distinguishes elements, unity makes them feel connected, and emphasis directs attention. Space concerns the arrangement of areas, whereas form concerns three-dimensional shape. Dina explains these relationships using the proposal, without treating a pleasing composition as proof of structural performance.",
+      "imageBrief": "Support for Explaining visual relationships. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drafting Table, Tracing Paper, Pencil Set, and Eraser Shield and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina works at an adjustable drafting table. Tracing paper is the translucent sheet; the pencil set provides drawing pencils, and the eraser shield covers nearby lines.\nWhich item is the adjustable work surface?",
         "answer": "Drafting Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare French Curve, Proportion, Scale, and Symmetry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina selects a French curve for a smooth irregular drawn line. The review then distinguishes proportion, relative sizes, from scale, the size relationship with the actual building, and symmetry, correspondence across an axis.\nWhich drawing tool guides the irregular curve?",
         "answer": "French Curve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance, Rhythm, Contrast, and Unity and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Dina calls the distribution of visual weight balance. Rhythm comes from repeated elements, contrast makes elements different, and unity makes the design feel connected.\nWhich term concerns the distribution of visual weight?",
         "answer": "Balance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Emphasis, Space, and Form and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The entrance receives emphasis so that it attracts attention. Dina then discusses space, the arrangement of areas, and form, the three-dimensional shape.\nWhich design term means directing attention to the entrance?",
         "answer": "Emphasis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Dina prepares a draft on a drafting table. Tracing paper lets her compare an earlier layout with a new one. A pencil set offers different marks, and an eraser shield protects neighboring lines while she erases a small area. A French curve guides a smooth irregular curve. During the critique, proportion concerns relative sizes, while scale relates the representation to the actual building. Symmetry means corresponding parts across an axis; balance concerns the distribution of visual weight. Repeated elements create rhythm. Contrast distinguishes elements, unity makes them feel connected, and emphasis directs attention. Space concerns the arrangement of areas, whereas form concerns three-dimensional shape. Dina explains these relationships using the proposal, without treating a pleasing composition as proof of structural performance.\nDoes visual balance prove structural performance?",
+        "answer": "No; the discussion concerns composition rather than engineering verification.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Drafting Table"
+        "prompt": "Explain the difference between “Drafting Table” and “Tracing Paper” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Pencil Set"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Blueprint” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Drafting Table, Tracing Paper, Pencil Set, Eraser Shield, French Curve, Proportion, Scale, Symmetry, Balance, Rhythm, Contrast, Unity, Emphasis, Space, and Form in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Drafting Table” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina works at an adjustable drafting table. Tracing paper is the translucent sheet; the pencil set provides drawing pencils, and the eraser shield covers nearby lines.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Architect's Studio: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Explaining visual relationships",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina prepares a draft on a drafting table. Tracing paper lets her compare an earlier layout with a new one. A pencil set offers different marks, and an eraser shield protects neighboring lines while she erases a small area. A French curve guides a smooth irregular curve. During the critique, proportion concerns relative sizes, while scale relates the representation to the actual building. Symmetry means corresponding parts across an axis; balance concerns the distribution of visual weight. Repeated elements create rhythm. Contrast distinguishes elements, unity makes them feel connected, and emphasis directs attention. Space concerns the arrangement of areas, whereas form concerns three-dimensional shape. Dina explains these relationships using the proposal, without treating a pleasing composition as proof of structural performance. Ask: Does visual balance prove structural performance?"
     },
     "spacedReview": "1 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1\n3 lesson(s) back: Ordinance, Regulation from rights-regulations-2\n7 lesson(s) back: Contract, Agreement from legal-documents-1"
   },
@@ -378,7 +350,7 @@
       "Plotter"
     ],
     "targetWordsArabic": [
-      "نموذج صناعة طقم",
+      "طقم أدوات صنع النماذج",
       "قاطع ليزر",
       "طابعة ثلاثية الأبعاد",
       "طاولة ضوئية",
@@ -387,120 +359,106 @@
       "خرائط ألوان",
       "كتب مرجعية",
       "جهاز عرض",
-      "راسم آلي"
+      "طابعة مخططات كبيرة"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Model Making Kit", "Laser Cutter", "3D Printer", "Light Table"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.",
+          "scenario": "Dina gathers a model making kit containing tools and material for a small mock-up. A laser cutter cuts material, a 3D printer builds components, and a light table illuminates drawings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item groups the tools and materials for making the mock-up?",
             "options": ["Model Making Kit", "Laser Cutter", "3D Printer"],
             "expectedAnswer": "Model Making Kit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Model Making Kit as the central item; include Model Making Kit, Laser Cutter, and 3D Printer naturally where visually appropriate, but make the real-world use of Model Making Kit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A compact architectural model-making kit with card, small cutting mat and miniature pieces, no instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pin-Up Board", "Material Samples", "Color Charts", "Reference Books"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.",
+          "scenario": "The pin-up board holds project drawings during the discussion. Material samples show proposed finishes, color charts organize choices, and reference books provide background.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which studio item holds the drawings for the group to view?",
             "options": ["Pin-Up Board", "Material Samples", "Color Charts"],
             "expectedAnswer": "Pin-Up Board"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Pin-Up Board as the central item; include Pin-Up Board, Material Samples, and Color Charts naturally where visually appropriate, but make the real-world use of Pin-Up Board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A studio pin-up board with unlettered architectural drawings and no people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Projector", "Plotter"],
-          "scenario": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.",
+          "scenario": "The projector displays a large image on the wall. The plotter instead prints large paper drawings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device displays the image on the wall?",
             "options": ["Projector", "Plotter", "Model Making Kit"],
             "expectedAnswer": "Projector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Projector as the central item; include Projector, Plotter, and Model Making Kit naturally where visually appropriate, but make the real-world use of Projector the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A plain projector casting an unlettered building image onto an empty wall. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Architect's Studio",
-      "text": "At the architect's studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Model Making Kit, Laser Cutter, 3D Printer, and Light Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pin-Up Board, Material Samples, Color Charts, and Reference Books. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector and Plotter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Architect's Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing a design presentation",
+      "text": "The studio prepares a client presentation. Dina uses a model making kit for a small physical mock-up. A laser cutter and 3D printer can produce different model components, but only trained staff operate them. A light table illuminates drawings from below. The pin-up board holds the drawings for the group discussion. Material samples let the client handle proposed finishes; color charts organize color choices. Reference books provide background information rather than decide the project. A projector displays an image for the room, while a plotter prints large drawings. Dina explains which choices are provisional and asks the team to reconcile design constraints. The presentation supports a discussion; it does not certify safety, compliance or the suitability of a material.",
+      "imageBrief": "Support for Preparing a design presentation. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Model Making Kit, Laser Cutter, 3D Printer, and Light Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dina gathers a model making kit containing tools and material for a small mock-up. A laser cutter cuts material, a 3D printer builds components, and a light table illuminates drawings.\nWhich item groups the tools and materials for making the mock-up?",
         "answer": "Model Making Kit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin-Up Board, Material Samples, Color Charts, and Reference Books and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The pin-up board holds project drawings during the discussion. Material samples show proposed finishes, color charts organize choices, and reference books provide background.\nWhich studio item holds the drawings for the group to view?",
         "answer": "Pin-Up Board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architect's studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, and Plotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The projector displays a large image on the wall. The plotter instead prints large paper drawings.\nWhich device displays the image on the wall?",
         "answer": "Projector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The studio prepares a client presentation. Dina uses a model making kit for a small physical mock-up. A laser cutter and 3D printer can produce different model components, but only trained staff operate them. A light table illuminates drawings from below. The pin-up board holds the drawings for the group discussion. Material samples let the client handle proposed finishes; color charts organize color choices. Reference books provide background information rather than decide the project. A projector displays an image for the room, while a plotter prints large drawings. Dina explains which choices are provisional and asks the team to reconcile design constraints. The presentation supports a discussion; it does not certify safety, compliance or the suitability of a material.\nWhy are material samples included?",
+        "answer": "They let the client handle and compare proposed finishes.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Model Making Kit"
+        "prompt": "Explain the difference between “Model Making Kit” and “Laser Cutter” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "3D Printer"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Drafting Table” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architect's studio task. Use Model Making Kit, Laser Cutter, 3D Printer, Light Table, Pin-Up Board, Material Samples, Color Charts, Reference Books, Projector, and Plotter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Model Making Kit” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina gathers a model making kit containing tools and material for a small mock-up. A laser cutter cuts material, a 3D printer builds components, and a light table illuminates drawings.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Architect's Studio: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing a design presentation",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The studio prepares a client presentation. Dina uses a model making kit for a small physical mock-up. A laser cutter and 3D printer can produce different model components, but only trained staff operate them. A light table illuminates drawings from below. The pin-up board holds the drawings for the group discussion. Material samples let the client handle proposed finishes; color charts organize color choices. Reference books provide background information rather than decide the project. A projector displays an image for the room, while a plotter prints large drawings. Dina explains which choices are provisional and asks the team to reconcile design constraints. The presentation supports a discussion; it does not certify safety, compliance or the suitability of a material. Ask: Why are material samples included?"
     },
     "spacedReview": "1 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2\n3 lesson(s) back: Treaty, Convention from rights-regulations-3\n7 lesson(s) back: Petition, Order from legal-documents-2"
   }

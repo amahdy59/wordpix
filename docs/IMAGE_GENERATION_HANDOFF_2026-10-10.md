@@ -1,3 +1,11 @@
+# Current continuation status — 10 October 2026
+
+The curriculum revision supersedes the blocked counts below. All 864 written lessons are approved against current digests. Of the historical 129-scene batch, 86 jobs are eligible, 41 are held for visual ambiguity and two have existing references. Ten number scenes are additionally held; no readable glyph exceptions are permitted. See [the current resume record](content-review/GENERATION_RESUME_2026-10-10.md) and [preflight policy](IMAGE_GENERATION_PREFLIGHT.md). No source approval grants image approval or R2 publication permission.
+
+The remainder of this document preserves the earlier review and deployment evidence as historical context. Its test totals, blocked queues and release version are historical. Current staged release notes are 0.1.12.
+
+---
+
 # WordPix review, repairs and image-generation handoff
 
 Updated **10 October 2026, Africa/Cairo**. This supersedes the October 8 image plan and October 9 phase handoff where they differ. Counts below describe distinct states: generated, visually approved, mapped and deployed. None of these states implies the others.

@@ -46,7 +46,7 @@
     "arabicTranslation": "جواز سفر"
   },
   "visa": {
-    "definition": "Official permission to enter or stay in a country for a particular purpose.",
+    "definition": "An authorization related to travel, entry, or stay under a country’s rules; it does not necessarily guarantee admission.",
     "arabicTranslation": "تأشيرة"
   },
   "application-form": {
@@ -66,8 +66,8 @@
     "arabicTranslation": "صورة فوتوغرافية"
   },
   "stamp": {
-    "definition": "A carved or raised object used to print the same design repeatedly.",
-    "arabicTranslation": "طابع"
+    "definition": "A device or mark used to print an official or administrative design on a document.",
+    "arabicTranslation": "ختم"
   },
   "seal": {
     "definition": "A stamp affixed to a document (as to attest to its authenticity or to seal it).",
@@ -84,17 +84,17 @@
   "computer": {
     "definition": "A machine for performing calculations automatically.",
     "arabicTranslation": "حاسوب",
-    "exampleUsage": "The computer was used during the activity."
+    "exampleUsage": "The computer processed the measurements and saved the results."
   },
   "printer": {
     "definition": "(computer science) an output device that prints the results of data processing.",
     "arabicTranslation": "طابعة",
-    "exampleUsage": "The printer was used during the activity."
+    "exampleUsage": "The printer produced a paper copy of the approved report."
   },
   "telephone": {
     "definition": "A device used to speak with someone who is far away.",
     "arabicTranslation": "هاتف",
-    "exampleUsage": "The telephone was used during the activity."
+    "exampleUsage": "The receptionist answered the telephone at the service desk."
   },
   "fax-machine": {
     "definition": "A device that sends and receives copies of documents through a telephone or communications line.",
@@ -104,7 +104,7 @@
   "scanner": {
     "definition": "A device that turns a paper image or document into a digital file.",
     "arabicTranslation": "ماسح ضوئي",
-    "exampleUsage": "The scanner was used during the activity."
+    "exampleUsage": "The scanner converted the paper document into a digital image."
   },
   "filing-cabinet": {
     "definition": "A piece of furniture used to store documents in drawers.",
@@ -117,7 +117,7 @@
   "shredder": {
     "definition": "A device that shreds documents (usually in order to prevent the wrong people from reading them).",
     "arabicTranslation": "آلة تمزيق الورق",
-    "exampleUsage": "The shredder was used during the activity."
+    "exampleUsage": "The shredder cut the approved disposal papers into small pieces."
   },
   "laminator": {
     "definition": "A machine that covers documents with protective plastic.",
@@ -131,12 +131,12 @@
   "metal-detector": {
     "definition": "A device used at security checks to detect metal objects.",
     "arabicTranslation": "كاشف معدن",
-    "exampleUsage": "The metal detector was used during the activity."
+    "exampleUsage": "The security guide identified the metal detector at the screening point."
   },
   "x-ray-machine": {
     "definition": "A machine used at security checks to show what is inside bags.",
     "arabicTranslation": "جهاز أشعة سينية",
-    "exampleUsage": "The x-ray machine was used during the activity."
+    "exampleUsage": "Authorized staff used the X-ray machine to examine bag contents."
   },
   "security-guard": {
     "definition": "A person who protects a building and its people.",
@@ -158,15 +158,15 @@
   "alarm-system": {
     "definition": "A device or network of devices that identifies dangers such as break-ins, fires, or equipment problems and then issues a sound, light, or remote alert.",
     "arabicTranslation": "نظام إنذار",
-    "exampleUsage": "The alarm system was used during the activity."
+    "exampleUsage": "The alarm system signaled the configured security event."
   },
   "intercom": {
     "definition": "A communication system linking different rooms within a building or ship etc.",
     "arabicTranslation": "جهاز اتصال داخلي"
   },
   "bulletproof-glass": {
-    "definition": "Laminated glass made with inner layers that absorb the force of bullets and help stop them.",
-    "arabicTranslation": "زجاج مضاد للرصاص"
+    "definition": "Glass designed and tested for specified ballistic resistance, without an absolute guarantee against every projectile.",
+    "arabicTranslation": "زجاج مقاوم للرصاص"
   },
   "ambassador": {
     "definition": "A diplomat of the highest rank.",
@@ -208,7 +208,7 @@
     "arabicTranslation": "سائق"
   },
   "receptionist": {
-    "definition": "A secretary whose main duty is to answer the telephone and receive visitors.",
+    "definition": "An employee who welcomes visitors and handles initial inquiries or calls.",
     "arabicTranslation": "موظف استقبال"
   },
   "national-emblem": {
@@ -233,11 +233,11 @@
     "arabicTranslation": "لوحة فنية"
   },
   "sculpture": {
-    "definition": "A three-dimensional work of plastic art.",
+    "definition": "A three-dimensional artwork made by carving, modeling, casting, or another process.",
     "arabicTranslation": "منحوتة"
   },
   "book": {
-    "definition": "A set of printed pages bound together for reading.",
+    "definition": "A written or illustrated work available as bound pages or in digital form.",
     "arabicTranslation": "كتاب"
   },
   "gift": {
@@ -285,15 +285,15 @@
     "arabicTranslation": "علم"
   },
   "reception": {
-    "definition": "A formal gathering at which guests are welcomed.",
-    "arabicTranslation": "استقبال"
+    "definition": "A formal social gathering at which invited guests are welcomed.",
+    "arabicTranslation": "حفل استقبال"
   },
   "ceremony": {
     "definition": "A formal event performed on a special occasion.",
     "arabicTranslation": "مراسم"
   },
   "treaty": {
-    "definition": "A written agreement between two states or sovereigns.",
+    "definition": "A formal international agreement in writing between states, or between other eligible international parties under the applicable rules.",
     "arabicTranslation": "معاهدة"
   },
   "negotiation": {
@@ -307,5 +307,13 @@
   "summit": {
     "definition": "A meeting between government leaders to discuss important matters.",
     "arabicTranslation": "قمة"
+  },
+  "garden": {
+    "definition": "An outdoor area where plants are grown or displayed.",
+    "arabicTranslation": "حديقة"
+  },
+  "desk": {
+    "definition": "A table or work surface used for reading, writing, or computer work.",
+    "arabicTranslation": "مكتب"
   }
 }

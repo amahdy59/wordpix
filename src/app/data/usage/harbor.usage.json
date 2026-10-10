@@ -44,132 +44,115 @@
       "رصيف شحن"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "152-182 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cargo Ship", "Fishing Boat", "Sailboat", "Tugboat"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.",
+          "scenario": "A cargo ship carries goods. Fishing boat is used for fishing, sailboat moves mainly using sails, and tugboat assists larger vessels by towing or pushing. The guide identifies the general goods-carrying vessel rather than a specific load.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which general vessel carries the goods?",
             "options": ["Cargo Ship", "Fishing Boat", "Sailboat"],
             "expectedAnswer": "Cargo Ship"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Cargo Ship as the central item; include Cargo Ship, Fishing Boat, and Sailboat naturally where visually appropriate, but make the real-world use of Cargo Ship the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Cargo Ship as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ferry", "Yacht", "Kayak", "Canoe"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.",
+          "scenario": "The ferry carries passengers or vehicles across water on its service route. Yacht names a leisure vessel, kayak a narrow boat commonly using a double-bladed paddle, and canoe a narrow paddled boat. The ferry service is the passenger connection in this account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which service vessel carries the passengers across the water?",
             "options": ["Ferry", "Yacht", "Kayak"],
             "expectedAnswer": "Ferry"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Ferry as the central item; include Ferry, Yacht, and Kayak naturally where visually appropriate, but make the real-world use of Ferry the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Ferry as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Speedboat", "Lifeboat", "Barge", "Container Ship"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.",
+          "scenario": "The speedboat is the fast motorboat in the display. Lifeboat provides rescue or emergency transport, barge carries loads with a broad relatively flat hull, and container ship carries standardized freight boxes. Visitors do not copy emergency operations from the display.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the fast motorboat?",
             "options": ["Speedboat", "Lifeboat", "Barge"],
             "expectedAnswer": "Speedboat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Speedboat as the central item; include Speedboat, Lifeboat, and Barge naturally where visually appropriate, but make the real-world use of Speedboat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Speedboat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dock", "Pier", "Wharf"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.",
+          "scenario": "The dock is the vessel’s stopping area for the stated loading task. A pier extends from shore over water, and a wharf provides a waterside loading structure. These terms can overlap in local use; the account specifically calls the stopping area the dock.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What exact term does the account use for the vessel’s stopping area?",
             "options": ["Dock", "Pier", "Wharf"],
             "expectedAnswer": "Dock"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Dock as the central item; include Dock, Pier, and Wharf naturally where visually appropriate, but make the real-world use of Dock the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Dock as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Planning the Next Stage of the Journey",
-      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cargo Ship, Fishing Boat, Sailboat, and Tugboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ferry, Yacht, Kayak, and Canoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Speedboat, Lifeboat, Barge, and Container Ship. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dock, Pier, and Wharf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Vessels and waterside structures",
+      "text": "A cargo ship carries goods. Fishing boat is used for fishing, sailboat moves mainly using sails, and tugboat assists larger vessels by towing or pushing. The guide identifies the general goods-carrying vessel rather than a specific load. The ferry carries passengers or vehicles across water on its service route. Yacht names a leisure vessel, kayak a narrow boat commonly using a double-bladed paddle, and canoe a narrow paddled boat. The ferry service is the passenger connection in this account. The speedboat is the fast motorboat in the display. Lifeboat provides rescue or emergency transport, barge carries loads with a broad relatively flat hull, and container ship carries standardized freight boxes. Visitors do not copy emergency operations from the display. The dock is the vessel’s stopping area for the stated loading task. A pier extends from shore over water, and a wharf provides a waterside loading structure. These terms can overlap in local use; the account specifically calls the stopping area the dock.",
+      "imageBrief": "Use independently inspected word references to support Vessels and waterside structures; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cargo Ship, Fishing Boat, Sailboat, and Tugboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A cargo ship carries goods. Fishing boat is used for fishing, sailboat moves mainly using sails, and tugboat assists larger vessels by towing or pushing. The guide identifies the general goods-carrying vessel rather than a specific load.\nWhich general vessel carries the goods?",
         "answer": "Cargo Ship",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ferry, Yacht, Kayak, and Canoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The ferry carries passengers or vehicles across water on its service route. Yacht names a leisure vessel, kayak a narrow boat commonly using a double-bladed paddle, and canoe a narrow paddled boat. The ferry service is the passenger connection in this account.\nWhich service vessel carries the passengers across the water?",
         "answer": "Ferry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Speedboat, Lifeboat, Barge, and Container Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The speedboat is the fast motorboat in the display. Lifeboat provides rescue or emergency transport, barge carries loads with a broad relatively flat hull, and container ship carries standardized freight boxes. Visitors do not copy emergency operations from the display.\nWhich target names the fast motorboat?",
         "answer": "Speedboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dock, Pier, and Wharf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The dock is the vessel’s stopping area for the stated loading task. A pier extends from shore over water, and a wharf provides a waterside loading structure. These terms can overlap in local use; the account specifically calls the stopping area the dock.\nWhat exact term does the account use for the vessel’s stopping area?",
         "answer": "Dock",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A cargo ship carries goods. Fishing boat is used for fishing, sailboat moves mainly using sails, and tugboat assists larger vessels by towing or pushing. The guide identifies the general goods-carrying vessel rather than a specific load. The ferry carries passengers or vehicles across water on its service route. Yacht names a leisure vessel, kayak a narrow boat commonly using a double-bladed paddle, and canoe a narrow paddled boat. The ferry service is the passenger connection in this account. The speedboat is the fast motorboat in the display. Lifeboat provides rescue or emergency transport, barge carries loads with a broad relatively flat hull, and container ship carries standardized freight boxes. Visitors do not copy emergency operations from the display. The dock is the vessel’s stopping area for the stated loading task. A pier extends from shore over water, and a wharf provides a waterside loading structure. These terms can overlap in local use; the account specifically calls the stopping area the dock.\nCompare “Cargo Ship” and “Fishing Boat” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Cargo Ship"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Tugboat"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “mechanic” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the harbor task. Use Cargo Ship, Fishing Boat, Sailboat, Tugboat, Ferry, Yacht, Kayak, Canoe, Speedboat, Lifeboat, Barge, Container Ship, Dock, Pier, and Wharf in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Cargo Ship, Fishing Boat, Sailboat, Tugboat, Ferry, Yacht, Kayak, Canoe, Speedboat, Lifeboat, Barge, Container Ship, Dock, Pier, Wharf in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Harbor: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Vessels and waterside structures",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A cargo ship carries goods. Fishing boat is used for fishing, sailboat moves mainly using sails, and tugboat assists larger vessels by towing or pushing. The guide identifies the general goods-carrying vessel rather than a specific load. Which general vessel carries the goods?"
     },
     "spacedReview": "1 lesson(s) back: mechanic, boarding from airport-4\n3 lesson(s) back: control tower, hangar from airport-2\n7 lesson(s) back: information desk, newsstand from train-station-2"
   },
@@ -218,132 +201,115 @@
       "بضائع الشحن"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "138-168 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Jetty", "Breakwater", "Lighthouse", "Harbor Master's Office"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.",
+          "scenario": "A jetty extends from the shore for access or protection. Breakwater reduces incoming wave effects, lighthouse provides a navigation light, and harbor master’s office houses the authority managing harbor activity. The guide uses jetty for the stated shore extension.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the stated shore extension?",
             "options": ["Jetty", "Breakwater", "Lighthouse"],
             "expectedAnswer": "Jetty"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Jetty as the central item; include Jetty, Breakwater, and Lighthouse naturally where visually appropriate, but make the real-world use of Jetty the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Jetty as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Marina", "Dry Dock", "Shipyard", "Shipping Container"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.",
+          "scenario": "The marina provides mooring spaces for leisure boats. A dry dock can be drained for hull work, shipyard builds or repairs vessels, and shipping container holds freight. The leisure boat has a berth in the marina.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Where is the leisure boat’s berth?",
             "options": ["Marina", "Dry Dock", "Shipyard"],
             "expectedAnswer": "Marina"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Marina as the central item; include Marina, Dry Dock, and Shipyard naturally where visually appropriate, but make the real-world use of Marina the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Marina as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Crane", "Forklift", "Pallet", "Cargo Net"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.",
+          "scenario": "The crane lifts loads with its hoisting structure. Forklift lifts goods on forks, pallet supports packaged goods, and cargo net secures or supports a load. Trained staff perform the lifting; the visitor identifies equipment from the account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which hoisting machine lifts the load in this account?",
             "options": ["Crane", "Forklift", "Pallet"],
             "expectedAnswer": "Crane"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Crane as the central item; include Crane, Forklift, and Pallet naturally where visually appropriate, but make the real-world use of Crane the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Crane as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Loading Ramp", "Warehouse", "Freight"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.",
+          "scenario": "The loading ramp connects different heights with a slope. Warehouse stores goods, and freight names transported goods. The ramp is the access structure for the stated transfer, rather than the storage building or the load itself.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure provides the sloping connection?",
             "options": ["Loading Ramp", "Warehouse", "Freight"],
             "expectedAnswer": "Loading Ramp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Loading Ramp as the central item; include Loading Ramp, Warehouse, and Freight naturally where visually appropriate, but make the real-world use of Loading Ramp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Loading Ramp as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Harbor",
-      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jetty, Breakwater, Lighthouse, and Harbor Master's Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Marina, Dry Dock, Shipyard, and Shipping Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crane, Forklift, Pallet, and Cargo Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Loading Ramp, Warehouse, and Freight. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Cargo areas and handling equipment",
+      "text": "A jetty extends from the shore for access or protection. Breakwater reduces incoming wave effects, lighthouse provides a navigation light, and harbor master’s office houses the authority managing harbor activity. The guide uses jetty for the stated shore extension. The marina provides mooring spaces for leisure boats. A dry dock can be drained for hull work, shipyard builds or repairs vessels, and shipping container holds freight. The leisure boat has a berth in the marina. The crane lifts loads with its hoisting structure. Forklift lifts goods on forks, pallet supports packaged goods, and cargo net secures or supports a load. Trained staff perform the lifting; the visitor identifies equipment from the account. The loading ramp connects different heights with a slope. Warehouse stores goods, and freight names transported goods. The ramp is the access structure for the stated transfer, rather than the storage building or the load itself.",
+      "imageBrief": "Use independently inspected word references to support Cargo areas and handling equipment; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jetty, Breakwater, Lighthouse, and Harbor Master's Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A jetty extends from the shore for access or protection. Breakwater reduces incoming wave effects, lighthouse provides a navigation light, and harbor master’s office houses the authority managing harbor activity. The guide uses jetty for the stated shore extension.\nWhich term names the stated shore extension?",
         "answer": "Jetty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Marina, Dry Dock, Shipyard, and Shipping Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The marina provides mooring spaces for leisure boats. A dry dock can be drained for hull work, shipyard builds or repairs vessels, and shipping container holds freight. The leisure boat has a berth in the marina.\nWhere is the leisure boat’s berth?",
         "answer": "Marina",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Forklift, Pallet, and Cargo Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The crane lifts loads with its hoisting structure. Forklift lifts goods on forks, pallet supports packaged goods, and cargo net secures or supports a load. Trained staff perform the lifting; the visitor identifies equipment from the account.\nWhich hoisting machine lifts the load in this account?",
         "answer": "Crane",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Loading Ramp, Warehouse, and Freight and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The loading ramp connects different heights with a slope. Warehouse stores goods, and freight names transported goods. The ramp is the access structure for the stated transfer, rather than the storage building or the load itself.\nWhich structure provides the sloping connection?",
         "answer": "Loading Ramp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A jetty extends from the shore for access or protection. Breakwater reduces incoming wave effects, lighthouse provides a navigation light, and harbor master’s office houses the authority managing harbor activity. The guide uses jetty for the stated shore extension. The marina provides mooring spaces for leisure boats. A dry dock can be drained for hull work, shipyard builds or repairs vessels, and shipping container holds freight. The leisure boat has a berth in the marina. The crane lifts loads with its hoisting structure. Forklift lifts goods on forks, pallet supports packaged goods, and cargo net secures or supports a load. Trained staff perform the lifting; the visitor identifies equipment from the account. The loading ramp connects different heights with a slope. Warehouse stores goods, and freight names transported goods. The ramp is the access structure for the stated transfer, rather than the storage building or the load itself.\nCompare “Jetty” and “Breakwater” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Jetty"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Harbor Master's Office"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cargo Ship” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the harbor task. Use Jetty, Breakwater, Lighthouse, Harbor Master's Office, Marina, Dry Dock, Shipyard, Shipping Container, Crane, Forklift, Pallet, Cargo Net, Loading Ramp, Warehouse, and Freight in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Jetty, Breakwater, Lighthouse, Harbor Master's Office, Marina, Dry Dock, Shipyard, Shipping Container, Crane, Forklift, Pallet, Cargo Net, Loading Ramp, Warehouse, Freight in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Harbor: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Cargo areas and handling equipment",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A jetty extends from the shore for access or protection. Breakwater reduces incoming wave effects, lighthouse provides a navigation light, and harbor master’s office houses the authority managing harbor activity. The guide uses jetty for the stated shore extension. Which term names the stated shore extension?"
     },
     "spacedReview": "1 lesson(s) back: Cargo Ship, Fishing Boat from harbor-1\n3 lesson(s) back: tail, landing gear from airport-3\n7 lesson(s) back: seat number, first class from train-station-3"
   },
@@ -378,7 +344,7 @@
       "مرساة",
       "حبل رسو",
       "عوامة",
-      "منارة إرشاد",
+      "منارة أو علامة إرشاد",
       "بوصلة",
       "خريطة ملاحية",
       "رادار",
@@ -392,132 +358,115 @@
       "صندوق أدوات صيد"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "136-166 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Anchor", "Mooring Line", "Buoy", "Beacon"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.",
+          "scenario": "The anchor is lowered to help hold the vessel. A mooring line connects it to a mooring point, buoy is a floating marker or mooring structure, and beacon a navigation signal or marker. The account teaches terms rather than an anchoring procedure.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which heavy device is lowered to help hold the vessel?",
             "options": ["Anchor", "Mooring Line", "Buoy"],
             "expectedAnswer": "Anchor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Anchor as the central item; include Anchor, Mooring Line, and Buoy naturally where visually appropriate, but make the real-world use of Anchor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Anchor as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Compass", "Chart", "Radar", "Radio"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.",
+          "scenario": "The compass indicates direction. Chart provides navigation information on a map, radar detects objects through radio signals, and radio carries communications. Actual navigation requires appropriate current information and professional judgment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument indicates direction?",
             "options": ["Compass", "Chart", "Radar"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Compass as the central item; include Compass, Chart, and Radar naturally where visually appropriate, but make the real-world use of Compass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Compass as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Binoculars", "Flag", "Signal Light", "Horn"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.",
+          "scenario": "Binoculars make distant objects easier to see. Flag can carry a visual signal, signal light a light signal, and horn a sound signal. The observer uses binoculars to view the distant harbor entrance without interpreting an invented navigation signal.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument helps the observer see the distant entrance?",
             "options": ["Binoculars", "Flag", "Signal Light"],
             "expectedAnswer": "Binoculars"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Binoculars as the central item; include Binoculars, Flag, and Signal Light naturally where visually appropriate, but make the real-world use of Binoculars the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Binoculars as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fishing Rod", "Fishing Net", "Tackle Box"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.",
+          "scenario": "A fishing rod supports a line used in fishing. Fishing net catches fish in mesh, while tackle box stores gear. The museum display explains their functions without inviting visitors to fish in the managed harbor.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which long pole supports the fishing line?",
             "options": ["Fishing Rod", "Fishing Net", "Tackle Box"],
             "expectedAnswer": "Fishing Rod"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Fishing Rod as the central item; include Fishing Rod, Fishing Net, and Tackle Box naturally where visually appropriate, but make the real-world use of Fishing Rod the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Fishing Rod as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: The Harbor",
-      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Anchor, Mooring Line, Buoy, and Beacon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Compass, Chart, Radar, and Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Binoculars, Flag, Signal Light, and Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Fishing Net, and Tackle Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Navigation aids and fishing displays",
+      "text": "The anchor is lowered to help hold the vessel. A mooring line connects it to a mooring point, buoy is a floating marker or mooring structure, and beacon a navigation signal or marker. The account teaches terms rather than an anchoring procedure. The compass indicates direction. Chart provides navigation information on a map, radar detects objects through radio signals, and radio carries communications. Actual navigation requires appropriate current information and professional judgment. Binoculars make distant objects easier to see. Flag can carry a visual signal, signal light a light signal, and horn a sound signal. The observer uses binoculars to view the distant harbor entrance without interpreting an invented navigation signal. A fishing rod supports a line used in fishing. Fishing net catches fish in mesh, while tackle box stores gear. The museum display explains their functions without inviting visitors to fish in the managed harbor.",
+      "imageBrief": "Use independently inspected word references to support Navigation aids and fishing displays; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Anchor, Mooring Line, Buoy, and Beacon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The anchor is lowered to help hold the vessel. A mooring line connects it to a mooring point, buoy is a floating marker or mooring structure, and beacon a navigation signal or marker. The account teaches terms rather than an anchoring procedure.\nWhich heavy device is lowered to help hold the vessel?",
         "answer": "Anchor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compass, Chart, Radar, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The compass indicates direction. Chart provides navigation information on a map, radar detects objects through radio signals, and radio carries communications. Actual navigation requires appropriate current information and professional judgment.\nWhich instrument indicates direction?",
         "answer": "Compass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Binoculars, Flag, Signal Light, and Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Binoculars make distant objects easier to see. Flag can carry a visual signal, signal light a light signal, and horn a sound signal. The observer uses binoculars to view the distant harbor entrance without interpreting an invented navigation signal.\nWhich instrument helps the observer see the distant entrance?",
         "answer": "Binoculars",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Fishing Net, and Tackle Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A fishing rod supports a line used in fishing. Fishing net catches fish in mesh, while tackle box stores gear. The museum display explains their functions without inviting visitors to fish in the managed harbor.\nWhich long pole supports the fishing line?",
         "answer": "Fishing Rod",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The anchor is lowered to help hold the vessel. A mooring line connects it to a mooring point, buoy is a floating marker or mooring structure, and beacon a navigation signal or marker. The account teaches terms rather than an anchoring procedure. The compass indicates direction. Chart provides navigation information on a map, radar detects objects through radio signals, and radio carries communications. Actual navigation requires appropriate current information and professional judgment. Binoculars make distant objects easier to see. Flag can carry a visual signal, signal light a light signal, and horn a sound signal. The observer uses binoculars to view the distant harbor entrance without interpreting an invented navigation signal. A fishing rod supports a line used in fishing. Fishing net catches fish in mesh, while tackle box stores gear. The museum display explains their functions without inviting visitors to fish in the managed harbor.\nCompare “Anchor” and “Mooring Line” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Anchor"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Beacon"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Jetty” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the harbor task. Use Anchor, Mooring Line, Buoy, Beacon, Compass, Chart, Radar, Radio, Binoculars, Flag, Signal Light, Horn, Fishing Rod, Fishing Net, and Tackle Box in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Anchor, Mooring Line, Buoy, Beacon, Compass, Chart, Radar, Radio, Binoculars, Flag, Signal Light, Horn, Fishing Rod, Fishing Net, Tackle Box in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Harbor: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Navigation aids and fishing displays",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The anchor is lowered to help hold the vessel. A mooring line connects it to a mooring point, buoy is a floating marker or mooring structure, and beacon a navigation signal or marker. The account teaches terms rather than an anchoring procedure. Which heavy device is lowered to help hold the vessel?"
     },
     "spacedReview": "1 lesson(s) back: Jetty, Breakwater from harbor-2\n3 lesson(s) back: mechanic, boarding from airport-4\n7 lesson(s) back: engineer, porter from train-station-4"
   },
@@ -566,132 +515,115 @@
       "برنقيل"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "145-175 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bait", "Hook", "Reel", "Cooler"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.",
+          "scenario": "Bait is material used to attract fish in this display. Hook catches the fish on the line, reel winds the line, and cooler is an insulated storage container. Their names do not establish legal permission to fish or suitable food handling.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material attracts the fish?",
             "options": ["Bait", "Hook", "Reel"],
             "expectedAnswer": "Bait"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Bait as the central item; include Bait, Hook, and Reel naturally where visually appropriate, but make the real-world use of Bait the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Bait as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fish Basket", "Waders", "Life Jacket", "Seagull"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.",
+          "scenario": "The fish basket holds the displayed catch. Waders are waterproof clothing, life jacket is flotation equipment, and seagull a bird. The visitor identifies the fish container without treating the display as a fishing or water-entry instruction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the fish container?",
             "options": ["Fish Basket", "Waders", "Life Jacket"],
             "expectedAnswer": "Fish Basket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Fish Basket as the central item; include Fish Basket, Waders, and Life Jacket naturally where visually appropriate, but make the real-world use of Fish Basket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Fish Basket as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pelican", "Seal", "Crab", "Lobster Trap"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.",
+          "scenario": "Pelican names the waterbird with a large throat pouch. Seal is a marine mammal, crab a crustacean, and lobster trap the cage-like fishing device. These are separate references rather than a claim that every organism inhabits this harbor.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the large-pouch waterbird?",
             "options": ["Pelican", "Seal", "Crab"],
             "expectedAnswer": "Pelican"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Pelican as the central item; include Pelican, Seal, and Crab naturally where visually appropriate, but make the real-world use of Pelican the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Pelican as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rope", "Chain", "Barnacle"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.",
+          "scenario": "The rope is a strong flexible cord. Chain consists of linked metal pieces, and barnacle names a marine crustacean commonly attached to a surface. Rope and chain may have different uses and specifications; visitors do not handle working mooring equipment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the flexible cord?",
             "options": ["Rope", "Chain", "Barnacle"],
             "expectedAnswer": "Rope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Rope as the central item; include Rope, Chain, and Barnacle naturally where visually appropriate, but make the real-world use of Rope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Rope as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Planning the Next Stage of the Journey",
-      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bait, Hook, Reel, and Cooler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fish Basket, Waders, Life Jacket, and Seagull. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pelican, Seal, Crab, and Lobster Trap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rope, Chain, and Barnacle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Equipment, animals and materials",
+      "text": "Bait is material used to attract fish in this display. Hook catches the fish on the line, reel winds the line, and cooler is an insulated storage container. Their names do not establish legal permission to fish or suitable food handling. The fish basket holds the displayed catch. Waders are waterproof clothing, life jacket is flotation equipment, and seagull a bird. The visitor identifies the fish container without treating the display as a fishing or water-entry instruction. Pelican names the waterbird with a large throat pouch. Seal is a marine mammal, crab a crustacean, and lobster trap the cage-like fishing device. These are separate references rather than a claim that every organism inhabits this harbor. The rope is a strong flexible cord. Chain consists of linked metal pieces, and barnacle names a marine crustacean commonly attached to a surface. Rope and chain may have different uses and specifications; visitors do not handle working mooring equipment.",
+      "imageBrief": "Use independently inspected word references to support Equipment, animals and materials; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bait, Hook, Reel, and Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Bait is material used to attract fish in this display. Hook catches the fish on the line, reel winds the line, and cooler is an insulated storage container. Their names do not establish legal permission to fish or suitable food handling.\nWhich material attracts the fish?",
         "answer": "Bait",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fish Basket, Waders, Life Jacket, and Seagull and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The fish basket holds the displayed catch. Waders are waterproof clothing, life jacket is flotation equipment, and seagull a bird. The visitor identifies the fish container without treating the display as a fishing or water-entry instruction.\nWhich target names the fish container?",
         "answer": "Fish Basket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelican, Seal, Crab, and Lobster Trap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Pelican names the waterbird with a large throat pouch. Seal is a marine mammal, crab a crustacean, and lobster trap the cage-like fishing device. These are separate references rather than a claim that every organism inhabits this harbor.\nWhich target names the large-pouch waterbird?",
         "answer": "Pelican",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rope, Chain, and Barnacle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The rope is a strong flexible cord. Chain consists of linked metal pieces, and barnacle names a marine crustacean commonly attached to a surface. Rope and chain may have different uses and specifications; visitors do not handle working mooring equipment.\nWhich target names the flexible cord?",
         "answer": "Rope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Bait is material used to attract fish in this display. Hook catches the fish on the line, reel winds the line, and cooler is an insulated storage container. Their names do not establish legal permission to fish or suitable food handling. The fish basket holds the displayed catch. Waders are waterproof clothing, life jacket is flotation equipment, and seagull a bird. The visitor identifies the fish container without treating the display as a fishing or water-entry instruction. Pelican names the waterbird with a large throat pouch. Seal is a marine mammal, crab a crustacean, and lobster trap the cage-like fishing device. These are separate references rather than a claim that every organism inhabits this harbor. The rope is a strong flexible cord. Chain consists of linked metal pieces, and barnacle names a marine crustacean commonly attached to a surface. Rope and chain may have different uses and specifications; visitors do not handle working mooring equipment.\nCompare “Bait” and “Hook” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Bait"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Cooler"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Anchor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the harbor task. Use Bait, Hook, Reel, Cooler, Fish Basket, Waders, Life Jacket, Seagull, Pelican, Seal, Crab, Lobster Trap, Rope, Chain, and Barnacle in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Bait, Hook, Reel, Cooler, Fish Basket, Waders, Life Jacket, Seagull, Pelican, Seal, Crab, Lobster Trap, Rope, Chain, Barnacle in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Harbor: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Equipment, animals and materials",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Bait is material used to attract fish in this display. Hook catches the fish on the line, reel winds the line, and cooler is an insulated storage container. Their names do not establish legal permission to fish or suitable food handling. Which material attracts the fish?"
     },
     "spacedReview": "1 lesson(s) back: Anchor, Mooring Line from harbor-3\n3 lesson(s) back: Cargo Ship, Fishing Boat from harbor-1\n7 lesson(s) back: check-in counter, boarding pass from airport-1"
   },
@@ -720,7 +652,7 @@
     "targetWordsArabic": [
       "مد وجزر",
       "موجة",
-      "ناقلة",
+      "ناقلة سوائل",
       "غواصة",
       "حاوية",
       "قبطان",
@@ -730,113 +662,96 @@
       "ممر ملاحي"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "93-123 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tide", "Wave", "Tanker", "Submarine"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.",
+          "scenario": "Tide is the regular rise and fall of sea level. Wave is a moving surface disturbance, tanker carries bulk liquids, and submarine can travel below the water. Tide is distinct from a single passing wave.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the regular sea-level rise and fall?",
             "options": ["Tide", "Wave", "Tanker"],
             "expectedAnswer": "Tide"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Tide as the central item; include Tide, Wave, and Tanker naturally where visually appropriate, but make the real-world use of Tide the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Tide as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Container", "Captain", "Sailor", "Cargo"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.",
+          "scenario": "The container holds transported goods. Captain commands the vessel, sailor is a crew member, and cargo means the carried goods. The account distinguishes the freight container from its contents and from crew roles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the goods-holding box?",
             "options": ["Container", "Captain", "Sailor"],
             "expectedAnswer": "Container"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Container as the central item; include Container, Captain, and Sailor naturally where visually appropriate, but make the real-world use of Container the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Container as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Navigation", "Shipping Lane"],
-          "scenario": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.",
+          "scenario": "Navigation means planning and following a route. A shipping lane is a recognized route used by vessels. The chart supports navigation along the specified lane; the language account does not prescribe an actual vessel route.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which process involves planning and following the route?",
             "options": ["Navigation", "Shipping Lane", "Tide"],
             "expectedAnswer": "Navigation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the Navigation as the central item; include Navigation, Shipping Lane, and Tide naturally where visually appropriate, but make the real-world use of Navigation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the harbor account, showing Navigation as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Harbor",
-      "text": "At the harbor, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tide, Wave, Tanker, and Submarine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Container, Captain, Sailor, and Cargo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Navigation and Shipping Lane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Harbor. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Routes, loads and vessel roles",
+      "text": "Tide is the regular rise and fall of sea level. Wave is a moving surface disturbance, tanker carries bulk liquids, and submarine can travel below the water. Tide is distinct from a single passing wave. The container holds transported goods. Captain commands the vessel, sailor is a crew member, and cargo means the carried goods. The account distinguishes the freight container from its contents and from crew roles. Navigation means planning and following a route. A shipping lane is a recognized route used by vessels. The chart supports navigation along the specified lane; the language account does not prescribe an actual vessel route.",
+      "imageBrief": "Use independently inspected word references to support Routes, loads and vessel roles; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide, Wave, Tanker, and Submarine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Tide is the regular rise and fall of sea level. Wave is a moving surface disturbance, tanker carries bulk liquids, and submarine can travel below the water. Tide is distinct from a single passing wave.\nWhich target names the regular sea-level rise and fall?",
         "answer": "Tide",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Container, Captain, Sailor, and Cargo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The container holds transported goods. Captain commands the vessel, sailor is a crew member, and cargo means the carried goods. The account distinguishes the freight container from its contents and from crew roles.\nWhich target names the goods-holding box?",
         "answer": "Container",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the harbor setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Navigation, and Shipping Lane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Navigation means planning and following a route. A shipping lane is a recognized route used by vessels. The chart supports navigation along the specified lane; the language account does not prescribe an actual vessel route.\nWhich process involves planning and following the route?",
         "answer": "Navigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Tide is the regular rise and fall of sea level. Wave is a moving surface disturbance, tanker carries bulk liquids, and submarine can travel below the water. Tide is distinct from a single passing wave. The container holds transported goods. Captain commands the vessel, sailor is a crew member, and cargo means the carried goods. The account distinguishes the freight container from its contents and from crew roles. Navigation means planning and following a route. A shipping lane is a recognized route used by vessels. The chart supports navigation along the specified lane; the language account does not prescribe an actual vessel route.\nCompare “Tide” and “Wave” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Tide"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Submarine"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bait” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the harbor task. Use Tide, Wave, Tanker, Submarine, Container, Captain, Sailor, Cargo, Navigation, and Shipping Lane in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Tide, Wave, Tanker, Submarine, Container, Captain, Sailor, Cargo, Navigation, Shipping Lane in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Harbor: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Routes, loads and vessel roles",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Tide is the regular rise and fall of sea level. Wave is a moving surface disturbance, tanker carries bulk liquids, and submarine can travel below the water. Tide is distinct from a single passing wave. Which target names the regular sea-level rise and fall?"
     },
     "spacedReview": "1 lesson(s) back: Bait, Hook from harbor-4\n3 lesson(s) back: Jetty, Breakwater from harbor-2\n7 lesson(s) back: control tower, hangar from airport-2"
   }

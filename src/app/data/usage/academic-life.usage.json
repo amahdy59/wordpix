@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Professor", "Lecturer", "Teaching Assistant", "Dean"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Professor, Lecturer, Teaching Assistant, and Dean and choose the option that fits the situation.",
+          "scenario": "An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Professor", "Lecturer", "Teaching Assistant"],
-            "expectedAnswer": "Professor"
+            "question": "Who leads the faculty or school in this account?",
+            "options": ["Dean", "Professor", "Lecturer"],
+            "expectedAnswer": "Dean"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Professor as the central item; include Professor, Lecturer, and Teaching Assistant naturally where visually appropriate, but make the real-world use of Professor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dean in a academic life context. Use the written scenario as the source of meaning: An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Provost", "Chancellor", "Advisor", "Tutor"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Provost, Chancellor, Advisor, and Tutor and choose the option that fits the situation.",
+          "scenario": "The Provost and Chancellor hold senior university roles whose authority depends on the institution. Farah’s Advisor helps her plan courses, while a Tutor helps with specific learning tasks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Provost", "Chancellor", "Advisor"],
-            "expectedAnswer": "Provost"
+            "question": "Who helps Farah plan her courses?",
+            "options": ["Advisor", "Provost", "Chancellor"],
+            "expectedAnswer": "Advisor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Provost as the central item; include Provost, Chancellor, and Advisor naturally where visually appropriate, but make the real-world use of Provost the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Advisor in a academic life context. Use the written scenario as the source of meaning: The Provost and Chancellor hold senior university roles whose authority depends on the institution. Farah’s Advisor helps her plan courses, while a Tutor helps with specific learning tasks. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Researcher", "Postdoc", "Lecture", "Seminar"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Researcher, Postdoc, Lecture, and Seminar and choose the option that fits the situation.",
+          "scenario": "A Researcher investigates questions, and a Postdoc conducts research after completing a doctorate. Farah attends a Lecture presenting course material and a Seminar where a smaller group discusses a subject.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Researcher", "Postdoc", "Lecture"],
-            "expectedAnswer": "Researcher"
+            "question": "Which role conducts research after completing a doctorate?",
+            "options": ["Postdoc", "Researcher", "Lecture"],
+            "expectedAnswer": "Postdoc"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Researcher as the central item; include Researcher, Postdoc, and Lecture naturally where visually appropriate, but make the real-world use of Researcher the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Postdoc in a academic life context. Use the written scenario as the source of meaning: A Researcher investigates questions, and a Postdoc conducts research after completing a doctorate. Farah attends a Lecture presenting course material and a Seminar where a smaller group discusses a subject. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tutorial", "Lab Session", "Workshop"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutorial, Lab Session, and Workshop and choose the option that fits the situation.",
+          "scenario": "Farah compares a Tutorial with a tutor, a Lab Session for practical laboratory work, and a Workshop for active group learning. She follows staff instructions for any equipment use.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Tutorial", "Lab Session", "Workshop"],
-            "expectedAnswer": "Tutorial"
+            "question": "Which scheduled session involves practical laboratory work?",
+            "options": ["Lab Session", "Tutorial", "Workshop"],
+            "expectedAnswer": "Lab Session"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Tutorial through a realistic adult task; include Tutorial, Lab Session, and Workshop naturally where visually appropriate, but make the real-world use of Tutorial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lab Session in a academic life context. Use the written scenario as the source of meaning: Farah compares a Tutorial with a tutor, a Lab Session for practical laboratory work, and a Workshop for active group learning. She follows staff instructions for any equipment use. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Academic Life",
-      "text": "At the academic life, a student handles a real-world responsibility and must make a clear decision. First, the student considers Professor, Lecturer, Teaching Assistant, and Dean. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Provost, Chancellor, Advisor, and Tutor. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Researcher, Postdoc, Lecture, and Seminar. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Tutorial, Lab Session, and Workshop. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Academic Life: A visitor’s questions",
+      "text": "An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems. The Provost and Chancellor hold senior university roles whose authority depends on the institution. Farah’s Advisor helps her plan courses, while a Tutor helps with specific learning tasks. A Researcher investigates questions, and a Postdoc conducts research after completing a doctorate. Farah attends a Lecture presenting course material and a Seminar where a smaller group discusses a subject. Farah compares a Tutorial with a tutor, a Lab Session for practical laboratory work, and a Workshop for active group learning. She follows staff instructions for any equipment use.",
+      "imageBrief": "One uncluttered academic life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Professor, Lecturer, Teaching Assistant, and Dean and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Professor",
+        "prompt": "An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems.\nWho leads the faculty or school in this account?",
+        "answer": "Dean",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Provost, Chancellor, Advisor, and Tutor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Provost",
+        "prompt": "The Provost and Chancellor hold senior university roles whose authority depends on the institution. Farah’s Advisor helps her plan courses, while a Tutor helps with specific learning tasks.\nWho helps Farah plan her courses?",
+        "answer": "Advisor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Researcher, Postdoc, Lecture, and Seminar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Researcher",
+        "prompt": "A Researcher investigates questions, and a Postdoc conducts research after completing a doctorate. Farah attends a Lecture presenting course material and a Seminar where a smaller group discusses a subject.\nWhich role conducts research after completing a doctorate?",
+        "answer": "Postdoc",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tutorial, Lab Session, and Workshop and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Tutorial",
+        "prompt": "Farah compares a Tutorial with a tutor, a Lab Session for practical laboratory work, and a Workshop for active group learning. She follows staff instructions for any equipment use.\nWhich scheduled session involves practical laboratory work?",
+        "answer": "Lab Session",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems. The Provost and Chancellor hold senior university roles whose authority depends on the institution. Farah’s Advisor helps her plan courses, while a Tutor helps with specific learning tasks. A Researcher investigates questions, and a Postdoc conducts research after completing a doctorate. Farah attends a Lecture presenting course material and a Seminar where a smaller group discusses a subject. Farah compares a Tutorial with a tutor, a Lab Session for practical laboratory work, and a Workshop for active group learning. She follows staff instructions for any equipment use.\nExplain the difference between Professor and Lecturer using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Professor"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Orientation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the academic life task. Use Professor, Lecturer, Teaching Assistant, Dean, Provost, Chancellor, Advisor, Tutor, Researcher, Postdoc, Lecture, Seminar, Tutorial, Lab Session, and Workshop in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Professor, Lecturer, Teaching Assistant, Dean, Provost, Chancellor, Advisor, Tutor, Researcher, Postdoc, Lecture, Seminar, Tutorial, Lab Session, Workshop to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Academic Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Academic Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Professor and Lecturer, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: An academic guide introduces the Professor and Lecturer who teach courses, and the Teaching Assistant supporting classes. The Dean leads the faculty or school. Titles and responsibilities vary between university systems. Pause and answer: Who leads the faculty or school in this account?"
     },
     "spacedReview": "1 lesson(s) back: Orientation, Registration from university-campus-3\n3 lesson(s) back: Lecture Hall, Library from university-campus-1\n7 lesson(s) back: Online Banking, Mobile App from currency-payment-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "122-152 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Syllabus", "Prerequisite", "Elective", "Core Course"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Syllabus, Prerequisite, Elective, and Core Course and choose the option that fits the situation.",
+          "scenario": "The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Syllabus", "Prerequisite", "Elective"],
-            "expectedAnswer": "Syllabus"
+            "question": "Which requirement must be met before entering a course?",
+            "options": ["Prerequisite", "Syllabus", "Elective"],
+            "expectedAnswer": "Prerequisite"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Syllabus as the central item; include Syllabus, Prerequisite, and Elective naturally where visually appropriate, but make the real-world use of Syllabus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Prerequisite in a academic life context. Use the written scenario as the source of meaning: The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Credit Hour", "Grade", "GPA", "Pass/Fail"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Credit Hour, Grade, GPA, and Pass/Fail and choose the option that fits the situation.",
+          "scenario": "A Credit Hour measures academic course credit under the institution’s rules. A Grade records an individual result, while GPA summarizes grade points across courses. Pass/Fail records only whether the required standard was met.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Credit Hour", "Grade", "GPA"],
-            "expectedAnswer": "Credit Hour"
+            "question": "Which measure summarizes grade points across courses?",
+            "options": ["GPA", "Credit Hour", "Grade"],
+            "expectedAnswer": "GPA"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Credit Hour as the central item; include Credit Hour, Grade, and GPA naturally where visually appropriate, but make the real-world use of Credit Hour the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for GPA in a academic life context. Use the written scenario as the source of meaning: A Credit Hour measures academic course credit under the institution’s rules. A Grade records an individual result, while GPA summarizes grade points across courses. Pass/Fail records only whether the required standard was met. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dean's List", "Honor Roll", "Transcript", "Midterm"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dean's List, Honor Roll, Transcript, and Midterm and choose the option that fits the situation.",
+          "scenario": "The Dean's List and Honor Roll recognize strong academic achievement under stated criteria. Farah’s Transcript is the official record of courses and grades. A Midterm takes place around the middle of the term.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Dean's List", "Honor Roll", "Transcript"],
-            "expectedAnswer": "Dean's List"
+            "question": "Which document officially records courses and grades?",
+            "options": ["Transcript", "Dean's List", "Honor Roll"],
+            "expectedAnswer": "Transcript"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Dean's List as the central item; include Dean's List, Honor Roll, and Transcript naturally where visually appropriate, but make the real-world use of Dean's List the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Transcript in a academic life context. Use the written scenario as the source of meaning: The Dean's List and Honor Roll recognize strong academic achievement under stated criteria. Farah’s Transcript is the official record of courses and grades. A Midterm takes place around the middle of the term. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Final Exam", "Quiz", "Rubric"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Final Exam, Quiz, and Rubric and choose the option that fits the situation.",
+          "scenario": "Farah prepares for a Final Exam at the end of the course and a short Quiz. The Rubric states the criteria used to assess her written assignment; final-exam coverage depends on the course.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Final Exam", "Quiz", "Rubric"],
-            "expectedAnswer": "Final Exam"
+            "question": "Which term names the assignment’s assessment criteria?",
+            "options": ["Rubric", "Final Exam", "Quiz"],
+            "expectedAnswer": "Rubric"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Final Exam as the central item; include Final Exam, Quiz, and Rubric naturally where visually appropriate, but make the real-world use of Final Exam the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Rubric in a academic life context. Use the written scenario as the source of meaning: Farah prepares for a Final Exam at the end of the course and a short Quiz. The Rubric states the criteria used to assess her written assignment; final-exam coverage depends on the course. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Academic Life",
-      "text": "At the academic life, a student handles a real-world responsibility and must make a clear decision. First, the student considers Syllabus, Prerequisite, Elective, and Core Course. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Credit Hour, Grade, GPA, and Pass/Fail. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Dean's List, Honor Roll, Transcript, and Midterm. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Final Exam, Quiz, and Rubric. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Academic Life: Understanding the different roles",
+      "text": "The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program. A Credit Hour measures academic course credit under the institution’s rules. A Grade records an individual result, while GPA summarizes grade points across courses. Pass/Fail records only whether the required standard was met. The Dean's List and Honor Roll recognize strong academic achievement under stated criteria. Farah’s Transcript is the official record of courses and grades. A Midterm takes place around the middle of the term. Farah prepares for a Final Exam at the end of the course and a short Quiz. The Rubric states the criteria used to assess her written assignment; final-exam coverage depends on the course.",
+      "imageBrief": "One uncluttered academic life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Syllabus, Prerequisite, Elective, and Core Course and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Syllabus",
+        "prompt": "The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program.\nWhich requirement must be met before entering a course?",
+        "answer": "Prerequisite",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Credit Hour, Grade, GPA, and Pass/Fail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Credit Hour",
+        "prompt": "A Credit Hour measures academic course credit under the institution’s rules. A Grade records an individual result, while GPA summarizes grade points across courses. Pass/Fail records only whether the required standard was met.\nWhich measure summarizes grade points across courses?",
+        "answer": "GPA",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dean's List, Honor Roll, Transcript, and Midterm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Dean's List",
+        "prompt": "The Dean's List and Honor Roll recognize strong academic achievement under stated criteria. Farah’s Transcript is the official record of courses and grades. A Midterm takes place around the middle of the term.\nWhich document officially records courses and grades?",
+        "answer": "Transcript",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Final Exam, Quiz, and Rubric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Final Exam",
+        "prompt": "Farah prepares for a Final Exam at the end of the course and a short Quiz. The Rubric states the criteria used to assess her written assignment; final-exam coverage depends on the course.\nWhich term names the assignment’s assessment criteria?",
+        "answer": "Rubric",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program. A Credit Hour measures academic course credit under the institution’s rules. A Grade records an individual result, while GPA summarizes grade points across courses. Pass/Fail records only whether the required standard was met. The Dean's List and Honor Roll recognize strong academic achievement under stated criteria. Farah’s Transcript is the official record of courses and grades. A Midterm takes place around the middle of the term. Farah prepares for a Final Exam at the end of the course and a short Quiz. The Rubric states the criteria used to assess her written assignment; final-exam coverage depends on the course.\nExplain the difference between Syllabus and Prerequisite using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Syllabus"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Professor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the academic life task. Use Syllabus, Prerequisite, Elective, Core Course, Credit Hour, Grade, GPA, Pass/Fail, Dean's List, Honor Roll, Transcript, Midterm, Final Exam, Quiz, and Rubric in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Syllabus, Prerequisite, Elective, Core Course, Credit Hour, Grade, GPA, Pass/Fail, Dean's List, Honor Roll, Transcript, Midterm, Final Exam, Quiz, Rubric to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Academic Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Academic Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Syllabus and Prerequisite, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Syllabus lists topics and requirements. A Prerequisite must be met before entering a course; an Elective is chosen from permitted options, while a Core Course is required or foundational in the program. Pause and answer: Which requirement must be met before entering a course?"
     },
     "spacedReview": "1 lesson(s) back: Professor, Lecturer from academic-life-1\n3 lesson(s) back: Gate, Pathway from university-campus-2\n7 lesson(s) back: Bull Market, Bear Market from stock-exchange-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "86-116 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bachelor's", "Master's", "Doctorate", "Associate's"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bachelor's, Master's, Doctorate, and Associate's and choose the option that fits the situation.",
+          "scenario": "The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bachelor's", "Master's", "Doctorate"],
-            "expectedAnswer": "Bachelor's"
+            "question": "Which qualification is normally postgraduate after a bachelor’s?",
+            "options": ["Master's", "Bachelor's", "Doctorate"],
+            "expectedAnswer": "Master's"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Bachelor's as the central item; include Bachelor's, Master's, and Doctorate naturally where visually appropriate, but make the real-world use of Bachelor's the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Master's in a academic life context. Use the written scenario as the source of meaning: The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Diploma", "Certificate", "Major", "Minor"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diploma, Certificate, Major, and Minor and choose the option that fits the situation.",
+          "scenario": "The catalog lists Diploma and Certificate qualifications. Farah’s Major is her main degree subject, and her Minor is a secondary subject studied alongside it. The exact qualification requirements come from the institution.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Diploma", "Certificate", "Major"],
-            "expectedAnswer": "Diploma"
+            "question": "Which term names Farah’s main degree subject?",
+            "options": ["Major", "Diploma", "Certificate"],
+            "expectedAnswer": "Major"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Diploma as the central item; include Diploma, Certificate, and Major naturally where visually appropriate, but make the real-world use of Diploma the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Major in a academic life context. Use the written scenario as the source of meaning: The catalog lists Diploma and Certificate qualifications. Farah’s Major is her main degree subject, and her Minor is a secondary subject studied alongside it. The exact qualification requirements come from the institution. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Double Major", "Concentration"],
-          "scenario": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Major, and Concentration and choose the option that fits the situation.",
+          "scenario": "A Double Major meets main requirements in two subjects. A Concentration is a focused area within a broader subject; Farah chooses environmental writing within her main degree program.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Double Major", "Concentration", "Bachelor's"],
-            "expectedAnswer": "Double Major"
+            "question": "Which term names a focused area within a broader subject?",
+            "options": ["Concentration", "Double Major"],
+            "expectedAnswer": "Concentration"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Double Major as the central item; include Double Major, Concentration, and Bachelor's naturally where visually appropriate, but make the real-world use of Double Major the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Concentration in a academic life context. Use the written scenario as the source of meaning: A Double Major meets main requirements in two subjects. A Concentration is a focused area within a broader subject; Farah chooses environmental writing within her main degree program. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written academic life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Academic Life",
-      "text": "At the academic life, a student handles a real-world responsibility and must make a clear decision. First, the student considers Bachelor's, Master's, Doctorate, and Associate's. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Diploma, Certificate, Major, and Minor. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Double Major and Concentration. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Academic Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Academic Life: Comparing the equipment",
+      "text": "The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems. The catalog lists Diploma and Certificate qualifications. Farah’s Major is her main degree subject, and her Minor is a secondary subject studied alongside it. The exact qualification requirements come from the institution. A Double Major meets main requirements in two subjects. A Concentration is a focused area within a broader subject; Farah chooses environmental writing within her main degree program.",
+      "imageBrief": "One uncluttered academic life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bachelor's, Master's, Doctorate, and Associate's and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bachelor's",
+        "prompt": "The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems.\nWhich qualification is normally postgraduate after a bachelor’s?",
+        "answer": "Master's",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diploma, Certificate, Major, and Minor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Diploma",
+        "prompt": "The catalog lists Diploma and Certificate qualifications. Farah’s Major is her main degree subject, and her Minor is a secondary subject studied alongside it. The exact qualification requirements come from the institution.\nWhich term names Farah’s main degree subject?",
+        "answer": "Major",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the academic life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Major, and Concentration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Double Major",
+        "prompt": "A Double Major meets main requirements in two subjects. A Concentration is a focused area within a broader subject; Farah chooses environmental writing within her main degree program.\nWhich term names a focused area within a broader subject?",
+        "answer": "Concentration",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems. The catalog lists Diploma and Certificate qualifications. Farah’s Major is her main degree subject, and her Minor is a secondary subject studied alongside it. The exact qualification requirements come from the institution. A Double Major meets main requirements in two subjects. A Concentration is a focused area within a broader subject; Farah chooses environmental writing within her main degree program.\nExplain the difference between Bachelor's and Master's using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Bachelor's"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Syllabus” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the academic life task. Use Bachelor's, Master's, Doctorate, Associate's, Diploma, Certificate, Major, Minor, Double Major, and Concentration in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Bachelor's, Master's, Doctorate, Associate's, Diploma, Certificate, Major, Minor, Double Major, Concentration to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Academic Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Academic Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Bachelor's and Master's, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The adviser compares Bachelor's, Master's, Doctorate, and Associate's qualifications. A Master's is normally a postgraduate degree after a bachelor’s, while a Doctorate is an advanced research or professional degree. Names and entry routes vary between systems. Pause and answer: Which qualification is normally postgraduate after a bachelor’s?"
     },
     "spacedReview": "1 lesson(s) back: Syllabus, Prerequisite from academic-life-2\n3 lesson(s) back: Orientation, Registration from university-campus-3\n7 lesson(s) back: Spread, Limit Order from stock-exchange-2"
   }

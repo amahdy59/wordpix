@@ -44,136 +44,141 @@
       "نسيج بمربعات صغيرة"
     ],
     "usage": {
-      "goal": "Learn to use common patterns & textures 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to patterns & textures.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Striped", "Polka Dot", "Plaid"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Striped, Polka Dot, Plaid. The selected item or situation is best described as striped.",
+          "scenario": "The striped cloth has repeated lines. Polka dot describes round spots; plaid has crossing bands.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which cloth has repeated lines?",
             "options": ["Striped", "Polka Dot", "Plaid"],
             "expectedAnswer": "Striped"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Striped, Polka Dot, Plaid. The selected item or situation is best described as striped. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Striped, Polka Dot, Plaid in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain striped fabric sample, no branding or letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Checkered", "Floral", "Paisley"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Checkered, Floral, Paisley. The selected item or situation is best described as checkered.",
+          "scenario": "The checkered sample has alternating squares. Floral patterns show flowers, while paisley uses curved teardrop-like motifs.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which sample has alternating squares?",
             "options": ["Checkered", "Floral", "Paisley"],
             "expectedAnswer": "Checkered"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Checkered, Floral, Paisley. The selected item or situation is best described as checkered. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Checkered, Floral, Paisley in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Simple alternating-square fabric sample; no false distinction between all checks and plaids. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Geometric", "Abstract", "Camouflage"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Geometric, Abstract, Camouflage. The selected item or situation is best described as geometric.",
+          "scenario": "The geometric design uses repeated simple shapes. Abstract need not depict realistic subjects; camouflage can help something blend with surroundings.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which term names the design using simple shapes?",
             "options": ["Geometric", "Abstract", "Camouflage"],
             "expectedAnswer": "Geometric"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Geometric, Abstract, Camouflage. The selected item or situation is best described as geometric. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Geometric, Abstract, Camouflage in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Fabric with repeated circles and triangles; no letters or military insignia. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tie-Dye", "Herringbone", "Houndstooth"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Tie-Dye, Herringbone, Houndstooth. The selected item or situation is best described as tie-dye.",
+          "scenario": "The description identifies tie-dye, made by tying areas before dyeing. Herringbone uses a repeated broken zigzag; houndstooth uses pointed broken checks.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which method is identified in the description?",
             "options": ["Tie-Dye", "Herringbone", "Houndstooth"],
             "expectedAnswer": "Tie-Dye"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Tie-Dye, Herringbone, Houndstooth. The selected item or situation is best described as tie-dye. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Tie-Dye, Herringbone, Houndstooth in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Tie-dyed fabric with irregular rings; process identity supplied by text, no chemical demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Argyle", "Tartan", "Gingham"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Argyle, Tartan, Gingham. The selected item or situation is best described as argyle.",
+          "scenario": "The sample is called argyle and has diamonds crossed by thin lines. Tartan uses crossing color bands; gingham commonly has small even checks.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which named sample has crossed diamonds?",
             "options": ["Argyle", "Tartan", "Gingham"],
             "expectedAnswer": "Argyle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Argyle, Tartan, Gingham. The selected item or situation is best described as argyle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Argyle, Tartan, Gingham in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Argyle pattern with diamond shapes and thin diagonal lines, no clan-identity or cultural-origin claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Patterns & Textures: Short Description",
-      "text": "Maya is in a situation connected to patterns & textures. She uses the new words to understand what she sees and what happens next. The learner compares striped, polka dot, and plaid, noticing differences in appearance, measurement, material, or texture. The learner compares checkered, floral, and paisley, noticing differences in appearance, measurement, material, or texture. The learner compares geometric, abstract, and camouflage, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Patterns & Textures. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing cloth patterns",
+      "text": "Dina looks at cloth samples. One has stripes, and another has polka dots. A checkered sample has alternating squares. She sees a geometric design and an abstract one. A tie-dye cloth has irregular colors from its dyeing process. An argyle sample has diamonds. Dina reads the names with the examples because some pattern words overlap or describe how the cloth was made.",
+      "imageBrief": "Support for Comparing cloth patterns. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Striped, Polka Dot, Plaid. The selected item or situation is best described as striped.\nWhich description best fits the selected item or situation?",
+        "prompt": "The striped cloth has repeated lines. Polka dot describes round spots; plaid has crossing bands.\nWhich cloth has repeated lines?",
         "answer": "Striped",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Checkered, Floral, Paisley. The selected item or situation is best described as checkered.\nWhich description best fits the selected item or situation?",
+        "prompt": "The checkered sample has alternating squares. Floral patterns show flowers, while paisley uses curved teardrop-like motifs.\nWhich sample has alternating squares?",
         "answer": "Checkered",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Geometric, Abstract, Camouflage. The selected item or situation is best described as geometric.\nWhich description best fits the selected item or situation?",
+        "prompt": "The geometric design uses repeated simple shapes. Abstract need not depict realistic subjects; camouflage can help something blend with surroundings.\nWhich term names the design using simple shapes?",
         "answer": "Geometric",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Tie-Dye, Herringbone, Houndstooth. The selected item or situation is best described as tie-dye.\nWhich description best fits the selected item or situation?",
+        "prompt": "The description identifies tie-dye, made by tying areas before dyeing. Herringbone uses a repeated broken zigzag; houndstooth uses pointed broken checks.\nWhich method is identified in the description?",
         "answer": "Tie-Dye",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Argyle, Tartan, Gingham. The selected item or situation is best described as argyle.\nWhich description best fits the selected item or situation?",
+        "prompt": "The sample is called argyle and has diamonds crossed by thin lines. Tartan uses crossing color bands; gingham commonly has small even checks.\nWhich named sample has crossed diamonds?",
         "answer": "Argyle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Striped"
+        "prompt": "Dina looks at cloth samples. One has stripes, and another has polka dots. A checkered sample has alternating squares. She sees a geometric design and an abstract one. A tie-dye cloth has irregular colors from its dyeing process. An argyle sample has diamonds. Dina reads the names with the examples because some pattern words overlap or describe how the cloth was made.\nWhat shapes are in the argyle sample?",
+        "answer": "Diamonds.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Plaid"
+        "prompt": "Explain the difference between “Striped” and “Polka Dot” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Insulation” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Striped” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The striped cloth has repeated lines. Polka dot describes round spots; plaid has crossing bands.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Patterns & Textures: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing cloth patterns",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina looks at cloth samples. One has stripes, and another has polka dots. A checkered sample has alternating squares. She sees a geometric design and an abstract one. A tie-dye cloth has irregular colors from its dyeing process. An argyle sample has diamonds. Dina reads the names with the examples because some pattern words overlap or describe how the cloth was made. Ask: What shapes are in the argyle sample?"
     },
     "spacedReview": "1 lesson(s) back: Insulation, Tile from materials-4\n3 lesson(s) back: Silver, Bronze from materials-2\n7 lesson(s) back: Emerald, Olive from shades-tones-2"
   },
@@ -208,7 +213,7 @@
       "خطوط رفيعة",
       "نقشة متعرجة على شكل حرف V",
       "نسيج دمشقي",
-      "قماش تجريبي أو مطبوع",
+      "نقشة توال ذات مشاهد مطبوعة",
       "إيكات؛ نسيج مصبوغ قبل الحياكة",
       "ناعم",
       "خشن",
@@ -222,136 +227,141 @@
       "لامع"
     ],
     "usage": {
-      "goal": "Learn to use common patterns & textures 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to patterns & textures.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pinstripe", "Chevron", "Damask"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Pinstripe, Chevron, Damask. The selected item or situation is best described as pinstripe.",
+          "scenario": "The pinstripe cloth has very thin repeated stripes. Chevron has V-shaped lines; damask has a pattern woven into the fabric.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which cloth has very thin stripes?",
             "options": ["Pinstripe", "Chevron", "Damask"],
             "expectedAnswer": "Pinstripe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Pinstripe, Chevron, Damask. The selected item or situation is best described as pinstripe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Pinstripe, Chevron, Damask in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Fine pinstripe cloth macro reference, no text or fashion branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Toile", "Ikat", "Smooth"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Toile, Ikat, Smooth. The selected item or situation is best described as toile.",
+          "scenario": "The display uses toile for a printed landscape pattern, as in toile de Jouy. Ikat uses threads dyed before weaving; smooth describes an even surface.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What name does the display give its printed landscape pattern?",
             "options": ["Toile", "Ikat", "Smooth"],
             "expectedAnswer": "Toile"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Toile, Ikat, Smooth. The selected item or situation is best described as toile. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Toile, Ikat, Smooth in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Person-free landscape toile-style pattern on plain cloth; verify pattern with a primary museum reference first. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Rough", "Bumpy", "Soft"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Rough, Bumpy, Soft. The selected item or situation is best described as rough.",
+          "scenario": "The sample's description says rough, with an uneven surface. Bumpy emphasizes raised bumps, and soft means easily pressed or gentle to touch.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which exact word does the description use for the uneven surface?",
             "options": ["Rough", "Bumpy", "Soft"],
             "expectedAnswer": "Rough"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Rough, Bumpy, Soft. The selected item or situation is best described as rough. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Rough, Bumpy, Soft in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Close-up of rough nonhazardous surface; tactile experience remains in text, no touching demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hard", "Fuzzy", "Silky"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Hard, Fuzzy, Silky. The selected item or situation is best described as hard.",
+          "scenario": "The description calls the block hard, meaning firm. Fuzzy describes short soft fibers, and silky describes a smooth silk-like feel.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes the block's firmness?",
             "options": ["Hard", "Fuzzy", "Silky"],
             "expectedAnswer": "Hard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Hard, Fuzzy, Silky. The selected item or situation is best described as hard. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Hard, Fuzzy, Silky in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain solid block on neutral background; physical firmness cannot be certified visually. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Grainy", "Matte", "Glossy"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Grainy, Matte, Glossy. The selected item or situation is best described as grainy.",
+          "scenario": "The description says grainy, with small visible or felt particles. Matte means not shiny; glossy means shiny.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word in the description names the small-particle texture?",
             "options": ["Grainy", "Matte", "Glossy"],
             "expectedAnswer": "Grainy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Grainy, Matte, Glossy. The selected item or situation is best described as grainy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Grainy, Matte, Glossy in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Macro view of a fine granular surface under neutral lighting; no invented tactile evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Patterns & Textures: Mini Dialogue",
-      "text": "Maya is in a situation connected to patterns & textures. She uses the new words to understand what she sees and what happens next. The learner compares pinstripe, chevron, and damask, noticing differences in appearance, measurement, material, or texture. The learner compares toile, ikat, and smooth, noticing differences in appearance, measurement, material, or texture. The learner compares rough, bumpy, and soft, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Patterns & Textures. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Seeing a pattern and describing a feel",
+      "text": "Dina compares a pinstripe cloth with a chevron one. The display calls a printed landscape pattern toile. Ikat describes a method using threads dyed before weaving. Dina then reads texture descriptions. Rough and bumpy describe surfaces, while soft and hard describe feel or firmness. A grainy sample has small particles. Matte and glossy describe how surfaces reflect light. A picture cannot replace a description of touch.",
+      "imageBrief": "Support for Seeing a pattern and describing a feel. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Pinstripe, Chevron, Damask. The selected item or situation is best described as pinstripe.\nWhich description best fits the selected item or situation?",
+        "prompt": "The pinstripe cloth has very thin repeated stripes. Chevron has V-shaped lines; damask has a pattern woven into the fabric.\nWhich cloth has very thin stripes?",
         "answer": "Pinstripe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Toile, Ikat, Smooth. The selected item or situation is best described as toile.\nWhich description best fits the selected item or situation?",
+        "prompt": "The display uses toile for a printed landscape pattern, as in toile de Jouy. Ikat uses threads dyed before weaving; smooth describes an even surface.\nWhat name does the display give its printed landscape pattern?",
         "answer": "Toile",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Rough, Bumpy, Soft. The selected item or situation is best described as rough.\nWhich description best fits the selected item or situation?",
+        "prompt": "The sample's description says rough, with an uneven surface. Bumpy emphasizes raised bumps, and soft means easily pressed or gentle to touch.\nWhich exact word does the description use for the uneven surface?",
         "answer": "Rough",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Hard, Fuzzy, Silky. The selected item or situation is best described as hard.\nWhich description best fits the selected item or situation?",
+        "prompt": "The description calls the block hard, meaning firm. Fuzzy describes short soft fibers, and silky describes a smooth silk-like feel.\nWhich word describes the block's firmness?",
         "answer": "Hard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Grainy, Matte, Glossy. The selected item or situation is best described as grainy.\nWhich description best fits the selected item or situation?",
+        "prompt": "The description says grainy, with small visible or felt particles. Matte means not shiny; glossy means shiny.\nWhich word in the description names the small-particle texture?",
         "answer": "Grainy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Pinstripe"
+        "prompt": "Dina compares a pinstripe cloth with a chevron one. The display calls a printed landscape pattern toile. Ikat describes a method using threads dyed before weaving. Dina then reads texture descriptions. Rough and bumpy describe surfaces, while soft and hard describe feel or firmness. A grainy sample has small particles. Matte and glossy describe how surfaces reflect light. A picture cannot replace a description of touch.\nWhat do matte and glossy describe?",
+        "answer": "How surfaces reflect light.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Damask"
+        "prompt": "Explain the difference between “Pinstripe” and “Chevron” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Striped” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Pinstripe” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The pinstripe cloth has very thin repeated stripes. Chevron has V-shaped lines; damask has a pattern woven into the fabric.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Patterns & Textures: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Seeing a pattern and describing a feel",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares a pinstripe cloth with a chevron one. The display calls a printed landscape pattern toile. Ikat describes a method using threads dyed before weaving. Dina then reads texture descriptions. Rough and bumpy describe surfaces, while soft and hard describe feel or firmness. A grainy sample has small particles. Matte and glossy describe how surfaces reflect light. A picture cannot replace a description of touch. Ask: What do matte and glossy describe?"
     },
     "spacedReview": "1 lesson(s) back: Striped, Polka Dot from patterns-textures-1\n3 lesson(s) back: Plastic, Rubber from materials-3\n7 lesson(s) back: Ivory, Cream from shades-tones-3"
   },
@@ -379,7 +389,7 @@
     ],
     "targetWordsArabic": [
       "مصقول",
-      "معالج بالفرشاة",
+      "ذو تشطيب معدني مخطط بالفرشاة",
       "مطروق",
       "محفور",
       "بارز النقش",
@@ -390,117 +400,122 @@
       "مبطن بخياطة"
     ],
     "usage": {
-      "goal": "Learn to use common patterns & textures 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to patterns & textures.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Polished", "Brushed", "Hammered"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Polished, Brushed, Hammered. The selected item or situation is best described as polished.",
+          "scenario": "The surface is described as polished, smooth and shiny. Brushed metal has fine directional marks, while hammered metal shows small hammer marks.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which finish is described as smooth and shiny?",
             "options": ["Polished", "Brushed", "Hammered"],
             "expectedAnswer": "Polished"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Polished, Brushed, Hammered. The selected item or situation is best described as polished. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Polished, Brushed, Hammered in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Polished plain metal reference with controlled reflections, no dangerous glare or brand. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Etched", "Embossed", "Textured"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Etched, Embossed, Textured. The selected item or situation is best described as etched.",
+          "scenario": "The etched design is cut or chemically formed into the surface. Embossed designs are raised, while textured is a broader description.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which term describes the recessed design here?",
             "options": ["Etched", "Embossed", "Textured"],
             "expectedAnswer": "Etched"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Etched, Embossed, Textured. The selected item or situation is best described as etched. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Etched, Embossed, Textured in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Close-up of recessed plain geometric decoration; no chemical-etching procedure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ribbed", "Woven", "Knitted"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Ribbed, Woven, Knitted. The selected item or situation is best described as ribbed.",
+          "scenario": "Ribbed cloth has parallel raised ridges. Woven cloth has interlaced threads, while knitted cloth uses connected loops.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which term describes the parallel raised ridges?",
             "options": ["Ribbed", "Woven", "Knitted"],
             "expectedAnswer": "Ribbed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Ribbed, Woven, Knitted. The selected item or situation is best described as ribbed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Ribbed, Woven, Knitted in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Macro view of ribbed cloth with clear parallel ridges; no letters or human model. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Quilted"],
-          "scenario": "An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted.",
+          "scenario": "The quilted sample has layers held by stitching. A polished surface is smooth and shiny, while a brushed finish has fine directional marks in this display.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which sample has stitched layers?",
             "options": ["Quilted", "Polished", "Brushed"],
             "expectedAnswer": "Quilted"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a patterns & textures context illustrating this situation: An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult patterns & textures scene showing lesson-related items or actions including Quilted in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Small quilted textile sample showing stitched channels and layered edge, no logos. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Patterns & Textures: Simple Message",
-      "text": "Maya is in a situation connected to patterns & textures. She uses the new words to understand what she sees and what happens next. The learner compares polished, brushed, and hammered, noticing differences in appearance, measurement, material, or texture. The learner compares etched, embossed, and textured, noticing differences in appearance, measurement, material, or texture. The learner compares ribbed, woven, and knitted, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Patterns & Textures. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finishes, layers and thread structures",
+      "text": "Dina reads the sample descriptions. A polished surface is smooth and shiny. A brushed metal sample has fine directional marks, and a hammered one has small dents. An etched design is recessed, while an embossed one is raised. Dina sees ribbed, woven and knitted cloth. A quilted sample has stitched layers. She checks the descriptions because different materials can have similar-looking finishes.",
+      "imageBrief": "Support for Finishes, layers and thread structures. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Polished, Brushed, Hammered. The selected item or situation is best described as polished.\nWhich description best fits the selected item or situation?",
+        "prompt": "The surface is described as polished, smooth and shiny. Brushed metal has fine directional marks, while hammered metal shows small hammer marks.\nWhich finish is described as smooth and shiny?",
         "answer": "Polished",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Etched, Embossed, Textured. The selected item or situation is best described as etched.\nWhich description best fits the selected item or situation?",
+        "prompt": "The etched design is cut or chemically formed into the surface. Embossed designs are raised, while textured is a broader description.\nWhich term describes the recessed design here?",
         "answer": "Etched",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Ribbed, Woven, Knitted. The selected item or situation is best described as ribbed.\nWhich description best fits the selected item or situation?",
+        "prompt": "Ribbed cloth has parallel raised ridges. Woven cloth has interlaced threads, while knitted cloth uses connected loops.\nWhich term describes the parallel raised ridges?",
         "answer": "Ribbed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a patterns & textures context: Quilted, Polished, Brushed. The selected item or situation is best described as quilted.\nWhich description best fits the selected item or situation?",
+        "prompt": "The quilted sample has layers held by stitching. A polished surface is smooth and shiny, while a brushed finish has fine directional marks in this display.\nWhich sample has stitched layers?",
         "answer": "Quilted",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Polished"
+        "prompt": "Dina reads the sample descriptions. A polished surface is smooth and shiny. A brushed metal sample has fine directional marks, and a hammered one has small dents. An etched design is recessed, while an embossed one is raised. Dina sees ribbed, woven and knitted cloth. A quilted sample has stitched layers. She checks the descriptions because different materials can have similar-looking finishes.\nHow is an embossed design different from an etched one here?",
+        "answer": "The embossed design is raised; the etched design is recessed.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Hammered"
+        "prompt": "Explain the difference between “Polished” and “Brushed” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pinstripe” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Polished” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The surface is described as polished, smooth and shiny. Brushed metal has fine directional marks, while hammered metal shows small hammer marks.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Patterns & Textures: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finishes, layers and thread structures",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the sample descriptions. A polished surface is smooth and shiny. A brushed metal sample has fine directional marks, and a hammered one has small dents. An etched design is recessed, while an embossed one is raised. Dina sees ribbed, woven and knitted cloth. A quilted sample has stitched layers. She checks the descriptions because different materials can have similar-looking finishes. Ask: How is an embossed design different from an etched one here?"
     },
     "spacedReview": "1 lesson(s) back: Pinstripe, Chevron from patterns-textures-2\n3 lesson(s) back: Insulation, Tile from materials-4\n7 lesson(s) back: Eggplant, Periwinkle from shades-tones-4"
   }

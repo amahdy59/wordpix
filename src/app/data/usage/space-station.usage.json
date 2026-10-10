@@ -27,149 +27,132 @@
       "Tether"
     ],
     "targetWordsArabic": [
-      "وحدة",
+      "وحدة محطة فضائية",
       "غرفة معادلة ضغط",
       "مجموعة ألواح شمسية",
       "منفذ التحام",
       "قبة مراقبة",
-      "جمالون",
+      "هيكل شبكي داعم",
       "لوح مُشِعّ للحرارة",
       "هوائي",
       "فتحة دخول",
-      "نافذة (شباك)",
+      "نافذة",
       "بدلة فضاء",
       "خوذة",
-      "قفازات",
-      "أحذية طويلة",
+      "قفازات بدلة الفضاء",
+      "أحذية بدلة فضاء",
       "حبل أمان"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "136-166 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Module", "Airlock", "Solar Array", "Docking Port"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.",
+          "scenario": "A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Module", "Airlock", "Solar Array"],
-            "expectedAnswer": "Module"
+            "question": "Which chamber separates different pressure environments?",
+            "options": ["Airlock", "Module", "Solar Array"],
+            "expectedAnswer": "Airlock"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Module as the central item; include Module, Airlock, and Solar Array naturally where visually appropriate, but make the real-world use of Module the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Airlock in a space station context. Use the written scenario as the source of meaning: A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cupola", "Truss", "Radiator Panel", "Antenna"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.",
+          "scenario": "The Cupola is a windowed observation module. The Truss supports external equipment, a Radiator Panel releases heat, and an Antenna supports radio communication. These features are shown in the written station layout rather than inferred from random shapes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which module provides outside observation through windows?",
             "options": ["Cupola", "Truss", "Radiator Panel"],
             "expectedAnswer": "Cupola"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Cupola as the central item; include Cupola, Truss, and Radiator Panel naturally where visually appropriate, but make the real-world use of Cupola the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cupola in a space station context. Use the written scenario as the source of meaning: The Cupola is a windowed observation module. The Truss supports external equipment, a Radiator Panel releases heat, and an Antenna supports radio communication. These features are shown in the written station layout rather than inferred from random shapes. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hatch", "Window", "Spacesuit", "Helmet"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.",
+          "scenario": "A Hatch provides access, and a Window allows a view. The Spacesuit supplies the protective environment required for outside work; its Helmet forms part of that system. An ordinary hard hat is not a substitute.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hatch", "Window", "Spacesuit"],
-            "expectedAnswer": "Hatch"
+            "question": "Which complete protective system is required for the described outside work?",
+            "options": ["Spacesuit", "Hatch", "Window"],
+            "expectedAnswer": "Spacesuit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Hatch as the central item; include Hatch, Window, and Spacesuit naturally where visually appropriate, but make the real-world use of Hatch the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Spacesuit in a space station context. Use the written scenario as the source of meaning: A Hatch provides access, and a Window allows a view. The Spacesuit supplies the protective environment required for outside work; its Helmet forms part of that system. An ordinary hard hat is not a substitute. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gloves", "Boots", "Tether"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.",
+          "scenario": "Spacesuit Gloves and Boots protect the hands and feet as parts of the approved suit. A Tether attaches a person or equipment under the mission’s procedures. The guide describes the vocabulary without teaching a spacewalk operation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gloves", "Boots", "Tether"],
-            "expectedAnswer": "Gloves"
+            "question": "Which line attaches a person or equipment?",
+            "options": ["Tether", "Gloves", "Boots"],
+            "expectedAnswer": "Tether"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Gloves as the central item; include Gloves, Boots, and Tether naturally where visually appropriate, but make the real-world use of Gloves the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tether in a space station context. Use the written scenario as the source of meaning: Spacesuit Gloves and Boots protect the hands and feet as parts of the approved suit. A Tether attaches a person or equipment under the mission’s procedures. The guide describes the vocabulary without teaching a spacewalk operation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Module, Airlock, Solar Array, and Docking Port. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Cupola, Truss, Radiator Panel, and Antenna. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Hatch, Window, Spacesuit, and Helmet. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Gloves, Boots, and Tether. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: A visitor’s questions",
+      "text": "A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection. The Cupola is a windowed observation module. The Truss supports external equipment, a Radiator Panel releases heat, and an Antenna supports radio communication. These features are shown in the written station layout rather than inferred from random shapes. A Hatch provides access, and a Window allows a view. The Spacesuit supplies the protective environment required for outside work; its Helmet forms part of that system. An ordinary hard hat is not a substitute. Spacesuit Gloves and Boots protect the hands and feet as parts of the approved suit. A Tether attaches a person or equipment under the mission’s procedures. The guide describes the vocabulary without teaching a spacewalk operation.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Module, Airlock, Solar Array, and Docking Port and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Module",
+        "prompt": "A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection.\nWhich chamber separates different pressure environments?",
+        "answer": "Airlock",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cupola, Truss, Radiator Panel, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Cupola is a windowed observation module. The Truss supports external equipment, a Radiator Panel releases heat, and an Antenna supports radio communication. These features are shown in the written station layout rather than inferred from random shapes.\nWhich module provides outside observation through windows?",
         "answer": "Cupola",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hatch, Window, Spacesuit, and Helmet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hatch",
+        "prompt": "A Hatch provides access, and a Window allows a view. The Spacesuit supplies the protective environment required for outside work; its Helmet forms part of that system. An ordinary hard hat is not a substitute.\nWhich complete protective system is required for the described outside work?",
+        "answer": "Spacesuit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gloves, Boots, and Tether and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gloves",
+        "prompt": "Spacesuit Gloves and Boots protect the hands and feet as parts of the approved suit. A Tether attaches a person or equipment under the mission’s procedures. The guide describes the vocabulary without teaching a spacewalk operation.\nWhich line attaches a person or equipment?",
+        "answer": "Tether",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection. The Cupola is a windowed observation module. The Truss supports external equipment, a Radiator Panel releases heat, and an Antenna supports radio communication. These features are shown in the written station layout rather than inferred from random shapes. A Hatch provides access, and a Window allows a view. The Spacesuit supplies the protective environment required for outside work; its Helmet forms part of that system. An ordinary hard hat is not a substitute. Spacesuit Gloves and Boots protect the hands and feet as parts of the approved suit. A Tether attaches a person or equipment under the mission’s procedures. The guide describes the vocabulary without teaching a spacewalk operation.\nExplain the difference between Module and Airlock using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Module"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Telescope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Module, Airlock, Solar Array, Docking Port, Cupola, Truss, Radiator Panel, Antenna, Hatch, Window, Spacesuit, Helmet, Gloves, Boots, and Tether in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Module, Airlock, Solar Array, Docking Port, Cupola, Truss, Radiator Panel, Antenna, Hatch, Window, Spacesuit, Helmet, Gloves, Boots, Tether to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Module and Airlock, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A station guide describes a Module as a separate structural section and an Airlock as a chamber separating different pressure environments. A Solar Array generates electrical power from sunlight. A Docking Port provides a compatible spacecraft connection. Pause and answer: Which chamber separates different pressure environments?"
     },
     "spacedReview": "1 lesson(s) back: Telescope, Flag from arctic-5\n3 lesson(s) back: Peninsula, Island from arctic-3\n7 lesson(s) back: Searchlight, Underwater Camera from submarine-4"
   },
@@ -203,16 +186,16 @@
     "targetWordsArabic": [
       "حقيبة نفاثة",
       "حزام أدوات",
-      "واقٍ للعين",
+      "واقي الوجه في خوذة الفضاء",
       "خزان أكسجين",
       "سماعة رأس للاتصال",
       "كبسولة نوم",
-      "مطبخ صغير",
+      "مطبخ المحطة",
       "جهاز تمارين",
       "مرحاض",
-      "كيس دُش",
+      "كيس مستلزمات الاغتسال",
       "شريط تثبيت بخطافات وحلقات",
-      "حاسوب محمول (لابتوب)",
+      "حاسوب محمول",
       "كتاب",
       "صورة",
       "خزانة شخصية"
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "140-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Jet Pack", "Tool Belt", "Visor", "Oxygen Tank"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.",
+          "scenario": "Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Jet Pack", "Tool Belt", "Visor"],
-            "expectedAnswer": "Jet Pack"
+            "question": "Which screen covers the helmet viewing area?",
+            "options": ["Visor", "Jet Pack", "Tool Belt"],
+            "expectedAnswer": "Visor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Jet Pack as the central item; include Jet Pack, Tool Belt, and Visor naturally where visually appropriate, but make the real-world use of Jet Pack the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Visor in a space station context. Use the written scenario as the source of meaning: Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Communication Headset", "Sleeping Pod", "Galley", "Exercise Machine"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.",
+          "scenario": "A Communication Headset carries speech between crew and supported contacts. A Sleeping Pod provides a sleeping space, the Galley supports food preparation, and an Exercise Machine supports planned physical activity. Facilities differ between stations.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which worn device supports spoken communication?",
             "options": ["Communication Headset", "Sleeping Pod", "Galley"],
             "expectedAnswer": "Communication Headset"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Communication Headset as the central item; include Communication Headset, Sleeping Pod, and Galley naturally where visually appropriate, but make the real-world use of Communication Headset the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Communication Headset in a space station context. Use the written scenario as the source of meaning: A Communication Headset carries speech between crew and supported contacts. A Sleeping Pod provides a sleeping space, the Galley supports food preparation, and an Exercise Machine supports planned physical activity. Facilities differ between stations. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Toilet", "Shower Bag", "Velcro Strip", "Laptop"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.",
+          "scenario": "The station Toilet uses a specialized waste system. Shower Bag is an inherited vocabulary label for washing supplies, not evidence that the ISS has an ordinary shower. A Velcro Strip uses hook-and-loop fastening, and a Laptop is a portable computer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Toilet", "Shower Bag", "Velcro Strip"],
-            "expectedAnswer": "Toilet"
+            "question": "Which target uses hook-and-loop fastening?",
+            "options": ["Velcro Strip", "Toilet", "Shower Bag"],
+            "expectedAnswer": "Velcro Strip"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Toilet as the central item; include Toilet, Shower Bag, and Velcro Strip naturally where visually appropriate, but make the real-world use of Toilet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Velcro Strip in a space station context. Use the written scenario as the source of meaning: The station Toilet uses a specialized waste system. Shower Bag is an inherited vocabulary label for washing supplies, not evidence that the ISS has an ordinary shower. A Velcro Strip uses hook-and-loop fastening, and a Laptop is a portable computer. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Book", "Photo", "Personal Locker"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.",
+          "scenario": "A Book provides reading material, and a Photo records a view or memory. A Personal Locker holds a crew member’s belongings. The illustration shows an example storage space without reproducing private photographs or records.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Book", "Photo", "Personal Locker"],
-            "expectedAnswer": "Book"
+            "question": "Which compartment holds the crew member’s belongings?",
+            "options": ["Personal Locker", "Book", "Photo"],
+            "expectedAnswer": "Personal Locker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Book as the central item; include Book, Photo, and Personal Locker naturally where visually appropriate, but make the real-world use of Book the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Personal Locker in a space station context. Use the written scenario as the source of meaning: A Book provides reading material, and a Photo records a view or memory. A Personal Locker holds a crew member’s belongings. The illustration shows an example storage space without reproducing private photographs or records. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Jet Pack, Tool Belt, Visor, and Oxygen Tank. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Communication Headset, Sleeping Pod, Galley, and Exercise Machine. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Toilet, Shower Bag, Velcro Strip, and Laptop. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Book, Photo, and Personal Locker. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: Understanding the different roles",
+      "text": "Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system. A Communication Headset carries speech between crew and supported contacts. A Sleeping Pod provides a sleeping space, the Galley supports food preparation, and an Exercise Machine supports planned physical activity. Facilities differ between stations. The station Toilet uses a specialized waste system. Shower Bag is an inherited vocabulary label for washing supplies, not evidence that the ISS has an ordinary shower. A Velcro Strip uses hook-and-loop fastening, and a Laptop is a portable computer. A Book provides reading material, and a Photo records a view or memory. A Personal Locker holds a crew member’s belongings. The illustration shows an example storage space without reproducing private photographs or records.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jet Pack, Tool Belt, Visor, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Jet Pack",
+        "prompt": "Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system.\nWhich screen covers the helmet viewing area?",
+        "answer": "Visor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communication Headset, Sleeping Pod, Galley, and Exercise Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Communication Headset carries speech between crew and supported contacts. A Sleeping Pod provides a sleeping space, the Galley supports food preparation, and an Exercise Machine supports planned physical activity. Facilities differ between stations.\nWhich worn device supports spoken communication?",
         "answer": "Communication Headset",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toilet, Shower Bag, Velcro Strip, and Laptop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Toilet",
+        "prompt": "The station Toilet uses a specialized waste system. Shower Bag is an inherited vocabulary label for washing supplies, not evidence that the ISS has an ordinary shower. A Velcro Strip uses hook-and-loop fastening, and a Laptop is a portable computer.\nWhich target uses hook-and-loop fastening?",
+        "answer": "Velcro Strip",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Book, Photo, and Personal Locker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Book",
+        "prompt": "A Book provides reading material, and a Photo records a view or memory. A Personal Locker holds a crew member’s belongings. The illustration shows an example storage space without reproducing private photographs or records.\nWhich compartment holds the crew member’s belongings?",
+        "answer": "Personal Locker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system. A Communication Headset carries speech between crew and supported contacts. A Sleeping Pod provides a sleeping space, the Galley supports food preparation, and an Exercise Machine supports planned physical activity. Facilities differ between stations. The station Toilet uses a specialized waste system. Shower Bag is an inherited vocabulary label for washing supplies, not evidence that the ISS has an ordinary shower. A Velcro Strip uses hook-and-loop fastening, and a Laptop is a portable computer. A Book provides reading material, and a Photo records a view or memory. A Personal Locker holds a crew member’s belongings. The illustration shows an example storage space without reproducing private photographs or records.\nExplain the difference between Jet Pack and Tool Belt using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Jet Pack"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Module” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Jet Pack, Tool Belt, Visor, Oxygen Tank, Communication Headset, Sleeping Pod, Galley, Exercise Machine, Toilet, Shower Bag, Velcro Strip, Laptop, Book, Photo, and Personal Locker in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Jet Pack, Tool Belt, Visor, Oxygen Tank, Communication Headset, Sleeping Pod, Galley, Exercise Machine, Toilet, Shower Bag, Velcro Strip, Laptop, Book, Photo, Personal Locker to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Jet Pack and Tool Belt, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Jet Pack names a wearable thrust device used in specified applications, not an everyday way to fly inside the station. A Tool Belt holds tools, a Visor covers the helmet viewing area, and an Oxygen Tank stores oxygen for the supported system. Pause and answer: Which screen covers the helmet viewing area?"
     },
     "spacedReview": "1 lesson(s) back: Module, Airlock from space-station-1\n3 lesson(s) back: Snowmobile, Ice Breaker from arctic-4\n7 lesson(s) back: Sonar, Radio from submarine-5"
   },
@@ -380,7 +346,7 @@
       "صندوق تجارب مزود بقفازات",
       "حجرة نمو النباتات",
       "جهاز إعادة تدوير الماء",
-      "يرشّح هواء",
+      "مرشح هواء",
       "مطياف",
       "حاوية عينة",
       "جهاز تسجيل بيانات",
@@ -389,135 +355,118 @@
       "شاشة مراقبة",
       "لوحة مفاتيح",
       "عصا تحكم",
-      "إذاعة"
+      "جهاز لاسلكي"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "130-160 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Microscope", "Centrifuge", "Glove Box", "Plant Growth Chamber"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.",
+          "scenario": "A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Microscope", "Centrifuge", "Glove Box"],
-            "expectedAnswer": "Microscope"
+            "question": "Which enclosure has built-in gloves?",
+            "options": ["Glove Box", "Microscope", "Centrifuge"],
+            "expectedAnswer": "Glove Box"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Microscope as the central item; include Microscope, Centrifuge, and Glove Box naturally where visually appropriate, but make the real-world use of Microscope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Glove Box in a space station context. Use the written scenario as the source of meaning: A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Water Recycler", "Air Filter", "Spectrometer", "Sample Container"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.",
+          "scenario": "The Water Recycler recovers water through the station’s treatment system. An Air Filter removes specified airborne contaminants. A Spectrometer measures a spectrum, and a Sample Container holds material. Clear-looking water alone is not proof of treatment or suitability.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which system recovers water through treatment?",
             "options": ["Water Recycler", "Air Filter", "Spectrometer"],
             "expectedAnswer": "Water Recycler"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Water Recycler as the central item; include Water Recycler, Air Filter, and Spectrometer naturally where visually appropriate, but make the real-world use of Water Recycler the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Water Recycler in a space station context. Use the written scenario as the source of meaning: The Water Recycler recovers water through the station’s treatment system. An Air Filter removes specified airborne contaminants. A Spectrometer measures a spectrum, and a Sample Container holds material. Clear-looking water alone is not proof of treatment or suitability. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Data Logger", "Experiment Rack", "Control Panel", "Monitor"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.",
+          "scenario": "A Data Logger records measurements over time. An Experiment Rack holds equipment, a Control Panel carries controls, and a Monitor displays information. The text supplies measurements rather than relying on invented numbers in an image.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device records measurements over time?",
             "options": ["Data Logger", "Experiment Rack", "Control Panel"],
             "expectedAnswer": "Data Logger"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Data Logger as the central item; include Data Logger, Experiment Rack, and Control Panel naturally where visually appropriate, but make the real-world use of Data Logger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Data Logger in a space station context. Use the written scenario as the source of meaning: A Data Logger records measurements over time. An Experiment Rack holds equipment, a Control Panel carries controls, and a Monitor displays information. The text supplies measurements rather than relying on invented numbers in an image. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Keyboard", "Joystick", "Radio"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.",
+          "scenario": "The Keyboard enters information using keys, a Joystick is a movable control stick, and the Radio communicates using radio waves. The station specialist identifies each device without asking visitors to operate the system.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Keyboard", "Joystick", "Radio"],
-            "expectedAnswer": "Keyboard"
+            "question": "Which control is a movable stick?",
+            "options": ["Joystick", "Keyboard", "Radio"],
+            "expectedAnswer": "Joystick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Keyboard as the central item; include Keyboard, Joystick, and Radio naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Joystick in a space station context. Use the written scenario as the source of meaning: The Keyboard enters information using keys, a Joystick is a movable control stick, and the Radio communicates using radio waves. The station specialist identifies each device without asking visitors to operate the system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Microscope, Centrifuge, Glove Box, and Plant Growth Chamber. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Water Recycler, Air Filter, Spectrometer, and Sample Container. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Data Logger, Experiment Rack, Control Panel, and Monitor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Keyboard, Joystick, and Radio. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: Comparing the equipment",
+      "text": "A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions. The Water Recycler recovers water through the station’s treatment system. An Air Filter removes specified airborne contaminants. A Spectrometer measures a spectrum, and a Sample Container holds material. Clear-looking water alone is not proof of treatment or suitability. A Data Logger records measurements over time. An Experiment Rack holds equipment, a Control Panel carries controls, and a Monitor displays information. The text supplies measurements rather than relying on invented numbers in an image. The Keyboard enters information using keys, a Joystick is a movable control stick, and the Radio communicates using radio waves. The station specialist identifies each device without asking visitors to operate the system.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Centrifuge, Glove Box, and Plant Growth Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Microscope",
+        "prompt": "A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions.\nWhich enclosure has built-in gloves?",
+        "answer": "Glove Box",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Recycler, Air Filter, Spectrometer, and Sample Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Water Recycler recovers water through the station’s treatment system. An Air Filter removes specified airborne contaminants. A Spectrometer measures a spectrum, and a Sample Container holds material. Clear-looking water alone is not proof of treatment or suitability.\nWhich system recovers water through treatment?",
         "answer": "Water Recycler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Data Logger, Experiment Rack, Control Panel, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Data Logger records measurements over time. An Experiment Rack holds equipment, a Control Panel carries controls, and a Monitor displays information. The text supplies measurements rather than relying on invented numbers in an image.\nWhich device records measurements over time?",
         "answer": "Data Logger",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Joystick, and Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Keyboard",
+        "prompt": "The Keyboard enters information using keys, a Joystick is a movable control stick, and the Radio communicates using radio waves. The station specialist identifies each device without asking visitors to operate the system.\nWhich control is a movable stick?",
+        "answer": "Joystick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions. The Water Recycler recovers water through the station’s treatment system. An Air Filter removes specified airborne contaminants. A Spectrometer measures a spectrum, and a Sample Container holds material. Clear-looking water alone is not proof of treatment or suitability. A Data Logger records measurements over time. An Experiment Rack holds equipment, a Control Panel carries controls, and a Monitor displays information. The text supplies measurements rather than relying on invented numbers in an image. The Keyboard enters information using keys, a Joystick is a movable control stick, and the Radio communicates using radio waves. The station specialist identifies each device without asking visitors to operate the system.\nExplain the difference between Microscope and Centrifuge using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Microscope"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Jet Pack” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Microscope, Centrifuge, Glove Box, Plant Growth Chamber, Water Recycler, Air Filter, Spectrometer, Sample Container, Data Logger, Experiment Rack, Control Panel, Monitor, Keyboard, Joystick, and Radio in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Microscope, Centrifuge, Glove Box, Plant Growth Chamber, Water Recycler, Air Filter, Spectrometer, Sample Container, Data Logger, Experiment Rack, Control Panel, Monitor, Keyboard, Joystick, Radio to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Microscope and Centrifuge, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Microscope enlarges small details, and a Centrifuge rotates samples under its experiment design. A Glove Box is an enclosure with built-in gloves for contained work. A Plant Growth Chamber provides controlled growing conditions. Pause and answer: Which enclosure has built-in gloves?"
     },
     "spacedReview": "1 lesson(s) back: Jet Pack, Tool Belt from space-station-2\n3 lesson(s) back: Telescope, Flag from arctic-5\n7 lesson(s) back: Polar Bear, Arctic Fox from arctic-1"
   },
@@ -549,7 +498,7 @@
       "Aurora"
     ],
     "targetWordsArabic": [
-      "ساعة حائط / ساعة",
+      "ساعة",
       "شاشة عرض خريطة",
       "كاميرا",
       "إنذار",
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "141-171 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clock", "Map Display", "Camera", "Alarm"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.",
+          "scenario": "A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Clock", "Map Display", "Camera"],
-            "expectedAnswer": "Clock"
+            "question": "Which device signals the condition needing attention?",
+            "options": ["Alarm", "Clock", "Map Display"],
+            "expectedAnswer": "Alarm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Clock as the central item; include Clock, Map Display, and Camera naturally where visually appropriate, but make the real-world use of Clock the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Alarm in a space station context. Use the written scenario as the source of meaning: A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Checklist", "Earth View", "Stars", "Moon"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.",
+          "scenario": "The crew follows a Checklist for the planned task. Earth View describes looking toward Earth, while Stars and the Moon are different astronomical objects. The Moon is Earth’s natural satellite; the task is vocabulary recognition rather than navigation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Checklist", "Earth View", "Stars"],
-            "expectedAnswer": "Checklist"
+            "question": "Which target describes looking toward Earth?",
+            "options": ["Earth View", "Checklist", "Stars"],
+            "expectedAnswer": "Earth View"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Checklist as the central item; include Checklist, Earth View, and Stars naturally where visually appropriate, but make the real-world use of Checklist the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Earth View in a space station context. Use the written scenario as the source of meaning: The crew follows a Checklist for the planned task. Earth View describes looking toward Earth, while Stars and the Moon are different astronomical objects. The Moon is Earth’s natural satellite; the task is vocabulary recognition rather than navigation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sun", "Satellite", "Space Debris", "Cargo Ship"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.",
+          "scenario": "The Sun is a star. A Satellite orbits another body, Space Debris includes unused human-made objects or fragments, and a Cargo Ship here is a spacecraft carrying supplies. A cargo vessel does not prove a particular delivery has occurred.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sun", "Satellite", "Space Debris"],
-            "expectedAnswer": "Sun"
+            "question": "Which spacecraft carries supplies in this account?",
+            "options": ["Cargo Ship", "Sun", "Satellite"],
+            "expectedAnswer": "Cargo Ship"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Sun as the central item; include Sun, Satellite, and Space Debris naturally where visually appropriate, but make the real-world use of Sun the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cargo Ship in a space station context. Use the written scenario as the source of meaning: The Sun is a star. A Satellite orbits another body, Space Debris includes unused human-made objects or fragments, and a Cargo Ship here is a spacecraft carrying supplies. A cargo vessel does not prove a particular delivery has occurred. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Robotic Arm", "Solar Flare", "Aurora"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.",
+          "scenario": "A Robotic Arm handles objects under authorized control. A Solar Flare is a burst of radiation from the Sun; Aurora is a light display in a planet’s upper atmosphere. The written account distinguishes machinery from natural phenomena.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the controlled mechanical device?",
             "options": ["Robotic Arm", "Solar Flare", "Aurora"],
             "expectedAnswer": "Robotic Arm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Robotic Arm as the central item; include Robotic Arm, Solar Flare, and Aurora naturally where visually appropriate, but make the real-world use of Robotic Arm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Robotic Arm in a space station context. Use the written scenario as the source of meaning: A Robotic Arm handles objects under authorized control. A Solar Flare is a burst of radiation from the Sun; Aurora is a light display in a planet’s upper atmosphere. The written account distinguishes machinery from natural phenomena. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Clock, Map Display, Camera, and Alarm. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Checklist, Earth View, Stars, and Moon. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Sun, Satellite, Space Debris, and Cargo Ship. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Robotic Arm, Solar Flare, and Aurora. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: A guided walk",
+      "text": "A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause. The crew follows a Checklist for the planned task. Earth View describes looking toward Earth, while Stars and the Moon are different astronomical objects. The Moon is Earth’s natural satellite; the task is vocabulary recognition rather than navigation. The Sun is a star. A Satellite orbits another body, Space Debris includes unused human-made objects or fragments, and a Cargo Ship here is a spacecraft carrying supplies. A cargo vessel does not prove a particular delivery has occurred. A Robotic Arm handles objects under authorized control. A Solar Flare is a burst of radiation from the Sun; Aurora is a light display in a planet’s upper atmosphere. The written account distinguishes machinery from natural phenomena.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock, Map Display, Camera, and Alarm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Clock",
+        "prompt": "A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause.\nWhich device signals the condition needing attention?",
+        "answer": "Alarm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Checklist, Earth View, Stars, and Moon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Checklist",
+        "prompt": "The crew follows a Checklist for the planned task. Earth View describes looking toward Earth, while Stars and the Moon are different astronomical objects. The Moon is Earth’s natural satellite; the task is vocabulary recognition rather than navigation.\nWhich target describes looking toward Earth?",
+        "answer": "Earth View",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sun, Satellite, Space Debris, and Cargo Ship and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sun",
+        "prompt": "The Sun is a star. A Satellite orbits another body, Space Debris includes unused human-made objects or fragments, and a Cargo Ship here is a spacecraft carrying supplies. A cargo vessel does not prove a particular delivery has occurred.\nWhich spacecraft carries supplies in this account?",
+        "answer": "Cargo Ship",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robotic Arm, Solar Flare, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Robotic Arm handles objects under authorized control. A Solar Flare is a burst of radiation from the Sun; Aurora is a light display in a planet’s upper atmosphere. The written account distinguishes machinery from natural phenomena.\nWhich target names the controlled mechanical device?",
         "answer": "Robotic Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause. The crew follows a Checklist for the planned task. Earth View describes looking toward Earth, while Stars and the Moon are different astronomical objects. The Moon is Earth’s natural satellite; the task is vocabulary recognition rather than navigation. The Sun is a star. A Satellite orbits another body, Space Debris includes unused human-made objects or fragments, and a Cargo Ship here is a spacecraft carrying supplies. A cargo vessel does not prove a particular delivery has occurred. A Robotic Arm handles objects under authorized control. A Solar Flare is a burst of radiation from the Sun; Aurora is a light display in a planet’s upper atmosphere. The written account distinguishes machinery from natural phenomena.\nExplain the difference between Clock and Map Display using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Clock"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Microscope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Clock, Map Display, Camera, Alarm, Checklist, Earth View, Stars, Moon, Sun, Satellite, Space Debris, Cargo Ship, Robotic Arm, Solar Flare, and Aurora in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Clock, Map Display, Camera, Alarm, Checklist, Earth View, Stars, Moon, Sun, Satellite, Space Debris, Cargo Ship, Robotic Arm, Solar Flare, Aurora to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Clock and Map Display, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Clock shows time, a Map Display presents a map, and a Camera records images. An Alarm signals a specified condition needing attention under the crew’s procedures. Its sound or appearance alone does not establish the cause. Pause and answer: Which device signals the condition needing attention?"
     },
     "spacedReview": "1 lesson(s) back: Microscope, Centrifuge from space-station-3\n3 lesson(s) back: Module, Airlock from space-station-1\n7 lesson(s) back: Ice Cap, Snowfield from arctic-2"
   },
@@ -723,9 +655,9 @@
       "Repair"
     ],
     "targetWordsArabic": [
-      "وحدة مختبر",
+      "وحدة مختبر فضائي",
       "أماكن إقامة الطاقم",
-      "عقدة",
+      "وحدة ربط",
       "حقيبة دفع نفاث",
       "جهاز مشي",
       "مولد أكسجين",
@@ -733,139 +665,122 @@
       "نافذة مشاهدة",
       "سير في الفضاء",
       "تجربة",
-      "التحام",
+      "يلتحم",
       "مدار",
-      "مشروب مع آيس كريم",
-      "تمرين",
-      "إصلاح"
+      "يطفو في حالة انعدام الوزن الظاهري",
+      "يمارس الرياضة",
+      "يصلح"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "129-159 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lab Module", "Crew Quarters", "Node", "Jetpack"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.",
+          "scenario": "The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Lab Module", "Crew Quarters", "Node"],
-            "expectedAnswer": "Lab Module"
+            "question": "Which module connects station sections?",
+            "options": ["Node", "Lab Module", "Crew Quarters"],
+            "expectedAnswer": "Node"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Lab Module as the main location; include Lab Module, Crew Quarters, and Node naturally where visually appropriate, but make the real-world use of Lab Module the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Node in a space station context. Use the written scenario as the source of meaning: The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Treadmill", "Oxygen Generator", "Comm Dish", "Viewport"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.",
+          "scenario": "A Treadmill supports exercise under the station’s restraints and procedures. An Oxygen Generator produces oxygen for the life-support system. A Comm Dish supports communications, while a Viewport is a viewing window.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Treadmill", "Oxygen Generator", "Comm Dish"],
-            "expectedAnswer": "Treadmill"
+            "question": "Which equipment produces oxygen for life support?",
+            "options": ["Oxygen Generator", "Treadmill", "Comm Dish"],
+            "expectedAnswer": "Oxygen Generator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Treadmill as the central item; include Treadmill, Oxygen Generator, and Comm Dish naturally where visually appropriate, but make the real-world use of Treadmill the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Oxygen Generator in a space station context. Use the written scenario as the source of meaning: A Treadmill supports exercise under the station’s restraints and procedures. An Oxygen Generator produces oxygen for the life-support system. A Comm Dish supports communications, while a Viewport is a viewing window. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Spacewalk", "Experiment", "Dock", "Orbit"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.",
+          "scenario": "A Spacewalk takes an astronaut outside the spacecraft under professional procedures. An Experiment investigates a question. Dock is the verb meaning connect a spacecraft to a compatible interface, while Orbit here names the path around another body.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Spacewalk", "Experiment", "Dock"],
-            "expectedAnswer": "Spacewalk"
+            "question": "Which verb means connect a spacecraft to the compatible interface?",
+            "options": ["Dock", "Spacewalk", "Experiment"],
+            "expectedAnswer": "Dock"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spacewalk as the central item; include Spacewalk, Experiment, and Dock naturally where visually appropriate, but make the real-world use of Spacewalk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dock in a space station context. Use the written scenario as the source of meaning: A Spacewalk takes an astronaut outside the spacecraft under professional procedures. An Experiment investigates a question. Dock is the verb meaning connect a spacecraft to a compatible interface, while Orbit here names the path around another body. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Float", "Exercise", "Repair"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.",
+          "scenario": "In the station’s microgravity environment, Float means remain suspended or drift without standing on a floor. Crew members Exercise to maintain fitness and Repair supported equipment as assigned. Gravity still acts on the orbiting station.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which verb describes remaining suspended or drifting?",
             "options": ["Float", "Exercise", "Repair"],
             "expectedAnswer": "Float"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Float as the central item; include Float, Exercise, and Repair naturally where visually appropriate, but make the real-world use of Float the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Float in a space station context. Use the written scenario as the source of meaning: In the station’s microgravity environment, Float means remain suspended or drift without standing on a floor. Crew members Exercise to maintain fitness and Repair supported equipment as assigned. Gravity still acts on the orbiting station. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lab Module, Crew Quarters, Node, and Jetpack. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Treadmill, Oxygen Generator, Comm Dish, and Viewport. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Spacewalk, Experiment, Dock, and Orbit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Float, Exercise, and Repair. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: A practical discussion",
+      "text": "The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use. A Treadmill supports exercise under the station’s restraints and procedures. An Oxygen Generator produces oxygen for the life-support system. A Comm Dish supports communications, while a Viewport is a viewing window. A Spacewalk takes an astronaut outside the spacecraft under professional procedures. An Experiment investigates a question. Dock is the verb meaning connect a spacecraft to a compatible interface, while Orbit here names the path around another body. In the station’s microgravity environment, Float means remain suspended or drift without standing on a floor. Crew members Exercise to maintain fitness and Repair supported equipment as assigned. Gravity still acts on the orbiting station.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lab Module, Crew Quarters, Node, and Jetpack and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Lab Module",
+        "prompt": "The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use.\nWhich module connects station sections?",
+        "answer": "Node",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treadmill, Oxygen Generator, Comm Dish, and Viewport and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Treadmill",
+        "prompt": "A Treadmill supports exercise under the station’s restraints and procedures. An Oxygen Generator produces oxygen for the life-support system. A Comm Dish supports communications, while a Viewport is a viewing window.\nWhich equipment produces oxygen for life support?",
+        "answer": "Oxygen Generator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spacewalk, Experiment, Dock, and Orbit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Spacewalk",
+        "prompt": "A Spacewalk takes an astronaut outside the spacecraft under professional procedures. An Experiment investigates a question. Dock is the verb meaning connect a spacecraft to a compatible interface, while Orbit here names the path around another body.\nWhich verb means connect a spacecraft to the compatible interface?",
+        "answer": "Dock",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Float, Exercise, and Repair and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the station’s microgravity environment, Float means remain suspended or drift without standing on a floor. Crew members Exercise to maintain fitness and Repair supported equipment as assigned. Gravity still acts on the orbiting station.\nWhich verb describes remaining suspended or drifting?",
         "answer": "Float",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use. A Treadmill supports exercise under the station’s restraints and procedures. An Oxygen Generator produces oxygen for the life-support system. A Comm Dish supports communications, while a Viewport is a viewing window. A Spacewalk takes an astronaut outside the spacecraft under professional procedures. An Experiment investigates a question. Dock is the verb meaning connect a spacecraft to a compatible interface, while Orbit here names the path around another body. In the station’s microgravity environment, Float means remain suspended or drift without standing on a floor. Crew members Exercise to maintain fitness and Repair supported equipment as assigned. Gravity still acts on the orbiting station.\nExplain the difference between Lab Module and Crew Quarters using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Lab Module"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Clock” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Lab Module, Crew Quarters, Node, Jetpack, Treadmill, Oxygen Generator, Comm Dish, Viewport, Spacewalk, Experiment, Dock, Orbit, Float, Exercise, and Repair in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Lab Module, Crew Quarters, Node, Jetpack, Treadmill, Oxygen Generator, Comm Dish, Viewport, Spacewalk, Experiment, Dock, Orbit, Float, Exercise, Repair to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Lab Module and Crew Quarters, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Lab Module contains scientific facilities, and Crew Quarters provide living space. A Node connects station sections. Jetpack is another spelling of the wearable thrust device discussed earlier; this list does not imply routine indoor use. Pause and answer: Which module connects station sections?"
     },
     "spacedReview": "1 lesson(s) back: Clock, Map Display from space-station-4\n3 lesson(s) back: Jet Pack, Tool Belt from space-station-2\n7 lesson(s) back: Peninsula, Island from arctic-3"
   },
@@ -885,72 +800,55 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "66-96 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Communicate"],
-          "scenario": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.",
+          "scenario": "A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Communicate", "Option 1", "Option 2"],
+            "question": "Which target means share information clearly with another person?",
+            "options": ["Communicate"],
             "expectedAnswer": "Communicate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Communicate as the central item; include Communicate, Option 1, and Option 2 naturally where visually appropriate, but make the real-world use of Communicate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Communicate in a space station context. Use the written scenario as the source of meaning: A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written space station situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Space Station",
-      "text": "At the space station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Communicate. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Space Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Space Station: A practical discussion",
+      "text": "A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph.",
+      "imageBrief": "One uncluttered space station setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the space station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Communicate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph.\nWhich target means share information clearly with another person?",
         "answer": "Communicate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph.\nExplain how the crew member checks that the information was understood.",
+        "answer": "The support specialist repeats the key information, and the crew member asks whether the explanation is understood.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Communicate"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lab Module” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the space station task. Use Communicate in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write two sentences using Communicate to describe sharing an observation with a colleague. Include a way to check that the colleague understood.",
+        "answer": "Open response: communicate means share information; the response must include a check of the listener’s understanding.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Space Station: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Space Station: A guided discussion",
+      "idea": "Show a crew member at a communication workstation. Narrate the stated observation, the distinction between measurement and assumption, and the listener repeating the key information. Do not present an equipment image as proof that the message was understood.",
+      "scriptStarter": "Listen to the guide's account: A crew member needs to Communicate an observation clearly to mission support. She states what she observed, distinguishes a measurement from an assumption, and asks whether her explanation is understood. The support specialist repeats the key information before discussing the next authorized step. In this lesson Communicate means share information, not merely transmit an unexplained signal. The account practices accurate language and listening; it does not teach spacecraft operations or infer success from a headset photograph. Pause and answer: Which target means share information clearly with another person?"
     },
     "spacedReview": "1 lesson(s) back: Lab Module, Crew Quarters from space-station-5\n3 lesson(s) back: Microscope, Centrifuge from space-station-3\n7 lesson(s) back: Snowmobile, Ice Breaker from arctic-4"
   }

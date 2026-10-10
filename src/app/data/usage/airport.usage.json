@@ -44,10 +44,10 @@
       "مدرج الطائرات"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "141-171 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -59,7 +59,15 @@
             "expectedAnswer": "check-in counter"
           },
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the check-in counter as the central item; include check-in counter, boarding pass, and passport naturally where visually appropriate, but make the real-world use of check-in counter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible.",
+          "learningContext": {
+            "sourceScenario": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare check-in counter, boarding pass, passport, and visa and choose the option that fits the situation.",
+            "sourceQuestion": "Which option best identifies the item or feature central to the adult's task?",
+            "sourceAnswer": "check-in counter",
+            "scenario": "At the airport, Omar takes his passport to the check-in counter to register for his flight. The airline agent checks his booking before giving him a boarding pass. A visa concerns permission under a country’s rules; it is not the airline’s registration desk.",
+            "question": "Where does Omar register for his flight?",
+            "imageBrief": "Accurate word-reference image supporting the airport account, showing check-in counter as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,88 +79,96 @@
             "expectedAnswer": "luggage"
           },
           "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the luggage as the central item; include luggage, suitcase, and carry-on naturally where visually appropriate, but make the real-world use of luggage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible.",
+          "learningContext": {
+            "sourceScenario": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare luggage, suitcase, carry-on, and baggage claim and choose the option that fits the situation.",
+            "sourceQuestion": "Which option best identifies the item or feature central to the adult's task?",
+            "sourceAnswer": "luggage",
+            "scenario": "Omar packs his luggage before the trip. He puts clothes in a suitcase and keeps a small carry-on bag for the cabin. Luggage is the general word for his bags, not the baggage claim area.",
+            "question": "What general word names Omar’s bags?",
+            "imageBrief": "Accurate word-reference image supporting the airport account, showing luggage as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting."
+          }
         },
         {
           "chunkNumber": 3,
           "targetWords": ["conveyor belt", "security check", "metal detector", "scanner"],
-          "scenario": "At the security check, Omar puts his bag on a conveyor belt. The belt carries it through a scanner while he walks through a metal detector.",
+          "scenario": "The conveyor belt carries bags through the screening area. Security check names the screening process; metal detector and scanner are devices used for particular checks. The traveler follows staff directions and does not infer inspection results from a picture.",
           "check": {
-            "question": "What carries Omar’s bag through the scanner?",
+            "question": "Which moving belt carries the bags?",
             "options": ["conveyor belt", "security check", "metal detector"],
             "expectedAnswer": "conveyor belt"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for conveyor belt. Context: At the security check, Omar puts his bag on a conveyor belt. The belt carries it through a scanner while he walks through a metal detector. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing conveyor belt as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["terminal", "gate", "runway"],
-          "scenario": "Inside the terminal, Omar follows signs to his gate. Through a window, he sees a plane waiting beside the runway.",
+          "scenario": "The terminal is the passenger building. A gate is a boarding or arrival access point, while runway is the prepared aircraft takeoff and landing surface. Omar stays in the terminal until boarding is called.",
           "check": {
-            "question": "What building is Omar walking through?",
+            "question": "Which target names the passenger building?",
             "options": ["terminal", "gate", "runway"],
             "expectedAnswer": "terminal"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for terminal. Context: Inside the terminal, Omar follows signs to his gate. Through a window, he sees a plane waiting beside the runway. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing terminal as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Airport 1: Omar’s journey",
-      "text": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare check-in counter, boarding pass, passport, and visa and choose the option that fits the situation. In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare luggage, suitcase, carry-on, and baggage claim and choose the option that fits the situation. At the security check, Omar puts his bag on a conveyor belt. The belt carries it through a scanner while he walks through a metal detector. Inside the terminal, Omar follows signs to his gate. Through a window, he sees a plane waiting beside the runway.",
-      "imageBrief": "Unbranded airport setting; no readable signage, logos or incidental people."
+      "title": "Registration and the terminal",
+      "text": "At the airport, Omar takes his passport to the check-in counter to register for his flight. The airline agent checks his booking before giving him a boarding pass. A visa concerns permission under a country’s rules; it is not the airline’s registration desk. Omar packs his luggage before the trip. He puts clothes in a suitcase and keeps a small carry-on bag for the cabin. Luggage is the general word for his bags, not the baggage claim area. The conveyor belt carries bags through the screening area. Security check names the screening process; metal detector and scanner are devices used for particular checks. The traveler follows staff directions and does not infer inspection results from a picture. The terminal is the passenger building. A gate is a boarding or arrival access point, while runway is the prepared aircraft takeoff and landing surface. Omar stays in the terminal until boarding is called.",
+      "imageBrief": "Use independently inspected word references to support Registration and the terminal; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare check-in counter, boarding pass, passport, and visa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "At the airport, Omar takes his passport to the check-in counter to register for his flight. The airline agent checks his booking before giving him a boarding pass. A visa concerns permission under a country’s rules; it is not the airline’s registration desk.\nWhere does Omar register for his flight?",
         "answer": "check-in counter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare luggage, suitcase, carry-on, and baggage claim and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Omar packs his luggage before the trip. He puts clothes in a suitcase and keeps a small carry-on bag for the cabin. Luggage is the general word for his bags, not the baggage claim area.\nWhat general word names Omar’s bags?",
         "answer": "luggage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "At the security check, Omar puts his bag on a conveyor belt. The belt carries it through a scanner while he walks through a metal detector.\nWhat carries Omar’s bag through the scanner?",
+        "prompt": "The conveyor belt carries bags through the screening area. Security check names the screening process; metal detector and scanner are devices used for particular checks. The traveler follows staff directions and does not infer inspection results from a picture.\nWhich moving belt carries the bags?",
         "answer": "conveyor belt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Inside the terminal, Omar follows signs to his gate. Through a window, he sees a plane waiting beside the runway.\nWhat building is Omar walking through?",
+        "prompt": "The terminal is the passenger building. A gate is a boarding or arrival access point, while runway is the prepared aircraft takeoff and landing surface. Omar stays in the terminal until boarding is called.\nWhich target names the passenger building?",
         "answer": "terminal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one step in Omar’s journey using two lesson words.",
-        "answer": "In the l6 airport setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare check-in counter, boarding pass, passport, and visa and choose the option that fits the situation.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "airport-1-personal-use"
+        "prompt": "At the airport, Omar takes his passport to the check-in counter to register for his flight. The airline agent checks his booking before giving him a boarding pass. A visa concerns permission under a country’s rules; it is not the airline’s registration desk. Omar packs his luggage before the trip. He puts clothes in a suitcase and keeps a small carry-on bag for the cabin. Luggage is the general word for his bags, not the baggage claim area. The conveyor belt carries bags through the screening area. Security check names the screening process; metal detector and scanner are devices used for particular checks. The traveler follows staff directions and does not infer inspection results from a picture. The terminal is the passenger building. A gate is a boarding or arrival access point, while runway is the prepared aircraft takeoff and landing surface. Omar stays in the terminal until boarding is called.\nCompare “check-in counter” and “boarding pass” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Imagine a friend is taking a flight for the first time. Give one helpful sentence using a lesson word.",
-        "answer": "Check your boarding pass before going to the gate.",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "airport-1-transfer"
+        "prompt": "Write an original short visitor or traveler account using check-in counter, boarding pass, passport, visa, luggage, suitcase, carry-on, baggage claim, conveyor belt, security check, metal detector, scanner, terminal, gate, runway in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Airport: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Registration and the terminal",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "At the airport, Omar takes his passport to the check-in counter to register for his flight. The airline agent checks his booking before giving him a boarding pass. A visa concerns permission under a country’s rules; it is not the airline’s registration desk. Where does Omar register for his flight?"
     },
     "spacedReview": "1 lesson(s) back: engineer, porter from train-station-4\n3 lesson(s) back: information desk, newsstand from train-station-2\n7 lesson(s) back: seal, walrus from aquarium-2"
   },
@@ -201,115 +217,115 @@
       "مروحة دافعة"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["control tower", "hangar", "departure lounge", "arrivals hall"],
-          "scenario": "From the departure lounge, Omar sees a control tower overlooking the airfield. An aircraft is parked in a nearby hangar, while his family waits in the arrivals hall.",
+          "scenario": "The control tower provides a workplace for air traffic controllers. Hangar houses aircraft, departure lounge provides passenger waiting space, and arrivals hall receives arriving travelers. The account distinguishes their functions without showing operating instructions.",
           "check": {
-            "question": "Which tall building overlooks the airfield?",
+            "question": "Which workplace is used by the controllers?",
             "options": ["control tower", "hangar", "departure lounge"],
             "expectedAnswer": "control tower"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for control tower. Context: From the departure lounge, Omar sees a control tower overlooking the airfield. An aircraft is parked in a nearby hangar, while his family waits in the arrivals hall. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing control tower as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["duty-free shop", "food court", "restroom", "elevator"],
-          "scenario": "Before boarding, Omar visits the duty-free shop to buy a gift. The food court and restroom are nearby, and an elevator connects the floors.",
+          "scenario": "The duty-free shop sells eligible goods under particular tax and travel rules. Food court contains food outlets, restroom washing and toilet facilities, and elevator lifts people between floors. Duty-free does not mean every purchase is exempt from all destination charges.",
           "check": {
-            "question": "Where does Omar buy the gift?",
+            "question": "Which shop sells the eligible goods under the stated tax rules?",
             "options": ["duty-free shop", "food court", "restroom"],
             "expectedAnswer": "duty-free shop"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for duty-free shop. Context: Before boarding, Omar visits the duty-free shop to buy a gift. The food court and restroom are nearby, and an elevator connects the floors. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing duty-free shop as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["escalator", "airplane", "jet engine", "wing"],
-          "scenario": "Omar takes the escalator to the upper floor. Through the glass, he sees an airplane with a jet engine beneath its wing.",
+          "scenario": "The escalator is a moving stairway. Airplane names a fixed-wing aircraft, jet engine its propulsion equipment in the specified example, and wing a supporting flight structure. The traveler uses the escalator to reach another terminal floor.",
           "check": {
-            "question": "What moving staircase takes Omar upstairs?",
+            "question": "Which target names the moving stairway?",
             "options": ["escalator", "airplane", "jet engine"],
             "expectedAnswer": "escalator"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for escalator. Context: Omar takes the escalator to the upper floor. Through the glass, he sees an airplane with a jet engine beneath its wing. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing escalator as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["cockpit", "fuselage", "propeller"],
-          "scenario": "In a model of the aircraft, the cockpit is at the front of the fuselage. A small propeller model is displayed beside it.",
+          "scenario": "The cockpit is the pilot’s working compartment. Fuselage names the main aircraft body, and propeller a rotating device generating thrust in the relevant aircraft. An aircraft need not have both the illustrated jet engine and a propeller.",
           "check": {
-            "question": "Where would the pilots sit in the aircraft model?",
+            "question": "Which compartment is the pilot’s workplace?",
             "options": ["cockpit", "fuselage", "propeller"],
             "expectedAnswer": "cockpit"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for cockpit. Context: In a model of the aircraft, the cockpit is at the front of the fuselage. A small propeller model is displayed beside it. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing cockpit as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Airport 2: Omar’s journey",
-      "text": "From the departure lounge, Omar sees a control tower overlooking the airfield. An aircraft is parked in a nearby hangar, while his family waits in the arrivals hall. Before boarding, Omar visits the duty-free shop to buy a gift. The food court and restroom are nearby, and an elevator connects the floors. Omar takes the escalator to the upper floor. Through the glass, he sees an airplane with a jet engine beneath its wing. In a model of the aircraft, the cockpit is at the front of the fuselage. A small propeller model is displayed beside it.",
-      "imageBrief": "Unbranded airport setting; no readable signage, logos or incidental people."
+      "title": "Airport facilities and aircraft",
+      "text": "The control tower provides a workplace for air traffic controllers. Hangar houses aircraft, departure lounge provides passenger waiting space, and arrivals hall receives arriving travelers. The account distinguishes their functions without showing operating instructions. The duty-free shop sells eligible goods under particular tax and travel rules. Food court contains food outlets, restroom washing and toilet facilities, and elevator lifts people between floors. Duty-free does not mean every purchase is exempt from all destination charges. The escalator is a moving stairway. Airplane names a fixed-wing aircraft, jet engine its propulsion equipment in the specified example, and wing a supporting flight structure. The traveler uses the escalator to reach another terminal floor. The cockpit is the pilot’s working compartment. Fuselage names the main aircraft body, and propeller a rotating device generating thrust in the relevant aircraft. An aircraft need not have both the illustrated jet engine and a propeller.",
+      "imageBrief": "Use independently inspected word references to support Airport facilities and aircraft; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "From the departure lounge, Omar sees a control tower overlooking the airfield. An aircraft is parked in a nearby hangar, while his family waits in the arrivals hall.\nWhich tall building overlooks the airfield?",
+        "prompt": "The control tower provides a workplace for air traffic controllers. Hangar houses aircraft, departure lounge provides passenger waiting space, and arrivals hall receives arriving travelers. The account distinguishes their functions without showing operating instructions.\nWhich workplace is used by the controllers?",
         "answer": "control tower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before boarding, Omar visits the duty-free shop to buy a gift. The food court and restroom are nearby, and an elevator connects the floors.\nWhere does Omar buy the gift?",
+        "prompt": "The duty-free shop sells eligible goods under particular tax and travel rules. Food court contains food outlets, restroom washing and toilet facilities, and elevator lifts people between floors. Duty-free does not mean every purchase is exempt from all destination charges.\nWhich shop sells the eligible goods under the stated tax rules?",
         "answer": "duty-free shop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Omar takes the escalator to the upper floor. Through the glass, he sees an airplane with a jet engine beneath its wing.\nWhat moving staircase takes Omar upstairs?",
+        "prompt": "The escalator is a moving stairway. Airplane names a fixed-wing aircraft, jet engine its propulsion equipment in the specified example, and wing a supporting flight structure. The traveler uses the escalator to reach another terminal floor.\nWhich target names the moving stairway?",
         "answer": "escalator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In a model of the aircraft, the cockpit is at the front of the fuselage. A small propeller model is displayed beside it.\nWhere would the pilots sit in the aircraft model?",
+        "prompt": "The cockpit is the pilot’s working compartment. Fuselage names the main aircraft body, and propeller a rotating device generating thrust in the relevant aircraft. An aircraft need not have both the illustrated jet engine and a propeller.\nWhich compartment is the pilot’s workplace?",
         "answer": "cockpit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one step in Omar’s journey using two lesson words.",
-        "answer": "From the departure lounge, Omar sees a control tower overlooking the airfield. An aircraft is parked in a nearby hangar, while his family waits in the arrivals hall.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "airport-2-personal-use"
+        "prompt": "The control tower provides a workplace for air traffic controllers. Hangar houses aircraft, departure lounge provides passenger waiting space, and arrivals hall receives arriving travelers. The account distinguishes their functions without showing operating instructions. The duty-free shop sells eligible goods under particular tax and travel rules. Food court contains food outlets, restroom washing and toilet facilities, and elevator lifts people between floors. Duty-free does not mean every purchase is exempt from all destination charges. The escalator is a moving stairway. Airplane names a fixed-wing aircraft, jet engine its propulsion equipment in the specified example, and wing a supporting flight structure. The traveler uses the escalator to reach another terminal floor. The cockpit is the pilot’s working compartment. Fuselage names the main aircraft body, and propeller a rotating device generating thrust in the relevant aircraft. An aircraft need not have both the illustrated jet engine and a propeller.\nCompare “control tower” and “hangar” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Imagine a friend is taking a flight for the first time. Give one helpful sentence using a lesson word.",
-        "answer": "Check your boarding pass before going to the gate.",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "airport-2-transfer"
+        "prompt": "Write an original short visitor or traveler account using control tower, hangar, departure lounge, arrivals hall, duty-free shop, food court, restroom, elevator, escalator, airplane, jet engine, wing, cockpit, fuselage, propeller in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Airport: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Airport facilities and aircraft",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The control tower provides a workplace for air traffic controllers. Hangar houses aircraft, departure lounge provides passenger waiting space, and arrivals hall receives arriving travelers. The account distinguishes their functions without showing operating instructions. Which workplace is used by the controllers?"
     },
     "spacedReview": "1 lesson(s) back: check-in counter, boarding pass from airport-1\n3 lesson(s) back: seat number, first class from train-station-3\n7 lesson(s) back: anemone, sea cucumber from aquarium-3"
   },
@@ -358,115 +374,115 @@
       "عامل مناولة أمتعة"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "139-169 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["tail", "landing gear", "window", "aisle"],
-          "scenario": "From his seat by the window, Omar sees the aircraft’s tail at the back. The landing gear is below the plane; the aisle runs between the seats inside.",
+          "scenario": "The tail is the aircraft’s rear assembly. Landing gear supports it on the ground, window gives an outside view, and aisle is the passage between seats. The guide identifies the rear assembly separately from cabin fittings.",
           "check": {
-            "question": "Which part is at the back of the aircraft?",
+            "question": "Which target names the rear aircraft assembly?",
             "options": ["tail", "landing gear", "window"],
             "expectedAnswer": "tail"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for tail. Context: From his seat by the window, Omar sees the aircraft’s tail at the back. The landing gear is below the plane; the aisle runs between the seats inside. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing tail as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["overhead bin", "tray table", "pilot", "co-pilot"],
-          "scenario": "Before departure, Omar puts his bag in the overhead bin and folds away his tray table. The pilot and co-pilot prepare for the flight.",
+          "scenario": "The overhead bin stores cabin baggage above seats. A tray table folds beside a seat, while pilot and co-pilot name qualified flight crew roles. Omar puts his permitted bag in the overhead bin under crew instructions.",
           "check": {
-            "question": "Where does Omar put his bag?",
+            "question": "Which compartment stores the cabin baggage above the seats?",
             "options": ["overhead bin", "tray table", "pilot"],
             "expectedAnswer": "overhead bin"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for overhead bin. Context: Before departure, Omar puts his bag in the overhead bin and folds away his tray table. The pilot and co-pilot prepare for the flight. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing overhead bin as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["flight attendant", "passenger", "ground crew", "air traffic controller"],
-          "scenario": "A flight attendant helps a passenger find a seat. Outside, the ground crew finish their checks while an air traffic controller coordinates aircraft movements.",
+          "scenario": "The flight attendant provides cabin safety and passenger service. Passenger names the traveler, ground crew the workers supporting aircraft on the ground, and air traffic controller the trained person coordinating aircraft movements. Roles are supplied by the account, not guessed from clothing.",
           "check": {
-            "question": "Who helps the passenger find a seat inside the aircraft?",
+            "question": "Who provides cabin safety and passenger service?",
             "options": ["flight attendant", "passenger", "ground crew"],
             "expectedAnswer": "flight attendant"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for flight attendant. Context: A flight attendant helps a passenger find a seat. Outside, the ground crew finish their checks while an air traffic controller coordinates aircraft movements. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing flight attendant as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["customs officer", "immigration officer", "baggage handler"],
-          "scenario": "After arrival, a customs officer asks Omar about goods in his bags. An immigration officer checks travel documents, while a baggage handler unloads suitcases.",
+          "scenario": "The customs officer checks goods and declarations under border rules. Immigration officer checks travel documents and entry status, while baggage handler loads or moves bags. These roles may differ between jurisdictions and are not interchangeable.",
           "check": {
-            "question": "Who asks about the goods in Omar’s bags?",
+            "question": "Who checks goods and their declarations?",
             "options": ["customs officer", "immigration officer", "baggage handler"],
             "expectedAnswer": "customs officer"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for customs officer. Context: After arrival, a customs officer asks Omar about goods in his bags. An immigration officer checks travel documents, while a baggage handler unloads suitcases. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing customs officer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Airport 3: Omar’s journey",
-      "text": "From his seat by the window, Omar sees the aircraft’s tail at the back. The landing gear is below the plane; the aisle runs between the seats inside. Before departure, Omar puts his bag in the overhead bin and folds away his tray table. The pilot and co-pilot prepare for the flight. A flight attendant helps a passenger find a seat. Outside, the ground crew finish their checks while an air traffic controller coordinates aircraft movements. After arrival, a customs officer asks Omar about goods in his bags. An immigration officer checks travel documents, while a baggage handler unloads suitcases.",
-      "imageBrief": "Unbranded airport setting; no readable signage, logos or incidental people."
+      "title": "Cabin fittings and staff roles",
+      "text": "The tail is the aircraft’s rear assembly. Landing gear supports it on the ground, window gives an outside view, and aisle is the passage between seats. The guide identifies the rear assembly separately from cabin fittings. The overhead bin stores cabin baggage above seats. A tray table folds beside a seat, while pilot and co-pilot name qualified flight crew roles. Omar puts his permitted bag in the overhead bin under crew instructions. The flight attendant provides cabin safety and passenger service. Passenger names the traveler, ground crew the workers supporting aircraft on the ground, and air traffic controller the trained person coordinating aircraft movements. Roles are supplied by the account, not guessed from clothing. The customs officer checks goods and declarations under border rules. Immigration officer checks travel documents and entry status, while baggage handler loads or moves bags. These roles may differ between jurisdictions and are not interchangeable.",
+      "imageBrief": "Use independently inspected word references to support Cabin fittings and staff roles; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "From his seat by the window, Omar sees the aircraft’s tail at the back. The landing gear is below the plane; the aisle runs between the seats inside.\nWhich part is at the back of the aircraft?",
+        "prompt": "The tail is the aircraft’s rear assembly. Landing gear supports it on the ground, window gives an outside view, and aisle is the passage between seats. The guide identifies the rear assembly separately from cabin fittings.\nWhich target names the rear aircraft assembly?",
         "answer": "tail",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before departure, Omar puts his bag in the overhead bin and folds away his tray table. The pilot and co-pilot prepare for the flight.\nWhere does Omar put his bag?",
+        "prompt": "The overhead bin stores cabin baggage above seats. A tray table folds beside a seat, while pilot and co-pilot name qualified flight crew roles. Omar puts his permitted bag in the overhead bin under crew instructions.\nWhich compartment stores the cabin baggage above the seats?",
         "answer": "overhead bin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "A flight attendant helps a passenger find a seat. Outside, the ground crew finish their checks while an air traffic controller coordinates aircraft movements.\nWho helps the passenger find a seat inside the aircraft?",
+        "prompt": "The flight attendant provides cabin safety and passenger service. Passenger names the traveler, ground crew the workers supporting aircraft on the ground, and air traffic controller the trained person coordinating aircraft movements. Roles are supplied by the account, not guessed from clothing.\nWho provides cabin safety and passenger service?",
         "answer": "flight attendant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "After arrival, a customs officer asks Omar about goods in his bags. An immigration officer checks travel documents, while a baggage handler unloads suitcases.\nWho asks about the goods in Omar’s bags?",
+        "prompt": "The customs officer checks goods and declarations under border rules. Immigration officer checks travel documents and entry status, while baggage handler loads or moves bags. These roles may differ between jurisdictions and are not interchangeable.\nWho checks goods and their declarations?",
         "answer": "customs officer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one step in Omar’s journey using two lesson words.",
-        "answer": "From his seat by the window, Omar sees the aircraft’s tail at the back. The landing gear is below the plane; the aisle runs between the seats inside.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "airport-3-personal-use"
+        "prompt": "The tail is the aircraft’s rear assembly. Landing gear supports it on the ground, window gives an outside view, and aisle is the passage between seats. The guide identifies the rear assembly separately from cabin fittings. The overhead bin stores cabin baggage above seats. A tray table folds beside a seat, while pilot and co-pilot name qualified flight crew roles. Omar puts his permitted bag in the overhead bin under crew instructions. The flight attendant provides cabin safety and passenger service. Passenger names the traveler, ground crew the workers supporting aircraft on the ground, and air traffic controller the trained person coordinating aircraft movements. Roles are supplied by the account, not guessed from clothing. The customs officer checks goods and declarations under border rules. Immigration officer checks travel documents and entry status, while baggage handler loads or moves bags. These roles may differ between jurisdictions and are not interchangeable.\nCompare “tail” and “landing gear” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Imagine a friend is taking a flight for the first time. Give one helpful sentence using a lesson word.",
-        "answer": "Check your boarding pass before going to the gate.",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "airport-3-transfer"
+        "prompt": "Write an original short visitor or traveler account using tail, landing gear, window, aisle, overhead bin, tray table, pilot, co-pilot, flight attendant, passenger, ground crew, air traffic controller, customs officer, immigration officer, baggage handler in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Airport: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Cabin fittings and staff roles",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The tail is the aircraft’s rear assembly. Landing gear supports it on the ground, window gives an outside view, and aisle is the passage between seats. The guide identifies the rear assembly separately from cabin fittings. Which target names the rear aircraft assembly?"
     },
     "spacedReview": "1 lesson(s) back: control tower, hangar from airport-2\n3 lesson(s) back: engineer, porter from train-station-4\n7 lesson(s) back: touch pool, viewing window from aquarium-4"
   },
@@ -511,115 +527,115 @@
       "توقف بين رحلتين"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "129-159 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["mechanic", "boarding", "takeoff", "landing"],
-          "scenario": "Before boarding begins, a mechanic inspects the aircraft. The crew then prepare for takeoff, and Omar checks the planned landing time.",
+          "scenario": "The mechanic maintains and repairs aircraft. Boarding means entering the aircraft, takeoff its departure from the ground, and landing its return to a surface. The account describes the maintenance role without teaching a repair procedure.",
           "check": {
-            "question": "Who inspects the aircraft before boarding?",
+            "question": "Who maintains and repairs the aircraft?",
             "options": ["mechanic", "boarding", "takeoff"],
             "expectedAnswer": "mechanic"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for mechanic. Context: Before boarding begins, a mechanic inspects the aircraft. The crew then prepare for takeoff, and Omar checks the planned landing time. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing mechanic as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["taxiing", "turbulence", "announcement", "fasten seatbelt"],
-          "scenario": "The aircraft is taxiing: it moves along the ground towards the runway. An announcement reminds passengers to fasten their seatbelts; turbulence can occur during the flight.",
+          "scenario": "Taxiing means the aircraft’s powered movement on the ground. Turbulence names irregular air movement, announcement a spoken notice, and fasten seatbelt the instruction to secure the restraint. The traveler follows the actual crew’s information.",
           "check": {
-            "question": "What word describes the aircraft moving along the ground?",
+            "question": "Which activity names the aircraft’s powered ground movement?",
             "options": ["taxiing", "turbulence", "announcement"],
             "expectedAnswer": "taxiing"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for taxiing. Context: The aircraft is taxiing: it moves along the ground towards the runway. An announcement reminds passengers to fasten their seatbelts; turbulence can occur during the flight. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing taxiing as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["emergency exit", "life vest", "oxygen mask", "delay"],
-          "scenario": "Omar locates the emergency exit beside his row. The safety information also shows a life vest and an oxygen mask. A delay gives him time to read it.",
+          "scenario": "The emergency exit is a designated way out. Life vest supplies flotation, oxygen mask provides supplemental oxygen, and delay names a service later than scheduled. Actual emergency use follows crew instructions rather than a generated picture.",
           "check": {
-            "question": "Which opening does Omar locate beside his row?",
+            "question": "Which target names the designated way out?",
             "options": ["emergency exit", "life vest", "oxygen mask"],
             "expectedAnswer": "emergency exit"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for emergency exit. Context: Omar locates the emergency exit beside his row. The safety information also shows a life vest and an oxygen mask. A delay gives him time to read it. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing emergency exit as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["layover"],
-          "scenario": "Omar’s journey has two flights. He waits at the connecting airport between them; this wait is a layover.",
+          "scenario": "Omar has a layover between connecting flights. He checks the current information before continuing to the next departure area. Layover means the scheduled stop between flights in this account, not cancellation of the journey.",
           "check": {
-            "question": "What is the wait between Omar’s connecting flights called?",
+            "question": "What target names Omar’s stop between connecting flights?",
             "options": ["layover", "mechanic", "boarding"],
             "expectedAnswer": "layover"
           },
-          "imageBrief": "An unbranded airport vocabulary reference for layover. Context: Omar’s journey has two flights. He waits at the connecting airport between them; this wait is a layover. Use no readable text, logos or incidental people. A photograph cannot establish hidden intentions or a sequence; retain the written context for the question.",
-          "imageAlt": "Airport visual reference; describe the actual visible details after review."
+          "imageBrief": "Accurate word-reference image supporting the airport account, showing layover as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Airport 4: Omar’s journey",
-      "text": "Before boarding begins, a mechanic inspects the aircraft. The crew then prepare for takeoff, and Omar checks the planned landing time. The aircraft is taxiing: it moves along the ground towards the runway. An announcement reminds passengers to fasten their seatbelts; turbulence can occur during the flight. Omar locates the emergency exit beside his row. The safety information also shows a life vest and an oxygen mask. A delay gives him time to read it. Omar’s journey has two flights. He waits at the connecting airport between them; this wait is a layover.",
-      "imageBrief": "Unbranded airport setting; no readable signage, logos or incidental people."
+      "title": "Flight stages and connections",
+      "text": "The mechanic maintains and repairs aircraft. Boarding means entering the aircraft, takeoff its departure from the ground, and landing its return to a surface. The account describes the maintenance role without teaching a repair procedure. Taxiing means the aircraft’s powered movement on the ground. Turbulence names irregular air movement, announcement a spoken notice, and fasten seatbelt the instruction to secure the restraint. The traveler follows the actual crew’s information. The emergency exit is a designated way out. Life vest supplies flotation, oxygen mask provides supplemental oxygen, and delay names a service later than scheduled. Actual emergency use follows crew instructions rather than a generated picture. Omar has a layover between connecting flights. He checks the current information before continuing to the next departure area. Layover means the scheduled stop between flights in this account, not cancellation of the journey.",
+      "imageBrief": "Use independently inspected word references to support Flight stages and connections; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "Before boarding begins, a mechanic inspects the aircraft. The crew then prepare for takeoff, and Omar checks the planned landing time.\nWho inspects the aircraft before boarding?",
+        "prompt": "The mechanic maintains and repairs aircraft. Boarding means entering the aircraft, takeoff its departure from the ground, and landing its return to a surface. The account describes the maintenance role without teaching a repair procedure.\nWho maintains and repairs the aircraft?",
         "answer": "mechanic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "The aircraft is taxiing: it moves along the ground towards the runway. An announcement reminds passengers to fasten their seatbelts; turbulence can occur during the flight.\nWhat word describes the aircraft moving along the ground?",
+        "prompt": "Taxiing means the aircraft’s powered movement on the ground. Turbulence names irregular air movement, announcement a spoken notice, and fasten seatbelt the instruction to secure the restraint. The traveler follows the actual crew’s information.\nWhich activity names the aircraft’s powered ground movement?",
         "answer": "taxiing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Omar locates the emergency exit beside his row. The safety information also shows a life vest and an oxygen mask. A delay gives him time to read it.\nWhich opening does Omar locate beside his row?",
+        "prompt": "The emergency exit is a designated way out. Life vest supplies flotation, oxygen mask provides supplemental oxygen, and delay names a service later than scheduled. Actual emergency use follows crew instructions rather than a generated picture.\nWhich target names the designated way out?",
         "answer": "emergency exit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Omar’s journey has two flights. He waits at the connecting airport between them; this wait is a layover.\nWhat is the wait between Omar’s connecting flights called?",
+        "prompt": "Omar has a layover between connecting flights. He checks the current information before continuing to the next departure area. Layover means the scheduled stop between flights in this account, not cancellation of the journey.\nWhat target names Omar’s stop between connecting flights?",
         "answer": "layover",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one step in Omar’s journey using two lesson words.",
-        "answer": "Before boarding begins, a mechanic inspects the aircraft. The crew then prepare for takeoff, and Omar checks the planned landing time.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "airport-4-personal-use"
+        "prompt": "The mechanic maintains and repairs aircraft. Boarding means entering the aircraft, takeoff its departure from the ground, and landing its return to a surface. The account describes the maintenance role without teaching a repair procedure. Taxiing means the aircraft’s powered movement on the ground. Turbulence names irregular air movement, announcement a spoken notice, and fasten seatbelt the instruction to secure the restraint. The traveler follows the actual crew’s information. The emergency exit is a designated way out. Life vest supplies flotation, oxygen mask provides supplemental oxygen, and delay names a service later than scheduled. Actual emergency use follows crew instructions rather than a generated picture. Omar has a layover between connecting flights. He checks the current information before continuing to the next departure area. Layover means the scheduled stop between flights in this account, not cancellation of the journey.\nCompare “mechanic” and “boarding” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Imagine a friend is taking a flight for the first time. Give one helpful sentence using a lesson word.",
-        "answer": "Check your boarding pass before going to the gate.",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "airport-4-transfer"
+        "prompt": "Write an original short visitor or traveler account using mechanic, boarding, takeoff, landing, taxiing, turbulence, announcement, fasten seatbelt, emergency exit, life vest, oxygen mask, delay, layover in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Airport: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Flight stages and connections",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The mechanic maintains and repairs aircraft. Boarding means entering the aircraft, takeoff its departure from the ground, and landing its return to a surface. The account describes the maintenance role without teaching a repair procedure. Who maintains and repairs the aircraft?"
     },
     "spacedReview": "1 lesson(s) back: tail, landing gear from airport-3\n3 lesson(s) back: check-in counter, boarding pass from airport-1\n7 lesson(s) back: passenger train, freight train from train-station-1"
   }

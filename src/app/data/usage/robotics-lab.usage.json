@@ -34,7 +34,7 @@
       "ترس",
       "عجلة",
       "محور",
-      "إطار",
+      "هيكل الروبوت",
       "ذراع آلية",
       "قابض آلي",
       "وحدة كاميرا",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "103-133 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Motor", "Sensor", "Circuit Board", "Battery Pack"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.",
+          "scenario": "During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Motor", "Sensor", "Circuit Board"],
-            "expectedAnswer": "Motor"
+            "question": "Which component detects a physical quantity?",
+            "options": ["Sensor", "Motor", "Circuit Board"],
+            "expectedAnswer": "Sensor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Motor as the central item; include Motor, Sensor, and Circuit Board naturally where visually appropriate, but make the real-world use of Motor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sensor in a robotics lab context. Use the written scenario as the source of meaning: During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gear", "Wheel", "Axle", "Frame"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.",
+          "scenario": "A Gear has teeth engaging another mechanism to transfer movement. The robot’s Wheel turns around an Axle, while its Frame supports the components.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which component has teeth engaging another mechanism?",
             "options": ["Gear", "Wheel", "Axle"],
             "expectedAnswer": "Gear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gear as the central item; include Gear, Wheel, and Axle naturally where visually appropriate, but make the real-world use of Gear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Gear in a robotics lab context. Use the written scenario as the source of meaning: A Gear has teeth engaging another mechanism to transfer movement. The robot’s Wheel turns around an Axle, while its Frame supports the components. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Arm", "Gripper", "Camera Module", "LED"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.",
+          "scenario": "The robot’s Arm positions an attached Gripper, which holds objects. A Camera Module captures images, and an LED emits light when appropriately electrically driven. The tour does not include wiring instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Arm", "Gripper", "Camera Module"],
-            "expectedAnswer": "Arm"
+            "question": "Which attached mechanism holds objects?",
+            "options": ["Gripper", "Arm", "Camera Module"],
+            "expectedAnswer": "Gripper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Arm as the central item; include Arm, Gripper, and Camera Module naturally where visually appropriate, but make the real-world use of Arm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Gripper in a robotics lab context. Use the written scenario as the source of meaning: The robot’s Arm positions an attached Gripper, which holds objects. A Camera Module captures images, and an LED emits light when appropriately electrically driven. The tour does not include wiring instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wire", "Resistor", "Capacitor"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Wire carrying current or signals, a Resistor resisting current flow, and a Capacitor storing electrical charge. These purposes cannot be proven from color alone.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wire", "Resistor", "Capacitor"],
-            "expectedAnswer": "Wire"
+            "question": "Which component stores electrical charge?",
+            "options": ["Capacitor", "Wire", "Resistor"],
+            "expectedAnswer": "Capacitor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wire as the central item; include Wire, Resistor, and Capacitor naturally where visually appropriate, but make the real-world use of Wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Capacitor in a robotics lab context. Use the written scenario as the source of meaning: The guide distinguishes a Wire carrying current or signals, a Resistor resisting current flow, and a Capacitor storing electrical charge. These purposes cannot be proven from color alone. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Robotics Lab",
-      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Motor, Sensor, Circuit Board, and Battery Pack. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Gear, Wheel, Axle, and Frame. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Arm, Gripper, Camera Module, and LED. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Wire, Resistor, and Capacitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Robotics Lab: A visitor’s questions",
+      "text": "During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy. A Gear has teeth engaging another mechanism to transfer movement. The robot’s Wheel turns around an Axle, while its Frame supports the components. The robot’s Arm positions an attached Gripper, which holds objects. A Camera Module captures images, and an LED emits light when appropriately electrically driven. The tour does not include wiring instructions. The guide distinguishes a Wire carrying current or signals, a Resistor resisting current flow, and a Capacitor storing electrical charge. These purposes cannot be proven from color alone.",
+      "imageBrief": "One uncluttered robotics lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motor, Sensor, Circuit Board, and Battery Pack and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Motor",
+        "prompt": "During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy.\nWhich component detects a physical quantity?",
+        "answer": "Sensor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gear, Wheel, Axle, and Frame and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Gear has teeth engaging another mechanism to transfer movement. The robot’s Wheel turns around an Axle, while its Frame supports the components.\nWhich component has teeth engaging another mechanism?",
         "answer": "Gear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arm, Gripper, Camera Module, and LED and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Arm",
+        "prompt": "The robot’s Arm positions an attached Gripper, which holds objects. A Camera Module captures images, and an LED emits light when appropriately electrically driven. The tour does not include wiring instructions.\nWhich attached mechanism holds objects?",
+        "answer": "Gripper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Resistor, and Capacitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wire",
+        "prompt": "The guide distinguishes a Wire carrying current or signals, a Resistor resisting current flow, and a Capacitor storing electrical charge. These purposes cannot be proven from color alone.\nWhich component stores electrical charge?",
+        "answer": "Capacitor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy. A Gear has teeth engaging another mechanism to transfer movement. The robot’s Wheel turns around an Axle, while its Frame supports the components. The robot’s Arm positions an attached Gripper, which holds objects. A Camera Module captures images, and an LED emits light when appropriately electrically driven. The tour does not include wiring instructions. The guide distinguishes a Wire carrying current or signals, a Resistor resisting current flow, and a Capacitor storing electrical charge. These purposes cannot be proven from color alone.\nExplain the difference between Motor and Sensor using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Motor"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Calibrate” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Motor, Sensor, Circuit Board, Battery Pack, Gear, Wheel, Axle, Frame, Arm, Gripper, Camera Module, LED, Wire, Resistor, and Capacitor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Motor, Sensor, Circuit Board, Battery Pack, Gear, Wheel, Axle, Frame, Arm, Gripper, Camera Module, LED, Wire, Resistor, Capacitor to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Robotics Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Robotics Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Motor and Sensor, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During a supervised lab tour, the guide contrasts a Motor producing motion with a Sensor detecting a physical quantity. A Circuit Board connects components, and a Battery Pack stores electrical energy. Pause and answer: Which component detects a physical quantity?"
     },
     "spacedReview": "1 lesson(s) back: Calibrate, Prototype from 3d-printer-lab-6\n3 lesson(s) back: Keychain, Cookie Cutter from 3d-printer-lab-4\n7 lesson(s) back: Charging Speed, Time Remaining from electric-vehicle-station-4"
   },
@@ -206,7 +189,7 @@
       "شريحة إلكترونية",
       "لوحة تجارب إلكترونية",
       "كاوية لحام",
-      "يلحم بالقصدير",
+      "مادة لحام",
       "ملتيميتر",
       "طقم مفكات",
       "كماشة",
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "119-149 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Transistor", "Diode", "Microchip", "Breadboard"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.",
+          "scenario": "A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Transistor", "Diode", "Microchip"],
-            "expectedAnswer": "Transistor"
+            "question": "Which board provides temporary connections without soldering?",
+            "options": ["Breadboard", "Transistor", "Diode"],
+            "expectedAnswer": "Breadboard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Transistor as the central item; include Transistor, Diode, and Microchip naturally where visually appropriate, but make the real-world use of Transistor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Breadboard in a robotics lab context. Use the written scenario as the source of meaning: A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Soldering Iron", "Solder", "Multimeter", "Screwdriver Set"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.",
+          "scenario": "The display includes a Soldering Iron, Solder as the joining material, a Multimeter measuring electrical quantities, and a Screwdriver Set. In this tool list, Solder is a material noun; solder can also be a verb. Trained staff handle hot tools.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Soldering Iron", "Solder", "Multimeter"],
-            "expectedAnswer": "Soldering Iron"
+            "question": "Which target names the joining material here?",
+            "options": ["Solder", "Soldering Iron", "Multimeter"],
+            "expectedAnswer": "Solder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Soldering Iron as the central item; include Soldering Iron, Solder, and Multimeter naturally where visually appropriate, but make the real-world use of Soldering Iron the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Solder in a robotics lab context. Use the written scenario as the source of meaning: The display includes a Soldering Iron, Solder as the joining material, a Multimeter measuring electrical quantities, and a Screwdriver Set. In this tool list, Solder is a material noun; solder can also be a verb. Trained staff handle hot tools. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pliers", "Wire Cutter", "Wire Stripper", "Hot Glue Gun"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.",
+          "scenario": "Pliers grip objects, a Wire Cutter cuts wire, and a Wire Stripper removes insulation from a wire end. A Hot Glue Gun melts adhesive. Visitors identify tool purposes while the tools remain unused.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pliers", "Wire Cutter", "Wire Stripper"],
-            "expectedAnswer": "Pliers"
+            "question": "Which tool removes insulation from a wire end?",
+            "options": ["Wire Stripper", "Pliers", "Wire Cutter"],
+            "expectedAnswer": "Wire Stripper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Pliers as the central item; include Pliers, Wire Cutter, and Wire Stripper naturally where visually appropriate, but make the real-world use of Pliers the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Wire Stripper in a robotics lab context. Use the written scenario as the source of meaning: Pliers grip objects, a Wire Cutter cuts wire, and a Wire Stripper removes insulation from a wire end. A Hot Glue Gun melts adhesive. Visitors identify tool purposes while the tools remain unused. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Allen Key", "Wrench", "Tweezers"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.",
+          "scenario": "An Allen Key turns compatible hexagonal-socket screws, a Wrench turns suitable fasteners, and Tweezers pick up small objects. Actual tool choice depends on the component and staff instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Allen Key", "Wrench", "Tweezers"],
-            "expectedAnswer": "Allen Key"
+            "question": "Which tool picks up small objects?",
+            "options": ["Tweezers", "Allen Key", "Wrench"],
+            "expectedAnswer": "Tweezers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Allen Key as the central item; include Allen Key, Wrench, and Tweezers naturally where visually appropriate, but make the real-world use of Allen Key the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tweezers in a robotics lab context. Use the written scenario as the source of meaning: An Allen Key turns compatible hexagonal-socket screws, a Wrench turns suitable fasteners, and Tweezers pick up small objects. Actual tool choice depends on the component and staff instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Robotics Lab",
-      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Transistor, Diode, Microchip, and Breadboard. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Soldering Iron, Solder, Multimeter, and Screwdriver Set. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Allen Key, Wrench, and Tweezers. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Robotics Lab: Understanding the different roles",
+      "text": "A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering. The display includes a Soldering Iron, Solder as the joining material, a Multimeter measuring electrical quantities, and a Screwdriver Set. In this tool list, Solder is a material noun; solder can also be a verb. Trained staff handle hot tools. Pliers grip objects, a Wire Cutter cuts wire, and a Wire Stripper removes insulation from a wire end. A Hot Glue Gun melts adhesive. Visitors identify tool purposes while the tools remain unused. An Allen Key turns compatible hexagonal-socket screws, a Wrench turns suitable fasteners, and Tweezers pick up small objects. Actual tool choice depends on the component and staff instructions.",
+      "imageBrief": "One uncluttered robotics lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transistor, Diode, Microchip, and Breadboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Transistor",
+        "prompt": "A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering.\nWhich board provides temporary connections without soldering?",
+        "answer": "Breadboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Solder, Multimeter, and Screwdriver Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Soldering Iron",
+        "prompt": "The display includes a Soldering Iron, Solder as the joining material, a Multimeter measuring electrical quantities, and a Screwdriver Set. In this tool list, Solder is a material noun; solder can also be a verb. Trained staff handle hot tools.\nWhich target names the joining material here?",
+        "answer": "Solder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Wire Cutter, Wire Stripper, and Hot Glue Gun and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pliers",
+        "prompt": "Pliers grip objects, a Wire Cutter cuts wire, and a Wire Stripper removes insulation from a wire end. A Hot Glue Gun melts adhesive. Visitors identify tool purposes while the tools remain unused.\nWhich tool removes insulation from a wire end?",
+        "answer": "Wire Stripper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Allen Key, Wrench, and Tweezers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Allen Key",
+        "prompt": "An Allen Key turns compatible hexagonal-socket screws, a Wrench turns suitable fasteners, and Tweezers pick up small objects. Actual tool choice depends on the component and staff instructions.\nWhich tool picks up small objects?",
+        "answer": "Tweezers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering. The display includes a Soldering Iron, Solder as the joining material, a Multimeter measuring electrical quantities, and a Screwdriver Set. In this tool list, Solder is a material noun; solder can also be a verb. Trained staff handle hot tools. Pliers grip objects, a Wire Cutter cuts wire, and a Wire Stripper removes insulation from a wire end. A Hot Glue Gun melts adhesive. Visitors identify tool purposes while the tools remain unused. An Allen Key turns compatible hexagonal-socket screws, a Wrench turns suitable fasteners, and Tweezers pick up small objects. Actual tool choice depends on the component and staff instructions.\nExplain the difference between Transistor and Diode using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Transistor"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Motor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Transistor, Diode, Microchip, Breadboard, Soldering Iron, Solder, Multimeter, Screwdriver Set, Pliers, Wire Cutter, Wire Stripper, Hot Glue Gun, Allen Key, Wrench, and Tweezers in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Transistor, Diode, Microchip, Breadboard, Soldering Iron, Solder, Multimeter, Screwdriver Set, Pliers, Wire Cutter, Wire Stripper, Hot Glue Gun, Allen Key, Wrench, Tweezers to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Robotics Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Robotics Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Transistor and Diode, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Transistor can switch or amplify signals; a Diode primarily conducts in one direction. A Microchip contains integrated electronic circuitry, while a Breadboard provides temporary connections without soldering. Pause and answer: Which board provides temporary connections without soldering?"
     },
     "spacedReview": "1 lesson(s) back: Motor, Sensor from robotics-lab-1\n3 lesson(s) back: Frame, Fan from 3d-printer-lab-5\n7 lesson(s) back: Print Head, Build Plate from 3d-printer-lab-1"
   },
@@ -378,15 +344,15 @@
       "عدسة مكبرة",
       "أداة أيدٍ مساعدة",
       "حاسوب",
-      "شاشة مراقبة",
+      "شاشة حاسوب",
       "لوحة مفاتيح",
       "فأرة حاسوب",
       "محرر شيفرة",
       "كابل يو إس بي",
       "متحكم",
       "عصا تحكم",
-      "جهاز التحكم عن بعد (ريموت)",
-      "جهاز لوحي (تابلت)",
+      "جهاز تحكم عن بُعد",
+      "حاسوب لوحي",
       "روبوت شبيه بالإنسان",
       "طائرة مسيّرة",
       "ذراع آلية"
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Magnifying Glass", "Helping Hands", "Computer", "Monitor"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.",
+          "scenario": "A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Magnifying Glass", "Helping Hands", "Computer"],
-            "expectedAnswer": "Magnifying Glass"
+            "question": "Which bench tool has adjustable clips holding parts?",
+            "options": ["Helping Hands", "Magnifying Glass", "Computer"],
+            "expectedAnswer": "Helping Hands"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Magnifying Glass as the central item; include Magnifying Glass, Helping Hands, and Computer naturally where visually appropriate, but make the real-world use of Magnifying Glass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Helping Hands in a robotics lab context. Use the written scenario as the source of meaning: A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Keyboard", "Mouse", "Code Editor", "USB Cable"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.",
+          "scenario": "The Keyboard and Mouse provide computer input. A Code Editor is software for writing program instructions, while a USB Cable connects compatible devices for supported power or data transfer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Keyboard", "Mouse", "Code Editor"],
-            "expectedAnswer": "Keyboard"
+            "question": "Which software is used to write program instructions?",
+            "options": ["Code Editor", "Keyboard", "Mouse"],
+            "expectedAnswer": "Code Editor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Keyboard as the central item; include Keyboard, Mouse, and Code Editor naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Code Editor in a robotics lab context. Use the written scenario as the source of meaning: The Keyboard and Mouse provide computer input. A Code Editor is software for writing program instructions, while a USB Cable connects compatible devices for supported power or data transfer. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Controller", "Joystick", "Remote Control", "Tablet"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.",
+          "scenario": "A Controller manages equipment operation. A Joystick is a movable handle for manual input, while Remote Control and Tablet describe other supported control devices. Actual control permissions depend on the lab setup.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Controller", "Joystick", "Remote Control"],
-            "expectedAnswer": "Controller"
+            "question": "Which manual input uses a movable handle?",
+            "options": ["Joystick", "Controller", "Remote Control"],
+            "expectedAnswer": "Joystick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Controller as the central item; include Controller, Joystick, and Remote Control naturally where visually appropriate, but make the real-world use of Controller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Joystick in a robotics lab context. Use the written scenario as the source of meaning: A Controller manages equipment operation. A Joystick is a movable handle for manual input, while Remote Control and Tablet describe other supported control devices. Actual control permissions depend on the lab setup. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Humanoid Robot", "Drone", "Robotic Arm"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.",
+          "scenario": "A Humanoid Robot has a humanlike body plan. A Drone is an uncrewed aircraft, while a Robotic Arm is an articulated machine mechanism used to move tools or objects. These categories may overlap in some designs.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Humanoid Robot", "Drone", "Robotic Arm"],
-            "expectedAnswer": "Humanoid Robot"
+            "question": "Which target names the articulated mechanism moving tools or objects?",
+            "options": ["Robotic Arm", "Humanoid Robot", "Drone"],
+            "expectedAnswer": "Robotic Arm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Humanoid Robot as the central item; include Humanoid Robot, Drone, and Robotic Arm naturally where visually appropriate, but make the real-world use of Humanoid Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Robotic Arm in a robotics lab context. Use the written scenario as the source of meaning: A Humanoid Robot has a humanlike body plan. A Drone is an uncrewed aircraft, while a Robotic Arm is an articulated machine mechanism used to move tools or objects. These categories may overlap in some designs. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Robotics Lab",
-      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Magnifying Glass, Helping Hands, Computer, and Monitor. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Keyboard, Mouse, Code Editor, and USB Cable. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Controller, Joystick, Remote Control, and Tablet. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Humanoid Robot, Drone, and Robotic Arm. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Robotics Lab: Comparing the equipment",
+      "text": "A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output. The Keyboard and Mouse provide computer input. A Code Editor is software for writing program instructions, while a USB Cable connects compatible devices for supported power or data transfer. A Controller manages equipment operation. A Joystick is a movable handle for manual input, while Remote Control and Tablet describe other supported control devices. Actual control permissions depend on the lab setup. A Humanoid Robot has a humanlike body plan. A Drone is an uncrewed aircraft, while a Robotic Arm is an articulated machine mechanism used to move tools or objects. These categories may overlap in some designs.",
+      "imageBrief": "One uncluttered robotics lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnifying Glass, Helping Hands, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Magnifying Glass",
+        "prompt": "A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output.\nWhich bench tool has adjustable clips holding parts?",
+        "answer": "Helping Hands",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, Code Editor, and USB Cable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Keyboard",
+        "prompt": "The Keyboard and Mouse provide computer input. A Code Editor is software for writing program instructions, while a USB Cable connects compatible devices for supported power or data transfer.\nWhich software is used to write program instructions?",
+        "answer": "Code Editor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Controller, Joystick, Remote Control, and Tablet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Controller",
+        "prompt": "A Controller manages equipment operation. A Joystick is a movable handle for manual input, while Remote Control and Tablet describe other supported control devices. Actual control permissions depend on the lab setup.\nWhich manual input uses a movable handle?",
+        "answer": "Joystick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humanoid Robot, Drone, and Robotic Arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Humanoid Robot",
+        "prompt": "A Humanoid Robot has a humanlike body plan. A Drone is an uncrewed aircraft, while a Robotic Arm is an articulated machine mechanism used to move tools or objects. These categories may overlap in some designs.\nWhich target names the articulated mechanism moving tools or objects?",
+        "answer": "Robotic Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output. The Keyboard and Mouse provide computer input. A Code Editor is software for writing program instructions, while a USB Cable connects compatible devices for supported power or data transfer. A Controller manages equipment operation. A Joystick is a movable handle for manual input, while Remote Control and Tablet describe other supported control devices. Actual control permissions depend on the lab setup. A Humanoid Robot has a humanlike body plan. A Drone is an uncrewed aircraft, while a Robotic Arm is an articulated machine mechanism used to move tools or objects. These categories may overlap in some designs.\nExplain the difference between Magnifying Glass and Helping Hands using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Magnifying Glass"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Transistor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Magnifying Glass, Helping Hands, Computer, Monitor, Keyboard, Mouse, Code Editor, USB Cable, Controller, Joystick, Remote Control, Tablet, Humanoid Robot, Drone, and Robotic Arm in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Magnifying Glass, Helping Hands, Computer, Monitor, Keyboard, Mouse, Code Editor, USB Cable, Controller, Joystick, Remote Control, Tablet, Humanoid Robot, Drone, Robotic Arm to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Robotics Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Robotics Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Magnifying Glass and Helping Hands, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Magnifying Glass enlarges nearby details. Helping Hands is a bench tool with adjustable clips that hold parts. A Computer controls the demonstration, and a Monitor displays its output. Pause and answer: Which bench tool has adjustable clips holding parts?"
     },
     "spacedReview": "1 lesson(s) back: Transistor, Diode from robotics-lab-2\n3 lesson(s) back: Calibrate, Prototype from 3d-printer-lab-6\n7 lesson(s) back: Flexible Filament, Wood Filament from 3d-printer-lab-2"
   },
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wheeled Robot", "Walking Robot", "Line Follower", "Sumo Robot"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.",
+          "scenario": "A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wheeled Robot", "Walking Robot", "Line Follower"],
-            "expectedAnswer": "Wheeled Robot"
+            "question": "Which robot detects and follows a marked line?",
+            "options": ["Line Follower", "Wheeled Robot", "Walking Robot"],
+            "expectedAnswer": "Line Follower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wheeled Robot as the central item; include Wheeled Robot, Walking Robot, and Line Follower naturally where visually appropriate, but make the real-world use of Wheeled Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Line Follower in a robotics lab context. Use the written scenario as the source of meaning: A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Underwater Robot", "Flying Robot", "Snake Robot", "Workbench"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.",
+          "scenario": "The collection includes an Underwater Robot, Flying Robot, and Snake Robot. The Snake Robot has a long articulated body with snake-like bending motion. A Workbench supports inspection rather than defining a robot category.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Underwater Robot", "Flying Robot", "Snake Robot"],
-            "expectedAnswer": "Underwater Robot"
+            "question": "Which robot has the long articulated body with snake-like motion?",
+            "options": ["Snake Robot", "Underwater Robot", "Flying Robot"],
+            "expectedAnswer": "Snake Robot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Underwater Robot as the central item; include Underwater Robot, Flying Robot, and Snake Robot naturally where visually appropriate, but make the real-world use of Underwater Robot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Snake Robot in a robotics lab context. Use the written scenario as the source of meaning: The collection includes an Underwater Robot, Flying Robot, and Snake Robot. The Snake Robot has a long articulated body with snake-like bending motion. A Workbench supports inspection rather than defining a robot category. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Bin", "Pegboard", "Safety Glasses", "Lab Notebook"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.",
+          "scenario": "The Storage Bin holds parts, and a Pegboard supports organized tools. Safety Glasses are selected for specified eye hazards. The Lab Notebook records observations and results, including anything that the demonstration does not establish.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Storage Bin", "Pegboard", "Safety Glasses"],
-            "expectedAnswer": "Storage Bin"
+            "question": "Where are observations and results recorded?",
+            "options": ["Lab Notebook", "Storage Bin", "Pegboard"],
+            "expectedAnswer": "Lab Notebook"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Storage Bin as the central item; include Storage Bin, Pegboard, and Safety Glasses naturally where visually appropriate, but make the real-world use of Storage Bin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lab Notebook in a robotics lab context. Use the written scenario as the source of meaning: The Storage Bin holds parts, and a Pegboard supports organized tools. Safety Glasses are selected for specified eye hazards. The Lab Notebook records observations and results, including anything that the demonstration does not establish. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["3D Printer", "Laser Cutter", "Oscilloscope"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.",
+          "scenario": "A 3D Printer builds objects by adding layers, and a Laser Cutter uses controlled laser energy for approved cutting or engraving. An Oscilloscope displays electrical signals varying over time. Trained staff operate the machines within their safety controls.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["3D Printer", "Laser Cutter", "Oscilloscope"],
-            "expectedAnswer": "3D Printer"
+            "question": "Which instrument displays electrical signals varying over time?",
+            "options": ["Oscilloscope", "3D Printer", "Laser Cutter"],
+            "expectedAnswer": "Oscilloscope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the 3D Printer as the central item; include 3D Printer, Laser Cutter, and Oscilloscope naturally where visually appropriate, but make the real-world use of 3D Printer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Oscilloscope in a robotics lab context. Use the written scenario as the source of meaning: A 3D Printer builds objects by adding layers, and a Laser Cutter uses controlled laser energy for approved cutting or engraving. An Oscilloscope displays electrical signals varying over time. Trained staff operate the machines within their safety controls. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Robotics Lab",
-      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Underwater Robot, Flying Robot, Snake Robot, and Workbench. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Storage Bin, Pegboard, Safety Glasses, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers 3D Printer, Laser Cutter, and Oscilloscope. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Robotics Lab: A guided walk",
+      "text": "A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area. The collection includes an Underwater Robot, Flying Robot, and Snake Robot. The Snake Robot has a long articulated body with snake-like bending motion. A Workbench supports inspection rather than defining a robot category. The Storage Bin holds parts, and a Pegboard supports organized tools. Safety Glasses are selected for specified eye hazards. The Lab Notebook records observations and results, including anything that the demonstration does not establish. A 3D Printer builds objects by adding layers, and a Laser Cutter uses controlled laser energy for approved cutting or engraving. An Oscilloscope displays electrical signals varying over time. Trained staff operate the machines within their safety controls.",
+      "imageBrief": "One uncluttered robotics lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wheeled Robot, Walking Robot, Line Follower, and Sumo Robot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wheeled Robot",
+        "prompt": "A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area.\nWhich robot detects and follows a marked line?",
+        "answer": "Line Follower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Underwater Robot, Flying Robot, Snake Robot, and Workbench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Underwater Robot",
+        "prompt": "The collection includes an Underwater Robot, Flying Robot, and Snake Robot. The Snake Robot has a long articulated body with snake-like bending motion. A Workbench supports inspection rather than defining a robot category.\nWhich robot has the long articulated body with snake-like motion?",
+        "answer": "Snake Robot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Bin, Pegboard, Safety Glasses, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Storage Bin",
+        "prompt": "The Storage Bin holds parts, and a Pegboard supports organized tools. Safety Glasses are selected for specified eye hazards. The Lab Notebook records observations and results, including anything that the demonstration does not establish.\nWhere are observations and results recorded?",
+        "answer": "Lab Notebook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 3D Printer, Laser Cutter, and Oscilloscope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "3D Printer",
+        "prompt": "A 3D Printer builds objects by adding layers, and a Laser Cutter uses controlled laser energy for approved cutting or engraving. An Oscilloscope displays electrical signals varying over time. Trained staff operate the machines within their safety controls.\nWhich instrument displays electrical signals varying over time?",
+        "answer": "Oscilloscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area. The collection includes an Underwater Robot, Flying Robot, and Snake Robot. The Snake Robot has a long articulated body with snake-like bending motion. A Workbench supports inspection rather than defining a robot category. The Storage Bin holds parts, and a Pegboard supports organized tools. Safety Glasses are selected for specified eye hazards. The Lab Notebook records observations and results, including anything that the demonstration does not establish. A 3D Printer builds objects by adding layers, and a Laser Cutter uses controlled laser energy for approved cutting or engraving. An Oscilloscope displays electrical signals varying over time. Trained staff operate the machines within their safety controls.\nExplain the difference between Wheeled Robot and Walking Robot using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Wheeled Robot"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Magnifying Glass” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Wheeled Robot, Walking Robot, Line Follower, Sumo Robot, Underwater Robot, Flying Robot, Snake Robot, Workbench, Storage Bin, Pegboard, Safety Glasses, Lab Notebook, 3D Printer, Laser Cutter, and Oscilloscope in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Wheeled Robot, Walking Robot, Line Follower, Sumo Robot, Underwater Robot, Flying Robot, Snake Robot, Workbench, Storage Bin, Pegboard, Safety Glasses, Lab Notebook, 3D Printer, Laser Cutter, Oscilloscope to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Robotics Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Robotics Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Wheeled Robot and Walking Robot, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Wheeled Robot moves on wheels, and a Walking Robot uses legs. A Line Follower detects and follows a marked line; a Sumo Robot is designed for robot-sumo competition. Demonstrations run inside a controlled test area. Pause and answer: Which robot detects and follows a marked line?"
     },
     "spacedReview": "1 lesson(s) back: Magnifying Glass, Helping Hands from robotics-lab-3\n3 lesson(s) back: Motor, Sensor from robotics-lab-1\n7 lesson(s) back: Sandpaper, File from 3d-printer-lab-3"
   },
@@ -728,144 +660,127 @@
       "بطارية",
       "شبيه بالإنسان",
       "مركبة جوالة",
-      "هيكل",
+      "هيكل قاعدة الروبوت",
       "مسار",
       "شيفرة برمجية",
       "خوارزمية",
       "حلقة تكرار",
       "دالة برمجية",
       "يصحح أخطاء البرنامج",
-      "يترجم الشيفرة إلى برنامج قابل للتنفيذ",
-      "متغير",
+      "يترجم الشيفرة برمجيًا",
+      "متغير برمجي",
       "مدخلات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "135-165 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Power Supply", "Testing Mat", "Battery", "Humanoid"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.",
+          "scenario": "A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Power Supply", "Testing Mat", "Battery"],
-            "expectedAnswer": "Power Supply"
+            "question": "Which target names the controlled test surface?",
+            "options": ["Testing Mat", "Power Supply", "Battery"],
+            "expectedAnswer": "Testing Mat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Power Supply as the central item; include Power Supply, Testing Mat, and Battery naturally where visually appropriate, but make the real-world use of Power Supply the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Testing Mat in a robotics lab context. Use the written scenario as the source of meaning: A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rover", "Chassis", "Track", "Code"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.",
+          "scenario": "A Rover explores an area. Its Chassis is the supporting base, and the Track here is the test route along which it travels. Code supplies the program instructions; track can have other mechanical meanings elsewhere.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Rover", "Chassis", "Track"],
-            "expectedAnswer": "Rover"
+            "question": "Which target names the robot’s supporting base?",
+            "options": ["Chassis", "Rover", "Track"],
+            "expectedAnswer": "Chassis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Rover as the central item; include Rover, Chassis, and Track naturally where visually appropriate, but make the real-world use of Rover the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Chassis in a robotics lab context. Use the written scenario as the source of meaning: A Rover explores an area. Its Chassis is the supporting base, and the Track here is the test route along which it travels. Code supplies the program instructions; track can have other mechanical meanings elsewhere. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Algorithm", "Loop", "Function", "Debug"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.",
+          "scenario": "An Algorithm specifies steps for a task. A Loop repeats program instructions, a Function groups reusable instructions, and Debug means find and correct program errors. These terms explain program structure rather than guarantee error-free behavior.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Algorithm", "Loop", "Function"],
-            "expectedAnswer": "Algorithm"
+            "question": "Which programming structure repeats instructions?",
+            "options": ["Loop", "Algorithm", "Function"],
+            "expectedAnswer": "Loop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Algorithm as the central item; include Algorithm, Loop, and Function naturally where visually appropriate, but make the real-world use of Algorithm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Loop in a robotics lab context. Use the written scenario as the source of meaning: An Algorithm specifies steps for a task. A Loop repeats program instructions, a Function groups reusable instructions, and Debug means find and correct program errors. These terms explain program structure rather than guarantee error-free behavior. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compile", "Variable", "Input"],
-          "scenario": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.",
+          "scenario": "The guide describes Compile as translating source code into another form using a compiler. A Variable holds a named program value, and Input supplies data or signals. Compiled output may be machine code or an intermediate form, depending on the system.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
+            "question": "Which verb names translating source code using a compiler?",
             "options": ["Compile", "Variable", "Input"],
             "expectedAnswer": "Compile"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult clearly carrying out the action Compile; include Compile, Variable, and Input naturally where visually appropriate, but make the real-world use of Compile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Compile in a robotics lab context. Use the written scenario as the source of meaning: The guide describes Compile as translating source code into another form using a compiler. A Variable holds a named program value, and Input supplies data or signals. Compiled output may be machine code or an intermediate form, depending on the system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written robotics lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Robotics Lab",
-      "text": "At the robotics lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Power Supply, Testing Mat, Battery, and Humanoid. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Rover, Chassis, Track, and Code. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Algorithm, Loop, Function, and Debug. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Compile, Variable, and Input. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Robotics Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Robotics Lab: A practical discussion",
+      "text": "A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface. A Rover explores an area. Its Chassis is the supporting base, and the Track here is the test route along which it travels. Code supplies the program instructions; track can have other mechanical meanings elsewhere. An Algorithm specifies steps for a task. A Loop repeats program instructions, a Function groups reusable instructions, and Debug means find and correct program errors. These terms explain program structure rather than guarantee error-free behavior. The guide describes Compile as translating source code into another form using a compiler. A Variable holds a named program value, and Input supplies data or signals. Compiled output may be machine code or an intermediate form, depending on the system.",
+      "imageBrief": "One uncluttered robotics lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Supply, Testing Mat, Battery, and Humanoid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Power Supply",
+        "prompt": "A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface.\nWhich target names the controlled test surface?",
+        "answer": "Testing Mat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rover, Chassis, Track, and Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Rover",
+        "prompt": "A Rover explores an area. Its Chassis is the supporting base, and the Track here is the test route along which it travels. Code supplies the program instructions; track can have other mechanical meanings elsewhere.\nWhich target names the robot’s supporting base?",
+        "answer": "Chassis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algorithm, Loop, Function, and Debug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Algorithm",
+        "prompt": "An Algorithm specifies steps for a task. A Loop repeats program instructions, a Function groups reusable instructions, and Debug means find and correct program errors. These terms explain program structure rather than guarantee error-free behavior.\nWhich programming structure repeats instructions?",
+        "answer": "Loop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the robotics lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Compile, Variable, and Input and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "The guide describes Compile as translating source code into another form using a compiler. A Variable holds a named program value, and Input supplies data or signals. Compiled output may be machine code or an intermediate form, depending on the system.\nWhich verb names translating source code using a compiler?",
         "answer": "Compile",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface. A Rover explores an area. Its Chassis is the supporting base, and the Track here is the test route along which it travels. Code supplies the program instructions; track can have other mechanical meanings elsewhere. An Algorithm specifies steps for a task. A Loop repeats program instructions, a Function groups reusable instructions, and Debug means find and correct program errors. These terms explain program structure rather than guarantee error-free behavior. The guide describes Compile as translating source code into another form using a compiler. A Variable holds a named program value, and Input supplies data or signals. Compiled output may be machine code or an intermediate form, depending on the system.\nExplain the difference between Power Supply and Testing Mat using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Power Supply"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wheeled Robot” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the robotics lab task. Use Power Supply, Testing Mat, Battery, Humanoid, Rover, Chassis, Track, Code, Algorithm, Loop, Function, Debug, Compile, Variable, and Input in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Power Supply, Testing Mat, Battery, Humanoid, Rover, Chassis, Track, Code, Algorithm, Loop, Function, Debug, Compile, Variable, Input to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Robotics Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Robotics Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Power Supply and Testing Mat, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Power Supply provides specified electrical output. On the Testing Mat, staff observe the robot’s movement. A Battery stores energy, while Humanoid describes a humanlike body shape. The mat identifies the controlled test surface. Pause and answer: Which target names the controlled test surface?"
     },
     "spacedReview": "1 lesson(s) back: Wheeled Robot, Walking Robot from robotics-lab-4\n3 lesson(s) back: Transistor, Diode from robotics-lab-2\n7 lesson(s) back: Keychain, Cookie Cutter from 3d-printer-lab-4"
   }

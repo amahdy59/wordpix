@@ -12,11 +12,11 @@
     "arabicTranslation": "مدعٍ عام"
   },
   "defense-attorney": {
-    "definition": "A lawyer who represents a person accused of a crime, protects that client’s legal rights, and seeks an acquittal or the least severe punishment.",
+    "definition": "A lawyer representing the accused person in a criminal proceeding.",
     "arabicTranslation": "محامي الدفاع"
   },
   "bailiff": {
-    "definition": "An officer of the court who is employed to execute writs and processes and make arrests etc.",
+    "definition": "A court officer whose responsibilities may include courtroom order, security, or carrying out court instructions.",
     "arabicTranslation": "موظف أمن المحكمة"
   },
   "court-reporter": {
@@ -34,11 +34,11 @@
     "arabicTranslation": "شاهد"
   },
   "clerk": {
-    "definition": "To work as a clerk, as in the legal business.",
-    "arabicTranslation": "موظف"
+    "definition": "A court employee who maintains records and assists with court administration.",
+    "arabicTranslation": "كاتب المحكمة"
   },
   "interpreter": {
-    "definition": "A person who uses art to represent something.",
+    "definition": "A person who conveys spoken or signed communication between languages during proceedings.",
     "arabicTranslation": "مترجم شفهي"
   },
   "judge-s-bench": {
@@ -94,8 +94,8 @@
     "arabicTranslation": "كتاب قانون"
   },
   "case-file": {
-    "definition": "A group of records about one legal matter, stored together for people to consult and assess.",
-    "arabicTranslation": "ملف غلاف"
+    "definition": "The collected documents and records relating to one legal case.",
+    "arabicTranslation": "ملف قضية"
   },
   "evidence-bag": {
     "definition": "A specialized bag or package used to contain, label, and preserve evidence for legal proceedings.",
@@ -103,7 +103,7 @@
     "arabicTranslation": "كيس أدلة"
   },
   "badge": {
-    "definition": "Any feature that is regarded as a sign of status (a particular power or quality or rank).",
+    "definition": "A worn sign or card showing a stated identity or affiliation.",
     "arabicTranslation": "شارة"
   },
   "handcuffs": {
@@ -116,8 +116,8 @@
     "arabicTranslation": "بطاقة القسم"
   },
   "subpoena": {
-    "definition": "A writ issued by court authority to compel the attendance of a witness at a judicial proceeding.",
-    "arabicTranslation": "أمر استدعاء قضائي"
+    "definition": "A legal order requiring testimony or production of specified evidence under applicable rules.",
+    "arabicTranslation": "أمر استدعاء أو تقديم أدلة"
   },
   "verdict-form": {
     "definition": "A court form on which a jury or judge records the formal decision on specified questions or charges.",
@@ -130,7 +130,7 @@
     "arabicTranslation": "قائمة الشهود"
   },
   "trial": {
-    "definition": "(law) the determination of a person's innocence or guilt by due process of law.",
+    "definition": "A court proceeding in which disputed facts or legal claims are examined and decided under the applicable rules.",
     "arabicTranslation": "محاكمة"
   },
   "hearing": {
@@ -138,8 +138,8 @@
     "arabicTranslation": "جلسة قضائية"
   },
   "testimony": {
-    "definition": "Something that serves as evidence.",
-    "arabicTranslation": "شهادة"
+    "definition": "Evidence given by a witness under the required oath or affirmation.",
+    "arabicTranslation": "شهادة شاهد"
   },
   "cross-examination": {
     "definition": "Questioning of a witness by the opposing side after direct testimony.",
@@ -155,19 +155,19 @@
     "arabicTranslation": "قرار قضائي"
   },
   "sentence": {
-    "definition": "(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed.",
-    "arabicTranslation": "حكم قضائي"
+    "definition": "A punishment imposed by a court following a criminal conviction.",
+    "arabicTranslation": "عقوبة قضائية"
   },
   "appeal": {
-    "definition": "(law) a legal proceeding in which the appellant resorts to a higher court for the purpose of obtaining a review of a lower court decision and a reversal of the lower court's judgment or the granting of a new trial.",
+    "definition": "A legal process requesting review of a decision by a higher court under the applicable rules, without guaranteeing a changed outcome.",
     "arabicTranslation": "استئناف"
   },
   "acquittal": {
     "arabicTranslation": "براءة",
-    "definition": "A court decision that a person is not guilty of a charge."
+    "definition": "A formal finding that an accused person is not guilty of the specified criminal charge."
   },
   "conviction": {
-    "definition": "(criminal law) a final judgment of guilty in a criminal case and the punishment that is imposed.",
+    "definition": "A formal finding that an accused person is guilty of a criminal offense.",
     "arabicTranslation": "إدانة"
   },
   "contract": {
@@ -183,8 +183,8 @@
     "arabicTranslation": "أمر قضائي"
   },
   "summons": {
-    "definition": "A writ issued by authority of law.",
-    "arabicTranslation": "إخطار بالحضور أمام المحكمة"
+    "definition": "An official notice requiring a person to appear or respond in a legal proceeding.",
+    "arabicTranslation": "إخطار بالحضور أو الرد أمام المحكمة"
   },
   "complaint": {
     "definition": "(civil law) the first pleading of the plaintiff setting out the facts on which the claim for relief is based.",
@@ -199,23 +199,23 @@
     "arabicTranslation": "مذكرة قانونية"
   },
   "deposition": {
-    "definition": "(law) a pretrial interrogation of a witness.",
-    "arabicTranslation": "شهادة مسجلة تحت القسم قبل المحاكمة"
+    "definition": "Testimony recorded outside court under oath or affirmation as part of a legal proceeding.",
+    "arabicTranslation": "شهادة مسجلة خارج المحكمة"
   },
   "injunction": {
-    "definition": "(law) a judicial remedy issued in order to prohibit a party from doing or continuing to do a certain activity.",
+    "definition": "A court order requiring a person to do, or refrain from doing, a specified act.",
     "arabicTranslation": "أمر قضائي بالإلزام أو المنع"
   },
   "plea": {
-    "definition": "(law) a defendant's answer by a factual matter (as distinguished from a demurrer).",
-    "arabicTranslation": "دفع أو إقرار قضائي"
+    "definition": "A defendant’s formal response to a criminal charge, such as guilty or not guilty, in this context.",
+    "arabicTranslation": "إقرار أو رد على تهمة"
   },
   "wig": {
     "definition": "Hairpiece covering the head and made of real or synthetic hair.",
     "arabicTranslation": "شعر مستعار"
   },
   "suit": {
-    "definition": "A comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy.",
+    "definition": "In this clothing list, a matching jacket and trousers or skirt, rather than a legal action.",
     "arabicTranslation": "بدلة"
   },
   "tie": {
@@ -263,7 +263,7 @@
     "arabicTranslation": "أدلة"
   },
   "document": {
-    "definition": "A digital file containing written or visual information.",
+    "definition": "A written, printed, or digital record containing information.",
     "arabicTranslation": "وثيقة"
   },
   "oath": {
@@ -282,5 +282,9 @@
   "deliberate": {
     "definition": "To discuss or consider information carefully before reaching a decision.",
     "arabicTranslation": "يتداول لاتخاذ قرار"
+  },
+  "robe": {
+    "definition": "A long loose garment worn by a judge as official courtroom dress.",
+    "arabicTranslation": "رداء القاضي"
   }
 }

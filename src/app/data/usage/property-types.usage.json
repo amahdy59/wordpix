@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "142-172 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["House", "Apartment", "Condo", "Townhouse"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare House, Apartment, Condo, and Townhouse and choose the option that fits the situation.",
+          "scenario": "Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["House", "Apartment", "Condo"],
-            "expectedAnswer": "House"
+            "question": "Which term describes the individually owned home with shared development areas?",
+            "options": ["Condo", "House", "Apartment"],
+            "expectedAnswer": "Condo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the House as the central item; include House, Apartment, and Condo naturally where visually appropriate, but make the real-world use of House the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Condo in a property types context. Use the written scenario as the source of meaning: Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Villa", "Studio", "Penthouse", "Loft"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Villa, Studio, Penthouse, and Loft and choose the option that fits the situation.",
+          "scenario": "The listings include a Villa, a Studio, a Penthouse, and a Loft. The Studio combines the main living and sleeping space, with separate bathroom facilities. The Penthouse is at the top of the building, and the Loft has a large open interior.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Villa", "Studio", "Penthouse"],
-            "expectedAnswer": "Villa"
+            "question": "Which dwelling combines the main living and sleeping space?",
+            "options": ["Studio", "Villa", "Penthouse"],
+            "expectedAnswer": "Studio"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Villa as the central item; include Villa, Studio, and Penthouse naturally where visually appropriate, but make the real-world use of Villa the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Studio in a property types context. Use the written scenario as the source of meaning: The listings include a Villa, a Studio, a Penthouse, and a Loft. The Studio combines the main living and sleeping space, with separate bathroom facilities. The Penthouse is at the top of the building, and the Loft has a large open interior. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cottage", "Duplex", "Office Building", "Retail Store"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cottage, Duplex, Office Building, and Retail Store and choose the option that fits the situation.",
+          "scenario": "A listing shows a Cottage in the countryside. Another uses Duplex for a two-home building in this US example; other regions may use the word for one home across two floors. The agent also lists an Office Building and Retail Store.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cottage", "Duplex", "Office Building"],
-            "expectedAnswer": "Cottage"
+            "question": "Which term names the two-home building in this example?",
+            "options": ["Duplex", "Cottage", "Office Building"],
+            "expectedAnswer": "Duplex"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Cottage as the central item; include Cottage, Duplex, and Office Building naturally where visually appropriate, but make the real-world use of Cottage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Duplex in a property types context. Use the written scenario as the source of meaning: A listing shows a Cottage in the countryside. Another uses Duplex for a two-home building in this US example; other regions may use the word for one home across two floors. The agent also lists an Office Building and Retail Store. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Warehouse", "Factory", "Restaurant Space"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warehouse, Factory, and Restaurant Space and choose the option that fits the situation.",
+          "scenario": "A Warehouse stores goods, a Factory houses manufacturing, and Restaurant Space is commercial space intended for a food business. Actual permitted use depends on local rules and the property’s arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which building is used for storing goods?",
             "options": ["Warehouse", "Factory", "Restaurant Space"],
             "expectedAnswer": "Warehouse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Warehouse as the central item; include Warehouse, Factory, and Restaurant Space naturally where visually appropriate, but make the real-world use of Warehouse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Warehouse in a property types context. Use the written scenario as the source of meaning: A Warehouse stores goods, a Factory houses manufacturing, and Restaurant Space is commercial space intended for a food business. Actual permitted use depends on local rules and the property’s arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: Property Types",
-      "text": "At the property types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers House, Apartment, Condo, and Townhouse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Villa, Studio, Penthouse, and Loft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cottage, Duplex, Office Building, and Retail Store. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Warehouse, Factory, and Restaurant Space. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Property Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Property Types: A visitor’s questions",
+      "text": "Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents. The listings include a Villa, a Studio, a Penthouse, and a Loft. The Studio combines the main living and sleeping space, with separate bathroom facilities. The Penthouse is at the top of the building, and the Loft has a large open interior. A listing shows a Cottage in the countryside. Another uses Duplex for a two-home building in this US example; other regions may use the word for one home across two floors. The agent also lists an Office Building and Retail Store. A Warehouse stores goods, a Factory houses manufacturing, and Restaurant Space is commercial space intended for a food business. Actual permitted use depends on local rules and the property’s arrangements.",
+      "imageBrief": "One uncluttered property types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare House, Apartment, Condo, and Townhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "House",
+        "prompt": "Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents.\nWhich term describes the individually owned home with shared development areas?",
+        "answer": "Condo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Villa, Studio, Penthouse, and Loft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Villa",
+        "prompt": "The listings include a Villa, a Studio, a Penthouse, and a Loft. The Studio combines the main living and sleeping space, with separate bathroom facilities. The Penthouse is at the top of the building, and the Loft has a large open interior.\nWhich dwelling combines the main living and sleeping space?",
+        "answer": "Studio",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cottage, Duplex, Office Building, and Retail Store and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cottage",
+        "prompt": "A listing shows a Cottage in the countryside. Another uses Duplex for a two-home building in this US example; other regions may use the word for one home across two floors. The agent also lists an Office Building and Retail Store.\nWhich term names the two-home building in this example?",
+        "answer": "Duplex",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warehouse, Factory, and Restaurant Space and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Warehouse stores goods, a Factory houses manufacturing, and Restaurant Space is commercial space intended for a food business. Actual permitted use depends on local rules and the property’s arrangements.\nWhich building is used for storing goods?",
         "answer": "Warehouse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents. The listings include a Villa, a Studio, a Penthouse, and a Loft. The Studio combines the main living and sleeping space, with separate bathroom facilities. The Penthouse is at the top of the building, and the Loft has a large open interior. A listing shows a Cottage in the countryside. Another uses Duplex for a two-home building in this US example; other regions may use the word for one home across two floors. The agent also lists an Office Building and Retail Store. A Warehouse stores goods, a Factory houses manufacturing, and Restaurant Space is commercial space intended for a food business. Actual permitted use depends on local rules and the property’s arrangements.\nExplain the difference between House and Apartment using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "House"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Tuition” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the property types task. Use House, Apartment, Condo, Townhouse, Villa, Studio, Penthouse, Loft, Cottage, Duplex, Office Building, Retail Store, Warehouse, Factory, and Restaurant Space in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms House, Apartment, Condo, Townhouse, Villa, Studio, Penthouse, Loft, Cottage, Duplex, Office Building, Retail Store, Warehouse, Factory, Restaurant Space to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Property Types: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Property Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between House and Apartment, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Lina compares a House with an Apartment in a larger building. A Condo is an individually owned home with shared development areas, while a Townhouse is attached to neighboring homes in a row. Ownership details require the actual documents. Pause and answer: Which term describes the individually owned home with shared development areas?"
     },
     "spacedReview": "1 lesson(s) back: Tuition, Scholarship from student-life-3\n3 lesson(s) back: Dorm Room, Roommate from student-life-1\n7 lesson(s) back: Bachelor's, Master's from academic-life-3"
   },
@@ -202,7 +185,7 @@
     ],
     "targetWordsArabic": [
       "مركز تسوق",
-      "-",
+      "فندق",
       "متعدد الاستخدامات",
       "صالة عرض",
       "مساحة عمل مشتركة",
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "120-150 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Shopping Center", "Hotel", "Mixed-Use", "Showroom"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shopping Center, Hotel, Mixed-Use, and Showroom and choose the option that fits the situation.",
+          "scenario": "The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Shopping Center", "Hotel", "Mixed-Use"],
-            "expectedAnswer": "Shopping Center"
+            "question": "Which term describes the building combining residential and retail uses?",
+            "options": ["Mixed-Use", "Shopping Center", "Hotel"],
+            "expectedAnswer": "Mixed-Use"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Shopping Center as the main location; include Shopping Center, Hotel, and Mixed-Use naturally where visually appropriate, but make the real-world use of Shopping Center the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mixed-Use in a property types context. Use the written scenario as the source of meaning: The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Coworking Space", "Farmhouse", "Ranch", "Cabin"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coworking Space, Farmhouse, Ranch, and Cabin and choose the option that fits the situation.",
+          "scenario": "Lina compares a Coworking Space with shared work facilities and a Farmhouse associated with a farm. A Ranch listing describes a low ranch-style house, rather than a livestock farm, while a Cabin is a small simple dwelling.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Coworking Space", "Farmhouse", "Ranch"],
-            "expectedAnswer": "Coworking Space"
+            "question": "Which listing term means a low ranch-style house here?",
+            "options": ["Ranch", "Coworking Space", "Farmhouse"],
+            "expectedAnswer": "Ranch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Coworking Space as the central item; include Coworking Space, Farmhouse, and Ranch naturally where visually appropriate, but make the real-world use of Coworking Space the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ranch in a property types context. Use the written scenario as the source of meaning: Lina compares a Coworking Space with shared work facilities and a Farmhouse associated with a farm. A Ranch listing describes a low ranch-style house, rather than a livestock farm, while a Cabin is a small simple dwelling. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Beach House", "Houseboat", "Tiny House", "Mobile Home"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beach House, Houseboat, Tiny House, and Mobile Home and choose the option that fits the situation.",
+          "scenario": "The vacation listings include a Beach House near the coast, a Houseboat designed as a dwelling on water, a Tiny House with very limited floor area, and a Mobile Home designed as transportable housing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Beach House", "Houseboat", "Tiny House"],
-            "expectedAnswer": "Beach House"
+            "question": "Which dwelling is designed for living on water?",
+            "options": ["Houseboat", "Beach House", "Tiny House"],
+            "expectedAnswer": "Houseboat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Beach House as the central item; include Beach House, Houseboat, and Tiny House naturally where visually appropriate, but make the real-world use of Beach House the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Houseboat in a property types context. Use the written scenario as the source of meaning: The vacation listings include a Beach House near the coast, a Houseboat designed as a dwelling on water, a Tiny House with very limited floor area, and a Mobile Home designed as transportable housing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Castle", "Mansion", "Bungalow"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Castle, Mansion, and Bungalow and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a historically fortified Castle from a large Mansion and a Bungalow that usually has one main story. The building’s style does not by itself establish its age or legal status.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the historically fortified building?",
             "options": ["Castle", "Mansion", "Bungalow"],
             "expectedAnswer": "Castle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Castle as the central item; include Castle, Mansion, and Bungalow naturally where visually appropriate, but make the real-world use of Castle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Castle in a property types context. Use the written scenario as the source of meaning: The guide distinguishes a historically fortified Castle from a large Mansion and a Bungalow that usually has one main story. The building’s style does not by itself establish its age or legal status. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "What You Need to Know: Property Types",
-      "text": "At the property types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shopping Center, Hotel, Mixed-Use, and Showroom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Coworking Space, Farmhouse, Ranch, and Cabin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Beach House, Houseboat, Tiny House, and Mobile Home. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Castle, Mansion, and Bungalow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Property Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Property Types: Understanding the different roles",
+      "text": "The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods. Lina compares a Coworking Space with shared work facilities and a Farmhouse associated with a farm. A Ranch listing describes a low ranch-style house, rather than a livestock farm, while a Cabin is a small simple dwelling. The vacation listings include a Beach House near the coast, a Houseboat designed as a dwelling on water, a Tiny House with very limited floor area, and a Mobile Home designed as transportable housing. The guide distinguishes a historically fortified Castle from a large Mansion and a Bungalow that usually has one main story. The building’s style does not by itself establish its age or legal status.",
+      "imageBrief": "One uncluttered property types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shopping Center, Hotel, Mixed-Use, and Showroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Shopping Center",
+        "prompt": "The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods.\nWhich term describes the building combining residential and retail uses?",
+        "answer": "Mixed-Use",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coworking Space, Farmhouse, Ranch, and Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Coworking Space",
+        "prompt": "Lina compares a Coworking Space with shared work facilities and a Farmhouse associated with a farm. A Ranch listing describes a low ranch-style house, rather than a livestock farm, while a Cabin is a small simple dwelling.\nWhich listing term means a low ranch-style house here?",
+        "answer": "Ranch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beach House, Houseboat, Tiny House, and Mobile Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Beach House",
+        "prompt": "The vacation listings include a Beach House near the coast, a Houseboat designed as a dwelling on water, a Tiny House with very limited floor area, and a Mobile Home designed as transportable housing.\nWhich dwelling is designed for living on water?",
+        "answer": "Houseboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Castle, Mansion, and Bungalow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide distinguishes a historically fortified Castle from a large Mansion and a Bungalow that usually has one main story. The building’s style does not by itself establish its age or legal status.\nWhich term names the historically fortified building?",
         "answer": "Castle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods. Lina compares a Coworking Space with shared work facilities and a Farmhouse associated with a farm. A Ranch listing describes a low ranch-style house, rather than a livestock farm, while a Cabin is a small simple dwelling. The vacation listings include a Beach House near the coast, a Houseboat designed as a dwelling on water, a Tiny House with very limited floor area, and a Mobile Home designed as transportable housing. The guide distinguishes a historically fortified Castle from a large Mansion and a Bungalow that usually has one main story. The building’s style does not by itself establish its age or legal status.\nExplain the difference between Shopping Center and Hotel using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Shopping Center"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “House” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the property types task. Use Shopping Center, Hotel, Mixed-Use, Showroom, Coworking Space, Farmhouse, Ranch, Cabin, Beach House, Houseboat, Tiny House, Mobile Home, Castle, Mansion, and Bungalow in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Shopping Center, Hotel, Mixed-Use, Showroom, Coworking Space, Farmhouse, Ranch, Cabin, Beach House, Houseboat, Tiny House, Mobile Home, Castle, Mansion, Bungalow to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Property Types: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Property Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Shopping Center and Hotel, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The agent compares a Shopping Center with several shops, a Hotel for temporary stays, a Mixed-Use building combining homes and shops, and a Showroom displaying goods. Pause and answer: Which term describes the building combining residential and retail uses?"
     },
     "spacedReview": "1 lesson(s) back: House, Apartment from property-types-1\n3 lesson(s) back: Newspaper, Radio Station from student-life-2\n7 lesson(s) back: Textbook, Journal from research-study-1"
   },
@@ -376,7 +342,7 @@
       "حمامات",
       "مرآب",
       "مسبح",
-      "-",
+      "حديقة",
       "إطلالة",
       "موقف سيارات",
       "تخزين"
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "80-110 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Square Footage", "Lot Size", "Bedrooms", "Bathrooms"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Square Footage, Lot Size, Bedrooms, and Bathrooms and choose the option that fits the situation.",
+          "scenario": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Square Footage", "Lot Size", "Bedrooms"],
-            "expectedAnswer": "Square Footage"
+            "question": "Which measure describes the land parcel’s area?",
+            "options": ["Lot Size", "Square Footage", "Bedrooms"],
+            "expectedAnswer": "Lot Size"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Square Footage as the central item; include Square Footage, Lot Size, and Bedrooms naturally where visually appropriate, but make the real-world use of Square Footage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lot Size in a property types context. Use the written scenario as the source of meaning: Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Garage", "Pool", "Garden", "View"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garage, Pool, Garden, and View and choose the option that fits the situation.",
+          "scenario": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Garage", "Pool", "Garden"],
-            "expectedAnswer": "Garage"
+            "question": "Which term names the scenery visible from the property?",
+            "options": ["View", "Garage", "Pool"],
+            "expectedAnswer": "View"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Garage as the central item; include Garage, Pool, and Garden naturally where visually appropriate, but make the real-world use of Garage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for View in a property types context. Use the written scenario as the source of meaning: The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Parking", "Storage"],
-          "scenario": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parking, and Storage and choose the option that fits the situation.",
+          "scenario": "Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Parking", "Storage", "Square Footage"],
-            "expectedAnswer": "Parking"
+            "question": "Which space is intended for keeping belongings?",
+            "options": ["Storage", "Parking"],
+            "expectedAnswer": "Storage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Parking through a realistic adult task; include Parking, Storage, and Square Footage naturally where visually appropriate, but make the real-world use of Parking the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Storage in a property types context. Use the written scenario as the source of meaning: Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written property types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the property types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Square Footage, Lot Size, Bedrooms, and Bathrooms. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Garage, Pool, Garden, and View. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Parking and Storage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Property Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Property Types: Comparing the equipment",
+      "text": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.",
+      "imageBrief": "One uncluttered property types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Square Footage, Lot Size, Bedrooms, and Bathrooms and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Square Footage",
+        "prompt": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature.\nWhich measure describes the land parcel’s area?",
+        "answer": "Lot Size",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garage, Pool, Garden, and View and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Garage",
+        "prompt": "The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included.\nWhich term names the scenery visible from the property?",
+        "answer": "View",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the property types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parking, and Storage and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Parking",
+        "prompt": "Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nWhich space is intended for keeping belongings?",
+        "answer": "Storage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. The listing includes a Garage, Pool, and Garden. Its View is the scenery visible from the property. Lina asks about maintenance and actual sightlines at the viewing instead of assuming all pictured features are included. Lina asks about Parking for a vehicle and Storage for belongings. The agreement states which spaces are included and who can use them.\nExplain the difference between Square Footage and Lot Size using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Square Footage"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Shopping Center” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the property types task. Use Square Footage, Lot Size, Bedrooms, Bathrooms, Garage, Pool, Garden, View, Parking, and Storage in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Square Footage, Lot Size, Bedrooms, Bathrooms, Garage, Pool, Garden, View, Parking, Storage to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Property Types: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Property Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Square Footage and Lot Size, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Lina checks Square Footage for the described floor area and Lot Size for the land parcel’s area. Bedrooms and Bathrooms count different rooms; the agent explains how the listing measures each feature. Pause and answer: Which measure describes the land parcel’s area?"
     },
     "spacedReview": "1 lesson(s) back: Shopping Center, Hotel from property-types-2\n3 lesson(s) back: Tuition, Scholarship from student-life-3\n7 lesson(s) back: Literature Review, Methodology from research-study-2"
   }

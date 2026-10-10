@@ -44,136 +44,141 @@
       "ذهب"
     ],
     "usage": {
-      "goal": "Learn to use common materials 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to materials.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wood", "Stone", "Marble"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Wood, Stone, Marble. The selected item or situation is best described as wood.",
+          "scenario": "The shelf is made of wood from a tree. Stone is rock used as material, while marble is a particular type of stone.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What is the shelf made of in the text?",
             "options": ["Wood", "Stone", "Marble"],
             "expectedAnswer": "Wood"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Wood, Stone, Marble. The selected item or situation is best described as wood. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Wood, Stone, Marble in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain wooden shelf with visible grain; composition supplied by text, no performance certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Granite", "Clay", "Sand"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Granite, Clay, Sand. The selected item or situation is best described as granite.",
+          "scenario": "The counter record identifies granite, a hard rock. Clay can be shaped when wet, and sand consists of loose small grains.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What material does the counter record identify?",
             "options": ["Granite", "Clay", "Sand"],
             "expectedAnswer": "Granite"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Granite, Clay, Sand. The selected item or situation is best described as granite. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Granite, Clay, Sand in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Close-up of plausible granite counter; no mineral-composition certainty from appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bamboo", "Cork", "Slate"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Bamboo, Cork, Slate. The selected item or situation is best described as bamboo.",
+          "scenario": "Bamboo stems form the screen. Cork comes from bark, while slate is a rock that splits into thin sheets.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which material forms the screen?",
             "options": ["Bamboo", "Cork", "Slate"],
             "expectedAnswer": "Bamboo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Bamboo, Cork, Slate. The selected item or situation is best described as bamboo. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Bamboo, Cork, Slate in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Bamboo-stem screen with nodes visible, no environmental certification claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Limestone", "Steel", "Iron"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Limestone, Steel, Iron. The selected item or situation is best described as limestone.",
+          "scenario": "The record identifies the pale rock as limestone. Steel is an alloy based on iron; iron is a metallic element.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which rock is named in the record?",
             "options": ["Limestone", "Steel", "Iron"],
             "expectedAnswer": "Limestone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Limestone, Steel, Iron. The selected item or situation is best described as limestone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Limestone, Steel, Iron in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A pale limestone reference specimen on neutral background; no chemical test or readable label. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Aluminum", "Copper", "Gold"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Aluminum, Copper, Gold. The selected item or situation is best described as aluminum.",
+          "scenario": "The container record specifies aluminum. Copper is a reddish metal, while gold is a yellow precious metal.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which metal does the container record specify?",
             "options": ["Aluminum", "Copper", "Gold"],
             "expectedAnswer": "Aluminum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Aluminum, Copper, Gold. The selected item or situation is best described as aluminum. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Aluminum, Copper, Gold in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain unbranded metallic container; aluminum identity comes from written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Materials: Short Description",
-      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares wood, stone, and marble, noticing differences in appearance, measurement, material, or texture. The learner compares granite, clay, and sand, noticing differences in appearance, measurement, material, or texture. The learner compares bamboo, cork, and slate, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Materials for a room display",
+      "text": "Dina visits a materials display. The wood sample comes from a tree. She sees stone, marble and granite beside it. A bamboo sample has hollow stems, and cork comes from bark. Dina reads that limestone is a type of rock. There are also metal samples, including aluminum. She reads the descriptions because a photograph alone may not identify what an object is made from.",
+      "imageBrief": "Support for Materials for a room display. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Wood, Stone, Marble. The selected item or situation is best described as wood.\nWhich description best fits the selected item or situation?",
+        "prompt": "The shelf is made of wood from a tree. Stone is rock used as material, while marble is a particular type of stone.\nWhat is the shelf made of in the text?",
         "answer": "Wood",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Granite, Clay, Sand. The selected item or situation is best described as granite.\nWhich description best fits the selected item or situation?",
+        "prompt": "The counter record identifies granite, a hard rock. Clay can be shaped when wet, and sand consists of loose small grains.\nWhat material does the counter record identify?",
         "answer": "Granite",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Bamboo, Cork, Slate. The selected item or situation is best described as bamboo.\nWhich description best fits the selected item or situation?",
+        "prompt": "Bamboo stems form the screen. Cork comes from bark, while slate is a rock that splits into thin sheets.\nWhich material forms the screen?",
         "answer": "Bamboo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Limestone, Steel, Iron. The selected item or situation is best described as limestone.\nWhich description best fits the selected item or situation?",
+        "prompt": "The record identifies the pale rock as limestone. Steel is an alloy based on iron; iron is a metallic element.\nWhich rock is named in the record?",
         "answer": "Limestone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Aluminum, Copper, Gold. The selected item or situation is best described as aluminum.\nWhich description best fits the selected item or situation?",
+        "prompt": "The container record specifies aluminum. Copper is a reddish metal, while gold is a yellow precious metal.\nWhich metal does the container record specify?",
         "answer": "Aluminum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Wood"
+        "prompt": "Dina visits a materials display. The wood sample comes from a tree. She sees stone, marble and granite beside it. A bamboo sample has hollow stems, and cork comes from bark. Dina reads that limestone is a type of rock. There are also metal samples, including aluminum. She reads the descriptions because a photograph alone may not identify what an object is made from.\nWhy does Dina read the descriptions?",
+        "answer": "A photograph may not identify the material.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Marble"
+        "prompt": "Explain the difference between “Wood” and “Stone” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Eggplant” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Wood” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The shelf is made of wood from a tree. Stone is rock used as material, while marble is a particular type of stone.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Materials: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Materials for a room display",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina visits a materials display. The wood sample comes from a tree. She sees stone, marble and granite beside it. A bamboo sample has hollow stems, and cork comes from bark. Dina reads that limestone is a type of rock. There are also metal samples, including aluminum. She reads the descriptions because a photograph alone may not identify what an object is made from. Ask: Why does Dina read the descriptions?"
     },
     "spacedReview": "1 lesson(s) back: Eggplant, Periwinkle from shades-tones-4\n3 lesson(s) back: Emerald, Olive from shades-tones-2\n7 lesson(s) back: Mumble, Stutter from communication-verbs-2"
   },
@@ -222,136 +227,141 @@
       "كشمير"
     ],
     "usage": {
-      "goal": "Learn to use common materials 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to materials.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Silver", "Bronze", "Brass"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Silver, Bronze, Brass. The selected item or situation is best described as silver.",
+          "scenario": "The supplier identifies the sample as silver. Bronze commonly combines copper and tin; brass combines copper and zinc.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which metal does the supplier identify?",
             "options": ["Silver", "Bronze", "Brass"],
             "expectedAnswer": "Silver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Silver, Bronze, Brass. The selected item or situation is best described as silver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Silver, Bronze, Brass in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain metal sample; no claim color distinguishes silver from other pale metals. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Titanium", "Platinum", "Cotton"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Titanium, Platinum, Cotton. The selected item or situation is best described as titanium.",
+          "scenario": "The aircraft-part record lists titanium. Platinum is a different metallic element; cotton is a plant fiber.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which material is listed for the aircraft part?",
             "options": ["Titanium", "Platinum", "Cotton"],
             "expectedAnswer": "Titanium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Titanium, Platinum, Cotton. The selected item or situation is best described as titanium. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Titanium, Platinum, Cotton in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Unbranded small metal component, identity supplied by record rather than photograph. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Silk", "Wool", "Linen"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Silk, Wool, Linen. The selected item or situation is best described as silk.",
+          "scenario": "The composition record says silk. Wool comes from animal fleece; linen comes from flax fibers.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which fabric does the record name?",
             "options": ["Silk", "Wool", "Linen"],
             "expectedAnswer": "Silk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Silk, Wool, Linen. The selected item or situation is best described as silk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Silk, Wool, Linen in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Smooth fabric swatch, no assumption that shine proves silk fiber content. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Denim", "Polyester", "Nylon"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Denim, Polyester, Nylon. The selected item or situation is best described as denim.",
+          "scenario": "The jeans use denim, a sturdy twill fabric often made of cotton. Polyester and nylon are synthetic fibers.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What fabric do the jeans use?",
             "options": ["Denim", "Polyester", "Nylon"],
             "expectedAnswer": "Denim"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Denim, Polyester, Nylon. The selected item or situation is best described as denim. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Denim, Polyester, Nylon in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Folded plain denim jeans with visible twill; no branding or proof of exact blend. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Velvet", "Satin", "Cashmere"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Velvet, Satin, Cashmere. The selected item or situation is best described as velvet.",
+          "scenario": "The sample is velvet, with a dense raised pile. Satin has a smooth face, while cashmere names fine goat undercoat fiber or fabric made from it.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which fabric has the raised pile in this description?",
             "options": ["Velvet", "Satin", "Cashmere"],
             "expectedAnswer": "Velvet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Velvet, Satin, Cashmere. The selected item or situation is best described as velvet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Velvet, Satin, Cashmere in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Macro view of velvet pile beside smooth background, no tactile claim established solely by image. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Materials: Mini Dialogue",
-      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares silver, bronze, and brass, noticing differences in appearance, measurement, material, or texture. The learner compares titanium, platinum, and cotton, noticing differences in appearance, measurement, material, or texture. The learner compares the silk, wool, and linen and notices how the materials differ in texture, strength, or appearance. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Metals and cloth at the sample table",
+      "text": "Dina compares metal and cloth samples. The record names one metal as silver and another as titanium. She sees silk, wool and linen at the next table. A denim sample feels strong. Velvet has a soft raised surface, while satin has a smooth shiny face. Dina asks about the fabric content. The weave or finish does not always tell her which fibers were used.",
+      "imageBrief": "Support for Metals and cloth at the sample table. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Silver, Bronze, Brass. The selected item or situation is best described as silver.\nWhich description best fits the selected item or situation?",
+        "prompt": "The supplier identifies the sample as silver. Bronze commonly combines copper and tin; brass combines copper and zinc.\nWhich metal does the supplier identify?",
         "answer": "Silver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Titanium, Platinum, Cotton. The selected item or situation is best described as titanium.\nWhich description best fits the selected item or situation?",
+        "prompt": "The aircraft-part record lists titanium. Platinum is a different metallic element; cotton is a plant fiber.\nWhich material is listed for the aircraft part?",
         "answer": "Titanium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Silk, Wool, Linen. The selected item or situation is best described as silk.\nWhich description best fits the selected item or situation?",
+        "prompt": "The composition record says silk. Wool comes from animal fleece; linen comes from flax fibers.\nWhich fabric does the record name?",
         "answer": "Silk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Denim, Polyester, Nylon. The selected item or situation is best described as denim.\nWhich description best fits the selected item or situation?",
+        "prompt": "The jeans use denim, a sturdy twill fabric often made of cotton. Polyester and nylon are synthetic fibers.\nWhat fabric do the jeans use?",
         "answer": "Denim",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Velvet, Satin, Cashmere. The selected item or situation is best described as velvet.\nWhich description best fits the selected item or situation?",
+        "prompt": "The sample is velvet, with a dense raised pile. Satin has a smooth face, while cashmere names fine goat undercoat fiber or fabric made from it.\nWhich fabric has the raised pile in this description?",
         "answer": "Velvet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Silver"
+        "prompt": "Dina compares metal and cloth samples. The record names one metal as silver and another as titanium. She sees silk, wool and linen at the next table. A denim sample feels strong. Velvet has a soft raised surface, while satin has a smooth shiny face. Dina asks about the fabric content. The weave or finish does not always tell her which fibers were used.\nWhat does Dina ask about the cloth?",
+        "answer": "Its fabric content.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Brass"
+        "prompt": "Explain the difference between “Silver” and “Bronze” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wood” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Silver” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The supplier identifies the sample as silver. Bronze commonly combines copper and tin; brass combines copper and zinc.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Materials: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Metals and cloth at the sample table",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares metal and cloth samples. The record names one metal as silver and another as titanium. She sees silk, wool and linen at the next table. A denim sample feels strong. Velvet has a soft raised surface, while satin has a smooth shiny face. Dina asks about the fabric content. The weave or finish does not always tell her which fibers were used. Ask: What does Dina ask about the cloth?"
     },
     "spacedReview": "1 lesson(s) back: Wood, Stone from materials-1\n3 lesson(s) back: Ivory, Cream from shades-tones-3\n7 lesson(s) back: Write, Read from communication-verbs-3"
   },
@@ -385,7 +395,7 @@
     "targetWordsArabic": [
       "بلاستيك",
       "مطاط",
-      "كأس زجاج (كوب ماء)",
+      "زجاج",
       "ألياف زجاجية",
       "ألياف كربون",
       "أكريليك",
@@ -400,136 +410,141 @@
       "ألواح جبسية"
     ],
     "usage": {
-      "goal": "Learn to use common materials 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to materials.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Plastic", "Rubber", "Glass"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Plastic, Rubber, Glass. The selected item or situation is best described as plastic.",
+          "scenario": "The box is made of plastic. Rubber is an elastic material, and glass is a hard material often used for transparent objects.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What material is named for the box?",
             "options": ["Plastic", "Rubber", "Glass"],
             "expectedAnswer": "Plastic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Plastic, Rubber, Glass. The selected item or situation is best described as plastic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Plastic, Rubber, Glass in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain molded plastic box, no universal recycling or safety claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fiberglass", "Carbon Fiber", "Acrylic"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Fiberglass, Carbon Fiber, Acrylic. The selected item or situation is best described as fiberglass.",
+          "scenario": "The panel record specifies fiberglass, using fine glass fibers. Carbon fiber uses carbon strands; acrylic can name a clear plastic or synthetic fiber.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What reinforcing material does the record specify?",
             "options": ["Fiberglass", "Carbon Fiber", "Acrylic"],
             "expectedAnswer": "Fiberglass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Fiberglass, Carbon Fiber, Acrylic. The selected item or situation is best described as fiberglass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Fiberglass, Carbon Fiber, Acrylic in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Sealed fiberglass sample panel; no exposed fibers, cutting or handling demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Vinyl", "Silicone", "Foam"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Vinyl, Silicone, Foam. The selected item or situation is best described as vinyl.",
+          "scenario": "The floor-covering record names vinyl. Silicone is used in products such as sealants and molds; foam has many small cells.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which material is named for the floor covering?",
             "options": ["Vinyl", "Silicone", "Foam"],
             "expectedAnswer": "Vinyl"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Vinyl, Silicone, Foam. The selected item or situation is best described as vinyl. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Vinyl, Silicone, Foam in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain vinyl floor sample; composition from text, no logo or health claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Resin", "Concrete", "Brick"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Resin, Concrete, Brick. The selected item or situation is best described as resin.",
+          "scenario": "The sample record names resin. Concrete combines a binder and other materials; brick is a block used in building.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What substance does the sample record name?",
             "options": ["Resin", "Concrete", "Brick"],
             "expectedAnswer": "Resin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Resin, Concrete, Brick. The selected item or situation is best described as resin. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Resin, Concrete, Brick in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Closed container and cured resin reference sample; no chemical procedure or readable label. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cement", "Plaster", "Drywall"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Cement, Plaster, Drywall. The selected item or situation is best described as cement.",
+          "scenario": "Cement is a binder used in many building mixtures. Plaster is used for finishes or casts, while drywall is a board used for walls.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which material is the binder in this description?",
             "options": ["Cement", "Plaster", "Drywall"],
             "expectedAnswer": "Cement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Cement, Plaster, Drywall. The selected item or situation is best described as cement. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Cement, Plaster, Drywall in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Closed plain cement bag and small cured sample, no dust exposure or readable text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Materials: Simple Message",
-      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares plastic, rubber, and glass, noticing differences in appearance, measurement, material, or texture. The learner compares the fiberglass, carbon fiber, and acrylic and notices how the materials differ in texture, strength, or appearance. The learner compares vinyl, silicone, and foam, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Manufactured materials and building supplies",
+      "text": "Dina reads the display cards. Plastic can be shaped into many objects. Fiberglass uses fine glass fibers. Vinyl and silicone are different manufactured materials. A resin sample is beside concrete and brick. Dina learns that cement is a binder used in concrete, not another name for all concrete. She reads the product information before making comparisons. This is a vocabulary display, not instructions for working with chemicals.",
+      "imageBrief": "Support for Manufactured materials and building supplies. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Plastic, Rubber, Glass. The selected item or situation is best described as plastic.\nWhich description best fits the selected item or situation?",
+        "prompt": "The box is made of plastic. Rubber is an elastic material, and glass is a hard material often used for transparent objects.\nWhat material is named for the box?",
         "answer": "Plastic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Fiberglass, Carbon Fiber, Acrylic. The selected item or situation is best described as fiberglass.\nWhich description best fits the selected item or situation?",
+        "prompt": "The panel record specifies fiberglass, using fine glass fibers. Carbon fiber uses carbon strands; acrylic can name a clear plastic or synthetic fiber.\nWhat reinforcing material does the record specify?",
         "answer": "Fiberglass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Vinyl, Silicone, Foam. The selected item or situation is best described as vinyl.\nWhich description best fits the selected item or situation?",
+        "prompt": "The floor-covering record names vinyl. Silicone is used in products such as sealants and molds; foam has many small cells.\nWhich material is named for the floor covering?",
         "answer": "Vinyl",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Resin, Concrete, Brick. The selected item or situation is best described as resin.\nWhich description best fits the selected item or situation?",
+        "prompt": "The sample record names resin. Concrete combines a binder and other materials; brick is a block used in building.\nWhat substance does the sample record name?",
         "answer": "Resin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Cement, Plaster, Drywall. The selected item or situation is best described as cement.\nWhich description best fits the selected item or situation?",
+        "prompt": "Cement is a binder used in many building mixtures. Plaster is used for finishes or casts, while drywall is a board used for walls.\nWhich material is the binder in this description?",
         "answer": "Cement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Plastic"
+        "prompt": "Dina reads the display cards. Plastic can be shaped into many objects. Fiberglass uses fine glass fibers. Vinyl and silicone are different manufactured materials. A resin sample is beside concrete and brick. Dina learns that cement is a binder used in concrete, not another name for all concrete. She reads the product information before making comparisons. This is a vocabulary display, not instructions for working with chemicals.\nIs cement another name for all concrete?",
+        "answer": "No. Cement is a binder used in concrete.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Glass"
+        "prompt": "Explain the difference between “Plastic” and “Rubber” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Silver” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Plastic” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The box is made of plastic. Rubber is an elastic material, and glass is a hard material often used for transparent objects.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Materials: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Manufactured materials and building supplies",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the display cards. Plastic can be shaped into many objects. Fiberglass uses fine glass fibers. Vinyl and silicone are different manufactured materials. A resin sample is beside concrete and brick. Dina learns that cement is a binder used in concrete, not another name for all concrete. She reads the product information before making comparisons. This is a vocabulary display, not instructions for working with chemicals. Ask: Is cement another name for all concrete?"
     },
     "spacedReview": "1 lesson(s) back: Silver, Bronze from materials-2\n3 lesson(s) back: Eggplant, Periwinkle from shades-tones-4\n7 lesson(s) back: Shrug, Signal from communication-verbs-4"
   },
@@ -546,79 +561,84 @@
     "targetWordsEnglish": ["Insulation", "Tile", "Grout", "Mortar", "Lumber"],
     "targetWordsArabic": ["عزل", "بلاط", "مادة ملء الفواصل", "مونة بناء", "خشب منشور"],
     "usage": {
-      "goal": "Learn to use common materials 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to materials.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Insulation", "Tile", "Grout"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Insulation, Tile, Grout. The selected item or situation is best described as insulation.",
+          "scenario": "The wall sample contains insulation to reduce heat transfer. Tile covers a surface, while grout fills joints between tiles.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which material reduces heat transfer in the wall sample?",
             "options": ["Insulation", "Tile", "Grout"],
             "expectedAnswer": "Insulation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Insulation, Tile, Grout. The selected item or situation is best described as insulation. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Insulation, Tile, Grout in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Sealed wall-model cutaway with insulation layer clearly visible; no building-code or performance claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mortar", "Lumber"],
-          "scenario": "An adult compares three possible descriptions in a materials context: Mortar, Lumber, Insulation. The selected item or situation is best described as mortar.",
+          "scenario": "Mortar holds the display's bricks together. Lumber is wood cut for building, and insulation serves a different function.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What holds the display's bricks together?",
             "options": ["Mortar", "Lumber", "Insulation"],
             "expectedAnswer": "Mortar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a materials context illustrating this situation: An adult compares three possible descriptions in a materials context: Mortar, Lumber, Insulation. The selected item or situation is best described as mortar. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult materials scene showing lesson-related items or actions including Mortar, Lumber in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Small brickwork reference with visible mortar joints, no construction instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Materials: Notice-Style Text",
-      "text": "Maya is in a situation connected to materials. She uses the new words to understand what she sees and what happens next. The learner compares insulation, tile, and grout, noticing differences in appearance, measurement, material, or texture. The learner compares mortar and lumber, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Materials. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a wall-material list",
+      "text": "Dina reads a display list for a room wall. Insulation reduces heat transfer. Tile covers a surface, and grout fills the joints between tiles. Mortar holds bricks or stones together. Lumber is wood cut for building. Dina points to the insulation sample and then asks about the mortar sample. She uses these words to identify the materials in the display, not to design or build a wall.",
+      "imageBrief": "Support for Reading a wall-material list. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Insulation, Tile, Grout. The selected item or situation is best described as insulation.\nWhich description best fits the selected item or situation?",
+        "prompt": "The wall sample contains insulation to reduce heat transfer. Tile covers a surface, while grout fills joints between tiles.\nWhich material reduces heat transfer in the wall sample?",
         "answer": "Insulation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a materials context: Mortar, Lumber, Insulation. The selected item or situation is best described as mortar.\nWhich description best fits the selected item or situation?",
+        "prompt": "Mortar holds the display's bricks together. Lumber is wood cut for building, and insulation serves a different function.\nWhat holds the display's bricks together?",
         "answer": "Mortar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Insulation"
+        "prompt": "Dina reads a display list for a room wall. Insulation reduces heat transfer. Tile covers a surface, and grout fills the joints between tiles. Mortar holds bricks or stones together. Lumber is wood cut for building. Dina points to the insulation sample and then asks about the mortar sample. She uses these words to identify the materials in the display, not to design or build a wall.\nWhat holds bricks or stones together?",
+        "answer": "Mortar.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Grout"
+        "prompt": "Explain the difference between “Insulation” and “Tile” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Plastic” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Insulation” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The wall sample contains insulation to reduce heat transfer. Tile covers a surface, while grout fills joints between tiles.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Materials: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading a wall-material list",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a display list for a room wall. Insulation reduces heat transfer. Tile covers a surface, and grout fills the joints between tiles. Mortar holds bricks or stones together. Lumber is wood cut for building. Dina points to the insulation sample and then asks about the mortar sample. She uses these words to identify the materials in the display, not to design or build a wall. Ask: What holds bricks or stones together?"
     },
     "spacedReview": "1 lesson(s) back: Plastic, Rubber from materials-3\n3 lesson(s) back: Wood, Stone from materials-1\n7 lesson(s) back: Crimson, Scarlet from shades-tones-1"
   }

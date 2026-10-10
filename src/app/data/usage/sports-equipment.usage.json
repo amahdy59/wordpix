@@ -28,10 +28,10 @@
     ],
     "targetWordsArabic": [
       "كرة قدم",
-      "كرة السلة",
+      "كرة سلة",
       "كرة تنس",
-      "بيسبول",
-      "كرة الطائرة",
+      "كرة بيسبول",
+      "كرة طائرة",
       "كرة غولف",
       "كرة رغبي",
       "كرة كريكيت",
@@ -44,136 +44,141 @@
       "عصا هوكي"
     ],
     "usage": {
-      "goal": "Learn to use common sports equipment 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to sports equipment.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Soccer Ball", "Basketball", "Tennis Ball"],
-          "scenario": "During a routine sports equipment task, an adult compares Soccer Ball, Basketball, Tennis Ball. The person selects Soccer Ball for the next step.",
+          "scenario": "The soccer ball is for soccer. A basketball is the larger ball used in basketball, while a tennis ball is small and covered with felt.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ball is for soccer?",
             "options": ["Soccer Ball", "Basketball", "Tennis Ball"],
             "expectedAnswer": "Soccer Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Soccer Ball, Basketball, Tennis Ball. The person selects Soccer Ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Soccer Ball, Basketball, Tennis Ball in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. One plain soccer ball without manufacturer logo; coherent seams, no match approval claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Baseball", "Volleyball", "Golf Ball"],
-          "scenario": "During a routine sports equipment task, an adult compares Baseball, Volleyball, Golf Ball. The person selects Baseball for the next step.",
+          "scenario": "The baseball is the small stitched ball used in baseball. A volleyball and a golf ball are used in different sports.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which small stitched ball is named for baseball?",
             "options": ["Baseball", "Volleyball", "Golf Ball"],
             "expectedAnswer": "Baseball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Baseball, Volleyball, Golf Ball. The person selects Baseball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Baseball, Volleyball, Golf Ball in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain baseball with coherent stitching, no trademark or athlete. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Rugby Ball", "Cricket Ball", "Bowling Ball"],
-          "scenario": "During a routine sports equipment task, an adult compares Rugby Ball, Cricket Ball, Bowling Ball. The person selects Rugby Ball for the next step.",
+          "scenario": "A rugby ball has an elongated oval shape. A cricket ball is smaller and round, while a bowling ball is heavy and commonly has finger holes.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ball has the elongated oval shape?",
             "options": ["Rugby Ball", "Cricket Ball", "Bowling Ball"],
             "expectedAnswer": "Rugby Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Rugby Ball, Cricket Ball, Bowling Ball. The person selects Rugby Ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Rugby Ball, Cricket Ball, Bowling Ball in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain rugby ball with coherent oval form, no branding or competition certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ping Pong Ball", "Tennis Racket", "Badminton Racket"],
-          "scenario": "During a routine sports equipment task, an adult compares Ping Pong Ball, Tennis Racket, Badminton Racket. The person selects Ping Pong Ball for the next step.",
+          "scenario": "The ping-pong ball is small, light and hollow. A tennis racket and a badminton racket are striking tools with stringed heads.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which listed item is a small hollow ball?",
             "options": ["Ping Pong Ball", "Tennis Racket", "Badminton Racket"],
             "expectedAnswer": "Ping Pong Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Ping Pong Ball, Tennis Racket, Badminton Racket. The person selects Ping Pong Ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Ping Pong Ball, Tennis Racket, Badminton Racket in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain table-tennis ball, no printed brand, letter or exact dimension claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Baseball Bat", "Cricket Bat", "Hockey Stick"],
-          "scenario": "During a routine sports equipment task, an adult compares Baseball Bat, Cricket Bat, Hockey Stick. The person selects Baseball Bat for the next step.",
+          "scenario": "A baseball bat has a rounded striking body. A cricket bat has a broad flat face; a hockey stick has a shaped end for a ball or puck.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which striking tool is named for baseball?",
             "options": ["Baseball Bat", "Cricket Bat", "Hockey Stick"],
             "expectedAnswer": "Baseball Bat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Baseball Bat, Cricket Bat, Hockey Stick. The person selects Baseball Bat for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Baseball Bat, Cricket Bat, Hockey Stick in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain baseball bat displayed alone, no person or impact demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Sports Equipment: Short Description",
-      "text": "Maya is in a situation connected to sports equipment. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check soccer ball, basketball, and tennis ball. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check baseball, volleyball, and golf ball. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Sports Equipment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Balls and striking equipment",
+      "text": "Dina visits an equipment store. She asks for a soccer ball and then looks at a baseball. Other shelves hold rugby, cricket and bowling balls. A small ping-pong ball is beside a table-tennis paddle. Dina compares a baseball bat with a cricket bat and a hockey stick. She reads the item names before ordering. Similar-looking sports objects may still be designed for different games.",
+      "imageBrief": "Support for Balls and striking equipment. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine sports equipment task, an adult compares Soccer Ball, Basketball, Tennis Ball. The person selects Soccer Ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The soccer ball is for soccer. A basketball is the larger ball used in basketball, while a tennis ball is small and covered with felt.\nWhich ball is for soccer?",
         "answer": "Soccer Ball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Baseball, Volleyball, Golf Ball. The person selects Baseball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The baseball is the small stitched ball used in baseball. A volleyball and a golf ball are used in different sports.\nWhich small stitched ball is named for baseball?",
         "answer": "Baseball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Rugby Ball, Cricket Ball, Bowling Ball. The person selects Rugby Ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A rugby ball has an elongated oval shape. A cricket ball is smaller and round, while a bowling ball is heavy and commonly has finger holes.\nWhich ball has the elongated oval shape?",
         "answer": "Rugby Ball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Ping Pong Ball, Tennis Racket, Badminton Racket. The person selects Ping Pong Ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The ping-pong ball is small, light and hollow. A tennis racket and a badminton racket are striking tools with stringed heads.\nWhich listed item is a small hollow ball?",
         "answer": "Ping Pong Ball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Baseball Bat, Cricket Bat, Hockey Stick. The person selects Baseball Bat for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A baseball bat has a rounded striking body. A cricket bat has a broad flat face; a hockey stick has a shaped end for a ball or puck.\nWhich striking tool is named for baseball?",
         "answer": "Baseball Bat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Soccer Ball"
+        "prompt": "Dina visits an equipment store. She asks for a soccer ball and then looks at a baseball. Other shelves hold rugby, cricket and bowling balls. A small ping-pong ball is beside a table-tennis paddle. Dina compares a baseball bat with a cricket bat and a hockey stick. She reads the item names before ordering. Similar-looking sports objects may still be designed for different games.\nWhat does Dina read before ordering?",
+        "answer": "The item names.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Tennis Ball"
+        "prompt": "Explain the difference between “Soccer Ball” and “Basketball” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Insurance” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Soccer Ball” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The soccer ball is for soccer. A basketball is the larger ball used in basketball, while a tennis ball is small and covered with felt.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Sports Equipment: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Balls and striking equipment",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina visits an equipment store. She asks for a soccer ball and then looks at a baseball. Other shelves hold rugby, cricket and bowling balls. A small ping-pong ball is beside a table-tennis paddle. Dina compares a baseball bat with a cricket bat and a hockey stick. She reads the item names before ordering. Similar-looking sports objects may still be designed for different games. Ask: What does Dina read before ordering?"
     },
     "spacedReview": "1 lesson(s) back: Insurance, Investment from money-currency-4\n3 lesson(s) back: ATM, Balance from money-currency-2\n7 lesson(s) back: Pound, Stone from measurements-units-2"
   },
@@ -222,136 +227,141 @@
       "واقي المعصم"
     ],
     "usage": {
-      "goal": "Learn to use common sports equipment 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to sports equipment.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Golf Club", "Lacrosse Stick", "Table Tennis Paddle"],
-          "scenario": "During a routine sports equipment task, an adult compares Golf Club, Lacrosse Stick, Table Tennis Paddle. The person selects Golf Club for the next step.",
+          "scenario": "A golf club strikes a golf ball. A lacrosse stick has a netted pocket; a table-tennis paddle has a small solid face.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool strikes a golf ball?",
             "options": ["Golf Club", "Lacrosse Stick", "Table Tennis Paddle"],
             "expectedAnswer": "Golf Club"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Golf Club, Lacrosse Stick, Table Tennis Paddle. The person selects Golf Club for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Golf Club, Lacrosse Stick, Table Tennis Paddle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. One plain golf club with coherent shaft and head, no person or swing demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Squash Racket", "Polo Mallet", "Helmet"],
-          "scenario": "During a routine sports equipment task, an adult compares Squash Racket, Polo Mallet, Helmet. The person selects Squash Racket for the next step.",
+          "scenario": "A squash racket is used in squash. A polo mallet strikes the polo ball; a helmet is protective headgear.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which racket is named for squash?",
             "options": ["Squash Racket", "Polo Mallet", "Helmet"],
             "expectedAnswer": "Squash Racket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Squash Racket, Polo Mallet, Helmet. The person selects Squash Racket for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Squash Racket, Polo Mallet, Helmet in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain squash racket, coherent strings and frame; exact sport identity confirmed with a verified reference. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Shin Guards", "Knee Pads", "Elbow Pads"],
-          "scenario": "During a routine sports equipment task, an adult compares Shin Guards, Knee Pads, Elbow Pads. The person selects Shin Guards for the next step.",
+          "scenario": "Shin guards cover the fronts of the lower legs. Knee pads cover knees, while elbow pads cover elbows.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which items cover the fronts of the lower legs?",
             "options": ["Shin Guards", "Knee Pads", "Elbow Pads"],
             "expectedAnswer": "Shin Guards"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Shin Guards, Knee Pads, Elbow Pads. The person selects Shin Guards for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Shin Guards, Knee Pads, Elbow Pads in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Pair of plain shin guards on tabletop, no wearer or protective certification claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mouthguard", "Goggles", "Gloves"],
-          "scenario": "During a routine sports equipment task, an adult compares Mouthguard, Goggles, Gloves. The person selects Mouthguard for the next step.",
+          "scenario": "A mouthguard covers the teeth and gums. Goggles cover the eyes, and gloves are worn on hands.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is worn over the teeth and gums?",
             "options": ["Mouthguard", "Goggles", "Gloves"],
             "expectedAnswer": "Mouthguard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Mouthguard, Goggles, Gloves. The person selects Mouthguard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Mouthguard, Goggles, Gloves in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain standalone sports mouthguard, no mouth, person or fit claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Chest Protector", "Athletic Cup", "Wrist Guard"],
-          "scenario": "During a routine sports equipment task, an adult compares Chest Protector, Athletic Cup, Wrist Guard. The person selects Chest Protector for the next step.",
+          "scenario": "A chest protector covers the chest. An athletic cup shields the groin area, and a wrist guard is worn around the wrist.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item covers the chest?",
             "options": ["Chest Protector", "Athletic Cup", "Wrist Guard"],
             "expectedAnswer": "Chest Protector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Chest Protector, Athletic Cup, Wrist Guard. The person selects Chest Protector for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Chest Protector, Athletic Cup, Wrist Guard in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain standalone padded chest protector; no wearer, nudity or performance guarantee. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Sports Equipment: Mini Dialogue",
-      "text": "Maya is in a situation connected to sports equipment. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check golf club, lacrosse stick, and table tennis paddle. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check squash racket, polo mallet, and helmet. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Sports Equipment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Protective items and sport-specific tools",
+      "text": "Dina reads an equipment list with a coach. It includes a golf club, a squash racket and a helmet. Shin guards, knee pads and elbow pads cover different body areas. A mouthguard is worn over the teeth. The list also names a chest protector and wrist guards. Dina asks which items are appropriate for the activity. An image can show the item but does not establish its fit or protective rating.",
+      "imageBrief": "Support for Protective items and sport-specific tools. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine sports equipment task, an adult compares Golf Club, Lacrosse Stick, Table Tennis Paddle. The person selects Golf Club for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A golf club strikes a golf ball. A lacrosse stick has a netted pocket; a table-tennis paddle has a small solid face.\nWhich tool strikes a golf ball?",
         "answer": "Golf Club",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Squash Racket, Polo Mallet, Helmet. The person selects Squash Racket for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A squash racket is used in squash. A polo mallet strikes the polo ball; a helmet is protective headgear.\nWhich racket is named for squash?",
         "answer": "Squash Racket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Shin Guards, Knee Pads, Elbow Pads. The person selects Shin Guards for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Shin guards cover the fronts of the lower legs. Knee pads cover knees, while elbow pads cover elbows.\nWhich items cover the fronts of the lower legs?",
         "answer": "Shin Guards",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Mouthguard, Goggles, Gloves. The person selects Mouthguard for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A mouthguard covers the teeth and gums. Goggles cover the eyes, and gloves are worn on hands.\nWhich item is worn over the teeth and gums?",
         "answer": "Mouthguard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Chest Protector, Athletic Cup, Wrist Guard. The person selects Chest Protector for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A chest protector covers the chest. An athletic cup shields the groin area, and a wrist guard is worn around the wrist.\nWhich item covers the chest?",
         "answer": "Chest Protector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Golf Club"
+        "prompt": "Dina reads an equipment list with a coach. It includes a golf club, a squash racket and a helmet. Shin guards, knee pads and elbow pads cover different body areas. A mouthguard is worn over the teeth. The list also names a chest protector and wrist guards. Dina asks which items are appropriate for the activity. An image can show the item but does not establish its fit or protective rating.\nWhat does Dina ask the coach?",
+        "answer": "Which items are appropriate for the activity.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Table Tennis Paddle"
+        "prompt": "Explain the difference between “Golf Club” and “Lacrosse Stick” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Soccer Ball” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Golf Club” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: A golf club strikes a golf ball. A lacrosse stick has a netted pocket; a table-tennis paddle has a small solid face.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Sports Equipment: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Protective items and sport-specific tools",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads an equipment list with a coach. It includes a golf club, a squash racket and a helmet. Shin guards, knee pads and elbow pads cover different body areas. A mouthguard is worn over the teeth. The list also names a chest protector and wrist guards. Dina asks which items are appropriate for the activity. An image can show the item but does not establish its fit or protective rating. Ask: What does Dina ask the coach?"
     },
     "spacedReview": "1 lesson(s) back: Soccer Ball, Basketball from sports-equipment-1\n3 lesson(s) back: Cost, Discount from money-currency-3\n7 lesson(s) back: Celsius, Fahrenheit from measurements-units-3"
   },
@@ -393,143 +403,148 @@
       "أسطوانة إسفنجية",
       "عارضة تمارين العقلة",
       "دراجة تمارين ثابتة",
-      "صافي",
+      "شبكة رياضية",
       "مرمى",
-      "قرط حلقي",
+      "حلقة كرة السلة",
       "صافرة",
       "ساعة توقيت"
     ],
     "usage": {
-      "goal": "Learn to use common sports equipment 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to sports equipment.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dumbbell", "Barbell", "Resistance Band"],
-          "scenario": "During a routine sports equipment task, an adult compares Dumbbell, Barbell, Resistance Band. The person selects Dumbbell for the next step.",
+          "scenario": "A dumbbell is a short weight held in one hand. A barbell has a longer bar, and a resistance band is elastic.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the short hand-held weight?",
             "options": ["Dumbbell", "Barbell", "Resistance Band"],
             "expectedAnswer": "Dumbbell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Dumbbell, Barbell, Resistance Band. The person selects Dumbbell for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Dumbbell, Barbell, Resistance Band in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain dumbbell on stable floor, no lifting activity or weight number. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Jump Rope", "Yoga Mat", "Kettlebell"],
-          "scenario": "During a routine sports equipment task, an adult compares Jump Rope, Yoga Mat, Kettlebell. The person selects Jump Rope for the next step.",
+          "scenario": "A jump rope is swung for skipping. A yoga mat provides a floor surface, and a kettlebell is a weight with a top handle.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is used for skipping?",
             "options": ["Jump Rope", "Yoga Mat", "Kettlebell"],
             "expectedAnswer": "Jump Rope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Jump Rope, Yoga Mat, Kettlebell. The person selects Jump Rope for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Jump Rope, Yoga Mat, Kettlebell in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain skipping rope coiled on floor, no person or physical ability assumption. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Medicine Ball", "Foam Roller", "Pull-Up Bar"],
-          "scenario": "During a routine sports equipment task, an adult compares Medicine Ball, Foam Roller, Pull-Up Bar. The person selects Medicine Ball for the next step.",
+          "scenario": "A medicine ball is a weighted exercise ball. A foam roller is a foam cylinder, while a pull-up bar is a fixed horizontal bar.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the weighted exercise ball?",
             "options": ["Medicine Ball", "Foam Roller", "Pull-Up Bar"],
             "expectedAnswer": "Medicine Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Medicine Ball, Foam Roller, Pull-Up Bar. The person selects Medicine Ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Medicine Ball, Foam Roller, Pull-Up Bar in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain medicine ball with coherent form, no load number or branded panel. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Exercise Bike", "Net", "Goal"],
-          "scenario": "During a routine sports equipment task, an adult compares Exercise Bike, Net, Goal. The person selects Exercise Bike for the next step.",
+          "scenario": "The exercise bike is stationary. A net is a mesh barrier or part of sports equipment, while a goal is a scoring target in some games.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which machine is stationary?",
             "options": ["Exercise Bike", "Net", "Goal"],
             "expectedAnswer": "Exercise Bike"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Exercise Bike, Net, Goal. The person selects Exercise Bike for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Exercise Bike, Net, Goal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. One plain stationary exercise bike with coherent pedals and frame, screen blank. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hoop", "Whistle", "Stopwatch"],
-          "scenario": "During a routine sports equipment task, an adult compares Hoop, Whistle, Stopwatch. The person selects Hoop for the next step.",
+          "scenario": "The basketball hoop is a ring above the court. A whistle gives a sound signal, and a stopwatch measures elapsed time.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the ring above the court?",
             "options": ["Hoop", "Whistle", "Stopwatch"],
             "expectedAnswer": "Hoop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Hoop, Whistle, Stopwatch. The person selects Hoop for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Hoop, Whistle, Stopwatch in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Empty basketball hoop with net and coherent mounting, no incidental people or scoreboard letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Sports Equipment: Simple Message",
-      "text": "Maya is in a situation connected to sports equipment. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check dumbbell, barbell, and resistance band. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check jump rope, yoga mat, and kettlebell. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Sports Equipment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Exercise and court equipment",
+      "text": "Dina reads the gym equipment list. It includes a dumbbell, a barbell and a resistance band. A jump rope is beside a yoga mat. She sees a medicine ball, a foam roller and a pull-up bar. An exercise bike stays in one place. At the court, a hoop and net are used for basketball. Dina asks staff about the equipment; the lesson teaches names rather than an exercise program.",
+      "imageBrief": "Support for Exercise and court equipment. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine sports equipment task, an adult compares Dumbbell, Barbell, Resistance Band. The person selects Dumbbell for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A dumbbell is a short weight held in one hand. A barbell has a longer bar, and a resistance band is elastic.\nWhich item is the short hand-held weight?",
         "answer": "Dumbbell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Jump Rope, Yoga Mat, Kettlebell. The person selects Jump Rope for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A jump rope is swung for skipping. A yoga mat provides a floor surface, and a kettlebell is a weight with a top handle.\nWhich item is used for skipping?",
         "answer": "Jump Rope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Medicine Ball, Foam Roller, Pull-Up Bar. The person selects Medicine Ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A medicine ball is a weighted exercise ball. A foam roller is a foam cylinder, while a pull-up bar is a fixed horizontal bar.\nWhich item is the weighted exercise ball?",
         "answer": "Medicine Ball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Exercise Bike, Net, Goal. The person selects Exercise Bike for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The exercise bike is stationary. A net is a mesh barrier or part of sports equipment, while a goal is a scoring target in some games.\nWhich machine is stationary?",
         "answer": "Exercise Bike",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Hoop, Whistle, Stopwatch. The person selects Hoop for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The basketball hoop is a ring above the court. A whistle gives a sound signal, and a stopwatch measures elapsed time.\nWhich item is the ring above the court?",
         "answer": "Hoop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Dumbbell"
+        "prompt": "Dina reads the gym equipment list. It includes a dumbbell, a barbell and a resistance band. A jump rope is beside a yoga mat. She sees a medicine ball, a foam roller and a pull-up bar. An exercise bike stays in one place. At the court, a hoop and net are used for basketball. Dina asks staff about the equipment; the lesson teaches names rather than an exercise program.\nWhich machine stays in one place?",
+        "answer": "The exercise bike.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Resistance Band"
+        "prompt": "Explain the difference between “Dumbbell” and “Barbell” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Golf Club” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Dumbbell” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: A dumbbell is a short weight held in one hand. A barbell has a longer bar, and a resistance band is elastic.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Sports Equipment: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Exercise and court equipment",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the gym equipment list. It includes a dumbbell, a barbell and a resistance band. A jump rope is beside a yoga mat. She sees a medicine ball, a foam roller and a pull-up bar. An exercise bike stays in one place. At the court, a hoop and net are used for basketball. Dina asks staff about the equipment; the lesson teaches names rather than an exercise program. Ask: Which machine stays in one place?"
     },
     "spacedReview": "1 lesson(s) back: Golf Club, Lacrosse Stick from sports-equipment-2\n3 lesson(s) back: Insurance, Investment from money-currency-4\n7 lesson(s) back: Speed, Velocity from measurements-units-4"
   },
@@ -552,79 +567,84 @@
       "حاجز"
     ],
     "usage": {
-      "goal": "Learn to use common sports equipment 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to sports equipment.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Scoreboard", "Cones", "Lane Markers"],
-          "scenario": "During a routine sports equipment task, an adult compares Scoreboard, Cones, Lane Markers. The person selects Scoreboard for the next step.",
+          "scenario": "The scoreboard displays contest results. Cones mark areas, and lane markers identify lanes.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which board displays contest results?",
             "options": ["Scoreboard", "Cones", "Lane Markers"],
             "expectedAnswer": "Scoreboard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Scoreboard, Cones, Lane Markers. The person selects Scoreboard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Scoreboard, Cones, Lane Markers in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Generic scoreboard with blank unnumbered panels on an empty track, no actual result claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Starting Block", "Hurdle"],
-          "scenario": "During a routine sports equipment task, an adult compares Starting Block, Hurdle, Scoreboard. The person selects Starting Block for the next step.",
+          "scenario": "A starting block supports a runner's foot at the start. A hurdle is an obstacle to clear, while a scoreboard displays results.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item supports the foot at the start?",
             "options": ["Starting Block", "Hurdle", "Scoreboard"],
             "expectedAnswer": "Starting Block"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a sports equipment context illustrating this situation: During a routine sports equipment task, an adult compares Starting Block, Hurdle, Scoreboard. The person selects Starting Block for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult sports equipment scene showing lesson-related items or actions including Starting Block, Hurdle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Coherent pair of sprint starting-block footplates on empty track, no runner or coaching instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Sports Equipment: Notice-Style Text",
-      "text": "Maya is in a situation connected to sports equipment. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check scoreboard, cones, and lane markers. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check starting block and hurdle. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Sports Equipment. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing a track area",
+      "text": "Dina visits an empty sports track. The scoreboard displays results. Cones mark an area, and lane markers show separate lanes. Starting blocks support a runner's feet at the start of a sprint. A hurdle is an obstacle in a hurdle race. Dina reads the equipment names in the guide. She does not infer current competition rules or safe installation from a photograph of the track.",
+      "imageBrief": "Support for Preparing a track area. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine sports equipment task, an adult compares Scoreboard, Cones, Lane Markers. The person selects Scoreboard for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The scoreboard displays contest results. Cones mark areas, and lane markers identify lanes.\nWhich board displays contest results?",
         "answer": "Scoreboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine sports equipment task, an adult compares Starting Block, Hurdle, Scoreboard. The person selects Starting Block for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A starting block supports a runner's foot at the start. A hurdle is an obstacle to clear, while a scoreboard displays results.\nWhich item supports the foot at the start?",
         "answer": "Starting Block",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Scoreboard"
+        "prompt": "Dina visits an empty sports track. The scoreboard displays results. Cones mark an area, and lane markers show separate lanes. Starting blocks support a runner's feet at the start of a sprint. A hurdle is an obstacle in a hurdle race. Dina reads the equipment names in the guide. She does not infer current competition rules or safe installation from a photograph of the track.\nWhich equipment supports a runner’s feet at a sprint start?",
+        "answer": "Starting blocks.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Lane Markers"
+        "prompt": "Explain the difference between “Scoreboard” and “Cones” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dumbbell” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Scoreboard” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The scoreboard displays contest results. Cones mark areas, and lane markers identify lanes.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Sports Equipment: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing a track area",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina visits an empty sports track. The scoreboard displays results. Cones mark an area, and lane markers show separate lanes. Starting blocks support a runner's feet at the start of a sprint. A hurdle is an obstacle in a hurdle race. Dina reads the equipment names in the guide. She does not infer current competition rules or safe installation from a photograph of the track. Ask: Which equipment supports a runner’s feet at a sprint start?"
     },
     "spacedReview": "1 lesson(s) back: Dumbbell, Barbell from sports-equipment-3\n3 lesson(s) back: Soccer Ball, Basketball from sports-equipment-1\n7 lesson(s) back: Coin, Bill from money-currency-1"
   }

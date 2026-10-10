@@ -44,140 +44,134 @@
       "شراء منزل"
     ],
     "usage": {
-      "goal": "Learn to use life events 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to life events.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish milestones and respond respectfully to a stated life change.",
+      "canDoStatement": "Can identify events in a supported personal account and explain one distinction. Religious, legal and specialist event names extend the supported task level; they are not individually certified at the unit CEFR label.",
+      "textType": "community-personal-account",
+      "readingTarget": "Supported adult account with event comparisons",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Birthday", "Wedding", "Anniversary"],
-          "scenario": "During a routine life events task, an adult compares Birthday, Wedding, Anniversary. The person selects Birthday for the next step.",
+          "scenario": "Mona plans three family dates. Her birthday marks the day she was born. Her wedding is the ceremony when she marries her partner. Their anniversary will mark the same wedding date in a later year.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which event marks the date of the wedding in a later year?",
             "options": ["Birthday", "Wedding", "Anniversary"],
-            "expectedAnswer": "Birthday"
+            "expectedAnswer": "Anniversary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Birthday, Wedding, Anniversary. The person selects Birthday for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Birthday, Wedding, Anniversary in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults planning family dates with a calendar and invitation envelopes at a kitchen table. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adults planning family dates with a calendar and invitation envelopes at a kitchen table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Graduation", "Retirement Party", "Baby Shower"],
-          "scenario": "During a routine life events task, an adult compares Graduation, Retirement Party, Baby Shower. The person selects Graduation for the next step.",
+          "scenario": "At the community center, Salma arranges a graduation celebration for adults who completed a course. A retirement party thanks a colleague who is leaving work at the end of her career. A baby shower celebrates and supports parents expecting a baby.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which gathering thanks a colleague at the end of her career?",
             "options": ["Graduation", "Retirement Party", "Baby Shower"],
-            "expectedAnswer": "Graduation"
+            "expectedAnswer": "Retirement Party"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Graduation, Retirement Party, Baby Shower. The person selects Graduation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Graduation, Retirement Party, Baby Shower in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult colleagues sharing refreshments beside a gift table in a community center. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adult colleagues sharing refreshments beside a gift table in a community center."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Engagement", "Housewarming", "Promotion"],
-          "scenario": "During a routine life events task, an adult compares Engagement, Housewarming, Promotion. The person selects Engagement for the next step.",
+          "scenario": "Karim announces his engagement: he and his partner have agreed to marry. His sister invites friends to a housewarming in her new home. At work, her promotion gives her a more senior role.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word describes an agreement to marry?",
             "options": ["Engagement", "Housewarming", "Promotion"],
             "expectedAnswer": "Engagement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Engagement, Housewarming, Promotion. The person selects Engagement for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Engagement, Housewarming, Promotion in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult friends gathering in a newly furnished apartment, with moving boxes near the entrance. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adult friends gathering in a newly furnished apartment, with moving boxes near the entrance."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Farewell", "First Day of School", "Learning to Drive"],
-          "scenario": "During a routine life events task, an adult compares Farewell, First Day of School, Learning to Drive. The person selects Farewell for the next step.",
+          "scenario": "At a farewell meal, Omar says goodbye before leaving town. He remembers his first day of school as a child. He is now learning to drive with an instructor and talks about his driving lessons.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity is Omar doing now?",
             "options": ["Farewell", "First Day of School", "Learning to Drive"],
-            "expectedAnswer": "Farewell"
+            "expectedAnswer": "Learning to Drive"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Farewell, First Day of School, Learning to Drive. The person selects Farewell for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Farewell, First Day of School, Learning to Drive in a natural setting."
+          "imageBrief": "Photorealistic scene: Two adults talking over a farewell meal; a packed suitcase stands near the door. Do not depict a child learner. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Two adults talking over a farewell meal; a packed suitcase stands near the door. Do not depict a child learner."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["First Job", "Moving Out", "Buying a Home"],
-          "scenario": "During a routine life events task, an adult compares First Job, Moving Out, Buying a Home. The person selects First Job for the next step.",
+          "scenario": "After getting her first job, Nadia saves money. Moving out means leaving her current home to live elsewhere; she plans to rent a room first. Buying a home is a separate future goal, when she hopes to purchase a place.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which plan involves purchasing a place rather than renting a room?",
             "options": ["First Job", "Moving Out", "Buying a Home"],
-            "expectedAnswer": "First Job"
+            "expectedAnswer": "Buying a Home"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares First Job, Moving Out, Buying a Home. The person selects First Job for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including First Job, Moving Out, Buying a Home in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult packing household belongings into boxes while talking with a friend. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "An adult packing household belongings into boxes while talking with a friend."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Life Events: Email",
-      "text": "Omar has an everyday task connected to life events. The new vocabulary helps him follow the situation and respond clearly. The group talks about the birthday, wedding, and anniversary, comparing what usually happens at each event. In the social situation, the people experience or discuss graduation, retirement party, and baby shower. The context makes the relationship between the words clear. In the social situation, the people experience or discuss engagement, housewarming, and promotion.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Life Events. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "A year of changes",
+      "text": "Mona writes to a friend about a busy year. Her birthday is in May, and her wedding is in September. She plans to celebrate their wedding anniversary in later years. At the community center, adult graduation, a retirement party, and a baby shower bring different groups together. Her brother’s engagement comes before his marriage. Her sister hosts a housewarming after moving and celebrates a promotion at work. At Omar’s farewell meal, they remember their first day of school. Omar is now learning to drive. Nadia has her first job and is moving out to rent a room. Buying a home is her longer-term goal.",
+      "imageBrief": "Photorealistic scene: Adults planning family dates with a calendar and invitation envelopes at a kitchen table. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues."
     },
     "exercises": [
       {
-        "prompt": "During a routine life events task, an adult compares Birthday, Wedding, Anniversary. The person selects Birthday for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Birthday",
+        "prompt": "Mona plans three family dates. Her birthday marks the day she was born. Her wedding is the ceremony when she marries her partner. Their anniversary will mark the same wedding date in a later year.\nWhich event marks the date of the wedding in a later year?",
+        "answer": "Anniversary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Graduation, Retirement Party, Baby Shower. The person selects Graduation for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Graduation",
+        "prompt": "At the community center, Salma arranges a graduation celebration for adults who completed a course. A retirement party thanks a colleague who is leaving work at the end of her career. A baby shower celebrates and supports parents expecting a baby.\nWhich gathering thanks a colleague at the end of her career?",
+        "answer": "Retirement Party",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Engagement, Housewarming, Promotion. The person selects Engagement for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Karim announces his engagement: he and his partner have agreed to marry. His sister invites friends to a housewarming in her new home. At work, her promotion gives her a more senior role.\nWhich word describes an agreement to marry?",
         "answer": "Engagement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Farewell, First Day of School, Learning to Drive. The person selects Farewell for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Farewell",
+        "prompt": "At a farewell meal, Omar says goodbye before leaving town. He remembers his first day of school as a child. He is now learning to drive with an instructor and talks about his driving lessons.\nWhich activity is Omar doing now?",
+        "answer": "Learning to Drive",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine life events task, an adult compares First Job, Moving Out, Buying a Home. The person selects First Job for the next step.\nWhich option does the person select for the next step?",
-        "answer": "First Job",
+        "prompt": "After getting her first job, Nadia saves money. Moving out means leaving her current home to live elsewhere; she plans to rent a room first. Buying a home is a separate future goal, when she hopes to purchase a place.\nWhich plan involves purchasing a place rather than renting a room?",
+        "answer": "Buying a Home",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Birthday"
+        "prompt": "Mona writes to a friend about a busy year. Her birthday is in May, and her wedding is in September. She plans to celebrate their wedding anniversary in later years. At the community center, adult graduation, a retirement party, and a baby shower bring different groups together. Her brother’s engagement comes before his marriage. Her sister hosts a housewarming after moving and celebrates a promotion at work. At Omar’s farewell meal, they remember their first day of school. Omar is now learning to drive. Nadia has her first job and is moving out to rent a room. Buying a home is her longer-term goal.\nWhat will Nadia do before trying to buy a home?",
+        "answer": "Rent a room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Graduation"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Teacher” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Mona plans three family dates. Her birthday marks the day she was born. Her wedding is the ceremony when she marries her partner. Their anniversary will mark the same wedding date in a later year.\nExplain the difference between the first two event names in one sentence.",
+        "answer": "A birthday marks a person’s birth date, while a wedding is a marriage ceremony.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Life Events: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "A year of changes",
+      "idea": "Narrate the adult personal account, pause for the first scene question, then invite a respectful explanation. Do not infer faith, legal status, grief, or relationships from appearance.",
+      "scriptStarter": "Mona plans three family dates. Her birthday marks the day she was born. Her wedding is the ceremony when she marries her partner. Their anniversary will mark the same wedding date in a later year."
     },
     "spacedReview": "1 lesson(s) back: Teacher, Student from relationships-roles-3\n3 lesson(s) back: Friend, Best Friend from relationships-roles-1\n7 lesson(s) back: Climbing Shoes, Cycling Shoes from footwear-4"
   },
@@ -226,140 +220,134 @@
       "تعافٍ"
     ],
     "usage": {
-      "goal": "Learn to use life events 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to life events.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish milestones and respond respectfully to a stated life change.",
+      "canDoStatement": "Can identify events in a supported personal account and explain one distinction. Religious, legal and specialist event names extend the supported task level; they are not individually certified at the unit CEFR label.",
+      "textType": "community-personal-account",
+      "readingTarget": "Supported adult account with event comparisons",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Getting Married", "Having a Baby", "Career Change"],
-          "scenario": "During a routine life events task, an adult compares Getting Married, Having a Baby, Career Change. The person selects Getting Married for the next step.",
+          "scenario": "In a letter, Leila shares three changes. Getting married means entering a marriage. Having a baby means becoming a parent through a birth. Her career change means moving from hotel work to teaching.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which change concerns Leila’s work?",
             "options": ["Getting Married", "Having a Baby", "Career Change"],
-            "expectedAnswer": "Getting Married"
+            "expectedAnswer": "Career Change"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Getting Married, Having a Baby, Career Change. The person selects Getting Married for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Getting Married, Having a Baby, Career Change in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult writing a personal letter at a home desk, with a teaching notebook nearby. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "An adult writing a personal letter at a home desk, with a teaching notebook nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Retirement", "Traveling Abroad", "Loss"],
-          "scenario": "During a routine life events task, an adult compares Retirement, Traveling Abroad, Loss. The person selects Retirement for the next step.",
+          "scenario": "After retirement, Sami no longer works in his former job. He enjoys traveling abroad to visit friends in another country. He also writes about the loss of a close friend and asks for quiet company on a difficult day.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which phrase describes visiting another country?",
             "options": ["Retirement", "Traveling Abroad", "Loss"],
-            "expectedAnswer": "Retirement"
+            "expectedAnswer": "Traveling Abroad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Retirement, Traveling Abroad, Loss. The person selects Retirement for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Retirement, Traveling Abroad, Loss in a natural setting."
+          "imageBrief": "Photorealistic scene: Two adult friends sitting together quietly on a balcony; a travel bag rests nearby. Do not imply that grief has one visible expression. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Two adult friends sitting together quietly on a balcony; a travel bag rests nearby. Do not imply that grief has one visible expression."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Grief", "Funeral", "Divorce"],
-          "scenario": "During a routine life events task, an adult compares Grief, Funeral, Divorce. The person selects Grief for the next step.",
+          "scenario": "A support group explains three terms without asking anyone to share private details. Grief is deep sadness following an important loss. A funeral is a ceremony to remember someone who has died. Divorce is the legal ending of a marriage.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names a ceremony for someone who has died?",
             "options": ["Grief", "Funeral", "Divorce"],
-            "expectedAnswer": "Grief"
+            "expectedAnswer": "Funeral"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Grief, Funeral, Divorce. The person selects Grief for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Grief, Funeral, Divorce in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults listening respectfully in a community meeting room, with a facilitator and chairs in a circle. No distress stereotypes. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adults listening respectfully in a community meeting room, with a facilitator and chairs in a circle. No distress stereotypes."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Illness", "Accident", "Moving Away"],
-          "scenario": "During a routine life events task, an adult compares Illness, Accident, Moving Away. The person selects Illness for the next step.",
+          "scenario": "Amal writes that illness kept her away from work. Later, an accident damaged her bicycle when a box fell onto it. Moving away is a different change: her neighbor is leaving the area to live in another city.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which change takes the neighbor to another city?",
             "options": ["Illness", "Accident", "Moving Away"],
-            "expectedAnswer": "Illness"
+            "expectedAnswer": "Moving Away"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Illness, Accident, Moving Away. The person selects Illness for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Illness, Accident, Moving Away in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult placing a bicycle beside a storage area, with a fallen cardboard box nearby. No injury or hazardous action. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "An adult placing a bicycle beside a storage area, with a fallen cardboard box nearby. No injury or hazardous action."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Layoff", "Breakup", "Recovery"],
-          "scenario": "During a routine life events task, an adult compares Layoff, Breakup, Recovery. The person selects Layoff for the next step.",
+          "scenario": "In separate personal accounts, Yusuf describes a layoff when his employer reduces staff. Rania describes a breakup, the end of a romantic relationship. Huda describes recovery as getting better after illness. The group listens without comparing their difficulties.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which account describes getting better after illness?",
             "options": ["Layoff", "Breakup", "Recovery"],
-            "expectedAnswer": "Layoff"
+            "expectedAnswer": "Recovery"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Layoff, Breakup, Recovery. The person selects Layoff for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Layoff, Breakup, Recovery in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults sharing personal accounts in a quiet community room. No diagnosis, medical procedure, or inference from appearance. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adults sharing personal accounts in a quiet community room. No diagnosis, medical procedure, or inference from appearance."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Life Events: Personal Message",
-      "text": "Omar has an everyday task connected to life events. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss getting married, having a baby, and career change. The context makes the relationship between the words clear. In the social situation, the people experience or discuss retirement, traveling abroad, and loss. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Life Events. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Listening without assumptions",
+      "text": "At a community group, people may share a change or simply listen. Leila discusses getting married, having a baby, and a career change. Sami talks about retirement and traveling abroad. He also describes loss and grief after a friend’s death. The group discusses a funeral and the meaning of divorce without asking for private details. Amal explains an illness, a bicycle accident, and a neighbor moving away. Other members mention a layoff, a breakup, and recovery after illness. The facilitator does not rank their problems or expect everyone to react alike. She asks what kind of company each person wants.",
+      "imageBrief": "Photorealistic scene: An adult writing a personal letter at a home desk, with a teaching notebook nearby. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues."
     },
     "exercises": [
       {
-        "prompt": "During a routine life events task, an adult compares Getting Married, Having a Baby, Career Change. The person selects Getting Married for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Getting Married",
+        "prompt": "In a letter, Leila shares three changes. Getting married means entering a marriage. Having a baby means becoming a parent through a birth. Her career change means moving from hotel work to teaching.\nWhich change concerns Leila’s work?",
+        "answer": "Career Change",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Retirement, Traveling Abroad, Loss. The person selects Retirement for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Retirement",
+        "prompt": "After retirement, Sami no longer works in his former job. He enjoys traveling abroad to visit friends in another country. He also writes about the loss of a close friend and asks for quiet company on a difficult day.\nWhich phrase describes visiting another country?",
+        "answer": "Traveling Abroad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Grief, Funeral, Divorce. The person selects Grief for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Grief",
+        "prompt": "A support group explains three terms without asking anyone to share private details. Grief is deep sadness following an important loss. A funeral is a ceremony to remember someone who has died. Divorce is the legal ending of a marriage.\nWhich word names a ceremony for someone who has died?",
+        "answer": "Funeral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Illness, Accident, Moving Away. The person selects Illness for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Illness",
+        "prompt": "Amal writes that illness kept her away from work. Later, an accident damaged her bicycle when a box fell onto it. Moving away is a different change: her neighbor is leaving the area to live in another city.\nWhich change takes the neighbor to another city?",
+        "answer": "Moving Away",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Layoff, Breakup, Recovery. The person selects Layoff for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Layoff",
+        "prompt": "In separate personal accounts, Yusuf describes a layoff when his employer reduces staff. Rania describes a breakup, the end of a romantic relationship. Huda describes recovery as getting better after illness. The group listens without comparing their difficulties.\nWhich account describes getting better after illness?",
+        "answer": "Recovery",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Getting Married"
+        "prompt": "At a community group, people may share a change or simply listen. Leila discusses getting married, having a baby, and a career change. Sami talks about retirement and traveling abroad. He also describes loss and grief after a friend’s death. The group discusses a funeral and the meaning of divorce without asking for private details. Amal explains an illness, a bicycle accident, and a neighbor moving away. Other members mention a layoff, a breakup, and recovery after illness. The facilitator does not rank their problems or expect everyone to react alike. She asks what kind of company each person wants.\nDoes everyone have to share private details?",
+        "answer": "No; people may simply listen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Retirement"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Birthday” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "In a letter, Leila shares three changes. Getting married means entering a marriage. Having a baby means becoming a parent through a birth. Her career change means moving from hotel work to teaching.\nExplain the difference between the first two event names in one sentence.",
+        "answer": "Getting married concerns marriage, while having a baby concerns a birth.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Life Events: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Listening without assumptions",
+      "idea": "Narrate the adult personal account, pause for the first scene question, then invite a respectful explanation. Do not infer faith, legal status, grief, or relationships from appearance.",
+      "scriptStarter": "In a letter, Leila shares three changes. Getting married means entering a marriage. Having a baby means becoming a parent through a birth. Her career change means moving from hotel work to teaching."
     },
     "spacedReview": "1 lesson(s) back: Birthday, Wedding from life-events-1\n3 lesson(s) back: Girlfriend, Fiancé from relationships-roles-2\n7 lesson(s) back: Grandmother, Grandfather from extended-family-1"
   },
@@ -398,150 +386,144 @@
       "ميدالية",
       "كأس تكريم",
       "منحة دراسية",
-      "نشر",
+      "نشر أو منشور",
       "براءة اختراع",
       "تعميد",
       "تناول القربان",
-      "احتفال بلوغ ديني يهودي",
+      "بار متسفا: بلوغ المسؤولية الدينية للفتى اليهودي",
       "تثبيت ديني مسيحي",
       "مراسم تخرج",
       "تنصيب أو افتتاح رسمي"
     ],
     "usage": {
-      "goal": "Learn to use life events 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to life events.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish milestones and respond respectfully to a stated life change.",
+      "canDoStatement": "Can identify events in a supported personal account and explain one distinction. Religious, legal and specialist event names extend the supported task level; they are not individually certified at the unit CEFR label.",
+      "textType": "community-personal-account",
+      "readingTarget": "Supported adult account with event comparisons",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Award", "Certificate", "Diploma"],
-          "scenario": "During a routine life events task, an adult compares Award, Certificate, Diploma. The person selects Award for the next step.",
+          "scenario": "At an adult learning center, Aisha receives an award recognizing her work. Her certificate confirms that she completed a short course. Her diploma records completion of a longer program. The tutor explains that document names vary between institutions.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which document confirms completion of Aisha’s short course?",
             "options": ["Award", "Certificate", "Diploma"],
-            "expectedAnswer": "Award"
+            "expectedAnswer": "Certificate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Award, Certificate, Diploma. The person selects Award for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Award, Certificate, Diploma in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult receiving a document in a learning center, with other adults applauding. No readable document text. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "An adult receiving a document in a learning center, with other adults applauding. No readable document text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Degree", "Medal", "Trophy"],
-          "scenario": "During a routine life events task, an adult compares Degree, Medal, Trophy. The person selects Degree for the next step.",
+          "scenario": "At a reunion, Adam shows his university degree document. His running medal hangs from a ribbon, while the team’s trophy stands on a shelf. The degree recognizes completed university study; the medal and trophy recognize sporting achievement here.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item recognizes Adam’s university study?",
             "options": ["Degree", "Medal", "Trophy"],
             "expectedAnswer": "Degree"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Degree, Medal, Trophy. The person selects Degree for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Degree, Medal, Trophy in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults at a reunion beside a ribbon medal and a sports trophy on a shelf. No readable qualification text. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adults at a reunion beside a ribbon medal and a sports trophy on a shelf. No readable qualification text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scholarship", "Publication", "Patent"],
-          "scenario": "During a routine life events task, an adult compares Scholarship, Publication, Patent. The person selects Scholarship for the next step.",
+          "scenario": "Noor’s scholarship provides financial support for study. Publication of her research makes it available to readers. Her colleague receives a patent for an invention; its legal protection has limits in place and time. These are three different achievements.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which achievement provides financial support for Noor’s study?",
             "options": ["Scholarship", "Publication", "Patent"],
             "expectedAnswer": "Scholarship"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Scholarship, Publication, Patent. The person selects Scholarship for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Scholarship, Publication, Patent in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult researchers discussing a project at a desk with a journal and an ordinary prototype. No readable text or suggestion of legal advice. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adult researchers discussing a project at a desk with a journal and an ordinary prototype. No readable text or suggestion of legal advice."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Baptism", "Communion", "Bar Mitzvah"],
-          "scenario": "During a routine life events task, an adult compares Baptism, Communion, Bar Mitzvah. The person selects Baptism for the next step.",
+          "scenario": "An adult visitor learns the names of religious milestones. Baptism is a Christian rite involving water. Communion is sharing the Eucharist in Christian worship. A bar mitzvah marks a Jewish boy reaching religious responsibility, traditionally at thirteen. Practices differ across communities.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which name belongs to the Jewish milestone described?",
             "options": ["Baptism", "Communion", "Bar Mitzvah"],
-            "expectedAnswer": "Baptism"
+            "expectedAnswer": "Bar Mitzvah"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Baptism, Communion, Bar Mitzvah. The person selects Baptism for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Baptism, Communion, Bar Mitzvah in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult visitor and an adult guide discussing cultural events at an information desk. Do not invent or combine sacred objects, rituals, or religious clothing. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "An adult visitor and an adult guide discussing cultural events at an information desk. Do not invent or combine sacred objects, rituals, or religious clothing."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Confirmation", "Graduation Ceremony", "Inauguration"],
-          "scenario": "During a routine life events task, an adult compares Confirmation, Graduation Ceremony, Inauguration. The person selects Confirmation for the next step.",
+          "scenario": "At a community information session, Maria describes her confirmation, a ceremony affirming Christian faith in her church. Ahmed describes a graduation ceremony after completing a course. Lina describes the inauguration of a new community leader, marking the formal start of that role.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ceremony marks completion of a course?",
             "options": ["Confirmation", "Graduation Ceremony", "Inauguration"],
-            "expectedAnswer": "Confirmation"
+            "expectedAnswer": "Graduation Ceremony"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Confirmation, Graduation Ceremony, Inauguration. The person selects Confirmation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Confirmation, Graduation Ceremony, Inauguration in a natural setting."
+          "imageBrief": "Photorealistic scene: Three adult speakers at a community information session. Written context names their ceremonies; do not combine unrelated religious or academic regalia. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Three adult speakers at a community information session. Written context names their ceremonies; do not combine unrelated religious or academic regalia."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Life Events: Short Dialogue",
-      "text": "Omar has an everyday task connected to life events. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss award, certificate, and diploma. The context makes the relationship between the words clear. In the social situation, the people experience or discuss degree, medal, and trophy. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Life Events. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Achievements and ceremonies",
+      "text": "Aisha visits a community exhibition. An adult learner shows an award, a course certificate, and a diploma; he explains what each recognizes. Adam displays a degree document, a running medal, and a team trophy. Noor describes a scholarship, publication of research, and a colleague’s patent. The guide says that document names and legal rights depend on their context. At another table, adult speakers explain baptism, communion, and a bar mitzvah as distinct religious milestones. Maria describes confirmation in her church. Ahmed recalls his graduation ceremony, while Lina recalls a leader’s inauguration. Visitors listen respectfully and ask about unfamiliar terms rather than assuming all ceremonies are alike.",
+      "imageBrief": "Photorealistic scene: An adult receiving a document in a learning center, with other adults applauding. No readable document text. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues."
     },
     "exercises": [
       {
-        "prompt": "During a routine life events task, an adult compares Award, Certificate, Diploma. The person selects Award for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Award",
+        "prompt": "At an adult learning center, Aisha receives an award recognizing her work. Her certificate confirms that she completed a short course. Her diploma records completion of a longer program. The tutor explains that document names vary between institutions.\nWhich document confirms completion of Aisha’s short course?",
+        "answer": "Certificate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Degree, Medal, Trophy. The person selects Degree for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "At a reunion, Adam shows his university degree document. His running medal hangs from a ribbon, while the team’s trophy stands on a shelf. The degree recognizes completed university study; the medal and trophy recognize sporting achievement here.\nWhich item recognizes Adam’s university study?",
         "answer": "Degree",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Scholarship, Publication, Patent. The person selects Scholarship for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Noor’s scholarship provides financial support for study. Publication of her research makes it available to readers. Her colleague receives a patent for an invention; its legal protection has limits in place and time. These are three different achievements.\nWhich achievement provides financial support for Noor’s study?",
         "answer": "Scholarship",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Baptism, Communion, Bar Mitzvah. The person selects Baptism for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Baptism",
+        "prompt": "An adult visitor learns the names of religious milestones. Baptism is a Christian rite involving water. Communion is sharing the Eucharist in Christian worship. A bar mitzvah marks a Jewish boy reaching religious responsibility, traditionally at thirteen. Practices differ across communities.\nWhich name belongs to the Jewish milestone described?",
+        "answer": "Bar Mitzvah",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Confirmation, Graduation Ceremony, Inauguration. The person selects Confirmation for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Confirmation",
+        "prompt": "At a community information session, Maria describes her confirmation, a ceremony affirming Christian faith in her church. Ahmed describes a graduation ceremony after completing a course. Lina describes the inauguration of a new community leader, marking the formal start of that role.\nWhich ceremony marks completion of a course?",
+        "answer": "Graduation Ceremony",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Award"
+        "prompt": "Aisha visits a community exhibition. An adult learner shows an award, a course certificate, and a diploma; he explains what each recognizes. Adam displays a degree document, a running medal, and a team trophy. Noor describes a scholarship, publication of research, and a colleague’s patent. The guide says that document names and legal rights depend on their context. At another table, adult speakers explain baptism, communion, and a bar mitzvah as distinct religious milestones. Maria describes confirmation in her church. Ahmed recalls his graduation ceremony, while Lina recalls a leader’s inauguration. Visitors listen respectfully and ask about unfamiliar terms rather than assuming all ceremonies are alike.\nHow should visitors respond to unfamiliar ceremonies?",
+        "answer": "Ask about unfamiliar terms respectfully",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Degree"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Getting Married” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At an adult learning center, Aisha receives an award recognizing her work. Her certificate confirms that she completed a short course. Her diploma records completion of a longer program. The tutor explains that document names vary between institutions.\nExplain the difference between the first two event names in one sentence.",
+        "answer": "An award recognizes achievement, while a certificate confirms an achievement or qualification.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Life Events: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Achievements and ceremonies",
+      "idea": "Narrate the adult personal account, pause for the first scene question, then invite a respectful explanation. Do not infer faith, legal status, grief, or relationships from appearance.",
+      "scriptStarter": "At an adult learning center, Aisha receives an award recognizing her work. Her certificate confirms that she completed a short course. Her diploma records completion of a longer program. The tutor explains that document names vary between institutions."
     },
     "spacedReview": "1 lesson(s) back: Getting Married, Having a Baby from life-events-2\n3 lesson(s) back: Teacher, Student from relationships-roles-3\n7 lesson(s) back: Great-Aunt, Great-Uncle from extended-family-2"
   },
@@ -556,85 +538,83 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Oath", "Pledge", "Blessing", "Memorial"],
-    "targetWordsArabic": ["قسم", "تعهد", "دعاء بالبركة", "تأبين"],
+    "targetWordsArabic": ["قسم", "تعهد", "دعاء بالبركة", "تأبين أو نصب تذكاري"],
     "usage": {
-      "goal": "Learn to use life events 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to life events.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish milestones and respond respectfully to a stated life change.",
+      "canDoStatement": "Can identify events in a supported personal account and explain one distinction. Religious, legal and specialist event names extend the supported task level; they are not individually certified at the unit CEFR label.",
+      "textType": "community-personal-account",
+      "readingTarget": "Supported adult account with event comparisons",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Oath", "Pledge", "Blessing"],
-          "scenario": "During a routine life events task, an adult compares Oath, Pledge, Blessing. The person selects Oath for the next step.",
+          "scenario": "In a story, an official takes an oath, a formal solemn promise. A volunteer makes a pledge to help a local project. At a family gathering, a relative offers a blessing: words asking for divine favor or expressing good wishes.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word describes the volunteer’s serious promise?",
             "options": ["Oath", "Pledge", "Blessing"],
-            "expectedAnswer": "Oath"
+            "expectedAnswer": "Pledge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Oath, Pledge, Blessing. The person selects Oath for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Oath, Pledge, Blessing in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult volunteers discussing a community project around a table. Solemn promises and religious meaning come from the written story, not gestures. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adult volunteers discussing a community project around a table. Solemn promises and religious meaning come from the written story, not gestures."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Memorial"],
-          "scenario": "During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step.",
+          "scenario": "The neighborhood holds a memorial for a former community organizer. Adults share memories of her work and display photographs with the family’s agreement. The gathering remembers her life; people may take part quietly or speak if they wish.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Memorial", "Oath", "Pledge"],
-            "expectedAnswer": "Memorial"
+            "question": "What is the purpose of this memorial?",
+            "options": [
+              "To remember the community organizer",
+              "To promise future help",
+              "To celebrate a new job"
+            ],
+            "expectedAnswer": "To remember the community organizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a life events context illustrating this situation: During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult life events scene showing lesson-related items or actions including Memorial in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults at a respectful remembrance gathering with flowers and framed photographs facing away from the camera. No readable names, recognizable real portraits, or staged distress. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues.",
+          "imageAlt": "Adults at a respectful remembrance gathering with flowers and framed photographs facing away from the camera. No readable names, recognizable real portraits, or staged distress."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Life Events: Everyday Description",
-      "text": "Omar has an everyday task connected to life events. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss oath, pledge, and blessing. The context makes the relationship between the words clear. In the social situation, the people experience or discuss memorial. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Life Events. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Promises and remembrance",
+      "text": "In a story discussed by adult volunteers, an official makes an oath at the start of a role. A volunteer makes a pledge to support a neighborhood project. Later, a relative offers a blessing at a family gathering. These words have related but different meanings. The next week, the neighborhood holds a memorial for a former organizer. People remember her work and may share a story, listen, or sit quietly. The family agrees to the display of photographs. Nobody is asked to show a particular emotion or make a promise at the memorial.",
+      "imageBrief": "Photorealistic scene: Adult volunteers discussing a community project around a table. Solemn promises and religious meaning come from the written story, not gestures. Adult-focused composition. Written context establishes event names, relationships, timing and personal experience. No readable text, overlays, logos, arrows, labels, answer highlighting or stereotyped identity cues."
     },
     "exercises": [
       {
-        "prompt": "During a routine life events task, an adult compares Oath, Pledge, Blessing. The person selects Oath for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Oath",
+        "prompt": "In a story, an official takes an oath, a formal solemn promise. A volunteer makes a pledge to help a local project. At a family gathering, a relative offers a blessing: words asking for divine favor or expressing good wishes.\nWhich word describes the volunteer’s serious promise?",
+        "answer": "Pledge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine life events task, an adult compares Memorial, Oath, Pledge. The person selects Memorial for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Memorial",
+        "prompt": "The neighborhood holds a memorial for a former community organizer. Adults share memories of her work and display photographs with the family’s agreement. The gathering remembers her life; people may take part quietly or speak if they wish.\nWhat is the purpose of this memorial?",
+        "answer": "To remember the community organizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Oath"
+        "prompt": "In a story discussed by adult volunteers, an official makes an oath at the start of a role. A volunteer makes a pledge to support a neighborhood project. Later, a relative offers a blessing at a family gathering. These words have related but different meanings. The next week, the neighborhood holds a memorial for a former organizer. People remember her work and may share a story, listen, or sit quietly. The family agrees to the display of photographs. Nobody is asked to show a particular emotion or make a promise at the memorial.\nWho agrees to the display of photographs?",
+        "answer": "The family",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Memorial"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Award” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "In a story, an official takes an oath, a formal solemn promise. A volunteer makes a pledge to help a local project. At a family gathering, a relative offers a blessing: words asking for divine favor or expressing good wishes.\nExplain the difference between the first two event names in one sentence.",
+        "answer": "An oath is a formal solemn promise, while a pledge is a serious promise of support or action.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Life Events: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Promises and remembrance",
+      "idea": "Narrate the adult personal account, pause for the first scene question, then invite a respectful explanation. Do not infer faith, legal status, grief, or relationships from appearance.",
+      "scriptStarter": "In a story, an official takes an oath, a formal solemn promise. A volunteer makes a pledge to help a local project. At a family gathering, a relative offers a blessing: words asking for divine favor or expressing good wishes."
     },
     "spacedReview": "1 lesson(s) back: Award, Certificate from life-events-3\n3 lesson(s) back: Birthday, Wedding from life-events-1\n7 lesson(s) back: Reunion, Holiday Dinner from extended-family-3"
   }

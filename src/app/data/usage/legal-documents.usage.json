@@ -36,7 +36,7 @@
       "ملحق",
       "إخلال بالاتفاق",
       "باطل",
-      "ملزم",
+      "ملزم قانونًا",
       "صحيفة دعوى",
       "إخطار بالحضور أمام المحكمة",
       "أمر استدعاء قضائي",
@@ -44,136 +44,122 @@
       "مذكرة قانونية"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Contract", "Agreement", "Terms", "Conditions"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contract, Agreement, Terms, and Conditions and choose the option that fits the situation.",
+          "scenario": "Nadia's practice contract records an agreement. Its terms and conditions explain the obligations. She asks for the name of the legally enforceable agreement, not a single condition.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the agreement as a whole?",
             "options": ["Contract", "Agreement", "Terms"],
             "expectedAnswer": "Contract"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Contract as the central item; include Contract, Agreement, and Terms naturally where visually appropriate, but make the real-world use of Contract the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A closed plain agreement folder; its legal force is established by written context. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Clause", "Amendment", "Addendum", "Breach"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clause, Amendment, Addendum, and Breach and choose the option that fits the situation.",
+          "scenario": "Nadia identifies a payment clause, one section of the contract. An amendment changes the agreement, an addendum adds material, and a breach concerns an unmet obligation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names a single section of the contract?",
             "options": ["Clause", "Amendment", "Addendum"],
             "expectedAnswer": "Clause"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Clause as the central item; include Clause, Amendment, and Addendum naturally where visually appropriate, but make the real-world use of Clause the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A blank paper document with visually separated paragraph blocks, no readable text. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Void", "Binding", "Complaint", "Summons"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Void, Binding, Complaint, and Summons and choose the option that fits the situation.",
+          "scenario": "The instructor says void means lacking legal force, while binding means legally obligatory. A complaint starts a civil claim, and a summons gives notice to respond or appear.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word means lacking legal force in this explanation?",
             "options": ["Void", "Binding", "Complaint"],
             "expectedAnswer": "Void"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Void as the central item; include Void, Binding, and Complaint naturally where visually appropriate, but make the real-world use of Void the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A neutral document-review desk; validity cannot be shown by a photograph. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Subpoena", "Motion", "Brief"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Motion, and Brief and choose the option that fits the situation.",
+          "scenario": "The practice file contains a subpoena requiring specified evidence. A motion asks the court to decide an issue, and a brief sets out legal arguments.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which document requires the specified evidence in this example?",
             "options": ["Subpoena", "Motion", "Brief"],
             "expectedAnswer": "Subpoena"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Subpoena as the central item; include Subpoena, Motion, and Brief naturally where visually appropriate, but make the real-world use of Subpoena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A closed plain court-file folder, no official seal or invented legal instructions. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Legal Documents",
-      "text": "At the legal documents, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Contract, Agreement, Terms, and Conditions. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clause, Amendment, Addendum, and Breach. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Void, Binding, Complaint, and Summons. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Subpoena, Motion, and Brief. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking a practice agreement",
+      "text": "Nadia reads a fictional contract before a language workshop. It records an agreement with terms and conditions. She identifies a payment clause and asks how an amendment changes the text. An addendum supplies extra information. A breach means failure to meet an obligation; it is not simply an unfamiliar word. The instructor distinguishes void from binding, but does not decide whether a real document is enforceable. A separate court file contains a complaint and summons. A subpoena requests evidence under legal authority, a motion asks the court to act, and a brief presents legal arguments. Nadia labels these functions in her notes. She asks for professional clarification before using a real document, since requirements depend on the jurisdiction.",
+      "imageBrief": "Support for Checking a practice agreement. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contract, Agreement, Terms, and Conditions and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Nadia's practice contract records an agreement. Its terms and conditions explain the obligations. She asks for the name of the legally enforceable agreement, not a single condition.\nWhich term names the agreement as a whole?",
         "answer": "Contract",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clause, Amendment, Addendum, and Breach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Nadia identifies a payment clause, one section of the contract. An amendment changes the agreement, an addendum adds material, and a breach concerns an unmet obligation.\nWhich term names a single section of the contract?",
         "answer": "Clause",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Void, Binding, Complaint, and Summons and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The instructor says void means lacking legal force, while binding means legally obligatory. A complaint starts a civil claim, and a summons gives notice to respond or appear.\nWhich word means lacking legal force in this explanation?",
         "answer": "Void",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Motion, and Brief and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The practice file contains a subpoena requiring specified evidence. A motion asks the court to decide an issue, and a brief sets out legal arguments.\nWhich document requires the specified evidence in this example?",
         "answer": "Subpoena",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Nadia reads a fictional contract before a language workshop. It records an agreement with terms and conditions. She identifies a payment clause and asks how an amendment changes the text. An addendum supplies extra information. A breach means failure to meet an obligation; it is not simply an unfamiliar word. The instructor distinguishes void from binding, but does not decide whether a real document is enforceable. A separate court file contains a complaint and summons. A subpoena requests evidence under legal authority, a motion asks the court to act, and a brief presents legal arguments. Nadia labels these functions in her notes. She asks for professional clarification before using a real document, since requirements depend on the jurisdiction.\nDoes the instructor decide whether a real contract is enforceable?",
+        "answer": "No; the class practices terminology using fictional documents.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Contract"
+        "prompt": "Explain the difference between “Contract” and “Agreement” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Terms"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Exhibit” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Contract, Agreement, Terms, Conditions, Clause, Amendment, Addendum, Breach, Void, Binding, Complaint, Summons, Subpoena, Motion, and Brief in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Contract” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: Nadia's practice contract records an agreement. Its terms and conditions explain the obligations. She asks for the name of the legally enforceable agreement, not a single condition.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Legal Documents: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking a practice agreement",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "Nadia reads a fictional contract before a language workshop. It records an agreement with terms and conditions. She identifies a payment clause and asks how an amendment changes the text. An addendum supplies extra information. A breach means failure to meet an obligation; it is not simply an unfamiliar word. The instructor distinguishes void from binding, but does not decide whether a real document is enforceable. A separate court file contains a complaint and summons. A subpoena requests evidence under legal authority, a motion asks the court to act, and a brief presents legal arguments. Nadia labels these functions in her notes. She asks for professional clarification before using a real document, since requirements depend on the jurisdiction. Ask: Does the instructor decide whether a real contract is enforceable?"
     },
     "spacedReview": "1 lesson(s) back: Exhibit, Document from courtroom-trial-3\n3 lesson(s) back: Judge's Bench, Witness Stand from courtroom-trial-1\n7 lesson(s) back: Communicate from space-station-6"
   },
@@ -214,7 +200,7 @@
       "ترتيب لإدارة أموال لصالح مستفيد",
       "توكيل",
       "وصية طبية مسبقة",
-      "سند ملكية",
+      "سند قانوني للملكية أو نقلها",
       "حق الملكية",
       "عقد إيجار",
       "متعلق باتفاق ما قبل الزواج",
@@ -222,136 +208,122 @@
       "أوراق التبني"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Petition", "Order", "Injunction", "Warrant"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Petition, Order, Injunction, and Warrant and choose the option that fits the situation.",
+          "scenario": "A petition in the practice file asks the authority to act. An order gives a direction, an injunction requires or prohibits conduct, and a warrant authorizes a specified official action.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which item is the written request to the authority?",
             "options": ["Petition", "Order", "Injunction"],
             "expectedAnswer": "Petition"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Petition through a realistic adult task; include Petition, Order, and Injunction naturally where visually appropriate, but make the real-world use of Petition the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain request folder on a desk; written text supplies its legal function. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Indictment", "Will", "Trust", "Power of Attorney"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indictment, Will, Trust, and Power of Attorney and choose the option that fits the situation.",
+          "scenario": "An indictment formally accuses a person of a crime; it does not itself establish guilt. A will, trust and power of attorney concern different personal-planning matters.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which document is the formal accusation?",
             "options": ["Indictment", "Will", "Trust"],
             "expectedAnswer": "Indictment"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Indictment through a realistic adult task; include Indictment, Will, and Trust naturally where visually appropriate, but make the real-world use of Indictment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A neutral closed case folder, no person portrayed as guilty. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Living Will", "Deed", "Title", "Lease"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Will, Deed, Title, and Lease and choose the option that fits the situation.",
+          "scenario": "The example living will records future medical-treatment wishes. A deed records a property interest, title concerns ownership, and a lease allows use of property under agreed conditions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which document records the treatment wishes?",
             "options": ["Living Will", "Deed", "Title"],
             "expectedAnswer": "Living Will"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Living Will as the central item; include Living Will, Deed, and Title naturally where visually appropriate, but make the real-world use of Living Will the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain closed planning folder; no medical instructions or patient information. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prenuptial, Divorce Decree, and Adoption Papers and choose the option that fits the situation.",
+          "scenario": "Nadia learns that prenuptial means before marriage. The workshop contrasts this adjective with a divorce decree ending a marriage and adoption papers recording an adoption process.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which word means before marriage?",
             "options": ["Prenuptial", "Divorce Decree", "Adoption Papers"],
             "expectedAnswer": "Prenuptial"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Prenuptial through a realistic adult task; include Prenuptial, Divorce Decree, and Adoption Papers naturally where visually appropriate, but make the real-world use of Prenuptial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain meeting desk with closed blank documents, no legal status or family assumptions. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Legal Documents",
-      "text": "At the legal documents, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Petition, Order, Injunction, and Warrant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Indictment, Will, Trust, and Power of Attorney. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Living Will, Deed, Title, and Lease. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Prenuptial, Divorce Decree, and Adoption Papers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing document purposes",
+      "text": "In the workshop, a petition asks an authority to act. An order records its direction, an injunction requires or prohibits an action, and a warrant authorizes a specified official act. An indictment is an accusation, not a finding of guilt. Nadia then reviews a separate personal-planning file. A will concerns property after death; a trust concerns property managed for beneficiaries. A power of attorney gives someone authority to act for another person. A living will records treatment wishes when a person cannot communicate. A deed records a property interest, title concerns ownership, and a lease concerns use of property. Prenuptial means before marriage; a divorce decree and adoption papers have other purposes. The class compares functions without completing legal forms.",
+      "imageBrief": "Support for Comparing document purposes. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Petition, Order, Injunction, and Warrant and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A petition in the practice file asks the authority to act. An order gives a direction, an injunction requires or prohibits conduct, and a warrant authorizes a specified official action.\nWhich item is the written request to the authority?",
         "answer": "Petition",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indictment, Will, Trust, and Power of Attorney and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "An indictment formally accuses a person of a crime; it does not itself establish guilt. A will, trust and power of attorney concern different personal-planning matters.\nWhich document is the formal accusation?",
         "answer": "Indictment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Will, Deed, Title, and Lease and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The example living will records future medical-treatment wishes. A deed records a property interest, title concerns ownership, and a lease allows use of property under agreed conditions.\nWhich document records the treatment wishes?",
         "answer": "Living Will",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prenuptial, Divorce Decree, and Adoption Papers and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Nadia learns that prenuptial means before marriage. The workshop contrasts this adjective with a divorce decree ending a marriage and adoption papers recording an adoption process.\nWhich word means before marriage?",
         "answer": "Prenuptial",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "In the workshop, a petition asks an authority to act. An order records its direction, an injunction requires or prohibits an action, and a warrant authorizes a specified official act. An indictment is an accusation, not a finding of guilt. Nadia then reviews a separate personal-planning file. A will concerns property after death; a trust concerns property managed for beneficiaries. A power of attorney gives someone authority to act for another person. A living will records treatment wishes when a person cannot communicate. A deed records a property interest, title concerns ownership, and a lease concerns use of property. Prenuptial means before marriage; a divorce decree and adoption papers have other purposes. The class compares functions without completing legal forms.\nWhy does the class compare purposes rather than fill in forms?",
+        "answer": "It is a terminology workshop, not the completion of real legal documents.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Petition"
+        "prompt": "Explain the difference between “Petition” and “Order” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Injunction"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Contract” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Petition, Order, Injunction, Warrant, Indictment, Will, Trust, Power of Attorney, Living Will, Deed, Title, Lease, Prenuptial, Divorce Decree, and Adoption Papers in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Petition” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: A petition in the practice file asks the authority to act. An order gives a direction, an injunction requires or prohibits conduct, and a warrant authorizes a specified official action.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Legal Documents: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing document purposes",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "In the workshop, a petition asks an authority to act. An order records its direction, an injunction requires or prohibits an action, and a warrant authorizes a specified official act. An indictment is an accusation, not a finding of guilt. Nadia then reviews a separate personal-planning file. A will concerns property after death; a trust concerns property managed for beneficiaries. A power of attorney gives someone authority to act for another person. A living will records treatment wishes when a person cannot communicate. A deed records a property interest, title concerns ownership, and a lease concerns use of property. Prenuptial means before marriage; a divorce decree and adoption papers have other purposes. The class compares functions without completing legal forms. Ask: Why does the class compare purposes rather than fill in forms?"
     },
     "spacedReview": "1 lesson(s) back: Contract, Agreement from legal-documents-1\n3 lesson(s) back: Bailiff, Court Reporter from courtroom-trial-2\n7 lesson(s) back: Lawyer, Attorney from law-firm-1"
   },
@@ -385,27 +357,27 @@
       "اتفاقية عدم إفشاء",
       "شرط عدم المنافسة",
       "اتفاقية شراكة",
-      "وثيقة تأسيس شركة",
+      "وثائق تأسيس شركة",
       "لوائح داخلية",
       "اتفاقية تشغيل الشركة"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Patent", "Trademark", "Copyright", "License"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patent, Trademark, Copyright, and License and choose the option that fits the situation.",
+          "scenario": "The designer asks about a patent for an invention. A trademark identifies commercial goods or services, copyright concerns creative expression, and a license gives permission under terms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which protection concerns the invention?",
             "options": ["Patent", "Trademark", "Copyright"],
             "expectedAnswer": "Patent"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Patent as the central item; include Patent, Trademark, and Copyright naturally where visually appropriate, but make the real-world use of Patent the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A closed invention-design portfolio with an unlettered model; no patent certificate claim. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
@@ -415,97 +387,83 @@
             "Partnership Agreement",
             "Articles of Incorporation"
           ],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation and choose the option that fits the situation.",
+          "scenario": "The sample NDA requires specified information to remain confidential. The non-compete concerns competition, the partnership agreement concerns a partnership, and articles of incorporation establish a corporation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which agreement concerns confidential information?",
             "options": ["NDA", "Non-Compete", "Partnership Agreement"],
             "expectedAnswer": "NDA"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the NDA as the central item; include NDA, Non-Compete, and Partnership Agreement naturally where visually appropriate, but make the real-world use of NDA the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A closed plain business folder, no readable confidential information. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bylaws", "Operating Agreement"],
-          "scenario": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bylaws, and Operating Agreement and choose the option that fits the situation.",
+          "scenario": "The company's sample bylaws govern its internal activities. A separate operating agreement describes how an LLC is managed in a jurisdiction that uses that form.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which rules govern the company's internal activities here?",
             "options": ["Bylaws", "Operating Agreement", "Patent"],
             "expectedAnswer": "Bylaws"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Bylaws as the central item; include Bylaws, Operating Agreement, and Patent naturally where visually appropriate, but make the real-world use of Bylaws the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A blank organization handbook closed on a desk; the type of rules is written information. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the legal documents, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Patent, Trademark, Copyright, and License. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bylaws and Operating Agreement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Legal Documents. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Organizing a business document folder",
+      "text": "A designer organizes sample business documents for a training session. A patent concerns an invention, a trademark identifies goods or services, and copyright protects original creative expression. A license gives permission under stated terms. The designer asks a lawyer about the differences rather than assuming that one protection covers everything. A sample NDA concerns confidential information. A non-compete addresses restricted competition, but its enforceability depends on applicable law. A partnership agreement describes a partnership's operation. Articles of incorporation establish a corporation through the relevant filing process. Bylaws govern internal activities, while an operating agreement may govern a limited liability company. These documents have different functions; the training folder does not establish anyone's rights or obligations.",
+      "imageBrief": "Support for Organizing a business document folder. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patent, Trademark, Copyright, and License and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The designer asks about a patent for an invention. A trademark identifies commercial goods or services, copyright concerns creative expression, and a license gives permission under terms.\nWhich protection concerns the invention?",
         "answer": "Patent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare NDA, Non-Compete, Partnership Agreement, and Articles of Incorporation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The sample NDA requires specified information to remain confidential. The non-compete concerns competition, the partnership agreement concerns a partnership, and articles of incorporation establish a corporation.\nWhich agreement concerns confidential information?",
         "answer": "NDA",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the legal documents setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bylaws, and Operating Agreement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The company's sample bylaws govern its internal activities. A separate operating agreement describes how an LLC is managed in a jurisdiction that uses that form.\nWhich rules govern the company's internal activities here?",
         "answer": "Bylaws",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A designer organizes sample business documents for a training session. A patent concerns an invention, a trademark identifies goods or services, and copyright protects original creative expression. A license gives permission under stated terms. The designer asks a lawyer about the differences rather than assuming that one protection covers everything. A sample NDA concerns confidential information. A non-compete addresses restricted competition, but its enforceability depends on applicable law. A partnership agreement describes a partnership's operation. Articles of incorporation establish a corporation through the relevant filing process. Bylaws govern internal activities, while an operating agreement may govern a limited liability company. These documents have different functions; the training folder does not establish anyone's rights or obligations.\nWhy does the designer ask about different protections?",
+        "answer": "They have different purposes; one form of protection does not cover everything.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Patent"
+        "prompt": "Explain the difference between “Patent” and “Trademark” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Copyright"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Petition” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the legal documents task. Use Patent, Trademark, Copyright, License, NDA, Non-Compete, Partnership Agreement, Articles of Incorporation, Bylaws, and Operating Agreement in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Patent” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The designer asks about a patent for an invention. A trademark identifies commercial goods or services, copyright concerns creative expression, and a license gives permission under terms.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Legal Documents: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Organizing a business document folder",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "A designer organizes sample business documents for a training session. A patent concerns an invention, a trademark identifies goods or services, and copyright protects original creative expression. A license gives permission under stated terms. The designer asks a lawyer about the differences rather than assuming that one protection covers everything. A sample NDA concerns confidential information. A non-compete addresses restricted competition, but its enforceability depends on applicable law. A partnership agreement describes a partnership's operation. Articles of incorporation establish a corporation through the relevant filing process. Bylaws govern internal activities, while an operating agreement may govern a limited liability company. These documents have different functions; the training folder does not establish anyone's rights or obligations. Ask: Why does the designer ask about different protections?"
     },
     "spacedReview": "1 lesson(s) back: Petition, Order from legal-documents-2\n3 lesson(s) back: Exhibit, Document from courtroom-trial-3\n7 lesson(s) back: Filing Room, War Room from law-firm-2"
   }

@@ -30,7 +30,7 @@
       "مكبر صوت ذكي",
       "أمر صوتي",
       "كلمة تنبيه",
-      "روتين",
+      "روتين آلي",
       "تذكير",
       "مؤقت",
       "قائمة تشغيل",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "119-149 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Smart Speaker", "Voice Command", "Wake Word", "Routine"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.",
+          "scenario": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smart Speaker", "Voice Command", "Wake Word"],
-            "expectedAnswer": "Smart Speaker"
+            "question": "Which term activates listening for a command?",
+            "options": ["Wake Word", "Smart Speaker", "Voice Command"],
+            "expectedAnswer": "Wake Word"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Speaker as the central item; include Smart Speaker, Voice Command, and Wake Word naturally where visually appropriate, but make the real-world use of Smart Speaker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Wake Word in a smart home context. Use the written scenario as the source of meaning: A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Reminder", "Timer", "Playlist", "News Briefing"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.",
+          "scenario": "Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Reminder", "Timer", "Playlist"],
-            "expectedAnswer": "Reminder"
+            "question": "Which feature signals the end of a measured interval?",
+            "options": ["Timer", "Reminder", "Playlist"],
+            "expectedAnswer": "Timer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Reminder as the central item; include Reminder, Timer, and Playlist naturally where visually appropriate, but make the real-world use of Reminder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Timer in a smart home context. Use the written scenario as the source of meaning: Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Intercom", "Multi Room", "Smart Bulb", "Dimmer"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.",
+          "scenario": "The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Intercom", "Multi Room", "Smart Bulb"],
-            "expectedAnswer": "Intercom"
+            "question": "Which control adjusts light output?",
+            "options": ["Dimmer", "Intercom", "Multi Room"],
+            "expectedAnswer": "Dimmer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Intercom as the central item; include Intercom, Multi Room, and Smart Bulb naturally where visually appropriate, but make the real-world use of Intercom the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dimmer in a smart home context. Use the written scenario as the source of meaning: The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Color Changing", "Light Strip", "Motion Sensor"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.",
+          "scenario": "A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Color Changing", "Light Strip", "Motion Sensor"],
-            "expectedAnswer": "Color Changing"
+            "question": "Which device detects movement?",
+            "options": ["Motion Sensor", "Color Changing", "Light Strip"],
+            "expectedAnswer": "Motion Sensor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Color Changing through a realistic adult task; include Color Changing, Light Strip, and Motion Sensor naturally where visually appropriate, but make the real-world use of Color Changing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Motion Sensor in a smart home context. Use the written scenario as the source of meaning: A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Smart Home",
-      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Speaker, Voice Command, Wake Word, and Routine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reminder, Timer, Playlist, and News Briefing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Intercom, Multi Room, Smart Bulb, and Dimmer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Color Changing, Light Strip, and Motion Sensor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Smart Home: A visitor’s questions",
+      "text": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.",
+      "imageBrief": "One uncluttered smart home setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Speaker, Voice Command, Wake Word, and Routine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smart Speaker",
+        "prompt": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings.\nWhich term activates listening for a command?",
+        "answer": "Wake Word",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reminder, Timer, Playlist, and News Briefing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Reminder",
+        "prompt": "Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news.\nWhich feature signals the end of a measured interval?",
+        "answer": "Timer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Multi Room, Smart Bulb, and Dimmer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Intercom",
+        "prompt": "The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved.\nWhich control adjusts light output?",
+        "answer": "Dimmer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Changing, Light Strip, and Motion Sensor and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Color Changing",
+        "prompt": "A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.\nWhich device detects movement?",
+        "answer": "Motion Sensor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Mona sets a Reminder for an appointment and a Timer for a measured interval. She also chooses a Playlist of audio selections and a News Briefing summarizing recent news. The display includes an Intercom for room-to-room communication and Multi Room audio. A Smart Bulb can receive electronic controls, while a Dimmer adjusts light output. Actual compatibility must be checked for the devices involved. A Color Changing lamp offers different light colors, and a Light Strip contains a row of small lights. A Motion Sensor detects movement and can trigger a supported action under its settings.\nExplain the difference between Smart Speaker and Voice Command using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Smart Speaker"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Seat Belt Law” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the smart home task. Use Smart Speaker, Voice Command, Wake Word, Routine, Reminder, Timer, Playlist, News Briefing, Intercom, Multi Room, Smart Bulb, Dimmer, Color Changing, Light Strip, and Motion Sensor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Smart Speaker, Voice Command, Wake Word, Routine, Reminder, Timer, Playlist, News Briefing, Intercom, Multi Room, Smart Bulb, Dimmer, Color Changing, Light Strip, Motion Sensor to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Smart Home: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Smart Home: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Smart Speaker and Voice Command, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A device guide compares a Smart Speaker, Voice Command, Wake Word, and Routine. The Wake Word activates listening for a command, while a Routine groups configured actions. Features depend on the device and settings. Pause and answer: Which term activates listening for a command?"
     },
     "spacedReview": "1 lesson(s) back: Seat Belt Law, Right of Way from driving-road-rules-3\n3 lesson(s) back: Stop Sign, Yield Sign from driving-road-rules-1\n7 lesson(s) back: Power Steering Fluid, Gas from car-parts-mechanics-4"
   },
@@ -202,7 +185,7 @@
     ],
     "targetWordsArabic": [
       "جدول",
-      "مشهد",
+      "مجموعة إعدادات محفوظة",
       "سطوع",
       "أبيض دافئ",
       "ضوء النهار",
@@ -214,136 +197,119 @@
       "لوحة أرقام",
       "بصمة إصبع",
       "تنبيه من التطبيق",
-      "تخزين سحابة",
+      "تخزين سحابي",
       "رؤية ليلية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Schedule", "Scene", "Brightness", "Warm White"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.",
+          "scenario": "A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Schedule", "Scene", "Brightness"],
-            "expectedAnswer": "Schedule"
+            "question": "Which feature groups saved device settings?",
+            "options": ["Scene", "Schedule", "Brightness"],
+            "expectedAnswer": "Scene"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Schedule as the central item; include Schedule, Scene, and Brightness naturally where visually appropriate, but make the real-world use of Schedule the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Scene in a smart home context. Use the written scenario as the source of meaning: A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Daylight", "Smart Lock", "Doorbell Camera", "Security Camera"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.",
+          "scenario": "The lamp offers Daylight as a cooler white color setting. The guide separately describes a Smart Lock, Doorbell Camera, and Security Camera. Daylight here names a light color, rather than the hours between sunrise and sunset.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the cooler white light setting?",
             "options": ["Daylight", "Smart Lock", "Doorbell Camera"],
             "expectedAnswer": "Daylight"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Daylight as the central item; include Daylight, Smart Lock, and Doorbell Camera naturally where visually appropriate, but make the real-world use of Daylight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Daylight in a smart home context. Use the written scenario as the source of meaning: The lamp offers Daylight as a cooler white color setting. The guide separately describes a Smart Lock, Doorbell Camera, and Security Camera. Daylight here names a light color, rather than the hours between sunrise and sunset. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Motion Detector", "Alarm System", "Keypad", "Fingerprint"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.",
+          "scenario": "A Motion Detector can notify an Alarm System of movement. At the entrance, a Keypad accepts a code, while Fingerprint recognition uses a registered finger pattern. Permission and access depend on the actual system’s rules.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Motion Detector", "Alarm System", "Keypad"],
-            "expectedAnswer": "Motion Detector"
+            "question": "Which device accepts a code through its buttons?",
+            "options": ["Keypad", "Motion Detector", "Alarm System"],
+            "expectedAnswer": "Keypad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Motion Detector as the central item; include Motion Detector, Alarm System, and Keypad naturally where visually appropriate, but make the real-world use of Motion Detector the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Keypad in a smart home context. Use the written scenario as the source of meaning: A Motion Detector can notify an Alarm System of movement. At the entrance, a Keypad accepts a code, while Fingerprint recognition uses a registered finger pattern. Permission and access depend on the actual system’s rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["App Alert", "Cloud Storage", "Night Vision"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.",
+          "scenario": "The app displays an App Alert for a recorded event. Cloud Storage keeps data on remote online systems, and Night Vision supports imaging in low light. Recording availability depends on the equipment, account, and settings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["App Alert", "Cloud Storage", "Night Vision"],
-            "expectedAnswer": "App Alert"
+            "question": "Which feature stores data on remote online systems?",
+            "options": ["Cloud Storage", "App Alert", "Night Vision"],
+            "expectedAnswer": "Cloud Storage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the App Alert as the central item; include App Alert, Cloud Storage, and Night Vision naturally where visually appropriate, but make the real-world use of App Alert the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cloud Storage in a smart home context. Use the written scenario as the source of meaning: The app displays an App Alert for a recorded event. Cloud Storage keeps data on remote online systems, and Night Vision supports imaging in low light. Recording availability depends on the equipment, account, and settings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Smart Home",
-      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Schedule, Scene, Brightness, and Warm White. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Daylight, Smart Lock, Doorbell Camera, and Security Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motion Detector, Alarm System, Keypad, and Fingerprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers App Alert, Cloud Storage, and Night Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Smart Home: Understanding the different roles",
+      "text": "A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings. The lamp offers Daylight as a cooler white color setting. The guide separately describes a Smart Lock, Doorbell Camera, and Security Camera. Daylight here names a light color, rather than the hours between sunrise and sunset. A Motion Detector can notify an Alarm System of movement. At the entrance, a Keypad accepts a code, while Fingerprint recognition uses a registered finger pattern. Permission and access depend on the actual system’s rules. The app displays an App Alert for a recorded event. Cloud Storage keeps data on remote online systems, and Night Vision supports imaging in low light. Recording availability depends on the equipment, account, and settings.",
+      "imageBrief": "One uncluttered smart home setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Schedule, Scene, Brightness, and Warm White and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Schedule",
+        "prompt": "A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings.\nWhich feature groups saved device settings?",
+        "answer": "Scene",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daylight, Smart Lock, Doorbell Camera, and Security Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The lamp offers Daylight as a cooler white color setting. The guide separately describes a Smart Lock, Doorbell Camera, and Security Camera. Daylight here names a light color, rather than the hours between sunrise and sunset.\nWhich target names the cooler white light setting?",
         "answer": "Daylight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion Detector, Alarm System, Keypad, and Fingerprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Motion Detector",
+        "prompt": "A Motion Detector can notify an Alarm System of movement. At the entrance, a Keypad accepts a code, while Fingerprint recognition uses a registered finger pattern. Permission and access depend on the actual system’s rules.\nWhich device accepts a code through its buttons?",
+        "answer": "Keypad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare App Alert, Cloud Storage, and Night Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "App Alert",
+        "prompt": "The app displays an App Alert for a recorded event. Cloud Storage keeps data on remote online systems, and Night Vision supports imaging in low light. Recording availability depends on the equipment, account, and settings.\nWhich feature stores data on remote online systems?",
+        "answer": "Cloud Storage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings. The lamp offers Daylight as a cooler white color setting. The guide separately describes a Smart Lock, Doorbell Camera, and Security Camera. Daylight here names a light color, rather than the hours between sunrise and sunset. A Motion Detector can notify an Alarm System of movement. At the entrance, a Keypad accepts a code, while Fingerprint recognition uses a registered finger pattern. Permission and access depend on the actual system’s rules. The app displays an App Alert for a recorded event. Cloud Storage keeps data on remote online systems, and Night Vision supports imaging in low light. Recording availability depends on the equipment, account, and settings.\nExplain the difference between Schedule and Scene using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Schedule"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Smart Speaker” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the smart home task. Use Schedule, Scene, Brightness, Warm White, Daylight, Smart Lock, Doorbell Camera, Security Camera, Motion Detector, Alarm System, Keypad, Fingerprint, App Alert, Cloud Storage, and Night Vision in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Schedule, Scene, Brightness, Warm White, Daylight, Smart Lock, Doorbell Camera, Security Camera, Motion Detector, Alarm System, Keypad, Fingerprint, App Alert, Cloud Storage, Night Vision to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Smart Home: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Smart Home: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Schedule and Scene, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Schedule defines when an action runs. A Scene groups saved device settings, such as Brightness and a Warm White light color. These are automation and lighting meanings, not a theatrical scene or a guarantee that every device supports the settings. Pause and answer: Which feature groups saved device settings?"
     },
     "spacedReview": "1 lesson(s) back: Smart Speaker, Voice Command from smart-home-1\n3 lesson(s) back: Crosswalk, Traffic Light from driving-road-rules-2\n7 lesson(s) back: Showroom, Lot from auto-dealership-1"
   },
@@ -378,7 +344,7 @@
       "منظّم حرارة ذكي",
       "مستشعر درجة الحرارة",
       "مستشعر رطوبة",
-      "منطقة",
+      "منطقة تحكم",
       "وضع اقتصادي",
       "سياج جغرافي افتراضي",
       "فتحة تهوية",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "128-158 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor", "Zone"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.",
+          "scenario": "A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smart Thermostat", "Temperature Sensor", "Humidity Sensor"],
-            "expectedAnswer": "Smart Thermostat"
+            "question": "Which sensor measures moisture in the air?",
+            "options": ["Humidity Sensor", "Smart Thermostat", "Temperature Sensor"],
+            "expectedAnswer": "Humidity Sensor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Thermostat as the central item; include Smart Thermostat, Temperature Sensor, and Humidity Sensor naturally where visually appropriate, but make the real-world use of Smart Thermostat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Humidity Sensor in a smart home context. Use the written scenario as the source of meaning: A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Eco Mode", "Geofencing", "Vent", "Air Purifier"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.",
+          "scenario": "The guide describes Eco Mode as a resource-saving setting and Geofencing as a virtual location boundary that can trigger supported actions. A Vent carries air, while an Air Purifier removes some airborne particles or pollutants under its specifications.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Eco Mode", "Geofencing", "Vent"],
-            "expectedAnswer": "Eco Mode"
+            "question": "Which feature uses a virtual location boundary?",
+            "options": ["Geofencing", "Eco Mode", "Vent"],
+            "expectedAnswer": "Geofencing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Eco Mode as the central item; include Eco Mode, Geofencing, and Vent naturally where visually appropriate, but make the real-world use of Eco Mode the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Geofencing in a smart home context. Use the written scenario as the source of meaning: The guide describes Eco Mode as a resource-saving setting and Geofencing as a virtual location boundary that can trigger supported actions. A Vent carries air, while an Air Purifier removes some airborne particles or pollutants under its specifications. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fan", "Streaming Device", "Smart Tv", "Soundbar"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.",
+          "scenario": "A Fan moves air. A Streaming Device supplies media to a display, and a Smart Tv offers network media features. A Soundbar is a long narrow loudspeaker unit used for television or home audio.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Fan", "Streaming Device", "Smart Tv"],
-            "expectedAnswer": "Fan"
+            "question": "Which device is the long narrow loudspeaker unit?",
+            "options": ["Soundbar", "Fan", "Streaming Device"],
+            "expectedAnswer": "Soundbar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Fan as the central item; include Fan, Streaming Device, and Smart Tv naturally where visually appropriate, but make the real-world use of Fan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Soundbar in a smart home context. Use the written scenario as the source of meaning: A Fan moves air. A Streaming Device supplies media to a display, and a Smart Tv offers network media features. A Soundbar is a long narrow loudspeaker unit used for television or home audio. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Projector", "Gaming Console", "Universal Remote"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.",
+          "scenario": "The guide contrasts a Projector casting an image onto a surface with a Gaming Console running games. A Universal Remote can control multiple compatible devices. Compatibility depends on the actual devices and control protocols.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device displays an image on a wall or screen?",
             "options": ["Projector", "Gaming Console", "Universal Remote"],
             "expectedAnswer": "Projector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Projector as the central item; include Projector, Gaming Console, and Universal Remote naturally where visually appropriate, but make the real-world use of Projector the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Projector in a smart home context. Use the written scenario as the source of meaning: The guide contrasts a Projector casting an image onto a surface with a Gaming Console running games. A Universal Remote can control multiple compatible devices. Compatibility depends on the actual devices and control protocols. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Smart Home",
-      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eco Mode, Geofencing, Vent, and Air Purifier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fan, Streaming Device, Smart Tv, and Soundbar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Projector, Gaming Console, and Universal Remote. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Smart Home: Comparing the equipment",
+      "text": "A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately. The guide describes Eco Mode as a resource-saving setting and Geofencing as a virtual location boundary that can trigger supported actions. A Vent carries air, while an Air Purifier removes some airborne particles or pollutants under its specifications. A Fan moves air. A Streaming Device supplies media to a display, and a Smart Tv offers network media features. A Soundbar is a long narrow loudspeaker unit used for television or home audio. The guide contrasts a Projector casting an image onto a surface with a Gaming Console running games. A Universal Remote can control multiple compatible devices. Compatibility depends on the actual devices and control protocols.",
+      "imageBrief": "One uncluttered smart home setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Temperature Sensor, Humidity Sensor, and Zone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smart Thermostat",
+        "prompt": "A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately.\nWhich sensor measures moisture in the air?",
+        "answer": "Humidity Sensor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eco Mode, Geofencing, Vent, and Air Purifier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Eco Mode",
+        "prompt": "The guide describes Eco Mode as a resource-saving setting and Geofencing as a virtual location boundary that can trigger supported actions. A Vent carries air, while an Air Purifier removes some airborne particles or pollutants under its specifications.\nWhich feature uses a virtual location boundary?",
+        "answer": "Geofencing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fan, Streaming Device, Smart Tv, and Soundbar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Fan",
+        "prompt": "A Fan moves air. A Streaming Device supplies media to a display, and a Smart Tv offers network media features. A Soundbar is a long narrow loudspeaker unit used for television or home audio.\nWhich device is the long narrow loudspeaker unit?",
+        "answer": "Soundbar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Projector, Gaming Console, and Universal Remote and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide contrasts a Projector casting an image onto a surface with a Gaming Console running games. A Universal Remote can control multiple compatible devices. Compatibility depends on the actual devices and control protocols.\nWhich device displays an image on a wall or screen?",
         "answer": "Projector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately. The guide describes Eco Mode as a resource-saving setting and Geofencing as a virtual location boundary that can trigger supported actions. A Vent carries air, while an Air Purifier removes some airborne particles or pollutants under its specifications. A Fan moves air. A Streaming Device supplies media to a display, and a Smart Tv offers network media features. A Soundbar is a long narrow loudspeaker unit used for television or home audio. The guide contrasts a Projector casting an image onto a surface with a Gaming Console running games. A Universal Remote can control multiple compatible devices. Compatibility depends on the actual devices and control protocols.\nExplain the difference between Smart Thermostat and Temperature Sensor using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Smart Thermostat"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Schedule” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the smart home task. Use Smart Thermostat, Temperature Sensor, Humidity Sensor, Zone, Eco Mode, Geofencing, Vent, Air Purifier, Fan, Streaming Device, Smart Tv, Soundbar, Projector, Gaming Console, and Universal Remote in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Smart Thermostat, Temperature Sensor, Humidity Sensor, Zone, Eco Mode, Geofencing, Vent, Air Purifier, Fan, Streaming Device, Smart Tv, Soundbar, Projector, Gaming Console, Universal Remote to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Smart Home: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Smart Home: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Smart Thermostat and Temperature Sensor, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Smart Thermostat controls heating or cooling according to supported settings. A Temperature Sensor measures temperature, while a Humidity Sensor measures moisture in the air. A Zone is an area controlled separately. Pause and answer: Which sensor measures moisture in the air?"
     },
     "spacedReview": "1 lesson(s) back: Schedule, Scene from smart-home-2\n3 lesson(s) back: Seat Belt Law, Right of Way from driving-road-rules-3\n7 lesson(s) back: Monthly Payment, MSRP from auto-dealership-2"
   },
@@ -548,18 +497,18 @@
       "Garage Opener"
     ],
     "targetWordsArabic": [
-      "منفذ HDMI",
+      "واجهة HDMI",
       "بلوتوث",
       "واي فاي",
-      "اختيار العارضين",
+      "إرسال الوسائط إلى جهاز آخر",
       "مكنسة روبوتية",
       "قابس ذكي",
       "فرن ذكي",
-      "ماكينة القهوة",
+      "ماكينة قهوة",
       "غسالة",
       "مجفف",
-      "ثلاجة (براد)",
-      "غسالة الصحون (جلاية)",
+      "ثلاجة",
+      "غسالة أطباق",
       "ريّ",
       "جهاز فتح باب المرآب"
     ],
@@ -567,129 +516,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "130-160 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hdmi", "Bluetooth", "Wi Fi", "Casting"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.",
+          "scenario": "The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hdmi", "Bluetooth", "Wi Fi"],
-            "expectedAnswer": "Hdmi"
+            "question": "Which term means sending or controlling media playback on another device?",
+            "options": ["Casting", "Hdmi", "Bluetooth"],
+            "expectedAnswer": "Casting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Hdmi as the central item; include Hdmi, Bluetooth, and Wi Fi naturally where visually appropriate, but make the real-world use of Hdmi the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Casting in a smart home context. Use the written scenario as the source of meaning: The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Robot Vacuum", "Smart Plug", "Smart Oven", "Coffee Maker"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.",
+          "scenario": "A Robot Vacuum cleans floors within its supported capabilities. A Smart Plug controls supplied electrical power under its ratings. A Smart Oven and Coffee Maker have different food-preparation roles. The guide does not teach unattended appliance operation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Robot Vacuum", "Smart Plug", "Smart Oven"],
-            "expectedAnswer": "Robot Vacuum"
+            "question": "Which adapter electronically controls the supplied power?",
+            "options": ["Smart Plug", "Robot Vacuum", "Smart Oven"],
+            "expectedAnswer": "Smart Plug"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Robot Vacuum as the central item; include Robot Vacuum, Smart Plug, and Smart Oven naturally where visually appropriate, but make the real-world use of Robot Vacuum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Smart Plug in a smart home context. Use the written scenario as the source of meaning: A Robot Vacuum cleans floors within its supported capabilities. A Smart Plug controls supplied electrical power under its ratings. A Smart Oven and Coffee Maker have different food-preparation roles. The guide does not teach unattended appliance operation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Washer", "Dryer", "Refrigerator", "Dishwasher"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.",
+          "scenario": "The Washer washes clothes, and the Dryer removes moisture from laundry. The Refrigerator keeps food cold, while the Dishwasher washes dishes. The word dryer describes an appliance here rather than a drink’s sugar level.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Washer", "Dryer", "Refrigerator"],
-            "expectedAnswer": "Washer"
+            "question": "Which appliance removes moisture from laundry?",
+            "options": ["Dryer", "Washer", "Refrigerator"],
+            "expectedAnswer": "Dryer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Washer as the central item; include Washer, Dryer, and Refrigerator naturally where visually appropriate, but make the real-world use of Washer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dryer in a smart home context. Use the written scenario as the source of meaning: The Washer washes clothes, and the Dryer removes moisture from laundry. The Refrigerator keeps food cold, while the Dishwasher washes dishes. The word dryer describes an appliance here rather than a drink’s sugar level. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Irrigation", "Garage Opener"],
-          "scenario": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.",
+          "scenario": "The guide contrasts Irrigation, which supplies water to land or plants, with a Garage Opener, which operates a garage door. Settings and safe operation follow the actual manufacturer’s instructions.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Irrigation", "Garage Opener", "Hdmi"],
+            "question": "Which term names supplying water to land or plants?",
+            "options": ["Irrigation", "Garage Opener"],
             "expectedAnswer": "Irrigation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Irrigation through a realistic adult task; include Irrigation, Garage Opener, and Hdmi naturally where visually appropriate, but make the real-world use of Irrigation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Irrigation in a smart home context. Use the written scenario as the source of meaning: The guide contrasts Irrigation, which supplies water to land or plants, with a Garage Opener, which operates a garage door. Settings and safe operation follow the actual manufacturer’s instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written smart home situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Smart Home",
-      "text": "At the smart home, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hdmi, Bluetooth, Wi Fi, and Casting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Washer, Dryer, Refrigerator, and Dishwasher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Irrigation and Garage Opener. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Smart Home. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Smart Home: A guided walk",
+      "text": "The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here. A Robot Vacuum cleans floors within its supported capabilities. A Smart Plug controls supplied electrical power under its ratings. A Smart Oven and Coffee Maker have different food-preparation roles. The guide does not teach unattended appliance operation. The Washer washes clothes, and the Dryer removes moisture from laundry. The Refrigerator keeps food cold, while the Dishwasher washes dishes. The word dryer describes an appliance here rather than a drink’s sugar level. The guide contrasts Irrigation, which supplies water to land or plants, with a Garage Opener, which operates a garage door. Settings and safe operation follow the actual manufacturer’s instructions.",
+      "imageBrief": "One uncluttered smart home setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hdmi, Bluetooth, Wi Fi, and Casting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hdmi",
+        "prompt": "The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here.\nWhich term means sending or controlling media playback on another device?",
+        "answer": "Casting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robot Vacuum, Smart Plug, Smart Oven, and Coffee Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Robot Vacuum",
+        "prompt": "A Robot Vacuum cleans floors within its supported capabilities. A Smart Plug controls supplied electrical power under its ratings. A Smart Oven and Coffee Maker have different food-preparation roles. The guide does not teach unattended appliance operation.\nWhich adapter electronically controls the supplied power?",
+        "answer": "Smart Plug",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Washer, Dryer, Refrigerator, and Dishwasher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Washer",
+        "prompt": "The Washer washes clothes, and the Dryer removes moisture from laundry. The Refrigerator keeps food cold, while the Dishwasher washes dishes. The word dryer describes an appliance here rather than a drink’s sugar level.\nWhich appliance removes moisture from laundry?",
+        "answer": "Dryer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the smart home setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Irrigation, and Garage Opener and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The guide contrasts Irrigation, which supplies water to land or plants, with a Garage Opener, which operates a garage door. Settings and safe operation follow the actual manufacturer’s instructions.\nWhich term names supplying water to land or plants?",
         "answer": "Irrigation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here. A Robot Vacuum cleans floors within its supported capabilities. A Smart Plug controls supplied electrical power under its ratings. A Smart Oven and Coffee Maker have different food-preparation roles. The guide does not teach unattended appliance operation. The Washer washes clothes, and the Dryer removes moisture from laundry. The Refrigerator keeps food cold, while the Dishwasher washes dishes. The word dryer describes an appliance here rather than a drink’s sugar level. The guide contrasts Irrigation, which supplies water to land or plants, with a Garage Opener, which operates a garage door. Settings and safe operation follow the actual manufacturer’s instructions.\nExplain the difference between Hdmi and Bluetooth using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hdmi"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Smart Thermostat” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the smart home task. Use Hdmi, Bluetooth, Wi Fi, Casting, Robot Vacuum, Smart Plug, Smart Oven, Coffee Maker, Washer, Dryer, Refrigerator, Dishwasher, Irrigation, and Garage Opener in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hdmi, Bluetooth, Wi Fi, Casting, Robot Vacuum, Smart Plug, Smart Oven, Coffee Maker, Washer, Dryer, Refrigerator, Dishwasher, Irrigation, Garage Opener to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Smart Home: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Smart Home: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hdmi and Bluetooth, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The display compares Hdmi for wired digital audio and video, Bluetooth for wireless device communication, and Wi Fi for wireless networking. Casting sends or controls media playback on a compatible receiving device; it does not mean molding an object here. Pause and answer: Which term means sending or controlling media playback on another device?"
     },
     "spacedReview": "1 lesson(s) back: Smart Thermostat, Temperature Sensor from smart-home-3\n3 lesson(s) back: Smart Speaker, Voice Command from smart-home-1\n7 lesson(s) back: Sales Associate, Finance Manager from auto-dealership-3"
   }

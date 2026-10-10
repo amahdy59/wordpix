@@ -33,147 +33,133 @@
       "نقع قشور العنب في العصير",
       "نقل النبيذ بعيدًا عن الرواسب",
       "الترويق",
-      "ترشيح",
-      "تقدّم في العمر",
-      "مزج",
+      "ترشيح النبيذ",
+      "تعتيق النبيذ",
+      "مزج النبيذ",
       "التعبئة في زجاجات",
-      "يضغط نبيذ",
+      "معصرة عنب",
       "خزان تخمير",
       "برميل بلوط",
       "خزان فولاذ مقاوم للصدأ",
       "آلة هرس العنب"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Crushing", "Pressing", "Fermentation", "Maceration"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crushing, Pressing, Fermentation, and Maceration and choose the option that fits the situation.",
+          "scenario": "Crushing breaks grape skins. Pressing separates juice, fermentation transforms sugar, and maceration involves contact with grape solids.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which process breaks the grape skins?",
             "options": ["Crushing", "Pressing", "Fermentation"],
             "expectedAnswer": "Crushing"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Crushing through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. Broken grapes in a plain processing tray, no production recipe or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Racking", "Fining", "Filtering", "Aging"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Racking, Fining, Filtering, and Aging and choose the option that fits the situation.",
+          "scenario": "Racking transfers liquid away from sediment. Fining and filtering clarify in different ways; aging concerns development in storage.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which process transfers liquid away from sediment?",
             "options": ["Racking", "Fining", "Filtering"],
             "expectedAnswer": "Racking"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Racking through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. Two closed processing vessels with a transfer line; the named stage is supplied by the written explanation. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Blending", "Bottling", "Wine Press", "Fermentation Tank"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blending, Bottling, Wine Press, and Fermentation Tank and choose the option that fits the situation.",
+          "scenario": "Blending combines components. Bottling packages liquid; a wine press presses grapes, and a fermentation tank holds fermenting liquid.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which process combines the components?",
             "options": ["Blending", "Bottling", "Wine Press"],
             "expectedAnswer": "Blending"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff illustrating Blending through a realistic adult task, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. Two closed sample vessels beside a larger vessel; no formula or unsupported result claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Oak Barrel", "Stainless Steel Tank", "Crusher"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak Barrel, Stainless Steel Tank, and Crusher and choose the option that fits the situation.",
+          "scenario": "The oak barrel is the wooden storage vessel. The stainless steel tank is metal, and the crusher breaks berries.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named vessel is wooden?",
             "options": ["Oak Barrel", "Stainless Steel Tank", "Crusher"],
             "expectedAnswer": "Oak Barrel"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Oak Barrel as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One wooden oak barrel with staves and metal hoops, no brand or liquid visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Winemaking: Practical Information",
-      "text": "At the winemaking, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crushing, Pressing, Fermentation, and Maceration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Racking, Fining, Filtering, and Aging. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Blending, Bottling, Wine Press, and Fermentation Tank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oak Barrel, Stainless Steel Tank, and Crusher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Winemaking. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Separating process names from equipment",
+      "text": "The student reads a production vocabulary display. Crushing breaks grape skins; pressing separates juice from solids. Fermentation transforms sugars into alcohol, carbon dioxide and other products. Maceration involves contact between juice and grape solids. Racking transfers liquid away from sediment; fining and filtering are different clarification methods. Aging concerns development during storage, blending combines components, and bottling packages the finished liquid. A wine press is equipment for pressing, and a fermentation tank holds fermenting liquid. An oak barrel is a wooden storage vessel; a stainless steel tank is a metal vessel. A crusher breaks berries. The student asks what a process does before naming its equipment. The display explains distinctions rather than supplies operating instructions, chemical additions or a recipe.",
+      "imageBrief": "Support for Separating process names from equipment. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crushing, Pressing, Fermentation, and Maceration and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Crushing breaks grape skins. Pressing separates juice, fermentation transforms sugar, and maceration involves contact with grape solids.\nWhich process breaks the grape skins?",
         "answer": "Crushing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Racking, Fining, Filtering, and Aging and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Racking transfers liquid away from sediment. Fining and filtering clarify in different ways; aging concerns development in storage.\nWhich process transfers liquid away from sediment?",
         "answer": "Racking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Blending, Bottling, Wine Press, and Fermentation Tank and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Blending combines components. Bottling packages liquid; a wine press presses grapes, and a fermentation tank holds fermenting liquid.\nWhich process combines the components?",
         "answer": "Blending",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oak Barrel, Stainless Steel Tank, and Crusher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The oak barrel is the wooden storage vessel. The stainless steel tank is metal, and the crusher breaks berries.\nWhich named vessel is wooden?",
         "answer": "Oak Barrel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The student reads a production vocabulary display. Crushing breaks grape skins; pressing separates juice from solids. Fermentation transforms sugars into alcohol, carbon dioxide and other products. Maceration involves contact between juice and grape solids. Racking transfers liquid away from sediment; fining and filtering are different clarification methods. Aging concerns development during storage, blending combines components, and bottling packages the finished liquid. A wine press is equipment for pressing, and a fermentation tank holds fermenting liquid. An oak barrel is a wooden storage vessel; a stainless steel tank is a metal vessel. A crusher breaks berries. The student asks what a process does before naming its equipment. The display explains distinctions rather than supplies operating instructions, chemical additions or a recipe.\nWhy does the student separate processes from equipment?",
+        "answer": "An activity name and the vessel or machine used for it have different meanings.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Crushing"
+        "prompt": "Explain the difference between “Crushing” and “Pressing” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Fermentation"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Vintner” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the winemaking task. Use Crushing, Pressing, Fermentation, Maceration, Racking, Fining, Filtering, Aging, Blending, Bottling, Wine Press, Fermentation Tank, Oak Barrel, Stainless Steel Tank, and Crusher in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Crushing” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Crushing breaks grape skins. Pressing separates juice, fermentation transforms sugar, and maceration involves contact with grape solids.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Winemaking: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from winemaking in cultural or industry texts."
+      "title": "Separating process names from equipment",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The student reads a production vocabulary display. Crushing breaks grape skins; pressing separates juice from solids. Fermentation transforms sugars into alcohol, carbon dioxide and other products. Maceration involves contact between juice and grape solids. Racking transfers liquid away from sediment; fining and filtering are different clarification methods. Aging concerns development during storage, blending combines components, and bottling packages the finished liquid. A wine press is equipment for pressing, and a fermentation tank holds fermenting liquid. An oak barrel is a wooden storage vessel; a stainless steel tank is a metal vessel. A crusher breaks berries. The student asks what a process does before naming its equipment. The display explains distinctions rather than supplies operating instructions, chemical additions or a recipe. Ask: Why does the student separate processes from equipment?"
     },
     "spacedReview": "1 lesson(s) back: Vintner, Viticulturist from vineyard-3\n3 lesson(s) back: Cabernet Sauvignon, Merlot from vineyard-1\n7 lesson(s) back: Haute Couture, Prêt-à-Porter from fashion-design-3"
   },
@@ -222,136 +208,122 @@
       "تقليب رواسب التخمير"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Destemmer", "Pump", "Hydrometer", "pH Meter"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Destemmer, Pump, Hydrometer, and pH Meter and choose the option that fits the situation.",
+          "scenario": "The destemmer separates grape berries from stems. The pump moves liquid, the hydrometer measures relative density, and the pH meter measures acidity on a logarithmic scale.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which machine separates berries from stems?",
             "options": ["Destemmer", "Pump", "Hydrometer"],
             "expectedAnswer": "Destemmer"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Destemmer as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A grape-destemming machine with separation drum visible, no hands or operating instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Corking Machine", "French Oak", "American Oak", "Toasting"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corking Machine, French Oak, American Oak, and Toasting and choose the option that fits the situation.",
+          "scenario": "The corking machine inserts bottle corks. French oak and American oak identify wood-origin descriptions; toasting concerns heating the wood.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which machine inserts the corks?",
             "options": ["Corking Machine", "French Oak", "American Oak"],
             "expectedAnswer": "Corking Machine"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Corking Machine as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. One unbranded bottle-corking machine with cork-insertion assembly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Char", "New Barrel", "Used Barrel", "Micro-Oxidation"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Char, New Barrel, Used Barrel, and Micro-Oxidation and choose the option that fits the situation.",
+          "scenario": "Char is the burned layer on the wood. New barrel and used barrel refer to usage history; micro-oxidation names controlled oxygen introduction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the burned wood layer?",
             "options": ["Char", "New Barrel", "Used Barrel"],
             "expectedAnswer": "Char"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Char as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A cut wooden barrel stave with a dark charred inner surface clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lees", "Sur Lie", "Bâtonnage"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lees, Sur Lie, and Bâtonnage and choose the option that fits the situation.",
+          "scenario": "Lees are fermentation sediment. Sur lie describes storage in contact with that sediment, and bâtonnage describes stirring it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the sediment?",
             "options": ["Lees", "Sur Lie", "Bâtonnage"],
             "expectedAnswer": "Lees"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Lees as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A clear closed sample vessel with sediment at its base; origin of sediment is written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: Winemaking",
-      "text": "At the winemaking, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Destemmer, Pump, Hydrometer, and pH Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Corking Machine, French Oak, American Oak, and Toasting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Char, New Barrel, Used Barrel, and Micro-Oxidation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Lees, Sur Lie, and Bâtonnage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Winemaking. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Understanding instruments and barrel terms",
+      "text": "The next display describes a destemmer, which separates berries from stems, and a pump, which moves liquid. A hydrometer measures relative density; a pH meter measures acidity on the pH scale rather than determines every acid's concentration. A corking machine inserts corks. French oak and American oak describe different wood origins and customary barrel materials. Toasting heats the wood, while char refers to a visibly burned surface. New barrel and used barrel concern previous use rather than color alone. Micro-oxidation names a controlled oxygen-introduction technique. Lees are fermentation sediment. Sur lie means keeping wine in contact with those lees; bâtonnage means stirring them. The student checks these distinctions without operating equipment or treating the terminology as an instruction for a production batch.",
+      "imageBrief": "Support for Understanding instruments and barrel terms. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Destemmer, Pump, Hydrometer, and pH Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The destemmer separates grape berries from stems. The pump moves liquid, the hydrometer measures relative density, and the pH meter measures acidity on a logarithmic scale.\nWhich machine separates berries from stems?",
         "answer": "Destemmer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corking Machine, French Oak, American Oak, and Toasting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The corking machine inserts bottle corks. French oak and American oak identify wood-origin descriptions; toasting concerns heating the wood.\nWhich machine inserts the corks?",
         "answer": "Corking Machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Char, New Barrel, Used Barrel, and Micro-Oxidation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Char is the burned layer on the wood. New barrel and used barrel refer to usage history; micro-oxidation names controlled oxygen introduction.\nWhich term names the burned wood layer?",
         "answer": "Char",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lees, Sur Lie, and Bâtonnage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Lees are fermentation sediment. Sur lie describes storage in contact with that sediment, and bâtonnage describes stirring it.\nWhich term names the sediment?",
         "answer": "Lees",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The next display describes a destemmer, which separates berries from stems, and a pump, which moves liquid. A hydrometer measures relative density; a pH meter measures acidity on the pH scale rather than determines every acid's concentration. A corking machine inserts corks. French oak and American oak describe different wood origins and customary barrel materials. Toasting heats the wood, while char refers to a visibly burned surface. New barrel and used barrel concern previous use rather than color alone. Micro-oxidation names a controlled oxygen-introduction technique. Lees are fermentation sediment. Sur lie means keeping wine in contact with those lees; bâtonnage means stirring them. The student checks these distinctions without operating equipment or treating the terminology as an instruction for a production batch.\nHow do sur lie and bâtonnage differ?",
+        "answer": "Sur lie concerns contact with lees; bâtonnage concerns stirring them.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Destemmer"
+        "prompt": "Explain the difference between “Destemmer” and “Pump” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Hydrometer"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Crushing” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the winemaking task. Use Destemmer, Pump, Hydrometer, pH Meter, Corking Machine, French Oak, American Oak, Toasting, Char, New Barrel, Used Barrel, Micro-Oxidation, Lees, Sur Lie, and Bâtonnage in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Destemmer” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The destemmer separates grape berries from stems. The pump moves liquid, the hydrometer measures relative density, and the pH meter measures acidity on a logarithmic scale.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Winemaking: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from winemaking in cultural or industry texts."
+      "title": "Understanding instruments and barrel terms",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The next display describes a destemmer, which separates berries from stems, and a pump, which moves liquid. A hydrometer measures relative density; a pH meter measures acidity on the pH scale rather than determines every acid's concentration. A corking machine inserts corks. French oak and American oak describe different wood origins and customary barrel materials. Toasting heats the wood, while char refers to a visibly burned surface. New barrel and used barrel concern previous use rather than color alone. Micro-oxidation names a controlled oxygen-introduction technique. Lees are fermentation sediment. Sur lie means keeping wine in contact with those lees; bâtonnage means stirring them. The student checks these distinctions without operating equipment or treating the terminology as an instruction for a production batch. Ask: How do sur lie and bâtonnage differ?"
     },
     "spacedReview": "1 lesson(s) back: Crushing, Pressing from winemaking-1\n3 lesson(s) back: Irrigation, Canopy from vineyard-2\n7 lesson(s) back: Catwalk, Backstage from runway-show-1"
   },
@@ -390,117 +362,103 @@
       "نبيذ بورت"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Interpret stated production, sensory and storage terms without inferring identity or performance from a photograph.",
+      "canDoStatement": "Can explain the distinctions in a supplied agricultural or hospitality report.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Red Wine", "White Wine", "Rosé", "Sparkling"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Wine, White Wine, Rosé, and Sparkling and choose the option that fits the situation.",
+          "scenario": "The description identifies red wine made with dark-grape skin contact. It contrasts white wine, rosé and sparkling categories.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category in the description uses dark-grape skin contact for its red color?",
             "options": ["Red Wine", "White Wine", "Rosé"],
             "expectedAnswer": "Red Wine"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Red Wine as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. An unlettered closed bottle beside a small red liquid reference vessel; production facts come from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dessert Wine", "Fortified Wine", "Natural Wine", "Orange Wine"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dessert Wine, Fortified Wine, Natural Wine, and Orange Wine and choose the option that fits the situation.",
+          "scenario": "Dessert wine names the sweet category in this comparison. Fortified wine has added spirit; natural wine is an informal term, and orange wine concerns extended skin contact with white grapes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed term names the sweet category in the comparison?",
             "options": ["Dessert Wine", "Fortified Wine", "Natural Wine"],
             "expectedAnswer": "Dessert Wine"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Dessert Wine as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. A neutral closed sample bottle; sweetness cannot be established by appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ice Wine", "Port"],
-          "scenario": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Wine, and Port and choose the option that fits the situation.",
+          "scenario": "Ice wine concerns naturally frozen grapes under the stated rules. Port is a different designation associated with the Douro region and includes several styles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term concerns grapes frozen naturally before pressing?",
             "options": ["Ice Wine", "Port", "Red Wine"],
             "expectedAnswer": "Ice Wine"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Ice Wine as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written agriculture and hospitality terminology task. Frozen grapes on a vine; exact product designation remains a documented fact. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Winemaking",
-      "text": "At the winemaking, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Red Wine, White Wine, Rosé, and Sparkling. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dessert Wine, Fortified Wine, Natural Wine, and Orange Wine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ice Wine and Port. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Winemaking. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading product-category descriptions",
+      "text": "The student compares category descriptions rather than judges a drink by color alone. Red wine usually obtains color through contact with dark grape skins. White wine generally uses limited skin contact; rosé has a pink appearance from its production method. Sparkling describes carbon dioxide bubbles. Dessert wine names a sweet category, while fortified wine has added distilled spirit. Natural wine is an informal term with varying definitions; it does not guarantee safety, health benefits or universal certification. Orange wine usually uses white grapes with extended skin contact. Ice wine concerns grapes naturally frozen on the vine before pressing, under relevant rules. Port is a protected wine designation associated with Portugal's Douro region and includes different colors and styles. Written records, not a generic bottle photograph, support these classifications.",
+      "imageBrief": "Support for Reading product-category descriptions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Wine, White Wine, Rosé, and Sparkling and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The description identifies red wine made with dark-grape skin contact. It contrasts white wine, rosé and sparkling categories.\nWhich category in the description uses dark-grape skin contact for its red color?",
         "answer": "Red Wine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dessert Wine, Fortified Wine, Natural Wine, and Orange Wine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dessert wine names the sweet category in this comparison. Fortified wine has added spirit; natural wine is an informal term, and orange wine concerns extended skin contact with white grapes.\nWhich listed term names the sweet category in the comparison?",
         "answer": "Dessert Wine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the winemaking setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Wine, and Port and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Ice wine concerns naturally frozen grapes under the stated rules. Port is a different designation associated with the Douro region and includes several styles.\nWhich term concerns grapes frozen naturally before pressing?",
         "answer": "Ice Wine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The student compares category descriptions rather than judges a drink by color alone. Red wine usually obtains color through contact with dark grape skins. White wine generally uses limited skin contact; rosé has a pink appearance from its production method. Sparkling describes carbon dioxide bubbles. Dessert wine names a sweet category, while fortified wine has added distilled spirit. Natural wine is an informal term with varying definitions; it does not guarantee safety, health benefits or universal certification. Orange wine usually uses white grapes with extended skin contact. Ice wine concerns grapes naturally frozen on the vine before pressing, under relevant rules. Port is a protected wine designation associated with Portugal's Douro region and includes different colors and styles. Written records, not a generic bottle photograph, support these classifications.\nDoes natural wine establish universal certification?",
+        "answer": "No; the term has varying definitions and does not establish that claim.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Red Wine"
+        "prompt": "Explain the difference between “Red Wine” and “White Wine” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Rosé"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Destemmer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the winemaking task. Use Red Wine, White Wine, Rosé, Sparkling, Dessert Wine, Fortified Wine, Natural Wine, Orange Wine, Ice Wine, and Port in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Red Wine” in its supplied agriculture and hospitality terminology sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The description identifies red wine made with dark-grape skin contact. It contrasts white wine, rosé and sparkling categories.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Winemaking: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from winemaking in cultural or industry texts."
+      "title": "Reading product-category descriptions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The student compares category descriptions rather than judges a drink by color alone. Red wine usually obtains color through contact with dark grape skins. White wine generally uses limited skin contact; rosé has a pink appearance from its production method. Sparkling describes carbon dioxide bubbles. Dessert wine names a sweet category, while fortified wine has added distilled spirit. Natural wine is an informal term with varying definitions; it does not guarantee safety, health benefits or universal certification. Orange wine usually uses white grapes with extended skin contact. Ice wine concerns grapes naturally frozen on the vine before pressing, under relevant rules. Port is a protected wine designation associated with Portugal's Douro region and includes different colors and styles. Written records, not a generic bottle photograph, support these classifications. Ask: Does natural wine establish universal certification?"
     },
     "spacedReview": "1 lesson(s) back: Destemmer, Pump from winemaking-2\n3 lesson(s) back: Vintner, Viticulturist from vineyard-3\n7 lesson(s) back: Dressing, Lineup from runway-show-2"
   }

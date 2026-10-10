@@ -28,151 +28,157 @@
     ],
     "targetWordsArabic": [
       "صدر",
-      "القفص الصدري",
+      "قفص صدري",
       "بطن",
       "بطن",
       "سرة",
       "خصر",
       "عظم القص",
       "ثدي",
-      "ترقوة",
+      "عظم الترقوة",
       "تفاحة آدم",
       "كتف",
       "إبط",
-      "الذراع العلوي",
-      "عضلة ذات الرأسين",
-      "العضلة ثلاثية الرؤوس"
+      "ذراع علوي",
+      "عضلة ذات رأسين",
+      "عضلة ثلاثية الرؤوس"
     ],
     "usage": {
-      "goal": "Learn to use the human body (upper body) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chest", "Ribcage", "Abdomen"],
-          "scenario": "During a routine care or examination situation, an adult reviews Chest, Ribcage, Abdomen. The next step focuses on Chest.",
+          "scenario": "Chest is the front upper trunk. Ribcage is the rib framework, and abdomen is the region below the chest.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the front upper trunk?",
             "options": ["Chest", "Ribcage", "Abdomen"],
             "expectedAnswer": "Chest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Chest, Ribcage, Abdomen. The next step focuses on Chest. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Chest, Ribcage, Abdomen in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Opaque nonliving torso model, no real exposed body. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Belly", "Navel", "Waist"],
-          "scenario": "During a routine care or examination situation, an adult reviews Belly, Navel, Waist. The next step focuses on Belly.",
+          "scenario": "Belly is an everyday word for abdomen. Navel is the former umbilical attachment mark, while waist is between ribs and hips.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which everyday word can mean abdomen?",
             "options": ["Belly", "Navel", "Waist"],
             "expectedAnswer": "Belly"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Belly, Navel, Waist. The next step focuses on Belly. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Belly, Navel, Waist in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Opaque torso-model reference; written term distinction does not require judging a body shape. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sternum", "Breast", "Collarbone"],
-          "scenario": "During a routine care or examination situation, an adult reviews Sternum, Breast, Collarbone. The next step focuses on Sternum.",
+          "scenario": "Sternum is the breastbone. Breast names chest tissue, while collarbone connects sternum and shoulder blade.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term is another name for breastbone?",
             "options": ["Sternum", "Breast", "Collarbone"],
             "expectedAnswer": "Sternum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Sternum, Breast, Collarbone. The next step focuses on Sternum. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Sternum, Breast, Collarbone in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified skeletal torso model without living tissue or sexualized detail. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Adam's Apple", "Shoulder", "Armpit"],
-          "scenario": "During a routine care or examination situation, an adult reviews Adam's Apple, Shoulder, Armpit. The next step focuses on Adam's Apple.",
+          "scenario": "Adam's apple is the front projection of laryngeal cartilage. Shoulder joins trunk and arm; armpit is the hollow beneath that junction.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the laryngeal-cartilage projection?",
             "options": ["Adam's Apple", "Shoulder", "Armpit"],
             "expectedAnswer": "Adam's Apple"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Adam's Apple, Shoulder, Armpit. The next step focuses on Adam's Apple. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Adam's Apple, Shoulder, Armpit in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving neck model, no claim that appearance determines sex or identity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Upper Arm", "Bicep", "Tricep"],
-          "scenario": "During a routine care or examination situation, an adult reviews Upper Arm, Bicep, Tricep. The next step focuses on Upper Arm.",
+          "scenario": "Upper arm lies between shoulder and elbow. Bicep commonly refers to biceps brachii; tricep to triceps brachii behind it.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which region lies between shoulder and elbow?",
             "options": ["Upper Arm", "Bicep", "Tricep"],
             "expectedAnswer": "Upper Arm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Upper Arm, Bicep, Tricep. The next step focuses on Upper Arm. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Upper Arm, Bicep, Tricep in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving arm model with coherent muscle placement. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body) 1: A short reading",
-      "text": "The class labels a diagram of the upper body. Omar identifies the chest and ribcage, while Maya finds the abdomen and waist. A second drawing shows the sternum and collarbone. They use the diagram to describe each location, then check their labels against the teacher's answer key.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The trunk and upper arm",
+      "text": "Dina reads about the chest and ribcage. Abdomen and belly refer to the area below the chest. Navel and waist name visible regions. The sternum is the breastbone. Dina compares collarbone, shoulder and upper arm. Bicep and tricep are common everyday muscle names. She uses an educational model and written descriptions; the lesson does not ask her to inspect another person's body or medical condition.",
+      "imageBrief": "Support for The trunk and upper arm. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Chest, Ribcage, Abdomen. The next step focuses on Chest.\nWhich option is the focus of the next step?",
+        "prompt": "Chest is the front upper trunk. Ribcage is the rib framework, and abdomen is the region below the chest.\nWhich term names the front upper trunk?",
         "answer": "Chest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Belly, Navel, Waist. The next step focuses on Belly.\nWhich option is the focus of the next step?",
+        "prompt": "Belly is an everyday word for abdomen. Navel is the former umbilical attachment mark, while waist is between ribs and hips.\nWhich everyday word can mean abdomen?",
         "answer": "Belly",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Sternum, Breast, Collarbone. The next step focuses on Sternum.\nWhich option is the focus of the next step?",
+        "prompt": "Sternum is the breastbone. Breast names chest tissue, while collarbone connects sternum and shoulder blade.\nWhich term is another name for breastbone?",
         "answer": "Sternum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Adam's Apple, Shoulder, Armpit. The next step focuses on Adam's Apple.\nWhich option is the focus of the next step?",
+        "prompt": "Adam's apple is the front projection of laryngeal cartilage. Shoulder joins trunk and arm; armpit is the hollow beneath that junction.\nWhich term names the laryngeal-cartilage projection?",
         "answer": "Adam's Apple",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Upper Arm, Bicep, Tricep. The next step focuses on Upper Arm.\nWhich option is the focus of the next step?",
+        "prompt": "Upper arm lies between shoulder and elbow. Bicep commonly refers to biceps brachii; tricep to triceps brachii behind it.\nWhich region lies between shoulder and elbow?",
         "answer": "Upper Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wisdom Tooth” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two parts does Omar identify?",
-        "answer": "The chest and ribcage",
+        "prompt": "Dina reads about the chest and ribcage. Abdomen and belly refer to the area below the chest. Navel and waist name visible regions. The sternum is the breastbone. Dina compares collarbone, shoulder and upper arm. Bicep and tricep are common everyday muscle names. She uses an educational model and written descriptions; the lesson does not ask her to inspect another person's body or medical condition.\nWhat is another name for the sternum?",
+        "answer": "Breastbone.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Chest” and “Ribcage” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Chest” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Chest is the front upper trunk. Ribcage is the rib framework, and abdomen is the region below the chest.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Upper Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The trunk and upper arm",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads about the chest and ribcage. Abdomen and belly refer to the area below the chest. Navel and waist name visible regions. The sternum is the breastbone. Dina compares collarbone, shoulder and upper arm. Bicep and tricep are common everyday muscle names. She uses an educational model and written descriptions; the lesson does not ask her to inspect another person's body or medical condition. Ask: What is another name for the sternum?"
     },
     "spacedReview": "1 lesson(s) back: Wisdom Tooth, Baby Tooth from human-body-head-and-face-4\n3 lesson(s) back: Iris, Retina from human-body-head-and-face-2\n7 lesson(s) back: Cotton Candy, Funnel Cake from amusement-park-3"
   },
@@ -204,9 +210,9 @@
       "Hip"
     ],
     "targetWordsArabic": [
-      "مرفق",
+      "كوع",
       "ساعد",
-      "رسغ",
+      "معصم",
       "ذراع",
       "عضلة دالية",
       "أعلى الظهر",
@@ -216,140 +222,146 @@
       "لوح الكتف",
       "ضلع",
       "فقرة",
-      "العُصعُص",
-      "الحوض",
+      "عظم العصعص",
+      "حوض",
       "ورك"
     ],
     "usage": {
-      "goal": "Learn to use the human body (upper body) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Elbow", "Forearm", "Wrist"],
-          "scenario": "During a routine care or examination situation, an adult reviews Elbow, Forearm, Wrist. The next step focuses on Elbow.",
+          "scenario": "Elbow joins upper arm and forearm. Forearm runs from elbow to wrist, and wrist joins forearm and hand.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which joint is between upper arm and forearm?",
             "options": ["Elbow", "Forearm", "Wrist"],
             "expectedAnswer": "Elbow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Elbow, Forearm, Wrist. The next step focuses on Elbow. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Elbow, Forearm, Wrist in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving bent-arm model, correct elbow structure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Arm", "Deltoid", "Upper Back"],
-          "scenario": "During a routine care or examination situation, an adult reviews Arm, Deltoid, Upper Back. The next step focuses on Arm.",
+          "scenario": "Arm is the upper limb in everyday use. Deltoid covers the shoulder, while upper back is behind the shoulders and upper spine.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which general term names the upper limb?",
             "options": ["Arm", "Deltoid", "Upper Back"],
             "expectedAnswer": "Arm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Arm, Deltoid, Upper Back. The next step focuses on Arm. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Arm, Deltoid, Upper Back in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving whole-arm model, no anatomical function claim beyond text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mid Back", "Lower Back", "Spine"],
-          "scenario": "During a routine care or examination situation, an adult reviews Mid Back, Lower Back, Spine. The next step focuses on Mid Back.",
+          "scenario": "Mid back is the middle back region. Lower back is the lumbar area, while spine is the column of vertebrae.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the middle back region?",
             "options": ["Mid Back", "Lower Back", "Spine"],
             "expectedAnswer": "Mid Back"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Mid Back, Lower Back, Spine. The next step focuses on Mid Back. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Mid Back, Lower Back, Spine in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving back model with coherent spine, no marked painful site or diagnosis. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Shoulder Blade", "Rib", "Vertebra"],
-          "scenario": "During a routine care or examination situation, an adult reviews Shoulder Blade, Rib, Vertebra. The next step focuses on Shoulder Blade.",
+          "scenario": "Shoulder blade is the scapula behind the shoulder. A rib is a chest bone, and a vertebra is one segment of the spine.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the scapula?",
             "options": ["Shoulder Blade", "Rib", "Vertebra"],
             "expectedAnswer": "Shoulder Blade"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Shoulder Blade, Rib, Vertebra. The next step focuses on Shoulder Blade. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Shoulder Blade, Rib, Vertebra in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified skeletal shoulder model, no labels or misleading bone joins. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Tailbone", "Pelvis", "Hip"],
-          "scenario": "During a routine care or examination situation, an adult reviews Tailbone, Pelvis, Hip. The next step focuses on Tailbone.",
+          "scenario": "Tailbone is the coccyx at the spine's base. Pelvis is the bony pelvic structure, while hip may name the side region or joint.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the coccyx?",
             "options": ["Tailbone", "Pelvis", "Hip"],
             "expectedAnswer": "Tailbone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Tailbone, Pelvis, Hip. The next step focuses on Tailbone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Tailbone, Pelvis, Hip in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified lower-spine/pelvis skeletal model, no living body or nudity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body) 2: A short reading",
-      "text": "Maya studies a drawing of the arm. She labels the elbow, forearm, and wrist. Omar finds the spine on a back diagram and marks the upper back and lower back. The teacher asks them to compare the drawings. They explain which labels refer to an arm and which refer to the back.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Arms, back and bones",
+      "text": "Dina compares elbow, forearm and wrist in the model. The arm reaches from shoulder toward the hand. She then reads upper back, mid back and lower back. The spine contains vertebrae. A shoulder blade lies behind each shoulder, and ribs surround the chest. The tailbone is at the lower end of the spine. Dina uses these words for anatomical location, without making a diagnosis from a picture.",
+      "imageBrief": "Support for Arms, back and bones. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Elbow, Forearm, Wrist. The next step focuses on Elbow.\nWhich option is the focus of the next step?",
+        "prompt": "Elbow joins upper arm and forearm. Forearm runs from elbow to wrist, and wrist joins forearm and hand.\nWhich joint is between upper arm and forearm?",
         "answer": "Elbow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Arm, Deltoid, Upper Back. The next step focuses on Arm.\nWhich option is the focus of the next step?",
+        "prompt": "Arm is the upper limb in everyday use. Deltoid covers the shoulder, while upper back is behind the shoulders and upper spine.\nWhich general term names the upper limb?",
         "answer": "Arm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Mid Back, Lower Back, Spine. The next step focuses on Mid Back.\nWhich option is the focus of the next step?",
+        "prompt": "Mid back is the middle back region. Lower back is the lumbar area, while spine is the column of vertebrae.\nWhich term names the middle back region?",
         "answer": "Mid Back",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Shoulder Blade, Rib, Vertebra. The next step focuses on Shoulder Blade.\nWhich option is the focus of the next step?",
+        "prompt": "Shoulder blade is the scapula behind the shoulder. A rib is a chest bone, and a vertebra is one segment of the spine.\nWhich term names the scapula?",
         "answer": "Shoulder Blade",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Tailbone, Pelvis, Hip. The next step focuses on Tailbone.\nWhich option is the focus of the next step?",
+        "prompt": "Tailbone is the coccyx at the spine's base. Pelvis is the bony pelvic structure, while hip may name the side region or joint.\nWhich term names the coccyx?",
         "answer": "Tailbone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Chest” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which three parts does Maya label?",
-        "answer": "The elbow, forearm, and wrist",
+        "prompt": "Dina compares elbow, forearm and wrist in the model. The arm reaches from shoulder toward the hand. She then reads upper back, mid back and lower back. The spine contains vertebrae. A shoulder blade lies behind each shoulder, and ribs surround the chest. The tailbone is at the lower end of the spine. Dina uses these words for anatomical location, without making a diagnosis from a picture.\nWhere is the tailbone?",
+        "answer": "At the lower end of the spine.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Elbow” and “Forearm” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Elbow” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Elbow joins upper arm and forearm. Forearm runs from elbow to wrist, and wrist joins forearm and hand.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Upper Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Arms, back and bones",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares elbow, forearm and wrist in the model. The arm reaches from shoulder toward the hand. She then reads upper back, mid back and lower back. The spine contains vertebrae. A shoulder blade lies behind each shoulder, and ribs surround the chest. The tailbone is at the lower end of the spine. Dina uses these words for anatomical location, without making a diagnosis from a picture. Ask: Where is the tailbone?"
     },
     "spacedReview": "1 lesson(s) back: Chest, Ribcage from human-body-upper-body-1\n3 lesson(s) back: Ear, Earlobe from human-body-head-and-face-3\n7 lesson(s) back: Lost and Found, Souvenir Shop from amusement-park-4"
   },
@@ -382,151 +394,157 @@
     ],
     "targetWordsArabic": [
       "عضلة صدرية",
-      "بطني",
-      "عضلة مائلة في البطن",
+      "عضلة بطنية",
+      "عضلة مائلة",
       "عضلة شبه منحرفة",
-      "العضلة الظهرية العريضة",
-      "مجموعة عضلات وأوتار تحيط بمفصل الكتف",
-      "عضلات الجذع",
-      "عضلة قابضة",
+      "عضلة عريضة ظهرية",
+      "كفة مدورة",
+      "عضلات الجذع الأساسية",
+      "عضلة عاطفة",
       "عضلة باسطة",
       "وتر",
       "جلد",
       "مسام",
-      "بقعة نمش",
+      "نمش",
       "شامة",
       "وحمة"
     ],
     "usage": {
-      "goal": "Learn to use the human body (upper body) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pectoral", "Abdominal", "Oblique"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pectoral, Abdominal, Oblique. The next step focuses on Pectoral.",
+          "scenario": "Pectoral means relating to the chest and can refer to a chest muscle. Abdominal relates to the abdomen; oblique here refers to a side-abdominal muscle.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term relates to the chest?",
             "options": ["Pectoral", "Abdominal", "Oblique"],
             "expectedAnswer": "Pectoral"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Pectoral, Abdominal, Oblique. The next step focuses on Pectoral. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Pectoral, Abdominal, Oblique in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving chest-muscle model; no visible physique or real body. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Trapezius", "Latissimus", "Rotator Cuff"],
-          "scenario": "During a routine care or examination situation, an adult reviews Trapezius, Latissimus, Rotator Cuff. The next step focuses on Trapezius.",
+          "scenario": "Trapezius is a broad upper-back muscle. Latissimus commonly means latissimus dorsi; rotator cuff is a shoulder muscle-and-tendon group.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which listed muscle is the broad upper-back muscle?",
             "options": ["Trapezius", "Latissimus", "Rotator Cuff"],
             "expectedAnswer": "Trapezius"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Trapezius, Latissimus, Rotator Cuff. The next step focuses on Trapezius. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Trapezius, Latissimus, Rotator Cuff in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving shoulder/back model with correct trapezius placement. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Core", "Flexor", "Extensor"],
-          "scenario": "During a routine care or examination situation, an adult reviews Core, Flexor, Extensor. The next step focuses on Core.",
+          "scenario": "Core refers broadly to trunk muscles. A flexor bends a joint, while an extensor straightens it.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which broad term refers to trunk muscles?",
             "options": ["Core", "Flexor", "Extensor"],
             "expectedAnswer": "Core"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Core, Flexor, Extensor. The next step focuses on Core. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Core, Flexor, Extensor in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving trunk-muscle model supports the text; no exercise or strength judgment. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tendon", "Skin", "Pore"],
-          "scenario": "During a routine care or examination situation, an adult reviews Tendon, Skin, Pore. The next step focuses on Tendon.",
+          "scenario": "A tendon links a muscle to bone or another structure. Skin covers the body, and a pore is a small skin opening.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which tissue links a muscle to bone in this example?",
             "options": ["Tendon", "Skin", "Pore"],
             "expectedAnswer": "Tendon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Tendon, Skin, Pore. The next step focuses on Tendon. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Tendon, Skin, Pore in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving muscle-and-tendon model, no wound or surgery. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Freckle", "Mole", "Birthmark"],
-          "scenario": "During a routine care or examination situation, an adult reviews Freckle, Mole, Birthmark. The next step focuses on Freckle.",
+          "scenario": "Freckle is a small pigmented skin spot. Mole and birthmark name other skin marks; a photograph cannot establish their clinical nature.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term in this guide names the small pigmented spot?",
             "options": ["Freckle", "Mole", "Birthmark"],
             "expectedAnswer": "Freckle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Freckle, Mole, Birthmark. The next step focuses on Freckle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Freckle, Mole, Birthmark in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving skin-surface teaching model only, no actual-person lesion or diagnosis. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body) 3: A short reading",
-      "text": "Omar reads a muscle diagram. He identifies the pectoral muscles in the chest and an oblique muscle at the side of the abdomen. Maya labels the trapezius and rotator cuff on another drawing. The teacher explains the terms flexor and extensor. They group the labels by location before checking their answers.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Muscles and skin features",
+      "text": "Dina reads muscle names in an anatomy guide. Pectoral refers to the chest, while abdominal refers to the abdomen. Trapezius and latissimus name back muscles. The rotator cuff is a shoulder muscle-and-tendon group. Core is a broad term for trunk muscles. Dina then reads tendon, skin, pore, freckle, mole and birthmark. She learns the names without deciding whether a skin mark is healthy or harmful.",
+      "imageBrief": "Support for Muscles and skin features. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pectoral, Abdominal, Oblique. The next step focuses on Pectoral.\nWhich option is the focus of the next step?",
+        "prompt": "Pectoral means relating to the chest and can refer to a chest muscle. Abdominal relates to the abdomen; oblique here refers to a side-abdominal muscle.\nWhich term relates to the chest?",
         "answer": "Pectoral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Trapezius, Latissimus, Rotator Cuff. The next step focuses on Trapezius.\nWhich option is the focus of the next step?",
+        "prompt": "Trapezius is a broad upper-back muscle. Latissimus commonly means latissimus dorsi; rotator cuff is a shoulder muscle-and-tendon group.\nWhich listed muscle is the broad upper-back muscle?",
         "answer": "Trapezius",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Core, Flexor, Extensor. The next step focuses on Core.\nWhich option is the focus of the next step?",
+        "prompt": "Core refers broadly to trunk muscles. A flexor bends a joint, while an extensor straightens it.\nWhich broad term refers to trunk muscles?",
         "answer": "Core",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Tendon, Skin, Pore. The next step focuses on Tendon.\nWhich option is the focus of the next step?",
+        "prompt": "A tendon links a muscle to bone or another structure. Skin covers the body, and a pore is a small skin opening.\nWhich tissue links a muscle to bone in this example?",
         "answer": "Tendon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Freckle, Mole, Birthmark. The next step focuses on Freckle.\nWhich option is the focus of the next step?",
+        "prompt": "Freckle is a small pigmented skin spot. Mole and birthmark name other skin marks; a photograph cannot establish their clinical nature.\nWhich term in this guide names the small pigmented spot?",
         "answer": "Freckle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Elbow” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where are the pectoral muscles in the diagram?",
-        "answer": "In the chest",
+        "prompt": "Dina reads muscle names in an anatomy guide. Pectoral refers to the chest, while abdominal refers to the abdomen. Trapezius and latissimus name back muscles. The rotator cuff is a shoulder muscle-and-tendon group. Core is a broad term for trunk muscles. Dina then reads tendon, skin, pore, freckle, mole and birthmark. She learns the names without deciding whether a skin mark is healthy or harmful.\nDoes the lesson ask Dina to diagnose a skin mark?",
+        "answer": "No. It teaches the names.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Pectoral” and “Abdominal” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Pectoral” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Pectoral means relating to the chest and can refer to a chest muscle. Abdominal relates to the abdomen; oblique here refers to a side-abdominal muscle.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Upper Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Muscles and skin features",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads muscle names in an anatomy guide. Pectoral refers to the chest, while abdominal refers to the abdomen. Trapezius and latissimus name back muscles. The rotator cuff is a shoulder muscle-and-tendon group. Core is a broad term for trunk muscles. Dina then reads tendon, skin, pore, freckle, mole and birthmark. She learns the names without deciding whether a skin mark is healthy or harmful. Ask: Does the lesson ask Dina to diagnose a skin mark?"
     },
     "spacedReview": "1 lesson(s) back: Elbow, Forearm from human-body-upper-body-2\n3 lesson(s) back: Wisdom Tooth, Baby Tooth from human-body-head-and-face-4\n7 lesson(s) back: Go-Kart, Swing Ride from amusement-park-5"
   },
@@ -541,80 +559,86 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Scar", "Wrinkle", "Goosebumps", "Tan", "Sunburn"],
-    "targetWordsArabic": ["ندبة", "تجعد", "قشعريرة الجلد", "أسمر فاتح", "حروق الشمس"],
+    "targetWordsArabic": ["ندبة", "تجعيدة", "قشعريرة", "سمرة", "حروق شمس"],
     "usage": {
-      "goal": "Learn to use the human body (upper body) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (upper body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Scar", "Wrinkle", "Goosebumps"],
-          "scenario": "During a routine care or examination situation, an adult reviews Scar, Wrinkle, Goosebumps. The next step focuses on Scar.",
+          "scenario": "Scar is a mark after an injury heals. Wrinkle is a skin fold or line; goosebumps are small raised bumps.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the mark after healing?",
             "options": ["Scar", "Wrinkle", "Goosebumps"],
             "expectedAnswer": "Scar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Scar, Wrinkle, Goosebumps. The next step focuses on Scar. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Scar, Wrinkle, Goosebumps in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving skin teaching sample with a healed-mark representation, no wound, blood or procedure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tan", "Sunburn"],
-          "scenario": "During a routine care or examination situation, an adult reviews Tan, Sunburn, Scar. The next step focuses on Tan.",
+          "scenario": "Tan here means skin darkening after UV exposure. Sunburn is UV-related skin damage and may look different on different skin tones.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the darkening described?",
             "options": ["Tan", "Sunburn", "Scar"],
             "expectedAnswer": "Tan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (upper body) context illustrating this situation: During a routine care or examination situation, an adult reviews Tan, Sunburn, Scar. The next step focuses on Tan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (upper body) scene showing lesson-related items or actions including Tan, Sunburn in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Hold generated skin-color diagnosis or before/after health claims. A neutral nonliving skin model may support written terms. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Upper Body) 4: A short reading",
-      "text": "In a language class, Maya compares pictures showing a scar and a wrinkle. Omar sees a photograph of goosebumps on an arm. Another picture shows sunburn. They describe the visible differences using short sentences. The teacher asks them to match the words to the pictures and explain how they made each choice.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Upper Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Skin marks and sun exposure words",
+      "text": "Dina reads a skin vocabulary page. A scar is a mark after an injury heals. A wrinkle is a line or fold. Goosebumps are small raised bumps that may occur with cold or emotion. Tan means darkening after sun exposure, while sunburn is UV-related skin damage. Dina identifies the terms from descriptions. The page does not recommend tanning or diagnose a person's skin from its color.",
+      "imageBrief": "Support for Skin marks and sun exposure words. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Scar, Wrinkle, Goosebumps. The next step focuses on Scar.\nWhich option is the focus of the next step?",
+        "prompt": "Scar is a mark after an injury heals. Wrinkle is a skin fold or line; goosebumps are small raised bumps.\nWhich term names the mark after healing?",
         "answer": "Scar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Tan, Sunburn, Scar. The next step focuses on Tan.\nWhich option is the focus of the next step?",
+        "prompt": "Tan here means skin darkening after UV exposure. Sunburn is UV-related skin damage and may look different on different skin tones.\nWhich term names the darkening described?",
         "answer": "Tan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pectoral” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar see on an arm?",
-        "answer": "Goosebumps",
+        "prompt": "Dina reads a skin vocabulary page. A scar is a mark after an injury heals. A wrinkle is a line or fold. Goosebumps are small raised bumps that may occur with cold or emotion. Tan means darkening after sun exposure, while sunburn is UV-related skin damage. Dina identifies the terms from descriptions. The page does not recommend tanning or diagnose a person's skin from its color.\nDoes the page recommend tanning?",
+        "answer": "No. It explains the word and its exposure context.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Scar” and “Wrinkle” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Scar” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Scar is a mark after an injury heals. Wrinkle is a skin fold or line; goosebumps are small raised bumps.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Upper Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Skin marks and sun exposure words",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a skin vocabulary page. A scar is a mark after an injury heals. A wrinkle is a line or fold. Goosebumps are small raised bumps that may occur with cold or emotion. Tan means darkening after sun exposure, while sunburn is UV-related skin damage. Dina identifies the terms from descriptions. The page does not recommend tanning or diagnose a person's skin from its color. Ask: Does the page recommend tanning?"
     },
     "spacedReview": "1 lesson(s) back: Pectoral, Abdominal from human-body-upper-body-3\n3 lesson(s) back: Chest, Ribcage from human-body-upper-body-1\n7 lesson(s) back: Head, Skull from human-body-head-and-face-1"
   }

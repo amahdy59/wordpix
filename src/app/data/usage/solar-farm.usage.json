@@ -29,10 +29,10 @@
     "targetWordsArabic": [
       "لوح شمسي",
       "عاكس كهربائي",
-      "تخزين بطارية",
+      "تخزين الطاقة في البطاريات",
       "منظّم شحن",
       "إطار تثبيت",
-      "متعقّب",
+      "متتبّع شمسي",
       "صندوق توصيل كهربائي",
       "صندوق تجميع كهربائي",
       "محوّل كهربائي",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Solar Panel", "Inverter", "Battery Storage", "Charge Controller"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.",
+          "scenario": "On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Solar Panel", "Inverter", "Battery Storage"],
-            "expectedAnswer": "Solar Panel"
+            "question": "Which device converts DC electricity to AC?",
+            "options": ["Inverter", "Solar Panel", "Battery Storage"],
+            "expectedAnswer": "Inverter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Solar Panel as the central item; include Solar Panel, Inverter, and Battery Storage naturally where visually appropriate, but make the real-world use of Solar Panel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Inverter in a solar farm context. Use the written scenario as the source of meaning: On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mounting Frame", "Tracker", "Junction Box", "Combiner Box"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.",
+          "scenario": "The Mounting Frame holds panels in position. A Tracker adjusts their orientation toward the sun. A Junction Box protects electrical joins, while a Combiner Box brings several panel-string outputs together. Visitors remain outside equipment enclosures.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mounting Frame", "Tracker", "Junction Box"],
-            "expectedAnswer": "Mounting Frame"
+            "question": "Which mechanism adjusts panel orientation toward the sun?",
+            "options": ["Tracker", "Mounting Frame", "Junction Box"],
+            "expectedAnswer": "Tracker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Mounting Frame as the central item; include Mounting Frame, Tracker, and Junction Box naturally where visually appropriate, but make the real-world use of Mounting Frame the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tracker in a solar farm context. Use the written scenario as the source of meaning: The Mounting Frame holds panels in position. A Tracker adjusts their orientation toward the sun. A Junction Box protects electrical joins, while a Combiner Box brings several panel-string outputs together. Visitors remain outside equipment enclosures. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Transformer", "Grid Connection", "Drill", "Wrench"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.",
+          "scenario": "The guide describes a Transformer changing AC voltage and a Grid Connection linking the installation to the network. A Drill and Wrench are professional tools; the tour does not include electrical or mechanical work.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device changes AC voltage?",
             "options": ["Transformer", "Grid Connection", "Drill"],
             "expectedAnswer": "Transformer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Transformer as the central item; include Transformer, Grid Connection, and Drill naturally where visually appropriate, but make the real-world use of Transformer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Transformer in a solar farm context. Use the written scenario as the source of meaning: The guide describes a Transformer changing AC voltage and a Grid Connection linking the installation to the network. A Drill and Wrench are professional tools; the tour does not include electrical or mechanical work. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.",
+          "scenario": "The tool display includes a Wire Cutter for cutting wire, a Crimping Tool for pressing connectors onto conductors, and a Cable Tie for grouping cables. These are identified by purpose without teaching installation procedures.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wire Cutter", "Crimping Tool", "Cable Tie"],
-            "expectedAnswer": "Wire Cutter"
+            "question": "Which tool presses a connector onto a conductor?",
+            "options": ["Crimping Tool", "Wire Cutter", "Cable Tie"],
+            "expectedAnswer": "Crimping Tool"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wire Cutter as the central item; include Wire Cutter, Crimping Tool, and Cable Tie naturally where visually appropriate, but make the real-world use of Wire Cutter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Crimping Tool in a solar farm context. Use the written scenario as the source of meaning: The tool display includes a Wire Cutter for cutting wire, a Crimping Tool for pressing connectors onto conductors, and a Cable Tie for grouping cables. These are identified by purpose without teaching installation procedures. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Solar Farm",
-      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Solar Panel, Inverter, Battery Storage, and Charge Controller. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mounting Frame, Tracker, Junction Box, and Combiner Box. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Transformer, Grid Connection, Drill, and Wrench. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wire Cutter, Crimping Tool, and Cable Tie. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Solar Farm: A visitor’s questions",
+      "text": "On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows. The Mounting Frame holds panels in position. A Tracker adjusts their orientation toward the sun. A Junction Box protects electrical joins, while a Combiner Box brings several panel-string outputs together. Visitors remain outside equipment enclosures. The guide describes a Transformer changing AC voltage and a Grid Connection linking the installation to the network. A Drill and Wrench are professional tools; the tour does not include electrical or mechanical work. The tool display includes a Wire Cutter for cutting wire, a Crimping Tool for pressing connectors onto conductors, and a Cable Tie for grouping cables. These are identified by purpose without teaching installation procedures.",
+      "imageBrief": "One uncluttered solar farm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Solar Panel, Inverter, Battery Storage, and Charge Controller and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Solar Panel",
+        "prompt": "On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows.\nWhich device converts DC electricity to AC?",
+        "answer": "Inverter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mounting Frame, Tracker, Junction Box, and Combiner Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mounting Frame",
+        "prompt": "The Mounting Frame holds panels in position. A Tracker adjusts their orientation toward the sun. A Junction Box protects electrical joins, while a Combiner Box brings several panel-string outputs together. Visitors remain outside equipment enclosures.\nWhich mechanism adjusts panel orientation toward the sun?",
+        "answer": "Tracker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Transformer, Grid Connection, Drill, and Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide describes a Transformer changing AC voltage and a Grid Connection linking the installation to the network. A Drill and Wrench are professional tools; the tour does not include electrical or mechanical work.\nWhich device changes AC voltage?",
         "answer": "Transformer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire Cutter, Crimping Tool, and Cable Tie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wire Cutter",
+        "prompt": "The tool display includes a Wire Cutter for cutting wire, a Crimping Tool for pressing connectors onto conductors, and a Cable Tie for grouping cables. These are identified by purpose without teaching installation procedures.\nWhich tool presses a connector onto a conductor?",
+        "answer": "Crimping Tool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows. The Mounting Frame holds panels in position. A Tracker adjusts their orientation toward the sun. A Junction Box protects electrical joins, while a Combiner Box brings several panel-string outputs together. Visitors remain outside equipment enclosures. The guide describes a Transformer changing AC voltage and a Grid Connection linking the installation to the network. A Drill and Wrench are professional tools; the tour does not include electrical or mechanical work. The tool display includes a Wire Cutter for cutting wire, a Crimping Tool for pressing connectors onto conductors, and a Cable Tie for grouping cables. These are identified by purpose without teaching installation procedures.\nExplain the difference between Solar Panel and Inverter using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Solar Panel"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Power Supply” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Solar Panel, Inverter, Battery Storage, Charge Controller, Mounting Frame, Tracker, Junction Box, Combiner Box, Transformer, Grid Connection, Drill, Wrench, Wire Cutter, Crimping Tool, and Cable Tie in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Solar Panel, Inverter, Battery Storage, Charge Controller, Mounting Frame, Tracker, Junction Box, Combiner Box, Transformer, Grid Connection, Drill, Wrench, Wire Cutter, Crimping Tool, Cable Tie to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Solar Farm: In Context",
-      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Solar Farm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Solar Panel and Inverter, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: On an authorized site tour, the guide identifies a Solar Panel converting light to electrical energy. An Inverter converts DC electricity to AC, Battery Storage keeps energy for later use, and a Charge Controller regulates supported charging flows. Pause and answer: Which device converts DC electricity to AC?"
     },
     "spacedReview": "1 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5\n3 lesson(s) back: Magnifying Glass, Helping Hands from robotics-lab-3\n7 lesson(s) back: Frame, Fan from 3d-printer-lab-5"
   },
@@ -204,15 +187,15 @@
       "قناة أسلاك",
       "قضيب تأريض",
       "ملتيميتر",
-      "مستوٍ",
+      "ميزان استواء",
       "سلّم",
-      "غرفة عامل ضابط",
+      "غرفة تحكم",
       "سياج أمني",
       "طريق وصول",
       "بوابة",
       "محطة طقس",
       "كاميرا",
-      "محطة فرعية",
+      "محطة كهربائية فرعية",
       "مسار للكابلات",
       "مانعة صواعق",
       "نظام تأريض"
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "118-148 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Conduit", "Ground Rod", "Multimeter", "Level"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.",
+          "scenario": "A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Conduit", "Ground Rod", "Multimeter"],
-            "expectedAnswer": "Conduit"
+            "question": "Which tool checks whether a surface is horizontal or vertical?",
+            "options": ["Level", "Conduit", "Ground Rod"],
+            "expectedAnswer": "Level"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Conduit as the central item; include Conduit, Ground Rod, and Multimeter naturally where visually appropriate, but make the real-world use of Conduit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Level in a solar farm context. Use the written scenario as the source of meaning: A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ladder", "Control Room", "Security Fence", "Access Road"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.",
+          "scenario": "The guide passes a Ladder stored for trained staff. The Control Room supports equipment monitoring, a Security Fence limits entry, and an Access Road leads into the site.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ladder", "Control Room", "Security Fence"],
-            "expectedAnswer": "Ladder"
+            "question": "Which room supports equipment monitoring?",
+            "options": ["Control Room", "Ladder", "Security Fence"],
+            "expectedAnswer": "Control Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Ladder as the central item; include Ladder, Control Room, and Security Fence naturally where visually appropriate, but make the real-world use of Ladder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Control Room in a solar farm context. Use the written scenario as the source of meaning: The guide passes a Ladder stored for trained staff. The Control Room supports equipment monitoring, a Security Fence limits entry, and an Access Road leads into the site. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Gate", "Weather Station", "Camera", "Substation"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.",
+          "scenario": "At the Gate, a Camera monitors the entrance. A Weather Station records local weather conditions, while the Substation transforms or switches network power. The guide describes their functions rather than inviting visitors to operate them.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gate", "Weather Station", "Camera"],
-            "expectedAnswer": "Gate"
+            "question": "Which installation records local weather conditions?",
+            "options": ["Weather Station", "Gate", "Camera"],
+            "expectedAnswer": "Weather Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Gate as the central item; include Gate, Weather Station, and Camera naturally where visually appropriate, but make the real-world use of Gate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Weather Station in a solar farm context. Use the written scenario as the source of meaning: At the Gate, a Camera monitors the entrance. A Weather Station records local weather conditions, while the Substation transforms or switches network power. The guide describes their functions rather than inviting visitors to operate them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cable Tray", "Lightning Rod", "Grounding System"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.",
+          "scenario": "A Cable Tray supports routed cables. The Lightning Rod and Grounding System are parts of designed electrical protection arrangements. Their appearance alone does not establish that an installation is safe or compliant.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure supports routed cables?",
             "options": ["Cable Tray", "Lightning Rod", "Grounding System"],
             "expectedAnswer": "Cable Tray"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cable Tray as the central item; include Cable Tray, Lightning Rod, and Grounding System naturally where visually appropriate, but make the real-world use of Cable Tray the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cable Tray in a solar farm context. Use the written scenario as the source of meaning: A Cable Tray supports routed cables. The Lightning Rod and Grounding System are parts of designed electrical protection arrangements. Their appearance alone does not establish that an installation is safe or compliant. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Solar Farm",
-      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Conduit, Ground Rod, Multimeter, and Level. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ladder, Control Room, Security Fence, and Access Road. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gate, Weather Station, Camera, and Substation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cable Tray, Lightning Rod, and Grounding System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Solar Farm: Understanding the different roles",
+      "text": "A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical. The guide passes a Ladder stored for trained staff. The Control Room supports equipment monitoring, a Security Fence limits entry, and an Access Road leads into the site. At the Gate, a Camera monitors the entrance. A Weather Station records local weather conditions, while the Substation transforms or switches network power. The guide describes their functions rather than inviting visitors to operate them. A Cable Tray supports routed cables. The Lightning Rod and Grounding System are parts of designed electrical protection arrangements. Their appearance alone does not establish that an installation is safe or compliant.",
+      "imageBrief": "One uncluttered solar farm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Conduit, Ground Rod, Multimeter, and Level and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Conduit",
+        "prompt": "A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical.\nWhich tool checks whether a surface is horizontal or vertical?",
+        "answer": "Level",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ladder, Control Room, Security Fence, and Access Road and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ladder",
+        "prompt": "The guide passes a Ladder stored for trained staff. The Control Room supports equipment monitoring, a Security Fence limits entry, and an Access Road leads into the site.\nWhich room supports equipment monitoring?",
+        "answer": "Control Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gate, Weather Station, Camera, and Substation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gate",
+        "prompt": "At the Gate, a Camera monitors the entrance. A Weather Station records local weather conditions, while the Substation transforms or switches network power. The guide describes their functions rather than inviting visitors to operate them.\nWhich installation records local weather conditions?",
+        "answer": "Weather Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cable Tray, Lightning Rod, and Grounding System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Cable Tray supports routed cables. The Lightning Rod and Grounding System are parts of designed electrical protection arrangements. Their appearance alone does not establish that an installation is safe or compliant.\nWhich structure supports routed cables?",
         "answer": "Cable Tray",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical. The guide passes a Ladder stored for trained staff. The Control Room supports equipment monitoring, a Security Fence limits entry, and an Access Road leads into the site. At the Gate, a Camera monitors the entrance. A Weather Station records local weather conditions, while the Substation transforms or switches network power. The guide describes their functions rather than inviting visitors to operate them. A Cable Tray supports routed cables. The Lightning Rod and Grounding System are parts of designed electrical protection arrangements. Their appearance alone does not establish that an installation is safe or compliant.\nExplain the difference between Conduit and Ground Rod using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Conduit"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Solar Panel” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Conduit, Ground Rod, Multimeter, Level, Ladder, Control Room, Security Fence, Access Road, Gate, Weather Station, Camera, Substation, Cable Tray, Lightning Rod, and Grounding System in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Conduit, Ground Rod, Multimeter, Level, Ladder, Control Room, Security Fence, Access Road, Gate, Weather Station, Camera, Substation, Cable Tray, Lightning Rod, Grounding System to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Solar Farm: In Context",
-      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Solar Farm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Conduit and Ground Rod, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Conduit protects or routes wiring, and a Ground Rod forms part of a professionally designed grounding system. A Multimeter measures electrical quantities; a Level checks whether a surface is horizontal or vertical. Pause and answer: Which tool checks whether a surface is horizontal or vertical?"
     },
     "spacedReview": "1 lesson(s) back: Solar Panel, Inverter from solar-farm-1\n3 lesson(s) back: Wheeled Robot, Walking Robot from robotics-lab-4\n7 lesson(s) back: Calibrate, Prototype from 3d-printer-lab-6"
   },
@@ -376,9 +342,9 @@
     ],
     "targetWordsArabic": [
       "ضوء الشمس",
-      "خلية شمسي",
+      "خلية شمسية",
       "كهرباء",
-      "جهد كهربائي",
+      "فرق الجهد الكهربائي",
       "تيار كهربائي",
       "واط",
       "كيلوواط",
@@ -389,135 +355,118 @@
       "خرطوم مياه",
       "طائرة مسيّرة فحص",
       "كاميرا حرارية",
-      "سترة بلا أكمام سلامة"
+      "سترة عالية الوضوح"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "126-156 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sunlight", "Solar Cell", "Electricity", "Voltage"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.",
+          "scenario": "Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sunlight", "Solar Cell", "Electricity"],
-            "expectedAnswer": "Sunlight"
+            "question": "Which component converts light into electricity?",
+            "options": ["Solar Cell", "Sunlight", "Electricity"],
+            "expectedAnswer": "Solar Cell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Sunlight as the central item; include Sunlight, Solar Cell, and Electricity naturally where visually appropriate, but make the real-world use of Sunlight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Solar Cell in a solar farm context. Use the written scenario as the source of meaning: Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Current", "Watt", "Kilowatt", "Energy Meter"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.",
+          "scenario": "The class distinguishes Current measured in amperes from Watt and Kilowatt, units of power. One Kilowatt equals one thousand watts. An Energy Meter measures energy, commonly in kilowatt-hours rather than kilowatts.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Current", "Watt", "Kilowatt"],
-            "expectedAnswer": "Current"
+            "question": "Which unit equals one thousand watts?",
+            "options": ["Kilowatt", "Current", "Watt"],
+            "expectedAnswer": "Kilowatt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Current as the central item; include Current, Watt, and Kilowatt naturally where visually appropriate, but make the real-world use of Current the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Kilowatt in a solar farm context. Use the written scenario as the source of meaning: The class distinguishes Current measured in amperes from Watt and Kilowatt, units of power. One Kilowatt equals one thousand watts. An Energy Meter measures energy, commonly in kilowatt-hours rather than kilowatts. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Power Line", "Distribution Panel", "Cleaning Brush", "Water Hose"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.",
+          "scenario": "A Power Line carries electricity between parts of the system. A Distribution Panel directs power to circuits. A Cleaning Brush and Water Hose are shown as maintenance equipment, with actual cleaning left to trained staff and site procedures.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Power Line", "Distribution Panel", "Cleaning Brush"],
-            "expectedAnswer": "Power Line"
+            "question": "Which equipment directs power to different circuits?",
+            "options": ["Distribution Panel", "Power Line", "Cleaning Brush"],
+            "expectedAnswer": "Distribution Panel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Power Line as the central item; include Power Line, Distribution Panel, and Cleaning Brush naturally where visually appropriate, but make the real-world use of Power Line the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Distribution Panel in a solar farm context. Use the written scenario as the source of meaning: A Power Line carries electricity between parts of the system. A Distribution Panel directs power to circuits. A Cleaning Brush and Water Hose are shown as maintenance equipment, with actual cleaning left to trained staff and site procedures. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.",
+          "scenario": "An Inspection Drone provides an aerial view under applicable flight rules. A Thermal Camera shows infrared-based temperature patterns, while a Safety Vest improves the wearer’s visibility within its rated conditions. A thermal pattern alone does not diagnose every fault.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Inspection Drone", "Thermal Camera", "Safety Vest"],
-            "expectedAnswer": "Inspection Drone"
+            "question": "Which camera shows infrared-based temperature patterns?",
+            "options": ["Thermal Camera", "Inspection Drone", "Safety Vest"],
+            "expectedAnswer": "Thermal Camera"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Inspection Drone as the central item; include Inspection Drone, Thermal Camera, and Safety Vest naturally where visually appropriate, but make the real-world use of Inspection Drone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Thermal Camera in a solar farm context. Use the written scenario as the source of meaning: An Inspection Drone provides an aerial view under applicable flight rules. A Thermal Camera shows infrared-based temperature patterns, while a Safety Vest improves the wearer’s visibility within its rated conditions. A thermal pattern alone does not diagnose every fault. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Solar Farm",
-      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sunlight, Solar Cell, Electricity, and Voltage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Current, Watt, Kilowatt, and Energy Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Power Line, Distribution Panel, Cleaning Brush, and Water Hose. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Inspection Drone, Thermal Camera, and Safety Vest. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Solar Farm: Comparing the equipment",
+      "text": "Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces. The class distinguishes Current measured in amperes from Watt and Kilowatt, units of power. One Kilowatt equals one thousand watts. An Energy Meter measures energy, commonly in kilowatt-hours rather than kilowatts. A Power Line carries electricity between parts of the system. A Distribution Panel directs power to circuits. A Cleaning Brush and Water Hose are shown as maintenance equipment, with actual cleaning left to trained staff and site procedures. An Inspection Drone provides an aerial view under applicable flight rules. A Thermal Camera shows infrared-based temperature patterns, while a Safety Vest improves the wearer’s visibility within its rated conditions. A thermal pattern alone does not diagnose every fault.",
+      "imageBrief": "One uncluttered solar farm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunlight, Solar Cell, Electricity, and Voltage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sunlight",
+        "prompt": "Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces.\nWhich component converts light into electricity?",
+        "answer": "Solar Cell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Watt, Kilowatt, and Energy Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Current",
+        "prompt": "The class distinguishes Current measured in amperes from Watt and Kilowatt, units of power. One Kilowatt equals one thousand watts. An Energy Meter measures energy, commonly in kilowatt-hours rather than kilowatts.\nWhich unit equals one thousand watts?",
+        "answer": "Kilowatt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Power Line, Distribution Panel, Cleaning Brush, and Water Hose and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Power Line",
+        "prompt": "A Power Line carries electricity between parts of the system. A Distribution Panel directs power to circuits. A Cleaning Brush and Water Hose are shown as maintenance equipment, with actual cleaning left to trained staff and site procedures.\nWhich equipment directs power to different circuits?",
+        "answer": "Distribution Panel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Inspection Drone, Thermal Camera, and Safety Vest and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Inspection Drone",
+        "prompt": "An Inspection Drone provides an aerial view under applicable flight rules. A Thermal Camera shows infrared-based temperature patterns, while a Safety Vest improves the wearer’s visibility within its rated conditions. A thermal pattern alone does not diagnose every fault.\nWhich camera shows infrared-based temperature patterns?",
+        "answer": "Thermal Camera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces. The class distinguishes Current measured in amperes from Watt and Kilowatt, units of power. One Kilowatt equals one thousand watts. An Energy Meter measures energy, commonly in kilowatt-hours rather than kilowatts. A Power Line carries electricity between parts of the system. A Distribution Panel directs power to circuits. A Cleaning Brush and Water Hose are shown as maintenance equipment, with actual cleaning left to trained staff and site procedures. An Inspection Drone provides an aerial view under applicable flight rules. A Thermal Camera shows infrared-based temperature patterns, while a Safety Vest improves the wearer’s visibility within its rated conditions. A thermal pattern alone does not diagnose every fault.\nExplain the difference between Sunlight and Solar Cell using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sunlight"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Conduit” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Sunlight, Solar Cell, Electricity, Voltage, Current, Watt, Kilowatt, Energy Meter, Power Line, Distribution Panel, Cleaning Brush, Water Hose, Inspection Drone, Thermal Camera, and Safety Vest in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Sunlight, Solar Cell, Electricity, Voltage, Current, Watt, Kilowatt, Energy Meter, Power Line, Distribution Panel, Cleaning Brush, Water Hose, Inspection Drone, Thermal Camera, Safety Vest to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Solar Farm: In Context",
-      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Solar Farm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Sunlight and Solar Cell, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Sunlight reaches a Solar Cell, which converts light into Electricity. Voltage is electrical potential difference between points; it is distinct from the amount of energy the system produces. Pause and answer: Which component converts light into electricity?"
     },
     "spacedReview": "1 lesson(s) back: Conduit, Ground Rod from solar-farm-2\n3 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5\n7 lesson(s) back: Motor, Sensor from robotics-lab-1"
   },
@@ -549,13 +498,13 @@
       "Fence Post"
     ],
     "targetWordsArabic": [
-      "قبعة صلب",
-      "قفازات",
+      "خوذة أمان",
+      "قفازات واقية",
       "حزام أدوات",
-      "سجل الرحلة",
+      "دفتر سجل",
       "لوح كتابة",
       "أرض مكشوفة",
-      "سماء صافٍ",
+      "سماء صافية",
       "ظل",
       "سحابة",
       "شروق الشمس",
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "122-152 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hard Hat", "Gloves", "Tool Belt", "Logbook"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.",
+          "scenario": "The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hard Hat", "Gloves", "Tool Belt"],
-            "expectedAnswer": "Hard Hat"
+            "question": "Where do staff record operating events and inspection observations?",
+            "options": ["Logbook", "Hard Hat", "Gloves"],
+            "expectedAnswer": "Logbook"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Hard Hat as the central item; include Hard Hat, Gloves, and Tool Belt naturally where visually appropriate, but make the real-world use of Hard Hat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Logbook in a solar farm context. Use the written scenario as the source of meaning: The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Clipboard", "Open Field", "Clear Sky", "Shadow"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.",
+          "scenario": "A Clipboard holds the guide’s papers. In the Open Field under a Clear Sky, a structure blocks some sunlight and produces a Shadow. The written account supplies the actual observation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Clipboard", "Open Field", "Clear Sky"],
-            "expectedAnswer": "Clipboard"
+            "question": "What is the darker area produced by blocking sunlight called?",
+            "options": ["Shadow", "Clipboard", "Open Field"],
+            "expectedAnswer": "Shadow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Clipboard as the central item; include Clipboard, Open Field, and Clear Sky naturally where visually appropriate, but make the real-world use of Clipboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Shadow in a solar farm context. Use the written scenario as the source of meaning: A Clipboard holds the guide’s papers. In the Open Field under a Clear Sky, a structure blocks some sunlight and produces a Shadow. The written account supplies the actual observation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cloud", "Sunrise", "Sunset", "Grassland"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.",
+          "scenario": "The weather record notes a Cloud and the day’s Sunrise and Sunset. Sunset is the sun’s disappearance below the horizon toward day’s end, while Grassland is the surrounding grass-dominated habitat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cloud", "Sunrise", "Sunset"],
-            "expectedAnswer": "Cloud"
+            "question": "Which event is the sun’s disappearance below the horizon at day’s end?",
+            "options": ["Sunset", "Cloud", "Sunrise"],
+            "expectedAnswer": "Sunset"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cloud as the central item; include Cloud, Sunrise, and Sunset naturally where visually appropriate, but make the real-world use of Cloud the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sunset in a solar farm context. Use the written scenario as the source of meaning: The weather record notes a Cloud and the day’s Sunrise and Sunset. Sunset is the sun’s disappearance below the horizon toward day’s end, while Grassland is the surrounding grass-dominated habitat. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wildflower", "Bird", "Fence Post"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.",
+          "scenario": "Along the edge of the site, a Wildflower grows near a Bird resting on a Fence Post. The post supports the fence; the guide discusses habitat observations without assigning an unsupported species identity.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wildflower", "Bird", "Fence Post"],
-            "expectedAnswer": "Wildflower"
+            "question": "Which structure supports the fence?",
+            "options": ["Fence Post", "Wildflower", "Bird"],
+            "expectedAnswer": "Fence Post"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wildflower as the central item; include Wildflower, Bird, and Fence Post naturally where visually appropriate, but make the real-world use of Wildflower the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Fence Post in a solar farm context. Use the written scenario as the source of meaning: Along the edge of the site, a Wildflower grows near a Bird resting on a Fence Post. The post supports the fence; the guide discusses habitat observations without assigning an unsupported species identity. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Solar Farm",
-      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hard Hat, Gloves, Tool Belt, and Logbook. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clipboard, Open Field, Clear Sky, and Shadow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cloud, Sunrise, Sunset, and Grassland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wildflower, Bird, and Fence Post. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Solar Farm: A guided walk",
+      "text": "The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items. A Clipboard holds the guide’s papers. In the Open Field under a Clear Sky, a structure blocks some sunlight and produces a Shadow. The written account supplies the actual observation. The weather record notes a Cloud and the day’s Sunrise and Sunset. Sunset is the sun’s disappearance below the horizon toward day’s end, while Grassland is the surrounding grass-dominated habitat. Along the edge of the site, a Wildflower grows near a Bird resting on a Fence Post. The post supports the fence; the guide discusses habitat observations without assigning an unsupported species identity.",
+      "imageBrief": "One uncluttered solar farm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Gloves, Tool Belt, and Logbook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hard Hat",
+        "prompt": "The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items.\nWhere do staff record operating events and inspection observations?",
+        "answer": "Logbook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clipboard, Open Field, Clear Sky, and Shadow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Clipboard",
+        "prompt": "A Clipboard holds the guide’s papers. In the Open Field under a Clear Sky, a structure blocks some sunlight and produces a Shadow. The written account supplies the actual observation.\nWhat is the darker area produced by blocking sunlight called?",
+        "answer": "Shadow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud, Sunrise, Sunset, and Grassland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cloud",
+        "prompt": "The weather record notes a Cloud and the day’s Sunrise and Sunset. Sunset is the sun’s disappearance below the horizon toward day’s end, while Grassland is the surrounding grass-dominated habitat.\nWhich event is the sun’s disappearance below the horizon at day’s end?",
+        "answer": "Sunset",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wildflower, Bird, and Fence Post and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wildflower",
+        "prompt": "Along the edge of the site, a Wildflower grows near a Bird resting on a Fence Post. The post supports the fence; the guide discusses habitat observations without assigning an unsupported species identity.\nWhich structure supports the fence?",
+        "answer": "Fence Post",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items. A Clipboard holds the guide’s papers. In the Open Field under a Clear Sky, a structure blocks some sunlight and produces a Shadow. The written account supplies the actual observation. The weather record notes a Cloud and the day’s Sunrise and Sunset. Sunset is the sun’s disappearance below the horizon toward day’s end, while Grassland is the surrounding grass-dominated habitat. Along the edge of the site, a Wildflower grows near a Bird resting on a Fence Post. The post supports the fence; the guide discusses habitat observations without assigning an unsupported species identity.\nExplain the difference between Hard Hat and Gloves using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hard Hat"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sunlight” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Hard Hat, Gloves, Tool Belt, Logbook, Clipboard, Open Field, Clear Sky, Shadow, Cloud, Sunrise, Sunset, Grassland, Wildflower, Bird, and Fence Post in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hard Hat, Gloves, Tool Belt, Logbook, Clipboard, Open Field, Clear Sky, Shadow, Cloud, Sunrise, Sunset, Grassland, Wildflower, Bird, Fence Post to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Solar Farm: In Context",
-      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Solar Farm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hard Hat and Gloves, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The guide describes a Hard Hat, Gloves, and Tool Belt as work equipment selected for the task. Staff record operating events and inspection observations in a Logbook. The account identifies functions without implying universal protection from wearing the items. Pause and answer: Where do staff record operating events and inspection observations?"
     },
     "spacedReview": "1 lesson(s) back: Sunlight, Solar Cell from solar-farm-3\n3 lesson(s) back: Solar Panel, Inverter from solar-farm-1\n7 lesson(s) back: Transistor, Diode from robotics-lab-2"
   },
@@ -728,144 +660,127 @@
       "هيكل تثبيت الألواح",
       "عداد",
       "شبكة كهربائية",
-      "شحن",
-      "تفريغ",
-      "طاقة ينظف",
+      "يشحن",
+      "يفرّغ الطاقة المخزنة",
+      "طاقة نظيفة",
       "متجدد",
       "كربون",
       "انبعاث",
       "استدامة",
       "كفاءة",
-      "حفاظ",
-      "إعادة تدوير"
+      "ترشيد الموارد",
+      "يعيد التدوير"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "140-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Battery", "Cable", "Mounting Rack", "Meter"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Battery", "Cable", "Mounting Rack"],
-            "expectedAnswer": "Battery"
+            "question": "Which target names a measuring instrument here?",
+            "options": ["Meter", "Battery", "Cable"],
+            "expectedAnswer": "Meter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Battery as the central item; include Battery, Cable, and Mounting Rack naturally where visually appropriate, but make the real-world use of Battery the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Meter in a solar farm context. Use the written scenario as the source of meaning: The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Grid", "Charge", "Discharge", "Clean Energy"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.",
+          "scenario": "The Grid connects electricity supply and users. To Charge a battery is to supply energy for storage; to Discharge it is to release stored energy to a load. Clean Energy describes lower-impact energy approaches whose full environmental effects still require assessment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Grid", "Charge", "Discharge"],
-            "expectedAnswer": "Grid"
+            "question": "Which verb describes releasing stored battery energy to a load?",
+            "options": ["Discharge", "Grid", "Charge"],
+            "expectedAnswer": "Discharge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Grid as the central item; include Grid, Charge, and Discharge naturally where visually appropriate, but make the real-world use of Grid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Discharge in a solar farm context. Use the written scenario as the source of meaning: The Grid connects electricity supply and users. To Charge a battery is to supply energy for storage; to Discharge it is to release stored energy to a load. Clean Energy describes lower-impact energy approaches whose full environmental effects still require assessment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Renewable", "Carbon", "Emission", "Sustainability"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.",
+          "scenario": "Renewable energy draws on naturally replenished sources. The class discusses Carbon and Emission, meaning a release such as greenhouse gas, alongside Sustainability, which considers present and future resource needs. Renewable does not imply zero life-cycle impact.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Renewable", "Carbon", "Emission"],
-            "expectedAnswer": "Renewable"
+            "question": "Which term names a release such as greenhouse gas?",
+            "options": ["Emission", "Renewable", "Carbon"],
+            "expectedAnswer": "Emission"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Renewable as the central item; include Renewable, Carbon, and Emission naturally where visually appropriate, but make the real-world use of Renewable the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Emission in a solar farm context. Use the written scenario as the source of meaning: Renewable energy draws on naturally replenished sources. The class discusses Carbon and Emission, meaning a release such as greenhouse gas, alongside Sustainability, which considers present and future resource needs. Renewable does not imply zero life-cycle impact. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Efficiency", "Conservation", "Recycle"],
-          "scenario": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.",
+          "scenario": "Efficiency concerns useful output relative to input. Conservation reduces unnecessary resource use, while Recycle means process discarded material so it can be used again. The guide distinguishes these approaches rather than treating them as interchangeable labels.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Efficiency", "Conservation", "Recycle"],
-            "expectedAnswer": "Efficiency"
+            "question": "Which term describes reducing unnecessary resource use?",
+            "options": ["Conservation", "Efficiency", "Recycle"],
+            "expectedAnswer": "Conservation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Efficiency as the central item; include Efficiency, Conservation, and Recycle naturally where visually appropriate, but make the real-world use of Efficiency the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Conservation in a solar farm context. Use the written scenario as the source of meaning: Efficiency concerns useful output relative to input. Conservation reduces unnecessary resource use, while Recycle means process discarded material so it can be used again. The guide distinguishes these approaches rather than treating them as interchangeable labels. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written solar farm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Solar Farm",
-      "text": "At the solar farm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Battery, Cable, Mounting Rack, and Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Grid, Charge, Discharge, and Clean Energy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Renewable, Carbon, Emission, and Sustainability. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Efficiency, Conservation, and Recycle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Solar Farm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Solar Farm: A practical discussion",
+      "text": "The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length. The Grid connects electricity supply and users. To Charge a battery is to supply energy for storage; to Discharge it is to release stored energy to a load. Clean Energy describes lower-impact energy approaches whose full environmental effects still require assessment. Renewable energy draws on naturally replenished sources. The class discusses Carbon and Emission, meaning a release such as greenhouse gas, alongside Sustainability, which considers present and future resource needs. Renewable does not imply zero life-cycle impact. Efficiency concerns useful output relative to input. Conservation reduces unnecessary resource use, while Recycle means process discarded material so it can be used again. The guide distinguishes these approaches rather than treating them as interchangeable labels.",
+      "imageBrief": "One uncluttered solar farm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Battery, Cable, Mounting Rack, and Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Battery",
+        "prompt": "The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length.\nWhich target names a measuring instrument here?",
+        "answer": "Meter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Grid, Charge, Discharge, and Clean Energy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Grid",
+        "prompt": "The Grid connects electricity supply and users. To Charge a battery is to supply energy for storage; to Discharge it is to release stored energy to a load. Clean Energy describes lower-impact energy approaches whose full environmental effects still require assessment.\nWhich verb describes releasing stored battery energy to a load?",
+        "answer": "Discharge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renewable, Carbon, Emission, and Sustainability and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Renewable",
+        "prompt": "Renewable energy draws on naturally replenished sources. The class discusses Carbon and Emission, meaning a release such as greenhouse gas, alongside Sustainability, which considers present and future resource needs. Renewable does not imply zero life-cycle impact.\nWhich term names a release such as greenhouse gas?",
+        "answer": "Emission",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the solar farm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Efficiency, Conservation, and Recycle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Efficiency",
+        "prompt": "Efficiency concerns useful output relative to input. Conservation reduces unnecessary resource use, while Recycle means process discarded material so it can be used again. The guide distinguishes these approaches rather than treating them as interchangeable labels.\nWhich term describes reducing unnecessary resource use?",
+        "answer": "Conservation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length. The Grid connects electricity supply and users. To Charge a battery is to supply energy for storage; to Discharge it is to release stored energy to a load. Clean Energy describes lower-impact energy approaches whose full environmental effects still require assessment. Renewable energy draws on naturally replenished sources. The class discusses Carbon and Emission, meaning a release such as greenhouse gas, alongside Sustainability, which considers present and future resource needs. Renewable does not imply zero life-cycle impact. Efficiency concerns useful output relative to input. Conservation reduces unnecessary resource use, while Recycle means process discarded material so it can be used again. The guide distinguishes these approaches rather than treating them as interchangeable labels.\nExplain the difference between Battery and Cable using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Battery"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hard Hat” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the solar farm task. Use Battery, Cable, Mounting Rack, Meter, Grid, Charge, Discharge, Clean Energy, Renewable, Carbon, Emission, Sustainability, Efficiency, Conservation, and Recycle in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Battery, Cable, Mounting Rack, Meter, Grid, Charge, Discharge, Clean Energy, Renewable, Carbon, Emission, Sustainability, Efficiency, Conservation, Recycle to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Solar Farm: In Context",
-      "idea": "45-70 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Solar Farm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Battery and Cable, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The guide distinguishes a Battery storing energy, a Cable carrying electricity, and a Mounting Rack supporting panels. A Meter records a measured quantity. In this equipment context, meter is an instrument rather than a unit of length. Pause and answer: Which target names a measuring instrument here?"
     },
     "spacedReview": "1 lesson(s) back: Hard Hat, Gloves from solar-farm-4\n3 lesson(s) back: Conduit, Ground Rod from solar-farm-2\n7 lesson(s) back: Magnifying Glass, Helping Hands from robotics-lab-3"
   }

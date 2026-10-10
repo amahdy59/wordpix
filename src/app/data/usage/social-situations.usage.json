@@ -36,7 +36,7 @@
       "تصبح على خير",
       "أهلاً وسهلاً",
       "اعتنِ بنفسك",
-      "تحية طيبة أو شكرًا",
+      "شكرًا بصورة غير رسمية؛ وقد تستعمل للتحية عند رفع الكؤوس",
       "من فضلك",
       "شكرًا لك",
       "على الرحب والسعة",
@@ -44,140 +44,134 @@
       "آسف"
     ],
     "usage": {
-      "goal": "Learn to use social situations 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to social situations.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Choose an expression or behavior that fits a stated adult conversation.",
+      "canDoStatement": "Can use supported greetings and polite replies, or distinguish interpersonal actions in a stated conversation. Less common conflict-resolution terms extend the supported task level and are not certified as ordinary A2 vocabulary.",
+      "textType": "community-conversation",
+      "readingTarget": "Supported linked conversation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hello", "Goodbye", "Nice to Meet You"],
-          "scenario": "During a routine social situations task, an adult compares Hello, Goodbye, Nice to Meet You. The person selects Hello for the next step.",
+          "scenario": "At an adult workshop, Lina says, “Hello,” when Omar arrives. They have not met before, so she adds, “Nice to meet you.” When he leaves, she says, “Goodbye.”",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which expression does Lina use specifically for their first meeting?",
             "options": ["Hello", "Goodbye", "Nice to Meet You"],
-            "expectedAnswer": "Hello"
+            "expectedAnswer": "Nice to Meet You"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Hello, Goodbye, Nice to Meet You. The person selects Hello for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Hello, Goodbye, Nice to Meet You in a natural setting."
+          "imageBrief": "Photorealistic scene: Two adults greeting each other at a workshop entrance. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Two adults greeting each other at a workshop entrance."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["How Are You", "See You Later", "Good Morning"],
-          "scenario": "During a routine social situations task, an adult compares How Are You, See You Later, Good Morning. The person selects How Are You for the next step.",
+          "scenario": "At nine in the morning, Ali greets a colleague: “Good morning. How are you?” She replies that she is well. After their break, he says, “See you later,” because they will meet again that afternoon.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which expression is the morning greeting?",
             "options": ["How Are You", "See You Later", "Good Morning"],
-            "expectedAnswer": "How Are You"
+            "expectedAnswer": "Good Morning"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares How Are You, See You Later, Good Morning. The person selects How Are You for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including How Are You, See You Later, Good Morning in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults talking during a morning break in an office kitchen. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults talking during a morning break in an office kitchen."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Good Night", "Welcome", "Take Care"],
-          "scenario": "During a routine social situations task, an adult compares Good Night, Welcome, Take Care. The person selects Good Night for the next step.",
+          "scenario": "A host says, “Welcome,” as guests arrive for an evening meal. When a guest leaves late, the host says, “Good night. Take care.” Here, good night is a farewell, not the greeting on arrival.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which expression welcomes a person on arrival?",
             "options": ["Good Night", "Welcome", "Take Care"],
-            "expectedAnswer": "Good Night"
+            "expectedAnswer": "Welcome"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Good Night, Welcome, Take Care. The person selects Good Night for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Good Night, Welcome, Take Care in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult host receiving adult guests at a home entrance for an evening meal. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "An adult host receiving adult guests at a home entrance for an evening meal."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cheers", "Please", "Thank You"],
-          "scenario": "During a routine social situations task, an adult compares Cheers, Please, Thank You. The person selects Cheers for the next step.",
+          "scenario": "At a café, Mona asks, “Please could I have a glass of water?” She says, “Thank you,” when it arrives. Her British friend informally thanks the server with “Cheers.” Here, cheers means thanks rather than a drinking toast.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which informal expression means thanks in the friend’s British English?",
             "options": ["Cheers", "Please", "Thank You"],
             "expectedAnswer": "Cheers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Cheers, Please, Thank You. The person selects Cheers for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Cheers, Please, Thank You in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults receiving glasses of water from an adult café server. No alcohol or toast gesture is needed. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults receiving glasses of water from an adult café server. No alcohol or toast gesture is needed."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["You're Welcome", "Excuse Me", "Sorry"],
-          "scenario": "During a routine social situations task, an adult compares You're Welcome, Excuse Me, Sorry. The person selects You're Welcome for the next step.",
+          "scenario": "Nadia says, “Excuse me,” to get a colleague’s attention. After he helps her, she says, “Thank you.” He replies, “You’re welcome.” Later, she says, “Sorry,” after accidentally knocking his pencil onto the floor.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which expression replies to thanks?",
             "options": ["You're Welcome", "Excuse Me", "Sorry"],
             "expectedAnswer": "You're Welcome"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares You're Welcome, Excuse Me, Sorry. The person selects You're Welcome for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including You're Welcome, Excuse Me, Sorry in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults sharing an office desk, with a pencil on the floor beside it. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults sharing an office desk, with a pencil on the floor beside it."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Social Situations: Email",
-      "text": "Omar has an everyday task connected to social situations. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss hello, goodbye, and nice to meet you. The context makes the relationship between the words clear. In the social situation, the people experience or discuss how are you, see you later, and good morning. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Social Situations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "At a new workshop",
+      "text": "Lina welcomes adults to a workshop. She says hello and adds “Nice to meet you” to someone she has not met before. At the morning session she says “Good morning” and asks, “How are you?” At the break, people ask for water with please and thank the server with thank you. A British guest informally says cheers. When someone thanks Lina for help, she replies, “You’re welcome.” A visitor says excuse me to attract her attention, then says sorry after dropping a pencil. At the afternoon break, “See you later” fits because they will meet again. At the end, guests say goodbye and take care. After an evening meal, good night is a farewell. Welcome is for arrival.",
+      "imageBrief": "Photorealistic scene: Two adults greeting each other at a workshop entrance. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels."
     },
     "exercises": [
       {
-        "prompt": "During a routine social situations task, an adult compares Hello, Goodbye, Nice to Meet You. The person selects Hello for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Hello",
+        "prompt": "At an adult workshop, Lina says, “Hello,” when Omar arrives. They have not met before, so she adds, “Nice to meet you.” When he leaves, she says, “Goodbye.”\nWhich expression does Lina use specifically for their first meeting?",
+        "answer": "Nice to Meet You",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares How Are You, See You Later, Good Morning. The person selects How Are You for the next step.\nWhich option does the person select for the next step?",
-        "answer": "How Are You",
+        "prompt": "At nine in the morning, Ali greets a colleague: “Good morning. How are you?” She replies that she is well. After their break, he says, “See you later,” because they will meet again that afternoon.\nWhich expression is the morning greeting?",
+        "answer": "Good Morning",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Good Night, Welcome, Take Care. The person selects Good Night for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Good Night",
+        "prompt": "A host says, “Welcome,” as guests arrive for an evening meal. When a guest leaves late, the host says, “Good night. Take care.” Here, good night is a farewell, not the greeting on arrival.\nWhich expression welcomes a person on arrival?",
+        "answer": "Welcome",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Cheers, Please, Thank You. The person selects Cheers for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "At a café, Mona asks, “Please could I have a glass of water?” She says, “Thank you,” when it arrives. Her British friend informally thanks the server with “Cheers.” Here, cheers means thanks rather than a drinking toast.\nWhich informal expression means thanks in the friend’s British English?",
         "answer": "Cheers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares You're Welcome, Excuse Me, Sorry. The person selects You're Welcome for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Nadia says, “Excuse me,” to get a colleague’s attention. After he helps her, she says, “Thank you.” He replies, “You’re welcome.” Later, she says, “Sorry,” after accidentally knocking his pencil onto the floor.\nWhich expression replies to thanks?",
         "answer": "You're Welcome",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hello"
+        "prompt": "Lina welcomes adults to a workshop. She says hello and adds “Nice to meet you” to someone she has not met before. At the morning session she says “Good morning” and asks, “How are you?” At the break, people ask for water with please and thank the server with thank you. A British guest informally says cheers. When someone thanks Lina for help, she replies, “You’re welcome.” A visitor says excuse me to attract her attention, then says sorry after dropping a pencil. At the afternoon break, “See you later” fits because they will meet again. At the end, guests say goodbye and take care. After an evening meal, good night is a farewell. Welcome is for arrival.\nWhy does “See you later” fit the afternoon break?",
+        "answer": "They will meet again",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "How Are You"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Admiration” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At an adult workshop, Lina says, “Hello,” when Omar arrives. They have not met before, so she adds, “Nice to meet you.” When he leaves, she says, “Goodbye.”\nExplain how one expression or action fits this situation in a complete sentence.",
+        "answer": "Lina says “Nice to meet you” because she has not met Omar before.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Social Situations: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At a new workshop",
+      "idea": "Perform the stated adult conversation with natural timing, pause for one expression choice, then explain the social context. Do not diagnose personality from a gesture.",
+      "scriptStarter": "At an adult workshop, Lina says, “Hello,” when Omar arrives. They have not met before, so she adds, “Nice to meet you.” When he leaves, she says, “Goodbye.”"
     },
     "spacedReview": "1 lesson(s) back: Admiration, Trust from complex-feelings-4\n3 lesson(s) back: Conflicted, Ambivalent from complex-feelings-2\n7 lesson(s) back: Whimper, Grimace from facial-expressions-2"
   },
@@ -226,140 +220,134 @@
       "مصالحة وإصلاح ذات البين"
     ],
     "usage": {
-      "goal": "Learn to use social situations 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to social situations.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Choose an expression or behavior that fits a stated adult conversation.",
+      "canDoStatement": "Can use supported greetings and polite replies, or distinguish interpersonal actions in a stated conversation. Less common conflict-resolution terms extend the supported task level and are not certified as ordinary A2 vocabulary.",
+      "textType": "community-conversation",
+      "readingTarget": "Supported linked conversation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pardon", "After You", "No Problem"],
-          "scenario": "During a routine social situations task, an adult compares Pardon, After You, No Problem. The person selects Pardon for the next step.",
+          "scenario": "At a doorway, Sam says, “After you,” and lets an adult visitor enter first. Inside, she cannot hear his question and asks, “Pardon?” He repeats it. When she asks to move a chair, he replies, “No problem.”",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which expression asks for the question to be repeated?",
             "options": ["Pardon", "After You", "No Problem"],
             "expectedAnswer": "Pardon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Pardon, After You, No Problem. The person selects Pardon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Pardon, After You, No Problem in a natural setting."
+          "imageBrief": "Photorealistic scene: Two adults at a meeting-room doorway with chairs visible inside. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Two adults at a meeting-room doorway with chairs visible inside."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["My Pleasure", "Bless You", "Apology"],
-          "scenario": "During a routine social situations task, an adult compares My Pleasure, Bless You, Apology. The person selects My Pleasure for the next step.",
+          "scenario": "After helping a visitor, Amal replies to thanks with “My pleasure.” When the visitor sneezes, a colleague says, “Bless you,” a conventional response in English. Later, the colleague offers an apology: “I’m sorry I interrupted you.”",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the statement expressing regret?",
             "options": ["My Pleasure", "Bless You", "Apology"],
-            "expectedAnswer": "My Pleasure"
+            "expectedAnswer": "Apology"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares My Pleasure, Bless You, Apology. The person selects My Pleasure for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including My Pleasure, Bless You, Apology in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults talking at an information desk; do not portray sneezing as evidence of illness or religious identity. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults talking at an information desk; do not portray sneezing as evidence of illness or religious identity."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Forgiveness", "Compromise", "Mediation"],
-          "scenario": "During a routine social situations task, an adult compares Forgiveness, Compromise, Mediation. The person selects Forgiveness for the next step.",
+          "scenario": "Two club members disagree over a room schedule. Mediation brings in a neutral helper who supports their discussion. They reach a compromise by each accepting part of the other’s plan. One member offers forgiveness for an earlier rude remark; this is her choice, not a duty imposed by the group.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which process brings in a neutral helper?",
             "options": ["Forgiveness", "Compromise", "Mediation"],
-            "expectedAnswer": "Forgiveness"
+            "expectedAnswer": "Mediation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Forgiveness, Compromise, Mediation. The person selects Forgiveness for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Forgiveness, Compromise, Mediation in a natural setting."
+          "imageBrief": "Photorealistic scene: Three adults discussing a room schedule around a table, with a blank timetable sheet. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Three adults discussing a room schedule around a table, with a blank timetable sheet."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Negotiation", "Understanding", "Empathy"],
-          "scenario": "During a routine social situations task, an adult compares Negotiation, Understanding, Empathy. The person selects Negotiation for the next step.",
+          "scenario": "During negotiation about a meeting time, Farah tries to reach agreement with the team. She shows understanding of a colleague’s travel difficulty. Her empathy helps her consider how that difficulty feels to him, even though she has a different journey.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word describes the discussion to reach agreement?",
             "options": ["Negotiation", "Understanding", "Empathy"],
             "expectedAnswer": "Negotiation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Negotiation, Understanding, Empathy. The person selects Negotiation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Negotiation, Understanding, Empathy in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing a practical meeting plan with an ordinary calendar on a desk. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults discussing a practical meeting plan with an ordinary calendar on a desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Resolution", "Peace", "Reconciliation"],
-          "scenario": "During a routine social situations task, an adult compares Resolution, Peace, Reconciliation. The person selects Resolution for the next step.",
+          "scenario": "A club finds a resolution to its scheduling disagreement: two groups use the room at different times. Peace returns when the argument ends. Reconciliation goes further when the members rebuild friendly relations and invite each other to a shared event.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word describes rebuilding friendly relations?",
             "options": ["Resolution", "Peace", "Reconciliation"],
-            "expectedAnswer": "Resolution"
+            "expectedAnswer": "Reconciliation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Resolution, Peace, Reconciliation. The person selects Resolution for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Resolution, Peace, Reconciliation in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults from two community groups planning a shared event in a meeting room. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults from two community groups planning a shared event in a meeting room."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Social Situations: Personal Message",
-      "text": "Omar has an everyday task connected to social situations. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss pardon, after you, and no problem. The context makes the relationship between the words clear. In the social situation, the people experience or discuss my pleasure, bless you, and apology. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Social Situations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finding an agreement",
+      "text": "Two community groups want the same room. At the doorway, one member says after you. When she cannot hear a question, she asks pardon. A colleague moves a chair and says no problem; another replies to thanks with my pleasure. Someone says bless you after a sneeze. The room discussion includes an apology for an interruption. A neutral helper supports mediation. Through negotiation, the groups find a compromise: they meet at different times. Understanding and empathy help them consider each other’s difficulty. Their resolution brings peace to the discussion. Reconciliation develops later when they rebuild friendly relations. Forgiveness for a hurtful remark is a personal choice, not a condition of getting a room.",
+      "imageBrief": "Photorealistic scene: Two adults at a meeting-room doorway with chairs visible inside. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels."
     },
     "exercises": [
       {
-        "prompt": "During a routine social situations task, an adult compares Pardon, After You, No Problem. The person selects Pardon for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "At a doorway, Sam says, “After you,” and lets an adult visitor enter first. Inside, she cannot hear his question and asks, “Pardon?” He repeats it. When she asks to move a chair, he replies, “No problem.”\nWhich expression asks for the question to be repeated?",
         "answer": "Pardon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares My Pleasure, Bless You, Apology. The person selects My Pleasure for the next step.\nWhich option does the person select for the next step?",
-        "answer": "My Pleasure",
+        "prompt": "After helping a visitor, Amal replies to thanks with “My pleasure.” When the visitor sneezes, a colleague says, “Bless you,” a conventional response in English. Later, the colleague offers an apology: “I’m sorry I interrupted you.”\nWhich word names the statement expressing regret?",
+        "answer": "Apology",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Forgiveness, Compromise, Mediation. The person selects Forgiveness for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Forgiveness",
+        "prompt": "Two club members disagree over a room schedule. Mediation brings in a neutral helper who supports their discussion. They reach a compromise by each accepting part of the other’s plan. One member offers forgiveness for an earlier rude remark; this is her choice, not a duty imposed by the group.\nWhich process brings in a neutral helper?",
+        "answer": "Mediation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Negotiation, Understanding, Empathy. The person selects Negotiation for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "During negotiation about a meeting time, Farah tries to reach agreement with the team. She shows understanding of a colleague’s travel difficulty. Her empathy helps her consider how that difficulty feels to him, even though she has a different journey.\nWhich word describes the discussion to reach agreement?",
         "answer": "Negotiation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Resolution, Peace, Reconciliation. The person selects Resolution for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Resolution",
+        "prompt": "A club finds a resolution to its scheduling disagreement: two groups use the room at different times. Peace returns when the argument ends. Reconciliation goes further when the members rebuild friendly relations and invite each other to a shared event.\nWhich word describes rebuilding friendly relations?",
+        "answer": "Reconciliation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pardon"
+        "prompt": "Two community groups want the same room. At the doorway, one member says after you. When she cannot hear a question, she asks pardon. A colleague moves a chair and says no problem; another replies to thanks with my pleasure. Someone says bless you after a sneeze. The room discussion includes an apology for an interruption. A neutral helper supports mediation. Through negotiation, the groups find a compromise: they meet at different times. Understanding and empathy help them consider each other’s difficulty. Their resolution brings peace to the discussion. Reconciliation develops later when they rebuild friendly relations. Forgiveness for a hurtful remark is a personal choice, not a condition of getting a room.\nWhat is the compromise about the room?",
+        "answer": "The groups meet at different times",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "My Pleasure"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hello” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At a doorway, Sam says, “After you,” and lets an adult visitor enter first. Inside, she cannot hear his question and asks, “Pardon?” He repeats it. When she asks to move a chair, he replies, “No problem.”\nExplain how one expression or action fits this situation in a complete sentence.",
+        "answer": "The visitor says “Pardon?” because she cannot hear Sam’s question.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Social Situations: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finding an agreement",
+      "idea": "Perform the stated adult conversation with natural timing, pause for one expression choice, then explain the social context. Do not diagnose personality from a gesture.",
+      "scriptStarter": "At a doorway, Sam says, “After you,” and lets an adult visitor enter first. Inside, she cannot hear his question and asks, “Pardon?” He repeats it. When she asks to move a chair, he replies, “No problem.”"
     },
     "spacedReview": "1 lesson(s) back: Hello, Goodbye from social-situations-1\n3 lesson(s) back: Inspired, Motivated from complex-feelings-3\n7 lesson(s) back: Gasp, Wide Eyes from facial-expressions-3"
   },
@@ -398,121 +386,115 @@
       "تشجيع ومساندة"
     ],
     "usage": {
-      "goal": "Learn to use social situations 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to social situations.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Choose an expression or behavior that fits a stated adult conversation.",
+      "canDoStatement": "Can use supported greetings and polite replies, or distinguish interpersonal actions in a stated conversation. Less common conflict-resolution terms extend the supported task level and are not certified as ordinary A2 vocabulary.",
+      "textType": "community-conversation",
+      "readingTarget": "Supported linked conversation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Listening", "Sharing", "Taking Turns"],
-          "scenario": "During a routine social situations task, an adult compares Listening, Sharing, Taking Turns. The person selects Listening for the next step.",
+          "scenario": "At a planning meeting, listening means attending to another person’s words. Sharing the markers lets everyone use the materials. Taking turns means each adult speaks in order rather than interrupting.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which practice gives each adult a chance to speak in order?",
             "options": ["Listening", "Sharing", "Taking Turns"],
-            "expectedAnswer": "Listening"
+            "expectedAnswer": "Taking Turns"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Listening, Sharing, Taking Turns. The person selects Listening for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Listening, Sharing, Taking Turns in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults planning at a table with shared markers and paper. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults planning at a table with shared markers and paper."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cooperation", "Respect", "Honesty"],
-          "scenario": "During a routine social situations task, an adult compares Cooperation, Respect, Honesty. The person selects Cooperation for the next step.",
+          "scenario": "A volunteer team shows cooperation by preparing the room together. Respect means considering everyone’s dignity and wishes. Honesty means telling the truth, including acknowledging a mistake about the start time.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which quality is shown by acknowledging the mistaken start time?",
             "options": ["Cooperation", "Respect", "Honesty"],
-            "expectedAnswer": "Cooperation"
+            "expectedAnswer": "Honesty"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Cooperation, Respect, Honesty. The person selects Cooperation for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Cooperation, Respect, Honesty in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult volunteers arranging a community room together. Do not infer moral character from clothing or appearance. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adult volunteers arranging a community room together. Do not infer moral character from clothing or appearance."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Kindness", "Patience", "Tolerance"],
-          "scenario": "During a routine social situations task, an adult compares Kindness, Patience, Tolerance. The person selects Kindness for the next step.",
+          "scenario": "Leila shows kindness by offering a seat to someone who wants one. She shows patience while the meeting starts late. Tolerance means treating people with different views fairly; it does not require accepting harm or disrespect.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which quality helps Leila remain calm during the delay?",
             "options": ["Kindness", "Patience", "Tolerance"],
-            "expectedAnswer": "Kindness"
+            "expectedAnswer": "Patience"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Kindness, Patience, Tolerance. The person selects Kindness for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Kindness, Patience, Tolerance in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults waiting for a community meeting, with one adult offering another an empty seat. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "Adults waiting for a community meeting, with one adult offering another an empty seat."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Encouragement"],
-          "scenario": "During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step.",
+          "scenario": "Before Omar gives his first workshop talk, a colleague offers encouragement: “You have prepared carefully. Take your time; we want to hear your ideas.” Omar may still feel nervous. Encouragement offers support rather than guaranteeing success.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Encouragement", "Listening", "Sharing"],
+            "question": "What does the colleague offer Omar?",
+            "options": ["Encouragement"],
             "expectedAnswer": "Encouragement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a social situations context illustrating this situation: During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult social situations scene showing lesson-related items or actions including Encouragement in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult speaker preparing beside an adult colleague in a small workshop room. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels.",
+          "imageAlt": "An adult speaker preparing beside an adult colleague in a small workshop room."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Social Situations: Short Dialogue",
-      "text": "Omar has an everyday task connected to social situations. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss listening, sharing, and taking turns. The context makes the relationship between the words clear. In the social situation, the people experience or discuss cooperation, respect, and honesty. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Social Situations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing the meeting",
+      "text": "Adult volunteers prepare a community meeting. Listening and taking turns help everyone explain a suggestion. Sharing markers gives each person access to the materials. Cooperation helps the team arrange the room. A volunteer shows honesty by correcting a mistaken time, and the group responds with respect. Leila offers kindness when someone wants a seat and patience when the start is delayed. Tolerance means treating different views fairly without accepting harmful behavior. Before Omar speaks, a colleague offers encouragement. Nobody must speak or share a personal story to prove that they belong.",
+      "imageBrief": "Photorealistic scene: Adults planning at a table with shared markers and paper. Adult-focused natural composition. Dialogues, intention, feelings and conflict outcomes are established by written context. Do not infer politeness, kindness, faith or moral worth from physical appearance. No readable text, logos, overlays, answer cues or labels."
     },
     "exercises": [
       {
-        "prompt": "During a routine social situations task, an adult compares Listening, Sharing, Taking Turns. The person selects Listening for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Listening",
+        "prompt": "At a planning meeting, listening means attending to another person’s words. Sharing the markers lets everyone use the materials. Taking turns means each adult speaks in order rather than interrupting.\nWhich practice gives each adult a chance to speak in order?",
+        "answer": "Taking Turns",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Cooperation, Respect, Honesty. The person selects Cooperation for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Cooperation",
+        "prompt": "A volunteer team shows cooperation by preparing the room together. Respect means considering everyone’s dignity and wishes. Honesty means telling the truth, including acknowledging a mistake about the start time.\nWhich quality is shown by acknowledging the mistaken start time?",
+        "answer": "Honesty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Kindness, Patience, Tolerance. The person selects Kindness for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Kindness",
+        "prompt": "Leila shows kindness by offering a seat to someone who wants one. She shows patience while the meeting starts late. Tolerance means treating people with different views fairly; it does not require accepting harm or disrespect.\nWhich quality helps Leila remain calm during the delay?",
+        "answer": "Patience",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine social situations task, an adult compares Encouragement, Listening, Sharing. The person selects Encouragement for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Before Omar gives his first workshop talk, a colleague offers encouragement: “You have prepared carefully. Take your time; we want to hear your ideas.” Omar may still feel nervous. Encouragement offers support rather than guaranteeing success.\nWhat does the colleague offer Omar?",
         "answer": "Encouragement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Listening"
+        "prompt": "Adult volunteers prepare a community meeting. Listening and taking turns help everyone explain a suggestion. Sharing markers gives each person access to the materials. Cooperation helps the team arrange the room. A volunteer shows honesty by correcting a mistaken time, and the group responds with respect. Leila offers kindness when someone wants a seat and patience when the start is delayed. Tolerance means treating different views fairly without accepting harmful behavior. Before Omar speaks, a colleague offers encouragement. Nobody must speak or share a personal story to prove that they belong.\nHow does the volunteer show honesty?",
+        "answer": "By correcting a mistaken time",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Cooperation"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pardon” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At a planning meeting, listening means attending to another person’s words. Sharing the markers lets everyone use the materials. Taking turns means each adult speaks in order rather than interrupting.\nExplain how one expression or action fits this situation in a complete sentence.",
+        "answer": "Taking turns gives each adult a chance to speak without interruption.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Social Situations: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing the meeting",
+      "idea": "Perform the stated adult conversation with natural timing, pause for one expression choice, then explain the social context. Do not diagnose personality from a gesture.",
+      "scriptStarter": "At a planning meeting, listening means attending to another person’s words. Sharing the markers lets everyone use the materials. Taking turns means each adult speaks in order rather than interrupting."
     },
     "spacedReview": "1 lesson(s) back: Pardon, After You from social-situations-2\n3 lesson(s) back: Admiration, Trust from complex-feelings-4\n7 lesson(s) back: Bite Lip, Stick Out Tongue from facial-expressions-4"
   }

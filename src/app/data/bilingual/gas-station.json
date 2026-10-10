@@ -1,8 +1,8 @@
 {
   "gas-pump": {
-    "definition": "A device at a service station pumps gasoline from storage tanks located beneath the ground.",
+    "definition": "A device at a service station that supplies vehicle fuel through a hose and nozzle.",
     "arabicTranslation": "مضخة وقود",
-    "exampleUsage": "The gas pump was used during the activity."
+    "exampleUsage": "The attendant points to the gas pump beside the car."
   },
   "nozzle": {
     "definition": "A projecting spout from which a fluid is discharged.",
@@ -15,20 +15,23 @@
   },
   "diesel": {
     "definition": "A type of fuel used in diesel engines.",
-    "arabicTranslation": "ديزل"
+    "arabicTranslation": "ديزل",
+    "exampleUsage": "The manual says that this vehicle uses diesel."
   },
   "unleaded": {
     "arabicTranslation": "بنزين خالٍ من الرصاص",
-    "definition": "Describing gasoline that does not contain added lead."
+    "definition": "Describing gasoline that does not contain added lead.",
+    "exampleUsage": "The pump offers unleaded gasoline."
   },
   "premium": {
     "definition": "A grade of fuel with a higher octane rating than regular gasoline.",
-    "arabicTranslation": "بنزين عالي الأوكتان"
+    "arabicTranslation": "بنزين عالي الأوكتان",
+    "exampleUsage": "The manual recommends premium gasoline for this engine."
   },
   "fuel-gauge": {
     "definition": "An instrument fitted to a vehicle or container that indicates how much fuel is left in its tank.",
     "arabicTranslation": "مؤشر الوقود",
-    "exampleUsage": "The fuel gauge was used during the activity."
+    "exampleUsage": "The fuel gauge shows that the tank is nearly empty."
   },
   "receipt": {
     "arabicTranslation": "إيصال",
@@ -88,7 +91,7 @@
   "air-pump": {
     "definition": "A device used to push air into a container or draw it out.",
     "arabicTranslation": "مضخة هواء",
-    "exampleUsage": "The air pump was used during the activity."
+    "exampleUsage": "The technician uses an air pump to add air to the tire."
   },
   "windshield-fluid": {
     "definition": "A cleaning liquid stored in a vehicle and sprayed onto the windshield to help remove dirt.",
@@ -132,7 +135,8 @@
   },
   "canopy": {
     "definition": "A roof-like cover over the fuel pumps that provides shelter.",
-    "arabicTranslation": "مظلّة"
+    "arabicTranslation": "مظلّة",
+    "exampleUsage": "The canopy provides cover over the station pumps."
   },
   "parking-spot": {
     "definition": "A marked or designated space where a vehicle may be parked.",
@@ -152,13 +156,14 @@
     "arabicTranslation": "آلة ثلج"
   },
   "atm": {
-    "definition": "An unattended machine (outside some banks) that dispenses money when a personal coded card is used.",
+    "definition": "An automated teller machine used for banking tasks such as withdrawing cash.",
     "arabicTranslation": "جهاز صراف آلي",
-    "exampleUsage": "The atm was used during the activity."
+    "exampleUsage": "Dina withdraws cash from the ATM inside the shop."
   },
   "squeegee": {
-    "definition": "T-shaped cleaning implement with a rubber edge across the top.",
-    "arabicTranslation": "ممسحة مطاطية"
+    "definition": "A cleaning tool with a rubber edge used to remove water from a flat surface.",
+    "arabicTranslation": "ممسحة مطاطية",
+    "exampleUsage": "The worker clears water from the window with a squeegee."
   },
   "water-hose": {
     "definition": "A flexible tube used to carry water from a tap or supply point.",
@@ -186,8 +191,9 @@
     "definition": "A two-wheeled motor vehicle ridden by one or two people."
   },
   "rv": {
-    "definition": "A motorized wheeled vehicle used for camping or other recreational activities.",
-    "arabicTranslation": "مركبة ترفيهية"
+    "definition": "A recreational vehicle with living space for travel or camping; it may be motorized or towed.",
+    "arabicTranslation": "مركبة ترفيهية",
+    "exampleUsage": "The family parks its RV at a campsite."
   },
   "trailer": {
     "definition": "A vehicle without an engine that is pulled by another vehicle.",
@@ -249,5 +255,15 @@
     "definition": "The act of leaving a place in a vehicle.",
     "exampleUsage": "After the service was finished, the car was driving away from the station.",
     "arabicTranslation": "الانطلاق بالسيارة"
+  },
+  "trash-can": {
+    "definition": "A container for small amounts of rubbish or waste.",
+    "arabicTranslation": "سلة مهملات",
+    "exampleUsage": "Dina puts the empty cup in the trash can."
+  },
+  "paper-towel": {
+    "definition": "An absorbent paper sheet used for drying or cleaning.",
+    "arabicTranslation": "منشفة ورقية",
+    "exampleUsage": "The paper towel absorbs the water on the counter."
   }
 }

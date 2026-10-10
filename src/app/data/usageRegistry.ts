@@ -10,6 +10,7 @@ import {
 } from "./usageTypes";
 import { enrichReferenceLesson } from "./referenceUnitEnrichment";
 import { attachReviewedUsageIllustrations } from "./reviewedUsageIllustrations";
+import { applyLessonLearningContexts } from "./sceneLearningContext.mjs";
 
 /**
  * Lazy registry for unit curriculum usage data.
@@ -109,7 +110,7 @@ export async function loadUnitUsage(unitId: string): Promise<UnitUsageData | nul
       approvedLessonIds.has(lesson.lessonId) &&
       lesson.targetWordsArabic.every((translation) => !placeholderArabic.test(translation))
   );
-  return released.length > 0 ? released : null;
+  return released.length > 0 ? released.map(applyLessonLearningContexts) : null;
 }
 
 export function hasUnitUsage(unitId: string): boolean {

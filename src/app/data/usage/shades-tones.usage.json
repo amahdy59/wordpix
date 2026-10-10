@@ -44,136 +44,141 @@
       "أخضر نعناعي فاتح"
     ],
     "usage": {
-      "goal": "Learn to use common shades & tones 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to shades & tones.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Crimson", "Scarlet", "Maroon"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Crimson, Scarlet, Maroon. The selected item or situation is best described as crimson.",
+          "scenario": "The shop calls this deep red shade crimson. Scarlet is a brighter red, and maroon is a dark brownish red.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What name does the shop use for its deep red sample?",
             "options": ["Crimson", "Scarlet", "Maroon"],
             "expectedAnswer": "Crimson"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Crimson, Scarlet, Maroon. The selected item or situation is best described as crimson. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Crimson, Scarlet, Maroon in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Three plain cloth swatches with plausible red shades, no labels; text supplies exact supplier naming. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rose", "Blush", "Burgundy"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Rose, Blush, Burgundy. The selected item or situation is best described as rose.",
+          "scenario": "Dina chooses the rose sample, a pink shade. Blush is a pale pink, while burgundy is a dark purplish red.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which named sample does Dina choose?",
             "options": ["Rose", "Blush", "Burgundy"],
             "expectedAnswer": "Rose"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Rose, Blush, Burgundy. The selected item or situation is best described as rose. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Rose, Blush, Burgundy in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain pink cloth swatch with neutral balanced lighting; no universal numeric color specification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ruby", "Cherry", "Raspberry"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Ruby, Cherry, Raspberry. The selected item or situation is best described as ruby.",
+          "scenario": "The order says ruby, a rich red. Cherry is also a red color name; raspberry is a pinkish red.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which color name is written in the order?",
             "options": ["Ruby", "Cherry", "Raspberry"],
             "expectedAnswer": "Ruby"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Ruby, Cherry, Raspberry. The selected item or situation is best described as ruby. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Ruby, Cherry, Raspberry in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Rich red cloth swatch, no gemstone, fruit, letters or answer badge. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fuchsia", "Navy", "Sky Blue"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Fuchsia, Navy, Sky Blue. The selected item or situation is best described as fuchsia.",
+          "scenario": "Fuchsia names a vivid purplish pink. Navy is a dark blue; sky blue is a light blue.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which listed shade is a vivid purplish pink?",
             "options": ["Fuchsia", "Navy", "Sky Blue"],
             "expectedAnswer": "Fuchsia"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Fuchsia, Navy, Sky Blue. The selected item or situation is best described as fuchsia. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Fuchsia, Navy, Sky Blue in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Vivid purplish-pink fabric sample under neutral lighting, no flower distracting from color sense. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Royal Blue", "Aqua", "Mint"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Royal Blue, Aqua, Mint. The selected item or situation is best described as royal blue.",
+          "scenario": "Dina chooses royal blue for the cushion. Aqua is a blue-green shade, and mint is a pale green.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which blue does Dina choose for the cushion?",
             "options": ["Royal Blue", "Aqua", "Mint"],
             "expectedAnswer": "Royal Blue"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Royal Blue, Aqua, Mint. The selected item or situation is best described as royal blue. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Royal Blue, Aqua, Mint in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain vivid blue cushion cover, no branding or written name. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Shades & Tones: Short Description",
-      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares crimson, scarlet, and maroon, noticing differences in appearance, measurement, material, or texture. The learner compares rose, blush, and burgundy, noticing differences in appearance, measurement, material, or texture. The learner compares ruby, cherry, and raspberry, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing red, pink and blue samples",
+      "text": "Dina looks at fabric samples in a shop. She likes crimson, a deep red shade. She also sees rose and ruby samples. A vivid fuchsia sample is beside a navy one. For a blue cushion, she chooses royal blue. She asks for the exact color name before ordering. Color names can overlap, and screens and lighting can change how a sample appears.",
+      "imageBrief": "Support for Choosing red, pink and blue samples. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Crimson, Scarlet, Maroon. The selected item or situation is best described as crimson.\nWhich description best fits the selected item or situation?",
+        "prompt": "The shop calls this deep red shade crimson. Scarlet is a brighter red, and maroon is a dark brownish red.\nWhat name does the shop use for its deep red sample?",
         "answer": "Crimson",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Rose, Blush, Burgundy. The selected item or situation is best described as rose.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses the rose sample, a pink shade. Blush is a pale pink, while burgundy is a dark purplish red.\nWhich named sample does Dina choose?",
         "answer": "Rose",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Ruby, Cherry, Raspberry. The selected item or situation is best described as ruby.\nWhich description best fits the selected item or situation?",
+        "prompt": "The order says ruby, a rich red. Cherry is also a red color name; raspberry is a pinkish red.\nWhich color name is written in the order?",
         "answer": "Ruby",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Fuchsia, Navy, Sky Blue. The selected item or situation is best described as fuchsia.\nWhich description best fits the selected item or situation?",
+        "prompt": "Fuchsia names a vivid purplish pink. Navy is a dark blue; sky blue is a light blue.\nWhich listed shade is a vivid purplish pink?",
         "answer": "Fuchsia",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Royal Blue, Aqua, Mint. The selected item or situation is best described as royal blue.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses royal blue for the cushion. Aqua is a blue-green shade, and mint is a pale green.\nWhich blue does Dina choose for the cushion?",
         "answer": "Royal Blue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Crimson"
+        "prompt": "Dina looks at fabric samples in a shop. She likes crimson, a deep red shade. She also sees rose and ruby samples. A vivid fuchsia sample is beside a navy one. For a blue cushion, she chooses royal blue. She asks for the exact color name before ordering. Color names can overlap, and screens and lighting can change how a sample appears.\nWhat does Dina ask for before ordering?",
+        "answer": "The exact color name.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Maroon"
+        "prompt": "Explain the difference between “Crimson” and “Scarlet” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Shrug” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Crimson” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The shop calls this deep red shade crimson. Scarlet is a brighter red, and maroon is a dark brownish red.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Shades & Tones: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing red, pink and blue samples",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina looks at fabric samples in a shop. She likes crimson, a deep red shade. She also sees rose and ruby samples. A vivid fuchsia sample is beside a navy one. For a blue cushion, she chooses royal blue. She asks for the exact color name before ordering. Color names can overlap, and screens and lighting can change how a sample appears. Ask: What does Dina ask for before ordering?"
     },
     "spacedReview": "1 lesson(s) back: Shrug, Signal from communication-verbs-4\n3 lesson(s) back: Mumble, Stutter from communication-verbs-2\n7 lesson(s) back: Map, Legend from maps-navigation-1"
   },
@@ -213,7 +218,7 @@
       "ذهبي",
       "كهرماني",
       "أصفر خردلي",
-      "عسل (عسل نحل)",
+      "أصفر عسلي",
       "أصفر ليموني",
       "خوخي",
       "برتقالي يوسفي",
@@ -222,136 +227,141 @@
       "برونزي"
     ],
     "usage": {
-      "goal": "Learn to use common shades & tones 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to shades & tones.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Emerald", "Olive", "Forest Green"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Emerald, Olive, Forest Green. The selected item or situation is best described as emerald.",
+          "scenario": "The sample card names this rich green emerald. Olive is a muted yellowish green, and forest green is a dark green.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What does the card call its rich green sample?",
             "options": ["Emerald", "Olive", "Forest Green"],
             "expectedAnswer": "Emerald"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Emerald, Olive, Forest Green. The selected item or situation is best described as emerald. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Emerald, Olive, Forest Green in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Green fabric sample, no gemstone or readable card; no universal shade-boundary claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Seafoam", "Jade", "Gold"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Seafoam, Jade, Gold. The selected item or situation is best described as seafoam.",
+          "scenario": "Dina chooses seafoam, a pale green-blue shade. Jade is a green shade; gold is a yellow metallic color name.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which pale shade does Dina choose?",
             "options": ["Seafoam", "Jade", "Gold"],
             "expectedAnswer": "Seafoam"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Seafoam, Jade, Gold. The selected item or situation is best described as seafoam. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Seafoam, Jade, Gold in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Pale green-blue cloth under neutral lighting, no seawater foam substituted for color sense. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Amber", "Mustard", "Honey"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Amber, Mustard, Honey. The selected item or situation is best described as amber.",
+          "scenario": "The curtain order specifies amber, a warm yellow-orange. Mustard is a dull yellow; honey can name a warm golden yellow.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which warm color does the curtain order specify?",
             "options": ["Amber", "Mustard", "Honey"],
             "expectedAnswer": "Amber"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Amber, Mustard, Honey. The selected item or situation is best described as amber. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Amber, Mustard, Honey in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Warm yellow-orange curtain swatch; no food or resin identity inference. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lemon", "Peach", "Tangerine"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Lemon, Peach, Tangerine. The selected item or situation is best described as lemon.",
+          "scenario": "Dina asks for lemon, a bright yellow shade. Peach is a pale pink-orange, while tangerine is a vivid orange.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which name does Dina use for the yellow sample?",
             "options": ["Lemon", "Peach", "Tangerine"],
             "expectedAnswer": "Lemon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Lemon, Peach, Tangerine. The selected item or situation is best described as lemon. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Lemon, Peach, Tangerine in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain bright yellow cushion cover, no fruit, text or badge. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Rust", "Copper", "Bronze"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Rust, Copper, Bronze. The selected item or situation is best described as rust.",
+          "scenario": "The bag is described as rust, a reddish brown. Copper and bronze are also warm metallic color names.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What color name describes the bag in the text?",
             "options": ["Rust", "Copper", "Bronze"],
             "expectedAnswer": "Rust"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Rust, Copper, Bronze. The selected item or situation is best described as rust. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Rust, Copper, Bronze in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain reddish-brown bag with closed surfaces; no actual corrosion or metal content claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Shades & Tones: Mini Dialogue",
-      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares emerald, olive, and forest green, noticing differences in appearance, measurement, material, or texture. The learner compares seafoam, jade, and gold, noticing differences in appearance, measurement, material, or texture. The learner compares amber, mustard, and honey, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Green, yellow and warm brown shades",
+      "text": "Dina compares more samples. Emerald, olive and forest green are green shades. Seafoam is a pale green-blue shade, and jade is another green name. Dina likes amber for a curtain and lemon for a small cushion. She chooses rust for a bag. She asks to see the real samples together because a name alone does not tell her the exact color.",
+      "imageBrief": "Support for Green, yellow and warm brown shades. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Emerald, Olive, Forest Green. The selected item or situation is best described as emerald.\nWhich description best fits the selected item or situation?",
+        "prompt": "The sample card names this rich green emerald. Olive is a muted yellowish green, and forest green is a dark green.\nWhat does the card call its rich green sample?",
         "answer": "Emerald",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Seafoam, Jade, Gold. The selected item or situation is best described as seafoam.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses seafoam, a pale green-blue shade. Jade is a green shade; gold is a yellow metallic color name.\nWhich pale shade does Dina choose?",
         "answer": "Seafoam",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Amber, Mustard, Honey. The selected item or situation is best described as amber.\nWhich description best fits the selected item or situation?",
+        "prompt": "The curtain order specifies amber, a warm yellow-orange. Mustard is a dull yellow; honey can name a warm golden yellow.\nWhich warm color does the curtain order specify?",
         "answer": "Amber",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Lemon, Peach, Tangerine. The selected item or situation is best described as lemon.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina asks for lemon, a bright yellow shade. Peach is a pale pink-orange, while tangerine is a vivid orange.\nWhich name does Dina use for the yellow sample?",
         "answer": "Lemon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Rust, Copper, Bronze. The selected item or situation is best described as rust.\nWhich description best fits the selected item or situation?",
+        "prompt": "The bag is described as rust, a reddish brown. Copper and bronze are also warm metallic color names.\nWhat color name describes the bag in the text?",
         "answer": "Rust",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Emerald"
+        "prompt": "Dina compares more samples. Emerald, olive and forest green are green shades. Seafoam is a pale green-blue shade, and jade is another green name. Dina likes amber for a curtain and lemon for a small cushion. She chooses rust for a bag. She asks to see the real samples together because a name alone does not tell her the exact color.\nWhy does Dina ask to see real samples together?",
+        "answer": "A name alone does not show the exact color.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Forest Green"
+        "prompt": "Explain the difference between “Emerald” and “Olive” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Crimson” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Emerald” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The sample card names this rich green emerald. Olive is a muted yellowish green, and forest green is a dark green.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Shades & Tones: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Green, yellow and warm brown shades",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares more samples. Emerald, olive and forest green are green shades. Seafoam is a pale green-blue shade, and jade is another green name. Dina likes amber for a curtain and lemon for a small cushion. She chooses rust for a bag. She asks to see the real samples together because a name alone does not tell her the exact color. Ask: Why does Dina ask to see real samples together?"
     },
     "spacedReview": "1 lesson(s) back: Crimson, Scarlet from shades-tones-1\n3 lesson(s) back: Write, Read from communication-verbs-3\n7 lesson(s) back: Telescope, Altimeter from maps-navigation-2"
   },
@@ -400,136 +410,141 @@
       "أحمر قاتم"
     ],
     "usage": {
-      "goal": "Learn to use common shades & tones 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to shades & tones.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ivory", "Cream", "Beige"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Ivory, Cream, Beige. The selected item or situation is best described as ivory.",
+          "scenario": "The order says ivory, a warm off-white color. Cream is also a warm pale color, and beige is a light sandy brown.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which color name appears in the order?",
             "options": ["Ivory", "Cream", "Beige"],
             "expectedAnswer": "Ivory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Ivory, Cream, Beige. The selected item or situation is best described as ivory. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Ivory, Cream, Beige in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Warm off-white paper or cloth sample; no ivory material or animal products. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tan", "Khaki", "Taupe"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Tan, Khaki, Taupe. The selected item or situation is best described as tan.",
+          "scenario": "Dina chooses tan for the curtains. Khaki is a yellowish brown, and taupe is a gray-brown.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which neutral color does Dina choose?",
             "options": ["Tan", "Khaki", "Taupe"],
             "expectedAnswer": "Tan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Tan, Khaki, Taupe. The selected item or situation is best described as tan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Tan, Khaki, Taupe in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Light brown curtain sample; names supplied in text, no precise shade boundary assumed. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Charcoal", "Slate", "Ash"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Charcoal, Slate, Ash. The selected item or situation is best described as charcoal.",
+          "scenario": "The chair cover is charcoal, a very dark gray. Slate names a blue-gray, while ash names a lighter gray.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which shade describes the chair cover?",
             "options": ["Charcoal", "Slate", "Ash"],
             "expectedAnswer": "Charcoal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Charcoal, Slate, Ash. The selected item or situation is best described as charcoal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Charcoal, Slate, Ash in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Very dark gray chair fabric, no charcoal pencil, fuel or rock substituting another sense. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Silver", "Plum", "Mauve"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Silver, Plum, Mauve. The selected item or situation is best described as silver.",
+          "scenario": "The lamp finish is silver in color. Plum is a dark reddish purple, and mauve is a pale muted purple.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "What color is the lamp finish in the text?",
             "options": ["Silver", "Plum", "Mauve"],
             "expectedAnswer": "Silver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Silver, Plum, Mauve. The selected item or situation is best described as silver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Silver, Plum, Mauve in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Light metallic-gray lamp finish; do not infer actual precious-metal composition. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Lilac", "Orchid", "Wine"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Lilac, Orchid, Wine. The selected item or situation is best described as lilac.",
+          "scenario": "Dina chooses lilac, a light pinkish purple. Orchid is another purple-pink name, while wine describes a dark purplish red.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which light purple name does Dina choose?",
             "options": ["Lilac", "Orchid", "Wine"],
             "expectedAnswer": "Lilac"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Lilac, Orchid, Wine. The selected item or situation is best described as lilac. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Lilac, Orchid, Wine in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Light pinkish-purple cushion swatch; no blossom, alcohol or readable name. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Shades & Tones: Simple Message",
-      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares ivory, cream, and beige, noticing differences in appearance, measurement, material, or texture. The learner compares tan, khaki, and taupe, noticing differences in appearance, measurement, material, or texture. The learner compares charcoal, slate, and ash, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Neutral and purple color names",
+      "text": "Dina wants calm colors for a room. Ivory, cream and beige are light choices. She compares tan, khaki and taupe for the curtains. She chooses charcoal for a chair and silver for a lamp finish. For a small cushion, she chooses lilac. Plum and mauve are other purple shades. Dina checks each description as well as the sample, rather than relying on color alone.",
+      "imageBrief": "Support for Neutral and purple color names. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Ivory, Cream, Beige. The selected item or situation is best described as ivory.\nWhich description best fits the selected item or situation?",
+        "prompt": "The order says ivory, a warm off-white color. Cream is also a warm pale color, and beige is a light sandy brown.\nWhich color name appears in the order?",
         "answer": "Ivory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Tan, Khaki, Taupe. The selected item or situation is best described as tan.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses tan for the curtains. Khaki is a yellowish brown, and taupe is a gray-brown.\nWhich neutral color does Dina choose?",
         "answer": "Tan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Charcoal, Slate, Ash. The selected item or situation is best described as charcoal.\nWhich description best fits the selected item or situation?",
+        "prompt": "The chair cover is charcoal, a very dark gray. Slate names a blue-gray, while ash names a lighter gray.\nWhich shade describes the chair cover?",
         "answer": "Charcoal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Silver, Plum, Mauve. The selected item or situation is best described as silver.\nWhich description best fits the selected item or situation?",
+        "prompt": "The lamp finish is silver in color. Plum is a dark reddish purple, and mauve is a pale muted purple.\nWhat color is the lamp finish in the text?",
         "answer": "Silver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Lilac, Orchid, Wine. The selected item or situation is best described as lilac.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses lilac, a light pinkish purple. Orchid is another purple-pink name, while wine describes a dark purplish red.\nWhich light purple name does Dina choose?",
         "answer": "Lilac",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Ivory"
+        "prompt": "Dina wants calm colors for a room. Ivory, cream and beige are light choices. She compares tan, khaki and taupe for the curtains. She chooses charcoal for a chair and silver for a lamp finish. For a small cushion, she chooses lilac. Plum and mauve are other purple shades. Dina checks each description as well as the sample, rather than relying on color alone.\nWhat does Dina check besides the sample?",
+        "answer": "Each written description.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Beige"
+        "prompt": "Explain the difference between “Ivory” and “Cream” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Emerald” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Ivory” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The order says ivory, a warm off-white color. Cream is also a warm pale color, and beige is a light sandy brown.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Shades & Tones: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Neutral and purple color names",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina wants calm colors for a room. Ivory, cream and beige are light choices. She compares tan, khaki and taupe for the curtains. She chooses charcoal for a chair and silver for a lamp finish. For a small cushion, she chooses lilac. Plum and mauve are other purple shades. Dina checks each description as well as the sample, rather than relying on color alone. Ask: What does Dina check besides the sample?"
     },
     "spacedReview": "1 lesson(s) back: Emerald, Olive from shades-tones-2\n3 lesson(s) back: Shrug, Signal from communication-verbs-4\n7 lesson(s) back: Navigation App, Pin from maps-navigation-3"
   },
@@ -552,79 +567,84 @@
       "رمادي دخاني"
     ],
     "usage": {
-      "goal": "Learn to use common shades & tones 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to shades & tones.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Eggplant", "Periwinkle", "Champagne"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Eggplant, Periwinkle, Champagne. The selected item or situation is best described as eggplant.",
+          "scenario": "Dina's order uses eggplant for a very dark purple cover. Periwinkle is light blue-purple; champagne here names a warm pale beige.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which name describes the dark purple cover?",
             "options": ["Eggplant", "Periwinkle", "Champagne"],
             "expectedAnswer": "Eggplant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Eggplant, Periwinkle, Champagne. The selected item or situation is best described as eggplant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Eggplant, Periwinkle, Champagne in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Very dark purple cloth, no vegetable or beverage substituted for color meaning. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sand", "Smoke"],
-          "scenario": "An adult compares three possible descriptions in a shades & tones context: Sand, Smoke, Eggplant. The selected item or situation is best described as sand.",
+          "scenario": "Dina chooses sand, a light tan color. Smoke names a gray shade in this sample range.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which color name does Dina choose for the cover?",
             "options": ["Sand", "Smoke", "Eggplant"],
             "expectedAnswer": "Sand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a shades & tones context illustrating this situation: An adult compares three possible descriptions in a shades & tones context: Sand, Smoke, Eggplant. The selected item or situation is best described as sand. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult shades & tones scene showing lesson-related items or actions including Sand, Smoke in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Light tan cloth swatch under neutral lighting; no beach or smoke scene. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Shades & Tones: Notice-Style Text",
-      "text": "Maya is in a situation connected to shades & tones. She uses the new words to understand what she sees and what happens next. The learner compares eggplant, periwinkle, and champagne, noticing differences in appearance, measurement, material, or texture. The learner compares sand and smoke, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Shades & Tones. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading the final color order",
+      "text": "The final order has five color names. Eggplant describes a very dark purple, and periwinkle a light blue-purple. Champagne is a warm pale beige color in this order. Sand is a light tan, while smoke is a gray shade. Dina orders a sand-colored cover. She keeps the written name with the sample so that she can ask the shop about the same shade later.",
+      "imageBrief": "Support for Reading the final color order. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Eggplant, Periwinkle, Champagne. The selected item or situation is best described as eggplant.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina's order uses eggplant for a very dark purple cover. Periwinkle is light blue-purple; champagne here names a warm pale beige.\nWhich name describes the dark purple cover?",
         "answer": "Eggplant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a shades & tones context: Sand, Smoke, Eggplant. The selected item or situation is best described as sand.\nWhich description best fits the selected item or situation?",
+        "prompt": "Dina chooses sand, a light tan color. Smoke names a gray shade in this sample range.\nWhich color name does Dina choose for the cover?",
         "answer": "Sand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Eggplant"
+        "prompt": "The final order has five color names. Eggplant describes a very dark purple, and periwinkle a light blue-purple. Champagne is a warm pale beige color in this order. Sand is a light tan, while smoke is a gray shade. Dina orders a sand-colored cover. She keeps the written name with the sample so that she can ask the shop about the same shade later.\nWhy does Dina keep the written name with the sample?",
+        "answer": "To ask about the same shade later.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Champagne"
+        "prompt": "Explain the difference between “Eggplant” and “Periwinkle” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ivory” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Eggplant” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina's order uses eggplant for a very dark purple cover. Periwinkle is light blue-purple; champagne here names a warm pale beige.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Shades & Tones: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading the final color order",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The final order has five color names. Eggplant describes a very dark purple, and periwinkle a light blue-purple. Champagne is a warm pale beige color in this order. Sand is a light tan, while smoke is a gray shade. Dina orders a sand-colored cover. She keeps the written name with the sample so that she can ask the shop about the same shade later. Ask: Why does Dina keep the written name with the sample?"
     },
     "spacedReview": "1 lesson(s) back: Ivory, Cream from shades-tones-3\n3 lesson(s) back: Crimson, Scarlet from shades-tones-1\n7 lesson(s) back: Talk, Speak from communication-verbs-1"
   }

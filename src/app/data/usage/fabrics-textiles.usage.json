@@ -40,140 +40,126 @@
       "بوليستر",
       "نايلون",
       "أكريليك",
-      "سباندكس",
+      "ألياف سباندكس",
       "رايون"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cotton", "Silk", "Wool", "Linen"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cotton, Silk, Wool, and Linen and choose the option that fits the situation.",
+          "scenario": "The declared sample is cotton, made from cotton-plant fibers. The list separately identifies silk, sheep wool and flax linen.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which declared sample uses cotton-plant fibers?",
             "options": ["Cotton", "Silk", "Wool"],
             "expectedAnswer": "Cotton"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Cotton as the central item; include Cotton, Silk, and Wool naturally where visually appropriate, but make the real-world use of Cotton the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A plain cotton swatch with visible weave; botanical fiber identity is supplied by the composition record. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cashmere", "Hemp", "Bamboo", "Jute"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cashmere, Hemp, Bamboo, and Jute and choose the option that fits the situation.",
+          "scenario": "The next record names cashmere from qualifying goat hair. Hemp and jute are plant fibers; the bamboo description is clarified as rayon made from bamboo-derived cellulose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named fiber concerns the qualifying goat hair?",
             "options": ["Cashmere", "Hemp", "Bamboo"],
             "expectedAnswer": "Cashmere"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Cashmere as the central item; include Cashmere, Hemp, and Bamboo naturally where visually appropriate, but make the real-world use of Cashmere the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A soft folded fabric swatch; hold exact-fiber visual approval without diagnostic evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mohair", "Alpaca", "Polyester", "Nylon"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mohair, Alpaca, Polyester, and Nylon and choose the option that fits the situation.",
+          "scenario": "The record assigns the Angora-goat fiber to mohair. Alpaca comes from alpacas; polyester and nylon are synthetic fibers.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which fiber comes from Angora goats?",
             "options": ["Mohair", "Alpaca", "Polyester"],
             "expectedAnswer": "Mohair"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Mohair as the central item; include Mohair, Alpaca, and Polyester naturally where visually appropriate, but make the real-world use of Mohair the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A fuzzy textile swatch; the written record supplies mohair identity, not appearance alone. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Acrylic", "Spandex", "Rayon"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acrylic, Spandex, and Rayon and choose the option that fits the situation.",
+          "scenario": "Acrylic is the named synthetic fiber in this sample. Spandex is elastic synthetic fiber, while rayon is made from processed cellulose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named synthetic fiber is assigned to this sample?",
             "options": ["Acrylic", "Spandex", "Rayon"],
             "expectedAnswer": "Acrylic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Acrylic as the central item; include Acrylic, Spandex, and Rayon naturally where visually appropriate, but make the real-world use of Acrylic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An unlettered fabric swatch with a simple background; exact chemistry cannot be proved visually. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Fabrics & Textiles",
-      "text": "At the fabrics & textiles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cotton, Silk, Wool, and Linen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cashmere, Hemp, Bamboo, and Jute. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mohair, Alpaca, Polyester, and Nylon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Acrylic, Spandex, and Rayon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fabrics & Textiles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading fiber descriptions",
+      "text": "At a textile workshop, Rami separates fiber names from weave names. Cotton comes from cotton plants, silk from silk-producing larvae, wool from sheep, and linen from flax. Cashmere concerns qualifying goat hair; it is not a synonym for any soft cloth. Hemp and jute are plant fibers. A bamboo description needs clarification because many such textiles are rayon made from bamboo-derived cellulose. Mohair comes from Angora goats, whereas alpaca fiber comes from alpacas. Polyester, nylon, acrylic and spandex are synthetic fiber names. Rayon is manufactured from processed cellulose. Rami checks the declared composition before interpreting a sample. Color and softness cannot establish the fiber, and blends may contain several fibers. The workshop compares terminology rather than identifies an unknown sample from a photograph.",
+      "imageBrief": "Support for Reading fiber descriptions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cotton, Silk, Wool, and Linen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The declared sample is cotton, made from cotton-plant fibers. The list separately identifies silk, sheep wool and flax linen.\nWhich declared sample uses cotton-plant fibers?",
         "answer": "Cotton",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cashmere, Hemp, Bamboo, and Jute and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The next record names cashmere from qualifying goat hair. Hemp and jute are plant fibers; the bamboo description is clarified as rayon made from bamboo-derived cellulose.\nWhich named fiber concerns the qualifying goat hair?",
         "answer": "Cashmere",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mohair, Alpaca, Polyester, and Nylon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The record assigns the Angora-goat fiber to mohair. Alpaca comes from alpacas; polyester and nylon are synthetic fibers.\nWhich fiber comes from Angora goats?",
         "answer": "Mohair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acrylic, Spandex, and Rayon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Acrylic is the named synthetic fiber in this sample. Spandex is elastic synthetic fiber, while rayon is made from processed cellulose.\nWhich named synthetic fiber is assigned to this sample?",
         "answer": "Acrylic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At a textile workshop, Rami separates fiber names from weave names. Cotton comes from cotton plants, silk from silk-producing larvae, wool from sheep, and linen from flax. Cashmere concerns qualifying goat hair; it is not a synonym for any soft cloth. Hemp and jute are plant fibers. A bamboo description needs clarification because many such textiles are rayon made from bamboo-derived cellulose. Mohair comes from Angora goats, whereas alpaca fiber comes from alpacas. Polyester, nylon, acrylic and spandex are synthetic fiber names. Rayon is manufactured from processed cellulose. Rami checks the declared composition before interpreting a sample. Color and softness cannot establish the fiber, and blends may contain several fibers. The workshop compares terminology rather than identifies an unknown sample from a photograph.\nWhy does Rami check the declared composition?",
+        "answer": "Color and softness do not establish fiber identity, and fabrics may be blends.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Cotton"
+        "prompt": "Explain the difference between “Cotton” and “Silk” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Wool"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Fashion Designer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fabrics & textiles task. Use Cotton, Silk, Wool, Linen, Cashmere, Hemp, Bamboo, Jute, Mohair, Alpaca, Polyester, Nylon, Acrylic, Spandex, and Rayon in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Cotton” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The declared sample is cotton, made from cotton-plant fibers. The list separately identifies silk, sheep wool and flax linen.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fabrics & Textiles: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading fiber descriptions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a textile workshop, Rami separates fiber names from weave names. Cotton comes from cotton plants, silk from silk-producing larvae, wool from sheep, and linen from flax. Cashmere concerns qualifying goat hair; it is not a synonym for any soft cloth. Hemp and jute are plant fibers. A bamboo description needs clarification because many such textiles are rayon made from bamboo-derived cellulose. Mohair comes from Angora goats, whereas alpaca fiber comes from alpacas. Polyester, nylon, acrylic and spandex are synthetic fiber names. Rayon is manufactured from processed cellulose. Rami checks the declared composition before interpreting a sample. Color and softness cannot establish the fiber, and blends may contain several fibers. The workshop compares terminology rather than identifies an unknown sample from a photograph. Ask: Why does Rami check the declared composition?"
     },
     "spacedReview": "1 lesson(s) back: Fashion Designer, Seamstress from fashion-atelier-3\n3 lesson(s) back: Sewing Machine, Dress Form from fashion-atelier-1\n7 lesson(s) back: Dome, Arch from architecture-styles-3"
   },
@@ -211,7 +197,7 @@
       "كيفلار",
       "نيوبرين",
       "مخمل",
-      "ساتان",
+      "نسيج ساتان",
       "شيفون",
       "أورجانزا",
       "تفتا",
@@ -222,136 +208,122 @@
       "دانتيل"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lycra", "Microfiber", "Gore-Tex", "Kevlar"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lycra, Microfiber, Gore-Tex, and Kevlar and choose the option that fits the situation.",
+          "scenario": "The workshop identifies Lycra as an elastane-fiber trademark. Microfiber describes fineness; Gore-Tex and Kevlar are other material trademarks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which name is the elastane-fiber trademark?",
             "options": ["Lycra", "Microfiber", "Gore-Tex"],
             "expectedAnswer": "Lycra"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Lycra as the central item; include Lycra, Microfiber, and Gore-Tex naturally where visually appropriate, but make the real-world use of Lycra the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An unbranded stretch-fabric swatch; trademark authenticity cannot be shown and no logo is permitted. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Neoprene", "Velvet", "Satin", "Chiffon"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Neoprene, Velvet, Satin, and Chiffon and choose the option that fits the situation.",
+          "scenario": "Neoprene is synthetic rubber. Velvet has pile, satin describes a smooth-faced weave, and chiffon is lightweight and sheer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material is synthetic rubber?",
             "options": ["Neoprene", "Velvet", "Satin"],
             "expectedAnswer": "Neoprene"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Neoprene as the central item; include Neoprene, Velvet, and Satin naturally where visually appropriate, but make the real-world use of Neoprene the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A cut neoprene-style sheet with its foam-like cross-section visible; chemistry remains a written fact. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Organza", "Taffeta", "Brocade", "Jacquard"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organza, Taffeta, Brocade, and Jacquard and choose the option that fits the situation.",
+          "scenario": "Rami compares crisp sheer organza with taffeta, brocade and Jacquard-patterned fabric. Organza is the sheer sample identified in the supplied record.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named sample is crisp and sheer?",
             "options": ["Organza", "Taffeta", "Brocade"],
             "expectedAnswer": "Organza"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Organza as the central item; include Organza, Taffeta, and Brocade naturally where visually appropriate, but make the real-world use of Organza the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One translucent organza-style swatch with a crisp folded edge; no exact-fiber claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Crepe", "Tulle", "Lace"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crepe, Tulle, and Lace and choose the option that fits the situation.",
+          "scenario": "Crepe is the textured or crinkled fabric in this comparison. Tulle is netting, and lace is an open decorative textile.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named fabric has the textured or crinkled surface?",
             "options": ["Crepe", "Tulle", "Lace"],
             "expectedAnswer": "Crepe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Crepe as the central item; include Crepe, Tulle, and Lace naturally where visually appropriate, but make the real-world use of Crepe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One crepe-fabric swatch with clearly visible crinkled texture, no labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Fabrics & Textiles",
-      "text": "At the fabrics & textiles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lycra, Microfiber, Gore-Tex, and Kevlar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Neoprene, Velvet, Satin, and Chiffon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Organza, Taffeta, Brocade, and Jacquard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crepe, Tulle, and Lace. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fabrics & Textiles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Distinguishing brands and fabric structures",
+      "text": "Rami finds that fabric descriptions use several kinds of name. Lycra is a trademark for elastane fiber; microfiber describes very fine fibers rather than one specific polymer. Gore-Tex and Kevlar are trademarks associated with different material technologies. Neoprene is synthetic rubber. Velvet has a pile surface, whereas satin describes a weave producing a smooth face and may use different fibers. Chiffon is lightweight and sheer. Organza is a crisp sheer fabric, and taffeta is crisp with a smoother closed surface. Brocade uses patterned weaving, while Jacquard describes a patterning system or the resulting fabric. Crepe has a textured or crinkled appearance. Tulle is netting, and lace has an open decorative structure. Rami asks about composition and construction separately; a branded name alone does not prove a performance claim.",
+      "imageBrief": "Support for Distinguishing brands and fabric structures. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lycra, Microfiber, Gore-Tex, and Kevlar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The workshop identifies Lycra as an elastane-fiber trademark. Microfiber describes fineness; Gore-Tex and Kevlar are other material trademarks.\nWhich name is the elastane-fiber trademark?",
         "answer": "Lycra",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Neoprene, Velvet, Satin, and Chiffon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Neoprene is synthetic rubber. Velvet has pile, satin describes a smooth-faced weave, and chiffon is lightweight and sheer.\nWhich material is synthetic rubber?",
         "answer": "Neoprene",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organza, Taffeta, Brocade, and Jacquard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Rami compares crisp sheer organza with taffeta, brocade and Jacquard-patterned fabric. Organza is the sheer sample identified in the supplied record.\nWhich named sample is crisp and sheer?",
         "answer": "Organza",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crepe, Tulle, and Lace and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Crepe is the textured or crinkled fabric in this comparison. Tulle is netting, and lace is an open decorative textile.\nWhich named fabric has the textured or crinkled surface?",
         "answer": "Crepe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Rami finds that fabric descriptions use several kinds of name. Lycra is a trademark for elastane fiber; microfiber describes very fine fibers rather than one specific polymer. Gore-Tex and Kevlar are trademarks associated with different material technologies. Neoprene is synthetic rubber. Velvet has a pile surface, whereas satin describes a weave producing a smooth face and may use different fibers. Chiffon is lightweight and sheer. Organza is a crisp sheer fabric, and taffeta is crisp with a smoother closed surface. Brocade uses patterned weaving, while Jacquard describes a patterning system or the resulting fabric. Crepe has a textured or crinkled appearance. Tulle is netting, and lace has an open decorative structure. Rami asks about composition and construction separately; a branded name alone does not prove a performance claim.\nWhy are composition and construction separate questions?",
+        "answer": "A fabric structure or trademark does not identify every fiber or establish performance.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Lycra"
+        "prompt": "Explain the difference between “Lycra” and “Microfiber” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Gore-Tex"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cotton” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fabrics & textiles task. Use Lycra, Microfiber, Gore-Tex, Kevlar, Neoprene, Velvet, Satin, Chiffon, Organza, Taffeta, Brocade, Jacquard, Crepe, Tulle, and Lace in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Lycra” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The workshop identifies Lycra as an elastane-fiber trademark. Microfiber describes fineness; Gore-Tex and Kevlar are other material trademarks.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fabrics & Textiles: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Distinguishing brands and fabric structures",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Rami finds that fabric descriptions use several kinds of name. Lycra is a trademark for elastane fiber; microfiber describes very fine fibers rather than one specific polymer. Gore-Tex and Kevlar are trademarks associated with different material technologies. Neoprene is synthetic rubber. Velvet has a pile surface, whereas satin describes a weave producing a smooth face and may use different fibers. Chiffon is lightweight and sheer. Organza is a crisp sheer fabric, and taffeta is crisp with a smoother closed surface. Brocade uses patterned weaving, while Jacquard describes a patterning system or the resulting fabric. Crepe has a textured or crinkled appearance. Tulle is netting, and lace has an open decorative structure. Rami asks about composition and construction separately; a branded name alone does not prove a performance claim. Ask: Why are composition and construction separate questions?"
     },
     "spacedReview": "1 lesson(s) back: Cotton, Silk from fabrics-textiles-1\n3 lesson(s) back: Pin Cushion, Measuring Tape from fashion-atelier-2\n7 lesson(s) back: Contemporary, Traditional from interior-design-1"
   },
@@ -400,136 +372,122 @@
       "يعالج بالبخار"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Weave", "Knit", "Warp", "Weft"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weave, Knit, Warp, and Weft and choose the option that fits the situation.",
+          "scenario": "A weave interlaces yarns, whereas a knit forms loops. Warp is lengthwise yarn in weaving, and weft crosses it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure interlaces yarns rather than forms loops?",
             "options": ["Weave", "Knit", "Warp"],
             "expectedAnswer": "Weave"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Weave as the central item; include Weave, Knit, and Warp naturally where visually appropriate, but make the real-world use of Weave the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A macro view of plain woven cloth with crossing warp and weft clearly visible, no labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Thread Count", "Weight", "Drape", "Stretch"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread Count, Weight, Drape, and Stretch and choose the option that fits the situation.",
+          "scenario": "Thread count is a stated measure of yarn density. Weight concerns mass per area; drape describes hanging behavior, and stretch describes extension.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which measure concerns the yarn density?",
             "options": ["Thread Count", "Weight", "Drape"],
             "expectedAnswer": "Thread Count"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Thread Count as the central item; include Thread Count, Weight, and Drape naturally where visually appropriate, but make the real-world use of Thread Count the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A close view of woven cloth; numerical density comes from the text, no invented measurement. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Breathability", "Durability", "Hand Wash", "Machine Wash"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breathability, Durability, Hand Wash, and Machine Wash and choose the option that fits the situation.",
+          "scenario": "Breathability concerns passage of air or moisture vapor. Durability concerns resistance to wear; hand wash and machine wash name cleaning methods.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which property concerns passage of air or moisture vapor?",
             "options": ["Breathability", "Durability", "Hand Wash"],
             "expectedAnswer": "Breathability"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Breathability through a realistic adult task; include Breathability, Durability, and Hand Wash naturally where visually appropriate, but make the real-world use of Breathability the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A plain fabric sample on a stand; no airflow diagram or unsupported performance claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dry Clean", "Iron", "Steam"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry Clean, Iron, and Steam and choose the option that fits the situation.",
+          "scenario": "Dry clean names a suitable solvent-based cleaning process. Iron and steam name other finishing actions; none is automatically suitable for every garment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which phrase names the solvent-based cleaning process?",
             "options": ["Dry Clean", "Iron", "Steam"],
             "expectedAnswer": "Dry Clean"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Dry Clean as the central item; include Dry Clean, Iron, and Steam naturally where visually appropriate, but make the real-world use of Dry Clean the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A plain closed garment bag in a professional cleaning setting, no invented care instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Fabrics & Textiles",
-      "text": "At the fabrics & textiles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Weave, Knit, Warp, and Weft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Thread Count, Weight, Drape, and Stretch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Breathability, Durability, Hand Wash, and Machine Wash. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dry Clean, Iron, and Steam. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fabrics & Textiles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing construction, properties and care",
+      "text": "Rami examines construction before discussing care. A weave interlaces yarns; a knit forms interconnected loops. Warp runs along the weaving direction, and weft crosses it. Thread count measures yarn density under a stated method, not overall quality by itself. Weight concerns mass per area. Drape describes how fabric hangs, stretch how it extends, and breathability how it permits air or moisture vapor to pass. Durability concerns resistance to wear or damage. Hand wash and machine wash describe different cleaning methods; dry clean uses cleaning solvents in an appropriate professional process. Iron and steam concern finishing or refreshing cloth. Rami reads the actual care instructions rather than assumes one method suits every fiber, garment finish or blend. The workshop provides vocabulary, not a care procedure for an unknown item.",
+      "imageBrief": "Support for Comparing construction, properties and care. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Weave, Knit, Warp, and Weft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A weave interlaces yarns, whereas a knit forms loops. Warp is lengthwise yarn in weaving, and weft crosses it.\nWhich structure interlaces yarns rather than forms loops?",
         "answer": "Weave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thread Count, Weight, Drape, and Stretch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Thread count is a stated measure of yarn density. Weight concerns mass per area; drape describes hanging behavior, and stretch describes extension.\nWhich measure concerns the yarn density?",
         "answer": "Thread Count",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Breathability, Durability, Hand Wash, and Machine Wash and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Breathability concerns passage of air or moisture vapor. Durability concerns resistance to wear; hand wash and machine wash name cleaning methods.\nWhich property concerns passage of air or moisture vapor?",
         "answer": "Breathability",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry Clean, Iron, and Steam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dry clean names a suitable solvent-based cleaning process. Iron and steam name other finishing actions; none is automatically suitable for every garment.\nWhich phrase names the solvent-based cleaning process?",
         "answer": "Dry Clean",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Rami examines construction before discussing care. A weave interlaces yarns; a knit forms interconnected loops. Warp runs along the weaving direction, and weft crosses it. Thread count measures yarn density under a stated method, not overall quality by itself. Weight concerns mass per area. Drape describes how fabric hangs, stretch how it extends, and breathability how it permits air or moisture vapor to pass. Durability concerns resistance to wear or damage. Hand wash and machine wash describe different cleaning methods; dry clean uses cleaning solvents in an appropriate professional process. Iron and steam concern finishing or refreshing cloth. Rami reads the actual care instructions rather than assumes one method suits every fiber, garment finish or blend. The workshop provides vocabulary, not a care procedure for an unknown item.\nDoes a high thread count establish overall quality?",
+        "answer": "No; it is one density measure rather than a complete quality assessment.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Weave"
+        "prompt": "Explain the difference between “Weave” and “Knit” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Warp"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lycra” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fabrics & textiles task. Use Weave, Knit, Warp, Weft, Thread Count, Weight, Drape, Stretch, Breathability, Durability, Hand Wash, Machine Wash, Dry Clean, Iron, and Steam in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Weave” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: A weave interlaces yarns, whereas a knit forms loops. Warp is lengthwise yarn in weaving, and weft crosses it.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fabrics & Textiles: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing construction, properties and care",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Rami examines construction before discussing care. A weave interlaces yarns; a knit forms interconnected loops. Warp runs along the weaving direction, and weft crosses it. Thread count measures yarn density under a stated method, not overall quality by itself. Weight concerns mass per area. Drape describes how fabric hangs, stretch how it extends, and breathability how it permits air or moisture vapor to pass. Durability concerns resistance to wear or damage. Hand wash and machine wash describe different cleaning methods; dry clean uses cleaning solvents in an appropriate professional process. Iron and steam concern finishing or refreshing cloth. Rami reads the actual care instructions rather than assumes one method suits every fiber, garment finish or blend. The workshop provides vocabulary, not a care procedure for an unknown item. Ask: Does a high thread count establish overall quality?"
     },
     "spacedReview": "1 lesson(s) back: Lycra, Microfiber from fabrics-textiles-2\n3 lesson(s) back: Fashion Designer, Seamstress from fashion-atelier-3\n7 lesson(s) back: Hardwood, Carpet from interior-design-2"
   },
@@ -552,98 +510,84 @@
       "منعّم أقمشة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bleach", "Tumble Dry", "Line Dry", "Stain Removal"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bleach, Tumble Dry, Line Dry, and Stain Removal and choose the option that fits the situation.",
+          "scenario": "Bleach names treatment with a bleaching agent in this worksheet. Tumble dry uses a rotating dryer, line dry uses hanging, and stain removal concerns unwanted marks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names treatment with a bleaching agent?",
             "options": ["Bleach", "Tumble Dry", "Line Dry"],
             "expectedAnswer": "Bleach"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Bleach as the central item; include Bleach, Tumble Dry, and Line Dry naturally where visually appropriate, but make the real-world use of Bleach the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One closed plain laundry bottle; the text supplies product identity, no chemical combinations. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fabric Softener"],
-          "scenario": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric Softener and choose the option that fits the situation.",
+          "scenario": "Fabric softener is the product intended to change washed fabric's feel. Its suitability depends on the item's and product's instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which laundry product concerns the fabric's feel?",
             "options": ["Fabric Softener", "Bleach", "Tumble Dry"],
             "expectedAnswer": "Fabric Softener"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Fabric Softener as the central item; include Fabric Softener, Bleach, and Tumble Dry naturally where visually appropriate, but make the real-world use of Fabric Softener the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One closed unbranded laundry-product bottle; no invented chemical contents or care instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Fabrics & Textiles",
-      "text": "At the fabrics & textiles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bleach, Tumble Dry, Line Dry, and Stain Removal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fabric Softener. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fabrics & Textiles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Interpreting laundry terms",
+      "text": "Rami reads five terms on a fictional care worksheet. Bleach can mean treating cloth with a bleaching agent, but suitability depends on the actual instructions. Tumble dry means using a rotating dryer; line dry means hanging an item to dry. Stain removal concerns dealing with an unwanted mark, rather than one universal chemical or method. Fabric softener is a laundry product intended to change the fabric's feel. Rami does not combine these actions into a recipe. He asks which instructions belong to the specific garment and checks the product information. A bottle's appearance cannot identify its chemical contents, and a fabric photograph does not establish safe care. The vocabulary helps him ask clearer questions before acting.",
+      "imageBrief": "Support for Interpreting laundry terms. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bleach, Tumble Dry, Line Dry, and Stain Removal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Bleach names treatment with a bleaching agent in this worksheet. Tumble dry uses a rotating dryer, line dry uses hanging, and stain removal concerns unwanted marks.\nWhich term names treatment with a bleaching agent?",
         "answer": "Bleach",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fabrics & textiles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fabric Softener and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Fabric softener is the product intended to change washed fabric's feel. Its suitability depends on the item's and product's instructions.\nWhich laundry product concerns the fabric's feel?",
         "answer": "Fabric Softener",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Rami reads five terms on a fictional care worksheet. Bleach can mean treating cloth with a bleaching agent, but suitability depends on the actual instructions. Tumble dry means using a rotating dryer; line dry means hanging an item to dry. Stain removal concerns dealing with an unwanted mark, rather than one universal chemical or method. Fabric softener is a laundry product intended to change the fabric's feel. Rami does not combine these actions into a recipe. He asks which instructions belong to the specific garment and checks the product information. A bottle's appearance cannot identify its chemical contents, and a fabric photograph does not establish safe care. The vocabulary helps him ask clearer questions before acting.\nWhy does Rami avoid combining the terms into a recipe?",
+        "answer": "They name different actions or products whose suitability depends on the item and instructions.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Bleach"
+        "prompt": "Explain the difference between “Bleach” and “Tumble Dry” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Line Dry"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Weave” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fabrics & textiles task. Use Bleach, Tumble Dry, Line Dry, Stain Removal, and Fabric Softener in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Bleach” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Bleach names treatment with a bleaching agent in this worksheet. Tumble dry uses a rotating dryer, line dry uses hanging, and stain removal concerns unwanted marks.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fabrics & Textiles: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Interpreting laundry terms",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Rami reads five terms on a fictional care worksheet. Bleach can mean treating cloth with a bleaching agent, but suitability depends on the actual instructions. Tumble dry means using a rotating dryer; line dry means hanging an item to dry. Stain removal concerns dealing with an unwanted mark, rather than one universal chemical or method. Fabric softener is a laundry product intended to change the fabric's feel. Rami does not combine these actions into a recipe. He asks which instructions belong to the specific garment and checks the product information. A bottle's appearance cannot identify its chemical contents, and a fabric photograph does not establish safe care. The vocabulary helps him ask clearer questions before acting. Ask: Why does Rami avoid combining the terms into a recipe?"
     },
     "spacedReview": "1 lesson(s) back: Weave, Knit from fabrics-textiles-3\n3 lesson(s) back: Cotton, Silk from fabrics-textiles-1\n7 lesson(s) back: Area Rug, Curtains from interior-design-3"
   }

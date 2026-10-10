@@ -36,143 +36,142 @@
       "بواب",
       "ثريا",
       "أريكة",
-      "زهرية (فازة)",
+      "مزهرية",
       "سرير",
-      "وسادة / مخدة",
+      "وسادة",
       "بطانية",
-      "طاولة السرير (كمودينة)",
-      "مصباح (أباجورة)"
+      "منضدة بجانب السرير",
+      "مصباح"
     ],
     "usage": {
-      "goal": "Learn to use the hotel 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify a stated hotel request, room item, facility or staff role.",
+      "canDoStatement": "Can follow a supported hotel stay account and ask about practical details. Specialist accommodation names extend the supported task level; facilities, access and prices vary.",
+      "textType": "hotel-stay-account",
+      "readingTarget": "Supported connected adult hotel stay",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Front Desk", "Lobby", "Receptionist"],
-          "scenario": "During a routine travel task, an adult compares Front Desk, Lobby, Receptionist. The option needed for the next step is Front Desk.",
+          "scenario": "Maya crosses the lobby to the front desk. The receptionist checks her booking and answers questions. The lobby is the entrance area, the desk is the service point and the receptionist is the person helping her.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who checks Maya’s booking?",
             "options": ["Front Desk", "Lobby", "Receptionist"],
-            "expectedAnswer": "Front Desk"
+            "expectedAnswer": "Receptionist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Front Desk, Lobby, Receptionist. The option needed for the next step is Front Desk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Front Desk, Lobby, Receptionist in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Maya crosses the lobby to the front desk. The receptionist checks her booking and answers questions. The lobby is the entrance area, the desk is the service point and the receptionist is the person helping her. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bell", "Key Card", "Luggage Cart"],
-          "scenario": "During a routine travel task, an adult compares Bell, Key Card, Luggage Cart. The option needed for the next step is Bell.",
+          "scenario": "Omar places bags on a luggage cart. A key card unlocks their room, while a desk bell attracts staff attention when appropriate. Maya needs the item for opening the room, rather than moving bags or making a sound.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item opens the room?",
             "options": ["Bell", "Key Card", "Luggage Cart"],
-            "expectedAnswer": "Bell"
+            "expectedAnswer": "Key Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Bell, Key Card, Luggage Cart. The option needed for the next step is Bell. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Bell, Key Card, Luggage Cart in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Omar places bags on a luggage cart. A key card unlocks their room, while a desk bell attracts staff attention when appropriate. Maya needs the item for opening the room, rather than moving bags or making a sound. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Doorman", "Chandelier", "Sofa"],
-          "scenario": "During a routine travel task, an adult compares Doorman, Chandelier, Sofa. The option needed for the next step is Doorman.",
+          "scenario": "A doorman assists guests at the entrance; the historical job label does not establish the worker’s gender. A chandelier hangs from the ceiling, and a sofa provides seating. Omar chooses to sit while the room is confirmed.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item provides seating?",
             "options": ["Doorman", "Chandelier", "Sofa"],
-            "expectedAnswer": "Doorman"
+            "expectedAnswer": "Sofa"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Doorman, Chandelier, Sofa. The option needed for the next step is Doorman. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Doorman, Chandelier, Sofa in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A doorman assists guests at the entrance; the historical job label does not establish the worker’s gender. A chandelier hangs from the ceiling, and a sofa provides seating. Omar chooses to sit while the room is confirmed. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Vase", "Bed", "Pillow"],
-          "scenario": "During a routine travel task, an adult compares Vase, Bed, Pillow. The option needed for the next step is Vase.",
+          "scenario": "In the room, a vase holds flowers on a table. The bed is for sleeping, with a pillow supporting the head. Maya needs the soft support rather than the flower container.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item supports the head?",
             "options": ["Vase", "Bed", "Pillow"],
-            "expectedAnswer": "Vase"
+            "expectedAnswer": "Pillow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Vase, Bed, Pillow. The option needed for the next step is Vase. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Vase, Bed, Pillow in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: In the room, a vase holds flowers on a table. The bed is for sleeping, with a pillow supporting the head. Maya needs the soft support rather than the flower container. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Blanket", "Nightstand", "Lamp"],
-          "scenario": "During a routine travel task, an adult compares Blanket, Nightstand, Lamp. The option needed for the next step is Blanket.",
+          "scenario": "A blanket covers the bed for warmth. The nightstand is a small table beside the bed, and its lamp provides light. Maya puts her book on the bedside table.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item holds Maya’s book?",
             "options": ["Blanket", "Nightstand", "Lamp"],
-            "expectedAnswer": "Blanket"
+            "expectedAnswer": "Nightstand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Blanket, Nightstand, Lamp. The option needed for the next step is Blanket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Blanket, Nightstand, Lamp in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A blanket covers the bed for warmth. The nightstand is a small table beside the bed, and its lamp provides light. Maya puts her book on the bedside table. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hotel 1: A short reading",
-      "text": "Maya arrives at the hotel and walks through the lobby to the front desk. The receptionist checks her booking and gives her a key card. Omar puts their bags on a luggage cart. They wait on a sofa while the room is confirmed. Then the receptionist explains how to find the elevator.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Arrival at the front desk",
+      "text": "Maya arrives at the hotel and walks through the lobby to the front desk. The receptionist checks her booking and gives her a key card. Omar puts their bags on a luggage cart. They wait on a sofa while the room is confirmed. A doorman assists at the entrance beneath a chandelier. In the room, a vase holds flowers away from the bed. A pillow supports Maya’s head and a blanket provides warmth. She puts her book on the nightstand and switches on its lamp. The account states staff roles rather than inferring them from clothing.",
+      "imageBrief": "Photorealistic adult hotel visit: Maya crosses the lobby to the front desk. The receptionist checks her booking and answers questions. The lobby is the entrance area, the desk is the service point and the receptionist is the person helping her. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Front Desk, Lobby, Receptionist. The option needed for the next step is Front Desk.\nWhich option is needed for the next step in the journey?",
-        "answer": "Front Desk",
+        "prompt": "Maya crosses the lobby to the front desk. The receptionist checks her booking and answers questions. The lobby is the entrance area, the desk is the service point and the receptionist is the person helping her.\nWho checks Maya’s booking?",
+        "answer": "Receptionist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Bell, Key Card, Luggage Cart. The option needed for the next step is Bell.\nWhich option is needed for the next step in the journey?",
-        "answer": "Bell",
+        "prompt": "Omar places bags on a luggage cart. A key card unlocks their room, while a desk bell attracts staff attention when appropriate. Maya needs the item for opening the room, rather than moving bags or making a sound.\nWhich item opens the room?",
+        "answer": "Key Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Doorman, Chandelier, Sofa. The option needed for the next step is Doorman.\nWhich option is needed for the next step in the journey?",
-        "answer": "Doorman",
+        "prompt": "A doorman assists guests at the entrance; the historical job label does not establish the worker’s gender. A chandelier hangs from the ceiling, and a sofa provides seating. Omar chooses to sit while the room is confirmed.\nWhich item provides seating?",
+        "answer": "Sofa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Vase, Bed, Pillow. The option needed for the next step is Vase.\nWhich option is needed for the next step in the journey?",
-        "answer": "Vase",
+        "prompt": "In the room, a vase holds flowers on a table. The bed is for sleeping, with a pillow supporting the head. Maya needs the soft support rather than the flower container.\nWhich item supports the head?",
+        "answer": "Pillow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Blanket, Nightstand, Lamp. The option needed for the next step is Blanket.\nWhich option is needed for the next step in the journey?",
-        "answer": "Blanket",
+        "prompt": "A blanket covers the bed for warmth. The nightstand is a small table beside the bed, and its lamp provides light. Maya puts her book on the bedside table.\nWhich item holds Maya’s book?",
+        "answer": "Nightstand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Timer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does the receptionist give Maya?",
-        "answer": "A key card",
+        "prompt": "Maya arrives at the hotel and walks through the lobby to the front desk. The receptionist checks her booking and gives her a key card. Omar puts their bags on a luggage cart. They wait on a sofa while the room is confirmed. A doorman assists at the entrance beneath a chandelier. In the room, a vase holds flowers away from the bed. A pillow supports Maya’s head and a blanket provides warmth. She puts her book on the nightstand and switches on its lamp. The account states staff roles rather than inferring them from clothing.\nWho checks Maya’s booking?",
+        "answer": "The receptionist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Explain a practical distinction using Front Desk and Lobby.",
+        "answer": "The front desk is the service point, while the lobby is the entrance area.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hotel: In Context",
-      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Arrival at the front desk",
+      "idea": "Read this adult hotel account and pause on a stated request or distinction. Do not show private booking information or electrical/roof/pool misuse; service terms are established in text.",
+      "scriptStarter": "Maya crosses the lobby to the front desk. The receptionist checks her booking and answers questions. The lobby is the entrance area, the desk is the service point and the receptionist is the person helping her."
     },
     "spacedReview": "1 lesson(s) back: Timer, Drain from car-wash-4\n3 lesson(s) back: Vacuum, Air Freshener from car-wash-2\n7 lesson(s) back: Pole, Map from subway-2"
   },
@@ -212,8 +211,8 @@
       "حوض استحمام",
       "دُش",
       "منشفة",
-      "روب حمام / برنس",
-      "شبشب / خف منزلي",
+      "رداء",
+      "خف منزلي",
       "صابون",
       "شامبو",
       "مرآة",
@@ -221,135 +220,134 @@
       "مرحاض"
     ],
     "usage": {
-      "goal": "Learn to use the hotel 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify a stated hotel request, room item, facility or staff role.",
+      "canDoStatement": "Can follow a supported hotel stay account and ask about practical details. Specialist accommodation names extend the supported task level; facilities, access and prices vary.",
+      "textType": "hotel-stay-account",
+      "readingTarget": "Supported connected adult hotel stay",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Closet", "Safe", "Mini Bar"],
-          "scenario": "During a routine travel task, an adult compares Closet, Safe, Mini Bar. The option needed for the next step is Closet.",
+          "scenario": "Omar hangs clothes in the closet. A safe is a lockable valuables box, while a mini bar holds room snacks or drinks that may cost extra. He asks about charges before taking anything from the mini bar.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item is a lockable valuables box?",
             "options": ["Closet", "Safe", "Mini Bar"],
-            "expectedAnswer": "Closet"
+            "expectedAnswer": "Safe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Closet, Safe, Mini Bar. The option needed for the next step is Closet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Closet, Safe, Mini Bar in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Omar hangs clothes in the closet. A safe is a lockable valuables box, while a mini bar holds room snacks or drinks that may cost extra. He asks about charges before taking anything from the mini bar. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Iron", "Hair Dryer", "Bathtub"],
-          "scenario": "During a routine travel task, an adult compares Iron, Hair Dryer, Bathtub. The option needed for the next step is Iron.",
+          "scenario": "An iron smooths suitable clothing, a hair dryer blows air for drying hair and a bathtub holds water for bathing. The electrical devices remain away from water in the room tour. Omar asks about the hair device.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item dries hair?",
             "options": ["Iron", "Hair Dryer", "Bathtub"],
-            "expectedAnswer": "Iron"
+            "expectedAnswer": "Hair Dryer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Iron, Hair Dryer, Bathtub. The option needed for the next step is Iron. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Iron, Hair Dryer, Bathtub in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: An iron smooths suitable clothing, a hair dryer blows air for drying hair and a bathtub holds water for bathing. The electrical devices remain away from water in the room tour. Omar asks about the hair device. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Shower", "Towel", "Robe"],
-          "scenario": "During a routine travel task, an adult compares Shower, Towel, Robe. The option needed for the next step is Shower.",
+          "scenario": "Maya finds a towel near the shower and a robe on a hook. The shower sprays water for washing; the towel absorbs water. The robe is a loose garment worn before or after bathing.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item absorbs water?",
             "options": ["Shower", "Towel", "Robe"],
-            "expectedAnswer": "Shower"
+            "expectedAnswer": "Towel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Shower, Towel, Robe. The option needed for the next step is Shower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Shower, Towel, Robe in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Maya finds a towel near the shower and a robe on a hook. The shower sprays water for washing; the towel absorbs water. The robe is a loose garment worn before or after bathing. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Slippers", "Soap", "Shampoo"],
-          "scenario": "During a routine travel task, an adult compares Slippers, Soap, Shampoo. The option needed for the next step is Slippers.",
+          "scenario": "Slippers are light indoor footwear. Soap cleans skin, while shampoo cleans hair and scalp. The products’ names do not prove individual suitability, so Maya checks the information before choosing one.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which product is intended for hair and scalp?",
             "options": ["Slippers", "Soap", "Shampoo"],
-            "expectedAnswer": "Slippers"
+            "expectedAnswer": "Shampoo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Slippers, Soap, Shampoo. The option needed for the next step is Slippers. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Slippers, Soap, Shampoo in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Slippers are light indoor footwear. Soap cleans skin, while shampoo cleans hair and scalp. The products’ names do not prove individual suitability, so Maya checks the information before choosing one. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Mirror", "Sink", "Toilet"],
-          "scenario": "During a routine travel task, an adult compares Mirror, Sink, Toilet. The option needed for the next step is Mirror.",
+          "scenario": "Omar sees a mirror above the sink, where he can wash his hands. The toilet is a sanitary fixture for bodily waste. He checks the mirror to see his reflection.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item shows his reflection?",
             "options": ["Mirror", "Sink", "Toilet"],
             "expectedAnswer": "Mirror"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Mirror, Sink, Toilet. The option needed for the next step is Mirror. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Mirror, Sink, Toilet in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Omar sees a mirror above the sink, where he can wash his hands. The toilet is a sanitary fixture for bodily waste. He checks the mirror to see his reflection. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hotel 2: A short reading",
-      "text": "Omar checks the hotel room before unpacking. He hangs clothes in the closet and asks how to use the safe. Maya finds a hair dryer beside the bathroom mirror. There is a towel near the shower and a robe on a hook. They put their bags away and leave space around the bed.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking the room",
+      "text": "Omar checks the hotel room before unpacking. He hangs clothes in the closet and asks about the safe and mini bar charges. Maya finds a hair dryer beside the bathroom mirror. An iron stays away from the bathtub and other water. A towel is near the shower, with a robe and slippers nearby. Soap and shampoo have different intended purposes. The sink is for handwashing, while the toilet is another bathroom fixture. They put their bags away and leave space around the bed. They ask for actual access features rather than relying on a room photograph.",
+      "imageBrief": "Photorealistic adult hotel visit: Omar hangs clothes in the closet. A safe is a lockable valuables box, while a mini bar holds room snacks or drinks that may cost extra. He asks about charges before taking anything from the mini bar. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Closet, Safe, Mini Bar. The option needed for the next step is Closet.\nWhich option is needed for the next step in the journey?",
-        "answer": "Closet",
+        "prompt": "Omar hangs clothes in the closet. A safe is a lockable valuables box, while a mini bar holds room snacks or drinks that may cost extra. He asks about charges before taking anything from the mini bar.\nWhich item is a lockable valuables box?",
+        "answer": "Safe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Iron, Hair Dryer, Bathtub. The option needed for the next step is Iron.\nWhich option is needed for the next step in the journey?",
-        "answer": "Iron",
+        "prompt": "An iron smooths suitable clothing, a hair dryer blows air for drying hair and a bathtub holds water for bathing. The electrical devices remain away from water in the room tour. Omar asks about the hair device.\nWhich item dries hair?",
+        "answer": "Hair Dryer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Shower, Towel, Robe. The option needed for the next step is Shower.\nWhich option is needed for the next step in the journey?",
-        "answer": "Shower",
+        "prompt": "Maya finds a towel near the shower and a robe on a hook. The shower sprays water for washing; the towel absorbs water. The robe is a loose garment worn before or after bathing.\nWhich item absorbs water?",
+        "answer": "Towel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Slippers, Soap, Shampoo. The option needed for the next step is Slippers.\nWhich option is needed for the next step in the journey?",
-        "answer": "Slippers",
+        "prompt": "Slippers are light indoor footwear. Soap cleans skin, while shampoo cleans hair and scalp. The products’ names do not prove individual suitability, so Maya checks the information before choosing one.\nWhich product is intended for hair and scalp?",
+        "answer": "Shampoo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Mirror, Sink, Toilet. The option needed for the next step is Mirror.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Omar sees a mirror above the sink, where he can wash his hands. The toilet is a sanitary fixture for bodily waste. He checks the mirror to see his reflection.\nWhich item shows his reflection?",
         "answer": "Mirror",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Front Desk” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does Omar hang his clothes?",
+        "prompt": "Omar checks the hotel room before unpacking. He hangs clothes in the closet and asks about the safe and mini bar charges. Maya finds a hair dryer beside the bathroom mirror. An iron stays away from the bathtub and other water. A towel is near the shower, with a robe and slippers nearby. Soap and shampoo have different intended purposes. The sink is for handwashing, while the toilet is another bathroom fixture. They put their bags away and leave space around the bed. They ask for actual access features rather than relying on a room photograph.\nWhere does Omar hang clothes?",
         "answer": "In the closet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Explain a practical distinction using Closet and Safe.",
+        "answer": "The closet holds clothes, while the safe is a lockable valuables box.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hotel: In Context",
-      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking the room",
+      "idea": "Read this adult hotel account and pause on a stated request or distinction. Do not show private booking information or electrical/roof/pool misuse; service terms are established in text.",
+      "scriptStarter": "Omar hangs clothes in the closet. A safe is a lockable valuables box, while a mini bar holds room snacks or drinks that may cost extra. He asks about charges before taking anything from the mini bar."
     },
     "spacedReview": "1 lesson(s) back: Front Desk, Lobby from hotel-1\n3 lesson(s) back: Hood, Roof from car-wash-3\n7 lesson(s) back: Line Map, Direction Sign from subway-3"
   },
@@ -384,10 +382,10 @@
       "مسبح",
       "صالة رياضية",
       "مركز استرخاء وعناية",
-      "-",
+      "مطعم",
       "حانة",
       "سطح",
-      "-",
+      "حديقة",
       "قاعة اجتماعات",
       "مركز أعمال",
       "خدمة غسل الملابس",
@@ -398,135 +396,134 @@
       "خدمة تنظيف الغرف"
     ],
     "usage": {
-      "goal": "Learn to use the hotel 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify a stated hotel request, room item, facility or staff role.",
+      "canDoStatement": "Can follow a supported hotel stay account and ask about practical details. Specialist accommodation names extend the supported task level; facilities, access and prices vary.",
+      "textType": "hotel-stay-account",
+      "readingTarget": "Supported connected adult hotel stay",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Swimming Pool", "Gym", "Spa"],
-          "scenario": "During a routine travel task, an adult compares Swimming Pool, Gym, Spa. The option needed for the next step is Swimming Pool.",
+          "scenario": "The hotel lists a swimming pool, gym and spa. The pool is for swimming, the gym has exercise facilities, and the spa offers relaxation or personal-care services. Their opening times and access may differ; none is assumed included in the room price.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which facility is for swimming?",
             "options": ["Swimming Pool", "Gym", "Spa"],
             "expectedAnswer": "Swimming Pool"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Swimming Pool, Gym, Spa. The option needed for the next step is Swimming Pool. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Swimming Pool, Gym, Spa in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: The hotel lists a swimming pool, gym and spa. The pool is for swimming, the gym has exercise facilities, and the spa offers relaxation or personal-care services. Their opening times and access may differ; none is assumed included in the room price. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Restaurant", "Bar", "Rooftop"],
-          "scenario": "During a routine travel task, an adult compares Restaurant, Bar, Rooftop. The option needed for the next step is Restaurant.",
+          "scenario": "The restaurant serves meals, while the bar serves drinks, including possible non-alcoholic choices. The rooftop is the building’s upper outside area, accessible only where the hotel permits. Maya asks for a meal rather than rooftop access.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which facility matches the meal request?",
             "options": ["Restaurant", "Bar", "Rooftop"],
             "expectedAnswer": "Restaurant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Restaurant, Bar, Rooftop. The option needed for the next step is Restaurant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Restaurant, Bar, Rooftop in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: The restaurant serves meals, while the bar serves drinks, including possible non-alcoholic choices. The rooftop is the building’s upper outside area, accessible only where the hotel permits. Maya asks for a meal rather than rooftop access. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Garden", "Conference Room", "Business Center"],
-          "scenario": "During a routine travel task, an adult compares Garden, Conference Room, Business Center. The option needed for the next step is Garden.",
+          "scenario": "A garden provides planted outdoor space. Omar needs the business center to print permitted notes before his meeting in the conference room. The work facility and meeting room have different purposes.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which place does Omar use for printing?",
             "options": ["Garden", "Conference Room", "Business Center"],
-            "expectedAnswer": "Garden"
+            "expectedAnswer": "Business Center"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Garden, Conference Room, Business Center. The option needed for the next step is Garden. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Garden, Conference Room, Business Center in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A garden provides planted outdoor space. Omar needs the business center to print permitted notes before his meeting in the conference room. The work facility and meeting room have different purposes. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Laundry", "Room Service", "Wake Up Call"],
-          "scenario": "During a routine travel task, an adult compares Laundry, Room Service, Wake Up Call. The option needed for the next step is Laundry.",
+          "scenario": "Maya asks about laundry for washing clothes, room service for delivery to the room and a wake up call at a requested time. In a full sentence, she requests a wake-up call. Charges and availability depend on the hotel.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which service helps her wake at a requested time?",
             "options": ["Laundry", "Room Service", "Wake Up Call"],
-            "expectedAnswer": "Laundry"
+            "expectedAnswer": "Wake Up Call"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Laundry, Room Service, Wake Up Call. The option needed for the next step is Laundry. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Laundry, Room Service, Wake Up Call in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Maya asks about laundry for washing clothes, room service for delivery to the room and a wake up call at a requested time. In a full sentence, she requests a wake-up call. Charges and availability depend on the hotel. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Concierge", "Valet", "Housekeeping"],
-          "scenario": "During a routine travel task, an adult compares Concierge, Valet, Housekeeping. The option needed for the next step is Concierge.",
+          "scenario": "A concierge helps with local information and arrangements. A valet parks or retrieves guest cars, while housekeeping cleans and maintains rooms. Maya needs local information rather than vehicle parking or room cleaning.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which role matches Maya’s request?",
             "options": ["Concierge", "Valet", "Housekeeping"],
             "expectedAnswer": "Concierge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Concierge, Valet, Housekeeping. The option needed for the next step is Concierge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Concierge, Valet, Housekeeping in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A concierge helps with local information and arrangements. A valet parks or retrieves guest cars, while housekeeping cleans and maintains rooms. Maya needs local information rather than vehicle parking or room cleaning. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hotel 3: A short reading",
-      "text": "Maya checks the hotel facilities on a map. The restaurant is near the garden, and the gym is beside the swimming pool. Omar needs the business center before his meeting in the conference room. They agree to meet at the restaurant afterward. The receptionist gives them the opening times for each facility.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Work and hotel services",
+      "text": "Maya checks the hotel facilities on a map. The restaurant is near the garden, and the gym is beside the swimming pool. Omar needs the business center before his meeting in the conference room. Staff also explain the spa, bar and permitted rooftop area without assuming every facility is included. Maya asks about laundry, room service and a wake up call, naturally written a wake-up call in a sentence. A concierge helps with local information, a valet handles guest cars, and housekeeping cleans rooms. The receptionist gives actual opening times and charges before they choose services.",
+      "imageBrief": "Photorealistic adult hotel visit: The hotel lists a swimming pool, gym and spa. The pool is for swimming, the gym has exercise facilities, and the spa offers relaxation or personal-care services. Their opening times and access may differ; none is assumed included in the room price. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Swimming Pool, Gym, Spa. The option needed for the next step is Swimming Pool.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The hotel lists a swimming pool, gym and spa. The pool is for swimming, the gym has exercise facilities, and the spa offers relaxation or personal-care services. Their opening times and access may differ; none is assumed included in the room price.\nWhich facility is for swimming?",
         "answer": "Swimming Pool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Restaurant, Bar, Rooftop. The option needed for the next step is Restaurant.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The restaurant serves meals, while the bar serves drinks, including possible non-alcoholic choices. The rooftop is the building’s upper outside area, accessible only where the hotel permits. Maya asks for a meal rather than rooftop access.\nWhich facility matches the meal request?",
         "answer": "Restaurant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Garden, Conference Room, Business Center. The option needed for the next step is Garden.\nWhich option is needed for the next step in the journey?",
-        "answer": "Garden",
+        "prompt": "A garden provides planted outdoor space. Omar needs the business center to print permitted notes before his meeting in the conference room. The work facility and meeting room have different purposes.\nWhich place does Omar use for printing?",
+        "answer": "Business Center",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Laundry, Room Service, Wake Up Call. The option needed for the next step is Laundry.\nWhich option is needed for the next step in the journey?",
-        "answer": "Laundry",
+        "prompt": "Maya asks about laundry for washing clothes, room service for delivery to the room and a wake up call at a requested time. In a full sentence, she requests a wake-up call. Charges and availability depend on the hotel.\nWhich service helps her wake at a requested time?",
+        "answer": "Wake Up Call",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Concierge, Valet, Housekeeping. The option needed for the next step is Concierge.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A concierge helps with local information and arrangements. A valet parks or retrieves guest cars, while housekeeping cleans and maintains rooms. Maya needs local information rather than vehicle parking or room cleaning.\nWhich role matches Maya’s request?",
         "answer": "Concierge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Closet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where do Maya and Omar agree to meet afterward?",
-        "answer": "At the restaurant",
+        "prompt": "Maya checks the hotel facilities on a map. The restaurant is near the garden, and the gym is beside the swimming pool. Omar needs the business center before his meeting in the conference room. Staff also explain the spa, bar and permitted rooftop area without assuming every facility is included. Maya asks about laundry, room service and a wake up call, naturally written a wake-up call in a sentence. A concierge helps with local information, a valet handles guest cars, and housekeeping cleans rooms. The receptionist gives actual opening times and charges before they choose services.\nWhat does Omar need before his meeting?",
+        "answer": "The business center",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Explain a practical distinction using Swimming Pool and Gym.",
+        "answer": "The swimming pool is for swimming, while the gym has exercise facilities.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hotel: In Context",
-      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Work and hotel services",
+      "idea": "Read this adult hotel account and pause on a stated request or distinction. Do not show private booking information or electrical/roof/pool misuse; service terms are established in text.",
+      "scriptStarter": "The hotel lists a swimming pool, gym and spa. The pool is for swimming, the gym has exercise facilities, and the spa offers relaxation or personal-care services. Their opening times and access may differ; none is assumed included in the room price."
     },
     "spacedReview": "1 lesson(s) back: Closet, Safe from hotel-2\n3 lesson(s) back: Timer, Drain from car-wash-4\n7 lesson(s) back: Conductor, Cleaner from subway-4"
   },
@@ -565,8 +562,8 @@
       "موقف سيارات",
       "غرفة فردية",
       "غرفة مزدوجة",
-      "جناح",
-      "شقة علوية فاخرة",
+      "جناح فندقي",
+      "جناح أو شقة في الطابق العلوي",
       "شرفة",
       "إطلالة",
       "مصعد",
@@ -575,135 +572,134 @@
       "آلة بيع ذاتي"
     ],
     "usage": {
-      "goal": "Learn to use the hotel 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify a stated hotel request, room item, facility or staff role.",
+      "canDoStatement": "Can follow a supported hotel stay account and ask about practical details. Specialist accommodation names extend the supported task level; facilities, access and prices vary.",
+      "textType": "hotel-stay-account",
+      "readingTarget": "Supported connected adult hotel stay",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Breakfast Buffet", "Shuttle", "Tour Desk"],
-          "scenario": "During a routine travel task, an adult compares Breakfast Buffet, Shuttle, Tour Desk. The option needed for the next step is Breakfast Buffet.",
+          "scenario": "Omar asks when the breakfast buffet opens. Maya checks the shuttle’s specified route and asks at the tour desk about a city visit. A shuttle is not automatically an airport service, and a buffet is not automatically included in the rate.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Where does Maya ask about the city visit?",
             "options": ["Breakfast Buffet", "Shuttle", "Tour Desk"],
-            "expectedAnswer": "Breakfast Buffet"
+            "expectedAnswer": "Tour Desk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Breakfast Buffet, Shuttle, Tour Desk. The option needed for the next step is Breakfast Buffet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Breakfast Buffet, Shuttle, Tour Desk in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Omar asks when the breakfast buffet opens. Maya checks the shuttle’s specified route and asks at the tour desk about a city visit. A shuttle is not automatically an airport service, and a buffet is not automatically included in the rate. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wifi", "Parking", "Single Room"],
-          "scenario": "During a routine travel task, an adult compares Wifi, Parking, Single Room. The option needed for the next step is Wifi.",
+          "scenario": "The receptionist explains wifi access and parking charges. A single room is mainly intended for one guest. Wireless access does not by itself guarantee internet availability or inclusion in the price. Maya confirms the details of her one-person booking.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which room type matches that booking?",
             "options": ["Wifi", "Parking", "Single Room"],
-            "expectedAnswer": "Wifi"
+            "expectedAnswer": "Single Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Wifi, Parking, Single Room. The option needed for the next step is Wifi. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Wifi, Parking, Single Room in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: The receptionist explains wifi access and parking charges. A single room is mainly intended for one guest. Wireless access does not by itself guarantee internet availability or inclusion in the price. Maya confirms the details of her one-person booking. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Double Room", "Suite", "Penthouse"],
-          "scenario": "During a routine travel task, an adult compares Double Room, Suite, Penthouse. The option needed for the next step is Double Room.",
+          "scenario": "Omar compares a double room, generally for two guests, with a suite having connected or separate living spaces. A penthouse is a top-floor accommodation. Bed layout and advertised room names vary, so he checks the actual description.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes top-floor accommodation?",
             "options": ["Double Room", "Suite", "Penthouse"],
-            "expectedAnswer": "Double Room"
+            "expectedAnswer": "Penthouse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Double Room, Suite, Penthouse. The option needed for the next step is Double Room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Double Room, Suite, Penthouse in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Omar compares a double room, generally for two guests, with a suite having connected or separate living spaces. A penthouse is a top-floor accommodation. Bed layout and advertised room names vary, so he checks the actual description. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Balcony", "View", "Elevator"],
-          "scenario": "During a routine travel task, an adult compares Balcony, View, Elevator. The option needed for the next step is Balcony.",
+          "scenario": "A balcony is an outside platform with a protective boundary. The view is the scenery visible from the room. An elevator carries guests between floors; Maya asks about it rather than assuming every room has a balcony.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item carries guests between floors?",
             "options": ["Balcony", "View", "Elevator"],
-            "expectedAnswer": "Balcony"
+            "expectedAnswer": "Elevator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Balcony, View, Elevator. The option needed for the next step is Balcony. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Balcony, View, Elevator in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A balcony is an outside platform with a protective boundary. The view is the scenery visible from the room. An elevator carries guests between floors; Maya asks about it rather than assuming every room has a balcony. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hallway", "Ice Machine", "Vending Machine"],
-          "scenario": "During a routine travel task, an adult compares Hallway, Ice Machine, Vending Machine. The option needed for the next step is Hallway.",
+          "scenario": "A hallway connects the rooms. The ice machine supplies ice, while a vending machine sells packaged products. Omar wants ice rather than a snack and follows the hotel’s actual use instructions.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which machine supplies ice?",
             "options": ["Hallway", "Ice Machine", "Vending Machine"],
-            "expectedAnswer": "Hallway"
+            "expectedAnswer": "Ice Machine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Hallway, Ice Machine, Vending Machine. The option needed for the next step is Hallway. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Hallway, Ice Machine, Vending Machine in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: A hallway connects the rooms. The ice machine supplies ice, while a vending machine sells packaged products. Omar wants ice rather than a snack and follows the hotel’s actual use instructions. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hotel 4: A short reading",
-      "text": "Omar asks when the breakfast buffet opens. Maya checks the shuttle timetable and asks at the tour desk about a city visit. The receptionist explains the wifi and parking information. They compare a single room with a double room for a future booking, then ask what is included in the advertised price.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking what the price includes",
+      "text": "Omar asks when the breakfast buffet opens. Maya checks the shuttle timetable and asks at the tour desk about a city visit. The receptionist explains wifi and parking information. They compare a single room with a double room for a future booking, then ask what the advertised price includes. They also discuss a suite and penthouse without assuming identical layouts across hotels. A balcony and view depend on the room description. An elevator reaches their hallway, which has an ice machine and vending machine. They confirm details rather than guessing from a room name.",
+      "imageBrief": "Photorealistic adult hotel visit: Omar asks when the breakfast buffet opens. Maya checks the shuttle’s specified route and asks at the tour desk about a city visit. A shuttle is not automatically an airport service, and a buffet is not automatically included in the rate. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Breakfast Buffet, Shuttle, Tour Desk. The option needed for the next step is Breakfast Buffet.\nWhich option is needed for the next step in the journey?",
-        "answer": "Breakfast Buffet",
+        "prompt": "Omar asks when the breakfast buffet opens. Maya checks the shuttle’s specified route and asks at the tour desk about a city visit. A shuttle is not automatically an airport service, and a buffet is not automatically included in the rate.\nWhere does Maya ask about the city visit?",
+        "answer": "Tour Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Wifi, Parking, Single Room. The option needed for the next step is Wifi.\nWhich option is needed for the next step in the journey?",
-        "answer": "Wifi",
+        "prompt": "The receptionist explains wifi access and parking charges. A single room is mainly intended for one guest. Wireless access does not by itself guarantee internet availability or inclusion in the price. Maya confirms the details of her one-person booking.\nWhich room type matches that booking?",
+        "answer": "Single Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Double Room, Suite, Penthouse. The option needed for the next step is Double Room.\nWhich option is needed for the next step in the journey?",
-        "answer": "Double Room",
+        "prompt": "Omar compares a double room, generally for two guests, with a suite having connected or separate living spaces. A penthouse is a top-floor accommodation. Bed layout and advertised room names vary, so he checks the actual description.\nWhich term describes top-floor accommodation?",
+        "answer": "Penthouse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Balcony, View, Elevator. The option needed for the next step is Balcony.\nWhich option is needed for the next step in the journey?",
-        "answer": "Balcony",
+        "prompt": "A balcony is an outside platform with a protective boundary. The view is the scenery visible from the room. An elevator carries guests between floors; Maya asks about it rather than assuming every room has a balcony.\nWhich item carries guests between floors?",
+        "answer": "Elevator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Hallway, Ice Machine, Vending Machine. The option needed for the next step is Hallway.\nWhich option is needed for the next step in the journey?",
-        "answer": "Hallway",
+        "prompt": "A hallway connects the rooms. The ice machine supplies ice, while a vending machine sells packaged products. Omar wants ice rather than a snack and follows the hotel’s actual use instructions.\nWhich machine supplies ice?",
+        "answer": "Ice Machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Swimming Pool” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two room types do Maya and Omar compare?",
-        "answer": "A single room and a double room",
+        "prompt": "Omar asks when the breakfast buffet opens. Maya checks the shuttle timetable and asks at the tour desk about a city visit. The receptionist explains wifi and parking information. They compare a single room with a double room for a future booking, then ask what the advertised price includes. They also discuss a suite and penthouse without assuming identical layouts across hotels. A balcony and view depend on the room description. An elevator reaches their hallway, which has an ice machine and vending machine. They confirm details rather than guessing from a room name.\nWhat do they ask about the advertised price?",
+        "answer": "What it includes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Explain a practical distinction using Breakfast Buffet and Shuttle.",
+        "answer": "I check the breakfast buffet hours and the shuttle route before choosing them.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hotel: In Context",
-      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking what the price includes",
+      "idea": "Read this adult hotel account and pause on a stated request or distinction. Do not show private booking information or electrical/roof/pool misuse; service terms are established in text.",
+      "scriptStarter": "Omar asks when the breakfast buffet opens. Maya checks the shuttle’s specified route and asks at the tour desk about a city visit. A shuttle is not automatically an airport service, and a buffet is not automatically included in the rate."
     },
     "spacedReview": "1 lesson(s) back: Swimming Pool, Gym from hotel-3\n3 lesson(s) back: Front Desk, Lobby from hotel-1\n7 lesson(s) back: Automatic Wash, Hand Wash from car-wash-1"
   },
@@ -720,59 +716,58 @@
     "targetWordsEnglish": ["Bellhop", "Checkout"],
     "targetWordsArabic": ["حامل أمتعة", "تسجيل المغادرة"],
     "usage": {
-      "goal": "Learn to use the hotel 5 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hotel.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify a stated hotel request, room item, facility or staff role.",
+      "canDoStatement": "Can follow a supported hotel stay account and ask about practical details. Specialist accommodation names extend the supported task level; facilities, access and prices vary.",
+      "textType": "hotel-stay-account",
+      "readingTarget": "Supported connected adult hotel stay",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bellhop", "Checkout"],
-          "scenario": "During a routine travel task, an adult compares Bellhop, Checkout, Front Desk. The option needed for the next step is Bellhop.",
+          "scenario": "Maya checks the checkout time in her booking. Omar asks a bellhop to help move their bags. Checkout is a noun for departure procedures; in a sentence the guests check out, using two words. Staff help and timing follow the hotel’s actual arrangements.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
-            "options": ["Bellhop", "Checkout", "Front Desk"],
+            "question": "Who helps move the bags?",
+            "options": ["Bellhop", "Checkout"],
             "expectedAnswer": "Bellhop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hotel context illustrating this situation: During a routine travel task, an adult compares Bellhop, Checkout, Front Desk. The option needed for the next step is Bellhop. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hotel scene showing lesson-related items or actions including Bellhop, Checkout in a natural setting."
+          "imageBrief": "Photorealistic adult hotel visit: Maya checks the checkout time in her booking. Omar asks a bellhop to help move their bags. Checkout is a noun for departure procedures; in a sentence the guests check out, using two words. Staff help and timing follow the hotel’s actual arrangements. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account.",
+          "imageAlt": "Adult guests discussing their hotel room or services in a clear uncluttered interior."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hotel 5: A short reading",
-      "text": "Maya checks the checkout time on her booking. Omar asks a bellhop to help move their luggage to the lobby. At the front desk, they check the bill and return the key cards. Maya keeps the receipt in her bag. They wait by the entrance until their transport arrives, then collect their luggage.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hotel. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Leaving the hotel",
+      "text": "Maya checks the checkout time in her booking. Omar asks a bellhop to help move their luggage to the lobby. At the front desk, they check the bill and return the key cards. Maya keeps the receipt in her bag. They wait by the entrance until their transport arrives, then collect their luggage. Checkout is the noun for the departure procedure; Maya says that they will check out, using two words for the verb. Timing, remaining charges and luggage help depend on the actual booking and hotel.",
+      "imageBrief": "Photorealistic adult hotel visit: Maya checks the checkout time in her booking. Omar asks a bellhop to help move their bags. Checkout is a noun for departure procedures; in a sentence the guests check out, using two words. Staff help and timing follow the hotel’s actual arrangements. Show adults discussing a booking, room or service in a clear uncluttered hotel area. Bathroom equipment is unoccupied, electrical appliances remain unplugged and away from water, and balcony boundaries remain intact. No personal booking data, unsafe pool/roof activity, implied service inclusion, gendered-role stereotypes, alcohol requirement, branding, readable text or answer highlighting. Specific price, access and service details come from the account."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Bellhop, Checkout, Front Desk. The option needed for the next step is Bellhop.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Maya checks the checkout time in her booking. Omar asks a bellhop to help move their bags. Checkout is a noun for departure procedures; in a sentence the guests check out, using two words. Staff help and timing follow the hotel’s actual arrangements.\nWho helps move the bags?",
         "answer": "Bellhop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Breakfast Buffet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What do Maya and Omar return at the front desk?",
-        "answer": "The key cards",
+        "prompt": "Maya checks the checkout time in her booking. Omar asks a bellhop to help move their luggage to the lobby. At the front desk, they check the bill and return the key cards. Maya keeps the receipt in her bag. They wait by the entrance until their transport arrives, then collect their luggage. Checkout is the noun for the departure procedure; Maya says that they will check out, using two words for the verb. Timing, remaining charges and luggage help depend on the actual booking and hotel.\nWhat does Maya check in her booking?",
+        "answer": "The checkout time",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Explain a practical distinction using Bellhop and Checkout.",
+        "answer": "The bellhop helps with bags while I complete checkout.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hotel: In Context",
-      "idea": "35-50 seconds contextual scene in the real-life setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the real-life setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Leaving the hotel",
+      "idea": "Read this adult hotel account and pause on a stated request or distinction. Do not show private booking information or electrical/roof/pool misuse; service terms are established in text.",
+      "scriptStarter": "Maya checks the checkout time in her booking. Omar asks a bellhop to help move their bags. Checkout is a noun for departure procedures; in a sentence the guests check out, using two words. Staff help and timing follow the hotel’s actual arrangements."
     },
     "spacedReview": "1 lesson(s) back: Breakfast Buffet, Shuttle from hotel-4\n3 lesson(s) back: Closet, Safe from hotel-2\n7 lesson(s) back: Vacuum, Air Freshener from car-wash-2"
   }

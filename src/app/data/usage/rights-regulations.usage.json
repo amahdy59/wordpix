@@ -32,7 +32,7 @@
       "الإجراءات القانونية الواجبة",
       "الحماية المتساوية أمام القانون",
       "حق التصويت",
-      "حرية الدين",
+      "حرية الدين والمعتقد",
       "الحق في الاستعانة بمحامٍ",
       "الحق في التجمع السلمي",
       "الحق في تقديم العرائض",
@@ -44,10 +44,10 @@
       "قانون تشريعي"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -57,14 +57,14 @@
             "Due Process",
             "Equal Protection"
           ],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Freedom of Speech, Right to Privacy, Due Process, and Equal Protection and choose the option that fits the situation.",
+          "scenario": "The seminar describes freedom of speech as a principle protecting expression. The right to privacy concerns private life, due process concerns procedures, and equal protection concerns equal legal treatment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which principle concerns expressing opinions?",
             "options": ["Freedom of Speech", "Right to Privacy", "Due Process"],
             "expectedAnswer": "Freedom of Speech"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Freedom of Speech as the central item; include Freedom of Speech, Right to Privacy, and Due Process naturally where visually appropriate, but make the real-world use of Freedom of Speech the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty public discussion room; written context supplies the particular right. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
@@ -74,116 +74,102 @@
             "Right to Counsel",
             "Right to Assembly"
           ],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Vote, Freedom of Religion, Right to Counsel, and Right to Assembly and choose the option that fits the situation.",
+          "scenario": "The facilitator describes the right to vote as participation in an election. Freedom of religion, the right to counsel and the right to assembly concern different protected activities.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which right concerns taking part in an election?",
             "options": ["Right to Vote", "Freedom of Religion", "Right to Counsel"],
             "expectedAnswer": "Right to Vote"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Right to Vote as the central item; include Right to Vote, Freedom of Religion, and Right to Counsel naturally where visually appropriate, but make the real-world use of Right to Vote the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An unmarked ballot box in an empty civic room; no vote or eligibility claim. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Right to Petition", "Fair Trial", "Liability", "Negligence"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Petition, Fair Trial, Liability, and Negligence and choose the option that fits the situation.",
+          "scenario": "Sam links the right to petition to asking a public authority to address a concern. A fair trial concerns proceedings; liability and negligence concern legal responsibility and care.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which right concerns making the request to a public authority?",
             "options": ["Right to Petition", "Fair Trial", "Liability"],
             "expectedAnswer": "Right to Petition"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Right to Petition through a realistic adult task; include Right to Petition, Fair Trial, and Liability naturally where visually appropriate, but make the real-world use of Right to Petition the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain public-service reception desk with blank documents, no legal outcome claim. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Jurisdiction", "Precedent", "Statute"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jurisdiction, Precedent, and Statute and choose the option that fits the situation.",
+          "scenario": "The class asks whether a court has jurisdiction, meaning authority over the matter. A precedent is an earlier decision; a statute is enacted legislation.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term concerns the court's authority over the matter?",
             "options": ["Jurisdiction", "Precedent", "Statute"],
             "expectedAnswer": "Jurisdiction"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Jurisdiction through a realistic adult task; include Jurisdiction, Precedent, and Statute naturally where visually appropriate, but make the real-world use of Jurisdiction the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain empty courtroom; authority is explained in the written task. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Rights & Regulations",
-      "text": "At the rights & regulations, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Freedom of Speech, Right to Privacy, Due Process, and Equal Protection. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Right to Vote, Freedom of Religion, Right to Counsel, and Right to Assembly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Right to Petition, Fair Trial, Liability, and Negligence. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Jurisdiction, Precedent, and Statute. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Rights & Regulations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing rights and legal standards",
+      "text": "At an adult civics seminar, Sam compares freedom of speech with the right to privacy. The facilitator explains that rights have legal contexts and lawful limits; a slogan does not resolve a dispute. Due process concerns fair procedures, and equal protection concerns unjustified unequal treatment. The right to vote, freedom of religion, right to counsel and right to assembly address different activities. The right to petition concerns asking public authorities to address a matter, while a fair trial concerns impartial proceedings. Liability means legal responsibility, and negligence concerns failure to exercise required care. The facilitator distinguishes jurisdiction, a court's authority, from precedent, an earlier decision, and statute, enacted legislation. Sam asks which jurisdiction the examples describe before drawing conclusions.",
+      "imageBrief": "Support for Discussing rights and legal standards. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Freedom of Speech, Right to Privacy, Due Process, and Equal Protection and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The seminar describes freedom of speech as a principle protecting expression. The right to privacy concerns private life, due process concerns procedures, and equal protection concerns equal legal treatment.\nWhich principle concerns expressing opinions?",
         "answer": "Freedom of Speech",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Vote, Freedom of Religion, Right to Counsel, and Right to Assembly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The facilitator describes the right to vote as participation in an election. Freedom of religion, the right to counsel and the right to assembly concern different protected activities.\nWhich right concerns taking part in an election?",
         "answer": "Right to Vote",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Right to Petition, Fair Trial, Liability, and Negligence and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Sam links the right to petition to asking a public authority to address a concern. A fair trial concerns proceedings; liability and negligence concern legal responsibility and care.\nWhich right concerns making the request to a public authority?",
         "answer": "Right to Petition",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jurisdiction, Precedent, and Statute and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The class asks whether a court has jurisdiction, meaning authority over the matter. A precedent is an earlier decision; a statute is enacted legislation.\nWhich term concerns the court's authority over the matter?",
         "answer": "Jurisdiction",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At an adult civics seminar, Sam compares freedom of speech with the right to privacy. The facilitator explains that rights have legal contexts and lawful limits; a slogan does not resolve a dispute. Due process concerns fair procedures, and equal protection concerns unjustified unequal treatment. The right to vote, freedom of religion, right to counsel and right to assembly address different activities. The right to petition concerns asking public authorities to address a matter, while a fair trial concerns impartial proceedings. Liability means legal responsibility, and negligence concerns failure to exercise required care. The facilitator distinguishes jurisdiction, a court's authority, from precedent, an earlier decision, and statute, enacted legislation. Sam asks which jurisdiction the examples describe before drawing conclusions.\nWhat does Sam ask before drawing conclusions?",
+        "answer": "Which jurisdiction the examples describe.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Freedom of Speech"
+        "prompt": "Explain the difference between “Freedom of Speech” and “Right to Privacy” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Due Process"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Patent” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the rights & regulations task. Use Freedom of Speech, Right to Privacy, Due Process, Equal Protection, Right to Vote, Freedom of Religion, Right to Counsel, Right to Assembly, Right to Petition, Fair Trial, Liability, Negligence, Jurisdiction, Precedent, and Statute in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Freedom of Speech” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The seminar describes freedom of speech as a principle protecting expression. The right to privacy concerns private life, due process concerns procedures, and equal protection concerns equal legal treatment.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Rights & Regulations: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing rights and legal standards",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "At an adult civics seminar, Sam compares freedom of speech with the right to privacy. The facilitator explains that rights have legal contexts and lawful limits; a slogan does not resolve a dispute. Due process concerns fair procedures, and equal protection concerns unjustified unequal treatment. The right to vote, freedom of religion, right to counsel and right to assembly address different activities. The right to petition concerns asking public authorities to address a matter, while a fair trial concerns impartial proceedings. Liability means legal responsibility, and negligence concerns failure to exercise required care. The facilitator distinguishes jurisdiction, a court's authority, from precedent, an earlier decision, and statute, enacted legislation. Sam asks which jurisdiction the examples describe before drawing conclusions. Ask: What does Sam ask before drawing conclusions?"
     },
     "spacedReview": "1 lesson(s) back: Patent, Trademark from legal-documents-3\n3 lesson(s) back: Contract, Agreement from legal-documents-1\n7 lesson(s) back: Consult, Represent from law-firm-3"
   },
@@ -216,152 +202,138 @@
     ],
     "targetWordsArabic": [
       "لائحة محلية",
-      "لائحة",
+      "لائحة تنظيمية",
       "امتثال",
       "إنفاذ",
       "فصل قضائي",
       "توقيف",
-      "شحن",
-      "كفالة",
-      "دفع أو إقرار قضائي",
+      "اتهام",
+      "إفراج بكفالة",
+      "إقرار أو دفع ردًا على تهمة",
       "إدانة",
       "براءة",
       "إفراج مشروط",
-      "مراقبة قضائية",
-      "حكم قضائي",
+      "مراقبة قضائية في المجتمع",
+      "عقوبة قضائية",
       "استئناف"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ordinance", "Regulation", "Compliance", "Enforcement"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ordinance, Regulation, Compliance, and Enforcement and choose the option that fits the situation.",
+          "scenario": "The example city adopts an ordinance. A regulation is another kind of official rule; compliance means following requirements and enforcement means making them effective.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the local law adopted by the city?",
             "options": ["Ordinance", "Regulation", "Compliance"],
             "expectedAnswer": "Ordinance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Ordinance through a realistic adult task; include Ordinance, Regulation, and Compliance naturally where visually appropriate, but make the real-world use of Ordinance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain empty council chamber; the kind of rule is supplied by text. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Adjudication", "Arrest", "Charge", "Bail"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adjudication, Arrest, Charge, and Bail and choose the option that fits the situation.",
+          "scenario": "The facilitator uses adjudication for the process of formally deciding a matter. Arrest concerns custody, charge concerns accusation, and bail concerns release conditions while a case is pending.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the process of formally deciding the matter?",
             "options": ["Adjudication", "Arrest", "Charge"],
             "expectedAnswer": "Adjudication"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Adjudication through a realistic adult task; include Adjudication, Arrest, and Charge naturally where visually appropriate, but make the real-world use of Adjudication the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty hearing room with a plain desk, no verdict or legal outcome visible. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Plea", "Conviction", "Acquittal", "Parole"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Conviction, Acquittal, and Parole and choose the option that fits the situation.",
+          "scenario": "In the fictional criminal case, the person's response to the charge is the plea. Conviction and acquittal describe outcomes, while parole concerns conditional release from imprisonment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the formal response to the charge?",
             "options": ["Plea", "Conviction", "Acquittal"],
             "expectedAnswer": "Plea"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Plea as the central item; include Plea, Conviction, and Acquittal naturally where visually appropriate, but make the real-world use of Plea the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty courtroom counsel table; the procedural term is written information. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Probation", "Sentence", "Appeal"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Probation, Sentence, and Appeal and choose the option that fits the situation.",
+          "scenario": "The example sentence includes probation, court supervision in the community. Sentence is the broader punishment term, and appeal means requesting review of a decision.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the community supervision in this example?",
             "options": ["Probation", "Sentence", "Appeal"],
             "expectedAnswer": "Probation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Probation through a realistic adult task; include Probation, Sentence, and Appeal naturally where visually appropriate, but make the real-world use of Probation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A plain appointment desk in an empty public-service office, no personal status claim. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Rights & Regulations",
-      "text": "At the rights & regulations, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ordinance, Regulation, Compliance, and Enforcement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Adjudication, Arrest, Charge, and Bail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Plea, Conviction, Acquittal, and Parole. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Probation, Sentence, and Appeal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Rights & Regulations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Separating stages in a case",
+      "text": "The facilitator uses a fictional case to separate legal stages. A local ordinance and an official regulation set requirements; compliance means following them, while enforcement concerns making them effective. Adjudication is the process of deciding a legal matter. An arrest places a person in custody, and a charge is an accusation rather than a conviction. Bail concerns conditions for release while a case is pending. A plea is the person's formal response to a charge. A conviction is a finding of guilt; an acquittal is a finding of not guilty. Parole and probation involve supervision under different circumstances. A sentence is punishment imposed after conviction, and an appeal requests review. Specific processes depend on the jurisdiction, so the fictional sequence is not universal legal advice.",
+      "imageBrief": "Support for Separating stages in a case. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ordinance, Regulation, Compliance, and Enforcement and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The example city adopts an ordinance. A regulation is another kind of official rule; compliance means following requirements and enforcement means making them effective.\nWhich term names the local law adopted by the city?",
         "answer": "Ordinance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adjudication, Arrest, Charge, and Bail and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The facilitator uses adjudication for the process of formally deciding a matter. Arrest concerns custody, charge concerns accusation, and bail concerns release conditions while a case is pending.\nWhich term names the process of formally deciding the matter?",
         "answer": "Adjudication",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Conviction, Acquittal, and Parole and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the fictional criminal case, the person's response to the charge is the plea. Conviction and acquittal describe outcomes, while parole concerns conditional release from imprisonment.\nWhich term names the formal response to the charge?",
         "answer": "Plea",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Probation, Sentence, and Appeal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The example sentence includes probation, court supervision in the community. Sentence is the broader punishment term, and appeal means requesting review of a decision.\nWhich term names the community supervision in this example?",
         "answer": "Probation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The facilitator uses a fictional case to separate legal stages. A local ordinance and an official regulation set requirements; compliance means following them, while enforcement concerns making them effective. Adjudication is the process of deciding a legal matter. An arrest places a person in custody, and a charge is an accusation rather than a conviction. Bail concerns conditions for release while a case is pending. A plea is the person's formal response to a charge. A conviction is a finding of guilt; an acquittal is a finding of not guilty. Parole and probation involve supervision under different circumstances. A sentence is punishment imposed after conviction, and an appeal requests review. Specific processes depend on the jurisdiction, so the fictional sequence is not universal legal advice.\nDoes a charge establish guilt in this explanation?",
+        "answer": "No; it is an accusation rather than a conviction.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Ordinance"
+        "prompt": "Explain the difference between “Ordinance” and “Regulation” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Compliance"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Freedom of Speech” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the rights & regulations task. Use Ordinance, Regulation, Compliance, Enforcement, Adjudication, Arrest, Charge, Bail, Plea, Conviction, Acquittal, Parole, Probation, Sentence, and Appeal in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Ordinance” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The example city adopts an ordinance. A regulation is another kind of official rule; compliance means following requirements and enforcement means making them effective.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Rights & Regulations: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Separating stages in a case",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "The facilitator uses a fictional case to separate legal stages. A local ordinance and an official regulation set requirements; compliance means following them, while enforcement concerns making them effective. Adjudication is the process of deciding a legal matter. An arrest places a person in custody, and a charge is an accusation rather than a conviction. Bail concerns conditions for release while a case is pending. A plea is the person's formal response to a charge. A conviction is a finding of guilt; an acquittal is a finding of not guilty. Parole and probation involve supervision under different circumstances. A sentence is punishment imposed after conviction, and an appeal requests review. Specific processes depend on the jurisdiction, so the fictional sequence is not universal legal advice. Ask: Does a charge establish guilt in this explanation?"
     },
     "spacedReview": "1 lesson(s) back: Freedom of Speech, Right to Privacy from rights-regulations-1\n3 lesson(s) back: Petition, Order from legal-documents-2\n7 lesson(s) back: Judge's Bench, Witness Stand from courtroom-trial-1"
   },
@@ -392,7 +364,7 @@
       "اتفاقية",
       "سيادة",
       "دبلوماسية",
-      "عقوبات",
+      "عقوبات أو تدابير تقييدية",
       "تسليم مطلوبين",
       "لجوء",
       "لاجئ",
@@ -400,117 +372,103 @@
       "اتفاقية جنيف"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Distinguish legal terms in a specified educational context and ask which jurisdiction or source applies.",
+      "canDoStatement": "Can compare the stated functions of legal terms and explain distinctions using the supplied context.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Treaty", "Convention", "Sovereignty", "Diplomacy"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treaty, Convention, Sovereignty, and Diplomacy and choose the option that fits the situation.",
+          "scenario": "The educational text describes a treaty as an agreement between states. A convention may name such an agreement; sovereignty concerns state authority and diplomacy concerns international discussion.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the agreement between states?",
             "options": ["Treaty", "Convention", "Sovereignty"],
             "expectedAnswer": "Treaty"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Treaty as the central item; include Treaty, Convention, and Sovereignty naturally where visually appropriate, but make the real-world use of Treaty the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty formal meeting table with closed plain folders; no signatories or status claims. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sanctions", "Extradition", "Asylum", "Refugee"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sanctions, Extradition, Asylum, and Refugee and choose the option that fits the situation.",
+          "scenario": "In the text, sanctions are restrictions or penalties. Extradition concerns transferring a person under legal arrangements; asylum and refugee concern protection rather than commercial restrictions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the restrictions or penalties?",
             "options": ["Sanctions", "Extradition", "Asylum"],
             "expectedAnswer": "Sanctions"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Sanctions as the central item; include Sanctions, Extradition, and Asylum naturally where visually appropriate, but make the real-world use of Sanctions the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. A neutral international-affairs briefing desk; penalties cannot be proved visually. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Human Rights", "Geneva Convention"],
-          "scenario": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Human Rights, and Geneva Convention and choose the option that fits the situation.",
+          "scenario": "The text explains human rights as basic protections belonging to people. It separately names the Geneva Convention treaties concerning people during armed conflict.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which phrase names the basic protections belonging to people?",
             "options": ["Human Rights", "Geneva Convention", "Treaty"],
             "expectedAnswer": "Human Rights"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Human Rights through a realistic adult task; include Human Rights, Geneva Convention, and Treaty naturally where visually appropriate, but make the real-world use of Human Rights the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written task. An empty public education room with an unlettered display, no conflict or legal entitlement depicted. Do not use a photograph as proof of legal status, rights, guilt, admissibility or document validity. No readable text, official seals, logos, answer highlighting or incidental people; 4:3 landscape.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the rights & regulations, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Treaty, Convention, Sovereignty, and Diplomacy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sanctions, Extradition, Asylum, and Refugee. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Human Rights and Geneva Convention. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Rights & Regulations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading international protection terms",
+      "text": "Sam reads an educational overview of international relations. A treaty is an agreement between states, and convention can name a formal international agreement. Sovereignty concerns a state's authority, while diplomacy concerns relations managed through discussion. Sanctions are restrictions or penalties, not praise or approval in this context. Extradition concerns transferring a person to another jurisdiction under legal arrangements. Asylum concerns protection sought or granted, whereas refugee describes a person meeting relevant protection criteria; the terms are not interchangeable descriptions of any traveler. Human rights belong to people as human beings. The Geneva Convention label refers to treaties protecting people during armed conflict. Sam compares the meanings without deciding whether a particular person qualifies for protection or what a treaty requires in a real case.",
+      "imageBrief": "Support for Reading international protection terms. Reuse independently reviewed word references; do not depict a legal entitlement or outcome as visually established."
     },
     "exercises": [
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Treaty, Convention, Sovereignty, and Diplomacy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The educational text describes a treaty as an agreement between states. A convention may name such an agreement; sovereignty concerns state authority and diplomacy concerns international discussion.\nWhich term names the agreement between states?",
         "answer": "Treaty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sanctions, Extradition, Asylum, and Refugee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In the text, sanctions are restrictions or penalties. Extradition concerns transferring a person under legal arrangements; asylum and refugee concern protection rather than commercial restrictions.\nWhich term names the restrictions or penalties?",
         "answer": "Sanctions",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the rights & regulations setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Human Rights, and Geneva Convention and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The text explains human rights as basic protections belonging to people. It separately names the Geneva Convention treaties concerning people during armed conflict.\nWhich phrase names the basic protections belonging to people?",
         "answer": "Human Rights",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Sam reads an educational overview of international relations. A treaty is an agreement between states, and convention can name a formal international agreement. Sovereignty concerns a state's authority, while diplomacy concerns relations managed through discussion. Sanctions are restrictions or penalties, not praise or approval in this context. Extradition concerns transferring a person to another jurisdiction under legal arrangements. Asylum concerns protection sought or granted, whereas refugee describes a person meeting relevant protection criteria; the terms are not interchangeable descriptions of any traveler. Human rights belong to people as human beings. The Geneva Convention label refers to treaties protecting people during armed conflict. Sam compares the meanings without deciding whether a particular person qualifies for protection or what a treaty requires in a real case.\nWhy are asylum and refugee not interchangeable here?",
+        "answer": "One concerns protection; the other describes a person meeting protection criteria.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Treaty"
+        "prompt": "Explain the difference between “Treaty” and “Convention” using the written examples.",
+        "answer": "Accept a comparison that accurately explains the distinct functions stated in the examples; a photograph alone is not evidence of their legal status.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Sovereignty"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ordinance” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the rights & regulations task. Use Treaty, Convention, Sovereignty, Diplomacy, Sanctions, Extradition, Asylum, Refugee, Human Rights, and Geneva Convention in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Treaty” in this educational context. Use the supplied meaning and do not assert a real person's legal status.",
+        "answer": "Accept an accurate original sentence using the requested term in its supplied legal sense. Example: The educational text describes a treaty as an agreement between states. A convention may name such an agreement; sovereignty concerns state authority and diplomacy concerns international discussion.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Rights & Regulations: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading international protection terms",
+      "idea": "Narrated educational example with a pause to compare the terms. Legal status is explained in writing rather than inferred from appearance.",
+      "scriptStarter": "Sam reads an educational overview of international relations. A treaty is an agreement between states, and convention can name a formal international agreement. Sovereignty concerns a state's authority, while diplomacy concerns relations managed through discussion. Sanctions are restrictions or penalties, not praise or approval in this context. Extradition concerns transferring a person to another jurisdiction under legal arrangements. Asylum concerns protection sought or granted, whereas refugee describes a person meeting relevant protection criteria; the terms are not interchangeable descriptions of any traveler. Human rights belong to people as human beings. The Geneva Convention label refers to treaties protecting people during armed conflict. Sam compares the meanings without deciding whether a particular person qualifies for protection or what a treaty requires in a real case. Ask: Why are asylum and refugee not interchangeable here?"
     },
     "spacedReview": "1 lesson(s) back: Ordinance, Regulation from rights-regulations-2\n3 lesson(s) back: Patent, Trademark from legal-documents-3\n7 lesson(s) back: Bailiff, Court Reporter from courtroom-trial-2"
   }

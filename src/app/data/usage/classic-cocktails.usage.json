@@ -44,136 +44,122 @@
       "غيمليت"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Martini", "Old Fashioned", "Manhattan", "Negroni"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Martini, Old Fashioned, Manhattan, and Negroni and choose the option that fits the situation.",
+          "scenario": "Martini starts the first group, followed by Old Fashioned, Manhattan and Negroni. These are separate named categories, not interchangeable glass shapes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category starts the first group?",
             "options": ["Martini", "Old Fashioned", "Manhattan"],
             "expectedAnswer": "Martini"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Martini as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty stemmed cocktail glass; contents and named category are written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Daiquiri", "Margarita", "Mojito", "Whiskey Sour"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daiquiri, Margarita, Mojito, and Whiskey Sour and choose the option that fits the situation.",
+          "scenario": "Daiquiri begins the second group, before Margarita, Mojito and Whiskey Sour. The text supplies the name without prescribing a recipe.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category begins the second group?",
             "options": ["Daiquiri", "Margarita", "Mojito"],
             "expectedAnswer": "Daiquiri"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Daiquiri as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One plain empty coupe glass; no claim that its shape identifies a drink. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sidecar", "Sazerac", "Cosmopolitan", "Piña Colada"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sidecar, Sazerac, Cosmopolitan, and Piña Colada and choose the option that fits the situation.",
+          "scenario": "Sidecar begins the next group, before Sazerac, Cosmopolitan and Piña Colada. The names identify different customary menu categories.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category begins this next group?",
             "options": ["Sidecar", "Sazerac", "Cosmopolitan"],
             "expectedAnswer": "Sidecar"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Sidecar as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty cocktail glass on a neutral table; no invented ingredients or identity proof. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Long Island Iced Tea", "Moscow Mule", "Gimlet"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Long Island Iced Tea, Moscow Mule, and Gimlet and choose the option that fits the situation.",
+          "scenario": "Long Island Iced Tea begins the final group before Moscow Mule and Gimlet. Its tea-like name does not establish alcohol-free contents.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category has the tea-like name in this group?",
             "options": ["Long Island Iced Tea", "Moscow Mule", "Gimlet"],
             "expectedAnswer": "Long Island Iced Tea"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Long Island Iced Tea as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One plain closed sample vessel; alcohol content and category must be documented. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Classic Cocktails: Practical Information",
-      "text": "At the classic cocktails, a student handles a real-world responsibility and must make a clear decision. First, the student considers Martini, Old Fashioned, Manhattan, and Negroni. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Daiquiri, Margarita, Mojito, and Whiskey Sour. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Sidecar, Sazerac, Cosmopolitan, and Piña Colada. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Long Island Iced Tea, Moscow Mule, and Gimlet. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Classic Cocktails. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Interpreting named menu categories",
+      "text": "A hospitality trainee reads a fictional list of named mixed drinks. The first group is Martini, Old Fashioned, Manhattan and Negroni. Another group is Daiquiri, Margarita, Mojito and Whiskey Sour. The list then names Sidecar, Sazerac, Cosmopolitan and Piña Colada. Long Island Iced Tea, Moscow Mule and Gimlet complete the selection. These names refer to different customary categories; they are not descriptions of the glass alone. Long Island Iced Tea is usually alcoholic despite its tea-like name. Recipes and variants differ, so the trainee asks what the venue means and whether an alcohol-free alternative is available. The worksheet practices menu reading without giving quantities, preparation instructions, purchase recommendations or an assumption that the learner will consume any item.",
+      "imageBrief": "Support for Interpreting named menu categories. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Martini, Old Fashioned, Manhattan, and Negroni and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Martini starts the first group, followed by Old Fashioned, Manhattan and Negroni. These are separate named categories, not interchangeable glass shapes.\nWhich category starts the first group?",
         "answer": "Martini",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Daiquiri, Margarita, Mojito, and Whiskey Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Daiquiri begins the second group, before Margarita, Mojito and Whiskey Sour. The text supplies the name without prescribing a recipe.\nWhich category begins the second group?",
         "answer": "Daiquiri",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sidecar, Sazerac, Cosmopolitan, and Piña Colada and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Sidecar begins the next group, before Sazerac, Cosmopolitan and Piña Colada. The names identify different customary menu categories.\nWhich category begins this next group?",
         "answer": "Sidecar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Long Island Iced Tea, Moscow Mule, and Gimlet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Long Island Iced Tea begins the final group before Moscow Mule and Gimlet. Its tea-like name does not establish alcohol-free contents.\nWhich category has the tea-like name in this group?",
         "answer": "Long Island Iced Tea",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A hospitality trainee reads a fictional list of named mixed drinks. The first group is Martini, Old Fashioned, Manhattan and Negroni. Another group is Daiquiri, Margarita, Mojito and Whiskey Sour. The list then names Sidecar, Sazerac, Cosmopolitan and Piña Colada. Long Island Iced Tea, Moscow Mule and Gimlet complete the selection. These names refer to different customary categories; they are not descriptions of the glass alone. Long Island Iced Tea is usually alcoholic despite its tea-like name. Recipes and variants differ, so the trainee asks what the venue means and whether an alcohol-free alternative is available. The worksheet practices menu reading without giving quantities, preparation instructions, purchase recommendations or an assumption that the learner will consume any item.\nWhy does the trainee ask what the venue means?",
+        "answer": "Named categories have variants and glass appearance does not establish ingredients.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Martini"
+        "prompt": "Explain the difference between “Martini” and “Old Fashioned” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Manhattan"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lemon Twist” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the classic cocktails task. Use Martini, Old Fashioned, Manhattan, Negroni, Daiquiri, Margarita, Mojito, Whiskey Sour, Sidecar, Sazerac, Cosmopolitan, Piña Colada, Long Island Iced Tea, Moscow Mule, and Gimlet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Martini” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Martini starts the first group, followed by Old Fashioned, Manhattan and Negroni. These are separate named categories, not interchangeable glass shapes.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Classic Cocktails: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from classic cocktails in cultural or industry texts."
+      "title": "Interpreting named menu categories",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A hospitality trainee reads a fictional list of named mixed drinks. The first group is Martini, Old Fashioned, Manhattan and Negroni. Another group is Daiquiri, Margarita, Mojito and Whiskey Sour. The list then names Sidecar, Sazerac, Cosmopolitan and Piña Colada. Long Island Iced Tea, Moscow Mule and Gimlet complete the selection. These names refer to different customary categories; they are not descriptions of the glass alone. Long Island Iced Tea is usually alcoholic despite its tea-like name. Recipes and variants differ, so the trainee asks what the venue means and whether an alcohol-free alternative is available. The worksheet practices menu reading without giving quantities, preparation instructions, purchase recommendations or an assumption that the learner will consume any item. Ask: Why does the trainee ask what the venue means?"
     },
     "spacedReview": "1 lesson(s) back: Lemon Twist, Lime Wedge from spirits-liqueurs-3\n3 lesson(s) back: Vodka, Gin from spirits-liqueurs-1\n7 lesson(s) back: Bordeaux, Burgundy from wine-cellar-3"
   },
@@ -222,136 +208,122 @@
       "منقوع لاستخلاص النكهة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tom Collins", "Paloma", "Aperol Spritz", "Espresso Martini"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tom Collins, Paloma, Aperol Spritz, and Espresso Martini and choose the option that fits the situation.",
+          "scenario": "Tom Collins is first in the named group, before Paloma, Aperol Spritz and Espresso Martini.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named category appears first in this group?",
             "options": ["Tom Collins", "Paloma", "Aperol Spritz"],
             "expectedAnswer": "Tom Collins"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Tom Collins as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty tall Collins glass; the written menu supplies its named category. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dark and Stormy", "Shaken", "Stirred", "Muddled"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dark and Stormy, Shaken, Stirred, and Muddled and choose the option that fits the situation.",
+          "scenario": "Dark and Stormy is a menu name. Shaken, stirred and muddled instead describe preparation methods.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed expression is a menu name rather than a method?",
             "options": ["Dark and Stormy", "Shaken", "Stirred"],
             "expectedAnswer": "Dark and Stormy"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Dark and Stormy as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty tall glass; no brand, recipe or category-identification claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Layered", "Blended", "Built", "Strained"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layered, Blended, Built, and Strained and choose the option that fits the situation.",
+          "scenario": "Layered means arranged in separate layers. Blended here means processed with a blender; built means assembled in the serving glass, and strained uses a strainer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word means arranged in separate layers?",
             "options": ["Layered", "Blended", "Built"],
             "expectedAnswer": "Layered"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Layered as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A clear vessel with visibly separate generic colored-liquid layers, no consumption or formula. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Double Strained", "Flamed", "Infused"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Strained, Flamed, and Infused and choose the option that fits the situation.",
+          "scenario": "Double strained means passed through two strainers. Flamed concerns a flame technique and infused concerns flavor extraction by contact.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term concerns two strainers?",
             "options": ["Double Strained", "Flamed", "Infused"],
             "expectedAnswer": "Double Strained"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Double Strained as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. Two beverage strainers on a clean counter, no liquid handling or flame demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: Classic Cocktails",
-      "text": "At the classic cocktails, a student handles a real-world responsibility and must make a clear decision. First, the student considers Tom Collins, Paloma, Aperol Spritz, and Espresso Martini. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Dark and Stormy, Shaken, Stirred, and Muddled. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Layered, Blended, Built, and Strained. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Double Strained, Flamed, and Infused. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Classic Cocktails. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Separating names from preparation words",
+      "text": "The trainee compares Tom Collins, Paloma, Aperol Spritz, Espresso Martini and Dark and Stormy as named menu categories. The next words describe preparation rather than product identity. Shaken means mixed by shaking; stirred means mixed with a stirring tool. Muddled concerns pressing ingredients, layered concerns separate layers, and blended here means processed with a blender. Built means assembled in the serving glass. Strained means passed through a strainer, while double strained involves two strainers. Flamed describes a flame-related presentation technique rather than a direction to ignite anything. Infused concerns contact with an ingredient to extract flavor. The learner can explain these words without performing the techniques. The worksheet gives no flame, chemical or operational instructions and does not establish suitability from an image.",
+      "imageBrief": "Support for Separating names from preparation words. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tom Collins, Paloma, Aperol Spritz, and Espresso Martini and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Tom Collins is first in the named group, before Paloma, Aperol Spritz and Espresso Martini.\nWhich named category appears first in this group?",
         "answer": "Tom Collins",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dark and Stormy, Shaken, Stirred, and Muddled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dark and Stormy is a menu name. Shaken, stirred and muddled instead describe preparation methods.\nWhich listed expression is a menu name rather than a method?",
         "answer": "Dark and Stormy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Layered, Blended, Built, and Strained and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Layered means arranged in separate layers. Blended here means processed with a blender; built means assembled in the serving glass, and strained uses a strainer.\nWhich word means arranged in separate layers?",
         "answer": "Layered",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Double Strained, Flamed, and Infused and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Double strained means passed through two strainers. Flamed concerns a flame technique and infused concerns flavor extraction by contact.\nWhich term concerns two strainers?",
         "answer": "Double Strained",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The trainee compares Tom Collins, Paloma, Aperol Spritz, Espresso Martini and Dark and Stormy as named menu categories. The next words describe preparation rather than product identity. Shaken means mixed by shaking; stirred means mixed with a stirring tool. Muddled concerns pressing ingredients, layered concerns separate layers, and blended here means processed with a blender. Built means assembled in the serving glass. Strained means passed through a strainer, while double strained involves two strainers. Flamed describes a flame-related presentation technique rather than a direction to ignite anything. Infused concerns contact with an ingredient to extract flavor. The learner can explain these words without performing the techniques. The worksheet gives no flame, chemical or operational instructions and does not establish suitability from an image.\nHow do the two parts of the list differ?",
+        "answer": "The first names menu categories; the second names preparation methods.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Tom Collins"
+        "prompt": "Explain the difference between “Tom Collins” and “Paloma” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Aperol Spritz"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Martini” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the classic cocktails task. Use Tom Collins, Paloma, Aperol Spritz, Espresso Martini, Dark and Stormy, Shaken, Stirred, Muddled, Layered, Blended, Built, Strained, Double Strained, Flamed, and Infused in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Tom Collins” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Tom Collins is first in the named group, before Paloma, Aperol Spritz and Espresso Martini.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Classic Cocktails: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from classic cocktails in cultural or industry texts."
+      "title": "Separating names from preparation words",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The trainee compares Tom Collins, Paloma, Aperol Spritz, Espresso Martini and Dark and Stormy as named menu categories. The next words describe preparation rather than product identity. Shaken means mixed by shaking; stirred means mixed with a stirring tool. Muddled concerns pressing ingredients, layered concerns separate layers, and blended here means processed with a blender. Built means assembled in the serving glass. Strained means passed through a strainer, while double strained involves two strainers. Flamed describes a flame-related presentation technique rather than a direction to ignite anything. Infused concerns contact with an ingredient to extract flavor. The learner can explain these words without performing the techniques. The worksheet gives no flame, chemical or operational instructions and does not establish suitability from an image. Ask: How do the two parts of the list differ?"
     },
     "spacedReview": "1 lesson(s) back: Martini, Old Fashioned from classic-cocktails-1\n3 lesson(s) back: Chartreuse, Campari from spirits-liqueurs-2\n7 lesson(s) back: Bar Counter, Bar Stool from cocktail-bar-1"
   },
@@ -382,7 +354,7 @@
       "دون ثلج أو إضافات",
       "مقدّم دون ثلج في الكأس",
       "مضاف إليه ماء الزيتون المملح",
-      "جاف",
+      "بكمية أقل من الفيرموث",
       "بكمية أكبر من الفيرموث",
       "خالٍ من الكحول",
       "فئة ممتازة من المشروبات الكحولية",
@@ -390,117 +362,103 @@
       "مشروب خاص بالمكان"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["On the Rocks", "Neat", "Straight Up", "Dirty"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On the Rocks, Neat, Straight Up, and Dirty and choose the option that fits the situation.",
+          "scenario": "On the rocks means served over ice. Neat means no ice or mixers, straight up generally means chilled without remaining ice, and dirty commonly concerns olive brine.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression means served over ice?",
             "options": ["On the Rocks", "Neat", "Straight Up"],
             "expectedAnswer": "On the Rocks"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the On the Rocks as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A plain glass containing ice only, no person or beverage-composition claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dry", "Wet", "Virgin", "Top Shelf"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Wet, Virgin, and Top Shelf and choose the option that fits the situation.",
+          "scenario": "Dry in this martini context usually indicates less vermouth; wet indicates more. Virgin names an alcohol-free version, while top shelf names the premium range.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression indicates less vermouth in the specified context?",
             "options": ["Dry", "Wet", "Virgin"],
             "expectedAnswer": "Dry"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Dry as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty cocktail glass; composition ratios are supplied by text, not appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Well Drink", "House Special"],
-          "scenario": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Well Drink, and House Special and choose the option that fits the situation.",
+          "scenario": "Well drink uses the venue's standard house spirit. House special is a featured item, which is a different classification.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression concerns the standard house spirit?",
             "options": ["Well Drink", "House Special", "On the Rocks"],
             "expectedAnswer": "Well Drink"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Well Drink as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A closed blank bottle beside an empty glass; pricing and house-range facts require records. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Classic Cocktails",
-      "text": "At the classic cocktails, a student handles a real-world responsibility and must make a clear decision. First, the student considers On the Rocks, Neat, Straight Up, and Dirty. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Dry, Wet, Virgin, and Top Shelf. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Well Drink and House Special. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Classic Cocktails. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Clarifying service expressions",
+      "text": "The trainee checks expressions before interpreting a request. On the rocks means served over ice. Neat means without ice or added mixers. Straight up generally means chilled with no ice remaining, but usage varies, so clarification can help. Dirty commonly concerns olive brine in a martini. Dry in this martini context usually indicates less vermouth, while wet indicates more; it is different from a wine's residual-sugar classification. Virgin commonly requests an alcohol-free version, whose actual ingredients still need checking. Top shelf describes a venue's premium range rather than guaranteed quality. Well drink uses its standard house spirit, and house special names a featured item. The learner practices clarifying terms without making, recommending or consuming a beverage and without treating a menu phrase as a chemical certification.",
+      "imageBrief": "Support for Clarifying service expressions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare On the Rocks, Neat, Straight Up, and Dirty and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "On the rocks means served over ice. Neat means no ice or mixers, straight up generally means chilled without remaining ice, and dirty commonly concerns olive brine.\nWhich expression means served over ice?",
         "answer": "On the Rocks",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dry, Wet, Virgin, and Top Shelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Dry in this martini context usually indicates less vermouth; wet indicates more. Virgin names an alcohol-free version, while top shelf names the premium range.\nWhich expression indicates less vermouth in the specified context?",
         "answer": "Dry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the classic cocktails setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Well Drink, and House Special and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Well drink uses the venue's standard house spirit. House special is a featured item, which is a different classification.\nWhich expression concerns the standard house spirit?",
         "answer": "Well Drink",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The trainee checks expressions before interpreting a request. On the rocks means served over ice. Neat means without ice or added mixers. Straight up generally means chilled with no ice remaining, but usage varies, so clarification can help. Dirty commonly concerns olive brine in a martini. Dry in this martini context usually indicates less vermouth, while wet indicates more; it is different from a wine's residual-sugar classification. Virgin commonly requests an alcohol-free version, whose actual ingredients still need checking. Top shelf describes a venue's premium range rather than guaranteed quality. Well drink uses its standard house spirit, and house special names a featured item. The learner practices clarifying terms without making, recommending or consuming a beverage and without treating a menu phrase as a chemical certification.\nWhy must dry be interpreted in context?",
+        "answer": "Its martini meaning differs from its residual-sugar meaning in wine.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "On the Rocks"
+        "prompt": "Explain the difference between “On the Rocks” and “Neat” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Straight Up"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Tom Collins” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the classic cocktails task. Use On the Rocks, Neat, Straight Up, Dirty, Dry, Wet, Virgin, Top Shelf, Well Drink, and House Special in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “On the Rocks” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: On the rocks means served over ice. Neat means no ice or mixers, straight up generally means chilled without remaining ice, and dirty commonly concerns olive brine.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Classic Cocktails: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from classic cocktails in cultural or industry texts."
+      "title": "Clarifying service expressions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The trainee checks expressions before interpreting a request. On the rocks means served over ice. Neat means without ice or added mixers. Straight up generally means chilled with no ice remaining, but usage varies, so clarification can help. Dirty commonly concerns olive brine in a martini. Dry in this martini context usually indicates less vermouth, while wet indicates more; it is different from a wine's residual-sugar classification. Virgin commonly requests an alcohol-free version, whose actual ingredients still need checking. Top shelf describes a venue's premium range rather than guaranteed quality. Well drink uses its standard house spirit, and house special names a featured item. The learner practices clarifying terms without making, recommending or consuming a beverage and without treating a menu phrase as a chemical certification. Ask: Why must dry be interpreted in context?"
     },
     "spacedReview": "1 lesson(s) back: Tom Collins, Paloma from classic-cocktails-2\n3 lesson(s) back: Lemon Twist, Lime Wedge from spirits-liqueurs-3\n7 lesson(s) back: Champagne Flute, Beer Mug from cocktail-bar-2"
   }

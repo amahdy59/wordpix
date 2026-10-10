@@ -6,12 +6,16 @@ import {
 } from "../data/contextualQuality";
 import { unitUsageDataSchema, type LessonUsageData } from "../data/usageTypes";
 import { enrichReferenceLesson } from "../data/referenceUnitEnrichment";
+import { applyLessonLearningContexts } from "../data/sceneLearningContext.mjs";
 
 const modules = import.meta.glob<{ default: unknown }>("../data/usage/*.usage.json", {
   eager: true,
 });
 const lessons: LessonUsageData[] = Object.values(modules).flatMap((module) =>
-  unitUsageDataSchema.parse(module.default).map(enrichReferenceLesson)
+  unitUsageDataSchema
+    .parse(module.default)
+    .map(applyLessonLearningContexts)
+    .map(enrichReferenceLesson)
 );
 const reports = lessons.map(auditContextualLesson);
 const approvalModules = import.meta.glob<{ default: unknown }>(

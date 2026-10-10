@@ -28,13 +28,13 @@
     ],
     "targetWordsArabic": [
       "صاروخ",
-      "حافلة نقل فضاء",
+      "مكوك فضائي",
       "قمر صناعي",
-      "كبسولة",
+      "كبسولة فضائية",
       "مركبة هبوط فضائية",
       "مركبة استكشاف جوالة",
-      "مسبار",
-      "مرحلة دفع صاروخية",
+      "مسبار فضائي",
+      "معزز دفع صاروخي",
       "حمولة فضائية",
       "منصة إطلاق",
       "شمس",
@@ -44,136 +44,122 @@
       "المريخ"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the science or research setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare mission operations, spacecraft functions and celestial objects using stated evidence.",
+      "canDoStatement": "Can explain a scientific distinction and identify the evidence supporting it.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["rocket", "space shuttle", "satellite", "capsule"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rocket, space shuttle, satellite, and capsule and choose the option that fits the situation.",
+          "scenario": "The rocket produces thrust. Space shuttle names NASA's historical partly reusable system; satellite and capsule name other spacecraft types.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which vehicle produces thrust with a rocket engine?",
             "options": ["rocket", "space shuttle", "satellite"],
             "expectedAnswer": "rocket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the rocket as the central item; include rocket, space shuttle, and satellite naturally where visually appropriate, but make the real-world use of rocket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. One unlettered rocket model with propulsion nozzle visible, no imaginary mission insignia. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["lander", "rover", "probe", "booster"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lander, rover, probe, and booster and choose the option that fits the situation.",
+          "scenario": "The lander reaches a world's surface. A rover then travels over the surface, a probe investigates without crew, and a booster supplies launch thrust.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which vehicle is designed to reach the surface?",
             "options": ["lander", "rover", "probe"],
             "expectedAnswer": "lander"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the lander as the central item; include lander, rover, and probe naturally where visually appropriate, but make the real-world use of lander the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. An uncrewed planetary lander model with landing legs, no mission-specific identity claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["payload", "launch pad", "Sun", "Mercury"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare payload, launch pad, Sun, and Mercury and choose the option that fits the situation.",
+          "scenario": "Payload is the carried equipment or cargo. Launch pad names the platform; the Sun is the star and Mercury the nearest planet to it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the carried equipment or cargo?",
             "options": ["payload", "launch pad", "Sun"],
             "expectedAnswer": "payload"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the payload as the central item; include payload, launch pad, and Sun naturally where visually appropriate, but make the real-world use of payload the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A rocket cutaway model with an unlettered instrument payload in its upper compartment. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Venus", "Earth", "Mars"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Venus, Earth, and Mars and choose the option that fits the situation.",
+          "scenario": "Venus is the second planet from the Sun. Earth is third and Mars fourth; they are different worlds rather than interchangeable colored spheres.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which planet is second from the Sun?",
             "options": ["Venus", "Earth", "Mars"],
             "expectedAnswer": "Venus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Venus as the central item; include Venus, Earth, and Mars naturally where visually appropriate, but make the real-world use of Venus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed Venus globe with pale cloud cover; exact identity supported by the written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Space Center",
-      "text": "At the space center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers rocket, space shuttle, satellite, and capsule. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers lander, rover, probe, and booster. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers payload, launch pad, Sun, and Mercury. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Venus, Earth, and Mars. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing vehicles and destinations",
+      "text": "At a space-center exhibition, Sami compares machines with the worlds they explore. A rocket produces thrust to carry a vehicle or payload. NASA's historical space shuttle used a winged orbiter within a partly reusable system. An artificial satellite operates in space; a capsule can carry crew or cargo. A lander reaches a surface, while a rover travels over it. A probe investigates a destination without a crew. A booster supplies additional launch thrust. Payload means carried equipment or cargo, and launch pad is the launch platform. The Sun is a star. Mercury, Venus, Earth and Mars are the four inner planets in that order. Sami separates a machine's purpose from its destination. A model's size does not represent actual planetary distances unless a stated scale is used.",
+      "imageBrief": "Support for Comparing vehicles and destinations. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare rocket, space shuttle, satellite, and capsule and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The rocket produces thrust. Space shuttle names NASA's historical partly reusable system; satellite and capsule name other spacecraft types.\nWhich vehicle produces thrust with a rocket engine?",
         "answer": "rocket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lander, rover, probe, and booster and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The lander reaches a world's surface. A rover then travels over the surface, a probe investigates without crew, and a booster supplies launch thrust.\nWhich vehicle is designed to reach the surface?",
         "answer": "lander",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare payload, launch pad, Sun, and Mercury and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Payload is the carried equipment or cargo. Launch pad names the platform; the Sun is the star and Mercury the nearest planet to it.\nWhich term names the carried equipment or cargo?",
         "answer": "payload",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Venus, Earth, and Mars and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Venus is the second planet from the Sun. Earth is third and Mars fourth; they are different worlds rather than interchangeable colored spheres.\nWhich planet is second from the Sun?",
         "answer": "Venus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At a space-center exhibition, Sami compares machines with the worlds they explore. A rocket produces thrust to carry a vehicle or payload. NASA's historical space shuttle used a winged orbiter within a partly reusable system. An artificial satellite operates in space; a capsule can carry crew or cargo. A lander reaches a surface, while a rover travels over it. A probe investigates a destination without a crew. A booster supplies additional launch thrust. Payload means carried equipment or cargo, and launch pad is the launch platform. The Sun is a star. Mercury, Venus, Earth and Mars are the four inner planets in that order. Sami separates a machine's purpose from its destination. A model's size does not represent actual planetary distances unless a stated scale is used.\nWhy does Sami separate purpose from destination?",
+        "answer": "A vehicle term describes what a machine does, rather than which world it visits.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "rocket"
+        "prompt": "Explain the difference between “rocket” and “space shuttle” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "satellite"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Moderation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 space center task. Use rocket, space shuttle, satellite, capsule, lander, rover, probe, booster, payload, launch pad, Sun, Mercury, Venus, Earth, and Mars in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “rocket” in its supplied space science sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The rocket produces thrust. Space shuttle names NASA's historical partly reusable system; satellite and capsule name other spacecraft types.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L7 Space Center: In Context",
-      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing vehicles and destinations",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a space-center exhibition, Sami compares machines with the worlds they explore. A rocket produces thrust to carry a vehicle or payload. NASA's historical space shuttle used a winged orbiter within a partly reusable system. An artificial satellite operates in space; a capsule can carry crew or cargo. A lander reaches a surface, while a rover travels over it. A probe investigates a destination without a crew. A booster supplies additional launch thrust. Payload means carried equipment or cargo, and launch pad is the launch platform. The Sun is a star. Mercury, Venus, Earth and Mars are the four inner planets in that order. Sami separates a machine's purpose from its destination. A model's size does not represent actual planetary distances unless a stated scale is used. Ask: Why does Sami separate purpose from destination?"
     },
     "spacedReview": "1 lesson(s) back: Moderation, Ride Share from bar-culture-3\n3 lesson(s) back: Sports Bar, Dive Bar from bar-culture-1\n7 lesson(s) back: Lemon Twist, Lime Wedge from spirits-liqueurs-3"
   },
@@ -222,136 +208,122 @@
       "سير في الفضاء"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the science or research setting.",
-      "textType": "narrative",
-      "readingTarget": "150-220 words",
+      "goal": "Compare mission operations, spacecraft functions and celestial objects using stated evidence.",
+      "canDoStatement": "Can explain a scientific distinction and identify the evidence supporting it.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Jupiter", "Saturn", "Uranus", "Neptune"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jupiter, Saturn, Uranus, and Neptune and choose the option that fits the situation.",
+          "scenario": "Jupiter is the largest planet in the Solar System. Saturn is the sixth planet; Uranus and Neptune are the seventh and eighth.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which planet is the largest in the Solar System?",
             "options": ["Jupiter", "Saturn", "Uranus"],
             "expectedAnswer": "Jupiter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Jupiter as the central item; include Jupiter, Saturn, and Uranus naturally where visually appropriate, but make the real-world use of Jupiter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed Jupiter globe with its banded atmosphere, no labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Moon", "asteroid", "comet", "astronaut"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, asteroid, comet, and astronaut and choose the option that fits the situation.",
+          "scenario": "The Moon is Earth's natural satellite. An asteroid and comet are other small Solar System bodies; astronaut names a trained person.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed body is Earth's natural satellite?",
             "options": ["Moon", "asteroid", "comet"],
             "expectedAnswer": "Moon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Moon as the central item; include Moon, asteroid, and comet naturally where visually appropriate, but make the real-world use of Moon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed lunar globe with cratered surface, no invented mission scene. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["spacesuit", "helmet", "mission control", "countdown"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare spacesuit, helmet, mission control, and countdown and choose the option that fits the situation.",
+          "scenario": "The spacesuit is the astronaut's protective clothing system. Helmet is one part; mission control is on the ground, and countdown marks the remaining time before an event.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the protective clothing system?",
             "options": ["spacesuit", "helmet", "mission control"],
             "expectedAnswer": "spacesuit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the spacesuit as the central item; include spacesuit, helmet, and mission control naturally where visually appropriate, but make the real-world use of spacesuit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. An empty pressure spacesuit displayed on a stand with helmet, no person or insignia. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["liftoff", "orbit", "spacewalk"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liftoff, orbit, and spacewalk and choose the option that fits the situation.",
+          "scenario": "Liftoff begins the rocket's ascent from the pad. Orbit names the later path around a body; spacewalk is activity outside the spacecraft.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which event begins ascent from the launch pad?",
             "options": ["liftoff", "orbit", "spacewalk"],
             "expectedAnswer": "liftoff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the liftoff as the central item; include liftoff, orbit, and spacewalk naturally where visually appropriate, but make the real-world use of liftoff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A rocket lifting just above a launch pad with exhaust below, no people or writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at Space Center",
-      "text": "At the space center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Jupiter, Saturn, Uranus, and Neptune. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Moon, asteroid, comet, and astronaut. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers spacesuit, helmet, mission control, and countdown. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers liftoff, orbit, and spacewalk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Following a mission description",
+      "text": "Sami reads a mission description before interpreting the display. Jupiter and Saturn are gas giants; Uranus and Neptune are ice giants. Saturn has an extensive ring system, and the other giant planets also have rings. The Moon is Earth's natural satellite. An asteroid is a small rocky or metallic body; a comet contains ice and other material. An astronaut is trained for spaceflight. A spacesuit supports the wearer in the conditions for which it is designed, and a helmet protects the head as part of the system. Mission control supports a mission from the ground. Countdown precedes the event; liftoff begins ascent, orbit names a curved path around another body, and spacewalk names activity outside a spacecraft. The description supplies facts that a generic model cannot prove.",
+      "imageBrief": "Support for Following a mission description. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jupiter, Saturn, Uranus, and Neptune and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Jupiter is the largest planet in the Solar System. Saturn is the sixth planet; Uranus and Neptune are the seventh and eighth.\nWhich planet is the largest in the Solar System?",
         "answer": "Jupiter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, asteroid, comet, and astronaut and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Moon is Earth's natural satellite. An asteroid and comet are other small Solar System bodies; astronaut names a trained person.\nWhich listed body is Earth's natural satellite?",
         "answer": "Moon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare spacesuit, helmet, mission control, and countdown and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The spacesuit is the astronaut's protective clothing system. Helmet is one part; mission control is on the ground, and countdown marks the remaining time before an event.\nWhich term names the protective clothing system?",
         "answer": "spacesuit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liftoff, orbit, and spacewalk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Liftoff begins the rocket's ascent from the pad. Orbit names the later path around a body; spacewalk is activity outside the spacecraft.\nWhich event begins ascent from the launch pad?",
         "answer": "liftoff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Sami reads a mission description before interpreting the display. Jupiter and Saturn are gas giants; Uranus and Neptune are ice giants. Saturn has an extensive ring system, and the other giant planets also have rings. The Moon is Earth's natural satellite. An asteroid is a small rocky or metallic body; a comet contains ice and other material. An astronaut is trained for spaceflight. A spacesuit supports the wearer in the conditions for which it is designed, and a helmet protects the head as part of the system. Mission control supports a mission from the ground. Countdown precedes the event; liftoff begins ascent, orbit names a curved path around another body, and spacewalk names activity outside a spacecraft. The description supplies facts that a generic model cannot prove.\nWhat distinguishes orbit from liftoff?",
+        "answer": "Orbit is a path around another body; liftoff begins ascent from the launch pad.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Jupiter"
+        "prompt": "Explain the difference between “Jupiter” and “Saturn” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Uranus"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “rocket” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 space center task. Use Jupiter, Saturn, Uranus, Neptune, Moon, asteroid, comet, astronaut, spacesuit, helmet, mission control, countdown, liftoff, orbit, and spacewalk in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Jupiter” in its supplied space science sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Jupiter is the largest planet in the Solar System. Saturn is the sixth planet; Uranus and Neptune are the seventh and eighth.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L7 Space Center: In Context",
-      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Following a mission description",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Sami reads a mission description before interpreting the display. Jupiter and Saturn are gas giants; Uranus and Neptune are ice giants. Saturn has an extensive ring system, and the other giant planets also have rings. The Moon is Earth's natural satellite. An asteroid is a small rocky or metallic body; a comet contains ice and other material. An astronaut is trained for spaceflight. A spacesuit supports the wearer in the conditions for which it is designed, and a helmet protects the head as part of the system. Mission control supports a mission from the ground. Countdown precedes the event; liftoff begins ascent, orbit names a curved path around another body, and spacewalk names activity outside a spacecraft. The description supplies facts that a generic model cannot prove. Ask: What distinguishes orbit from liftoff?"
     },
     "spacedReview": "1 lesson(s) back: rocket, space shuttle from space-center-1\n3 lesson(s) back: Toast, Cheers from bar-culture-2\n7 lesson(s) back: Martini, Old Fashioned from classic-cocktails-1"
   },
@@ -400,136 +372,122 @@
       "لوح شمسي"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the science or research setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Compare mission operations, spacecraft functions and celestial objects using stated evidence.",
+      "canDoStatement": "Can explain a scientific distinction and identify the evidence supporting it.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["docking", "re-entry", "splashdown", "telescope"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare docking, re-entry, splashdown, and telescope and choose the option that fits the situation.",
+          "scenario": "Docking joins two spacecraft. Re-entry returns a craft to an atmosphere; splashdown lands it in water, and telescope names an observing instrument.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which operation joins the spacecraft?",
             "options": ["docking", "re-entry", "splashdown"],
             "expectedAnswer": "docking"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating docking through a realistic adult task; include docking, re-entry, and splashdown naturally where visually appropriate, but make the real-world use of docking the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. Two generic spacecraft models connected at matching docking ports, no mission logo. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["star", "galaxy", "nebula", "black hole"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare star, galaxy, nebula, and black hole and choose the option that fits the situation.",
+          "scenario": "A star produces energy. A galaxy contains stars and other matter; a nebula is a gas-and-dust cloud, and a black hole has an event horizon.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which object produces its own energy in this comparison?",
             "options": ["star", "galaxy", "nebula"],
             "expectedAnswer": "star"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the star as the central item; include star, galaxy, and nebula naturally where visually appropriate, but make the real-world use of star the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed illustration of one luminous star; clearly treat it as an illustration, not an observation. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["supernova", "constellation", "meteor", "aurora"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare supernova, constellation, meteor, and aurora and choose the option that fits the situation.",
+          "scenario": "A supernova is a stellar explosion. Constellation names a pattern or sky region, meteor a luminous atmospheric streak, and aurora an atmospheric light display.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the stellar explosion?",
             "options": ["supernova", "constellation", "meteor"],
             "expectedAnswer": "supernova"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the supernova as the central item; include supernova, constellation, and meteor naturally where visually appropriate, but make the real-world use of supernova the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed supernova illustration with expanding material; no claim of a photographed current event. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["eclipse", "cosmic dust", "solar panel"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare eclipse, cosmic dust, and solar panel and choose the option that fits the situation.",
+          "scenario": "An eclipse involves one object blocking light through alignment. Cosmic dust names tiny solid grains; solar panel names an electricity-generating device.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the light-blocking alignment event?",
             "options": ["eclipse", "cosmic dust", "solar panel"],
             "expectedAnswer": "eclipse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the eclipse as the central item; include eclipse, cosmic dust, and solar panel naturally where visually appropriate, but make the real-world use of eclipse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A scientifically informed eclipse illustration with one body obscuring another; no text or unsafe viewing instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Space Center",
-      "text": "At the space center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers docking, re-entry, splashdown, and telescope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers star, galaxy, nebula, and black hole. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers supernova, constellation, meteor, and aurora. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers eclipse, cosmic dust, and solar panel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing operations and observations",
+      "text": "The exhibition separates mission operations from astronomical phenomena. Docking joins spacecraft. Re-entry returns a vehicle into an atmosphere; splashdown lands it in water. A telescope observes distant objects. A star produces energy, and a galaxy is a vast gravitationally related system containing stars and other matter. A nebula is a cloud of gas and dust. A black hole has an event horizon from within which light cannot escape. A supernova is a stellar explosion, while a constellation is a named pattern or sky region as viewed from Earth. Meteor describes the luminous atmospheric streak. Aurora concerns light from interactions involving charged particles and an atmosphere. An eclipse blocks light through alignment; cosmic dust names small solid grains. A solar panel converts light into electricity. Sami asks whether an image is an observation, model or illustration.",
+      "imageBrief": "Support for Describing operations and observations. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare docking, re-entry, splashdown, and telescope and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Docking joins two spacecraft. Re-entry returns a craft to an atmosphere; splashdown lands it in water, and telescope names an observing instrument.\nWhich operation joins the spacecraft?",
         "answer": "docking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare star, galaxy, nebula, and black hole and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A star produces energy. A galaxy contains stars and other matter; a nebula is a gas-and-dust cloud, and a black hole has an event horizon.\nWhich object produces its own energy in this comparison?",
         "answer": "star",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare supernova, constellation, meteor, and aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A supernova is a stellar explosion. Constellation names a pattern or sky region, meteor a luminous atmospheric streak, and aurora an atmospheric light display.\nWhich term names the stellar explosion?",
         "answer": "supernova",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare eclipse, cosmic dust, and solar panel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An eclipse involves one object blocking light through alignment. Cosmic dust names tiny solid grains; solar panel names an electricity-generating device.\nWhich term names the light-blocking alignment event?",
         "answer": "eclipse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The exhibition separates mission operations from astronomical phenomena. Docking joins spacecraft. Re-entry returns a vehicle into an atmosphere; splashdown lands it in water. A telescope observes distant objects. A star produces energy, and a galaxy is a vast gravitationally related system containing stars and other matter. A nebula is a cloud of gas and dust. A black hole has an event horizon from within which light cannot escape. A supernova is a stellar explosion, while a constellation is a named pattern or sky region as viewed from Earth. Meteor describes the luminous atmospheric streak. Aurora concerns light from interactions involving charged particles and an atmosphere. An eclipse blocks light through alignment; cosmic dust names small solid grains. A solar panel converts light into electricity. Sami asks whether an image is an observation, model or illustration.\nWhy does Sami ask what kind of image is shown?",
+        "answer": "An observation, model and illustration provide different kinds of evidence.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "docking"
+        "prompt": "Explain the difference between “docking” and “re-entry” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "splashdown"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Jupiter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 space center task. Use docking, re-entry, splashdown, telescope, star, galaxy, nebula, black hole, supernova, constellation, meteor, aurora, eclipse, cosmic dust, and solar panel in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “docking” in its supplied space science sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Docking joins two spacecraft. Re-entry returns a craft to an atmosphere; splashdown lands it in water, and telescope names an observing instrument.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L7 Space Center: In Context",
-      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Describing operations and observations",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The exhibition separates mission operations from astronomical phenomena. Docking joins spacecraft. Re-entry returns a vehicle into an atmosphere; splashdown lands it in water. A telescope observes distant objects. A star produces energy, and a galaxy is a vast gravitationally related system containing stars and other matter. A nebula is a cloud of gas and dust. A black hole has an event horizon from within which light cannot escape. A supernova is a stellar explosion, while a constellation is a named pattern or sky region as viewed from Earth. Meteor describes the luminous atmospheric streak. Aurora concerns light from interactions involving charged particles and an atmosphere. An eclipse blocks light through alignment; cosmic dust names small solid grains. A solar panel converts light into electricity. Sami asks whether an image is an observation, model or illustration. Ask: Why does Sami ask what kind of image is shown?"
     },
     "spacedReview": "1 lesson(s) back: Jupiter, Saturn from space-center-2\n3 lesson(s) back: Moderation, Ride Share from bar-culture-3\n7 lesson(s) back: Tom Collins, Paloma from classic-cocktails-2"
   },
@@ -566,117 +524,103 @@
       "مختبر"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand scientific vocabulary, observations, and safety-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the science or research setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare mission operations, spacecraft functions and celestial objects using stated evidence.",
+      "canDoStatement": "Can explain a scientific distinction and identify the evidence supporting it.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["antenna", "radar", "computer", "fuel tank"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare antenna, radar, computer, and fuel tank and choose the option that fits the situation.",
+          "scenario": "The antenna sends or receives radio signals. Radar uses such waves for detection or measurement; computer processes information, and fuel tank stores fuel.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device sends or receives the communication signals?",
             "options": ["antenna", "radar", "computer"],
             "expectedAnswer": "antenna"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the antenna as the central item; include antenna, radar, and computer naturally where visually appropriate, but make the real-world use of antenna the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. One spacecraft dish antenna on a generic model, no labels or mission claims. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["thruster", "heat shield", "parachute", "robotic arm"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thruster, heat shield, parachute, and robotic arm and choose the option that fits the situation.",
+          "scenario": "The thruster provides force for maneuvering. Heat shield protects against entry heating, parachute slows atmospheric descent, and robotic arm handles objects.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which subsystem supplies the maneuvering force?",
             "options": ["thruster", "heat shield", "parachute"],
             "expectedAnswer": "thruster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the thruster as the central item; include thruster, heat shield, and parachute naturally where visually appropriate, but make the real-world use of thruster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. A small spacecraft thruster nozzle on a cutaway model, no impossible visible sound or operating instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["laboratory"],
-          "scenario": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare laboratory and choose the option that fits the situation.",
+          "scenario": "The laboratory contains equipment for scientific investigations. The guide distinguishes this work area from the spacecraft's propulsion and communication systems.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which area is equipped for scientific investigations?",
             "options": ["laboratory", "antenna", "radar"],
             "expectedAnswer": "laboratory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the laboratory as the main location; include laboratory, antenna, and radar naturally where visually appropriate, but make the real-world use of laboratory the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written space science task. An empty spacecraft laboratory model with secured generic instruments, no crew or readable screens. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Space Center",
-      "text": "At the space center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers antenna, radar, computer, and fuel tank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers thruster, heat shield, parachute, and robotic arm. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers laboratory. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about L7 Space Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing spacecraft subsystems",
+      "text": "Sami examines a generic spacecraft cutaway. An antenna sends or receives radio signals; radar uses radio waves to detect or measure objects. A computer processes information. A fuel tank stores fuel, while a thruster provides force to adjust motion or orientation. A heat shield protects against heating during atmospheric entry. A parachute slows descent where an atmosphere permits it. A robotic arm handles objects, and a laboratory provides equipment for investigations. The guide asks Sami to compare functions rather than infer performance from the model. The cutaway illustrates relationships but does not show every mission's design. A solar-powered system still needs suitable power management, and a shield's appearance does not establish its temperature limits. Engineering specifications and measurements support those claims.",
+      "imageBrief": "Support for Comparing spacecraft subsystems. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare antenna, radar, computer, and fuel tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The antenna sends or receives radio signals. Radar uses such waves for detection or measurement; computer processes information, and fuel tank stores fuel.\nWhich device sends or receives the communication signals?",
         "answer": "antenna",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare thruster, heat shield, parachute, and robotic arm and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The thruster provides force for maneuvering. Heat shield protects against entry heating, parachute slows atmospheric descent, and robotic arm handles objects.\nWhich subsystem supplies the maneuvering force?",
         "answer": "thruster",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 space center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare laboratory and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The laboratory contains equipment for scientific investigations. The guide distinguishes this work area from the spacecraft's propulsion and communication systems.\nWhich area is equipped for scientific investigations?",
         "answer": "laboratory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Sami examines a generic spacecraft cutaway. An antenna sends or receives radio signals; radar uses radio waves to detect or measure objects. A computer processes information. A fuel tank stores fuel, while a thruster provides force to adjust motion or orientation. A heat shield protects against heating during atmospheric entry. A parachute slows descent where an atmosphere permits it. A robotic arm handles objects, and a laboratory provides equipment for investigations. The guide asks Sami to compare functions rather than infer performance from the model. The cutaway illustrates relationships but does not show every mission's design. A solar-powered system still needs suitable power management, and a shield's appearance does not establish its temperature limits. Engineering specifications and measurements support those claims.\nDoes the shield model establish its temperature limit?",
+        "answer": "No; that claim requires engineering specifications and measurements.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "antenna"
+        "prompt": "Explain the difference between “antenna” and “radar” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "computer"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “docking” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 space center task. Use antenna, radar, computer, fuel tank, thruster, heat shield, parachute, robotic arm, and laboratory in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “antenna” in its supplied space science sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The antenna sends or receives radio signals. Radar uses such waves for detection or measurement; computer processes information, and fuel tank stores fuel.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L7 Space Center: In Context",
-      "idea": "50-80 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing spacecraft subsystems",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Sami examines a generic spacecraft cutaway. An antenna sends or receives radio signals; radar uses radio waves to detect or measure objects. A computer processes information. A fuel tank stores fuel, while a thruster provides force to adjust motion or orientation. A heat shield protects against heating during atmospheric entry. A parachute slows descent where an atmosphere permits it. A robotic arm handles objects, and a laboratory provides equipment for investigations. The guide asks Sami to compare functions rather than infer performance from the model. The cutaway illustrates relationships but does not show every mission's design. A solar-powered system still needs suitable power management, and a shield's appearance does not establish its temperature limits. Engineering specifications and measurements support those claims. Ask: Does the shield model establish its temperature limit?"
     },
     "spacedReview": "1 lesson(s) back: docking, re-entry from space-center-3\n3 lesson(s) back: rocket, space shuttle from space-center-1\n7 lesson(s) back: On the Rocks, Neat from classic-cocktails-3"
   }

@@ -36,7 +36,7 @@
       "سلحفاة",
       "خنزير غينيا",
       "كناري",
-      "جربوع",
+      "جيربيل",
       "غولدن ريتريفر",
       "كلب بودل",
       "كلب بولدوغ",
@@ -44,136 +44,141 @@
       "كلب لابرادور"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "dialogue",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dog", "Cat", "Hamster"],
-          "scenario": "During a routine the pet shop task, an adult compares Dog, Cat, Hamster. The person selects Dog for the next step.",
+          "scenario": "Rami asks about a dog for companionship. He does not choose a cat or hamster. He asks about the dog’s care needs before deciding.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which animal does Rami ask about?",
             "options": ["Dog", "Cat", "Hamster"],
             "expectedAnswer": "Dog"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Dog, Cat, Hamster. The person selects Dog for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Dog, Cat, Hamster in a natural setting."
+          "imageBrief": "A single healthy adult dog in a spacious calm indoor area, without collar text or unsafe handling.",
+          "imageAlt": "A single adult dog in a spacious calm indoor area, without collar text or unsafe handling."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rabbit", "Goldfish", "Parrot"],
-          "scenario": "During a routine the pet shop task, an adult compares Rabbit, Goldfish, Parrot. The person selects Rabbit for the next step.",
+          "scenario": "Hana has space for a rabbit’s exercise area. She asks staff about caring for a rabbit, rather than a goldfish or parrot.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which animal does Hana ask about?",
             "options": ["Rabbit", "Goldfish", "Parrot"],
             "expectedAnswer": "Rabbit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Rabbit, Goldfish, Parrot. The person selects Rabbit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Rabbit, Goldfish, Parrot in a natural setting."
+          "imageBrief": "A rabbit in a spacious enriched enclosure, long ears and short tail visible. No goldfish bowl or mixed-species cage.",
+          "imageAlt": "A rabbit in a spacious enriched enclosure, long ears and short tail visible."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Turtle", "Guinea Pig", "Canary"],
-          "scenario": "During a routine the pet shop task, an adult compares Turtle, Guinea Pig, Canary. The person selects Turtle for the next step.",
+          "scenario": "Omar is learning about a turtle. It is a reptile with a shell. A guinea pig is a mammal, and a canary is a bird.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which animal in this situation is a reptile with a shell?",
             "options": ["Turtle", "Guinea Pig", "Canary"],
             "expectedAnswer": "Turtle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Turtle, Guinea Pig, Canary. The person selects Turtle for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Turtle, Guinea Pig, Canary in a natural setting."
+          "imageBrief": "Species-accurate turtle in an appropriate habitat, without a tiny bowl or exaggerated speed cues.",
+          "imageAlt": "Species-accurate turtle in an appropriate habitat, without a tiny bowl or exaggerated speed cues."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gerbil", "Golden Retriever", "Poodle"],
-          "scenario": "During a routine the pet shop task, an adult compares Gerbil, Golden Retriever, Poodle. The person selects Gerbil for the next step.",
+          "scenario": "Maya asks about a gerbil, a small rodent with a long tail. The worker shows her care information rather than the Golden Retriever or Poodle guide.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which small rodent does Maya ask about?",
             "options": ["Gerbil", "Golden Retriever", "Poodle"],
             "expectedAnswer": "Gerbil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Gerbil, Golden Retriever, Poodle. The person selects Gerbil for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Gerbil, Golden Retriever, Poodle in a natural setting."
+          "imageBrief": "A gerbil with a long furred tail in deep bedding and a spacious enclosure. No dog-breed collage.",
+          "imageAlt": "A gerbil with a long furred tail in deep bedding and a spacious enclosure."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Bulldog", "German Shepherd", "Labrador"],
-          "scenario": "During a routine the pet shop task, an adult compares Bulldog, German Shepherd, Labrador. The person selects Bulldog for the next step.",
+          "scenario": "Rami reads a profile labelled Bulldog. Other profiles are for a German Shepherd and Labrador. He wants to learn each animal’s needs, not judge health from its photograph.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which profile does Rami read?",
             "options": ["Bulldog", "German Shepherd", "Labrador"],
             "expectedAnswer": "Bulldog"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bulldog, German Shepherd, Labrador. The person selects Bulldog for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bulldog, German Shepherd, Labrador in a natural setting."
+          "imageBrief": "Species-accurate adult bulldog in a neutral spacious setting. No written breed labels or implication that appearance proves temperament or health.",
+          "imageAlt": "Species-accurate adult bulldog in a neutral spacious setting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Short Description",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. The guide points out the dog, cat, and hamster and asks the group to notice how the animals move or behave. The guide points out the rabbit, goldfish, and parrot and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on turtle, guinea pig, and canary.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Maya asks a pet-shop worker about a dog and cat. A Golden Retriever, Poodle, Bulldog, German Shepherd and Labrador appear in a dog-breed guide. She also reads about a hamster, rabbit, guinea pig and gerbil. A goldfish swims in a large aquarium. A parrot and canary are in separate bird enclosures. A turtle needs a different habitat, so Maya asks for species-specific information before deciding.",
+      "imageBrief": "An adult consulting an unlettered pet-care guide at a shop counter; a large maintained aquarium behind. No overcrowded mixed-species cage or breed name labels."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Dog, Cat, Hamster. The person selects Dog for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Rami asks about a dog for companionship. He does not choose a cat or hamster. He asks about the dog’s care needs before deciding.\nWhich animal does Rami ask about?",
         "answer": "Dog",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Rabbit, Goldfish, Parrot. The person selects Rabbit for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hana has space for a rabbit’s exercise area. She asks staff about caring for a rabbit, rather than a goldfish or parrot.\nWhich animal does Hana ask about?",
         "answer": "Rabbit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Turtle, Guinea Pig, Canary. The person selects Turtle for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar is learning about a turtle. It is a reptile with a shell. A guinea pig is a mammal, and a canary is a bird.\nWhich animal in this situation is a reptile with a shell?",
         "answer": "Turtle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Gerbil, Golden Retriever, Poodle. The person selects Gerbil for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya asks about a gerbil, a small rodent with a long tail. The worker shows her care information rather than the Golden Retriever or Poodle guide.\nWhich small rodent does Maya ask about?",
         "answer": "Gerbil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bulldog, German Shepherd, Labrador. The person selects Bulldog for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Rami reads a profile labelled Bulldog. Other profiles are for a German Shepherd and Labrador. He wants to learn each animal’s needs, not judge health from its photograph.\nWhich profile does Rami read?",
         "answer": "Bulldog",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Dog"
+        "prompt": "Read the passage: Maya asks a pet-shop worker about a dog and cat. A Golden Retriever, Poodle, Bulldog, German Shepherd and Labrador appear in a dog-breed guide. She also reads about a hamster, rabbit, guinea pig and gerbil. A goldfish swims in a large aquarium. A parrot and canary are in separate bird enclosures. A turtle needs a different habitat, so Maya asks for species-specific information before deciding.\nWhy does Maya ask for species-specific information?",
+        "answer": "because a turtle needs a different habitat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Hamster"
+        "prompt": "Ask a worker one question about a turtle’s habitat.",
+        "answer": "What kind of habitat does this turtle need?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Throwing” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Your friend is choosing a pet. Suggest asking about daily care before deciding.",
+        "answer": "Ask the worker what the animal needs every day.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Rami asks about a dog for companionship. He does not choose a cat or hamster. He asks about the dog’s care needs before deciding."
     },
     "spacedReview": "1 lesson(s) back: Throwing, Catching from playground-4\n3 lesson(s) back: Goal, Whistle from playground-2\n7 lesson(s) back: Walking, Jogging from park-3"
   },
@@ -222,136 +227,141 @@
       "قط سكوتش فولد"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "dialogue",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Beagle", "Chihuahua", "Dalmatian"],
-          "scenario": "During a routine the pet shop task, an adult compares Beagle, Chihuahua, Dalmatian. The person selects Beagle for the next step.",
+          "scenario": "The worker gives Hana a Beagle profile. A Chihuahua profile and a Dalmatian profile are for two other animals. Hana reads the Beagle’s details carefully.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which profile does Hana receive?",
             "options": ["Beagle", "Chihuahua", "Dalmatian"],
             "expectedAnswer": "Beagle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Beagle, Chihuahua, Dalmatian. The person selects Beagle for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Beagle, Chihuahua, Dalmatian in a natural setting."
+          "imageBrief": "Adult beagle in a neutral spacious setting; no readable breed label or claims about individual temperament.",
+          "imageAlt": "Adult beagle in a neutral spacious setting; no readable breed label or claims about individual temperament."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Husky", "Pug", "Persian"],
-          "scenario": "During a routine the pet shop task, an adult compares Husky, Pug, Persian. The person selects Husky for the next step.",
+          "scenario": "Omar asks about the dog described in the Husky profile. The Pug and Persian profiles are not his choice today. A Persian is a cat breed.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which dog profile does Omar ask about?",
             "options": ["Husky", "Pug", "Persian"],
             "expectedAnswer": "Husky"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Husky, Pug, Persian. The person selects Husky for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Husky, Pug, Persian in a natural setting."
+          "imageBrief": "Adult husky in a spacious setting, thick coat visible; no sled operation or temperature claims.",
+          "imageAlt": "Adult husky in a spacious setting, thick coat visible; no sled operation or temperature claims."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Siamese", "Maine Coon", "Tabby"],
-          "scenario": "During a routine the pet shop task, an adult compares Siamese, Maine Coon, Tabby. The person selects Siamese for the next step.",
+          "scenario": "Maya reads a Siamese cat profile. The Maine Coon profile is beside it. A tabby is a coat pattern, rather than one single breed.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which cat profile does Maya read?",
             "options": ["Siamese", "Maine Coon", "Tabby"],
             "expectedAnswer": "Siamese"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Siamese, Maine Coon, Tabby. The person selects Siamese for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Siamese, Maine Coon, Tabby in a natural setting."
+          "imageBrief": "Adult Siamese cat with pale body and darker face, ears, paws and tail, in a neutral spacious room. No breed labels.",
+          "imageAlt": "Adult Siamese cat with pale body and darker face, ears, paws and tail, in a neutral spacious room."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bengal", "Ragdoll", "British Shorthair"],
-          "scenario": "During a routine the pet shop task, an adult compares Bengal, Ragdoll, British Shorthair. The person selects Bengal for the next step.",
+          "scenario": "The adoption folder describes a Bengal cat. Ragdoll and British Shorthair folders are nearby. Hana asks about the Bengal cat’s individual care needs.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which cat does the folder describe?",
             "options": ["Bengal", "Ragdoll", "British Shorthair"],
             "expectedAnswer": "Bengal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bengal, Ragdoll, British Shorthair. The person selects Bengal for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bengal, Ragdoll, British Shorthair in a natural setting."
+          "imageBrief": "Adult Bengal domestic cat with a species-appropriate spotted or marbled coat in a neutral room. No wild big cat substitution.",
+          "imageAlt": "Adult Bengal domestic cat with a species-appropriate spotted or marbled coat in a neutral room."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sphynx", "Abyssinian", "Scottish Fold"],
-          "scenario": "During a routine the pet shop task, an adult compares Sphynx, Abyssinian, Scottish Fold. The person selects Sphynx for the next step.",
+          "scenario": "Omar reads a Sphynx cat profile. The worker also has Abyssinian and Scottish Fold profiles. They discuss welfare needs rather than selecting only by appearance.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which profile does Omar read?",
             "options": ["Sphynx", "Abyssinian", "Scottish Fold"],
             "expectedAnswer": "Sphynx"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Sphynx, Abyssinian, Scottish Fold. The person selects Sphynx for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Sphynx, Abyssinian, Scottish Fold in a natural setting."
+          "imageBrief": "Adult Sphynx domestic cat in a comfortable indoor room, little visible hair, no clothing gag or medical condition claim.",
+          "imageAlt": "Adult Sphynx domestic cat in a comfortable indoor room, little visible hair, no clothing gag or medical condition claim."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Mini Dialogue",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on beagle, chihuahua, and dalmatian. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on husky, pug, and persian. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Omar compares photographs in a dog-breed guide: Beagle, Chihuahua, Dalmatian, Husky and Pug. A cat guide shows Persian, Siamese, Maine Coon, Bengal and Ragdoll cats. He also sees British Shorthair, Sphynx and Abyssinian photographs. The guide explains that tabby describes a coat pattern. Omar asks about the welfare needs of a Scottish Fold rather than choosing by appearance alone.",
+      "imageBrief": "Two unlettered animal-photo guides on a counter, one showing dogs and the other cats. No claim that breed or health can be established only by an image."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Beagle, Chihuahua, Dalmatian. The person selects Beagle for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The worker gives Hana a Beagle profile. A Chihuahua profile and a Dalmatian profile are for two other animals. Hana reads the Beagle’s details carefully.\nWhich profile does Hana receive?",
         "answer": "Beagle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Husky, Pug, Persian. The person selects Husky for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar asks about the dog described in the Husky profile. The Pug and Persian profiles are not his choice today. A Persian is a cat breed.\nWhich dog profile does Omar ask about?",
         "answer": "Husky",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Siamese, Maine Coon, Tabby. The person selects Siamese for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya reads a Siamese cat profile. The Maine Coon profile is beside it. A tabby is a coat pattern, rather than one single breed.\nWhich cat profile does Maya read?",
         "answer": "Siamese",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bengal, Ragdoll, British Shorthair. The person selects Bengal for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The adoption folder describes a Bengal cat. Ragdoll and British Shorthair folders are nearby. Hana asks about the Bengal cat’s individual care needs.\nWhich cat does the folder describe?",
         "answer": "Bengal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Sphynx, Abyssinian, Scottish Fold. The person selects Sphynx for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar reads a Sphynx cat profile. The worker also has Abyssinian and Scottish Fold profiles. They discuss welfare needs rather than selecting only by appearance.\nWhich profile does Omar read?",
         "answer": "Sphynx",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Beagle"
+        "prompt": "Read the passage: Omar compares photographs in a dog-breed guide: Beagle, Chihuahua, Dalmatian, Husky and Pug. A cat guide shows Persian, Siamese, Maine Coon, Bengal and Ragdoll cats. He also sees British Shorthair, Sphynx and Abyssinian photographs. The guide explains that tabby describes a coat pattern. Omar asks about the welfare needs of a Scottish Fold rather than choosing by appearance alone.\nWhat does tabby describe?",
+        "answer": "a coat pattern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Dalmatian"
+        "prompt": "Explain the difference between Siamese and tabby using one short sentence.",
+        "answer": "Siamese names a cat breed; tabby names a coat pattern.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dog” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend chooses only by a photograph. Ask one question about the animal’s care needs.",
+        "answer": "What care does this animal need?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "The worker gives Hana a Beagle profile. A Chihuahua profile and a Dalmatian profile are for two other animals. Hana reads the Beagle’s details carefully."
     },
     "spacedReview": "1 lesson(s) back: Dog, Cat from pet-shop-1\n3 lesson(s) back: Child, Friend from playground-3\n7 lesson(s) back: Roller Skates, Badminton from park-4"
   },
@@ -387,11 +397,11 @@
       "طعام القطط",
       "طعام أسماك",
       "بذور للطيور",
-      "تبن",
-      "مكافآت للحيوان",
+      "دريس (عشب مجفف)",
+      "مكافآت غذائية للحيوان",
       "وعاء ماء",
       "وعاء طعام",
-      "زجاجة رضاعة",
+      "زجاجة رضاعة للحيوان",
       "لعبة للمضغ",
       "طوق",
       "مقود",
@@ -400,136 +410,141 @@
       "قفص"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "workplace-email",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dog Food", "Cat Food", "Fish Food"],
-          "scenario": "During a routine the pet shop task, an adult compares Dog Food, Cat Food, Fish Food. The person selects Dog Food for the next step.",
+          "scenario": "Hana’s list asks for dog food. Cat food and fish food are on other shelves. She checks that the product is intended for her dog.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What is on Hana’s shopping list?",
             "options": ["Dog Food", "Cat Food", "Fish Food"],
             "expectedAnswer": "Dog Food"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Dog Food, Cat Food, Fish Food. The person selects Dog Food for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Dog Food, Cat Food, Fish Food in a natural setting."
+          "imageBrief": "Closed plain pet-food bag in a pet shop. Written scenario identifies intended species; no invented label or contents claim from appearance.",
+          "imageAlt": "Closed plain pet-food bag in a pet shop."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bird Seed", "Hay", "Treats"],
-          "scenario": "During a routine the pet shop task, an adult compares Bird Seed, Hay, Treats. The person selects Bird Seed for the next step.",
+          "scenario": "Maya buys bird seed for the species named in her care plan. Hay and treats are for different customers’ orders. She checks the seed mixture before paying.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product does Maya buy?",
             "options": ["Bird Seed", "Hay", "Treats"],
             "expectedAnswer": "Bird Seed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bird Seed, Hay, Treats. The person selects Bird Seed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bird Seed, Hay, Treats in a natural setting."
+          "imageBrief": "Plain bowl of mixed bird seed beside a closed unbranded bag; no animal feeding demonstration.",
+          "imageAlt": "Plain bowl of mixed bird seed beside a closed unbranded bag; no animal feeding demonstration."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Water Bowl", "Food Bowl", "Feeding Bottle"],
-          "scenario": "During a routine the pet shop task, an adult compares Water Bowl, Food Bowl, Feeding Bottle. The person selects Water Bowl for the next step.",
+          "scenario": "Omar needs a water bowl for drinking water. The food bowl will hold food. A feeding bottle belongs to another order.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item will hold drinking water?",
             "options": ["Water Bowl", "Food Bowl", "Feeding Bottle"],
             "expectedAnswer": "Water Bowl"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Water Bowl, Food Bowl, Feeding Bottle. The person selects Water Bowl for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Water Bowl, Food Bowl, Feeding Bottle in a natural setting."
+          "imageBrief": "Plain pet water bowl with clean water, separate empty food bowl nearby. No feeding-bottle procedure.",
+          "imageAlt": "Plain pet water bowl with clean water, separate empty food bowl nearby."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chew Toy", "Collar", "Leash"],
-          "scenario": "During a routine the pet shop task, an adult compares Chew Toy, Collar, Leash. The person selects Chew Toy for the next step.",
+          "scenario": "Hana selects a chew toy for her dog to play with. The collar and leash are for walks. She checks that the toy is appropriate for the dog.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is for play and chewing?",
             "options": ["Chew Toy", "Collar", "Leash"],
             "expectedAnswer": "Chew Toy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Chew Toy, Collar, Leash. The person selects Chew Toy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Chew Toy, Collar, Leash in a natural setting."
+          "imageBrief": "Plain sturdy dog chew toy on a shelf, collar and leash separate. No animal swallowing small parts.",
+          "imageAlt": "Plain sturdy dog chew toy on a shelf, collar and leash separate."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Harness", "Pet Bed", "Cage"],
-          "scenario": "During a routine the pet shop task, an adult compares Harness, Pet Bed, Cage. The person selects Harness for the next step.",
+          "scenario": "Rami asks for a harness that fits around his dog’s body. A pet bed is for resting, and a cage is an enclosure.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item fits around the dog’s body for attaching a lead?",
             "options": ["Harness", "Pet Bed", "Cage"],
             "expectedAnswer": "Harness"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Harness, Pet Bed, Cage. The person selects Harness for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Harness, Pet Bed, Cage in a natural setting."
+          "imageBrief": "Unbranded pet harness laid flat with its straps clearly visible. No unsafe restraint or use on an animal.",
+          "imageAlt": "Unbranded pet harness laid flat with its straps clearly visible."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Simple Message",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on dog food, cat food, and fish food. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on bird seed, hay, and treats. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Hana buys dog food for her dog and cat food for her cat. Fish food and bird seed are on another shelf beside hay. She asks which treats are suitable. A water bowl and food bowl go in her basket. She compares a chew toy, collar, leash and harness, then chooses a pet bed. A feeding bottle and cage belong to different customers’ orders.",
+      "imageBrief": "Pet-supply shelf with plain food bags, separate water and food bowls, chew toy, collar, leash, harness and pet bed. No contents inferred from unreadable labels; passage supplies them."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Dog Food, Cat Food, Fish Food. The person selects Dog Food for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hana’s list asks for dog food. Cat food and fish food are on other shelves. She checks that the product is intended for her dog.\nWhat is on Hana’s shopping list?",
         "answer": "Dog Food",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bird Seed, Hay, Treats. The person selects Bird Seed for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya buys bird seed for the species named in her care plan. Hay and treats are for different customers’ orders. She checks the seed mixture before paying.\nWhich product does Maya buy?",
         "answer": "Bird Seed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Water Bowl, Food Bowl, Feeding Bottle. The person selects Water Bowl for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar needs a water bowl for drinking water. The food bowl will hold food. A feeding bottle belongs to another order.\nWhich item will hold drinking water?",
         "answer": "Water Bowl",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Chew Toy, Collar, Leash. The person selects Chew Toy for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hana selects a chew toy for her dog to play with. The collar and leash are for walks. She checks that the toy is appropriate for the dog.\nWhich item is for play and chewing?",
         "answer": "Chew Toy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Harness, Pet Bed, Cage. The person selects Harness for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Rami asks for a harness that fits around his dog’s body. A pet bed is for resting, and a cage is an enclosure.\nWhich item fits around the dog’s body for attaching a lead?",
         "answer": "Harness",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Dog Food"
+        "prompt": "Read the passage: Hana buys dog food for her dog and cat food for her cat. Fish food and bird seed are on another shelf beside hay. She asks which treats are suitable. A water bowl and food bowl go in her basket. She compares a chew toy, collar, leash and harness, then chooses a pet bed. A feeding bottle and cage belong to different customers’ orders.\nWhich foods does Hana buy?",
+        "answer": "dog food and cat food",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Fish Food"
+        "prompt": "Ask for dog food and a water bowl in a shop.",
+        "answer": "I need dog food and a water bowl, please.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Beagle” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend has bought cat food for a dog. Suggest checking the intended species.",
+        "answer": "Please check whether the food is intended for the dog.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Hana’s list asks for dog food. Cat food and fish food are on other shelves. She checks that the product is intended for her dog."
     },
     "spacedReview": "1 lesson(s) back: Beagle, Chihuahua from pet-shop-2\n3 lesson(s) back: Throwing, Catching from playground-4\n7 lesson(s) back: Path, Oak Tree from park-5"
   },
@@ -565,10 +580,10 @@
       "صندوق فضلات القطط",
       "برج للقطط",
       "حاملة حيوان أليف",
-      "بطاقة اسم",
+      "بطاقة اسم الحيوان",
       "شامبو للحيوانات الأليفة",
       "فرشاة",
-      "قصاصة أظافر",
+      "قصّافة مخالب",
       "علاج للبراغيث",
       "فيتامينات للحيوانات الأليفة",
       "أداة جمع فضلات الحيوانات",
@@ -578,136 +593,141 @@
       "عمود خدش للقطط"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "service-notice",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Aquarium", "Litter Box", "Cat Tree"],
-          "scenario": "During a routine the pet shop task, an adult compares Aquarium, Litter Box, Cat Tree. The person selects Aquarium for the next step.",
+          "scenario": "Omar looks at an aquarium, a tank for aquatic animals. A litter box and cat tree are for cats. He asks about the fish’s needs before choosing a tank.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is a tank for aquatic animals?",
             "options": ["Aquarium", "Litter Box", "Cat Tree"],
             "expectedAnswer": "Aquarium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Aquarium, Litter Box, Cat Tree. The person selects Aquarium for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Aquarium, Litter Box, Cat Tree in a natural setting."
+          "imageBrief": "Large empty aquarium tank on a stable stand; no goldfish bowl or incompatible species.",
+          "imageAlt": "Large empty aquarium tank on a stable stand; no goldfish bowl or incompatible species."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pet Carrier", "Name Tag", "Pet Shampoo"],
-          "scenario": "During a routine the pet shop task, an adult compares Pet Carrier, Name Tag, Pet Shampoo. The person selects Pet Carrier for the next step.",
+          "scenario": "Hana puts her cat in a secure pet carrier for the journey. A name tag identifies the carrier, and pet shampoo stays on the shelf.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What transports Hana’s cat securely?",
             "options": ["Pet Carrier", "Name Tag", "Pet Shampoo"],
             "expectedAnswer": "Pet Carrier"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet Carrier, Name Tag, Pet Shampoo. The person selects Pet Carrier for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet Carrier, Name Tag, Pet Shampoo in a natural setting."
+          "imageBrief": "Closed ventilated cat carrier on a stable floor; no readable contact tag or bathing procedure.",
+          "imageAlt": "Closed ventilated cat carrier on a stable floor; no readable contact tag or bathing procedure."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Brush", "Nail Clipper", "Flea Treatment"],
-          "scenario": "During a routine the pet shop task, an adult compares Brush, Nail Clipper, Flea Treatment. The person selects Brush for the next step.",
+          "scenario": "Maya chooses a brush for grooming the coat. A nail clipper is a different tool, and flea treatment is a veterinary product.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is for brushing the coat?",
             "options": ["Brush", "Nail Clipper", "Flea Treatment"],
             "expectedAnswer": "Brush"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Brush, Nail Clipper, Flea Treatment. The person selects Brush for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Brush, Nail Clipper, Flea Treatment in a natural setting."
+          "imageBrief": "Pet-grooming brush with visible bristles on a clean table; no trimming or treatment demonstration.",
+          "imageAlt": "Pet-grooming brush with visible bristles on a clean table; no trimming or treatment demonstration."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pet Vitamins", "Pooper Scooper", "Training Pads"],
-          "scenario": "During a routine the pet shop task, an adult compares Pet Vitamins, Pooper Scooper, Training Pads. The person selects Pet Vitamins for the next step.",
+          "scenario": "Omar asks his vet whether pet vitamins are needed. A pooper scooper collects waste, while training pads absorb it. These are different products.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product does Omar ask the vet about?",
             "options": ["Pet Vitamins", "Pooper Scooper", "Training Pads"],
             "expectedAnswer": "Pet Vitamins"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet Vitamins, Pooper Scooper, Training Pads. The person selects Pet Vitamins for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet Vitamins, Pooper Scooper, Training Pads in a natural setting."
+          "imageBrief": "Closed unbranded supplement container on a veterinary consultation desk. No pill amount, dosage or universal vitamin recommendation.",
+          "imageAlt": "Closed unbranded supplement container on a veterinary consultation desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Pet Towel", "Dental Chew", "Scratching Post"],
-          "scenario": "During a routine the pet shop task, an adult compares Pet Towel, Dental Chew, Scratching Post. The person selects Pet Towel for the next step.",
+          "scenario": "The groomer uses a pet towel to dry the dog. A dental chew and scratching post are not towels.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is used for drying?",
             "options": ["Pet Towel", "Dental Chew", "Scratching Post"],
             "expectedAnswer": "Pet Towel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet Towel, Dental Chew, Scratching Post. The person selects Pet Towel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet Towel, Dental Chew, Scratching Post in a natural setting."
+          "imageBrief": "Clean folded pet towel beside a grooming table. No wet animal, unsafe drying device or treatment.",
+          "imageAlt": "Clean folded pet towel beside a grooming table."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Notice-Style Text",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on aquarium, litter box, and cat tree. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on pet carrier, name tag, and pet shampoo. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Rami buys a litter box, cat tree and scratching post. He takes a pet carrier and checks its name tag. Pet shampoo, a brush and nail clipper are on the grooming shelf beside a pet towel. Training pads and a pooper scooper are in another aisle. Rami asks a vet about flea treatment, pet vitamins and a dental chew. He passes an aquarium on his way to pay.",
+      "imageBrief": "Pet-shop counter with empty carrier, litter tray, scratching post, folded towel and grooming brush. Closed plain care-product containers; no medication dosing or treatment demonstration."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Aquarium, Litter Box, Cat Tree. The person selects Aquarium for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar looks at an aquarium, a tank for aquatic animals. A litter box and cat tree are for cats. He asks about the fish’s needs before choosing a tank.\nWhich item is a tank for aquatic animals?",
         "answer": "Aquarium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Pet Carrier, Name Tag, Pet Shampoo. The person selects Pet Carrier for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hana puts her cat in a secure pet carrier for the journey. A name tag identifies the carrier, and pet shampoo stays on the shelf.\nWhat transports Hana’s cat securely?",
         "answer": "Pet Carrier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Brush, Nail Clipper, Flea Treatment. The person selects Brush for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya chooses a brush for grooming the coat. A nail clipper is a different tool, and flea treatment is a veterinary product.\nWhich item is for brushing the coat?",
         "answer": "Brush",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Pet Vitamins, Pooper Scooper, Training Pads. The person selects Pet Vitamins for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar asks his vet whether pet vitamins are needed. A pooper scooper collects waste, while training pads absorb it. These are different products.\nWhich product does Omar ask the vet about?",
         "answer": "Pet Vitamins",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Pet Towel, Dental Chew, Scratching Post. The person selects Pet Towel for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The groomer uses a pet towel to dry the dog. A dental chew and scratching post are not towels.\nWhich item is used for drying?",
         "answer": "Pet Towel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Aquarium"
+        "prompt": "Read the passage: Rami buys a litter box, cat tree and scratching post. He takes a pet carrier and checks its name tag. Pet shampoo, a brush and nail clipper are on the grooming shelf beside a pet towel. Training pads and a pooper scooper are in another aisle. Rami asks a vet about flea treatment, pet vitamins and a dental chew. He passes an aquarium on his way to pay.\nWho does Rami ask about flea treatment and vitamins?",
+        "answer": "a vet",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Cat Tree"
+        "prompt": "Ask a vet whether your pet needs vitamins.",
+        "answer": "Does my cat need pet vitamins?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dog Food” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "You will take a cat to an appointment. Name the secure transport container you need.",
+        "answer": "I need a pet carrier for the journey.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Omar looks at an aquarium, a tank for aquatic animals. A litter box and cat tree are for cats. He asks about the fish’s needs before choosing a tank."
     },
     "spacedReview": "1 lesson(s) back: Dog Food, Cat Food from pet-shop-3\n3 lesson(s) back: Dog, Cat from pet-shop-1\n7 lesson(s) back: Swing, Slide from playground-1"
   },
@@ -740,12 +760,12 @@
     ],
     "targetWordsArabic": [
       "ببغاء صغير",
-      "هر صغير",
+      "هرّ صغير",
       "جرو",
       "رقائق طعام الأسماك",
       "حبوب للطيور",
       "عظم",
-      "سترة صوفية",
+      "سترة للحيوان",
       "منديل للعنق",
       "جرس",
       "فيونكة",
@@ -756,136 +776,141 @@
       "سرير كلب"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 5 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "dialogue",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Parakeet", "Kitten", "Puppy"],
-          "scenario": "During a routine the pet shop task, an adult compares Parakeet, Kitten, Puppy. The person selects Parakeet for the next step.",
+          "scenario": "Maya reads the Parakeet profile. A kitten is a young cat and a puppy is a young dog. The parakeet is a bird.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which profile describes a bird?",
             "options": ["Parakeet", "Kitten", "Puppy"],
             "expectedAnswer": "Parakeet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Parakeet, Kitten, Puppy. The person selects Parakeet for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Parakeet, Kitten, Puppy in a natural setting."
+          "imageBrief": "A small long-tailed parakeet on a perch in a spacious appropriate enclosure. No tiny decorative cage.",
+          "imageAlt": "A small long-tailed parakeet on a perch in a spacious appropriate enclosure."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fish Flakes", "Birdseed", "Bone"],
-          "scenario": "During a routine the pet shop task, an adult compares Fish Flakes, Birdseed, Bone. The person selects Fish Flakes for the next step.",
+          "scenario": "Omar’s care plan names fish flakes for his aquarium fish. Birdseed is a different food, and a bone is not suitable for this order.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is on Omar’s care plan?",
             "options": ["Fish Flakes", "Birdseed", "Bone"],
             "expectedAnswer": "Fish Flakes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Fish Flakes, Birdseed, Bone. The person selects Fish Flakes for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Fish Flakes, Birdseed, Bone in a natural setting."
+          "imageBrief": "Plain bowl of prepared fish flakes beside a maintained aquarium. No arbitrary feeding amount or species diet inferred from image.",
+          "imageAlt": "Plain bowl of prepared fish flakes beside a maintained aquarium."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sweater", "Bandana", "Bell"],
-          "scenario": "During a routine the pet shop task, an adult compares Sweater, Bandana, Bell. The person selects Sweater for the next step.",
+          "scenario": "The display has a small pet sweater, bandana and bell. Hana chooses the knitted sweater after checking whether it is appropriate for her pet.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item does Hana choose?",
             "options": ["Sweater", "Bandana", "Bell"],
             "expectedAnswer": "Sweater"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Sweater, Bandana, Bell. The person selects Sweater for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Sweater, Bandana, Bell in a natural setting."
+          "imageBrief": "Small plain knitted pet sweater laid flat on a display shelf, no animal dressed up or readable slogan.",
+          "imageAlt": "Small plain knitted pet sweater laid flat on a display shelf, no animal dressed up or readable slogan."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bow", "Raincoat", "Booties"],
-          "scenario": "During a routine the pet shop task, an adult compares Bow, Raincoat, Booties. The person selects Bow for the next step.",
+          "scenario": "A groomer displays a ribbon bow as a decorative knot with two loops. The raincoat and booties are on another shelf.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which decoration is a ribbon knot with two loops?",
             "options": ["Bow", "Raincoat", "Booties"],
             "expectedAnswer": "Bow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bow, Raincoat, Booties. The person selects Bow for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bow, Raincoat, Booties in a natural setting."
+          "imageBrief": "Plain ribbon bow with two clearly visible loops on a clean display shelf. No violin bow or weapon.",
+          "imageAlt": "Plain ribbon bow with two clearly visible loops on a clean display shelf."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Bird Cage", "Hamster Cage", "Dog Bed"],
-          "scenario": "During a routine the pet shop task, an adult compares Bird Cage, Hamster Cage, Dog Bed. The person selects Bird Cage for the next step.",
+          "scenario": "Maya compares a bird cage with a hamster cage and dog bed. She asks about a spacious bird cage with suitable perches for her bird.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which enclosure does Maya ask about?",
             "options": ["Bird Cage", "Hamster Cage", "Dog Bed"],
             "expectedAnswer": "Bird Cage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bird Cage, Hamster Cage, Dog Bed. The person selects Bird Cage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bird Cage, Hamster Cage, Dog Bed in a natural setting."
+          "imageBrief": "Large empty bird enclosure with multiple perches and clear flying space. No crowded animals or indication that size alone establishes welfare.",
+          "imageAlt": "Large empty bird enclosure with multiple perches and clear flying space."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Short Description",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on parakeet, kitten, and puppy. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on fish flakes, birdseed, and bone. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "An adoption guide shows a kitten, puppy and parakeet. On a shelf, Maya sees fish flakes and birdseed. A bone appears only in a toy-shaped display; it is not feeding advice. The shop sells a pet sweater, bandana, bell, ribbon bow, raincoat and booties. A bird cage and hamster cage have different fittings. Maya chooses a dog bed, then asks which supplies her pet needs.",
+      "imageBrief": "Pet-supply display with dog bed, plain raincoat, bandana, ribbon bow and booties. Do not show animals eating bones or cramped bird/hamster housing."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Parakeet, Kitten, Puppy. The person selects Parakeet for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya reads the Parakeet profile. A kitten is a young cat and a puppy is a young dog. The parakeet is a bird.\nWhich profile describes a bird?",
         "answer": "Parakeet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Fish Flakes, Birdseed, Bone. The person selects Fish Flakes for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s care plan names fish flakes for his aquarium fish. Birdseed is a different food, and a bone is not suitable for this order.\nWhich item is on Omar’s care plan?",
         "answer": "Fish Flakes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Sweater, Bandana, Bell. The person selects Sweater for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The display has a small pet sweater, bandana and bell. Hana chooses the knitted sweater after checking whether it is appropriate for her pet.\nWhich item does Hana choose?",
         "answer": "Sweater",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bow, Raincoat, Booties. The person selects Bow for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A groomer displays a ribbon bow as a decorative knot with two loops. The raincoat and booties are on another shelf.\nWhich decoration is a ribbon knot with two loops?",
         "answer": "Bow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bird Cage, Hamster Cage, Dog Bed. The person selects Bird Cage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya compares a bird cage with a hamster cage and dog bed. She asks about a spacious bird cage with suitable perches for her bird.\nWhich enclosure does Maya ask about?",
         "answer": "Bird Cage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Parakeet"
+        "prompt": "Read the passage: An adoption guide shows a kitten, puppy and parakeet. On a shelf, Maya sees fish flakes and birdseed. A bone appears only in a toy-shaped display; it is not feeding advice. The shop sells a pet sweater, bandana, bell, ribbon bow, raincoat and booties. A bird cage and hamster cage have different fittings. Maya chooses a dog bed, then asks which supplies her pet needs.\nWhat does Maya choose?",
+        "answer": "a dog bed",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Puppy"
+        "prompt": "Ask for a dog bed at a shop counter.",
+        "answer": "Can I have a dog bed, please?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Aquarium” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend wants supplies for a parakeet. Ask which enclosure is suitable.",
+        "answer": "What bird cage and fittings does the parakeet need?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Maya reads the Parakeet profile. A kitten is a young cat and a puppy is a young dog. The parakeet is a bird."
     },
     "spacedReview": "1 lesson(s) back: Aquarium, Litter Box from pet-shop-4\n3 lesson(s) back: Beagle, Chihuahua from pet-shop-2\n7 lesson(s) back: Goal, Whistle from playground-2"
   },
@@ -919,151 +944,156 @@
     "targetWordsArabic": [
       "حوض نباتات زجاجي",
       "حوض أسماك دائري",
-      "بيت كلاب",
-      "قفص أرانب",
+      "بيت أو حظيرة للكلب",
+      "بيت أو حظيرة للأرانب",
       "صندوق تعشيش",
-      "شامبو",
+      "شامبو للحيوانات",
       "طوق مضاد للبراغيث",
       "رمل فضلات القطط",
       "كيس فضلات الحيوانات",
       "بطاقة تطعيم الحيوان",
-      "شريحة إلكترونية",
+      "شريحة تعريف إلكترونية",
       "واجهة عرض",
       "محطة عناية بالحيوانات",
       "لوحة تبنّي الحيوانات",
-      "سجل نقد"
+      "آلة تسجيل النقد"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 6 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "dialogue",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Terrarium", "Fish Bowl", "Kennel"],
-          "scenario": "During a routine the pet shop task, an adult compares Terrarium, Fish Bowl, Kennel. The person selects Terrarium for the next step.",
+          "scenario": "Rami looks at a terrarium, an enclosed container for suitable plants or land animals. The empty fish bowl and kennel are different containers. He asks about a species-appropriate habitat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which enclosed display container does Rami look at?",
             "options": ["Terrarium", "Fish Bowl", "Kennel"],
             "expectedAnswer": "Terrarium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Terrarium, Fish Bowl, Kennel. The person selects Terrarium for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Terrarium, Fish Bowl, Kennel in a natural setting."
+          "imageBrief": "Empty terrarium with clean substrate and plants appropriate to a display, no animal or false habitat suitability claim.",
+          "imageAlt": "Empty terrarium with clean substrate and plants appropriate to a display, no animal or false habitat suitability claim."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rabbit Hutch", "Nesting Box", "Shampoo"],
-          "scenario": "During a routine the pet shop task, an adult compares Rabbit Hutch, Nesting Box, Shampoo. The person selects Rabbit Hutch for the next step.",
+          "scenario": "Hana asks about a rabbit hutch as part of suitable rabbit housing. The nesting box and shampoo are on a different display.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which shelter does Hana ask about?",
             "options": ["Rabbit Hutch", "Nesting Box", "Shampoo"],
             "expectedAnswer": "Rabbit Hutch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Rabbit Hutch, Nesting Box, Shampoo. The person selects Rabbit Hutch for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Rabbit Hutch, Nesting Box, Shampoo in a natural setting."
+          "imageBrief": "Rabbit shelter connected to a spacious exercise run; no cramped cage or cleaning product in reach.",
+          "imageAlt": "Rabbit shelter connected to a spacious exercise run; no cramped cage or cleaning product in reach."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Flea Collar", "Litter", "Poop Bag"],
-          "scenario": "During a routine the pet shop task, an adult compares Flea Collar, Litter, Poop Bag. The person selects Flea Collar for the next step.",
+          "scenario": "Omar asks the vet whether a flea collar is suitable for his dog. Litter and a poop bag are waste-management items, not flea products.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product does Omar ask the vet about?",
             "options": ["Flea Collar", "Litter", "Poop Bag"],
             "expectedAnswer": "Flea Collar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Flea Collar, Litter, Poop Bag. The person selects Flea Collar for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Flea Collar, Litter, Poop Bag in a natural setting."
+          "imageBrief": "Unbranded flea-collar package closed on a consultation desk. No wearing demonstration, dosage or species cross-use.",
+          "imageAlt": "Unbranded flea-collar package closed on a consultation desk."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Vaccination Card", "Microchip", "Display Window"],
-          "scenario": "During a routine the pet shop task, an adult compares Vaccination Card, Microchip, Display Window. The person selects Vaccination Card for the next step.",
+          "scenario": "Maya brings a vaccination card to the appointment. It records earlier vaccinations. A microchip is an identification device, and the display window belongs to the shop.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which document records earlier vaccinations?",
             "options": ["Vaccination Card", "Microchip", "Display Window"],
             "expectedAnswer": "Vaccination Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Vaccination Card, Microchip, Display Window. The person selects Vaccination Card for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Vaccination Card, Microchip, Display Window in a natural setting."
+          "imageBrief": "Closed veterinary record folder on desk. No personal details, dates, vaccination labels or injection demonstration.",
+          "imageAlt": "Closed veterinary record folder on desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Grooming Station", "Adoption Board", "Cash Register"],
-          "scenario": "During a routine the pet shop task, an adult compares Grooming Station, Adoption Board, Cash Register. The person selects Grooming Station for the next step.",
+          "scenario": "The groomer prepares the grooming station for brushing an animal. The adoption board and cash register have other roles in the shop.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Where will the groomer work?",
             "options": ["Grooming Station", "Adoption Board", "Cash Register"],
             "expectedAnswer": "Grooming Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Grooming Station, Adoption Board, Cash Register. The person selects Grooming Station for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Grooming Station, Adoption Board, Cash Register in a natural setting."
+          "imageBrief": "Clean unused grooming table with brush and folded towel, no animal restraint or active dryer.",
+          "imageAlt": "Clean unused grooming table with brush and folded towel, no animal restraint or active dryer."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Mini Dialogue",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on terrarium, fish bowl, and kennel. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on rabbit hutch, nesting box, and shampoo. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Leila looks at an empty terrarium and fish bowl on a shelf. She asks about suitable housing before buying anything. A kennel, rabbit hutch and nesting box are displayed nearby. At the grooming station, shampoo and litter are stored separately. She buys a poop bag pack. The adoption board asks owners to bring a vaccination card; staff can explain microchip records. The cash register is beside the display window.",
+      "imageBrief": "Pet-shop shelf with empty terrarium and empty rounded fish bowl, plus closed grooming supplies and plain poop-bag pack. No fish in the bowl, unsafe rabbit confinement or readable health records."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Terrarium, Fish Bowl, Kennel. The person selects Terrarium for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Rami looks at a terrarium, an enclosed container for suitable plants or land animals. The empty fish bowl and kennel are different containers. He asks about a species-appropriate habitat.\nWhich enclosed display container does Rami look at?",
         "answer": "Terrarium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Rabbit Hutch, Nesting Box, Shampoo. The person selects Rabbit Hutch for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hana asks about a rabbit hutch as part of suitable rabbit housing. The nesting box and shampoo are on a different display.\nWhich shelter does Hana ask about?",
         "answer": "Rabbit Hutch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Flea Collar, Litter, Poop Bag. The person selects Flea Collar for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar asks the vet whether a flea collar is suitable for his dog. Litter and a poop bag are waste-management items, not flea products.\nWhich product does Omar ask the vet about?",
         "answer": "Flea Collar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Vaccination Card, Microchip, Display Window. The person selects Vaccination Card for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya brings a vaccination card to the appointment. It records earlier vaccinations. A microchip is an identification device, and the display window belongs to the shop.\nWhich document records earlier vaccinations?",
         "answer": "Vaccination Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Grooming Station, Adoption Board, Cash Register. The person selects Grooming Station for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The groomer prepares the grooming station for brushing an animal. The adoption board and cash register have other roles in the shop.\nWhere will the groomer work?",
         "answer": "Grooming Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Terrarium"
+        "prompt": "Read the passage: Leila looks at an empty terrarium and fish bowl on a shelf. She asks about suitable housing before buying anything. A kennel, rabbit hutch and nesting box are displayed nearby. At the grooming station, shampoo and litter are stored separately. She buys a poop bag pack. The adoption board asks owners to bring a vaccination card; staff can explain microchip records. The cash register is beside the display window.\nWhat does Leila buy?",
+        "answer": "a poop bag pack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Kennel"
+        "prompt": "Ask a worker about suitable housing before choosing a terrarium.",
+        "answer": "Is this terrarium suitable for my animal?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Parakeet” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Your friend has a clinic appointment. Remind them to take the vaccination record.",
+        "answer": "Please take the vaccination card to the appointment.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Rami looks at a terrarium, an enclosed container for suitable plants or land animals. The empty fish bowl and kennel are different containers. He asks about a species-appropriate habitat."
     },
     "spacedReview": "1 lesson(s) back: Parakeet, Kitten from pet-shop-5\n3 lesson(s) back: Dog Food, Cat Food from pet-shop-3\n7 lesson(s) back: Child, Friend from playground-3"
   },
@@ -1104,144 +1134,149 @@
       "سمكة",
       "زبدية / سلطانية (وعاء / طاسة)",
       "لعبة",
-      "يطعم",
-      "يمشي بالحيوان",
+      "يُطعم الحيوان",
+      "يمشي مع الحيوان",
       "يعتني بفرو الحيوان",
-      "يستحم",
-      "قطار",
+      "يُحمّم الحيوان",
+      "يُدرّب الحيوان",
       "يلعب"
     ],
     "usage": {
-      "goal": "Learn to use common the pet shop 7 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "workplace-email",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Shelf", "Tank", "Price Tag"],
-          "scenario": "During a routine the pet shop task, an adult compares Shelf, Tank, Price Tag. The person selects Shelf for the next step.",
+          "scenario": "Food bags stand on a shelf above an empty tank. Rami checks the price tag before taking one bag. The shelf is the flat surface holding the bags.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What surface holds the bags?",
             "options": ["Shelf", "Tank", "Price Tag"],
             "expectedAnswer": "Shelf"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Shelf, Tank, Price Tag. The person selects Shelf for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Shelf, Tank, Price Tag in a natural setting."
+          "imageBrief": "Plain horizontal shelf with closed bags; no readable prices or geological rock shelf.",
+          "imageAlt": "Plain horizontal shelf with closed bags; no readable prices or geological rock shelf."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Shopping Basket", "Poster", "Toy Rack"],
-          "scenario": "During a routine the pet shop task, an adult compares Shopping Basket, Poster, Toy Rack. The person selects Shopping Basket for the next step.",
+          "scenario": "Maya carries a shopping basket while choosing supplies. A poster is on the wall, and a toy rack holds toys.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What does Maya carry to hold her purchases?",
             "options": ["Shopping Basket", "Poster", "Toy Rack"],
             "expectedAnswer": "Shopping Basket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Shopping Basket, Poster, Toy Rack. The person selects Shopping Basket for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Shopping Basket, Poster, Toy Rack in a natural setting."
+          "imageBrief": "Empty plain shopping basket at a pet-store counter, no person needed or readable poster.",
+          "imageAlt": "Empty plain shopping basket at a pet-store counter, no person needed or readable poster."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fish", "Bowl", "Toy"],
-          "scenario": "During a routine the pet shop task, an adult compares Fish, Bowl, Toy. The person selects Fish for the next step.",
+          "scenario": "A fish swims in the aquarium. An empty bowl and a toy are on the shelf. The fish is the animal living in water.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is an animal living in water?",
             "options": ["Fish", "Bowl", "Toy"],
             "expectedAnswer": "Fish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Fish, Bowl, Toy. The person selects Fish for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Fish, Bowl, Toy in a natural setting."
+          "imageBrief": "A healthy aquarium fish in a suitably maintained spacious tank. No animal caught on a line.",
+          "imageAlt": "A healthy aquarium fish in a suitably maintained spacious tank."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Feed", "Walk", "Groom"],
-          "scenario": "During a routine the pet shop task, an adult compares Feed, Walk, Groom. The person selects Feed for the next step.",
+          "scenario": "Maya asks when to feed her dog. Feed means give it food; walk means take it out on foot, and groom means care for its coat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which action means give the dog food?",
             "options": ["Feed", "Walk", "Groom"],
             "expectedAnswer": "Feed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Feed, Walk, Groom. The person selects Feed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Feed, Walk, Groom in a natural setting."
+          "imageBrief": "Plain dog-food bowl beside a closed food bag. No feeding portion or diet prescription.",
+          "imageAlt": "Plain dog-food bowl beside a closed food bag."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Bathe", "Train", "Play"],
-          "scenario": "During a routine the pet shop task, an adult compares Bathe, Train, Play. The person selects Bathe for the next step.",
+          "scenario": "Rami asks the groomer whether to bathe his dog. Bathe means wash its body. Train means teach behaviour, and play means enjoy a game.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which action means wash the animal’s body?",
             "options": ["Bathe", "Train", "Play"],
             "expectedAnswer": "Bathe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Bathe, Train, Play. The person selects Bathe for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Bathe, Train, Play in a natural setting."
+          "imageBrief": "Clean unused animal wash station with folded towel and closed species-labelled product whose lettering is unreadable. No bath procedure.",
+          "imageAlt": "Clean unused animal wash station with folded towel and closed species-labelled product whose lettering is unreadable."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Simple Message",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on shelf, tank, and price tag. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on shopping basket, poster, and toy rack. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Maya takes a shopping basket and checks a price tag on the shelf. A poster explains the shop’s services. A fish swims in the tank, and a bowl is on another shelf. She chooses a toy from the toy rack. Before leaving, she asks how to feed, walk, groom, bathe and train her dog. She also asks which games they can play together.",
+      "imageBrief": "Pet shop with shopping basket, toy rack, plain shelf and maintained aquarium. Blank service poster, no readable prices or animal-care procedure."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Shelf, Tank, Price Tag. The person selects Shelf for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Food bags stand on a shelf above an empty tank. Rami checks the price tag before taking one bag. The shelf is the flat surface holding the bags.\nWhat surface holds the bags?",
         "answer": "Shelf",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Shopping Basket, Poster, Toy Rack. The person selects Shopping Basket for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya carries a shopping basket while choosing supplies. A poster is on the wall, and a toy rack holds toys.\nWhat does Maya carry to hold her purchases?",
         "answer": "Shopping Basket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Fish, Bowl, Toy. The person selects Fish for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A fish swims in the aquarium. An empty bowl and a toy are on the shelf. The fish is the animal living in water.\nWhich item is an animal living in water?",
         "answer": "Fish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Feed, Walk, Groom. The person selects Feed for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Maya asks when to feed her dog. Feed means give it food; walk means take it out on foot, and groom means care for its coat.\nWhich action means give the dog food?",
         "answer": "Feed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the pet shop task, an adult compares Bathe, Train, Play. The person selects Bathe for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Rami asks the groomer whether to bathe his dog. Bathe means wash its body. Train means teach behaviour, and play means enjoy a game.\nWhich action means wash the animal’s body?",
         "answer": "Bathe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Shelf"
+        "prompt": "Read the passage: Maya takes a shopping basket and checks a price tag on the shelf. A poster explains the shop’s services. A fish swims in the tank, and a bowl is on another shelf. She chooses a toy from the toy rack. Before leaving, she asks how to feed, walk, groom, bathe and train her dog. She also asks which games they can play together.\nWhere does Maya choose a toy?",
+        "answer": "from the toy rack",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Price Tag"
+        "prompt": "Ask how to train a dog to respond to its name.",
+        "answer": "How can I train my dog to respond to its name?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Terrarium” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "In a different shop, ask where the pet toys are displayed.",
+        "answer": "Where is the toy rack, please?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Food bags stand on a shelf above an empty tank. Rami checks the price tag before taking one bag. The shelf is the flat surface holding the bags."
     },
     "spacedReview": "1 lesson(s) back: Terrarium, Fish Bowl from pet-shop-6\n3 lesson(s) back: Aquarium, Litter Box from pet-shop-4\n7 lesson(s) back: Throwing, Catching from playground-4"
   },
@@ -1256,62 +1291,67 @@
     "cefrStage": "A1",
     "stageName": "A1 Foundations",
     "targetWordsEnglish": ["Pet", "Adopt"],
-    "targetWordsArabic": ["حيوان أليف", "يتبنى حيوانًا"],
+    "targetWordsArabic": ["حيوان أليف", "يتبنّى حيوانًا"],
     "usage": {
-      "goal": "Learn to use common the pet shop 8 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the pet shop.",
-      "textType": "service-notice",
+      "goal": "Identify pets and supplies in a stated context and ask about appropriate care.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pet", "Adopt"],
-          "scenario": "During a routine the pet shop task, an adult compares Pet, Adopt, Dog. The person selects Pet for the next step.",
+          "scenario": "Omar wants to adopt a pet from a rescue centre. A pet is an animal kept for companionship. Adopt describes taking responsibility for its care.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the animal kept for companionship?",
             "options": ["Pet", "Adopt", "Dog"],
             "expectedAnswer": "Pet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pet shop context illustrating this situation: During a routine the pet shop task, an adult compares Pet, Adopt, Dog. The person selects Pet for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pet shop scene showing lesson-related items or actions including Pet, Adopt in a natural setting."
+          "imageBrief": "A rescue-centre consultation desk with unlettered animal profile folder. No sale-price signs.",
+          "imageAlt": "A rescue-centre consultation desk with unlettered animal profile folder."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Pet Shop: Notice-Style Text",
-      "text": "Maya is in a situation connected to the pet shop. She uses the new words to understand what she sees and what happens next. The guide points out the pet and adopt and asks the group to notice how the animals move or behave. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Pet Shop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Omar wants to adopt a pet from a rescue centre. He asks about the animal’s needs before making a decision. The staff explain its daily care and arrange another visit. Omar wants to be sure that his home and routine are suitable. He does not choose a pet only because of a photograph.",
+      "imageBrief": "Adult speaking with rescue staff at a desk beside an unlettered animal-profile folder. No implication that a purchase alone establishes responsible adoption."
     },
     "exercises": [
       {
-        "prompt": "During a routine the pet shop task, an adult compares Pet, Adopt, Dog. The person selects Pet for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar wants to adopt a pet from a rescue centre. A pet is an animal kept for companionship. Adopt describes taking responsibility for its care.\nWhich word names the animal kept for companionship?",
         "answer": "Pet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Pet"
+        "prompt": "Read the passage: Omar wants to adopt a pet from a rescue centre. He asks about the animal’s needs before making a decision. The staff explain its daily care and arrange another visit. Omar wants to be sure that his home and routine are suitable. He does not choose a pet only because of a photograph.\nWhy does Omar ask about the animal’s needs?",
+        "answer": "to check that his home and routine are suitable",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Adopt"
+        "prompt": "Tell rescue staff that you want to adopt a pet.",
+        "answer": "I would like to adopt a pet.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Shelf” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend wants to adopt an animal. Suggest one useful care question.",
+        "answer": "Ask what daily care the pet needs.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Pet Shop: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking About Pet Supplies",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Omar wants to adopt a pet from a rescue centre. A pet is an animal kept for companionship. Adopt describes taking responsibility for its care."
     },
     "spacedReview": "1 lesson(s) back: Shelf, Tank from pet-shop-7\n3 lesson(s) back: Parakeet, Kitten from pet-shop-5\n7 lesson(s) back: Dog, Cat from pet-shop-1"
   }

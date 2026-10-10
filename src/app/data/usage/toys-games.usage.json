@@ -28,133 +28,157 @@
     ],
     "targetWordsArabic": [
       "دمية",
-      "دب لعبة (دب قماشي)",
+      "دب محشو",
       "مجسم شخصية",
-      "مقدمة باطن القدم",
+      "كرة",
       "مكعبات بناء",
-      "لعبة ألغاز",
+      "لغز أو لعبة ألغاز",
       "يويو",
-      "حدأة",
+      "طائرة ورقية",
       "بلبل دوار",
       "كرات زجاجية صغيرة",
       "شطرنج",
       "لعبة الداما",
       "لعبة مونوبولي",
       "لعبة سكرابل",
-      "دومينو"
+      "لعبة الدومينو"
     ],
     "usage": {
       "goal": "Learn to recognize and use key toys & games 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can name a recreation item and suggest an activity.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Doll", "Teddy Bear", "Action Figure"],
-          "scenario": "At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll.",
+          "scenario": "Nora collects a small model of a person: a doll. She also owns a teddy bear and an action figure.",
           "check": {
-            "question": "Which item is selected for the break?",
+            "question": "Which toy is the model of a person?",
             "options": ["Action Figure", "Doll", "Teddy Bear"],
             "expectedAnswer": "Doll"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Doll, Teddy Bear, Action Figure in a natural setting."
+          "imageBrief": "Adult collector showing a simple doll beside soft bear and poseable figure. No brands or text.",
+          "imageAlt": "Adult collector showing a simple doll beside soft bear and poseable figure."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ball", "Blocks", "Puzzle"],
-          "scenario": "At a recreation centre, adults choose between ball, blocks, and puzzle. The selected activity or item is ball.",
+          "scenario": "The friends choose a round ball for a throwing game. Their blocks and puzzle stay on the table.",
           "check": {
-            "question": "What activity or game does the group choose?",
+            "question": "Which item do they choose for throwing?",
             "options": ["Ball", "Blocks", "Puzzle"],
             "expectedAnswer": "Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a recreation centre, adults choose between ball, blocks, and puzzle. The selected activity or item is ball. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Ball, Blocks, Puzzle in a natural setting."
+          "imageBrief": "Adults passing a ball in an enclosed garden. Blocks and puzzle not in the playing area; no text.",
+          "imageAlt": "Adults passing a ball in an enclosed garden."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Yo-Yo", "Kite", "Top"],
-          "scenario": "At a family visit, adults choose between yo-yo, kite, and top. The selected activity or item is yo-yo.",
+          "scenario": "Sami chooses a yo-yo, a toy that moves along its string. A kite flies on a string; a top spins on a point.",
           "check": {
-            "question": "What does the group decide to use or play?",
+            "question": "Which toy does Sami choose?",
             "options": ["Kite", "Top", "Yo-Yo"],
             "expectedAnswer": "Yo-Yo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between yo-yo, kite, and top. The selected activity or item is yo-yo. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Yo-Yo, Kite, Top in a natural setting."
+          "imageBrief": "Adult holding yo-yo at waist height with string visible. No kite indoors, action streaks, text or logos.",
+          "imageAlt": "Adult holding yo-yo at waist height with string visible."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Marbles", "Chess", "Checkers"],
-          "scenario": "At a social club, adults choose between marbles, chess, and checkers. The selected activity or item is marbles.",
+          "scenario": "Sami sorts small glass balls called marbles. Later his friends will play chess or checkers.",
           "check": {
-            "question": "What activity or game does the group choose in the example with marbles, chess?",
+            "question": "What are the small glass balls called?",
             "options": ["Checkers", "Marbles", "Chess"],
             "expectedAnswer": "Marbles"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between marbles, chess, and checkers. The selected activity or item is marbles. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Marbles, Chess, Checkers in a natural setting."
+          "imageBrief": "Adult sorting small glass marbles at a table. No toddler, mouth contact, chess symbols or text.",
+          "imageAlt": "Adult sorting small glass marbles at a table."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Monopoly", "Scrabble", "Dominoes"],
-          "scenario": "At a community game night, adults choose between monopoly, scrabble, and dominoes. The selected activity or item is monopoly.",
+          "scenario": "Nora chooses Monopoly, the property-trading board game. Her friends also know Scrabble and dominoes.",
           "check": {
-            "question": "What does the group decide to use or play in the example with monopoly, scrabble?",
+            "question": "Which game does Nora choose?",
             "options": ["Monopoly", "Scrabble", "Dominoes"],
             "expectedAnswer": "Monopoly"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between monopoly, scrabble, and dominoes. The selected activity or item is monopoly. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Monopoly, Scrabble, Dominoes in a natural setting."
+          "imageBrief": "Adult game table with generic board and pieces. Context supplies named game; do not recreate branded board, logos, letters, prices or text.",
+          "imageAlt": "Adult game table with generic board and pieces."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Toys & Games 1: Community Recreation Night",
-      "text": "A community centre is preparing activities for adults and families. One table offers doll, teddy bear, action figure, ball, and blocks. Another area has puzzle, yo-yo, kite, top, and marbles. For active or electronic recreation, people can choose chess, checkers, monopoly, scrabble, and dominoes. Participants choose activities that suit the space and the group.",
-      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+      "text": "At the community centre Nora shows a doll, teddy bear and action figure from her collection. Friends use a ball and blocks, solve a puzzle and try a yo-yo or top. Outside they fly a kite. Sami sorts marbles. At game night the group chooses between chess, checkers, Monopoly, Scrabble and dominoes.",
+      "imageBrief": "Adult game-night table with unbranded board, plain-backed cards and simple toy collection. No text, trademarks or claim that all fifteen items fit naturally in one shot."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Doll"
+        "prompt": "Nora collects a small model of a person: a doll. She also owns a teddy bear and an action figure.\nWhich toy is the model of a person?",
+        "answer": "Doll",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Ball"
+        "prompt": "The friends choose a round ball for a throwing game. Their blocks and puzzle stay on the table.\nWhich item do they choose for throwing?",
+        "answer": "Ball",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Yo-Yo"
+        "prompt": "Sami chooses a yo-yo, a toy that moves along its string. A kite flies on a string; a top spins on a point.\nWhich toy does Sami choose?",
+        "answer": "Yo-Yo",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Marbles"
+        "prompt": "Sami sorts small glass balls called marbles. Later his friends will play chess or checkers.\nWhat are the small glass balls called?",
+        "answer": "Marbles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Monopoly"
+        "prompt": "Nora chooses Monopoly, the property-trading board game. Her friends also know Scrabble and dominoes.\nWhich game does Nora choose?",
+        "answer": "Monopoly",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Doll"
+        "prompt": "Read the passage: At the community centre Nora shows a doll, teddy bear and action figure from her collection. Friends use a ball and blocks, solve a puzzle and try a yo-yo or top. Outside they fly a kite. Sami sorts marbles. At game night the group chooses between chess, checkers, Monopoly, Scrabble and dominoes.\nWhich toy does Sami sort?",
+        "answer": "Marbles",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Teddy Bear"
+        "prompt": "Ask a friend to play chess.",
+        "answer": "Would you like to play chess?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Puzzle"
+        "prompt": "A friend asks which toy moves along its string. Name it.",
+        "answer": "A yo-yo",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Toys & Games: See It, Say It",
-      "idea": "30–50 second contextual video set in a play area. Show doll, teddy bear, action figure, ball, and blocks naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a weekend gathering, adults choose between doll, teddy bear, and action figure. The selected activity or item is doll."
+      "title": "Adult Recreation and Game Night",
+      "idea": "Adult collectors and friends choose indoor or outdoor activities. Narration identifies named commercial games; use unbranded generic support images rather than recreated branded boards or readable letters. Stored drone and empty trampoline; no operational stunt instructions.",
+      "scriptStarter": "Nora collects a small model of a person: a doll. She also owns a teddy bear and an action figure."
     },
     "spacedReview": "1 lesson(s) back: Homework, Test from classroom-5\n3 lesson(s) back: Backpack, Scissors from classroom-3\n7 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3"
   },
@@ -187,14 +211,14 @@
     ],
     "targetWordsArabic": [
       "أوراق لعب",
-      "يقطّع مكعبات",
+      "أحجار نرد",
       "أحجية تركيب قطع",
       "لعبة أسئلة معلومات عامة",
       "بينغو",
       "لعبة فيديو",
-      "وحدة تحكم",
-      "متحكم",
-      "جهاز لوحي (تابلت)",
+      "جهاز ألعاب إلكترونية",
+      "جهاز تحكم",
+      "حاسوب لوحي",
       "لعبة روبوت",
       "طائرة مسيّرة",
       "سيارة لعبة بالتحكم عن بُعد",
@@ -204,116 +228,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key toys & games 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can name a recreation item and suggest an activity.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
-          "scenario": "At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards.",
+          "scenario": "Nora shuffles playing cards before the game. Two dice and a jigsaw puzzle are on a separate table.",
           "check": {
-            "question": "What does the group decide to use or play in the example with playing cards, dice?",
+            "question": "Which items does Nora shuffle?",
             "options": ["Playing Cards", "Dice", "Jigsaw Puzzle"],
             "expectedAnswer": "Playing Cards"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Playing Cards, Dice, Jigsaw Puzzle in a natural setting."
+          "imageBrief": "Adult shuffling cards with plain backs. No readable card faces, dice values, brand or text.",
+          "imageAlt": "Adult shuffling cards with plain backs."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Trivia", "Bingo", "Video Game"],
-          "scenario": "At a family visit, adults choose between trivia, bingo, and video game. The selected activity or item is trivia.",
+          "scenario": "The group chooses trivia, a game of general-knowledge questions. Bingo and a video game are other choices.",
           "check": {
-            "question": "Which item is selected for the break in the example with trivia, bingo?",
+            "question": "Which game tests general knowledge?",
             "options": ["Bingo", "Video Game", "Trivia"],
             "expectedAnswer": "Trivia"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between trivia, bingo, and video game. The selected activity or item is trivia. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Trivia, Bingo, Video Game in a natural setting."
+          "imageBrief": "Adults at social table talking with plain question cards. Text supplies questions; no readable cards, numbers or brands.",
+          "imageAlt": "Adults at social table talking with plain question cards."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Console", "Controller", "Tablet"],
-          "scenario": "At a social club, adults choose between console, controller, and tablet. The selected activity or item is console.",
+          "scenario": "Nora connects a console, the video-game machine, to the screen. She holds a controller; Sami uses a tablet.",
           "check": {
-            "question": "Which recreation option matches the scene?",
+            "question": "Which item is the video-game machine?",
             "options": ["Tablet", "Console", "Controller"],
             "expectedAnswer": "Console"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between console, controller, and tablet. The selected activity or item is console. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Console, Controller, Tablet in a natural setting."
+          "imageBrief": "Generic unbranded game console connected to blank screen, handheld controller beside it. No game art or text.",
+          "imageAlt": "Generic unbranded game console connected to blank screen, handheld controller beside it."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Robot Toy", "Drone", "Remote Control Car"],
-          "scenario": "At a community game night, adults choose between robot toy, drone, and remote control car. The selected activity or item is robot toy.",
+          "scenario": "Sami sets down a robot toy shaped like a robot. A drone stays in its case, and a remote control car stays on the table.",
           "check": {
-            "question": "Which item is selected for the break in the example with robot toy, drone?",
+            "question": "Which item is shaped like a robot?",
             "options": ["Robot Toy", "Drone", "Remote Control Car"],
             "expectedAnswer": "Robot Toy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between robot toy, drone, and remote control car. The selected activity or item is robot toy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Robot Toy, Drone, Remote Control Car in a natural setting."
+          "imageBrief": "Adult tabletop with simple robot toy and toy car, closed drone case. No airborne drone, blades near people, brands or text.",
+          "imageAlt": "Adult tabletop with simple robot toy and toy car, closed drone case."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Handheld Game", "VR Headset", "Electronic Pet"],
-          "scenario": "At a weekend gathering, adults choose between handheld game, vr headset, and electronic pet. The selected activity or item is handheld game.",
+          "scenario": "Nora chooses a handheld game she can hold while playing. The VR headset and electronic pet remain on the shelf.",
           "check": {
-            "question": "What activity or game does the group choose in the example with handheld game, vr headset?",
+            "question": "Which item does Nora choose to hold while playing?",
             "options": ["VR Headset", "Electronic Pet", "Handheld Game"],
             "expectedAnswer": "Handheld Game"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a weekend gathering, adults choose between handheld game, vr headset, and electronic pet. The selected activity or item is handheld game. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Handheld Game, VR Headset, Electronic Pet in a natural setting."
+          "imageBrief": "Adult holding small generic handheld game device with blank screen. No worn headset while moving, game art or text.",
+          "imageAlt": "Adult holding small generic handheld game device with blank screen."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Toys & Games 2: Community Recreation Night",
-      "text": "A community centre is preparing activities for adults and families. One table offers playing cards, dice, jigsaw puzzle, trivia, and bingo. Another area has video game, console, controller, tablet, and robot toy. For active or electronic recreation, people can choose drone, remote control car, handheld game, vr headset, and electronic pet. Participants choose activities that suit the space and the group.",
-      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+      "text": "At game night Nora brings playing cards, dice and a jigsaw puzzle. The group plays trivia or bingo. Sami plays a video game on a console with a controller; Nora uses a tablet. The display table has a robot toy, drone and remote control car. A handheld game, VR headset and electronic pet are also on display.",
+      "imageBrief": "Adult recreation display with generic game console, controller and closed drone case. Blank screens, no readable cards, brands or airborne drone."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Playing Cards"
+        "prompt": "Nora shuffles playing cards before the game. Two dice and a jigsaw puzzle are on a separate table.\nWhich items does Nora shuffle?",
+        "answer": "Playing Cards",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Trivia"
+        "prompt": "The group chooses trivia, a game of general-knowledge questions. Bingo and a video game are other choices.\nWhich game tests general knowledge?",
+        "answer": "Trivia",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Console"
+        "prompt": "Nora connects a console, the video-game machine, to the screen. She holds a controller; Sami uses a tablet.\nWhich item is the video-game machine?",
+        "answer": "Console",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Robot Toy"
+        "prompt": "Sami sets down a robot toy shaped like a robot. A drone stays in its case, and a remote control car stays on the table.\nWhich item is shaped like a robot?",
+        "answer": "Robot Toy",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Handheld Game"
+        "prompt": "Nora chooses a handheld game she can hold while playing. The VR headset and electronic pet remain on the shelf.\nWhich item does Nora choose to hold while playing?",
+        "answer": "Handheld Game",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Playing Cards"
+        "prompt": "Read the passage: At game night Nora brings playing cards, dice and a jigsaw puzzle. The group plays trivia or bingo. Sami plays a video game on a console with a controller; Nora uses a tablet. The display table has a robot toy, drone and remote control car. A handheld game, VR headset and electronic pet are also on display.\nWhat does Sami use to control the console game?",
+        "answer": "A controller",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Dice"
+        "prompt": "Ask a friend whether they have a controller.",
+        "answer": "Do you have a controller?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Video Game"
+        "prompt": "Your group wants general-knowledge questions. Suggest trivia.",
+        "answer": "Let’s play trivia.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Toys & Games: See It, Say It",
-      "idea": "30–50 second contextual video set in a play area. Show playing cards, dice, jigsaw puzzle, trivia, and bingo naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a recreation centre, adults choose between playing cards, dice, and jigsaw puzzle. The selected activity or item is playing cards."
+      "title": "Adult Recreation and Game Night",
+      "idea": "Adult collectors and friends choose indoor or outdoor activities. Narration identifies named commercial games; use unbranded generic support images rather than recreated branded boards or readable letters. Stored drone and empty trampoline; no operational stunt instructions.",
+      "scriptStarter": "Nora shuffles playing cards before the game. Two dice and a jigsaw puzzle are on a separate table."
     },
     "spacedReview": "1 lesson(s) back: Doll, Teddy Bear from toys-games-1\n3 lesson(s) back: Printer, USB Drive from classroom-4\n7 lesson(s) back: Clean House, Do Laundry from daily-routines-4"
   },
@@ -353,100 +401,121 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key toys & games 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to toys & games in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can name a recreation item and suggest an activity.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bicycle", "Skateboard", "Scooter"],
-          "scenario": "At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle.",
+          "scenario": "Sami chooses a bicycle with two wheels and pedals. The skateboard has a flat board; the scooter has a standing platform and handlebars.",
           "check": {
-            "question": "What activity or game does the group choose in the example with bicycle, skateboard?",
+            "question": "Which item has two wheels and pedals?",
             "options": ["Skateboard", "Scooter", "Bicycle"],
             "expectedAnswer": "Bicycle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Bicycle, Skateboard, Scooter in a natural setting."
+          "imageBrief": "Parked conventional bicycle beside skateboard and foot-powered scooter. No riding demonstration, brands or text.",
+          "imageAlt": "Parked conventional bicycle beside skateboard and foot-powered scooter."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Roller Skates", "Jump Rope", "Frisbee"],
-          "scenario": "At a social club, adults choose between roller skates, jump rope, and frisbee. The selected activity or item is roller skates.",
+          "scenario": "Nora puts on roller skates, shoes with wheels. A jump rope and Frisbee are nearby.",
           "check": {
-            "question": "What does the group decide to use or play in the example with roller skates, jump rope?",
+            "question": "Which items are shoes with wheels?",
             "options": ["Frisbee", "Roller Skates", "Jump Rope"],
             "expectedAnswer": "Roller Skates"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a social club, adults choose between roller skates, jump rope, and frisbee. The selected activity or item is roller skates. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Roller Skates, Jump Rope, Frisbee in a natural setting."
+          "imageBrief": "Adult seated while putting on roller skates beside safe skating area. No stunt, traffic, brand or text.",
+          "imageAlt": "Adult seated while putting on roller skates beside safe skating area."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trampoline", "Sled", "Water Gun"],
-          "scenario": "At a community game night, adults choose between trampoline, sled, and water gun. The selected activity or item is trampoline.",
+          "scenario": "The centre has a trampoline with a flexible surface for bouncing. A sled is for snow; a water gun is a toy for water games.",
           "check": {
-            "question": "What activity or game does the group choose in the example with trampoline, sled?",
+            "question": "Which item has the flexible bouncing surface?",
             "options": ["Trampoline", "Sled", "Water Gun"],
             "expectedAnswer": "Trampoline"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a community game night, adults choose between trampoline, sled, and water gun. The selected activity or item is trampoline. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Trampoline, Sled, Water Gun in a natural setting."
+          "imageBrief": "Empty trampoline in recreation area. No simultaneous snow/water activities, jumping stunt, brand or text.",
+          "imageAlt": "Empty trampoline in recreation area."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Swing"],
-          "scenario": "At a park, an adult gently pushes an empty swing to check that it moves freely.",
+          "scenario": "At the park a swing has a seat hanging from two chains. It can move forward and backward.",
           "check": {
-            "question": "What does the group decide to use or play in the example with swing?",
+            "question": "Which item has the hanging seat?",
             "options": ["Bicycle", "Skateboard", "Swing"],
             "expectedAnswer": "Swing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a toys & games context illustrating this situation: At a park, an adult gently pushes an empty swing to check that it moves freely. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult toys & games scene showing lesson-related items or actions including Swing in a natural setting."
+          "imageBrief": "Empty swing hanging from two chains in a park. No adult treating movement as proof of structural safety; no text.",
+          "imageAlt": "Empty swing hanging from two chains in a park."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Toys & Games 3: Community Recreation Night",
-      "text": "A community centre is preparing activities for adults and families. One table offers bicycle, skateboard, scooter, roller skates, and jump rope. Another area has frisbee, trampoline, sled, water gun, and swing. Participants choose activities that suit the space and the group. The vocabulary is used in a realistic toys & games context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered toys & games scene supporting the reading and showing the first six target words."
+      "text": "At the recreation centre Sami parks his bicycle beside a skateboard and scooter. Nora carries roller skates and a jump rope. Friends throw a Frisbee in the field. An empty trampoline is nearby. A display shows a sled for snow and a toy water gun. The park has a swing with a hanging seat.",
+      "imageBrief": "Outdoor recreation storage with parked bicycle, foot scooter and roller skates. No stunt, mixed snow/water activity or text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bicycle"
+        "prompt": "Sami chooses a bicycle with two wheels and pedals. The skateboard has a flat board; the scooter has a standing platform and handlebars.\nWhich item has two wheels and pedals?",
+        "answer": "Bicycle",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Roller Skates"
+        "prompt": "Nora puts on roller skates, shoes with wheels. A jump rope and Frisbee are nearby.\nWhich items are shoes with wheels?",
+        "answer": "Roller Skates",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Trampoline"
+        "prompt": "The centre has a trampoline with a flexible surface for bouncing. A sled is for snow; a water gun is a toy for water games.\nWhich item has the flexible bouncing surface?",
+        "answer": "Trampoline",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Swing"
+        "prompt": "At the park a swing has a seat hanging from two chains. It can move forward and backward.\nWhich item has the hanging seat?",
+        "answer": "Swing",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Bicycle"
+        "prompt": "Read the passage: At the recreation centre Sami parks his bicycle beside a skateboard and scooter. Nora carries roller skates and a jump rope. Friends throw a Frisbee in the field. An empty trampoline is nearby. A display shows a sled for snow and a toy water gun. The park has a swing with a hanging seat.\nWhat is the sled for?",
+        "answer": "Snow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Skateboard"
+        "prompt": "Say that you have a bicycle.",
+        "answer": "I have a bicycle.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Frisbee"
+        "prompt": "Someone wants shoes with wheels for skating. Name the items.",
+        "answer": "Roller skates",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Toys & Games: See It, Say It",
-      "idea": "30–50 second contextual video set in a play area. Show bicycle, skateboard, scooter, roller skates, and jump rope naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a family visit, adults choose between bicycle, skateboard, and scooter. The selected activity or item is bicycle."
+      "title": "Adult Recreation and Game Night",
+      "idea": "Adult collectors and friends choose indoor or outdoor activities. Narration identifies named commercial games; use unbranded generic support images rather than recreated branded boards or readable letters. Stored drone and empty trampoline; no operational stunt instructions.",
+      "scriptStarter": "Sami chooses a bicycle with two wheels and pedals. The skateboard has a flat board; the scooter has a standing platform and handlebars."
     },
     "spacedReview": "1 lesson(s) back: Playing Cards, Dice from toys-games-2\n3 lesson(s) back: Homework, Test from classroom-5\n7 lesson(s) back: Pencil, Pen from classroom-1"
   }

@@ -44,140 +44,127 @@
       "غير واثق بنفسه"
     ],
     "usage": {
-      "goal": "Learn to use complex feelings 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to complex feelings.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish feeling words from an adult’s written account of an event.",
+      "canDoStatement": "Can explain which feeling word fits a supported account and distinguish it from a related word. Feelings are established by the person’s words, never by an image-based diagnosis. Less common feeling words extend the supported task level; individual vocabulary CEFR certification is not claimed.",
+      "textType": "personal-account",
+      "readingTarget": "Supported comparison of feeling words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Embarrassed", "Jealous", "Envious"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Embarrassed, Jealous, Envious. The selected item or situation is best described as embarrassed.",
+          "scenario": "At a reunion, Leila forgets someone’s name and feels embarrassed. She wants her colleague’s promotion and describes herself as envious. She worries about losing her partner’s attention and calls that feeling jealous.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which feeling describes wanting the colleague’s promotion?",
             "options": ["Embarrassed", "Jealous", "Envious"],
-            "expectedAnswer": "Embarrassed"
+            "expectedAnswer": "Envious"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Embarrassed, Jealous, Envious. The selected item or situation is best described as embarrassed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Embarrassed, Jealous, Envious in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults talking at a reunion table; their feelings are explained in the text. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults talking at a reunion table; their feelings are explained in the text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Guilty", "Ashamed", "Humiliated"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Guilty, Ashamed, Humiliated. The selected item or situation is best described as guilty.",
+          "scenario": "Omar admits that he broke a promise. He feels guilty about the action and ashamed of his behavior. When a coworker mocks him publicly, he feels humiliated. The group discusses the actions rather than judging him from his face.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which feeling concerns his broken promise?",
             "options": ["Guilty", "Ashamed", "Humiliated"],
             "expectedAnswer": "Guilty"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Guilty, Ashamed, Humiliated. The selected item or situation is best described as guilty. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Guilty, Ashamed, Humiliated in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults having a serious private conversation at an office table, without ridicule depicted. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults having a serious private conversation at an office table, without ridicule depicted."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Proud", "Humble", "Sympathetic"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Proud, Humble, Sympathetic. The selected item or situation is best described as proud.",
+          "scenario": "Nadia is proud of completing a difficult course but remains humble about her success. She is sympathetic when a classmate describes a setback and offers kind support.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which feeling relates to Nadia’s achievement?",
             "options": ["Proud", "Humble", "Sympathetic"],
             "expectedAnswer": "Proud"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Proud, Humble, Sympathetic. The selected item or situation is best described as proud. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Proud, Humble, Sympathetic in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults sharing course completion news at a cafe, with blank folders. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults sharing course completion news at a cafe, with blank folders."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Empathetic", "Nostalgic", "Melancholic"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Empathetic, Nostalgic, Melancholic. The selected item or situation is best described as empathetic.",
+          "scenario": "Sami is empathetic when a friend describes homesickness. Looking at an old travel album makes him nostalgic. He also feels melancholic, a quiet sadness, because he misses that period of his life.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which feeling is connected to memories of the past?",
             "options": ["Empathetic", "Nostalgic", "Melancholic"],
-            "expectedAnswer": "Empathetic"
+            "expectedAnswer": "Nostalgic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Empathetic, Nostalgic, Melancholic. The selected item or situation is best described as empathetic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Empathetic, Nostalgic, Melancholic in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: An adult looking through a photo album with a friend; all photos lack readable text. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "An adult looking through a photo album with a friend; all photos lack readable text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Overwhelmed", "Vulnerable", "Insecure"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Overwhelmed, Vulnerable, Insecure. The selected item or situation is best described as overwhelmed.",
+          "scenario": "With several urgent deadlines, Farah feels overwhelmed. Discussing her worries makes her feel vulnerable. She feels insecure about whether she can finish, so she asks a colleague to help organize the work.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes having more demands than she feels able to manage?",
             "options": ["Overwhelmed", "Vulnerable", "Insecure"],
             "expectedAnswer": "Overwhelmed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Overwhelmed, Vulnerable, Insecure. The selected item or situation is best described as overwhelmed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Overwhelmed, Vulnerable, Insecure in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults organizing work papers at a desk; no facial expression is treated as proof of mental state. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults organizing work papers at a desk; no facial expression is treated as proof of mental state."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Complex Feelings: Email",
-      "text": "Omar has an everyday task connected to complex feelings. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss embarrassed, jealous, and envious. The context makes the relationship between the words clear. In the social situation, the people experience or discuss guilty, ashamed, and humiliated. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Complex Feelings. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Complex Feelings 1: different experiences",
+      "text": "At a reunion, Leila forgets someone’s name and feels embarrassed. She wants her colleague’s promotion and describes herself as envious. She worries about losing her partner’s attention and calls that feeling jealous. Omar admits that he broke a promise. He feels guilty about the action and ashamed of his behavior. When a coworker mocks him publicly, he feels humiliated. The group discusses the actions rather than judging him from his face. Nadia is proud of completing a difficult course but remains humble about her success. She is sympathetic when a classmate describes a setback and offers kind support. Sami is empathetic when a friend describes homesickness. Looking at an old travel album makes him nostalgic. He also feels melancholic, a quiet sadness, because he misses that period of his life. With several urgent deadlines, Farah feels overwhelmed. Discussing her worries makes her feel vulnerable. She feels insecure about whether she can finish, so she asks a colleague to help organize the work. The descriptions distinguish causes and meanings. People may experience several feelings together; a photograph alone cannot identify them.",
+      "imageBrief": "Photorealistic adult social setting: Adults talking at a reunion table; their feelings are explained in the text. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Embarrassed, Jealous, Envious. The selected item or situation is best described as embarrassed.\nWhich description best fits the selected item or situation?",
-        "answer": "Embarrassed",
-        "questionType": "meaning",
+        "prompt": "At a reunion, Leila forgets someone’s name and feels embarrassed. She wants her colleague’s promotion and describes herself as envious. She worries about losing her partner’s attention and calls that feeling jealous.\nWhich feeling describes wanting the colleague’s promotion?",
+        "answer": "Envious",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Guilty, Ashamed, Humiliated. The selected item or situation is best described as guilty.\nWhich description best fits the selected item or situation?",
+        "prompt": "Omar admits that he broke a promise. He feels guilty about the action and ashamed of his behavior. When a coworker mocks him publicly, he feels humiliated. The group discusses the actions rather than judging him from his face.\nWhich feeling concerns his broken promise?",
         "answer": "Guilty",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Proud, Humble, Sympathetic. The selected item or situation is best described as proud.\nWhich description best fits the selected item or situation?",
+        "prompt": "Nadia is proud of completing a difficult course but remains humble about her success. She is sympathetic when a classmate describes a setback and offers kind support.\nWhich feeling relates to Nadia’s achievement?",
         "answer": "Proud",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Empathetic, Nostalgic, Melancholic. The selected item or situation is best described as empathetic.\nWhich description best fits the selected item or situation?",
-        "answer": "Empathetic",
-        "questionType": "meaning",
+        "prompt": "Sami is empathetic when a friend describes homesickness. Looking at an old travel album makes him nostalgic. He also feels melancholic, a quiet sadness, because he misses that period of his life.\nWhich feeling is connected to memories of the past?",
+        "answer": "Nostalgic",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Overwhelmed, Vulnerable, Insecure. The selected item or situation is best described as overwhelmed.\nWhich description best fits the selected item or situation?",
+        "prompt": "With several urgent deadlines, Farah feels overwhelmed. Discussing her worries makes her feel vulnerable. She feels insecure about whether she can finish, so she asks a colleague to help organize the work.\nWhich word describes having more demands than she feels able to manage?",
         "answer": "Overwhelmed",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Embarrassed"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Guilty"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bite Lip” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the answer fits the first example, using one complete sentence.\nAt a reunion, Leila forgets someone’s name and feels embarrassed. She wants her colleague’s promotion and describes herself as envious. She worries about losing her partner’s attention and calls that feeling jealous.\nWhich feeling describes wanting the colleague’s promotion?",
+        "answer": "Leila is envious because she wants her colleague’s promotion.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Complex Feelings: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Complex Feelings 1: different experiences",
+      "idea": "Narrate the adult examples. Explicitly state feelings without inviting viewers to diagnose facial expressions. Pause for a comparison question.",
+      "scriptStarter": "At a reunion, Leila forgets someone’s name and feels embarrassed. She wants her colleague’s promotion and describes herself as envious. She worries about losing her partner’s attention and calls that feeling jealous."
     },
     "spacedReview": "1 lesson(s) back: Bite Lip, Stick Out Tongue from facial-expressions-4\n3 lesson(s) back: Whimper, Grimace from facial-expressions-2\n7 lesson(s) back: Sash, Dress Shoes from graduation-2"
   },
@@ -226,140 +213,127 @@
       "رهبة أو خشية شديدة"
     ],
     "usage": {
-      "goal": "Learn to use complex feelings 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to complex feelings.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish feeling words from an adult’s written account of an event.",
+      "canDoStatement": "Can explain which feeling word fits a supported account and distinguish it from a related word. Feelings are established by the person’s words, never by an image-based diagnosis. Less common feeling words extend the supported task level; individual vocabulary CEFR certification is not claimed.",
+      "textType": "personal-account",
+      "readingTarget": "Supported comparison of feeling words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Conflicted", "Ambivalent", "Bittersweet"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Conflicted, Ambivalent, Bittersweet. The selected item or situation is best described as conflicted.",
+          "scenario": "Hana is offered a job in another city. She is conflicted about leaving her family and ambivalent because she has both positive and negative feelings about accepting. The farewell is bittersweet: happy for the opportunity, sad about leaving.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word means a mixture of happiness and sadness?",
             "options": ["Conflicted", "Ambivalent", "Bittersweet"],
-            "expectedAnswer": "Conflicted"
+            "expectedAnswer": "Bittersweet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Conflicted, Ambivalent, Bittersweet. The selected item or situation is best described as conflicted. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Conflicted, Ambivalent, Bittersweet in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults saying goodbye at a station entrance; the written context establishes mixed feelings. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults saying goodbye at a station entrance; the written context establishes mixed feelings."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wistful", "Longing", "Anxious"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Wistful, Longing, Anxious. The selected item or situation is best described as wistful.",
+          "scenario": "Looking at her old neighborhood, Hana feels wistful. She has a strong longing to see her friends. Before the journey, she feels anxious about what may happen.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which noun means a strong wish to see someone again?",
             "options": ["Wistful", "Longing", "Anxious"],
-            "expectedAnswer": "Wistful"
+            "expectedAnswer": "Longing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Wistful, Longing, Anxious. The selected item or situation is best described as wistful. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Wistful, Longing, Anxious in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: An adult looking at a travel photograph beside a packed bag. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "An adult looking at a travel photograph beside a packed bag."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nervous", "Panicked", "Stressed"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Nervous, Panicked, Stressed. The selected item or situation is best described as nervous.",
+          "scenario": "Before a presentation, Karim is nervous. A sudden equipment failure leaves him briefly panicked. Several deadlines have already made him stressed. These are his own descriptions, not a diagnosis.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes his sudden intense fear?",
             "options": ["Nervous", "Panicked", "Stressed"],
-            "expectedAnswer": "Nervous"
+            "expectedAnswer": "Panicked"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Nervous, Panicked, Stressed. The selected item or situation is best described as nervous. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Nervous, Panicked, Stressed in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: An adult preparing a presentation at a meeting table with a closed laptop. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "An adult preparing a presentation at a meeting table with a closed laptop."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tense", "Uneasy", "Restless"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Tense, Uneasy, Restless. The selected item or situation is best described as tense.",
+          "scenario": "While waiting for news, Noor feels tense and uneasy. She becomes restless and finds it hard to sit still. She describes these feelings in her message rather than asking friends to infer them from a photograph.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes finding it hard to stay still?",
             "options": ["Tense", "Uneasy", "Restless"],
-            "expectedAnswer": "Tense"
+            "expectedAnswer": "Restless"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Tense, Uneasy, Restless. The selected item or situation is best described as tense. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Tense, Uneasy, Restless in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: An adult waiting in a quiet seating area with a phone whose screen is unreadable. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "An adult waiting in a quiet seating area with a phone whose screen is unreadable."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Paranoid", "Apprehensive", "Dread"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Paranoid, Apprehensive, Dread. The selected item or situation is best described as paranoid.",
+          "scenario": "A vocabulary tutor contrasts apprehensive, meaning worried about an upcoming difficulty, with dread, a strong fearful anticipation. Paranoid describes intense or unreasonable suspicion that others intend harm; it should not be used as an insult or a diagnosis of a classmate.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which noun means strong fearful anticipation?",
             "options": ["Paranoid", "Apprehensive", "Dread"],
-            "expectedAnswer": "Paranoid"
+            "expectedAnswer": "Dread"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Paranoid, Apprehensive, Dread. The selected item or situation is best described as paranoid. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Paranoid, Apprehensive, Dread in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adult language learners discussing words in a classroom; no person singled out or labelled with a mental-health condition. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adult language learners discussing words in a classroom; no person singled out or labelled with a mental-health condition."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Complex Feelings: Personal Message",
-      "text": "Omar has an everyday task connected to complex feelings. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss conflicted, ambivalent, and bittersweet. The context makes the relationship between the words clear. In the social situation, the people experience or discuss wistful, longing, and anxious. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Complex Feelings. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Complex Feelings 2: different experiences",
+      "text": "Hana is offered a job in another city. She is conflicted about leaving her family and ambivalent because she has both positive and negative feelings about accepting. The farewell is bittersweet: happy for the opportunity, sad about leaving. Looking at her old neighborhood, Hana feels wistful. She has a strong longing to see her friends. Before the journey, she feels anxious about what may happen. Before a presentation, Karim is nervous. A sudden equipment failure leaves him briefly panicked. Several deadlines have already made him stressed. These are his own descriptions, not a diagnosis. While waiting for news, Noor feels tense and uneasy. She becomes restless and finds it hard to sit still. She describes these feelings in her message rather than asking friends to infer them from a photograph. A vocabulary tutor contrasts apprehensive, meaning worried about an upcoming difficulty, with dread, a strong fearful anticipation. Paranoid describes intense or unreasonable suspicion that others intend harm; it should not be used as an insult or a diagnosis of a classmate. The class distinguishes everyday feelings from clinical assessment. Learners use a person’s own account and avoid labeling other people.",
+      "imageBrief": "Photorealistic adult social setting: Adults saying goodbye at a station entrance; the written context establishes mixed feelings. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Conflicted, Ambivalent, Bittersweet. The selected item or situation is best described as conflicted.\nWhich description best fits the selected item or situation?",
-        "answer": "Conflicted",
-        "questionType": "meaning",
+        "prompt": "Hana is offered a job in another city. She is conflicted about leaving her family and ambivalent because she has both positive and negative feelings about accepting. The farewell is bittersweet: happy for the opportunity, sad about leaving.\nWhich word means a mixture of happiness and sadness?",
+        "answer": "Bittersweet",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Wistful, Longing, Anxious. The selected item or situation is best described as wistful.\nWhich description best fits the selected item or situation?",
-        "answer": "Wistful",
-        "questionType": "meaning",
+        "prompt": "Looking at her old neighborhood, Hana feels wistful. She has a strong longing to see her friends. Before the journey, she feels anxious about what may happen.\nWhich noun means a strong wish to see someone again?",
+        "answer": "Longing",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Nervous, Panicked, Stressed. The selected item or situation is best described as nervous.\nWhich description best fits the selected item or situation?",
-        "answer": "Nervous",
-        "questionType": "meaning",
+        "prompt": "Before a presentation, Karim is nervous. A sudden equipment failure leaves him briefly panicked. Several deadlines have already made him stressed. These are his own descriptions, not a diagnosis.\nWhich word describes his sudden intense fear?",
+        "answer": "Panicked",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Tense, Uneasy, Restless. The selected item or situation is best described as tense.\nWhich description best fits the selected item or situation?",
-        "answer": "Tense",
-        "questionType": "meaning",
+        "prompt": "While waiting for news, Noor feels tense and uneasy. She becomes restless and finds it hard to sit still. She describes these feelings in her message rather than asking friends to infer them from a photograph.\nWhich word describes finding it hard to stay still?",
+        "answer": "Restless",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Paranoid, Apprehensive, Dread. The selected item or situation is best described as paranoid.\nWhich description best fits the selected item or situation?",
-        "answer": "Paranoid",
-        "questionType": "meaning",
+        "prompt": "A vocabulary tutor contrasts apprehensive, meaning worried about an upcoming difficulty, with dread, a strong fearful anticipation. Paranoid describes intense or unreasonable suspicion that others intend harm; it should not be used as an insult or a diagnosis of a classmate.\nWhich noun means strong fearful anticipation?",
+        "answer": "Dread",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Conflicted"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wistful"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Embarrassed” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the answer fits the first example, using one complete sentence.\nHana is offered a job in another city. She is conflicted about leaving her family and ambivalent because she has both positive and negative feelings about accepting. The farewell is bittersweet: happy for the opportunity, sad about leaving.\nWhich word means a mixture of happiness and sadness?",
+        "answer": "The farewell is bittersweet because Hana is happy about the opportunity and sad about leaving.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Complex Feelings: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Complex Feelings 2: different experiences",
+      "idea": "Narrate the adult examples. Explicitly state feelings without inviting viewers to diagnose facial expressions. Pause for a comparison question.",
+      "scriptStarter": "Hana is offered a job in another city. She is conflicted about leaving her family and ambivalent because she has both positive and negative feelings about accepting. The farewell is bittersweet: happy for the opportunity, sad about leaving."
     },
     "spacedReview": "1 lesson(s) back: Embarrassed, Jealous from complex-feelings-1\n3 lesson(s) back: Gasp, Wide Eyes from facial-expressions-3\n7 lesson(s) back: Party, Cake from graduation-3"
   },
@@ -408,140 +382,127 @@
       "إخلاص وتفانٍ"
     ],
     "usage": {
-      "goal": "Learn to use complex feelings 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to complex feelings.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish feeling words from an adult’s written account of an event.",
+      "canDoStatement": "Can explain which feeling word fits a supported account and distinguish it from a related word. Feelings are established by the person’s words, never by an image-based diagnosis. Less common feeling words extend the supported task level; individual vocabulary CEFR certification is not claimed.",
+      "textType": "personal-account",
+      "readingTarget": "Supported comparison of feeling words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Inspired", "Motivated", "Determined"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Inspired, Motivated, Determined. The selected item or situation is best described as inspired.",
+          "scenario": "A community project inspires Salma to create a garden. She is motivated to help and determined to finish despite the work required.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes her firm decision to finish?",
             "options": ["Inspired", "Motivated", "Determined"],
-            "expectedAnswer": "Inspired"
+            "expectedAnswer": "Determined"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Inspired, Motivated, Determined. The selected item or situation is best described as inspired. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Inspired, Motivated, Determined in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: An adult community volunteer planning a garden with ordinary tools stored safely nearby. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "An adult community volunteer planning a garden with ordinary tools stored safely nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Resilient", "Courageous", "Confident"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Resilient, Courageous, Confident. The selected item or situation is best described as resilient.",
+          "scenario": "After a project setback, Ali recovers and tries again, showing resilience. He is courageous when speaking honestly about a difficult issue and confident because he has prepared carefully.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes his ability to recover after the setback?",
             "options": ["Resilient", "Courageous", "Confident"],
             "expectedAnswer": "Resilient"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Resilient, Courageous, Confident. The selected item or situation is best described as resilient. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Resilient, Courageous, Confident in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults discussing a community project at a table, without heroic stereotypes. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community project at a table, without heroic stereotypes."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Empowered", "Fulfilled", "Accomplished"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Empowered, Fulfilled, Accomplished. The selected item or situation is best described as empowered.",
+          "scenario": "Training gives Leila skills and support, so she feels empowered to lead. Completing the project makes her feel accomplished. Helping the neighborhood leaves her fulfilled.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word relates to having the skills and support to act?",
             "options": ["Empowered", "Fulfilled", "Accomplished"],
             "expectedAnswer": "Empowered"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Empowered, Fulfilled, Accomplished. The selected item or situation is best described as empowered. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Empowered, Fulfilled, Accomplished in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adult volunteers discussing a finished community project. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adult volunteers discussing a finished community project."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Liberated", "Love", "Affection"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Liberated, Love, Affection. The selected item or situation is best described as liberated.",
+          "scenario": "After resolving a long-running worry, Omar feels liberated from that burden. He expresses love for his family and affection for close friends.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes freedom from the worry?",
             "options": ["Liberated", "Love", "Affection"],
             "expectedAnswer": "Liberated"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Liberated, Love, Affection. The selected item or situation is best described as liberated. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Liberated, Love, Affection in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adults sharing a calm family meal; written context explains relationships and feelings. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adults sharing a calm family meal; written context explains relationships and feelings."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Compassion", "Tenderness", "Devotion"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Compassion, Tenderness, Devotion. The selected item or situation is best described as compassion.",
+          "scenario": "Mona shows compassion by offering help to a friend who is suffering. She speaks with tenderness and continues visiting regularly, showing devotion to the friendship.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes her gentle, caring manner?",
             "options": ["Compassion", "Tenderness", "Devotion"],
-            "expectedAnswer": "Compassion"
+            "expectedAnswer": "Tenderness"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Compassion, Tenderness, Devotion. The selected item or situation is best described as compassion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Compassion, Tenderness, Devotion in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adult friends talking quietly at a home table; no medical or religious stereotypes. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adult friends talking quietly at a home table; no medical or religious stereotypes."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Complex Feelings: Short Dialogue",
-      "text": "Omar has an everyday task connected to complex feelings. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss inspired, motivated, and determined. The context makes the relationship between the words clear. In the social situation, the people experience or discuss resilient, courageous, and confident. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Complex Feelings. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Complex Feelings 3: different experiences",
+      "text": "A community project inspires Salma to create a garden. She is motivated to help and determined to finish despite the work required. After a project setback, Ali recovers and tries again, showing resilience. He is courageous when speaking honestly about a difficult issue and confident because he has prepared carefully. Training gives Leila skills and support, so she feels empowered to lead. Completing the project makes her feel accomplished. Helping the neighborhood leaves her fulfilled. After resolving a long-running worry, Omar feels liberated from that burden. He expresses love for his family and affection for close friends. Mona shows compassion by offering help to a friend who is suffering. She speaks with tenderness and continues visiting regularly, showing devotion to the friendship. The project changes how people describe their feelings. The terms focus on recovery, support, achievement, and care rather than stereotypes. Salma feels inspired by seeing how a community garden can help neighbors.",
+      "imageBrief": "Photorealistic adult social setting: An adult community volunteer planning a garden with ordinary tools stored safely nearby. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Inspired, Motivated, Determined. The selected item or situation is best described as inspired.\nWhich description best fits the selected item or situation?",
-        "answer": "Inspired",
-        "questionType": "meaning",
+        "prompt": "A community project inspires Salma to create a garden. She is motivated to help and determined to finish despite the work required.\nWhich word describes her firm decision to finish?",
+        "answer": "Determined",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Resilient, Courageous, Confident. The selected item or situation is best described as resilient.\nWhich description best fits the selected item or situation?",
+        "prompt": "After a project setback, Ali recovers and tries again, showing resilience. He is courageous when speaking honestly about a difficult issue and confident because he has prepared carefully.\nWhich word describes his ability to recover after the setback?",
         "answer": "Resilient",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Empowered, Fulfilled, Accomplished. The selected item or situation is best described as empowered.\nWhich description best fits the selected item or situation?",
+        "prompt": "Training gives Leila skills and support, so she feels empowered to lead. Completing the project makes her feel accomplished. Helping the neighborhood leaves her fulfilled.\nWhich word relates to having the skills and support to act?",
         "answer": "Empowered",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Liberated, Love, Affection. The selected item or situation is best described as liberated.\nWhich description best fits the selected item or situation?",
+        "prompt": "After resolving a long-running worry, Omar feels liberated from that burden. He expresses love for his family and affection for close friends.\nWhich word describes freedom from the worry?",
         "answer": "Liberated",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Compassion, Tenderness, Devotion. The selected item or situation is best described as compassion.\nWhich description best fits the selected item or situation?",
-        "answer": "Compassion",
-        "questionType": "meaning",
+        "prompt": "Mona shows compassion by offering help to a friend who is suffering. She speaks with tenderness and continues visiting regularly, showing devotion to the friendship.\nWhich word describes her gentle, caring manner?",
+        "answer": "Tenderness",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Inspired"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Resilient"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Conflicted” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the answer fits the first example, using one complete sentence.\nA community project inspires Salma to create a garden. She is motivated to help and determined to finish despite the work required.\nWhich word describes her firm decision to finish?",
+        "answer": "Salma is determined because she has firmly decided to finish the project.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Complex Feelings: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Complex Feelings 3: different experiences",
+      "idea": "Narrate the adult examples. Explicitly state feelings without inviting viewers to diagnose facial expressions. Pause for a comparison question.",
+      "scriptStarter": "A community project inspires Salma to create a garden. She is motivated to help and determined to finish despite the work required."
     },
     "spacedReview": "1 lesson(s) back: Conflicted, Ambivalent from complex-feelings-2\n3 lesson(s) back: Bite Lip, Stick Out Tongue from facial-expressions-4\n7 lesson(s) back: Thesis, Dissertation from graduation-4"
   },
@@ -564,83 +525,70 @@
       "دفء المودة والترحيب"
     ],
     "usage": {
-      "goal": "Learn to use complex feelings 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to complex feelings.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish feeling words from an adult’s written account of an event.",
+      "canDoStatement": "Can explain which feeling word fits a supported account and distinguish it from a related word. Feelings are established by the person’s words, never by an image-based diagnosis. Less common feeling words extend the supported task level; individual vocabulary CEFR certification is not claimed.",
+      "textType": "personal-account",
+      "readingTarget": "Supported comparison of feeling words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Admiration", "Trust", "Belonging"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Admiration, Trust, Belonging. The selected item or situation is best described as admiration.",
+          "scenario": "At a club meeting, Rami expresses admiration for a skilled volunteer. He has trust in the team’s honesty. Being welcomed by the group gives him a feeling of belonging.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes feeling accepted by the group?",
             "options": ["Admiration", "Trust", "Belonging"],
-            "expectedAnswer": "Admiration"
+            "expectedAnswer": "Belonging"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Admiration, Trust, Belonging. The selected item or situation is best described as admiration. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Admiration, Trust, Belonging in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adult community club members greeting a new member at a meeting table. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adult community club members greeting a new member at a meeting table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Intimacy", "Warmth"],
-          "scenario": "An adult compares three possible descriptions in a complex feelings context: Intimacy, Warmth, Admiration. The selected item or situation is best described as intimacy.",
+          "scenario": "Two longtime friends speak openly about personal hopes, showing intimacy through their trusting closeness. Their host welcomes them with warmth. These qualities concern the interaction, not a particular facial expression.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which word describes trusting closeness?",
             "options": ["Intimacy", "Warmth", "Admiration"],
             "expectedAnswer": "Intimacy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a complex feelings context illustrating this situation: An adult compares three possible descriptions in a complex feelings context: Intimacy, Warmth, Admiration. The selected item or situation is best described as intimacy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult complex feelings scene showing lesson-related items or actions including Intimacy, Warmth in a natural setting."
+          "imageBrief": "Photorealistic adult social setting: Adult friends talking at a home table, with a host serving tea. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting.",
+          "imageAlt": "Adult friends talking at a home table, with a host serving tea."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Complex Feelings: Everyday Description",
-      "text": "Omar has an everyday task connected to complex feelings. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss admiration, trust, and belonging. The context makes the relationship between the words clear. In the social situation, the people experience or discuss intimacy and warmth. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Complex Feelings. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Complex Feelings 4: different experiences",
+      "text": "At a club meeting, Rami expresses admiration for a skilled volunteer. He has trust in the team’s honesty. Being welcomed by the group gives him a feeling of belonging. Two longtime friends speak openly about personal hopes, showing intimacy through their trusting closeness. Their host welcomes them with warmth. These qualities concern the interaction, not a particular facial expression. The club welcomes people through respectful interactions. The feelings in these examples are stated in words, so different people can discuss them without guessing from appearance.",
+      "imageBrief": "Photorealistic adult social setting: Adult community club members greeting a new member at a meeting table. Written narration establishes internal feelings, history, and relationships. Do not attempt to diagnose emotions from facial appearance, exaggerate expressions, or portray stereotypes. Natural clothing and composition, no text labels, logos, watermarks, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Admiration, Trust, Belonging. The selected item or situation is best described as admiration.\nWhich description best fits the selected item or situation?",
-        "answer": "Admiration",
-        "questionType": "meaning",
+        "prompt": "At a club meeting, Rami expresses admiration for a skilled volunteer. He has trust in the team’s honesty. Being welcomed by the group gives him a feeling of belonging.\nWhich word describes feeling accepted by the group?",
+        "answer": "Belonging",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a complex feelings context: Intimacy, Warmth, Admiration. The selected item or situation is best described as intimacy.\nWhich description best fits the selected item or situation?",
+        "prompt": "Two longtime friends speak openly about personal hopes, showing intimacy through their trusting closeness. Their host welcomes them with warmth. These qualities concern the interaction, not a particular facial expression.\nWhich word describes trusting closeness?",
         "answer": "Intimacy",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Admiration"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Intimacy"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Inspired” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the answer fits the first example, using one complete sentence.\nAt a club meeting, Rami expresses admiration for a skilled volunteer. He has trust in the team’s honesty. Being welcomed by the group gives him a feeling of belonging.\nWhich word describes feeling accepted by the group?",
+        "answer": "Rami feels belonging because the group welcomes and accepts him.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Complex Feelings: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Complex Feelings 4: different experiences",
+      "idea": "Narrate the adult examples. Explicitly state feelings without inviting viewers to diagnose facial expressions. Pause for a comparison question.",
+      "scriptStarter": "At a club meeting, Rami expresses admiration for a skilled volunteer. He has trust in the team’s honesty. Being welcomed by the group gives him a feeling of belonging."
     },
     "spacedReview": "1 lesson(s) back: Inspired, Motivated from complex-feelings-3\n3 lesson(s) back: Embarrassed, Jealous from complex-feelings-1\n7 lesson(s) back: Smile, Grin from facial-expressions-1"
   }

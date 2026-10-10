@@ -44,140 +44,127 @@
       "أناني"
     ],
     "usage": {
-      "goal": "Learn to use personality & character 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to personality & character.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Describe stated behavior with a suitable personality adjective.",
+      "canDoStatement": "Can distinguish related adjectives using a supported account of behavior. Less common adjectives extend the task level and are not individually certified at the unit’s CEFR label.",
+      "textType": "behavior-examples",
+      "readingTarget": "Supported comparison of adjectives",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Kind", "Generous", "Honest"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Kind, Generous, Honest. The selected item or situation is best described as kind.",
+          "scenario": "At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes telling the truth?",
             "options": ["Kind", "Generous", "Honest"],
-            "expectedAnswer": "Kind"
+            "expectedAnswer": "Honest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Kind, Generous, Honest. The selected item or situation is best described as kind. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Kind, Generous, Honest in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Brave", "Patient", "Loyal"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Brave, Patient, Loyal. The selected item or situation is best described as brave.",
+          "scenario": "Omar is brave when he speaks up despite fear, patient when he waits without becoming upset, and loyal when he supports a friend through a difficult period.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes waiting calmly?",
             "options": ["Brave", "Patient", "Loyal"],
-            "expectedAnswer": "Brave"
+            "expectedAnswer": "Patient"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Brave, Patient, Loyal. The selected item or situation is best described as brave. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Brave, Patient, Loyal in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Omar is brave when he speaks up despite fear, patient when he waits without becoming upset, and loyal when he supports a friend through a difficult period. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Humble", "Cheerful", "Reliable"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Humble, Cheerful, Reliable. The selected item or situation is best described as humble.",
+          "scenario": "Nadia is humble about her success, cheerful in her greeting, and reliable because she completes the work she promised.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective means others can depend on her?",
             "options": ["Humble", "Cheerful", "Reliable"],
-            "expectedAnswer": "Humble"
+            "expectedAnswer": "Reliable"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Humble, Cheerful, Reliable. The selected item or situation is best described as humble. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Humble, Cheerful, Reliable in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Nadia is humble about her success, cheerful in her greeting, and reliable because she completes the work she promised. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compassionate", "Stubborn", "Impatient"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Compassionate, Stubborn, Impatient. The selected item or situation is best described as compassionate.",
+          "scenario": "A colleague is compassionate toward someone facing difficulty. In a separate example, he is stubborn about changing a plan and impatient during a delay. The group describes particular behavior rather than labeling his whole character.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes refusing to change an opinion?",
             "options": ["Compassionate", "Stubborn", "Impatient"],
-            "expectedAnswer": "Compassionate"
+            "expectedAnswer": "Stubborn"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Compassionate, Stubborn, Impatient. The selected item or situation is best described as compassionate. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Compassionate, Stubborn, Impatient in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A colleague is compassionate toward someone facing difficulty. In a separate example, he is stubborn about changing a plan and impatient during a delay. The group describes particular behavior rather than labeling his whole character. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Shy", "Moody", "Selfish"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Shy, Moody, Selfish. The selected item or situation is best described as shy.",
+          "scenario": "A classmate describes herself as shy in unfamiliar groups. Another reports being moody after a tiring week. In a story, a selfish character keeps all the shared resources for himself.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes considering only one’s own advantage?",
             "options": ["Shy", "Moody", "Selfish"],
-            "expectedAnswer": "Shy"
+            "expectedAnswer": "Selfish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Shy, Moody, Selfish. The selected item or situation is best described as shy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Shy, Moody, Selfish in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A classmate describes herself as shy in unfamiliar groups. Another reports being moody after a tiring week. In a story, a selfish character keeps all the shared resources for himself. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Personality & Character: Email",
-      "text": "Omar has an everyday task connected to personality & character. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss kind, generous, and honest. The context makes the relationship between the words clear. In the social situation, the people experience or discuss brave, patient, and loyal. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Personality & Character. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Personality & Character 1: behavior in context",
+      "text": "At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake. Omar is brave when he speaks up despite fear, patient when he waits without becoming upset, and loyal when he supports a friend through a difficult period. Nadia is humble about her success, cheerful in her greeting, and reliable because she completes the work she promised. A colleague is compassionate toward someone facing difficulty. In a separate example, he is stubborn about changing a plan and impatient during a delay. The group describes particular behavior rather than labeling his whole character. A classmate describes herself as shy in unfamiliar groups. Another reports being moody after a tiring week. In a story, a selfish character keeps all the shared resources for himself. These examples describe behavior in a stated situation. A single action or photograph does not prove a permanent personality trait. Preferences such as introverted and extroverted are not a measure of a person’s value or ability.",
+      "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Kind, Generous, Honest. The selected item or situation is best described as kind.\nWhich description best fits the selected item or situation?",
-        "answer": "Kind",
-        "questionType": "meaning",
+        "prompt": "At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake.\nWhich adjective describes telling the truth?",
+        "answer": "Honest",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Brave, Patient, Loyal. The selected item or situation is best described as brave.\nWhich description best fits the selected item or situation?",
-        "answer": "Brave",
-        "questionType": "meaning",
+        "prompt": "Omar is brave when he speaks up despite fear, patient when he waits without becoming upset, and loyal when he supports a friend through a difficult period.\nWhich adjective describes waiting calmly?",
+        "answer": "Patient",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Humble, Cheerful, Reliable. The selected item or situation is best described as humble.\nWhich description best fits the selected item or situation?",
-        "answer": "Humble",
-        "questionType": "meaning",
+        "prompt": "Nadia is humble about her success, cheerful in her greeting, and reliable because she completes the work she promised.\nWhich adjective means others can depend on her?",
+        "answer": "Reliable",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Compassionate, Stubborn, Impatient. The selected item or situation is best described as compassionate.\nWhich description best fits the selected item or situation?",
-        "answer": "Compassionate",
-        "questionType": "meaning",
+        "prompt": "A colleague is compassionate toward someone facing difficulty. In a separate example, he is stubborn about changing a plan and impatient during a delay. The group describes particular behavior rather than labeling his whole character.\nWhich adjective describes refusing to change an opinion?",
+        "answer": "Stubborn",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Shy, Moody, Selfish. The selected item or situation is best described as shy.\nWhich description best fits the selected item or situation?",
-        "answer": "Shy",
-        "questionType": "meaning",
+        "prompt": "A classmate describes herself as shy in unfamiliar groups. Another reports being moody after a tiring week. In a story, a selfish character keeps all the shared resources for himself.\nWhich adjective describes considering only one’s own advantage?",
+        "answer": "Selfish",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Kind"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Brave"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Listening” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the adjective fits the first example in one complete sentence.\nAt a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake.\nWhich adjective describes telling the truth?",
+        "answer": "Salma is honest because she tells the team that she made a mistake.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Personality & Character: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Personality & Character 1: behavior in context",
+      "idea": "Narrate the behavior examples without inviting personality judgments from appearance. Pause for one comparison question.",
+      "scriptStarter": "At a volunteer meeting, Salma is kind when she listens to a newcomer. She is generous when she shares supplies. She is honest when she tells the team she made a mistake."
     },
     "spacedReview": "1 lesson(s) back: Listening, Sharing from social-situations-3\n3 lesson(s) back: Hello, Goodbye from social-situations-1\n7 lesson(s) back: Embarrassed, Jealous from complex-feelings-1"
   },
@@ -219,147 +206,134 @@
       "انطوائي",
       "منفتح اجتماعيًا",
       "كثير الكلام",
-      "هادئ",
+      "هادئ قليل الكلام",
       "ذو شخصية جذابة",
       "ساحر الشخصية",
       "اجتماعي",
       "متحفظ"
     ],
     "usage": {
-      "goal": "Learn to use personality & character 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to personality & character.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Describe stated behavior with a suitable personality adjective.",
+      "canDoStatement": "Can distinguish related adjectives using a supported account of behavior. Less common adjectives extend the task level and are not individually certified at the unit’s CEFR label.",
+      "textType": "behavior-examples",
+      "readingTarget": "Supported comparison of adjectives",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lazy", "Reckless", "Jealous"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Lazy, Reckless, Jealous. The selected item or situation is best described as lazy.",
+          "scenario": "A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes disregarding danger?",
             "options": ["Lazy", "Reckless", "Jealous"],
-            "expectedAnswer": "Lazy"
+            "expectedAnswer": "Reckless"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Lazy, Reckless, Jealous. The selected item or situation is best described as lazy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Lazy, Reckless, Jealous in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Arrogant", "Pessimistic", "Friendly"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Arrogant, Pessimistic, Friendly. The selected item or situation is best described as arrogant.",
+          "scenario": "The fictional manager is arrogant when he assumes he is more important than others. He is pessimistic when he expects every plan to fail. A new colleague is friendly and welcomes the team.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes expecting a bad outcome?",
             "options": ["Arrogant", "Pessimistic", "Friendly"],
-            "expectedAnswer": "Arrogant"
+            "expectedAnswer": "Pessimistic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Arrogant, Pessimistic, Friendly. The selected item or situation is best described as arrogant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Arrogant, Pessimistic, Friendly in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: The fictional manager is arrogant when he assumes he is more important than others. He is pessimistic when he expects every plan to fail. A new colleague is friendly and welcomes the team. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Outgoing", "Introverted", "Extroverted"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Outgoing, Introverted, Extroverted. The selected item or situation is best described as outgoing.",
+          "scenario": "Leila calls herself introverted because she prefers quieter company. Karim describes himself as extroverted and enjoys busy social events. At the meeting, he is outgoing and starts conversations easily. Neither preference establishes someone’s ability or worth.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes preferring quieter company?",
             "options": ["Outgoing", "Introverted", "Extroverted"],
-            "expectedAnswer": "Outgoing"
+            "expectedAnswer": "Introverted"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Outgoing, Introverted, Extroverted. The selected item or situation is best described as outgoing. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Outgoing, Introverted, Extroverted in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Leila calls herself introverted because she prefers quieter company. Karim describes himself as extroverted and enjoys busy social events. At the meeting, he is outgoing and starts conversations easily. Neither preference establishes someone’s ability or worth. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Talkative", "Quiet", "Charismatic"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Talkative, Quiet, Charismatic. The selected item or situation is best described as talkative.",
+          "scenario": "The meeting facilitator is charismatic and attracts the group’s interest. A talkative participant speaks often, while a quiet participant speaks less. Quiet does not mean unable to contribute.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes speaking often?",
             "options": ["Talkative", "Quiet", "Charismatic"],
             "expectedAnswer": "Talkative"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Talkative, Quiet, Charismatic. The selected item or situation is best described as talkative. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Talkative, Quiet, Charismatic in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: The meeting facilitator is charismatic and attracts the group’s interest. A talkative participant speaks often, while a quiet participant speaks less. Quiet does not mean unable to contribute. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Charming", "Sociable", "Reserved"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Charming, Sociable, Reserved. The selected item or situation is best described as charming.",
+          "scenario": "At a club dinner, guests call their host charming because his manner is pleasant. He is sociable and enjoys meeting people. A reserved guest keeps personal details private but participates respectfully.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes not readily sharing personal feelings?",
             "options": ["Charming", "Sociable", "Reserved"],
-            "expectedAnswer": "Charming"
+            "expectedAnswer": "Reserved"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Charming, Sociable, Reserved. The selected item or situation is best described as charming. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Charming, Sociable, Reserved in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: At a club dinner, guests call their host charming because his manner is pleasant. He is sociable and enjoys meeting people. A reserved guest keeps personal details private but participates respectfully. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Personality & Character: Personal Message",
-      "text": "Omar has an everyday task connected to personality & character. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss lazy, reckless, and jealous. The context makes the relationship between the words clear. In the social situation, the people experience or discuss arrogant, pessimistic, and friendly. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Personality & Character. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Personality & Character 2: behavior in context",
+      "text": "A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention. The fictional manager is arrogant when he assumes he is more important than others. He is pessimistic when he expects every plan to fail. A new colleague is friendly and welcomes the team. Leila calls herself introverted because she prefers quieter company. Karim describes himself as extroverted and enjoys busy social events. At the meeting, he is outgoing and starts conversations easily. Neither preference establishes someone’s ability or worth. The meeting facilitator is charismatic and attracts the group’s interest. A talkative participant speaks often, while a quiet participant speaks less. Quiet does not mean unable to contribute. At a club dinner, guests call their host charming because his manner is pleasant. He is sociable and enjoys meeting people. A reserved guest keeps personal details private but participates respectfully. These examples describe behavior in a stated situation. A single action or photograph does not prove a permanent personality trait. Preferences such as introverted and extroverted are not a measure of a person’s value or ability.",
+      "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Lazy, Reckless, Jealous. The selected item or situation is best described as lazy.\nWhich description best fits the selected item or situation?",
-        "answer": "Lazy",
-        "questionType": "meaning",
+        "prompt": "A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention.\nWhich adjective describes disregarding danger?",
+        "answer": "Reckless",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Arrogant, Pessimistic, Friendly. The selected item or situation is best described as arrogant.\nWhich description best fits the selected item or situation?",
-        "answer": "Arrogant",
-        "questionType": "meaning",
+        "prompt": "The fictional manager is arrogant when he assumes he is more important than others. He is pessimistic when he expects every plan to fail. A new colleague is friendly and welcomes the team.\nWhich adjective describes expecting a bad outcome?",
+        "answer": "Pessimistic",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Outgoing, Introverted, Extroverted. The selected item or situation is best described as outgoing.\nWhich description best fits the selected item or situation?",
-        "answer": "Outgoing",
-        "questionType": "meaning",
+        "prompt": "Leila calls herself introverted because she prefers quieter company. Karim describes himself as extroverted and enjoys busy social events. At the meeting, he is outgoing and starts conversations easily. Neither preference establishes someone’s ability or worth.\nWhich adjective describes preferring quieter company?",
+        "answer": "Introverted",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Talkative, Quiet, Charismatic. The selected item or situation is best described as talkative.\nWhich description best fits the selected item or situation?",
+        "prompt": "The meeting facilitator is charismatic and attracts the group’s interest. A talkative participant speaks often, while a quiet participant speaks less. Quiet does not mean unable to contribute.\nWhich adjective describes speaking often?",
         "answer": "Talkative",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Charming, Sociable, Reserved. The selected item or situation is best described as charming.\nWhich description best fits the selected item or situation?",
-        "answer": "Charming",
-        "questionType": "meaning",
+        "prompt": "At a club dinner, guests call their host charming because his manner is pleasant. He is sociable and enjoys meeting people. A reserved guest keeps personal details private but participates respectfully.\nWhich adjective describes not readily sharing personal feelings?",
+        "answer": "Reserved",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Lazy"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Arrogant"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Kind” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the adjective fits the first example in one complete sentence.\nA tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention.\nWhich adjective describes disregarding danger?",
+        "answer": "Reckless describes ignoring possible danger.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Personality & Character: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Personality & Character 2: behavior in context",
+      "idea": "Narrate the behavior examples without inviting personality judgments from appearance. Pause for one comparison question.",
+      "scriptStarter": "A tutor distinguishes three adjectives. Lazy describes unwillingness to make an effort in a particular example. Reckless describes ignoring possible danger. Jealous describes wanting another person’s advantage or fearing loss of attention."
     },
     "spacedReview": "1 lesson(s) back: Kind, Generous from personality-character-1\n3 lesson(s) back: Pardon, After You from social-situations-2\n7 lesson(s) back: Conflicted, Ambivalent from complex-feelings-2"
   },
@@ -392,7 +366,7 @@
     ],
     "targetWordsArabic": [
       "مجتهد",
-      "إبداعي",
+      "مبدع",
       "منظم",
       "طموح",
       "ملتزم بالمواعيد",
@@ -408,140 +382,127 @@
       "متفائل"
     ],
     "usage": {
-      "goal": "Learn to use personality & character 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to personality & character.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Describe stated behavior with a suitable personality adjective.",
+      "canDoStatement": "Can distinguish related adjectives using a supported account of behavior. Less common adjectives extend the task level and are not individually certified at the unit’s CEFR label.",
+      "textType": "behavior-examples",
+      "readingTarget": "Supported comparison of adjectives",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hardworking", "Creative", "Organized"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Hardworking, Creative, Organized. The selected item or situation is best described as hardworking.",
+          "scenario": "A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes managing tasks in a clear order?",
             "options": ["Hardworking", "Creative", "Organized"],
-            "expectedAnswer": "Hardworking"
+            "expectedAnswer": "Organized"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Hardworking, Creative, Organized. The selected item or situation is best described as hardworking. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Hardworking, Creative, Organized in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ambitious", "Punctual", "Determined"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Ambitious, Punctual, Determined. The selected item or situation is best described as ambitious.",
+          "scenario": "Sami is ambitious and wants to lead a project. He is punctual and arrives at the agreed time. He is determined to finish despite a setback.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes arriving at the agreed time?",
             "options": ["Ambitious", "Punctual", "Determined"],
-            "expectedAnswer": "Ambitious"
+            "expectedAnswer": "Punctual"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Ambitious, Punctual, Determined. The selected item or situation is best described as ambitious. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Ambitious, Punctual, Determined in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Sami is ambitious and wants to lead a project. He is punctual and arrives at the agreed time. He is determined to finish despite a setback. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dedicated", "Innovative", "Focused"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Dedicated, Innovative, Focused. The selected item or situation is best described as dedicated.",
+          "scenario": "Noor is dedicated to the community project. Her innovative idea introduces a new method, and she stays focused while completing one difficult step.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes introducing a new method?",
             "options": ["Dedicated", "Innovative", "Focused"],
-            "expectedAnswer": "Dedicated"
+            "expectedAnswer": "Innovative"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Dedicated, Innovative, Focused. The selected item or situation is best described as dedicated. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Dedicated, Innovative, Focused in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Noor is dedicated to the community project. Her innovative idea introduces a new method, and she stays focused while completing one difficult step. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Resourceful", "Sensitive", "Empathetic"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Resourceful, Sensitive, Empathetic. The selected item or situation is best described as resourceful.",
+          "scenario": "Farah is resourceful when she finds a practical solution using available materials. She is sensitive to a colleague’s feelings and empathetic when she tries to understand the colleague’s experience.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes finding a practical solution?",
             "options": ["Resourceful", "Sensitive", "Empathetic"],
             "expectedAnswer": "Resourceful"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Resourceful, Sensitive, Empathetic. The selected item or situation is best described as resourceful. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Resourceful, Sensitive, Empathetic in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Farah is resourceful when she finds a practical solution using available materials. She is sensitive to a colleague’s feelings and empathetic when she tries to understand the colleague’s experience. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Calm", "Anxious", "Optimistic"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Calm, Anxious, Optimistic. The selected item or situation is best described as calm.",
+          "scenario": "Before a presentation, Ali says he is anxious about the outcome. His colleague remains calm and helps organize the room. She is optimistic that the team can manage the challenge.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes expecting a good outcome?",
             "options": ["Calm", "Anxious", "Optimistic"],
-            "expectedAnswer": "Calm"
+            "expectedAnswer": "Optimistic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Calm, Anxious, Optimistic. The selected item or situation is best described as calm. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Calm, Anxious, Optimistic in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Before a presentation, Ali says he is anxious about the outcome. His colleague remains calm and helps organize the room. She is optimistic that the team can manage the challenge. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Personality & Character: Short Dialogue",
-      "text": "Omar has an everyday task connected to personality & character. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss hardworking, creative, and organized. The context makes the relationship between the words clear. In the social situation, the people experience or discuss ambitious, punctual, and determined. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Personality & Character. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Personality & Character 3: behavior in context",
+      "text": "A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order. Sami is ambitious and wants to lead a project. He is punctual and arrives at the agreed time. He is determined to finish despite a setback. Noor is dedicated to the community project. Her innovative idea introduces a new method, and she stays focused while completing one difficult step. Farah is resourceful when she finds a practical solution using available materials. She is sensitive to a colleague’s feelings and empathetic when she tries to understand the colleague’s experience. Before a presentation, Ali says he is anxious about the outcome. His colleague remains calm and helps organize the room. She is optimistic that the team can manage the challenge. These examples describe behavior in a stated situation. A single action or photograph does not prove a permanent personality trait. Preferences such as introverted and extroverted are not a measure of a person’s value or ability.",
+      "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Hardworking, Creative, Organized. The selected item or situation is best described as hardworking.\nWhich description best fits the selected item or situation?",
-        "answer": "Hardworking",
-        "questionType": "meaning",
+        "prompt": "A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order.\nWhich adjective describes managing tasks in a clear order?",
+        "answer": "Organized",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Ambitious, Punctual, Determined. The selected item or situation is best described as ambitious.\nWhich description best fits the selected item or situation?",
-        "answer": "Ambitious",
-        "questionType": "meaning",
+        "prompt": "Sami is ambitious and wants to lead a project. He is punctual and arrives at the agreed time. He is determined to finish despite a setback.\nWhich adjective describes arriving at the agreed time?",
+        "answer": "Punctual",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Dedicated, Innovative, Focused. The selected item or situation is best described as dedicated.\nWhich description best fits the selected item or situation?",
-        "answer": "Dedicated",
-        "questionType": "meaning",
+        "prompt": "Noor is dedicated to the community project. Her innovative idea introduces a new method, and she stays focused while completing one difficult step.\nWhich adjective describes introducing a new method?",
+        "answer": "Innovative",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Resourceful, Sensitive, Empathetic. The selected item or situation is best described as resourceful.\nWhich description best fits the selected item or situation?",
+        "prompt": "Farah is resourceful when she finds a practical solution using available materials. She is sensitive to a colleague’s feelings and empathetic when she tries to understand the colleague’s experience.\nWhich adjective describes finding a practical solution?",
         "answer": "Resourceful",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Calm, Anxious, Optimistic. The selected item or situation is best described as calm.\nWhich description best fits the selected item or situation?",
-        "answer": "Calm",
-        "questionType": "meaning",
+        "prompt": "Before a presentation, Ali says he is anxious about the outcome. His colleague remains calm and helps organize the room. She is optimistic that the team can manage the challenge.\nWhich adjective describes expecting a good outcome?",
+        "answer": "Optimistic",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hardworking"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Ambitious"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lazy” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the adjective fits the first example in one complete sentence.\nA project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order.\nWhich adjective describes managing tasks in a clear order?",
+        "answer": "The organized team member keeps the schedule and materials in clear order.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Personality & Character: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Personality & Character 3: behavior in context",
+      "idea": "Narrate the behavior examples without inviting personality judgments from appearance. Pause for one comparison question.",
+      "scriptStarter": "A project team praises a hardworking member for sustained effort. A creative member suggests an original design. An organized member keeps the schedule and materials in clear order."
     },
     "spacedReview": "1 lesson(s) back: Lazy, Reckless from personality-character-2\n3 lesson(s) back: Listening, Sharing from social-situations-3\n7 lesson(s) back: Inspired, Motivated from complex-feelings-3"
   },
@@ -558,83 +519,70 @@
     "targetWordsEnglish": ["Confident", "Insecure", "Passionate", "Thoughtful", "Dramatic"],
     "targetWordsArabic": ["واثق", "غير واثق", "شغوف", "مراعٍ للآخرين", "مبالغ في ردود فعله"],
     "usage": {
-      "goal": "Learn to use personality & character 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to personality & character.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Describe stated behavior with a suitable personality adjective.",
+      "canDoStatement": "Can distinguish related adjectives using a supported account of behavior. Less common adjectives extend the task level and are not individually certified at the unit’s CEFR label.",
+      "textType": "behavior-examples",
+      "readingTarget": "Supported comparison of adjectives",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Confident", "Insecure", "Passionate"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Confident, Insecure, Passionate. The selected item or situation is best described as confident.",
+          "scenario": "Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes strong enthusiasm?",
             "options": ["Confident", "Insecure", "Passionate"],
-            "expectedAnswer": "Confident"
+            "expectedAnswer": "Passionate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Confident, Insecure, Passionate. The selected item or situation is best described as confident. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Confident, Insecure, Passionate in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Thoughtful", "Dramatic"],
-          "scenario": "An adult compares three possible descriptions in a personality & character context: Thoughtful, Dramatic, Confident. The selected item or situation is best described as thoughtful.",
+          "scenario": "At a planning meeting, Mona is thoughtful and considers other people’s needs. A fictional character in the group’s story is dramatic and gives an exaggerated reaction to a small change. The class distinguishes the meanings without judging a real person from appearance.",
           "check": {
-            "question": "Which description best fits the selected item or situation?",
+            "question": "Which adjective describes considering other people’s needs?",
             "options": ["Thoughtful", "Dramatic", "Confident"],
             "expectedAnswer": "Thoughtful"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a personality & character context illustrating this situation: An adult compares three possible descriptions in a personality & character context: Thoughtful, Dramatic, Confident. The selected item or situation is best described as thoughtful. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult personality & character scene showing lesson-related items or actions including Thoughtful, Dramatic in a natural setting."
+          "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: At a planning meeting, Mona is thoughtful and considers other people’s needs. A fictional character in the group’s story is dramatic and gives an exaggerated reaction to a small change. The class distinguishes the meanings without judging a real person from appearance. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting.",
+          "imageAlt": "Adults discussing a community or work project at a table; written context establishes the behavior and adjective."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Personality & Character: Everyday Description",
-      "text": "Omar has an everyday task connected to personality & character. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss confident, insecure, and passionate. The context makes the relationship between the words clear. In the social situation, the people experience or discuss thoughtful and dramatic. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Personality & Character. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Personality & Character 4: behavior in context",
+      "text": "Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject. At a planning meeting, Mona is thoughtful and considers other people’s needs. A fictional character in the group’s story is dramatic and gives an exaggerated reaction to a small change. The class distinguishes the meanings without judging a real person from appearance. These examples describe behavior in a stated situation. A single action or photograph does not prove a permanent personality trait. Preferences such as introverted and extroverted are not a measure of a person’s value or ability.",
+      "imageBrief": "Photorealistic adult community or workplace conversation at a table. Support the setting described: Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject. Personality and behavior are established by written context. Do not communicate honesty, worth, laziness, or personality through body type, gender, ethnicity, disability, religious clothing, facial expression, or exaggerated stereotypes. Natural composition; no readable text, labels, overlays, logos, arrows, or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Confident, Insecure, Passionate. The selected item or situation is best described as confident.\nWhich description best fits the selected item or situation?",
-        "answer": "Confident",
-        "questionType": "meaning",
+        "prompt": "Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject.\nWhich adjective describes strong enthusiasm?",
+        "answer": "Passionate",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "An adult compares three possible descriptions in a personality & character context: Thoughtful, Dramatic, Confident. The selected item or situation is best described as thoughtful.\nWhich description best fits the selected item or situation?",
+        "prompt": "At a planning meeting, Mona is thoughtful and considers other people’s needs. A fictional character in the group’s story is dramatic and gives an exaggerated reaction to a small change. The class distinguishes the meanings without judging a real person from appearance.\nWhich adjective describes considering other people’s needs?",
         "answer": "Thoughtful",
-        "questionType": "meaning",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Confident"
-      },
-      {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Thoughtful"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hardworking” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain why the adjective fits the first example in one complete sentence.\nLeila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject.\nWhich adjective describes strong enthusiasm?",
+        "answer": "Passionate describes Leila’s strong enthusiasm for learning.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Personality & Character: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Personality & Character 4: behavior in context",
+      "idea": "Narrate the behavior examples without inviting personality judgments from appearance. Pause for one comparison question.",
+      "scriptStarter": "Leila feels confident after preparation. At a different meeting she feels insecure about an unfamiliar task. She remains passionate about learning, with strong enthusiasm for the subject."
     },
     "spacedReview": "1 lesson(s) back: Hardworking, Creative from personality-character-3\n3 lesson(s) back: Kind, Generous from personality-character-1\n7 lesson(s) back: Admiration, Trust from complex-feelings-4"
   }

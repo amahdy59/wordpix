@@ -44,136 +44,141 @@
       "حلوى"
     ],
     "usage": {
-      "goal": "Learn to use common the gas station 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the gas station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gas Pump", "Nozzle", "Fuel Cap"],
-          "scenario": "During a routine travel task, an adult compares Gas Pump, Nozzle, Fuel Cap. The option needed for the next step is Gas Pump.",
+          "scenario": "The gas pump supplies fuel. Its nozzle is the spout, and the fuel cap closes the tank opening.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which device supplies the fuel?",
             "options": ["Gas Pump", "Nozzle", "Fuel Cap"],
             "expectedAnswer": "Gas Pump"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Gas Pump, Nozzle, Fuel Cap. The option needed for the next step is Gas Pump. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Gas Pump, Nozzle, Fuel Cap in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. One stationary unbranded fuel pump with attached nozzle; no fuel-handling demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Diesel", "Unleaded", "Premium"],
-          "scenario": "During a routine travel task, an adult compares Diesel, Unleaded, Premium. The option needed for the next step is Diesel.",
+          "scenario": "The vehicle manual calls for diesel. Unleaded gasoline has no added lead; premium gasoline has a higher octane rating than regular gasoline.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which fuel does this vehicle's manual call for?",
             "options": ["Diesel", "Unleaded", "Premium"],
             "expectedAnswer": "Diesel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Diesel, Unleaded, Premium. The option needed for the next step is Diesel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Diesel, Unleaded, Premium in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A closed generic fuel-container reference; fuel type supplied by text, never by liquid color. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fuel Gauge", "Receipt", "Card Reader"],
-          "scenario": "During a routine travel task, an adult compares Fuel Gauge, Receipt, Card Reader. The option needed for the next step is Fuel Gauge.",
+          "scenario": "The fuel gauge shows how much fuel is left. The receipt records payment, and the card reader reads a payment card.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What shows the amount of fuel left?",
             "options": ["Fuel Gauge", "Receipt", "Card Reader"],
             "expectedAnswer": "Fuel Gauge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Fuel Gauge, Receipt, Card Reader. The option needed for the next step is Fuel Gauge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Fuel Gauge, Receipt, Card Reader in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Unbranded vehicle dashboard with a simple fuel gauge; no readable numbers. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Price Sign", "Snacks", "Drinks"],
-          "scenario": "During a routine travel task, an adult compares Price Sign, Snacks, Drinks. The option needed for the next step is Price Sign.",
+          "scenario": "Dina reads the price sign. Snacks are small portions of food, and drinks are liquids to consume.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Where does Dina read the prices?",
             "options": ["Price Sign", "Snacks", "Drinks"],
             "expectedAnswer": "Price Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Price Sign, Snacks, Drinks. The option needed for the next step is Price Sign. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Price Sign, Snacks, Drinks in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A station price board with blank panels; actual prices supplied by written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Coffee", "Ice", "Candy"],
-          "scenario": "During a routine travel task, an adult compares Coffee, Ice, Candy. The option needed for the next step is Coffee.",
+          "scenario": "Dina orders coffee. Ice is frozen water, and candy is a sweet food.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What drink does Dina order?",
             "options": ["Coffee", "Ice", "Candy"],
             "expectedAnswer": "Coffee"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Coffee, Ice, Candy. The option needed for the next step is Coffee. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Coffee, Ice, Candy in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A plain cup of coffee beside a neutral background; no readable branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Gas Station: Mini Dialogue",
-      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing gas pump, nozzle, and fuel cap. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing diesel, unleaded, and premium. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "At the fuel station shop",
+      "text": "Dina stops at a fuel station. She checks the fuel gauge before she speaks to the attendant. The gas pump has a nozzle. After the visit, she keeps the receipt. Inside the shop, she sees snacks and drinks. She buys coffee and candy. The price sign shows the prices. She follows the vehicle manual when choosing fuel and asks if she is unsure.",
+      "imageBrief": "Support for At the fuel station shop. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Gas Pump, Nozzle, Fuel Cap. The option needed for the next step is Gas Pump.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The gas pump supplies fuel. Its nozzle is the spout, and the fuel cap closes the tank opening.\nWhich device supplies the fuel?",
         "answer": "Gas Pump",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Diesel, Unleaded, Premium. The option needed for the next step is Diesel.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The vehicle manual calls for diesel. Unleaded gasoline has no added lead; premium gasoline has a higher octane rating than regular gasoline.\nWhich fuel does this vehicle's manual call for?",
         "answer": "Diesel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Fuel Gauge, Receipt, Card Reader. The option needed for the next step is Fuel Gauge.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The fuel gauge shows how much fuel is left. The receipt records payment, and the card reader reads a payment card.\nWhat shows the amount of fuel left?",
         "answer": "Fuel Gauge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Price Sign, Snacks, Drinks. The option needed for the next step is Price Sign.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina reads the price sign. Snacks are small portions of food, and drinks are liquids to consume.\nWhere does Dina read the prices?",
         "answer": "Price Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Coffee, Ice, Candy. The option needed for the next step is Coffee.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina orders coffee. Ice is frozen water, and candy is a sweet food.\nWhat drink does Dina order?",
         "answer": "Coffee",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Gas Pump"
+        "prompt": "Dina stops at a fuel station. She checks the fuel gauge before she speaks to the attendant. The gas pump has a nozzle. After the visit, she keeps the receipt. Inside the shop, she sees snacks and drinks. She buys coffee and candy. The price sign shows the prices. She follows the vehicle manual when choosing fuel and asks if she is unsure.\nWhat does Dina keep after the visit?",
+        "answer": "The receipt.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Fuel Cap"
+        "prompt": "Explain the difference between “Gas Pump” and “Nozzle” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Compress” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Gas Pump” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The gas pump supplies fuel. Its nozzle is the spout, and the fuel cap closes the tank opening.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Gas Station: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At the fuel station shop",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina stops at a fuel station. She checks the fuel gauge before she speaks to the attendant. The gas pump has a nozzle. After the visit, she keeps the receipt. Inside the shop, she sees snacks and drinks. She buys coffee and candy. The price sign shows the prices. She follows the vehicle manual when choosing fuel and asks if she is unsure. Ask: What does Dina keep after the visit?"
     },
     "spacedReview": "1 lesson(s) back: Compress, Gloves from first-aid-room-8\n3 lesson(s) back: Wall Chart, Clock from first-aid-room-6\n7 lesson(s) back: Medical Tape, Antibiotic Ointment from first-aid-room-2"
   },
@@ -222,136 +227,141 @@
       "قمع"
     ],
     "usage": {
-      "goal": "Learn to use common the gas station 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the gas station.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chips", "Gum", "Lottery Ticket"],
-          "scenario": "During a routine travel task, an adult compares Chips, Gum, Lottery Ticket. The option needed for the next step is Chips.",
+          "scenario": "Dina buys chips, thin crisp potato slices. Gum is for chewing, while a lottery ticket is for a game of chance with local restrictions.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which snack does Dina buy?",
             "options": ["Chips", "Gum", "Lottery Ticket"],
             "expectedAnswer": "Chips"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Chips, Gum, Lottery Ticket. The option needed for the next step is Chips. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Chips, Gum, Lottery Ticket in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain potato chips in an unbranded bowl; no gambling promotion. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Newspaper", "Sunglasses", "Air Pump"],
-          "scenario": "During a routine travel task, an adult compares Newspaper, Sunglasses, Air Pump. The option needed for the next step is Newspaper.",
+          "scenario": "Dina reads the newspaper. She puts her sunglasses in their case and asks where the air pump is.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What publication does Dina read?",
             "options": ["Newspaper", "Sunglasses", "Air Pump"],
             "expectedAnswer": "Newspaper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Newspaper, Sunglasses, Air Pump. The option needed for the next step is Newspaper. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Newspaper, Sunglasses, Air Pump in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Folded newspaper with unreadable abstract print; no invented real headlines. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Windshield Fluid", "Oil", "Coolant"],
-          "scenario": "During a routine travel task, an adult compares Windshield Fluid, Oil, Coolant. The option needed for the next step is Windshield Fluid.",
+          "scenario": "Windshield fluid cleans the front window. Engine oil lubricates moving parts, and coolant carries heat away from the engine.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which liquid cleans the front window?",
             "options": ["Windshield Fluid", "Oil", "Coolant"],
             "expectedAnswer": "Windshield Fluid"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Windshield Fluid, Oil, Coolant. The option needed for the next step is Windshield Fluid. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Windshield Fluid, Oil, Coolant in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A closed plain washer-fluid container beside an unbranded model vehicle; no chemical handling. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wiper Blades", "Car Wash", "Vacuum"],
-          "scenario": "During a routine travel task, an adult compares Wiper Blades, Car Wash, Vacuum. The option needed for the next step is Wiper Blades.",
+          "scenario": "Wiper blades clear the windshield. A car wash cleans a vehicle, and a vacuum removes dirt by suction.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which parts clear the windshield?",
             "options": ["Wiper Blades", "Car Wash", "Vacuum"],
             "expectedAnswer": "Wiper Blades"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Wiper Blades, Car Wash, Vacuum. The option needed for the next step is Wiper Blades. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Wiper Blades, Car Wash, Vacuum in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Pair of detached plain windshield wiper blades; no instructions for repair. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Tire Pressure", "Antifreeze", "Funnel"],
-          "scenario": "During a routine travel task, an adult compares Tire Pressure, Antifreeze, Funnel. The option needed for the next step is Tire Pressure.",
+          "scenario": "The technician checks tire pressure. Antifreeze lowers the freezing point of a cooling mixture; a funnel helps pour into a small opening.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What does the technician check in the tires?",
             "options": ["Tire Pressure", "Antifreeze", "Funnel"],
             "expectedAnswer": "Tire Pressure"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Tire Pressure, Antifreeze, Funnel. The option needed for the next step is Tire Pressure. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Tire Pressure, Antifreeze, Funnel in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Tire and pressure-gauge reference; display blank and written task supplies the quantity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Gas Station: Simple Message",
-      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing chips, gum, and lottery ticket. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing newspaper, sunglasses, and air pump. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The service-area request",
+      "text": "Dina buys chips and a newspaper in the shop. She asks about a lottery ticket but reads the age restriction. In the service area, a technician checks tire pressure. There is an air pump nearby. Dina points to the wiper blades and asks about new ones. She also asks where the windshield fluid is sold. The technician explains that different vehicle fluids have different uses.",
+      "imageBrief": "Support for The service-area request. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Chips, Gum, Lottery Ticket. The option needed for the next step is Chips.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina buys chips, thin crisp potato slices. Gum is for chewing, while a lottery ticket is for a game of chance with local restrictions.\nWhich snack does Dina buy?",
         "answer": "Chips",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Newspaper, Sunglasses, Air Pump. The option needed for the next step is Newspaper.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina reads the newspaper. She puts her sunglasses in their case and asks where the air pump is.\nWhat publication does Dina read?",
         "answer": "Newspaper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Windshield Fluid, Oil, Coolant. The option needed for the next step is Windshield Fluid.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Windshield fluid cleans the front window. Engine oil lubricates moving parts, and coolant carries heat away from the engine.\nWhich liquid cleans the front window?",
         "answer": "Windshield Fluid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Wiper Blades, Car Wash, Vacuum. The option needed for the next step is Wiper Blades.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Wiper blades clear the windshield. A car wash cleans a vehicle, and a vacuum removes dirt by suction.\nWhich parts clear the windshield?",
         "answer": "Wiper Blades",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Tire Pressure, Antifreeze, Funnel. The option needed for the next step is Tire Pressure.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The technician checks tire pressure. Antifreeze lowers the freezing point of a cooling mixture; a funnel helps pour into a small opening.\nWhat does the technician check in the tires?",
         "answer": "Tire Pressure",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Chips"
+        "prompt": "Dina buys chips and a newspaper in the shop. She asks about a lottery ticket but reads the age restriction. In the service area, a technician checks tire pressure. There is an air pump nearby. Dina points to the wiper blades and asks about new ones. She also asks where the windshield fluid is sold. The technician explains that different vehicle fluids have different uses.\nWho checks the tire pressure?",
+        "answer": "A technician.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Lottery Ticket"
+        "prompt": "Explain the difference between “Chips” and “Gum” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Gas Pump” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Chips” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina buys chips, thin crisp potato slices. Gum is for chewing, while a lottery ticket is for a game of chance with local restrictions.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Gas Station: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The service-area request",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina buys chips and a newspaper in the shop. She asks about a lottery ticket but reads the age restriction. In the service area, a technician checks tire pressure. There is an air pump nearby. Dina points to the wiper blades and asks about new ones. She also asks where the windshield fluid is sold. The technician explains that different vehicle fluids have different uses. Ask: Who checks the tire pressure?"
     },
     "spacedReview": "1 lesson(s) back: Gas Pump, Nozzle from gas-station-1\n3 lesson(s) back: Nosebleed, Bee Sting from first-aid-room-7\n7 lesson(s) back: AED, First Aid Manual from first-aid-room-3"
   },
@@ -391,7 +401,7 @@
       "جهاز صراف آلي",
       "سلة مهملات",
       "ممسحة مطاطية",
-      "مناديل مطبخ (محارم ورقية)",
+      "منشفة ورقية",
       "خرطوم مياه",
       "سيارة",
       "شاحنة",
@@ -400,136 +410,141 @@
       "دراجة نارية"
     ],
     "usage": {
-      "goal": "Learn to use common the gas station 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the gas station.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Canopy", "Parking Spot", "Dumpster"],
-          "scenario": "During a routine travel task, an adult compares Canopy, Parking Spot, Dumpster. The option needed for the next step is Canopy.",
+          "scenario": "The canopy covers the pumps. A parking spot is a place for one vehicle; a dumpster is a large waste container.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What provides cover over the pumps?",
             "options": ["Canopy", "Parking Spot", "Dumpster"],
             "expectedAnswer": "Canopy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Canopy, Parking Spot, Dumpster. The option needed for the next step is Canopy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Canopy, Parking Spot, Dumpster in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Empty station with a plain canopy over pumps; no readable logos or operating activity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Restroom", "Ice Machine", "Atm"],
-          "scenario": "During a routine travel task, an adult compares Restroom, Ice Machine, Atm. The option needed for the next step is Restroom.",
+          "scenario": "Dina asks for the restroom. An ice machine makes ice, while an ATM is a machine for banking tasks such as cash withdrawal.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which place does Dina ask to use?",
             "options": ["Restroom", "Ice Machine", "Atm"],
             "expectedAnswer": "Restroom"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Restroom, Ice Machine, Atm. The option needed for the next step is Restroom. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Restroom, Ice Machine, Atm in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain restroom entrance with blank surfaces; no gender or accessibility claim inferred from appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trash Can", "Squeegee", "Paper Towel"],
-          "scenario": "During a routine travel task, an adult compares Trash Can, Squeegee, Paper Towel. The option needed for the next step is Trash Can.",
+          "scenario": "Dina puts rubbish in the trash can. The squeegee has a rubber edge, and the paper towel absorbs water.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Where does Dina put the rubbish?",
             "options": ["Trash Can", "Squeegee", "Paper Towel"],
             "expectedAnswer": "Trash Can"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Trash Can, Squeegee, Paper Towel. The option needed for the next step is Trash Can. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Trash Can, Squeegee, Paper Towel in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. One ordinary trash can with a closed lid on a neutral background. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Water Hose", "Car", "Truck"],
-          "scenario": "During a routine travel task, an adult compares Water Hose, Car, Truck. The option needed for the next step is Water Hose.",
+          "scenario": "A water hose carries water. A car carries people, while a truck is often used to carry goods.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What carries water in this description?",
             "options": ["Water Hose", "Car", "Truck"],
             "expectedAnswer": "Water Hose"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Water Hose, Car, Truck. The option needed for the next step is Water Hose. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Water Hose, Car, Truck in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Coiled plain water hose unattached to any live operation. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Suv", "Van", "Motorcycle"],
-          "scenario": "During a routine travel task, an adult compares Suv, Van, Motorcycle. The option needed for the next step is Suv.",
+          "scenario": "Dina returns to her SUV. A van has an enclosed body for people or goods; a motorcycle is a two-wheeled motor vehicle.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which vehicle belongs to Dina in the text?",
             "options": ["Suv", "Van", "Motorcycle"],
             "expectedAnswer": "Suv"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Suv, Van, Motorcycle. The option needed for the next step is Suv. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Suv, Van, Motorcycle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Generic SUV exterior, no brand, plate or claim that appearance establishes ownership. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Gas Station: Notice-Style Text",
-      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing canopy, parking spot, and dumpster. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing restroom, ice machine, and atm. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finding places and vehicles",
+      "text": "A canopy covers the station pumps. Dina parks in a parking spot and looks for the restroom. The shop also has an ATM and an ice machine. A trash can stands near the door. At the service area, a squeegee, a paper towel and a water hose are available. Dina returns to her SUV. A van and a motorcycle are parked nearby.",
+      "imageBrief": "Support for Finding places and vehicles. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Canopy, Parking Spot, Dumpster. The option needed for the next step is Canopy.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The canopy covers the pumps. A parking spot is a place for one vehicle; a dumpster is a large waste container.\nWhat provides cover over the pumps?",
         "answer": "Canopy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Restroom, Ice Machine, Atm. The option needed for the next step is Restroom.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina asks for the restroom. An ice machine makes ice, while an ATM is a machine for banking tasks such as cash withdrawal.\nWhich place does Dina ask to use?",
         "answer": "Restroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Trash Can, Squeegee, Paper Towel. The option needed for the next step is Trash Can.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina puts rubbish in the trash can. The squeegee has a rubber edge, and the paper towel absorbs water.\nWhere does Dina put the rubbish?",
         "answer": "Trash Can",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Water Hose, Car, Truck. The option needed for the next step is Water Hose.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A water hose carries water. A car carries people, while a truck is often used to carry goods.\nWhat carries water in this description?",
         "answer": "Water Hose",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Suv, Van, Motorcycle. The option needed for the next step is Suv.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina returns to her SUV. A van has an enclosed body for people or goods; a motorcycle is a two-wheeled motor vehicle.\nWhich vehicle belongs to Dina in the text?",
         "answer": "Suv",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Canopy"
+        "prompt": "A canopy covers the station pumps. Dina parks in a parking spot and looks for the restroom. The shop also has an ATM and an ice machine. A trash can stands near the door. At the service area, a squeegee, a paper towel and a water hose are available. Dina returns to her SUV. A van and a motorcycle are parked nearby.\nWhat covers the pumps?",
+        "answer": "A canopy.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Dumpster"
+        "prompt": "Explain the difference between “Canopy” and “Parking Spot” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Chips” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Canopy” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The canopy covers the pumps. A parking spot is a place for one vehicle; a dumpster is a large waste container.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Gas Station: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finding places and vehicles",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A canopy covers the station pumps. Dina parks in a parking spot and looks for the restroom. The shop also has an ATM and an ice machine. A trash can stands near the door. At the service area, a squeegee, a paper towel and a water hose are available. Dina returns to her SUV. A van and a motorcycle are parked nearby. Ask: What covers the pumps?"
     },
     "spacedReview": "1 lesson(s) back: Chips, Gum from gas-station-2\n3 lesson(s) back: Compress, Gloves from first-aid-room-8\n7 lesson(s) back: Suture Kit, Wound Closure Strip from first-aid-room-4"
   },
@@ -578,136 +593,141 @@
       "الانطلاق بالسيارة"
     ],
     "usage": {
-      "goal": "Learn to use common the gas station 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the gas station.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the word used in a short supplied description and ask for the stated item or feature.",
+      "canDoStatement": "Can identify a described item or quality with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Rv", "Trailer", "Bus"],
-          "scenario": "During a routine travel task, an adult compares Rv, Trailer, Bus. The option needed for the next step is Rv.",
+          "scenario": "The RV has living space for travel. A trailer is pulled by another vehicle, and a bus carries many passengers.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which vehicle has the living space?",
             "options": ["Rv", "Trailer", "Bus"],
             "expectedAnswer": "Rv"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Rv, Trailer, Bus. The option needed for the next step is Rv. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Rv, Trailer, Bus in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Parked generic motorhome showing enclosed living body, no logos or plate. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sedan", "Convertible", "Attendant"],
-          "scenario": "During a routine travel task, an adult compares Sedan, Convertible, Attendant. The option needed for the next step is Sedan.",
+          "scenario": "The sedan has a fixed roof and an enclosed passenger body. The convertible has an opening roof. An attendant helps customers.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which car is described with a fixed roof?",
             "options": ["Sedan", "Convertible", "Attendant"],
             "expectedAnswer": "Sedan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Sedan, Convertible, Attendant. The option needed for the next step is Sedan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Sedan, Convertible, Attendant in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain sedan parked alone, no brand or plate; do not claim all fixed-roof cars are sedans. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cashier", "Customer", "Pumping Gas"],
-          "scenario": "During a routine travel task, an adult compares Cashier, Customer, Pumping Gas. The option needed for the next step is Cashier.",
+          "scenario": "The cashier takes payment from a customer. Pumping gas means transferring fuel from a station pump into a vehicle tank.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who takes the payment?",
             "options": ["Cashier", "Customer", "Pumping Gas"],
             "expectedAnswer": "Cashier"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Cashier, Customer, Pumping Gas. The option needed for the next step is Cashier. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Cashier, Customer, Pumping Gas in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Plain empty payment counter; role and action supplied by text, no personal identity claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Paying", "Checking Oil", "Filling Tires"],
-          "scenario": "During a routine travel task, an adult compares Paying, Checking Oil, Filling Tires. The option needed for the next step is Paying.",
+          "scenario": "Dina is paying for the service. Checking oil means examining engine oil; filling tires means adding air to them.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "What is Dina doing when she gives the payment?",
             "options": ["Paying", "Checking Oil", "Filling Tires"],
             "expectedAnswer": "Paying"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Paying, Checking Oil, Filling Tires. The option needed for the next step is Paying. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Paying, Checking Oil, Filling Tires in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. A simple receipt and plain payment terminal; no private card data or unsafe maintenance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Washing Windshield", "Fueling", "Driving Away"],
-          "scenario": "During a routine travel task, an adult compares Washing Windshield, Fueling, Driving Away. The option needed for the next step is Washing Windshield.",
+          "scenario": "The worker is washing the windshield with a squeegee. Fueling is supplying fuel, and driving away is leaving in a vehicle.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which action cleans the front window?",
             "options": ["Washing Windshield", "Fueling", "Driving Away"],
             "expectedAnswer": "Washing Windshield"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the gas station context illustrating this situation: During a routine travel task, an adult compares Washing Windshield, Fueling, Driving Away. The option needed for the next step is Washing Windshield. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the gas station scene showing lesson-related items or actions including Washing Windshield, Fueling, Driving Away in a natural setting."
+          "imageBrief": "Word-reference support for the written supported materials and descriptive vocabulary task. Detached squeegee beside a clean unbranded vehicle window; use word reference without incidental people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Gas Station: Short Description",
-      "text": "Maya is in a situation connected to the gas station. She uses the new words to understand what she sees and what happens next. The customer or traveler compares the rv, trailer, and bus, thinking about where and why each type is used. The traveler moves through the journey using or noticing sedan, convertible, and attendant. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing cashier, customer, and pumping gas.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Gas Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "People and actions at the station",
+      "text": "An RV arrives at the station. It has living space for travel. A trailer is pulled by another vehicle, while a bus carries many passengers. An attendant helps a customer, and the cashier takes payment. Dina finishes paying after the service. A worker is washing the windshield. When the visit is over, Dina is driving away. The text describes the actions; it is not a repair guide.",
+      "imageBrief": "Support for People and actions at the station. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Rv, Trailer, Bus. The option needed for the next step is Rv.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The RV has living space for travel. A trailer is pulled by another vehicle, and a bus carries many passengers.\nWhich vehicle has the living space?",
         "answer": "Rv",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Sedan, Convertible, Attendant. The option needed for the next step is Sedan.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The sedan has a fixed roof and an enclosed passenger body. The convertible has an opening roof. An attendant helps customers.\nWhich car is described with a fixed roof?",
         "answer": "Sedan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Cashier, Customer, Pumping Gas. The option needed for the next step is Cashier.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The cashier takes payment from a customer. Pumping gas means transferring fuel from a station pump into a vehicle tank.\nWho takes the payment?",
         "answer": "Cashier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Paying, Checking Oil, Filling Tires. The option needed for the next step is Paying.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Dina is paying for the service. Checking oil means examining engine oil; filling tires means adding air to them.\nWhat is Dina doing when she gives the payment?",
         "answer": "Paying",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Washing Windshield, Fueling, Driving Away. The option needed for the next step is Washing Windshield.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The worker is washing the windshield with a squeegee. Fueling is supplying fuel, and driving away is leaving in a vehicle.\nWhich action cleans the front window?",
         "answer": "Washing Windshield",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Rv"
+        "prompt": "An RV arrives at the station. It has living space for travel. A trailer is pulled by another vehicle, while a bus carries many passengers. An attendant helps a customer, and the cashier takes payment. Dina finishes paying after the service. A worker is washing the windshield. When the visit is over, Dina is driving away. The text describes the actions; it is not a repair guide.\nWho takes the payment?",
+        "answer": "The cashier.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Bus"
+        "prompt": "Explain the difference between “Rv” and “Trailer” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Canopy” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Rv” in its supplied supported materials and descriptive vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The RV has living space for travel. A trailer is pulled by another vehicle, and a bus carries many passengers.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Gas Station: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "People and actions at the station",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "An RV arrives at the station. It has living space for travel. A trailer is pulled by another vehicle, while a bus carries many passengers. An attendant helps a customer, and the cashier takes payment. Dina finishes paying after the service. A worker is washing the windshield. When the visit is over, Dina is driving away. The text describes the actions; it is not a repair guide. Ask: Who takes the payment?"
     },
     "spacedReview": "1 lesson(s) back: Canopy, Parking Spot from gas-station-3\n3 lesson(s) back: Gas Pump, Nozzle from gas-station-1\n7 lesson(s) back: Emergency Phone, Alarm Button from first-aid-room-5"
   }

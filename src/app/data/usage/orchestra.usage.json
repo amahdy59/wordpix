@@ -33,7 +33,7 @@
       "كونترباص",
       "قيثارة",
       "غيتار",
-      "فيونكة",
+      "قوس عزف",
       "وتر",
       "مفتاح ضبط الأوتار",
       "مسند الذقن",
@@ -44,132 +44,115 @@
       "فلوت صغير"
     ],
     "usage": {
-      "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Violin", "Viola", "Cello", "Double Bass"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.",
+          "scenario": "The violin is the higher-pitched member in this four-instrument comparison. Viola is larger and lower, cello larger and usually played seated, and double bass larger and lower still. Instrument range and technique vary, so the account gives the comparison rather than identifying pitch from a photograph.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument is higher-pitched in this comparison?",
             "options": ["Violin", "Viola", "Cello"],
             "expectedAnswer": "Violin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Violin as the central item; include Violin, Viola, and Cello naturally where visually appropriate, but make the real-world use of Violin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Violin as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Harp", "Guitar", "Bow", "String"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.",
+          "scenario": "The harp has strings stretched across its frame and is commonly played by plucking. Guitar also has strings; bow is the hair-strung tool drawn across suitable strings, and string is the vibrating cord itself. These are instrument and component distinctions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument has the described strings across its frame?",
             "options": ["Harp", "Guitar", "Bow"],
             "expectedAnswer": "Harp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Harp as the central item; include Harp, Guitar, and Bow naturally where visually appropriate, but make the real-world use of Harp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Harp as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tuning Peg", "Chin Rest", "Flute", "Clarinet"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.",
+          "scenario": "A tuning peg adjusts string tension. Chin rest supports the violinist’s chin, flute is a woodwind commonly sounded across an opening, and clarinet a single-reed woodwind. The account identifies the string-adjustment mechanism.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which mechanism adjusts string tension?",
             "options": ["Tuning Peg", "Chin Rest", "Flute"],
             "expectedAnswer": "Tuning Peg"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Tuning Peg as the central item; include Tuning Peg, Chin Rest, and Flute naturally where visually appropriate, but make the real-world use of Tuning Peg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Tuning Peg as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Oboe", "Bassoon", "Piccolo"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.",
+          "scenario": "The oboe is a double-reed woodwind. Bassoon is a lower-pitched double-reed instrument, while piccolo is a small flute. The oboe reference has the slender body specified in this account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which slender double-reed instrument is specified here?",
             "options": ["Oboe", "Bassoon", "Piccolo"],
             "expectedAnswer": "Oboe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Oboe as the central item; include Oboe, Bassoon, and Piccolo naturally where visually appropriate, but make the real-world use of Oboe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Oboe as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: The Orchestra",
-      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Violin, Viola, Cello, and Double Bass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Harp, Guitar, Bow, and String. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuning Peg, Chin Rest, Flute, and Clarinet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Oboe, Bassoon, and Piccolo. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Strings and woodwinds",
+      "text": "The violin is the higher-pitched member in this four-instrument comparison. Viola is larger and lower, cello larger and usually played seated, and double bass larger and lower still. Instrument range and technique vary, so the account gives the comparison rather than identifying pitch from a photograph. The harp has strings stretched across its frame and is commonly played by plucking. Guitar also has strings; bow is the hair-strung tool drawn across suitable strings, and string is the vibrating cord itself. These are instrument and component distinctions. A tuning peg adjusts string tension. Chin rest supports the violinist’s chin, flute is a woodwind commonly sounded across an opening, and clarinet a single-reed woodwind. The account identifies the string-adjustment mechanism. The oboe is a double-reed woodwind. Bassoon is a lower-pitched double-reed instrument, while piccolo is a small flute. The oboe reference has the slender body specified in this account.",
+      "imageBrief": "Use independently inspected word references to support Strings and woodwinds; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Violin, Viola, Cello, and Double Bass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The violin is the higher-pitched member in this four-instrument comparison. Viola is larger and lower, cello larger and usually played seated, and double bass larger and lower still. Instrument range and technique vary, so the account gives the comparison rather than identifying pitch from a photograph.\nWhich instrument is higher-pitched in this comparison?",
         "answer": "Violin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harp, Guitar, Bow, and String and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The harp has strings stretched across its frame and is commonly played by plucking. Guitar also has strings; bow is the hair-strung tool drawn across suitable strings, and string is the vibrating cord itself. These are instrument and component distinctions.\nWhich instrument has the described strings across its frame?",
         "answer": "Harp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuning Peg, Chin Rest, Flute, and Clarinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A tuning peg adjusts string tension. Chin rest supports the violinist’s chin, flute is a woodwind commonly sounded across an opening, and clarinet a single-reed woodwind. The account identifies the string-adjustment mechanism.\nWhich mechanism adjusts string tension?",
         "answer": "Tuning Peg",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oboe, Bassoon, and Piccolo and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The oboe is a double-reed woodwind. Bassoon is a lower-pitched double-reed instrument, while piccolo is a small flute. The oboe reference has the slender body specified in this account.\nWhich slender double-reed instrument is specified here?",
         "answer": "Oboe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The violin is the higher-pitched member in this four-instrument comparison. Viola is larger and lower, cello larger and usually played seated, and double bass larger and lower still. Instrument range and technique vary, so the account gives the comparison rather than identifying pitch from a photograph. The harp has strings stretched across its frame and is commonly played by plucking. Guitar also has strings; bow is the hair-strung tool drawn across suitable strings, and string is the vibrating cord itself. These are instrument and component distinctions. A tuning peg adjusts string tension. Chin rest supports the violinist’s chin, flute is a woodwind commonly sounded across an opening, and clarinet a single-reed woodwind. The account identifies the string-adjustment mechanism. The oboe is a double-reed woodwind. Bassoon is a lower-pitched double-reed instrument, while piccolo is a small flute. The oboe reference has the slender body specified in this account.\nCompare “Violin” and “Viola” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Violin"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Double Bass"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Wing” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Violin, Viola, Cello, Double Bass, Harp, Guitar, Bow, String, Tuning Peg, Chin Rest, Flute, Clarinet, Oboe, Bassoon, and Piccolo in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Violin, Viola, Cello, Double Bass, Harp, Guitar, Bow, String, Tuning Peg, Chin Rest, Flute, Clarinet, Oboe, Bassoon, Piccolo in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Orchestra: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Strings and woodwinds",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The violin is the higher-pitched member in this four-instrument comparison. Viola is larger and lower, cello larger and usually played seated, and double bass larger and lower still. Instrument range and technique vary, so the account gives the comparison rather than identifying pitch from a photograph. Which instrument is higher-pitched in this comparison?"
     },
     "spacedReview": "1 lesson(s) back: Wing, Orchestra Pit from theater-5\n3 lesson(s) back: Prop, Sword from theater-3\n7 lesson(s) back: Bait, Hook from harbor-4"
   },
@@ -205,145 +188,128 @@
       "ساكسفون",
       "ريشة آلة نفخ",
       "قطعة فم آلة نفخ",
-      "مفتاح موسيقي",
-      "بوق ترومبيت",
+      "مفتاح آلة موسيقية",
+      "ترومبيت",
       "ترومبون",
       "بوق فرنسي",
       "توبا",
       "كورنيت",
       "بوق بلا صمامات",
-      "صمام",
-      "جرس",
+      "صمام آلة نفخ",
+      "فوهة آلة نفخ",
       "كاتم صوت آلة موسيقية",
-      "شريحة مجهرية"
+      "جزء منزلق في الترومبون"
     ],
     "usage": {
-      "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "143-173 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Recorder", "Saxophone", "Reed", "Mouthpiece"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.",
+          "scenario": "The recorder is a woodwind with a ducted mouthpiece and finger holes. Saxophone uses a single reed; reed names the vibrating element, and mouthpiece the part through which the player directs air. Recorder does not mean a sound-recording device here.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the ducted woodwind?",
             "options": ["Recorder", "Saxophone", "Reed"],
             "expectedAnswer": "Recorder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Recorder as the central item; include Recorder, Saxophone, and Reed naturally where visually appropriate, but make the real-world use of Recorder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Recorder as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Key", "Trumpet", "Trombone", "French Horn"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.",
+          "scenario": "A key is a lever controlling an opening or note mechanism on the stated instrument. Trumpet, trombone and French horn are brass instruments. Key means the instrument control in this account, not a door key or musical tonal center.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the instrument-control lever?",
             "options": ["Key", "Trumpet", "Trombone"],
             "expectedAnswer": "Key"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Key as the central item; include Key, Trumpet, and Trombone naturally where visually appropriate, but make the real-world use of Key the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Key as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tuba", "Cornet", "Bugle", "Valve"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.",
+          "scenario": "The tuba is a large low-pitched brass instrument. Cornet is a smaller valved brass instrument, bugle typically a simple brass instrument without valves, and valve a mechanism changing the air route. The guide distinguishes instrument names from parts.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument is described as large and low-pitched?",
             "options": ["Tuba", "Cornet", "Bugle"],
             "expectedAnswer": "Tuba"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Tuba as the central item; include Tuba, Cornet, and Bugle naturally where visually appropriate, but make the real-world use of Tuba the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Tuba as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bell", "Mute", "Slide"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.",
+          "scenario": "The bell is the flared opening of a wind instrument. Mute is a device modifying the instrument’s sound, and slide the movable tube section of a trombone. Bell does not name a struck hanging bell here.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the flared opening?",
             "options": ["Bell", "Mute", "Slide"],
             "expectedAnswer": "Bell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Bell as the central item; include Bell, Mute, and Slide naturally where visually appropriate, but make the real-world use of Bell the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Bell as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Orchestra",
-      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Recorder, Saxophone, Reed, and Mouthpiece. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Key, Trumpet, Trombone, and French Horn. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tuba, Cornet, Bugle, and Valve. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bell, Mute, and Slide. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Woodwind and brass mechanisms",
+      "text": "The recorder is a woodwind with a ducted mouthpiece and finger holes. Saxophone uses a single reed; reed names the vibrating element, and mouthpiece the part through which the player directs air. Recorder does not mean a sound-recording device here. A key is a lever controlling an opening or note mechanism on the stated instrument. Trumpet, trombone and French horn are brass instruments. Key means the instrument control in this account, not a door key or musical tonal center. The tuba is a large low-pitched brass instrument. Cornet is a smaller valved brass instrument, bugle typically a simple brass instrument without valves, and valve a mechanism changing the air route. The guide distinguishes instrument names from parts. The bell is the flared opening of a wind instrument. Mute is a device modifying the instrument’s sound, and slide the movable tube section of a trombone. Bell does not name a struck hanging bell here.",
+      "imageBrief": "Use independently inspected word references to support Woodwind and brass mechanisms; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recorder, Saxophone, Reed, and Mouthpiece and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The recorder is a woodwind with a ducted mouthpiece and finger holes. Saxophone uses a single reed; reed names the vibrating element, and mouthpiece the part through which the player directs air. Recorder does not mean a sound-recording device here.\nWhich target names the ducted woodwind?",
         "answer": "Recorder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Key, Trumpet, Trombone, and French Horn and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A key is a lever controlling an opening or note mechanism on the stated instrument. Trumpet, trombone and French horn are brass instruments. Key means the instrument control in this account, not a door key or musical tonal center.\nWhich target names the instrument-control lever?",
         "answer": "Key",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuba, Cornet, Bugle, and Valve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The tuba is a large low-pitched brass instrument. Cornet is a smaller valved brass instrument, bugle typically a simple brass instrument without valves, and valve a mechanism changing the air route. The guide distinguishes instrument names from parts.\nWhich instrument is described as large and low-pitched?",
         "answer": "Tuba",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bell, Mute, and Slide and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The bell is the flared opening of a wind instrument. Mute is a device modifying the instrument’s sound, and slide the movable tube section of a trombone. Bell does not name a struck hanging bell here.\nWhich target names the flared opening?",
         "answer": "Bell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The recorder is a woodwind with a ducted mouthpiece and finger holes. Saxophone uses a single reed; reed names the vibrating element, and mouthpiece the part through which the player directs air. Recorder does not mean a sound-recording device here. A key is a lever controlling an opening or note mechanism on the stated instrument. Trumpet, trombone and French horn are brass instruments. Key means the instrument control in this account, not a door key or musical tonal center. The tuba is a large low-pitched brass instrument. Cornet is a smaller valved brass instrument, bugle typically a simple brass instrument without valves, and valve a mechanism changing the air route. The guide distinguishes instrument names from parts. The bell is the flared opening of a wind instrument. Mute is a device modifying the instrument’s sound, and slide the movable tube section of a trombone. Bell does not name a struck hanging bell here.\nCompare “Recorder” and “Saxophone” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Recorder"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Mouthpiece"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Violin” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Recorder, Saxophone, Reed, Mouthpiece, Key, Trumpet, Trombone, French Horn, Tuba, Cornet, Bugle, Valve, Bell, Mute, and Slide in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Recorder, Saxophone, Reed, Mouthpiece, Key, Trumpet, Trombone, French Horn, Tuba, Cornet, Bugle, Valve, Bell, Mute, Slide in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Orchestra: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Woodwind and brass mechanisms",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The recorder is a woodwind with a ducted mouthpiece and finger holes. Saxophone uses a single reed; reed names the vibrating element, and mouthpiece the part through which the player directs air. Recorder does not mean a sound-recording device here. Which target names the ducted woodwind?"
     },
     "spacedReview": "1 lesson(s) back: Violin, Viola from orchestra-1\n3 lesson(s) back: Sound Technician, Costume Designer from theater-4\n7 lesson(s) back: Tide, Wave from harbor-5"
   },
@@ -380,144 +346,127 @@
       "طبل كبير",
       "طبول تيمباني",
       "صنج",
-      "مثلث",
+      "مثلث موسيقي",
       "إكسيليفون",
       "دف",
       "غونغ",
-      "ساق دجاج",
+      "عصا طبلة",
       "قاعة حفلات موسيقية",
-      "مرحلة",
+      "خشبة المسرح",
       "حامل نوتة موسيقية",
       "منصة قائد الأوركسترا",
       "عصا قائد الأوركسترا"
     ],
     "usage": {
-      "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "136-166 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Drum", "Snare Drum", "Bass Drum", "Timpani"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.",
+          "scenario": "Drum is the general percussion category with a struck membrane. Snare drum has wires producing a rattling effect, bass drum commonly a deep sound, and timpani are kettledrums with adjustable pitch. The category includes different drum types rather than requiring one identical sound.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which general category includes the stated membrane percussion instruments?",
             "options": ["Drum", "Snare Drum", "Bass Drum"],
             "expectedAnswer": "Drum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Drum as the central item; include Drum, Snare Drum, and Bass Drum naturally where visually appropriate, but make the real-world use of Drum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Drum as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cymbal", "Triangle", "Xylophone", "Tambourine"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.",
+          "scenario": "The cymbal is a struck metal disk. Triangle is a bent metal percussion instrument, xylophone has tuned wooden bars, and tambourine includes jingles around a frame. These are separate sound-producing structures.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the metal disk?",
             "options": ["Cymbal", "Triangle", "Xylophone"],
             "expectedAnswer": "Cymbal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Cymbal as the central item; include Cymbal, Triangle, and Xylophone naturally where visually appropriate, but make the real-world use of Cymbal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Cymbal as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Gong", "Drumstick", "Concert Hall", "Stage"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.",
+          "scenario": "The gong is a struck metal plate or disk with the specified resonant form. Drumstick is a striking tool, concert hall the performance venue, and stage the performer area. The gong is the instrument in this comparison.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the resonant metal instrument?",
             "options": ["Gong", "Drumstick", "Concert Hall"],
             "expectedAnswer": "Gong"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Gong as the central item; include Gong, Drumstick, and Concert Hall naturally where visually appropriate, but make the real-world use of Gong the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Gong as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Music Stand", "Conductor's Podium", "Baton"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.",
+          "scenario": "The music stand holds written music for a player. Conductor’s podium raises the conductor, and baton is the conducting rod. The player places the score on the music stand rather than on the conductor’s platform.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which support holds the player’s written music?",
             "options": ["Music Stand", "Conductor's Podium", "Baton"],
             "expectedAnswer": "Music Stand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Music Stand as the central item; include Music Stand, Conductor's Podium, and Baton naturally where visually appropriate, but make the real-world use of Music Stand the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Music Stand as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Orchestra",
-      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Drum, Snare Drum, Bass Drum, and Timpani. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cymbal, Triangle, Xylophone, and Tambourine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gong, Drumstick, Concert Hall, and Stage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Music Stand, Conductor's Podium, and Baton. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Percussion and performance equipment",
+      "text": "Drum is the general percussion category with a struck membrane. Snare drum has wires producing a rattling effect, bass drum commonly a deep sound, and timpani are kettledrums with adjustable pitch. The category includes different drum types rather than requiring one identical sound. The cymbal is a struck metal disk. Triangle is a bent metal percussion instrument, xylophone has tuned wooden bars, and tambourine includes jingles around a frame. These are separate sound-producing structures. The gong is a struck metal plate or disk with the specified resonant form. Drumstick is a striking tool, concert hall the performance venue, and stage the performer area. The gong is the instrument in this comparison. The music stand holds written music for a player. Conductor’s podium raises the conductor, and baton is the conducting rod. The player places the score on the music stand rather than on the conductor’s platform.",
+      "imageBrief": "Use independently inspected word references to support Percussion and performance equipment; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drum, Snare Drum, Bass Drum, and Timpani and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Drum is the general percussion category with a struck membrane. Snare drum has wires producing a rattling effect, bass drum commonly a deep sound, and timpani are kettledrums with adjustable pitch. The category includes different drum types rather than requiring one identical sound.\nWhich general category includes the stated membrane percussion instruments?",
         "answer": "Drum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cymbal, Triangle, Xylophone, and Tambourine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The cymbal is a struck metal disk. Triangle is a bent metal percussion instrument, xylophone has tuned wooden bars, and tambourine includes jingles around a frame. These are separate sound-producing structures.\nWhich target names the metal disk?",
         "answer": "Cymbal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gong, Drumstick, Concert Hall, and Stage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The gong is a struck metal plate or disk with the specified resonant form. Drumstick is a striking tool, concert hall the performance venue, and stage the performer area. The gong is the instrument in this comparison.\nWhich target names the resonant metal instrument?",
         "answer": "Gong",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Music Stand, Conductor's Podium, and Baton and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The music stand holds written music for a player. Conductor’s podium raises the conductor, and baton is the conducting rod. The player places the score on the music stand rather than on the conductor’s platform.\nWhich support holds the player’s written music?",
         "answer": "Music Stand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Drum is the general percussion category with a struck membrane. Snare drum has wires producing a rattling effect, bass drum commonly a deep sound, and timpani are kettledrums with adjustable pitch. The category includes different drum types rather than requiring one identical sound. The cymbal is a struck metal disk. Triangle is a bent metal percussion instrument, xylophone has tuned wooden bars, and tambourine includes jingles around a frame. These are separate sound-producing structures. The gong is a struck metal plate or disk with the specified resonant form. Drumstick is a striking tool, concert hall the performance venue, and stage the performer area. The gong is the instrument in this comparison. The music stand holds written music for a player. Conductor’s podium raises the conductor, and baton is the conducting rod. The player places the score on the music stand rather than on the conductor’s platform.\nCompare “Drum” and “Snare Drum” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Drum"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Timpani"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Recorder” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Drum, Snare Drum, Bass Drum, Timpani, Cymbal, Triangle, Xylophone, Tambourine, Gong, Drumstick, Concert Hall, Stage, Music Stand, Conductor's Podium, and Baton in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Drum, Snare Drum, Bass Drum, Timpani, Cymbal, Triangle, Xylophone, Tambourine, Gong, Drumstick, Concert Hall, Stage, Music Stand, Conductor's Podium, Baton in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Orchestra: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Percussion and performance equipment",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Drum is the general percussion category with a struck membrane. Snare drum has wires producing a rattling effect, bass drum commonly a deep sound, and timpani are kettledrums with adjustable pitch. The category includes different drum types rather than requiring one identical sound. Which general category includes the stated membrane percussion instruments?"
     },
     "spacedReview": "1 lesson(s) back: Recorder, Saxophone from orchestra-2\n3 lesson(s) back: Wing, Orchestra Pit from theater-5\n7 lesson(s) back: Stage, Curtain from theater-1"
   },
@@ -553,8 +502,8 @@
       "مدونة موسيقية",
       "شوكة رنانة",
       "مترونوم",
-      "حلقة تداول أوركسترا",
-      "محصل أو مشرف قطار",
+      "حفرة الأوركسترا",
+      "قائد أوركسترا",
       "عازف الكمان الأول",
       "عازف منفرد",
       "العازف الأول",
@@ -566,132 +515,115 @@
       "جمهور"
     ],
     "usage": {
-      "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "143-173 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sheet Music", "Score", "Tuning Fork", "Metronome"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.",
+          "scenario": "Sheet music is music represented in notation. A score can show the parts of a work; these terms overlap. Tuning fork supplies a reference pitch, while metronome provides a regular pulse. The visitor asks for the general notated music, called sheet music in the account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What exact term does the account use for the general notated music?",
             "options": ["Sheet Music", "Score", "Tuning Fork"],
             "expectedAnswer": "Sheet Music"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Sheet Music as the central item; include Sheet Music, Score, and Tuning Fork naturally where visually appropriate, but make the real-world use of Sheet Music the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Sheet Music as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Orchestra Pit", "Conductor", "Concertmaster", "Soloist"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.",
+          "scenario": "The orchestra pit is a lowered musician area in front of a stage. Conductor directs the ensemble, concertmaster leads the first violins, and soloist performs a solo. The account distinguishes a location from roles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the lowered musician area?",
             "options": ["Orchestra Pit", "Conductor", "Concertmaster"],
             "expectedAnswer": "Orchestra Pit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Orchestra Pit as the central item; include Orchestra Pit, Conductor, and Concertmaster naturally where visually appropriate, but make the real-world use of Orchestra Pit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Orchestra Pit as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["First Chair", "Section Leader", "Accompanist", "Composer"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.",
+          "scenario": "First chair means the principal player in a section; section leader can describe the same role. Accompanist provides musical support to another performer, and composer writes music. The account calls the principal player first chair without claiming a unique difference from section leader.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What exact term does the account use for the principal player?",
             "options": ["First Chair", "Section Leader", "Accompanist"],
             "expectedAnswer": "First Chair"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the First Chair as the central item; include First Chair, Section Leader, and Accompanist naturally where visually appropriate, but make the real-world use of First Chair the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing First Chair as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Arranger", "Page Turner", "Audience"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.",
+          "scenario": "The arranger adapts music for particular forces or purposes. Page turner turns a performer’s score pages, and audience listens to the concert. The arranger’s task concerns adaptation rather than page handling.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who adapts the music for the stated instruments?",
             "options": ["Arranger", "Page Turner", "Audience"],
             "expectedAnswer": "Arranger"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult working with or speaking to the Arranger; include Arranger, Page Turner, and Audience naturally where visually appropriate, but make the real-world use of Arranger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Arranger as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: The Orchestra",
-      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sheet Music, Score, Tuning Fork, and Metronome. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Orchestra Pit, Conductor, Concertmaster, and Soloist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers First Chair, Section Leader, Accompanist, and Composer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Arranger, Page Turner, and Audience. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Notation and musical roles",
+      "text": "Sheet music is music represented in notation. A score can show the parts of a work; these terms overlap. Tuning fork supplies a reference pitch, while metronome provides a regular pulse. The visitor asks for the general notated music, called sheet music in the account. The orchestra pit is a lowered musician area in front of a stage. Conductor directs the ensemble, concertmaster leads the first violins, and soloist performs a solo. The account distinguishes a location from roles. First chair means the principal player in a section; section leader can describe the same role. Accompanist provides musical support to another performer, and composer writes music. The account calls the principal player first chair without claiming a unique difference from section leader. The arranger adapts music for particular forces or purposes. Page turner turns a performer’s score pages, and audience listens to the concert. The arranger’s task concerns adaptation rather than page handling.",
+      "imageBrief": "Use independently inspected word references to support Notation and musical roles; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sheet Music, Score, Tuning Fork, and Metronome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Sheet music is music represented in notation. A score can show the parts of a work; these terms overlap. Tuning fork supplies a reference pitch, while metronome provides a regular pulse. The visitor asks for the general notated music, called sheet music in the account.\nWhat exact term does the account use for the general notated music?",
         "answer": "Sheet Music",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Orchestra Pit, Conductor, Concertmaster, and Soloist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The orchestra pit is a lowered musician area in front of a stage. Conductor directs the ensemble, concertmaster leads the first violins, and soloist performs a solo. The account distinguishes a location from roles.\nWhich target names the lowered musician area?",
         "answer": "Orchestra Pit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Chair, Section Leader, Accompanist, and Composer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "First chair means the principal player in a section; section leader can describe the same role. Accompanist provides musical support to another performer, and composer writes music. The account calls the principal player first chair without claiming a unique difference from section leader.\nWhat exact term does the account use for the principal player?",
         "answer": "First Chair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Arranger, Page Turner, and Audience and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "The arranger adapts music for particular forces or purposes. Page turner turns a performer’s score pages, and audience listens to the concert. The arranger’s task concerns adaptation rather than page handling.\nWho adapts the music for the stated instruments?",
         "answer": "Arranger",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Sheet music is music represented in notation. A score can show the parts of a work; these terms overlap. Tuning fork supplies a reference pitch, while metronome provides a regular pulse. The visitor asks for the general notated music, called sheet music in the account. The orchestra pit is a lowered musician area in front of a stage. Conductor directs the ensemble, concertmaster leads the first violins, and soloist performs a solo. The account distinguishes a location from roles. First chair means the principal player in a section; section leader can describe the same role. Accompanist provides musical support to another performer, and composer writes music. The account calls the principal player first chair without claiming a unique difference from section leader. The arranger adapts music for particular forces or purposes. Page turner turns a performer’s score pages, and audience listens to the concert. The arranger’s task concerns adaptation rather than page handling.\nCompare “Sheet Music” and “Score” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Sheet Music"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Metronome"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Drum” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Sheet Music, Score, Tuning Fork, Metronome, Orchestra Pit, Conductor, Concertmaster, Soloist, First Chair, Section Leader, Accompanist, Composer, Arranger, Page Turner, and Audience in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Sheet Music, Score, Tuning Fork, Metronome, Orchestra Pit, Conductor, Concertmaster, Soloist, First Chair, Section Leader, Accompanist, Composer, Arranger, Page Turner, Audience in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Orchestra: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Notation and musical roles",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Sheet music is music represented in notation. A score can show the parts of a work; these terms overlap. Tuning fork supplies a reference pitch, while metronome provides a regular pulse. The visitor asks for the general notated music, called sheet music in the account. What exact term does the account use for the general notated music?"
     },
     "spacedReview": "1 lesson(s) back: Drum, Snare Drum from orchestra-3\n3 lesson(s) back: Violin, Viola from orchestra-1\n7 lesson(s) back: Row, Lobby from theater-2"
   },
@@ -706,77 +638,60 @@
     "cefrStage": "B1",
     "stageName": "B1 Wider World",
     "targetWordsEnglish": ["Podium", "Symphony", "Rehearsal", "Program"],
-    "targetWordsArabic": ["منصة قائد الأوركسترا", "سيمفونية", "بروفة", "برنامج العرض"],
+    "targetWordsArabic": ["منصة قائد الأوركسترا", "سيمفونية", "بروفة", "برنامج الحفل"],
     "usage": {
-      "goal": "Develop the language needed to identify musical equipment and coordinate a rehearsal in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the music room.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "50-65 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Podium", "Symphony", "Rehearsal", "Program"],
-          "scenario": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.",
+          "scenario": "The podium is the conductor’s raised platform. Symphony names a substantial orchestral work, rehearsal the practice session, and program the list of works and performers. The conductor steps onto the podium before the rehearsal begins, while the musicians review the program and the symphony’s score.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the conductor’s raised platform?",
             "options": ["Podium", "Symphony", "Rehearsal"],
             "expectedAnswer": "Podium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a music room. Show an adult using or examining the Podium as the central item; include Podium, Symphony, and Rehearsal naturally where visually appropriate, but make the real-world use of Podium the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a music room completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the orchestra account, showing Podium as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Orchestra",
-      "text": "At the orchestra, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Podium, Symphony, Rehearsal, and Program. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Orchestra. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing the orchestral rehearsal",
+      "text": "The podium is the conductor’s raised platform. Symphony names a substantial orchestral work, rehearsal the practice session, and program the list of works and performers. The conductor steps onto the podium before the rehearsal begins, while the musicians review the program and the symphony’s score.",
+      "imageBrief": "Use independently inspected word references to support Preparing the orchestral rehearsal; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the orchestra setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Podium, Symphony, Rehearsal, and Program and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The podium is the conductor’s raised platform. Symphony names a substantial orchestral work, rehearsal the practice session, and program the list of works and performers. The conductor steps onto the podium before the rehearsal begins, while the musicians review the program and the symphony’s score.\nWhich target names the conductor’s raised platform?",
         "answer": "Podium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The podium is the conductor’s raised platform. Symphony names a substantial orchestral work, rehearsal the practice session, and program the list of works and performers. The conductor steps onto the podium before the rehearsal begins, while the musicians review the program and the symphony’s score.\nCompare “Podium” and “Symphony” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Podium"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Program"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sheet Music” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the orchestra task. Use Podium, Symphony, Rehearsal, and Program in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Podium, Symphony, Rehearsal, Program in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Orchestra: In Context",
-      "idea": "40-60 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing the orchestral rehearsal",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The podium is the conductor’s raised platform. Symphony names a substantial orchestral work, rehearsal the practice session, and program the list of works and performers. The conductor steps onto the podium before the rehearsal begins, while the musicians review the program and the symphony’s score. Which target names the conductor’s raised platform?"
     },
     "spacedReview": "1 lesson(s) back: Sheet Music, Score from orchestra-4\n3 lesson(s) back: Recorder, Saxophone from orchestra-2\n7 lesson(s) back: Prop, Sword from theater-3"
   }

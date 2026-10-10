@@ -44,132 +44,115 @@
       "ردهة رئيسية"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "144-174 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["passenger train", "freight train", "high-speed train", "subway"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare passenger train, freight train, high-speed train, and subway and choose the option that fits the situation.",
+          "scenario": "The passenger train carries people. A freight train carries goods, a high-speed train is designed for high speeds on suitable lines, and subway names an urban rapid-transit system often running underground. A subway may also include above-ground sections.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which general target names the train carrying people?",
             "options": ["passenger train", "freight train", "high-speed train"],
             "expectedAnswer": "passenger train"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the passenger train as the central item; include passenger train, freight train, and high-speed train naturally where visually appropriate, but make the real-world use of passenger train the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing passenger train as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["locomotive", "train car", "dining car", "sleeper car"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare locomotive, train car, dining car, and sleeper car and choose the option that fits the situation.",
+          "scenario": "The locomotive supplies motive power to the train. A train car is one carriage; a dining car serves meals, and a sleeper car provides sleeping accommodation. Some passenger trains use distributed power instead of one separate locomotive.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the railway engine?",
             "options": ["locomotive", "train car", "dining car"],
             "expectedAnswer": "locomotive"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the locomotive as the central item; include locomotive, train car, and dining car naturally where visually appropriate, but make the real-world use of locomotive the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing locomotive as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["caboose", "monorail", "platform", "track"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare caboose, monorail, platform, and track and choose the option that fits the situation.",
+          "scenario": "A caboose traditionally provides space for freight-train crew, commonly at the rear. Monorail names a single-rail system. Platform is the passenger boarding area beside the track, and track the railway running structure. Cabooses are not required on every modern train.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which traditional freight car provides crew space?",
             "options": ["caboose", "monorail", "platform"],
             "expectedAnswer": "caboose"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the caboose as the central item; include caboose, monorail, and platform naturally where visually appropriate, but make the real-world use of caboose the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing caboose as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["ticket office", "waiting room", "concourse"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ticket office, waiting room, and concourse and choose the option that fits the situation.",
+          "scenario": "The traveler buys a ticket at the ticket office, rests in the waiting room, and then crosses the concourse, the large station circulation area. The office supplies the ticket in this account; the room and concourse have different functions.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Where does the traveler buy the ticket?",
             "options": ["ticket office", "waiting room", "concourse"],
             "expectedAnswer": "ticket office"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or approaching the ticket office as the main location; include ticket office, waiting room, and concourse naturally where visually appropriate, but make the real-world use of ticket office the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing ticket office as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Planning the Next Stage of the Journey",
-      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers passenger train, freight train, high-speed train, and subway. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers locomotive, train car, dining car, and sleeper car. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers caboose, monorail, platform, and track. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers ticket office, waiting room, and concourse. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Trains and station spaces",
+      "text": "The passenger train carries people. A freight train carries goods, a high-speed train is designed for high speeds on suitable lines, and subway names an urban rapid-transit system often running underground. A subway may also include above-ground sections. The locomotive supplies motive power to the train. A train car is one carriage; a dining car serves meals, and a sleeper car provides sleeping accommodation. Some passenger trains use distributed power instead of one separate locomotive. A caboose traditionally provides space for freight-train crew, commonly at the rear. Monorail names a single-rail system. Platform is the passenger boarding area beside the track, and track the railway running structure. Cabooses are not required on every modern train. The traveler buys a ticket at the ticket office, rests in the waiting room, and then crosses the concourse, the large station circulation area. The office supplies the ticket in this account; the room and concourse have different functions.",
+      "imageBrief": "Use independently inspected word references to support Trains and station spaces; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare passenger train, freight train, high-speed train, and subway and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The passenger train carries people. A freight train carries goods, a high-speed train is designed for high speeds on suitable lines, and subway names an urban rapid-transit system often running underground. A subway may also include above-ground sections.\nWhich general target names the train carrying people?",
         "answer": "passenger train",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare locomotive, train car, dining car, and sleeper car and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The locomotive supplies motive power to the train. A train car is one carriage; a dining car serves meals, and a sleeper car provides sleeping accommodation. Some passenger trains use distributed power instead of one separate locomotive.\nWhich target names the railway engine?",
         "answer": "locomotive",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare caboose, monorail, platform, and track and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A caboose traditionally provides space for freight-train crew, commonly at the rear. Monorail names a single-rail system. Platform is the passenger boarding area beside the track, and track the railway running structure. Cabooses are not required on every modern train.\nWhich traditional freight car provides crew space?",
         "answer": "caboose",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ticket office, waiting room, and concourse and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The traveler buys a ticket at the ticket office, rests in the waiting room, and then crosses the concourse, the large station circulation area. The office supplies the ticket in this account; the room and concourse have different functions.\nWhere does the traveler buy the ticket?",
         "answer": "ticket office",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The passenger train carries people. A freight train carries goods, a high-speed train is designed for high speeds on suitable lines, and subway names an urban rapid-transit system often running underground. A subway may also include above-ground sections. The locomotive supplies motive power to the train. A train car is one carriage; a dining car serves meals, and a sleeper car provides sleeping accommodation. Some passenger trains use distributed power instead of one separate locomotive. A caboose traditionally provides space for freight-train crew, commonly at the rear. Monorail names a single-rail system. Platform is the passenger boarding area beside the track, and track the railway running structure. Cabooses are not required on every modern train. The traveler buys a ticket at the ticket office, rests in the waiting room, and then crosses the concourse, the large station circulation area. The office supplies the ticket in this account; the room and concourse have different functions.\nCompare “passenger train” and “freight train” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "passenger train"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "subway"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “touch pool” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use passenger train, freight train, high-speed train, subway, locomotive, train car, dining car, sleeper car, caboose, monorail, platform, track, ticket office, waiting room, and concourse in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using passenger train, freight train, high-speed train, subway, locomotive, train car, dining car, sleeper car, caboose, monorail, platform, track, ticket office, waiting room, concourse in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Train Station: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Trains and station spaces",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The passenger train carries people. A freight train carries goods, a high-speed train is designed for high speeds on suitable lines, and subway names an urban rapid-transit system often running underground. A subway may also include above-ground sections. Which general target names the train carrying people?"
     },
     "spacedReview": "1 lesson(s) back: touch pool, viewing window from aquarium-4\n3 lesson(s) back: seal, walrus from aquarium-2\n7 lesson(s) back: beaver, cougar from zoo-3"
   },
@@ -218,132 +201,115 @@
       "حجز"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "135-165 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["information desk", "newsstand", "vending machine", "restroom"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare information desk, newsstand, vending machine, and restroom and choose the option that fits the situation.",
+          "scenario": "The information desk provides staffed assistance. A newsstand sells newspapers, a vending machine dispenses products after payment, and restroom names toilet and washing facilities. The traveler asks a staff member for directions at the desk.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Where does the traveler ask the staff member for directions?",
             "options": ["information desk", "newsstand", "vending machine"],
             "expectedAnswer": "information desk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the information desk as the central item; include information desk, newsstand, and vending machine naturally where visually appropriate, but make the real-world use of information desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing information desk as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["parking garage", "taxi stand", "bus stop", "ticket"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking garage, taxi stand, bus stop, and ticket and choose the option that fits the situation.",
+          "scenario": "The parking garage contains vehicle spaces. Taxi stand names the place where taxis collect passengers, bus stop the bus pickup location, and ticket the travel authorization. The traveler leaves the car in the parking garage before entering the station.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Where does the traveler leave the car?",
             "options": ["parking garage", "taxi stand", "bus stop"],
             "expectedAnswer": "parking garage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the parking garage as the central item; include parking garage, taxi stand, and bus stop naturally where visually appropriate, but make the real-world use of parking garage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing parking garage as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["round trip", "one-way", "schedule", "timetable"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare round trip, one-way, schedule, and timetable and choose the option that fits the situation.",
+          "scenario": "A round trip includes outward and return journeys. A one-way journey has no included return. Schedule and timetable can both list planned service times; they are not mutually exclusive meanings. The traveler requests the fare including both journeys.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which journey includes the return as well as the outward travel?",
             "options": ["round trip", "one-way", "schedule"],
             "expectedAnswer": "round trip"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the round trip as the central item; include round trip, one-way, and schedule naturally where visually appropriate, but make the real-world use of round trip the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing round trip as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["departure board", "arrival board", "reservation"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare departure board, arrival board, and reservation and choose the option that fits the situation.",
+          "scenario": "The departure board lists services leaving the station, while arrival board lists incoming services. A reservation is an advance booking. The traveler checks the departure board for the platform of the outgoing train.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which display does the traveler check for the outgoing service?",
             "options": ["departure board", "arrival board", "reservation"],
             "expectedAnswer": "departure board"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the departure board as the central item; include departure board, arrival board, and reservation naturally where visually appropriate, but make the real-world use of departure board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing departure board as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Train Station",
-      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers information desk, newsstand, vending machine, and restroom. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers parking garage, taxi stand, bus stop, and ticket. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers round trip, one-way, schedule, and timetable. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers departure board, arrival board, and reservation. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tickets and service information",
+      "text": "The information desk provides staffed assistance. A newsstand sells newspapers, a vending machine dispenses products after payment, and restroom names toilet and washing facilities. The traveler asks a staff member for directions at the desk. The parking garage contains vehicle spaces. Taxi stand names the place where taxis collect passengers, bus stop the bus pickup location, and ticket the travel authorization. The traveler leaves the car in the parking garage before entering the station. A round trip includes outward and return journeys. A one-way journey has no included return. Schedule and timetable can both list planned service times; they are not mutually exclusive meanings. The traveler requests the fare including both journeys. The departure board lists services leaving the station, while arrival board lists incoming services. A reservation is an advance booking. The traveler checks the departure board for the platform of the outgoing train.",
+      "imageBrief": "Use independently inspected word references to support Tickets and service information; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare information desk, newsstand, vending machine, and restroom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The information desk provides staffed assistance. A newsstand sells newspapers, a vending machine dispenses products after payment, and restroom names toilet and washing facilities. The traveler asks a staff member for directions at the desk.\nWhere does the traveler ask the staff member for directions?",
         "answer": "information desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking garage, taxi stand, bus stop, and ticket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The parking garage contains vehicle spaces. Taxi stand names the place where taxis collect passengers, bus stop the bus pickup location, and ticket the travel authorization. The traveler leaves the car in the parking garage before entering the station.\nWhere does the traveler leave the car?",
         "answer": "parking garage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare round trip, one-way, schedule, and timetable and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A round trip includes outward and return journeys. A one-way journey has no included return. Schedule and timetable can both list planned service times; they are not mutually exclusive meanings. The traveler requests the fare including both journeys.\nWhich journey includes the return as well as the outward travel?",
         "answer": "round trip",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare departure board, arrival board, and reservation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The departure board lists services leaving the station, while arrival board lists incoming services. A reservation is an advance booking. The traveler checks the departure board for the platform of the outgoing train.\nWhich display does the traveler check for the outgoing service?",
         "answer": "departure board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The information desk provides staffed assistance. A newsstand sells newspapers, a vending machine dispenses products after payment, and restroom names toilet and washing facilities. The traveler asks a staff member for directions at the desk. The parking garage contains vehicle spaces. Taxi stand names the place where taxis collect passengers, bus stop the bus pickup location, and ticket the travel authorization. The traveler leaves the car in the parking garage before entering the station. A round trip includes outward and return journeys. A one-way journey has no included return. Schedule and timetable can both list planned service times; they are not mutually exclusive meanings. The traveler requests the fare including both journeys. The departure board lists services leaving the station, while arrival board lists incoming services. A reservation is an advance booking. The traveler checks the departure board for the platform of the outgoing train.\nCompare “information desk” and “newsstand” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "information desk"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "restroom"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “passenger train” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use information desk, newsstand, vending machine, restroom, parking garage, taxi stand, bus stop, ticket, round trip, one-way, schedule, timetable, departure board, arrival board, and reservation in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using information desk, newsstand, vending machine, restroom, parking garage, taxi stand, bus stop, ticket, round trip, one-way, schedule, timetable, departure board, arrival board, reservation in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Train Station: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tickets and service information",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The information desk provides staffed assistance. A newsstand sells newspapers, a vending machine dispenses products after payment, and restroom names toilet and washing facilities. The traveler asks a staff member for directions at the desk. Where does the traveler ask the staff member for directions?"
     },
     "spacedReview": "1 lesson(s) back: passenger train, freight train from train-station-1\n3 lesson(s) back: anemone, sea cucumber from aquarium-3\n7 lesson(s) back: penguin, owl from zoo-4"
   },
@@ -392,132 +358,115 @@
       "محصل أو مشرف قطار"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "154-184 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["seat number", "first class", "economy class", "pass"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare seat number, first class, economy class, and pass and choose the option that fits the situation.",
+          "scenario": "The seat number identifies the booked seat. First class and economy class describe service categories whose features depend on the operator. A pass permits journeys under specified terms. The ticket gives the seat number separately from the service category.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which detail identifies the particular booked seat?",
             "options": ["seat number", "first class", "economy class"],
             "expectedAnswer": "seat number"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the seat number as the central item; include seat number, first class, and economy class naturally where visually appropriate, but make the real-world use of seat number the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing seat number as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["turnstile", "signal", "crossing gate", "bridge"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare turnstile, signal, crossing gate, and bridge and choose the option that fits the situation.",
+          "scenario": "The turnstile is a gate with rotating arms or a related controlled entry mechanism. A signal informs train operation, a crossing gate controls road or pedestrian entry at a rail crossing, and bridge carries a route over another space. The entry gate in this account rotates.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which gate rotates to control entry?",
             "options": ["turnstile", "signal", "crossing gate"],
             "expectedAnswer": "turnstile"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the turnstile as the central item; include turnstile, signal, and crossing gate naturally where visually appropriate, but make the real-world use of turnstile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing turnstile as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["tunnel", "overhead wire", "rail", "switch"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tunnel, overhead wire, rail, and switch and choose the option that fits the situation.",
+          "scenario": "The tunnel takes the railway through an enclosed passage. An overhead wire supplies power to compatible trains, a rail forms part of the running track, and switch guides a train between tracks. The visitor learns the names without approaching energized or operating equipment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature takes the railway through the enclosed passage?",
             "options": ["tunnel", "overhead wire", "rail"],
             "expectedAnswer": "tunnel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the tunnel as the central item; include tunnel, overhead wire, and rail naturally where visually appropriate, but make the real-world use of tunnel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing tunnel as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["buffer stop", "clock tower", "conductor"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare buffer stop, clock tower, and conductor and choose the option that fits the situation.",
+          "scenario": "The buffer stop is installed at the track end. Clock tower displays a clock high on a structure, and conductor names a train crew role. A buffer stop’s presence does not guarantee prevention of every collision.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure is installed at the track end?",
             "options": ["buffer stop", "clock tower", "conductor"],
             "expectedAnswer": "buffer stop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the buffer stop as the central item; include buffer stop, clock tower, and conductor naturally where visually appropriate, but make the real-world use of buffer stop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing buffer stop as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: Train Station",
-      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers seat number, first class, economy class, and pass. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers turnstile, signal, crossing gate, and bridge. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers tunnel, overhead wire, rail, and switch. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers buffer stop, clock tower, and conductor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Railway structures and booking details",
+      "text": "The seat number identifies the booked seat. First class and economy class describe service categories whose features depend on the operator. A pass permits journeys under specified terms. The ticket gives the seat number separately from the service category. The turnstile is a gate with rotating arms or a related controlled entry mechanism. A signal informs train operation, a crossing gate controls road or pedestrian entry at a rail crossing, and bridge carries a route over another space. The entry gate in this account rotates. The tunnel takes the railway through an enclosed passage. An overhead wire supplies power to compatible trains, a rail forms part of the running track, and switch guides a train between tracks. The visitor learns the names without approaching energized or operating equipment. The buffer stop is installed at the track end. Clock tower displays a clock high on a structure, and conductor names a train crew role. A buffer stop’s presence does not guarantee prevention of every collision.",
+      "imageBrief": "Use independently inspected word references to support Railway structures and booking details; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare seat number, first class, economy class, and pass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The seat number identifies the booked seat. First class and economy class describe service categories whose features depend on the operator. A pass permits journeys under specified terms. The ticket gives the seat number separately from the service category.\nWhich detail identifies the particular booked seat?",
         "answer": "seat number",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare turnstile, signal, crossing gate, and bridge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The turnstile is a gate with rotating arms or a related controlled entry mechanism. A signal informs train operation, a crossing gate controls road or pedestrian entry at a rail crossing, and bridge carries a route over another space. The entry gate in this account rotates.\nWhich gate rotates to control entry?",
         "answer": "turnstile",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tunnel, overhead wire, rail, and switch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The tunnel takes the railway through an enclosed passage. An overhead wire supplies power to compatible trains, a rail forms part of the running track, and switch guides a train between tracks. The visitor learns the names without approaching energized or operating equipment.\nWhich feature takes the railway through the enclosed passage?",
         "answer": "tunnel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare buffer stop, clock tower, and conductor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The buffer stop is installed at the track end. Clock tower displays a clock high on a structure, and conductor names a train crew role. A buffer stop’s presence does not guarantee prevention of every collision.\nWhich structure is installed at the track end?",
         "answer": "buffer stop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The seat number identifies the booked seat. First class and economy class describe service categories whose features depend on the operator. A pass permits journeys under specified terms. The ticket gives the seat number separately from the service category. The turnstile is a gate with rotating arms or a related controlled entry mechanism. A signal informs train operation, a crossing gate controls road or pedestrian entry at a rail crossing, and bridge carries a route over another space. The entry gate in this account rotates. The tunnel takes the railway through an enclosed passage. An overhead wire supplies power to compatible trains, a rail forms part of the running track, and switch guides a train between tracks. The visitor learns the names without approaching energized or operating equipment. The buffer stop is installed at the track end. Clock tower displays a clock high on a structure, and conductor names a train crew role. A buffer stop’s presence does not guarantee prevention of every collision.\nCompare “seat number” and “first class” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "seat number"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "pass"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “information desk” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use seat number, first class, economy class, pass, turnstile, signal, crossing gate, bridge, tunnel, overhead wire, rail, switch, buffer stop, clock tower, and conductor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using seat number, first class, economy class, pass, turnstile, signal, crossing gate, bridge, tunnel, overhead wire, rail, switch, buffer stop, clock tower, conductor in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Train Station: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Railway structures and booking details",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The seat number identifies the booked seat. First class and economy class describe service categories whose features depend on the operator. A pass permits journeys under specified terms. The ticket gives the seat number separately from the service category. Which detail identifies the particular booked seat?"
     },
     "spacedReview": "1 lesson(s) back: information desk, newsstand from train-station-2\n3 lesson(s) back: touch pool, viewing window from aquarium-4\n7 lesson(s) back: fountain, playground from zoo-5"
   },
@@ -550,7 +499,7 @@
       "راكب يتنقل يوميًا",
       "مسافر",
       "الصعود إلى القطار",
-      "المغادرة",
+      "يغادر",
       "الوصول",
       "الانتقال إلى قطار آخر",
       "الانتظار",
@@ -558,113 +507,96 @@
       "التحقق من صلاحية التذكرة"
     ],
     "usage": {
-      "goal": "Develop the language needed to ask about schedules, facilities, and the next stage of a journey in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the transport terminal.",
-      "textType": "logistics-schedule",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "93-123 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["engineer", "porter", "commuter", "traveler"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare engineer, porter, commuter, and traveler and choose the option that fits the situation.",
+          "scenario": "Engineer means locomotive driver in this US rail context. Porter names a luggage-assistance worker, commuter a regular home-to-work or study traveler, and traveler a person making a journey. Staff duties depend on the operator.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who operates the locomotive in this US context?",
             "options": ["engineer", "porter", "commuter"],
             "expectedAnswer": "engineer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult using or examining the engineer as the central item; include engineer, porter, and commuter naturally where visually appropriate, but make the real-world use of engineer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing engineer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["boarding", "departing", "arriving", "transferring"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare boarding, departing, arriving, and transferring and choose the option that fits the situation.",
+          "scenario": "Boarding means getting onto the train. Departing means leaving, arriving reaching the destination, and transferring changing to another service. The traveler is boarding while entering the carriage, rather than transferring after completing the trip.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity means getting onto the train?",
             "options": ["boarding", "departing", "arriving"],
             "expectedAnswer": "boarding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult illustrating boarding through a realistic adult task; include boarding, departing, and arriving naturally where visually appropriate, but make the real-world use of boarding the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing boarding as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["waiting", "announcing", "validating"],
-          "scenario": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare waiting, announcing, and validating and choose the option that fits the situation.",
+          "scenario": "Waiting means remaining until the expected event. Announcing gives spoken information, and validating checks or marks a ticket for use. The traveler is waiting while the staff member announces the platform and explains ticket validation.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity describes remaining until the expected train?",
             "options": ["waiting", "announcing", "validating"],
             "expectedAnswer": "waiting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a transport terminal. Show an adult illustrating waiting through a realistic adult task; include waiting, announcing, and validating naturally where visually appropriate, but make the real-world use of waiting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a transport terminal completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the train station account, showing waiting as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Planning the Next Stage of the Journey",
-      "text": "At the train station, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers engineer, porter, commuter, and traveler. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers boarding, departing, arriving, and transferring. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers waiting, announcing, and validating. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L6 Train Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Staff roles and journey activities",
+      "text": "Engineer means locomotive driver in this US rail context. Porter names a luggage-assistance worker, commuter a regular home-to-work or study traveler, and traveler a person making a journey. Staff duties depend on the operator. Boarding means getting onto the train. Departing means leaving, arriving reaching the destination, and transferring changing to another service. The traveler is boarding while entering the carriage, rather than transferring after completing the trip. Waiting means remaining until the expected event. Announcing gives spoken information, and validating checks or marks a ticket for use. The traveler is waiting while the staff member announces the platform and explains ticket validation.",
+      "imageBrief": "Use independently inspected word references to support Staff roles and journey activities; keep unrelated habitats and transport activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare engineer, porter, commuter, and traveler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Engineer means locomotive driver in this US rail context. Porter names a luggage-assistance worker, commuter a regular home-to-work or study traveler, and traveler a person making a journey. Staff duties depend on the operator.\nWho operates the locomotive in this US context?",
         "answer": "engineer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare boarding, departing, arriving, and transferring and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Boarding means getting onto the train. Departing means leaving, arriving reaching the destination, and transferring changing to another service. The traveler is boarding while entering the carriage, rather than transferring after completing the trip.\nWhich activity means getting onto the train?",
         "answer": "boarding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l6 train station setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare waiting, announcing, and validating and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Waiting means remaining until the expected event. Announcing gives spoken information, and validating checks or marks a ticket for use. The traveler is waiting while the staff member announces the platform and explains ticket validation.\nWhich activity describes remaining until the expected train?",
         "answer": "waiting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Engineer means locomotive driver in this US rail context. Porter names a luggage-assistance worker, commuter a regular home-to-work or study traveler, and traveler a person making a journey. Staff duties depend on the operator. Boarding means getting onto the train. Departing means leaving, arriving reaching the destination, and transferring changing to another service. The traveler is boarding while entering the carriage, rather than transferring after completing the trip. Waiting means remaining until the expected event. Announcing gives spoken information, and validating checks or marks a ticket for use. The traveler is waiting while the staff member announces the platform and explains ticket validation.\nCompare “engineer” and “porter” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "engineer"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "traveler"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “seat number” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l6 train station task. Use engineer, porter, commuter, traveler, boarding, departing, arriving, transferring, waiting, announcing, and validating in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using engineer, porter, commuter, traveler, boarding, departing, arriving, transferring, waiting, announcing, validating in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L6 Train Station: In Context",
-      "idea": "40-60 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Staff roles and journey activities",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Engineer means locomotive driver in this US rail context. Porter names a luggage-assistance worker, commuter a regular home-to-work or study traveler, and traveler a person making a journey. Staff duties depend on the operator. Who operates the locomotive in this US context?"
     },
     "spacedReview": "1 lesson(s) back: seat number, first class from train-station-3\n3 lesson(s) back: passenger train, freight train from train-station-1\n7 lesson(s) back: clownfish, angelfish from aquarium-1"
   }

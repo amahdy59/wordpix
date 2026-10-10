@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "102-132 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Email", "Memo", "Report", "Proposal"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Email, Memo, Report, and Proposal and choose the option that fits the situation.",
+          "scenario": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Email", "Memo", "Report"],
-            "expectedAnswer": "Email"
+            "question": "Which document suggests a plan for consideration?",
+            "options": ["Proposal", "Email", "Memo"],
+            "expectedAnswer": "Proposal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Email as the central item; include Email, Memo, and Report naturally where visually appropriate, but make the real-world use of Email the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Proposal in a business communication context. Use the written scenario as the source of meaning: Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Invoice", "Contract", "Letter", "Newsletter"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invoice, Contract, Letter, and Newsletter and choose the option that fits the situation.",
+          "scenario": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Invoice", "Contract", "Letter"],
-            "expectedAnswer": "Invoice"
+            "question": "Which document records the parties’ agreed obligations?",
+            "options": ["Contract", "Invoice", "Letter"],
+            "expectedAnswer": "Contract"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Invoice as the central item; include Invoice, Contract, and Letter naturally where visually appropriate, but make the real-world use of Invoice the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Contract in a business communication context. Use the written scenario as the source of meaning: The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Press Release", "Minutes", "Deadline", "Milestone"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Minutes, Deadline, and Milestone and choose the option that fits the situation.",
+          "scenario": "After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Press Release", "Minutes", "Deadline"],
-            "expectedAnswer": "Press Release"
+            "question": "Which record contains the meeting’s decisions?",
+            "options": ["Minutes", "Press Release", "Deadline"],
+            "expectedAnswer": "Minutes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Press Release as the central item; include Press Release, Minutes, and Deadline naturally where visually appropriate, but make the real-world use of Press Release the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Minutes in a business communication context. Use the written scenario as the source of meaning: After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deliverable", "Stakeholder", "Benchmark"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliverable, Stakeholder, and Benchmark and choose the option that fits the situation.",
+          "scenario": "The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Deliverable", "Stakeholder", "Benchmark"],
-            "expectedAnswer": "Deliverable"
+            "question": "What term describes the customer affected by the project?",
+            "options": ["Stakeholder", "Deliverable", "Benchmark"],
+            "expectedAnswer": "Stakeholder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Deliverable as the central item; include Deliverable, Stakeholder, and Benchmark naturally where visually appropriate, but make the real-world use of Deliverable the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Stakeholder in a business communication context. Use the written scenario as the source of meaning: The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Business Communication",
-      "text": "At the business communication, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Email, Memo, Report, and Proposal. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Invoice, Contract, Letter, and Newsletter. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Press Release, Minutes, Deadline, and Milestone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Deliverable, Stakeholder, and Benchmark. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Business Communication: A visitor’s questions",
+      "text": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.",
+      "imageBrief": "One uncluttered business communication setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Email, Memo, Report, and Proposal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Email",
+        "prompt": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule.\nWhich document suggests a plan for consideration?",
+        "answer": "Proposal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invoice, Contract, Letter, and Newsletter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Invoice",
+        "prompt": "The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news.\nWhich document records the parties’ agreed obligations?",
+        "answer": "Contract",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Release, Minutes, Deadline, and Milestone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Press Release",
+        "prompt": "After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial.\nWhich record contains the meeting’s decisions?",
+        "answer": "Minutes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliverable, Stakeholder, and Benchmark and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Deliverable",
+        "prompt": "The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.\nWhat term describes the customer affected by the project?",
+        "answer": "Stakeholder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. The supplier sends an Invoice for work completed. The Contract records both parties’ obligations. Leila keeps the supplier’s Letter separately from the company Newsletter containing staff news. After the project meeting, Leila writes the Minutes recording decisions. The Press Release announces public news, the Deadline is Friday, and the Milestone is the completion of the first trial. The team’s Deliverable is a tested schedule. A customer is a Stakeholder affected by it. The previous average delivery time provides a Benchmark for comparing the trial’s results.\nExplain the difference between Email and Memo using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Email"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Padded Envelope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the business communication task. Use Email, Memo, Report, Proposal, Invoice, Contract, Letter, Newsletter, Press Release, Minutes, Deadline, Milestone, Deliverable, Stakeholder, and Benchmark in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Email, Memo, Report, Proposal, Invoice, Contract, Letter, Newsletter, Press Release, Minutes, Deadline, Milestone, Deliverable, Stakeholder, Benchmark to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Business Communication: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Business Communication: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Email and Memo, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Leila sends an Email with a Proposal suggesting a new delivery schedule. A Memo shares internal instructions, while a Report records the results of the previous schedule. Pause and answer: Which document suggests a plan for consideration?"
     },
     "spacedReview": "1 lesson(s) back: Padded Envelope, Return Label from office-supplies-4\n3 lesson(s) back: Envelope, Folder from office-supplies-2\n7 lesson(s) back: Town Hall, Workshop from meeting-room-2"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "99-129 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["KPI", "ROI", "Strategy", "Objective"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare KPI, ROI, Strategy, and Objective and choose the option that fits the situation.",
+          "scenario": "The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the indicator tracking on-time deliveries?",
             "options": ["KPI", "ROI", "Strategy"],
             "expectedAnswer": "KPI"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the KPI as the central item; include KPI, ROI, and Strategy naturally where visually appropriate, but make the real-world use of KPI the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for KPI in a business communication context. Use the written scenario as the source of meaning: The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Initiative", "Teamwork", "Brainstorm", "Feedback"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Initiative, Teamwork, Brainstorm, and Feedback and choose the option that fits the situation.",
+          "scenario": "The new Initiative brings dispatchers and drivers together. They Brainstorm alternatives through Teamwork, then collect Feedback describing what worked and what needs improvement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Initiative", "Teamwork", "Brainstorm"],
-            "expectedAnswer": "Initiative"
+            "question": "Which term names the information about what worked and needs improvement?",
+            "options": ["Feedback", "Initiative", "Teamwork"],
+            "expectedAnswer": "Feedback"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Initiative as the central item; include Initiative, Teamwork, and Brainstorm naturally where visually appropriate, but make the real-world use of Initiative the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Feedback in a business communication context. Use the written scenario as the source of meaning: The new Initiative brings dispatchers and drivers together. They Brainstorm alternatives through Teamwork, then collect Feedback describing what worked and what needs improvement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Review", "Approval", "Delegation", "Coordination"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Approval, Delegation, and Coordination and choose the option that fits the situation.",
+          "scenario": "A manager conducts a Review before granting Approval. Delegation gives Leila responsibility and authority to prepare the trial, while Coordination organizes everyone’s schedules.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Review", "Approval", "Delegation"],
-            "expectedAnswer": "Review"
+            "question": "Which term describes assigning Leila responsibility and authority?",
+            "options": ["Delegation", "Review", "Approval"],
+            "expectedAnswer": "Delegation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Review through a realistic adult task; include Review, Approval, and Delegation naturally where visually appropriate, but make the real-world use of Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Delegation in a business communication context. Use the written scenario as the source of meaning: A manager conducts a Review before granting Approval. Delegation gives Leila responsibility and authority to prepare the trial, while Coordination organizes everyone’s schedules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Synergy", "Consensus", "Alignment"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synergy, Consensus, and Alignment and choose the option that fits the situation.",
+          "scenario": "During the discussion, all participants agree on the revised schedule: they reach Consensus. Alignment keeps their plans directed toward the same objective, and Synergy describes an improved result from working together.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Synergy", "Consensus", "Alignment"],
-            "expectedAnswer": "Synergy"
+            "question": "Which term names the agreement reached by the whole group?",
+            "options": ["Consensus", "Synergy", "Alignment"],
+            "expectedAnswer": "Consensus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Synergy as the central item; include Synergy, Consensus, and Alignment naturally where visually appropriate, but make the real-world use of Synergy the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Consensus in a business communication context. Use the written scenario as the source of meaning: During the discussion, all participants agree on the revised schedule: they reach Consensus. Alignment keeps their plans directed toward the same objective, and Synergy describes an improved result from working together. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Business Communication",
-      "text": "At the business communication, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers KPI, ROI, Strategy, and Objective. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Initiative, Teamwork, Brainstorm, and Feedback. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Review, Approval, Delegation, and Coordination. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Synergy, Consensus, and Alignment. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Business Communication: Understanding the different roles",
+      "text": "The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost. The new Initiative brings dispatchers and drivers together. They Brainstorm alternatives through Teamwork, then collect Feedback describing what worked and what needs improvement. A manager conducts a Review before granting Approval. Delegation gives Leila responsibility and authority to prepare the trial, while Coordination organizes everyone’s schedules. During the discussion, all participants agree on the revised schedule: they reach Consensus. Alignment keeps their plans directed toward the same objective, and Synergy describes an improved result from working together.",
+      "imageBrief": "One uncluttered business communication setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare KPI, ROI, Strategy, and Objective and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost.\nWhich term names the indicator tracking on-time deliveries?",
         "answer": "KPI",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Initiative, Teamwork, Brainstorm, and Feedback and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Initiative",
+        "prompt": "The new Initiative brings dispatchers and drivers together. They Brainstorm alternatives through Teamwork, then collect Feedback describing what worked and what needs improvement.\nWhich term names the information about what worked and needs improvement?",
+        "answer": "Feedback",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Approval, Delegation, and Coordination and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Review",
+        "prompt": "A manager conducts a Review before granting Approval. Delegation gives Leila responsibility and authority to prepare the trial, while Coordination organizes everyone’s schedules.\nWhich term describes assigning Leila responsibility and authority?",
+        "answer": "Delegation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synergy, Consensus, and Alignment and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Synergy",
+        "prompt": "During the discussion, all participants agree on the revised schedule: they reach Consensus. Alignment keeps their plans directed toward the same objective, and Synergy describes an improved result from working together.\nWhich term names the agreement reached by the whole group?",
+        "answer": "Consensus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost. The new Initiative brings dispatchers and drivers together. They Brainstorm alternatives through Teamwork, then collect Feedback describing what worked and what needs improvement. A manager conducts a Review before granting Approval. Delegation gives Leila responsibility and authority to prepare the trial, while Coordination organizes everyone’s schedules. During the discussion, all participants agree on the revised schedule: they reach Consensus. Alignment keeps their plans directed toward the same objective, and Synergy describes an improved result from working together.\nExplain the difference between KPI and ROI using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "KPI"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Email” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the business communication task. Use KPI, ROI, Strategy, Objective, Initiative, Teamwork, Brainstorm, Feedback, Review, Approval, Delegation, Coordination, Synergy, Consensus, and Alignment in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms KPI, ROI, Strategy, Objective, Initiative, Teamwork, Brainstorm, Feedback, Review, Approval, Delegation, Coordination, Synergy, Consensus, Alignment to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Business Communication: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Business Communication: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between KPI and ROI, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The team’s Strategy is to reduce delivery delays. Its Objective is fewer late deliveries, and a KPI tracks the proportion arriving on time. ROI compares an investment’s financial return with its cost. Pause and answer: Which term names the indicator tracking on-time deliveries?"
     },
     "spacedReview": "1 lesson(s) back: Email, Memo from business-communication-1\n3 lesson(s) back: Desk Organizer, Pencil Cup from office-supplies-3\n7 lesson(s) back: Present, Discuss from meeting-room-3"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "107-137 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Follow Up", "Touch Base", "Circle Back", "Moving Forward"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Follow Up, Touch Base, Circle Back, and Moving Forward and choose the option that fits the situation.",
+          "scenario": "Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Follow Up", "Touch Base", "Circle Back"],
-            "expectedAnswer": "Follow Up"
+            "question": "Which expression means return to the unresolved route later?",
+            "options": ["Circle Back", "Follow Up", "Touch Base"],
+            "expectedAnswer": "Circle Back"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Follow Up as the central item; include Follow Up, Touch Base, and Circle Back naturally where visually appropriate, but make the real-world use of Follow Up the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Circle Back in a business communication context. Use the written scenario as the source of meaning: Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Action Items", "Best Practice", "Takeaway", "Bottleneck"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Action Items, Best Practice, Takeaway, and Bottleneck and choose the option that fits the situation.",
+          "scenario": "The Action Items name tasks and owners. The main Takeaway is that a slow approval stage creates a Bottleneck. The team describes its effective checklist as a Best Practice for this particular workflow, rather than a universal rule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Action Items", "Best Practice", "Takeaway"],
-            "expectedAnswer": "Action Items"
+            "question": "What term names the stage slowing the workflow?",
+            "options": ["Bottleneck", "Action Items", "Best Practice"],
+            "expectedAnswer": "Bottleneck"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Action Items as the central item; include Action Items, Best Practice, and Takeaway naturally where visually appropriate, but make the real-world use of Action Items the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Bottleneck in a business communication context. Use the written scenario as the source of meaning: The Action Items name tasks and owners. The main Takeaway is that a slow approval stage creates a Bottleneck. The team describes its effective checklist as a Best Practice for this particular workflow, rather than a universal rule. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scalable", "Leverage"],
-          "scenario": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalable, and Leverage and choose the option that fits the situation.",
+          "scenario": "Leila describes a Scalable scheduling process that can handle more deliveries while remaining effective. She will Leverage the team’s existing route knowledge, meaning use that resource to help achieve the objective.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Scalable", "Leverage", "Follow Up"],
+            "question": "Which term describes a process able to handle growth effectively?",
+            "options": ["Scalable", "Leverage"],
             "expectedAnswer": "Scalable"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Scalable as the central item; include Scalable, Leverage, and Follow Up naturally where visually appropriate, but make the real-world use of Scalable the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Scalable in a business communication context. Use the written scenario as the source of meaning: Leila describes a Scalable scheduling process that can handle more deliveries while remaining effective. She will Leverage the team’s existing route knowledge, meaning use that resource to help achieve the objective. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written business communication situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Business Communication",
-      "text": "At the business communication, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Follow Up, Touch Base, Circle Back, and Moving Forward. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Action Items, Best Practice, Takeaway, and Bottleneck. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Scalable and Leverage. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Business Communication. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Business Communication: Comparing the equipment",
+      "text": "Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters. The Action Items name tasks and owners. The main Takeaway is that a slow approval stage creates a Bottleneck. The team describes its effective checklist as a Best Practice for this particular workflow, rather than a universal rule. Leila describes a Scalable scheduling process that can handle more deliveries while remaining effective. She will Leverage the team’s existing route knowledge, meaning use that resource to help achieve the objective.",
+      "imageBrief": "One uncluttered business communication setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Follow Up, Touch Base, Circle Back, and Moving Forward and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Follow Up",
+        "prompt": "Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters.\nWhich expression means return to the unresolved route later?",
+        "answer": "Circle Back",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Action Items, Best Practice, Takeaway, and Bottleneck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Action Items",
+        "prompt": "The Action Items name tasks and owners. The main Takeaway is that a slow approval stage creates a Bottleneck. The team describes its effective checklist as a Best Practice for this particular workflow, rather than a universal rule.\nWhat term names the stage slowing the workflow?",
+        "answer": "Bottleneck",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the business communication setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalable, and Leverage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Leila describes a Scalable scheduling process that can handle more deliveries while remaining effective. She will Leverage the team’s existing route knowledge, meaning use that resource to help achieve the objective.\nWhich term describes a process able to handle growth effectively?",
         "answer": "Scalable",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters. The Action Items name tasks and owners. The main Takeaway is that a slow approval stage creates a Bottleneck. The team describes its effective checklist as a Best Practice for this particular workflow, rather than a universal rule. Leila describes a Scalable scheduling process that can handle more deliveries while remaining effective. She will Leverage the team’s existing route knowledge, meaning use that resource to help achieve the objective.\nExplain the difference between Follow Up and Touch Base using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Follow Up"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “KPI” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the business communication task. Use Follow Up, Touch Base, Circle Back, Moving Forward, Action Items, Best Practice, Takeaway, Bottleneck, Scalable, and Leverage in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Follow Up, Touch Base, Circle Back, Moving Forward, Action Items, Best Practice, Takeaway, Bottleneck, Scalable, Leverage to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Business Communication: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Business Communication: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Follow Up and Touch Base, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Leila will Follow Up with the supplier after today’s call and Touch Base briefly with the driver tomorrow. She says they will Circle Back to the unresolved route next week. Moving Forward introduces plans from now onward. These expressions can be replaced with plain language when clarity matters. Pause and answer: Which expression means return to the unresolved route later?"
     },
     "spacedReview": "1 lesson(s) back: KPI, ROI from business-communication-2\n3 lesson(s) back: Padded Envelope, Return Label from office-supplies-4\n7 lesson(s) back: Chat, Breakout Room from meeting-room-4"
   }

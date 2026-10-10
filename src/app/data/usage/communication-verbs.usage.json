@@ -44,136 +44,141 @@
       "يتمتم بصوت خافت"
     ],
     "usage": {
-      "goal": "Learn to use common communication verbs 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to communication verbs.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Talk", "Speak", "Say"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Talk, Speak, Say. The situation requires the person to talk next.",
+          "scenario": "Mona talks with a colleague. Speak means use spoken language; say introduces words or a statement.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for Mona's conversation?",
             "options": ["Talk", "Speak", "Say"],
             "expectedAnswer": "Talk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Talk, Speak, Say. The situation requires the person to talk next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Talk, Speak, Say in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. Two modest adult men in a quiet conversation setting, no bystanders; actual speech comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tell", "Ask", "Answer"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Tell, Ask, Answer. The situation requires the person to tell next.",
+          "scenario": "Mona tells him the time. Ask puts a question, and answer gives a reply. Say the time and tell him the time use different complements.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb is used before him in Mona's information statement?",
             "options": ["Tell", "Ask", "Answer"],
             "expectedAnswer": "Tell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Tell, Ask, Answer. The situation requires the person to tell next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Tell, Ask, Answer in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A quiet empty meeting desk; words and grammar come from written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Explain", "Describe", "Announce"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Explain, Describe, Announce. The situation requires the person to explain next.",
+          "scenario": "Mona explains the change to him. Describe gives details about something; announce makes news known.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for making the change clear?",
             "options": ["Explain", "Describe", "Announce"],
             "expectedAnswer": "Explain"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Explain, Describe, Announce. The situation requires the person to explain next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Explain, Describe, Announce in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An empty meeting-room plan illustration, no readable text or inferred spoken meaning. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Declare", "Whisper", "Shout"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Declare, Whisper, Shout. The situation requires the person to declare next.",
+          "scenario": "The organizer declares the meeting open. Whisper is very soft speech; shout is loud speech.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb is used for the organizer's official statement?",
             "options": ["Declare", "Whisper", "Shout"],
             "expectedAnswer": "Declare"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Declare, Whisper, Shout. The situation requires the person to declare next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Declare, Whisper, Shout in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An empty meeting podium; official statement is written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Yell", "Scream", "Murmur"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Yell, Scream, Murmur. The situation requires the person to yell next.",
+          "scenario": "The account says someone yells a warning. Yell and shout can overlap; scream may name a high cry, while murmur is quiet speech.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which exact verb does the account use for the warning?",
             "options": ["Yell", "Scream", "Murmur"],
             "expectedAnswer": "Yell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Yell, Scream, Murmur. The situation requires the person to yell next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Yell, Scream, Murmur in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One modest male adult calling across a clear empty area; a still image cannot establish loudness. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Communication Verbs: Short Description",
-      "text": "Maya is in a situation connected to communication verbs. She uses the new words to understand what she sees and what happens next. The media team works with talk, speak, and say while preparing the content. Each term connects to a different step in communication or production. The media team works with tell, ask, and answer while preparing the content. Each term connects to a different step in communication or production.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Communication Verbs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking about words at a meeting",
+      "text": "Mona talks with a colleague before a meeting. She tells him the start time. She explains the room change. The organizer declares that the meeting is open. Outside, someone yells a warning from a distance. Mona uses the written account to choose each verb. Some words have similar meanings, such as shout and yell. She does not identify the sound or exact words from a silent photograph.",
+      "imageBrief": "Support for Asking about words at a meeting. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Talk, Speak, Say. The situation requires the person to talk next.\nWhat should the person do next?",
+        "prompt": "Mona talks with a colleague. Speak means use spoken language; say introduces words or a statement.\nWhich verb does the account use for Mona's conversation?",
         "answer": "Talk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Tell, Ask, Answer. The situation requires the person to tell next.\nWhat should the person do next?",
+        "prompt": "Mona tells him the time. Ask puts a question, and answer gives a reply. Say the time and tell him the time use different complements.\nWhich verb is used before him in Mona's information statement?",
         "answer": "Tell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Explain, Describe, Announce. The situation requires the person to explain next.\nWhat should the person do next?",
+        "prompt": "Mona explains the change to him. Describe gives details about something; announce makes news known.\nWhich verb does the account use for making the change clear?",
         "answer": "Explain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Declare, Whisper, Shout. The situation requires the person to declare next.\nWhat should the person do next?",
+        "prompt": "The organizer declares the meeting open. Whisper is very soft speech; shout is loud speech.\nWhich verb is used for the organizer's official statement?",
         "answer": "Declare",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Yell, Scream, Murmur. The situation requires the person to yell next.\nWhat should the person do next?",
+        "prompt": "The account says someone yells a warning. Yell and shout can overlap; scream may name a high cry, while murmur is quiet speech.\nWhich exact verb does the account use for the warning?",
         "answer": "Yell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Talk"
+        "prompt": "Mona talks with a colleague before a meeting. She tells him the start time. She explains the room change. The organizer declares that the meeting is open. Outside, someone yells a warning from a distance. Mona uses the written account to choose each verb. Some words have similar meanings, such as shout and yell. She does not identify the sound or exact words from a silent photograph.\nCan a silent photograph establish the exact spoken words?",
+        "answer": "No; the written account supplies them.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Say"
+        "prompt": "Explain the difference between “Talk” and “Speak” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Navigation App” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Talk” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Mona talks with a colleague. Speak means use spoken language; say introduces words or a statement.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Communication Verbs: In Context",
-      "idea": "30-45 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking about words at a meeting",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona talks with a colleague before a meeting. She tells him the start time. She explains the room change. The organizer declares that the meeting is open. Outside, someone yells a warning from a distance. Mona uses the written account to choose each verb. Some words have similar meanings, such as shout and yell. She does not identify the sound or exact words from a silent photograph. Ask: Can a silent photograph establish the exact spoken words?"
     },
     "spacedReview": "1 lesson(s) back: Navigation App, Pin from maps-navigation-3\n3 lesson(s) back: Map, Legend from maps-navigation-1\n7 lesson(s) back: Rv, Trailer from gas-station-4"
   },
@@ -207,7 +212,7 @@
     "targetWordsArabic": [
       "يغمغم",
       "يتلعثم",
-      "يتأتئ",
+      "يتأتئ أو يتلعثم",
       "يغني أو ينشد",
       "يردد",
       "يناقش",
@@ -222,136 +227,141 @@
       "يطرح مقترحًا"
     ],
     "usage": {
-      "goal": "Learn to use common communication verbs 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to communication verbs.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mumble", "Stutter", "Stammer"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Mumble, Stutter, Stammer. The situation requires the person to mumble next.",
+          "scenario": "The account uses mumble for quiet, unclear speech. Stutter and stammer are overlapping words for disrupted speech, including repetitions or pauses; they are not two guaranteed separate diagnoses.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for the quiet, unclear speech?",
             "options": ["Mumble", "Stutter", "Stammer"],
             "expectedAnswer": "Mumble"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Mumble, Stutter, Stammer. The situation requires the person to mumble next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Mumble, Stutter, Stammer in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A quiet conversation setting; no caricature or visual claim of a speech diagnosis. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sing", "Chant", "Discuss"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Sing, Chant, Discuss. The situation requires the person to sing next.",
+          "scenario": "The speaker sings a musical line. Chant can repeat words rhythmically; discuss means talk about a topic.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for the musical line?",
             "options": ["Sing", "Chant", "Discuss"],
             "expectedAnswer": "Sing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Sing, Chant, Discuss. The situation requires the person to sing next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Sing, Chant, Discuss in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One modest male adult at a microphone, no audience; exact sound is written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Debate", "Argue", "Agree"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Debate, Argue, Agree. The situation requires the person to debate next.",
+          "scenario": "The group debates different sides of an idea. Argue can give reasons or involve disagreement; agree means hold the same opinion or accept a proposal.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for comparing the sides?",
             "options": ["Debate", "Argue", "Agree"],
             "expectedAnswer": "Debate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Debate, Argue, Agree. The situation requires the person to debate next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Debate, Argue, Agree in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An empty discussion table; the type of spoken exchange comes from the text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Disagree", "Negotiate", "Persuade"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Disagree, Negotiate, Persuade. The situation requires the person to disagree next.",
+          "scenario": "Mona disagrees with the suggestion. Negotiate means discuss terms toward an agreement; persuade concerns influencing a decision or belief.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb describes Mona's different opinion in the account?",
             "options": ["Disagree", "Negotiate", "Persuade"],
             "expectedAnswer": "Disagree"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Disagree, Negotiate, Persuade. The situation requires the person to disagree next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Disagree, Negotiate, Persuade in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A quiet empty meeting setting; no assumed emotion or opinion from appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Convince", "Suggest", "Propose"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Convince, Suggest, Propose. The situation requires the person to convince next.",
+          "scenario": "Her colleague tries to convince her with reasons. Suggest puts an idea forward; propose can put forward a plan, often formally.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for making her believe the idea?",
             "options": ["Convince", "Suggest", "Propose"],
             "expectedAnswer": "Convince"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Convince, Suggest, Propose. The situation requires the person to convince next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Convince, Suggest, Propose in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A plain discussion desk; actual beliefs and reasoning are written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Communication Verbs: Mini Dialogue",
-      "text": "Maya is in a situation connected to communication verbs. She uses the new words to understand what she sees and what happens next. The media team works with mumble, stutter, and stammer while preparing the content. Each term connects to a different step in communication or production. The media team works with sing, chant, and discuss while preparing the content. Each term connects to a different step in communication or production.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Communication Verbs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing an idea respectfully",
+      "text": "At a language group, Mona reads a short account. One speaker mumbles, and another sings a line from a song. The group debates two ideas. Mona disagrees with one suggestion. Her colleague tries to convince her with a reason. They listen respectfully. A pause or repeated sound does not tell the group what someone thinks. The written account gives the verbs; the lesson does not diagnose speech conditions.",
+      "imageBrief": "Support for Discussing an idea respectfully. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Mumble, Stutter, Stammer. The situation requires the person to mumble next.\nWhat should the person do next?",
+        "prompt": "The account uses mumble for quiet, unclear speech. Stutter and stammer are overlapping words for disrupted speech, including repetitions or pauses; they are not two guaranteed separate diagnoses.\nWhich verb does the account use for the quiet, unclear speech?",
         "answer": "Mumble",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Sing, Chant, Discuss. The situation requires the person to sing next.\nWhat should the person do next?",
+        "prompt": "The speaker sings a musical line. Chant can repeat words rhythmically; discuss means talk about a topic.\nWhich verb does the account use for the musical line?",
         "answer": "Sing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Debate, Argue, Agree. The situation requires the person to debate next.\nWhat should the person do next?",
+        "prompt": "The group debates different sides of an idea. Argue can give reasons or involve disagreement; agree means hold the same opinion or accept a proposal.\nWhich verb does the account use for comparing the sides?",
         "answer": "Debate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Disagree, Negotiate, Persuade. The situation requires the person to disagree next.\nWhat should the person do next?",
+        "prompt": "Mona disagrees with the suggestion. Negotiate means discuss terms toward an agreement; persuade concerns influencing a decision or belief.\nWhich verb describes Mona's different opinion in the account?",
         "answer": "Disagree",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Convince, Suggest, Propose. The situation requires the person to convince next.\nWhat should the person do next?",
+        "prompt": "Her colleague tries to convince her with reasons. Suggest puts an idea forward; propose can put forward a plan, often formally.\nWhich verb does the account use for making her believe the idea?",
         "answer": "Convince",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Mumble"
+        "prompt": "At a language group, Mona reads a short account. One speaker mumbles, and another sings a line from a song. The group debates two ideas. Mona disagrees with one suggestion. Her colleague tries to convince her with a reason. They listen respectfully. A pause or repeated sound does not tell the group what someone thinks. The written account gives the verbs; the lesson does not diagnose speech conditions.\nHow does the group listen to the speakers?",
+        "answer": "Respectfully.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Stammer"
+        "prompt": "Explain the difference between “Mumble” and “Stutter” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Talk” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Mumble” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The account uses mumble for quiet, unclear speech. Stutter and stammer are overlapping words for disrupted speech, including repetitions or pauses; they are not two guaranteed separate diagnoses.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Communication Verbs: In Context",
-      "idea": "30-45 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing an idea respectfully",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a language group, Mona reads a short account. One speaker mumbles, and another sings a line from a song. The group debates two ideas. Mona disagrees with one suggestion. Her colleague tries to convince her with a reason. They listen respectfully. A pause or repeated sound does not tell the group what someone thinks. The written account gives the verbs; the lesson does not diagnose speech conditions. Ask: How does the group listen to the speakers?"
     },
     "spacedReview": "1 lesson(s) back: Talk, Speak from communication-verbs-1\n3 lesson(s) back: Telescope, Altimeter from maps-navigation-2\n7 lesson(s) back: Big, Small from spatial-relations-1"
   },
@@ -400,136 +410,141 @@
       "يلوّح بيده"
     ],
     "usage": {
-      "goal": "Learn to use common communication verbs 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to communication verbs.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Write", "Read", "Type"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Write, Read, Type. The situation requires the person to write next.",
+          "scenario": "Mona writes the note. Read means understand written words; type means enter text with keys.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb describes Mona forming the written note?",
             "options": ["Write", "Read", "Type"],
             "expectedAnswer": "Write"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Write, Read, Type. The situation requires the person to write next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Write, Read, Type in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One modest adult man's cropped hand writing on blank paper, no readable letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Email", "Text", "Print"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Email, Text, Print. The situation requires the person to email next.",
+          "scenario": "Mona emails the note. Text sends a short message; print produces a paper copy.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for sending the electronic-mail message?",
             "options": ["Email", "Text", "Print"],
             "expectedAnswer": "Email"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Email, Text, Print. The situation requires the person to email next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Email, Text, Print in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A blank email interface on a plain computer; no real address or message. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Publish", "Edit", "Draft"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Publish, Edit, Draft. The situation requires the person to publish next.",
+          "scenario": "Mona publishes the final note for others to read. Edit improves a text; draft produces an initial version.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for making the final note available?",
             "options": ["Publish", "Edit", "Draft"],
             "expectedAnswer": "Publish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Publish, Edit, Draft. The situation requires the person to publish next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Publish, Edit, Draft in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A blank publication interface on a computer, no invented audience or message. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Revise", "Gesture", "Nod"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Revise, Gesture, Nod. The situation requires the person to revise next.",
+          "scenario": "Mona revises a sentence. Gesture communicates with movement; nod often moves the head down and up.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb does the account use for changing the sentence?",
             "options": ["Revise", "Gesture", "Nod"],
             "expectedAnswer": "Revise"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Revise, Gesture, Nod. The situation requires the person to revise next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Revise, Gesture, Nod in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An empty editing desk with blank pages; changes are written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Shake Head", "Point", "Wave"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Shake Head, Point, Wave. The situation requires the person to shake head next.",
+          "scenario": "Her colleague shakes his head to show disagreement in this example. Point directs attention, and wave moves a hand for a greeting or another signal.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which phrase names the stated side-to-side head movement?",
             "options": ["Shake Head", "Point", "Wave"],
             "expectedAnswer": "Shake Head"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Shake Head, Point, Wave. The situation requires the person to shake head next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Shake Head, Point, Wave in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A restrained illustration of a modest adult man's side-to-side head movement; no universal gesture-meaning claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Communication Verbs: Simple Message",
-      "text": "Maya is in a situation connected to communication verbs. She uses the new words to understand what she sees and what happens next. The media team works with write, read, and type while preparing the content. Each term connects to a different step in communication or production. The media team works with email, text, and print while preparing the content. Each term connects to a different step in communication or production.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Communication Verbs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Sending and revising a message",
+      "text": "Mona writes a meeting note. She emails it to her colleague and publishes the final version on the team's page. Later, she revises one sentence. At the meeting, her colleague shakes his head to show disagreement in this stated example. Mona asks what he means. Gestures can vary by context and culture. She checks the account instead of assuming that every head movement has one universal meaning.",
+      "imageBrief": "Support for Sending and revising a message. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Write, Read, Type. The situation requires the person to write next.\nWhat should the person do next?",
+        "prompt": "Mona writes the note. Read means understand written words; type means enter text with keys.\nWhich verb describes Mona forming the written note?",
         "answer": "Write",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Email, Text, Print. The situation requires the person to email next.\nWhat should the person do next?",
+        "prompt": "Mona emails the note. Text sends a short message; print produces a paper copy.\nWhich verb does the account use for sending the electronic-mail message?",
         "answer": "Email",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Publish, Edit, Draft. The situation requires the person to publish next.\nWhat should the person do next?",
+        "prompt": "Mona publishes the final note for others to read. Edit improves a text; draft produces an initial version.\nWhich verb does the account use for making the final note available?",
         "answer": "Publish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Revise, Gesture, Nod. The situation requires the person to revise next.\nWhat should the person do next?",
+        "prompt": "Mona revises a sentence. Gesture communicates with movement; nod often moves the head down and up.\nWhich verb does the account use for changing the sentence?",
         "answer": "Revise",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Shake Head, Point, Wave. The situation requires the person to shake head next.\nWhat should the person do next?",
+        "prompt": "Her colleague shakes his head to show disagreement in this example. Point directs attention, and wave moves a hand for a greeting or another signal.\nWhich phrase names the stated side-to-side head movement?",
         "answer": "Shake Head",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Write"
+        "prompt": "Mona writes a meeting note. She emails it to her colleague and publishes the final version on the team's page. Later, she revises one sentence. At the meeting, her colleague shakes his head to show disagreement in this stated example. Mona asks what he means. Gestures can vary by context and culture. She checks the account instead of assuming that every head movement has one universal meaning.\nWhy does Mona ask what the gesture means?",
+        "answer": "Its meaning can depend on context and culture.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Type"
+        "prompt": "Explain the difference between “Write” and “Read” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Mumble” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Write” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Mona writes the note. Read means understand written words; type means enter text with keys.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Communication Verbs: In Context",
-      "idea": "30-45 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Sending and revising a message",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona writes a meeting note. She emails it to her colleague and publishes the final version on the team's page. Later, she revises one sentence. At the meeting, her colleague shakes his head to show disagreement in this stated example. Mona asks what he means. Gestures can vary by context and culture. She checks the account instead of assuming that every head movement has one universal meaning. Ask: Why does Mona ask what the gesture means?"
     },
     "spacedReview": "1 lesson(s) back: Mumble, Stutter from communication-verbs-2\n3 lesson(s) back: Navigation App, Pin from maps-navigation-3\n7 lesson(s) back: Remote, Proximate from spatial-relations-2"
   },
@@ -548,83 +563,88 @@
       "يهز كتفيه",
       "يعطي إشارة",
       "يمثّل بالإيماء",
-      "يتواصل بلغة الإشارة أو يوقّع",
+      "يتواصل بلغة الإشارة",
       "يغمز"
     ],
     "usage": {
-      "goal": "Learn to use common communication verbs 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to communication verbs.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Shrug", "Signal", "Mime"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Shrug, Signal, Mime. The situation requires the person to shrug next.",
+          "scenario": "The colleague shrugs by raising his shoulders. Signal can use movement, light or sound; mime acts something out without spoken words.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb names the stated shoulder movement?",
             "options": ["Shrug", "Signal", "Mime"],
             "expectedAnswer": "Shrug"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Shrug, Signal, Mime. The situation requires the person to shrug next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Shrug, Signal, Mime in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One modest male adult with raised shoulders, no exaggerated emotion or bystanders. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sign", "Wink"],
-          "scenario": "During a routine communication verbs task, an adult considers three possible actions: Sign, Wink, Shrug. The situation requires the person to sign next.",
+          "scenario": "Sign here means communicate in a sign language, rather than write a signature. Wink means briefly close and open one eyelid.",
           "check": {
-            "question": "What should the person do next?",
+            "question": "Which verb names sign-language communication in this example?",
             "options": ["Sign", "Wink", "Shrug"],
             "expectedAnswer": "Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a communication verbs context illustrating this situation: During a routine communication verbs task, an adult considers three possible actions: Sign, Wink, Shrug. The situation requires the person to sign next. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult communication verbs scene showing lesson-related items or actions including Sign, Wink in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. Hold invented sign-language depictions; use an independently verified reference with correct hand shapes if available. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Communication Verbs: Notice-Style Text",
-      "text": "Maya is in a situation connected to communication verbs. She uses the new words to understand what she sees and what happens next. The media team works with shrug, signal, and mime while preparing the content. Each term connects to a different step in communication or production. The media team works with sign and wink while preparing the content. Each term connects to a different step in communication or production.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Communication Verbs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking about a gesture",
+      "text": "At a workshop, Mona sees her colleague shrug. She asks about the signal. The trainer explains that mime uses movement without words. Another participant can sign in a sign language. A wink is a quick movement of one eyelid. Mona does not assume the same meaning for every movement. She asks the person and respects their answer. A picture is not enough to identify a complete sign language.",
+      "imageBrief": "Support for Asking about a gesture. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Shrug, Signal, Mime. The situation requires the person to shrug next.\nWhat should the person do next?",
+        "prompt": "The colleague shrugs by raising his shoulders. Signal can use movement, light or sound; mime acts something out without spoken words.\nWhich verb names the stated shoulder movement?",
         "answer": "Shrug",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine communication verbs task, an adult considers three possible actions: Sign, Wink, Shrug. The situation requires the person to sign next.\nWhat should the person do next?",
+        "prompt": "Sign here means communicate in a sign language, rather than write a signature. Wink means briefly close and open one eyelid.\nWhich verb names sign-language communication in this example?",
         "answer": "Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Shrug"
+        "prompt": "At a workshop, Mona sees her colleague shrug. She asks about the signal. The trainer explains that mime uses movement without words. Another participant can sign in a sign language. A wink is a quick movement of one eyelid. Mona does not assume the same meaning for every movement. She asks the person and respects their answer. A picture is not enough to identify a complete sign language.\nWhat does Mona do instead of assuming a meaning?",
+        "answer": "She asks the person.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Mime"
+        "prompt": "Explain the difference between “Shrug” and “Signal” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Write” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Shrug” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The colleague shrugs by raising his shoulders. Signal can use movement, light or sound; mime acts something out without spoken words.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Communication Verbs: In Context",
-      "idea": "30-45 seconds contextual scene in the media setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the media setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking about a gesture",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a workshop, Mona sees her colleague shrug. She asks about the signal. The trainer explains that mime uses movement without words. Another participant can sign in a sign language. A wink is a quick movement of one eyelid. Mona does not assume the same meaning for every movement. She asks the person and respects their answer. A picture is not enough to identify a complete sign language. Ask: What does Mona do instead of assuming a meaning?"
     },
     "spacedReview": "1 lesson(s) back: Write, Read from communication-verbs-3\n3 lesson(s) back: Talk, Speak from communication-verbs-1\n7 lesson(s) back: Horizontal, Vertical from spatial-relations-3"
   }

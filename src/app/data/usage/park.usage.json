@@ -28,151 +28,149 @@
     ],
     "targetWordsArabic": [
       "مقعد طويل (دكة / بانك)",
-      "-",
-      "-",
-      "-",
-      "-",
+      "نافورة",
+      "شرفة حديقة (برجولة)",
+      "جسر",
+      "تمثال",
       "سلة مهملات",
-      "-",
-      "-",
-      "-",
-      "-",
+      "عمود إنارة",
+      "طاولة نزهة",
+      "مبرد مياه للشرب",
+      "حامل دراجات",
       "بركة ماء (غدير)",
-      "-",
-      "-",
-      "-",
-      "-"
+      "جدول ماء",
+      "تل",
+      "مرج عشبي",
+      "شجرة ظليلة"
     ],
     "usage": {
-      "goal": "Learn to use common the park 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "130-160 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bench", "Fountain", "Gazebo"],
-          "scenario": "During a routine the park task, an adult compares Bench, Fountain, Gazebo. The person selects Bench for the next step.",
+          "scenario": "A green wooden park bench beneath a shade tree provides a peaceful resting spot for walkers. Trash bins and signs line walkways. A tired visitor sits upon the bench.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which outdoor seating fixture accommodates relaxing park visitors?",
             "options": ["Bench", "Fountain", "Gazebo"],
             "expectedAnswer": "Bench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Bench, Fountain, Gazebo. The person selects Bench for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Bench, Fountain, Gazebo in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Bench as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bridge", "Statue", "Trash Can"],
-          "scenario": "During a routine the park task, an adult compares Bridge, Statue, Trash Can. The person selects Bridge for the next step.",
+          "scenario": "An arched stone foot bridge spans the quiet park stream, connecting grassy lawns to walking trails. Pavilions and docks line the lake. Pedestrians cross the historic bridge.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which arched structure carries pedestrians over a park waterway?",
             "options": ["Bridge", "Statue", "Trash Can"],
             "expectedAnswer": "Bridge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Bridge, Statue, Trash Can. The person selects Bridge for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Bridge, Statue, Trash Can in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Bridge as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Lamp Post", "Picnic Table", "Drinking Fountain"],
-          "scenario": "During a routine the park task, an adult compares Lamp Post, Picnic Table, Drinking Fountain. The person selects Lamp Post for the next step.",
+          "scenario": "A cast-iron decorative lamp post illuminates the paved promenade as evening twilight descends. Benches and trees line the trail. Warm light shines from the tall lamp post.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which vertical luminaire standard illuminates park pathways at night?",
             "options": ["Lamp Post", "Picnic Table", "Drinking Fountain"],
             "expectedAnswer": "Lamp Post"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Lamp Post, Picnic Table, Drinking Fountain. The person selects Lamp Post for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Lamp Post, Picnic Table, Drinking Fountain in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Lamp Post as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bike Rack", "Pond", "Stream"],
-          "scenario": "During a routine the park task, an adult compares Bike Rack, Pond, Stream. The person selects Bike Rack for the next step.",
+          "scenario": "A tubular steel bike rack outside the park pavilion secures bicycles with sturdy locks. Parking lots and benches surround the gate. Cyclists lock frames to the bike rack.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which metal parking frame secures bicycles while riders visit the park?",
             "options": ["Bike Rack", "Pond", "Stream"],
             "expectedAnswer": "Bike Rack"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Bike Rack, Pond, Stream. The person selects Bike Rack for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Bike Rack, Pond, Stream in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Bike Rack as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hill", "Meadow", "Shade Tree"],
-          "scenario": "During a routine the park task, an adult compares Hill, Meadow, Shade Tree. The person selects Hill for the next step.",
+          "scenario": "A gentle grassy hill offers elevated panoramic views over the city park lake and playgrounds. Lawns and valleys roll below. Families picnic on the sunny crest of the hill.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which elevated rounded landform rises above the surrounding park lawns?",
             "options": ["Hill", "Meadow", "Shade Tree"],
             "expectedAnswer": "Hill"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Hill, Meadow, Shade Tree. The person selects Hill for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Hill, Meadow, Shade Tree in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Hill as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ]
     },
     "reading": {
-      "title": "The Park: Short Description",
-      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice bench, fountain, and gazebo. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice bridge, statue, and trash can. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Park benches, arched bridges, lamp posts and bike racks",
+      "text": "A green wooden park bench beneath a shade tree provides a peaceful resting spot for walkers. Trash bins and signs line walkways. A tired visitor sits upon the bench. An arched stone foot bridge spans the quiet park stream, connecting grassy lawns to walking trails. Pavilions and docks line the lake. Pedestrians cross the historic bridge. A cast-iron decorative lamp post illuminates the paved promenade as evening twilight descends. Benches and trees line the trail. Warm light shines from the tall lamp post. A tubular steel bike rack outside the park pavilion secures bicycles with sturdy locks. Parking lots and benches surround the gate. Cyclists lock frames to the bike rack. A gentle grassy hill offers elevated panoramic views over the city park lake and playgrounds. Lawns and valleys roll below. Families picnic on the sunny crest of the hill.",
+      "imageBrief": "Use independently inspected word references to support Park benches, arched bridges, lamp posts and bike racks; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the park task, an adult compares Bench, Fountain, Gazebo. The person selects Bench for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A green wooden park bench beneath a shade tree provides a peaceful resting spot for walkers. Trash bins and signs line walkways. A tired visitor sits upon the bench.\nWhich outdoor seating fixture accommodates relaxing park visitors?",
         "answer": "Bench",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Bridge, Statue, Trash Can. The person selects Bridge for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An arched stone foot bridge spans the quiet park stream, connecting grassy lawns to walking trails. Pavilions and docks line the lake. Pedestrians cross the historic bridge.\nWhich arched structure carries pedestrians over a park waterway?",
         "answer": "Bridge",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Lamp Post, Picnic Table, Drinking Fountain. The person selects Lamp Post for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A cast-iron decorative lamp post illuminates the paved promenade as evening twilight descends. Benches and trees line the trail. Warm light shines from the tall lamp post.\nWhich vertical luminaire standard illuminates park pathways at night?",
         "answer": "Lamp Post",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Bike Rack, Pond, Stream. The person selects Bike Rack for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A tubular steel bike rack outside the park pavilion secures bicycles with sturdy locks. Parking lots and benches surround the gate. Cyclists lock frames to the bike rack.\nWhich metal parking frame secures bicycles while riders visit the park?",
         "answer": "Bike Rack",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Hill, Meadow, Shade Tree. The person selects Hill for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A gentle grassy hill offers elevated panoramic views over the city park lake and playgrounds. Lawns and valleys roll below. Families picnic on the sunny crest of the hill.\nWhich elevated rounded landform rises above the surrounding park lawns?",
         "answer": "Hill",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Bench"
+        "prompt": "A green wooden park bench beneath a shade tree provides a peaceful resting spot for walkers. Trash bins and signs line walkways. A tired visitor sits upon the bench. An arched stone foot bridge spans the quiet park stream, connecting grassy lawns to walking trails. Pavilions and docks line the lake. Pedestrians cross the historic bridge. A cast-iron decorative lamp post illuminates the paved promenade as evening twilight descends. Benches and trees line the trail. Warm light shines from the tall lamp post. A tubular steel bike rack outside the park pavilion secures bicycles with sturdy locks. Parking lots and benches surround the gate. Cyclists lock frames to the bike rack. A gentle grassy hill offers elevated panoramic views over the city park lake and playgrounds. Lawns and valleys roll below. Families picnic on the sunny crest of the hill.\nCompare “Bench” and “Fountain” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Gazebo"
-      },
-      {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Birdbath” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original short account using Bench, Fountain, Gazebo, Bridge, Statue, Trash Can, Lamp Post, Picnic Table, Drinking Fountain, Bike Rack, Pond, Stream, Hill, Meadow, Shade Tree in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Park benches, arched bridges, lamp posts and bike racks",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A green wooden park bench beneath a shade tree provides a peaceful resting spot for walkers. Trash bins and signs line walkways. A tired visitor sits upon the bench. Which outdoor seating fixture accommodates relaxing park visitors?"
     },
     "spacedReview": "1 lesson(s) back: Birdbath, Compost Bin from garden-5\n3 lesson(s) back: Pitchfork, Sprinkler from garden-3\n7 lesson(s) back: Cream, Flour from farm-5"
   },
@@ -206,150 +204,148 @@
     "targetWordsArabic": [
       "حوض زهور (روضة أزهار)",
       "عشب أخضر",
-      "-",
-      "-",
-      "-",
+      "حصاة",
+      "مخروط الصنوبر",
+      "ثمرة البلوط",
       "بطة",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
+      "بجعة",
+      "سنجاب",
+      "حمامة",
+      "طائر أبو الحناء",
+      "ضفدع",
+      "سلحفاة",
       "أرنب",
       "إوزة (إوز)",
-      "-"
+      "عصفور دوري"
     ],
     "usage": {
-      "goal": "Learn to use common the park 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "127-157 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Flower Bed", "Grass", "Pebble"],
-          "scenario": "During a routine the park task, an adult compares Flower Bed, Grass, Pebble. The person selects Flower Bed for the next step.",
+          "scenario": "A formal geometric flower bed is planted with colourful rows of blooming marigolds and petunias. Grass lawns and fountains flank the plaza. Park staff tend the flower bed.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which cultivated garden plot in a public park displays ornamental flowers?",
             "options": ["Flower Bed", "Grass", "Pebble"],
             "expectedAnswer": "Flower Bed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Flower Bed, Grass, Pebble. The person selects Flower Bed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Flower Bed, Grass, Pebble in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Flower Bed as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pinecone", "Acorn", "Duck"],
-          "scenario": "During a routine the park task, an adult compares Pinecone, Acorn, Duck. The person selects Pinecone for the next step.",
+          "scenario": "A brown woody pinecone drops from an evergreen pine bough onto the needle-strewn forest floor. Acorns and chestnuts lie scattered. Children collect a symmetrical pinecone.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which woody conical seed structure falls from evergreen conifers?",
             "options": ["Pinecone", "Acorn", "Duck"],
             "expectedAnswer": "Pinecone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Pinecone, Acorn, Duck. The person selects Pinecone for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Pinecone, Acorn, Duck in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Pinecone as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Swan", "Squirrel", "Pigeon"],
-          "scenario": "During a routine the park task, an adult compares Swan, Squirrel, Pigeon. The person selects Swan for the next step.",
+          "scenario": "A graceful white mute swan glides across the tranquil park lake with arched wings and orange beak. Geese and mallards swim near the bank. The swan preens its spotless feathers.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which large aquatic bird with arched neck glides gracefully across lakes?",
             "options": ["Swan", "Squirrel", "Pigeon"],
             "expectedAnswer": "Swan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Swan, Squirrel, Pigeon. The person selects Swan for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Swan, Squirrel, Pigeon in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Swan as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Robin", "Frog", "Turtle"],
-          "scenario": "During a routine the park task, an adult compares Robin, Frog, Turtle. The person selects Robin for the next step.",
+          "scenario": "A cheerful American robin with an orange-red breast hops along the trimmed lawn hunting earthworms. Pigeons and sparrows forage nearby. The robin perches on a low rail.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which orange-breasted songbird searches for worms on park lawns?",
             "options": ["Robin", "Frog", "Turtle"],
             "expectedAnswer": "Robin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Robin, Frog, Turtle. The person selects Robin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Robin, Frog, Turtle in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Robin as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Rabbit", "Goose", "Sparrow"],
-          "scenario": "During a routine the park task, an adult compares Rabbit, Goose, Sparrow. The person selects Rabbit for the next step.",
+          "scenario": "A wild cottontail rabbit nibbles clover leaves quietly along the edge of the park woodland. Squirrels and chipmunks forage near oaks. The rabbit twitches its long ears.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which small wild herbivorous mammal with long ears nibbles clover?",
             "options": ["Rabbit", "Goose", "Sparrow"],
             "expectedAnswer": "Rabbit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Rabbit, Goose, Sparrow. The person selects Rabbit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Rabbit, Goose, Sparrow in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Rabbit as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ]
     },
     "reading": {
-      "title": "The Park: Mini Dialogue",
-      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice flower bed, grass, and pebble. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice pinecone, acorn, and duck. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Formal flower beds, fallen pinecones, mute swans and robins",
+      "text": "A formal geometric flower bed is planted with colourful rows of blooming marigolds and petunias. Grass lawns and fountains flank the plaza. Park staff tend the flower bed. A brown woody pinecone drops from an evergreen pine bough onto the needle-strewn forest floor. Acorns and chestnuts lie scattered. Children collect a symmetrical pinecone. A graceful white mute swan glides across the tranquil park lake with arched wings and orange beak. Geese and mallards swim near the bank. The swan preens its spotless feathers. A cheerful American robin with an orange-red breast hops along the trimmed lawn hunting earthworms. Pigeons and sparrows forage nearby. The robin perches on a low rail. A wild cottontail rabbit nibbles clover leaves quietly along the edge of the park woodland. Squirrels and chipmunks forage near oaks. The rabbit twitches its long ears.",
+      "imageBrief": "Use independently inspected word references to support Formal flower beds, fallen pinecones, mute swans and robins; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the park task, an adult compares Flower Bed, Grass, Pebble. The person selects Flower Bed for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A formal geometric flower bed is planted with colourful rows of blooming marigolds and petunias. Grass lawns and fountains flank the plaza. Park staff tend the flower bed.\nWhich cultivated garden plot in a public park displays ornamental flowers?",
         "answer": "Flower Bed",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Pinecone, Acorn, Duck. The person selects Pinecone for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A brown woody pinecone drops from an evergreen pine bough onto the needle-strewn forest floor. Acorns and chestnuts lie scattered. Children collect a symmetrical pinecone.\nWhich woody conical seed structure falls from evergreen conifers?",
         "answer": "Pinecone",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Swan, Squirrel, Pigeon. The person selects Swan for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A graceful white mute swan glides across the tranquil park lake with arched wings and orange beak. Geese and mallards swim near the bank. The swan preens its spotless feathers.\nWhich large aquatic bird with arched neck glides gracefully across lakes?",
         "answer": "Swan",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Robin, Frog, Turtle. The person selects Robin for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A cheerful American robin with an orange-red breast hops along the trimmed lawn hunting earthworms. Pigeons and sparrows forage nearby. The robin perches on a low rail.\nWhich orange-breasted songbird searches for worms on park lawns?",
         "answer": "Robin",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Rabbit, Goose, Sparrow. The person selects Rabbit for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A wild cottontail rabbit nibbles clover leaves quietly along the edge of the park woodland. Squirrels and chipmunks forage near oaks. The rabbit twitches its long ears.\nWhich small wild herbivorous mammal with long ears nibbles clover?",
         "answer": "Rabbit",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Flower Bed"
+        "prompt": "A formal geometric flower bed is planted with colourful rows of blooming marigolds and petunias. Grass lawns and fountains flank the plaza. Park staff tend the flower bed. A brown woody pinecone drops from an evergreen pine bough onto the needle-strewn forest floor. Acorns and chestnuts lie scattered. Children collect a symmetrical pinecone. A graceful white mute swan glides across the tranquil park lake with arched wings and orange beak. Geese and mallards swim near the bank. The swan preens its spotless feathers. A cheerful American robin with an orange-red breast hops along the trimmed lawn hunting earthworms. Pigeons and sparrows forage nearby. The robin perches on a low rail. A wild cottontail rabbit nibbles clover leaves quietly along the edge of the park woodland. Squirrels and chipmunks forage near oaks. The rabbit twitches its long ears.\nCompare “Flower Bed” and “Grass” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Pebble"
-      },
-      {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bench” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original short account using Flower Bed, Grass, Pebble, Pinecone, Acorn, Duck, Swan, Squirrel, Pigeon, Robin, Frog, Turtle, Rabbit, Goose, Sparrow in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Formal flower beds, fallen pinecones, mute swans and robins",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A formal geometric flower bed is planted with colourful rows of blooming marigolds and petunias. Grass lawns and fountains flank the plaza. Park staff tend the flower bed. Which cultivated garden plot in a public park displays ornamental flowers?"
     },
     "spacedReview": "1 lesson(s) back: Bench, Fountain from park-1\n3 lesson(s) back: Worm, Snail from garden-4\n7 lesson(s) back: Straw, Farmer from farm-6"
   },
@@ -383,150 +379,148 @@
     "targetWordsArabic": [
       "مشي (المشي على رمال الشاطئ)",
       "ركض (الجري الخفيف على الشاطئ / هرولة)",
-      "-",
+      "ركوب الدراجات",
       "نزهة (رحلة نزهة وتناول طعام في الهواء الطلق)",
       "قراءة (ممارسة القراءة على الشاطئ)",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
+      "الجلوس",
+      "التمدد",
+      "تنزيه الكلاب",
+      "التصوير",
+      "مراقبة الطيور",
+      "طائرة ورقية",
       "فريزبي (قرص طائر)",
-      "-",
-      "-",
-      "-"
+      "كرة قدم",
+      "حبل قفز",
+      "لوح تزلج"
     ],
     "usage": {
-      "goal": "Learn to use common the park 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the park.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "124-154 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Walking", "Jogging", "Cycling"],
-          "scenario": "During a routine the park task, an adult compares Walking, Jogging, Cycling. The person selects Walking for the next step.",
+          "scenario": "Park visitors enjoy walking at a leisurely pace along the paved scenic trail loop each morning. Joggers and cyclists pass by. Brisk walking improves cardiorespiratory fitness.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which accessible low-impact locomotion activity follows park trails?",
             "options": ["Walking", "Jogging", "Cycling"],
             "expectedAnswer": "Walking"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Walking, Jogging, Cycling. The person selects Walking for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Walking, Jogging, Cycling in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Walking as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Picnic", "Reading", "Sitting"],
-          "scenario": "During a routine the park task, an adult compares Picnic, Reading, Sitting. The person selects Picnic for the next step.",
+          "scenario": "A family spreads a plaid blanket across the grass to enjoy a sunny midday picnic with sandwiches. Benches and playgrounds sit nearby. Baskets and food unpack for the picnic.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which outdoor social meal is eaten on blankets upon park lawns?",
             "options": ["Picnic", "Reading", "Sitting"],
             "expectedAnswer": "Picnic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Picnic, Reading, Sitting. The person selects Picnic for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Picnic, Reading, Sitting in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Picnic as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Stretching", "Dog Walking", "Photography"],
-          "scenario": "During a routine the park task, an adult compares Stretching, Dog Walking, Photography. The person selects Stretching for the next step.",
+          "scenario": "An athlete performs gentle hamstring stretching on the grass following a five-kilometer run. Walkers and cyclists rest nearby. Slow stretching enhances muscle flexibility.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which physical flexibility exercise lengthens muscles after a workout?",
             "options": ["Stretching", "Dog Walking", "Photography"],
             "expectedAnswer": "Stretching"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Stretching, Dog Walking, Photography. The person selects Stretching for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Stretching, Dog Walking, Photography in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Stretching as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bird Watching", "Kite", "Frisbee"],
-          "scenario": "During a routine the park task, an adult compares Bird Watching, Kite, Frisbee. The person selects Bird Watching for the next step.",
+          "scenario": "A naturalist engages in patient bird watching through binoculars to spot migratory warblers in the canopy. Hikers and anglers visit the lake. Quiet bird watching rewards the observer.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which recreational activity observes wild avian species through optics?",
             "options": ["Bird Watching", "Kite", "Frisbee"],
             "expectedAnswer": "Bird Watching"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Bird Watching, Kite, Frisbee. The person selects Bird Watching for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Bird Watching, Kite, Frisbee in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Bird Watching as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Soccer Ball", "Jump Rope", "Skateboard"],
-          "scenario": "During a routine the park task, an adult compares Soccer Ball, Jump Rope, Skateboard. The person selects Soccer Ball for the next step.",
+          "scenario": "Children kick a stitched black-and-white soccer ball between portable goal nets on the open field. Frisbees and baseballs fly through the air. The soccer ball bounces across turf.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which spherical inflated sports ball is kicked across grass fields?",
             "options": ["Soccer Ball", "Jump Rope", "Skateboard"],
             "expectedAnswer": "Soccer Ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Soccer Ball, Jump Rope, Skateboard. The person selects Soccer Ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Soccer Ball, Jump Rope, Skateboard in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Soccer Ball as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ]
     },
     "reading": {
-      "title": "The Park: Simple Message",
-      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. The learner connects walking, jogging, and cycling to the main activity and explains what each term means in context. Visitors move through the area and notice picnic, reading, and sitting. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice stretching, dog walking, and photography.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Trail walking, family lawn picnics, stretching and bird watching",
+      "text": "Park visitors enjoy walking at a leisurely pace along the paved scenic trail loop each morning. Joggers and cyclists pass by. Brisk walking improves cardiorespiratory fitness. A family spreads a plaid blanket across the grass to enjoy a sunny midday picnic with sandwiches. Benches and playgrounds sit nearby. Baskets and food unpack for the picnic. An athlete performs gentle hamstring stretching on the grass following a five-kilometer run. Walkers and cyclists rest nearby. Slow stretching enhances muscle flexibility. A naturalist engages in patient bird watching through binoculars to spot migratory warblers in the canopy. Hikers and anglers visit the lake. Quiet bird watching rewards the observer. Children kick a stitched black-and-white soccer ball between portable goal nets on the open field. Frisbees and baseballs fly through the air. The soccer ball bounces across turf.",
+      "imageBrief": "Use independently inspected word references to support Trail walking, family lawn picnics, stretching and bird watching; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the park task, an adult compares Walking, Jogging, Cycling. The person selects Walking for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Park visitors enjoy walking at a leisurely pace along the paved scenic trail loop each morning. Joggers and cyclists pass by. Brisk walking improves cardiorespiratory fitness.\nWhich accessible low-impact locomotion activity follows park trails?",
         "answer": "Walking",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Picnic, Reading, Sitting. The person selects Picnic for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A family spreads a plaid blanket across the grass to enjoy a sunny midday picnic with sandwiches. Benches and playgrounds sit nearby. Baskets and food unpack for the picnic.\nWhich outdoor social meal is eaten on blankets upon park lawns?",
         "answer": "Picnic",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Stretching, Dog Walking, Photography. The person selects Stretching for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An athlete performs gentle hamstring stretching on the grass following a five-kilometer run. Walkers and cyclists rest nearby. Slow stretching enhances muscle flexibility.\nWhich physical flexibility exercise lengthens muscles after a workout?",
         "answer": "Stretching",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Bird Watching, Kite, Frisbee. The person selects Bird Watching for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A naturalist engages in patient bird watching through binoculars to spot migratory warblers in the canopy. Hikers and anglers visit the lake. Quiet bird watching rewards the observer.\nWhich recreational activity observes wild avian species through optics?",
         "answer": "Bird Watching",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Soccer Ball, Jump Rope, Skateboard. The person selects Soccer Ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Children kick a stitched black-and-white soccer ball between portable goal nets on the open field. Frisbees and baseballs fly through the air. The soccer ball bounces across turf.\nWhich spherical inflated sports ball is kicked across grass fields?",
         "answer": "Soccer Ball",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Walking"
+        "prompt": "Park visitors enjoy walking at a leisurely pace along the paved scenic trail loop each morning. Joggers and cyclists pass by. Brisk walking improves cardiorespiratory fitness. A family spreads a plaid blanket across the grass to enjoy a sunny midday picnic with sandwiches. Benches and playgrounds sit nearby. Baskets and food unpack for the picnic. An athlete performs gentle hamstring stretching on the grass following a five-kilometer run. Walkers and cyclists rest nearby. Slow stretching enhances muscle flexibility. A naturalist engages in patient bird watching through binoculars to spot migratory warblers in the canopy. Hikers and anglers visit the lake. Quiet bird watching rewards the observer. Children kick a stitched black-and-white soccer ball between portable goal nets on the open field. Frisbees and baseballs fly through the air. The soccer ball bounces across turf.\nCompare “Walking” and “Jogging” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Cycling"
-      },
-      {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Flower Bed” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original short account using Walking, Jogging, Cycling, Picnic, Reading, Sitting, Stretching, Dog Walking, Photography, Bird Watching, Kite, Frisbee, Soccer Ball, Jump Rope, Skateboard in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Trail walking, family lawn picnics, stretching and bird watching",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Park visitors enjoy walking at a leisurely pace along the paved scenic trail loop each morning. Joggers and cyclists pass by. Brisk walking improves cardiorespiratory fitness. Which accessible low-impact locomotion activity follows park trails?"
     },
     "spacedReview": "1 lesson(s) back: Flower Bed, Grass from park-2\n3 lesson(s) back: Birdbath, Compost Bin from garden-5\n7 lesson(s) back: Rose, Tulip from garden-1"
   },
@@ -558,152 +552,150 @@
       "Recycling Bin"
     ],
     "targetWordsArabic": [
-      "-",
+      "حذاء تزلج بعجلات",
       "كرة الريشة (لعبة الريشة الطائرة)",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "كرة تنس",
+      "بساط يوغا",
+      "دراجة هوائية",
+      "خريطة الحديقة",
+      "لافتة مسار",
+      "لافتة ممنوع السباحة",
+      "لافتة ممنوع المشي على العشب",
+      "لافتة الكلاب مسموح بها",
+      "ممر مشاة",
+      "مطب تهدئة السرعة",
+      "هاتف طوارئ",
+      "لوحة معلومات",
+      "سلة إعادة التدوير"
     ],
     "usage": {
-      "goal": "Learn to use common the park 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the park.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "129-159 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Roller Skates", "Badminton", "Tennis Ball"],
-          "scenario": "During a routine the park task, an adult compares Roller Skates, Badminton, Tennis Ball. The person selects Roller Skates for the next step.",
+          "scenario": "A skater glides along the paved promenade wearing classic four-wheel roller skates and knee pads. Bicycles and skateboards share the lane. Urethane wheels of the roller skates hum.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which vintage wheeled footwear features four quad wheels for gliding?",
             "options": ["Roller Skates", "Badminton", "Tennis Ball"],
             "expectedAnswer": "Roller Skates"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Roller Skates, Badminton, Tennis Ball. The person selects Roller Skates for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Roller Skates, Badminton, Tennis Ball in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Roller Skates as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Yoga Mat", "Bicycle", "Park Map"],
-          "scenario": "During a routine the park task, an adult compares Yoga Mat, Bicycle, Park Map. The person selects Yoga Mat for the next step.",
+          "scenario": "A park visitor unrolls a non-slip rubber yoga mat upon the grass for morning meditation and poses. Towels and water bottles lie nearby. Poses align on the cushioned yoga mat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which cushioned non-slip exercise mat accommodates outdoor yoga?",
             "options": ["Yoga Mat", "Bicycle", "Park Map"],
             "expectedAnswer": "Yoga Mat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Yoga Mat, Bicycle, Park Map. The person selects Yoga Mat for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Yoga Mat, Bicycle, Park Map in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Yoga Mat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trail Sign", "No Swimming Sign", "Keep Off Grass"],
-          "scenario": "During a routine the park task, an adult compares Trail Sign, No Swimming Sign, Keep Off Grass. The person selects Trail Sign for the next step.",
+          "scenario": "A wooden trail sign at the intersection indicates distances and difficulty ratings for loop trails. Benches and maps guide travelers. Hikers read directions on the trail sign.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which wooden trail marker displays distances and navigational routes?",
             "options": ["Trail Sign", "No Swimming Sign", "Keep Off Grass"],
             "expectedAnswer": "Trail Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Trail Sign, No Swimming Sign, Keep Off Grass. The person selects Trail Sign for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Trail Sign, No Swimming Sign, Keep Off Grass in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Trail Sign as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dog Allowed", "Crosswalk", "Speed Bump"],
-          "scenario": "During a routine the park task, an adult compares Dog Allowed, Crosswalk, Speed Bump. The person selects Dog Allowed for the next step.",
+          "scenario": "A circular metal dog allowed sign confirms that leashed canine companions may enter this meadow. No-entry signs guard wildlife zones. Pet owners note the dog allowed notice.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which posted municipal sign permits leashed pets in designated zones?",
             "options": ["Dog Allowed", "Crosswalk", "Speed Bump"],
             "expectedAnswer": "Dog Allowed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Dog Allowed, Crosswalk, Speed Bump. The person selects Dog Allowed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Dog Allowed, Crosswalk, Speed Bump in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Dog Allowed as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Emergency Phone", "Information Board", "Recycling Bin"],
-          "scenario": "During a routine the park task, an adult compares Emergency Phone, Information Board, Recycling Bin. The person selects Emergency Phone for the next step.",
+          "scenario": "A blue pillar housing an illuminated emergency phone provides direct connection to park rangers. Call boxes and kiosks stand at trails. The emergency phone button lights up.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which public safety call box standard connects visitors to park dispatch?",
             "options": ["Emergency Phone", "Information Board", "Recycling Bin"],
             "expectedAnswer": "Emergency Phone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Emergency Phone, Information Board, Recycling Bin. The person selects Emergency Phone for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Emergency Phone, Information Board, Recycling Bin in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Emergency Phone as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ]
     },
     "reading": {
-      "title": "The Park: Notice-Style Text",
-      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice roller skates, badminton, and tennis ball. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice yoga mat, bicycle, and park map. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Roller skates, yoga mats, directional trail signs and emergency phones",
+      "text": "A skater glides along the paved promenade wearing classic four-wheel roller skates and knee pads. Bicycles and skateboards share the lane. Urethane wheels of the roller skates hum. A park visitor unrolls a non-slip rubber yoga mat upon the grass for morning meditation and poses. Towels and water bottles lie nearby. Poses align on the cushioned yoga mat. A wooden trail sign at the intersection indicates distances and difficulty ratings for loop trails. Benches and maps guide travelers. Hikers read directions on the trail sign. A circular metal dog allowed sign confirms that leashed canine companions may enter this meadow. No-entry signs guard wildlife zones. Pet owners note the dog allowed notice. A blue pillar housing an illuminated emergency phone provides direct connection to park rangers. Call boxes and kiosks stand at trails. The emergency phone button lights up.",
+      "imageBrief": "Use independently inspected word references to support Roller skates, yoga mats, directional trail signs and emergency phones; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the park task, an adult compares Roller Skates, Badminton, Tennis Ball. The person selects Roller Skates for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A skater glides along the paved promenade wearing classic four-wheel roller skates and knee pads. Bicycles and skateboards share the lane. Urethane wheels of the roller skates hum.\nWhich vintage wheeled footwear features four quad wheels for gliding?",
         "answer": "Roller Skates",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Yoga Mat, Bicycle, Park Map. The person selects Yoga Mat for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A park visitor unrolls a non-slip rubber yoga mat upon the grass for morning meditation and poses. Towels and water bottles lie nearby. Poses align on the cushioned yoga mat.\nWhich cushioned non-slip exercise mat accommodates outdoor yoga?",
         "answer": "Yoga Mat",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Trail Sign, No Swimming Sign, Keep Off Grass. The person selects Trail Sign for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A wooden trail sign at the intersection indicates distances and difficulty ratings for loop trails. Benches and maps guide travelers. Hikers read directions on the trail sign.\nWhich wooden trail marker displays distances and navigational routes?",
         "answer": "Trail Sign",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Dog Allowed, Crosswalk, Speed Bump. The person selects Dog Allowed for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A circular metal dog allowed sign confirms that leashed canine companions may enter this meadow. No-entry signs guard wildlife zones. Pet owners note the dog allowed notice.\nWhich posted municipal sign permits leashed pets in designated zones?",
         "answer": "Dog Allowed",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Emergency Phone, Information Board, Recycling Bin. The person selects Emergency Phone for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A blue pillar housing an illuminated emergency phone provides direct connection to park rangers. Call boxes and kiosks stand at trails. The emergency phone button lights up.\nWhich public safety call box standard connects visitors to park dispatch?",
         "answer": "Emergency Phone",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Roller Skates"
+        "prompt": "A skater glides along the paved promenade wearing classic four-wheel roller skates and knee pads. Bicycles and skateboards share the lane. Urethane wheels of the roller skates hum. A park visitor unrolls a non-slip rubber yoga mat upon the grass for morning meditation and poses. Towels and water bottles lie nearby. Poses align on the cushioned yoga mat. A wooden trail sign at the intersection indicates distances and difficulty ratings for loop trails. Benches and maps guide travelers. Hikers read directions on the trail sign. A circular metal dog allowed sign confirms that leashed canine companions may enter this meadow. No-entry signs guard wildlife zones. Pet owners note the dog allowed notice. A blue pillar housing an illuminated emergency phone provides direct connection to park rangers. Call boxes and kiosks stand at trails. The emergency phone button lights up.\nCompare “Roller Skates” and “Badminton” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Tennis Ball"
-      },
-      {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Walking” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original short account using Roller Skates, Badminton, Tennis Ball, Yoga Mat, Bicycle, Park Map, Trail Sign, No Swimming Sign, Keep Off Grass, Dog Allowed, Crosswalk, Speed Bump, Emergency Phone, Information Board, Recycling Bin in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Roller skates, yoga mats, directional trail signs and emergency phones",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A skater glides along the paved promenade wearing classic four-wheel roller skates and knee pads. Bicycles and skateboards share the lane. Urethane wheels of the roller skates hum. Which vintage wheeled footwear features four quad wheels for gliding?"
     },
     "spacedReview": "1 lesson(s) back: Walking, Jogging from park-3\n3 lesson(s) back: Bench, Fountain from park-1\n7 lesson(s) back: Hedge, Bush from garden-2"
   },
@@ -733,127 +725,125 @@
     "targetWordsArabic": [
       "ممر (ممشى الحديقة)",
       "شجرة البلوط",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "ظل",
+      "مسطح عشبي",
+      "يمشي",
+      "يهرول",
+      "يقود دراجة",
+      "يطعم البط",
+      "يطير طائرة ورقية",
+      "يتزلج بالعجلات",
+      "يجلس"
     ],
     "usage": {
-      "goal": "Learn to use common the park 5 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "95-125 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Path", "Oak Tree", "Shade"],
-          "scenario": "During a routine the park task, an adult compares Path, Oak Tree, Shade. The person selects Path for the next step.",
+          "scenario": "A smooth asphalt multi-use path winds beside the riverside willow trees for non-motorized travelers. Lawns and woods border the trail. Travelers share the paved recreation path.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which designated surfaced corridor accommodates trail commuters?",
             "options": ["Path", "Oak Tree", "Shade"],
             "expectedAnswer": "Path"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Path, Oak Tree, Shade. The person selects Path for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Path, Oak Tree, Shade in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Path as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Grass Lawn", "Walk", "Jog"],
-          "scenario": "During a routine the park task, an adult compares Grass Lawn, Walk, Jog. The person selects Grass Lawn for the next step.",
+          "scenario": "A vast expanse of trimmed green grass lawn provides room for frisbee games and community gatherings. Trees and shrubs encircle the turf. Children run across the soft grass lawn.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which broad expanse of mowed green turf accommodates park activities?",
             "options": ["Grass Lawn", "Walk", "Jog"],
             "expectedAnswer": "Grass Lawn"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Grass Lawn, Walk, Jog. The person selects Grass Lawn for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Grass Lawn, Walk, Jog in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Grass Lawn as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cycle", "Feed Ducks", "Fly Kite"],
-          "scenario": "During a routine the park task, an adult compares Cycle, Feed Ducks, Fly Kite. The person selects Cycle for the next step.",
+          "scenario": "Commuters cycle along dedicated park lanes to enjoy fresh air during their morning bicycle ride. Walkers and runners use walkways. Pedals turn as riders cycle toward work.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity propels a pedal-driven bicycle along designated lanes?",
             "options": ["Cycle", "Feed Ducks", "Fly Kite"],
             "expectedAnswer": "Cycle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Cycle, Feed Ducks, Fly Kite. The person selects Cycle for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Cycle, Feed Ducks, Fly Kite in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Cycle as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Roller-Skate", "Sit Down"],
-          "scenario": "During a routine the park task, an adult compares Roller-Skate, Sit Down, Path. The person selects Roller-Skate for the next step.",
+          "scenario": "Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which gliding sport involves rolling on boot-mounted quad wheels?",
             "options": ["Roller-Skate", "Sit Down", "Path"],
             "expectedAnswer": "Roller-Skate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the park context illustrating this situation: During a routine the park task, an adult compares Roller-Skate, Sit Down, Path. The person selects Roller-Skate for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the park scene showing lesson-related items or actions including Roller-Skate, Sit Down in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the park account, showing Roller-Skate as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ]
     },
     "reading": {
-      "title": "The Park: Short Description",
-      "text": "Maya is in a situation connected to the park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice path, oak tree, and shade. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice grass lawn, walk, and jog. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Multi-use asphalt paths, broad grass lawns, cycling and skating",
+      "text": "A smooth asphalt multi-use path winds beside the riverside willow trees for non-motorized travelers. Lawns and woods border the trail. Travelers share the paved recreation path. A vast expanse of trimmed green grass lawn provides room for frisbee games and community gatherings. Trees and shrubs encircle the turf. Children run across the soft grass lawn. Commuters cycle along dedicated park lanes to enjoy fresh air during their morning bicycle ride. Walkers and runners use walkways. Pedals turn as riders cycle toward work. Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.",
+      "imageBrief": "Use independently inspected word references to support Multi-use asphalt paths, broad grass lawns, cycling and skating; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the park task, an adult compares Path, Oak Tree, Shade. The person selects Path for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A smooth asphalt multi-use path winds beside the riverside willow trees for non-motorized travelers. Lawns and woods border the trail. Travelers share the paved recreation path.\nWhich designated surfaced corridor accommodates trail commuters?",
         "answer": "Path",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Grass Lawn, Walk, Jog. The person selects Grass Lawn for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A vast expanse of trimmed green grass lawn provides room for frisbee games and community gatherings. Trees and shrubs encircle the turf. Children run across the soft grass lawn.\nWhich broad expanse of mowed green turf accommodates park activities?",
         "answer": "Grass Lawn",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Cycle, Feed Ducks, Fly Kite. The person selects Cycle for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Commuters cycle along dedicated park lanes to enjoy fresh air during their morning bicycle ride. Walkers and runners use walkways. Pedals turn as riders cycle toward work.\nWhich activity propels a pedal-driven bicycle along designated lanes?",
         "answer": "Cycle",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the park task, an adult compares Roller-Skate, Sit Down, Path. The person selects Roller-Skate for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.\nWhich gliding sport involves rolling on boot-mounted quad wheels?",
         "answer": "Roller-Skate",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Path"
+        "prompt": "A smooth asphalt multi-use path winds beside the riverside willow trees for non-motorized travelers. Lawns and woods border the trail. Travelers share the paved recreation path. A vast expanse of trimmed green grass lawn provides room for frisbee games and community gatherings. Trees and shrubs encircle the turf. Children run across the soft grass lawn. Commuters cycle along dedicated park lanes to enjoy fresh air during their morning bicycle ride. Walkers and runners use walkways. Pedals turn as riders cycle toward work. Recreational athletes roller-skate smoothly along the lakeside boulevard in quad wheeled boots. Joggers and strollers move past. Skaters roller-skate with rhythm and grace.\nCompare “Path” and “Oak Tree” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Shade"
-      },
-      {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Roller Skates” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original short account using Path, Oak Tree, Shade, Grass Lawn, Walk, Jog, Cycle, Feed Ducks, Fly Kite, Roller-Skate, Sit Down in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Multi-use asphalt paths, broad grass lawns, cycling and skating",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A smooth asphalt multi-use path winds beside the riverside willow trees for non-motorized travelers. Lawns and woods border the trail. Travelers share the paved recreation path. Which designated surfaced corridor accommodates trail commuters?"
     },
     "spacedReview": "1 lesson(s) back: Roller Skates, Badminton from park-4\n3 lesson(s) back: Flower Bed, Grass from park-2\n7 lesson(s) back: Pitchfork, Sprinkler from garden-3"
   }

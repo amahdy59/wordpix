@@ -33,7 +33,7 @@
       "حجرة مكالمات",
       "غرفة اجتماع",
       "منطقة استراحة",
-      "-",
+      "مطبخ",
       "شرفة على السطح",
       "مساحة للفعاليات",
       "غرفة تسجيل بودكاست",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "112-142 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hot Desk", "Dedicated Desk", "Private Office", "Phone Booth"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.",
+          "scenario": "Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hot Desk", "Dedicated Desk", "Private Office"],
-            "expectedAnswer": "Hot Desk"
+            "question": "Which desk is reserved for Mona’s regular use?",
+            "options": ["Dedicated Desk", "Hot Desk", "Private Office"],
+            "expectedAnswer": "Dedicated Desk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Hot Desk as the central item; include Hot Desk, Dedicated Desk, and Private Office naturally where visually appropriate, but make the real-world use of Hot Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dedicated Desk in a coworking space context. Use the written scenario as the source of meaning: Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meeting Room", "Lounge Area", "Kitchen", "Rooftop Terrace"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.",
+          "scenario": "The guide shows the Meeting Room for discussions, Lounge Area for sitting, and Kitchen for food preparation. An outdoor Rooftop Terrace is on the building’s roof.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Meeting Room", "Lounge Area", "Kitchen"],
-            "expectedAnswer": "Meeting Room"
+            "question": "Which space is outdoors on the roof?",
+            "options": ["Rooftop Terrace", "Meeting Room", "Lounge Area"],
+            "expectedAnswer": "Rooftop Terrace"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or approaching the Meeting Room as the main location; include Meeting Room, Lounge Area, and Kitchen naturally where visually appropriate, but make the real-world use of Meeting Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Rooftop Terrace in a coworking space context. Use the written scenario as the source of meaning: The guide shows the Meeting Room for discussions, Lounge Area for sitting, and Kitchen for food preparation. An outdoor Rooftop Terrace is on the building’s roof. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Event Space", "Podcast Room", "High-Speed WiFi", "Printer"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.",
+          "scenario": "The Event Space hosts talks. The Podcast Room is equipped for audio recording. Members also ask about High-Speed WiFi and the Printer; speed and availability depend on the actual service.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Event Space", "Podcast Room", "High-Speed WiFi"],
-            "expectedAnswer": "Event Space"
+            "question": "Which room is equipped for recording spoken audio?",
+            "options": ["Podcast Room", "Event Space", "High-Speed WiFi"],
+            "expectedAnswer": "Podcast Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Event Space as the central item; include Event Space, Podcast Room, and High-Speed WiFi naturally where visually appropriate, but make the real-world use of Event Space the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Podcast Room in a coworking space context. Use the written scenario as the source of meaning: The Event Space hosts talks. The Podcast Room is equipped for audio recording. Members also ask about High-Speed WiFi and the Printer; speed and availability depend on the actual service. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Scanner", "Coffee Machine", "Snack Bar"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.",
+          "scenario": "Mona uses a Scanner to turn her paper notes into a digital file. She then gets a drink from the Coffee Machine and a snack from the Snack Bar.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device turns paper notes into a digital file?",
             "options": ["Scanner", "Coffee Machine", "Snack Bar"],
             "expectedAnswer": "Scanner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Scanner as the central item; include Scanner, Coffee Machine, and Snack Bar naturally where visually appropriate, but make the real-world use of Scanner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Scanner in a coworking space context. Use the written scenario as the source of meaning: Mona uses a Scanner to turn her paper notes into a digital file. She then gets a drink from the Coffee Machine and a snack from the Snack Bar. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Coworking Space",
-      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Hot Desk, Dedicated Desk, Private Office, and Phone Booth. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Event Space, Podcast Room, High-Speed WiFi, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Scanner, Coffee Machine, and Snack Bar. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Coworking Space: A visitor’s questions",
+      "text": "Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls. The guide shows the Meeting Room for discussions, Lounge Area for sitting, and Kitchen for food preparation. An outdoor Rooftop Terrace is on the building’s roof. The Event Space hosts talks. The Podcast Room is equipped for audio recording. Members also ask about High-Speed WiFi and the Printer; speed and availability depend on the actual service. Mona uses a Scanner to turn her paper notes into a digital file. She then gets a drink from the Coffee Machine and a snack from the Snack Bar.",
+      "imageBrief": "One uncluttered coworking space setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Desk, Dedicated Desk, Private Office, and Phone Booth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hot Desk",
+        "prompt": "Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls.\nWhich desk is reserved for Mona’s regular use?",
+        "answer": "Dedicated Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Lounge Area, Kitchen, and Rooftop Terrace and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Meeting Room",
+        "prompt": "The guide shows the Meeting Room for discussions, Lounge Area for sitting, and Kitchen for food preparation. An outdoor Rooftop Terrace is on the building’s roof.\nWhich space is outdoors on the roof?",
+        "answer": "Rooftop Terrace",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Event Space, Podcast Room, High-Speed WiFi, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Event Space",
+        "prompt": "The Event Space hosts talks. The Podcast Room is equipped for audio recording. Members also ask about High-Speed WiFi and the Printer; speed and availability depend on the actual service.\nWhich room is equipped for recording spoken audio?",
+        "answer": "Podcast Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Coffee Machine, and Snack Bar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Mona uses a Scanner to turn her paper notes into a digital file. She then gets a drink from the Coffee Machine and a snack from the Snack Bar.\nWhich device turns paper notes into a digital file?",
         "answer": "Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls. The guide shows the Meeting Room for discussions, Lounge Area for sitting, and Kitchen for food preparation. An outdoor Rooftop Terrace is on the building’s roof. The Event Space hosts talks. The Podcast Room is equipped for audio recording. Members also ask about High-Speed WiFi and the Printer; speed and availability depend on the actual service. Mona uses a Scanner to turn her paper notes into a digital file. She then gets a drink from the Coffee Machine and a snack from the Snack Bar.\nExplain the difference between Hot Desk and Dedicated Desk using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hot Desk"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Follow Up” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Hot Desk, Dedicated Desk, Private Office, Phone Booth, Meeting Room, Lounge Area, Kitchen, Rooftop Terrace, Event Space, Podcast Room, High-Speed WiFi, Printer, Scanner, Coffee Machine, and Snack Bar in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hot Desk, Dedicated Desk, Private Office, Phone Booth, Meeting Room, Lounge Area, Kitchen, Rooftop Terrace, Event Space, Podcast Room, High-Speed WiFi, Printer, Scanner, Coffee Machine, Snack Bar to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coworking Space: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Coworking Space: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hot Desk and Dedicated Desk, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Mona compares a Hot Desk shared by members at different times with a Dedicated Desk reserved for her regular use. A Private Office provides an enclosed workspace, and a Phone Booth offers a small place for calls. Pause and answer: Which desk is reserved for Mona’s regular use?"
     },
     "spacedReview": "1 lesson(s) back: Follow Up, Touch Base from business-communication-3\n3 lesson(s) back: Email, Memo from business-communication-1\n7 lesson(s) back: Pen, Pencil from office-supplies-1"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "120-150 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bike Storage", "Shower", "Locker", "Mail Service"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.",
+          "scenario": "The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bike Storage", "Shower", "Locker"],
-            "expectedAnswer": "Bike Storage"
+            "question": "Where does Mona put her belongings?",
+            "options": ["Locker", "Bike Storage", "Shower"],
+            "expectedAnswer": "Locker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Bike Storage as the central item; include Bike Storage, Shower, and Locker naturally where visually appropriate, but make the real-world use of Bike Storage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Locker in a coworking space context. Use the written scenario as the source of meaning: The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Reception", "Day Pass", "Monthly Plan", "Annual Plan"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.",
+          "scenario": "At Reception, Mona compares a Day Pass for one day with a Monthly Plan and Annual Plan. She asks what access each includes before choosing, since plan names do not establish all conditions.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Reception", "Day Pass", "Monthly Plan"],
-            "expectedAnswer": "Reception"
+            "question": "Which option permits access for one day?",
+            "options": ["Day Pass", "Reception", "Monthly Plan"],
+            "expectedAnswer": "Day Pass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult illustrating Reception through a realistic adult task; include Reception, Day Pass, and Monthly Plan naturally where visually appropriate, but make the real-world use of Reception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Day Pass in a coworking space context. Use the written scenario as the source of meaning: At Reception, Mona compares a Day Pass for one day with a Monthly Plan and Annual Plan. She asks what access each includes before choosing, since plan names do not establish all conditions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Flex Plan", "Team Plan", "Virtual Office", "Meeting Room Credits"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.",
+          "scenario": "The brochure describes a Flex Plan for flexible workspace use and a Team Plan for a group. A Virtual Office provides an address and support without a permanent physical office. Meeting Room Credits cover an agreed amount of booking time.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Flex Plan", "Team Plan", "Virtual Office"],
-            "expectedAnswer": "Flex Plan"
+            "question": "Which service provides an address without a permanent physical office?",
+            "options": ["Virtual Office", "Flex Plan", "Team Plan"],
+            "expectedAnswer": "Virtual Office"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Flex Plan as the central item; include Flex Plan, Team Plan, and Virtual Office naturally where visually appropriate, but make the real-world use of Flex Plan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Virtual Office in a coworking space context. Use the written scenario as the source of meaning: The brochure describes a Flex Plan for flexible workspace use and a Team Plan for a group. A Virtual Office provides an address and support without a permanent physical office. Meeting Room Credits cover an agreed amount of booking time. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Guest Pass", "Community Access", "24/7 Access"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.",
+          "scenario": "Mona asks whether her Guest Pass includes Community Access. The contract describes 24/7 Access as permission to enter at any time every day, subject to its stated entry requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Guest Pass", "Community Access", "24/7 Access"],
-            "expectedAnswer": "Guest Pass"
+            "question": "Which access description means any time every day?",
+            "options": ["24/7 Access", "Guest Pass", "Community Access"],
+            "expectedAnswer": "24/7 Access"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Guest Pass as the central item; include Guest Pass, Community Access, and 24/7 Access naturally where visually appropriate, but make the real-world use of Guest Pass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for 24/7 Access in a coworking space context. Use the written scenario as the source of meaning: Mona asks whether her Guest Pass includes Community Access. The contract describes 24/7 Access as permission to enter at any time every day, subject to its stated entry requirements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Coworking Space",
-      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Bike Storage, Shower, Locker, and Mail Service. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Reception, Day Pass, Monthly Plan, and Annual Plan. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Guest Pass, Community Access, and 24/7 Access. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Coworking Space: Understanding the different roles",
+      "text": "The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them. At Reception, Mona compares a Day Pass for one day with a Monthly Plan and Annual Plan. She asks what access each includes before choosing, since plan names do not establish all conditions. The brochure describes a Flex Plan for flexible workspace use and a Team Plan for a group. A Virtual Office provides an address and support without a permanent physical office. Meeting Room Credits cover an agreed amount of booking time. Mona asks whether her Guest Pass includes Community Access. The contract describes 24/7 Access as permission to enter at any time every day, subject to its stated entry requirements.",
+      "imageBrief": "One uncluttered coworking space setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bike Storage, Shower, Locker, and Mail Service and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bike Storage",
+        "prompt": "The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them.\nWhere does Mona put her belongings?",
+        "answer": "Locker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Day Pass, Monthly Plan, and Annual Plan and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Reception",
+        "prompt": "At Reception, Mona compares a Day Pass for one day with a Monthly Plan and Annual Plan. She asks what access each includes before choosing, since plan names do not establish all conditions.\nWhich option permits access for one day?",
+        "answer": "Day Pass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flex Plan, Team Plan, Virtual Office, and Meeting Room Credits and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Flex Plan",
+        "prompt": "The brochure describes a Flex Plan for flexible workspace use and a Team Plan for a group. A Virtual Office provides an address and support without a permanent physical office. Meeting Room Credits cover an agreed amount of booking time.\nWhich service provides an address without a permanent physical office?",
+        "answer": "Virtual Office",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guest Pass, Community Access, and 24/7 Access and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Guest Pass",
+        "prompt": "Mona asks whether her Guest Pass includes Community Access. The contract describes 24/7 Access as permission to enter at any time every day, subject to its stated entry requirements.\nWhich access description means any time every day?",
+        "answer": "24/7 Access",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them. At Reception, Mona compares a Day Pass for one day with a Monthly Plan and Annual Plan. She asks what access each includes before choosing, since plan names do not establish all conditions. The brochure describes a Flex Plan for flexible workspace use and a Team Plan for a group. A Virtual Office provides an address and support without a permanent physical office. Meeting Room Credits cover an agreed amount of booking time. Mona asks whether her Guest Pass includes Community Access. The contract describes 24/7 Access as permission to enter at any time every day, subject to its stated entry requirements.\nExplain the difference between Bike Storage and Shower using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Bike Storage"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hot Desk” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Bike Storage, Shower, Locker, Mail Service, Reception, Day Pass, Monthly Plan, Annual Plan, Flex Plan, Team Plan, Virtual Office, Meeting Room Credits, Guest Pass, Community Access, and 24/7 Access in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Bike Storage, Shower, Locker, Mail Service, Reception, Day Pass, Monthly Plan, Annual Plan, Flex Plan, Team Plan, Virtual Office, Meeting Room Credits, Guest Pass, Community Access, 24/7 Access to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coworking Space: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Coworking Space: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Bike Storage and Shower, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The facilities tour includes Bike Storage and a Shower. Mona puts her belongings in a Locker, then asks whether Mail Service includes forwarding parcels or only receiving them. Pause and answer: Where does Mona put her belongings?"
     },
     "spacedReview": "1 lesson(s) back: Hot Desk, Dedicated Desk from coworking-space-1\n3 lesson(s) back: KPI, ROI from business-communication-2\n7 lesson(s) back: Envelope, Folder from office-supplies-2"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss work priorities, decisions, and professional collaboration and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the business workplace with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "90-120 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Networking Event", "Workshop", "Lunch & Learn", "Happy Hour"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.",
+          "scenario": "The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Networking Event", "Workshop", "Lunch & Learn"],
-            "expectedAnswer": "Networking Event"
+            "question": "Which session has members practise a skill together?",
+            "options": ["Workshop", "Networking Event", "Lunch & Learn"],
+            "expectedAnswer": "Workshop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Networking Event as the central item; include Networking Event, Workshop, and Lunch & Learn naturally where visually appropriate, but make the real-world use of Networking Event the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Workshop in a coworking space context. Use the written scenario as the source of meaning: The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pitch Night", "Demo Day", "Mentorship", "Slack Channel"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.",
+          "scenario": "At Pitch Night, members present project ideas. On Demo Day, teams demonstrate working prototypes. Mentorship offers guidance from experienced people, and a Slack Channel organizes a group’s messages by topic.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pitch Night", "Demo Day", "Mentorship"],
-            "expectedAnswer": "Pitch Night"
+            "question": "Which event lets teams demonstrate working prototypes?",
+            "options": ["Demo Day", "Pitch Night", "Mentorship"],
+            "expectedAnswer": "Demo Day"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult using or examining the Pitch Night as the central item; include Pitch Night, Demo Day, and Mentorship naturally where visually appropriate, but make the real-world use of Pitch Night the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Demo Day in a coworking space context. Use the written scenario as the source of meaning: At Pitch Night, members present project ideas. On Demo Day, teams demonstrate working prototypes. Mentorship offers guidance from experienced people, and a Slack Channel organizes a group’s messages by topic. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Community Manager", "Member Directory"],
-          "scenario": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.",
+          "scenario": "The Community Manager welcomes Mona and explains member events. Mona checks the Member Directory to find a colleague’s contact details, following the community’s privacy and contact rules.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Community Manager", "Member Directory", "Networking Event"],
-            "expectedAnswer": "Community Manager"
+            "question": "Which record helps Mona find a member’s contact details?",
+            "options": ["Member Directory", "Community Manager"],
+            "expectedAnswer": "Member Directory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a business workplace. Show an adult working with or speaking to the Community Manager; include Community Manager, Member Directory, and Networking Event naturally where visually appropriate, but make the real-world use of Community Manager the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a business workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Member Directory in a coworking space context. Use the written scenario as the source of meaning: The Community Manager welcomes Mona and explains member events. Mona checks the Member Directory to find a colleague’s contact details, following the community’s privacy and contact rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written coworking space situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Coworking Space",
-      "text": "At the coworking space, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Networking Event, Workshop, Lunch & Learn, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pitch Night, Demo Day, Mentorship, and Slack Channel. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Community Manager and Member Directory. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Coworking Space. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Coworking Space: Comparing the equipment",
+      "text": "The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues. At Pitch Night, members present project ideas. On Demo Day, teams demonstrate working prototypes. Mentorship offers guidance from experienced people, and a Slack Channel organizes a group’s messages by topic. The Community Manager welcomes Mona and explains member events. Mona checks the Member Directory to find a colleague’s contact details, following the community’s privacy and contact rules.",
+      "imageBrief": "One uncluttered coworking space setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Networking Event, Workshop, Lunch & Learn, and Happy Hour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Networking Event",
+        "prompt": "The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues.\nWhich session has members practise a skill together?",
+        "answer": "Workshop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pitch Night, Demo Day, Mentorship, and Slack Channel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pitch Night",
+        "prompt": "At Pitch Night, members present project ideas. On Demo Day, teams demonstrate working prototypes. Mentorship offers guidance from experienced people, and a Slack Channel organizes a group’s messages by topic.\nWhich event lets teams demonstrate working prototypes?",
+        "answer": "Demo Day",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coworking space setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Community Manager, and Member Directory and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Community Manager",
+        "prompt": "The Community Manager welcomes Mona and explains member events. Mona checks the Member Directory to find a colleague’s contact details, following the community’s privacy and contact rules.\nWhich record helps Mona find a member’s contact details?",
+        "answer": "Member Directory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues. At Pitch Night, members present project ideas. On Demo Day, teams demonstrate working prototypes. Mentorship offers guidance from experienced people, and a Slack Channel organizes a group’s messages by topic. The Community Manager welcomes Mona and explains member events. Mona checks the Member Directory to find a colleague’s contact details, following the community’s privacy and contact rules.\nExplain the difference between Networking Event and Workshop using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Networking Event"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bike Storage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coworking space task. Use Networking Event, Workshop, Lunch & Learn, Happy Hour, Pitch Night, Demo Day, Mentorship, Slack Channel, Community Manager, and Member Directory in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Networking Event, Workshop, Lunch & Learn, Happy Hour, Pitch Night, Demo Day, Mentorship, Slack Channel, Community Manager, Member Directory to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coworking Space: In Context",
-      "idea": "45-70 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Coworking Space: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Networking Event and Workshop, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The calendar lists a Networking Event for making professional contacts and a Workshop where members practise a skill together. Lunch & Learn combines a midday break with a talk, while Happy Hour is a social event associated with discounted drinks at some venues. Pause and answer: Which session has members practise a skill together?"
     },
     "spacedReview": "1 lesson(s) back: Bike Storage, Shower from coworking-space-2\n3 lesson(s) back: Follow Up, Touch Base from business-communication-3\n7 lesson(s) back: Desk Organizer, Pencil Cup from office-supplies-3"
   }

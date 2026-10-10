@@ -28,151 +28,157 @@
     ],
     "targetWordsArabic": [
       "فخذ",
-      "العضلة رباعية الرؤوس",
-      "أوتار الركبة",
+      "عضلة رباعية الرؤوس",
+      "عضلة خلفية للفخذ",
       "مفصل الورك",
       "أربية",
-      "الجزء الداخلي من الفخذ",
-      "الجزء الخارجي من الفخذ",
+      "فخذ داخلي",
+      "فخذ خارجي",
       "عظم الفخذ",
-      "عضلة قابضة للورك",
-      "عرف الحرقفة",
+      "عضلة عاطفة للورك",
+      "عرف حرقفي",
       "ركبة",
       "رضفة",
-      "مقدمة الساق",
+      "قصبة الساق",
       "ربلة الساق",
-      "الظنبوب"
+      "عظم القصبة"
     ],
     "usage": {
-      "goal": "Learn to use the human body (lower body) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (lower body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Thigh", "Quadricep", "Hamstring"],
-          "scenario": "During a routine care or examination situation, an adult reviews Thigh, Quadricep, Hamstring. The next step focuses on Thigh.",
+          "scenario": "Thigh is between hip and knee. Quadricep commonly refers to quadriceps femoris; hamstring can name posterior-thigh muscles or associated tendons.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the region between hip and knee?",
             "options": ["Thigh", "Quadricep", "Hamstring"],
             "expectedAnswer": "Thigh"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Thigh, Quadricep, Hamstring. The next step focuses on Thigh. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Thigh, Quadricep, Hamstring in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving thigh model, no exposed real body or performance claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hip Joint", "Groin", "Inner Thigh"],
-          "scenario": "During a routine care or examination situation, an adult reviews Hip Joint, Groin, Inner Thigh. The next step focuses on Hip Joint.",
+          "scenario": "Hip joint connects femur and pelvis. The groin is the junction where the inner thigh meets the abdomen; inner thigh faces the other leg.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which joint connects femur and pelvis?",
             "options": ["Hip Joint", "Groin", "Inner Thigh"],
             "expectedAnswer": "Hip Joint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Hip Joint, Groin, Inner Thigh. The next step focuses on Hip Joint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Hip Joint, Groin, Inner Thigh in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified skeletal hip model with coherent ball-and-socket geometry. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Outer Thigh", "Femur", "Hip Flexor"],
-          "scenario": "During a routine care or examination situation, an adult reviews Outer Thigh, Femur, Hip Flexor. The next step focuses on Outer Thigh.",
+          "scenario": "Femur is the thigh bone. Hip flexor bends the hip, and iliac crest is the upper border of the ilium.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the thigh bone?",
             "options": ["Outer Thigh", "Femur", "Hip Flexor"],
             "expectedAnswer": "Outer Thigh"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Outer Thigh, Femur, Hip Flexor. The next step focuses on Outer Thigh. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Outer Thigh, Femur, Hip Flexor in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified standalone femur model with correct proximal and distal ends. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Iliac Crest", "Knee", "Kneecap"],
-          "scenario": "During a routine care or examination situation, an adult reviews Iliac Crest, Knee, Kneecap. The next step focuses on Iliac Crest.",
+          "scenario": "Knee is the joint between thigh and lower leg. Kneecap is the patella in front of it, while shin is the front lower-leg region.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the joint between thigh and lower leg?",
             "options": ["Iliac Crest", "Knee", "Kneecap"],
             "expectedAnswer": "Iliac Crest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Iliac Crest, Knee, Kneecap. The next step focuses on Iliac Crest. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Iliac Crest, Knee, Kneecap in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified knee model; fibula is not incorrectly joined directly to femur. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Shin", "Calf", "Tibia"],
-          "scenario": "During a routine care or examination situation, an adult reviews Shin, Calf, Tibia. The next step focuses on Shin.",
+          "scenario": "Calf is the muscular rear lower leg. Tibia is the larger medial lower-leg bone, while fibula is the thinner lateral bone.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the muscular rear lower-leg region?",
             "options": ["Shin", "Calf", "Tibia"],
             "expectedAnswer": "Shin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Shin, Calf, Tibia. The next step focuses on Shin. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Shin, Calf, Tibia in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving lower-leg model viewed from behind. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Lower Body) 1: A short reading",
-      "text": "Omar labels the thigh and femur on a body diagram. Maya finds the hip joint and the muscles around it. They compare the inner thigh with the outer thigh, then identify the hamstring on the back of the leg. The class checks each location before moving to a drawing of the lower leg.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Lower Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The thigh and knee",
+      "text": "Dina reads a lower-body guide. Thigh is between hip and knee. Quadricep is an everyday form of the quadriceps muscle name. Hamstring can refer to muscles or their tendons at the back of the thigh. Dina learns hip joint, groin, femur, knee, kneecap and shin. She uses the names to describe locations in a model, not to judge pain or choose an exercise treatment.",
+      "imageBrief": "Support for The thigh and knee. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Thigh, Quadricep, Hamstring. The next step focuses on Thigh.\nWhich option is the focus of the next step?",
+        "prompt": "Thigh is between hip and knee. Quadricep commonly refers to quadriceps femoris; hamstring can name posterior-thigh muscles or associated tendons.\nWhich term names the region between hip and knee?",
         "answer": "Thigh",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Hip Joint, Groin, Inner Thigh. The next step focuses on Hip Joint.\nWhich option is the focus of the next step?",
+        "prompt": "Hip joint connects femur and pelvis. The groin is the junction where the inner thigh meets the abdomen; inner thigh faces the other leg.\nWhich joint connects femur and pelvis?",
         "answer": "Hip Joint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Outer Thigh, Femur, Hip Flexor. The next step focuses on Outer Thigh.\nWhich option is the focus of the next step?",
+        "prompt": "Femur is the thigh bone. Hip flexor bends the hip, and iliac crest is the upper border of the ilium.\nWhich term names the thigh bone?",
         "answer": "Outer Thigh",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Iliac Crest, Knee, Kneecap. The next step focuses on Iliac Crest.\nWhich option is the focus of the next step?",
+        "prompt": "Knee is the joint between thigh and lower leg. Kneecap is the patella in front of it, while shin is the front lower-leg region.\nWhich term names the joint between thigh and lower leg?",
         "answer": "Iliac Crest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Shin, Calf, Tibia. The next step focuses on Shin.\nWhich option is the focus of the next step?",
+        "prompt": "Calf is the muscular rear lower leg. Tibia is the larger medial lower-leg bone, while fibula is the thinner lateral bone.\nWhich term names the muscular rear lower-leg region?",
         "answer": "Shin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Scar” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where is the hamstring in the diagram?",
-        "answer": "On the back of the leg",
+        "prompt": "Dina reads a lower-body guide. Thigh is between hip and knee. Quadricep is an everyday form of the quadriceps muscle name. Hamstring can refer to muscles or their tendons at the back of the thigh. Dina learns hip joint, groin, femur, knee, kneecap and shin. She uses the names to describe locations in a model, not to judge pain or choose an exercise treatment.\nWhat does thigh name?",
+        "answer": "The region between hip and knee.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Thigh” and “Quadricep” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Thigh” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Thigh is between hip and knee. Quadricep commonly refers to quadriceps femoris; hamstring can name posterior-thigh muscles or associated tendons.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Lower Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The thigh and knee",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a lower-body guide. Thigh is between hip and knee. Quadricep is an everyday form of the quadriceps muscle name. Hamstring can refer to muscles or their tendons at the back of the thigh. Dina learns hip joint, groin, femur, knee, kneecap and shin. She uses the names to describe locations in a model, not to judge pain or choose an exercise treatment. Ask: What does thigh name?"
     },
     "spacedReview": "1 lesson(s) back: Scar, Wrinkle from human-body-upper-body-4\n3 lesson(s) back: Elbow, Forearm from human-body-upper-body-2\n7 lesson(s) back: Iris, Retina from human-body-head-and-face-2"
   },
@@ -204,152 +210,158 @@
       "Metatarsal"
     ],
     "targetWordsArabic": [
-      "الشظية",
+      "عظم الشظية",
       "وتر أخيل",
-      "متعلق بالمنطقة خلف الركبة",
+      "مأبضي",
       "غضروف هلالي",
       "رباط",
       "قدم",
       "كاحل",
       "كعب",
       "باطن القدم",
-      "قوس",
-      "مشط القدم",
-      "مقدمة باطن القدم",
-      "عظمة الكاحل",
-      "متعلق بباطن القدم",
+      "قوس القدم",
+      "ظهر القدم",
+      "وسادة مقدمة القدم",
+      "عظم الكاحل",
+      "أخمصي",
       "عظم مشط القدم"
     ],
     "usage": {
-      "goal": "Learn to use the human body (lower body) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (lower body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Fibula", "Achilles Tendon", "Popliteal"],
-          "scenario": "During a routine care or examination situation, an adult reviews Fibula, Achilles Tendon, Popliteal. The next step focuses on Fibula.",
+          "scenario": "Fibula is the thinner lateral lower-leg bone. Achilles tendon connects calf muscles to the heel; popliteal means relating to the area behind the knee.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the thinner lateral lower-leg bone?",
             "options": ["Fibula", "Achilles Tendon", "Popliteal"],
             "expectedAnswer": "Fibula"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Fibula, Achilles Tendon, Popliteal. The next step focuses on Fibula. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Fibula, Achilles Tendon, Popliteal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified paired tibia/fibula model with correct relative placement. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meniscus", "Ligament", "Foot"],
-          "scenario": "During a routine care or examination situation, an adult reviews Meniscus, Ligament, Foot. The next step focuses on Meniscus.",
+          "scenario": "Meniscus here is a cushioning crescent of cartilage in the knee. Ligament links bones or supports structures, while foot is below the ankle.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the knee cartilage crescent?",
             "options": ["Meniscus", "Ligament", "Foot"],
             "expectedAnswer": "Meniscus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Meniscus, Ligament, Foot. The next step focuses on Meniscus. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Meniscus, Ligament, Foot in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving knee-section model; no diagnostic image or surgery. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ankle", "Heel", "Sole"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ankle, Heel, Sole. The next step focuses on Ankle.",
+          "scenario": "Ankle is the joint region between lower leg and foot. Heel is the rear foot, and sole is the underside.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the joint region?",
             "options": ["Ankle", "Heel", "Sole"],
             "expectedAnswer": "Ankle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Ankle, Heel, Sole. The next step focuses on Ankle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Ankle, Heel, Sole in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving ankle-and-foot model. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Arch", "Instep", "Ball of Foot"],
-          "scenario": "During a routine care or examination situation, an adult reviews Arch, Instep, Ball of Foot. The next step focuses on Arch.",
+          "scenario": "Arch is the curved structure along the foot. Instep is the upper curved area, and ball of foot is the padded area behind the toes.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the curved structure along the foot?",
             "options": ["Arch", "Instep", "Ball of Foot"],
             "expectedAnswer": "Arch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Arch, Instep, Ball of Foot. The next step focuses on Arch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Arch, Instep, Ball of Foot in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified foot model viewed in profile; no arch type or health classification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Ankle Bone", "Plantar", "Metatarsal"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ankle Bone, Plantar, Metatarsal. The next step focuses on Ankle Bone.",
+          "scenario": "Ankle bone commonly means a bony prominence beside the ankle. Plantar relates to the sole; metatarsal names a bone between rear foot and toes.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which everyday phrase names the ankle-side prominence?",
             "options": ["Ankle Bone", "Plantar", "Metatarsal"],
             "expectedAnswer": "Ankle Bone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Ankle Bone, Plantar, Metatarsal. The next step focuses on Ankle Bone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Ankle Bone, Plantar, Metatarsal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified ankle model with malleoli; do not substitute the talus without contextual clarification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Lower Body) 2: A short reading",
-      "text": "Maya studies a lower-leg diagram and labels the fibula. Omar finds the Achilles tendon above the heel. Another drawing shows a ligament and the meniscus near the knee. They compare the ankle, heel, and sole on a foot picture. The teacher helps them separate names of bones, joints, and soft tissues.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Lower Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Lower-leg and foot structures",
+      "text": "Dina compares the tibia and fibula in a model. She reads about the Achilles tendon, the meniscus and ligaments. The ankle connects the foot and lower leg. Heel and sole name different foot regions, while arch and instep describe curved areas. Dina checks the written guide for plantar and metatarsal. These are anatomical terms rather than instructions to examine or treat a foot.",
+      "imageBrief": "Support for Lower-leg and foot structures. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Fibula, Achilles Tendon, Popliteal. The next step focuses on Fibula.\nWhich option is the focus of the next step?",
+        "prompt": "Fibula is the thinner lateral lower-leg bone. Achilles tendon connects calf muscles to the heel; popliteal means relating to the area behind the knee.\nWhich term names the thinner lateral lower-leg bone?",
         "answer": "Fibula",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Meniscus, Ligament, Foot. The next step focuses on Meniscus.\nWhich option is the focus of the next step?",
+        "prompt": "Meniscus here is a cushioning crescent of cartilage in the knee. Ligament links bones or supports structures, while foot is below the ankle.\nWhich term names the knee cartilage crescent?",
         "answer": "Meniscus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ankle, Heel, Sole. The next step focuses on Ankle.\nWhich option is the focus of the next step?",
+        "prompt": "Ankle is the joint region between lower leg and foot. Heel is the rear foot, and sole is the underside.\nWhich term names the joint region?",
         "answer": "Ankle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Arch, Instep, Ball of Foot. The next step focuses on Arch.\nWhich option is the focus of the next step?",
+        "prompt": "Arch is the curved structure along the foot. Instep is the upper curved area, and ball of foot is the padded area behind the toes.\nWhich term names the curved structure along the foot?",
         "answer": "Arch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ankle Bone, Plantar, Metatarsal. The next step focuses on Ankle Bone.\nWhich option is the focus of the next step?",
+        "prompt": "Ankle bone commonly means a bony prominence beside the ankle. Plantar relates to the sole; metatarsal names a bone between rear foot and toes.\nWhich everyday phrase names the ankle-side prominence?",
         "answer": "Ankle Bone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Thigh” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does Omar find the Achilles tendon?",
-        "answer": "Above the heel",
+        "prompt": "Dina compares the tibia and fibula in a model. She reads about the Achilles tendon, the meniscus and ligaments. The ankle connects the foot and lower leg. Heel and sole name different foot regions, while arch and instep describe curved areas. Dina checks the written guide for plantar and metatarsal. These are anatomical terms rather than instructions to examine or treat a foot.\nWhich joint connects the foot and lower leg?",
+        "answer": "The ankle.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Fibula” and “Achilles Tendon” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Fibula” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Fibula is the thinner lateral lower-leg bone. Achilles tendon connects calf muscles to the heel; popliteal means relating to the area behind the knee.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Lower Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Lower-leg and foot structures",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares the tibia and fibula in a model. She reads about the Achilles tendon, the meniscus and ligaments. The ankle connects the foot and lower leg. Heel and sole name different foot regions, while arch and instep describe curved areas. Dina checks the written guide for plantar and metatarsal. These are anatomical terms rather than instructions to examine or treat a foot. Ask: Which joint connects the foot and lower leg?"
     },
     "spacedReview": "1 lesson(s) back: Thigh, Quadricep from human-body-lower-body-1\n3 lesson(s) back: Pectoral, Abdominal from human-body-upper-body-3\n7 lesson(s) back: Ear, Earlobe from human-body-head-and-face-3"
   },
@@ -381,152 +393,158 @@
       "Lunge"
     ],
     "targetWordsArabic": [
-      "إصبع القدم كبير",
-      "إصبع القدم الصغير",
+      "إبهام القدم",
+      "خنصر القدم",
       "ظفر القدم",
       "وسادة إصبع القدم",
       "مفصل إصبع القدم",
       "ورم إبهام القدم",
-      "جلد متصلب",
-      "نفطة",
-      "جلدة حول الظفر",
-      "سرير الظفر",
+      "مسمار لحمي أو جسأة",
+      "فقاعة جلدية",
+      "جلد حول الظفر",
+      "فراش الظفر",
       "يمشي",
-      "يركض",
+      "يجري",
       "يقفز",
       "يقرفص",
-      "يندفع بخطوة مع ثني الركبة"
+      "يندفع خطوة للأمام"
     ],
     "usage": {
-      "goal": "Learn to use the human body (lower body) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (lower body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Big Toe", "Little Toe", "Toenail"],
-          "scenario": "During a routine care or examination situation, an adult reviews Big Toe, Little Toe, Toenail. The next step focuses on Big Toe.",
+          "scenario": "Big toe is the large innermost toe. Little toe is the outermost small toe, and toenail is a nail on a toe.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the large innermost toe?",
             "options": ["Big Toe", "Little Toe", "Toenail"],
             "expectedAnswer": "Big Toe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Big Toe, Little Toe, Toenail. The next step focuses on Big Toe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Big Toe, Little Toe, Toenail in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving foot model with correct toe count and placement. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Toe Pad", "Toe Joint", "Bunion"],
-          "scenario": "During a routine care or examination situation, an adult reviews Toe Pad, Toe Joint, Bunion. The next step focuses on Toe Pad.",
+          "scenario": "Toe pad is the cushioned underside of a toe. Toe joint is where its bones meet, while bunion is a bony prominence associated with joint changes.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the cushioned underside?",
             "options": ["Toe Pad", "Toe Joint", "Bunion"],
             "expectedAnswer": "Toe Pad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Toe Pad, Toe Joint, Bunion. The next step focuses on Toe Pad. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Toe Pad, Toe Joint, Bunion in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving underside-of-toe model; no person, lesion diagnosis or treatment. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Callus", "Blister", "Cuticle"],
-          "scenario": "During a routine care or examination situation, an adult reviews Callus, Blister, Cuticle. The next step focuses on Callus.",
+          "scenario": "Callus is thickened skin from repeated friction or pressure. Blister is a fluid-filled skin pocket; cuticle is the thin tissue at a nail's base.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names thickened skin in the description?",
             "options": ["Callus", "Blister", "Cuticle"],
             "expectedAnswer": "Callus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Callus, Blister, Cuticle. The next step focuses on Callus. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Callus, Blister, Cuticle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving skin teaching model, no real lesion, cutting or removal procedure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Nail Bed", "Walk", "Run"],
-          "scenario": "During a routine care or examination situation, an adult reviews Nail Bed, Walk, Run. The next step focuses on Nail Bed.",
+          "scenario": "Nail bed is tissue beneath the nail plate. Walk means move on foot; run means move with a running gait.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names tissue beneath the nail plate?",
             "options": ["Nail Bed", "Walk", "Run"],
             "expectedAnswer": "Nail Bed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Nail Bed, Walk, Run. The next step focuses on Nail Bed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Nail Bed, Walk, Run in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving nail-section model, no wound or manicure procedure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Jump", "Squat", "Lunge"],
-          "scenario": "During a routine care or examination situation, an adult reviews Jump, Squat, Lunge. The next step focuses on Jump.",
+          "scenario": "Jump means propel the body off a support surface. Squat means lower the body with knees bent, while lunge means make a long step or thrust.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb means propel the body off a support surface?",
             "options": ["Jump", "Squat", "Lunge"],
             "expectedAnswer": "Jump"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Jump, Squat, Lunge. The next step focuses on Jump. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Jump, Squat, Lunge in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Hold active movement until a verified reference/subject plan exists; a nonliving pose model may support written action. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Lower Body) 3: A short reading",
-      "text": "The teacher shows a drawing of a foot. Omar labels the big toe, little toe, and toenail. Maya reads descriptions of a blister and a callus. They match each description to a separate picture. A toe joint is marked on another diagram so the class can compare skin features with structures inside the foot.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Lower Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Toes, skin and movement words",
+      "text": "Dina reads the foot guide. Big toe and little toe name digits at opposite sides of the foot. Each toenail rests above a nail bed. The guide explains callus and blister without asking for a diagnosis. Dina then reads walk, run, jump, squat and lunge. She identifies the terms in a narrated account. No learner has to perform a movement to complete the vocabulary task.",
+      "imageBrief": "Support for Toes, skin and movement words. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Big Toe, Little Toe, Toenail. The next step focuses on Big Toe.\nWhich option is the focus of the next step?",
+        "prompt": "Big toe is the large innermost toe. Little toe is the outermost small toe, and toenail is a nail on a toe.\nWhich term names the large innermost toe?",
         "answer": "Big Toe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Toe Pad, Toe Joint, Bunion. The next step focuses on Toe Pad.\nWhich option is the focus of the next step?",
+        "prompt": "Toe pad is the cushioned underside of a toe. Toe joint is where its bones meet, while bunion is a bony prominence associated with joint changes.\nWhich term names the cushioned underside?",
         "answer": "Toe Pad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Callus, Blister, Cuticle. The next step focuses on Callus.\nWhich option is the focus of the next step?",
+        "prompt": "Callus is thickened skin from repeated friction or pressure. Blister is a fluid-filled skin pocket; cuticle is the thin tissue at a nail's base.\nWhich term names thickened skin in the description?",
         "answer": "Callus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Nail Bed, Walk, Run. The next step focuses on Nail Bed.\nWhich option is the focus of the next step?",
+        "prompt": "Nail bed is tissue beneath the nail plate. Walk means move on foot; run means move with a running gait.\nWhich term names tissue beneath the nail plate?",
         "answer": "Nail Bed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Jump, Squat, Lunge. The next step focuses on Jump.\nWhich option is the focus of the next step?",
+        "prompt": "Jump means propel the body off a support surface. Squat means lower the body with knees bent, while lunge means make a long step or thrust.\nWhich verb means propel the body off a support surface?",
         "answer": "Jump",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Fibula” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two skin features does Maya read about?",
-        "answer": "A blister and a callus",
+        "prompt": "Dina reads the foot guide. Big toe and little toe name digits at opposite sides of the foot. Each toenail rests above a nail bed. The guide explains callus and blister without asking for a diagnosis. Dina then reads walk, run, jump, squat and lunge. She identifies the terms in a narrated account. No learner has to perform a movement to complete the vocabulary task.\nMust the learner perform the movements?",
+        "answer": "No. The task is to identify vocabulary from descriptions.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Big Toe” and “Little Toe” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Big Toe” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Big toe is the large innermost toe. Little toe is the outermost small toe, and toenail is a nail on a toe.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Lower Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Toes, skin and movement words",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the foot guide. Big toe and little toe name digits at opposite sides of the foot. Each toenail rests above a nail bed. The guide explains callus and blister without asking for a diagnosis. Dina then reads walk, run, jump, squat and lunge. She identifies the terms in a narrated account. No learner has to perform a movement to complete the vocabulary task. Ask: Must the learner perform the movements?"
     },
     "spacedReview": "1 lesson(s) back: Fibula, Achilles Tendon from human-body-lower-body-2\n3 lesson(s) back: Scar, Wrinkle from human-body-upper-body-4\n7 lesson(s) back: Wisdom Tooth, Baby Tooth from human-body-head-and-face-4"
   },
@@ -543,84 +561,90 @@
     "targetWordsEnglish": ["Kick", "Kneel", "Crouch", "Stride", "Tiptoe"],
     "targetWordsArabic": [
       "يركل",
-      "يجثو على ركبتيه",
-      "ينحني منخفضًا",
-      "يمشي بخطوات واسعة",
+      "يركع على ركبتيه",
+      "ينحني جاثيًا",
+      "يخطو بخطى واسعة",
       "يمشي على أطراف أصابعه"
     ],
     "usage": {
-      "goal": "Learn to use the human body (lower body) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (lower body).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Kick", "Kneel", "Crouch"],
-          "scenario": "During a routine care or examination situation, an adult reviews Kick, Kneel, Crouch. The next step focuses on Kick.",
+          "scenario": "Kick means strike or push with the foot. Kneel means rest on the knees; crouch means lower the body with knees bent.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb involves striking or pushing with the foot?",
             "options": ["Kick", "Kneel", "Crouch"],
             "expectedAnswer": "Kick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Kick, Kneel, Crouch. The next step focuses on Kick. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Kick, Kneel, Crouch in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving pose model only after verified limb geometry; no violent impact or prescribed exercise. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stride", "Tiptoe"],
-          "scenario": "During a routine care or examination situation, an adult reviews Stride, Tiptoe, Kick. The next step focuses on Stride.",
+          "scenario": "Stride means move with long steps. Tiptoe means move on the front parts of the feet; quietness is not guaranteed by the movement alone.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb names movement with long steps?",
             "options": ["Stride", "Tiptoe", "Kick"],
             "expectedAnswer": "Stride"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (lower body) context illustrating this situation: During a routine care or examination situation, an adult reviews Stride, Tiptoe, Kick. The next step focuses on Stride. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (lower body) scene showing lesson-related items or actions including Stride, Tiptoe in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving walking-pose model; the temporal movement and purpose remain in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Lower Body) 4: A short reading",
-      "text": "Omar reads movement instructions in a language lesson. One picture shows a person kneeling, and another shows a person crouching. Maya uses kick, stride, and tiptoe to describe three other pictures. They choose the word that best describes each movement, then explain the difference between walking with long steps and walking on the toes.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Lower Body). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Contrasting lower-body actions",
+      "text": "Dina reads five action words in a short guide. Kick means strike or push with the foot. Kneel means rest on the knees, and crouch means lower the body with bent knees. Stride means move with long steps. Tiptoe means move on the front parts of the feet. Dina can describe these actions from text or a narrated example without being required to perform them herself.",
+      "imageBrief": "Support for Contrasting lower-body actions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Kick, Kneel, Crouch. The next step focuses on Kick.\nWhich option is the focus of the next step?",
+        "prompt": "Kick means strike or push with the foot. Kneel means rest on the knees; crouch means lower the body with knees bent.\nWhich verb involves striking or pushing with the foot?",
         "answer": "Kick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Stride, Tiptoe, Kick. The next step focuses on Stride.\nWhich option is the focus of the next step?",
+        "prompt": "Stride means move with long steps. Tiptoe means move on the front parts of the feet; quietness is not guaranteed by the movement alone.\nWhich verb names movement with long steps?",
         "answer": "Stride",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Big Toe” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which movement means walking on the toes?",
-        "answer": "Tiptoe",
+        "prompt": "Dina reads five action words in a short guide. Kick means strike or push with the foot. Kneel means rest on the knees, and crouch means lower the body with bent knees. Stride means move with long steps. Tiptoe means move on the front parts of the feet. Dina can describe these actions from text or a narrated example without being required to perform them herself.\nWhich action means move with long steps?",
+        "answer": "Stride.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Kick” and “Kneel” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Kick” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Kick means strike or push with the foot. Kneel means rest on the knees; crouch means lower the body with knees bent.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Lower Body): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Contrasting lower-body actions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads five action words in a short guide. Kick means strike or push with the foot. Kneel means rest on the knees, and crouch means lower the body with bent knees. Stride means move with long steps. Tiptoe means move on the front parts of the feet. Dina can describe these actions from text or a narrated example without being required to perform them herself. Ask: Which action means move with long steps?"
     },
     "spacedReview": "1 lesson(s) back: Big Toe, Little Toe from human-body-lower-body-3\n3 lesson(s) back: Thigh, Quadricep from human-body-lower-body-1\n7 lesson(s) back: Chest, Ribcage from human-body-upper-body-1"
   }

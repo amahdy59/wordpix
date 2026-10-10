@@ -47,7 +47,7 @@
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "117-147 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -57,124 +57,107 @@
             "Refracting Telescope",
             "Radio Telescope"
           ],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.",
+          "scenario": "At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Optical Telescope", "Reflecting Telescope", "Refracting Telescope"],
-            "expectedAnswer": "Optical Telescope"
+            "question": "Which instrument detects radio waves?",
+            "options": ["Radio Telescope", "Optical Telescope", "Reflecting Telescope"],
+            "expectedAnswer": "Radio Telescope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Optical Telescope as the central item; include Optical Telescope, Reflecting Telescope, and Refracting Telescope naturally where visually appropriate, but make the real-world use of Optical Telescope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Radio Telescope in a observatory context. Use the written scenario as the source of meaning: At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Telescope Mount", "Eyepiece", "Finder Scope", "Lens"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.",
+          "scenario": "The guide identifies the Telescope Mount supporting the instrument and the Finder Scope helping to aim it. A Lens bends light. The Eyepiece is the viewing component at the observer’s end.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Telescope Mount", "Eyepiece", "Finder Scope"],
-            "expectedAnswer": "Telescope Mount"
+            "question": "Which component is at the observer’s viewing end?",
+            "options": ["Eyepiece", "Telescope Mount", "Finder Scope"],
+            "expectedAnswer": "Eyepiece"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Telescope Mount as the central item; include Telescope Mount, Eyepiece, and Finder Scope naturally where visually appropriate, but make the real-world use of Telescope Mount the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Eyepiece in a observatory context. Use the written scenario as the source of meaning: The guide identifies the Telescope Mount supporting the instrument and the Finder Scope helping to aim it. A Lens bends light. The Eyepiece is the viewing component at the observer’s end. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mirror", "Tripod", "Star", "Planet"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.",
+          "scenario": "A Mirror directs light inside the instrument, which rests on a Tripod. In the sky, a Star produces its own light, while a Planet is seen mainly by reflected starlight.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mirror", "Tripod", "Star"],
-            "expectedAnswer": "Mirror"
+            "question": "Which celestial object produces its own light?",
+            "options": ["Star", "Mirror", "Tripod"],
+            "expectedAnswer": "Star"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Mirror as the central item; include Mirror, Tripod, and Star naturally where visually appropriate, but make the real-world use of Mirror the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Star in a observatory context. Use the written scenario as the source of meaning: A Mirror directs light inside the instrument, which rests on a Tripod. In the sky, a Star produces its own light, while a Planet is seen mainly by reflected starlight. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Moon", "Sun", "Comet"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.",
+          "scenario": "The guide compares the Moon, Sun, and Comet. The Sun is our Solar System’s star; the Moon is Earth’s natural satellite, and a comet is a smaller icy body orbiting the Sun.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Moon", "Sun", "Comet"],
-            "expectedAnswer": "Moon"
+            "question": "Which object is our Solar System’s star?",
+            "options": ["Sun", "Moon", "Comet"],
+            "expectedAnswer": "Sun"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Moon as the central item; include Moon, Sun, and Comet naturally where visually appropriate, but make the real-world use of Moon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sun in a observatory context. Use the written scenario as the source of meaning: The guide compares the Moon, Sun, and Comet. The Sun is our Solar System’s star; the Moon is Earth’s natural satellite, and a comet is a smaller icy body orbiting the Sun. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Observatory",
-      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Telescope Mount, Eyepiece, Finder Scope, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mirror, Tripod, Star, and Planet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moon, Sun, and Comet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Observatory: A visitor’s questions",
+      "text": "At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light. The guide identifies the Telescope Mount supporting the instrument and the Finder Scope helping to aim it. A Lens bends light. The Eyepiece is the viewing component at the observer’s end. A Mirror directs light inside the instrument, which rests on a Tripod. In the sky, a Star produces its own light, while a Planet is seen mainly by reflected starlight. The guide compares the Moon, Sun, and Comet. The Sun is our Solar System’s star; the Moon is Earth’s natural satellite, and a comet is a smaller icy body orbiting the Sun.",
+      "imageBrief": "One uncluttered observatory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Optical Telescope, Reflecting Telescope, Refracting Telescope, and Radio Telescope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Optical Telescope",
+        "prompt": "At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light.\nWhich instrument detects radio waves?",
+        "answer": "Radio Telescope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope Mount, Eyepiece, Finder Scope, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Telescope Mount",
+        "prompt": "The guide identifies the Telescope Mount supporting the instrument and the Finder Scope helping to aim it. A Lens bends light. The Eyepiece is the viewing component at the observer’s end.\nWhich component is at the observer’s viewing end?",
+        "answer": "Eyepiece",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Tripod, Star, and Planet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mirror",
+        "prompt": "A Mirror directs light inside the instrument, which rests on a Tripod. In the sky, a Star produces its own light, while a Planet is seen mainly by reflected starlight.\nWhich celestial object produces its own light?",
+        "answer": "Star",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moon, Sun, and Comet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Moon",
+        "prompt": "The guide compares the Moon, Sun, and Comet. The Sun is our Solar System’s star; the Moon is Earth’s natural satellite, and a comet is a smaller icy body orbiting the Sun.\nWhich object is our Solar System’s star?",
+        "answer": "Sun",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light. The guide identifies the Telescope Mount supporting the instrument and the Finder Scope helping to aim it. A Lens bends light. The Eyepiece is the viewing component at the observer’s end. A Mirror directs light inside the instrument, which rests on a Tripod. In the sky, a Star produces its own light, while a Planet is seen mainly by reflected starlight. The guide compares the Moon, Sun, and Comet. The Sun is our Solar System’s star; the Moon is Earth’s natural satellite, and a comet is a smaller icy body orbiting the Sun.\nExplain the difference between Optical Telescope and Reflecting Telescope using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Optical Telescope"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Radio Telescope"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “emergency exit” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the observatory task. Use Optical Telescope, Reflecting Telescope, Refracting Telescope, Radio Telescope, Telescope Mount, Eyepiece, Finder Scope, Lens, Mirror, Tripod, Star, Planet, Moon, Sun, and Comet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Optical Telescope, Reflecting Telescope, Refracting Telescope, Radio Telescope, Telescope Mount, Eyepiece, Finder Scope, Lens, Mirror, Tripod, Star, Planet, Moon, Sun, Comet to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Observatory: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Observatory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Optical Telescope and Reflecting Telescope, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At the observatory, a guide distinguishes an Optical Telescope from a Radio Telescope. A Reflecting Telescope uses mirrors, and a Refracting Telescope uses lenses. The Radio Telescope detects radio waves rather than visible light. Pause and answer: Which instrument detects radio waves?"
     },
     "spacedReview": "1 lesson(s) back: emergency exit, fire escape from fire-station-4\n3 lesson(s) back: fire boat, fire hose from fire-station-2\n7 lesson(s) back: Chisel, Utility Knife from construction-site-3"
   },
@@ -211,144 +194,127 @@
       "مجرة",
       "كوكبة",
       "شهاب",
-      "قُبّة",
+      "قبة المرصد",
       "سقف دوّار",
       "منصة مشاهدة",
-      "غرفة عامل ضابط",
+      "غرفة تحكم",
       "مختبر حاسوب",
-      "-",
+      "مكتبة",
       "قاعة محاضرات",
       "متجر هدية",
       "موقف سيارات",
-      "ممر"
+      "ممر للمشاة"
     ],
     "usage": {
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "readingTarget": "98-128 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Asteroid", "Nebula", "Galaxy", "Constellation"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.",
+          "scenario": "The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Asteroid", "Nebula", "Galaxy"],
-            "expectedAnswer": "Asteroid"
+            "question": "Which term describes a large cloud of gas and dust?",
+            "options": ["Nebula", "Asteroid", "Galaxy"],
+            "expectedAnswer": "Nebula"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Asteroid as the central item; include Asteroid, Nebula, and Galaxy naturally where visually appropriate, but make the real-world use of Asteroid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Nebula in a observatory context. Use the written scenario as the source of meaning: The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meteor", "Dome", "Rotating Roof", "Observation Deck"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.",
+          "scenario": "A Meteor appears briefly as a streak of light. Back inside, the guide shows the Dome protecting the telescope, its Rotating Roof, and the visitor Observation Deck.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Meteor", "Dome", "Rotating Roof"],
-            "expectedAnswer": "Meteor"
+            "question": "Which rounded enclosure protects the telescope?",
+            "options": ["Dome", "Meteor", "Rotating Roof"],
+            "expectedAnswer": "Dome"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Meteor as the central item; include Meteor, Dome, and Rotating Roof naturally where visually appropriate, but make the real-world use of Meteor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dome in a observatory context. Use the written scenario as the source of meaning: A Meteor appears briefly as a streak of light. Back inside, the guide shows the Dome protecting the telescope, its Rotating Roof, and the visitor Observation Deck. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Control Room", "Computer Lab", "Library", "Lecture Hall"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.",
+          "scenario": "The tour passes the Control Room, Computer Lab, Library, and Lecture Hall. The visitor goes to the Library to consult astronomy reference books.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Control Room", "Computer Lab", "Library"],
-            "expectedAnswer": "Control Room"
+            "question": "Where does the visitor consult reference books?",
+            "options": ["Library", "Control Room", "Computer Lab"],
+            "expectedAnswer": "Library"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Control Room as the main location; include Control Room, Computer Lab, and Library naturally where visually appropriate, but make the real-world use of Control Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Library in a observatory context. Use the written scenario as the source of meaning: The tour passes the Control Room, Computer Lab, Library, and Lecture Hall. The visitor goes to the Library to consult astronomy reference books. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gift Shop", "Parking Area", "Pathway"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.",
+          "scenario": "After visiting the Gift Shop, the visitor follows the Pathway toward the Parking Area. The route is a walking path across the observatory grounds.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Gift Shop", "Parking Area", "Pathway"],
-            "expectedAnswer": "Gift Shop"
+            "question": "What walking route leads toward the parking area?",
+            "options": ["Pathway", "Gift Shop", "Parking Area"],
+            "expectedAnswer": "Pathway"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Gift Shop as the main location; include Gift Shop, Parking Area, and Pathway naturally where visually appropriate, but make the real-world use of Gift Shop the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pathway in a observatory context. Use the written scenario as the source of meaning: After visiting the Gift Shop, the visitor follows the Pathway toward the Parking Area. The route is a walking path across the observatory grounds. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Observatory",
-      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Asteroid, Nebula, Galaxy, and Constellation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Meteor, Dome, Rotating Roof, and Observation Deck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Control Room, Computer Lab, Library, and Lecture Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Gift Shop, Parking Area, and Pathway. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Observatory: Understanding the different roles",
+      "text": "The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth. A Meteor appears briefly as a streak of light. Back inside, the guide shows the Dome protecting the telescope, its Rotating Roof, and the visitor Observation Deck. The tour passes the Control Room, Computer Lab, Library, and Lecture Hall. The visitor goes to the Library to consult astronomy reference books. After visiting the Gift Shop, the visitor follows the Pathway toward the Parking Area. The route is a walking path across the observatory grounds.",
+      "imageBrief": "One uncluttered observatory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid, Nebula, Galaxy, and Constellation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Asteroid",
+        "prompt": "The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth.\nWhich term describes a large cloud of gas and dust?",
+        "answer": "Nebula",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meteor, Dome, Rotating Roof, and Observation Deck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Meteor",
+        "prompt": "A Meteor appears briefly as a streak of light. Back inside, the guide shows the Dome protecting the telescope, its Rotating Roof, and the visitor Observation Deck.\nWhich rounded enclosure protects the telescope?",
+        "answer": "Dome",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Control Room, Computer Lab, Library, and Lecture Hall and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Control Room",
+        "prompt": "The tour passes the Control Room, Computer Lab, Library, and Lecture Hall. The visitor goes to the Library to consult astronomy reference books.\nWhere does the visitor consult reference books?",
+        "answer": "Library",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift Shop, Parking Area, and Pathway and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Gift Shop",
+        "prompt": "After visiting the Gift Shop, the visitor follows the Pathway toward the Parking Area. The route is a walking path across the observatory grounds.\nWhat walking route leads toward the parking area?",
+        "answer": "Pathway",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth. A Meteor appears briefly as a streak of light. Back inside, the guide shows the Dome protecting the telescope, its Rotating Roof, and the visitor Observation Deck. The tour passes the Control Room, Computer Lab, Library, and Lecture Hall. The visitor goes to the Library to consult astronomy reference books. After visiting the Gift Shop, the visitor follows the Pathway toward the Parking Area. The route is a walking path across the observatory grounds.\nExplain the difference between Asteroid and Nebula using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Asteroid"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Constellation"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Optical Telescope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the observatory task. Use Asteroid, Nebula, Galaxy, Constellation, Meteor, Dome, Rotating Roof, Observation Deck, Control Room, Computer Lab, Library, Lecture Hall, Gift Shop, Parking Area, and Pathway in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Asteroid, Nebula, Galaxy, Constellation, Meteor, Dome, Rotating Roof, Observation Deck, Control Room, Computer Lab, Library, Lecture Hall, Gift Shop, Parking Area, Pathway to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Observatory: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Observatory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Asteroid and Nebula, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The visitor compares an Asteroid made mainly of rock, a Nebula made of gas and dust, and a Galaxy containing vast numbers of stars. A Constellation is a pattern of stars seen from Earth. Pause and answer: Which term describes a large cloud of gas and dust?"
     },
     "spacedReview": "1 lesson(s) back: Optical Telescope, Reflecting Telescope from observatory-1\n3 lesson(s) back: fire boots, gloves from fire-station-3\n7 lesson(s) back: Foundation, Frame from construction-site-4"
   },
@@ -386,10 +352,10 @@
       "جهاز عرض القبة السماوية",
       "شاشة مراقبة حاسوب",
       "خادم بيانات",
-      "ساعة حائط / ساعة",
+      "ساعة",
       "مؤشر ليزر",
       "مصباح يدوي أحمر",
-      "سجل الرحلة",
+      "سجل الرصد",
       "عطارد",
       "الزهرة",
       "الأرض",
@@ -400,129 +366,112 @@
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "readingTarget": "102-132 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Spectrograph", "CCD Camera", "Star Chart", "Planetarium Projector"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.",
+          "scenario": "The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument records the separated spectrum of light?",
             "options": ["Spectrograph", "CCD Camera", "Star Chart"],
             "expectedAnswer": "Spectrograph"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spectrograph as the central item; include Spectrograph, CCD Camera, and Star Chart naturally where visually appropriate, but make the real-world use of Spectrograph the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Spectrograph in a observatory context. Use the written scenario as the source of meaning: The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Monitor", "Data Server", "Clock", "Laser Pointer"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.",
+          "scenario": "A Computer Monitor displays the observation while a Data Server stores and provides the files. A Clock records the time. The guide keeps the Laser Pointer off during the equipment explanation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Computer Monitor", "Data Server", "Clock"],
-            "expectedAnswer": "Computer Monitor"
+            "question": "Which computer system stores and provides the observation files?",
+            "options": ["Data Server", "Computer Monitor", "Clock"],
+            "expectedAnswer": "Data Server"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Computer Monitor as the central item; include Computer Monitor, Data Server, and Clock naturally where visually appropriate, but make the real-world use of Computer Monitor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Data Server in a observatory context. Use the written scenario as the source of meaning: A Computer Monitor displays the observation while a Data Server stores and provides the files. A Clock records the time. The guide keeps the Laser Pointer off during the equipment explanation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Red Flashlight", "Logbook", "Mercury", "Venus"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.",
+          "scenario": "Using a Red Flashlight during the night session, the observer writes in a Logbook. Tonight’s discussion compares Mercury, nearest the Sun, with Venus, the second planet.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Red Flashlight", "Logbook", "Mercury"],
-            "expectedAnswer": "Red Flashlight"
+            "question": "Where does the observer write the observation record?",
+            "options": ["Logbook", "Red Flashlight", "Mercury"],
+            "expectedAnswer": "Logbook"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Red Flashlight as the central item; include Red Flashlight, Logbook, and Mercury naturally where visually appropriate, but make the real-world use of Red Flashlight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Logbook in a observatory context. Use the written scenario as the source of meaning: Using a Red Flashlight during the night session, the observer writes in a Logbook. Tonight’s discussion compares Mercury, nearest the Sun, with Venus, the second planet. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Earth", "Mars", "Jupiter"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.",
+          "scenario": "The guide compares Earth, Mars, and Jupiter. Earth is third from the Sun, Mars fourth, and Jupiter fifth and the largest planet in the Solar System.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Earth", "Mars", "Jupiter"],
-            "expectedAnswer": "Earth"
+            "question": "Which named planet is the largest?",
+            "options": ["Jupiter", "Earth", "Mars"],
+            "expectedAnswer": "Jupiter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Earth as the central item; include Earth, Mars, and Jupiter naturally where visually appropriate, but make the real-world use of Earth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Jupiter in a observatory context. Use the written scenario as the source of meaning: The guide compares Earth, Mars, and Jupiter. Earth is third from the Sun, Mars fourth, and Jupiter fifth and the largest planet in the Solar System. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Observatory",
-      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spectrograph, CCD Camera, Star Chart, and Planetarium Projector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Monitor, Data Server, Clock, and Laser Pointer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Red Flashlight, Logbook, Mercury, and Venus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Earth, Mars, and Jupiter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Observatory: Comparing the equipment",
+      "text": "The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display. A Computer Monitor displays the observation while a Data Server stores and provides the files. A Clock records the time. The guide keeps the Laser Pointer off during the equipment explanation. Using a Red Flashlight during the night session, the observer writes in a Logbook. Tonight’s discussion compares Mercury, nearest the Sun, with Venus, the second planet. The guide compares Earth, Mars, and Jupiter. Earth is third from the Sun, Mars fourth, and Jupiter fifth and the largest planet in the Solar System.",
+      "imageBrief": "One uncluttered observatory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrograph, CCD Camera, Star Chart, and Planetarium Projector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display.\nWhich instrument records the separated spectrum of light?",
         "answer": "Spectrograph",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Monitor, Data Server, Clock, and Laser Pointer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Computer Monitor",
+        "prompt": "A Computer Monitor displays the observation while a Data Server stores and provides the files. A Clock records the time. The guide keeps the Laser Pointer off during the equipment explanation.\nWhich computer system stores and provides the observation files?",
+        "answer": "Data Server",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Flashlight, Logbook, Mercury, and Venus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Red Flashlight",
+        "prompt": "Using a Red Flashlight during the night session, the observer writes in a Logbook. Tonight’s discussion compares Mercury, nearest the Sun, with Venus, the second planet.\nWhere does the observer write the observation record?",
+        "answer": "Logbook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earth, Mars, and Jupiter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Earth",
+        "prompt": "The guide compares Earth, Mars, and Jupiter. Earth is third from the Sun, Mars fourth, and Jupiter fifth and the largest planet in the Solar System.\nWhich named planet is the largest?",
+        "answer": "Jupiter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display. A Computer Monitor displays the observation while a Data Server stores and provides the files. A Clock records the time. The guide keeps the Laser Pointer off during the equipment explanation. Using a Red Flashlight during the night session, the observer writes in a Logbook. Tonight’s discussion compares Mercury, nearest the Sun, with Venus, the second planet. The guide compares Earth, Mars, and Jupiter. Earth is third from the Sun, Mars fourth, and Jupiter fifth and the largest planet in the Solar System.\nExplain the difference between Spectrograph and CCD Camera using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Spectrograph"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Planetarium Projector"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Asteroid” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the observatory task. Use Spectrograph, CCD Camera, Star Chart, Planetarium Projector, Computer Monitor, Data Server, Clock, Laser Pointer, Red Flashlight, Logbook, Mercury, Venus, Earth, Mars, and Jupiter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Spectrograph, CCD Camera, Star Chart, Planetarium Projector, Computer Monitor, Data Server, Clock, Laser Pointer, Red Flashlight, Logbook, Mercury, Venus, Earth, Mars, Jupiter to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Observatory: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Observatory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Spectrograph and CCD Camera, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The researcher shows a Spectrograph for recording a light spectrum, a CCD Camera for images, and a Star Chart for positions. A Planetarium Projector creates an indoor sky display. Pause and answer: Which instrument records the separated spectrum of light?"
     },
     "spacedReview": "1 lesson(s) back: Asteroid, Nebula from observatory-2\n3 lesson(s) back: emergency exit, fire escape from fire-station-4\n7 lesson(s) back: Bricklayer, Painter from construction-site-5"
   },
@@ -574,129 +523,112 @@
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "111-141 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Saturn", "Uranus", "Neptune", "Pluto"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.",
+          "scenario": "The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Saturn", "Uranus", "Neptune"],
-            "expectedAnswer": "Saturn"
+            "question": "Which named object is classified as a dwarf planet?",
+            "options": ["Pluto", "Saturn", "Uranus"],
+            "expectedAnswer": "Pluto"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Saturn as the central item; include Saturn, Uranus, and Neptune naturally where visually appropriate, but make the real-world use of Saturn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pluto in a observatory context. Use the written scenario as the source of meaning: The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Asteroid Belt", "Star Gazing", "Photography", "Data Analysis"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.",
+          "scenario": "The group discusses the Asteroid Belt, then separates Star Gazing from Photography. Data Analysis is the examination of collected information, not merely looking at the sky or taking a photograph.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Asteroid Belt", "Star Gazing", "Photography"],
-            "expectedAnswer": "Asteroid Belt"
+            "question": "Which activity examines collected information?",
+            "options": ["Data Analysis", "Asteroid Belt", "Star Gazing"],
+            "expectedAnswer": "Data Analysis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Asteroid Belt as the central item; include Asteroid Belt, Star Gazing, and Photography naturally where visually appropriate, but make the real-world use of Asteroid Belt the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Data Analysis in a observatory context. Use the written scenario as the source of meaning: The group discusses the Asteroid Belt, then separates Star Gazing from Photography. Data Analysis is the examination of collected information, not merely looking at the sky or taking a photograph. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Public Viewing", "Night Tour", "Lecture", "Research"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.",
+          "scenario": "The schedule lists Public Viewing for visitors, a guided Night Tour, a Lecture, and a Research session for the observing team. Public Viewing lets visitors observe through the equipment.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which scheduled session allows visitors to observe through the equipment?",
             "options": ["Public Viewing", "Night Tour", "Lecture"],
             "expectedAnswer": "Public Viewing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Public Viewing through a realistic adult task; include Public Viewing, Night Tour, and Lecture naturally where visually appropriate, but make the real-world use of Public Viewing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Public Viewing in a observatory context. Use the written scenario as the source of meaning: The schedule lists Public Viewing for visitors, a guided Night Tour, a Lecture, and a Research session for the observing team. Public Viewing lets visitors observe through the equipment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.",
+          "scenario": "The guide describes Sky Mapping and Eclipse Watching, noting that solar observation requires certified protection and professional guidance. A Meteor Shower produces many meteor streaks when Earth encounters a stream of space debris.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Sky Mapping", "Eclipse Watching", "Meteor Shower"],
-            "expectedAnswer": "Sky Mapping"
+            "question": "Which event produces many meteor streaks?",
+            "options": ["Meteor Shower", "Sky Mapping", "Eclipse Watching"],
+            "expectedAnswer": "Meteor Shower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Sky Mapping through a realistic adult task; include Sky Mapping, Eclipse Watching, and Meteor Shower naturally where visually appropriate, but make the real-world use of Sky Mapping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Meteor Shower in a observatory context. Use the written scenario as the source of meaning: The guide describes Sky Mapping and Eclipse Watching, noting that solar observation requires certified protection and professional guidance. A Meteor Shower produces many meteor streaks when Earth encounters a stream of space debris. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Observatory",
-      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Saturn, Uranus, Neptune, and Pluto. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Asteroid Belt, Star Gazing, Photography, and Data Analysis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Viewing, Night Tour, Lecture, and Research. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sky Mapping, Eclipse Watching, and Meteor Shower. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Observatory: A guided walk",
+      "text": "The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets. The group discusses the Asteroid Belt, then separates Star Gazing from Photography. Data Analysis is the examination of collected information, not merely looking at the sky or taking a photograph. The schedule lists Public Viewing for visitors, a guided Night Tour, a Lecture, and a Research session for the observing team. Public Viewing lets visitors observe through the equipment. The guide describes Sky Mapping and Eclipse Watching, noting that solar observation requires certified protection and professional guidance. A Meteor Shower produces many meteor streaks when Earth encounters a stream of space debris.",
+      "imageBrief": "One uncluttered observatory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Saturn, Uranus, Neptune, and Pluto and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Saturn",
+        "prompt": "The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets.\nWhich named object is classified as a dwarf planet?",
+        "answer": "Pluto",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Asteroid Belt, Star Gazing, Photography, and Data Analysis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Asteroid Belt",
+        "prompt": "The group discusses the Asteroid Belt, then separates Star Gazing from Photography. Data Analysis is the examination of collected information, not merely looking at the sky or taking a photograph.\nWhich activity examines collected information?",
+        "answer": "Data Analysis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Viewing, Night Tour, Lecture, and Research and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The schedule lists Public Viewing for visitors, a guided Night Tour, a Lecture, and a Research session for the observing team. Public Viewing lets visitors observe through the equipment.\nWhich scheduled session allows visitors to observe through the equipment?",
         "answer": "Public Viewing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sky Mapping, Eclipse Watching, and Meteor Shower and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Sky Mapping",
+        "prompt": "The guide describes Sky Mapping and Eclipse Watching, noting that solar observation requires certified protection and professional guidance. A Meteor Shower produces many meteor streaks when Earth encounters a stream of space debris.\nWhich event produces many meteor streaks?",
+        "answer": "Meteor Shower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets. The group discusses the Asteroid Belt, then separates Star Gazing from Photography. Data Analysis is the examination of collected information, not merely looking at the sky or taking a photograph. The schedule lists Public Viewing for visitors, a guided Night Tour, a Lecture, and a Research session for the observing team. Public Viewing lets visitors observe through the equipment. The guide describes Sky Mapping and Eclipse Watching, noting that solar observation requires certified protection and professional guidance. A Meteor Shower produces many meteor streaks when Earth encounters a stream of space debris.\nExplain the difference between Saturn and Uranus using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Saturn"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Pluto"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Spectrograph” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the observatory task. Use Saturn, Uranus, Neptune, Pluto, Asteroid Belt, Star Gazing, Photography, Data Analysis, Public Viewing, Night Tour, Lecture, Research, Sky Mapping, Eclipse Watching, and Meteor Shower in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Saturn, Uranus, Neptune, Pluto, Asteroid Belt, Star Gazing, Photography, Data Analysis, Public Viewing, Night Tour, Lecture, Research, Sky Mapping, Eclipse Watching, Meteor Shower to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Observatory: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Observatory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Saturn and Uranus, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The presentation distinguishes the planets Saturn, Uranus, and Neptune from Pluto. Pluto is classified as a dwarf planet, so the presenter does not count it among the eight planets. Pause and answer: Which named object is classified as a dwarf planet?"
     },
     "spacedReview": "1 lesson(s) back: Spectrograph, CCD Camera from observatory-3\n3 lesson(s) back: Optical Telescope, Reflecting Telescope from observatory-1\n7 lesson(s) back: firefighter, fire chief from fire-station-1"
   },
@@ -744,129 +676,112 @@
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "readingTarget": "96-126 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Camera", "Photometer", "Computer"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.",
+          "scenario": "The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Telescope", "Camera", "Photometer"],
-            "expectedAnswer": "Telescope"
+            "question": "Which instrument measures light?",
+            "options": ["Photometer", "Telescope", "Camera"],
+            "expectedAnswer": "Photometer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Telescope as the central item; include Telescope, Camera, and Photometer naturally where visually appropriate, but make the real-world use of Telescope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Photometer in a observatory context. Use the written scenario as the source of meaning: The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Antenna", "Magnitude", "Orbit", "Light-Year"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.",
+          "scenario": "An Antenna receives signals, Magnitude measures celestial brightness, and Orbit describes a gravitational path. A Light-Year measures distance, despite having the word year in its name.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Antenna", "Magnitude", "Orbit"],
-            "expectedAnswer": "Antenna"
+            "question": "Which term measures distance rather than time?",
+            "options": ["Light-Year", "Antenna", "Magnitude"],
+            "expectedAnswer": "Light-Year"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Antenna as the central item; include Antenna, Magnitude, and Orbit naturally where visually appropriate, but make the real-world use of Antenna the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Light-Year in a observatory context. Use the written scenario as the source of meaning: An Antenna receives signals, Magnitude measures celestial brightness, and Orbit describes a gravitational path. A Light-Year measures distance, despite having the word year in its name. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Spectrum", "Rotation", "Eclipse", "Transit"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.",
+          "scenario": "The guide discusses a Spectrum of light and an object’s Rotation. An Eclipse blocks light from another body; a Transit is the passage of an object across another body’s apparent face.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Spectrum", "Rotation", "Eclipse"],
-            "expectedAnswer": "Spectrum"
+            "question": "Which term describes passage across another body’s apparent face?",
+            "options": ["Transit", "Spectrum", "Rotation"],
+            "expectedAnswer": "Transit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spectrum as the central item; include Spectrum, Rotation, and Eclipse naturally where visually appropriate, but make the real-world use of Spectrum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Transit in a observatory context. Use the written scenario as the source of meaning: The guide discusses a Spectrum of light and an object’s Rotation. An Eclipse blocks light from another body; a Transit is the passage of an object across another body’s apparent face. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Discovery"],
-          "scenario": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.",
+          "scenario": "After checking an unfamiliar object against existing records, researchers announce a Discovery. A surprising photograph alone would not establish that the object was previously unknown.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Discovery", "Telescope", "Camera"],
+            "question": "What term names the finding of something previously unknown?",
+            "options": ["Discovery"],
             "expectedAnswer": "Discovery"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Discovery as the central item; include Discovery, Telescope, and Camera naturally where visually appropriate, but make the real-world use of Discovery the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Discovery in a observatory context. Use the written scenario as the source of meaning: After checking an unfamiliar object against existing records, researchers announce a Discovery. A surprising photograph alone would not establish that the object was previously unknown. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written observatory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Observatory",
-      "text": "At the observatory, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Camera, Photometer, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Antenna, Magnitude, Orbit, and Light-Year. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Spectrum, Rotation, Eclipse, and Transit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Discovery. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Observatory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Observatory: A practical discussion",
+      "text": "The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information. An Antenna receives signals, Magnitude measures celestial brightness, and Orbit describes a gravitational path. A Light-Year measures distance, despite having the word year in its name. The guide discusses a Spectrum of light and an object’s Rotation. An Eclipse blocks light from another body; a Transit is the passage of an object across another body’s apparent face. After checking an unfamiliar object against existing records, researchers announce a Discovery. A surprising photograph alone would not establish that the object was previously unknown.",
+      "imageBrief": "One uncluttered observatory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Camera, Photometer, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Telescope",
+        "prompt": "The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information.\nWhich instrument measures light?",
+        "answer": "Photometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antenna, Magnitude, Orbit, and Light-Year and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Antenna",
+        "prompt": "An Antenna receives signals, Magnitude measures celestial brightness, and Orbit describes a gravitational path. A Light-Year measures distance, despite having the word year in its name.\nWhich term measures distance rather than time?",
+        "answer": "Light-Year",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrum, Rotation, Eclipse, and Transit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Spectrum",
+        "prompt": "The guide discusses a Spectrum of light and an object’s Rotation. An Eclipse blocks light from another body; a Transit is the passage of an object across another body’s apparent face.\nWhich term describes passage across another body’s apparent face?",
+        "answer": "Transit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the observatory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Discovery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "After checking an unfamiliar object against existing records, researchers announce a Discovery. A surprising photograph alone would not establish that the object was previously unknown.\nWhat term names the finding of something previously unknown?",
         "answer": "Discovery",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information. An Antenna receives signals, Magnitude measures celestial brightness, and Orbit describes a gravitational path. A Light-Year measures distance, despite having the word year in its name. The guide discusses a Spectrum of light and an object’s Rotation. An Eclipse blocks light from another body; a Transit is the passage of an object across another body’s apparent face. After checking an unfamiliar object against existing records, researchers announce a Discovery. A surprising photograph alone would not establish that the object was previously unknown.\nExplain the difference between Telescope and Camera using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Telescope"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Computer"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Saturn” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the observatory task. Use Telescope, Camera, Photometer, Computer, Antenna, Magnitude, Orbit, Light-Year, Spectrum, Rotation, Eclipse, Transit, and Discovery in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Telescope, Camera, Photometer, Computer, Antenna, Magnitude, Orbit, Light-Year, Spectrum, Rotation, Eclipse, Transit, Discovery to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Observatory: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Observatory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Telescope and Camera, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The researcher contrasts a Telescope for distant viewing, a Camera for recording images, a Photometer for measuring light, and a Computer for processing information. Pause and answer: Which instrument measures light?"
     },
     "spacedReview": "1 lesson(s) back: Saturn, Uranus from observatory-4\n3 lesson(s) back: Asteroid, Nebula from observatory-2\n7 lesson(s) back: fire boat, fire hose from fire-station-2"
   }

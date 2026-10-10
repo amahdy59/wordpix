@@ -25,8 +25,8 @@
     "arabicTranslation": "حافلة مدرسية"
   },
   "trolley": {
-    "definition": "An electric bus powered through overhead wires.",
-    "arabicTranslation": "حافلة كهربائية بسلك علوي"
+    "definition": "A trolleybus powered through overhead wires in this account; trolley can have other regional meanings.",
+    "arabicTranslation": "حافلة كهربائية بأسلاك علوية"
   },
   "articulated-bus": {
     "definition": "A long bus made of two or more sections joined by a flexible connection.",
@@ -35,13 +35,13 @@
   },
   "night-bus": {
     "definition": "A bus service that operates late at night or during overnight hours.",
-    "exampleUsage": "The night bus runs after the subway closes.",
+    "exampleUsage": "Maya checks the night bus timetable for her late journey.",
     "arabicTranslation": "حافلة ليلية"
   },
   "express-bus": {
-    "definition": "A bus that travels more quickly by making fewer stops than a regular service.",
-    "exampleUsage": "The express bus stops only at major stations.",
-    "arabicTranslation": "حافلة سريعة"
+    "definition": "A bus service making fewer stops on a route; actual journey time varies.",
+    "exampleUsage": "This express bus makes fewer stops along the route.",
+    "arabicTranslation": "حافلة سريعة قليلة التوقفات"
   },
   "platform": {
     "definition": "A designated area where passengers board or leave buses.",
@@ -70,7 +70,7 @@
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
     "arabicTranslation": "آلة بيع ذاتي",
-    "exampleUsage": "The vending machine was used during the activity."
+    "exampleUsage": "The vending machine sells packaged snacks."
   },
   "restroom": {
     "definition": "A public room containing toilets and washing facilities.",
@@ -90,12 +90,12 @@
   },
   "tap-card": {
     "definition": "A contactless travel card that is touched against a reader to pay a fare or record a journey.",
-    "exampleUsage": "Passengers tap the card on the reader when boarding.",
+    "exampleUsage": "Omar asks how to use the contactless tap card.",
     "arabicTranslation": "بطاقة مواصلات لا تلامسية"
   },
   "machine": {
     "arabicTranslation": "آلة",
-    "definition": "A device with moving parts that performs a task."
+    "definition": "A device used for a task, such as selling or validating a ticket."
   },
   "receipt": {
     "arabicTranslation": "إيصال",
@@ -110,13 +110,14 @@
     "arabicTranslation": "الانتقال بين وسائل النقل"
   },
   "day-pass": {
-    "definition": "A travel ticket that allows journeys on a transport system for one day.",
-    "exampleUsage": "The day pass covers unlimited bus rides until midnight.",
+    "definition": "A ticket permitting specified journeys during a stated daily validity period.",
+    "exampleUsage": "Maya checks the day pass’s stated validity period.",
     "arabicTranslation": "تذكرة يومية"
   },
   "student-discount": {
-    "definition": "A reduced charge that businesses offer people enrolled in school for products or services.",
-    "arabicTranslation": "خصم للطلاب"
+    "definition": "A reduced price for students meeting the provider’s eligibility rules.",
+    "arabicTranslation": "خصم للطلاب",
+    "exampleUsage": "Maya asks which documents establish eligibility for the student discount."
   },
   "seat": {
     "definition": "Any support where you can sit (especially the part of a chair or bench etc. on which you sit).",
@@ -133,7 +134,7 @@
   "bell": {
     "definition": "A device that makes a ringing sound.",
     "arabicTranslation": "جرس",
-    "exampleUsage": "The bell was used during the activity."
+    "exampleUsage": "The bell sounds after a stop request."
   },
   "stop-button": {
     "definition": "A button passengers press to tell the driver they want to leave at the next stop.",
@@ -142,7 +143,7 @@
   },
   "driver-seat": {
     "definition": "The seat where the driver sits and controls a vehicle.",
-    "exampleUsage": "The driver seat is separated from the passenger area.",
+    "exampleUsage": "The driver sits in the driver seat.",
     "arabicTranslation": "مقعد السائق"
   },
   "wheelchair-ramp": {
@@ -163,8 +164,9 @@
     "arabicTranslation": "راكب"
   },
   "commuter": {
-    "definition": "A person who regularly travels between home and work or study.",
-    "arabicTranslation": "راكب يتنقل يوميًا"
+    "definition": "A person regularly travelling between home and work or study, not necessarily every day.",
+    "arabicTranslation": "شخص يتنقل بانتظام للعمل أو الدراسة",
+    "exampleUsage": "The commuter travels regularly to an evening course."
   },
   "inspector": {
     "definition": "A transport worker who checks that passengers have valid tickets.",
@@ -179,16 +181,17 @@
     "arabicTranslation": "سائح"
   },
   "student": {
-    "definition": "A person who studies at a school.",
+    "definition": "A person learning through a course or educational program.",
     "arabicTranslation": "طالب"
   },
   "elderly": {
-    "arabicTranslation": "مسن",
-    "definition": "Relating to people who are old, especially those past middle age."
+    "arabicTranslation": "مسن / كبير في السن",
+    "definition": "Older in age; used as an adjective for people, with older person often a respectful alternative.",
+    "exampleUsage": "The visitor describes herself as elderly."
   },
   "parent": {
-    "definition": "An adult who cares for a child.",
-    "arabicTranslation": "والد"
+    "definition": "A person who is a mother, father or other parent of a child.",
+    "arabicTranslation": "أحد الوالدين"
   },
   "child": {
     "definition": "A young person who has not become an adult.",
@@ -214,16 +217,16 @@
     "arabicTranslation": "إشعار بالتأخير"
   },
   "stop-sign": {
-    "definition": "A red, eight-sided road sign requires drivers to halt before crossing an intersection.",
+    "definition": "A road sign requiring drivers to stop under local traffic rules.",
     "arabicTranslation": "علامة قف"
   },
   "bus-lane": {
-    "definition": "A marked section of a road is reserved for buses rather than general traffic.",
+    "definition": "A marked road lane reserved for buses and any other locally permitted traffic.",
     "arabicTranslation": "مسار حافلات"
   },
   "no-entry": {
     "definition": "A sign or instruction showing that people or vehicles are not allowed to enter an area.",
-    "exampleUsage": "The no-entry sign blocked access to the bus lane.",
+    "exampleUsage": "The no entry notice restricts access to the staff area.",
     "arabicTranslation": "ممنوع الدخول"
   },
   "next-stop": {
@@ -239,5 +242,25 @@
   "detour": {
     "definition": "A roundabout road (especially one that is used temporarily while a main route is blocked).",
     "arabicTranslation": "تحويلة طريق"
+  },
+  "trash-can": {
+    "definition": "A container for rubbish.",
+    "arabicTranslation": "سلة مهملات",
+    "exampleUsage": "Omar puts empty packaging in the trash can."
+  },
+  "clock": {
+    "definition": "A device showing the time.",
+    "arabicTranslation": "ساعة",
+    "exampleUsage": "The clock shows the current time."
+  },
+  "window": {
+    "definition": "A glazed opening allowing passengers to see outside.",
+    "arabicTranslation": "نافذة",
+    "exampleUsage": "Maya looks through the window."
+  },
+  "door": {
+    "definition": "A movable panel allowing entry to or exit from a bus.",
+    "arabicTranslation": "باب",
+    "exampleUsage": "The door remains open while the bus is stationary for boarding."
   }
 }

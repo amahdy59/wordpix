@@ -45,116 +45,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key days & months 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to days & months in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a stated day, month or planning term.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Monday", "Tuesday", "Wednesday"],
-          "scenario": "In an appointment calendar, an adult reviews entries related to monday, tuesday, and wednesday. The highlighted entry corresponds to monday.",
+          "scenario": "Maya’s course meets on Monday. Her other appointments are on Tuesday and Wednesday.",
           "check": {
-            "question": "Which calendar term matches the selected entry?",
+            "question": "On which day does Maya’s course meet?",
             "options": ["Monday", "Tuesday", "Wednesday"],
             "expectedAnswer": "Monday"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In an appointment calendar, an adult reviews entries related to monday, tuesday, and wednesday. The highlighted entry corresponds to monday. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Monday, Tuesday, Wednesday in a natural setting."
+          "imageBrief": "Adult course folder beside open blank weekly planner. Written passage supplies named days; no readable weekday names or highlighted entry.",
+          "imageAlt": "Adult course folder beside open blank weekly planner."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Thursday", "Friday", "Saturday"],
-          "scenario": "In a project schedule, an adult reviews entries related to thursday, friday, and saturday. The highlighted entry corresponds to thursday.",
+          "scenario": "The team reviews its plan on Thursday. The report is due on Friday, and Maya visits a friend on Saturday.",
           "check": {
-            "question": "Which calendar term matches the selected entry in the example with thursday, friday?",
+            "question": "On which day does the team review its plan?",
             "options": ["Friday", "Saturday", "Thursday"],
             "expectedAnswer": "Thursday"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a project schedule, an adult reviews entries related to thursday, friday, and saturday. The highlighted entry corresponds to thursday. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Thursday, Friday, Saturday in a natural setting."
+          "imageBrief": "Adult office desk with project folder and blank planner. No date labels, highlighting or readable calendar.",
+          "imageAlt": "Adult office desk with project folder and blank planner."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sunday", "Weekday", "Weekend"],
-          "scenario": "In a personal diary, an adult reviews entries related to sunday, weekday, and weekend. The highlighted entry corresponds to sunday.",
+          "scenario": "For Maya, Saturday and Sunday are the weekend. Sunday is her day off; Monday is a weekday in her work schedule.",
           "check": {
-            "question": "Which planner expression fits this entry?",
+            "question": "Which day is Maya’s day off?",
             "options": ["Weekend", "Sunday", "Weekday"],
             "expectedAnswer": "Sunday"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a personal diary, an adult reviews entries related to sunday, weekday, and weekend. The highlighted entry corresponds to sunday. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Sunday, Weekday, Weekend in a natural setting."
+          "imageBrief": "Unlabelled home planner beside closed work bag. Text identifies Maya’s own weekend; no assumption about every country or worker.",
+          "imageAlt": "Unlabelled home planner beside closed work bag."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Day Off", "January", "February"],
-          "scenario": "In a team agenda, an adult reviews entries related to day off, january, and february. The highlighted entry corresponds to day off.",
+          "scenario": "Maya is not required to work today: it is her day off. Her course starts in January and continues in February.",
           "check": {
-            "question": "Which time-planning term matches the situation?",
+            "question": "Which phrase describes a day when Maya does not have to work?",
             "options": ["Day Off", "January", "February"],
             "expectedAnswer": "Day Off"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a team agenda, an adult reviews entries related to day off, january, and february. The highlighted entry corresponds to day off. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Day Off, January, February in a natural setting."
+          "imageBrief": "Closed work bag beside ordinary home table and blank planner. No readable date or leisure stereotype.",
+          "imageAlt": "Closed work bag beside ordinary home table and blank planner."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["March", "April", "May"],
-          "scenario": "In a work planner, an adult reviews entries related to march, april, and may. The highlighted entry corresponds to march.",
+          "scenario": "In the Gregorian calendar, March follows February. Maya’s next classes are in March, April and May.",
           "check": {
-            "question": "What date or planning word is being used?",
+            "question": "Which month follows February?",
             "options": ["April", "May", "March"],
             "expectedAnswer": "March"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a work planner, an adult reviews entries related to march, april, and may. The highlighted entry corresponds to march. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including March, April, May in a natural setting."
+          "imageBrief": "Three plain course folders beside blank monthly planner. Text supplies month order; no readable month names or visual season claim.",
+          "imageAlt": "Three plain course folders beside blank monthly planner."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Days & Months 1: Updating the Planner",
-      "text": "At the start of the week, an adult updates a planner for work and personal commitments. The calendar includes monday, tuesday, wednesday, thursday, and friday. The planning period also refers to saturday, sunday, weekday, weekend, and day off. For deadlines and appointments, the person checks january, february, march, april, and may. Important dates are reviewed again before anything is confirmed.",
-      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+      "text": "Maya works each weekday: Monday, Tuesday, Wednesday, Thursday and Friday. Saturday and Sunday are her weekend. Sunday is her day off. In January she plans a course for February. Classes continue in March and April. The course ends in May. Maya writes each class date in her planner.",
+      "imageBrief": "Adult desk with open blank planner and work bag. Do not infer dates or weekends from an unlabelled calendar; passage provides them."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Monday"
+        "prompt": "Maya’s course meets on Monday. Her other appointments are on Tuesday and Wednesday.\nOn which day does Maya’s course meet?",
+        "answer": "Monday",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Thursday"
+        "prompt": "The team reviews its plan on Thursday. The report is due on Friday, and Maya visits a friend on Saturday.\nOn which day does the team review its plan?",
+        "answer": "Thursday",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sunday"
+        "prompt": "For Maya, Saturday and Sunday are the weekend. Sunday is her day off; Monday is a weekday in her work schedule.\nWhich day is Maya’s day off?",
+        "answer": "Sunday",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Day Off"
+        "prompt": "Maya is not required to work today: it is her day off. Her course starts in January and continues in February.\nWhich phrase describes a day when Maya does not have to work?",
+        "answer": "Day Off",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "March"
+        "prompt": "In the Gregorian calendar, March follows February. Maya’s next classes are in March, April and May.\nWhich month follows February?",
+        "answer": "March",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Monday"
+        "prompt": "Read the passage: Maya works each weekday: Monday, Tuesday, Wednesday, Thursday and Friday. Saturday and Sunday are her weekend. Sunday is her day off. In January she plans a course for February. Classes continue in March and April. The course ends in May. Maya writes each class date in her planner.\nIn which month does Maya’s course end?",
+        "answer": "May",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Tuesday"
+        "prompt": "Tell a colleague that you have a day off on Sunday.",
+        "answer": "I have a day off on Sunday.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Saturday"
+        "prompt": "Your course meets every Tuesday. Tell a new classmate when it meets.",
+        "answer": "The course meets every Tuesday.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Days & Months: See It, Say It",
-      "idea": "30–50 second contextual video set in a calendar. Show monday, tuesday, wednesday, thursday, and friday naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In an appointment calendar, an adult reviews entries related to monday, tuesday, and wednesday. The highlighted entry corresponds to monday."
+      "title": "Days, Months and Plans",
+      "idea": "Adult work and course planning. Spoken or written context identifies dates and relative days. Show blank planner support rather than expecting viewers to read generated calendar labels. Weekend and academic-year schedules belong to the named person or institution.",
+      "scriptStarter": "Maya’s course meets on Monday. Her other appointments are on Tuesday and Wednesday."
     },
     "spacedReview": "1 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4\n3 lesson(s) back: Noon, Midnight from telling-time-2\n7 lesson(s) back: Chard, Collard Greens from vegetables-2"
   },
@@ -204,116 +228,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key days & months 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to days & months in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a stated day, month or planning term.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["June", "July", "August"],
-          "scenario": "In a project schedule, an adult reviews entries related to june, july, and august. The highlighted entry corresponds to june.",
+          "scenario": "In the Gregorian calendar, June comes before July and August. Maya’s short course starts in June.",
           "check": {
-            "question": "What date or planning word is being used in the example with june, july?",
+            "question": "Which month does Maya’s short course start in?",
             "options": ["July", "August", "June"],
             "expectedAnswer": "June"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a project schedule, an adult reviews entries related to june, july, and august. The highlighted entry corresponds to june. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including June, July, August in a natural setting."
+          "imageBrief": "Adult course-registration folder beside blank calendar. No month labels or inferred summer weather.",
+          "imageAlt": "Adult course-registration folder beside blank calendar."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["September", "October", "November"],
-          "scenario": "In a personal diary, an adult reviews entries related to september, october, and november. The highlighted entry corresponds to september.",
+          "scenario": "At this college, classes begin in September. The first projects continue in October and November.",
           "check": {
-            "question": "What date or planning word is being used in the example with september, october?",
+            "question": "Which month do classes begin in at this college?",
             "options": ["November", "September", "October"],
             "expectedAnswer": "September"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a personal diary, an adult reviews entries related to september, october, and november. The highlighted entry corresponds to september. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including September, October, November in a natural setting."
+          "imageBrief": "Adult college desk with course folder and blank planner. No claim all colleges share these dates, and no readable labels.",
+          "imageAlt": "Adult college desk with course folder and blank planner."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["December", "Leap Year", "Fiscal Year"],
-          "scenario": "In a team agenda, an adult reviews entries related to december, leap year, and fiscal year. The highlighted entry corresponds to december.",
+          "scenario": "December is the last Gregorian month. A leap year has an extra February day; a fiscal year is used for financial accounts.",
           "check": {
-            "question": "Which month is highlighted in the agenda?",
+            "question": "Which month is last in the Gregorian calendar?",
             "options": ["December", "Leap Year", "Fiscal Year"],
             "expectedAnswer": "December"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a team agenda, an adult reviews entries related to december, leap year, and fiscal year. The highlighted entry corresponds to december. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including December, Leap Year, Fiscal Year in a natural setting."
+          "imageBrief": "Closed year-report folder beside blank calendar. Written passage supplies month; no readable fiscal labels or seasonal cues.",
+          "imageAlt": "Closed year-report folder beside blank calendar."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Academic Year", "Calendar Year", "Quarter"],
-          "scenario": "In a work planner, an adult reviews entries related to academic year, calendar year, and quarter. The highlighted entry corresponds to academic year.",
+          "scenario": "An academic year is the period of a college’s teaching programme. A calendar year runs January to December; a quarter is three months.",
           "check": {
-            "question": "Which calendar term matches the selected entry in the example with academic year, calendar year?",
+            "question": "Which term names the college teaching year?",
             "options": ["Calendar Year", "Quarter", "Academic Year"],
             "expectedAnswer": "Academic Year"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a work planner, an adult reviews entries related to academic year, calendar year, and quarter. The highlighted entry corresponds to academic year. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Academic Year, Calendar Year, Quarter in a natural setting."
+          "imageBrief": "College course folder beside unlabelled planner. No text, start-date assertion or highlighted school calendar.",
+          "imageAlt": "College course folder beside unlabelled planner."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Semester", "Trimester", "Biannual"],
-          "scenario": "In an appointment calendar, an adult reviews entries related to semester, trimester, and biannual. The highlighted entry corresponds to semester.",
+          "scenario": "This college divides its academic year into two semesters. Another institution uses three trimesters. Its biannual report appears twice a year.",
           "check": {
-            "question": "Which calendar term matches the selected entry in the example with semester, trimester?",
+            "question": "Which term names one of this college’s two academic-year divisions?",
             "options": ["Biannual", "Semester", "Trimester"],
             "expectedAnswer": "Semester"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In an appointment calendar, an adult reviews entries related to semester, trimester, and biannual. The highlighted entry corresponds to semester. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Semester, Trimester, Biannual in a natural setting."
+          "imageBrief": "Two closed plain course folders on adult college administration desk. Text defines semester; no claim folder count alone proves institution policy.",
+          "imageAlt": "Two closed plain course folders on adult college administration desk."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Days & Months 2: Updating the Planner",
-      "text": "At the start of the week, an adult updates a planner for work and personal commitments. The calendar includes june, july, august, september, and october. The planning period also refers to november, december, leap year, fiscal year, and academic year. For deadlines and appointments, the person checks calendar year, quarter, semester, trimester, and biannual. Important dates are reviewed again before anything is confirmed.",
-      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+      "text": "This college’s academic year starts in September. Classes continue in October and November. The first semester ends in December; the second ends in June. Maya studies in July and rests in August. Another college uses three trimesters. The office’s fiscal year has four quarters. Its biannual report appears twice a year. A Gregorian calendar year has an extra February day in a leap year.",
+      "imageBrief": "Adult college administration desk with unlabelled planner and report folders. No generated calendar dates or unsupported claim that all institutions share this schedule."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "June"
+        "prompt": "In the Gregorian calendar, June comes before July and August. Maya’s short course starts in June.\nWhich month does Maya’s short course start in?",
+        "answer": "June",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "September"
+        "prompt": "At this college, classes begin in September. The first projects continue in October and November.\nWhich month do classes begin in at this college?",
+        "answer": "September",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "December"
+        "prompt": "December is the last Gregorian month. A leap year has an extra February day; a fiscal year is used for financial accounts.\nWhich month is last in the Gregorian calendar?",
+        "answer": "December",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Academic Year"
+        "prompt": "An academic year is the period of a college’s teaching programme. A calendar year runs January to December; a quarter is three months.\nWhich term names the college teaching year?",
+        "answer": "Academic Year",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Semester"
+        "prompt": "This college divides its academic year into two semesters. Another institution uses three trimesters. Its biannual report appears twice a year.\nWhich term names one of this college’s two academic-year divisions?",
+        "answer": "Semester",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "June"
+        "prompt": "Read the passage: This college’s academic year starts in September. Classes continue in October and November. The first semester ends in December; the second ends in June. Maya studies in July and rests in August. Another college uses three trimesters. The office’s fiscal year has four quarters. Its biannual report appears twice a year. A Gregorian calendar year has an extra February day in a leap year.\nHow often does the office’s biannual report appear?",
+        "answer": "Twice a year",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "July"
+        "prompt": "Explain that this office publishes its report twice a year using biannual.",
+        "answer": "This office publishes a biannual report.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "November"
+        "prompt": "A college divides its teaching year into three parts. Name one part.",
+        "answer": "A trimester",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Days & Months: See It, Say It",
-      "idea": "30–50 second contextual video set in a calendar. Show june, july, august, september, and october naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In a project schedule, an adult reviews entries related to june, july, and august. The highlighted entry corresponds to june."
+      "title": "Days, Months and Plans",
+      "idea": "Adult work and course planning. Spoken or written context identifies dates and relative days. Show blank planner support rather than expecting viewers to read generated calendar labels. Weekend and academic-year schedules belong to the named person or institution.",
+      "scriptStarter": "In the Gregorian calendar, June comes before July and August. Maya’s short course starts in June."
     },
     "spacedReview": "1 lesson(s) back: Monday, Tuesday from days-months-1\n3 lesson(s) back: Morning, Afternoon from telling-time-3\n7 lesson(s) back: Zucchini, Pumpkin from vegetables-3"
   },
@@ -355,7 +403,7 @@
       "الشهر القادم",
       "الشهر الماضي",
       "هذا العام",
-      "تقويم (نتيجة)",
+      "تقويم",
       "تاريخ",
       "موعد",
       "جدول زمني",
@@ -363,69 +411,69 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key days & months 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to days & months in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a stated day, month or planning term.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Today", "Tomorrow", "Yesterday"],
-          "scenario": "In a personal diary, an adult reviews entries related to today, tomorrow, and yesterday. The highlighted entry corresponds to today.",
+          "scenario": "Hana says, “My appointment is today, the present day. Tomorrow is the next day and yesterday was the day before.”",
           "check": {
-            "question": "Which calendar term matches the selected entry in the example with today, tomorrow?",
+            "question": "Which word names the present day?",
             "options": ["Yesterday", "Today", "Tomorrow"],
             "expectedAnswer": "Today"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a personal diary, an adult reviews entries related to today, tomorrow, and yesterday. The highlighted entry corresponds to today. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Today, Tomorrow, Yesterday in a natural setting."
+          "imageBrief": "Adult desk with closed appointment folder and blank planner. No actual current-date labels or highlighting.",
+          "imageAlt": "Adult desk with closed appointment folder and blank planner."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["This Week", "Next Week", "Last Week"],
-          "scenario": "In a team agenda, an adult reviews entries related to this week, next week, and last week. The highlighted entry corresponds to this week.",
+          "scenario": "Hana’s appointment is during this week, the calendar week containing today. Next week follows it; last week came before it.",
           "check": {
-            "question": "Which planner expression fits this entry in the example with this week, next week?",
+            "question": "Which phrase names the week containing today?",
             "options": ["This Week", "Next Week", "Last Week"],
             "expectedAnswer": "This Week"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a team agenda, an adult reviews entries related to this week, next week, and last week. The highlighted entry corresponds to this week. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including This Week, Next Week, Last Week in a natural setting."
+          "imageBrief": "Open blank weekly planner on desk, no readable dates or highlighted week. Written context supplies relative reference.",
+          "imageAlt": "Open blank weekly planner on desk, no readable dates or highlighted week."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["This Month", "Next Month", "Last Month"],
-          "scenario": "In a work planner, an adult reviews entries related to this month, next month, and last month. The highlighted entry corresponds to this month.",
+          "scenario": "Hana studies this month, the month containing today. The next course is next month; her previous course was last month.",
           "check": {
-            "question": "Which time-planning term matches the situation in the example with this month, next month?",
+            "question": "Which phrase names the month containing today?",
             "options": ["Next Month", "Last Month", "This Month"],
             "expectedAnswer": "This Month"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a work planner, an adult reviews entries related to this month, next month, and last month. The highlighted entry corresponds to this month. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including This Month, Next Month, Last Month in a natural setting."
+          "imageBrief": "Blank monthly planner beside course folder, no readable dates or visually marked month.",
+          "imageAlt": "Blank monthly planner beside course folder, no readable dates or visually marked month."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["This Year", "Calendar", "Date"],
-          "scenario": "In an appointment calendar, an adult reviews entries related to this year, calendar, and date. The highlighted entry corresponds to this year.",
+          "scenario": "Hana says, “This year means the calendar year containing today’s date.” She checks the date on her calendar.",
           "check": {
-            "question": "What date or planning word is being used in the example with this year, calendar?",
+            "question": "Which phrase names the year containing today’s date?",
             "options": ["Date", "This Year", "Calendar"],
             "expectedAnswer": "This Year"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In an appointment calendar, an adult reviews entries related to this year, calendar, and date. The highlighted entry corresponds to this year. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including This Year, Calendar, Date in a natural setting."
+          "imageBrief": "Plain wall calendar with blank grid beside desk. No digits, year labels or present-year claim.",
+          "imageAlt": "Plain wall calendar with blank grid beside desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Appointment", "Schedule", "Planner"],
-          "scenario": "In a project schedule, an adult reviews entries related to appointment, schedule, and planner. The highlighted entry corresponds to appointment.",
+          "scenario": "Hana has an appointment, a planned meeting with another person at a stated time. Her planner holds it within her work schedule.",
           "check": {
-            "question": "What date or planning word is being used in the example with appointment, schedule?",
+            "question": "Which word names the planned meeting?",
             "options": ["Appointment", "Schedule", "Planner"],
             "expectedAnswer": "Appointment"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a project schedule, an adult reviews entries related to appointment, schedule, and planner. The highlighted entry corresponds to appointment. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Appointment, Schedule, Planner in a natural setting."
+          "imageBrief": "Adult reception desk with plain appointment folder and blank planner. No readable personal data or highlighted event.",
+          "imageAlt": "Adult reception desk with plain appointment folder and blank planner."
         }
       ],
       "phrases": []
@@ -433,46 +481,70 @@
     "reading": {
       "title": "Updating the Planner",
       "text": "This morning, Hana opens her planner and checks today's appointment. She moves one task to tomorrow and reviews what she finished yesterday. She looks at this week and next week, then compares them with last week. On the monthly page, she reviews this month, next month, and last month. Before closing the calendar, she checks the date, her work schedule, and the main goals for this year.",
-      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+      "imageBrief": "Adult at a desk checking one open blank planner beside a wall calendar with empty unlabelled cells. The passage supplies all relative dates and appointments; no readable text, highlighted date or emotional inference."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Today"
+        "prompt": "Hana says, “My appointment is today, the present day. Tomorrow is the next day and yesterday was the day before.”\nWhich word names the present day?",
+        "answer": "Today",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "This Week"
+        "prompt": "Hana’s appointment is during this week, the calendar week containing today. Next week follows it; last week came before it.\nWhich phrase names the week containing today?",
+        "answer": "This Week",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "This Month"
+        "prompt": "Hana studies this month, the month containing today. The next course is next month; her previous course was last month.\nWhich phrase names the month containing today?",
+        "answer": "This Month",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "This Year"
+        "prompt": "Hana says, “This year means the calendar year containing today’s date.” She checks the date on her calendar.\nWhich phrase names the year containing today’s date?",
+        "answer": "This Year",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Appointment"
+        "prompt": "Hana has an appointment, a planned meeting with another person at a stated time. Her planner holds it within her work schedule.\nWhich word names the planned meeting?",
+        "answer": "Appointment",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Today"
+        "prompt": "Read the passage: This morning, Hana opens her planner and checks today's appointment. She moves one task to tomorrow and reviews what she finished yesterday. She looks at this week and next week, then compares them with last week. On the monthly page, she reviews this month, next month, and last month. Before closing the calendar, she checks the date, her work schedule, and the main goals for this year.\nWhen does Hana move one task to?",
+        "answer": "Tomorrow",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Tomorrow"
+        "prompt": "Tell a colleague your appointment is tomorrow.",
+        "answer": "My appointment is tomorrow.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Last Week"
+        "prompt": "Today is Monday and the meeting is Tuesday. Say when the meeting is, using a relative day word.",
+        "answer": "The meeting is tomorrow.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Days & Months: See It, Say It",
-      "idea": "30–50 second contextual video set in a calendar. Show today, tomorrow, yesterday, this week, and next week naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In a personal diary, an adult reviews entries related to today, tomorrow, and yesterday. The highlighted entry corresponds to today."
+      "title": "Days, Months and Plans",
+      "idea": "Adult work and course planning. Spoken or written context identifies dates and relative days. Show blank planner support rather than expecting viewers to read generated calendar labels. Weekend and academic-year schedules belong to the named person or institution.",
+      "scriptStarter": "Hana says, “My appointment is today, the present day. Tomorrow is the next day and yesterday was the day before.”"
     },
     "spacedReview": "1 lesson(s) back: June, July from days-months-2\n3 lesson(s) back: Ahead of Time, Behind Schedule from telling-time-4\n7 lesson(s) back: Habanero, Serrano from vegetables-4"
   },
@@ -490,68 +562,83 @@
     "targetWordsArabic": ["مفكرة يومية", "جدول أعمال", "موعد نهائي", "تذكير", "فعالية"],
     "usage": {
       "goal": "Learn to recognize and use key days & months 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to days & months in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a stated day, month or planning term.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Diary", "Agenda", "Deadline"],
-          "scenario": "In a team agenda, an adult reviews entries related to diary, agenda, and deadline. The highlighted entry corresponds to diary.",
+          "scenario": "Hana records appointments in her diary. Today’s agenda lists her tasks, and the deadline is the latest time for finishing the report.",
           "check": {
-            "question": "What date or planning word is being used in the example with diary, agenda?",
+            "question": "Which book does Hana use to record appointments?",
             "options": ["Diary", "Agenda", "Deadline"],
             "expectedAnswer": "Diary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a team agenda, an adult reviews entries related to diary, agenda, and deadline. The highlighted entry corresponds to diary. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Diary, Agenda, Deadline in a natural setting."
+          "imageBrief": "Open blank appointment diary beside closed report folder. No private writing, date labels or highlighted page.",
+          "imageAlt": "Open blank appointment diary beside closed report folder."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Reminder", "Event"],
-          "scenario": "In a work planner, an adult reviews entries related to reminder and event. The highlighted entry corresponds to reminder.",
+          "scenario": "A reminder is a message that helps Hana remember the event tomorrow. She sees the message before closing her phone.",
           "check": {
-            "question": "What helps the person remember the event?",
+            "question": "What helps Hana remember the event?",
             "options": ["Event", "Diary", "Reminder"],
             "expectedAnswer": "Reminder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a days & months context illustrating this situation: In a work planner, an adult reviews entries related to reminder and event. The highlighted entry corresponds to reminder. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult days & months scene showing lesson-related items or actions including Reminder, Event in a natural setting."
+          "imageBrief": "Phone screen off beside closed event folder on desk. Text supplies reminder message, no readable private notification or labels.",
+          "imageAlt": "Phone screen off beside closed event folder on desk."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Days & Months 4: Updating the Planner",
-      "text": "At the start of the week, an adult updates a planner for work and personal commitments. The calendar includes diary, agenda, deadline, reminder, and event. Important dates are reviewed again before anything is confirmed. The vocabulary is used in a realistic days & months context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered days & months scene supporting the reading and showing the first six target words."
+      "text": "Hana checks her diary before work. Today’s agenda includes a team meeting and a phone call. A reminder tells her about an event tomorrow. The project deadline is Friday, so she finishes the important work first. She leaves space in her diary for a short break.",
+      "imageBrief": "Adult desk with blank diary, phone, report folder and cup. No legible private appointments or unrelated classroom calendar."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Diary"
+        "prompt": "Hana records appointments in her diary. Today’s agenda lists her tasks, and the deadline is the latest time for finishing the report.\nWhich book does Hana use to record appointments?",
+        "answer": "Diary",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Reminder"
+        "prompt": "A reminder is a message that helps Hana remember the event tomorrow. She sees the message before closing her phone.\nWhat helps Hana remember the event?",
+        "answer": "Reminder",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Diary"
+        "prompt": "Read the passage: Hana checks her diary before work. Today’s agenda includes a team meeting and a phone call. A reminder tells her about an event tomorrow. The project deadline is Friday, so she finishes the important work first. She leaves space in her diary for a short break.\nWhen is the project deadline?",
+        "answer": "Friday",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Agenda"
+        "prompt": "Tell a colleague that the report deadline is Friday.",
+        "answer": "The report deadline is Friday.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Event"
+        "prompt": "You want your phone to help you remember tomorrow’s event. Ask to set a reminder.",
+        "answer": "Please set a reminder for tomorrow’s event.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Days & Months: See It, Say It",
-      "idea": "30–50 second contextual video set in a calendar. Show diary, agenda, deadline, reminder, and event naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In a team agenda, an adult reviews entries related to diary, agenda, and deadline. The highlighted entry corresponds to diary."
+      "title": "Days, Months and Plans",
+      "idea": "Adult work and course planning. Spoken or written context identifies dates and relative days. Show blank planner support rather than expecting viewers to read generated calendar labels. Weekend and academic-year schedules belong to the named person or institution.",
+      "scriptStarter": "Hana records appointments in her diary. Today’s agenda lists her tasks, and the deadline is the latest time for finishing the report."
     },
     "spacedReview": "1 lesson(s) back: Today, Tomorrow from days-months-3\n3 lesson(s) back: Monday, Tuesday from days-months-1\n7 lesson(s) back: Clock, Watch from telling-time-1"
   }

@@ -4,7 +4,7 @@
     "arabicTranslation": "مخطط هندسي"
   },
   "floor-plan": {
-    "definition": "A drawing made to scale maps the rooms, walls, doors, and open areas on a building’s single level.",
+    "definition": "A drawing showing the arrangement of rooms and features on one building level.",
     "arabicTranslation": "مخطط طابق"
   },
   "elevation": {
@@ -12,12 +12,12 @@
     "arabicTranslation": "واجهة معمارية"
   },
   "cross-section": {
-    "definition": "A shape or surface made by slicing through an object, showing its internal parts at the cut.",
-    "arabicTranslation": "قطاع مقطع"
+    "definition": "A drawing showing internal features as if an object or building had been cut through.",
+    "arabicTranslation": "قطاع معماري"
   },
   "scale-model": {
-    "definition": "A smaller, proportionate version of a real object helps people test designs, plan construction, or explain how something works.",
-    "arabicTranslation": "نموذج مقياس رسم"
+    "definition": "A physical representation whose dimensions have a stated proportion to the real object.",
+    "arabicTranslation": "نموذج مصغّر بمقياس رسم"
   },
   "rendering": {
     "definition": "A visual image that shows how an architectural design is expected to look.",
@@ -44,17 +44,17 @@
     "definition": "A T-shaped ruler used to draw straight horizontal lines."
   },
   "triangle": {
-    "definition": "Something approximating the shape of a triangle.",
-    "arabicTranslation": "مثلث"
+    "definition": "A triangular drawing tool used to guide lines and angles.",
+    "arabicTranslation": "مسطرة مثلثة"
   },
   "compass": {
-    "definition": "An area in which something acts or operates or has power or control:.",
-    "arabicTranslation": "بوصلة"
+    "definition": "A drawing instrument with two hinged arms used to draw circles or arcs.",
+    "arabicTranslation": "فرجار رسم"
   },
   "protractor": {
     "definition": "Drafting instrument used to draw or measure angles.",
     "arabicTranslation": "منقلة",
-    "exampleUsage": "The protractor was used during the activity."
+    "exampleUsage": "Dina measures the angle with a protractor."
   },
   "scale-ruler": {
     "arabicTranslation": "مسطرة مقياس رسم",
@@ -81,7 +81,7 @@
     "definition": "A drawing tool with curved edges for making smooth irregular curves."
   },
   "proportion": {
-    "definition": "Balance among the parts of something.",
+    "definition": "The relationship between the sizes of parts in a design.",
     "arabicTranslation": "تناسب"
   },
   "scale": {
@@ -89,7 +89,7 @@
     "arabicTranslation": "مقياس رسم"
   },
   "symmetry": {
-    "definition": "(mathematics) an attribute of a shape or relation.",
+    "definition": "An arrangement in which parts correspond across a line, plane, or central point.",
     "arabicTranslation": "تناظر"
   },
   "balance": {
@@ -101,27 +101,27 @@
     "arabicTranslation": "إيقاع"
   },
   "contrast": {
-    "definition": "The opposition or dissimilarity of things that are compared.",
+    "definition": "A noticeable difference between design elements, such as light and dark surfaces.",
     "arabicTranslation": "تباين"
   },
   "unity": {
-    "definition": "An undivided or unbroken completeness or totality with nothing wanting.",
-    "arabicTranslation": "وحدة"
+    "definition": "The sense that different parts of a design form a coherent whole.",
+    "arabicTranslation": "وحدة التصميم"
   },
   "emphasis": {
-    "definition": "Special importance or significance.",
-    "arabicTranslation": "تأكيد بصري"
+    "definition": "Giving one design element greater visual prominence.",
+    "arabicTranslation": "إبراز بصري"
   },
   "space": {
-    "definition": "An area reserved for some particular purpose.",
-    "arabicTranslation": "فضاء"
+    "definition": "An area or volume defined or organized within an architectural design.",
+    "arabicTranslation": "حيّز معماري"
   },
   "form": {
     "definition": "The three-dimensional shape and overall physical character of a building or object.",
     "arabicTranslation": "شكل"
   },
   "model-making-kit": {
-    "arabicTranslation": "نموذج صناعة طقم",
+    "arabicTranslation": "طقم أدوات صنع النماذج",
     "definition": "A set of tools and materials for building a small design model."
   },
   "laser-cutter": {
@@ -131,7 +131,7 @@
   "3d-printer": {
     "definition": "A machine that creates three-dimensional objects from a digital model by building material layer by layer.",
     "arabicTranslation": "طابعة ثلاثية الأبعاد",
-    "exampleUsage": "The 3d printer was used during the activity."
+    "exampleUsage": "The studio uses a 3D printer to produce the small building model."
   },
   "light-table": {
     "definition": "A table with a translucent top lit from below, used for tracing or examining drawings and images.",
@@ -161,10 +161,10 @@
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
     "arabicTranslation": "جهاز عرض",
-    "exampleUsage": "The projector was used during the activity."
+    "exampleUsage": "The projector displays the proposed facade on the wall."
   },
   "plotter": {
-    "definition": "A planner who draws up a personal scheme of action.",
-    "arabicTranslation": "راسم آلي"
+    "definition": "A machine used to produce large technical drawings or plans.",
+    "arabicTranslation": "طابعة مخططات كبيرة"
   }
 }

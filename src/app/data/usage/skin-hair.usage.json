@@ -551,70 +551,76 @@
         {
           "chunkNumber": 1,
           "targetWords": ["Face Mask", "Eye Cream", "Lip Balm"],
-          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Lip Balm while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.",
+          "scenario": "Maya organizes her skincare shelf. She selects a stick of lip balm to soothe dry lips, while a sheet face mask and an eye cream jar remain in their boxes.",
           "check": {
-            "question": "Which target does Maya notice first in this situation?",
-            "options": ["Face Mask", "Eye Cream", "Lip Balm"],
+            "question": "Which product does Maya select to soothe dry lips?",
+            "options": ["Lip Balm", "Face Mask", "Eye Cream"],
             "expectedAnswer": "Lip Balm"
           },
-          "imageBrief": "Show an adult in a morning routine, with Face Mask, Eye Cream, and Lip Balm visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Face Mask, Eye Cream, Lip Balm in a natural setting."
+          "imageBrief": "Word-reference support for the written skin & hair task. Unlabelled plain lip balm tube resting beside unopened skincare containers on a bathroom vanity. No readable brand text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Night Cream"],
-          "scenario": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.",
+          "scenario": "Before sleeping, Maya applies night cream from a dark glass jar to moisturize her face overnight, keeping it separate from daytime products.",
           "check": {
-            "question": "Which target does Maya notice first in this situation?",
+            "question": "Which product does Maya apply to moisturize her face overnight?",
             "options": ["Night Cream", "Face Mask", "Eye Cream"],
             "expectedAnswer": "Night Cream"
           },
-          "imageBrief": "Show an adult in a morning routine, with Night Cream visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult skin & hair scene showing lesson-related items or actions including Night Cream in a natural setting."
+          "imageBrief": "Word-reference support for the written skin & hair task. Unlabelled dark glass skincare jar with lid slightly off on a bedside table. No readable brand text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Skin & Hair 4: A short reading",
-      "text": "Maya looks at four skin-care product labels. One says face mask, another eye cream, another lip balm, and another night cream. She matches the names to product photographs in her language lesson. Omar writes a short description of the lip balm container. The teacher checks their answers before the next activity.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Skin & Hair. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Evening Skincare Routine",
+      "text": "Maya reviews her evening skincare products before going to bed. A face mask is applied weekly for intensive skin care, while an eye cream is formulated gently for the delicate area around the eyes. Maya uses lip balm to keep her lips hydrated throughout the night. Finally, she applies a rich night cream to nourish and moisturize her face while she sleeps. Each product has a distinct formulation and purpose in her routine.",
+      "imageBrief": "Support for Evening Skincare Routine. Reuse independently reviewed word references; the text supplies formulation and routine facts."
     },
     "exercises": [
       {
-        "prompt": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Lip Balm while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.\nWhich target does Maya notice first in this situation?",
+        "prompt": "Maya organizes her skincare shelf. She selects a stick of lip balm to soothe dry lips, while a sheet face mask and an eye cream jar remain in their boxes.\nWhich product does Maya select to soothe dry lips?",
         "answer": "Lip Balm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before work, Maya checks her skin and hair in the bathroom mirror. Maya notices Night Cream while also considering Face Mask and Eye Cream. She chooses the right product and explains her routine to a friend.\nWhich target does Maya notice first in this situation?",
+        "prompt": "Before sleeping, Maya applies night cream from a dark glass jar to moisturize her face overnight, keeping it separate from daytime products.\nWhich product does Maya apply to moisturize her face overnight?",
         "answer": "Night Cream",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Comb” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar describe?",
-        "answer": "The lip balm container",
+        "prompt": "Maya reviews her evening skincare products before going to bed. A face mask is applied weekly for intensive skin care, while an eye cream is formulated gently for the delicate area around the eyes. Maya uses lip balm to keep her lips hydrated throughout the night. Finally, she applies a rich night cream to nourish and moisturize her face while she sleeps. Each product has a distinct formulation and purpose in her routine.\nWhy does Maya apply night cream?",
+        "answer": "To nourish and moisturize her face while she sleeps.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Face Mask” and “Night Cream” using the supplied examples.",
+        "answer": "Accept an accurate comparison: a face mask is used periodically for intensive skin care, whereas night cream is applied regularly before bed to hydrate overnight.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Lip Balm” in its supplied personal care sense.",
+        "answer": "Accept an accurate original sentence. Example: He keeps a tube of lip balm in his pocket during dry weather.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Skin & Hair: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Evening Skincare Routine",
+      "idea": "Narrated comparison with a pause to explain product functions.",
+      "scriptStarter": "Maya reviews her evening skincare products before going to bed. A face mask is applied weekly for intensive skin care, while an eye cream is formulated gently for the delicate area around the eyes. Maya uses lip balm to keep her lips hydrated throughout the night. Finally, she applies a rich night cream to nourish and moisturize her face while she sleeps. Each product has a distinct formulation and purpose in her routine. Ask: Why does Maya apply night cream?"
     },
     "spacedReview": "1 lesson(s) back: Comb, Brush from skin-hair-3\n3 lesson(s) back: Oily Skin, Dry Skin from skin-hair-1\n7 lesson(s) back: Tall, Short from physical-appearance-1"
   }

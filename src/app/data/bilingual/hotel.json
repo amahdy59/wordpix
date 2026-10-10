@@ -14,7 +14,7 @@
   "bell": {
     "definition": "A device that makes a ringing sound.",
     "arabicTranslation": "جرس",
-    "exampleUsage": "The bell was used during the activity."
+    "exampleUsage": "The desk bell attracts the receptionist’s attention."
   },
   "key-card": {
     "definition": "A plastic or electronic card used to unlock a hotel-room door.",
@@ -58,7 +58,7 @@
   "hair-dryer": {
     "definition": "An electrical device that blows warm air to dry your hair.",
     "arabicTranslation": "مجفف شعر",
-    "exampleUsage": "The hair dryer was used during the activity."
+    "exampleUsage": "The hair dryer is stored away from water."
   },
   "bathtub": {
     "definition": "A large container that you fill with water and sit in to wash your body.",
@@ -67,7 +67,7 @@
   "shower": {
     "definition": "A place or device that sprays water over you so you can wash your body.",
     "arabicTranslation": "دُش",
-    "exampleUsage": "The shower was used during the activity."
+    "exampleUsage": "A towel hangs near the unoccupied shower."
   },
   "towel": {
     "definition": "A piece of absorbent cloth used for drying your body or other things.",
@@ -141,8 +141,9 @@
     "arabicTranslation": "عامل صف السيارات"
   },
   "housekeeping": {
-    "definition": "The work of cleaning and running a house.",
-    "arabicTranslation": "خدمة تنظيف الغرف"
+    "definition": "The hotel work of cleaning and maintaining guest rooms and related spaces.",
+    "arabicTranslation": "خدمة تنظيف الغرف",
+    "exampleUsage": "Housekeeping cleans the guest room."
   },
   "breakfast-buffet": {
     "definition": "A breakfast service where guests choose food from a range of items arranged for self-service.",
@@ -172,17 +173,18 @@
     "arabicTranslation": "غرفة فردية"
   },
   "double-room": {
-    "definition": "A hotel room intended for two guests, usually with one double bed or two sleeping spaces.",
-    "exampleUsage": "The family reserved a double room.",
+    "definition": "A hotel room generally intended for two guests; bed layout and naming vary by hotel.",
+    "exampleUsage": "They ask about the double room’s actual bed layout.",
     "arabicTranslation": "غرفة مزدوجة"
   },
   "suite": {
-    "definition": "Apartment consisting of a series of connected rooms used as a living unit (as in a hotel).",
-    "arabicTranslation": "جناح"
+    "definition": "Hotel accommodation with connected rooms or additional living space; layouts and advertised names vary.",
+    "arabicTranslation": "جناح فندقي"
   },
   "penthouse": {
-    "definition": "An apartment located on the top floors of a building.",
-    "arabicTranslation": "شقة علوية فاخرة"
+    "definition": "Accommodation on a building’s top floor or floors, often larger or more expensive than other units.",
+    "arabicTranslation": "جناح أو شقة في الطابق العلوي",
+    "exampleUsage": "Omar asks about the penthouse on the top floor."
   },
   "balcony": {
     "definition": "An outdoor platform projecting from an upper floor of a building.",
@@ -195,7 +197,7 @@
   "elevator": {
     "definition": "A machine that carries people or goods up and down between floors.",
     "arabicTranslation": "مصعد",
-    "exampleUsage": "The elevator was used during the activity."
+    "exampleUsage": "Maya asks where the elevator is."
   },
   "hallway": {
     "definition": "An interior passage or corridor onto which rooms open.",
@@ -208,7 +210,7 @@
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
     "arabicTranslation": "آلة بيع ذاتي",
-    "exampleUsage": "The vending machine was used during the activity."
+    "exampleUsage": "The vending machine sells packaged snacks."
   },
   "bellhop": {
     "definition": "A hotel worker who carries guests' luggage and may escort them to their rooms.",
@@ -217,5 +219,60 @@
   "checkout": {
     "definition": "The process of paying any remaining charges and leaving a hotel.",
     "arabicTranslation": "تسجيل المغادرة"
+  },
+  "vase": {
+    "definition": "A container, often decorative, used to hold flowers.",
+    "arabicTranslation": "مزهرية",
+    "exampleUsage": "A vase holds flowers on the lobby table."
+  },
+  "bed": {
+    "definition": "A piece of furniture used for sleeping.",
+    "arabicTranslation": "سرير",
+    "exampleUsage": "Maya checks the space around the bed."
+  },
+  "pillow": {
+    "definition": "A soft support for the head while lying down.",
+    "arabicTranslation": "وسادة",
+    "exampleUsage": "The pillow supports Omar’s head."
+  },
+  "blanket": {
+    "definition": "A thick covering used for warmth.",
+    "arabicTranslation": "بطانية",
+    "exampleUsage": "The blanket covers the bed."
+  },
+  "nightstand": {
+    "definition": "A small bedside table or cabinet.",
+    "arabicTranslation": "منضدة بجانب السرير",
+    "exampleUsage": "Maya puts her book on the nightstand."
+  },
+  "lamp": {
+    "definition": "A device providing light.",
+    "arabicTranslation": "مصباح",
+    "exampleUsage": "The lamp lights the bedside table."
+  },
+  "robe": {
+    "definition": "A loose garment worn around the body, often before or after bathing.",
+    "arabicTranslation": "رداء",
+    "exampleUsage": "The robe hangs on a bathroom hook."
+  },
+  "slippers": {
+    "definition": "Light footwear worn indoors.",
+    "arabicTranslation": "خف منزلي",
+    "exampleUsage": "Omar wears slippers in the room."
+  },
+  "mirror": {
+    "definition": "A reflective surface showing an image of a person or object.",
+    "arabicTranslation": "مرآة",
+    "exampleUsage": "Maya sees her reflection in the mirror."
+  },
+  "restaurant": {
+    "definition": "A place serving meals to customers.",
+    "arabicTranslation": "مطعم",
+    "exampleUsage": "They meet for dinner in the restaurant."
+  },
+  "garden": {
+    "definition": "An outdoor area with plants, flowers or trees.",
+    "arabicTranslation": "حديقة",
+    "exampleUsage": "The garden has a path between planted areas."
   }
 }

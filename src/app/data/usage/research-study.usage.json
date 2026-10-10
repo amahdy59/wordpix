@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "126-156 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Textbook", "Journal", "Database", "Search Engine"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textbook, Journal, Database, and Search Engine and choose the option that fits the situation.",
+          "scenario": "Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Textbook", "Journal", "Database"],
-            "expectedAnswer": "Textbook"
+            "question": "Which publication contains academic research articles?",
+            "options": ["Journal", "Textbook", "Database"],
+            "expectedAnswer": "Journal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Textbook as the central item; include Textbook, Journal, and Database naturally where visually appropriate, but make the real-world use of Textbook the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Journal in a research study context. Use the written scenario as the source of meaning: Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bibliography", "Citation", "Footnote", "Index"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bibliography, Citation, Footnote, and Index and choose the option that fits the situation.",
+          "scenario": "The book’s Bibliography lists sources, a Citation acknowledges a source in the discussion, and a Footnote supplies a note at the page bottom. The Index lists topics with the pages where they occur.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bibliography", "Citation", "Footnote"],
-            "expectedAnswer": "Bibliography"
+            "question": "Which feature helps Farah locate a topic’s page?",
+            "options": ["Index", "Bibliography", "Citation"],
+            "expectedAnswer": "Index"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Bibliography as the central item; include Bibliography, Citation, and Footnote naturally where visually appropriate, but make the real-world use of Bibliography the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Index in a research study context. Use the written scenario as the source of meaning: The book’s Bibliography lists sources, a Citation acknowledges a source in the discussion, and a Footnote supplies a note at the page bottom. The Index lists topics with the pages where they occur. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Abstract", "Peer Review", "Essay", "Thesis"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Peer Review, Essay, and Thesis and choose the option that fits the situation.",
+          "scenario": "Before reading the full article, Farah reads its Abstract summarizing the research. Peer Review evaluates work through specialist review. An Essay develops an argument, while a Thesis is a substantial research document for a degree in this context.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which section gives a short research summary?",
             "options": ["Abstract", "Peer Review", "Essay"],
             "expectedAnswer": "Abstract"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Abstract as the central item; include Abstract, Peer Review, and Essay naturally where visually appropriate, but make the real-world use of Abstract the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Abstract in a research study context. Use the written scenario as the source of meaning: Before reading the full article, Farah reads its Abstract summarizing the research. Peer Review evaluates work through specialist review. An Essay develops an argument, while a Thesis is a substantial research document for a degree in this context. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dissertation", "Paper", "Report"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dissertation, Paper, and Report and choose the option that fits the situation.",
+          "scenario": "The librarian compares a Dissertation submitted for a degree with an academic Paper and a Report describing findings. Universities use thesis and dissertation differently, so Farah checks her own program’s terminology.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the degree research document described here?",
             "options": ["Dissertation", "Paper", "Report"],
             "expectedAnswer": "Dissertation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Dissertation through a realistic adult task; include Dissertation, Paper, and Report naturally where visually appropriate, but make the real-world use of Dissertation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dissertation in a research study context. Use the written scenario as the source of meaning: The librarian compares a Dissertation submitted for a degree with an academic Paper and a Report describing findings. Universities use thesis and dissertation differently, so Farah checks her own program’s terminology. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Research & Study",
-      "text": "At the research & study, a student handles a real-world responsibility and must make a clear decision. First, the student considers Textbook, Journal, Database, and Search Engine. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Bibliography, Citation, Footnote, and Index. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Abstract, Peer Review, Essay, and Thesis. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Dissertation, Paper, and Report. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Research & Study: A visitor’s questions",
+      "text": "Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability. The book’s Bibliography lists sources, a Citation acknowledges a source in the discussion, and a Footnote supplies a note at the page bottom. The Index lists topics with the pages where they occur. Before reading the full article, Farah reads its Abstract summarizing the research. Peer Review evaluates work through specialist review. An Essay develops an argument, while a Thesis is a substantial research document for a degree in this context. The librarian compares a Dissertation submitted for a degree with an academic Paper and a Report describing findings. Universities use thesis and dissertation differently, so Farah checks her own program’s terminology.",
+      "imageBrief": "One uncluttered research study setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textbook, Journal, Database, and Search Engine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Textbook",
+        "prompt": "Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability.\nWhich publication contains academic research articles?",
+        "answer": "Journal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bibliography, Citation, Footnote, and Index and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bibliography",
+        "prompt": "The book’s Bibliography lists sources, a Citation acknowledges a source in the discussion, and a Footnote supplies a note at the page bottom. The Index lists topics with the pages where they occur.\nWhich feature helps Farah locate a topic’s page?",
+        "answer": "Index",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Abstract, Peer Review, Essay, and Thesis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Before reading the full article, Farah reads its Abstract summarizing the research. Peer Review evaluates work through specialist review. An Essay develops an argument, while a Thesis is a substantial research document for a degree in this context.\nWhich section gives a short research summary?",
         "answer": "Abstract",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dissertation, Paper, and Report and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The librarian compares a Dissertation submitted for a degree with an academic Paper and a Report describing findings. Universities use thesis and dissertation differently, so Farah checks her own program’s terminology.\nWhich term names the degree research document described here?",
         "answer": "Dissertation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability. The book’s Bibliography lists sources, a Citation acknowledges a source in the discussion, and a Footnote supplies a note at the page bottom. The Index lists topics with the pages where they occur. Before reading the full article, Farah reads its Abstract summarizing the research. Peer Review evaluates work through specialist review. An Essay develops an argument, while a Thesis is a substantial research document for a degree in this context. The librarian compares a Dissertation submitted for a degree with an academic Paper and a Report describing findings. Universities use thesis and dissertation differently, so Farah checks her own program’s terminology.\nExplain the difference between Textbook and Journal using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Textbook"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bachelor's” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the research & study task. Use Textbook, Journal, Database, Search Engine, Bibliography, Citation, Footnote, Index, Abstract, Peer Review, Essay, Thesis, Dissertation, Paper, and Report in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Textbook, Journal, Database, Search Engine, Bibliography, Citation, Footnote, Index, Abstract, Peer Review, Essay, Thesis, Dissertation, Paper, Report to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Research & Study: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Research & Study: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Textbook and Journal, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Farah begins with a Textbook introducing the topic. She uses a Database and Search Engine to locate a Journal that publishes academic research articles. Finding a result does not by itself establish its reliability. Pause and answer: Which publication contains academic research articles?"
     },
     "spacedReview": "1 lesson(s) back: Bachelor's, Master's from academic-life-3\n3 lesson(s) back: Professor, Lecturer from academic-life-1\n7 lesson(s) back: Trader, Broker from stock-exchange-3"
   },
@@ -212,7 +195,7 @@
       "مخطط أولي",
       "يبرز النص",
       "يلخص",
-      "مراجعة",
+      "يراجع",
       "يحفظ",
       "اختبار تدريبي",
       "مجموعة دراسة"
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "113-143 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Literature Review", "Methodology", "Conclusion", "Introduction"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Literature Review, Methodology, Conclusion, and Introduction and choose the option that fits the situation.",
+          "scenario": "The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which section examines and connects previous studies?",
             "options": ["Literature Review", "Methodology", "Conclusion"],
             "expectedAnswer": "Literature Review"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Literature Review through a realistic adult task; include Literature Review, Methodology, and Conclusion naturally where visually appropriate, but make the real-world use of Literature Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Literature Review in a research study context. Use the written scenario as the source of meaning: The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Appendix", "Note-Taking", "Flashcard", "Mind Map"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Note-Taking, Flashcard, and Mind Map and choose the option that fits the situation.",
+          "scenario": "Farah puts supplementary information in an Appendix. For study, she uses Note-Taking, a Flashcard with a prompt and answer, and a Mind Map connecting related ideas around a central topic.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Appendix", "Note-Taking", "Flashcard"],
-            "expectedAnswer": "Appendix"
+            "question": "Which diagram connects related ideas around a central topic?",
+            "options": ["Mind Map", "Appendix", "Note-Taking"],
+            "expectedAnswer": "Mind Map"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Appendix as the central item; include Appendix, Note-Taking, and Flashcard naturally where visually appropriate, but make the real-world use of Appendix the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mind Map in a research study context. Use the written scenario as the source of meaning: Farah puts supplementary information in an Appendix. For study, she uses Note-Taking, a Flashcard with a prompt and answer, and a Mind Map connecting related ideas around a central topic. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Outline", "Highlight", "Summarize", "Review"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Outline, Highlight, Summarize, and Review and choose the option that fits the situation.",
+          "scenario": "Farah writes an Outline to organize the report. She will Highlight selected passages, Summarize their main ideas in shorter form, and Review the material afterward. A summary of another person’s ideas still needs appropriate acknowledgment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Outline", "Highlight", "Summarize"],
-            "expectedAnswer": "Outline"
+            "question": "Which verb means give the main ideas in a shorter form?",
+            "options": ["Summarize", "Outline", "Highlight"],
+            "expectedAnswer": "Summarize"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Outline as the central item; include Outline, Highlight, and Summarize naturally where visually appropriate, but make the real-world use of Outline the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Summarize in a research study context. Use the written scenario as the source of meaning: Farah writes an Outline to organize the report. She will Highlight selected passages, Summarize their main ideas in shorter form, and Review the material afterward. A summary of another person’s ideas still needs appropriate acknowledgment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Memorize", "Practice Test", "Study Group"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memorize, Practice Test, and Study Group and choose the option that fits the situation.",
+          "scenario": "Farah plans to Memorize essential terms, then take a Practice Test with sample exam questions. Her Study Group compares explanations and discusses mistakes while following the course’s collaboration rules.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Memorize", "Practice Test", "Study Group"],
-            "expectedAnswer": "Memorize"
+            "question": "Which activity uses sample exam questions?",
+            "options": ["Practice Test", "Memorize", "Study Group"],
+            "expectedAnswer": "Practice Test"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult clearly carrying out the action Memorize; include Memorize, Practice Test, and Study Group naturally where visually appropriate, but make the real-world use of Memorize the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Practice Test in a research study context. Use the written scenario as the source of meaning: Farah plans to Memorize essential terms, then take a Practice Test with sample exam questions. Her Study Group compares explanations and discusses mistakes while following the course’s collaboration rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Research & Study",
-      "text": "At the research & study, a student handles a real-world responsibility and must make a clear decision. First, the student considers Literature Review, Methodology, Conclusion, and Introduction. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Appendix, Note-Taking, Flashcard, and Mind Map. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Outline, Highlight, Summarize, and Review. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Memorize, Practice Test, and Study Group. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Research & Study: Understanding the different roles",
+      "text": "The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument. Farah puts supplementary information in an Appendix. For study, she uses Note-Taking, a Flashcard with a prompt and answer, and a Mind Map connecting related ideas around a central topic. Farah writes an Outline to organize the report. She will Highlight selected passages, Summarize their main ideas in shorter form, and Review the material afterward. A summary of another person’s ideas still needs appropriate acknowledgment. Farah plans to Memorize essential terms, then take a Practice Test with sample exam questions. Her Study Group compares explanations and discusses mistakes while following the course’s collaboration rules.",
+      "imageBrief": "One uncluttered research study setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Literature Review, Methodology, Conclusion, and Introduction and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument.\nWhich section examines and connects previous studies?",
         "answer": "Literature Review",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Note-Taking, Flashcard, and Mind Map and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Appendix",
+        "prompt": "Farah puts supplementary information in an Appendix. For study, she uses Note-Taking, a Flashcard with a prompt and answer, and a Mind Map connecting related ideas around a central topic.\nWhich diagram connects related ideas around a central topic?",
+        "answer": "Mind Map",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Outline, Highlight, Summarize, and Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Outline",
+        "prompt": "Farah writes an Outline to organize the report. She will Highlight selected passages, Summarize their main ideas in shorter form, and Review the material afterward. A summary of another person’s ideas still needs appropriate acknowledgment.\nWhich verb means give the main ideas in a shorter form?",
+        "answer": "Summarize",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memorize, Practice Test, and Study Group and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Memorize",
+        "prompt": "Farah plans to Memorize essential terms, then take a Practice Test with sample exam questions. Her Study Group compares explanations and discusses mistakes while following the course’s collaboration rules.\nWhich activity uses sample exam questions?",
+        "answer": "Practice Test",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument. Farah puts supplementary information in an Appendix. For study, she uses Note-Taking, a Flashcard with a prompt and answer, and a Mind Map connecting related ideas around a central topic. Farah writes an Outline to organize the report. She will Highlight selected passages, Summarize their main ideas in shorter form, and Review the material afterward. A summary of another person’s ideas still needs appropriate acknowledgment. Farah plans to Memorize essential terms, then take a Practice Test with sample exam questions. Her Study Group compares explanations and discusses mistakes while following the course’s collaboration rules.\nExplain the difference between Literature Review and Methodology using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Literature Review"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Textbook” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the research & study task. Use Literature Review, Methodology, Conclusion, Introduction, Appendix, Note-Taking, Flashcard, Mind Map, Outline, Highlight, Summarize, Review, Memorize, Practice Test, and Study Group in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Literature Review, Methodology, Conclusion, Introduction, Appendix, Note-Taking, Flashcard, Mind Map, Outline, Highlight, Summarize, Review, Memorize, Practice Test, Study Group to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Research & Study: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Research & Study: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Literature Review and Methodology, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Introduction presents Farah’s topic, and the Literature Review connects previous studies. Methodology explains how the study was carried out, while the Conclusion draws together the findings and argument. Pause and answer: Which section examines and connects previous studies?"
     },
     "spacedReview": "1 lesson(s) back: Textbook, Journal from research-study-1\n3 lesson(s) back: Syllabus, Prerequisite from academic-life-2\n7 lesson(s) back: Lecture Hall, Library from university-campus-1"
   },
@@ -383,110 +349,93 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "90-120 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Plagiarism", "Reference", "Original Work", "Paraphrase"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plagiarism, Reference, Original Work, and Paraphrase and choose the option that fits the situation.",
+          "scenario": "The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Plagiarism", "Reference", "Original Work"],
-            "expectedAnswer": "Plagiarism"
+            "question": "Which verb means restate the idea in one’s own words with appropriate credit?",
+            "options": ["Paraphrase", "Plagiarism", "Reference"],
+            "expectedAnswer": "Paraphrase"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Plagiarism through a realistic adult task; include Plagiarism, Reference, and Original Work naturally where visually appropriate, but make the real-world use of Plagiarism the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Paraphrase in a research study context. Use the written scenario as the source of meaning: The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Quote", "Source", "Academic Honesty", "Turnitin"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quote, Source, Academic Honesty, and Turnitin and choose the option that fits the situation.",
+          "scenario": "Farah will Quote exact words from a Source with the required acknowledgment. Academic Honesty also means avoiding fabrication and unauthorized help. Turnitin can report matching text; its similarity score alone does not decide whether plagiarism occurred.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Quote", "Source", "Academic Honesty"],
-            "expectedAnswer": "Quote"
+            "question": "Which named service can report matching text?",
+            "options": ["Turnitin", "Quote", "Source"],
+            "expectedAnswer": "Turnitin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Quote as the central item; include Quote, Source, and Academic Honesty naturally where visually appropriate, but make the real-world use of Quote the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Turnitin in a research study context. Use the written scenario as the source of meaning: Farah will Quote exact words from a Source with the required acknowledgment. Academic Honesty also means avoiding fabrication and unauthorized help. Turnitin can report matching text; its similarity score alone does not decide whether plagiarism occurred. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Honor Code"],
-          "scenario": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Honor Code and choose the option that fits the situation.",
+          "scenario": "Before collaborating, Farah reads the Honor Code stating the university’s academic conduct rules. She asks the instructor about permitted help and follows the citation style required for the assignment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Honor Code", "Plagiarism", "Reference"],
+            "question": "Which policy states the university’s academic conduct rules?",
+            "options": ["Honor Code"],
             "expectedAnswer": "Honor Code"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Honor Code as the central item; include Honor Code, Plagiarism, and Reference naturally where visually appropriate, but make the real-world use of Honor Code the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Honor Code in a research study context. Use the written scenario as the source of meaning: Before collaborating, Farah reads the Honor Code stating the university’s academic conduct rules. She asks the instructor about permitted help and follows the citation style required for the assignment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written research study situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Research & Study",
-      "text": "At the research & study, a student handles a real-world responsibility and must make a clear decision. First, the student considers Plagiarism, Reference, Original Work, and Paraphrase. The choice depends on the role of each term in the context, so the student checks the details before moving on. Next, the student considers Quote, Source, Academic Honesty, and Turnitin. The choice depends on the role of each term in the context, so the student checks the details before moving on. Finally, the student considers Honor Code. The choice depends on the role of each term in the context, so the student checks the details before moving on. By the end, the student can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Research & Study. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Research & Study: Comparing the equipment",
+      "text": "The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient. Farah will Quote exact words from a Source with the required acknowledgment. Academic Honesty also means avoiding fabrication and unauthorized help. Turnitin can report matching text; its similarity score alone does not decide whether plagiarism occurred. Before collaborating, Farah reads the Honor Code stating the university’s academic conduct rules. She asks the instructor about permitted help and follows the citation style required for the assignment.",
+      "imageBrief": "One uncluttered research study setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plagiarism, Reference, Original Work, and Paraphrase and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Plagiarism",
+        "prompt": "The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient.\nWhich verb means restate the idea in one’s own words with appropriate credit?",
+        "answer": "Paraphrase",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quote, Source, Academic Honesty, and Turnitin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Quote",
+        "prompt": "Farah will Quote exact words from a Source with the required acknowledgment. Academic Honesty also means avoiding fabrication and unauthorized help. Turnitin can report matching text; its similarity score alone does not decide whether plagiarism occurred.\nWhich named service can report matching text?",
+        "answer": "Turnitin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the research & study setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Honor Code and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Before collaborating, Farah reads the Honor Code stating the university’s academic conduct rules. She asks the instructor about permitted help and follows the citation style required for the assignment.\nWhich policy states the university’s academic conduct rules?",
         "answer": "Honor Code",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient. Farah will Quote exact words from a Source with the required acknowledgment. Academic Honesty also means avoiding fabrication and unauthorized help. Turnitin can report matching text; its similarity score alone does not decide whether plagiarism occurred. Before collaborating, Farah reads the Honor Code stating the university’s academic conduct rules. She asks the instructor about permitted help and follows the citation style required for the assignment.\nExplain the difference between Plagiarism and Reference using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Plagiarism"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Literature Review” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the research & study task. Use Plagiarism, Reference, Original Work, Paraphrase, Quote, Source, Academic Honesty, Turnitin, and Honor Code in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Plagiarism, Reference, Original Work, Paraphrase, Quote, Source, Academic Honesty, Turnitin, Honor Code to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Research & Study: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Research & Study: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Plagiarism and Reference, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The tutor contrasts Plagiarism with properly acknowledged Original Work. A Reference identifies a source. To Paraphrase, Farah restates a source’s idea in her own words and gives appropriate credit; replacing a few words is insufficient. Pause and answer: Which verb means restate the idea in one’s own words with appropriate credit?"
     },
     "spacedReview": "1 lesson(s) back: Literature Review, Methodology from research-study-2\n3 lesson(s) back: Bachelor's, Master's from academic-life-3\n7 lesson(s) back: Gate, Pathway from university-campus-2"
   }

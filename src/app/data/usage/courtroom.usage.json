@@ -35,7 +35,7 @@
       "كاتب محضر المحكمة",
       "عضو هيئة محلفين",
       "شاهد",
-      "موظف",
+      "كاتب المحكمة",
       "مترجم شفهي",
       "منصة القاضي",
       "منصة الشهود",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "121-151 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Judge", "Lawyer", "Prosecutor", "Defense Attorney"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge, Lawyer, Prosecutor, and Defense Attorney and choose the option that fits the situation.",
+          "scenario": "A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Judge", "Lawyer", "Prosecutor"],
-            "expectedAnswer": "Judge"
+            "question": "Who presents the state’s criminal case?",
+            "options": ["Prosecutor", "Judge", "Lawyer"],
+            "expectedAnswer": "Prosecutor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Judge; include Judge, Lawyer, and Prosecutor naturally where visually appropriate, but make the real-world use of Judge the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Prosecutor in a courtroom context. Use the written scenario as the source of meaning: A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bailiff", "Court Reporter", "Jury Member", "Witness"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Jury Member, and Witness and choose the option that fits the situation.",
+          "scenario": "A Bailiff supports courtroom order under local responsibilities. A Court Reporter records proceedings, a Jury Member considers evidence, and a Witness gives testimony. These roles come from the written account rather than clothing.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Bailiff", "Court Reporter", "Jury Member"],
-            "expectedAnswer": "Bailiff"
+            "question": "Who creates the record of proceedings?",
+            "options": ["Court Reporter", "Bailiff", "Jury Member"],
+            "expectedAnswer": "Court Reporter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Bailiff; include Bailiff, Court Reporter, and Jury Member naturally where visually appropriate, but make the real-world use of Bailiff the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Court Reporter in a courtroom context. Use the written scenario as the source of meaning: A Bailiff supports courtroom order under local responsibilities. A Court Reporter records proceedings, a Jury Member considers evidence, and a Witness gives testimony. These roles come from the written account rather than clothing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clerk", "Interpreter", "Judge's Bench", "Witness Stand"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clerk, Interpreter, Judge's Bench, and Witness Stand and choose the option that fits the situation.",
+          "scenario": "The Clerk manages court records. An Interpreter conveys communication between languages. The Judge's Bench is the judge’s seating area, while the Witness Stand is where testimony is given in this courtroom layout.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Clerk", "Interpreter", "Judge's Bench"],
-            "expectedAnswer": "Clerk"
+            "question": "Who conveys communication between languages?",
+            "options": ["Interpreter", "Clerk", "Judge's Bench"],
+            "expectedAnswer": "Interpreter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Clerk; include Clerk, Interpreter, and Judge's Bench naturally where visually appropriate, but make the real-world use of Clerk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Interpreter in a courtroom context. Use the written scenario as the source of meaning: The Clerk manages court records. An Interpreter conveys communication between languages. The Judge's Bench is the judge’s seating area, while the Witness Stand is where testimony is given in this courtroom layout. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Jury Box", "Gallery", "Defense Table"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jury Box, Gallery, and Defense Table and choose the option that fits the situation.",
+          "scenario": "The Jury Box holds jurors, the Gallery holds public observers, and the Defense Table is used by the defense team. Courtrooms can have different arrangements and access rules.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Jury Box", "Gallery", "Defense Table"],
-            "expectedAnswer": "Jury Box"
+            "question": "Which area holds public observers?",
+            "options": ["Gallery", "Jury Box", "Defense Table"],
+            "expectedAnswer": "Gallery"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Jury Box; include Jury Box, Gallery, and Defense Table naturally where visually appropriate, but make the real-world use of Jury Box the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Gallery in a courtroom context. Use the written scenario as the source of meaning: The Jury Box holds jurors, the Gallery holds public observers, and the Defense Table is used by the defense team. Courtrooms can have different arrangements and access rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Courtroom",
-      "text": "At the courtroom, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Judge, Lawyer, Prosecutor, and Defense Attorney. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bailiff, Court Reporter, Jury Member, and Witness. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clerk, Interpreter, Judge's Bench, and Witness Stand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Jury Box, Gallery, and Defense Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Courtroom: A visitor’s questions",
+      "text": "A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system. A Bailiff supports courtroom order under local responsibilities. A Court Reporter records proceedings, a Jury Member considers evidence, and a Witness gives testimony. These roles come from the written account rather than clothing. The Clerk manages court records. An Interpreter conveys communication between languages. The Judge's Bench is the judge’s seating area, while the Witness Stand is where testimony is given in this courtroom layout. The Jury Box holds jurors, the Gallery holds public observers, and the Defense Table is used by the defense team. Courtrooms can have different arrangements and access rules.",
+      "imageBrief": "One uncluttered courtroom setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Judge, Lawyer, Prosecutor, and Defense Attorney and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Judge",
+        "prompt": "A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system.\nWho presents the state’s criminal case?",
+        "answer": "Prosecutor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bailiff, Court Reporter, Jury Member, and Witness and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Bailiff",
+        "prompt": "A Bailiff supports courtroom order under local responsibilities. A Court Reporter records proceedings, a Jury Member considers evidence, and a Witness gives testimony. These roles come from the written account rather than clothing.\nWho creates the record of proceedings?",
+        "answer": "Court Reporter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clerk, Interpreter, Judge's Bench, and Witness Stand and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Clerk",
+        "prompt": "The Clerk manages court records. An Interpreter conveys communication between languages. The Judge's Bench is the judge’s seating area, while the Witness Stand is where testimony is given in this courtroom layout.\nWho conveys communication between languages?",
+        "answer": "Interpreter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Jury Box, Gallery, and Defense Table and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Jury Box",
+        "prompt": "The Jury Box holds jurors, the Gallery holds public observers, and the Defense Table is used by the defense team. Courtrooms can have different arrangements and access rules.\nWhich area holds public observers?",
+        "answer": "Gallery",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system. A Bailiff supports courtroom order under local responsibilities. A Court Reporter records proceedings, a Jury Member considers evidence, and a Witness gives testimony. These roles come from the written account rather than clothing. The Clerk manages court records. An Interpreter conveys communication between languages. The Judge's Bench is the judge’s seating area, while the Witness Stand is where testimony is given in this courtroom layout. The Jury Box holds jurors, the Gallery holds public observers, and the Defense Table is used by the defense team. Courtrooms can have different arrangements and access rules.\nExplain the difference between Judge and Lawyer using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Judge"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Application” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom task. Use Judge, Lawyer, Prosecutor, Defense Attorney, Bailiff, Court Reporter, Jury Member, Witness, Clerk, Interpreter, Judge's Bench, Witness Stand, Jury Box, Gallery, and Defense Table in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Judge, Lawyer, Prosecutor, Defense Attorney, Bailiff, Court Reporter, Jury Member, Witness, Clerk, Interpreter, Judge's Bench, Witness Stand, Jury Box, Gallery, Defense Table to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Courtroom: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Courtroom: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Judge and Lawyer, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A courtroom guide describes the Judge overseeing proceedings and a Lawyer practicing law. In the criminal example, the Prosecutor presents the state’s case, while the Defense Attorney represents the accused. Roles and procedure depend on the legal system. Pause and answer: Who presents the state’s criminal case?"
     },
     "spacedReview": "1 lesson(s) back: Application, Identification from embassy-5\n3 lesson(s) back: Security Camera, Metal Detector from embassy-3\n7 lesson(s) back: Hard Hat, Gloves from solar-farm-4"
   },
@@ -208,12 +191,12 @@
       "مخرج",
       "مطرقة القاضي",
       "كتاب قانون",
-      "ملف غلاف",
+      "ملف قضية",
       "كيس أدلة",
       "شارة",
       "أصفاد",
       "بطاقة القسم",
-      "أمر استدعاء قضائي",
+      "أمر استدعاء أو تقديم أدلة",
       "نموذج الحكم",
       "قائمة الشهود"
     ],
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "129-159 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Prosecution Table", "Lectern", "Court Seal", "Railing"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Lectern, Court Seal, and Railing and choose the option that fits the situation.",
+          "scenario": "The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Prosecution Table", "Lectern", "Court Seal"],
-            "expectedAnswer": "Prosecution Table"
+            "question": "Which stand supports a speaker’s papers?",
+            "options": ["Lectern", "Prosecution Table", "Court Seal"],
+            "expectedAnswer": "Lectern"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Prosecution Table as the central item; include Prosecution Table, Lectern, and Court Seal naturally where visually appropriate, but make the real-world use of Prosecution Table the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lectern in a courtroom context. Use the written scenario as the source of meaning: The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Exit", "Gavel", "Law Book", "Case File"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exit, Gavel, Law Book, and Case File and choose the option that fits the situation.",
+          "scenario": "The guide points out the Exit and a display Gavel used in some courts. A Law Book contains legal reference material, while a Case File collects records for one matter. Not every court uses a gavel.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Exit", "Gavel", "Law Book"],
-            "expectedAnswer": "Exit"
+            "question": "Which collection contains records for one matter?",
+            "options": ["Case File", "Exit", "Gavel"],
+            "expectedAnswer": "Case File"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Exit as the central item; include Exit, Gavel, and Law Book naturally where visually appropriate, but make the real-world use of Exit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Case File in a courtroom context. Use the written scenario as the source of meaning: The guide points out the Exit and a display Gavel used in some courts. A Law Book contains legal reference material, while a Case File collects records for one matter. Not every court uses a gavel. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Evidence Bag", "Badge", "Handcuffs", "Oath Card"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Evidence Bag, Badge, Handcuffs, and Oath Card and choose the option that fits the situation.",
+          "scenario": "An Evidence Bag preserves a specified item under handling rules. A Badge indicates a stated affiliation, Handcuffs are restraints, and an Oath Card contains oath or affirmation wording. None establishes guilt from appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which container preserves the specified evidence item?",
             "options": ["Evidence Bag", "Badge", "Handcuffs"],
             "expectedAnswer": "Evidence Bag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Evidence Bag as the central item; include Evidence Bag, Badge, and Handcuffs naturally where visually appropriate, but make the real-world use of Evidence Bag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Evidence Bag in a courtroom context. Use the written scenario as the source of meaning: An Evidence Bag preserves a specified item under handling rules. A Badge indicates a stated affiliation, Handcuffs are restraints, and an Oath Card contains oath or affirmation wording. None establishes guilt from appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Subpoena", "Verdict Form", "Witness List"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Verdict Form, and Witness List and choose the option that fits the situation.",
+          "scenario": "A Subpoena requires specified testimony or evidence under legal authority. A Verdict Form records decision responses, while a Witness List names proposed witnesses. The guide does not teach serving or contesting legal orders.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Subpoena", "Verdict Form", "Witness List"],
-            "expectedAnswer": "Subpoena"
+            "question": "Which record names proposed witnesses?",
+            "options": ["Witness List", "Subpoena", "Verdict Form"],
+            "expectedAnswer": "Witness List"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Subpoena as the central item; include Subpoena, Verdict Form, and Witness List naturally where visually appropriate, but make the real-world use of Subpoena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Witness List in a courtroom context. Use the written scenario as the source of meaning: A Subpoena requires specified testimony or evidence under legal authority. A Verdict Form records decision responses, while a Witness List names proposed witnesses. The guide does not teach serving or contesting legal orders. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Courtroom",
-      "text": "At the courtroom, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Prosecution Table, Lectern, Court Seal, and Railing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Exit, Gavel, Law Book, and Case File. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Evidence Bag, Badge, Handcuffs, and Oath Card. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Subpoena, Verdict Form, and Witness List. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Courtroom: Understanding the different roles",
+      "text": "The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case. The guide points out the Exit and a display Gavel used in some courts. A Law Book contains legal reference material, while a Case File collects records for one matter. Not every court uses a gavel. An Evidence Bag preserves a specified item under handling rules. A Badge indicates a stated affiliation, Handcuffs are restraints, and an Oath Card contains oath or affirmation wording. None establishes guilt from appearance. A Subpoena requires specified testimony or evidence under legal authority. A Verdict Form records decision responses, while a Witness List names proposed witnesses. The guide does not teach serving or contesting legal orders.",
+      "imageBrief": "One uncluttered courtroom setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Prosecution Table, Lectern, Court Seal, and Railing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Prosecution Table",
+        "prompt": "The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case.\nWhich stand supports a speaker’s papers?",
+        "answer": "Lectern",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exit, Gavel, Law Book, and Case File and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Exit",
+        "prompt": "The guide points out the Exit and a display Gavel used in some courts. A Law Book contains legal reference material, while a Case File collects records for one matter. Not every court uses a gavel.\nWhich collection contains records for one matter?",
+        "answer": "Case File",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Evidence Bag, Badge, Handcuffs, and Oath Card and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An Evidence Bag preserves a specified item under handling rules. A Badge indicates a stated affiliation, Handcuffs are restraints, and an Oath Card contains oath or affirmation wording. None establishes guilt from appearance.\nWhich container preserves the specified evidence item?",
         "answer": "Evidence Bag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Subpoena, Verdict Form, and Witness List and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Subpoena",
+        "prompt": "A Subpoena requires specified testimony or evidence under legal authority. A Verdict Form records decision responses, while a Witness List names proposed witnesses. The guide does not teach serving or contesting legal orders.\nWhich record names proposed witnesses?",
+        "answer": "Witness List",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case. The guide points out the Exit and a display Gavel used in some courts. A Law Book contains legal reference material, while a Case File collects records for one matter. Not every court uses a gavel. An Evidence Bag preserves a specified item under handling rules. A Badge indicates a stated affiliation, Handcuffs are restraints, and an Oath Card contains oath or affirmation wording. None establishes guilt from appearance. A Subpoena requires specified testimony or evidence under legal authority. A Verdict Form records decision responses, while a Witness List names proposed witnesses. The guide does not teach serving or contesting legal orders.\nExplain the difference between Prosecution Table and Lectern using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Prosecution Table"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Judge” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom task. Use Prosecution Table, Lectern, Court Seal, Railing, Exit, Gavel, Law Book, Case File, Evidence Bag, Badge, Handcuffs, Oath Card, Subpoena, Verdict Form, and Witness List in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Prosecution Table, Lectern, Court Seal, Railing, Exit, Gavel, Law Book, Case File, Evidence Bag, Badge, Handcuffs, Oath Card, Subpoena, Verdict Form, Witness List to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Courtroom: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Courtroom: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Prosecution Table and Lectern, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Prosecution Table is used by prosecutors. A Lectern supports papers for a speaker, the Court Seal marks specified official materials, and a Railing separates areas. The layout does not decide the legal merits of a case. Pause and answer: Which stand supports a speaker’s papers?"
     },
     "spacedReview": "1 lesson(s) back: Judge, Lawyer from courtroom-1\n3 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4\n7 lesson(s) back: Battery, Cable from solar-farm-5"
   },
@@ -377,147 +343,130 @@
     "targetWordsArabic": [
       "محاكمة",
       "جلسة قضائية",
-      "شهادة",
+      "شهادة شاهد",
       "استجواب مضاد",
       "اعتراض",
       "قرار قضائي",
-      "حكم قضائي",
+      "عقوبة قضائية",
       "استئناف",
       "براءة",
       "إدانة",
       "عقد",
       "إفادة مكتوبة تحت القسم",
       "أمر قضائي",
-      "إخطار بالحضور أمام المحكمة",
+      "إخطار بالحضور أو الرد أمام المحكمة",
       "صحيفة دعوى"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "127-157 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Trial", "Hearing", "Testimony", "Cross-Examination"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trial, Hearing, Testimony, and Cross-Examination and choose the option that fits the situation.",
+          "scenario": "A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Trial", "Hearing", "Testimony"],
-            "expectedAnswer": "Trial"
+            "question": "Which process is the opposing side’s witness questioning?",
+            "options": ["Cross-Examination", "Trial", "Hearing"],
+            "expectedAnswer": "Cross-Examination"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Trial through a realistic adult task; include Trial, Hearing, and Testimony naturally where visually appropriate, but make the real-world use of Trial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cross-Examination in a courtroom context. Use the written scenario as the source of meaning: A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Objection", "Ruling", "Sentence", "Appeal"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Ruling, Sentence, and Appeal and choose the option that fits the situation.",
+          "scenario": "An Objection asks the court to address a claimed procedural or evidence problem. A Ruling decides an issue. Sentence concerns punishment after conviction, while Appeal requests review through the permitted process.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Objection", "Ruling", "Sentence"],
-            "expectedAnswer": "Objection"
+            "question": "Which term names the court’s decision on an issue?",
+            "options": ["Ruling", "Objection", "Sentence"],
+            "expectedAnswer": "Ruling"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Objection through a realistic adult task; include Objection, Ruling, and Sentence naturally where visually appropriate, but make the real-world use of Objection the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ruling in a courtroom context. Use the written scenario as the source of meaning: An Objection asks the court to address a claimed procedural or evidence problem. A Ruling decides an issue. Sentence concerns punishment after conviction, while Appeal requests review through the permitted process. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Acquittal", "Conviction", "Contract", "Affidavit"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acquittal, Conviction, Contract, and Affidavit and choose the option that fits the situation.",
+          "scenario": "An Acquittal finds the accused not guilty of the charge, while a Conviction is a guilty finding. A Contract sets agreed obligations; an Affidavit contains a sworn written statement. Legal standards and effects vary by system.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the not-guilty outcome?",
             "options": ["Acquittal", "Conviction", "Contract"],
             "expectedAnswer": "Acquittal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Acquittal through a realistic adult task; include Acquittal, Conviction, and Contract naturally where visually appropriate, but make the real-world use of Acquittal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Acquittal in a courtroom context. Use the written scenario as the source of meaning: An Acquittal finds the accused not guilty of the charge, while a Conviction is a guilty finding. A Contract sets agreed obligations; an Affidavit contains a sworn written statement. Legal standards and effects vary by system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Warrant", "Summons", "Complaint"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warrant, Summons, and Complaint and choose the option that fits the situation.",
+          "scenario": "The guide contrasts a Warrant authorizing a specified action with a Summons requiring an appearance or response. A Complaint starts a civil claim in this example. Their validity and response requirements require the applicable court’s information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which order authorizes a specified action such as a search?",
             "options": ["Warrant", "Summons", "Complaint"],
             "expectedAnswer": "Warrant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Warrant as the central item; include Warrant, Summons, and Complaint naturally where visually appropriate, but make the real-world use of Warrant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Warrant in a courtroom context. Use the written scenario as the source of meaning: The guide contrasts a Warrant authorizing a specified action with a Summons requiring an appearance or response. A Complaint starts a civil claim in this example. Their validity and response requirements require the applicable court’s information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the courtroom, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Trial, Hearing, Testimony, and Cross-Examination. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Objection, Ruling, Sentence, and Appeal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Acquittal, Conviction, Contract, and Affidavit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Warrant, Summons, and Complaint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Courtroom: Comparing the equipment",
+      "text": "A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example. An Objection asks the court to address a claimed procedural or evidence problem. A Ruling decides an issue. Sentence concerns punishment after conviction, while Appeal requests review through the permitted process. An Acquittal finds the accused not guilty of the charge, while a Conviction is a guilty finding. A Contract sets agreed obligations; an Affidavit contains a sworn written statement. Legal standards and effects vary by system. The guide contrasts a Warrant authorizing a specified action with a Summons requiring an appearance or response. A Complaint starts a civil claim in this example. Their validity and response requirements require the applicable court’s information.",
+      "imageBrief": "One uncluttered courtroom setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trial, Hearing, Testimony, and Cross-Examination and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Trial",
+        "prompt": "A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example.\nWhich process is the opposing side’s witness questioning?",
+        "answer": "Cross-Examination",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Objection, Ruling, Sentence, and Appeal and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Objection",
+        "prompt": "An Objection asks the court to address a claimed procedural or evidence problem. A Ruling decides an issue. Sentence concerns punishment after conviction, while Appeal requests review through the permitted process.\nWhich term names the court’s decision on an issue?",
+        "answer": "Ruling",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acquittal, Conviction, Contract, and Affidavit and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "An Acquittal finds the accused not guilty of the charge, while a Conviction is a guilty finding. A Contract sets agreed obligations; an Affidavit contains a sworn written statement. Legal standards and effects vary by system.\nWhich term names the not-guilty outcome?",
         "answer": "Acquittal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Warrant, Summons, and Complaint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide contrasts a Warrant authorizing a specified action with a Summons requiring an appearance or response. A Complaint starts a civil claim in this example. Their validity and response requirements require the applicable court’s information.\nWhich order authorizes a specified action such as a search?",
         "answer": "Warrant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example. An Objection asks the court to address a claimed procedural or evidence problem. A Ruling decides an issue. Sentence concerns punishment after conviction, while Appeal requests review through the permitted process. An Acquittal finds the accused not guilty of the charge, while a Conviction is a guilty finding. A Contract sets agreed obligations; an Affidavit contains a sworn written statement. Legal standards and effects vary by system. The guide contrasts a Warrant authorizing a specified action with a Summons requiring an appearance or response. A Complaint starts a civil claim in this example. Their validity and response requirements require the applicable court’s information.\nExplain the difference between Trial and Hearing using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Trial"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Prosecution Table” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom task. Use Trial, Hearing, Testimony, Cross-Examination, Objection, Ruling, Sentence, Appeal, Acquittal, Conviction, Contract, Affidavit, Warrant, Summons, and Complaint in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Trial, Hearing, Testimony, Cross-Examination, Objection, Ruling, Sentence, Appeal, Acquittal, Conviction, Contract, Affidavit, Warrant, Summons, Complaint to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Courtroom: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Courtroom: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Trial and Hearing, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Trial examines a case under court procedure; a Hearing addresses an issue before the court. Testimony is witness evidence, and Cross-Examination is questioning by the opposing side after direct testimony in this example. Pause and answer: Which process is the opposing side’s witness questioning?"
     },
     "spacedReview": "1 lesson(s) back: Prosecution Table, Lectern from courtroom-2\n3 lesson(s) back: Application, Identification from embassy-5\n7 lesson(s) back: Embassy Building, Flag Pole from embassy-1"
   },
@@ -551,10 +500,10 @@
     "targetWordsArabic": [
       "طلب قضائي",
       "مذكرة قانونية",
-      "شهادة مسجلة تحت القسم قبل المحاكمة",
+      "شهادة مسجلة خارج المحكمة",
       "أمر قضائي بالإلزام أو المنع",
-      "دفع أو إقرار قضائي",
-      "روب حمام / برنس",
+      "إقرار أو رد على تهمة",
+      "رداء القاضي",
       "شعر مستعار",
       "بدلة",
       "ربطة عنق",
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "119-149 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Motion", "Brief", "Deposition", "Injunction"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion, Brief, Deposition, and Injunction and choose the option that fits the situation.",
+          "scenario": "A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Motion", "Brief", "Deposition"],
-            "expectedAnswer": "Motion"
+            "question": "Which order requires or prohibits a specified act?",
+            "options": ["Injunction", "Motion", "Brief"],
+            "expectedAnswer": "Injunction"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Motion through a realistic adult task; include Motion, Brief, and Deposition naturally where visually appropriate, but make the real-world use of Motion the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Injunction in a courtroom context. Use the written scenario as the source of meaning: A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Plea", "Robe", "Wig", "Suit"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Robe, Wig, and Suit and choose the option that fits the situation.",
+          "scenario": "The glossary defines Plea as a defendant’s response to a criminal charge. Robe and Wig are court clothing in some systems, and Suit here means matching formal clothes rather than a lawsuit. Dress does not prove judicial authority.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Plea", "Robe", "Wig"],
-            "expectedAnswer": "Plea"
+            "question": "Which target means matching formal clothes here?",
+            "options": ["Suit", "Plea", "Robe"],
+            "expectedAnswer": "Suit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Plea as the central item; include Plea, Robe, and Wig naturally where visually appropriate, but make the real-world use of Plea the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Suit in a courtroom context. Use the written scenario as the source of meaning: The glossary defines Plea as a defendant’s response to a criminal charge. Robe and Wig are court clothing in some systems, and Suit here means matching formal clothes rather than a lawsuit. Dress does not prove judicial authority. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tie", "Briefcase", "Lanyard", "ID Badge"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tie, Briefcase, Lanyard, and ID Badge and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Tie worn around the neck from a Briefcase carrying papers. A Lanyard is a cord holding an ID Badge; badge information and authorization are verified separately.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tie", "Briefcase", "Lanyard"],
-            "expectedAnswer": "Tie"
+            "question": "Which cord holds the identification badge?",
+            "options": ["Lanyard", "Tie", "Briefcase"],
+            "expectedAnswer": "Lanyard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Tie as the central item; include Tie, Briefcase, and Lanyard naturally where visually appropriate, but make the real-world use of Tie the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Lanyard in a courtroom context. Use the written scenario as the source of meaning: The guide distinguishes a Tie worn around the neck from a Briefcase carrying papers. A Lanyard is a cord holding an ID Badge; badge information and authorization are verified separately. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pen", "Notepad", "Folder"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pen, Notepad, and Folder and choose the option that fits the situation.",
+          "scenario": "The lawyer uses a Pen to write on a Notepad and keeps documents in a Folder. The Notepad provides sheets for brief written notes. No real case information is shown.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pen", "Notepad", "Folder"],
-            "expectedAnswer": "Pen"
+            "question": "Which item provides sheets for brief notes?",
+            "options": ["Notepad", "Pen", "Folder"],
+            "expectedAnswer": "Notepad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Pen as the central item; include Pen, Notepad, and Folder naturally where visually appropriate, but make the real-world use of Pen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Notepad in a courtroom context. Use the written scenario as the source of meaning: The lawyer uses a Pen to write on a Notepad and keeps documents in a Folder. The Notepad provides sheets for brief written notes. No real case information is shown. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Courtroom",
-      "text": "At the courtroom, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Motion, Brief, Deposition, and Injunction. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Plea, Robe, Wig, and Suit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tie, Briefcase, Lanyard, and ID Badge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pen, Notepad, and Folder. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Courtroom: A guided walk",
+      "text": "A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it. The glossary defines Plea as a defendant’s response to a criminal charge. Robe and Wig are court clothing in some systems, and Suit here means matching formal clothes rather than a lawsuit. Dress does not prove judicial authority. The guide distinguishes a Tie worn around the neck from a Briefcase carrying papers. A Lanyard is a cord holding an ID Badge; badge information and authorization are verified separately. The lawyer uses a Pen to write on a Notepad and keeps documents in a Folder. The Notepad provides sheets for brief written notes. No real case information is shown.",
+      "imageBrief": "One uncluttered courtroom setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motion, Brief, Deposition, and Injunction and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Motion",
+        "prompt": "A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it.\nWhich order requires or prohibits a specified act?",
+        "answer": "Injunction",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plea, Robe, Wig, and Suit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Plea",
+        "prompt": "The glossary defines Plea as a defendant’s response to a criminal charge. Robe and Wig are court clothing in some systems, and Suit here means matching formal clothes rather than a lawsuit. Dress does not prove judicial authority.\nWhich target means matching formal clothes here?",
+        "answer": "Suit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tie, Briefcase, Lanyard, and ID Badge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tie",
+        "prompt": "The guide distinguishes a Tie worn around the neck from a Briefcase carrying papers. A Lanyard is a cord holding an ID Badge; badge information and authorization are verified separately.\nWhich cord holds the identification badge?",
+        "answer": "Lanyard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pen, Notepad, and Folder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pen",
+        "prompt": "The lawyer uses a Pen to write on a Notepad and keeps documents in a Folder. The Notepad provides sheets for brief written notes. No real case information is shown.\nWhich item provides sheets for brief notes?",
+        "answer": "Notepad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it. The glossary defines Plea as a defendant’s response to a criminal charge. Robe and Wig are court clothing in some systems, and Suit here means matching formal clothes rather than a lawsuit. Dress does not prove judicial authority. The guide distinguishes a Tie worn around the neck from a Briefcase carrying papers. A Lanyard is a cord holding an ID Badge; badge information and authorization are verified separately. The lawyer uses a Pen to write on a Notepad and keeps documents in a Folder. The Notepad provides sheets for brief written notes. No real case information is shown.\nExplain the difference between Motion and Brief using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Motion"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Trial” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom task. Use Motion, Brief, Deposition, Injunction, Plea, Robe, Wig, Suit, Tie, Briefcase, Lanyard, ID Badge, Pen, Notepad, and Folder in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Motion, Brief, Deposition, Injunction, Plea, Robe, Wig, Suit, Tie, Briefcase, Lanyard, ID Badge, Pen, Notepad, Folder to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Courtroom: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Courtroom: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Motion and Brief, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Motion asks the court to act, a Brief presents legal arguments, and a Deposition records testimony outside trial under the required procedure. An Injunction orders an act or prohibits it. Pause and answer: Which order requires or prohibits a specified act?"
     },
     "spacedReview": "1 lesson(s) back: Trial, Hearing from courtroom-3\n3 lesson(s) back: Judge, Lawyer from courtroom-1\n7 lesson(s) back: Photograph, Stamp from embassy-2"
   },
@@ -731,110 +663,93 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "80-110 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Defendant", "Plaintiff", "Jury", "Evidence"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Defendant, Plaintiff, Jury, and Evidence and choose the option that fits the situation.",
+          "scenario": "In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Defendant", "Plaintiff", "Jury"],
-            "expectedAnswer": "Defendant"
+            "question": "Who brings the civil claim?",
+            "options": ["Plaintiff", "Defendant", "Jury"],
+            "expectedAnswer": "Plaintiff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Defendant; include Defendant, Plaintiff, and Jury naturally where visually appropriate, but make the real-world use of Defendant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Plaintiff in a courtroom context. Use the written scenario as the source of meaning: In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Document", "Oath", "Verdict", "Cross-Examine"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Document, Oath, Verdict, and Cross-Examine and choose the option that fits the situation.",
+          "scenario": "A Document may provide recorded information. An Oath commits a witness to truthfulness, and a Verdict records the specified decision. Cross-Examine describes questioning the opposing witness under the procedure.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Document", "Oath", "Verdict"],
-            "expectedAnswer": "Document"
+            "question": "Which term names the commitment to truthfulness?",
+            "options": ["Oath", "Document", "Verdict"],
+            "expectedAnswer": "Oath"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Document through a realistic adult task; include Document, Oath, and Verdict naturally where visually appropriate, but make the real-world use of Document the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Oath in a courtroom context. Use the written scenario as the source of meaning: A Document may provide recorded information. An Oath commits a witness to truthfulness, and a Verdict records the specified decision. Cross-Examine describes questioning the opposing witness under the procedure. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Deliberate"],
-          "scenario": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberate and choose the option that fits the situation.",
+          "scenario": "Before reaching a decision, the jurors Deliberate by considering and discussing the evidence under the court’s instructions. The account describes decision-making vocabulary without predicting a result.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Deliberate", "Defendant", "Plaintiff"],
+            "question": "Which verb means consider and discuss evidence before deciding?",
+            "options": ["Deliberate"],
             "expectedAnswer": "Deliberate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Deliberate through a realistic adult task; include Deliberate, Defendant, and Plaintiff naturally where visually appropriate, but make the real-world use of Deliberate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Deliberate in a courtroom context. Use the written scenario as the source of meaning: Before reaching a decision, the jurors Deliberate by considering and discussing the evidence under the court’s instructions. The account describes decision-making vocabulary without predicting a result. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written courtroom situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Courtroom",
-      "text": "At the courtroom, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Defendant, Plaintiff, Jury, and Evidence. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Document, Oath, Verdict, and Cross-Examine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deliberate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Courtroom. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Courtroom: A practical discussion",
+      "text": "In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct. A Document may provide recorded information. An Oath commits a witness to truthfulness, and a Verdict records the specified decision. Cross-Examine describes questioning the opposing witness under the procedure. Before reaching a decision, the jurors Deliberate by considering and discussing the evidence under the court’s instructions. The account describes decision-making vocabulary without predicting a result.",
+      "imageBrief": "One uncluttered courtroom setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Defendant, Plaintiff, Jury, and Evidence and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Defendant",
+        "prompt": "In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct.\nWho brings the civil claim?",
+        "answer": "Plaintiff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Document, Oath, Verdict, and Cross-Examine and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Document",
+        "prompt": "A Document may provide recorded information. An Oath commits a witness to truthfulness, and a Verdict records the specified decision. Cross-Examine describes questioning the opposing witness under the procedure.\nWhich term names the commitment to truthfulness?",
+        "answer": "Oath",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the courtroom setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deliberate and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Before reaching a decision, the jurors Deliberate by considering and discussing the evidence under the court’s instructions. The account describes decision-making vocabulary without predicting a result.\nWhich verb means consider and discuss evidence before deciding?",
         "answer": "Deliberate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct. A Document may provide recorded information. An Oath commits a witness to truthfulness, and a Verdict records the specified decision. Cross-Examine describes questioning the opposing witness under the procedure. Before reaching a decision, the jurors Deliberate by considering and discussing the evidence under the court’s instructions. The account describes decision-making vocabulary without predicting a result.\nExplain the difference between Defendant and Plaintiff using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Defendant"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Motion” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the courtroom task. Use Defendant, Plaintiff, Jury, Evidence, Document, Oath, Verdict, Cross-Examine, and Deliberate in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Defendant, Plaintiff, Jury, Evidence, Document, Oath, Verdict, Cross-Examine, Deliberate to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Courtroom: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Courtroom: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Defendant and Plaintiff, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: In a civil example, the Plaintiff brings a claim against the Defendant. A Jury may consider Evidence where the procedure provides for one. The presence of a claim does not establish that it is correct. Pause and answer: Who brings the civil claim?"
     },
     "spacedReview": "1 lesson(s) back: Motion, Brief from courtroom-4\n3 lesson(s) back: Prosecution Table, Lectern from courtroom-2\n7 lesson(s) back: Security Camera, Metal Detector from embassy-3"
   }

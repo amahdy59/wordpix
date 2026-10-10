@@ -1,162 +1,202 @@
 {
   "grandmother": {
     "definition": "The mother of your father or mother.",
-    "arabicTranslation": "جدة"
+    "arabicTranslation": "جدة",
+    "exampleUsage": "Omar’s grandmother is his mother’s mother."
   },
   "grandfather": {
     "definition": "The father of your father or mother.",
-    "arabicTranslation": "جد"
+    "arabicTranslation": "جد",
+    "exampleUsage": "Omar’s grandfather is his father’s father."
   },
   "grandma": {
-    "definition": "The mother of your father or mother.",
-    "arabicTranslation": "جدة"
+    "definition": "An informal word for grandmother.",
+    "arabicTranslation": "جدّة (غير رسمي)",
+    "exampleUsage": "Omar calls his grandmother Grandma."
   },
   "grandpa": {
-    "definition": "The father of your father or mother.",
-    "arabicTranslation": "جد"
+    "definition": "An informal word for grandfather.",
+    "arabicTranslation": "جدّ (غير رسمي)",
+    "exampleUsage": "Omar calls his grandfather Grandpa."
   },
   "great-grandmother": {
-    "definition": "A person’s great-grandmother is the mother of one of their grandparents, placing her two generations earlier in the family line.",
-    "arabicTranslation": "أم الجد أو الجدة"
+    "definition": "The mother of one of a person’s grandparents.",
+    "arabicTranslation": "أم الجد أو الجدة",
+    "exampleUsage": "Omar’s great-grandmother is his grandmother’s mother."
   },
   "great-grandfather": {
     "definition": "The male parent of a person's grandparent, making him that person's ancestor three generations back.",
-    "arabicTranslation": "أب الجد أو الجدة"
+    "arabicTranslation": "أب الجد أو الجدة",
+    "exampleUsage": "Omar’s great-grandfather is his grandfather’s father."
   },
   "nana": {
-    "definition": "People may call a caring older woman Nana, even when she is not their grandmother.",
-    "arabicTranslation": "جدة (تعبير عائلي)"
+    "definition": "An informal family name for a grandmother.",
+    "arabicTranslation": "جدّة (اسم عائلي غير رسمي)",
+    "exampleUsage": "Omar’s family calls his grandmother Nana."
   },
   "papa": {
     "definition": "An informal term for a father.",
-    "arabicTranslation": "أب (تعبير عائلي)"
+    "arabicTranslation": "أب (تعبير عائلي)",
+    "exampleUsage": "Omar calls his father Papa."
   },
   "granny": {
-    "definition": "The mother of your father or mother.",
-    "arabicTranslation": "جدة"
+    "definition": "An informal word for grandmother.",
+    "arabicTranslation": "جدّة (غير رسمي)",
+    "exampleUsage": "Nora calls her grandmother Granny."
   },
   "grandparent": {
     "definition": "A parent of your father or mother.",
-    "arabicTranslation": "جد أو جدة"
+    "arabicTranslation": "جد أو جدة",
+    "exampleUsage": "A grandmother is a grandparent."
   },
   "aunt": {
-    "definition": "The sister of your father or mother.",
-    "arabicTranslation": "عمة أو خالة"
+    "definition": "A parent’s sister, or an uncle’s wife; here a parent’s sister.",
+    "arabicTranslation": "عمة أو خالة",
+    "exampleUsage": "Omar’s aunt is his mother’s sister."
   },
   "uncle": {
-    "definition": "The brother of your father or mother.",
-    "arabicTranslation": "عم أو خال"
+    "definition": "A parent’s brother, or an aunt’s husband; here a parent’s brother.",
+    "arabicTranslation": "عم أو خال",
+    "exampleUsage": "Omar’s uncle is his father’s brother."
   },
   "cousin": {
-    "definition": "The child of your aunt or uncle.",
-    "arabicTranslation": "ابن أو ابنة العم أو الخال"
+    "definition": "A child of a parent’s sibling, or more broadly a related cousin.",
+    "arabicTranslation": "ابن أو ابنة العم أو العمة أو الخال أو الخالة",
+    "exampleUsage": "Omar’s cousin is his aunt’s daughter."
   },
   "first-cousin": {
-    "arabicTranslation": "ابن أو ابنة العم أو الخال أول",
-    "definition": "The child of a person's aunt or uncle."
+    "arabicTranslation": "ابن أو ابنة العم أو العمة أو الخال أو الخالة",
+    "definition": "A person whose parent is a sibling of your parent.",
+    "exampleUsage": "Nora and Omar are first cousins because their mothers are sisters."
   },
   "second-cousin": {
-    "arabicTranslation": "ابن أو ابنة العم أو الخال الثاني",
-    "definition": "A person who shares great-grandparents with someone else."
+    "arabicTranslation": "قريب من الدرجة الثانية في أبناء العمومة: أحد والديه ابن عم أو ابن خال لأحد والديك",
+    "definition": "A person whose parent is a first cousin of your parent.",
+    "exampleUsage": "Lina and Sami are second cousins because their parents are first cousins."
   },
   "great-aunt": {
     "arabicTranslation": "عمة أو خالة أحد الوالدين",
-    "definition": "The sister of a person's grandparent."
+    "definition": "The sister of a person's grandparent.",
+    "exampleUsage": "Omar’s great-aunt is his grandfather’s sister."
   },
   "great-uncle": {
-    "definition": "A male relative who is the sibling of someone’s grandparent, two generations above them in a family tree.",
-    "arabicTranslation": "عم أو خال أحد الوالدين"
+    "definition": "A brother of one of a person’s grandparents.",
+    "arabicTranslation": "عم أو خال أحد الوالدين",
+    "exampleUsage": "Omar’s great-uncle is his grandmother’s brother."
   },
   "niece": {
     "definition": "A daughter of your brother or sister.",
-    "arabicTranslation": "ابنة الأخ أو الأخت"
+    "arabicTranslation": "ابنة الأخ أو الأخت",
+    "exampleUsage": "Omar’s niece is his sister’s daughter."
   },
   "nephew": {
     "definition": "A son of your brother or sister.",
-    "arabicTranslation": "ابن الأخ أو الأخت"
+    "arabicTranslation": "ابن الأخ أو الأخت",
+    "exampleUsage": "Omar’s nephew is his brother’s son."
   },
   "cousin-in-law": {
-    "arabicTranslation": "قريب بالمصاهرة من جهة أبناء العمومة",
-    "definition": "A relative related through marriage to a person's cousin or spouse."
+    "arabicTranslation": "زوج أو زوجة أحد أبناء العمومة أو الخؤولة",
+    "definition": "An informal name for a cousin’s spouse, or a spouse’s cousin; here a cousin’s spouse.",
+    "exampleUsage": "Omar informally calls his cousin’s husband a cousin-in-law."
   },
   "mother-in-law": {
-    "definition": "The mother of someone's spouse, making her a relative connected through marriage rather than birth.",
-    "arabicTranslation": "أم الزوج أو الزوجة"
+    "definition": "The mother of a person’s spouse.",
+    "arabicTranslation": "أم الزوج أو الزوجة",
+    "exampleUsage": "Omar’s mother-in-law is his wife’s mother."
   },
   "father-in-law": {
     "definition": "The father of a person's husband or wife.",
-    "arabicTranslation": "أب الزوج أو الزوجة"
+    "arabicTranslation": "أب الزوج أو الزوجة",
+    "exampleUsage": "Omar’s father-in-law is his wife’s father."
   },
   "sister-in-law": {
     "definition": "A sister of someone's spouse, or the wife of someone's sibling.",
-    "arabicTranslation": "أخت الزوج أو الزوجة، أو زوجة الأخ"
+    "arabicTranslation": "أخت الزوج أو الزوجة، أو زوجة الأخ",
+    "exampleUsage": "Omar’s sister-in-law is his wife’s sister."
   },
   "brother-in-law": {
     "definition": "A brother of someone's spouse, or the husband of someone's sibling.",
-    "arabicTranslation": "أخو الزوج أو الزوجة، أو زوج الأخت"
+    "arabicTranslation": "أخو الزوج أو الزوجة، أو زوج الأخت",
+    "exampleUsage": "Omar’s brother-in-law is his wife’s brother."
   },
   "son-in-law": {
-    "definition": "A daughter's husband, viewed as a male relative gained through marriage.",
-    "arabicTranslation": "زوج الابنة"
+    "definition": "The husband of a person’s daughter.",
+    "arabicTranslation": "زوج الابنة",
+    "exampleUsage": "Nora’s son-in-law is her daughter’s husband."
   },
   "daughter-in-law": {
-    "definition": "A woman married to a person's son, regarded in relation to that parent as a family member.",
-    "arabicTranslation": "زوجة الابن"
+    "definition": "The wife of a person’s son.",
+    "arabicTranslation": "زوجة الابن",
+    "exampleUsage": "Nora’s daughter-in-law is her son’s wife."
   },
   "in-laws": {
     "definition": "Relatives connected to you through marriage, especially your spouse’s parents and other close family members.",
-    "arabicTranslation": "أقارب بالمصاهرة"
+    "arabicTranslation": "أقارب بالمصاهرة",
+    "exampleUsage": "Omar visits his in-laws, his wife’s parents."
   },
   "spouse-s-family": {
     "arabicTranslation": "عائلة الزوج أو الزوجة",
-    "definition": "The relatives of a person's husband or wife."
+    "definition": "The relatives of a person's husband or wife.",
+    "exampleUsage": "Omar’s spouse’s family includes his wife’s parents."
   },
   "extended-in-laws": {
     "arabicTranslation": "أقارب المصاهرة الأبعد",
-    "definition": "Relatives connected through marriage beyond immediate in-laws."
+    "definition": "An informal description of more distant relatives connected through marriage.",
+    "exampleUsage": "Omar describes more distant relatives by marriage as extended in-laws."
   },
   "family-in-law": {
-    "arabicTranslation": "عائلة بالمصاهرة",
-    "definition": "The family members gained through marriage."
+    "arabicTranslation": "العائلة المرتبطة بالمصاهرة",
+    "definition": "An informal description of family connected through marriage; in-laws is the usual term.",
+    "exampleUsage": "Omar means his in-laws when he says family-in-law."
   },
   "reunion": {
-    "definition": "A party of former associates who have come together again.",
-    "arabicTranslation": "لقاء عائلي بعد فراق"
+    "definition": "A gathering of people who have been apart; here a family gathering.",
+    "arabicTranslation": "لقاء عائلي بعد فراق",
+    "exampleUsage": "The relatives meet again at a family reunion."
   },
   "holiday-dinner": {
     "arabicTranslation": "عشاء بمناسبة عطلة",
-    "definition": "A special meal shared with family or friends on a holiday."
+    "definition": "A special meal shared with family or friends on a holiday.",
+    "exampleUsage": "The family shares a holiday dinner."
   },
   "thanksgiving": {
     "definition": "A holiday celebrated to give thanks, held on different dates in the US and Canada.",
-    "arabicTranslation": "عيد الشكر"
+    "arabicTranslation": "عيد الشكر",
+    "exampleUsage": "Some families in the United States have a meal at Thanksgiving."
   },
   "christmas": {
     "definition": "A Christian holiday celebrating the birth of Christ.",
-    "arabicTranslation": "عيد الميلاد المسيحي"
+    "arabicTranslation": "عيد الميلاد المسيحي",
+    "exampleUsage": "Omar’s Christian friends celebrate Christmas."
   },
   "easter": {
     "definition": "A Christian celebration of the Resurrection of Christ.",
-    "arabicTranslation": "عيد القيامة"
+    "arabicTranslation": "عيد القيامة",
+    "exampleUsage": "Omar’s Christian friends celebrate Easter."
   },
   "birthday-celebration": {
     "arabicTranslation": "احتفال بعيد ميلاد",
-    "definition": "An event held to mark the day someone was born."
+    "definition": "An event held to mark the day someone was born.",
+    "exampleUsage": "The family attends Nora’s birthday celebration."
   },
   "anniversary": {
     "definition": "The date on which an event occurred in some previous year (or the celebration of it).",
-    "arabicTranslation": "ذكرى سنوية"
+    "arabicTranslation": "ذكرى سنوية",
+    "exampleUsage": "The couple celebrates their wedding anniversary."
   },
   "barbecue": {
-    "definition": "To cook outdoors on a barbecue grill.",
-    "arabicTranslation": "يشوي على الشواية"
+    "definition": "An outdoor meal where food is cooked on a grill; here the event.",
+    "arabicTranslation": "وجبة شواء في الهواء الطلق",
+    "exampleUsage": "The friends have a barbecue in the garden."
   },
   "picnic": {
     "definition": "Eating a meal outdoors, often on a blanket or table.",
-    "arabicTranslation": "نزهة مع طعام"
+    "arabicTranslation": "نزهة مع طعام",
+    "exampleUsage": "The friends share a picnic in the park."
   },
   "family-wedding": {
-    "arabicTranslation": "زفاف عائلة",
-    "definition": "A marriage ceremony attended by relatives of the couple."
+    "arabicTranslation": "زفاف عائلي",
+    "definition": "A wedding involving or attended by family members.",
+    "exampleUsage": "The relatives attend a family wedding."
   }
 }

@@ -47,129 +47,112 @@
       "goal": "Develop the language needed to ask about routine postal services and complete a simple transaction in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the post office.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "100-130 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["letter", "envelope", "postcard", "package"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare letter, envelope, postcard, and package and choose the option that fits the situation.",
+          "scenario": "Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["letter", "envelope", "postcard"],
-            "expectedAnswer": "letter"
+            "question": "What holds Nabil’s letter before mailing?",
+            "options": ["envelope", "letter", "postcard"],
+            "expectedAnswer": "envelope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the letter as the central item; include letter, envelope, and postcard naturally where visually appropriate, but make the real-world use of letter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for envelope in a post office context. Use the written scenario as the source of meaning: Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["parcel", "stamp", "sticker", "label"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parcel, stamp, sticker, and label and choose the option that fits the situation.",
+          "scenario": "At the counter, Nabil presents a parcel. The clerk explains that a stamp shows payment of postage; a sticker may be decorative, while a label carries delivery details.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["parcel", "stamp", "sticker"],
-            "expectedAnswer": "parcel"
+            "question": "What shows that postage has been paid?",
+            "options": ["stamp", "parcel", "sticker"],
+            "expectedAnswer": "stamp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the parcel as the central item; include parcel, stamp, and sticker naturally where visually appropriate, but make the real-world use of parcel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for stamp in a post office context. Use the written scenario as the source of meaning: At the counter, Nabil presents a parcel. The clerk explains that a stamp shows payment of postage; a sticker may be decorative, while a label carries delivery details. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["address", "return address", "zip code", "tracking number"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare address, return address, zip code, and tracking number and choose the option that fits the situation.",
+          "scenario": "Nabil checks the destination address and the US zip code. He adds his own return address so an undelivered item can come back to him. He keeps the tracking number separately.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["address", "return address", "zip code"],
-            "expectedAnswer": "address"
+            "question": "Which detail directs an undelivered item back to Nabil?",
+            "options": ["return address", "address", "zip code"],
+            "expectedAnswer": "return address"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the address as the central item; include address, return address, and zip code naturally where visually appropriate, but make the real-world use of address the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for return address in a post office context. Use the written scenario as the source of meaning: Nabil checks the destination address and the US zip code. He adds his own return address so an undelivered item can come back to him. He keeps the tracking number separately. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["mailbox", "post box", "slot"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare mailbox, post box, and slot and choose the option that fits the situation.",
+          "scenario": "Nabil sees a private mailbox outside a home and a public post box for outgoing mail. He puts his outgoing letter through the narrow slot in the public box.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["mailbox", "post box", "slot"],
-            "expectedAnswer": "mailbox"
+            "question": "Through which opening does Nabil put the letter?",
+            "options": ["slot", "mailbox", "post box"],
+            "expectedAnswer": "slot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the mailbox as the central item; include mailbox, post box, and slot naturally where visually appropriate, but make the real-world use of mailbox the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for slot in a post office context. Use the written scenario as the source of meaning: Nabil sees a private mailbox outside a home and a public post box for outgoing mail. He puts his outgoing letter through the narrow slot in the public box. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Post Office: Practical Information",
-      "text": "At the post office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers letter, envelope, postcard, and package. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers parcel, stamp, sticker, and label. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers address, return address, zip code, and tracking number. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers mailbox, post box, and slot. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Post Office: A visitor’s questions",
+      "text": "Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping. At the counter, Nabil presents a parcel. The clerk explains that a stamp shows payment of postage; a sticker may be decorative, while a label carries delivery details. Nabil checks the destination address and the US zip code. He adds his own return address so an undelivered item can come back to him. He keeps the tracking number separately. Nabil sees a private mailbox outside a home and a public post box for outgoing mail. He puts his outgoing letter through the narrow slot in the public box.",
+      "imageBrief": "One uncluttered post office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare letter, envelope, postcard, and package and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "letter",
+        "prompt": "Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping.\nWhat holds Nabil’s letter before mailing?",
+        "answer": "envelope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parcel, stamp, sticker, and label and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "parcel",
+        "prompt": "At the counter, Nabil presents a parcel. The clerk explains that a stamp shows payment of postage; a sticker may be decorative, while a label carries delivery details.\nWhat shows that postage has been paid?",
+        "answer": "stamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare address, return address, zip code, and tracking number and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "address",
+        "prompt": "Nabil checks the destination address and the US zip code. He adds his own return address so an undelivered item can come back to him. He keeps the tracking number separately.\nWhich detail directs an undelivered item back to Nabil?",
+        "answer": "return address",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare mailbox, post box, and slot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "mailbox",
+        "prompt": "Nabil sees a private mailbox outside a home and a public post box for outgoing mail. He puts his outgoing letter through the narrow slot in the public box.\nThrough which opening does Nabil put the letter?",
+        "answer": "slot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping. At the counter, Nabil presents a parcel. The clerk explains that a stamp shows payment of postage; a sticker may be decorative, while a label carries delivery details. Nabil checks the destination address and the US zip code. He adds his own return address so an undelivered item can come back to him. He keeps the tracking number separately. Nabil sees a private mailbox outside a home and a public post box for outgoing mail. He puts his outgoing letter through the narrow slot in the public box.\nExplain the difference between letter and envelope using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "letter"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "package"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Turntable” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l5 post office task. Use letter, envelope, postcard, package, parcel, stamp, sticker, label, address, return address, zip code, tracking number, mailbox, post box, and slot in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms letter, envelope, postcard, package, parcel, stamp, sticker, label, address, return address, zip code, tracking number, mailbox, post box, slot to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L5 Post Office: In Context",
-      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Post Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between letter and envelope, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Nabil puts his letter inside an envelope before mailing it. His postcard needs no separate cover, while a package needs stronger wrapping. Pause and answer: What holds Nabil’s letter before mailing?"
     },
     "spacedReview": "1 lesson(s) back: Turntable, Speaker from radio-station-5\n3 lesson(s) back: Playlist, Jingle from radio-station-3\n7 lesson(s) back: Sound Board, Clip-On Mic from tv-studio-4"
   },
@@ -221,129 +204,112 @@
       "goal": "Develop the language needed to ask about routine postal services and complete a simple transaction in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the post office.",
       "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "readingTarget": "90-120 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["counter", "scale", "receipt", "delivery"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare counter, scale, receipt, and delivery and choose the option that fits the situation.",
+          "scenario": "At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["counter", "scale", "receipt"],
-            "expectedAnswer": "counter"
+            "question": "Which device checks the parcel’s weight?",
+            "options": ["scale", "counter", "receipt"],
+            "expectedAnswer": "scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the counter as the central item; include counter, scale, and receipt naturally where visually appropriate, but make the real-world use of counter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for scale in a post office context. Use the written scenario as the source of meaning: At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["pickup", "signature", "registered mail", "express mail"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pickup, signature, registered mail, and express mail and choose the option that fits the situation.",
+          "scenario": "Rana asks about pickup and the available postal services. The clerk explains that some services require a signature when an item is collected or delivered. Registered mail and express mail have different provider-specific terms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["pickup", "signature", "registered mail"],
-            "expectedAnswer": "pickup"
+            "question": "What written confirmation may be required from the recipient?",
+            "options": ["signature", "pickup", "registered mail"],
+            "expectedAnswer": "signature"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the pickup as the central item; include pickup, signature, and registered mail naturally where visually appropriate, but make the real-world use of pickup the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for signature in a post office context. Use the written scenario as the source of meaning: Rana asks about pickup and the available postal services. The clerk explains that some services require a signature when an item is collected or delivered. Registered mail and express mail have different provider-specific terms. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["certified mail", "postal worker", "mail carrier", "clerk"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare certified mail, postal worker, mail carrier, and clerk and choose the option that fits the situation.",
+          "scenario": "A clerk explains certified mail at the counter. Another postal worker sorts outgoing letters. Outside, a mail carrier takes letters along a delivery route.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["certified mail", "postal worker", "mail carrier"],
-            "expectedAnswer": "certified mail"
+            "question": "Who takes letters along the delivery route?",
+            "options": ["mail carrier", "certified mail", "postal worker"],
+            "expectedAnswer": "mail carrier"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the certified mail as the central item; include certified mail, postal worker, and mail carrier naturally where visually appropriate, but make the real-world use of certified mail the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for mail carrier in a post office context. Use the written scenario as the source of meaning: A clerk explains certified mail at the counter. Another postal worker sorts outgoing letters. Outside, a mail carrier takes letters along a delivery route. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["postmaster", "delivery driver", "sorter"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare postmaster, delivery driver, and sorter and choose the option that fits the situation.",
+          "scenario": "The postmaster manages the office. A delivery driver transports parcels. A sorter organizes letters by destination before dispatch.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["postmaster", "delivery driver", "sorter"],
-            "expectedAnswer": "postmaster"
+            "question": "Who organizes letters by destination?",
+            "options": ["sorter", "postmaster", "delivery driver"],
+            "expectedAnswer": "sorter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the postmaster as the central item; include postmaster, delivery driver, and sorter naturally where visually appropriate, but make the real-world use of postmaster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for sorter in a post office context. Use the written scenario as the source of meaning: The postmaster manages the office. A delivery driver transports parcels. A sorter organizes letters by destination before dispatch. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Post Office",
-      "text": "At the post office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers counter, scale, receipt, and delivery. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers pickup, signature, registered mail, and express mail. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers certified mail, postal worker, mail carrier, and clerk. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers postmaster, delivery driver, and sorter. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Post Office: Understanding the different roles",
+      "text": "At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery. Rana asks about pickup and the available postal services. The clerk explains that some services require a signature when an item is collected or delivered. Registered mail and express mail have different provider-specific terms. A clerk explains certified mail at the counter. Another postal worker sorts outgoing letters. Outside, a mail carrier takes letters along a delivery route. The postmaster manages the office. A delivery driver transports parcels. A sorter organizes letters by destination before dispatch.",
+      "imageBrief": "One uncluttered post office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare counter, scale, receipt, and delivery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "counter",
+        "prompt": "At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery.\nWhich device checks the parcel’s weight?",
+        "answer": "scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pickup, signature, registered mail, and express mail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "pickup",
+        "prompt": "Rana asks about pickup and the available postal services. The clerk explains that some services require a signature when an item is collected or delivered. Registered mail and express mail have different provider-specific terms.\nWhat written confirmation may be required from the recipient?",
+        "answer": "signature",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare certified mail, postal worker, mail carrier, and clerk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "certified mail",
+        "prompt": "A clerk explains certified mail at the counter. Another postal worker sorts outgoing letters. Outside, a mail carrier takes letters along a delivery route.\nWho takes letters along the delivery route?",
+        "answer": "mail carrier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare postmaster, delivery driver, and sorter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "postmaster",
+        "prompt": "The postmaster manages the office. A delivery driver transports parcels. A sorter organizes letters by destination before dispatch.\nWho organizes letters by destination?",
+        "answer": "sorter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery. Rana asks about pickup and the available postal services. The clerk explains that some services require a signature when an item is collected or delivered. Registered mail and express mail have different provider-specific terms. A clerk explains certified mail at the counter. Another postal worker sorts outgoing letters. Outside, a mail carrier takes letters along a delivery route. The postmaster manages the office. A delivery driver transports parcels. A sorter organizes letters by destination before dispatch.\nExplain the difference between counter and scale using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "counter"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "delivery"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “letter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l5 post office task. Use counter, scale, receipt, delivery, pickup, signature, registered mail, express mail, certified mail, postal worker, mail carrier, clerk, postmaster, delivery driver, and sorter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms counter, scale, receipt, delivery, pickup, signature, registered mail, express mail, certified mail, postal worker, mail carrier, clerk, postmaster, delivery driver, sorter to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L5 Post Office: In Context",
-      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Post Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between counter and scale, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At the post-office counter, Rana places her parcel on the scale to have its weight checked. She receives a receipt after paying for delivery. Pause and answer: Which device checks the parcel’s weight?"
     },
     "spacedReview": "1 lesson(s) back: letter, envelope from post-office-1\n3 lesson(s) back: Traffic Reporter, Weather Presenter from radio-station-4\n7 lesson(s) back: Monitor, Boom Mic from tv-studio-5"
   },
@@ -395,129 +361,112 @@
       "goal": "Develop the language needed to ask about routine postal services and complete a simple transaction in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the post office.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "102-132 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["courier", "customer", "mail bag", "cart"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare courier, customer, mail bag, and cart and choose the option that fits the situation.",
+          "scenario": "A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["courier", "customer", "mail bag"],
-            "expectedAnswer": "courier"
+            "question": "What holds the letters ready for collection?",
+            "options": ["mail bag", "courier", "customer"],
+            "expectedAnswer": "mail bag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the courier as the central item; include courier, customer, and mail bag naturally where visually appropriate, but make the real-world use of courier the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for mail bag in a post office context. Use the written scenario as the source of meaning: A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["sorting machine", "scanner", "tape", "bubble wrap"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sorting machine, scanner, tape, and bubble wrap and choose the option that fits the situation.",
+          "scenario": "A sorting machine routes parcels, and a scanner reads their codes. At the packing bench, Lina seals a box with tape after protecting a fragile object with bubble wrap.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["sorting machine", "scanner", "tape"],
-            "expectedAnswer": "sorting machine"
+            "question": "Which material cushions Lina’s fragile object?",
+            "options": ["bubble wrap", "sorting machine", "scanner"],
+            "expectedAnswer": "bubble wrap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the sorting machine as the central item; include sorting machine, scanner, and tape naturally where visually appropriate, but make the real-world use of sorting machine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for bubble wrap in a post office context. Use the written scenario as the source of meaning: A sorting machine routes parcels, and a scanner reads their codes. At the packing bench, Lina seals a box with tape after protecting a fragile object with bubble wrap. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["packing peanuts", "box", "padded envelope", "rubber band"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare packing peanuts, box, padded envelope, and rubber band and choose the option that fits the situation.",
+          "scenario": "Lina uses packing peanuts inside a box for a large item. For a small fragile accessory, she chooses a padded envelope. A rubber band holds the accompanying papers together.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["packing peanuts", "box", "padded envelope"],
-            "expectedAnswer": "packing peanuts"
+            "question": "Which container cushions the small accessory?",
+            "options": ["padded envelope", "packing peanuts", "box"],
+            "expectedAnswer": "padded envelope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the packing peanuts as the central item; include packing peanuts, box, and padded envelope naturally where visually appropriate, but make the real-world use of packing peanuts the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for padded envelope in a post office context. Use the written scenario as the source of meaning: Lina uses packing peanuts inside a box for a large item. For a small fragile accessory, she chooses a padded envelope. A rubber band holds the accompanying papers together. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["ink pad", "date stamp", "lobby"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ink pad, date stamp, and lobby and choose the option that fits the situation.",
+          "scenario": "At a desk beside the lobby, a worker presses a date stamp onto an ink pad and marks a paper with today’s date.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["ink pad", "date stamp", "lobby"],
-            "expectedAnswer": "ink pad"
+            "question": "Which tool marks the paper with a date?",
+            "options": ["date stamp", "ink pad", "lobby"],
+            "expectedAnswer": "date stamp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the ink pad as the central item; include ink pad, date stamp, and lobby naturally where visually appropriate, but make the real-world use of ink pad the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for date stamp in a post office context. Use the written scenario as the source of meaning: At a desk beside the lobby, a worker presses a date stamp onto an ink pad and marks a paper with today’s date. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Post Office",
-      "text": "At the post office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers courier, customer, mail bag, and cart. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers sorting machine, scanner, tape, and bubble wrap. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers packing peanuts, box, padded envelope, and rubber band. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers ink pad, date stamp, and lobby. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Post Office: Comparing the equipment",
+      "text": "A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart. A sorting machine routes parcels, and a scanner reads their codes. At the packing bench, Lina seals a box with tape after protecting a fragile object with bubble wrap. Lina uses packing peanuts inside a box for a large item. For a small fragile accessory, she chooses a padded envelope. A rubber band holds the accompanying papers together. At a desk beside the lobby, a worker presses a date stamp onto an ink pad and marks a paper with today’s date.",
+      "imageBrief": "One uncluttered post office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare courier, customer, mail bag, and cart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "courier",
+        "prompt": "A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart.\nWhat holds the letters ready for collection?",
+        "answer": "mail bag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare sorting machine, scanner, tape, and bubble wrap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "sorting machine",
+        "prompt": "A sorting machine routes parcels, and a scanner reads their codes. At the packing bench, Lina seals a box with tape after protecting a fragile object with bubble wrap.\nWhich material cushions Lina’s fragile object?",
+        "answer": "bubble wrap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare packing peanuts, box, padded envelope, and rubber band and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "packing peanuts",
+        "prompt": "Lina uses packing peanuts inside a box for a large item. For a small fragile accessory, she chooses a padded envelope. A rubber band holds the accompanying papers together.\nWhich container cushions the small accessory?",
+        "answer": "padded envelope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ink pad, date stamp, and lobby and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "ink pad",
+        "prompt": "At a desk beside the lobby, a worker presses a date stamp onto an ink pad and marks a paper with today’s date.\nWhich tool marks the paper with a date?",
+        "answer": "date stamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart. A sorting machine routes parcels, and a scanner reads their codes. At the packing bench, Lina seals a box with tape after protecting a fragile object with bubble wrap. Lina uses packing peanuts inside a box for a large item. For a small fragile accessory, she chooses a padded envelope. A rubber band holds the accompanying papers together. At a desk beside the lobby, a worker presses a date stamp onto an ink pad and marks a paper with today’s date.\nExplain the difference between courier and customer using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "courier"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "cart"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “counter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l5 post office task. Use courier, customer, mail bag, cart, sorting machine, scanner, tape, bubble wrap, packing peanuts, box, padded envelope, rubber band, ink pad, date stamp, and lobby in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms courier, customer, mail bag, cart, sorting machine, scanner, tape, bubble wrap, packing peanuts, box, padded envelope, rubber band, ink pad, date stamp, lobby to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L5 Post Office: In Context",
-      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Post Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between courier and customer, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A courier arrives to collect outgoing mail while a customer asks for help at reception. A postal worker places letters in a mail bag and moves larger parcels on a cart. Pause and answer: What holds the letters ready for collection?"
     },
     "spacedReview": "1 lesson(s) back: counter, scale from post-office-2\n3 lesson(s) back: Turntable, Speaker from radio-station-5\n7 lesson(s) back: Microphone, Mixing Console from radio-station-1"
   },
@@ -561,110 +510,93 @@
       "goal": "Develop the language needed to ask about routine postal services and complete a simple transaction in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the post office.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "74-104 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["service window", "PO box", "loading dock", "sorting room"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare service window, PO box, loading dock, and sorting room and choose the option that fits the situation.",
+          "scenario": "Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["service window", "PO box", "loading dock"],
-            "expectedAnswer": "service window"
+            "question": "What numbered compartment can Hassan rent for collecting mail?",
+            "options": ["PO box", "service window", "loading dock"],
+            "expectedAnswer": "PO box"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the service window as the central item; include service window, PO box, and loading dock naturally where visually appropriate, but make the real-world use of service window the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for PO box in a post office context. Use the written scenario as the source of meaning: Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["parking lot", "drop-off area", "vending machine", "form"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking lot, drop-off area, vending machine, and form and choose the option that fits the situation.",
+          "scenario": "Hassan parks in the parking lot and carries a parcel to the designated drop-off area. He passes a vending machine but has no time to buy a drink.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["parking lot", "drop-off area", "vending machine"],
-            "expectedAnswer": "parking lot"
+            "question": "Where does Hassan leave the parcel for dispatch?",
+            "options": ["drop-off area", "parking lot", "vending machine"],
+            "expectedAnswer": "drop-off area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the parking lot as the central item; include parking lot, drop-off area, and vending machine naturally where visually appropriate, but make the real-world use of parking lot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for drop-off area in a post office context. Use the written scenario as the source of meaning: Hassan parks in the parking lot and carries a parcel to the designated drop-off area. He passes a vending machine but has no time to buy a drink. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["pen", "waiting area", "queue"],
-          "scenario": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pen, waiting area, and queue and choose the option that fits the situation.",
+          "scenario": "In the waiting area, Hassan joins the queue. Before reaching the counter, he uses a pen to complete the required form.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["pen", "waiting area", "queue"],
-            "expectedAnswer": "pen"
+            "question": "What line does Hassan join while waiting for service?",
+            "options": ["queue", "pen", "waiting area"],
+            "expectedAnswer": "queue"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a post office. Show an adult using or examining the pen as the central item; include pen, waiting area, and queue naturally where visually appropriate, but make the real-world use of pen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a post office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for queue in a post office context. Use the written scenario as the source of meaning: In the waiting area, Hassan joins the queue. Before reaching the counter, he uses a pen to complete the required form. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written post office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Post Office: Practical Information",
-      "text": "At the post office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers service window, PO box, loading dock, and sorting room. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers parking lot, drop-off area, vending machine, and form. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers pen, waiting area, and queue. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L5 Post Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Post Office: A guided walk",
+      "text": "Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas. Hassan parks in the parking lot and carries a parcel to the designated drop-off area. He passes a vending machine but has no time to buy a drink. In the waiting area, Hassan joins the queue. Before reaching the counter, he uses a pen to complete the required form.",
+      "imageBrief": "One uncluttered post office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare service window, PO box, loading dock, and sorting room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "service window",
+        "prompt": "Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas.\nWhat numbered compartment can Hassan rent for collecting mail?",
+        "answer": "PO box",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare parking lot, drop-off area, vending machine, and form and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "parking lot",
+        "prompt": "Hassan parks in the parking lot and carries a parcel to the designated drop-off area. He passes a vending machine but has no time to buy a drink.\nWhere does Hassan leave the parcel for dispatch?",
+        "answer": "drop-off area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l5 post office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare pen, waiting area, and queue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "pen",
+        "prompt": "In the waiting area, Hassan joins the queue. Before reaching the counter, he uses a pen to complete the required form.\nWhat line does Hassan join while waiting for service?",
+        "answer": "queue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas. Hassan parks in the parking lot and carries a parcel to the designated drop-off area. He passes a vending machine but has no time to buy a drink. In the waiting area, Hassan joins the queue. Before reaching the counter, he uses a pen to complete the required form.\nExplain the difference between service window and PO box using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "service window"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "sorting room"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “courier” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l5 post office task. Use service window, PO Box, loading dock, sorting room, parking lot, drop-off area, vending machine, form, pen, waiting area, and queue in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms service window, PO Box, loading dock, sorting room, parking lot, drop-off area, vending machine, form, pen, waiting area, queue to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L5 Post Office: In Context",
-      "idea": "40-60 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Post Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between service window and PO box, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Hassan visits the service window to ask about renting a PO Box. The clerk explains that it is a numbered compartment for collecting his mail. The loading dock and sorting room are staff work areas. Pause and answer: What numbered compartment can Hassan rent for collecting mail?"
     },
     "spacedReview": "1 lesson(s) back: courier, customer from post-office-3\n3 lesson(s) back: letter, envelope from post-office-1\n7 lesson(s) back: Computer, Clock from radio-station-2"
   }

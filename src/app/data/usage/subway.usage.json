@@ -39,144 +39,138 @@
       "مخرج",
       "عربة مترو",
       "باب",
-      "نافذة (شباك)",
+      "نافذة",
       "مقعد",
       "قضيب للإمساك"
     ],
     "usage": {
-      "goal": "Learn to use the subway 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the subway.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated station feature, payment term, route message or assistance item.",
+      "canDoStatement": "Can follow a supported transit account and ask about a practical distinction. Specialist equipment terms extend the supported task level; this is not emergency or medical training.",
+      "textType": "subway-travel-account",
+      "readingTarget": "Supported connected adult transit journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Platform", "Tunnel", "Track"],
-          "scenario": "During a routine travel task, an adult compares Platform, Tunnel, Track. The option needed for the next step is Platform.",
+          "scenario": "Maya waits on the platform, the passenger boarding area. The train runs on the track and passes through a tunnel. She stays in the waiting area rather than entering the track or tunnel.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which area is for passenger waiting and boarding?",
             "options": ["Platform", "Tunnel", "Track"],
             "expectedAnswer": "Platform"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Platform, Tunnel, Track. The option needed for the next step is Platform. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Platform, Tunnel, Track in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Maya waits on the platform, the passenger boarding area. The train runs on the track and passes through a tunnel. She stays in the waiting area rather than entering the track or tunnel. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Escalator", "Elevator", "Turnstile"],
-          "scenario": "During a routine travel task, an adult compares Escalator, Elevator, Turnstile. The option needed for the next step is Escalator.",
+          "scenario": "Omar compares an escalator, moving steps, with an elevator carrying people between levels. A turnstile controls entry rather than changing floors. He asks staff about an available step-free route, since an elevator symbol alone does not prove the whole journey is step-free.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item carries people between levels without stairs?",
             "options": ["Escalator", "Elevator", "Turnstile"],
-            "expectedAnswer": "Escalator"
+            "expectedAnswer": "Elevator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Escalator, Elevator, Turnstile. The option needed for the next step is Escalator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Escalator, Elevator, Turnstile in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Omar compares an escalator, moving steps, with an elevator carrying people between levels. A turnstile controls entry rather than changing floors. He asks staff about an available step-free route, since an elevator symbol alone does not prove the whole journey is step-free. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mezzanine", "Concourse", "Entrance"],
-          "scenario": "During a routine travel task, an adult compares Mezzanine, Concourse, Entrance. The option needed for the next step is Mezzanine.",
+          "scenario": "The entrance leads into the station concourse, a large passenger area. A mezzanine is an intermediate floor. Maya asks for the concourse rather than assuming every station has the same layout.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the large passenger area?",
             "options": ["Mezzanine", "Concourse", "Entrance"],
-            "expectedAnswer": "Mezzanine"
+            "expectedAnswer": "Concourse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Mezzanine, Concourse, Entrance. The option needed for the next step is Mezzanine. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Mezzanine, Concourse, Entrance in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: The entrance leads into the station concourse, a large passenger area. A mezzanine is an intermediate floor. Maya asks for the concourse rather than assuming every station has the same layout. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Exit", "Car", "Door"],
-          "scenario": "During a routine travel task, an adult compares Exit, Car, Door. The option needed for the next step is Exit.",
+          "scenario": "A car here means one carriage of the train. Its door allows boarding, while an exit is the route out of the station. Omar asks for the way out after leaving the stationary train.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the way out of the station?",
             "options": ["Exit", "Car", "Door"],
             "expectedAnswer": "Exit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Exit, Car, Door. The option needed for the next step is Exit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Exit, Car, Door in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A car here means one carriage of the train. Its door allows boarding, while an exit is the route out of the station. Omar asks for the way out after leaving the stationary train. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Window", "Seat", "Handrail"],
-          "scenario": "During a routine travel task, an adult compares Window, Seat, Handrail. The option needed for the next step is Window.",
+          "scenario": "Maya sits in a seat beside the window. A handrail provides support when needed. The window allows a view outside, but the seat is the place for sitting.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item is for sitting?",
             "options": ["Window", "Seat", "Handrail"],
-            "expectedAnswer": "Window"
+            "expectedAnswer": "Seat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Window, Seat, Handrail. The option needed for the next step is Window. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Window, Seat, Handrail in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Maya sits in a seat beside the window. A handrail provides support when needed. The window allows a view outside, but the seat is the place for sitting. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         }
       ]
     },
     "reading": {
-      "title": "The Subway: Email",
-      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing platform, tunnel, and track. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing escalator, elevator, and turnstile. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finding a route through the station",
+      "text": "Maya enters the concourse through the entrance and asks about the mezzanine. She checks an escalator and elevator when planning her route; staff confirm whether the whole route is step-free. A turnstile controls entry. She reaches the platform and stays in the passenger waiting area, away from the track and tunnel. Omar boards a car through its door while the train is stationary. Maya takes a seat beside a window, with a handrail nearby. After travelling, they check the exit route rather than assuming the entrance is the only way out.",
+      "imageBrief": "Photorealistic adult transit-station account: Maya waits on the platform, the passenger boarding area. The train runs on the track and passes through a tunnel. She stays in the waiting area rather than entering the track or tunnel. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Platform, Tunnel, Track. The option needed for the next step is Platform.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Maya waits on the platform, the passenger boarding area. The train runs on the track and passes through a tunnel. She stays in the waiting area rather than entering the track or tunnel.\nWhich area is for passenger waiting and boarding?",
         "answer": "Platform",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Escalator, Elevator, Turnstile. The option needed for the next step is Escalator.\nWhich option is needed for the next step in the journey?",
-        "answer": "Escalator",
-        "contextTag": "scene-2",
+        "prompt": "Omar compares an escalator, moving steps, with an elevator carrying people between levels. A turnstile controls entry rather than changing floors. He asks staff about an available step-free route, since an elevator symbol alone does not prove the whole journey is step-free.\nWhich item carries people between levels without stairs?",
+        "answer": "Elevator",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Mezzanine, Concourse, Entrance. The option needed for the next step is Mezzanine.\nWhich option is needed for the next step in the journey?",
-        "answer": "Mezzanine",
-        "contextTag": "scene-3",
+        "prompt": "The entrance leads into the station concourse, a large passenger area. A mezzanine is an intermediate floor. Maya asks for the concourse rather than assuming every station has the same layout.\nWhich term names the large passenger area?",
+        "answer": "Concourse",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Exit, Car, Door. The option needed for the next step is Exit.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A car here means one carriage of the train. Its door allows boarding, while an exit is the route out of the station. Omar asks for the way out after leaving the stationary train.\nWhich term names the way out of the station?",
         "answer": "Exit",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Window, Seat, Handrail. The option needed for the next step is Window.\nWhich option is needed for the next step in the journey?",
-        "answer": "Window",
-        "contextTag": "scene-5",
+        "prompt": "Maya sits in a seat beside the window. A handrail provides support when needed. The window allows a view outside, but the seat is the place for sitting.\nWhich item is for sitting?",
+        "answer": "Seat",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Platform"
+        "prompt": "Maya enters the concourse through the entrance and asks about the mezzanine. She checks an escalator and elevator when planning her route; staff confirm whether the whole route is step-free. A turnstile controls entry. She reaches the platform and stays in the passenger waiting area, away from the track and tunnel. Omar boards a car through its door while the train is stationary. Maya takes a seat beside a window, with a handrail nearby. After travelling, they check the exit route rather than assuming the entrance is the only way out.\nWho confirms whether the whole route is step-free?",
+        "answer": "Station staff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Escalator"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Tourist” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this visit using Platform and Tunnel.",
+        "answer": "The platform is for passengers, while the tunnel carries the track through the ground.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Subway: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finding a route through the station",
+      "idea": "Read this adult transit account and pause on a stated distinction. Keep trains stationary, personal data unreadable and emergency devices unused; no medical or evacuation demonstration.",
+      "scriptStarter": "Maya waits on the platform, the passenger boarding area. The train runs on the track and passes through a tunnel. She stays in the waiting area rather than entering the track or tunnel."
     },
     "spacedReview": "1 lesson(s) back: Tourist, Student from bus-station-4\n3 lesson(s) back: Map, Vending Machine from bus-station-2\n7 lesson(s) back: Seat, Brake from bicycle-shop-2"
   },
@@ -210,7 +204,7 @@
     "targetWordsArabic": [
       "عمود للإمساك",
       "خريطة",
-      "مكبر صوت (سبيكر / سماعة)",
+      "مكبر صوت",
       "مكبح طوارئ",
       "باب اتصال بين العربات",
       "آلة بيع التذاكر",
@@ -222,142 +216,136 @@
       "تذكرة لرحلة واحدة",
       "اشتراك أسبوعي",
       "اشتراك شهري",
-      "دون تلامس"
+      "لا تلامسي"
     ],
     "usage": {
-      "goal": "Learn to use the subway 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the subway.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated station feature, payment term, route message or assistance item.",
+      "canDoStatement": "Can follow a supported transit account and ask about a practical distinction. Specialist equipment terms extend the supported task level; this is not emergency or medical training.",
+      "textType": "subway-travel-account",
+      "readingTarget": "Supported connected adult transit journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pole", "Map", "Speaker"],
-          "scenario": "During a routine travel task, an adult compares Pole, Map, Speaker. The option needed for the next step is Pole.",
+          "scenario": "Omar checks a map for connections. A pole is an upright support bar; a speaker plays announcements. Maya hears a message through the speaker rather than reading it on the map. Sound is stated in the account, not proven by a still photograph.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which device plays the message?",
             "options": ["Pole", "Map", "Speaker"],
-            "expectedAnswer": "Pole"
+            "expectedAnswer": "Speaker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Pole, Map, Speaker. The option needed for the next step is Pole. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Pole, Map, Speaker in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Omar checks a map for connections. A pole is an upright support bar; a speaker plays announcements. Maya hears a message through the speaker rather than reading it on the map. Sound is stated in the account, not proven by a still photograph. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Emergency Brake", "Connecting Door", "Ticket Machine"],
-          "scenario": "During a routine travel task, an adult compares Emergency Brake, Connecting Door, Ticket Machine. The option needed for the next step is Emergency Brake.",
+          "scenario": "A ticket machine sells or issues travel tickets. An emergency brake is a control for an emergency stop under the operator’s instructions. A connecting door lies between cars; passenger access rules vary. Omar needs a ticket, not an emergency control.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which device matches his need?",
             "options": ["Emergency Brake", "Connecting Door", "Ticket Machine"],
-            "expectedAnswer": "Emergency Brake"
+            "expectedAnswer": "Ticket Machine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Emergency Brake, Connecting Door, Ticket Machine. The option needed for the next step is Emergency Brake. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Emergency Brake, Connecting Door, Ticket Machine in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A ticket machine sells or issues travel tickets. An emergency brake is a control for an emergency stop under the operator’s instructions. A connecting door lies between cars; passenger access rules vary. Omar needs a ticket, not an emergency control. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Metro Card", "Tap", "Fare"],
-          "scenario": "During a routine travel task, an adult compares Metro Card, Tap, Fare. The option needed for the next step is Metro Card.",
+          "scenario": "Staff explain metro card as a general lesson term for a transit card, not a promise that a particular branded card is still accepted. Tap means place a supported contactless card near a reader; other cards may need a different action. Fare is the journey price.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the journey price?",
             "options": ["Metro Card", "Tap", "Fare"],
-            "expectedAnswer": "Metro Card"
+            "expectedAnswer": "Fare"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Metro Card, Tap, Fare. The option needed for the next step is Metro Card. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Metro Card, Tap, Fare in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Staff explain metro card as a general lesson term for a transit card, not a promise that a particular branded card is still accepted. Tap means place a supported contactless card near a reader; other cards may need a different action. Fare is the journey price. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gate", "Top Up", "Single Ride"],
-          "scenario": "During a routine travel task, an adult compares Gate, Top Up, Single Ride. The option needed for the next step is Gate.",
+          "scenario": "A gate controls entry. Top up means add money or credit to a supported account or card; top it up places the pronoun between verb and particle. A single ride covers one specified journey. Omar needs to add credit before travel.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which action adds credit?",
             "options": ["Gate", "Top Up", "Single Ride"],
-            "expectedAnswer": "Gate"
+            "expectedAnswer": "Top Up"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Gate, Top Up, Single Ride. The option needed for the next step is Gate. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Gate, Top Up, Single Ride in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A gate controls entry. Top up means add money or credit to a supported account or card; top it up places the pronoun between verb and particle. A single ride covers one specified journey. Omar needs to add credit before travel. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Weekly Pass", "Monthly Pass", "Contactless"],
-          "scenario": "During a routine travel task, an adult compares Weekly Pass, Monthly Pass, Contactless. The option needed for the next step is Weekly Pass.",
+          "scenario": "Maya compares a weekly pass and monthly pass, whose dates and coverage follow the operator’s terms. Contactless describes a supported card or device communicating near a reader without a wired connection. It does not mean every pass uses that technology.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes the payment technology?",
             "options": ["Weekly Pass", "Monthly Pass", "Contactless"],
-            "expectedAnswer": "Weekly Pass"
+            "expectedAnswer": "Contactless"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Weekly Pass, Monthly Pass, Contactless. The option needed for the next step is Weekly Pass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Weekly Pass, Monthly Pass, Contactless in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Maya compares a weekly pass and monthly pass, whose dates and coverage follow the operator’s terms. Contactless describes a supported card or device communicating near a reader without a wired connection. It does not mean every pass uses that technology. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         }
       ]
     },
     "reading": {
-      "title": "The Subway: Personal Message",
-      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing pole, map, and speaker. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing emergency brake, connecting door, and ticket machine. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking payment and equipment",
+      "text": "Omar sees a pole, map and speaker in the car. Staff explain an emergency brake and connecting door without demonstrating them. He uses a ticket machine for travel payment. Metro card is a general learning term; the operator determines which actual cards are accepted. Tap describes using a supported contactless reader, and fare is the journey price. Omar checks the gate and asks how to top up his account; with a pronoun, he says top it up. Maya compares a single ride, weekly pass and monthly pass, checking their coverage and dates rather than assuming universal validity.",
+      "imageBrief": "Photorealistic adult transit-station account: Omar checks a map for connections. A pole is an upright support bar; a speaker plays announcements. Maya hears a message through the speaker rather than reading it on the map. Sound is stated in the account, not proven by a still photograph. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Pole, Map, Speaker. The option needed for the next step is Pole.\nWhich option is needed for the next step in the journey?",
-        "answer": "Pole",
-        "contextTag": "scene-1",
+        "prompt": "Omar checks a map for connections. A pole is an upright support bar; a speaker plays announcements. Maya hears a message through the speaker rather than reading it on the map. Sound is stated in the account, not proven by a still photograph.\nWhich device plays the message?",
+        "answer": "Speaker",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Emergency Brake, Connecting Door, Ticket Machine. The option needed for the next step is Emergency Brake.\nWhich option is needed for the next step in the journey?",
-        "answer": "Emergency Brake",
-        "contextTag": "scene-2",
+        "prompt": "A ticket machine sells or issues travel tickets. An emergency brake is a control for an emergency stop under the operator’s instructions. A connecting door lies between cars; passenger access rules vary. Omar needs a ticket, not an emergency control.\nWhich device matches his need?",
+        "answer": "Ticket Machine",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Metro Card, Tap, Fare. The option needed for the next step is Metro Card.\nWhich option is needed for the next step in the journey?",
-        "answer": "Metro Card",
-        "contextTag": "scene-3",
+        "prompt": "Staff explain metro card as a general lesson term for a transit card, not a promise that a particular branded card is still accepted. Tap means place a supported contactless card near a reader; other cards may need a different action. Fare is the journey price.\nWhich term names the journey price?",
+        "answer": "Fare",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Gate, Top Up, Single Ride. The option needed for the next step is Gate.\nWhich option is needed for the next step in the journey?",
-        "answer": "Gate",
-        "contextTag": "scene-4",
+        "prompt": "A gate controls entry. Top up means add money or credit to a supported account or card; top it up places the pronoun between verb and particle. A single ride covers one specified journey. Omar needs to add credit before travel.\nWhich action adds credit?",
+        "answer": "Top Up",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Weekly Pass, Monthly Pass, Contactless. The option needed for the next step is Weekly Pass.\nWhich option is needed for the next step in the journey?",
-        "answer": "Weekly Pass",
-        "contextTag": "scene-5",
+        "prompt": "Maya compares a weekly pass and monthly pass, whose dates and coverage follow the operator’s terms. Contactless describes a supported card or device communicating near a reader without a wired connection. It does not mean every pass uses that technology.\nWhich term describes the payment technology?",
+        "answer": "Contactless",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pole"
+        "prompt": "Omar sees a pole, map and speaker in the car. Staff explain an emergency brake and connecting door without demonstrating them. He uses a ticket machine for travel payment. Metro card is a general learning term; the operator determines which actual cards are accepted. Tap describes using a supported contactless reader, and fare is the journey price. Omar checks the gate and asks how to top up his account; with a pronoun, he says top it up. Maya compares a single ride, weekly pass and monthly pass, checking their coverage and dates rather than assuming universal validity.\nWhat does top up mean here?",
+        "answer": "Add money or credit to a supported account or card",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Emergency Brake"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Platform” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this visit using Pole and Map.",
+        "answer": "The pole gives support, while the map shows routes.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Subway: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking payment and equipment",
+      "idea": "Read this adult transit account and pause on a stated distinction. Keep trains stationary, personal data unreadable and emergency devices unused; no medical or evacuation demonstration.",
+      "scriptStarter": "Omar checks a map for connections. A pole is an upright support bar; a speaker plays announcements. Maya hears a message through the speaker rather than reading it on the map. Sound is stated in the account, not proven by a still photograph."
     },
     "spacedReview": "1 lesson(s) back: Platform, Tunnel from subway-1\n3 lesson(s) back: Seat, Aisle from bus-station-3\n7 lesson(s) back: Jersey, Shorts from bicycle-shop-3"
   },
@@ -399,146 +387,140 @@
       "تحذير من الفجوة",
       "ممنوع التدخين",
       "طوارئ",
-      "راكب يتنقل يوميًا",
+      "شخص يتنقل بانتظام للعمل أو الدراسة",
       "سائح",
       "فنان شارع",
       "بائع",
       "حارس أمن"
     ],
     "usage": {
-      "goal": "Learn to use the subway 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the subway.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated station feature, payment term, route message or assistance item.",
+      "canDoStatement": "Can follow a supported transit account and ask about a practical distinction. Specialist equipment terms extend the supported task level; this is not emergency or medical training.",
+      "textType": "subway-travel-account",
+      "readingTarget": "Supported connected adult transit journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Line Map", "Direction Sign", "Exit Sign"],
-          "scenario": "During a routine travel task, an adult compares Line Map, Direction Sign, Exit Sign. The option needed for the next step is Line Map.",
+          "scenario": "A line map shows routes and connections. A direction sign points toward a route or place, while an exit sign points toward a way out. Maya needs to leave the station.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which sign matches her need?",
             "options": ["Line Map", "Direction Sign", "Exit Sign"],
-            "expectedAnswer": "Line Map"
+            "expectedAnswer": "Exit Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Line Map, Direction Sign, Exit Sign. The option needed for the next step is Line Map. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Line Map, Direction Sign, Exit Sign in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A line map shows routes and connections. A direction sign points toward a route or place, while an exit sign points toward a way out. Maya needs to leave the station. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Transfer Sign", "Platform Number", "Next Train"],
-          "scenario": "During a routine travel task, an adult compares Transfer Sign, Platform Number, Next Train. The option needed for the next step is Transfer Sign.",
+          "scenario": "A transfer sign directs passengers toward another line. The platform number identifies the boarding area, and next train information identifies the upcoming service. Omar needs to change lines before checking that service.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which sign helps him change lines?",
             "options": ["Transfer Sign", "Platform Number", "Next Train"],
             "expectedAnswer": "Transfer Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Transfer Sign, Platform Number, Next Train. The option needed for the next step is Transfer Sign. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Transfer Sign, Platform Number, Next Train in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A transfer sign directs passengers toward another line. The platform number identifies the boarding area, and next train information identifies the upcoming service. Omar needs to change lines before checking that service. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Last Train", "Gap Warning", "No Smoking"],
-          "scenario": "During a routine travel task, an adult compares Last Train, Gap Warning, No Smoking. The option needed for the next step is Last Train.",
+          "scenario": "Omar checks the last train for the service day. A gap warning concerns the space between train and platform; no smoking states a rule for the area. He follows the local boarding information rather than treating a warning as a departure time.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which message concerns the platform-to-train space?",
             "options": ["Last Train", "Gap Warning", "No Smoking"],
-            "expectedAnswer": "Last Train"
+            "expectedAnswer": "Gap Warning"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Last Train, Gap Warning, No Smoking. The option needed for the next step is Last Train. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Last Train, Gap Warning, No Smoking in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Omar checks the last train for the service day. A gap warning concerns the space between train and platform; no smoking states a rule for the area. He follows the local boarding information rather than treating a warning as a departure time. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Emergency", "Commuter", "Tourist"],
-          "scenario": "During a routine travel task, an adult compares Emergency, Commuter, Tourist. The option needed for the next step is Emergency.",
+          "scenario": "Maya is a commuter because she regularly travels to study. Omar is a tourist on a leisure visit. An emergency is an urgent dangerous situation requiring immediate help. Their travel roles do not indicate an emergency.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes Maya’s regular travel?",
             "options": ["Emergency", "Commuter", "Tourist"],
-            "expectedAnswer": "Emergency"
+            "expectedAnswer": "Commuter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Emergency, Commuter, Tourist. The option needed for the next step is Emergency. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Emergency, Commuter, Tourist in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: Maya is a commuter because she regularly travels to study. Omar is a tourist on a leisure visit. An emergency is an urgent dangerous situation requiring immediate help. Their travel roles do not indicate an emergency. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Busker", "Vendor", "Guard"],
-          "scenario": "During a routine travel task, an adult compares Busker, Vendor, Guard. The option needed for the next step is Busker.",
+          "scenario": "A busker performs in public, a vendor sells goods and a guard looks after security. Their activities and roles are stated in the account; permits and rules vary by site. Omar asks the guard about the waiting area.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who has the security role?",
             "options": ["Busker", "Vendor", "Guard"],
-            "expectedAnswer": "Busker"
+            "expectedAnswer": "Guard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Busker, Vendor, Guard. The option needed for the next step is Busker. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Busker, Vendor, Guard in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A busker performs in public, a vendor sells goods and a guard looks after security. Their activities and roles are stated in the account; permits and rules vary by site. Omar asks the guard about the waiting area. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         }
       ]
     },
     "reading": {
-      "title": "The Subway: Short Dialogue",
-      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing line map, direction sign, and exit sign. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing transfer sign, platform number, and next train. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Directions and current information",
+      "text": "Maya checks a line map, direction sign and exit sign. Omar follows a transfer sign, then checks the platform number and next train. They also check the last train for their service day. A gap warning concerns boarding space, while no smoking states an area rule. Maya is a commuter travelling regularly to study, and Omar is a tourist. Neither role establishes an emergency. A busker performs, a vendor sells goods and a guard handles security. These activities and roles are stated; clothing does not prove them. They check current information before choosing the train.",
+      "imageBrief": "Photorealistic adult transit-station account: A line map shows routes and connections. A direction sign points toward a route or place, while an exit sign points toward a way out. Maya needs to leave the station. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Line Map, Direction Sign, Exit Sign. The option needed for the next step is Line Map.\nWhich option is needed for the next step in the journey?",
-        "answer": "Line Map",
-        "contextTag": "scene-1",
+        "prompt": "A line map shows routes and connections. A direction sign points toward a route or place, while an exit sign points toward a way out. Maya needs to leave the station.\nWhich sign matches her need?",
+        "answer": "Exit Sign",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Transfer Sign, Platform Number, Next Train. The option needed for the next step is Transfer Sign.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A transfer sign directs passengers toward another line. The platform number identifies the boarding area, and next train information identifies the upcoming service. Omar needs to change lines before checking that service.\nWhich sign helps him change lines?",
         "answer": "Transfer Sign",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Last Train, Gap Warning, No Smoking. The option needed for the next step is Last Train.\nWhich option is needed for the next step in the journey?",
-        "answer": "Last Train",
-        "contextTag": "scene-3",
+        "prompt": "Omar checks the last train for the service day. A gap warning concerns the space between train and platform; no smoking states a rule for the area. He follows the local boarding information rather than treating a warning as a departure time.\nWhich message concerns the platform-to-train space?",
+        "answer": "Gap Warning",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Emergency, Commuter, Tourist. The option needed for the next step is Emergency.\nWhich option is needed for the next step in the journey?",
-        "answer": "Emergency",
-        "contextTag": "scene-4",
+        "prompt": "Maya is a commuter because she regularly travels to study. Omar is a tourist on a leisure visit. An emergency is an urgent dangerous situation requiring immediate help. Their travel roles do not indicate an emergency.\nWhich term describes Maya’s regular travel?",
+        "answer": "Commuter",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Busker, Vendor, Guard. The option needed for the next step is Busker.\nWhich option is needed for the next step in the journey?",
-        "answer": "Busker",
-        "contextTag": "scene-5",
+        "prompt": "A busker performs in public, a vendor sells goods and a guard looks after security. Their activities and roles are stated in the account; permits and rules vary by site. Omar asks the guard about the waiting area.\nWho has the security role?",
+        "answer": "Guard",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Line Map"
+        "prompt": "Maya checks a line map, direction sign and exit sign. Omar follows a transfer sign, then checks the platform number and next train. They also check the last train for their service day. A gap warning concerns boarding space, while no smoking states an area rule. Maya is a commuter travelling regularly to study, and Omar is a tourist. Neither role establishes an emergency. A busker performs, a vendor sells goods and a guard handles security. These activities and roles are stated; clothing does not prove them. They check current information before choosing the train.\nWhich sign helps Omar change lines?",
+        "answer": "The transfer sign",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Transfer Sign"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pole” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this visit using Line Map and Direction Sign.",
+        "answer": "A line map shows connections, while a direction sign points toward a place.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Subway: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Directions and current information",
+      "idea": "Read this adult transit account and pause on a stated distinction. Keep trains stationary, personal data unreadable and emergency devices unused; no medical or evacuation demonstration.",
+      "scriptStarter": "A line map shows routes and connections. A direction sign points toward a route or place, while an exit sign points toward a way out. Maya needs to leave the station."
     },
     "spacedReview": "1 lesson(s) back: Pole, Map from subway-2\n3 lesson(s) back: Tourist, Student from bus-station-4\n7 lesson(s) back: Grease, Stand from bicycle-shop-4"
   },
@@ -587,139 +569,133 @@
       "حقيبة إسعافات أولية"
     ],
     "usage": {
-      "goal": "Learn to use the subway 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the subway.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated station feature, payment term, route message or assistance item.",
+      "canDoStatement": "Can follow a supported transit account and ask about a practical distinction. Specialist equipment terms extend the supported task level; this is not emergency or medical training.",
+      "textType": "subway-travel-account",
+      "readingTarget": "Supported connected adult transit journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Conductor", "Cleaner", "Crowd"],
-          "scenario": "During a routine travel task, an adult compares Conductor, Cleaner, Crowd. The option needed for the next step is Conductor.",
+          "scenario": "A conductor has train-crew duties according to the operator, while a cleaner cleans the station or train. A crowd is a large gathering of people. Maya distinguishes the worker’s stated task from the number of passengers.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who cleans the station?",
             "options": ["Conductor", "Cleaner", "Crowd"],
-            "expectedAnswer": "Conductor"
+            "expectedAnswer": "Cleaner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Conductor, Cleaner, Crowd. The option needed for the next step is Conductor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Conductor, Cleaner, Crowd in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A conductor has train-crew duties according to the operator, while a cleaner cleans the station or train. A crowd is a large gathering of people. Maya distinguishes the worker’s stated task from the number of passengers. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rush Hour", "Queue", "Yellow Line"],
-          "scenario": "During a routine travel task, an adult compares Rush Hour, Queue, Yellow Line. The option needed for the next step is Rush Hour.",
+          "scenario": "During rush hour, many people travel and a queue forms. A yellow line marks the waiting boundary at this station. Passengers follow the station’s actual markings; colors and rules vary elsewhere.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the line of waiting people?",
             "options": ["Rush Hour", "Queue", "Yellow Line"],
-            "expectedAnswer": "Rush Hour"
+            "expectedAnswer": "Queue"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Rush Hour, Queue, Yellow Line. The option needed for the next step is Rush Hour. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Rush Hour, Queue, Yellow Line in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: During rush hour, many people travel and a queue forms. A yellow line marks the waiting boundary at this station. Passengers follow the station’s actual markings; colors and rules vary elsewhere. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cctv", "Emergency Phone", "Fire Extinguisher"],
-          "scenario": "During a routine travel task, an adult compares Cctv, Emergency Phone, Fire Extinguisher. The option needed for the next step is Cctv.",
+          "scenario": "CCTV is a camera system for monitoring or recording a location. An emergency phone contacts urgent assistance, while a fire extinguisher is equipment for containing an appropriate fire. The vocabulary tour names these without an equipment-use demonstration.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which device contacts urgent assistance?",
             "options": ["Cctv", "Emergency Phone", "Fire Extinguisher"],
-            "expectedAnswer": "Cctv"
+            "expectedAnswer": "Emergency Phone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Cctv, Emergency Phone, Fire Extinguisher. The option needed for the next step is Cctv. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Cctv, Emergency Phone, Fire Extinguisher in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: CCTV is a camera system for monitoring or recording a location. An emergency phone contacts urgent assistance, while a fire extinguisher is equipment for containing an appropriate fire. The vocabulary tour names these without an equipment-use demonstration. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Defibrillator", "Help Point", "Alarm"],
-          "scenario": "During a routine travel task, an adult compares Defibrillator, Help Point, Alarm. The option needed for the next step is Defibrillator.",
+          "scenario": "A help point lets passengers contact assistance. An alarm warns of danger. A defibrillator can deliver a shock for certain dangerous heart rhythms when appropriate; it is not a device for every illness. This lesson identifies equipment rather than teaching treatment.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item lets passengers contact assistance?",
             "options": ["Defibrillator", "Help Point", "Alarm"],
-            "expectedAnswer": "Defibrillator"
+            "expectedAnswer": "Help Point"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Defibrillator, Help Point, Alarm. The option needed for the next step is Defibrillator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Defibrillator, Help Point, Alarm in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A help point lets passengers contact assistance. An alarm warns of danger. A defibrillator can deliver a shock for certain dangerous heart rhythms when appropriate; it is not a device for every illness. This lesson identifies equipment rather than teaching treatment. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Barrier", "Evacuation Sign", "First Aid Kit"],
-          "scenario": "During a routine travel task, an adult compares Barrier, Evacuation Sign, First Aid Kit. The option needed for the next step is Barrier.",
+          "scenario": "A barrier separates or controls areas. An evacuation sign indicates an emergency route, while a first aid kit holds supplies for initial care. Omar learns the names without moving a barrier or practicing medical procedures.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item indicates an emergency route?",
             "options": ["Barrier", "Evacuation Sign", "First Aid Kit"],
-            "expectedAnswer": "Barrier"
+            "expectedAnswer": "Evacuation Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the subway context illustrating this situation: During a routine travel task, an adult compares Barrier, Evacuation Sign, First Aid Kit. The option needed for the next step is Barrier. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the subway scene showing lesson-related items or actions including Barrier, Evacuation Sign, First Aid Kit in a natural setting."
+          "imageBrief": "Photorealistic adult transit-station account: A barrier separates or controls areas. An evacuation sign indicates an emergency route, while a first aid kit holds supplies for initial care. Omar learns the names without moving a barrier or practicing medical procedures. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting.",
+          "imageAlt": "Adults discussing travel in a station waiting area or stationary train cabin, with clear passenger paths."
         }
       ]
     },
     "reading": {
-      "title": "The Subway: Everyday Description",
-      "text": "Omar has an everyday task connected to the subway. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing conductor, cleaner, and crowd. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing rush hour, queue, and yellow line. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Subway. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking for assistance",
+      "text": "A conductor has operator-specific train duties, and a cleaner cleans the station. During rush hour, a crowd forms a queue behind this station’s yellow line. Maya notices CCTV without assuming a camera records every area. Staff identify an emergency phone and fire extinguisher. They explain that a help point contacts assistance and an alarm warns of danger. A defibrillator is for appropriate dangerous heart rhythms, not every illness. A barrier separates an area; an evacuation sign indicates an emergency route. A first aid kit contains initial-care supplies. This tour names equipment without teaching emergency or medical procedures.",
+      "imageBrief": "Photorealistic adult transit-station account: A conductor has train-crew duties according to the operator, while a cleaner cleans the station or train. A crowd is a large gathering of people. Maya distinguishes the worker’s stated task from the number of passengers. Show adults in safe waiting areas well behind the platform boundary or seated in a stationary carriage. Provide clear paths and no track access, moving train boarding, emergency-device operation or medical treatment. Personal card data, destination and signs remain unreadable; text establishes actual routes, roles, sound and local rules. No branding, text overlays or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Conductor, Cleaner, Crowd. The option needed for the next step is Conductor.\nWhich option is needed for the next step in the journey?",
-        "answer": "Conductor",
-        "contextTag": "scene-1",
+        "prompt": "A conductor has train-crew duties according to the operator, while a cleaner cleans the station or train. A crowd is a large gathering of people. Maya distinguishes the worker’s stated task from the number of passengers.\nWho cleans the station?",
+        "answer": "Cleaner",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Rush Hour, Queue, Yellow Line. The option needed for the next step is Rush Hour.\nWhich option is needed for the next step in the journey?",
-        "answer": "Rush Hour",
-        "contextTag": "scene-2",
+        "prompt": "During rush hour, many people travel and a queue forms. A yellow line marks the waiting boundary at this station. Passengers follow the station’s actual markings; colors and rules vary elsewhere.\nWhich term names the line of waiting people?",
+        "answer": "Queue",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Cctv, Emergency Phone, Fire Extinguisher. The option needed for the next step is Cctv.\nWhich option is needed for the next step in the journey?",
-        "answer": "Cctv",
-        "contextTag": "scene-3",
+        "prompt": "CCTV is a camera system for monitoring or recording a location. An emergency phone contacts urgent assistance, while a fire extinguisher is equipment for containing an appropriate fire. The vocabulary tour names these without an equipment-use demonstration.\nWhich device contacts urgent assistance?",
+        "answer": "Emergency Phone",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Defibrillator, Help Point, Alarm. The option needed for the next step is Defibrillator.\nWhich option is needed for the next step in the journey?",
-        "answer": "Defibrillator",
-        "contextTag": "scene-4",
+        "prompt": "A help point lets passengers contact assistance. An alarm warns of danger. A defibrillator can deliver a shock for certain dangerous heart rhythms when appropriate; it is not a device for every illness. This lesson identifies equipment rather than teaching treatment.\nWhich item lets passengers contact assistance?",
+        "answer": "Help Point",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Barrier, Evacuation Sign, First Aid Kit. The option needed for the next step is Barrier.\nWhich option is needed for the next step in the journey?",
-        "answer": "Barrier",
-        "contextTag": "scene-5",
+        "prompt": "A barrier separates or controls areas. An evacuation sign indicates an emergency route, while a first aid kit holds supplies for initial care. Omar learns the names without moving a barrier or practicing medical procedures.\nWhich item indicates an emergency route?",
+        "answer": "Evacuation Sign",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Conductor"
+        "prompt": "A conductor has operator-specific train duties, and a cleaner cleans the station. During rush hour, a crowd forms a queue behind this station’s yellow line. Maya notices CCTV without assuming a camera records every area. Staff identify an emergency phone and fire extinguisher. They explain that a help point contacts assistance and an alarm warns of danger. A defibrillator is for appropriate dangerous heart rhythms, not every illness. A barrier separates an area; an evacuation sign indicates an emergency route. A first aid kit contains initial-care supplies. This tour names equipment without teaching emergency or medical procedures.\nWhich item contacts passenger assistance?",
+        "answer": "A help point",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Rush Hour"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Line Map” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this visit using Conductor and Cleaner.",
+        "answer": "The conductor has train duties, while the cleaner cleans the station.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Subway: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking for assistance",
+      "idea": "Read this adult transit account and pause on a stated distinction. Keep trains stationary, personal data unreadable and emergency devices unused; no medical or evacuation demonstration.",
+      "scriptStarter": "A conductor has train-crew duties according to the operator, while a cleaner cleans the station or train. A crowd is a large gathering of people. Maya distinguishes the worker’s stated task from the number of passengers."
     },
     "spacedReview": "1 lesson(s) back: Line Map, Direction Sign from subway-3\n3 lesson(s) back: Platform, Tunnel from subway-1\n7 lesson(s) back: City Bus, Double Decker from bus-station-1"
   }

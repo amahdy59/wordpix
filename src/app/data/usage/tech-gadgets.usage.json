@@ -28,8 +28,8 @@
     ],
     "targetWordsArabic": [
       "هاتف ذكي",
-      "جهاز لوحي (تابلت)",
-      "حاسوب محمول (لابتوب)",
+      "حاسوب لوحي",
+      "حاسوب محمول",
       "ساعة ذكية",
       "سماعات أذن لاسلكية",
       "قارئ كتب إلكترونية",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "133-163 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Smartphone", "Tablet", "Laptop", "Smartwatch"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone, Tablet, Laptop, and Smartwatch and choose the option that fits the situation.",
+          "scenario": "The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smartphone", "Tablet", "Laptop"],
-            "expectedAnswer": "Smartphone"
+            "question": "Which displayed portable computer has a built-in keyboard?",
+            "options": ["Laptop", "Smartphone", "Tablet"],
+            "expectedAnswer": "Laptop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smartphone as the central item; include Smartphone, Tablet, and Laptop naturally where visually appropriate, but make the real-world use of Smartphone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Laptop in a tech gadgets context. Use the written scenario as the source of meaning: The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wireless Earbuds", "E-Reader", "Portable Charger", "USB-C Hub"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wireless Earbuds, E-Reader, Portable Charger, and USB-C Hub and choose the option that fits the situation.",
+          "scenario": "Wireless Earbuds provide audio without an audio cable, and an E-Reader is designed mainly for digital reading. A Portable Charger supplies battery power away from an outlet, while a USB-C Hub adds compatible connections.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wireless Earbuds", "E-Reader", "Portable Charger"],
-            "expectedAnswer": "Wireless Earbuds"
+            "question": "Which accessory adds compatible connections through USB-C?",
+            "options": ["USB-C Hub", "Wireless Earbuds", "E-Reader"],
+            "expectedAnswer": "USB-C Hub"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Wireless Earbuds as the central item; include Wireless Earbuds, E-Reader, and Portable Charger naturally where visually appropriate, but make the real-world use of Wireless Earbuds the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for USB-C Hub in a tech gadgets context. Use the written scenario as the source of meaning: Wireless Earbuds provide audio without an audio cable, and an E-Reader is designed mainly for digital reading. A Portable Charger supplies battery power away from an outlet, while a USB-C Hub adds compatible connections. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Stylus", "Webcam", "Smart Speaker", "Smart Display"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Webcam, Smart Speaker, and Smart Display and choose the option that fits the situation.",
+          "scenario": "A Stylus is a pen-shaped touchscreen tool. A Webcam captures video for a computer, a Smart Speaker handles audio and assistant features, and a Smart Display adds a screen to supported smart-assistant functions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tool is shaped like a pen for a touchscreen?",
             "options": ["Stylus", "Webcam", "Smart Speaker"],
             "expectedAnswer": "Stylus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Stylus as the central item; include Stylus, Webcam, and Smart Speaker naturally where visually appropriate, but make the real-world use of Stylus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Stylus in a tech gadgets context. Use the written scenario as the source of meaning: A Stylus is a pen-shaped touchscreen tool. A Webcam captures video for a computer, a Smart Speaker handles audio and assistant features, and a Smart Display adds a screen to supported smart-assistant functions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Smart Thermostat", "Smart Lock", "Robot Vacuum"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Smart Lock, and Robot Vacuum and choose the option that fits the situation.",
+          "scenario": "The guide discusses a Smart Thermostat for supported heating or cooling controls, a Smart Lock for digital lock management, and a Robot Vacuum for floor cleaning. These functions are supplied by the written account rather than inferred from a generic screen.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smart Thermostat", "Smart Lock", "Robot Vacuum"],
-            "expectedAnswer": "Smart Thermostat"
+            "question": "Which device cleans floors?",
+            "options": ["Robot Vacuum", "Smart Thermostat", "Smart Lock"],
+            "expectedAnswer": "Robot Vacuum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Thermostat as the central item; include Smart Thermostat, Smart Lock, and Robot Vacuum naturally where visually appropriate, but make the real-world use of Smart Thermostat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Robot Vacuum in a tech gadgets context. Use the written scenario as the source of meaning: The guide discusses a Smart Thermostat for supported heating or cooling controls, a Smart Lock for digital lock management, and a Robot Vacuum for floor cleaning. These functions are supplied by the written account rather than inferred from a generic screen. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Tech & Gadgets",
-      "text": "At the tech & gadgets, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smartphone, Tablet, Laptop, and Smartwatch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wireless Earbuds, E-Reader, Portable Charger, and USB-C Hub. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Stylus, Webcam, Smart Speaker, and Smart Display. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Smart Thermostat, Smart Lock, and Robot Vacuum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Tech & Gadgets. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tech & Gadgets: A visitor’s questions",
+      "text": "The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example. Wireless Earbuds provide audio without an audio cable, and an E-Reader is designed mainly for digital reading. A Portable Charger supplies battery power away from an outlet, while a USB-C Hub adds compatible connections. A Stylus is a pen-shaped touchscreen tool. A Webcam captures video for a computer, a Smart Speaker handles audio and assistant features, and a Smart Display adds a screen to supported smart-assistant functions. The guide discusses a Smart Thermostat for supported heating or cooling controls, a Smart Lock for digital lock management, and a Robot Vacuum for floor cleaning. These functions are supplied by the written account rather than inferred from a generic screen.",
+      "imageBrief": "One uncluttered tech gadgets setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smartphone, Tablet, Laptop, and Smartwatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smartphone",
+        "prompt": "The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example.\nWhich displayed portable computer has a built-in keyboard?",
+        "answer": "Laptop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wireless Earbuds, E-Reader, Portable Charger, and USB-C Hub and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wireless Earbuds",
+        "prompt": "Wireless Earbuds provide audio without an audio cable, and an E-Reader is designed mainly for digital reading. A Portable Charger supplies battery power away from an outlet, while a USB-C Hub adds compatible connections.\nWhich accessory adds compatible connections through USB-C?",
+        "answer": "USB-C Hub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stylus, Webcam, Smart Speaker, and Smart Display and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Stylus is a pen-shaped touchscreen tool. A Webcam captures video for a computer, a Smart Speaker handles audio and assistant features, and a Smart Display adds a screen to supported smart-assistant functions.\nWhich tool is shaped like a pen for a touchscreen?",
         "answer": "Stylus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Thermostat, Smart Lock, and Robot Vacuum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smart Thermostat",
+        "prompt": "The guide discusses a Smart Thermostat for supported heating or cooling controls, a Smart Lock for digital lock management, and a Robot Vacuum for floor cleaning. These functions are supplied by the written account rather than inferred from a generic screen.\nWhich device cleans floors?",
+        "answer": "Robot Vacuum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example. Wireless Earbuds provide audio without an audio cable, and an E-Reader is designed mainly for digital reading. A Portable Charger supplies battery power away from an outlet, while a USB-C Hub adds compatible connections. A Stylus is a pen-shaped touchscreen tool. A Webcam captures video for a computer, a Smart Speaker handles audio and assistant features, and a Smart Display adds a screen to supported smart-assistant functions. The guide discusses a Smart Thermostat for supported heating or cooling controls, a Smart Lock for digital lock management, and a Robot Vacuum for floor cleaning. These functions are supplied by the written account rather than inferred from a generic screen.\nExplain the difference between Smartphone and Tablet using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Smartphone"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hdmi” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the tech & gadgets task. Use Smartphone, Tablet, Laptop, Smartwatch, Wireless Earbuds, E-Reader, Portable Charger, USB-C Hub, Stylus, Webcam, Smart Speaker, Smart Display, Smart Thermostat, Smart Lock, and Robot Vacuum in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Smartphone, Tablet, Laptop, Smartwatch, Wireless Earbuds, E-Reader, Portable Charger, USB-C Hub, Stylus, Webcam, Smart Speaker, Smart Display, Smart Thermostat, Smart Lock, Robot Vacuum to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Tech & Gadgets: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tech & Gadgets: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Smartphone and Tablet, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The display compares a Smartphone, touchscreen Tablet, Laptop with an attached keyboard, and wrist-worn Smartwatch. These device categories overlap in features, but the Laptop is the portable computer with the built-in keyboard in this example. Pause and answer: Which displayed portable computer has a built-in keyboard?"
     },
     "spacedReview": "1 lesson(s) back: Hdmi, Bluetooth from smart-home-4\n3 lesson(s) back: Schedule, Scene from smart-home-2\n7 lesson(s) back: Stop Sign, Yield Sign from driving-road-rules-1"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "139-169 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Smart Bulb", "Security Camera", "Smart Plug", "Video Doorbell"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Bulb, Security Camera, Smart Plug, and Video Doorbell and choose the option that fits the situation.",
+          "scenario": "The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smart Bulb", "Security Camera", "Smart Plug"],
-            "expectedAnswer": "Smart Bulb"
+            "question": "Which device combines an entrance call function with a camera?",
+            "options": ["Video Doorbell", "Smart Bulb", "Security Camera"],
+            "expectedAnswer": "Video Doorbell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Bulb as the central item; include Smart Bulb, Security Camera, and Smart Plug naturally where visually appropriate, but make the real-world use of Smart Bulb the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Video Doorbell in a tech gadgets context. Use the written scenario as the source of meaning: The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Smart Scale", "Fitness Tracker", "VR Headset", "AR Glasses"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Scale, Fitness Tracker, VR Headset, and AR Glasses and choose the option that fits the situation.",
+          "scenario": "A Smart Scale records supported weight-related measurements, while a Fitness Tracker records activity. A VR Headset presents a virtual environment; AR Glasses add digital information to a view of the real world. Consumer measurements do not by themselves establish a medical diagnosis.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Smart Scale", "Fitness Tracker", "VR Headset"],
-            "expectedAnswer": "Smart Scale"
+            "question": "Which glasses add digital information to the real-world view?",
+            "options": ["AR Glasses", "Smart Scale", "Fitness Tracker"],
+            "expectedAnswer": "AR Glasses"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Smart Scale as the central item; include Smart Scale, Fitness Tracker, and VR Headset naturally where visually appropriate, but make the real-world use of Smart Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for AR Glasses in a tech gadgets context. Use the written scenario as the source of meaning: A Smart Scale records supported weight-related measurements, while a Fitness Tracker records activity. A VR Headset presents a virtual environment; AR Glasses add digital information to a view of the real world. Consumer measurements do not by themselves establish a medical diagnosis. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Smart Ring", "Health Monitor", "GPS Watch", "Action Camera"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Ring, Health Monitor, GPS Watch, and Action Camera and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Smart Ring with supported electronic sensors from a Health Monitor tracking specified measurements. A GPS Watch records satellite-based location information, while an Action Camera records activities from its mounting position.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Smart Ring", "Health Monitor", "GPS Watch"],
-            "expectedAnswer": "Smart Ring"
+            "question": "Which wearable records satellite-based location information?",
+            "options": ["GPS Watch", "Smart Ring", "Health Monitor"],
+            "expectedAnswer": "GPS Watch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Smart Ring through a realistic adult task; include Smart Ring, Health Monitor, and GPS Watch naturally where visually appropriate, but make the real-world use of Smart Ring the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for GPS Watch in a tech gadgets context. Use the written scenario as the source of meaning: The guide distinguishes a Smart Ring with supported electronic sensors from a Health Monitor tracking specified measurements. A GPS Watch records satellite-based location information, while an Action Camera records activities from its mounting position. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Body Camera", "Sleep Tracker", "Posture Corrector"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Body Camera, Sleep Tracker, and Posture Corrector and choose the option that fits the situation.",
+          "scenario": "A Body Camera records from the wearer’s viewpoint. A Sleep Tracker estimates sleep patterns, and a Posture Corrector is a support marketed for posture. The lesson names product categories without diagnosing sleep problems or promising a treatment benefit.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which camera records from the wearer’s viewpoint?",
             "options": ["Body Camera", "Sleep Tracker", "Posture Corrector"],
             "expectedAnswer": "Body Camera"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Body Camera as the central item; include Body Camera, Sleep Tracker, and Posture Corrector naturally where visually appropriate, but make the real-world use of Body Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Body Camera in a tech gadgets context. Use the written scenario as the source of meaning: A Body Camera records from the wearer’s viewpoint. A Sleep Tracker estimates sleep patterns, and a Posture Corrector is a support marketed for posture. The lesson names product categories without diagnosing sleep problems or promising a treatment benefit. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: Tech & Gadgets",
-      "text": "At the tech & gadgets, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Smart Bulb, Security Camera, Smart Plug, and Video Doorbell. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Smart Scale, Fitness Tracker, VR Headset, and AR Glasses. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Smart Ring, Health Monitor, GPS Watch, and Action Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Body Camera, Sleep Tracker, and Posture Corrector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Tech & Gadgets. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tech & Gadgets: Understanding the different roles",
+      "text": "The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement. A Smart Scale records supported weight-related measurements, while a Fitness Tracker records activity. A VR Headset presents a virtual environment; AR Glasses add digital information to a view of the real world. Consumer measurements do not by themselves establish a medical diagnosis. The guide distinguishes a Smart Ring with supported electronic sensors from a Health Monitor tracking specified measurements. A GPS Watch records satellite-based location information, while an Action Camera records activities from its mounting position. A Body Camera records from the wearer’s viewpoint. A Sleep Tracker estimates sleep patterns, and a Posture Corrector is a support marketed for posture. The lesson names product categories without diagnosing sleep problems or promising a treatment benefit.",
+      "imageBrief": "One uncluttered tech gadgets setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Bulb, Security Camera, Smart Plug, and Video Doorbell and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smart Bulb",
+        "prompt": "The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement.\nWhich device combines an entrance call function with a camera?",
+        "answer": "Video Doorbell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Scale, Fitness Tracker, VR Headset, and AR Glasses and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Smart Scale",
+        "prompt": "A Smart Scale records supported weight-related measurements, while a Fitness Tracker records activity. A VR Headset presents a virtual environment; AR Glasses add digital information to a view of the real world. Consumer measurements do not by themselves establish a medical diagnosis.\nWhich glasses add digital information to the real-world view?",
+        "answer": "AR Glasses",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Smart Ring, Health Monitor, GPS Watch, and Action Camera and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Smart Ring",
+        "prompt": "The guide distinguishes a Smart Ring with supported electronic sensors from a Health Monitor tracking specified measurements. A GPS Watch records satellite-based location information, while an Action Camera records activities from its mounting position.\nWhich wearable records satellite-based location information?",
+        "answer": "GPS Watch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Body Camera, Sleep Tracker, and Posture Corrector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Body Camera records from the wearer’s viewpoint. A Sleep Tracker estimates sleep patterns, and a Posture Corrector is a support marketed for posture. The lesson names product categories without diagnosing sleep problems or promising a treatment benefit.\nWhich camera records from the wearer’s viewpoint?",
         "answer": "Body Camera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement. A Smart Scale records supported weight-related measurements, while a Fitness Tracker records activity. A VR Headset presents a virtual environment; AR Glasses add digital information to a view of the real world. Consumer measurements do not by themselves establish a medical diagnosis. The guide distinguishes a Smart Ring with supported electronic sensors from a Health Monitor tracking specified measurements. A GPS Watch records satellite-based location information, while an Action Camera records activities from its mounting position. A Body Camera records from the wearer’s viewpoint. A Sleep Tracker estimates sleep patterns, and a Posture Corrector is a support marketed for posture. The lesson names product categories without diagnosing sleep problems or promising a treatment benefit.\nExplain the difference between Smart Bulb and Security Camera using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Smart Bulb"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Smartphone” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the tech & gadgets task. Use Smart Bulb, Security Camera, Smart Plug, Video Doorbell, Smart Scale, Fitness Tracker, VR Headset, AR Glasses, Smart Ring, Health Monitor, GPS Watch, Action Camera, Body Camera, Sleep Tracker, and Posture Corrector in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Smart Bulb, Security Camera, Smart Plug, Video Doorbell, Smart Scale, Fitness Tracker, VR Headset, AR Glasses, Smart Ring, Health Monitor, GPS Watch, Action Camera, Body Camera, Sleep Tracker, Posture Corrector to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Tech & Gadgets: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tech & Gadgets: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Smart Bulb and Security Camera, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The display includes a Smart Bulb, Security Camera, and Smart Plug. A Video Doorbell combines an entrance call function with a camera for supported viewing or communication. Security and privacy depend on the actual arrangement. Pause and answer: Which device combines an entrance call function with a camera?"
     },
     "spacedReview": "1 lesson(s) back: Smartphone, Tablet from tech-gadgets-1\n3 lesson(s) back: Smart Thermostat, Temperature Sensor from smart-home-3\n7 lesson(s) back: Crosswalk, Traffic Light from driving-road-rules-2"
   },
@@ -372,12 +338,12 @@
     "targetWordsArabic": [
       "لوحة مفاتيح ميكانيكية",
       "فأرة مريحة هندسيًا",
-      "شاشة مراقبة",
+      "شاشة حاسوب",
       "محطة توصيل حاسوب محمول",
       "قرص SSD خارجي",
       "إضاءة كاميرا ويب",
       "ميكروفون",
-      "شاشة أخضر",
+      "خلفية خضراء",
       "حصيرة مكتب للوقوف",
       "منظم كابلات"
     ],
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "85-115 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mechanical Keyboard", "Ergonomic Mouse", "Monitor", "Docking Station"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mechanical Keyboard, Ergonomic Mouse, Monitor, and Docking Station and choose the option that fits the situation.",
+          "scenario": "A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mechanical Keyboard", "Ergonomic Mouse", "Monitor"],
-            "expectedAnswer": "Mechanical Keyboard"
+            "question": "Which device links the computer to several accessories?",
+            "options": ["Docking Station", "Mechanical Keyboard", "Ergonomic Mouse"],
+            "expectedAnswer": "Docking Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Mechanical Keyboard as the central item; include Mechanical Keyboard, Ergonomic Mouse, and Monitor naturally where visually appropriate, but make the real-world use of Mechanical Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Docking Station in a tech gadgets context. Use the written scenario as the source of meaning: A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["External SSD", "Webcam Light", "Microphone", "Green Screen"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare External SSD, Webcam Light, Microphone, and Green Screen and choose the option that fits the situation.",
+          "scenario": "An External SSD provides solid-state data storage. A Webcam Light illuminates video calls, a Microphone captures sound, and a Green Screen provides a background used for image replacement in editing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides solid-state data storage?",
             "options": ["External SSD", "Webcam Light", "Microphone"],
             "expectedAnswer": "External SSD"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the External SSD as the central item; include External SSD, Webcam Light, and Microphone naturally where visually appropriate, but make the real-world use of External SSD the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for External SSD in a tech gadgets context. Use the written scenario as the source of meaning: An External SSD provides solid-state data storage. A Webcam Light illuminates video calls, a Microphone captures sound, and a Green Screen provides a background used for image replacement in editing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Standing Desk Mat", "Cable Organizer"],
-          "scenario": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Desk Mat, and Cable Organizer and choose the option that fits the situation.",
+          "scenario": "A Standing Desk Mat is a cushioned standing surface. A Cable Organizer keeps cables arranged and reduces tangles. Neither item alone establishes an ergonomic or medical benefit for every user.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Standing Desk Mat", "Cable Organizer", "Mechanical Keyboard"],
-            "expectedAnswer": "Standing Desk Mat"
+            "question": "Which item keeps cables arranged?",
+            "options": ["Cable Organizer", "Standing Desk Mat"],
+            "expectedAnswer": "Cable Organizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Standing Desk Mat as the central item; include Standing Desk Mat, Cable Organizer, and Mechanical Keyboard naturally where visually appropriate, but make the real-world use of Standing Desk Mat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cable Organizer in a tech gadgets context. Use the written scenario as the source of meaning: A Standing Desk Mat is a cushioned standing surface. A Cable Organizer keeps cables arranged and reduces tangles. Neither item alone establishes an ergonomic or medical benefit for every user. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written tech gadgets situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Tech & Gadgets",
-      "text": "At the tech & gadgets, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mechanical Keyboard, Ergonomic Mouse, Monitor, and Docking Station. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers External SSD, Webcam Light, Microphone, and Green Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Standing Desk Mat and Cable Organizer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Tech & Gadgets. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tech & Gadgets: Comparing the equipment",
+      "text": "A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories. An External SSD provides solid-state data storage. A Webcam Light illuminates video calls, a Microphone captures sound, and a Green Screen provides a background used for image replacement in editing. A Standing Desk Mat is a cushioned standing surface. A Cable Organizer keeps cables arranged and reduces tangles. Neither item alone establishes an ergonomic or medical benefit for every user.",
+      "imageBrief": "One uncluttered tech gadgets setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mechanical Keyboard, Ergonomic Mouse, Monitor, and Docking Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mechanical Keyboard",
+        "prompt": "A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories.\nWhich device links the computer to several accessories?",
+        "answer": "Docking Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare External SSD, Webcam Light, Microphone, and Green Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An External SSD provides solid-state data storage. A Webcam Light illuminates video calls, a Microphone captures sound, and a Green Screen provides a background used for image replacement in editing.\nWhich item provides solid-state data storage?",
         "answer": "External SSD",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the tech & gadgets setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Standing Desk Mat, and Cable Organizer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Standing Desk Mat",
+        "prompt": "A Standing Desk Mat is a cushioned standing surface. A Cable Organizer keeps cables arranged and reduces tangles. Neither item alone establishes an ergonomic or medical benefit for every user.\nWhich item keeps cables arranged?",
+        "answer": "Cable Organizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories. An External SSD provides solid-state data storage. A Webcam Light illuminates video calls, a Microphone captures sound, and a Green Screen provides a background used for image replacement in editing. A Standing Desk Mat is a cushioned standing surface. A Cable Organizer keeps cables arranged and reduces tangles. Neither item alone establishes an ergonomic or medical benefit for every user.\nExplain the difference between Mechanical Keyboard and Ergonomic Mouse using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Mechanical Keyboard"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Smart Bulb” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the tech & gadgets task. Use Mechanical Keyboard, Ergonomic Mouse, Monitor, Docking Station, External SSD, Webcam Light, Microphone, Green Screen, Standing Desk Mat, and Cable Organizer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Mechanical Keyboard, Ergonomic Mouse, Monitor, Docking Station, External SSD, Webcam Light, Microphone, Green Screen, Standing Desk Mat, Cable Organizer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Tech & Gadgets: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tech & Gadgets: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Mechanical Keyboard and Ergonomic Mouse, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Mechanical Keyboard uses individual mechanical switches. An Ergonomic Mouse has a shape intended to reduce awkward hand positions, while a Monitor displays computer output. A Docking Station links a compatible computer to several accessories. Pause and answer: Which device links the computer to several accessories?"
     },
     "spacedReview": "1 lesson(s) back: Smart Bulb, Security Camera from tech-gadgets-2\n3 lesson(s) back: Hdmi, Bluetooth from smart-home-4\n7 lesson(s) back: Seat Belt Law, Right of Way from driving-road-rules-3"
   }

@@ -44,132 +44,108 @@
       "عمود فقري قطني"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of skeleton using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Skull", "Cranium", "Jaw Bone", "Cheekbone"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.",
+          "scenario": "A tutor holds a skull model. The cranium surrounds the brain, cheekbones lie below the eyes, and the jaw bones support the teeth.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which part surrounds the brain?",
             "options": ["Skull", "Cranium", "Jaw Bone"],
-            "expectedAnswer": "Skull"
+            "expectedAnswer": "Cranium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Skull as the central item; include Skull, Cranium, and Jaw Bone naturally where visually appropriate, but make the real-world use of Skull the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct plastic human skull model in an adult classroom, not human remains. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct plastic human skull model in an adult classroom, not human remains."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Eye Socket", "Nasal Bone", "Temple Bone", "Foramen Magnum"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.",
+          "scenario": "A skull model shows the eye sockets, nasal bones, and temporal bones. The foramen magnum is a large opening at the base through which the spinal cord connects with the brain.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Eye Socket", "Nasal Bone", "Temple Bone"],
-            "expectedAnswer": "Eye Socket"
+            "question": "Which term names the large opening at the skull base?",
+            "options": ["Eye Socket", "Nasal Bone", "Temple Bone", "Foramen Magnum"],
+            "expectedAnswer": "Foramen Magnum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Eye Socket as the central item; include Eye Socket, Nasal Bone, and Temple Bone naturally where visually appropriate, but make the real-world use of Eye Socket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically accurate skull teaching model with its underside visible, without labels or arrows. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically accurate skull teaching model with its underside visible, without labels or arrows."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mandible", "Maxilla", "Spine", "Vertebra"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.",
+          "scenario": "The tutor moves the lower jaw of a skull model. This bone is the mandible; the upper jaw is the maxilla. A separate spine model shows individual vertebrae.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which bone forms the lower jaw?",
             "options": ["Mandible", "Maxilla", "Spine"],
             "expectedAnswer": "Mandible"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Mandible as the central item; include Mandible, Maxilla, and Spine naturally where visually appropriate, but make the real-world use of Mandible the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomical skull teaching model beside a spine model, with the lower jaw naturally open. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomical skull teaching model beside a spine model, with the lower jaw naturally open."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.",
+          "scenario": "The class follows the spine from the neck down. The cervical spine is in the neck, the thoracic spine is behind the chest, and the lumbar spine is in the lower back.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which region is in the lower back?",
             "options": ["Cervical Spine", "Thoracic Spine", "Lumbar Spine"],
-            "expectedAnswer": "Cervical Spine"
+            "expectedAnswer": "Lumbar Spine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Cervical Spine as the central item; include Cervical Spine, Thoracic Spine, and Lumbar Spine naturally where visually appropriate, but make the real-world use of Cervical Spine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct full-spine teaching model showing its natural curves. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct full-spine teaching model showing its natural curves."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Skeleton",
-      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Skull, Cranium, Jaw Bone, and Cheekbone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mandible, Maxilla, Spine, and Vertebra. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cervical Spine, Thoracic Spine, and Lumbar Spine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Skeleton 1: an anatomy teaching session",
+      "text": "A tutor holds a skull model. The cranium surrounds the brain, cheekbones lie below the eyes, and the jaw bones support the teeth. A skull model shows the eye sockets, nasal bones, and temporal bones. The foramen magnum is a large opening at the base through which the spinal cord connects with the brain. The tutor moves the lower jaw of a skull model. This bone is the mandible; the upper jaw is the maxilla. A separate spine model shows individual vertebrae. The class follows the spine from the neck down. The cervical spine is in the neck, the thoracic spine is behind the chest, and the lumbar spine is in the lower back. The tutor uses jaw bone as a general name, then distinguishes the mandible from the maxilla. A cheekbone lies below an eye socket. A nasal bone forms part of the nose’s bridge, while temple bone is a common classroom label for the temporal bone near the ear. One individual spine bone is a vertebra.",
+      "imageBrief": "Educational photograph of An anatomically correct plastic human skull model in an adult classroom, not human remains. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skull, Cranium, Jaw Bone, and Cheekbone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Skull",
+        "prompt": "A tutor holds a skull model. The cranium surrounds the brain, cheekbones lie below the eyes, and the jaw bones support the teeth.\nWhich part surrounds the brain?",
+        "answer": "Cranium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eye Socket, Nasal Bone, Temple Bone, and Foramen Magnum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Eye Socket",
+        "prompt": "A skull model shows the eye sockets, nasal bones, and temporal bones. The foramen magnum is a large opening at the base through which the spinal cord connects with the brain.\nWhich term names the large opening at the skull base?",
+        "answer": "Foramen Magnum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mandible, Maxilla, Spine, and Vertebra and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The tutor moves the lower jaw of a skull model. This bone is the mandible; the upper jaw is the maxilla. A separate spine model shows individual vertebrae.\nWhich bone forms the lower jaw?",
         "answer": "Mandible",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cervical Spine, Thoracic Spine, and Lumbar Spine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cervical Spine",
+        "prompt": "The class follows the spine from the neck down. The cervical spine is in the neck, the thoracic spine is behind the chest, and the lumbar spine is in the lower back.\nWhich region is in the lower back?",
+        "answer": "Lumbar Spine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Skull"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Cheekbone"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Brain Stem” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Skull, Cranium, Jaw Bone, Cheekbone, Eye Socket, Nasal Bone, Temple Bone, Foramen Magnum, Mandible, Maxilla, Spine, Vertebra, Cervical Spine, Thoracic Spine, and Lumbar Spine in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Describe the first scene’s body structure to a visitor looking at a teaching model. Write one complete sentence.\nUse this information: A tutor holds a skull model. The cranium surrounds the brain, cheekbones lie below the eyes, and the jaw bones support the teeth.",
+        "answer": "The cranium is the part of the skull that surrounds the brain.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Skeleton: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Skeleton 1: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A tutor holds a skull model. The cranium surrounds the brain, cheekbones lie below the eyes, and the jaw bones support the teeth."
     },
     "spacedReview": "1 lesson(s) back: Brain Stem, Reflex from internal-organs-4\n3 lesson(s) back: Appendix, Duodenum from internal-organs-2\n7 lesson(s) back: Volume, Frequency from five-senses-2"
   },
@@ -218,132 +194,108 @@
       "مفصل المرفق"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of skeleton using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sacrum", "Coccyx", "Rib", "Sternum"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.",
+          "scenario": "A skeleton model shows the sacrum above the coccyx at the base of the spine. The ribs curve around the chest, and the sternum is the breastbone at the front.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sacrum", "Coccyx", "Rib"],
-            "expectedAnswer": "Sacrum"
+            "question": "Which bone is the breastbone?",
+            "options": ["Sacrum", "Coccyx", "Rib", "Sternum"],
+            "expectedAnswer": "Sternum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Sacrum as the central item; include Sacrum, Coccyx, and Rib naturally where visually appropriate, but make the real-world use of Sacrum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A correct skeleton teaching model with chest and pelvis visible. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A correct skeleton teaching model with chest and pelvis visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ribcage", "Clavicle", "Scapula", "Humerus"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.",
+          "scenario": "The tutor identifies the ribcage around the chest. The clavicle is the collarbone, the scapula is the shoulder blade, and the humerus is the upper-arm bone.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ribcage", "Clavicle", "Scapula"],
-            "expectedAnswer": "Ribcage"
+            "question": "Which bone is in the upper arm?",
+            "options": ["Ribcage", "Clavicle", "Scapula", "Humerus"],
+            "expectedAnswer": "Humerus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Ribcage as the central item; include Ribcage, Clavicle, and Scapula naturally where visually appropriate, but make the real-world use of Ribcage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Anatomically accurate upper-body skeleton teaching model in a classroom. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Anatomically accurate upper-body skeleton teaching model in a classroom."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Radius", "Ulna", "Carpals", "Metacarpals"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.",
+          "scenario": "On a hand-and-forearm model, the radius lies on the thumb side and the ulna on the little-finger side. Carpals form the wrist, and metacarpals form the palm.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Radius", "Ulna", "Carpals"],
-            "expectedAnswer": "Radius"
+            "question": "Which bones form the palm?",
+            "options": ["Radius", "Ulna", "Carpals", "Metacarpals"],
+            "expectedAnswer": "Metacarpals"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Radius as the central item; include Radius, Ulna, and Carpals naturally where visually appropriate, but make the real-world use of Radius the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct hand and forearm model with the palm facing forward. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct hand and forearm model with the palm facing forward."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.",
+          "scenario": "The tutor points to phalanges in the fingers. The shoulder joint connects the upper arm to the shoulder blade, while the elbow joint lets the arm bend and straighten.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which joint allows the arm to bend at the elbow?",
             "options": ["Phalanges", "Shoulder Joint", "Elbow Joint"],
-            "expectedAnswer": "Phalanges"
+            "expectedAnswer": "Elbow Joint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Phalanges as the central item; include Phalanges, Shoulder Joint, and Elbow Joint naturally where visually appropriate, but make the real-world use of Phalanges the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomical arm teaching model bent naturally at the elbow, without highlighting or arrows. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomical arm teaching model bent naturally at the elbow, without highlighting or arrows."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Skeleton",
-      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sacrum, Coccyx, Rib, and Sternum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ribcage, Clavicle, Scapula, and Humerus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radius, Ulna, Carpals, and Metacarpals. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Phalanges, Shoulder Joint, and Elbow Joint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Skeleton 2: an anatomy teaching session",
+      "text": "A skeleton model shows the sacrum above the coccyx at the base of the spine. The ribs curve around the chest, and the sternum is the breastbone at the front. The tutor identifies the ribcage around the chest. The clavicle is the collarbone, the scapula is the shoulder blade, and the humerus is the upper-arm bone. On a hand-and-forearm model, the radius lies on the thumb side and the ulna on the little-finger side. Carpals form the wrist, and metacarpals form the palm. The tutor points to phalanges in the fingers. The shoulder joint connects the upper arm to the shoulder blade, while the elbow joint lets the arm bend and straighten. The tutor counts one rib and then the curved ribs on both sides of the chest. The ribcage includes ribs and the breastbone.",
+      "imageBrief": "Educational photograph of A correct skeleton teaching model with chest and pelvis visible. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sacrum, Coccyx, Rib, and Sternum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sacrum",
+        "prompt": "A skeleton model shows the sacrum above the coccyx at the base of the spine. The ribs curve around the chest, and the sternum is the breastbone at the front.\nWhich bone is the breastbone?",
+        "answer": "Sternum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ribcage, Clavicle, Scapula, and Humerus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ribcage",
+        "prompt": "The tutor identifies the ribcage around the chest. The clavicle is the collarbone, the scapula is the shoulder blade, and the humerus is the upper-arm bone.\nWhich bone is in the upper arm?",
+        "answer": "Humerus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radius, Ulna, Carpals, and Metacarpals and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Radius",
+        "prompt": "On a hand-and-forearm model, the radius lies on the thumb side and the ulna on the little-finger side. Carpals form the wrist, and metacarpals form the palm.\nWhich bones form the palm?",
+        "answer": "Metacarpals",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Phalanges, Shoulder Joint, and Elbow Joint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Phalanges",
+        "prompt": "The tutor points to phalanges in the fingers. The shoulder joint connects the upper arm to the shoulder blade, while the elbow joint lets the arm bend and straighten.\nWhich joint allows the arm to bend at the elbow?",
+        "answer": "Elbow Joint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Sacrum"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Sternum"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Skull” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Sacrum, Coccyx, Rib, Sternum, Ribcage, Clavicle, Scapula, Humerus, Radius, Ulna, Carpals, Metacarpals, Phalanges, Shoulder Joint, and Elbow Joint in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Describe the first scene’s body structure to a visitor looking at a teaching model. Write one complete sentence.\nUse this information: A skeleton model shows the sacrum above the coccyx at the base of the spine. The ribs curve around the chest, and the sternum is the breastbone at the front.",
+        "answer": "The sternum is the breastbone at the front of the chest.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Skeleton: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Skeleton 2: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A skeleton model shows the sacrum above the coccyx at the base of the spine. The ribs curve around the chest, and the sternum is the breastbone at the front."
     },
     "spacedReview": "1 lesson(s) back: Skull, Cranium from skeleton-1\n3 lesson(s) back: Aorta, Vein from internal-organs-3\n7 lesson(s) back: Tongue, Taste Bud from five-senses-3"
   },
@@ -392,132 +344,108 @@
       "نخاع العظم"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of skeleton using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pelvis", "Femur", "Patella", "Tibia"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.",
+          "scenario": "A lower-body model shows the pelvis, femur, patella, and tibia. The femur is the thighbone, while the patella is the kneecap at the front of the knee.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which bone is the kneecap?",
             "options": ["Pelvis", "Femur", "Patella"],
-            "expectedAnswer": "Pelvis"
+            "expectedAnswer": "Patella"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pelvis as the central item; include Pelvis, Femur, and Patella naturally where visually appropriate, but make the real-world use of Pelvis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct pelvis and leg teaching model with the knee visible. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct pelvis and leg teaching model with the knee visible."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fibula", "Tarsals", "Metatarsals", "Toe Bones"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.",
+          "scenario": "The tutor identifies the fibula beside the tibia. Tarsals form the ankle region, metatarsals extend through the middle of the foot, and toe bones form the toes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which bones extend through the middle of the foot?",
             "options": ["Fibula", "Tarsals", "Metatarsals"],
-            "expectedAnswer": "Fibula"
+            "expectedAnswer": "Metatarsals"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Fibula as the central item; include Fibula, Tarsals, and Metatarsals naturally where visually appropriate, but make the real-world use of Fibula the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically accurate lower-leg and foot teaching model, viewed from above. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically accurate lower-leg and foot teaching model, viewed from above."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hip Joint", "Knee Joint", "Joint", "Cartilage"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.",
+          "scenario": "A joint model shows the hip and knee. A joint is where bones meet. Cartilage is flexible tissue that supports parts of the body and cushions many joints.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hip Joint", "Knee Joint", "Joint"],
-            "expectedAnswer": "Hip Joint"
+            "question": "Which option names the flexible cushioning tissue?",
+            "options": ["Hip Joint", "Knee Joint", "Joint", "Cartilage"],
+            "expectedAnswer": "Cartilage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Hip Joint as the central item; include Hip Joint, Knee Joint, and Joint naturally where visually appropriate, but make the real-world use of Hip Joint the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Scientific hip and knee teaching models with joint surfaces accurately represented. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Scientific hip and knee teaching models with joint surfaces accurately represented."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ligament", "Tendon", "Bone Marrow"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.",
+          "scenario": "The class compares tissues. A ligament connects bone to bone, and a tendon connects muscle to bone. Bone marrow is soft tissue inside bones that makes blood cells.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which tissue connects muscle to bone?",
             "options": ["Ligament", "Tendon", "Bone Marrow"],
-            "expectedAnswer": "Ligament"
+            "expectedAnswer": "Tendon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Ligament through a realistic adult task; include Ligament, Tendon, and Bone Marrow naturally where visually appropriate, but make the real-world use of Ligament the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomical muscle-and-bone teaching model beside a bone cross-section, without labels. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomical muscle-and-bone teaching model beside a bone cross-section, without labels."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Skeleton",
-      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pelvis, Femur, Patella, and Tibia. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fibula, Tarsals, Metatarsals, and Toe Bones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hip Joint, Knee Joint, Joint, and Cartilage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ligament, Tendon, and Bone Marrow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Skeleton 3: an anatomy teaching session",
+      "text": "A lower-body model shows the pelvis, femur, patella, and tibia. The femur is the thighbone, while the patella is the kneecap at the front of the knee. The tutor identifies the fibula beside the tibia. Tarsals form the ankle region, metatarsals extend through the middle of the foot, and toe bones form the toes. A joint model shows the hip and knee. A joint is where bones meet. Cartilage is flexible tissue that supports parts of the body and cushions many joints. The class compares tissues. A ligament connects bone to bone, and a tendon connects muscle to bone. Bone marrow is soft tissue inside bones that makes blood cells. The hip joint links the thighbone to the pelvis. The knee joint connects the thigh and lower leg; the kneecap lies at its front.",
+      "imageBrief": "Educational photograph of An anatomically correct pelvis and leg teaching model with the knee visible. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pelvis, Femur, Patella, and Tibia and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pelvis",
+        "prompt": "A lower-body model shows the pelvis, femur, patella, and tibia. The femur is the thighbone, while the patella is the kneecap at the front of the knee.\nWhich bone is the kneecap?",
+        "answer": "Patella",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fibula, Tarsals, Metatarsals, and Toe Bones and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Fibula",
+        "prompt": "The tutor identifies the fibula beside the tibia. Tarsals form the ankle region, metatarsals extend through the middle of the foot, and toe bones form the toes.\nWhich bones extend through the middle of the foot?",
+        "answer": "Metatarsals",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hip Joint, Knee Joint, Joint, and Cartilage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hip Joint",
+        "prompt": "A joint model shows the hip and knee. A joint is where bones meet. Cartilage is flexible tissue that supports parts of the body and cushions many joints.\nWhich option names the flexible cushioning tissue?",
+        "answer": "Cartilage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ligament, Tendon, and Bone Marrow and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Ligament",
+        "prompt": "The class compares tissues. A ligament connects bone to bone, and a tendon connects muscle to bone. Bone marrow is soft tissue inside bones that makes blood cells.\nWhich tissue connects muscle to bone?",
+        "answer": "Tendon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Pelvis"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Tibia"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sacrum” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Pelvis, Femur, Patella, Tibia, Fibula, Tarsals, Metatarsals, Toe Bones, Hip Joint, Knee Joint, Joint, Cartilage, Ligament, Tendon, and Bone Marrow in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Describe the first scene’s body structure to a visitor looking at a teaching model. Write one complete sentence.\nUse this information: A lower-body model shows the pelvis, femur, patella, and tibia. The femur is the thighbone, while the patella is the kneecap at the front of the knee.",
+        "answer": "The patella is the kneecap at the front of the knee.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Skeleton: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Skeleton 3: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A lower-body model shows the pelvis, femur, patella, and tibia. The femur is the thighbone, while the patella is the kneecap at the front of the knee."
     },
     "spacedReview": "1 lesson(s) back: Sacrum, Coccyx from skeleton-2\n3 lesson(s) back: Brain Stem, Reflex from internal-organs-4\n7 lesson(s) back: Pain, Tickle from five-senses-4"
   },
@@ -551,7 +479,7 @@
     "targetWordsArabic": [
       "السمحاق",
       "سائل زليلي",
-      "قرص",
+      "قرص بين الفقرات",
       "غضروف هلالي",
       "جراب زلالي",
       "كالسيوم",
@@ -566,132 +494,108 @@
       "نموذج هيكل عظمي"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of skeleton using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Periosteum", "Synovial Fluid", "Disc", "Meniscus"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.",
+          "scenario": "The tutor compares four structures. Periosteum covers much of a bone’s outer surface. Synovial fluid lubricates certain joints. A disc cushions vertebrae, while a meniscus cushions part of the knee.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure cushions between vertebrae?",
             "options": ["Periosteum", "Synovial Fluid", "Disc"],
-            "expectedAnswer": "Periosteum"
+            "expectedAnswer": "Disc"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Periosteum as the central item; include Periosteum, Synovial Fluid, and Disc naturally where visually appropriate, but make the real-world use of Periosteum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically accurate spine model beside a knee model; discs retain natural placement. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically accurate spine model beside a knee model; discs retain natural placement."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bursa", "Calcium", "Vitamin D", "Osteoporosis"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.",
+          "scenario": "A health educator explains that a bursa reduces friction near a joint. Calcium and vitamin D support bone health. Osteoporosis makes bones weaker and more likely to break; it has several possible contributing factors.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bursa", "Calcium", "Vitamin D"],
-            "expectedAnswer": "Bursa"
+            "question": "Which term names the condition involving weaker bones?",
+            "options": ["Bursa", "Calcium", "Vitamin D", "Osteoporosis"],
+            "expectedAnswer": "Osteoporosis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Bursa as the central item; include Bursa, Calcium, and Vitamin D naturally where visually appropriate, but make the real-world use of Bursa the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult educational discussion beside normal and porous bone teaching models, without food, supplement, or treatment endorsements. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult educational discussion beside normal and porous bone teaching models, without food, supplement, or treatment endorsements."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fracture", "X-Ray", "Cast", "Splint"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.",
+          "scenario": "A clinician explains a sample X-ray at a teaching session. A fracture is a break in a bone. A cast provides rigid support during healing, while a splint is another kind of support.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which word means a break in a bone?",
             "options": ["Fracture", "X-Ray", "Cast"],
             "expectedAnswer": "Fracture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Fracture through a realistic adult task; include Fracture, X-Ray, and Cast naturally where visually appropriate, but make the real-world use of Fracture the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Adult classroom with a plastic arm model, separate cast and splint examples; screen image unreadable, no diagnosis from generated imagery. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Adult classroom with a plastic arm model, separate cast and splint examples; screen image unreadable, no diagnosis from generated imagery."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bone Density", "Growth Plate", "Skeleton Model"],
-          "scenario": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.",
+          "scenario": "An educator explains bone density as the amount of mineral in bone. A growth plate is an area of developing tissue near the end of a growing long bone. The class uses a skeleton model to identify bone positions.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which object helps the class identify bone positions?",
             "options": ["Bone Density", "Growth Plate", "Skeleton Model"],
-            "expectedAnswer": "Bone Density"
+            "expectedAnswer": "Skeleton Model"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Bone Density through a realistic adult task; include Bone Density, Growth Plate, and Skeleton Model naturally where visually appropriate, but make the real-world use of Bone Density the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult tutor standing beside an anatomically correct plastic skeleton model, no readable labels. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult tutor standing beside an anatomically correct plastic skeleton model, no readable labels."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Skeleton",
-      "text": "At the skeleton, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Periosteum, Synovial Fluid, Disc, and Meniscus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bursa, Calcium, Vitamin D, and Osteoporosis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fracture, X-Ray, Cast, and Splint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bone Density, Growth Plate, and Skeleton Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Skeleton. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Skeleton 4: an anatomy teaching session",
+      "text": "The tutor compares four structures. Periosteum covers much of a bone’s outer surface. Synovial fluid lubricates certain joints. A disc cushions vertebrae, while a meniscus cushions part of the knee. A health educator explains that a bursa reduces friction near a joint. Calcium and vitamin D support bone health. Osteoporosis makes bones weaker and more likely to break; it has several possible contributing factors. A clinician explains a sample X-ray at a teaching session. A fracture is a break in a bone. A cast provides rigid support during healing, while a splint is another kind of support. An educator explains bone density as the amount of mineral in bone. A growth plate is an area of developing tissue near the end of a growing long bone. The class uses a skeleton model to identify bone positions.",
+      "imageBrief": "Educational photograph of An anatomically accurate spine model beside a knee model; discs retain natural placement. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periosteum, Synovial Fluid, Disc, and Meniscus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Periosteum",
+        "prompt": "The tutor compares four structures. Periosteum covers much of a bone’s outer surface. Synovial fluid lubricates certain joints. A disc cushions vertebrae, while a meniscus cushions part of the knee.\nWhich structure cushions between vertebrae?",
+        "answer": "Disc",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bursa, Calcium, Vitamin D, and Osteoporosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bursa",
+        "prompt": "A health educator explains that a bursa reduces friction near a joint. Calcium and vitamin D support bone health. Osteoporosis makes bones weaker and more likely to break; it has several possible contributing factors.\nWhich term names the condition involving weaker bones?",
+        "answer": "Osteoporosis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fracture, X-Ray, Cast, and Splint and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A clinician explains a sample X-ray at a teaching session. A fracture is a break in a bone. A cast provides rigid support during healing, while a splint is another kind of support.\nWhich word means a break in a bone?",
         "answer": "Fracture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the skeleton setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bone Density, Growth Plate, and Skeleton Model and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Bone Density",
+        "prompt": "An educator explains bone density as the amount of mineral in bone. A growth plate is an area of developing tissue near the end of a growing long bone. The class uses a skeleton model to identify bone positions.\nWhich object helps the class identify bone positions?",
+        "answer": "Skeleton Model",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Periosteum"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Meniscus"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pelvis” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the skeleton task. Use Periosteum, Synovial Fluid, Disc, Meniscus, Bursa, Calcium, Vitamin D, Osteoporosis, Fracture, X-Ray, Cast, Splint, Bone Density, Growth Plate, and Skeleton Model in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Describe the first scene’s body structure to a visitor looking at a teaching model. Write one complete sentence.\nUse this information: The tutor compares four structures. Periosteum covers much of a bone’s outer surface. Synovial fluid lubricates certain joints. A disc cushions vertebrae, while a meniscus cushions part of the knee.",
+        "answer": "A disc cushions between adjacent vertebrae.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Skeleton: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Skeleton 4: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "The tutor compares four structures. Periosteum covers much of a bone’s outer surface. Synovial fluid lubricates certain joints. A disc cushions vertebrae, while a meniscus cushions part of the knee."
     },
     "spacedReview": "1 lesson(s) back: Pelvis, Femur from skeleton-3\n3 lesson(s) back: Skull, Cranium from skeleton-1\n7 lesson(s) back: Heart, Brain from internal-organs-1"
   }

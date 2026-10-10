@@ -34,7 +34,7 @@
       "تسهيل ائتماني",
       "درجة ائتمانية",
       "معدل فائدة",
-      "أصل القرض",
+      "أصل القرض أو مبلغ الاستثمار الأصلي",
       "ضمان",
       "ضامن مشارك في التوقيع",
       "تأمين صحي",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mortgage", "Auto Loan", "Personal Loan", "Student Loan"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage, Auto Loan, Personal Loan, and Student Loan and choose the option that fits the situation.",
+          "scenario": "A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named loan is secured by property?",
             "options": ["Mortgage", "Auto Loan", "Personal Loan"],
             "expectedAnswer": "Mortgage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Mortgage as the central item; include Mortgage, Auto Loan, and Personal Loan naturally where visually appropriate, but make the real-world use of Mortgage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mortgage in a financial services context. Use the written scenario as the source of meaning: A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Line of Credit", "Credit Score", "Interest Rate", "Principal"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Line of Credit, Credit Score, Interest Rate, and Principal and choose the option that fits the situation.",
+          "scenario": "The lesson distinguishes a Line of Credit, Credit Score, Interest Rate, and Principal. Principal is the original amount borrowed or invested, before interest. The other terms describe a borrowing facility, assessment, or rate.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Line of Credit", "Credit Score", "Interest Rate"],
-            "expectedAnswer": "Line of Credit"
+            "question": "Which term names the original amount before interest?",
+            "options": ["Principal", "Line of Credit", "Credit Score"],
+            "expectedAnswer": "Principal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Line of Credit as the central item; include Line of Credit, Credit Score, and Interest Rate naturally where visually appropriate, but make the real-world use of Line of Credit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Principal in a financial services context. Use the written scenario as the source of meaning: The lesson distinguishes a Line of Credit, Credit Score, Interest Rate, and Principal. Principal is the original amount borrowed or invested, before interest. The other terms describe a borrowing facility, assessment, or rate. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Collateral", "Co-Signer", "Health Insurance", "Car Insurance"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collateral, Co-Signer, Health Insurance, and Car Insurance and choose the option that fits the situation.",
+          "scenario": "The sample agreement identifies Collateral pledged for a loan and a Co-Signer sharing responsibility under the agreement. Health Insurance and Car Insurance address separate kinds of coverage.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Collateral", "Co-Signer", "Health Insurance"],
-            "expectedAnswer": "Collateral"
+            "question": "Which person shares responsibility by signing the loan agreement?",
+            "options": ["Co-Signer", "Collateral", "Health Insurance"],
+            "expectedAnswer": "Co-Signer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Collateral through a realistic adult task; include Collateral, Co-Signer, and Health Insurance naturally where visually appropriate, but make the real-world use of Collateral the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Co-Signer in a financial services context. Use the written scenario as the source of meaning: The sample agreement identifies Collateral pledged for a loan and a Co-Signer sharing responsibility under the agreement. Health Insurance and Car Insurance address separate kinds of coverage. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Life Insurance", "Home Insurance", "Travel Insurance"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Life Insurance, Home Insurance, and Travel Insurance and choose the option that fits the situation.",
+          "scenario": "The class compares Life Insurance, Home Insurance, and Travel Insurance. Travel Insurance concerns specified trip-related losses under its policy; no insurance name alone proves that every possible event is covered.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Life Insurance", "Home Insurance", "Travel Insurance"],
-            "expectedAnswer": "Life Insurance"
+            "question": "Which insurance is concerned with specified trip-related losses?",
+            "options": ["Travel Insurance", "Life Insurance", "Home Insurance"],
+            "expectedAnswer": "Travel Insurance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Life Insurance through a realistic adult task; include Life Insurance, Home Insurance, and Travel Insurance naturally where visually appropriate, but make the real-world use of Life Insurance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Travel Insurance in a financial services context. Use the written scenario as the source of meaning: The class compares Life Insurance, Home Insurance, and Travel Insurance. Travel Insurance concerns specified trip-related losses under its policy; no insurance name alone proves that every possible event is covered. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Financial Services: Practical Information",
-      "text": "At the financial services, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mortgage, Auto Loan, Personal Loan, and Student Loan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Line of Credit, Credit Score, Interest Rate, and Principal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Collateral, Co-Signer, Health Insurance, and Car Insurance. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Life Insurance, Home Insurance, and Travel Insurance. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Financial Services: A visitor’s questions",
+      "text": "A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner. The lesson distinguishes a Line of Credit, Credit Score, Interest Rate, and Principal. Principal is the original amount borrowed or invested, before interest. The other terms describe a borrowing facility, assessment, or rate. The sample agreement identifies Collateral pledged for a loan and a Co-Signer sharing responsibility under the agreement. Health Insurance and Car Insurance address separate kinds of coverage. The class compares Life Insurance, Home Insurance, and Travel Insurance. Travel Insurance concerns specified trip-related losses under its policy; no insurance name alone proves that every possible event is covered.",
+      "imageBrief": "One uncluttered financial services setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage, Auto Loan, Personal Loan, and Student Loan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner.\nWhich named loan is secured by property?",
         "answer": "Mortgage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Line of Credit, Credit Score, Interest Rate, and Principal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Line of Credit",
+        "prompt": "The lesson distinguishes a Line of Credit, Credit Score, Interest Rate, and Principal. Principal is the original amount borrowed or invested, before interest. The other terms describe a borrowing facility, assessment, or rate.\nWhich term names the original amount before interest?",
+        "answer": "Principal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Collateral, Co-Signer, Health Insurance, and Car Insurance and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Collateral",
+        "prompt": "The sample agreement identifies Collateral pledged for a loan and a Co-Signer sharing responsibility under the agreement. Health Insurance and Car Insurance address separate kinds of coverage.\nWhich person shares responsibility by signing the loan agreement?",
+        "answer": "Co-Signer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Life Insurance, Home Insurance, and Travel Insurance and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Life Insurance",
+        "prompt": "The class compares Life Insurance, Home Insurance, and Travel Insurance. Travel Insurance concerns specified trip-related losses under its policy; no insurance name alone proves that every possible event is covered.\nWhich insurance is concerned with specified trip-related losses?",
+        "answer": "Travel Insurance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner. The lesson distinguishes a Line of Credit, Credit Score, Interest Rate, and Principal. Principal is the original amount borrowed or invested, before interest. The other terms describe a borrowing facility, assessment, or rate. The sample agreement identifies Collateral pledged for a loan and a Co-Signer sharing responsibility under the agreement. Health Insurance and Car Insurance address separate kinds of coverage. The class compares Life Insurance, Home Insurance, and Travel Insurance. Travel Insurance concerns specified trip-related losses under its policy; no insurance name alone proves that every possible event is covered.\nExplain the difference between Mortgage and Auto Loan using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Mortgage"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Teller” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the financial services task. Use Mortgage, Auto Loan, Personal Loan, Student Loan, Line of Credit, Credit Score, Interest Rate, Principal, Collateral, Co-Signer, Health Insurance, Car Insurance, Life Insurance, Home Insurance, and Travel Insurance in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Mortgage, Auto Loan, Personal Loan, Student Loan, Line of Credit, Credit Score, Interest Rate, Principal, Collateral, Co-Signer, Health Insurance, Car Insurance, Life Insurance, Home Insurance, Travel Insurance to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Financial Services: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Financial Services: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Mortgage and Auto Loan, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A financial-literacy class distinguishes a Mortgage secured by property from an Auto Loan, Personal Loan, and Student Loan. Their conditions depend on the lender and agreement; the class does not choose a loan for the learner. Pause and answer: Which named loan is secured by property?"
     },
     "spacedReview": "1 lesson(s) back: Teller, Bank Manager from bank-3\n3 lesson(s) back: Lobby, Teller Window from bank-1\n7 lesson(s) back: Batch Processing, Automation from freelancing-remote-work-4"
   },
@@ -215,135 +198,118 @@
       "ربح رأسمالي",
       "مخاطر",
       "عائد استثمار",
-      "تنويع"
+      "تنويع الاستثمارات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "124-154 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Premium", "Deductible", "Coverage", "Claim"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Premium, Deductible, Coverage, and Claim and choose the option that fits the situation.",
+          "scenario": "A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Premium", "Deductible", "Coverage"],
-            "expectedAnswer": "Premium"
+            "question": "Which term names an amount the insured person bears under the policy terms?",
+            "options": ["Deductible", "Premium", "Coverage"],
+            "expectedAnswer": "Deductible"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Premium as the central item; include Premium, Deductible, and Coverage naturally where visually appropriate, but make the real-world use of Premium the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Deductible in a financial services context. Use the written scenario as the source of meaning: A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Policy", "Stock", "Bond", "Mutual Fund"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Policy, Stock, Bond, and Mutual Fund and choose the option that fits the situation.",
+          "scenario": "The tutor compares an insurance Policy with a Stock, Bond, and Mutual Fund. A Stock represents company ownership; a Bond involves lending to an issuer. A Mutual Fund pools money for investments.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Policy", "Stock", "Bond"],
-            "expectedAnswer": "Policy"
+            "question": "Which investment involves lending money to an issuer?",
+            "options": ["Bond", "Policy", "Stock"],
+            "expectedAnswer": "Bond"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Policy through a realistic adult task; include Policy, Stock, and Bond naturally where visually appropriate, but make the real-world use of Policy the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Bond in a financial services context. Use the written scenario as the source of meaning: The tutor compares an insurance Policy with a Stock, Bond, and Mutual Fund. A Stock represents company ownership; a Bond involves lending to an issuer. A Mutual Fund pools money for investments. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["ETF", "Portfolio", "Dividend", "Capital Gain"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ETF, Portfolio, Dividend, and Capital Gain and choose the option that fits the situation.",
+          "scenario": "The notes describe an ETF traded on an exchange and a Portfolio of holdings. A Dividend is a payment to shareholders; a Capital Gain concerns profit from an increase in value when an asset is sold.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["ETF", "Portfolio", "Dividend"],
-            "expectedAnswer": "ETF"
+            "question": "Which term concerns profit from an asset’s increase in value at sale?",
+            "options": ["Capital Gain", "ETF", "Portfolio"],
+            "expectedAnswer": "Capital Gain"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the ETF as the central item; include ETF, Portfolio, and Dividend naturally where visually appropriate, but make the real-world use of ETF the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Capital Gain in a financial services context. Use the written scenario as the source of meaning: The notes describe an ETF traded on an exchange and a Portfolio of holdings. A Dividend is a payment to shareholders; a Capital Gain concerns profit from an increase in value when an asset is sold. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Risk", "Return", "Diversification"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Risk, Return, and Diversification and choose the option that fits the situation.",
+          "scenario": "The tutor distinguishes Risk and Return, then explains Diversification as spreading investments across different assets. It reduces concentration risk but does not eliminate all investment risk or guarantee a positive return.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Risk", "Return", "Diversification"],
-            "expectedAnswer": "Risk"
+            "question": "Which strategy spreads investments across different assets?",
+            "options": ["Diversification", "Risk", "Return"],
+            "expectedAnswer": "Diversification"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Risk as the central item; include Risk, Return, and Diversification naturally where visually appropriate, but make the real-world use of Risk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Diversification in a financial services context. Use the written scenario as the source of meaning: The tutor distinguishes Risk and Return, then explains Diversification as spreading investments across different assets. It reduces concentration risk but does not eliminate all investment risk or guarantee a positive return. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Financial Services",
-      "text": "At the financial services, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Premium, Deductible, Coverage, and Claim. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Policy, Stock, Bond, and Mutual Fund. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers ETF, Portfolio, Dividend, and Capital Gain. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Risk, Return, and Diversification. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Financial Services: Understanding the different roles",
+      "text": "A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss. The tutor compares an insurance Policy with a Stock, Bond, and Mutual Fund. A Stock represents company ownership; a Bond involves lending to an issuer. A Mutual Fund pools money for investments. The notes describe an ETF traded on an exchange and a Portfolio of holdings. A Dividend is a payment to shareholders; a Capital Gain concerns profit from an increase in value when an asset is sold. The tutor distinguishes Risk and Return, then explains Diversification as spreading investments across different assets. It reduces concentration risk but does not eliminate all investment risk or guarantee a positive return.",
+      "imageBrief": "One uncluttered financial services setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Premium, Deductible, Coverage, and Claim and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Premium",
+        "prompt": "A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss.\nWhich term names an amount the insured person bears under the policy terms?",
+        "answer": "Deductible",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Policy, Stock, Bond, and Mutual Fund and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Policy",
+        "prompt": "The tutor compares an insurance Policy with a Stock, Bond, and Mutual Fund. A Stock represents company ownership; a Bond involves lending to an issuer. A Mutual Fund pools money for investments.\nWhich investment involves lending money to an issuer?",
+        "answer": "Bond",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ETF, Portfolio, Dividend, and Capital Gain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "ETF",
+        "prompt": "The notes describe an ETF traded on an exchange and a Portfolio of holdings. A Dividend is a payment to shareholders; a Capital Gain concerns profit from an increase in value when an asset is sold.\nWhich term concerns profit from an asset’s increase in value at sale?",
+        "answer": "Capital Gain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Risk, Return, and Diversification and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Risk",
+        "prompt": "The tutor distinguishes Risk and Return, then explains Diversification as spreading investments across different assets. It reduces concentration risk but does not eliminate all investment risk or guarantee a positive return.\nWhich strategy spreads investments across different assets?",
+        "answer": "Diversification",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss. The tutor compares an insurance Policy with a Stock, Bond, and Mutual Fund. A Stock represents company ownership; a Bond involves lending to an issuer. A Mutual Fund pools money for investments. The notes describe an ETF traded on an exchange and a Portfolio of holdings. A Dividend is a payment to shareholders; a Capital Gain concerns profit from an increase in value when an asset is sold. The tutor distinguishes Risk and Return, then explains Diversification as spreading investments across different assets. It reduces concentration risk but does not eliminate all investment risk or guarantee a positive return.\nExplain the difference between Premium and Deductible using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Premium"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Mortgage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the financial services task. Use Premium, Deductible, Coverage, Claim, Policy, Stock, Bond, Mutual Fund, ETF, Portfolio, Dividend, Capital Gain, Risk, Return, and Diversification in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Premium, Deductible, Coverage, Claim, Policy, Stock, Bond, Mutual Fund, ETF, Portfolio, Dividend, Capital Gain, Risk, Return, Diversification to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Financial Services: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Financial Services: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Premium and Deductible, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A sample policy distinguishes Premium, Deductible, Coverage, and Claim. The Premium pays for the policy; the Deductible is an amount the insured person bears under the specified terms. A Claim requests payment for a loss. Pause and answer: Which term names an amount the insured person bears under the policy terms?"
     },
     "spacedReview": "1 lesson(s) back: Mortgage, Auto Loan from financial-services-1\n3 lesson(s) back: Money Market, Retirement Account from bank-2\n7 lesson(s) back: Suit, Dress Shirt from formal-business-wear-1"
   },
@@ -371,7 +337,7 @@
     ],
     "targetWordsArabic": [
       "خطة تقاعد 401(k)",
-      "حساب تقاعد فردي",
+      "حساب تقاعد فردي أمريكي",
       "معاش تقاعدي",
       "الضمان الاجتماعي الأمريكي",
       "عقد دفعات دورية",
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "89-119 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["401k", "IRA", "Pension", "Social Security"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 401k, IRA, Pension, and Social Security and choose the option that fits the situation.",
+          "scenario": "The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["401k", "IRA", "Pension"],
-            "expectedAnswer": "401k"
+            "question": "Which abbreviation names the US individual retirement arrangement?",
+            "options": ["IRA", "401k", "Pension"],
+            "expectedAnswer": "IRA"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the 401k as the central item; include 401k, IRA, and Pension naturally where visually appropriate, but make the real-world use of 401k the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for IRA in a financial services context. Use the written scenario as the source of meaning: The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Annuity", "Retirement Fund", "Compound Interest", "Contribution"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Annuity, Retirement Fund, Compound Interest, and Contribution and choose the option that fits the situation.",
+          "scenario": "An Annuity can provide a series of payments, while a Retirement Fund holds savings or investments. Compound Interest includes interest on previously added interest. A Contribution is an amount paid into an arrangement.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Annuity", "Retirement Fund", "Compound Interest"],
-            "expectedAnswer": "Annuity"
+            "question": "Which term includes interest on previously added interest?",
+            "options": ["Compound Interest", "Annuity", "Retirement Fund"],
+            "expectedAnswer": "Compound Interest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Annuity through a realistic adult task; include Annuity, Retirement Fund, and Compound Interest naturally where visually appropriate, but make the real-world use of Annuity the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Compound Interest in a financial services context. Use the written scenario as the source of meaning: An Annuity can provide a series of payments, while a Retirement Fund holds savings or investments. Compound Interest includes interest on previously added interest. A Contribution is an amount paid into an arrangement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Vesting", "Beneficiary"],
-          "scenario": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vesting, and Beneficiary and choose the option that fits the situation.",
+          "scenario": "The adviser distinguishes Vesting, which concerns gaining rights to a benefit, from a Beneficiary, the person or organization entitled to receive a specified benefit. The agreement determines the actual rights.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Vesting", "Beneficiary", "401k"],
-            "expectedAnswer": "Vesting"
+            "question": "Which term names the person or organization entitled to the specified benefit?",
+            "options": ["Beneficiary", "Vesting"],
+            "expectedAnswer": "Beneficiary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult illustrating Vesting through a realistic adult task; include Vesting, Beneficiary, and 401k naturally where visually appropriate, but make the real-world use of Vesting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Beneficiary in a financial services context. Use the written scenario as the source of meaning: The adviser distinguishes Vesting, which concerns gaining rights to a benefit, from a Beneficiary, the person or organization entitled to receive a specified benefit. The agreement determines the actual rights. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written financial services situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the financial services, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers 401k, IRA, Pension, and Social Security. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Annuity, Retirement Fund, Compound Interest, and Contribution. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Vesting and Beneficiary. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Financial Services. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Financial Services: Comparing the equipment",
+      "text": "The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country. An Annuity can provide a series of payments, while a Retirement Fund holds savings or investments. Compound Interest includes interest on previously added interest. A Contribution is an amount paid into an arrangement. The adviser distinguishes Vesting, which concerns gaining rights to a benefit, from a Beneficiary, the person or organization entitled to receive a specified benefit. The agreement determines the actual rights.",
+      "imageBrief": "One uncluttered financial services setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare 401k, IRA, Pension, and Social Security and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "401k",
+        "prompt": "The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country.\nWhich abbreviation names the US individual retirement arrangement?",
+        "answer": "IRA",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Annuity, Retirement Fund, Compound Interest, and Contribution and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Annuity",
+        "prompt": "An Annuity can provide a series of payments, while a Retirement Fund holds savings or investments. Compound Interest includes interest on previously added interest. A Contribution is an amount paid into an arrangement.\nWhich term includes interest on previously added interest?",
+        "answer": "Compound Interest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the financial services setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vesting, and Beneficiary and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Vesting",
+        "prompt": "The adviser distinguishes Vesting, which concerns gaining rights to a benefit, from a Beneficiary, the person or organization entitled to receive a specified benefit. The agreement determines the actual rights.\nWhich term names the person or organization entitled to the specified benefit?",
+        "answer": "Beneficiary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country. An Annuity can provide a series of payments, while a Retirement Fund holds savings or investments. Compound Interest includes interest on previously added interest. A Contribution is an amount paid into an arrangement. The adviser distinguishes Vesting, which concerns gaining rights to a benefit, from a Beneficiary, the person or organization entitled to receive a specified benefit. The agreement determines the actual rights.\nExplain the difference between 401k and IRA using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "401k"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Premium” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the financial services task. Use 401k, IRA, Pension, Social Security, Annuity, Retirement Fund, Compound Interest, Contribution, Vesting, and Beneficiary in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms 401k, IRA, Pension, Social Security, Annuity, Retirement Fund, Compound Interest, Contribution, Vesting, Beneficiary to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Financial Services: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Financial Services: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between 401k and IRA, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The class explicitly uses US examples: a 401k workplace plan, an IRA individual retirement arrangement, a Pension, and Social Security. Their tax treatment and eligibility differ; these names do not describe universal systems in every country. Pause and answer: Which abbreviation names the US individual retirement arrangement?"
     },
     "spacedReview": "1 lesson(s) back: Premium, Deductible from financial-services-2\n3 lesson(s) back: Teller, Bank Manager from bank-3\n7 lesson(s) back: Pantsuit, Wrap Dress from formal-business-wear-2"
   }

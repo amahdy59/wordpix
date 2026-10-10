@@ -39,7 +39,7 @@
       "مركبة مسيّرة تحت الماء",
       "مروحة دافعة",
       "محرك",
-      "إطار",
+      "هيكل المسيّرة",
       "بطارية",
       "وحدة تحكّم إلكترونية في السرعة (ESC)"
     ],
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "115-145 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Quadcopter", "Hexacopter", "Fixed Wing", "Racing Drone"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.",
+          "scenario": "At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Quadcopter", "Hexacopter", "Fixed Wing"],
-            "expectedAnswer": "Quadcopter"
+            "question": "Which displayed aircraft has six rotors?",
+            "options": ["Hexacopter", "Quadcopter", "Fixed Wing"],
+            "expectedAnswer": "Hexacopter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Quadcopter as the central item; include Quadcopter, Hexacopter, and Fixed Wing naturally where visually appropriate, but make the real-world use of Quadcopter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Hexacopter in a drone workshop context. Use the written scenario as the source of meaning: At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fpv Drone", "Nano Drone", "Delivery Drone", "Survey Drone"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.",
+          "scenario": "An Fpv Drone uses an onboard camera view, and a Nano Drone is very small. A Delivery Drone carries packages. A Survey Drone collects images or measurements for mapping and inspection.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Fpv Drone", "Nano Drone", "Delivery Drone"],
-            "expectedAnswer": "Fpv Drone"
+            "question": "Which drone is designed to collect mapping or inspection data?",
+            "options": ["Survey Drone", "Fpv Drone", "Nano Drone"],
+            "expectedAnswer": "Survey Drone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Fpv Drone as the central item; include Fpv Drone, Nano Drone, and Delivery Drone naturally where visually appropriate, but make the real-world use of Fpv Drone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Survey Drone in a drone workshop context. Use the written scenario as the source of meaning: An Fpv Drone uses an onboard camera view, and a Nano Drone is very small. A Delivery Drone carries packages. A Survey Drone collects images or measurements for mapping and inspection. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Agricultural Drone", "Underwater Drone", "Propeller", "Motor"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.",
+          "scenario": "The workshop compares an Agricultural Drone with an Underwater Drone. A separate display shows a Propeller turned by a Motor. The Underwater Drone operates below the water surface rather than in the air.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Agricultural Drone", "Underwater Drone", "Propeller"],
-            "expectedAnswer": "Agricultural Drone"
+            "question": "Which vehicle operates below the water surface?",
+            "options": ["Underwater Drone", "Agricultural Drone", "Propeller"],
+            "expectedAnswer": "Underwater Drone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Agricultural Drone as the central item; include Agricultural Drone, Underwater Drone, and Propeller naturally where visually appropriate, but make the real-world use of Agricultural Drone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Underwater Drone in a drone workshop context. Use the written scenario as the source of meaning: The workshop compares an Agricultural Drone with an Underwater Drone. A separate display shows a Propeller turned by a Motor. The Underwater Drone operates below the water surface rather than in the air. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Frame", "Battery", "Esc"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.",
+          "scenario": "A Frame holds the components, and a Battery supplies electrical energy. The Esc controls electrical power supplied to the motor. The instructor explains the functions without giving wiring instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Frame", "Battery", "Esc"],
-            "expectedAnswer": "Frame"
+            "question": "Which component controls motor power electronically?",
+            "options": ["Esc", "Frame", "Battery"],
+            "expectedAnswer": "Esc"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Frame as the central item; include Frame, Battery, and Esc naturally where visually appropriate, but make the real-world use of Frame the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Esc in a drone workshop context. Use the written scenario as the source of meaning: A Frame holds the components, and a Battery supplies electrical energy. The Esc controls electrical power supplied to the motor. The instructor explains the functions without giving wiring instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Drone Workshop",
-      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Quadcopter, Hexacopter, Fixed Wing, and Racing Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Agricultural Drone, Underwater Drone, Propeller, and Motor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Frame, Battery, and Esc. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Drone Workshop: A visitor’s questions",
+      "text": "At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them. An Fpv Drone uses an onboard camera view, and a Nano Drone is very small. A Delivery Drone carries packages. A Survey Drone collects images or measurements for mapping and inspection. The workshop compares an Agricultural Drone with an Underwater Drone. A separate display shows a Propeller turned by a Motor. The Underwater Drone operates below the water surface rather than in the air. A Frame holds the components, and a Battery supplies electrical energy. The Esc controls electrical power supplied to the motor. The instructor explains the functions without giving wiring instructions.",
+      "imageBrief": "One uncluttered drone workshop setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Quadcopter, Hexacopter, Fixed Wing, and Racing Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Quadcopter",
+        "prompt": "At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them.\nWhich displayed aircraft has six rotors?",
+        "answer": "Hexacopter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fpv Drone, Nano Drone, Delivery Drone, and Survey Drone and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Fpv Drone",
+        "prompt": "An Fpv Drone uses an onboard camera view, and a Nano Drone is very small. A Delivery Drone carries packages. A Survey Drone collects images or measurements for mapping and inspection.\nWhich drone is designed to collect mapping or inspection data?",
+        "answer": "Survey Drone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Agricultural Drone, Underwater Drone, Propeller, and Motor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Agricultural Drone",
+        "prompt": "The workshop compares an Agricultural Drone with an Underwater Drone. A separate display shows a Propeller turned by a Motor. The Underwater Drone operates below the water surface rather than in the air.\nWhich vehicle operates below the water surface?",
+        "answer": "Underwater Drone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Frame, Battery, and Esc and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Frame",
+        "prompt": "A Frame holds the components, and a Battery supplies electrical energy. The Esc controls electrical power supplied to the motor. The instructor explains the functions without giving wiring instructions.\nWhich component controls motor power electronically?",
+        "answer": "Esc",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them. An Fpv Drone uses an onboard camera view, and a Nano Drone is very small. A Delivery Drone carries packages. A Survey Drone collects images or measurements for mapping and inspection. The workshop compares an Agricultural Drone with an Underwater Drone. A separate display shows a Propeller turned by a Motor. The Underwater Drone operates below the water surface rather than in the air. A Frame holds the components, and a Battery supplies electrical energy. The Esc controls electrical power supplied to the motor. The instructor explains the functions without giving wiring instructions.\nExplain the difference between Quadcopter and Hexacopter using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Quadcopter"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Access Log” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Quadcopter, Hexacopter, Fixed Wing, Racing Drone, Fpv Drone, Nano Drone, Delivery Drone, Survey Drone, Agricultural Drone, Underwater Drone, Propeller, Motor, Frame, Battery, and Esc in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Quadcopter, Hexacopter, Fixed Wing, Racing Drone, Fpv Drone, Nano Drone, Delivery Drone, Survey Drone, Agricultural Drone, Underwater Drone, Propeller, Motor, Frame, Battery, Esc to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Drone Workshop: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Drone Workshop: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Quadcopter and Hexacopter, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At a stationary aircraft display, the instructor compares a Quadcopter with four rotors, a Hexacopter with six, a Fixed Wing model, and a Racing Drone. The examples are inspected without launching them. Pause and answer: Which displayed aircraft has six rotors?"
     },
     "spacedReview": "1 lesson(s) back: Access Log, Cage from data-center-4\n3 lesson(s) back: Ethernet, Bandwidth from data-center-2\n7 lesson(s) back: Smartphone, Tablet from tech-gadgets-1"
   },
@@ -211,139 +194,122 @@
       "عصا تحكم",
       "متحكم قدرة المحرك",
       "دوران حول المحور الرأسي",
-      "حدّة الصوت",
+      "ميل مقدمة المسيّرة لأعلى أو لأسفل",
       "ميل حول المحور الطولي",
       "ضبط اتزان الطيران",
       "وضع أمان تلقائي",
-      "العودة التلقائية إلى نقطة الانطلاق"
+      "العودة إلى نقطة البداية المسجّلة"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "101-131 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Flight Controller", "Gps Module", "Antenna", "Camera"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.",
+          "scenario": "The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Flight Controller", "Gps Module", "Antenna"],
-            "expectedAnswer": "Flight Controller"
+            "question": "Which module uses satellite signals to determine position?",
+            "options": ["Gps Module", "Flight Controller", "Antenna"],
+            "expectedAnswer": "Gps Module"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Flight Controller as the central item; include Flight Controller, Gps Module, and Antenna naturally where visually appropriate, but make the real-world use of Flight Controller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Gps Module in a drone workshop context. Use the written scenario as the source of meaning: The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gimbal", "Transmitter", "Receiver", "Joystick"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.",
+          "scenario": "The Gimbal supports and stabilizes the camera. A Transmitter sends control signals to a Receiver, while a Joystick is the pilot’s movable control.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which support stabilizes the camera?",
             "options": ["Gimbal", "Transmitter", "Receiver"],
             "expectedAnswer": "Gimbal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Gimbal through a realistic adult task; include Gimbal, Transmitter, and Receiver naturally where visually appropriate, but make the real-world use of Gimbal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Gimbal in a drone workshop context. Use the written scenario as the source of meaning: The Gimbal supports and stabilizes the camera. A Transmitter sends control signals to a Receiver, while a Joystick is the pilot’s movable control. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Throttle", "Yaw", "Pitch", "Roll"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.",
+          "scenario": "A simulator demonstrates Throttle, Yaw, Pitch, and Roll. Pitch tilts the aircraft’s nose up or down around its side-to-side axis; Roll is rotation around its lengthwise axis.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Throttle", "Yaw", "Pitch"],
-            "expectedAnswer": "Throttle"
+            "question": "Which movement tilts the nose up or down?",
+            "options": ["Pitch", "Throttle", "Yaw"],
+            "expectedAnswer": "Pitch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Throttle as the central item; include Throttle, Yaw, and Pitch naturally where visually appropriate, but make the real-world use of Throttle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pitch in a drone workshop context. Use the written scenario as the source of meaning: A simulator demonstrates Throttle, Yaw, Pitch, and Roll. Pitch tilts the aircraft’s nose up or down around its side-to-side axis; Roll is rotation around its lengthwise axis. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Trim", "Failsafe", "Return To Home"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.",
+          "scenario": "The simulator lesson distinguishes Trim, Failsafe, and Return To Home. Return To Home is intended to guide a drone toward its recorded home point under suitable configured conditions; it is not an unconditional safety guarantee.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Trim", "Failsafe", "Return To Home"],
-            "expectedAnswer": "Trim"
+            "question": "Which function refers to returning toward the recorded home point?",
+            "options": ["Return To Home", "Trim", "Failsafe"],
+            "expectedAnswer": "Return To Home"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Trim as the central item; include Trim, Failsafe, and Return To Home naturally where visually appropriate, but make the real-world use of Trim the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Return To Home in a drone workshop context. Use the written scenario as the source of meaning: The simulator lesson distinguishes Trim, Failsafe, and Return To Home. Return To Home is intended to guide a drone toward its recorded home point under suitable configured conditions; it is not an unconditional safety guarantee. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Drone Workshop",
-      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Flight Controller, Gps Module, Antenna, and Camera. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Gimbal, Transmitter, Receiver, and Joystick. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Throttle, Yaw, Pitch, and Roll. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Trim, Failsafe, and Return To Home. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Drone Workshop: Understanding the different roles",
+      "text": "The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images. The Gimbal supports and stabilizes the camera. A Transmitter sends control signals to a Receiver, while a Joystick is the pilot’s movable control. A simulator demonstrates Throttle, Yaw, Pitch, and Roll. Pitch tilts the aircraft’s nose up or down around its side-to-side axis; Roll is rotation around its lengthwise axis. The simulator lesson distinguishes Trim, Failsafe, and Return To Home. Return To Home is intended to guide a drone toward its recorded home point under suitable configured conditions; it is not an unconditional safety guarantee.",
+      "imageBrief": "One uncluttered drone workshop setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Controller, Gps Module, Antenna, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Flight Controller",
+        "prompt": "The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images.\nWhich module uses satellite signals to determine position?",
+        "answer": "Gps Module",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gimbal, Transmitter, Receiver, and Joystick and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The Gimbal supports and stabilizes the camera. A Transmitter sends control signals to a Receiver, while a Joystick is the pilot’s movable control.\nWhich support stabilizes the camera?",
         "answer": "Gimbal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Throttle, Yaw, Pitch, and Roll and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Throttle",
+        "prompt": "A simulator demonstrates Throttle, Yaw, Pitch, and Roll. Pitch tilts the aircraft’s nose up or down around its side-to-side axis; Roll is rotation around its lengthwise axis.\nWhich movement tilts the nose up or down?",
+        "answer": "Pitch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trim, Failsafe, and Return To Home and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Trim",
+        "prompt": "The simulator lesson distinguishes Trim, Failsafe, and Return To Home. Return To Home is intended to guide a drone toward its recorded home point under suitable configured conditions; it is not an unconditional safety guarantee.\nWhich function refers to returning toward the recorded home point?",
+        "answer": "Return To Home",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images. The Gimbal supports and stabilizes the camera. A Transmitter sends control signals to a Receiver, while a Joystick is the pilot’s movable control. A simulator demonstrates Throttle, Yaw, Pitch, and Roll. Pitch tilts the aircraft’s nose up or down around its side-to-side axis; Roll is rotation around its lengthwise axis. The simulator lesson distinguishes Trim, Failsafe, and Return To Home. Return To Home is intended to guide a drone toward its recorded home point under suitable configured conditions; it is not an unconditional safety guarantee.\nExplain the difference between Flight Controller and Gps Module using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Flight Controller"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Quadcopter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Flight Controller, Gps Module, Antenna, Camera, Gimbal, Transmitter, Receiver, Joystick, Throttle, Yaw, Pitch, Roll, Trim, Failsafe, and Return To Home in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Flight Controller, Gps Module, Antenna, Camera, Gimbal, Transmitter, Receiver, Joystick, Throttle, Yaw, Pitch, Roll, Trim, Failsafe, Return To Home to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Drone Workshop: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Drone Workshop: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Flight Controller and Gps Module, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Flight Controller processes sensor data and commands. A Gps Module receives satellite signals for position, an Antenna communicates by radio, and a Camera records images. Pause and answer: Which module uses satellite signals to determine position?"
     },
     "spacedReview": "1 lesson(s) back: Quadcopter, Hexacopter from drone-workshop-1\n3 lesson(s) back: Air Conditioner, Chiller from data-center-3\n7 lesson(s) back: Smart Bulb, Security Camera from tech-gadgets-2"
   },
@@ -385,7 +351,7 @@
       "لاصق لولبي",
       "شاحن توازن",
       "أداة موازنة المروحة",
-      "برمجيات ثابتة",
+      "برنامج ثابت",
       "محطة تحكم أرضية",
       "سجل طيران",
       "نقطة مسار",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Soldering Iron", "Multimeter", "Screwdriver", "Hex Wrench"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.",
+          "scenario": "The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Soldering Iron", "Multimeter", "Screwdriver"],
-            "expectedAnswer": "Soldering Iron"
+            "question": "Which instrument measures electrical quantities?",
+            "options": ["Multimeter", "Soldering Iron", "Screwdriver"],
+            "expectedAnswer": "Multimeter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Soldering Iron as the central item; include Soldering Iron, Multimeter, and Screwdriver naturally where visually appropriate, but make the real-world use of Soldering Iron the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Multimeter in a drone workshop context. Use the written scenario as the source of meaning: The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pliers", "Heat Shrink", "Zip Tie", "Loctite"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.",
+          "scenario": "The parts display contains Pliers, Heat Shrink tubing, a Zip Tie, and Loctite products. A Zip Tie fastens cables with a locking plastic loop. Product suitability is determined by the manufacturer’s instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pliers", "Heat Shrink", "Zip Tie"],
-            "expectedAnswer": "Pliers"
+            "question": "Which fastener forms a locking plastic loop?",
+            "options": ["Zip Tie", "Pliers", "Heat Shrink"],
+            "expectedAnswer": "Zip Tie"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Pliers as the central item; include Pliers, Heat Shrink, and Zip Tie naturally where visually appropriate, but make the real-world use of Pliers the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Zip Tie in a drone workshop context. Use the written scenario as the source of meaning: The parts display contains Pliers, Heat Shrink tubing, a Zip Tie, and Loctite products. A Zip Tie fastens cables with a locking plastic loop. Product suitability is determined by the manufacturer’s instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Balance Charger", "Prop Balancer", "Firmware", "Ground Station"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.",
+          "scenario": "A Balance Charger manages appropriate battery-cell charging, and a Prop Balancer checks propeller balance. Firmware is built-in control software; a Ground Station is the remote monitoring and control interface.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Balance Charger", "Prop Balancer", "Firmware"],
-            "expectedAnswer": "Balance Charger"
+            "question": "Which term names the built-in control software?",
+            "options": ["Firmware", "Balance Charger", "Prop Balancer"],
+            "expectedAnswer": "Firmware"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Balance Charger as the central item; include Balance Charger, Prop Balancer, and Firmware naturally where visually appropriate, but make the real-world use of Balance Charger the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Firmware in a drone workshop context. Use the written scenario as the source of meaning: A Balance Charger manages appropriate battery-cell charging, and a Prop Balancer checks propeller balance. Firmware is built-in control software; a Ground Station is the remote monitoring and control interface. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Flight Log", "Waypoint", "Geofence"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.",
+          "scenario": "The Flight Log records events. A Waypoint is a selected route position, while a Geofence defines a virtual geographic boundary. A software boundary does not establish legal permission to fly.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Flight Log", "Waypoint", "Geofence"],
-            "expectedAnswer": "Flight Log"
+            "question": "Which term names a selected position on a route?",
+            "options": ["Waypoint", "Flight Log", "Geofence"],
+            "expectedAnswer": "Waypoint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Flight Log as the central item; include Flight Log, Waypoint, and Geofence naturally where visually appropriate, but make the real-world use of Flight Log the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Waypoint in a drone workshop context. Use the written scenario as the source of meaning: The Flight Log records events. A Waypoint is a selected route position, while a Geofence defines a virtual geographic boundary. A software boundary does not establish legal permission to fly. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Drone Workshop",
-      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Pliers, Heat Shrink, Zip Tie, and Loctite. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Balance Charger, Prop Balancer, Firmware, and Ground Station. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Flight Log, Waypoint, and Geofence. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Drone Workshop: Comparing the equipment",
+      "text": "The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work. The parts display contains Pliers, Heat Shrink tubing, a Zip Tie, and Loctite products. A Zip Tie fastens cables with a locking plastic loop. Product suitability is determined by the manufacturer’s instructions. A Balance Charger manages appropriate battery-cell charging, and a Prop Balancer checks propeller balance. Firmware is built-in control software; a Ground Station is the remote monitoring and control interface. The Flight Log records events. A Waypoint is a selected route position, while a Geofence defines a virtual geographic boundary. A software boundary does not establish legal permission to fly.",
+      "imageBrief": "One uncluttered drone workshop setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Soldering Iron, Multimeter, Screwdriver, and Hex Wrench and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Soldering Iron",
+        "prompt": "The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work.\nWhich instrument measures electrical quantities?",
+        "answer": "Multimeter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pliers, Heat Shrink, Zip Tie, and Loctite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pliers",
+        "prompt": "The parts display contains Pliers, Heat Shrink tubing, a Zip Tie, and Loctite products. A Zip Tie fastens cables with a locking plastic loop. Product suitability is determined by the manufacturer’s instructions.\nWhich fastener forms a locking plastic loop?",
+        "answer": "Zip Tie",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Balance Charger, Prop Balancer, Firmware, and Ground Station and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Balance Charger",
+        "prompt": "A Balance Charger manages appropriate battery-cell charging, and a Prop Balancer checks propeller balance. Firmware is built-in control software; a Ground Station is the remote monitoring and control interface.\nWhich term names the built-in control software?",
+        "answer": "Firmware",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flight Log, Waypoint, and Geofence and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Flight Log",
+        "prompt": "The Flight Log records events. A Waypoint is a selected route position, while a Geofence defines a virtual geographic boundary. A software boundary does not establish legal permission to fly.\nWhich term names a selected position on a route?",
+        "answer": "Waypoint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work. The parts display contains Pliers, Heat Shrink tubing, a Zip Tie, and Loctite products. A Zip Tie fastens cables with a locking plastic loop. Product suitability is determined by the manufacturer’s instructions. A Balance Charger manages appropriate battery-cell charging, and a Prop Balancer checks propeller balance. Firmware is built-in control software; a Ground Station is the remote monitoring and control interface. The Flight Log records events. A Waypoint is a selected route position, while a Geofence defines a virtual geographic boundary. A software boundary does not establish legal permission to fly.\nExplain the difference between Soldering Iron and Multimeter using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Soldering Iron"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Flight Controller” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Soldering Iron, Multimeter, Screwdriver, Hex Wrench, Pliers, Heat Shrink, Zip Tie, Loctite, Balance Charger, Prop Balancer, Firmware, Ground Station, Flight Log, Waypoint, and Geofence in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Soldering Iron, Multimeter, Screwdriver, Hex Wrench, Pliers, Heat Shrink, Zip Tie, Loctite, Balance Charger, Prop Balancer, Firmware, Ground Station, Flight Log, Waypoint, Geofence to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Drone Workshop: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Drone Workshop: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Soldering Iron and Multimeter, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The inactive tool display includes a Soldering Iron, Multimeter, Screwdriver, and Hex Wrench. The Multimeter measures electrical quantities. Only qualified staff handle powered equipment or battery work. Pause and answer: Which instrument measures electrical quantities?"
     },
     "spacedReview": "1 lesson(s) back: Flight Controller, Gps Module from drone-workshop-2\n3 lesson(s) back: Access Log, Cage from data-center-4\n7 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3"
   },
@@ -560,7 +509,7 @@
       "رؤية الطائرة مباشرة بالعين",
       "حد ارتفاع الطيران",
       "فحص ما قبل الطيران",
-      "مراقب",
+      "مراقب الطيران",
       "تأمين",
       "مجال جوي",
       "إدارة الطيران الفدرالية"
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "121-151 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Telemetry", "Pid Tuning", "Calibration", "Simulator"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.",
+          "scenario": "The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Telemetry", "Pid Tuning", "Calibration"],
-            "expectedAnswer": "Telemetry"
+            "question": "Which tool provides practice in a modeled environment?",
+            "options": ["Simulator", "Telemetry", "Pid Tuning"],
+            "expectedAnswer": "Simulator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Telemetry as the central item; include Telemetry, Pid Tuning, and Calibration naturally where visually appropriate, but make the real-world use of Telemetry the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Simulator in a drone workshop context. Use the written scenario as the source of meaning: The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mapping", "Registration", "License", "No Fly Zone"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.",
+          "scenario": "A Mapping project requires the operator to check local requirements. Registration officially records a drone or owner; a License concerns permission or qualification. A No Fly Zone indicates a prohibited or restricted area.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Mapping", "Registration", "License"],
-            "expectedAnswer": "Mapping"
+            "question": "Which process officially records the drone or owner?",
+            "options": ["Registration", "Mapping", "License"],
+            "expectedAnswer": "Registration"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Mapping through a realistic adult task; include Mapping, Registration, and License naturally where visually appropriate, but make the real-world use of Mapping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Registration in a drone workshop context. Use the written scenario as the source of meaning: A Mapping project requires the operator to check local requirements. Registration officially records a drone or owner; a License concerns permission or qualification. A No Fly Zone indicates a prohibited or restricted area. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check", "Spotter"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.",
+          "scenario": "The operator checks Visual Line Of Sight, the applicable Altitude Limit, and the Pre Flight Check. A Spotter helps observe the aircraft and its surroundings. The written account describes roles without giving a universal legal altitude.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Visual Line Of Sight", "Altitude Limit", "Pre Flight Check"],
-            "expectedAnswer": "Visual Line Of Sight"
+            "question": "Who helps observe the aircraft and surroundings?",
+            "options": ["Spotter", "Visual Line Of Sight", "Altitude Limit"],
+            "expectedAnswer": "Spotter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Visual Line Of Sight as the central item; include Visual Line Of Sight, Altitude Limit, and Pre Flight Check naturally where visually appropriate, but make the real-world use of Visual Line Of Sight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Spotter in a drone workshop context. Use the written scenario as the source of meaning: The operator checks Visual Line Of Sight, the applicable Altitude Limit, and the Pre Flight Check. A Spotter helps observe the aircraft and its surroundings. The written account describes roles without giving a universal legal altitude. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Insurance", "Airspace", "Faa"],
-          "scenario": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.",
+          "scenario": "The instructor explains Insurance and Airspace requirements. In a US example, the Faa is the civil aviation authority. Learners elsewhere consult their own relevant authority and current rules before any flight.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Insurance", "Airspace", "Faa"],
-            "expectedAnswer": "Insurance"
+            "question": "Which abbreviation names the US civil aviation authority in this example?",
+            "options": ["Faa", "Insurance", "Airspace"],
+            "expectedAnswer": "Faa"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Insurance through a realistic adult task; include Insurance, Airspace, and Faa naturally where visually appropriate, but make the real-world use of Insurance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Faa in a drone workshop context. Use the written scenario as the source of meaning: The instructor explains Insurance and Airspace requirements. In a US example, the Faa is the civil aviation authority. Learners elsewhere consult their own relevant authority and current rules before any flight. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written drone workshop situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Drone Workshop",
-      "text": "At the drone workshop, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Telemetry, Pid Tuning, Calibration, and Simulator. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Mapping, Registration, License, and No Fly Zone. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Insurance, Airspace, and Faa. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Drone Workshop. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Drone Workshop: A guided walk",
+      "text": "The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions. A Mapping project requires the operator to check local requirements. Registration officially records a drone or owner; a License concerns permission or qualification. A No Fly Zone indicates a prohibited or restricted area. The operator checks Visual Line Of Sight, the applicable Altitude Limit, and the Pre Flight Check. A Spotter helps observe the aircraft and its surroundings. The written account describes roles without giving a universal legal altitude. The instructor explains Insurance and Airspace requirements. In a US example, the Faa is the civil aviation authority. Learners elsewhere consult their own relevant authority and current rules before any flight.",
+      "imageBrief": "One uncluttered drone workshop setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telemetry, Pid Tuning, Calibration, and Simulator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Telemetry",
+        "prompt": "The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions.\nWhich tool provides practice in a modeled environment?",
+        "answer": "Simulator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mapping, Registration, License, and No Fly Zone and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Mapping",
+        "prompt": "A Mapping project requires the operator to check local requirements. Registration officially records a drone or owner; a License concerns permission or qualification. A No Fly Zone indicates a prohibited or restricted area.\nWhich process officially records the drone or owner?",
+        "answer": "Registration",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Visual Line Of Sight, Altitude Limit, Pre Flight Check, and Spotter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Visual Line Of Sight",
+        "prompt": "The operator checks Visual Line Of Sight, the applicable Altitude Limit, and the Pre Flight Check. A Spotter helps observe the aircraft and its surroundings. The written account describes roles without giving a universal legal altitude.\nWho helps observe the aircraft and surroundings?",
+        "answer": "Spotter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the drone workshop setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Insurance, Airspace, and Faa and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Insurance",
+        "prompt": "The instructor explains Insurance and Airspace requirements. In a US example, the Faa is the civil aviation authority. Learners elsewhere consult their own relevant authority and current rules before any flight.\nWhich abbreviation names the US civil aviation authority in this example?",
+        "answer": "Faa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions. A Mapping project requires the operator to check local requirements. Registration officially records a drone or owner; a License concerns permission or qualification. A No Fly Zone indicates a prohibited or restricted area. The operator checks Visual Line Of Sight, the applicable Altitude Limit, and the Pre Flight Check. A Spotter helps observe the aircraft and its surroundings. The written account describes roles without giving a universal legal altitude. The instructor explains Insurance and Airspace requirements. In a US example, the Faa is the civil aviation authority. Learners elsewhere consult their own relevant authority and current rules before any flight.\nExplain the difference between Telemetry and Pid Tuning using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Telemetry"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Soldering Iron” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the drone workshop task. Use Telemetry, PID Tuning, Calibration, Simulator, Mapping, Registration, License, No Fly Zone, Visual Line Of Sight, Altitude Limit, Pre Flight Check, Spotter, Insurance, Airspace, and Faa in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Telemetry, PID Tuning, Calibration, Simulator, Mapping, Registration, License, No Fly Zone, Visual Line Of Sight, Altitude Limit, Pre Flight Check, Spotter, Insurance, Airspace, Faa to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Drone Workshop: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Drone Workshop: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Telemetry and Pid Tuning, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The lesson covers Telemetry, Pid Tuning, Calibration, and a Simulator. The Simulator allows practice in a modeled environment before any authorized real flight. The course does not provide flight-control tuning instructions. Pause and answer: Which tool provides practice in a modeled environment?"
     },
     "spacedReview": "1 lesson(s) back: Soldering Iron, Multimeter from drone-workshop-3\n3 lesson(s) back: Quadcopter, Hexacopter from drone-workshop-1\n7 lesson(s) back: Server Rack, Blade Server from data-center-1"
   }

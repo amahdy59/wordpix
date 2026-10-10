@@ -30,13 +30,13 @@
       "غسيل سيارات آلي",
       "غسيل السيارة يدويًا",
       "خدمة ذاتية",
-      "غسيل دون ملامسة السيارة",
+      "غسيل دون ملامسة الفرش للسيارة",
       "غسيل بالرغوة",
       "غسيل مع طبقة شمع واقية",
       "الجزء السفلي للسيارة",
       "غسيل العجلات",
       "شطف",
-      "جاف",
+      "جاف / يجفف",
       "جهاز غسيل بالماء المضغوط",
       "مدفع رغوة",
       "فرشاة",
@@ -44,140 +44,134 @@
       "مجفف"
     ],
     "usage": {
-      "goal": "Learn to use the car wash 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the car wash.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated car-wash request, service, vehicle part or equipment purpose.",
+      "canDoStatement": "Can follow a supported service discussion and explain a practical distinction. Specialist equipment terms extend the supported task level; this is not an operating manual.",
+      "textType": "car-wash-service-account",
+      "readingTarget": "Supported connected adult service discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Automatic Wash", "Hand Wash", "Self Service"],
-          "scenario": "During a routine the car wash task, an adult compares Automatic Wash, Hand Wash, Self Service. The person selects Automatic Wash for the next step.",
+          "scenario": "Omar asks about an automatic wash using automated equipment and a hand wash done by workers. Self service means the customer uses provided equipment. He wants staff to wash the car by hand rather than operating equipment himself.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service matches Omar’s request?",
             "options": ["Automatic Wash", "Hand Wash", "Self Service"],
-            "expectedAnswer": "Automatic Wash"
+            "expectedAnswer": "Hand Wash"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Automatic Wash, Hand Wash, Self Service. The person selects Automatic Wash for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Automatic Wash, Hand Wash, Self Service in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Omar asks about an automatic wash using automated equipment and a hand wash done by workers. Self service means the customer uses provided equipment. He wants staff to wash the car by hand rather than operating equipment himself. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Touchless", "Foam Wash", "Wax Wash"],
-          "scenario": "During a routine the car wash task, an adult compares Touchless, Foam Wash, Wax Wash. The person selects Touchless for the next step.",
+          "scenario": "The menu distinguishes touchless washing, without brushes touching the body, from a foam wash using cleaning foam. A wax wash includes a wax-related service. The names describe different features and can overlap; Omar asks specifically about no brush contact.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which feature matches that request?",
             "options": ["Touchless", "Foam Wash", "Wax Wash"],
             "expectedAnswer": "Touchless"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Touchless, Foam Wash, Wax Wash. The person selects Touchless for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Touchless, Foam Wash, Wax Wash in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The menu distinguishes touchless washing, without brushes touching the body, from a foam wash using cleaning foam. A wax wash includes a wax-related service. The names describe different features and can overlap; Omar asks specifically about no brush contact. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Undercarriage", "Wheel Wash", "Rinse"],
-          "scenario": "During a routine the car wash task, an adult compares Undercarriage, Wheel Wash, Rinse. The person selects Undercarriage for the next step.",
+          "scenario": "Staff explain that the undercarriage is the vehicle’s underside. A wheel wash focuses on wheels, while a rinse washes away soap or remaining dirt. Omar wants to understand the vehicle part rather than a cleaning action.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the underside?",
             "options": ["Undercarriage", "Wheel Wash", "Rinse"],
             "expectedAnswer": "Undercarriage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Undercarriage, Wheel Wash, Rinse. The person selects Undercarriage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Undercarriage, Wheel Wash, Rinse in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Staff explain that the undercarriage is the vehicle’s underside. A wheel wash focuses on wheels, while a rinse washes away soap or remaining dirt. Omar wants to understand the vehicle part rather than a cleaning action. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dry", "Pressure Washer", "Foam Cannon"],
-          "scenario": "During a routine the car wash task, an adult compares Dry, Pressure Washer, Foam Cannon. The person selects Dry for the next step.",
+          "scenario": "Dry can mean without moisture or removing moisture. A pressure washer sprays water under pressure; a foam cannon is an attachment for spraying cleaning foam. The equipment display is inactive and explains purpose rather than operation.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which attachment sprays cleaning foam?",
             "options": ["Dry", "Pressure Washer", "Foam Cannon"],
-            "expectedAnswer": "Dry"
+            "expectedAnswer": "Foam Cannon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Dry, Pressure Washer, Foam Cannon. The person selects Dry for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Dry, Pressure Washer, Foam Cannon in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Dry can mean without moisture or removing moisture. A pressure washer sprays water under pressure; a foam cannon is an attachment for spraying cleaning foam. The equipment display is inactive and explains purpose rather than operation. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Brush", "Roller", "Dryer"],
-          "scenario": "During a routine the car wash task, an adult compares Brush, Roller, Dryer. The person selects Brush for the next step.",
+          "scenario": "In an inactive automatic-wash display, a brush has cleaning fibers and a roller is a rotating cylinder or brush. A dryer blows air to remove water. Omar asks about the air equipment rather than equipment touching the body.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which equipment blows air?",
             "options": ["Brush", "Roller", "Dryer"],
-            "expectedAnswer": "Brush"
+            "expectedAnswer": "Dryer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Brush, Roller, Dryer. The person selects Brush for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Brush, Roller, Dryer in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: In an inactive automatic-wash display, a brush has cleaning fibers and a roller is a rotating cylinder or brush. A dryer blows air to remove water. Omar asks about the air equipment rather than equipment touching the body. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Car Wash: Email",
-      "text": "Omar has an everyday task connected to the car wash. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing automatic wash, hand wash, and self service. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing touchless, foam wash, and wax wash. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Car Wash. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking what a wash includes",
+      "text": "Omar asks about an automatic wash, hand wash and self service. He chooses a hand wash by staff rather than operating equipment himself. He learns that touchless describes no brush contact, while foam wash and wax wash describe other features. Staff explain the undercarriage, wheel wash and rinse before discussing how the car becomes dry. An inactive pressure washer and foam cannon show different equipment. A brush and roller are contact equipment; a dryer uses air. Omar confirms the service rather than assuming each package includes everything.",
+      "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Omar asks about an automatic wash using automated equipment and a hand wash done by workers. Self service means the customer uses provided equipment. He wants staff to wash the car by hand rather than operating equipment himself. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery."
     },
     "exercises": [
       {
-        "prompt": "During a routine the car wash task, an adult compares Automatic Wash, Hand Wash, Self Service. The person selects Automatic Wash for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Automatic Wash",
+        "prompt": "Omar asks about an automatic wash using automated equipment and a hand wash done by workers. Self service means the customer uses provided equipment. He wants staff to wash the car by hand rather than operating equipment himself.\nWhich service matches Omar’s request?",
+        "answer": "Hand Wash",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Touchless, Foam Wash, Wax Wash. The person selects Touchless for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The menu distinguishes touchless washing, without brushes touching the body, from a foam wash using cleaning foam. A wax wash includes a wax-related service. The names describe different features and can overlap; Omar asks specifically about no brush contact.\nWhich feature matches that request?",
         "answer": "Touchless",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Undercarriage, Wheel Wash, Rinse. The person selects Undercarriage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Staff explain that the undercarriage is the vehicle’s underside. A wheel wash focuses on wheels, while a rinse washes away soap or remaining dirt. Omar wants to understand the vehicle part rather than a cleaning action.\nWhich term names the underside?",
         "answer": "Undercarriage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Dry, Pressure Washer, Foam Cannon. The person selects Dry for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dry",
+        "prompt": "Dry can mean without moisture or removing moisture. A pressure washer sprays water under pressure; a foam cannon is an attachment for spraying cleaning foam. The equipment display is inactive and explains purpose rather than operation.\nWhich attachment sprays cleaning foam?",
+        "answer": "Foam Cannon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Brush, Roller, Dryer. The person selects Brush for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Brush",
+        "prompt": "In an inactive automatic-wash display, a brush has cleaning fibers and a roller is a rotating cylinder or brush. A dryer blows air to remove water. Omar asks about the air equipment rather than equipment touching the body.\nWhich equipment blows air?",
+        "answer": "Dryer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Automatic Wash"
+        "prompt": "Omar asks about an automatic wash, hand wash and self service. He chooses a hand wash by staff rather than operating equipment himself. He learns that touchless describes no brush contact, while foam wash and wax wash describe other features. Staff explain the undercarriage, wheel wash and rinse before discussing how the car becomes dry. An inactive pressure washer and foam cannon show different equipment. A brush and roller are contact equipment; a dryer uses air. Omar confirms the service rather than assuming each package includes everything.\nWhich service does Omar choose?",
+        "answer": "A hand wash by staff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Touchless"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Conductor” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain one distinction in the account using Automatic Wash and Hand Wash.",
+        "answer": "An automatic wash uses automated equipment, while a hand wash is done by people.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Car Wash: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking what a wash includes",
+      "idea": "Read this adult service discussion and pause on its stated distinction. Show parked vehicles, inactive equipment and closed products; no operating or chemical demonstration.",
+      "scriptStarter": "Omar asks about an automatic wash using automated equipment and a hand wash done by workers. Self service means the customer uses provided equipment. He wants staff to wash the car by hand rather than operating equipment himself."
     },
     "spacedReview": "1 lesson(s) back: Conductor, Cleaner from subway-4\n3 lesson(s) back: Pole, Map from subway-2\n7 lesson(s) back: Map, Vending Machine from bus-station-2"
   },
@@ -226,140 +220,134 @@
       "مادة واقية"
     ],
     "usage": {
-      "goal": "Learn to use the car wash 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the car wash.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated car-wash request, service, vehicle part or equipment purpose.",
+      "canDoStatement": "Can follow a supported service discussion and explain a practical distinction. Specialist equipment terms extend the supported task level; this is not an operating manual.",
+      "textType": "car-wash-service-account",
+      "readingTarget": "Supported connected adult service discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Vacuum", "Air Freshener", "Towel"],
-          "scenario": "During a routine the car wash task, an adult compares Vacuum, Air Freshener, Towel. The person selects Vacuum for the next step.",
+          "scenario": "The interior-service account distinguishes a vacuum that removes loose dirt by suction, an air freshener that adds scent, and a towel that absorbs water. Omar asks for removal of loose crumbs, not a fragrance.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which equipment matches the request?",
             "options": ["Vacuum", "Air Freshener", "Towel"],
             "expectedAnswer": "Vacuum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Vacuum, Air Freshener, Towel. The person selects Vacuum for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Vacuum, Air Freshener, Towel in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The interior-service account distinguishes a vacuum that removes loose dirt by suction, an air freshener that adds scent, and a towel that absorbs water. Omar asks for removal of loose crumbs, not a fragrance. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sponge", "Bucket", "Car Soap"],
-          "scenario": "During a routine the car wash task, an adult compares Sponge, Bucket, Car Soap. The person selects Sponge for the next step.",
+          "scenario": "A sponge is an absorbent cleaning item, a bucket holds water or supplies, and car soap is a product intended for vehicle washing. The worker checks vehicle and product guidance before choosing suitable supplies.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the container?",
             "options": ["Sponge", "Bucket", "Car Soap"],
-            "expectedAnswer": "Sponge"
+            "expectedAnswer": "Bucket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Sponge, Bucket, Car Soap. The person selects Sponge for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Sponge, Bucket, Car Soap in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: A sponge is an absorbent cleaning item, a bucket holds water or supplies, and car soap is a product intended for vehicle washing. The worker checks vehicle and product guidance before choosing suitable supplies. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wax", "Tire Shine", "Glass Cleaner"],
-          "scenario": "During a routine the car wash task, an adult compares Wax, Tire Shine, Glass Cleaner. The person selects Wax for the next step.",
+          "scenario": "Staff distinguish wax for a surface coating, tire shine for an intended tire-surface finish and glass cleaner for suitable glass. The containers alone do not establish suitability. Omar asks about cleaning the windows rather than adding shine to tires.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product category matches the windows?",
             "options": ["Wax", "Tire Shine", "Glass Cleaner"],
-            "expectedAnswer": "Wax"
+            "expectedAnswer": "Glass Cleaner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Wax, Tire Shine, Glass Cleaner. The person selects Wax for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Wax, Tire Shine, Glass Cleaner in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Staff distinguish wax for a surface coating, tire shine for an intended tire-surface finish and glass cleaner for suitable glass. The containers alone do not establish suitability. Omar asks about cleaning the windows rather than adding shine to tires. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Interior Cleaner", "Polish", "Clay Bar"],
-          "scenario": "During a routine the car wash task, an adult compares Interior Cleaner, Polish, Clay Bar. The person selects Interior Cleaner for the next step.",
+          "scenario": "The service display describes interior cleaner for suitable cabin surfaces, polish for improving a surface finish and a clay bar for removing certain attached surface contaminants in detailing. These names do not teach a treatment procedure or guarantee scratch removal.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which category is for cabin surfaces?",
             "options": ["Interior Cleaner", "Polish", "Clay Bar"],
             "expectedAnswer": "Interior Cleaner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Interior Cleaner, Polish, Clay Bar. The person selects Interior Cleaner for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Interior Cleaner, Polish, Clay Bar in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The service display describes interior cleaner for suitable cabin surfaces, polish for improving a surface finish and a clay bar for removing certain attached surface contaminants in detailing. These names do not teach a treatment procedure or guarantee scratch removal. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Microfiber", "Degreaser", "Protectant"],
-          "scenario": "During a routine the car wash task, an adult compares Microfiber, Degreaser, Protectant. The person selects Microfiber for the next step.",
+          "scenario": "Microfiber is fine synthetic fiber used in cleaning cloths. Degreaser removes grease or oil, and protectant is intended to help protect a suitable surface. A cloth is not guaranteed scratch-free: condition, dirt and handling also matter.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which category removes grease?",
             "options": ["Microfiber", "Degreaser", "Protectant"],
-            "expectedAnswer": "Microfiber"
+            "expectedAnswer": "Degreaser"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Microfiber, Degreaser, Protectant. The person selects Microfiber for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Microfiber, Degreaser, Protectant in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Microfiber is fine synthetic fiber used in cleaning cloths. Degreaser removes grease or oil, and protectant is intended to help protect a suitable surface. A cloth is not guaranteed scratch-free: condition, dirt and handling also matter. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Car Wash: Personal Message",
-      "text": "Omar has an everyday task connected to the car wash. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing vacuum, air freshener, and towel. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing sponge, bucket, and car soap. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Car Wash. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking about cleaning products",
+      "text": "Omar wants crumbs removed with a vacuum, rather than scent from an air freshener. A towel, sponge and bucket are tools, while car soap is a product for washing. Staff explain wax, tire shine and glass cleaner, then compare interior cleaner, polish and clay bar. A microfiber cloth is made from fine synthetic fibers. Degreaser is intended to remove grease, while protectant is intended to help protect a suitable surface. Omar asks about purposes without treating the lesson as a product-selection or application manual. Suitability depends on the specific surface and directions.",
+      "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The interior-service account distinguishes a vacuum that removes loose dirt by suction, an air freshener that adds scent, and a towel that absorbs water. Omar asks for removal of loose crumbs, not a fragrance. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery."
     },
     "exercises": [
       {
-        "prompt": "During a routine the car wash task, an adult compares Vacuum, Air Freshener, Towel. The person selects Vacuum for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The interior-service account distinguishes a vacuum that removes loose dirt by suction, an air freshener that adds scent, and a towel that absorbs water. Omar asks for removal of loose crumbs, not a fragrance.\nWhich equipment matches the request?",
         "answer": "Vacuum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Sponge, Bucket, Car Soap. The person selects Sponge for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Sponge",
+        "prompt": "A sponge is an absorbent cleaning item, a bucket holds water or supplies, and car soap is a product intended for vehicle washing. The worker checks vehicle and product guidance before choosing suitable supplies.\nWhich item is the container?",
+        "answer": "Bucket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Wax, Tire Shine, Glass Cleaner. The person selects Wax for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Wax",
+        "prompt": "Staff distinguish wax for a surface coating, tire shine for an intended tire-surface finish and glass cleaner for suitable glass. The containers alone do not establish suitability. Omar asks about cleaning the windows rather than adding shine to tires.\nWhich product category matches the windows?",
+        "answer": "Glass Cleaner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Interior Cleaner, Polish, Clay Bar. The person selects Interior Cleaner for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The service display describes interior cleaner for suitable cabin surfaces, polish for improving a surface finish and a clay bar for removing certain attached surface contaminants in detailing. These names do not teach a treatment procedure or guarantee scratch removal.\nWhich category is for cabin surfaces?",
         "answer": "Interior Cleaner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Microfiber, Degreaser, Protectant. The person selects Microfiber for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Microfiber",
+        "prompt": "Microfiber is fine synthetic fiber used in cleaning cloths. Degreaser removes grease or oil, and protectant is intended to help protect a suitable surface. A cloth is not guaranteed scratch-free: condition, dirt and handling also matter.\nWhich category removes grease?",
+        "answer": "Degreaser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Vacuum"
+        "prompt": "Omar wants crumbs removed with a vacuum, rather than scent from an air freshener. A towel, sponge and bucket are tools, while car soap is a product for washing. Staff explain wax, tire shine and glass cleaner, then compare interior cleaner, polish and clay bar. A microfiber cloth is made from fine synthetic fibers. Degreaser is intended to remove grease, while protectant is intended to help protect a suitable surface. Omar asks about purposes without treating the lesson as a product-selection or application manual. Suitability depends on the specific surface and directions.\nWhat does Omar want removed?",
+        "answer": "Loose crumbs",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sponge"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Automatic Wash” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain one distinction in the account using Vacuum and Air Freshener.",
+        "answer": "The vacuum removes loose dirt, while the air freshener adds scent.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Car Wash: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking about cleaning products",
+      "idea": "Read this adult service discussion and pause on its stated distinction. Show parked vehicles, inactive equipment and closed products; no operating or chemical demonstration.",
+      "scriptStarter": "The interior-service account distinguishes a vacuum that removes loose dirt by suction, an air freshener that adds scent, and a towel that absorbs water. Omar asks for removal of loose crumbs, not a fragrance."
     },
     "spacedReview": "1 lesson(s) back: Automatic Wash, Hand Wash from car-wash-1\n3 lesson(s) back: Line Map, Direction Sign from subway-3\n7 lesson(s) back: Seat, Aisle from bus-station-3"
   },
@@ -393,155 +381,149 @@
     "targetWordsArabic": [
       "غطاء المحرك",
       "سقف",
-      "باب",
+      "باب السيارة",
       "صندوق السيارة",
       "مصد",
-      "مرآة",
+      "مرآة السيارة",
       "عجلة",
       "إطار سيارة",
-      "زجاج أمامي",
+      "الزجاج الأمامي",
       "مصباح أمامي",
       "حجرة غسيل أو خدمة",
       "مسار",
       "ناقل آلي للسيارات",
-      "آلة تعمل بالعملات",
+      "آلة دفع أو صرف بالعملات",
       "قطعة دفع"
     ],
     "usage": {
-      "goal": "Learn to use the car wash 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the car wash.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated car-wash request, service, vehicle part or equipment purpose.",
+      "canDoStatement": "Can follow a supported service discussion and explain a practical distinction. Specialist equipment terms extend the supported task level; this is not an operating manual.",
+      "textType": "car-wash-service-account",
+      "readingTarget": "Supported connected adult service discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hood", "Roof", "Door"],
-          "scenario": "During a routine the car wash task, an adult compares Hood, Roof, Door. The person selects Hood for the next step.",
+          "scenario": "Omar identifies the hood covering the engine area, the roof at the top of the passenger cabin and the door for entry. These are American-English vehicle terms; hood is bonnet in British English.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which part covers the engine area?",
             "options": ["Hood", "Roof", "Door"],
             "expectedAnswer": "Hood"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Hood, Roof, Door. The person selects Hood for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Hood, Roof, Door in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Omar identifies the hood covering the engine area, the roof at the top of the passenger cabin and the door for entry. These are American-English vehicle terms; hood is bonnet in British English. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Trunk", "Bumper", "Mirror"],
-          "scenario": "During a routine the car wash task, an adult compares Trunk, Bumper, Mirror. The person selects Trunk for the next step.",
+          "scenario": "The trunk is the luggage compartment, called the boot in British English. A bumper sits at the front or rear, while a mirror reflects the view. Omar stores his bag in the luggage compartment before the visit.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which part holds his bag?",
             "options": ["Trunk", "Bumper", "Mirror"],
             "expectedAnswer": "Trunk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Trunk, Bumper, Mirror. The person selects Trunk for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Trunk, Bumper, Mirror in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The trunk is the luggage compartment, called the boot in British English. A bumper sits at the front or rear, while a mirror reflects the view. Omar stores his bag in the luggage compartment before the visit. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wheel", "Tire", "Windshield"],
-          "scenario": "During a routine the car wash task, an adult compares Wheel, Tire, Windshield. The person selects Wheel for the next step.",
+          "scenario": "A wheel is the rotating structure, and a tire is its rubber covering. The windshield is the front glass, called a windscreen in British English. Omar asks about the front glass, not the rolling parts.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which part is the front glass?",
             "options": ["Wheel", "Tire", "Windshield"],
-            "expectedAnswer": "Wheel"
+            "expectedAnswer": "Windshield"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Wheel, Tire, Windshield. The person selects Wheel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Wheel, Tire, Windshield in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: A wheel is the rotating structure, and a tire is its rubber covering. The windshield is the front glass, called a windscreen in British English. Omar asks about the front glass, not the rolling parts. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Headlight", "Bay", "Track"],
-          "scenario": "During a routine the car wash task, an adult compares Headlight, Bay, Track. The person selects Headlight for the next step.",
+          "scenario": "A headlight provides light at the vehicle’s front. A bay is the space for a wash or service. A track guides vehicles in some automatic systems. Staff point out an empty service space while all equipment remains inactive.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the service space?",
             "options": ["Headlight", "Bay", "Track"],
-            "expectedAnswer": "Headlight"
+            "expectedAnswer": "Bay"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Headlight, Bay, Track. The person selects Headlight for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Headlight, Bay, Track in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: A headlight provides light at the vehicle’s front. A bay is the space for a wash or service. A track guides vehicles in some automatic systems. Staff point out an empty service space while all equipment remains inactive. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Conveyor", "Coin Machine", "Token"],
-          "scenario": "During a routine the car wash task, an adult compares Conveyor, Coin Machine, Token. The person selects Conveyor for the next step.",
+          "scenario": "A conveyor is a moving system carrying a vehicle through some washes. A coin machine accepts or handles coins according to its stated function, and a token is a coin-like payment object. Omar checks whether this site accepts tokens before paying.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the coin-like payment object?",
             "options": ["Conveyor", "Coin Machine", "Token"],
-            "expectedAnswer": "Conveyor"
+            "expectedAnswer": "Token"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Conveyor, Coin Machine, Token. The person selects Conveyor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Conveyor, Coin Machine, Token in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: A conveyor is a moving system carrying a vehicle through some washes. A coin machine accepts or handles coins according to its stated function, and a token is a coin-like payment object. Omar checks whether this site accepts tokens before paying. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Car Wash: Short Dialogue",
-      "text": "Omar has an everyday task connected to the car wash. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing hood, roof, and door. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing trunk, bumper, and mirror. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Car Wash. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Understanding the vehicle and the site",
+      "text": "Omar checks the hood, roof and door before storing a bag in the trunk. He notices the bumper and mirror, then asks about the wheel, tire and windshield. In American English, hood and trunk correspond to bonnet and boot in British English. A headlight sits at the front. Staff point out an empty bay and inactive track. Some sites use a conveyor, but equipment differs. Omar checks the coin machine’s function and whether a token is accepted before payment. He follows the site’s actual instructions rather than guessing from another car wash.",
+      "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Omar identifies the hood covering the engine area, the roof at the top of the passenger cabin and the door for entry. These are American-English vehicle terms; hood is bonnet in British English. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery."
     },
     "exercises": [
       {
-        "prompt": "During a routine the car wash task, an adult compares Hood, Roof, Door. The person selects Hood for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar identifies the hood covering the engine area, the roof at the top of the passenger cabin and the door for entry. These are American-English vehicle terms; hood is bonnet in British English.\nWhich part covers the engine area?",
         "answer": "Hood",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Trunk, Bumper, Mirror. The person selects Trunk for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The trunk is the luggage compartment, called the boot in British English. A bumper sits at the front or rear, while a mirror reflects the view. Omar stores his bag in the luggage compartment before the visit.\nWhich part holds his bag?",
         "answer": "Trunk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Wheel, Tire, Windshield. The person selects Wheel for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Wheel",
+        "prompt": "A wheel is the rotating structure, and a tire is its rubber covering. The windshield is the front glass, called a windscreen in British English. Omar asks about the front glass, not the rolling parts.\nWhich part is the front glass?",
+        "answer": "Windshield",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Headlight, Bay, Track. The person selects Headlight for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Headlight",
+        "prompt": "A headlight provides light at the vehicle’s front. A bay is the space for a wash or service. A track guides vehicles in some automatic systems. Staff point out an empty service space while all equipment remains inactive.\nWhich term names the service space?",
+        "answer": "Bay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Conveyor, Coin Machine, Token. The person selects Conveyor for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Conveyor",
+        "prompt": "A conveyor is a moving system carrying a vehicle through some washes. A coin machine accepts or handles coins according to its stated function, and a token is a coin-like payment object. Omar checks whether this site accepts tokens before paying.\nWhich item is the coin-like payment object?",
+        "answer": "Token",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hood"
+        "prompt": "Omar checks the hood, roof and door before storing a bag in the trunk. He notices the bumper and mirror, then asks about the wheel, tire and windshield. In American English, hood and trunk correspond to bonnet and boot in British English. A headlight sits at the front. Staff point out an empty bay and inactive track. Some sites use a conveyor, but equipment differs. Omar checks the coin machine’s function and whether a token is accepted before payment. He follows the site’s actual instructions rather than guessing from another car wash.\nWhere does Omar store his bag?",
+        "answer": "In the trunk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Trunk"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Vacuum” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain one distinction in the account using Hood and Roof.",
+        "answer": "The hood covers the engine area, and the roof is over the passenger cabin.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Car Wash: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Understanding the vehicle and the site",
+      "idea": "Read this adult service discussion and pause on its stated distinction. Show parked vehicles, inactive equipment and closed products; no operating or chemical demonstration.",
+      "scriptStarter": "Omar identifies the hood covering the engine area, the roof at the top of the passenger cabin and the door for entry. These are American-English vehicle terms; hood is bonnet in British English."
     },
     "spacedReview": "1 lesson(s) back: Vacuum, Air Freshener from car-wash-2\n3 lesson(s) back: Conductor, Cleaner from subway-4\n7 lesson(s) back: Tourist, Student from bus-station-4"
   },
@@ -573,8 +555,8 @@
     ],
     "targetWordsArabic": [
       "مؤقت",
-      "مصرف",
-      "علامة",
+      "مصرف مياه",
+      "لافتة",
       "لوحة الخدمات والأسعار",
       "منطقة انتظار",
       "شطف أولي",
@@ -588,140 +570,134 @@
       "ينعش"
     ],
     "usage": {
-      "goal": "Learn to use the car wash 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the car wash.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated car-wash request, service, vehicle part or equipment purpose.",
+      "canDoStatement": "Can follow a supported service discussion and explain a practical distinction. Specialist equipment terms extend the supported task level; this is not an operating manual.",
+      "textType": "car-wash-service-account",
+      "readingTarget": "Supported connected adult service discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Timer", "Drain", "Sign"],
-          "scenario": "During a routine the car wash task, an adult compares Timer, Drain, Sign. The person selects Timer for the next step.",
+          "scenario": "The timer measures a period, the drain carries water away and a sign gives information. Omar reads the sign for site rules before choosing a service. The drain is not a place for rubbish or vehicle parts.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which object gives site rules?",
             "options": ["Timer", "Drain", "Sign"],
-            "expectedAnswer": "Timer"
+            "expectedAnswer": "Sign"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Timer, Drain, Sign. The person selects Timer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Timer, Drain, Sign in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The timer measures a period, the drain carries water away and a sign gives information. Omar reads the sign for site rules before choosing a service. The drain is not a place for rubbish or vehicle parts. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Menu Board", "Waiting Area", "Pre Rinse"],
-          "scenario": "During a routine the car wash task, an adult compares Menu Board, Waiting Area, Pre Rinse. The person selects Menu Board for the next step.",
+          "scenario": "Omar compares services on the menu board. Staff ask him to remain in the waiting area. A pre rinse is an initial rinse before the main wash; he asks what the service includes rather than entering the work area.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Where do staff ask Omar to remain?",
             "options": ["Menu Board", "Waiting Area", "Pre Rinse"],
-            "expectedAnswer": "Menu Board"
+            "expectedAnswer": "Waiting Area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Menu Board, Waiting Area, Pre Rinse. The person selects Menu Board for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Menu Board, Waiting Area, Pre Rinse in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Omar compares services on the menu board. Staff ask him to remain in the waiting area. A pre rinse is an initial rinse before the main wash; he asks what the service includes rather than entering the work area. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Soap Spray", "Scrub", "Wax Coat"],
-          "scenario": "During a routine the car wash task, an adult compares Soap Spray, Scrub, Wax Coat. The person selects Soap Spray for the next step.",
+          "scenario": "The service description separates soap spray, applying cleaning soap as a spray, from scrub, rubbing to clean, and wax coat, a layer of wax. It explains meaning without prescribing technique, pressure or products.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names a layer rather than a cleaning action?",
             "options": ["Soap Spray", "Scrub", "Wax Coat"],
-            "expectedAnswer": "Soap Spray"
+            "expectedAnswer": "Wax Coat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Soap Spray, Scrub, Wax Coat. The person selects Soap Spray for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Soap Spray, Scrub, Wax Coat in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The service description separates soap spray, applying cleaning soap as a spray, from scrub, rubbing to clean, and wax coat, a layer of wax. It explains meaning without prescribing technique, pressure or products. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Blow Dry", "Hand Dry", "Vacuum Interior"],
-          "scenario": "During a routine the car wash task, an adult compares Blow Dry, Hand Dry, Vacuum Interior. The person selects Blow Dry for the next step.",
+          "scenario": "Blow dry means remove water with moving air; hand dry means dry manually with a suitable cloth. Vacuum interior means remove loose dirt inside by suction. Omar wants crumbs removed from the cabin rather than exterior drying.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service matches that request?",
             "options": ["Blow Dry", "Hand Dry", "Vacuum Interior"],
-            "expectedAnswer": "Blow Dry"
+            "expectedAnswer": "Vacuum Interior"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Blow Dry, Hand Dry, Vacuum Interior. The person selects Blow Dry for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Blow Dry, Hand Dry, Vacuum Interior in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Blow dry means remove water with moving air; hand dry means dry manually with a suitable cloth. Vacuum interior means remove loose dirt inside by suction. Omar wants crumbs removed from the cabin rather than exterior drying. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Wipe Dash", "Freshen"],
-          "scenario": "During a routine the car wash task, an adult compares Wipe Dash, Freshen, Timer. The person selects Wipe Dash for the next step.",
+          "scenario": "Wipe dash is a short label for wiping the dashboard; full instructions say wipe the dash. Freshen means make the interior smell or feel more pleasant, without proving disinfection or removing the cause of every odor. Omar requests the dashboard service.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Wipe Dash", "Freshen", "Timer"],
+            "question": "Which short service label matches his request?",
+            "options": ["Wipe Dash", "Freshen"],
             "expectedAnswer": "Wipe Dash"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the car wash context illustrating this situation: During a routine the car wash task, an adult compares Wipe Dash, Freshen, Timer. The person selects Wipe Dash for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the car wash scene showing lesson-related items or actions including Wipe Dash, Freshen in a natural setting."
+          "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: Wipe dash is a short label for wiping the dashboard; full instructions say wipe the dash. Freshen means make the interior smell or feel more pleasant, without proving disinfection or removing the cause of every odor. Omar requests the dashboard service. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery.",
+          "imageAlt": "Adult customer discussing service beside a parked vehicle and inactive car-wash equipment."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Car Wash: Everyday Description",
-      "text": "Omar has an everyday task connected to the car wash. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing timer, drain, and sign. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing menu board, waiting area, and pre rinse. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Car Wash. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading the service description",
+      "text": "Omar sees a timer, drain and sign. He checks the menu board, then stays in the waiting area as staff ask. The service description mentions pre rinse, soap spray, scrub and wax coat as different terms. Blow dry uses moving air, while hand dry uses a suitable cloth. Vacuum interior refers to removing loose dirt inside. Omar requests wipe dash, naturally expressed as wipe the dash in a full sentence. He asks what freshen means without assuming scent proves disinfection. This account explains vocabulary and stated choices, rather than machinery operation or product application.",
+      "imageBrief": "Photorealistic adult customer and worker discussing an inactive car-wash service area: The timer measures a period, the drain carries water away and a sign gives information. Omar reads the sign for site rules before choosing a service. The drain is not a place for rubbish or vehicle parts. Show a parked vehicle, clear waiting boundary and relevant inactive equipment or closed containers. No spraying people, chemical mixing, application demonstration, active conveyor, pressure settings, readable instructions, logos or answer highlighting. Product suitability, service inclusions and roles are stated in the account, not proven by imagery."
     },
     "exercises": [
       {
-        "prompt": "During a routine the car wash task, an adult compares Timer, Drain, Sign. The person selects Timer for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Timer",
+        "prompt": "The timer measures a period, the drain carries water away and a sign gives information. Omar reads the sign for site rules before choosing a service. The drain is not a place for rubbish or vehicle parts.\nWhich object gives site rules?",
+        "answer": "Sign",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Menu Board, Waiting Area, Pre Rinse. The person selects Menu Board for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Menu Board",
+        "prompt": "Omar compares services on the menu board. Staff ask him to remain in the waiting area. A pre rinse is an initial rinse before the main wash; he asks what the service includes rather than entering the work area.\nWhere do staff ask Omar to remain?",
+        "answer": "Waiting Area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Soap Spray, Scrub, Wax Coat. The person selects Soap Spray for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Soap Spray",
+        "prompt": "The service description separates soap spray, applying cleaning soap as a spray, from scrub, rubbing to clean, and wax coat, a layer of wax. It explains meaning without prescribing technique, pressure or products.\nWhich term names a layer rather than a cleaning action?",
+        "answer": "Wax Coat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Blow Dry, Hand Dry, Vacuum Interior. The person selects Blow Dry for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Blow Dry",
+        "prompt": "Blow dry means remove water with moving air; hand dry means dry manually with a suitable cloth. Vacuum interior means remove loose dirt inside by suction. Omar wants crumbs removed from the cabin rather than exterior drying.\nWhich service matches that request?",
+        "answer": "Vacuum Interior",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the car wash task, an adult compares Wipe Dash, Freshen, Timer. The person selects Wipe Dash for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Wipe dash is a short label for wiping the dashboard; full instructions say wipe the dash. Freshen means make the interior smell or feel more pleasant, without proving disinfection or removing the cause of every odor. Omar requests the dashboard service.\nWhich short service label matches his request?",
         "answer": "Wipe Dash",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Timer"
+        "prompt": "Omar sees a timer, drain and sign. He checks the menu board, then stays in the waiting area as staff ask. The service description mentions pre rinse, soap spray, scrub and wax coat as different terms. Blow dry uses moving air, while hand dry uses a suitable cloth. Vacuum interior refers to removing loose dirt inside. Omar requests wipe dash, naturally expressed as wipe the dash in a full sentence. He asks what freshen means without assuming scent proves disinfection. This account explains vocabulary and stated choices, rather than machinery operation or product application.\nWhere does Omar stay?",
+        "answer": "In the waiting area",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Menu Board"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hood” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain one distinction in the account using Timer and Drain.",
+        "answer": "The timer measures a period, while the drain carries water away.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Car Wash: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading the service description",
+      "idea": "Read this adult service discussion and pause on its stated distinction. Show parked vehicles, inactive equipment and closed products; no operating or chemical demonstration.",
+      "scriptStarter": "The timer measures a period, the drain carries water away and a sign gives information. Omar reads the sign for site rules before choosing a service. The drain is not a place for rubbish or vehicle parts."
     },
     "spacedReview": "1 lesson(s) back: Hood, Roof from car-wash-3\n3 lesson(s) back: Automatic Wash, Hand Wash from car-wash-1\n7 lesson(s) back: Platform, Tunnel from subway-1"
   }

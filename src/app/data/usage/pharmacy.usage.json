@@ -27,7 +27,7 @@
       "Ear Drops"
     ],
     "targetWordsArabic": [
-      "جهاز لوحي (تابلت)",
+      "قرص دوائي",
       "كبسولة",
       "شراب دوائي",
       "كريم موضعي",
@@ -44,135 +44,136 @@
       "قطرات أذن"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tablet", "Capsule", "Syrup"],
-          "scenario": "During a routine care or examination situation, an adult reviews Tablet, Capsule, Syrup. The next step focuses on Tablet.",
+          "scenario": "The pharmacist explains that a tablet is a solid medicine form. A capsule has a shell, while syrup is liquid. Omar asks to hear the word tablet again.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which solid medicine form does Omar ask to hear again?",
             "options": ["Tablet", "Capsule", "Syrup"],
             "expectedAnswer": "Tablet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Tablet, Capsule, Syrup. The next step focuses on Tablet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Tablet, Capsule, Syrup in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One plain unmarked compressed tablet on a clean surface; no dosage or pill identification claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cream", "Ointment", "Eye Drops"],
-          "scenario": "During a routine care or examination situation, an adult reviews Cream, Ointment, Eye Drops. The next step focuses on Cream.",
+          "scenario": "The pharmacist says cream is one form of medicine for the skin. Ointment and eye drops are different forms. Omar repeats cream to practice the word.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which medicine form does Omar repeat?",
             "options": ["Cream", "Ointment", "Eye Drops"],
             "expectedAnswer": "Cream"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Cream, Ointment, Eye Drops. The next step focuses on Cream. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Cream, Ointment, Eye Drops in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain closed cream container; appearance cannot establish its contents or use. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Inhaler", "Injection", "Patch"],
-          "scenario": "During a routine care or examination situation, an adult reviews Inhaler, Injection, Patch. The next step focuses on Inhaler.",
+          "scenario": "Omar asks the name of the medicine device held in the hand for breathing in a dose. The pharmacist calls it an inhaler. Injection and patch are different terms.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "What does the pharmacist call the breathing device?",
             "options": ["Inhaler", "Injection", "Patch"],
             "expectedAnswer": "Inhaler"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Inhaler, Injection, Patch. The next step focuses on Inhaler. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Inhaler, Injection, Patch in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An unused generic inhaler with cap on, no brand, dose or patient. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lozenge", "Pill Bottle", "Blister Pack"],
-          "scenario": "During a routine care or examination situation, an adult reviews Lozenge, Pill Bottle, Blister Pack. The next step focuses on Lozenge.",
+          "scenario": "The pharmacist names a lozenge as a small solid medicine made to dissolve in the mouth. The pill bottle and blister pack are containers, not the medicine form.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the medicine form rather than a container?",
             "options": ["Lozenge", "Pill Bottle", "Blister Pack"],
             "expectedAnswer": "Lozenge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Lozenge, Pill Bottle, Blister Pack. The next step focuses on Lozenge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Lozenge, Pill Bottle, Blister Pack in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One plain unmarked lozenge on a clean tray; no dosage or edible candy claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Suppository", "Nasal Spray", "Ear Drops"],
-          "scenario": "During a routine care or examination situation, an adult reviews Suppository, Nasal Spray, Ear Drops. The next step focuses on Suppository.",
+          "scenario": "Omar reads suppository on his vocabulary list. The pharmacist explains that it is a solid form inserted into a body opening. Nasal spray and ear drops are different forms.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which form does the pharmacist explain from the list?",
             "options": ["Suppository", "Nasal Spray", "Ear Drops"],
             "expectedAnswer": "Suppository"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Suppository, Nasal Spray, Ear Drops. The next step focuses on Suppository. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Suppository, Nasal Spray, Ear Drops in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One unmarked suppository beside its plain sealed wrapper; no body or use demonstration. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 1: A short reading",
-      "text": "Omar takes a prescription to the pharmacy. The pharmacist checks it and explains whether the medicine is a tablet, capsule, or syrup. Maya waits nearby and reads a product label. She sees cream and ointment in a different section. Omar asks the pharmacist his questions before collecting the prescribed medicine.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking about medicine forms",
+      "text": "Omar takes his prescription to the pharmacist. He asks whether the medicine comes as a tablet or a capsule. The pharmacist checks the prescription before answering. Omar also asks what cream and ointment mean. He does not choose a medicine from its color or shape. Before leaving, he asks the pharmacist to explain any instruction he does not understand.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Asking about medicine forms. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Tablet, Capsule, Syrup. The next step focuses on Tablet.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist explains that a tablet is a solid medicine form. A capsule has a shell, while syrup is liquid. Omar asks to hear the word tablet again.\nWhich solid medicine form does Omar ask to hear again?",
         "answer": "Tablet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Cream, Ointment, Eye Drops. The next step focuses on Cream.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist says cream is one form of medicine for the skin. Ointment and eye drops are different forms. Omar repeats cream to practice the word.\nWhich medicine form does Omar repeat?",
         "answer": "Cream",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Inhaler, Injection, Patch. The next step focuses on Inhaler.\nWhich option is the focus of the next step?",
+        "prompt": "Omar asks the name of the medicine device held in the hand for breathing in a dose. The pharmacist calls it an inhaler. Injection and patch are different terms.\nWhat does the pharmacist call the breathing device?",
         "answer": "Inhaler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Lozenge, Pill Bottle, Blister Pack. The next step focuses on Lozenge.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist names a lozenge as a small solid medicine made to dissolve in the mouth. The pill bottle and blister pack are containers, not the medicine form.\nWhich term names the medicine form rather than a container?",
         "answer": "Lozenge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Suppository, Nasal Spray, Ear Drops. The next step focuses on Suppository.\nWhich option is the focus of the next step?",
+        "prompt": "Omar reads suppository on his vocabulary list. The pharmacist explains that it is a solid form inserted into a body opening. Nasal spray and ear drops are different forms.\nWhich form does the pharmacist explain from the list?",
         "answer": "Suppository",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “face shield” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar take to the pharmacy?",
-        "answer": "A prescription",
+        "prompt": "Omar takes his prescription to the pharmacist. He asks whether the medicine comes as a tablet or a capsule. The pharmacist checks the prescription before answering. Omar also asks what cream and ointment mean. He does not choose a medicine from its color or shape. Before leaving, he asks the pharmacist to explain any instruction he does not understand.\nWho checks Omar's prescription?",
+        "answer": "The pharmacist.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Tablet”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The pharmacist explains that a tablet is a solid medicine form. A capsule has a shell, while syrup is liquid. Omar asks to hear the word tablet again. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking about medicine forms",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar takes his prescription to the pharmacist. He asks whether the medicine comes as a tablet or a capsule. The pharmacist checks the prescription before answering. Omar also asks what cream and ointment mean. He does not choose a medicine from its color or shape. Before leaving, he asks the pharmacist to explain any instruction he does not understand. Pause and ask: Who checks Omar's prescription?"
     },
     "spacedReview": "1 lesson(s) back: face shield, hand sanitizer from hospital-9\n3 lesson(s) back: prescription, surgery from hospital-7\n7 lesson(s) back: patient room, intensive care unit from hospital-3"
   },
@@ -205,12 +206,12 @@
     ],
     "targetWordsArabic": [
       "أنبوب مرهم",
-      "غسول أو لوشن",
+      "لوشن للبشرة",
       "قلم حقن",
       "منضدة صرف الوصفات",
       "آلة تسجيل النقد",
       "رف أدوية",
-      "ثلاجة (براد)",
+      "ثلاجة أدوية",
       "ميزان",
       "هاون ومدقّة",
       "أداة عدّ الأقراص",
@@ -218,138 +219,139 @@
       "ماسح باركود",
       "حاسوب",
       "قطّاعة أقراص",
-      "علبة تنظيم الحبوب"
+      "علبة تنظيم الأدوية"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ointment Tube", "Lotion", "Injection Pen"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ointment Tube, Lotion, Injection Pen. The next step focuses on Ointment Tube.",
+          "scenario": "The supervisor shows an ointment tube with a cap. Lotion is in another container, and the injection pen is in storage. The trainee names the tube.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which container does the trainee name?",
             "options": ["Ointment Tube", "Lotion", "Injection Pen"],
             "expectedAnswer": "Ointment Tube"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Ointment Tube, Lotion, Injection Pen. The next step focuses on Ointment Tube. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Ointment Tube, Lotion, Injection Pen in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain closed ointment tube, no printed medicine identity or dose. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Prescription Counter", "Cash Register", "Medicine Shelf"],
-          "scenario": "During a routine care or examination situation, an adult reviews Prescription Counter, Cash Register, Medicine Shelf. The next step focuses on Prescription Counter.",
+          "scenario": "The supervisor takes the trainee to the prescription counter, where staff receive and prepare prescription orders. The cash register and medicine shelf are nearby.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which counter handles prescription orders in this tour?",
             "options": ["Prescription Counter", "Cash Register", "Medicine Shelf"],
             "expectedAnswer": "Prescription Counter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Prescription Counter, Cash Register, Medicine Shelf. The next step focuses on Prescription Counter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Prescription Counter, Cash Register, Medicine Shelf in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A clean pharmacy prescription-service counter with no customer or readable text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Refrigerator", "Scale", "Mortar and Pestle"],
-          "scenario": "During a routine care or examination situation, an adult reviews Refrigerator, Scale, Mortar and Pestle. The next step focuses on Refrigerator.",
+          "scenario": "The supervisor shows a refrigerator reserved for pharmacy stock. A scale and mortar and pestle stand on the workbench. The trainee does not change any temperature setting.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which appliance stores the stock described in the tour?",
             "options": ["Refrigerator", "Scale", "Mortar and Pestle"],
             "expectedAnswer": "Refrigerator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Refrigerator, Scale, Mortar and Pestle. The next step focuses on Refrigerator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Refrigerator, Scale, Mortar and Pestle in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A professional pharmacy medicine refrigerator in a clinical work area, not a household food fridge; no labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pill Counter", "Label Printer", "Barcode Scanner"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pill Counter, Label Printer, Barcode Scanner. The next step focuses on Pill Counter.",
+          "scenario": "The trainee sees a pill counter used to count tablets. The label printer and barcode scanner are beside it. No medicine is dispensed during the tour.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item counts tablets?",
             "options": ["Pill Counter", "Label Printer", "Barcode Scanner"],
             "expectedAnswer": "Pill Counter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pill Counter, Label Printer, Barcode Scanner. The next step focuses on Pill Counter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pill Counter, Label Printer, Barcode Scanner in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An unused pharmacy tablet-counting tray with channel and spatula, no loose identifying medicines or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Computer", "Pill Cutter", "Pill Organizer"],
-          "scenario": "During a routine care or examination situation, an adult reviews Computer, Pill Cutter, Pill Organizer. The next step focuses on Computer.",
+          "scenario": "The supervisor opens a training program on the computer. The pill cutter and pill organizer stay in the drawer.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which device runs the training program?",
             "options": ["Computer", "Pill Cutter", "Pill Organizer"],
             "expectedAnswer": "Computer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Computer, Pill Cutter, Pill Organizer. The next step focuses on Computer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Computer, Pill Cutter, Pill Organizer in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pharmacy desktop computer with blank screen, keyboard and no patient data. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 2: A short reading",
-      "text": "Maya waits at the prescription counter. Behind it, a medicine shelf holds labeled packages, and a refrigerator stores other products. Omar notices a mortar and pestle in a display about pharmacy work. The pharmacist places an ointment tube in a bag and checks the customer's details before handing it over.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Touring the pharmacy work area",
+      "text": "A pharmacy trainee tours the work area with a supervisor. The supervisor shows the prescription counter and a medicine refrigerator. The trainee also sees a pill counter and a label printer. The computer is beside the barcode scanner. All medicine containers stay closed. The trainee writes down the equipment names before returning to the supervisor.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Touring the pharmacy work area. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ointment Tube, Lotion, Injection Pen. The next step focuses on Ointment Tube.\nWhich option is the focus of the next step?",
+        "prompt": "The supervisor shows an ointment tube with a cap. Lotion is in another container, and the injection pen is in storage. The trainee names the tube.\nWhich container does the trainee name?",
         "answer": "Ointment Tube",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Prescription Counter, Cash Register, Medicine Shelf. The next step focuses on Prescription Counter.\nWhich option is the focus of the next step?",
+        "prompt": "The supervisor takes the trainee to the prescription counter, where staff receive and prepare prescription orders. The cash register and medicine shelf are nearby.\nWhich counter handles prescription orders in this tour?",
         "answer": "Prescription Counter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Refrigerator, Scale, Mortar and Pestle. The next step focuses on Refrigerator.\nWhich option is the focus of the next step?",
+        "prompt": "The supervisor shows a refrigerator reserved for pharmacy stock. A scale and mortar and pestle stand on the workbench. The trainee does not change any temperature setting.\nWhich appliance stores the stock described in the tour?",
         "answer": "Refrigerator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pill Counter, Label Printer, Barcode Scanner. The next step focuses on Pill Counter.\nWhich option is the focus of the next step?",
+        "prompt": "The trainee sees a pill counter used to count tablets. The label printer and barcode scanner are beside it. No medicine is dispensed during the tour.\nWhich item counts tablets?",
         "answer": "Pill Counter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Computer, Pill Cutter, Pill Organizer. The next step focuses on Computer.\nWhich option is the focus of the next step?",
+        "prompt": "The supervisor opens a training program on the computer. The pill cutter and pill organizer stay in the drawer.\nWhich device runs the training program?",
         "answer": "Computer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Tablet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does Maya wait?",
-        "answer": "At the prescription counter",
+        "prompt": "A pharmacy trainee tours the work area with a supervisor. The supervisor shows the prescription counter and a medicine refrigerator. The trainee also sees a pill counter and a label printer. The computer is beside the barcode scanner. All medicine containers stay closed. The trainee writes down the equipment names before returning to the supervisor.\nDo the medicine containers stay open or closed?",
+        "answer": "Closed.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Ointment Tube”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The supervisor shows an ointment tube with a cap. Lotion is in another container, and the injection pen is in storage. The trainee names the tube. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Touring the pharmacy work area",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: A pharmacy trainee tours the work area with a supervisor. The supervisor shows the prescription counter and a medicine refrigerator. The trainee also sees a pill counter and a label printer. The computer is beside the barcode scanner. All medicine containers stay closed. The trainee writes down the equipment names before returning to the supervisor. Pause and ask: Do the medicine containers stay open or closed?"
     },
     "spacedReview": "1 lesson(s) back: Tablet, Capsule from pharmacy-1\n3 lesson(s) back: CT scan, colonoscopy from hospital-8\n7 lesson(s) back: blood bank, stethoscope from hospital-4"
   },
@@ -394,139 +396,140 @@
       "جهاز قياس سكر الدم",
       "اختبار حمل",
       "معقم يدين",
-      "مطهر",
+      "مطهر للأسطح",
       "كرة قطنية"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Medicine Cabinet", "Refrigerated Medicine", "Pharmacist Coat"],
-          "scenario": "During a routine care or examination situation, an adult reviews Medicine Cabinet, Refrigerated Medicine, Pharmacist Coat. The next step focuses on Medicine Cabinet.",
+          "scenario": "The clerk puts approved stock in the medicine cabinet after the pharmacist checks the storage instructions. Refrigerated medicine goes elsewhere. The pharmacist coat hangs by the door.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does the clerk put the stock described here?",
             "options": ["Medicine Cabinet", "Refrigerated Medicine", "Pharmacist Coat"],
             "expectedAnswer": "Medicine Cabinet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Medicine Cabinet, Refrigerated Medicine, Pharmacist Coat. The next step focuses on Medicine Cabinet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Medicine Cabinet, Refrigerated Medicine, Pharmacist Coat in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A closed secure medicine storage cabinet in a pharmacy, no labels or visible contents. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pharmacy Counter", "Digital Scale", "Patient Profile"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pharmacy Counter, Digital Scale, Patient Profile. The next step focuses on Pharmacy Counter.",
+          "scenario": "A customer waits at the pharmacy counter. The digital scale is behind it, and a patient profile is private information in the pharmacy system.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does the customer wait?",
             "options": ["Pharmacy Counter", "Digital Scale", "Patient Profile"],
             "expectedAnswer": "Pharmacy Counter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy Counter, Digital Scale, Patient Profile. The next step focuses on Pharmacy Counter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy Counter, Digital Scale, Patient Profile in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An empty pharmacy service counter, no customer or readable patient information. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bandage", "Plaster", "Thermometer"],
-          "scenario": "During a routine care or examination situation, an adult reviews Bandage, Plaster, Thermometer. The next step focuses on Bandage.",
+          "scenario": "The delivery includes a bandage roll. A small plaster and thermometer are in another box. The clerk records the roll first.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which rolled item does the clerk record first?",
             "options": ["Bandage", "Plaster", "Thermometer"],
             "expectedAnswer": "Bandage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Bandage, Plaster, Thermometer. The next step focuses on Bandage. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Bandage, Plaster, Thermometer in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One rolled cloth bandage with a loose end on a clean tray. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Blood Pressure Monitor", "Glucose Meter", "Pregnancy Test"],
-          "scenario": "During a routine care or examination situation, an adult reviews Blood Pressure Monitor, Glucose Meter, Pregnancy Test. The next step focuses on Blood Pressure Monitor.",
+          "scenario": "The pharmacist checks a blood pressure monitor with an arm cuff. The glucose meter and pregnancy test are different products in the delivery.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which monitor has an arm cuff?",
             "options": ["Blood Pressure Monitor", "Glucose Meter", "Pregnancy Test"],
             "expectedAnswer": "Blood Pressure Monitor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Blood Pressure Monitor, Glucose Meter, Pregnancy Test. The next step focuses on Blood Pressure Monitor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Blood Pressure Monitor, Glucose Meter, Pregnancy Test in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A blood-pressure monitor beside its cuff; blank display, no readings or patient. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hand Sanitizer", "Disinfectant", "Cotton Ball"],
-          "scenario": "During a routine care or examination situation, an adult reviews Hand Sanitizer, Disinfectant, Cotton Ball. The next step focuses on Hand Sanitizer.",
+          "scenario": "The clerk records a bottle of hand sanitizer. Disinfectant for surfaces and cotton balls are in separate boxes. The cotton ball is in another sealed packet beside the bottle.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which bottle does the clerk record?",
             "options": ["Hand Sanitizer", "Disinfectant", "Cotton Ball"],
             "expectedAnswer": "Hand Sanitizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Hand Sanitizer, Disinfectant, Cotton Ball. The next step focuses on Hand Sanitizer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Hand Sanitizer, Disinfectant, Cotton Ball in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain capped hand-sanitizer pump bottle; identity is supplied by written context, not bottle appearance. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 3: A short reading",
-      "text": "Omar reads the pharmacy signs to find the right counter. A pharmacist checks a patient profile before serving a customer. Maya buys a bandage and a thermometer from the shop area. She sees a digital scale behind the counter. The refrigerated medicine stays in a separate section managed by the pharmacy staff.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking a pharmacy delivery",
+      "text": "The stock clerk checks a pharmacy delivery with the pharmacist. The order includes bandages, thermometers and hand sanitizer. Some stock belongs in the medicine cabinet. The pharmacist checks the storage instructions for every item before it is put away. A blood pressure monitor is also in the delivery. The clerk records the items and reports a missing box.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Checking a pharmacy delivery. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Medicine Cabinet, Refrigerated Medicine, Pharmacist Coat. The next step focuses on Medicine Cabinet.\nWhich option is the focus of the next step?",
+        "prompt": "The clerk puts approved stock in the medicine cabinet after the pharmacist checks the storage instructions. Refrigerated medicine goes elsewhere. The pharmacist coat hangs by the door.\nWhere does the clerk put the stock described here?",
         "answer": "Medicine Cabinet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Counter, Digital Scale, Patient Profile. The next step focuses on Pharmacy Counter.\nWhich option is the focus of the next step?",
+        "prompt": "A customer waits at the pharmacy counter. The digital scale is behind it, and a patient profile is private information in the pharmacy system.\nWhere does the customer wait?",
         "answer": "Pharmacy Counter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Bandage, Plaster, Thermometer. The next step focuses on Bandage.\nWhich option is the focus of the next step?",
+        "prompt": "The delivery includes a bandage roll. A small plaster and thermometer are in another box. The clerk records the roll first.\nWhich rolled item does the clerk record first?",
         "answer": "Bandage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Blood Pressure Monitor, Glucose Meter, Pregnancy Test. The next step focuses on Blood Pressure Monitor.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist checks a blood pressure monitor with an arm cuff. The glucose meter and pregnancy test are different products in the delivery.\nWhich monitor has an arm cuff?",
         "answer": "Blood Pressure Monitor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Hand Sanitizer, Disinfectant, Cotton Ball. The next step focuses on Hand Sanitizer.\nWhich option is the focus of the next step?",
+        "prompt": "The clerk records a bottle of hand sanitizer. Disinfectant for surfaces and cotton balls are in separate boxes. The cotton ball is in another sealed packet beside the bottle.\nWhich bottle does the clerk record?",
         "answer": "Hand Sanitizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ointment Tube” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Maya buy?",
-        "answer": "A bandage and a thermometer",
+        "prompt": "The stock clerk checks a pharmacy delivery with the pharmacist. The order includes bandages, thermometers and hand sanitizer. Some stock belongs in the medicine cabinet. The pharmacist checks the storage instructions for every item before it is put away. A blood pressure monitor is also in the delivery. The clerk records the items and reports a missing box.\nWho checks the storage instructions?",
+        "answer": "The pharmacist.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Medicine Cabinet”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The clerk puts approved stock in the medicine cabinet after the pharmacist checks the storage instructions. Refrigerated medicine goes elsewhere. The pharmacist coat hangs by the door. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking a pharmacy delivery",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: The stock clerk checks a pharmacy delivery with the pharmacist. The order includes bandages, thermometers and hand sanitizer. Some stock belongs in the medicine cabinet. The pharmacist checks the storage instructions for every item before it is put away. A blood pressure monitor is also in the delivery. The clerk records the items and reports a missing box. Pause and ask: Who checks the storage instructions?"
     },
     "spacedReview": "1 lesson(s) back: Ointment Tube, Lotion from pharmacy-2\n3 lesson(s) back: face shield, hand sanitizer from hospital-9\n7 lesson(s) back: pulse oximeter, ECG machine from hospital-5"
   },
@@ -575,135 +578,138 @@
       "مزيل عرق"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gauze", "Vitamin Supplement", "Mineral Supplement"],
-          "scenario": "During a routine care or examination situation, an adult reviews Gauze, Vitamin Supplement, Mineral Supplement. The next step focuses on Gauze.",
+          "scenario": "The clerk finds gauze, a loosely woven medical cloth, in the supplies box. Vitamin and mineral supplements are on a different shelf. A vitamin supplement supplies vitamins, while a mineral supplement supplies minerals.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is a loosely woven medical cloth?",
             "options": ["Gauze", "Vitamin Supplement", "Mineral Supplement"],
             "expectedAnswer": "Gauze"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Gauze, Vitamin Supplement, Mineral Supplement. The next step focuses on Gauze. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Gauze, Vitamin Supplement, Mineral Supplement in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Folded medical gauze with its open weave clearly visible, no treatment. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Herbal Remedy", "Antibiotic", "Painkiller"],
-          "scenario": "During a routine care or examination situation, an adult reviews Herbal Remedy, Antibiotic, Painkiller. The next step focuses on Herbal Remedy.",
+          "scenario": "Mina asks about herbal remedy as a term for a product based on plants. She also asks about antibiotic and painkiller. The pharmacist does not claim that plant-based means safe.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term refers to a product based on plants?",
             "options": ["Herbal Remedy", "Antibiotic", "Painkiller"],
             "expectedAnswer": "Herbal Remedy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Herbal Remedy, Antibiotic, Painkiller. The next step focuses on Herbal Remedy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Herbal Remedy, Antibiotic, Painkiller in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A closed plain pharmacy product container; no healing claims, herbs used as proof or readable labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Anti-inflammatory", "Antihistamine", "Antacid"],
-          "scenario": "During a routine care or examination situation, an adult reviews Anti-inflammatory, Antihistamine, Antacid. The next step focuses on Anti-inflammatory.",
+          "scenario": "The pharmacist explains anti-inflammatory as a term for medicine that reduces inflammation. Antihistamine and antacid have different meanings. Mina writes the first term down.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term does Mina write down?",
             "options": ["Anti-inflammatory", "Antihistamine", "Antacid"],
             "expectedAnswer": "Anti-inflammatory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Anti-inflammatory, Antihistamine, Antacid. The next step focuses on Anti-inflammatory. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Anti-inflammatory, Antihistamine, Antacid in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk, no medicine identification, diagnosis or readable text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Shampoo", "Conditioner", "Body Lotion"],
-          "scenario": "During a routine care or examination situation, an adult reviews Shampoo, Conditioner, Body Lotion. The next step focuses on Shampoo.",
+          "scenario": "Mina buys shampoo for washing her hair. The conditioner and body lotion are other products on the shelf.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which product does Mina buy for washing her hair?",
             "options": ["Shampoo", "Conditioner", "Body Lotion"],
             "expectedAnswer": "Shampoo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Shampoo, Conditioner, Body Lotion. The next step focuses on Shampoo. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Shampoo, Conditioner, Body Lotion in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain closed shampoo bottle; written context supplies its contents. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sunscreen", "Lip Balm", "Deodorant"],
-          "scenario": "During a routine care or examination situation, an adult reviews Sunscreen, Lip Balm, Deodorant. The next step focuses on Sunscreen.",
+          "scenario": "Mina asks the pharmacist about sunscreen before an outdoor trip. She also asks about lip balm and deodorant, but the trip question concerns sun protection.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which product does Mina ask about for sun protection?",
             "options": ["Sunscreen", "Lip Balm", "Deodorant"],
             "expectedAnswer": "Sunscreen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Sunscreen, Lip Balm, Deodorant. The next step focuses on Sunscreen. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Sunscreen, Lip Balm, Deodorant in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain sunscreen tube on a shelf, no SPF value, brand or treatment claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 4: A short reading",
-      "text": "Maya compares the words on pharmacy labels. A vitamin supplement is on one shelf and a herbal remedy on another. Omar asks the pharmacist about a product instead of choosing from the name alone. The lesson introduces antibiotic, painkiller, and antihistamine as different medicine terms. They write each word beside its definition.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking the pharmacist for help",
+      "text": "Mina asks a pharmacist to explain some unfamiliar words. She asks how a painkiller differs from an antibiotic. The pharmacist answers without asking her to choose from a picture. Mina also asks about sunscreen and lip balm. She reads the written directions with the pharmacist before buying anything. If a direction is unclear, she asks another question.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Asking the pharmacist for help. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Gauze, Vitamin Supplement, Mineral Supplement. The next step focuses on Gauze.\nWhich option is the focus of the next step?",
+        "prompt": "The clerk finds gauze, a loosely woven medical cloth, in the supplies box. Vitamin and mineral supplements are on a different shelf. A vitamin supplement supplies vitamins, while a mineral supplement supplies minerals.\nWhich item is a loosely woven medical cloth?",
         "answer": "Gauze",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Herbal Remedy, Antibiotic, Painkiller. The next step focuses on Herbal Remedy.\nWhich option is the focus of the next step?",
+        "prompt": "Mina asks about herbal remedy as a term for a product based on plants. She also asks about antibiotic and painkiller. The pharmacist does not claim that plant-based means safe.\nWhich term refers to a product based on plants?",
         "answer": "Herbal Remedy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Anti-inflammatory, Antihistamine, Antacid. The next step focuses on Anti-inflammatory.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist explains anti-inflammatory as a term for medicine that reduces inflammation. Antihistamine and antacid have different meanings. Mina writes the first term down.\nWhich term does Mina write down?",
         "answer": "Anti-inflammatory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Shampoo, Conditioner, Body Lotion. The next step focuses on Shampoo.\nWhich option is the focus of the next step?",
+        "prompt": "Mina buys shampoo for washing her hair. The conditioner and body lotion are other products on the shelf.\nWhich product does Mina buy for washing her hair?",
         "answer": "Shampoo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Sunscreen, Lip Balm, Deodorant. The next step focuses on Sunscreen.\nWhich option is the focus of the next step?",
+        "prompt": "Mina asks the pharmacist about sunscreen before an outdoor trip. She also asks about lip balm and deodorant, but the trip question concerns sun protection.\nWhich product does Mina ask about for sun protection?",
         "answer": "Sunscreen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Medicine Cabinet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Who does Omar ask about a product?",
-        "answer": "The pharmacist",
+        "prompt": "Mina asks a pharmacist to explain some unfamiliar words. She asks how a painkiller differs from an antibiotic. The pharmacist answers without asking her to choose from a picture. Mina also asks about sunscreen and lip balm. She reads the written directions with the pharmacist before buying anything. If a direction is unclear, she asks another question.\nWhat does Mina do if a direction is unclear?",
+        "answer": "She asks another question.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Gauze”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The clerk finds gauze, a loosely woven medical cloth, in the supplies box. Vitamin and mineral supplements are on a different shelf. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking the pharmacist for help",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Mina asks a pharmacist to explain some unfamiliar words. She asks how a painkiller differs from an antibiotic. The pharmacist answers without asking her to choose from a picture. Mina also asks about sunscreen and lip balm. She reads the written directions with the pharmacist before buying anything. If a direction is unclear, she asks another question. Pause and ask: What does Mina do if a direction is unclear?"
     },
     "spacedReview": "1 lesson(s) back: Medicine Cabinet, Refrigerated Medicine from pharmacy-3\n3 lesson(s) back: Tablet, Capsule from pharmacy-1\n7 lesson(s) back: fracture, allergy from hospital-6"
   },
@@ -752,135 +758,138 @@
       "عميل"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 5 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Contact Lens Solution", "Vitamin", "Supplement"],
-          "scenario": "During a routine care or examination situation, an adult reviews Contact Lens Solution, Vitamin, Supplement. The next step focuses on Contact Lens Solution.",
+          "scenario": "Omar asks about contact lens solution for caring for his lenses. Vitamin and supplement are different terms on his vocabulary list.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which product does Omar ask about for his lenses?",
             "options": ["Contact Lens Solution", "Vitamin", "Supplement"],
             "expectedAnswer": "Contact Lens Solution"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Contact Lens Solution, Vitamin, Supplement. The next step focuses on Contact Lens Solution. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Contact Lens Solution, Vitamin, Supplement in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A closed plain lens-care bottle beside an empty lens case; no instructions or brand. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Probiotic", "Laxative", "Cough Syrup"],
-          "scenario": "During a routine care or examination situation, an adult reviews Probiotic, Laxative, Cough Syrup. The next step focuses on Probiotic.",
+          "scenario": "Omar asks what probiotic means. The pharmacist explains that the term concerns certain live microorganisms used in products. Laxative and cough syrup have different meanings.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term does Omar ask the pharmacist to explain?",
             "options": ["Probiotic", "Laxative", "Cough Syrup"],
             "expectedAnswer": "Probiotic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Probiotic, Laxative, Cough Syrup. The next step focuses on Probiotic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Probiotic, Laxative, Cough Syrup in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk; no microbes, treatment effects or identification by packaging. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Throat Lozenge", "Insulin", "Drug Interaction Checker"],
-          "scenario": "During a routine care or examination situation, an adult reviews Throat Lozenge, Insulin, Drug Interaction Checker. The next step focuses on Throat Lozenge.",
+          "scenario": "The pharmacist explains throat lozenge as a solid product that dissolves in the mouth. Insulin is a different medicine, and a drug interaction checker is a tool.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which solid product dissolves in the mouth in this explanation?",
             "options": ["Throat Lozenge", "Insulin", "Drug Interaction Checker"],
             "expectedAnswer": "Throat Lozenge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Throat Lozenge, Insulin, Drug Interaction Checker. The next step focuses on Throat Lozenge. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Throat Lozenge, Insulin, Drug Interaction Checker in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One plain unmarked throat lozenge with sealed plain wrapper; no dose or benefit claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Compounding Area", "Clean Room", "Pharmacist"],
-          "scenario": "During a routine care or examination situation, an adult reviews Compounding Area, Clean Room, Pharmacist. The next step focuses on Compounding Area.",
+          "scenario": "The supervisor shows a compounding area where pharmacy staff prepare some medicines. The clean room is a separate controlled space. The pharmacist leads the tour.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which area does the supervisor show?",
             "options": ["Compounding Area", "Clean Room", "Pharmacist"],
             "expectedAnswer": "Compounding Area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Compounding Area, Clean Room, Pharmacist. The next step focuses on Compounding Area. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Compounding Area, Clean Room, Pharmacist in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A clean pharmacy compounding workbench with unused equipment, no preparation procedure or labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Pharmacy Technician", "Cashier", "Customer"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pharmacy Technician, Cashier, Customer. The next step focuses on Pharmacy Technician.",
+          "scenario": "The pharmacy technician checks Omar's order with the pharmacist. The cashier handles payment, and Omar is the customer.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which staff member checks the order with the pharmacist?",
             "options": ["Pharmacy Technician", "Cashier", "Customer"],
             "expectedAnswer": "Pharmacy Technician"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy Technician, Cashier, Customer. The next step focuses on Pharmacy Technician. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy Technician, Cashier, Customer in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One modest adult male pharmacy technician at a stock workbench, no patient, logo or text; role comes from context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 5: A short reading",
-      "text": "Omar asks where to find contact lens solution. Maya looks for a throat lozenge near the cough syrup. A pharmacist is helping another customer with a prescription. The learners use the words on their shopping lists to ask clear questions. They check each product label before taking it to the counter.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Learning who does what",
+      "text": "Omar visits a pharmacy to ask about his order. A pharmacy technician checks the order details with the pharmacist. The cashier handles the payment. In the staff area, a compounding area is separate from a clean room. Omar also asks about contact lens solution. The pharmacist explains the product directions before Omar leaves.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Learning who does what. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Contact Lens Solution, Vitamin, Supplement. The next step focuses on Contact Lens Solution.\nWhich option is the focus of the next step?",
+        "prompt": "Omar asks about contact lens solution for caring for his lenses. Vitamin and supplement are different terms on his vocabulary list.\nWhich product does Omar ask about for his lenses?",
         "answer": "Contact Lens Solution",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Probiotic, Laxative, Cough Syrup. The next step focuses on Probiotic.\nWhich option is the focus of the next step?",
+        "prompt": "Omar asks what probiotic means. The pharmacist explains that the term concerns certain live microorganisms used in products. Laxative and cough syrup have different meanings.\nWhich term does Omar ask the pharmacist to explain?",
         "answer": "Probiotic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Throat Lozenge, Insulin, Drug Interaction Checker. The next step focuses on Throat Lozenge.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacist explains throat lozenge as a solid product that dissolves in the mouth. Insulin is a different medicine, and a drug interaction checker is a tool.\nWhich solid product dissolves in the mouth in this explanation?",
         "answer": "Throat Lozenge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Compounding Area, Clean Room, Pharmacist. The next step focuses on Compounding Area.\nWhich option is the focus of the next step?",
+        "prompt": "The supervisor shows a compounding area where pharmacy staff prepare some medicines. The clean room is a separate controlled space. The pharmacist leads the tour.\nWhich area does the supervisor show?",
         "answer": "Compounding Area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Technician, Cashier, Customer. The next step focuses on Pharmacy Technician.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacy technician checks Omar's order with the pharmacist. The cashier handles payment, and Omar is the customer.\nWhich staff member checks the order with the pharmacist?",
         "answer": "Pharmacy Technician",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Gauze” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What product does Omar ask for?",
-        "answer": "Contact lens solution",
+        "prompt": "Omar visits a pharmacy to ask about his order. A pharmacy technician checks the order details with the pharmacist. The cashier handles the payment. In the staff area, a compounding area is separate from a clean room. Omar also asks about contact lens solution. The pharmacist explains the product directions before Omar leaves.\nWho handles the payment?",
+        "answer": "The cashier.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Contact Lens Solution”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Omar asks about contact lens solution for caring for his lenses. Vitamin and supplement are different terms on his vocabulary list. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Learning who does what",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar visits a pharmacy to ask about his order. A pharmacy technician checks the order details with the pharmacist. The cashier handles the payment. In the staff area, a compounding area is separate from a clean room. Omar also asks about contact lens solution. The pharmacist explains the product directions before Omar leaves. Pause and ask: Who handles the payment?"
     },
     "spacedReview": "1 lesson(s) back: Gauze, Vitamin Supplement from pharmacy-4\n3 lesson(s) back: Ointment Tube, Lotion from pharmacy-2\n7 lesson(s) back: prescription, surgery from hospital-7"
   },
@@ -929,135 +938,137 @@
       "منطقة انتظار"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 6 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Delivery Driver", "Manager", "Stock Clerk"],
-          "scenario": "During a routine care or examination situation, an adult reviews Delivery Driver, Manager, Stock Clerk. The next step focuses on Delivery Driver.",
+          "scenario": "The delivery driver collects prepared packages from the pharmacy. The manager checks the schedule, and the stock clerk stays in the store room.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who collects the prepared packages?",
             "options": ["Delivery Driver", "Manager", "Stock Clerk"],
             "expectedAnswer": "Delivery Driver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Delivery Driver, Manager, Stock Clerk. The next step focuses on Delivery Driver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Delivery Driver, Manager, Stock Clerk in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One modest adult male delivery driver carrying closed plain parcels beside a delivery vehicle, no text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Consultant", "Security Guard", "Cleaner"],
-          "scenario": "During a routine care or examination situation, an adult reviews Consultant, Security Guard, Cleaner. The next step focuses on Consultant.",
+          "scenario": "A consultant visits to discuss a project with the manager. The security guard is at the entrance, and the cleaner is working in the store room.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who visits to discuss a project?",
             "options": ["Consultant", "Security Guard", "Cleaner"],
             "expectedAnswer": "Consultant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Consultant, Security Guard, Cleaner. The next step focuses on Consultant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Consultant, Security Guard, Cleaner in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One modest adult male consultant at an empty meeting table; the role is supplied by written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pharmacy Assistant", "Pharmacy Intern", "Pharmacy Manager"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pharmacy Assistant, Pharmacy Intern, Pharmacy Manager. The next step focuses on Pharmacy Assistant.",
+          "scenario": "The pharmacy assistant helps organize the service counter. A pharmacy intern observes, and the pharmacy manager checks the work schedule.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who helps organize the service counter?",
             "options": ["Pharmacy Assistant", "Pharmacy Intern", "Pharmacy Manager"],
             "expectedAnswer": "Pharmacy Assistant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy Assistant, Pharmacy Intern, Pharmacy Manager. The next step focuses on Pharmacy Assistant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy Assistant, Pharmacy Intern, Pharmacy Manager in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One modest adult male pharmacy assistant at a plain counter, no patient or labels; role comes from context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pharmacy Owner", "Pharmacy Representative", "Pharmacy Trainee"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pharmacy Owner, Pharmacy Representative, Pharmacy Trainee. The next step focuses on Pharmacy Owner.",
+          "scenario": "The pharmacy owner meets a representative to discuss supplies. A pharmacy trainee takes notes for the meeting. The pharmacy representative discusses the supply order with the owner.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who meets the representative to discuss supplies?",
             "options": ["Pharmacy Owner", "Pharmacy Representative", "Pharmacy Trainee"],
             "expectedAnswer": "Pharmacy Owner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy Owner, Pharmacy Representative, Pharmacy Trainee. The next step focuses on Pharmacy Owner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy Owner, Pharmacy Representative, Pharmacy Trainee in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One modest adult male business owner at a plain office desk; no readable papers, logos or role labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Drive-Through Window", "Consultation Room", "Waiting Area"],
-          "scenario": "During a routine care or examination situation, an adult reviews Drive-Through Window, Consultation Room, Waiting Area. The next step focuses on Drive-Through Window.",
+          "scenario": "A customer collects an order at the drive-through window without entering the pharmacy. The consultation room and waiting area are inside.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does the customer collect the order?",
             "options": ["Drive-Through Window", "Consultation Room", "Waiting Area"],
             "expectedAnswer": "Drive-Through Window"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Drive-Through Window, Consultation Room, Waiting Area. The next step focuses on Drive-Through Window. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Drive-Through Window, Consultation Room, Waiting Area in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An empty pharmacy drive-through service window beside a vehicle lane, no car occupant or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 6: A short reading",
-      "text": "A delivery driver brings boxes to the pharmacy. The stock clerk checks them while a pharmacy assistant helps customers. The manager speaks to a consultant in the office. Maya asks which worker can answer a medicine question. The assistant directs her to the pharmacist and shows her where to wait.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Meeting the pharmacy team",
+      "text": "A new pharmacy assistant meets the team. The manager introduces the stock clerk and cleaner. A delivery driver collects prepared packages. The consultant is visiting today. Later, the assistant tours the waiting area and consultation room. The pharmacy manager explains the work schedule. The assistant asks who to contact when an order is missing.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Meeting the pharmacy team. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Delivery Driver, Manager, Stock Clerk. The next step focuses on Delivery Driver.\nWhich option is the focus of the next step?",
+        "prompt": "The delivery driver collects prepared packages from the pharmacy. The manager checks the schedule, and the stock clerk stays in the store room.\nWho collects the prepared packages?",
         "answer": "Delivery Driver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Consultant, Security Guard, Cleaner. The next step focuses on Consultant.\nWhich option is the focus of the next step?",
+        "prompt": "A consultant visits to discuss a project with the manager. The security guard is at the entrance, and the cleaner is working in the store room.\nWho visits to discuss a project?",
         "answer": "Consultant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Assistant, Pharmacy Intern, Pharmacy Manager. The next step focuses on Pharmacy Assistant.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacy assistant helps organize the service counter. A pharmacy intern observes, and the pharmacy manager checks the work schedule.\nWho helps organize the service counter?",
         "answer": "Pharmacy Assistant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy Owner, Pharmacy Representative, Pharmacy Trainee. The next step focuses on Pharmacy Owner.\nWhich option is the focus of the next step?",
+        "prompt": "The pharmacy owner meets a representative to discuss supplies. A pharmacy trainee takes notes for the meeting. The pharmacy representative discusses the supply order with the owner.\nWho meets the representative to discuss supplies?",
         "answer": "Pharmacy Owner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Drive-Through Window, Consultation Room, Waiting Area. The next step focuses on Drive-Through Window.\nWhich option is the focus of the next step?",
+        "prompt": "A customer collects an order at the drive-through window without entering the pharmacy. The consultation room and waiting area are inside.\nWhere does the customer collect the order?",
         "answer": "Drive-Through Window",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Contact Lens Solution” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Who checks the delivery boxes?",
-        "answer": "The stock clerk",
+        "prompt": "A new pharmacy assistant meets the team. The manager introduces the stock clerk and cleaner. A delivery driver collects prepared packages. The consultant is visiting today. Later, the assistant tours the waiting area and consultation room. The pharmacy manager explains the work schedule. The assistant asks who to contact when an order is missing.\nWho collects the prepared packages?",
+        "answer": "The delivery driver.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Delivery Driver”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The delivery driver collects prepared packages from the pharmacy. The manager checks the schedule, and the stock clerk stays in the store room. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Meeting the pharmacy team",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: A new pharmacy assistant meets the team. The manager introduces the stock clerk and cleaner. A delivery driver collects prepared packages. The consultant is visiting today. Later, the assistant tours the waiting area and consultation room. The pharmacy manager explains the work schedule. The assistant asks who to contact when an order is missing. Pause and ask: Who collects the prepared packages?"
     },
     "spacedReview": "1 lesson(s) back: Contact Lens Solution, Vitamin from pharmacy-5\n3 lesson(s) back: Medicine Cabinet, Refrigerated Medicine from pharmacy-3\n7 lesson(s) back: CT scan, colonoscopy from hospital-8"
   },
@@ -1106,135 +1117,138 @@
       "هاون"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 7 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Prescription Drop-Off", "Pick-Up Counter", "Health Poster"],
-          "scenario": "During a routine care or examination situation, an adult reviews Prescription Drop-Off, Pick-Up Counter, Health Poster. The next step focuses on Prescription Drop-Off.",
+          "scenario": "Mina submits her prescription at the prescription drop-off desk. She will collect the order at the pick-up counter later. A health poster hangs nearby.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does Mina submit her prescription?",
             "options": ["Prescription Drop-Off", "Pick-Up Counter", "Health Poster"],
             "expectedAnswer": "Prescription Drop-Off"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Prescription Drop-Off, Pick-Up Counter, Health Poster. The next step focuses on Prescription Drop-Off. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Prescription Drop-Off, Pick-Up Counter, Health Poster in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An empty pharmacy prescription drop-off service desk with blank paper tray, no readable signs. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Shopping Basket", "Bag", "Receipt"],
-          "scenario": "During a routine care or examination situation, an adult reviews Shopping Basket, Bag, Receipt. The next step focuses on Shopping Basket.",
+          "scenario": "Mina puts a small purchase in a shopping basket. The cashier gives her a bag and receipt after payment.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item holds the purchase before payment?",
             "options": ["Shopping Basket", "Bag", "Receipt"],
             "expectedAnswer": "Shopping Basket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Shopping Basket, Bag, Receipt. The next step focuses on Shopping Basket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Shopping Basket, Bag, Receipt in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain handled shopping basket with no logo, medicine labels or person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Loyalty Card", "Parking Lot", "Wheelchair Access"],
-          "scenario": "During a routine care or examination situation, an adult reviews Loyalty Card, Parking Lot, Wheelchair Access. The next step focuses on Loyalty Card.",
+          "scenario": "Mina shows her loyalty card to record the purchase in the store's rewards system. Parking lot and wheelchair access describe features outside the store.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item does Mina show for the rewards system?",
             "options": ["Loyalty Card", "Parking Lot", "Wheelchair Access"],
             "expectedAnswer": "Loyalty Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Loyalty Card, Parking Lot, Wheelchair Access. The next step focuses on Loyalty Card. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Loyalty Card, Parking Lot, Wheelchair Access in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A blank generic customer card beside a plain wallet; no number, barcode or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pharmacy App", "Online Refill", "Courier Service"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pharmacy App, Online Refill, Courier Service. The next step focuses on Pharmacy App.",
+          "scenario": "Mina opens the pharmacy app on her phone to check her order status. Online refill names a request, and courier service names a delivery service.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which application does Mina open?",
             "options": ["Pharmacy App", "Online Refill", "Courier Service"],
             "expectedAnswer": "Pharmacy App"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pharmacy App, Online Refill, Courier Service. The next step focuses on Pharmacy App. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pharmacy App, Online Refill, Courier Service in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A smartphone with a blank screen on a counter; written context supplies app identity. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Vaccination Clinic", "Pill", "Mortar"],
-          "scenario": "During a routine care or examination situation, an adult reviews Vaccination Clinic, Pill, Mortar. The next step focuses on Vaccination Clinic.",
+          "scenario": "Mina asks where the vaccination clinic is. The assistant directs her to a clinic room. Pill and mortar are different vocabulary items, not room names.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which service does Mina ask directions to?",
             "options": ["Vaccination Clinic", "Pill", "Mortar"],
             "expectedAnswer": "Vaccination Clinic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Vaccination Clinic, Pill, Mortar. The next step focuses on Vaccination Clinic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Vaccination Clinic, Pill, Mortar in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An empty clean vaccination consultation room, no needle, patient, procedure or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 7: A short reading",
-      "text": "Maya leaves her prescription at prescription drop-off and waits near the pick-up counter. Omar takes a shopping basket for other items. A health poster is beside the entrance. When Maya's order is ready, she collects the bag and receipt. They leave through the doorway marked for wheelchair access.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Collecting an order",
+      "text": "Mina leaves her prescription at the prescription drop-off desk. Later, she returns to the pick-up counter. She puts a small purchase in a shopping basket and keeps the receipt. The pharmacy app shows her order status. Before leaving, she asks where the vaccination clinic is. The assistant gives her directions to the clinic room.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Collecting an order. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Prescription Drop-Off, Pick-Up Counter, Health Poster. The next step focuses on Prescription Drop-Off.\nWhich option is the focus of the next step?",
+        "prompt": "Mina submits her prescription at the prescription drop-off desk. She will collect the order at the pick-up counter later. A health poster hangs nearby.\nWhere does Mina submit her prescription?",
         "answer": "Prescription Drop-Off",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Shopping Basket, Bag, Receipt. The next step focuses on Shopping Basket.\nWhich option is the focus of the next step?",
+        "prompt": "Mina puts a small purchase in a shopping basket. The cashier gives her a bag and receipt after payment.\nWhich item holds the purchase before payment?",
         "answer": "Shopping Basket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Loyalty Card, Parking Lot, Wheelchair Access. The next step focuses on Loyalty Card.\nWhich option is the focus of the next step?",
+        "prompt": "Mina shows her loyalty card to record the purchase in the store's rewards system. Parking lot and wheelchair access describe features outside the store.\nWhich item does Mina show for the rewards system?",
         "answer": "Loyalty Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pharmacy App, Online Refill, Courier Service. The next step focuses on Pharmacy App.\nWhich option is the focus of the next step?",
+        "prompt": "Mina opens the pharmacy app on her phone to check her order status. Online refill names a request, and courier service names a delivery service.\nWhich application does Mina open?",
         "answer": "Pharmacy App",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Vaccination Clinic, Pill, Mortar. The next step focuses on Vaccination Clinic.\nWhich option is the focus of the next step?",
+        "prompt": "Mina asks where the vaccination clinic is. The assistant directs her to a clinic room. Pill and mortar are different vocabulary items, not room names.\nWhich service does Mina ask directions to?",
         "answer": "Vaccination Clinic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Delivery Driver” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does Maya wait for her order?",
-        "answer": "Near the pick-up counter",
+        "prompt": "Mina leaves her prescription at the prescription drop-off desk. Later, she returns to the pick-up counter. She puts a small purchase in a shopping basket and keeps the receipt. The pharmacy app shows her order status. Before leaving, she asks where the vaccination clinic is. The assistant gives her directions to the clinic room.\nWhere does Mina collect her prepared order?",
+        "answer": "At the pick-up counter.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Prescription Drop-Off”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Mina submits her prescription at the prescription drop-off desk. She will collect the order at the pick-up counter later. A health poster hangs nearby. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Collecting an order",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Mina leaves her prescription at the prescription drop-off desk. Later, she returns to the pick-up counter. She puts a small purchase in a shopping basket and keeps the receipt. The pharmacy app shows her order status. Before leaving, she asks where the vaccination clinic is. The assistant gives her directions to the clinic room. Pause and ask: Where does Mina collect her prepared order?"
     },
     "spacedReview": "1 lesson(s) back: Delivery Driver, Manager from pharmacy-6\n3 lesson(s) back: Gauze, Vitamin Supplement from pharmacy-4\n7 lesson(s) back: face shield, hand sanitizer from hospital-9"
   },
@@ -1275,116 +1289,118 @@
       "توصيل"
     ],
     "usage": {
-      "goal": "Learn to use the pharmacy 8 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the pharmacy.",
+      "goal": "Learn equipment and service words through a supervised vocabulary tour or conversation. Ask for an explanation instead of guessing a medical instruction.",
+      "canDoStatement": "Can ask simple questions about unfamiliar equipment or medicine words. Specialist terms are explained in context; this is language practice, not clinical training.",
       "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pestle", "Medicine Bottle", "Label"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pestle, Medicine Bottle, Label. The next step focuses on Pestle.",
+          "scenario": "The trainee holds the pestle, the tool used with a mortar to crush substances. The medicine bottle and label remain on the workbench. Nothing is prepared.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which tool is used with a mortar?",
             "options": ["Pestle", "Medicine Bottle", "Label"],
             "expectedAnswer": "Pestle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Pestle, Medicine Bottle, Label. The next step focuses on Pestle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Pestle, Medicine Bottle, Label in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain pestle beside an empty mortar, no substances, labels or procedure. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Prescription Pad", "Counter", "Prescription"],
-          "scenario": "During a routine care or examination situation, an adult reviews Prescription Pad, Counter, Prescription. The next step focuses on Prescription Pad.",
+          "scenario": "The prescriber writes on a prescription pad. The pharmacy counter is a surface, while the prescription is the medicine order written on the paper.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is the pad the prescriber writes on?",
             "options": ["Prescription Pad", "Counter", "Prescription"],
             "expectedAnswer": "Prescription Pad"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Prescription Pad, Counter, Prescription. The next step focuses on Prescription Pad. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Prescription Pad, Counter, Prescription in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A blank prescription-style paper pad on a plain desk, no names, medical directions or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dosage", "Consultation", "Refill"],
-          "scenario": "During a routine care or examination situation, an adult reviews Dosage, Consultation, Refill. The next step focuses on Dosage.",
+          "scenario": "Omar asks the pharmacist to clarify the dosage, meaning how much medicine to take and how often. He does not guess it from the package or photograph. Their discussion is a consultation with the pharmacist.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the amount and frequency in the instruction?",
             "options": ["Dosage", "Consultation", "Refill"],
             "expectedAnswer": "Dosage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Dosage, Consultation, Refill. The next step focuses on Dosage. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Dosage, Consultation, Refill in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk with closed plain packaging; no dose, numbers or medicine-use demonstration. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Insurance", "Delivery"],
-          "scenario": "During a routine care or examination situation, an adult reviews Insurance, Delivery, Pestle. The next step focuses on Insurance.",
+          "scenario": "Omar checks whether his insurance covers the prescription cost. He asks about delivery separately. No coverage is assumed before the check.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term concerns possible coverage of the cost?",
             "options": ["Insurance", "Delivery", "Pestle"],
             "expectedAnswer": "Insurance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the pharmacy context illustrating this situation: During a routine care or examination situation, an adult reviews Insurance, Delivery, Pestle. The next step focuses on Insurance. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the pharmacy scene showing lesson-related items or actions including Insurance, Delivery in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A blank generic benefits card beside closed plain documents; coverage is supplied only by written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
+          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Pharmacy 8: A short reading",
-      "text": "The pharmacist checks the prescription and the label on a medicine bottle. Omar asks about the dosage and a future refill. Maya books a consultation for another day. Behind the counter, a mortar and pestle are on a work surface. The pharmacist finishes checking the order before handing Omar his bag.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Pharmacy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking an unclear instruction",
+      "text": "Omar collects his prescription from the counter. A written instruction is unclear, so he asks the pharmacist about the dosage. The pharmacist checks the prescription before explaining it. Omar also asks when he can request a refill and whether delivery is available. He keeps the receipt and checks his insurance information at home.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Checking an unclear instruction. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pestle, Medicine Bottle, Label. The next step focuses on Pestle.\nWhich option is the focus of the next step?",
+        "prompt": "The trainee holds the pestle, the tool used with a mortar to crush substances. The medicine bottle and label remain on the workbench. Nothing is prepared.\nWhich tool is used with a mortar?",
         "answer": "Pestle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Prescription Pad, Counter, Prescription. The next step focuses on Prescription Pad.\nWhich option is the focus of the next step?",
+        "prompt": "The prescriber writes on a prescription pad. The pharmacy counter is a surface, while the prescription is the medicine order written on the paper.\nWhich item is the pad the prescriber writes on?",
         "answer": "Prescription Pad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Dosage, Consultation, Refill. The next step focuses on Dosage.\nWhich option is the focus of the next step?",
+        "prompt": "Omar asks the pharmacist to clarify the dosage, meaning how much medicine to take and how often. He does not guess it from the package or photograph. Their discussion is a consultation with the pharmacist.\nWhich term names the amount and frequency in the instruction?",
         "answer": "Dosage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Insurance, Delivery, Pestle. The next step focuses on Insurance.\nWhich option is the focus of the next step?",
+        "prompt": "Omar checks whether his insurance covers the prescription cost. He asks about delivery separately. No coverage is assumed before the check.\nWhich term concerns possible coverage of the cost?",
         "answer": "Insurance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Prescription Drop-Off” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar ask about?",
-        "answer": "The dosage and a future refill",
+        "prompt": "Omar collects his prescription from the counter. A written instruction is unclear, so he asks the pharmacist about the dosage. The pharmacist checks the prescription before explaining it. Omar also asks when he can request a refill and whether delivery is available. He keeps the receipt and checks his insurance information at home.\nWhat does Omar do when an instruction is unclear?",
+        "answer": "He asks the pharmacist.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Write one sentence about the written situation using “Pestle”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: The trainee holds the pestle, the tool used with a mortar to crush substances. The medicine bottle and label remain on the workbench. Nothing is prepared. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Pharmacy: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking an unclear instruction",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar collects his prescription from the counter. A written instruction is unclear, so he asks the pharmacist about the dosage. The pharmacist checks the prescription before explaining it. Omar also asks when he can request a refill and whether delivery is available. He keeps the receipt and checks his insurance information at home. Pause and ask: What does Omar do when an instruction is unclear?"
     },
     "spacedReview": "1 lesson(s) back: Prescription Drop-Off, Pick-Up Counter from pharmacy-7\n3 lesson(s) back: Contact Lens Solution, Vitamin from pharmacy-5\n7 lesson(s) back: Tablet, Capsule from pharmacy-1"
   }

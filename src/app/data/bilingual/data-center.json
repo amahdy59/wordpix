@@ -30,12 +30,12 @@
     "arabicTranslation": "ممر هواء بارد"
   },
   "ups": {
-    "definition": "Being or moving higher in position or greater in some value.",
+    "definition": "An uninterruptible power supply providing temporary power when the main supply is interrupted.",
     "arabicTranslation": "مزود طاقة غير منقطعة"
   },
   "generator": {
-    "definition": "A person who originates or causes or initiates something.",
-    "arabicTranslation": "مولّد"
+    "definition": "A machine that converts mechanical energy into electrical energy.",
+    "arabicTranslation": "مولّد كهربائي"
   },
   "pdu": {
     "definition": "A power distribution unit that delivers and manages electrical power for multiple pieces of equipment.",
@@ -48,13 +48,13 @@
     "arabicTranslation": "لوحة توصيل"
   },
   "switch": {
-    "definition": "Control consisting of a mechanical or electrical or electronic device for making or breaking or changing the connections in a circuit.",
+    "definition": "A network device connecting devices and forwarding data within a network.",
     "arabicTranslation": "مبدّل شبكي",
-    "exampleUsage": "The switch was used during the activity."
+    "exampleUsage": "The network switch forwarded data between connected devices."
   },
   "router": {
-    "definition": "A worker who routes shipments for distribution and delivery.",
-    "arabicTranslation": "موجّه"
+    "definition": "A network device forwarding data between different networks.",
+    "arabicTranslation": "موجّه شبكي"
   },
   "firewall": {
     "definition": "Software or hardware that blocks unwanted network traffic.",
@@ -79,8 +79,8 @@
     "definition": "The amount of data a network connection can carry in a given time."
   },
   "latency": {
-    "definition": "(computer science) the time it takes for a specific block of data on a data track to rotate around to the read/write head.",
-    "arabicTranslation": "زمن الاستجابة"
+    "definition": "The delay between sending a request or signal and receiving the relevant response.",
+    "arabicTranslation": "زمن التأخير"
   },
   "dns": {
     "definition": "A distributed system called DNS organizes internet names in levels and translates domain names into numerical IP addresses. It also provides other information about internet resources.",
@@ -93,7 +93,7 @@
   "hard-drive": {
     "definition": "A storage device that preserves digital information without power and lets computers save and retrieve files.",
     "arabicTranslation": "قرص صلب",
-    "exampleUsage": "The hard drive was used during the activity."
+    "exampleUsage": "The hard drive stored the server’s files."
   },
   "ssd": {
     "definition": "A solid-state drive stores data in flash memory chips rather than spinning magnetic disks, providing faster access, lower delay, and greater resistance to mechanical failure.",
@@ -104,11 +104,11 @@
     "definition": "A storage system that combines multiple drives for speed or resilience."
   },
   "nas": {
-    "definition": "A silvery soft waxy metallic element of the alkali metal group.",
+    "definition": "Network-attached storage: a system providing file storage to devices over a network.",
     "arabicTranslation": "تخزين متصل بالشبكة"
   },
   "san": {
-    "definition": "A Japanese honorific added to a person's given or family name to show general respect in neutral or polite situations.",
+    "definition": "Storage area network: a dedicated network providing access to shared storage devices.",
     "arabicTranslation": "شبكة منطقة تخزين"
   },
   "backup": {
@@ -118,60 +118,60 @@
   "tape-drive": {
     "definition": "A device moves magnetic tape across read/write heads, allowing recorded information to be played or stored.",
     "arabicTranslation": "محرك أشرطة تخزين",
-    "exampleUsage": "The tape drive was used during the activity."
+    "exampleUsage": "The tape drive wrote the scheduled backup to compatible magnetic tape."
   },
   "cloud-storage": {
     "definition": "Online space used to save and access your files from different devices.",
     "arabicTranslation": "تخزين سحابة",
-    "exampleUsage": "The cloud storage was used during the activity."
+    "exampleUsage": "The team checked the access permissions for its cloud storage."
   },
   "snapshot": {
     "arabicTranslation": "لقطة حالة",
     "definition": "A saved copy of data or system state from a particular moment."
   },
   "replication": {
-    "definition": "The repetition of an experiment in order to test the validity of its conclusion.",
-    "arabicTranslation": "نسخ متماثل"
+    "definition": "Copying data between systems so corresponding copies are maintained.",
+    "arabicTranslation": "نسخ متماثل للبيانات"
   },
   "air-conditioner": {
-    "definition": "A device that adjusts the temperature and moisture inside a building, usually by cooling and drying the air. Some models also improve indoor air quality.",
-    "arabicTranslation": "بلسم هواء",
-    "exampleUsage": "The air conditioner was used during the activity."
+    "definition": "A system or appliance used to cool and control indoor air conditions.",
+    "arabicTranslation": "مكيّف هواء",
+    "exampleUsage": "The air conditioner removed heat from the equipment room."
   },
   "chiller": {
-    "definition": "Excitation that makes your hair stand up or that chills your bones.",
+    "definition": "A machine that removes heat from a circulating liquid used for cooling.",
     "arabicTranslation": "مُبرِّد"
   },
   "cooling-tower": {
     "definition": "An industrial cooling system lowers the temperature of hot water by letting some of it evaporate. The cooled water can then be reused to remove heat from machinery.",
     "arabicTranslation": "برج تبريد",
-    "exampleUsage": "The cooling tower was used during the activity."
+    "exampleUsage": "The cooling tower released heat from the site’s cooling-water system."
   },
   "fan": {
     "definition": "A device for creating a current of air by movement of a surface or surfaces.",
     "arabicTranslation": "مروحة",
-    "exampleUsage": "The fan was used during the activity."
+    "exampleUsage": "The fan circulated air through the equipment enclosure."
   },
   "vent": {
-    "definition": "To expose to cool or cold air so as to cool or freshen.",
+    "definition": "An opening that allows air to flow for ventilation or cooling.",
     "arabicTranslation": "فتحة تهوية"
   },
   "heat-exchanger": {
     "definition": "A device passes heat from one moving fluid to another while keeping the two fluids separate.",
     "arabicTranslation": "مبادل حراري",
-    "exampleUsage": "The heat exchanger was used during the activity."
+    "exampleUsage": "The heat exchanger transferred heat between the specified fluids without mixing them."
   },
   "containment": {
-    "definition": "A policy of creating strategic alliances in order to check the expansion of a hostile power or ideology or to force it to negotiate peacefully.",
-    "arabicTranslation": "احتواء"
+    "definition": "Barriers or enclosures separating hot and cold airflow around equipment.",
+    "arabicTranslation": "فصل مسارات الهواء"
   },
   "thermostat": {
-    "definition": "To control the temperature with a thermostat.",
+    "definition": "A device that monitors temperature and controls heating or cooling.",
     "arabicTranslation": "منظّم حرارة"
   },
   "humidity-control": {
-    "definition": "Maintaining moisture in indoor air at a desired level by adding or removing water vapor.",
-    "arabicTranslation": "عامل ضابط رطوبة"
+    "definition": "Systems or procedures maintaining the moisture level of indoor air.",
+    "arabicTranslation": "التحكم في الرطوبة"
   },
   "water-cooling": {
     "definition": "A cooling method that uses circulating liquid, usually water in a closed system, to remove heat from equipment.",
@@ -188,13 +188,13 @@
     "arabicTranslation": "بيومتري"
   },
   "mantrap": {
-    "definition": "A very attractive or seductive looking woman.",
-    "arabicTranslation": "بوابة أمنية مزدوجة"
+    "definition": "A controlled entry space between interlocking doors used to manage access to a secure area.",
+    "arabicTranslation": "حجرة دخول أمنية ببابين متعاقبين"
   },
   "cctv": {
     "definition": "A CCTV installation consists of cameras, recording devices, and related equipment serving a specific location.",
     "arabicTranslation": "مراقبة تلفزيونية مغلقة",
-    "exampleUsage": "The cctv was used during the activity."
+    "exampleUsage": "The CCTV cameras monitored the authorized areas under the site’s privacy rules."
   },
   "fire-suppression": {
     "definition": "The coordinated methods and equipment used to put out unwanted fires or keep them from spreading after they begin.",
@@ -206,16 +206,16 @@
     "arabicTranslation": "سجل الوصول"
   },
   "cage": {
-    "definition": "Something that restricts freedom as a cage restricts movement.",
-    "arabicTranslation": "قفص"
+    "definition": "A secure enclosure separating a set of racks or equipment from other areas.",
+    "arabicTranslation": "حجرة معدات مسيّجة"
   },
   "lock": {
-    "definition": "Enclosure consisting of a section of canal that can be closed to control the water level.",
+    "definition": "A device preventing a door, enclosure, or object from being opened without authorization.",
     "arabicTranslation": "قفل"
   },
   "guard": {
-    "definition": "An adult who watches children to keep them safe.",
-    "arabicTranslation": "حارس"
+    "definition": "A person responsible for protecting a site and controlling authorized access.",
+    "arabicTranslation": "حارس أمن"
   },
   "monitoring": {
     "definition": "The act of observing something (and sometimes keeping a record of it).",
@@ -226,11 +226,11 @@
     "arabicTranslation": "فني"
   },
   "administrator": {
-    "definition": "A person who administers a business.",
+    "definition": "A person responsible for configuring and managing computer systems or services.",
     "arabicTranslation": "مسؤول نظام"
   },
   "dashboard": {
-    "definition": "Protective covering consisting of a panel to protect people from the splashing water or mud etc.",
+    "definition": "A screen or interface summarizing system measurements and status.",
     "arabicTranslation": "لوحة معلومات"
   },
   "alert": {
@@ -240,22 +240,22 @@
   "uptime": {
     "definition": "A period of time when something (as a machine or factory) is functioning and available for use.",
     "arabicTranslation": "زمن التشغيل",
-    "exampleUsage": "The uptime was used during the activity."
+    "exampleUsage": "The service report stated uptime for the measured period and defined how it was calculated."
   },
   "maintenance": {
-    "definition": "Means of maintenance of a family or group.",
+    "definition": "Work carried out to keep equipment or systems in suitable operating condition.",
     "arabicTranslation": "صيانة"
   },
   "migration": {
-    "definition": "The movement of persons from one country or locality to another.",
-    "arabicTranslation": "هجرة"
+    "definition": "Moving data, applications, or services from one system or environment to another.",
+    "arabicTranslation": "ترحيل البيانات أو الأنظمة"
   },
   "deployment": {
-    "definition": "The distribution of forces in preparation for battle or work.",
-    "arabicTranslation": "نشر"
+    "definition": "Making software, equipment, or a system available in its intended environment.",
+    "arabicTranslation": "نشر الأنظمة أو البرامج"
   },
   "redundancy": {
-    "definition": "The attribute of being superfluous and unneeded.",
+    "definition": "Additional components or capacity intended to maintain service if another component fails.",
     "arabicTranslation": "تكرار احتياطي"
   },
   "failover": {

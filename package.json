@@ -33,7 +33,7 @@
     "content:usage:diversity": "node scripts/audit_usage_sentence_diversity.mjs",
     "content:images:readiness": "node scripts/audit_image_generation_readiness.mjs",
     "content:images:queue": "node scripts/build_image_generation_queue.mjs",
-    "content:images:guards": "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs",
+    "content:images:guards": "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs",
     "content:usage:workbook:check": "node output/usage-authoring/verify_all_lesson_packages.mjs && node output/usage-authoring/verify_approvals.mjs",
     "content:usage:export-approved": "node output/usage-authoring/export_approved_usage_phrases.mjs",
     "content:usage:images:batch1:check": "node scripts/verify_batch1_usage_images.mjs",

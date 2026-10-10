@@ -40,136 +40,119 @@
       "وزغة",
       "إغوانا",
       "حرباء",
-      "شاشة مراقبة",
+      "سحلية ورل",
       "سحلية سقنقور"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cobra", "Python", "Rattlesnake", "Boa"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.",
+          "scenario": "The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cobra", "Python", "Rattlesnake"],
-            "expectedAnswer": "Cobra"
+            "question": "Which specified target names the python constrictor group?",
+            "options": ["Python", "Cobra", "Rattlesnake"],
+            "expectedAnswer": "Python"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Cobra as the central item; include Cobra, Python, and Rattlesnake naturally where visually appropriate, but make the real-world use of Cobra the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Python in the stated reptile house account: The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Viper", "Corn Snake", "King Snake", "Anaconda"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.",
+          "scenario": "Viper names a venomous snake family. Corn Snake and King Snake are nonvenomous North American examples. Anaconda is a South American boa strongly associated with water, rather than simply a tree-dwelling snake.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Viper", "Corn Snake", "King Snake"],
-            "expectedAnswer": "Viper"
+            "question": "Which snake is described as strongly associated with South American waters?",
+            "options": ["Anaconda", "Viper", "Corn Snake"],
+            "expectedAnswer": "Anaconda"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Viper as the central item; include Viper, Corn Snake, and King Snake naturally where visually appropriate, but make the real-world use of Viper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Anaconda in the stated reptile house account: Viper names a venomous snake family. Corn Snake and King Snake are nonvenomous North American examples. Anaconda is a South American boa strongly associated with water, rather than simply a tree-dwelling snake. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mamba", "Garter Snake", "Gecko", "Iguana"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.",
+          "scenario": "The collection compares Mamba and Garter Snake with Gecko and Iguana. Gecko names a lizard group, while Mamba and Garter Snake name snakes. Individual species have different habitats, eye structures, and activity patterns.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mamba", "Garter Snake", "Gecko"],
-            "expectedAnswer": "Mamba"
+            "question": "Which of these named targets is the gecko lizard group?",
+            "options": ["Gecko", "Mamba", "Garter Snake"],
+            "expectedAnswer": "Gecko"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Mamba as the central item; include Mamba, Garter Snake, and Gecko naturally where visually appropriate, but make the real-world use of Mamba the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Gecko in the stated reptile house account: The collection compares Mamba and Garter Snake with Gecko and Iguana. Gecko names a lizard group, while Mamba and Garter Snake name snakes. Individual species have different habitats, eye structures, and activity patterns. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chameleon", "Monitor", "Skink"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.",
+          "scenario": "Chameleon, Monitor, and Skink name lizards. Monitor means the lizard group here, not a computer screen. Many monitors have a long neck and tail; the specialist supplies species identity rather than inferring it from a generic animal picture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chameleon", "Monitor", "Skink"],
-            "expectedAnswer": "Chameleon"
+            "question": "Which target names a lizard rather than a screen in this context?",
+            "options": ["Monitor", "Chameleon", "Skink"],
+            "expectedAnswer": "Monitor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Chameleon as the central item; include Chameleon, Monitor, and Skink naturally where visually appropriate, but make the real-world use of Chameleon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Monitor in the stated reptile house account: Chameleon, Monitor, and Skink name lizards. Monitor means the lizard group here, not a computer screen. Many monitors have a long neck and tail; the specialist supplies species identity rather than inferring it from a generic animal picture. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Reptile House: Practical Information",
-      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cobra, Python, Rattlesnake, and Boa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Viper, Corn Snake, King Snake, and Anaconda. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mamba, Garter Snake, Gecko, and Iguana. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Chameleon, Monitor, and Skink. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Reptile House: Comparing the named examples",
+      "text": "The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless. Viper names a venomous snake family. Corn Snake and King Snake are nonvenomous North American examples. Anaconda is a South American boa strongly associated with water, rather than simply a tree-dwelling snake. The collection compares Mamba and Garter Snake with Gecko and Iguana. Gecko names a lizard group, while Mamba and Garter Snake name snakes. Individual species have different habitats, eye structures, and activity patterns. Chameleon, Monitor, and Skink name lizards. Monitor means the lizard group here, not a computer screen. Many monitors have a long neck and tail; the specialist supplies species identity rather than inferring it from a generic animal picture.",
+      "imageBrief": "One scientifically accurate reptile house reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cobra, Python, Rattlesnake, and Boa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cobra",
+        "prompt": "The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless.\nWhich specified target names the python constrictor group?",
+        "answer": "Python",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Viper, Corn Snake, King Snake, and Anaconda and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Viper",
+        "prompt": "Viper names a venomous snake family. Corn Snake and King Snake are nonvenomous North American examples. Anaconda is a South American boa strongly associated with water, rather than simply a tree-dwelling snake.\nWhich snake is described as strongly associated with South American waters?",
+        "answer": "Anaconda",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mamba, Garter Snake, Gecko, and Iguana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mamba",
+        "prompt": "The collection compares Mamba and Garter Snake with Gecko and Iguana. Gecko names a lizard group, while Mamba and Garter Snake name snakes. Individual species have different habitats, eye structures, and activity patterns.\nWhich of these named targets is the gecko lizard group?",
+        "answer": "Gecko",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chameleon, Monitor, and Skink and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chameleon",
+        "prompt": "Chameleon, Monitor, and Skink name lizards. Monitor means the lizard group here, not a computer screen. Many monitors have a long neck and tail; the specialist supplies species identity rather than inferring it from a generic animal picture.\nWhich target names a lizard rather than a screen in this context?",
+        "answer": "Monitor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless. Viper names a venomous snake family. Corn Snake and King Snake are nonvenomous North American examples. Anaconda is a South American boa strongly associated with water, rather than simply a tree-dwelling snake. The collection compares Mamba and Garter Snake with Gecko and Iguana. Gecko names a lizard group, while Mamba and Garter Snake name snakes. Individual species have different habitats, eye structures, and activity patterns. Chameleon, Monitor, and Skink name lizards. Monitor means the lizard group here, not a computer screen. Many monitors have a long neck and tail; the specialist supplies species identity rather than inferring it from a generic animal picture.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Cobra"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Boa"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Spin” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Cobra, Python, Rattlesnake, Boa, Viper, Corn Snake, King Snake, Anaconda, Mamba, Garter Snake, Gecko, Iguana, Chameleon, Monitor, and Skink in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Cobra, Python, Rattlesnake, Boa, Viper, Corn Snake, King Snake, Anaconda, Mamba, Garter Snake, Gecko, Iguana, Chameleon, Monitor, Skink. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Reptile House: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Reptile House: Comparing the named examples",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The guide contrasts Cobra and Rattlesnake, venomous snake examples, with Python and Boa, constricting snake groups. Python names the specified constrictor in this reference. The exhibit does not encourage handling or imply that a nonvenomous snake is harmless. Which specified target names the python constrictor group?"
     },
     "spacedReview": "1 lesson(s) back: Spin, Camouflage from insect-world-4\n3 lesson(s) back: Head, Eye from insect-world-2\n7 lesson(s) back: Molt, Instar from butterfly-garden-2"
   },
@@ -218,132 +201,115 @@
       "غاريال؛ تمساح طويل الخطم"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "128-158 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bearded Dragon", "Anole", "Komodo Dragon", "Basilisk"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.",
+          "scenario": "Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bearded Dragon", "Anole", "Komodo Dragon"],
-            "expectedAnswer": "Bearded Dragon"
+            "question": "Which target names the group with some species able to run briefly across water?",
+            "options": ["Basilisk", "Bearded Dragon", "Anole"],
+            "expectedAnswer": "Basilisk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Bearded Dragon as the central item; include Bearded Dragon, Anole, and Komodo Dragon naturally where visually appropriate, but make the real-world use of Bearded Dragon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Basilisk in the stated reptile house account: Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Horned Lizard", "Turtle", "Tortoise", "Sea Turtle"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.",
+          "scenario": "Horned Lizard is a lizard, while Turtle is a broad common name for shelled reptiles. Tortoise identifies the land-adapted group in this comparison. Sea Turtle names turtles spending most of their lives in the ocean; nesting females come ashore.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Horned Lizard", "Turtle", "Tortoise"],
-            "expectedAnswer": "Horned Lizard"
+            "question": "Which target names the land-adapted turtle group?",
+            "options": ["Tortoise", "Horned Lizard", "Turtle"],
+            "expectedAnswer": "Tortoise"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Horned Lizard as the central item; include Horned Lizard, Turtle, and Tortoise naturally where visually appropriate, but make the real-world use of Horned Lizard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Tortoise in the stated reptile house account: Horned Lizard is a lizard, while Turtle is a broad common name for shelled reptiles. Tortoise identifies the land-adapted group in this comparison. Sea Turtle names turtles spending most of their lives in the ocean; nesting females come ashore. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Snapping Turtle", "Crocodile", "Alligator", "Caiman"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.",
+          "scenario": "Snapping Turtle is a freshwater turtle with powerful jaws. Crocodile, Alligator, and Caiman are crocodilians. Visitors stay outside the barriers; a broad or narrow snout alone is not a complete species-identification rule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the freshwater turtle in this comparison?",
             "options": ["Snapping Turtle", "Crocodile", "Alligator"],
             "expectedAnswer": "Snapping Turtle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Snapping Turtle as the central item; include Snapping Turtle, Crocodile, and Alligator naturally where visually appropriate, but make the real-world use of Snapping Turtle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Snapping Turtle in the stated reptile house account: Snapping Turtle is a freshwater turtle with powerful jaws. Crocodile, Alligator, and Caiman are crocodilians. Visitors stay outside the barriers; a broad or narrow snout alone is not a complete species-identification rule. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Terrapin", "Softshell", "Gharial"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.",
+          "scenario": "Terrapin is a regionally variable common name for water-associated turtles. Softshell names turtles with a flexible leathery shell. Gharial is a crocodilian with a very long narrow snout adapted mainly for catching fish.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Terrapin", "Softshell", "Gharial"],
-            "expectedAnswer": "Terrapin"
+            "question": "Which target names the long narrow-snouted crocodilian?",
+            "options": ["Gharial", "Terrapin", "Softshell"],
+            "expectedAnswer": "Gharial"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Terrapin as the central item; include Terrapin, Softshell, and Gharial naturally where visually appropriate, but make the real-world use of Terrapin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Gharial in the stated reptile house account: Terrapin is a regionally variable common name for water-associated turtles. Softshell names turtles with a flexible leathery shell. Gharial is a crocodilian with a very long narrow snout adapted mainly for catching fish. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Reptile House",
-      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bearded Dragon, Anole, Komodo Dragon, and Basilisk. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Horned Lizard, Turtle, Tortoise, and Sea Turtle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snapping Turtle, Crocodile, Alligator, and Caiman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Terrapin, Softshell, and Gharial. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Reptile House: Understanding the important distinctions",
+      "text": "Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement. Horned Lizard is a lizard, while Turtle is a broad common name for shelled reptiles. Tortoise identifies the land-adapted group in this comparison. Sea Turtle names turtles spending most of their lives in the ocean; nesting females come ashore. Snapping Turtle is a freshwater turtle with powerful jaws. Crocodile, Alligator, and Caiman are crocodilians. Visitors stay outside the barriers; a broad or narrow snout alone is not a complete species-identification rule. Terrapin is a regionally variable common name for water-associated turtles. Softshell names turtles with a flexible leathery shell. Gharial is a crocodilian with a very long narrow snout adapted mainly for catching fish.",
+      "imageBrief": "One scientifically accurate reptile house reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bearded Dragon, Anole, Komodo Dragon, and Basilisk and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bearded Dragon",
+        "prompt": "Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement.\nWhich target names the group with some species able to run briefly across water?",
+        "answer": "Basilisk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Horned Lizard, Turtle, Tortoise, and Sea Turtle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Horned Lizard",
+        "prompt": "Horned Lizard is a lizard, while Turtle is a broad common name for shelled reptiles. Tortoise identifies the land-adapted group in this comparison. Sea Turtle names turtles spending most of their lives in the ocean; nesting females come ashore.\nWhich target names the land-adapted turtle group?",
+        "answer": "Tortoise",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snapping Turtle, Crocodile, Alligator, and Caiman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Snapping Turtle is a freshwater turtle with powerful jaws. Crocodile, Alligator, and Caiman are crocodilians. Visitors stay outside the barriers; a broad or narrow snout alone is not a complete species-identification rule.\nWhich target names the freshwater turtle in this comparison?",
         "answer": "Snapping Turtle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrapin, Softshell, and Gharial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Terrapin",
+        "prompt": "Terrapin is a regionally variable common name for water-associated turtles. Softshell names turtles with a flexible leathery shell. Gharial is a crocodilian with a very long narrow snout adapted mainly for catching fish.\nWhich target names the long narrow-snouted crocodilian?",
+        "answer": "Gharial",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement. Horned Lizard is a lizard, while Turtle is a broad common name for shelled reptiles. Tortoise identifies the land-adapted group in this comparison. Sea Turtle names turtles spending most of their lives in the ocean; nesting females come ashore. Snapping Turtle is a freshwater turtle with powerful jaws. Crocodile, Alligator, and Caiman are crocodilians. Visitors stay outside the barriers; a broad or narrow snout alone is not a complete species-identification rule. Terrapin is a regionally variable common name for water-associated turtles. Softshell names turtles with a flexible leathery shell. Gharial is a crocodilian with a very long narrow snout adapted mainly for catching fish.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Bearded Dragon"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Basilisk"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cobra” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Bearded Dragon, Anole, Komodo Dragon, Basilisk, Horned Lizard, Turtle, Tortoise, Sea Turtle, Snapping Turtle, Crocodile, Alligator, Caiman, Terrapin, Softshell, and Gharial in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Bearded Dragon, Anole, Komodo Dragon, Basilisk, Horned Lizard, Turtle, Tortoise, Sea Turtle, Snapping Turtle, Crocodile, Alligator, Caiman, Terrapin, Softshell, Gharial. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Reptile House: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Reptile House: Understanding the important distinctions",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "Bearded Dragon and Anole are lizard names, as is Komodo Dragon. Basilisk names tropical American lizards; some species can run briefly across water. This ability is not claimed for every reptile or every movement. Which target names the group with some species able to run briefly across water?"
     },
     "spacedReview": "1 lesson(s) back: Cobra, Python from reptile-house-1\n3 lesson(s) back: Egg, Larva from insect-world-3\n7 lesson(s) back: Milkweed, Lavender from butterfly-garden-3"
   },
@@ -375,8 +341,8 @@
       "Rock"
     ],
     "targetWordsArabic": [
-      "مقياس رسم",
-      "درع سلحفاة",
+      "حرشفة",
+      "درع السلحفاة",
       "ناب",
       "لسان",
       "ذيل",
@@ -385,139 +351,122 @@
       "فك",
       "جلد",
       "سم حيواني",
-      "حوض نباتات زجاجي",
-      "مصباح حرارة",
+      "حوض تربية بري",
+      "مصباح تدفئة",
       "وعاء ماء",
       "غصن",
       "صخرة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "149-179 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Scale", "Shell", "Fang", "Tongue"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.",
+          "scenario": "A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the small outer-covering structure?",
             "options": ["Scale", "Shell", "Fang"],
             "expectedAnswer": "Scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Scale as the central item; include Scale, Shell, and Fang naturally where visually appropriate, but make the real-world use of Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Scale in the stated reptile house account: A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tail", "Claw", "Eye", "Jaw"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.",
+          "scenario": "Tail names the rear extension of the body. A Claw is a pointed structure on a digit, an Eye supports vision, and the Jaw frames the mouth. These anatomical terms do not imply that all reptiles have every described limb feature.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tail", "Claw", "Eye"],
-            "expectedAnswer": "Tail"
+            "question": "Which target names the pointed structure on a digit?",
+            "options": ["Claw", "Tail", "Eye"],
+            "expectedAnswer": "Claw"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Tail as the central item; include Tail, Claw, and Eye naturally where visually appropriate, but make the real-world use of Tail the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Claw in the stated reptile house account: Tail names the rear extension of the body. A Claw is a pointed structure on a digit, an Eye supports vision, and the Jaw frames the mouth. These anatomical terms do not imply that all reptiles have every described limb feature. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Skin", "Venom", "Terrarium", "Heat Lamp"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.",
+          "scenario": "Skin forms the body covering, and Venom is introduced through a specialized delivery structure such as a bite. A Terrarium is a controlled enclosure for suitable terrestrial organisms. A Heat Lamp provides heat under the enclosure’s managed requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Skin", "Venom", "Terrarium"],
-            "expectedAnswer": "Skin"
+            "question": "Which target names the controlled enclosure?",
+            "options": ["Terrarium", "Skin", "Venom"],
+            "expectedAnswer": "Terrarium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Skin as the central item; include Skin, Venom, and Terrarium naturally where visually appropriate, but make the real-world use of Skin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Terrarium in the stated reptile house account: Skin forms the body covering, and Venom is introduced through a specialized delivery structure such as a bite. A Terrarium is a controlled enclosure for suitable terrestrial organisms. A Heat Lamp provides heat under the enclosure’s managed requirements. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Water Dish", "Branch", "Rock"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.",
+          "scenario": "The enclosure has a Water Dish holding drinking water, a Branch providing structure, and a Rock as part of the managed habitat. Their presence alone does not establish that the enclosure meets every species’ welfare requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which container holds the drinking water?",
             "options": ["Water Dish", "Branch", "Rock"],
             "expectedAnswer": "Water Dish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Water Dish as the central item; include Water Dish, Branch, and Rock naturally where visually appropriate, but make the real-world use of Water Dish the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Water Dish in the stated reptile house account: The enclosure has a Water Dish holding drinking water, a Branch providing structure, and a Rock as part of the managed habitat. Their presence alone does not establish that the enclosure meets every species’ welfare requirements. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Reptile House",
-      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Scale, Shell, Fang, and Tongue. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tail, Claw, Eye, and Jaw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Skin, Venom, Terrarium, and Heat Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Water Dish, Branch, and Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Reptile House: Reading the observation record",
+      "text": "A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here. Tail names the rear extension of the body. A Claw is a pointed structure on a digit, an Eye supports vision, and the Jaw frames the mouth. These anatomical terms do not imply that all reptiles have every described limb feature. Skin forms the body covering, and Venom is introduced through a specialized delivery structure such as a bite. A Terrarium is a controlled enclosure for suitable terrestrial organisms. A Heat Lamp provides heat under the enclosure’s managed requirements. The enclosure has a Water Dish holding drinking water, a Branch providing structure, and a Rock as part of the managed habitat. Their presence alone does not establish that the enclosure meets every species’ welfare requirements.",
+      "imageBrief": "One scientifically accurate reptile house reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Shell, Fang, and Tongue and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here.\nWhich target names the small outer-covering structure?",
         "answer": "Scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tail, Claw, Eye, and Jaw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tail",
+        "prompt": "Tail names the rear extension of the body. A Claw is a pointed structure on a digit, an Eye supports vision, and the Jaw frames the mouth. These anatomical terms do not imply that all reptiles have every described limb feature.\nWhich target names the pointed structure on a digit?",
+        "answer": "Claw",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skin, Venom, Terrarium, and Heat Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Skin",
+        "prompt": "Skin forms the body covering, and Venom is introduced through a specialized delivery structure such as a bite. A Terrarium is a controlled enclosure for suitable terrestrial organisms. A Heat Lamp provides heat under the enclosure’s managed requirements.\nWhich target names the controlled enclosure?",
+        "answer": "Terrarium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Water Dish, Branch, and Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The enclosure has a Water Dish holding drinking water, a Branch providing structure, and a Rock as part of the managed habitat. Their presence alone does not establish that the enclosure meets every species’ welfare requirements.\nWhich container holds the drinking water?",
         "answer": "Water Dish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here. Tail names the rear extension of the body. A Claw is a pointed structure on a digit, an Eye supports vision, and the Jaw frames the mouth. These anatomical terms do not imply that all reptiles have every described limb feature. Skin forms the body covering, and Venom is introduced through a specialized delivery structure such as a bite. A Terrarium is a controlled enclosure for suitable terrestrial organisms. A Heat Lamp provides heat under the enclosure’s managed requirements. The enclosure has a Water Dish holding drinking water, a Branch providing structure, and a Rock as part of the managed habitat. Their presence alone does not establish that the enclosure meets every species’ welfare requirements.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Scale"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Tongue"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bearded Dragon” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Scale, Shell, Fang, Tongue, Tail, Claw, Eye, Jaw, Skin, Venom, Terrarium, Heat Lamp, Water Dish, Branch, and Rock in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Scale, Shell, Fang, Tongue, Tail, Claw, Eye, Jaw, Skin, Venom, Terrarium, Heat Lamp, Water Dish, Branch, Rock. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Reptile House: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Reptile House: Reading the observation record",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "A Scale forms part of a reptile’s outer covering, while a Shell protects a turtle’s body. Fang names a specialized long tooth in the stated snake, and Tongue has sensory and feeding functions depending on species. Scale does not mean a weighing device here. Which target names the small outer-covering structure?"
     },
     "spacedReview": "1 lesson(s) back: Bearded Dragon, Anole from reptile-house-2\n3 lesson(s) back: Spin, Camouflage from insect-world-4\n7 lesson(s) back: Camouflage, Mimicry from butterfly-garden-4"
   },
@@ -554,7 +503,7 @@
       "مخبأ",
       "جذع شجرة مقطوع",
       "نظام رش رذاذ",
-      "يبدل جلده",
+      "ينسلخ",
       "يتشمس",
       "يصطاد",
       "يسبح",
@@ -566,132 +515,115 @@
       "يلتف"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "144-174 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sand", "Moss", "Hide", "Log"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.",
+          "scenario": "Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sand", "Moss", "Hide"],
-            "expectedAnswer": "Sand"
+            "question": "Which target names the shelter out of view?",
+            "options": ["Hide", "Sand", "Moss"],
+            "expectedAnswer": "Hide"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Sand as the central item; include Sand, Moss, and Hide naturally where visually appropriate, but make the real-world use of Sand the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Hide in the stated reptile house account: Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Misting System", "Shed", "Bask", "Hunt"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.",
+          "scenario": "The Misting System supplies controlled moisture under the exhibit’s arrangements. Shed means lose the old outer skin, Bask means rest in warmth, and Hunt means seek prey. Staff determine environmental requirements rather than visitors copying a generated setup.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Misting System", "Shed", "Bask"],
-            "expectedAnswer": "Misting System"
+            "question": "Which verb means lose the old outer skin?",
+            "options": ["Shed", "Misting System", "Bask"],
+            "expectedAnswer": "Shed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Misting System as the central item; include Misting System, Shed, and Bask naturally where visually appropriate, but make the real-world use of Misting System the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Shed in the stated reptile house account: The Misting System supplies controlled moisture under the exhibit’s arrangements. Shed means lose the old outer skin, Bask means rest in warmth, and Hunt means seek prey. Staff determine environmental requirements rather than visitors copying a generated setup. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Swim", "Burrow", "Climb", "Camouflage"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.",
+          "scenario": "Swim describes movement through water, Burrow describes digging into suitable material, and Climb describes moving upward or over a structure. Camouflage makes the organism less noticeable. These actions vary between species and are identified from the written observation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Swim", "Burrow", "Climb"],
-            "expectedAnswer": "Swim"
+            "question": "Which verb describes moving upward over a structure?",
+            "options": ["Climb", "Swim", "Burrow"],
+            "expectedAnswer": "Climb"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Swim as the central item; include Swim, Burrow, and Climb naturally where visually appropriate, but make the real-world use of Swim the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Climb in the stated reptile house account: Swim describes movement through water, Burrow describes digging into suitable material, and Climb describes moving upward or over a structure. Camouflage makes the organism less noticeable. These actions vary between species and are identified from the written observation. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hiss", "Strike", "Coil"],
-          "scenario": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.",
+          "scenario": "Hiss names a sibilant blowing sound. Strike describes a rapid attacking movement in this snake context. Coil means curl the body into loops. Visitors observe through the designated barrier and do not provoke a behavior for a photograph.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Hiss", "Strike", "Coil"],
-            "expectedAnswer": "Hiss"
+            "question": "Which verb means curl the body into loops?",
+            "options": ["Coil", "Hiss", "Strike"],
+            "expectedAnswer": "Coil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult clearly carrying out the action Hiss; include Hiss, Strike, and Coil naturally where visually appropriate, but make the real-world use of Hiss the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Coil in the stated reptile house account: Hiss names a sibilant blowing sound. Strike describes a rapid attacking movement in this snake context. Coil means curl the body into loops. Visitors observe through the designated barrier and do not provoke a behavior for a photograph. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written reptile house account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Reptile House: Practical Information",
-      "text": "At the reptile house, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sand, Moss, Hide, and Log. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Misting System, Shed, Bask, and Hunt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Swim, Burrow, Climb, and Camouflage. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Hiss, Strike, and Coil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Reptile House. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Reptile House: A guided visitor discussion",
+      "text": "Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context. The Misting System supplies controlled moisture under the exhibit’s arrangements. Shed means lose the old outer skin, Bask means rest in warmth, and Hunt means seek prey. Staff determine environmental requirements rather than visitors copying a generated setup. Swim describes movement through water, Burrow describes digging into suitable material, and Climb describes moving upward or over a structure. Camouflage makes the organism less noticeable. These actions vary between species and are identified from the written observation. Hiss names a sibilant blowing sound. Strike describes a rapid attacking movement in this snake context. Coil means curl the body into loops. Visitors observe through the designated barrier and do not provoke a behavior for a photograph.",
+      "imageBrief": "One scientifically accurate reptile house reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sand, Moss, Hide, and Log and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sand",
+        "prompt": "Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context.\nWhich target names the shelter out of view?",
+        "answer": "Hide",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Misting System, Shed, Bask, and Hunt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Misting System",
+        "prompt": "The Misting System supplies controlled moisture under the exhibit’s arrangements. Shed means lose the old outer skin, Bask means rest in warmth, and Hunt means seek prey. Staff determine environmental requirements rather than visitors copying a generated setup.\nWhich verb means lose the old outer skin?",
+        "answer": "Shed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Swim, Burrow, Climb, and Camouflage and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Swim",
+        "prompt": "Swim describes movement through water, Burrow describes digging into suitable material, and Climb describes moving upward or over a structure. Camouflage makes the organism less noticeable. These actions vary between species and are identified from the written observation.\nWhich verb describes moving upward over a structure?",
+        "answer": "Climb",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the reptile house setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hiss, Strike, and Coil and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Hiss",
+        "prompt": "Hiss names a sibilant blowing sound. Strike describes a rapid attacking movement in this snake context. Coil means curl the body into loops. Visitors observe through the designated barrier and do not provoke a behavior for a photograph.\nWhich verb means curl the body into loops?",
+        "answer": "Coil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context. The Misting System supplies controlled moisture under the exhibit’s arrangements. Shed means lose the old outer skin, Bask means rest in warmth, and Hunt means seek prey. Staff determine environmental requirements rather than visitors copying a generated setup. Swim describes movement through water, Burrow describes digging into suitable material, and Climb describes moving upward or over a structure. Camouflage makes the organism less noticeable. These actions vary between species and are identified from the written observation. Hiss names a sibilant blowing sound. Strike describes a rapid attacking movement in this snake context. Coil means curl the body into loops. Visitors observe through the designated barrier and do not provoke a behavior for a photograph.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Sand"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Log"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Scale” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the reptile house task. Use Sand, Moss, Hide, Log, Misting System, Shed, Bask, Hunt, Swim, Burrow, Climb, Camouflage, Hiss, Strike, and Coil in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Sand, Moss, Hide, Log, Misting System, Shed, Bask, Hunt, Swim, Burrow, Climb, Camouflage, Hiss, Strike, Coil. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Reptile House: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Reptile House: A guided visitor discussion",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "Sand and Moss are substrate materials selected according to species requirements. A Hide is a shelter where the reptile can remain out of view; a Log is a section of tree trunk. Hide means the shelter in this noun context. Which target names the shelter out of view?"
     },
     "spacedReview": "1 lesson(s) back: Scale, Shell from reptile-house-3\n3 lesson(s) back: Cobra, Python from reptile-house-1\n7 lesson(s) back: Ant, Bee from insect-world-1"
   }

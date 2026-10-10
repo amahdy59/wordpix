@@ -47,7 +47,7 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "190-220 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -59,7 +59,15 @@
             "expectedAnswer": "Pen"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the executive conference table, an elegant black rollerball pen rests beside a signature document ready for signing. Question: Which writing instrument with fluid ink is used to sign the official document? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A black pen resting across a paper document on a conference table.",
+          "learningContext": {
+            "sourceScenario": "On the executive conference table, an elegant black rollerball pen rests beside a signature document ready for signing.",
+            "sourceQuestion": "Which writing instrument with fluid ink is used to sign the official document?",
+            "sourceAnswer": "Pen",
+            "scenario": "A Pen writes with ink, a Pencil makes graphite marks, a Highlighter marks text with a translucent bright color, and a Marker writes or draws with its broader tip. The clerk selects the Pen for the signature in the written account. The picture supports the object name, not the document’s authenticity.",
+            "question": "Which writing instrument does the clerk select for the signature?",
+            "imageBrief": "Vocabulary reference for Pen. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,7 +79,15 @@
             "expectedAnswer": "Eraser"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To remove a pencil sketch mark without damaging the drafting paper, the designer uses a soft white vinyl eraser. Question: Which tool cleanly removes graphite pencil marks from paper? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand holding a white eraser against a pencil drawing on paper.",
+          "learningContext": {
+            "sourceScenario": "To remove a pencil sketch mark without damaging the drafting paper, the designer uses a soft white vinyl eraser.",
+            "sourceQuestion": "Which tool cleanly removes graphite pencil marks from paper?",
+            "sourceAnswer": "Eraser",
+            "scenario": "The designer uses an Eraser to remove a graphite mark. A Mechanical Pencil advances replaceable lead, a Fountain Pen feeds ink through a nib, and a Felt-Tip Pen writes through its porous tip. Successful erasure without damage depends on the materials and is not guaranteed by the tool’s name.",
+            "question": "Which tool does the designer use to remove the graphite mark?",
+            "imageBrief": "Vocabulary reference for Eraser. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 3,
@@ -83,7 +99,15 @@
             "expectedAnswer": "Correction Tape"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To quickly mask a typed typo on a printed invoice, the accountant glides a compact dispenser of white correction tape across the line. Question: Which handheld dispenser applies an opaque white strip to cover ink errors instantly? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand applying correction tape to a printed sheet.",
+          "learningContext": {
+            "sourceScenario": "To quickly mask a typed typo on a printed invoice, the accountant glides a compact dispenser of white correction tape across the line.",
+            "sourceQuestion": "Which handheld dispenser applies an opaque white strip to cover ink errors instantly?",
+            "sourceAnswer": "Correction Tape",
+            "scenario": "Correction Tape covers an unwanted printed mark with an opaque strip. A Whiteboard Marker writes erasable ink on a compatible board. Paper is the writing material, while a Notebook binds pages for notes. The written account distinguishes these uses without promising that altered financial records are acceptable.",
+            "question": "Which item covers the unwanted printed mark with an opaque strip?",
+            "imageBrief": "Vocabulary reference for Correction Tape. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 4,
@@ -95,88 +119,72 @@
             "expectedAnswer": "Legal Pad"
           },
           "imageBrief": "Adult learning visual support for this exact situation: During the client meeting, the attorney takes quick legal notes on a classic yellow lined legal pad with a stiff cardboard backing. Question: Which ruled yellow paper tablet is commonly used for taking detailed business and legal notes? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand writing on a yellow ruled pad at a meeting table.",
+          "learningContext": {
+            "sourceScenario": "During the client meeting, the attorney takes quick legal notes on a classic yellow lined legal pad with a stiff cardboard backing.",
+            "sourceQuestion": "Which ruled yellow paper tablet is commonly used for taking detailed business and legal notes?",
+            "sourceAnswer": "Legal Pad",
+            "scenario": "The meeting notes are written on a Legal Pad, a pad of ruled paper traditionally yellow in North American use. A Sticky Note has removable adhesive, while an Index Card is a separate small card. Legal Pad does not mean the notes are legally valid or that all pads have a required color.",
+            "question": "Which pad holds the meeting notes in this account?",
+            "imageBrief": "Vocabulary reference for Legal Pad. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Office supplies 1: Preparing and organising work",
-      "text": "Mina prepares notes for an office meeting. She writes with a pen and sketches a plan with a pencil. A highlighter marks an important line, while a marker and whiteboard marker stay beside the board. An eraser helps her change the sketch. Her case holds a mechanical pencil, fountain pen and felt-tip pen. She uses correction tape on a paper copy, then puts her notebook and legal pad beside it. A sticky note marks a page, and an index card holds a question.",
-      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
+      "title": "Office supplies: Writing and recording notes",
+      "text": "A Pen writes with ink, a Pencil makes graphite marks, a Highlighter marks text with a translucent bright color, and a Marker writes or draws with its broader tip. The clerk selects the Pen for the signature in the written account. The picture supports the object name, not the document’s authenticity. The designer uses an Eraser to remove a graphite mark. A Mechanical Pencil advances replaceable lead, a Fountain Pen feeds ink through a nib, and a Felt-Tip Pen writes through its porous tip. Successful erasure without damage depends on the materials and is not guaranteed by the tool’s name. Correction Tape covers an unwanted printed mark with an opaque strip. A Whiteboard Marker writes erasable ink on a compatible board. Paper is the writing material, while a Notebook binds pages for notes. The written account distinguishes these uses without promising that altered financial records are acceptable. The meeting notes are written on a Legal Pad, a pad of ruled paper traditionally yellow in North American use. A Sticky Note has removable adhesive, while an Index Card is a separate small card. Legal Pad does not mean the notes are legally valid or that all pads have a required color.",
+      "imageBrief": "Uncluttered office stationery reference containing only items described in the written account. Prefer no people, and include no readable text, logos or answer highlighting. The picture does not prove legal status, packaging suitability or safety."
     },
     "exercises": [
       {
-        "prompt": "On the executive conference table, an elegant black rollerball pen rests beside a signature document ready for signing.\nWhich writing instrument with fluid ink is used to sign the official document?",
+        "prompt": "A Pen writes with ink, a Pencil makes graphite marks, a Highlighter marks text with a translucent bright color, and a Marker writes or draws with its broader tip. The clerk selects the Pen for the signature in the written account. The picture supports the object name, not the document’s authenticity.\nWhich writing instrument does the clerk select for the signature?",
         "answer": "Pen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "To remove a pencil sketch mark without damaging the drafting paper, the designer uses a soft white vinyl eraser.\nWhich tool cleanly removes graphite pencil marks from paper?",
+        "prompt": "The designer uses an Eraser to remove a graphite mark. A Mechanical Pencil advances replaceable lead, a Fountain Pen feeds ink through a nib, and a Felt-Tip Pen writes through its porous tip. Successful erasure without damage depends on the materials and is not guaranteed by the tool’s name.\nWhich tool does the designer use to remove the graphite mark?",
         "answer": "Eraser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "To quickly mask a typed typo on a printed invoice, the accountant glides a compact dispenser of white correction tape across the line.\nWhich handheld dispenser applies an opaque white strip to cover ink errors instantly?",
+        "prompt": "Correction Tape covers an unwanted printed mark with an opaque strip. A Whiteboard Marker writes erasable ink on a compatible board. Paper is the writing material, while a Notebook binds pages for notes. The written account distinguishes these uses without promising that altered financial records are acceptable.\nWhich item covers the unwanted printed mark with an opaque strip?",
         "answer": "Correction Tape",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During the client meeting, the attorney takes quick legal notes on a classic yellow lined legal pad with a stiff cardboard backing.\nWhich ruled yellow paper tablet is commonly used for taking detailed business and legal notes?",
+        "prompt": "The meeting notes are written on a Legal Pad, a pad of ruled paper traditionally yellow in North American use. A Sticky Note has removable adhesive, while an Index Card is a separate small card. Legal Pad does not mean the notes are legally valid or that all pads have a required color.\nWhich pad holds the meeting notes in this account?",
         "answer": "Legal Pad",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Pen, Pencil, Highlighter, Marker, Eraser, Mechanical Pencil, Fountain Pen, Felt-Tip Pen, Correction Tape, Whiteboard Marker, Paper, Notebook, Legal Pad, Sticky Note, and Index Card in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "A Pen writes with ink, a Pencil makes graphite marks, a Highlighter marks text with a translucent bright color, and a Marker writes or draws with its broader tip. The clerk selects the Pen for the signature in the written account. The picture supports the object name, not the document’s authenticity. The designer uses an Eraser to remove a graphite mark. A Mechanical Pencil advances replaceable lead, a Fountain Pen feeds ink through a nib, and a Felt-Tip Pen writes through its porous tip. Successful erasure without damage depends on the materials and is not guaranteed by the tool’s name. Correction Tape covers an unwanted printed mark with an opaque strip. A Whiteboard Marker writes erasable ink on a compatible board. Paper is the writing material, while a Notebook binds pages for notes. The written account distinguishes these uses without promising that altered financial records are acceptable. The meeting notes are written on a Legal Pad, a pad of ruled paper traditionally yellow in North American use. A Sticky Note has removable adhesive, while an Index Card is a separate small card. Legal Pad does not mean the notes are legally valid or that all pads have a required color.\nExplain why an object’s appearance alone cannot establish the guarantee or hidden purpose discussed in the account.",
+        "answer": "Open response: name the object and the specific limitation stated in this account, without inventing a product or legal guarantee.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-limits"
+      },
+      {
+        "prompt": "Write a short office inventory using Pen, Pencil, Highlighter, Marker, Eraser, Mechanical Pencil, Fountain Pen, Felt-Tip Pen, Correction Tape, Whiteboard Marker, Paper, Notebook, Legal Pad, Sticky Note, Index Card. Give a correct concrete purpose for each item.",
+        "answer": "Open response: each named item must have the contextual meaning stated in the lesson; do not invent guaranteed properties.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Pen” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "office-supplies-1-transfer"
-      },
-      {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Pen"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Chat” in a sentence connected to this lesson.",
-        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Office Supplies: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Office supplies: Writing and recording notes",
+      "idea": "Show the named stationery as vocabulary references. Narrate the concrete functions from the written account and the stated limits on what appearance can establish.",
+      "scriptStarter": "A Pen writes with ink, a Pencil makes graphite marks, a Highlighter marks text with a translucent bright color, and a Marker writes or draws with its broader tip. The clerk selects the Pen for the signature in the written account. The picture supports the object name, not the document’s authenticity. Which writing instrument does the clerk select for the signature?"
     },
     "spacedReview": "1 lesson(s) back: Chat, Breakout Room from meeting-room-4\n3 lesson(s) back: Town Hall, Workshop from meeting-room-2\n7 lesson(s) back: Scanner, Projector from office-2"
   },
@@ -228,7 +236,7 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "175-205 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -240,7 +248,15 @@
             "expectedAnswer": "Envelope"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To send a confidential contract by courier, the office administrator slips the folded document into a crisp white mailing envelope. Question: Which paper packet encloses and protects letters and contracts during mailing? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "Hands placing paper inside a white envelope on an office desk.",
+          "learningContext": {
+            "sourceScenario": "To send a confidential contract by courier, the office administrator slips the folded document into a crisp white mailing envelope.",
+            "sourceQuestion": "Which paper packet encloses and protects letters and contracts during mailing?",
+            "sourceAnswer": "Envelope",
+            "scenario": "An Envelope encloses the document for mailing. A Folder groups papers, a Binder holds loose pages with rings or another binding mechanism, and a Manila Folder is a card folder traditionally light brown. Confidentiality requires the appropriate handling arrangements, not merely an envelope.",
+            "question": "Which container encloses the document for mailing?",
+            "imageBrief": "Vocabulary reference for Envelope. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 2,
@@ -252,7 +268,15 @@
             "expectedAnswer": "Label"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To identify the project archive box, an office assistant peels a self-adhesive white label from the backing sheet. Question: Which sticky paper tag is adhered to folders and boxes to mark their contents? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "Hands peeling a plain label from its backing beside a storage box.",
+          "learningContext": {
+            "sourceScenario": "To identify the project archive box, an office assistant peels a self-adhesive white label from the backing sheet.",
+            "sourceQuestion": "Which sticky paper tag is adhered to folders and boxes to mark their contents?",
+            "sourceAnswer": "Label",
+            "scenario": "A Label identifies the archive box in the written account. A Stapler joins papers with staples, a Paper Clip holds a few pages, and a Binder Clip grips a stack with spring pressure. The identifying information comes from the text rather than a generated label.",
+            "question": "Which item identifies the archive box?",
+            "imageBrief": "Vocabulary reference for Label. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 3,
@@ -264,7 +288,15 @@
             "expectedAnswer": "Rubber Band"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To keep a stack of client receipts bundled securely, the accountant snaps a durable rubber band around the middle. Question: Which elastic band keeps loose receipts and cards gathered tightly together? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A bundle of paper receipts held by red rubber bands.",
+          "learningContext": {
+            "sourceScenario": "To keep a stack of client receipts bundled securely, the accountant snaps a durable rubber band around the middle.",
+            "sourceQuestion": "Which elastic band keeps loose receipts and cards gathered tightly together?",
+            "sourceAnswer": "Rubber Band",
+            "scenario": "A Rubber Band forms an elastic loop around the papers. A Pushpin and a Thumbtack attach material to a suitable board, while Tape is an adhesive strip. Pushpin and Thumbtack overlap in ordinary usage; the elastic loop supplies the distinguishing evidence for this question.",
+            "question": "Which elastic loop holds the papers together?",
+            "imageBrief": "Vocabulary reference for Rubber Band. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 4,
@@ -276,88 +308,72 @@
             "expectedAnswer": "Glue Stick"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To mount receipts neatly onto an expense report, the clerk applies a clean swipe of a solid non-toxic glue stick. Question: Which twist-up cylindrical adhesive applies solid glue cleanly without wrinkling paper? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand holding a glue stick against a receipt on a paper form.",
+          "learningContext": {
+            "sourceScenario": "To mount receipts neatly onto an expense report, the clerk applies a clean swipe of a solid non-toxic glue stick.",
+            "sourceQuestion": "Which twist-up cylindrical adhesive applies solid glue cleanly without wrinkling paper?",
+            "sourceAnswer": "Glue Stick",
+            "scenario": "A Glue Stick supplies solid adhesive from a tube. Fastener is a general word for something that holds parts or papers together, and a Magnet can hold material against a suitable metal surface. The clerk uses the Glue Stick in this account without claiming every product prevents wrinkles or has identical safety properties.",
+            "question": "Which tube supplies the solid adhesive used here?",
+            "imageBrief": "Vocabulary reference for Glue Stick. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Office supplies 2: Preparing and organising work",
-      "text": "Mina sorts the meeting papers before sending them. She puts a folder in a binder and keeps a manila folder for receipts. A label identifies the envelope. A stapler holds several pages together; a paper clip is enough for a short note. A binder clip and rubber band secure thicker bundles. A pushpin and thumbtack stay on the noticeboard. She keeps tape, a glue stick and a spare fastener in a drawer. A magnet holds the meeting reminder on a metal board.",
-      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
+      "title": "Office supplies: Joining and identifying papers",
+      "text": "An Envelope encloses the document for mailing. A Folder groups papers, a Binder holds loose pages with rings or another binding mechanism, and a Manila Folder is a card folder traditionally light brown. Confidentiality requires the appropriate handling arrangements, not merely an envelope. A Label identifies the archive box in the written account. A Stapler joins papers with staples, a Paper Clip holds a few pages, and a Binder Clip grips a stack with spring pressure. The identifying information comes from the text rather than a generated label. A Rubber Band forms an elastic loop around the papers. A Pushpin and a Thumbtack attach material to a suitable board, while Tape is an adhesive strip. Pushpin and Thumbtack overlap in ordinary usage; the elastic loop supplies the distinguishing evidence for this question. A Glue Stick supplies solid adhesive from a tube. Fastener is a general word for something that holds parts or papers together, and a Magnet can hold material against a suitable metal surface. The clerk uses the Glue Stick in this account without claiming every product prevents wrinkles or has identical safety properties.",
+      "imageBrief": "Uncluttered office stationery reference containing only items described in the written account. Prefer no people, and include no readable text, logos or answer highlighting. The picture does not prove legal status, packaging suitability or safety."
     },
     "exercises": [
       {
-        "prompt": "To send a confidential contract by courier, the office administrator slips the folded document into a crisp white mailing envelope.\nWhich paper packet encloses and protects letters and contracts during mailing?",
+        "prompt": "An Envelope encloses the document for mailing. A Folder groups papers, a Binder holds loose pages with rings or another binding mechanism, and a Manila Folder is a card folder traditionally light brown. Confidentiality requires the appropriate handling arrangements, not merely an envelope.\nWhich container encloses the document for mailing?",
         "answer": "Envelope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "To identify the project archive box, an office assistant peels a self-adhesive white label from the backing sheet.\nWhich sticky paper tag is adhered to folders and boxes to mark their contents?",
+        "prompt": "A Label identifies the archive box in the written account. A Stapler joins papers with staples, a Paper Clip holds a few pages, and a Binder Clip grips a stack with spring pressure. The identifying information comes from the text rather than a generated label.\nWhich item identifies the archive box?",
         "answer": "Label",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "To keep a stack of client receipts bundled securely, the accountant snaps a durable rubber band around the middle.\nWhich elastic band keeps loose receipts and cards gathered tightly together?",
+        "prompt": "A Rubber Band forms an elastic loop around the papers. A Pushpin and a Thumbtack attach material to a suitable board, while Tape is an adhesive strip. Pushpin and Thumbtack overlap in ordinary usage; the elastic loop supplies the distinguishing evidence for this question.\nWhich elastic loop holds the papers together?",
         "answer": "Rubber Band",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "To mount receipts neatly onto an expense report, the clerk applies a clean swipe of a solid non-toxic glue stick.\nWhich twist-up cylindrical adhesive applies solid glue cleanly without wrinkling paper?",
+        "prompt": "A Glue Stick supplies solid adhesive from a tube. Fastener is a general word for something that holds parts or papers together, and a Magnet can hold material against a suitable metal surface. The clerk uses the Glue Stick in this account without claiming every product prevents wrinkles or has identical safety properties.\nWhich tube supplies the solid adhesive used here?",
         "answer": "Glue Stick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Envelope, Folder, Binder, Manila Folder, Label, Stapler, Paper Clip, Binder Clip, Rubber Band, Pushpin, Thumbtack, Tape, Glue Stick, Fastener, and Magnet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "An Envelope encloses the document for mailing. A Folder groups papers, a Binder holds loose pages with rings or another binding mechanism, and a Manila Folder is a card folder traditionally light brown. Confidentiality requires the appropriate handling arrangements, not merely an envelope. A Label identifies the archive box in the written account. A Stapler joins papers with staples, a Paper Clip holds a few pages, and a Binder Clip grips a stack with spring pressure. The identifying information comes from the text rather than a generated label. A Rubber Band forms an elastic loop around the papers. A Pushpin and a Thumbtack attach material to a suitable board, while Tape is an adhesive strip. Pushpin and Thumbtack overlap in ordinary usage; the elastic loop supplies the distinguishing evidence for this question. A Glue Stick supplies solid adhesive from a tube. Fastener is a general word for something that holds parts or papers together, and a Magnet can hold material against a suitable metal surface. The clerk uses the Glue Stick in this account without claiming every product prevents wrinkles or has identical safety properties.\nExplain why an object’s appearance alone cannot establish the guarantee or hidden purpose discussed in the account.",
+        "answer": "Open response: name the object and the specific limitation stated in this account, without inventing a product or legal guarantee.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-limits"
+      },
+      {
+        "prompt": "Write a short office inventory using Envelope, Folder, Binder, Manila Folder, Label, Stapler, Paper Clip, Binder Clip, Rubber Band, Pushpin, Thumbtack, Tape, Glue Stick, Fastener, Magnet. Give a correct concrete purpose for each item.",
+        "answer": "Open response: each named item must have the contextual meaning stated in the lesson; do not invent guaranteed properties.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Envelope” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "office-supplies-2-transfer"
-      },
-      {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Envelope"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pen” in a sentence connected to this lesson.",
-        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Office Supplies: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Office supplies: Joining and identifying papers",
+      "idea": "Show the named stationery as vocabulary references. Narrate the concrete functions from the written account and the stated limits on what appearance can establish.",
+      "scriptStarter": "An Envelope encloses the document for mailing. A Folder groups papers, a Binder holds loose pages with rings or another binding mechanism, and a Manila Folder is a card folder traditionally light brown. Confidentiality requires the appropriate handling arrangements, not merely an envelope. Which container encloses the document for mailing?"
     },
     "spacedReview": "1 lesson(s) back: Pen, Pencil from office-supplies-1\n3 lesson(s) back: Present, Discuss from meeting-room-3\n7 lesson(s) back: Reception, Lobby from office-3"
   },
@@ -409,7 +425,7 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "163-193 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -421,7 +437,15 @@
             "expectedAnswer": "Desk Organizer"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To eliminate desktop clutter, all pens, paperclips, and note pads are arranged neatly in a compartmentalized wooden desk organizer. Question: Which multi-compartment caddy keeps daily desktop stationery arranged and within easy reach? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A wooden desk organizer containing pens, clips and paper items.",
+          "learningContext": {
+            "sourceScenario": "To eliminate desktop clutter, all pens, paperclips, and note pads are arranged neatly in a compartmentalized wooden desk organizer.",
+            "sourceQuestion": "Which multi-compartment caddy keeps daily desktop stationery arranged and within easy reach?",
+            "sourceAnswer": "Desk Organizer",
+            "scenario": "The Desk Organizer has several compartments for small stationery. A Pencil Cup holds upright writing tools, a Tape Dispenser holds and releases tape, and a Letter Tray holds incoming papers. The written account asks for the compartmented organizer rather than any single stored item.",
+            "question": "Which compartmented object organizes the small stationery?",
+            "imageBrief": "Vocabulary reference for Desk Organizer. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 2,
@@ -433,7 +457,15 @@
             "expectedAnswer": "Desk Lamp"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Working late at the office, the consultant illuminates his paperwork with the warm, focused beam of an adjustable LED desk lamp. Question: Which adjustable task light directs focused illumination onto a work surface? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "An adjustable desk lamp lighting papers beside a man at a desk.",
+          "learningContext": {
+            "sourceScenario": "Working late at the office, the consultant illuminates his paperwork with the warm, focused beam of an adjustable LED desk lamp.",
+            "sourceQuestion": "Which adjustable task light directs focused illumination onto a work surface?",
+            "sourceAnswer": "Desk Lamp",
+            "scenario": "A Desk Lamp lights the work surface. The Mouse Pad provides a surface for the mouse, the Wrist Rest is a support near the keyboard or mouse, and the Monitor Stand raises a screen. These objects have different purposes; their presence does not establish an ergonomic assessment.",
+            "question": "Which item lights the work surface?",
+            "imageBrief": "Vocabulary reference for Desk Lamp. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 3,
@@ -445,7 +477,15 @@
             "expectedAnswer": "Cable Organizer"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Along the back edge of the workstation, a silicone cable organizer keeps phone chargers and monitor cords neatly separated and off the floor. Question: Which channel clip manages charging cords and prevents messy cable tangles? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A dark cable organizer holding several cables at a desk edge.",
+          "learningContext": {
+            "sourceScenario": "Along the back edge of the workstation, a silicone cable organizer keeps phone chargers and monitor cords neatly separated and off the floor.",
+            "sourceQuestion": "Which channel clip manages charging cords and prevents messy cable tangles?",
+            "sourceAnswer": "Cable Organizer",
+            "scenario": "A Cable Organizer keeps cords arranged. A Desk Calendar shows dates, a Stamp here is a tool for printing a repeated mark, and a Shipping Label carries parcel information. The cable arrangement is the described function, not proof that every cable hazard has been removed.",
+            "question": "Which object keeps the cords arranged?",
+            "imageBrief": "Vocabulary reference for Cable Organizer. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 4,
@@ -457,88 +497,72 @@
             "expectedAnswer": "Packing Tape"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Before dispatching the outgoing carton of manuals, the mailroom clerk seals the top flaps with heavy-duty brown packing tape. Question: Which wide, reinforced adhesive roll securely seals heavy cardboard boxes for shipping? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A man applying brown packing tape along the top of a cardboard box.",
+          "learningContext": {
+            "sourceScenario": "Before dispatching the outgoing carton of manuals, the mailroom clerk seals the top flaps with heavy-duty brown packing tape.",
+            "sourceQuestion": "Which wide, reinforced adhesive roll securely seals heavy cardboard boxes for shipping?",
+            "sourceAnswer": "Packing Tape",
+            "scenario": "Packing Tape seals the Box in the written account. Bubble Wrap supplies cushioning around suitable items. Tape strength and protection depend on the packaging requirements; brown color or reinforcement is not part of every packing tape definition.",
+            "question": "Which adhesive material seals the box?",
+            "imageBrief": "Vocabulary reference for Packing Tape. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Office supplies 3: Preparing and organising work",
-      "text": "Mina clears the shared desk. She puts pens in a pencil cup inside the desk organizer and papers in the letter tray. A tape dispenser sits beside the desk lamp. The mouse pad and wrist rest stay near the keyboard; the monitor stand raises the screen and a cable organizer keeps wires together. She checks the desk calendar before preparing a parcel. A shipping label goes on the box. Packing tape closes it, while bubble wrap protects the contents. A stamp is ready for a separate letter.",
-      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
+      "title": "Office supplies: Arranging the desk",
+      "text": "The Desk Organizer has several compartments for small stationery. A Pencil Cup holds upright writing tools, a Tape Dispenser holds and releases tape, and a Letter Tray holds incoming papers. The written account asks for the compartmented organizer rather than any single stored item. A Desk Lamp lights the work surface. The Mouse Pad provides a surface for the mouse, the Wrist Rest is a support near the keyboard or mouse, and the Monitor Stand raises a screen. These objects have different purposes; their presence does not establish an ergonomic assessment. A Cable Organizer keeps cords arranged. A Desk Calendar shows dates, a Stamp here is a tool for printing a repeated mark, and a Shipping Label carries parcel information. The cable arrangement is the described function, not proof that every cable hazard has been removed. Packing Tape seals the Box in the written account. Bubble Wrap supplies cushioning around suitable items. Tape strength and protection depend on the packaging requirements; brown color or reinforcement is not part of every packing tape definition.",
+      "imageBrief": "Uncluttered office stationery reference containing only items described in the written account. Prefer no people, and include no readable text, logos or answer highlighting. The picture does not prove legal status, packaging suitability or safety."
     },
     "exercises": [
       {
-        "prompt": "To eliminate desktop clutter, all pens, paperclips, and note pads are arranged neatly in a compartmentalized wooden desk organizer.\nWhich multi-compartment caddy keeps daily desktop stationery arranged and within easy reach?",
+        "prompt": "The Desk Organizer has several compartments for small stationery. A Pencil Cup holds upright writing tools, a Tape Dispenser holds and releases tape, and a Letter Tray holds incoming papers. The written account asks for the compartmented organizer rather than any single stored item.\nWhich compartmented object organizes the small stationery?",
         "answer": "Desk Organizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Working late at the office, the consultant illuminates his paperwork with the warm, focused beam of an adjustable LED desk lamp.\nWhich adjustable task light directs focused illumination onto a work surface?",
+        "prompt": "A Desk Lamp lights the work surface. The Mouse Pad provides a surface for the mouse, the Wrist Rest is a support near the keyboard or mouse, and the Monitor Stand raises a screen. These objects have different purposes; their presence does not establish an ergonomic assessment.\nWhich item lights the work surface?",
         "answer": "Desk Lamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Along the back edge of the workstation, a silicone cable organizer keeps phone chargers and monitor cords neatly separated and off the floor.\nWhich channel clip manages charging cords and prevents messy cable tangles?",
+        "prompt": "A Cable Organizer keeps cords arranged. A Desk Calendar shows dates, a Stamp here is a tool for printing a repeated mark, and a Shipping Label carries parcel information. The cable arrangement is the described function, not proof that every cable hazard has been removed.\nWhich object keeps the cords arranged?",
         "answer": "Cable Organizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Before dispatching the outgoing carton of manuals, the mailroom clerk seals the top flaps with heavy-duty brown packing tape.\nWhich wide, reinforced adhesive roll securely seals heavy cardboard boxes for shipping?",
+        "prompt": "Packing Tape seals the Box in the written account. Bubble Wrap supplies cushioning around suitable items. Tape strength and protection depend on the packaging requirements; brown color or reinforcement is not part of every packing tape definition.\nWhich adhesive material seals the box?",
         "answer": "Packing Tape",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Desk Organizer, Pencil Cup, Tape Dispenser, Letter Tray, Desk Lamp, Mouse Pad, Wrist Rest, Monitor Stand, Cable Organizer, Desk Calendar, Stamp, Shipping Label, Packing Tape, Bubble Wrap, and Box in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "The Desk Organizer has several compartments for small stationery. A Pencil Cup holds upright writing tools, a Tape Dispenser holds and releases tape, and a Letter Tray holds incoming papers. The written account asks for the compartmented organizer rather than any single stored item. A Desk Lamp lights the work surface. The Mouse Pad provides a surface for the mouse, the Wrist Rest is a support near the keyboard or mouse, and the Monitor Stand raises a screen. These objects have different purposes; their presence does not establish an ergonomic assessment. A Cable Organizer keeps cords arranged. A Desk Calendar shows dates, a Stamp here is a tool for printing a repeated mark, and a Shipping Label carries parcel information. The cable arrangement is the described function, not proof that every cable hazard has been removed. Packing Tape seals the Box in the written account. Bubble Wrap supplies cushioning around suitable items. Tape strength and protection depend on the packaging requirements; brown color or reinforcement is not part of every packing tape definition.\nExplain why an object’s appearance alone cannot establish the guarantee or hidden purpose discussed in the account.",
+        "answer": "Open response: name the object and the specific limitation stated in this account, without inventing a product or legal guarantee.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-limits"
+      },
+      {
+        "prompt": "Write a short office inventory using Desk Organizer, Pencil Cup, Tape Dispenser, Letter Tray, Desk Lamp, Mouse Pad, Wrist Rest, Monitor Stand, Cable Organizer, Desk Calendar, Stamp, Shipping Label, Packing Tape, Bubble Wrap, Box. Give a correct concrete purpose for each item.",
+        "answer": "Open response: each named item must have the contextual meaning stated in the lesson; do not invent guaranteed properties.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Desk Organizer” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "office-supplies-3-transfer"
-      },
-      {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Desk Organizer"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Envelope” in a sentence connected to this lesson.",
-        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Office Supplies: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Office supplies: Arranging the desk",
+      "idea": "Show the named stationery as vocabulary references. Narrate the concrete functions from the written account and the stated limits on what appearance can establish.",
+      "scriptStarter": "The Desk Organizer has several compartments for small stationery. A Pencil Cup holds upright writing tools, a Tape Dispenser holds and releases tape, and a Letter Tray holds incoming papers. The written account asks for the compartmented organizer rather than any single stored item. Which compartmented object organizes the small stationery?"
     },
     "spacedReview": "1 lesson(s) back: Envelope, Folder from office-supplies-2\n3 lesson(s) back: Chat, Breakout Room from meeting-room-4\n7 lesson(s) back: Remote Work, Flex Hours from office-4"
   },
@@ -570,7 +594,7 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "81-111 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -582,7 +606,15 @@
             "expectedAnswer": "Padded Envelope"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To mail delicate electronic components safely, the clerk encloses them in a bubble-lined cushioned padded envelope. Question: Which protective mailing pouch contains internal bubble cushioning to safeguard fragile items? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand placing a small packet inside a bubble-lined padded envelope.",
+          "learningContext": {
+            "sourceScenario": "To mail delicate electronic components safely, the clerk encloses them in a bubble-lined cushioned padded envelope.",
+            "sourceQuestion": "Which protective mailing pouch contains internal bubble cushioning to safeguard fragile items?",
+            "sourceAnswer": "Padded Envelope",
+            "scenario": "A Padded Envelope has an inner cushioning layer. A Return Label gives the supplied return-shipping information, a Postage Meter applies authorized postage, and a Mail Slot is an opening for mail. Appropriate packaging depends on the item; cushioning alone does not guarantee safe transport.",
+            "question": "Which mailing container has the inner cushioning layer?",
+            "imageBrief": "Vocabulary reference for Padded Envelope. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         },
         {
           "chunkNumber": 2,
@@ -594,74 +626,58 @@
             "expectedAnswer": "Letter Opener"
           },
           "imageBrief": "Adult learning visual support for this exact situation: To slice open incoming correspondence neatly without tearing the documents inside, the secretary uses a slim stainless steel letter opener. Question: Which slender bladed desktop tool cleanly slits open paper envelope seams? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageAlt": "A hand holding a slender metal letter opener against an envelope.",
+          "learningContext": {
+            "sourceScenario": "To slice open incoming correspondence neatly without tearing the documents inside, the secretary uses a slim stainless steel letter opener.",
+            "sourceQuestion": "Which slender bladed desktop tool cleanly slits open paper envelope seams?",
+            "sourceAnswer": "Letter Opener",
+            "scenario": "The clerk identifies a Letter Opener as the slender tool for opening envelope seams. She distinguishes the tool’s name from a guarantee that any document can be opened without damage. Care and handling follow the office’s arrangements; the illustration supports object recognition without teaching a blade technique.",
+            "question": "Which target names the slender envelope-opening tool?",
+            "imageBrief": "Vocabulary reference for Letter Opener. Prefer one human-free composition showing the named object clearly in its stated office use. The written account provides the answer and any hidden purpose. No readable text, logos, overlays, arrows, highlight cues or guarantee of legal validity, safety, packaging performance or professional status."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Office supplies 4: Preparing and organising work",
-      "text": "Mina receives a small parcel in a padded envelope. The return label identifies where it came from. At the office, a postage meter is used to prepare outgoing mail, and a mail slot collects letters. Mina keeps a letter opener on the desk so that she can open ordinary envelopes neatly. She checks the contents before filing the papers.",
-      "imageBrief": "A tidy adult office workspace with blank papers and unbranded supplies; visual reference only."
+      "title": "Office supplies: Preparing incoming and outgoing mail",
+      "text": "A Padded Envelope has an inner cushioning layer. A Return Label gives the supplied return-shipping information, a Postage Meter applies authorized postage, and a Mail Slot is an opening for mail. Appropriate packaging depends on the item; cushioning alone does not guarantee safe transport. The clerk identifies a Letter Opener as the slender tool for opening envelope seams. She distinguishes the tool’s name from a guarantee that any document can be opened without damage. Care and handling follow the office’s arrangements; the illustration supports object recognition without teaching a blade technique.",
+      "imageBrief": "Uncluttered office stationery reference containing only items described in the written account. Prefer no people, and include no readable text, logos or answer highlighting. The picture does not prove legal status, packaging suitability or safety."
     },
     "exercises": [
       {
-        "prompt": "To mail delicate electronic components safely, the clerk encloses them in a bubble-lined cushioned padded envelope.\nWhich protective mailing pouch contains internal bubble cushioning to safeguard fragile items?",
+        "prompt": "A Padded Envelope has an inner cushioning layer. A Return Label gives the supplied return-shipping information, a Postage Meter applies authorized postage, and a Mail Slot is an opening for mail. Appropriate packaging depends on the item; cushioning alone does not guarantee safe transport.\nWhich mailing container has the inner cushioning layer?",
         "answer": "Padded Envelope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "To slice open incoming correspondence neatly without tearing the documents inside, the secretary uses a slim stainless steel letter opener.\nWhich slender bladed desktop tool cleanly slits open paper envelope seams?",
+        "prompt": "The clerk identifies a Letter Opener as the slender tool for opening envelope seams. She distinguishes the tool’s name from a guarantee that any document can be opened without damage. Care and handling follow the office’s arrangements; the illustration supports object recognition without teaching a blade technique.\nWhich target names the slender envelope-opening tool?",
         "answer": "Letter Opener",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Apply the lesson vocabulary in the office supplies task. Use Padded Envelope, Return Label, Postage Meter, Mail Slot, and Letter Opener in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "A Padded Envelope has an inner cushioning layer. A Return Label gives the supplied return-shipping information, a Postage Meter applies authorized postage, and a Mail Slot is an opening for mail. Appropriate packaging depends on the item; cushioning alone does not guarantee safe transport. The clerk identifies a Letter Opener as the slender tool for opening envelope seams. She distinguishes the tool’s name from a guarantee that any document can be opened without damage. Care and handling follow the office’s arrangements; the illustration supports object recognition without teaching a blade technique.\nExplain why an object’s appearance alone cannot establish the guarantee or hidden purpose discussed in the account.",
+        "answer": "Open response: name the object and the specific limitation stated in this account, without inventing a product or legal guarantee.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-limits"
+      },
+      {
+        "prompt": "Write a short office inventory using Padded Envelope, Return Label, Postage Meter, Mail Slot, Letter Opener. Give a correct concrete purpose for each item.",
+        "answer": "Open response: each named item must have the contextual meaning stated in the lesson; do not invent guaranteed properties.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
-      },
-      {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Padded Envelope” mean here?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "office-supplies-4-transfer"
-      },
-      {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
-      },
-      {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Padded Envelope"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Desk Organizer” in a sentence connected to this lesson.",
-        "answer": "Open response"
       }
     ],
     "video": {
-      "title": "Office Supplies: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Office supplies: Preparing incoming and outgoing mail",
+      "idea": "Show the named stationery as vocabulary references. Narrate the concrete functions from the written account and the stated limits on what appearance can establish.",
+      "scriptStarter": "A Padded Envelope has an inner cushioning layer. A Return Label gives the supplied return-shipping information, a Postage Meter applies authorized postage, and a Mail Slot is an opening for mail. Appropriate packaging depends on the item; cushioning alone does not guarantee safe transport. Which mailing container has the inner cushioning layer?"
     },
     "spacedReview": "1 lesson(s) back: Desk Organizer, Pencil Cup from office-supplies-3\n3 lesson(s) back: Pen, Pencil from office-supplies-1\n7 lesson(s) back: Projector Screen, Laser Pointer from meeting-room-1"
   }

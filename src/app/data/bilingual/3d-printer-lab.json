@@ -6,12 +6,12 @@
   },
   "build-plate": {
     "definition": "The flat surface that supports an object while a 3D printer builds it layer by layer.",
-    "exampleUsage": "Clean the build plate before starting a new print.",
+    "exampleUsage": "The trained operator checked the build plate according to the printer’s maintenance instructions.",
     "arabicTranslation": "منصّة الطباعة"
   },
   "filament-spool": {
     "definition": "A reel that holds printing filament and allows it to feed into a 3D printer.",
-    "exampleUsage": "Place the filament spool on its holder before loading the printer.",
+    "exampleUsage": "The filament spool sat on the printer’s compatible holder.",
     "arabicTranslation": "بَكَرَة خيط الطباعة"
   },
   "extruder": {
@@ -44,7 +44,7 @@
   },
   "lcd-screen": {
     "definition": "A liquid-crystal display that shows printer information, menus, and settings.",
-    "exampleUsage": "Use the LCD screen to choose the printing settings.",
+    "exampleUsage": "The LCD screen displayed the selected printing settings.",
     "arabicTranslation": "شاشة بلّورية سائلة (LCD)"
   },
   "pla-filament": {
@@ -58,7 +58,7 @@
     "arabicTranslation": "خيط ABS من أكريلونيتريل بوتادين ستايرين"
   },
   "petg-filament": {
-    "definition": "A durable thermoplastic printing material that is easy to print and resists many chemicals.",
+    "definition": "A thermoplastic printing filament made from glycol-modified polyethylene terephthalate.",
     "exampleUsage": "PETG filament is useful for many practical printed parts.",
     "arabicTranslation": "خيط PETG للطباعة"
   },
@@ -182,8 +182,8 @@
     "arabicTranslation": "طلاء تمهيدي"
   },
   "acetone": {
-    "definition": "A volatile solvent commonly used for cleaning and, with some plastics, smoothing printed surfaces.",
-    "exampleUsage": "Acetone is handled carefully in a well-ventilated work area.",
+    "definition": "A volatile, flammable solvent stored and handled under appropriate professional controls.",
+    "exampleUsage": "The technician checked the safety data and material compatibility before any authorized use of acetone.",
     "arabicTranslation": "أسيتون"
   },
   "uv-curing-lamp": {
@@ -257,7 +257,7 @@
   },
   "trash-bin": {
     "definition": "A container used for collecting waste before it is removed.",
-    "exampleUsage": "Put scraps and other waste in the trash bin.",
+    "exampleUsage": "The workshop’s trash bin held the waste permitted under its disposal rules.",
     "arabicTranslation": "سلة مهملات"
   },
   "label-maker": {
@@ -342,5 +342,9 @@
   "prototype": {
     "definition": "An early model made to test the form, fit, or function of a design.",
     "arabicTranslation": "نموذج أولي"
+  },
+  "vase": {
+    "definition": "A container used to hold flowers or as a decorative object.",
+    "arabicTranslation": "مزهرية"
   }
 }

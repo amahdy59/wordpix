@@ -34,8 +34,8 @@
       "منعطف النهر",
       "دلتا",
       "رافد",
-      "-",
-      "سرير",
+      "ضفة النهر",
+      "قاع النهر",
       "مصب نهر",
       "سمكة",
       "ضفدع",
@@ -44,132 +44,115 @@
       "قضاعة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "129-159 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Current", "Rapids", "Waterfall", "Pool"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.",
+          "scenario": "The powerful river current flows steadily downstream, sweeping logs and carving channels through bedrock over centuries. Rapids churn foam, and pools calm depths. The paddler reads the speed and direction of the river current.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which continuous directional movement of flowing water defines a river?",
             "options": ["Current", "Rapids", "Waterfall"],
             "expectedAnswer": "Current"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Current as the central item; include Current, Rapids, and Waterfall naturally where visually appropriate, but make the real-world use of Current the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Current as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bend", "Delta", "Tributary", "Bank"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.",
+          "scenario": "A sweeping river bend curves gently through the floodplain, slowing water on the inside bank and depositing sandy sandbars. Deltas fan mouths, and tributaries join mains. The rowboat steers around the wide horseshoe river bend.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which natural curved or winding turn alters the course of a flowing river?",
             "options": ["Bend", "Delta", "Tributary"],
             "expectedAnswer": "Bend"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Bend as the central item; include Bend, Delta, and Tributary naturally where visually appropriate, but make the real-world use of Bend the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Bend as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bed", "Estuary", "Fish", "Frog"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.",
+          "scenario": "The stony river bed forms the submerged bottom floor over which fresh water currents flow continuously toward the sea. Banks flank borders, and estuaries meet tides. Smooth rounded river pebbles line the clear gravel river bed.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which submerged bottom channel ground supports the flowing water of a river?",
             "options": ["Bed", "Estuary", "Fish"],
             "expectedAnswer": "Bed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Bed as the central item; include Bed, Estuary, and Fish naturally where visually appropriate, but make the real-world use of Bed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Bed as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Turtle", "Heron", "Otter"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.",
+          "scenario": "A freshwater river turtle suns itself on a half-submerged driftwood log before slipping silently into cool water when approached. Herons wade shallows, and otters dive depths. The yellow-bellied turtle basks on the river log.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which hard-shelled aquatic reptile basks on logs along river banks?",
             "options": ["Turtle", "Heron", "Otter"],
             "expectedAnswer": "Turtle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Turtle as the central item; include Turtle, Heron, and Otter naturally where visually appropriate, but make the real-world use of Turtle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Turtle as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The River",
-      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Current, Rapids, Waterfall, and Pool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bend, Delta, Tributary, and Bank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bed, Estuary, Fish, and Frog. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Turtle, Heron, and Otter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "River hydrology, stream channels and freshwater reptiles",
+      "text": "The powerful river current flows steadily downstream, sweeping logs and carving channels through bedrock over centuries. Rapids churn foam, and pools calm depths. The paddler reads the speed and direction of the river current. A sweeping river bend curves gently through the floodplain, slowing water on the inside bank and depositing sandy sandbars. Deltas fan mouths, and tributaries join mains. The rowboat steers around the wide horseshoe river bend. The stony river bed forms the submerged bottom floor over which fresh water currents flow continuously toward the sea. Banks flank borders, and estuaries meet tides. Smooth rounded river pebbles line the clear gravel river bed. A freshwater river turtle suns itself on a half-submerged driftwood log before slipping silently into cool water when approached. Herons wade shallows, and otters dive depths. The yellow-bellied turtle basks on the river log.",
+      "imageBrief": "Use independently inspected word references to support River hydrology, stream channels and freshwater reptiles; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Current, Rapids, Waterfall, and Pool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The powerful river current flows steadily downstream, sweeping logs and carving channels through bedrock over centuries. Rapids churn foam, and pools calm depths. The paddler reads the speed and direction of the river current.\nWhich continuous directional movement of flowing water defines a river?",
         "answer": "Current",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bend, Delta, Tributary, and Bank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A sweeping river bend curves gently through the floodplain, slowing water on the inside bank and depositing sandy sandbars. Deltas fan mouths, and tributaries join mains. The rowboat steers around the wide horseshoe river bend.\nWhich natural curved or winding turn alters the course of a flowing river?",
         "answer": "Bend",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bed, Estuary, Fish, and Frog and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The stony river bed forms the submerged bottom floor over which fresh water currents flow continuously toward the sea. Banks flank borders, and estuaries meet tides. Smooth rounded river pebbles line the clear gravel river bed.\nWhich submerged bottom channel ground supports the flowing water of a river?",
         "answer": "Bed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Turtle, Heron, and Otter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A freshwater river turtle suns itself on a half-submerged driftwood log before slipping silently into cool water when approached. Herons wade shallows, and otters dive depths. The yellow-bellied turtle basks on the river log.\nWhich hard-shelled aquatic reptile basks on logs along river banks?",
         "answer": "Turtle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The powerful river current flows steadily downstream, sweeping logs and carving channels through bedrock over centuries. Rapids churn foam, and pools calm depths. The paddler reads the speed and direction of the river current. A sweeping river bend curves gently through the floodplain, slowing water on the inside bank and depositing sandy sandbars. Deltas fan mouths, and tributaries join mains. The rowboat steers around the wide horseshoe river bend. The stony river bed forms the submerged bottom floor over which fresh water currents flow continuously toward the sea. Banks flank borders, and estuaries meet tides. Smooth rounded river pebbles line the clear gravel river bed. A freshwater river turtle suns itself on a half-submerged driftwood log before slipping silently into cool water when approached. Herons wade shallows, and otters dive depths. The yellow-bellied turtle basks on the river log.\nCompare “Current” and “Rapids” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Current"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Pool"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Map” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the river task. Use Current, Rapids, Waterfall, Pool, Bend, Delta, Tributary, Bank, Bed, Estuary, Fish, Frog, Turtle, Heron, and Otter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Current, Rapids, Waterfall, Pool, Bend, Delta, Tributary, Bank, Bed, Estuary, Fish, Frog, Turtle, Heron, Otter in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The River: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "River hydrology, stream channels and freshwater reptiles",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "The powerful river current flows steadily downstream, sweeping logs and carving channels through bedrock over centuries. Rapids churn foam, and pools calm depths. The paddler reads the speed and direction of the river current. Which continuous directional movement of flowing water defines a river?"
     },
     "spacedReview": "1 lesson(s) back: Map, Headlamp from mountain-4\n3 lesson(s) back: Shrub, Alpine Meadow from mountain-2\n7 lesson(s) back: Wildflower, Lichen from forest-2"
   },
@@ -218,132 +201,115 @@
       "شجرة مانغروف"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Beaver", "Dragonfly", "Duck", "Salmon"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.",
+          "scenario": "An industrious North American beaver fells riverside saplings with sharp incisors to construct sturdy stick dams and water lodges. Ducks float eddies, and salmon leap falls. The beaver slaps its flat scaly tail against the river pool.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which semi-aquatic rodent fells trees and constructs stick dams across streams?",
             "options": ["Beaver", "Dragonfly", "Duck"],
             "expectedAnswer": "Beaver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Beaver as the central item; include Beaver, Dragonfly, and Duck naturally where visually appropriate, but make the real-world use of Beaver the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Beaver as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crayfish", "Reed", "Lily Pad", "Cattail"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.",
+          "scenario": "A freshwater crayfish scurries backward across rocky shallows, defending gravel crevices with strong pincers. Dragonflies mate reeds, and moss blankets stones. The child spots a dark crayfish hiding beneath the flat river rock.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which small clawed freshwater crustacean scuttles across gravel stream beds?",
             "options": ["Crayfish", "Reed", "Lily Pad"],
             "expectedAnswer": "Crayfish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Crayfish as the central item; include Crayfish, Reed, and Lily Pad naturally where visually appropriate, but make the real-world use of Crayfish the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Crayfish as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Algae", "Willow", "Duckweed", "Water Lily"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.",
+          "scenario": "Microscopic green river algae coats submerged boulders in slippery filaments, photosynthesizing nutrients and nourishing aquatic snails. Reeds ring shores, and willows droop limbs. Sunlight feeds the growth of slippery green algae on the rocks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which simple non-flowering aquatic plant organism forms green coatings on stones?",
             "options": ["Algae", "Willow", "Duckweed"],
             "expectedAnswer": "Algae"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Algae as the central item; include Algae, Willow, and Duckweed naturally where visually appropriate, but make the real-world use of Algae the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Algae as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Moss", "Riverside Grass", "Mangrove"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.",
+          "scenario": "Lush aquatic moss clings tightly to partially submerged rocks along cascading rapids, filtering fine organic particles from moving water. Lily pads float calm, and cattails wave wind. Dark green cushions of river moss blanket the wet boulders.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which soft velvety non-vascular plant carpets wet riverside stones and banks?",
             "options": ["Moss", "Riverside Grass", "Mangrove"],
             "expectedAnswer": "Moss"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Moss as the central item; include Moss, Riverside Grass, and Mangrove naturally where visually appropriate, but make the real-world use of Moss the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Moss as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The River",
-      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beaver, Dragonfly, Duck, and Salmon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crayfish, Reed, Lily Pad, and Cattail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Algae, Willow, Duckweed, and Water Lily. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moss, Riverside Grass, and Mangrove. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Riparian mammals, aquatic crustaceans and emergent vegetation",
+      "text": "An industrious North American beaver fells riverside saplings with sharp incisors to construct sturdy stick dams and water lodges. Ducks float eddies, and salmon leap falls. The beaver slaps its flat scaly tail against the river pool. A freshwater crayfish scurries backward across rocky shallows, defending gravel crevices with strong pincers. Dragonflies mate reeds, and moss blankets stones. The child spots a dark crayfish hiding beneath the flat river rock. Microscopic green river algae coats submerged boulders in slippery filaments, photosynthesizing nutrients and nourishing aquatic snails. Reeds ring shores, and willows droop limbs. Sunlight feeds the growth of slippery green algae on the rocks. Lush aquatic moss clings tightly to partially submerged rocks along cascading rapids, filtering fine organic particles from moving water. Lily pads float calm, and cattails wave wind. Dark green cushions of river moss blanket the wet boulders.",
+      "imageBrief": "Use independently inspected word references to support Riparian mammals, aquatic crustaceans and emergent vegetation; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaver, Dragonfly, Duck, and Salmon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An industrious North American beaver fells riverside saplings with sharp incisors to construct sturdy stick dams and water lodges. Ducks float eddies, and salmon leap falls. The beaver slaps its flat scaly tail against the river pool.\nWhich semi-aquatic rodent fells trees and constructs stick dams across streams?",
         "answer": "Beaver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crayfish, Reed, Lily Pad, and Cattail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A freshwater crayfish scurries backward across rocky shallows, defending gravel crevices with strong pincers. Dragonflies mate reeds, and moss blankets stones. The child spots a dark crayfish hiding beneath the flat river rock.\nWhich small clawed freshwater crustacean scuttles across gravel stream beds?",
         "answer": "Crayfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Algae, Willow, Duckweed, and Water Lily and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Microscopic green river algae coats submerged boulders in slippery filaments, photosynthesizing nutrients and nourishing aquatic snails. Reeds ring shores, and willows droop limbs. Sunlight feeds the growth of slippery green algae on the rocks.\nWhich simple non-flowering aquatic plant organism forms green coatings on stones?",
         "answer": "Algae",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moss, Riverside Grass, and Mangrove and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Lush aquatic moss clings tightly to partially submerged rocks along cascading rapids, filtering fine organic particles from moving water. Lily pads float calm, and cattails wave wind. Dark green cushions of river moss blanket the wet boulders.\nWhich soft velvety non-vascular plant carpets wet riverside stones and banks?",
         "answer": "Moss",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "An industrious North American beaver fells riverside saplings with sharp incisors to construct sturdy stick dams and water lodges. Ducks float eddies, and salmon leap falls. The beaver slaps its flat scaly tail against the river pool. A freshwater crayfish scurries backward across rocky shallows, defending gravel crevices with strong pincers. Dragonflies mate reeds, and moss blankets stones. The child spots a dark crayfish hiding beneath the flat river rock. Microscopic green river algae coats submerged boulders in slippery filaments, photosynthesizing nutrients and nourishing aquatic snails. Reeds ring shores, and willows droop limbs. Sunlight feeds the growth of slippery green algae on the rocks. Lush aquatic moss clings tightly to partially submerged rocks along cascading rapids, filtering fine organic particles from moving water. Lily pads float calm, and cattails wave wind. Dark green cushions of river moss blanket the wet boulders.\nCompare “Beaver” and “Dragonfly” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Beaver"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Salmon"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Current” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the river task. Use Beaver, Dragonfly, Duck, Salmon, Crayfish, Reed, Lily Pad, Cattail, Algae, Willow, Duckweed, Water Lily, Moss, Riverside Grass, and Mangrove in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Beaver, Dragonfly, Duck, Salmon, Crayfish, Reed, Lily Pad, Cattail, Algae, Willow, Duckweed, Water Lily, Moss, Riverside Grass, Mangrove in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The River: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Riparian mammals, aquatic crustaceans and emergent vegetation",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "An industrious North American beaver fells riverside saplings with sharp incisors to construct sturdy stick dams and water lodges. Ducks float eddies, and salmon leap falls. The beaver slaps its flat scaly tail against the river pool. Which semi-aquatic rodent fells trees and constructs stick dams across streams?"
     },
     "spacedReview": "1 lesson(s) back: Current, Rapids from river-1\n3 lesson(s) back: Snow, Fog from mountain-3\n7 lesson(s) back: Butterfly, Beetle from forest-3"
   },
@@ -392,132 +358,115 @@
       "صافي"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "126-156 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Canoe", "Kayak", "Raft", "Rowboat"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.",
+          "scenario": "An open tandem canoe glides smoothly along quiet river channels propelled by single-blade wooden paddles. Kayaks deck cockpits, and rafts bounce rapids. The partners synchronize their forward strokes inside the red canoe.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which pointed open-decked watercraft is paddled with single-blade paddles?",
             "options": ["Canoe", "Kayak", "Raft"],
             "expectedAnswer": "Canoe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Canoe as the central item; include Canoe, Kayak, and Raft naturally where visually appropriate, but make the real-world use of Canoe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Canoe as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Motorboat", "Paddleboard", "Inner Tube", "Pontoon"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.",
+          "scenario": "A motorized river motorboat hums along deep navigational channels, transporting supplies and anglers between landing docks. Sailboats catch wind, and paddleboards balance standing. The ranger patrols the broad river in an aluminum motorboat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which engine-powered watercraft navigates deep commercial or recreational waterways?",
             "options": ["Motorboat", "Paddleboard", "Inner Tube"],
             "expectedAnswer": "Motorboat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Motorboat as the central item; include Motorboat, Paddleboard, and Inner Tube naturally where visually appropriate, but make the real-world use of Motorboat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Motorboat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sailboat", "Fishing Boat", "Paddle", "Life Jacket"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.",
+          "scenario": "A small rigged sailboat catches thermal river valley breezes, tacking gracefully across the broad freshwater bay. Rowboats pull oars, and rafts drift current. The skipper trims the white mainsail of the river sailboat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which wind-powered watercraft uses cloth sails to navigate wide river reaches?",
             "options": ["Sailboat", "Fishing Boat", "Paddle"],
             "expectedAnswer": "Sailboat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Sailboat as the central item; include Sailboat, Fishing Boat, and Paddle naturally where visually appropriate, but make the real-world use of Sailboat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Sailboat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fishing Rod", "Tackle Box", "Net"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.",
+          "scenario": "A flexible carbon-fiber fishing rod flexes under the weight of a hooked bass, reeling line smoothly through ceramic guides. Tackles hold lures, and nets land catches. The angler casts the line across the eddy using the fishing rod.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which long flexible pole equipped with line and reel catches freshwater fish?",
             "options": ["Fishing Rod", "Tackle Box", "Net"],
             "expectedAnswer": "Fishing Rod"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Fishing Rod as the central item; include Fishing Rod, Tackle Box, and Net naturally where visually appropriate, but make the real-world use of Fishing Rod the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Fishing Rod as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: The River",
-      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Canoe, Kayak, Raft, and Rowboat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Motorboat, Paddleboard, Inner Tube, and Pontoon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sailboat, Fishing Boat, Paddle, and Life Jacket. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fishing Rod, Tackle Box, and Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Non-motorized watercraft, paddle craft and angling rods",
+      "text": "An open tandem canoe glides smoothly along quiet river channels propelled by single-blade wooden paddles. Kayaks deck cockpits, and rafts bounce rapids. The partners synchronize their forward strokes inside the red canoe. A motorized river motorboat hums along deep navigational channels, transporting supplies and anglers between landing docks. Sailboats catch wind, and paddleboards balance standing. The ranger patrols the broad river in an aluminum motorboat. A small rigged sailboat catches thermal river valley breezes, tacking gracefully across the broad freshwater bay. Rowboats pull oars, and rafts drift current. The skipper trims the white mainsail of the river sailboat. A flexible carbon-fiber fishing rod flexes under the weight of a hooked bass, reeling line smoothly through ceramic guides. Tackles hold lures, and nets land catches. The angler casts the line across the eddy using the fishing rod.",
+      "imageBrief": "Use independently inspected word references to support Non-motorized watercraft, paddle craft and angling rods; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Canoe, Kayak, Raft, and Rowboat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An open tandem canoe glides smoothly along quiet river channels propelled by single-blade wooden paddles. Kayaks deck cockpits, and rafts bounce rapids. The partners synchronize their forward strokes inside the red canoe.\nWhich pointed open-decked watercraft is paddled with single-blade paddles?",
         "answer": "Canoe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorboat, Paddleboard, Inner Tube, and Pontoon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A motorized river motorboat hums along deep navigational channels, transporting supplies and anglers between landing docks. Sailboats catch wind, and paddleboards balance standing. The ranger patrols the broad river in an aluminum motorboat.\nWhich engine-powered watercraft navigates deep commercial or recreational waterways?",
         "answer": "Motorboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sailboat, Fishing Boat, Paddle, and Life Jacket and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A small rigged sailboat catches thermal river valley breezes, tacking gracefully across the broad freshwater bay. Rowboats pull oars, and rafts drift current. The skipper trims the white mainsail of the river sailboat.\nWhich wind-powered watercraft uses cloth sails to navigate wide river reaches?",
         "answer": "Sailboat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fishing Rod, Tackle Box, and Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A flexible carbon-fiber fishing rod flexes under the weight of a hooked bass, reeling line smoothly through ceramic guides. Tackles hold lures, and nets land catches. The angler casts the line across the eddy using the fishing rod.\nWhich long flexible pole equipped with line and reel catches freshwater fish?",
         "answer": "Fishing Rod",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "An open tandem canoe glides smoothly along quiet river channels propelled by single-blade wooden paddles. Kayaks deck cockpits, and rafts bounce rapids. The partners synchronize their forward strokes inside the red canoe. A motorized river motorboat hums along deep navigational channels, transporting supplies and anglers between landing docks. Sailboats catch wind, and paddleboards balance standing. The ranger patrols the broad river in an aluminum motorboat. A small rigged sailboat catches thermal river valley breezes, tacking gracefully across the broad freshwater bay. Rowboats pull oars, and rafts drift current. The skipper trims the white mainsail of the river sailboat. A flexible carbon-fiber fishing rod flexes under the weight of a hooked bass, reeling line smoothly through ceramic guides. Tackles hold lures, and nets land catches. The angler casts the line across the eddy using the fishing rod.\nCompare “Canoe” and “Kayak” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Canoe"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Rowboat"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Beaver” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the river task. Use Canoe, Kayak, Raft, Rowboat, Motorboat, Paddleboard, Inner Tube, Pontoon, Sailboat, Fishing Boat, Paddle, Life Jacket, Fishing Rod, Tackle Box, and Net in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Canoe, Kayak, Raft, Rowboat, Motorboat, Paddleboard, Inner Tube, Pontoon, Sailboat, Fishing Boat, Paddle, Life Jacket, Fishing Rod, Tackle Box, Net in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The River: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Non-motorized watercraft, paddle craft and angling rods",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "An open tandem canoe glides smoothly along quiet river channels propelled by single-blade wooden paddles. Kayaks deck cockpits, and rafts bounce rapids. The partners synchronize their forward strokes inside the red canoe. Which pointed open-decked watercraft is paddled with single-blade paddles?"
     },
     "spacedReview": "1 lesson(s) back: Beaver, Dragonfly from river-2\n3 lesson(s) back: Map, Headlamp from mountain-4\n7 lesson(s) back: Canopy, Undergrowth from forest-4"
   },
@@ -566,132 +515,115 @@
       "تقفيز الحجارة على الماء"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "135-165 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bucket", "Waders", "Anchor", "Rope"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.",
+          "scenario": "A plastic live-well bait bucket aerates fresh river water to keep minnows, nightcrawlers, and small catch alive during morning outings. Anchors hold boats, and coolers chill drinks. The angler dips a hand into the bait bucket for a minnow.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which handled watertight container holds water, bait, or fish on river outings?",
             "options": ["Bucket", "Waders", "Anchor"],
             "expectedAnswer": "Bucket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Bucket as the central item; include Bucket, Waders, and Anchor naturally where visually appropriate, but make the real-world use of Bucket the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Bucket as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cooler", "Fishing", "Swimming", "Kayaking"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.",
+          "scenario": "An insulated camping cooler packed with ice preserves sandwiches, fresh beverages, and cleaned fish fillets cold during day-long river trips. Ropes tie gear, and waders keep dry. The picnicker opens the latch on the insulated food cooler.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which insulated portable chest chills food and beverages on river outings?",
             "options": ["Cooler", "Fishing", "Swimming"],
             "expectedAnswer": "Cooler"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Cooler as the central item; include Cooler, Fishing, and Swimming naturally where visually appropriate, but make the real-world use of Cooler the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Cooler as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Rafting", "Canoeing", "Tubing", "Wading"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.",
+          "scenario": "Guided white-water rafting navigates roaring hydraulic drops, churning eddies, and rocky river canyons in tough inflatable rafts. Kayaking solos rapids, and tubing drifts lazy. Crew members dig their paddles in during turbulent white-water rafting.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which exhilarating team water sport maneuvers inflatable boats through rapids?",
             "options": ["Rafting", "Canoeing", "Tubing"],
             "expectedAnswer": "Rafting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult illustrating Rafting through a realistic adult task; include Rafting, Canoeing, and Tubing naturally where visually appropriate, but make the real-world use of Rafting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Rafting as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bird Watching", "Picnic", "Skipping Stones"],
-          "scenario": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.",
+          "scenario": "Quiet riverside bird watching rewards observers with glimpses of kingfishers, nesting ospreys, and hunting great blue herons. Picnics share meals, and stones skip water. The naturalist raises binoculars for morning bird watching along the river.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which peaceful observational pastime identifies avian wildlife along rivers?",
             "options": ["Bird Watching", "Picnic", "Skipping Stones"],
             "expectedAnswer": "Bird Watching"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult illustrating Bird Watching through a realistic adult task; include Bird Watching, Picnic, and Skipping Stones naturally where visually appropriate, but make the real-world use of Bird Watching the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the river account, showing Bird Watching as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The River",
-      "text": "At the river, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bucket, Waders, Anchor, and Rope. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cooler, Fishing, Swimming, and Kayaking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rafting, Canoeing, Tubing, and Wading. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bird Watching, Picnic, and Skipping Stones. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The River. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tackle storage, white-water rafting and riverbank observation",
+      "text": "A plastic live-well bait bucket aerates fresh river water to keep minnows, nightcrawlers, and small catch alive during morning outings. Anchors hold boats, and coolers chill drinks. The angler dips a hand into the bait bucket for a minnow. An insulated camping cooler packed with ice preserves sandwiches, fresh beverages, and cleaned fish fillets cold during day-long river trips. Ropes tie gear, and waders keep dry. The picnicker opens the latch on the insulated food cooler. Guided white-water rafting navigates roaring hydraulic drops, churning eddies, and rocky river canyons in tough inflatable rafts. Kayaking solos rapids, and tubing drifts lazy. Crew members dig their paddles in during turbulent white-water rafting. Quiet riverside bird watching rewards observers with glimpses of kingfishers, nesting ospreys, and hunting great blue herons. Picnics share meals, and stones skip water. The naturalist raises binoculars for morning bird watching along the river.",
+      "imageBrief": "Use independently inspected word references to support Tackle storage, white-water rafting and riverbank observation; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bucket, Waders, Anchor, and Rope and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A plastic live-well bait bucket aerates fresh river water to keep minnows, nightcrawlers, and small catch alive during morning outings. Anchors hold boats, and coolers chill drinks. The angler dips a hand into the bait bucket for a minnow.\nWhich handled watertight container holds water, bait, or fish on river outings?",
         "answer": "Bucket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cooler, Fishing, Swimming, and Kayaking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An insulated camping cooler packed with ice preserves sandwiches, fresh beverages, and cleaned fish fillets cold during day-long river trips. Ropes tie gear, and waders keep dry. The picnicker opens the latch on the insulated food cooler.\nWhich insulated portable chest chills food and beverages on river outings?",
         "answer": "Cooler",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rafting, Canoeing, Tubing, and Wading and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Guided white-water rafting navigates roaring hydraulic drops, churning eddies, and rocky river canyons in tough inflatable rafts. Kayaking solos rapids, and tubing drifts lazy. Crew members dig their paddles in during turbulent white-water rafting.\nWhich exhilarating team water sport maneuvers inflatable boats through rapids?",
         "answer": "Rafting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the river setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bird Watching, Picnic, and Skipping Stones and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Quiet riverside bird watching rewards observers with glimpses of kingfishers, nesting ospreys, and hunting great blue herons. Picnics share meals, and stones skip water. The naturalist raises binoculars for morning bird watching along the river.\nWhich peaceful observational pastime identifies avian wildlife along rivers?",
         "answer": "Bird Watching",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A plastic live-well bait bucket aerates fresh river water to keep minnows, nightcrawlers, and small catch alive during morning outings. Anchors hold boats, and coolers chill drinks. The angler dips a hand into the bait bucket for a minnow. An insulated camping cooler packed with ice preserves sandwiches, fresh beverages, and cleaned fish fillets cold during day-long river trips. Ropes tie gear, and waders keep dry. The picnicker opens the latch on the insulated food cooler. Guided white-water rafting navigates roaring hydraulic drops, churning eddies, and rocky river canyons in tough inflatable rafts. Kayaking solos rapids, and tubing drifts lazy. Crew members dig their paddles in during turbulent white-water rafting. Quiet riverside bird watching rewards observers with glimpses of kingfishers, nesting ospreys, and hunting great blue herons. Picnics share meals, and stones skip water. The naturalist raises binoculars for morning bird watching along the river.\nCompare “Bucket” and “Waders” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Bucket"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Rope"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Canoe” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the river task. Use Bucket, Waders, Anchor, Rope, Cooler, Fishing, Swimming, Kayaking, Rafting, Canoeing, Tubing, Wading, Bird Watching, Picnic, and Skipping Stones in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Bucket, Waders, Anchor, Rope, Cooler, Fishing, Swimming, Kayaking, Rafting, Canoeing, Tubing, Wading, Bird Watching, Picnic, Skipping Stones in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The River: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tackle storage, white-water rafting and riverbank observation",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A plastic live-well bait bucket aerates fresh river water to keep minnows, nightcrawlers, and small catch alive during morning outings. Anchors hold boats, and coolers chill drinks. The angler dips a hand into the bait bucket for a minnow. Which handled watertight container holds water, bait, or fish on river outings?"
     },
     "spacedReview": "1 lesson(s) back: Canoe, Kayak from river-3\n3 lesson(s) back: Current, Rapids from river-1\n7 lesson(s) back: Peak, Summit from mountain-1"
   }

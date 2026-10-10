@@ -27,148 +27,131 @@
       "Glass Pane"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "رافعة",
+      "جرافة",
+      "حفارة",
+      "شاحنة قلابة",
+      "خلاطة خرسانة",
+      "رافعة شوكية",
+      "مدحلة",
+      "حفار خلفي",
+      "آلة دق الخوازيق",
+      "رافعة منصة بذراع",
+      "طوبة",
+      "أسمنت",
+      "عارضة فولاذية",
+      "خشب رقائقي",
+      "لوح زجاج"
     ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Crane", "Bulldozer", "Excavator", "Dump Truck"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.",
+          "scenario": "From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Crane", "Bulldozer", "Excavator"],
-            "expectedAnswer": "Crane"
+            "question": "Which machine digs with a bucket?",
+            "options": ["Excavator", "Crane", "Bulldozer"],
+            "expectedAnswer": "Excavator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Crane as the central item; include Crane, Bulldozer, and Excavator naturally where visually appropriate, but make the real-world use of Crane the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Excavator in a construction site context. Use the written scenario as the source of meaning: From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cement Mixer", "Forklift", "Steamroller", "Backhoe"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.",
+          "scenario": "The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging. Only authorized operators use these machines.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cement Mixer", "Forklift", "Steamroller"],
-            "expectedAnswer": "Cement Mixer"
+            "question": "Which vehicle lifts loads on its forks?",
+            "options": ["Forklift", "Cement Mixer", "Steamroller"],
+            "expectedAnswer": "Forklift"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Cement Mixer as the central item; include Cement Mixer, Forklift, and Steamroller naturally where visually appropriate, but make the real-world use of Cement Mixer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Forklift in a construction site context. Use the written scenario as the source of meaning: The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging. Only authorized operators use these machines. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pile Driver", "Boom Lift", "Brick", "Cement"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.",
+          "scenario": "A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform. Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pile Driver", "Boom Lift", "Brick"],
-            "expectedAnswer": "Pile Driver"
+            "question": "Which machine carries a worker on a raised platform?",
+            "options": ["Boom Lift", "Pile Driver", "Brick"],
+            "expectedAnswer": "Boom Lift"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Pile Driver as the central item; include Pile Driver, Boom Lift, and Brick naturally where visually appropriate, but make the real-world use of Pile Driver the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Boom Lift in a construction site context. Use the written scenario as the source of meaning: A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform. Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Steel Beam", "Plywood", "Glass Pane"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.",
+          "scenario": "At the materials display, Salim compares a Steel Beam, Plywood, and a Glass Pane. The sample made of bonded thin wood layers is Plywood.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Steel Beam", "Plywood", "Glass Pane"],
-            "expectedAnswer": "Steel Beam"
+            "question": "Which sample is made of bonded thin wood layers?",
+            "options": ["Plywood", "Steel Beam", "Glass Pane"],
+            "expectedAnswer": "Plywood"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Steel Beam as the central item; include Steel Beam, Plywood, and Glass Pane naturally where visually appropriate, but make the real-world use of Steel Beam the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Plywood in a construction site context. Use the written scenario as the source of meaning: At the materials display, Salim compares a Steel Beam, Plywood, and a Glass Pane. The sample made of bonded thin wood layers is Plywood. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         }
       ]
     },
     "reading": {
-      "title": "The Construction Site: Practical Information",
-      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crane, Bulldozer, Excavator, and Dump Truck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cement Mixer, Forklift, Steamroller, and Backhoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pile Driver, Boom Lift, Brick, and Cement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel Beam, Plywood, and Glass Pane. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Construction Site: A visitor’s questions",
+      "text": "From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away. The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging. Only authorized operators use these machines. A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform. Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture. At the materials display, Salim compares a Steel Beam, Plywood, and a Glass Pane. The sample made of bonded thin wood layers is Plywood.",
+      "imageBrief": "One uncluttered construction site setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crane, Bulldozer, Excavator, and Dump Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Crane",
-        "contextTag": "scene-1",
+        "prompt": "From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away.\nWhich machine digs with a bucket?",
+        "answer": "Excavator",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cement Mixer, Forklift, Steamroller, and Backhoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cement Mixer",
-        "contextTag": "scene-2",
+        "prompt": "The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging. Only authorized operators use these machines.\nWhich vehicle lifts loads on its forks?",
+        "answer": "Forklift",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pile Driver, Boom Lift, Brick, and Cement and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pile Driver",
-        "contextTag": "scene-3",
+        "prompt": "A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform. Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture.\nWhich machine carries a worker on a raised platform?",
+        "answer": "Boom Lift",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel Beam, Plywood, and Glass Pane and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Steel Beam",
-        "contextTag": "scene-4",
+        "prompt": "At the materials display, Salim compares a Steel Beam, Plywood, and a Glass Pane. The sample made of bonded thin wood layers is Plywood.\nWhich sample is made of bonded thin wood layers?",
+        "answer": "Plywood",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away. The supervisor distinguishes a Cement Mixer for concrete ingredients, a Forklift for lifting loads, a Steamroller for compacting surfaces, and a Backhoe for digging. Only authorized operators use these machines. A Pile Driver works on deep supports, and a Boom Lift carries an authorized worker on a raised platform. Nearby stores contain Brick and Cement; cement is a concrete ingredient, not the complete mixture. At the materials display, Salim compares a Steel Beam, Plywood, and a Glass Pane. The sample made of bonded thin wood layers is Plywood.\nExplain the difference between Crane and Bulldozer using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Crane"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Dump Truck"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Gasket” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the construction site task. Use Crane, Bulldozer, Excavator, Dump Truck, Cement Mixer, Forklift, Steamroller, Backhoe, Pile Driver, Boom Lift, Brick, Cement, Steel Beam, Plywood, and Glass Pane in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Crane, Bulldozer, Excavator, Dump Truck, Cement Mixer, Forklift, Steamroller, Backhoe, Pile Driver, Boom Lift, Brick, Cement, Steel Beam, Plywood, Glass Pane to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Construction Site: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Construction Site: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Crane and Bulldozer, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: From the permitted visitor route, Salim sees a Crane lifting a load, a Bulldozer pushing earth, and an Excavator digging with a bucket. A Dump Truck carries loose material away. Pause and answer: Which machine digs with a bucket?"
     },
     "spacedReview": "1 lesson(s) back: Gasket, Bolt from mechanic-4\n3 lesson(s) back: Radiator, Muffler from mechanic-2\n7 lesson(s) back: counter, scale from post-office-2"
   },
@@ -200,148 +183,131 @@
       "Pliers"
     ],
     "targetWordsArabic": [
-      "-",
-      "كابل / سلك كهرباء",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "أنبوب",
+      "كابل",
+      "مسمار ملولب",
+      "مسمار",
+      "برغي",
+      "حديد تسليح",
+      "ألواح جبسية",
+      "مطرقة",
+      "مفتاح ربط",
+      "مفك براغي",
+      "مثقاب",
+      "منشار",
+      "شريط قياس",
+      "ميزان استواء",
+      "كماشة"
     ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "95-125 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pipe", "Cable", "Bolt", "Nail"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.",
+          "scenario": "A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pipe", "Cable", "Bolt"],
-            "expectedAnswer": "Pipe"
+            "question": "Which fastener is threaded and commonly used with a nut?",
+            "options": ["Bolt", "Pipe", "Cable"],
+            "expectedAnswer": "Bolt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Pipe as the central item; include Pipe, Cable, and Bolt naturally where visually appropriate, but make the real-world use of Pipe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Bolt in a construction site context. Use the written scenario as the source of meaning: A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Screw", "Rebar", "Drywall", "Hammer"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.",
+          "scenario": "The supervisor shows a Screw, Rebar, Drywall, and a Hammer. Rebar is steel reinforcement placed within concrete, while Drywall forms interior wall surfaces.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Screw", "Rebar", "Drywall"],
-            "expectedAnswer": "Screw"
+            "question": "Which material reinforces concrete?",
+            "options": ["Rebar", "Screw", "Drywall"],
+            "expectedAnswer": "Rebar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Screw as the central item; include Screw, Rebar, and Drywall naturally where visually appropriate, but make the real-world use of Screw the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Rebar in a construction site context. Use the written scenario as the source of meaning: The supervisor shows a Screw, Rebar, Drywall, and a Hammer. Rebar is steel reinforcement placed within concrete, while Drywall forms interior wall surfaces. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wrench", "Screwdriver", "Drill", "Saw"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.",
+          "scenario": "On an inactive tool display, a Wrench turns nuts and a Screwdriver turns screws. A Drill makes holes, while a Saw cuts material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wrench", "Screwdriver", "Drill"],
-            "expectedAnswer": "Wrench"
+            "question": "Which tool makes holes with a rotating bit?",
+            "options": ["Drill", "Wrench", "Screwdriver"],
+            "expectedAnswer": "Drill"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Wrench as the central item; include Wrench, Screwdriver, and Drill naturally where visually appropriate, but make the real-world use of Wrench the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Drill in a construction site context. Use the written scenario as the source of meaning: On an inactive tool display, a Wrench turns nuts and a Screwdriver turns screws. A Drill makes holes, while a Saw cuts material. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tape Measure", "Level", "Pliers"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.",
+          "scenario": "Salim checks the names of a Tape Measure, a Level, and Pliers. The Level indicates whether a surface is horizontal or vertical; the Tape Measure gives a distance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tape Measure", "Level", "Pliers"],
-            "expectedAnswer": "Tape Measure"
+            "question": "Which tool checks horizontal or vertical alignment?",
+            "options": ["Level", "Tape Measure", "Pliers"],
+            "expectedAnswer": "Level"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Tape Measure as the central item; include Tape Measure, Level, and Pliers naturally where visually appropriate, but make the real-world use of Tape Measure the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Level in a construction site context. Use the written scenario as the source of meaning: Salim checks the names of a Tape Measure, a Level, and Pliers. The Level indicates whether a surface is horizontal or vertical; the Tape Measure gives a distance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         }
       ]
     },
     "reading": {
-      "title": "A Practical Guide: The Construction Site",
-      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pipe, Cable, Bolt, and Nail. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Screw, Rebar, Drywall, and Hammer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wrench, Screwdriver, Drill, and Saw. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tape Measure, Level, and Pliers. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Construction Site: Understanding the different roles",
+      "text": "A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material. The supervisor shows a Screw, Rebar, Drywall, and a Hammer. Rebar is steel reinforcement placed within concrete, while Drywall forms interior wall surfaces. On an inactive tool display, a Wrench turns nuts and a Screwdriver turns screws. A Drill makes holes, while a Saw cuts material. Salim checks the names of a Tape Measure, a Level, and Pliers. The Level indicates whether a surface is horizontal or vertical; the Tape Measure gives a distance.",
+      "imageBrief": "One uncluttered construction site setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pipe, Cable, Bolt, and Nail and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pipe",
-        "contextTag": "scene-1",
+        "prompt": "A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material.\nWhich fastener is threaded and commonly used with a nut?",
+        "answer": "Bolt",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Screw, Rebar, Drywall, and Hammer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Screw",
-        "contextTag": "scene-2",
+        "prompt": "The supervisor shows a Screw, Rebar, Drywall, and a Hammer. Rebar is steel reinforcement placed within concrete, while Drywall forms interior wall surfaces.\nWhich material reinforces concrete?",
+        "answer": "Rebar",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wrench, Screwdriver, Drill, and Saw and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wrench",
-        "contextTag": "scene-3",
+        "prompt": "On an inactive tool display, a Wrench turns nuts and a Screwdriver turns screws. A Drill makes holes, while a Saw cuts material.\nWhich tool makes holes with a rotating bit?",
+        "answer": "Drill",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tape Measure, Level, and Pliers and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tape Measure",
-        "contextTag": "scene-4",
+        "prompt": "Salim checks the names of a Tape Measure, a Level, and Pliers. The Level indicates whether a surface is horizontal or vertical; the Tape Measure gives a distance.\nWhich tool checks horizontal or vertical alignment?",
+        "answer": "Level",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material. The supervisor shows a Screw, Rebar, Drywall, and a Hammer. Rebar is steel reinforcement placed within concrete, while Drywall forms interior wall surfaces. On an inactive tool display, a Wrench turns nuts and a Screwdriver turns screws. A Drill makes holes, while a Saw cuts material. Salim checks the names of a Tape Measure, a Level, and Pliers. The Level indicates whether a surface is horizontal or vertical; the Tape Measure gives a distance.\nExplain the difference between Pipe and Cable using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Pipe"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Nail"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Crane” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the construction site task. Use Pipe, Cable, Bolt, Nail, Screw, Rebar, Drywall, Hammer, Wrench, Screwdriver, Drill, Saw, Tape Measure, Level, and Pliers in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Pipe, Cable, Bolt, Nail, Screw, Rebar, Drywall, Hammer, Wrench, Screwdriver, Drill, Saw, Tape Measure, Level, Pliers to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Construction Site: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Construction Site: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Pipe and Cable, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Pipe carries fluid, and a Cable carries wires or strands. In the fastener tray, a Bolt has threads and is used with a nut; a Nail is driven into material. Pause and answer: Which fastener is threaded and commonly used with a nut?"
     },
     "spacedReview": "1 lesson(s) back: Crane, Bulldozer from construction-site-1\n3 lesson(s) back: Lift, Diagnostic Scanner from mechanic-3\n7 lesson(s) back: courier, customer from post-office-3"
   },
@@ -373,148 +339,131 @@
       "Scaffolding"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "إزميل",
+      "سكين متعدد الاستخدامات",
+      "مفتاح سداسي",
+      "طقم مفاتيح مقابس",
+      "خوذة أمان",
+      "سترة عالية الوضوح",
+      "أحذية أمان بمقدمة فولاذية",
+      "نظارات واقية",
+      "سدادات أذن",
+      "قناع للغبار",
+      "حزام أمان للعمل في الارتفاعات",
+      "شبكة أمان",
+      "شريط تحذيري",
+      "مخروط مروري",
+      "سقالات"
     ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chisel", "Utility Knife", "Allen Key", "Socket Set"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.",
+          "scenario": "The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chisel", "Utility Knife", "Allen Key"],
-            "expectedAnswer": "Chisel"
+            "question": "Which tool has a hexagonal shape for a matching screw socket?",
+            "options": ["Allen Key", "Chisel", "Utility Knife"],
+            "expectedAnswer": "Allen Key"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Chisel as the central item; include Chisel, Utility Knife, and Allen Key naturally where visually appropriate, but make the real-world use of Chisel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Allen Key in a construction site context. Use the written scenario as the source of meaning: The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hard Hat", "Safety Vest", "Steel-Toe Boots", "Safety Goggles"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.",
+          "scenario": "The visitor identifies a Hard Hat for the head, a Safety Vest for visibility, Steel-Toe Boots for the feet, and Safety Goggles for the eyes. The supervisor selects protection for the specific task.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hard Hat", "Safety Vest", "Steel-Toe Boots"],
-            "expectedAnswer": "Hard Hat"
+            "question": "Which item protects the eyes?",
+            "options": ["Safety Goggles", "Hard Hat", "Safety Vest"],
+            "expectedAnswer": "Safety Goggles"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Hard Hat as the central item; include Hard Hat, Safety Vest, and Steel-Toe Boots naturally where visually appropriate, but make the real-world use of Hard Hat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Safety Goggles in a construction site context. Use the written scenario as the source of meaning: The visitor identifies a Hard Hat for the head, a Safety Vest for visibility, Steel-Toe Boots for the feet, and Safety Goggles for the eyes. The supervisor selects protection for the specific task. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ear Plugs", "Dust Mask", "Harness", "Safety Net"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.",
+          "scenario": "The protection display includes Ear Plugs for reducing noise, a Dust Mask rated for certain particles, and a Harness and Safety Net used within approved fall-protection arrangements. The visitor receives no instructions to perform hazardous work.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which displayed item reduces noise reaching the ears?",
             "options": ["Ear Plugs", "Dust Mask", "Harness"],
             "expectedAnswer": "Ear Plugs"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Ear Plugs as the central item; include Ear Plugs, Dust Mask, and Harness naturally where visually appropriate, but make the real-world use of Ear Plugs the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ear Plugs in a construction site context. Use the written scenario as the source of meaning: The protection display includes Ear Plugs for reducing noise, a Dust Mask rated for certain particles, and a Harness and Safety Net used within approved fall-protection arrangements. The visitor receives no instructions to perform hazardous work. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Caution Tape", "Traffic Cone", "Scaffolding"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.",
+          "scenario": "The visitor route stays outside the work zone. Caution Tape marks a restriction, a Traffic Cone guides movement, and Scaffolding provides temporary access for authorized workers.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What tape marks the restricted area?",
             "options": ["Caution Tape", "Traffic Cone", "Scaffolding"],
             "expectedAnswer": "Caution Tape"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Caution Tape as the central item; include Caution Tape, Traffic Cone, and Scaffolding naturally where visually appropriate, but make the real-world use of Caution Tape the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Caution Tape in a construction site context. Use the written scenario as the source of meaning: The visitor route stays outside the work zone. Caution Tape marks a restriction, a Traffic Cone guides movement, and Scaffolding provides temporary access for authorized workers. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         }
       ]
     },
     "reading": {
-      "title": "Getting the Information You Need: The Construction Site",
-      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Chisel, Utility Knife, Allen Key, and Socket Set. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ear Plugs, Dust Mask, Harness, and Safety Net. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Caution Tape, Traffic Cone, and Scaffolding. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Construction Site: Comparing the equipment",
+      "text": "The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw. The visitor identifies a Hard Hat for the head, a Safety Vest for visibility, Steel-Toe Boots for the feet, and Safety Goggles for the eyes. The supervisor selects protection for the specific task. The protection display includes Ear Plugs for reducing noise, a Dust Mask rated for certain particles, and a Harness and Safety Net used within approved fall-protection arrangements. The visitor receives no instructions to perform hazardous work. The visitor route stays outside the work zone. Caution Tape marks a restriction, a Traffic Cone guides movement, and Scaffolding provides temporary access for authorized workers.",
+      "imageBrief": "One uncluttered construction site setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chisel, Utility Knife, Allen Key, and Socket Set and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chisel",
-        "contextTag": "scene-1",
+        "prompt": "The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw.\nWhich tool has a hexagonal shape for a matching screw socket?",
+        "answer": "Allen Key",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Safety Vest, Steel-Toe Boots, and Safety Goggles and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hard Hat",
-        "contextTag": "scene-2",
+        "prompt": "The visitor identifies a Hard Hat for the head, a Safety Vest for visibility, Steel-Toe Boots for the feet, and Safety Goggles for the eyes. The supervisor selects protection for the specific task.\nWhich item protects the eyes?",
+        "answer": "Safety Goggles",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ear Plugs, Dust Mask, Harness, and Safety Net and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The protection display includes Ear Plugs for reducing noise, a Dust Mask rated for certain particles, and a Harness and Safety Net used within approved fall-protection arrangements. The visitor receives no instructions to perform hazardous work.\nWhich displayed item reduces noise reaching the ears?",
         "answer": "Ear Plugs",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caution Tape, Traffic Cone, and Scaffolding and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The visitor route stays outside the work zone. Caution Tape marks a restriction, a Traffic Cone guides movement, and Scaffolding provides temporary access for authorized workers.\nWhat tape marks the restricted area?",
         "answer": "Caution Tape",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw. The visitor identifies a Hard Hat for the head, a Safety Vest for visibility, Steel-Toe Boots for the feet, and Safety Goggles for the eyes. The supervisor selects protection for the specific task. The protection display includes Ear Plugs for reducing noise, a Dust Mask rated for certain particles, and a Harness and Safety Net used within approved fall-protection arrangements. The visitor receives no instructions to perform hazardous work. The visitor route stays outside the work zone. Caution Tape marks a restriction, a Traffic Cone guides movement, and Scaffolding provides temporary access for authorized workers.\nExplain the difference between Chisel and Utility Knife using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Chisel"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Socket Set"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pipe” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the construction site task. Use Chisel, Utility Knife, Allen Key, Socket Set, Hard Hat, Safety Vest, Steel-Toe Boots, Safety Goggles, Ear Plugs, Dust Mask, Harness, Safety Net, Caution Tape, Traffic Cone, and Scaffolding in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Chisel, Utility Knife, Allen Key, Socket Set, Hard Hat, Safety Vest, Steel-Toe Boots, Safety Goggles, Ear Plugs, Dust Mask, Harness, Safety Net, Caution Tape, Traffic Cone, Scaffolding to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Construction Site: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Construction Site: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Chisel and Utility Knife, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The demonstration display includes a Chisel, a Utility Knife, an Allen Key, and a Socket Set. The Allen Key has a hexagonal shape that fits a matching socket in a screw. Pause and answer: Which tool has a hexagonal shape for a matching screw socket?"
     },
     "spacedReview": "1 lesson(s) back: Pipe, Cable from construction-site-2\n3 lesson(s) back: Gasket, Bolt from mechanic-4\n7 lesson(s) back: service window, PO box from post-office-4"
   },
@@ -546,148 +495,131 @@
       "Carpenter"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "سياج (سور)",
-      "بوابة (بوابة الحديقة)",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "أساس المبنى",
+      "هيكل المبنى",
+      "جمالون سقف",
+      "بلاطة خرسانية",
+      "منحدر",
+      "سياج",
+      "بوابة",
+      "حاوية",
+      "مرحاض متنقل",
+      "مهندس معماري",
+      "مهندس",
+      "رئيس عمال",
+      "كهربائي",
+      "سبّاك",
+      "نجّار"
     ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "readingTarget": "92-122 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Foundation", "Frame", "Roof Truss", "Concrete Slab"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.",
+          "scenario": "A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which part transfers the building’s load to the ground?",
             "options": ["Foundation", "Frame", "Roof Truss"],
             "expectedAnswer": "Foundation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Foundation as the central item; include Foundation, Frame, and Roof Truss naturally where visually appropriate, but make the real-world use of Foundation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Foundation in a construction site context. Use the written scenario as the source of meaning: A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ramp", "Fence", "Gate", "Container"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.",
+          "scenario": "The site plan includes a Ramp joining two heights, a Fence around the site, a Gate at the entrance, and a Container for storage.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature joins two heights with a sloping surface?",
             "options": ["Ramp", "Fence", "Gate"],
             "expectedAnswer": "Ramp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Ramp as the central item; include Ramp, Fence, and Gate naturally where visually appropriate, but make the real-world use of Ramp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ramp in a construction site context. Use the written scenario as the source of meaning: The site plan includes a Ramp joining two heights, a Fence around the site, a Gate at the entrance, and a Container for storage. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Portable Toilet", "Architect", "Engineer", "Foreman"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.",
+          "scenario": "Near the Portable Toilet, the visitor meets the Architect, Engineer, and Foreman. The Architect explains the design, the Engineer discusses technical evaluation, and the Foreman supervises the crew.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Portable Toilet", "Architect", "Engineer"],
-            "expectedAnswer": "Portable Toilet"
+            "question": "Who supervises the work crew?",
+            "options": ["Foreman", "Portable Toilet", "Architect"],
+            "expectedAnswer": "Foreman"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Portable Toilet as the central item; include Portable Toilet, Architect, and Engineer naturally where visually appropriate, but make the real-world use of Portable Toilet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Foreman in a construction site context. Use the written scenario as the source of meaning: Near the Portable Toilet, the visitor meets the Architect, Engineer, and Foreman. The Architect explains the design, the Engineer discusses technical evaluation, and the Foreman supervises the crew. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Electrician", "Plumber", "Carpenter"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.",
+          "scenario": "The team includes an Electrician for electrical systems, a Plumber for water and drainage systems, and a Carpenter for wooden structures and fittings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Electrician", "Plumber", "Carpenter"],
-            "expectedAnswer": "Electrician"
+            "question": "Who works on the water and drainage systems?",
+            "options": ["Plumber", "Electrician", "Carpenter"],
+            "expectedAnswer": "Plumber"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Electrician as the central item; include Electrician, Plumber, and Carpenter naturally where visually appropriate, but make the real-world use of Electrician the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Plumber in a construction site context. Use the written scenario as the source of meaning: The team includes an Electrician for electrical systems, a Plumber for water and drainage systems, and a Carpenter for wooden structures and fittings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         }
       ]
     },
     "reading": {
-      "title": "The Construction Site: Practical Information",
-      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Foundation, Frame, Roof Truss, and Concrete Slab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ramp, Fence, Gate, and Container. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Portable Toilet, Architect, Engineer, and Foreman. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Electrician, Plumber, and Carpenter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Construction Site: A guided walk",
+      "text": "A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section. The site plan includes a Ramp joining two heights, a Fence around the site, a Gate at the entrance, and a Container for storage. Near the Portable Toilet, the visitor meets the Architect, Engineer, and Foreman. The Architect explains the design, the Engineer discusses technical evaluation, and the Foreman supervises the crew. The team includes an Electrician for electrical systems, a Plumber for water and drainage systems, and a Carpenter for wooden structures and fittings.",
+      "imageBrief": "One uncluttered construction site setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Frame, Roof Truss, and Concrete Slab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section.\nWhich part transfers the building’s load to the ground?",
         "answer": "Foundation",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ramp, Fence, Gate, and Container and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The site plan includes a Ramp joining two heights, a Fence around the site, a Gate at the entrance, and a Container for storage.\nWhich feature joins two heights with a sloping surface?",
         "answer": "Ramp",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portable Toilet, Architect, Engineer, and Foreman and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Portable Toilet",
-        "contextTag": "scene-3",
+        "prompt": "Near the Portable Toilet, the visitor meets the Architect, Engineer, and Foreman. The Architect explains the design, the Engineer discusses technical evaluation, and the Foreman supervises the crew.\nWho supervises the work crew?",
+        "answer": "Foreman",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electrician, Plumber, and Carpenter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Electrician",
-        "contextTag": "scene-4",
+        "prompt": "The team includes an Electrician for electrical systems, a Plumber for water and drainage systems, and a Carpenter for wooden structures and fittings.\nWho works on the water and drainage systems?",
+        "answer": "Plumber",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section. The site plan includes a Ramp joining two heights, a Fence around the site, a Gate at the entrance, and a Container for storage. Near the Portable Toilet, the visitor meets the Architect, Engineer, and Foreman. The Architect explains the design, the Engineer discusses technical evaluation, and the Foreman supervises the crew. The team includes an Electrician for electrical systems, a Plumber for water and drainage systems, and a Carpenter for wooden structures and fittings.\nExplain the difference between Foundation and Frame using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Foundation"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Concrete Slab"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Chisel” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the construction site task. Use Foundation, Frame, Roof Truss, Concrete Slab, Ramp, Fence, Gate, Container, Portable Toilet, Architect, Engineer, Foreman, Electrician, Plumber, and Carpenter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Foundation, Frame, Roof Truss, Concrete Slab, Ramp, Fence, Gate, Container, Portable Toilet, Architect, Engineer, Foreman, Electrician, Plumber, Carpenter to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Construction Site: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Construction Site: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Foundation and Frame, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A model shows the Foundation at the bottom, the Frame above it, a Roof Truss supporting the roof, and a Concrete Slab forming a flat structural section. Pause and answer: Which part transfers the building’s load to the ground?"
     },
     "spacedReview": "1 lesson(s) back: Chisel, Utility Knife from construction-site-3\n3 lesson(s) back: Crane, Bulldozer from construction-site-1\n7 lesson(s) back: Wrench, Screwdriver from mechanic-1"
   },
@@ -711,95 +643,87 @@
       "Glass",
       "Blueprint"
     ],
-    "targetWordsArabic": ["-", "-", "-", "-", "-", "-", "كأس زجاج (كوب ماء)", "-"],
+    "targetWordsArabic": [
+      "بنّاء طوب",
+      "دهّان",
+      "عامل لحام",
+      "مشغّل رافعة",
+      "فولاذ",
+      "خشب",
+      "زجاج",
+      "مخطط هندسي"
+    ],
     "usage": {
       "goal": "Develop the language needed to understand safety notices, identify hazards, and report issues clearly in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the safety-critical workplace.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "60-71 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bricklayer", "Painter", "Welder", "Crane Operator"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.",
+          "scenario": "The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which worker lays bricks?",
             "options": ["Bricklayer", "Painter", "Welder"],
             "expectedAnswer": "Bricklayer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Bricklayer as the central item; include Bricklayer, Painter, and Welder naturally where visually appropriate, but make the real-world use of Bricklayer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Bricklayer in a construction site context. Use the written scenario as the source of meaning: The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Steel", "Wood", "Glass", "Blueprint"],
-          "scenario": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.",
+          "scenario": "The planning table contains samples of Steel, Wood, and Glass beside a Blueprint. The Blueprint shows the building’s design rather than being a construction material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Steel", "Wood", "Glass"],
-            "expectedAnswer": "Steel"
+            "question": "Which item shows the building’s design?",
+            "options": ["Blueprint", "Steel", "Wood"],
+            "expectedAnswer": "Blueprint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a safety-critical workplace. Show an adult using or examining the Steel as the central item; include Steel, Wood, and Glass naturally where visually appropriate, but make the real-world use of Steel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a safety-critical workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Blueprint in a construction site context. Use the written scenario as the source of meaning: The planning table contains samples of Steel, Wood, and Glass beside a Blueprint. The Blueprint shows the building’s design rather than being a construction material. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written construction site situation; the accompanying text gives the details needed for the question."
         }
       ]
     },
     "reading": {
-      "title": "A Practical Guide: The Construction Site",
-      "text": "At the construction site, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bricklayer, Painter, Welder, and Crane Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Steel, Wood, Glass, and Blueprint. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Construction Site. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Construction Site: A practical discussion",
+      "text": "The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment. The planning table contains samples of Steel, Wood, and Glass beside a Blueprint. The Blueprint shows the building’s design rather than being a construction material.",
+      "imageBrief": "One uncluttered construction site setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bricklayer, Painter, Welder, and Crane Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment.\nWhich worker lays bricks?",
         "answer": "Bricklayer",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "In the construction site setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Steel, Wood, Glass, and Blueprint and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Steel",
-        "contextTag": "scene-2",
+        "prompt": "The planning table contains samples of Steel, Wood, and Glass beside a Blueprint. The Blueprint shows the building’s design rather than being a construction material.\nWhich item shows the building’s design?",
+        "answer": "Blueprint",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment. The planning table contains samples of Steel, Wood, and Glass beside a Blueprint. The Blueprint shows the building’s design rather than being a construction material.\nExplain the difference between Bricklayer and Painter using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Bricklayer"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Crane Operator"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Foundation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the construction site task. Use Bricklayer, Painter, Welder, Crane Operator, Steel, Wood, Glass, and Blueprint in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Bricklayer, Painter, Welder, Crane Operator, Steel, Wood, Glass, Blueprint to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Construction Site: In Context",
-      "idea": "40-60 seconds contextual scene in the workshop or site. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workshop or site. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Construction Site: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Bricklayer and Painter, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Foreman introduces a Bricklayer who lays bricks, a Painter who applies coatings, a Welder who joins metal, and a Crane Operator who operates lifting equipment. Pause and answer: Which worker lays bricks?"
     },
     "spacedReview": "1 lesson(s) back: Foundation, Frame from construction-site-4\n3 lesson(s) back: Pipe, Cable from construction-site-2\n7 lesson(s) back: Radiator, Muffler from mechanic-2"
   }

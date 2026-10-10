@@ -5,6 +5,8 @@ import {
   loadGenerationSource,
   contentIssues,
   generationReviewChecks,
+  loadGenerationReviews,
+  referenceGenerationPrompt,
 } from "./lib/usage_generation_preflight.mjs";
 
 const args = Object.fromEntries(
@@ -21,10 +23,10 @@ const units = (args.units ?? "").split(",").filter(Boolean);
 if (!units.length || units.some((unit) => !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(unit))) {
   throw new Error("Provide a bounded --units=unit-one,unit-two list.");
 }
-const reviews = args.reviews ? JSON.parse(fs.readFileSync(args.reviews, "utf8")).items : [];
-if (!Array.isArray(reviews)) throw new Error("Review file must contain an items array.");
+const reviews = loadGenerationReviews(sourceRoot, args.reviews);
 const items = [],
   blocked = [],
+  held = [],
   reviewTemplates = [];
 const media = Object.assign(
   {},
@@ -66,16 +68,30 @@ for (const unitId of [...new Set(units)]) {
       sources: [],
       issues: contentIssues(lesson, source.phrases),
     });
-    for (const scene of lesson.usage.scenes) {
-      const sceneId = `${lesson.lessonId}-usage-scene-${scene.chunkNumber}`;
+    for (const originalScene of lesson.usage.scenes) {
+      const sceneId = `${lesson.lessonId}-usage-scene-${originalScene.chunkNumber}`;
       const existing = media[sceneId];
       if (
-        scene.imagePath ||
-        (existing?.reviewedScenario === scene.scenario &&
-          existing.reviewedAnswer === scene.check.expectedAnswer &&
-          (!existing.reviewedQuestion || existing.reviewedQuestion === scene.check.question))
+        originalScene.imagePath ||
+        (existing?.reviewedScenario === originalScene.scenario &&
+          existing.reviewedAnswer === originalScene.check.expectedAnswer &&
+          (!existing.reviewedQuestion ||
+            existing.reviewedQuestion === originalScene.check.question))
       ) {
         covered.push({ sceneId, reason: "existing published reference; do not regenerate" });
+        continue;
+      }
+      const scene = loadGenerationSource(
+        { unitId, lessonId: lesson.lessonId, sceneId },
+        sourceRoot
+      ).scene;
+      if (scene.imageGenerationHold) {
+        held.push({
+          sceneId,
+          lessonId: lesson.lessonId,
+          unitId,
+          reason: scene.imageGenerationHold,
+        });
         continue;
       }
       const job = {
@@ -86,10 +102,10 @@ for (const unitId of [...new Set(units)]) {
         reviewedQuestion: scene.check.question,
         reviewedAnswer: scene.check.expectedAnswer,
         imagePurpose: "word-reference",
-        prompt: `Create one realistic adult-learning vocabulary reference. Concept: ${scene.check.expectedAnswer}. ${scene.imageBrief} Prefer a human-free composition. Essential non-gender-specific roles use one modest adult man; any indispensable woman wears hijab covering hair and neck, loose opaque full-length clothing and long sleeves. No incidental people, readable text, labels, logos, watermarks or answer highlighting. 4:3 landscape; preserve meaningful details at mobile size. Return one image.`,
         contentReview,
       };
       try {
+        job.prompt = referenceGenerationPrompt(scene);
         assertGenerationReady(job, sourceRoot);
         items.push(job);
       } catch (error) {
@@ -107,7 +123,7 @@ const output = path.resolve(args.output ?? "output/reviewed-generation-queue.jso
 fs.mkdirSync(path.dirname(output), { recursive: true });
 fs.writeFileSync(
   output,
-  `${JSON.stringify({ generatedAt: new Date().toISOString(), sourceRoot, units, items, blocked, covered, reviewTemplates }, null, 2)}\n`
+  `${JSON.stringify({ generatedAt: new Date().toISOString(), sourceRoot, units, items, blocked, held, covered, reviewTemplates }, null, 2)}\n`
 );
 console.log(
   JSON.stringify({
@@ -115,6 +131,7 @@ console.log(
     lessons: reviewTemplates.length,
     ready: items.length,
     blocked: blocked.length,
+    held: held.length,
     covered: covered.length,
     requests: 0,
   })

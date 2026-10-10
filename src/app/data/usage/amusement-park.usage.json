@@ -27,152 +27,157 @@
       "Tea Cups"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "قطار الملاهي",
+      "عجلة الملاهي",
+      "برج السقوط",
+      "لعبة ملاهٍ دوارة",
+      "زحليقة مائية",
+      "لعبة قوارب في قناة مائية",
+      "لعبة سفينة القراصنة المتأرجحة",
+      "لعبة ملاهٍ تدور في حلقة",
+      "قطار ملاهٍ بإطلاق سريع",
+      "لعبة ملاهٍ متأرجحة كالبندول",
+      "لعبة خيل دوارة",
+      "سيارات التصادم",
+      "سيارات كارت صغيرة",
+      "جولة بقطار الملاهي",
+      "لعبة فناجين دوارة"
     ],
     "usage": {
-      "goal": "Learn to use common the amusement park 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the amusement park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the attraction or service described in a short guide and ask staff for current information.",
+      "canDoStatement": "Can identify a described attraction, service or item with supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Roller Coaster", "Ferris Wheel", "Drop Tower"],
-          "scenario": "During a routine the amusement park task, an adult compares Roller Coaster, Ferris Wheel, Drop Tower. The person selects Roller Coaster for the next step.",
+          "scenario": "The guide names a roller coaster with cars on a track. A Ferris wheel turns a large wheel of seats; a drop tower moves vertically.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ride uses cars on the track?",
             "options": ["Roller Coaster", "Ferris Wheel", "Drop Tower"],
             "expectedAnswer": "Roller Coaster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Roller Coaster, Ferris Wheel, Drop Tower. The person selects Roller Coaster for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Roller Coaster, Ferris Wheel, Drop Tower in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Stationary unoccupied roller-coaster train and track, no impossible joins or operating riders. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Spinning Ride", "Water Slide", "Log Flume"],
-          "scenario": "During a routine the amusement park task, an adult compares Spinning Ride, Water Slide, Log Flume. The person selects Spinning Ride for the next step.",
+          "scenario": "A spinning ride turns around. A water slide uses a wet chute, while a log flume uses boats in a channel.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term describes the ride that turns around?",
             "options": ["Spinning Ride", "Water Slide", "Log Flume"],
             "expectedAnswer": "Spinning Ride"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Spinning Ride, Water Slide, Log Flume. The person selects Spinning Ride for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Spinning Ride, Water Slide, Log Flume in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Unoccupied simple rotating ride reference, no running machinery or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pirate Ship", "Loop Ride", "Launch Coaster"],
-          "scenario": "During a routine the amusement park task, an adult compares Pirate Ship, Loop Ride, Launch Coaster. The person selects Pirate Ship for the next step.",
+          "scenario": "The pirate ship is a boat-shaped swinging ride. A loop ride turns through a loop, while a launch coaster uses a launch system.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ride is boat-shaped in the guide?",
             "options": ["Pirate Ship", "Loop Ride", "Launch Coaster"],
             "expectedAnswer": "Pirate Ship"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Pirate Ship, Loop Ride, Launch Coaster. The person selects Pirate Ship for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Pirate Ship, Loop Ride, Launch Coaster in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Unoccupied boat-shaped swinging ride, coherent supports, no brand or real attraction identity. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pendulum Ride", "Carousel", "Bumper Cars"],
-          "scenario": "During a routine the amusement park task, an adult compares Pendulum Ride, Carousel, Bumper Cars. The person selects Pendulum Ride for the next step.",
+          "scenario": "A pendulum ride swings about a pivot. A carousel turns decorated seats around, while bumper cars operate in a designated area.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ride swings about a pivot in this description?",
             "options": ["Pendulum Ride", "Carousel", "Bumper Cars"],
             "expectedAnswer": "Pendulum Ride"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Pendulum Ride, Carousel, Bumper Cars. The person selects Pendulum Ride for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Pendulum Ride, Carousel, Bumper Cars in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Stationary pendulum-ride structure with coherent pivot; no motion claim inferred from one frame. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Go-Karts", "Train Ride", "Tea Cups"],
-          "scenario": "During a routine the amusement park task, an adult compares Go-Karts, Train Ride, Tea Cups. The person selects Go-Karts for the next step.",
+          "scenario": "Go-karts are small vehicles for a controlled track. Train ride uses a park train, while tea cups have cup-shaped seats.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which listed items are the small track vehicles?",
             "options": ["Go-Karts", "Train Ride", "Tea Cups"],
             "expectedAnswer": "Go-Karts"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Go-Karts, Train Ride, Tea Cups. The person selects Go-Karts for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Go-Karts, Train Ride, Tea Cups in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Parked plain go-karts, no drivers or unsafe driving demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ]
     },
     "reading": {
-      "title": "The Amusement Park: Short Description",
-      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice roller coaster, ferris wheel, and drop tower. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice spinning ride, water slide, and log flume. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading the ride guide",
+      "text": "Dina visits an amusement park with a friend. They read the ride guide before choosing. The roller coaster follows a track, while the Ferris wheel turns a large wheel of seats. A spinning ride turns around. The pirate ship and pendulum ride swing. Dina sees go-karts near the train ride. She checks the current restrictions and asks staff about anything she does not understand.",
+      "imageBrief": "Support for Reading the ride guide. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine the amusement park task, an adult compares Roller Coaster, Ferris Wheel, Drop Tower. The person selects Roller Coaster for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The guide names a roller coaster with cars on a track. A Ferris wheel turns a large wheel of seats; a drop tower moves vertically.\nWhich ride uses cars on the track?",
         "answer": "Roller Coaster",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Spinning Ride, Water Slide, Log Flume. The person selects Spinning Ride for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A spinning ride turns around. A water slide uses a wet chute, while a log flume uses boats in a channel.\nWhich term describes the ride that turns around?",
         "answer": "Spinning Ride",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Pirate Ship, Loop Ride, Launch Coaster. The person selects Pirate Ship for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The pirate ship is a boat-shaped swinging ride. A loop ride turns through a loop, while a launch coaster uses a launch system.\nWhich ride is boat-shaped in the guide?",
         "answer": "Pirate Ship",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Pendulum Ride, Carousel, Bumper Cars. The person selects Pendulum Ride for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A pendulum ride swings about a pivot. A carousel turns decorated seats around, while bumper cars operate in a designated area.\nWhich ride swings about a pivot in this description?",
         "answer": "Pendulum Ride",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Go-Karts, Train Ride, Tea Cups. The person selects Go-Karts for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Go-karts are small vehicles for a controlled track. Train ride uses a park train, while tea cups have cup-shaped seats.\nWhich listed items are the small track vehicles?",
         "answer": "Go-Karts",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Roller Coaster"
+        "prompt": "Dina visits an amusement park with a friend. They read the ride guide before choosing. The roller coaster follows a track, while the Ferris wheel turns a large wheel of seats. A spinning ride turns around. The pirate ship and pendulum ride swing. Dina sees go-karts near the train ride. She checks the current restrictions and asks staff about anything she does not understand.\nWhat does Dina check before choosing a ride?",
+        "answer": "The current restrictions.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Drop Tower"
+        "prompt": "Explain the difference between “Roller Coaster” and “Ferris Wheel” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “seaweed” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Roller Coaster” in its supplied supported visitor attraction vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The guide names a roller coaster with cars on a track. A Ferris wheel turns a large wheel of seats; a drop tower moves vertically.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Amusement Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading the ride guide",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina visits an amusement park with a friend. They read the ride guide before choosing. The roller coaster follows a track, while the Ferris wheel turns a large wheel of seats. A spinning ride turns around. The pirate ship and pendulum ride swing. Dina sees go-karts near the train ride. She checks the current restrictions and asks staff about anything she does not understand. Ask: What does Dina check before choosing a ride?"
     },
     "spacedReview": "1 lesson(s) back: seaweed, sea urchin from beach-5\n3 lesson(s) back: kayaking, paddleboarding from beach-3\n7 lesson(s) back: butterfly stroke, water polo from sports-center-4"
   },
@@ -204,152 +209,157 @@
       "Giant Teddy Bear"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "لعبة مقاعد معلقة دوارة",
+      "جولة بالقارب",
+      "قطار أحادي السكة",
+      "بيت رعب",
+      "بيت مرايا وألعاب مرحة",
+      "لعبة رمي الحلقات",
+      "لعبة رشق البالونات بالسهام",
+      "لعبة رمي كرة السلة",
+      "آلة التقاط الجوائز بمخلب",
+      "لعبة ضرب أهداف الخلد",
+      "لعبة اختبار القوة",
+      "لعبة تصويب بمسدس ماء",
+      "كشك الجوائز",
+      "دمية حيوان محشوة",
+      "دمية دب كبيرة جدًا"
     ],
     "usage": {
-      "goal": "Learn to use common the amusement park 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the amusement park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the attraction or service described in a short guide and ask staff for current information.",
+      "canDoStatement": "Can identify a described attraction, service or item with supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Flying Swings", "Boat Ride", "Monorail"],
-          "scenario": "During a routine the amusement park task, an adult compares Flying Swings, Boat Ride, Monorail. The person selects Flying Swings for the next step.",
+          "scenario": "Flying swings have hanging seats that rotate. Boat ride uses a boat; monorail uses a single rail or beam.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which attraction has the rotating hanging seats?",
             "options": ["Flying Swings", "Boat Ride", "Monorail"],
             "expectedAnswer": "Flying Swings"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Flying Swings, Boat Ride, Monorail. The person selects Flying Swings for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Flying Swings, Boat Ride, Monorail in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Stationary unoccupied swing carousel with coherent suspended seats and supports. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Haunted House", "Fun House", "Ring Toss"],
-          "scenario": "During a routine the amusement park task, an adult compares Haunted House, Fun House, Ring Toss. The person selects Haunted House for the next step.",
+          "scenario": "The haunted house is designed to create scary surprises. Fun house uses playful rooms or mirrors; ring toss uses rings and targets.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which attraction is designed to create scary surprises?",
             "options": ["Haunted House", "Fun House", "Ring Toss"],
             "expectedAnswer": "Haunted House"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Haunted House, Fun House, Ring Toss. The person selects Haunted House for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Haunted House, Fun House, Ring Toss in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty theatrical attraction entrance without people, injury, gore, fake warnings or readable signs. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Balloon Dart", "Basketball Throw", "Claw Machine"],
-          "scenario": "During a routine the amusement park task, an adult compares Balloon Dart, Basketball Throw, Claw Machine. The person selects Balloon Dart for the next step.",
+          "scenario": "The supervised balloon-dart booth uses darts and balloons. Basketball throw uses a hoop, while a claw machine uses a mechanical claw.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which game names the darts and balloons?",
             "options": ["Balloon Dart", "Basketball Throw", "Claw Machine"],
             "expectedAnswer": "Balloon Dart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Balloon Dart, Basketball Throw, Claw Machine. The person selects Balloon Dart for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Balloon Dart, Basketball Throw, Claw Machine in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Inactive balloon-game booth, darts secured out of use, no aiming or person. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Whack-a-Mole", "Strength Test", "Water Gun Game"],
-          "scenario": "During a routine the amusement park task, an adult compares Whack-a-Mole, Strength Test, Water Gun Game. The person selects Whack-a-Mole for the next step.",
+          "scenario": "Whack-a-mole uses pop-up targets. Strength test is an attraction, not a clinical measure; water gun game uses water targets.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which game uses the pop-up targets?",
             "options": ["Whack-a-Mole", "Strength Test", "Water Gun Game"],
             "expectedAnswer": "Whack-a-Mole"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Whack-a-Mole, Strength Test, Water Gun Game. The person selects Whack-a-Mole for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Whack-a-Mole, Strength Test, Water Gun Game in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Inactive generic pop-up-target arcade machine, no trademark lettering or active hitting. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Prize Booth", "Stuffed Animal", "Giant Teddy Bear"],
-          "scenario": "During a routine the amusement park task, an adult compares Prize Booth, Stuffed Animal, Giant Teddy Bear. The person selects Prize Booth for the next step.",
+          "scenario": "The prize booth displays possible prizes. A stuffed animal is a soft toy, and a giant teddy bear is a very large bear-shaped toy.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Where are the possible prizes displayed?",
             "options": ["Prize Booth", "Stuffed Animal", "Giant Teddy Bear"],
             "expectedAnswer": "Prize Booth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Prize Booth, Stuffed Animal, Giant Teddy Bear. The person selects Prize Booth for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Prize Booth, Stuffed Animal, Giant Teddy Bear in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty prize booth with plain soft toys, no guaranteed-win claim or readable prices. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ]
     },
     "reading": {
-      "title": "The Amusement Park: Mini Dialogue",
-      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice flying swings, boat ride, and monorail. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice haunted house, fun house, and ring toss. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Games and attraction choices",
+      "text": "Dina compares the flying swings with a boat ride and the monorail. She reads the haunted-house description but chooses a different attraction. At the game area, she sees balloon dart and whack-a-mole. A prize booth holds a stuffed animal and a giant teddy bear. Dina asks how each game works and what its rules are. A prize is not guaranteed just because it is on display.",
+      "imageBrief": "Support for Games and attraction choices. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine the amusement park task, an adult compares Flying Swings, Boat Ride, Monorail. The person selects Flying Swings for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Flying swings have hanging seats that rotate. Boat ride uses a boat; monorail uses a single rail or beam.\nWhich attraction has the rotating hanging seats?",
         "answer": "Flying Swings",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Haunted House, Fun House, Ring Toss. The person selects Haunted House for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The haunted house is designed to create scary surprises. Fun house uses playful rooms or mirrors; ring toss uses rings and targets.\nWhich attraction is designed to create scary surprises?",
         "answer": "Haunted House",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Balloon Dart, Basketball Throw, Claw Machine. The person selects Balloon Dart for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The supervised balloon-dart booth uses darts and balloons. Basketball throw uses a hoop, while a claw machine uses a mechanical claw.\nWhich game names the darts and balloons?",
         "answer": "Balloon Dart",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Whack-a-Mole, Strength Test, Water Gun Game. The person selects Whack-a-Mole for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Whack-a-mole uses pop-up targets. Strength test is an attraction, not a clinical measure; water gun game uses water targets.\nWhich game uses the pop-up targets?",
         "answer": "Whack-a-Mole",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Prize Booth, Stuffed Animal, Giant Teddy Bear. The person selects Prize Booth for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The prize booth displays possible prizes. A stuffed animal is a soft toy, and a giant teddy bear is a very large bear-shaped toy.\nWhere are the possible prizes displayed?",
         "answer": "Prize Booth",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Flying Swings"
+        "prompt": "Dina compares the flying swings with a boat ride and the monorail. She reads the haunted-house description but chooses a different attraction. At the game area, she sees balloon dart and whack-a-mole. A prize booth holds a stuffed animal and a giant teddy bear. Dina asks how each game works and what its rules are. A prize is not guaranteed just because it is on display.\nDoes seeing a prize mean Dina is guaranteed to win it?",
+        "answer": "No. The game has its own rules.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Monorail"
+        "prompt": "Explain the difference between “Flying Swings” and “Boat Ride” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Roller Coaster” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Flying Swings” in its supplied supported visitor attraction vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Flying swings have hanging seats that rotate. Boat ride uses a boat; monorail uses a single rail or beam.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Amusement Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Games and attraction choices",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares the flying swings with a boat ride and the monorail. She reads the haunted-house description but chooses a different attraction. At the game area, she sees balloon dart and whack-a-mole. A prize booth holds a stuffed animal and a giant teddy bear. Dina asks how each game works and what its rules are. A prize is not guaranteed just because it is on display. Ask: Does seeing a prize mean Dina is guaranteed to win it?"
     },
     "spacedReview": "1 lesson(s) back: Roller Coaster, Ferris Wheel from amusement-park-1\n3 lesson(s) back: barbecue, bonfire from beach-4\n7 lesson(s) back: athlete, coach from sports-center-5"
   },
@@ -381,152 +391,157 @@
       "First Aid"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "غزل البنات",
+      "حلوى عجين مقلي بشكل خيوط متشابكة",
+      "نقانق مغطاة بعجين ذرة على عود",
+      "فشار",
+      "تفاحة مغطاة بطبقة سكرية",
+      "تشورو؛ حلوى عجين مقلي",
+      "بريتزل طري",
+      "مثلجات في قمع ويفر",
+      "شراب الليمون",
+      "ثلج مجروش بشراب حلو",
+      "بوابة الدخول",
+      "شباك التذاكر",
+      "لوحة خريطة",
+      "دورة مياه",
+      "إسعافات أولية"
     ],
     "usage": {
-      "goal": "Learn to use common the amusement park 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the amusement park.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the attraction or service described in a short guide and ask staff for current information.",
+      "canDoStatement": "Can identify a described attraction, service or item with supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cotton Candy", "Funnel Cake", "Corn Dog"],
-          "scenario": "During a routine the amusement park task, an adult compares Cotton Candy, Funnel Cake, Corn Dog. The person selects Cotton Candy for the next step.",
+          "scenario": "Cotton candy is spun sugar. Funnel cake is fried batter in a tangled shape, and a corn dog is a sausage coated in cornmeal batter.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which sweet is made of spun sugar?",
             "options": ["Cotton Candy", "Funnel Cake", "Corn Dog"],
             "expectedAnswer": "Cotton Candy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Cotton Candy, Funnel Cake, Corn Dog. The person selects Cotton Candy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Cotton Candy, Funnel Cake, Corn Dog in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Plain cotton candy on a neutral surface; no child or food-safety/nutrition claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Popcorn", "Candy Apple", "Churro"],
-          "scenario": "During a routine the amusement park task, an adult compares Popcorn, Candy Apple, Churro. The person selects Popcorn for the next step.",
+          "scenario": "Dina chooses popcorn, popped corn kernels. Candy apple has a sugar coating, while a churro is a fried dough pastry.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which snack does Dina choose?",
             "options": ["Popcorn", "Candy Apple", "Churro"],
             "expectedAnswer": "Popcorn"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Popcorn, Candy Apple, Churro. The person selects Popcorn for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Popcorn, Candy Apple, Churro in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Plain bowl of popcorn, no child, hot cooking or brand. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Soft Pretzel", "Ice Cream Cone", "Lemonade"],
-          "scenario": "During a routine the amusement park task, an adult compares Soft Pretzel, Ice Cream Cone, Lemonade. The person selects Soft Pretzel for the next step.",
+          "scenario": "Dina buys a soft pretzel. Ice cream cone holds ice cream in a wafer cone, and lemonade is a lemon drink.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which baked snack does Dina buy?",
             "options": ["Soft Pretzel", "Ice Cream Cone", "Lemonade"],
             "expectedAnswer": "Soft Pretzel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Soft Pretzel, Ice Cream Cone, Lemonade. The person selects Soft Pretzel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Soft Pretzel, Ice Cream Cone, Lemonade in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Plain soft pretzel on a plate; no allergen absence inferred from appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Snow Cone", "Entrance Gate", "Ticket Booth"],
-          "scenario": "During a routine the amusement park task, an adult compares Snow Cone, Entrance Gate, Ticket Booth. The person selects Snow Cone for the next step.",
+          "scenario": "Snow cone is crushed or shaved ice with sweet syrup. Entrance gate is where visitors enter; ticket booth is where tickets are sold or collected.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which dessert uses crushed or shaved ice?",
             "options": ["Snow Cone", "Entrance Gate", "Ticket Booth"],
             "expectedAnswer": "Snow Cone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Snow Cone, Entrance Gate, Ticket Booth. The person selects Snow Cone for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Snow Cone, Entrance Gate, Ticket Booth in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Plain snow cone in an unbranded container, no unsafe temperature or food-making demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Map Board", "Restroom", "First Aid"],
-          "scenario": "During a routine the amusement park task, an adult compares Map Board, Restroom, First Aid. The person selects Map Board for the next step.",
+          "scenario": "The map board shows the park layout. Restroom is a washing/toilet facility; first aid means initial care and may name a service point.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which board shows the park layout?",
             "options": ["Map Board", "Restroom", "First Aid"],
             "expectedAnswer": "Map Board"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Map Board, Restroom, First Aid. The person selects Map Board for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Map Board, Restroom, First Aid in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Blank unlettered park-layout board supports written task, no fabricated real directions or access guarantee. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ]
     },
     "reading": {
-      "title": "The Amusement Park: Simple Message",
-      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice cotton candy, funnel cake, and corn dog. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice popcorn, candy apple, and churro. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Food and visitor facilities",
+      "text": "Dina reads the food menu. It lists cotton candy, funnel cake and a corn dog. She buys popcorn and a soft pretzel. She asks about the ingredients before choosing a drink or dessert. Near the entrance gate, she finds a ticket booth and a map board. The map helps her find the restroom and first aid service. She checks current information rather than relying on an old picture.",
+      "imageBrief": "Support for Food and visitor facilities. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine the amusement park task, an adult compares Cotton Candy, Funnel Cake, Corn Dog. The person selects Cotton Candy for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Cotton candy is spun sugar. Funnel cake is fried batter in a tangled shape, and a corn dog is a sausage coated in cornmeal batter.\nWhich sweet is made of spun sugar?",
         "answer": "Cotton Candy",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Popcorn, Candy Apple, Churro. The person selects Popcorn for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina chooses popcorn, popped corn kernels. Candy apple has a sugar coating, while a churro is a fried dough pastry.\nWhich snack does Dina choose?",
         "answer": "Popcorn",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Soft Pretzel, Ice Cream Cone, Lemonade. The person selects Soft Pretzel for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina buys a soft pretzel. Ice cream cone holds ice cream in a wafer cone, and lemonade is a lemon drink.\nWhich baked snack does Dina buy?",
         "answer": "Soft Pretzel",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Snow Cone, Entrance Gate, Ticket Booth. The person selects Snow Cone for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Snow cone is crushed or shaved ice with sweet syrup. Entrance gate is where visitors enter; ticket booth is where tickets are sold or collected.\nWhich dessert uses crushed or shaved ice?",
         "answer": "Snow Cone",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Map Board, Restroom, First Aid. The person selects Map Board for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The map board shows the park layout. Restroom is a washing/toilet facility; first aid means initial care and may name a service point.\nWhich board shows the park layout?",
         "answer": "Map Board",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Cotton Candy"
+        "prompt": "Dina reads the food menu. It lists cotton candy, funnel cake and a corn dog. She buys popcorn and a soft pretzel. She asks about the ingredients before choosing a drink or dessert. Near the entrance gate, she finds a ticket booth and a map board. The map helps her find the restroom and first aid service. She checks current information rather than relying on an old picture.\nWhat helps Dina find visitor facilities?",
+        "answer": "The map board.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Corn Dog"
+        "prompt": "Explain the difference between “Cotton Candy” and “Funnel Cake” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Flying Swings” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Cotton Candy” in its supplied supported visitor attraction vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Cotton candy is spun sugar. Funnel cake is fried batter in a tangled shape, and a corn dog is a sausage coated in cornmeal batter.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Amusement Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Food and visitor facilities",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the food menu. It lists cotton candy, funnel cake and a corn dog. She buys popcorn and a soft pretzel. She asks about the ingredients before choosing a drink or dessert. Near the entrance gate, she finds a ticket booth and a map board. The map helps her find the restroom and first aid service. She checks current information rather than relying on an old picture. Ask: What helps Dina find visitor facilities?"
     },
     "spacedReview": "1 lesson(s) back: Flying Swings, Boat Ride from amusement-park-2\n3 lesson(s) back: seaweed, sea urchin from beach-5\n7 lesson(s) back: sand, ocean from beach-1"
   },
@@ -558,152 +573,157 @@
       "Marching Band"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-",
-      "-"
+      "مكتب المفقودات",
+      "متجر تذكارات",
+      "مكان مخصص لالتقاط الصور",
+      "منصة عرض",
+      "نافورة",
+      "موكب استعراضي",
+      "ألعاب نارية",
+      "شخصية رمزية",
+      "مؤدٍّ يمشي على عكازات طويلة",
+      "مؤدٍّ يتلاعب بالكرات أو الأدوات في الهواء",
+      "رسام وجوه",
+      "مؤدٍّ في مكان عام",
+      "مؤدّي ألعاب خفة",
+      "عرض رقص",
+      "فرقة موسيقية تسير أثناء العزف"
     ],
     "usage": {
-      "goal": "Learn to use common the amusement park 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the amusement park.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the attraction or service described in a short guide and ask staff for current information.",
+      "canDoStatement": "Can identify a described attraction, service or item with supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lost and Found", "Souvenir Shop", "Photo Spot"],
-          "scenario": "During a routine the amusement park task, an adult compares Lost and Found, Souvenir Shop, Photo Spot. The person selects Lost and Found for the next step.",
+          "scenario": "Lost and found handles belongings that have been lost or found. Souvenir shop sells keepsakes, while photo spot is a designated picture location.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service handles the lost belongings?",
             "options": ["Lost and Found", "Souvenir Shop", "Photo Spot"],
             "expectedAnswer": "Lost and Found"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Lost and Found, Souvenir Shop, Photo Spot. The person selects Lost and Found for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Lost and Found, Souvenir Shop, Photo Spot in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty plain service counter with stored unbranded lost items; no private identifying labels or recovered-person depiction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stage", "Fountain", "Parade"],
-          "scenario": "During a routine the amusement park task, an adult compares Stage, Fountain, Parade. The person selects Stage for the next step.",
+          "scenario": "The stage is the performance platform. Fountain sends water into a basin, and parade is a public procession.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which structure is the performance platform?",
             "options": ["Stage", "Fountain", "Parade"],
             "expectedAnswer": "Stage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Stage, Fountain, Parade. The person selects Stage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Stage, Fountain, Parade in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty coherent stage, no performer, logo or text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fireworks", "Mascot", "Stilt Walker"],
-          "scenario": "During a routine the amusement park task, an adult compares Fireworks, Mascot, Stilt Walker. The person selects Fireworks for the next step.",
+          "scenario": "The program lists a professional fireworks display. Mascot represents the park; stilt walker is a performer on tall stilts.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which listed display creates light effects with fireworks?",
             "options": ["Fireworks", "Mascot", "Stilt Walker"],
             "expectedAnswer": "Fireworks"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Fireworks, Mascot, Stilt Walker. The person selects Fireworks for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Fireworks, Mascot, Stilt Walker in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Distant professional-display reference only; no device assembly, handling, audience or instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Juggler", "Face Painter", "Street Performer"],
-          "scenario": "During a routine the amusement park task, an adult compares Juggler, Face Painter, Street Performer. The person selects Juggler for the next step.",
+          "scenario": "A juggler keeps several objects moving. Face painter makes face designs; street performer entertains in a public place.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which performer keeps several objects moving?",
             "options": ["Juggler", "Face Painter", "Street Performer"],
             "expectedAnswer": "Juggler"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Juggler, Face Painter, Street Performer. The person selects Juggler for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Juggler, Face Painter, Street Performer in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Hold active juggling unless a verified movement/subject plan is approved. Standalone juggling balls can support the written task. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Magician", "Dance Show", "Marching Band"],
-          "scenario": "During a routine the amusement park task, an adult compares Magician, Dance Show, Marching Band. The person selects Magician for the next step.",
+          "scenario": "A magician performs tricks and illusions. Dance show is a movement performance, while marching band plays music while moving.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which performer presents tricks and illusions?",
             "options": ["Magician", "Dance Show", "Marching Band"],
             "expectedAnswer": "Magician"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Magician, Dance Show, Marching Band. The person selects Magician for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Magician, Dance Show, Marching Band in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty stage with plain theatrical props, no supernatural claim, human role inference or copyrighted character. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ]
     },
     "reading": {
-      "title": "The Amusement Park: Notice-Style Text",
-      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice lost and found, souvenir shop, and photo spot. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice stage, fountain, and parade. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Shows, belongings and meeting places",
+      "text": "Dina reports a lost scarf at lost and found. She then meets her friend by the stage, near a fountain. They read the parade and fireworks schedule. A juggler and a magician are in the program, with a dance show and marching band. Dina checks the current times and asks where visitors may watch. The lesson names attractions and services; it does not explain how to perform stunts or handle fireworks.",
+      "imageBrief": "Support for Shows, belongings and meeting places. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine the amusement park task, an adult compares Lost and Found, Souvenir Shop, Photo Spot. The person selects Lost and Found for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Lost and found handles belongings that have been lost or found. Souvenir shop sells keepsakes, while photo spot is a designated picture location.\nWhich service handles the lost belongings?",
         "answer": "Lost and Found",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Stage, Fountain, Parade. The person selects Stage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The stage is the performance platform. Fountain sends water into a basin, and parade is a public procession.\nWhich structure is the performance platform?",
         "answer": "Stage",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Fireworks, Mascot, Stilt Walker. The person selects Fireworks for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The program lists a professional fireworks display. Mascot represents the park; stilt walker is a performer on tall stilts.\nWhich listed display creates light effects with fireworks?",
         "answer": "Fireworks",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Juggler, Face Painter, Street Performer. The person selects Juggler for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A juggler keeps several objects moving. Face painter makes face designs; street performer entertains in a public place.\nWhich performer keeps several objects moving?",
         "answer": "Juggler",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Magician, Dance Show, Marching Band. The person selects Magician for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A magician performs tricks and illusions. Dance show is a movement performance, while marching band plays music while moving.\nWhich performer presents tricks and illusions?",
         "answer": "Magician",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Lost and Found"
+        "prompt": "Dina reports a lost scarf at lost and found. She then meets her friend by the stage, near a fountain. They read the parade and fireworks schedule. A juggler and a magician are in the program, with a dance show and marching band. Dina checks the current times and asks where visitors may watch. The lesson names attractions and services; it does not explain how to perform stunts or handle fireworks.\nWhere does Dina report her lost scarf?",
+        "answer": "At lost and found.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Photo Spot"
+        "prompt": "Explain the difference between “Lost and Found” and “Souvenir Shop” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cotton Candy” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Lost and Found” in its supplied supported visitor attraction vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Lost and found handles belongings that have been lost or found. Souvenir shop sells keepsakes, while photo spot is a designated picture location.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Amusement Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Shows, belongings and meeting places",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reports a lost scarf at lost and found. She then meets her friend by the stage, near a fountain. They read the parade and fireworks schedule. A juggler and a magician are in the program, with a dance show and marching band. Dina checks the current times and asks where visitors may watch. The lesson names attractions and services; it does not explain how to perform stunts or handle fireworks. Ask: Where does Dina report her lost scarf?"
     },
     "spacedReview": "1 lesson(s) back: Cotton Candy, Funnel Cake from amusement-park-3\n3 lesson(s) back: Roller Coaster, Ferris Wheel from amusement-park-1\n7 lesson(s) back: beach chair, cooler from beach-2"
   },
@@ -729,118 +749,134 @@
       "Park Map",
       "Souvenir"
     ],
-    "targetWordsArabic": ["-", "-", "-", "-", "-", "-", "-", "-", "-", "-"],
+    "targetWordsArabic": [
+      "سيارة كارت صغيرة",
+      "لعبة مقاعد متأرجحة",
+      "صالة ألعاب إلكترونية",
+      "كابينة تصوير",
+      "عرض على المسرح",
+      "عربة مزينة في موكب",
+      "تذكرة",
+      "سوار دخول",
+      "خريطة الملاهي",
+      "تذكار"
+    ],
     "usage": {
-      "goal": "Learn to use common the amusement park 5 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the amusement park.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify the attraction or service described in a short guide and ask staff for current information.",
+      "canDoStatement": "Can identify a described attraction, service or item with supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Go-Kart", "Swing Ride", "Arcade"],
-          "scenario": "During a routine the amusement park task, an adult compares Go-Kart, Swing Ride, Arcade. The person selects Go-Kart for the next step.",
+          "scenario": "A go-kart is a small track vehicle. Swing ride has swinging seats, and arcade is a place with game machines.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the small track vehicle?",
             "options": ["Go-Kart", "Swing Ride", "Arcade"],
             "expectedAnswer": "Go-Kart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Go-Kart, Swing Ride, Arcade. The person selects Go-Kart for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Go-Kart, Swing Ride, Arcade in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. One parked plain go-kart, no driver, logo or use instruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Photo Booth", "Stage Show", "Parade Float"],
-          "scenario": "During a routine the amusement park task, an adult compares Photo Booth, Stage Show, Parade Float. The person selects Photo Booth for the next step.",
+          "scenario": "The photo booth makes keepsake pictures. Stage show is a performance on a stage, and parade float is a decorated procession vehicle.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which booth makes the keepsake pictures?",
             "options": ["Photo Booth", "Stage Show", "Parade Float"],
             "expectedAnswer": "Photo Booth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Photo Booth, Stage Show, Parade Float. The person selects Photo Booth for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Photo Booth, Stage Show, Parade Float in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Empty plain photo booth with blank display; no private photos or payment data. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ticket", "Wristband", "Park Map"],
-          "scenario": "During a routine the amusement park task, an adult compares Ticket, Wristband, Park Map. The person selects Ticket for the next step.",
+          "scenario": "Dina keeps her ticket, the admission pass. Wristband is a band showing admission, while park map shows places and routes.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which admission pass does Dina keep?",
             "options": ["Ticket", "Wristband", "Park Map"],
             "expectedAnswer": "Ticket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Ticket, Wristband, Park Map. The person selects Ticket for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Ticket, Wristband, Park Map in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Blank ticket-shaped paper and plain phone, no fabricated barcode or valid entry claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Souvenir",
-          "scenario": "During a routine the amusement park task, an adult compares Souvenir, Go-Kart, Swing Ride. The person selects Souvenir for the next step.",
+          "targetWords": ["Souvenir"],
+          "scenario": "A souvenir is a keepsake from a visit. Dina buys one small item after checking the shop's price.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the keepsake Dina buys?",
             "options": ["Souvenir", "Go-Kart", "Swing Ride"],
             "expectedAnswer": "Souvenir"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the amusement park context illustrating this situation: During a routine the amusement park task, an adult compares Souvenir, Go-Kart, Swing Ride. The person selects Souvenir for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the amusement park scene showing lesson-related items or actions including Souvenir in a natural setting."
+          "imageBrief": "Word-reference support for the written supported visitor attraction vocabulary task. Plain generic keepsake object with no park logo or brand; personal meaning supplied by text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ]
     },
     "reading": {
-      "title": "The Amusement Park: Short Description",
-      "text": "Maya is in a situation connected to the amusement park. She uses the new words to understand what she sees and what happens next. Visitors move through the area and notice go-kart, swing ride, and arcade. The scene gives each word a clear place in the outdoor setting. Visitors move through the area and notice photo booth, stage show, and parade float. The scene gives each word a clear place in the outdoor setting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Amusement Park. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Keeping the visit records",
+      "text": "Dina reads the guide for the remaining attractions. It names a go-kart, a swing ride and an arcade. She meets her friend by the photo booth after a stage show. They watch a parade float from the designated area. Dina keeps her ticket and admission wristband. She checks the park map on her way out and buys a small souvenir to remember the visit.",
+      "imageBrief": "Support for Keeping the visit records. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine the amusement park task, an adult compares Go-Kart, Swing Ride, Arcade. The person selects Go-Kart for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A go-kart is a small track vehicle. Swing ride has swinging seats, and arcade is a place with game machines.\nWhich item is the small track vehicle?",
         "answer": "Go-Kart",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Photo Booth, Stage Show, Parade Float. The person selects Photo Booth for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The photo booth makes keepsake pictures. Stage show is a performance on a stage, and parade float is a decorated procession vehicle.\nWhich booth makes the keepsake pictures?",
         "answer": "Photo Booth",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Ticket, Wristband, Park Map. The person selects Ticket for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina keeps her ticket, the admission pass. Wristband is a band showing admission, while park map shows places and routes.\nWhich admission pass does Dina keep?",
         "answer": "Ticket",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the amusement park task, an adult compares Souvenir, Go-Kart, Swing Ride. The person selects Souvenir for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A souvenir is a keepsake from a visit. Dina buys one small item after checking the shop's price.\nWhich word names the keepsake Dina buys?",
         "answer": "Souvenir",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Go-Kart"
+        "prompt": "Dina reads the guide for the remaining attractions. It names a go-kart, a swing ride and an arcade. She meets her friend by the photo booth after a stage show. They watch a parade float from the designated area. Dina keeps her ticket and admission wristband. She checks the park map on her way out and buys a small souvenir to remember the visit.\nWhat does Dina buy to remember the visit?",
+        "answer": "A small souvenir.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Arcade"
+        "prompt": "Explain the difference between “Go-Kart” and “Swing Ride” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lost and Found” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Go-Kart” in its supplied supported visitor attraction vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: A go-kart is a small track vehicle. Swing ride has swinging seats, and arcade is a place with game machines.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Amusement Park: In Context",
-      "idea": "30-45 seconds contextual scene in the outdoor area. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the outdoor area. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Keeping the visit records",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the guide for the remaining attractions. It names a go-kart, a swing ride and an arcade. She meets her friend by the photo booth after a stage show. They watch a parade float from the designated area. Dina keeps her ticket and admission wristband. She checks the park map on her way out and buys a small souvenir to remember the visit. Ask: What does Dina buy to remember the visit?"
     },
     "spacedReview": "1 lesson(s) back: Lost and Found, Souvenir Shop from amusement-park-4\n3 lesson(s) back: Flying Swings, Boat Ride from amusement-park-2\n7 lesson(s) back: kayaking, paddleboarding from beach-3"
   }

@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to count and confirm small quantities in everyday adult tasks.",
-      "canDoStatement": "Can understand and use numbers from one to fifteen to count familiar people and objects.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can count a clearly separated group of objects.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,7 +59,15 @@
             "expectedAnswer": "Three"
           },
           "imageBrief": "Office desk with three clearly separated trays holding exactly 1, 2, and 3 identical folders. Put the 3-folder tray beside a clipboard and make it the focal tray. Every folder must be individually countable; no written numbers, labels, logos or watermarks.",
-          "imageAlt": "Three office trays hold one, two and three folders; the three-folder tray is beside a clipboard."
+          "imageAlt": "Three office trays hold one, two and three folders; the three-folder tray is beside a clipboard.",
+          "learningContext": {
+            "sourceScenario": "At a small office, one folder is on the first tray, two folders are on the second, and three folders are on the third. The tray beside the clipboard has three folders.",
+            "sourceQuestion": "According to the situation, which option gives the correct number or quantity?",
+            "sourceAnswer": "Three",
+            "scenario": "At an office desk, the tray beside the clipboard holds exactly three folders. The other trays hold one folder and two folders.",
+            "question": "How many folders are in the tray beside the clipboard?",
+            "imageBrief": "Three separate trays hold exactly one, two and three individually visible folders. Clipboard beside the three-folder tray. No written numbers or labels."
+          }
         },
         {
           "chunkNumber": 2,
@@ -83,7 +91,15 @@
             "expectedAnswer": "Nine"
           },
           "imageBrief": "Storeroom with three separated groups of identical boxes: exactly 7, 8, and 9. Put the 9-box group beside an open door and make it easy to distinguish.",
-          "imageAlt": "Three groups contain seven, eight and nine boxes; nine boxes are beside the open door."
+          "imageAlt": "Three groups contain seven, eight and nine boxes; nine boxes are beside the open door.",
+          "learningContext": {
+            "sourceScenario": "A storeroom has three neat groups of boxes: seven, eight, and nine. The group beside the open door contains nine boxes.",
+            "sourceQuestion": "Which quantity matches the selected group?",
+            "sourceAnswer": "Nine",
+            "scenario": "A storeroom has three neat groups of boxes: seven, eight, and nine. The group beside the open door contains nine boxes.",
+            "question": "How many boxes are beside the open door?",
+            "imageBrief": "Storeroom with three separated groups of identical boxes: exactly 7, 8, and 9. Put the 9-box group beside an open door and make it easy to distinguish."
+          }
         },
         {
           "chunkNumber": 4,
@@ -95,7 +111,15 @@
             "expectedAnswer": "Eleven"
           },
           "imageBrief": "Reception desk with three tidy ticket stacks representing 10, 11, and 12. Make the 11-ticket stack clearly central; use countable tickets with no printed text.",
-          "imageAlt": "Three ticket stacks show ten, eleven and twelve tickets; eleven are in the middle."
+          "imageAlt": "Three ticket stacks show ten, eleven and twelve tickets; eleven are in the middle.",
+          "learningContext": {
+            "sourceScenario": "At a reception desk, three ticket stacks contain ten, eleven, and twelve tickets. The middle stack contains eleven tickets.",
+            "sourceQuestion": "How many tickets are in the middle stack?",
+            "sourceAnswer": "Eleven",
+            "scenario": "At a reception desk, three ticket stacks contain ten, eleven, and twelve tickets. The middle stack contains eleven tickets.",
+            "question": "How many tickets are in the middle stack?",
+            "imageBrief": "Reception desk with three separate groups of tickets, laid flat without overlap: ten in two rows of five, eleven in rows of five and six, and twelve in two rows of six. Eleven-ticket group in the centre. No printed text."
+          }
         },
         {
           "chunkNumber": 5,
@@ -107,54 +131,93 @@
             "expectedAnswer": "Fifteen"
           },
           "imageBrief": "Adult training-room supply table with three neat notebook sets of exactly 13, 14, and 15. Make the 15-notebook set clearly on the right; no written labels.",
-          "imageAlt": "Three notebook sets show thirteen, fourteen and fifteen; fifteen are on the right."
+          "imageAlt": "Three notebook sets show thirteen, fourteen and fifteen; fifteen are on the right.",
+          "learningContext": {
+            "sourceScenario": "A course coordinator prepares three sets of notebooks: thirteen, fourteen, and fifteen. The set on the right contains fifteen notebooks.",
+            "sourceQuestion": "How many notebooks are in the set on the right?",
+            "sourceAnswer": "Fifteen",
+            "scenario": "A course coordinator prepares three sets of notebooks: thirteen, fourteen, and fifteen. The set on the right contains fifteen notebooks.",
+            "question": "How many notebooks are in the set on the right?",
+            "imageBrief": "Supply table with three separate groups of upright, individually visible notebooks: thirteen in rows of six and seven, fourteen in two rows of seven, and fifteen in three rows of five. Fifteen-notebook group on the learner’s right. No readable writing."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Checking the Meeting Supplies",
-      "text": "Maya is preparing a small meeting room before colleagues arrive. She counts six chairs, eight water bottles, and ten printed agendas, then checks whether the numbers match the booking. A coworker brings three more cups and one spare notebook. Together they recount the supplies and confirm that the room is ready without using complicated calculations.",
-      "imageBrief": "Friendly classroom scene matching the story with a teacher, students, windows, tables, bags, books, and wall pictures."
+      "text": "Maya prepares a meeting room. She counts six chairs, eight water bottles and ten agendas. A colleague brings three cups and one notebook. Maya puts two folders beside the notebook. The meeting starts soon, so they count the chairs once more.",
+      "imageBrief": "Adult meeting-room supply table with exactly eight water bottles, ten blank agendas, three cups, one notebook and two folders beside the notebook; exactly six chairs around the table. All counted items visible and separate, no readable writing, logos or extra instances of these objects."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "One"
+        "prompt": "At a small office, one folder is on the first tray, two folders are on the second, and three folders are on the third. The tray beside the clipboard has three folders.\nAccording to the situation, which option gives the correct number or quantity?",
+        "answer": "Three",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Four"
+        "prompt": "At a café counter, four cups are on one tray, five on another, and six on a third. The tray nearest the kettle holds five cups.\nHow many cups are on the tray nearest the kettle?",
+        "answer": "Five",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Seven"
+        "prompt": "A storeroom has three neat groups of boxes: seven, eight, and nine. The group beside the open door contains nine boxes.\nWhich quantity matches the selected group?",
+        "answer": "Nine",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Ten"
+        "prompt": "At a reception desk, three ticket stacks contain ten, eleven, and twelve tickets. The middle stack contains eleven tickets.\nHow many tickets are in the middle stack?",
+        "answer": "Eleven",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Thirteen"
+        "prompt": "A course coordinator prepares three sets of notebooks: thirteen, fourteen, and fifteen. The set on the right contains fifteen notebooks.\nHow many notebooks are in the set on the right?",
+        "answer": "Fifteen",
+        "contextTag": "scene-5",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: How many windows are there?",
-        "answer": "three"
+        "prompt": "Read the passage: Maya prepares a meeting room. She counts six chairs, eight water bottles and ten agendas. A colleague brings three cups and one notebook. Maya puts two folders beside the notebook. The meeting starts soon, so they count the chairs once more.\nHow many chairs does Maya count?",
+        "answer": "six",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: How many students are in the class?",
-        "answer": "fifteen"
+        "prompt": "Read the passage: Maya prepares a meeting room. She counts six chairs, eight water bottles and ten agendas. A colleague brings three cups and one notebook. Maya puts two folders beside the notebook. The meeting starts soon, so they count the chairs once more.\nWhat does her colleague bring?",
+        "answer": "three cups and one notebook",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: What is on the wall?",
-        "answer": "seven pictures"
+        "prompt": "There are three cups on a tray. Tell a colleague how many cups there are.",
+        "answer": "There are three cups.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "A meeting needs five chairs. Ask a colleague to bring that number.",
+        "answer": "Please bring five chairs.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Count With Me",
-      "idea": "30–45 second video. A learner looks around a room and counts objects aloud, then pauses to let the viewer answer before revealing the number.",
-      "scriptStarter": "I see one clock. There are two windows. I see three plants. How many chairs can you see?"
+      "title": "Counting Meeting Supplies",
+      "idea": "Adult workplace or service context. Narration states quantities, positions and operations. Counted objects are individually visible; large numbers come from supplied text rather than crowds. No unreviewed readable labels or highlighted answers.",
+      "scriptStarter": "At an office desk, the tray beside the clipboard holds exactly three folders. The other trays hold one folder and two folders."
     },
     "spacedReview": ""
   },
@@ -204,8 +267,8 @@
     ],
     "usage": {
       "goal": "Learn to understand and state larger numbers used in prices, rooms, queues, and totals.",
-      "canDoStatement": "Can recognize and say common numbers from sixteen to one million in familiar practical contexts.",
-      "textType": "service-notice",
+      "canDoStatement": "With the supplied context, can identify a stated quantity or written number.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -218,7 +281,16 @@
             "expectedAnswer": "Eighteen"
           },
           "imageBrief": "Clean service-counter queue display showing only the numerals 16, 17, and 18. Highlight 18 with a simple border or light. Numerals are essential educational content; no other text or logos.",
-          "imageAlt": "A queue display shows 16, 17 and 18, with 18 highlighted."
+          "imageAlt": "A queue display shows 16, 17 and 18, with 18 highlighted.",
+          "learningContext": {
+            "sourceScenario": "A queue display shows the numbers 16, 17, and 18. The highlighted ticket number is 18.",
+            "sourceQuestion": "Which ticket number is highlighted?",
+            "sourceAnswer": "Eighteen",
+            "scenario": "At a service desk, Karim holds ticket 18. The last two customers held tickets 16 and 17. His number is now called.",
+            "question": "Which number is on Karim’s ticket?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 2,
@@ -230,7 +302,16 @@
             "expectedAnswer": "Twenty"
           },
           "imageBrief": "Simple hotel booking screen showing only 19, 20, and 30 as large room numbers. Highlight 20; no other words, logos or interface clutter.",
-          "imageAlt": "Room numbers 19, 20 and 30 appear, with 20 highlighted."
+          "imageAlt": "Room numbers 19, 20 and 30 appear, with 20 highlighted.",
+          "learningContext": {
+            "sourceScenario": "A booking screen shows room numbers 19, 20, and 30. Room 20 is highlighted.",
+            "sourceQuestion": "According to the situation, which option gives the correct number or quantity?",
+            "sourceAnswer": "Twenty",
+            "scenario": "Sara has booked room 20 at a hotel. Room 19 is on its left and room 30 is across the corridor. She checks her booking before opening the door.",
+            "question": "Which room has Sara booked?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 3,
@@ -242,7 +323,16 @@
             "expectedAnswer": "Sixty"
           },
           "imageBrief": "Three clean digital displays showing 40, 50, and 60. Make 60 the central highlighted display; no other text.",
-          "imageAlt": "Digital displays show 40, 50 and 60, with 60 in the centre."
+          "imageAlt": "Digital displays show 40, 50 and 60, with 60 in the centre.",
+          "learningContext": {
+            "sourceScenario": "A digital counter compares 40, 50, and 60. The centre display shows 60.",
+            "sourceQuestion": "Which number appears on the centre display?",
+            "sourceAnswer": "Sixty",
+            "scenario": "A supplier sends boxes of 40, 50 or 60 paper cups. Rana orders the box of 60 because she expects sixty guests.",
+            "question": "How many cups are in Rana’s order?",
+            "imageBrief": "One closed unbranded box beside paper cups on a catering table. Do not portray an uncountable crowd or imply that box size proves sixty; written scenario supplies quantity."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 4,
@@ -254,7 +344,16 @@
             "expectedAnswer": "Eighty"
           },
           "imageBrief": "Simple timetable-style screen with large numerals 70, 80, and 90 only. Highlight 80; no other text, labels or logos.",
-          "imageAlt": "A screen shows 70, 80 and 90, with 80 highlighted."
+          "imageAlt": "A screen shows 70, 80 and 90, with 80 highlighted.",
+          "learningContext": {
+            "sourceScenario": "A timetable screen shows the numbers 70, 80, and 90. The highlighted number is 80.",
+            "sourceQuestion": "According to the situation, which option gives the correct number or quantity?",
+            "sourceAnswer": "Eighty",
+            "scenario": "Omar compares seats for groups of seventy, eighty and ninety people. He books eighty seats for his event.",
+            "question": "How many seats does Omar book?",
+            "imageBrief": "Empty adult event hall with seating. No answer emphasis, numbers or claim that every seat count is visible; passage states eighty."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 5,
@@ -266,54 +365,94 @@
             "expectedAnswer": "Million"
           },
           "imageBrief": "Adult booking screen with a clean digital display showing the quantities hundred, thousand, and million as numerals. Highlight Million; no unrelated text or branding.",
-          "imageAlt": "Booking screen scene illustrating hundred, thousand, and million, with Million highlighted."
+          "imageAlt": "Booking screen scene illustrating hundred, thousand, and million, with Million highlighted.",
+          "learningContext": {
+            "sourceScenario": "At a booking screen, a digital display compares hundred, thousand, and million. The highlighted figure represents million.",
+            "sourceQuestion": "Which word describes the highlighted figure?",
+            "sourceAnswer": "Million",
+            "scenario": "A website report shows 1000000 visits. Sara reads this number as one million, not one hundred or one thousand.",
+            "question": "Which word expresses the number of visits?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Numbers at the Service Desk",
-      "text": "A hotel worker checks a booking screen before a busy weekend. Room requests include sixteen, seventeen, eighteen, nineteen, and twenty guests. Larger group bookings show thirty, forty, fifty, sixty, seventy, eighty, and ninety people. The conference summary shows one hundred places. One report records one thousand bookings, while the company website records one million visits across all its locations.",
-      "imageBrief": "School scene with a classroom, a library, students, and simple number signs that support the reading."
+      "text": "At a hotel, Sara checks guest numbers. The small groups have sixteen, seventeen, eighteen, nineteen and twenty guests. Larger groups have thirty, forty, fifty, sixty, seventy, eighty or ninety guests. One conference has a hundred places. A report lists a thousand bookings and a million website visits.",
+      "imageBrief": "A hotel reception desk with an adult worker and an unbranded computer. Do not attempt to represent thousands of people or infer quantities from crowd size. The passage supplies all numerical information."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sixteen"
+        "prompt": "A queue display shows the numbers 16, 17, and 18. The highlighted ticket number is 18.\nWhich ticket number is highlighted?",
+        "answer": "Eighteen",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Nineteen"
+        "prompt": "A booking screen shows room numbers 19, 20, and 30. Room 20 is highlighted.\nAccording to the situation, which option gives the correct number or quantity?",
+        "answer": "Twenty",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Forty"
+        "prompt": "A digital counter compares 40, 50, and 60. The centre display shows 60.\nWhich number appears on the centre display?",
+        "answer": "Sixty",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Seventy"
+        "prompt": "A timetable screen shows the numbers 70, 80, and 90. The highlighted number is 80.\nAccording to the situation, which option gives the correct number or quantity?",
+        "answer": "Eighty",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Hundred"
+        "prompt": "At a booking screen, a digital display compares hundred, thousand, and million. The highlighted figure represents million.\nWhich word describes the highlighted figure?",
+        "answer": "Million",
+        "contextTag": "scene-5",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: How many students are in the class?",
-        "answer": "twenty"
+        "prompt": "Read the passage: At a hotel, Sara checks guest numbers. The small groups have sixteen, seventeen, eighteen, nineteen and twenty guests. Larger groups have thirty, forty, fifty, sixty, seventy, eighty or ninety guests. One conference has a hundred places. A report lists a thousand bookings and a million website visits.\nHow many places does the conference have?",
+        "answer": "a hundred",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: How old is the sister?",
-        "answer": "eighteen"
+        "prompt": "Read the passage: At a hotel, Sara checks guest numbers. The small groups have sixteen, seventeen, eighteen, nineteen and twenty guests. Larger groups have thirty, forty, fifty, sixty, seventy, eighty or ninety guests. One conference has a hundred places. A report lists a thousand bookings and a million website visits.\nWhat does the report count in millions?",
+        "answer": "website visits",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Does the library have one hundred books or more than one thousand books?",
-        "answer": "more than one thousand books"
+        "prompt": "Your room number is twenty. Tell the receptionist.",
+        "answer": "My room number is twenty.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "You expect sixty guests. Ask for the same number of cups.",
+        "answer": "We need sixty cups, please.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "A Day in Numbers",
-      "idea": "35–50 second video with quick daily scenes: age, students in a class, books in a library, and large number signs in context.",
-      "scriptStarter": "I am sixteen. There are twenty students in my class. Our library has more than one thousand books."
+      "title": "Reading Service Numbers",
+      "idea": "Adult workplace or service context. Narration states quantities, positions and operations. Counted objects are individually visible; large numbers come from supplied text rather than crowds. No unreviewed readable labels or highlighted answers.",
+      "scriptStarter": "At a service desk, Karim holds ticket 18. The last two customers held tickets 16 and 17. His number is now called."
     },
     "spacedReview": "1 lesson(s) back: One, Two from numbers-counting-1"
   },
@@ -363,8 +502,8 @@
     ],
     "usage": {
       "goal": "Learn to use ordinal numbers and basic calculation words in simple practical tasks.",
-      "canDoStatement": "Can understand basic position words and simple arithmetic language in familiar situations.",
-      "textType": "instructional-guide",
+      "canDoStatement": "With the supplied context, can identify a position or named arithmetic operation.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -377,7 +516,15 @@
             "expectedAnswer": "Second"
           },
           "imageBrief": "Side view of an adult queue with exactly three people in first, second and third positions. The second person holds a blue folder. No written ordinal labels.",
-          "imageAlt": "Three adults stand in a queue; the second person holds a blue folder."
+          "imageAlt": "Three adults stand in a queue; the second person holds a blue folder.",
+          "learningContext": {
+            "sourceScenario": "Three adults wait in a queue. One person is first, one is second, and one is third. The person holding a blue folder is second.",
+            "sourceQuestion": "Where is the marked person or item in the order?",
+            "sourceAnswer": "Second",
+            "scenario": "Three adults wait in a queue. One person is first, one is second, and one is third. The person holding a blue folder is second.",
+            "question": "What is the position of the person holding a blue folder?",
+            "imageBrief": "Side view of exactly three adults in a queue facing a service counter: the nearest is first, the middle person holding a blue folder is second and the furthest is third. No written ordinals, highlighted person or extra customers."
+          }
         },
         {
           "chunkNumber": 2,
@@ -389,7 +536,16 @@
             "expectedAnswer": "Fifth"
           },
           "imageBrief": "Simple lift/elevator indicator with essential numerals 4, 5, and 6, highlighting floor 5. No other written text or branding.",
-          "imageAlt": "A lift indicator shows floors four, five and six, with the fifth highlighted."
+          "imageAlt": "A lift indicator shows floors four, five and six, with the fifth highlighted.",
+          "learningContext": {
+            "sourceScenario": "A lift stops on the fourth, fifth, and sixth floors. The highlighted stop is the fifth floor.",
+            "sourceQuestion": "Which ordinal word matches the selected position?",
+            "sourceAnswer": "Fifth",
+            "scenario": "A lift opens on the fifth floor. The wall beside the lift has the number 5. The fourth and sixth floors are one level below and above it.",
+            "question": "Which ordinal word names the floor where the lift opens?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 3,
@@ -401,7 +557,16 @@
             "expectedAnswer": "Tenth"
           },
           "imageBrief": "Adult fun-run finish area with four result positions represented clearly as 7th, 8th, 9th and 10th; highlight the runner in 10th. Essential ordinal numerals only.",
-          "imageAlt": "A race result shows seventh through tenth place, with tenth highlighted."
+          "imageAlt": "A race result shows seventh through tenth place, with tenth highlighted.",
+          "learningContext": {
+            "sourceScenario": "A race result board shows seventh, eighth, ninth, and tenth places. The highlighted runner finished tenth.",
+            "sourceQuestion": "Which place in the sequence is being shown?",
+            "sourceAnswer": "Tenth",
+            "scenario": "Four runners finish in seventh, eighth, ninth and tenth place. The runner with the green vest is tenth.",
+            "question": "Which place does the runner with the green vest finish in?",
+            "imageBrief": "Four adult runners at a finish line, one wearing a green vest. No printed ranks; passage supplies the finishing position."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 4,
@@ -413,7 +578,16 @@
             "expectedAnswer": "Equals"
           },
           "imageBrief": "Adult training-style visual at a booking screen showing separate, simple calculation examples for addition and equals. Highlight Equals; use only essential mathematical symbols.",
-          "imageAlt": "Booking screen scene illustrating addition and equals, with Equals highlighted."
+          "imageAlt": "Booking screen scene illustrating addition and equals, with Equals highlighted.",
+          "learningContext": {
+            "sourceScenario": "On a booking screen, a simple calculation demonstrates addition and equals. The highlighted operation or result is equals.",
+            "sourceQuestion": "What operation does the example in the booking screen show?",
+            "sourceAnswer": "Equals",
+            "scenario": "A bill shows 2 + 3 = 5. Rana reads it as “two plus three equals five.” She points to the sign between 3 and 5.",
+            "question": "Which word describes the sign between 3 and 5?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 5,
@@ -425,54 +599,93 @@
             "expectedAnswer": "Division"
           },
           "imageBrief": "Adult training-style visual at a invoice review showing separate, simple calculation examples for subtraction, multiplication, and division. Highlight Division; use only essential mathematical symbols.",
-          "imageAlt": "Invoice review scene illustrating subtraction, multiplication, and division, with Division highlighted."
+          "imageAlt": "Invoice review scene illustrating subtraction, multiplication, and division, with Division highlighted.",
+          "learningContext": {
+            "sourceScenario": "During an invoice review, a simple calculation demonstrates subtraction, multiplication, and division. The highlighted operation or result is division.",
+            "sourceQuestion": "Which calculation term is being used in the invoice?",
+            "sourceAnswer": "Division",
+            "scenario": "Samir shares twelve folders equally among three colleagues. He uses division to find that each colleague gets four folders.",
+            "question": "Which operation shares the folders into equal groups?",
+            "imageBrief": "Three separated groups of exactly four identical folders on an office table. No numbers, labels or answer highlighting."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Reading a Simple Score Sheet",
-      "text": "A training coordinator checks a short score sheet after a workshop. One team is first, another is second, and a third team is third. The coordinator also reviews a simple total using addition and subtraction, then checks whether the final figures equal the expected result. Multiplication and division appear only in a few basic examples on the sheet.",
-      "imageBrief": "Split scene: first panel shows the race winners; second panel shows a class number game on a board."
+      "text": "Three teams finish a workshop. Blue is first, Green is second and Red is third. The coordinator uses addition to add their points. She uses subtraction to take two points off an incorrect score. Multiplication gives the total for three equal scores. Division shares that total equally. She checks that the result equals the correct number.",
+      "imageBrief": "Three distinct blue, green and red folders on a workshop desk, arranged in that order left to right. A blank score sheet and calculator are beside them. No written ranking or answer emphasis."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "First"
+        "prompt": "Three adults wait in a queue. One person is first, one is second, and one is third. The person holding a blue folder is second.\nWhere is the marked person or item in the order?",
+        "answer": "Second",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Fourth"
+        "prompt": "A lift stops on the fourth, fifth, and sixth floors. The highlighted stop is the fifth floor.\nWhich ordinal word matches the selected position?",
+        "answer": "Fifth",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Seventh"
+        "prompt": "A race result board shows seventh, eighth, ninth, and tenth places. The highlighted runner finished tenth.\nWhich place in the sequence is being shown?",
+        "answer": "Tenth",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Addition"
+        "prompt": "On a booking screen, a simple calculation demonstrates addition and equals. The highlighted operation or result is equals.\nWhat operation does the example in the booking screen show?",
+        "answer": "Equals",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Subtraction"
+        "prompt": "During an invoice review, a simple calculation demonstrates subtraction, multiplication, and division. The highlighted operation or result is division.\nWhich calculation term is being used in the invoice?",
+        "answer": "Division",
+        "contextTag": "scene-5",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Who is first in the race?",
-        "answer": "Lina"
+        "prompt": "Read the passage: Three teams finish a workshop. Blue is first, Green is second and Red is third. The coordinator uses addition to add their points. She uses subtraction to take two points off an incorrect score. Multiplication gives the total for three equal scores. Division shares that total equally. She checks that the result equals the correct number.\nWhich team finishes second?",
+        "answer": "Green",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Who is second?",
-        "answer": "Omar"
+        "prompt": "Read the passage: Three teams finish a workshop. Blue is first, Green is second and Red is third. The coordinator uses addition to add their points. She uses subtraction to take two points off an incorrect score. Multiplication gives the total for three equal scores. Division shares that total equally. She checks that the result equals the correct number.\nWhy does the coordinator use subtraction?",
+        "answer": "to take two points off an incorrect score",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: What does two plus three equal?",
-        "answer": "five"
+        "prompt": "You are second in a queue. Tell a colleague your position.",
+        "answer": "I am second in the queue.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "Name the operation for sharing twelve folders equally among three people.",
+        "answer": "We use division.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Sports Day and the Number Game",
-      "idea": "35–50 second video. A short race introduces first, second, and third, then the class switches to simple spoken equations.",
-      "scriptStarter": "Lina is first. Omar is second. Adam is third. Now let’s play: two plus three equals five."
+      "title": "Positions and Arithmetic",
+      "idea": "Adult workplace or service context. Narration states quantities, positions and operations. Counted objects are individually visible; large numbers come from supplied text rather than crowds. No unreviewed readable labels or highlighted answers.",
+      "scriptStarter": "Three adults wait in a queue. One person is first, one is second, and one is third. The person holding a blue folder is second."
     },
     "spacedReview": "1 lesson(s) back: Sixteen, Seventeen from numbers-counting-2"
   },
@@ -490,8 +703,8 @@
     "targetWordsArabic": ["زائد", "ناقص", "في", "مقسوم على", "نسبة مئوية"],
     "usage": {
       "goal": "Learn to understand common calculation symbols and percentage language in everyday transactions.",
-      "canDoStatement": "Can follow very simple calculations using plus, minus, times, divided by, and percentage.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named operation or percentage.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -504,7 +717,16 @@
             "expectedAnswer": "Minus"
           },
           "imageBrief": "Three clean visual calculation examples using objects: combining for plus, removing for minus, equal repeated groups for times. Highlight the minus example. Symbols may appear, but no explanatory text.",
-          "imageAlt": "Three arithmetic examples with the subtraction/minus example highlighted."
+          "imageAlt": "Three arithmetic examples with the subtraction/minus example highlighted.",
+          "learningContext": {
+            "sourceScenario": "A simple calculation card compares plus, minus, and times. The highlighted example removes two objects from a group, so it represents minus.",
+            "sourceQuestion": "Which calculation term is being used in the scene?",
+            "sourceAnswer": "Minus",
+            "scenario": "A café has five clean cups. A worker removes two cups, leaving three. The calculation is five minus two equals three.",
+            "question": "Which word names the operation that removes two cups?",
+            "imageBrief": "Three cups together on a café tray and two separate cups beside it. Mathematical reduction supplied by the written scenario, without arrows or text."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         },
         {
           "chunkNumber": 2,
@@ -516,42 +738,73 @@
             "expectedAnswer": "Percentage"
           },
           "imageBrief": "Adult training-style visual at a reception desk showing separate, simple calculation examples for divided by and percentage. Highlight Percentage; use only essential mathematical symbols.",
-          "imageAlt": "Reception desk scene illustrating divided by and percentage, with Percentage highlighted."
+          "imageAlt": "Reception desk scene illustrating divided by and percentage, with Percentage highlighted.",
+          "learningContext": {
+            "sourceScenario": "At a reception desk, a simple calculation demonstrates divided by and percentage. The highlighted operation or result is percentage.",
+            "sourceQuestion": "Which maths word matches the selected calculation?",
+            "sourceAnswer": "Percentage",
+            "scenario": "A survey has one hundred replies. Twenty replies are positive: 20% of the total. Twenty per cent is a percentage, a number expressed out of one hundred.",
+            "question": "Which term expresses the positive replies as a number out of one hundred?",
+            "imageBrief": "Image generation held. This concept currently requires readable numeric or mathematical glyphs. Teach it through the written task; do not generate a blank substitute or imply that a photograph proves the answer."
+          },
+          "imageGenerationHold": "The current brief depends on readable glyphs or a quantity, order or operation that cannot be established visually. Keep the written task; hold new imagery under the strict no-text policy."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Checking the Bill",
-      "text": "At a café, Karim checks the bill before paying. The cashier explains that one item is added with plus, a discount is shown with minus, and a percentage applies to the final amount. Karim asks how the total was calculated. The cashier shows the simple steps, including times and divided by, so he can confirm the amount.",
-      "imageBrief": "Simple classroom math lesson with a board and a percentage pie chart."
+      "text": "Karim checks a café bill. Two teas cost three pounds each: two times three equals six. He adds a two-pound cake: six plus two equals eight. A one-pound discount gives eight minus one equals seven. Two friends share seven pounds: seven divided by two equals three pounds fifty each. A percentage means a number out of one hundred.",
+      "imageBrief": "Café table with two tea cups, one small cake, a calculator and an unprinted bill. No prices or mathematical labels; the passage provides the calculation."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Plus"
+        "prompt": "A simple calculation card compares plus, minus, and times. The highlighted example removes two objects from a group, so it represents minus.\nWhich calculation term is being used in the scene?",
+        "answer": "Minus",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Divided By"
+        "prompt": "At a reception desk, a simple calculation demonstrates divided by and percentage. The highlighted operation or result is percentage.\nWhich maths word matches the selected calculation?",
+        "answer": "Percentage",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: What does six divided by two equal?",
-        "answer": "three"
+        "prompt": "Read the passage: Karim checks a café bill. Two teas cost three pounds each: two times three equals six. He adds a two-pound cake: six plus two equals eight. A one-pound discount gives eight minus one equals seven. Two friends share seven pounds: seven divided by two equals three pounds fifty each. A percentage means a number out of one hundred.\nWhat is the total before the discount?",
+        "answer": "eight pounds",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: What does fifty percent mean in the lesson?",
-        "answer": "half"
+        "prompt": "Read the passage: Karim checks a café bill. Two teas cost three pounds each: two times three equals six. He adds a two-pound cake: six plus two equals eight. A one-pound discount gives eight minus one equals seven. Two friends share seven pounds: seven divided by two equals three pounds fifty each. A percentage means a number out of one hundred.\nHow much does each friend pay after the discount?",
+        "answer": "three pounds fifty",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which words do students use every day in math class?",
-        "answer": "plus and minus"
+        "prompt": "Read this calculation aloud: five minus two equals three.",
+        "answer": "Five minus two equals three.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "Twenty of one hundred replies are positive. State the percentage aloud.",
+        "answer": "Twenty per cent are positive.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Math Symbols Around Us",
-      "idea": "30–40 second video. The teacher points to symbols and students answer simple problems aloud.",
-      "scriptStarter": "This is plus. This is minus. Six divided by two is three. Fifty percent means half."
+      "title": "Reading a Café Calculation",
+      "idea": "Adult workplace or service context. Narration states quantities, positions and operations. Counted objects are individually visible; large numbers come from supplied text rather than crowds. No unreviewed readable labels or highlighted answers.",
+      "scriptStarter": "A café has five clean cups. A worker removes two cups, leaving three. The calculation is five minus two equals three."
     },
     "spacedReview": "1 lesson(s) back: First, Second from numbers-counting-3\n3 lesson(s) back: One, Two from numbers-counting-1"
   }

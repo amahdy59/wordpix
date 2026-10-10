@@ -29,10 +29,10 @@
     "targetWordsArabic": [
       "مليمتر",
       "سنتيمتر",
-      "عداد",
+      "متر",
       "كيلومتر",
       "بوصة",
-      "قدم",
+      "قدم كوحدة طول",
       "ياردة",
       "ميل",
       "مسطرة",
@@ -44,136 +44,141 @@
       "أونصة"
     ],
     "usage": {
-      "goal": "Learn to use common measurements & units 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to measurements & units.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Millimeter", "Centimeter", "Meter"],
-          "scenario": "During a routine measurements & units task, an adult compares Millimeter, Centimeter, Meter. The person selects Millimeter for the next step.",
+          "scenario": "The note uses millimeter, one thousandth of a meter. A centimeter is one hundredth of a meter.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which unit is one thousandth of a meter?",
             "options": ["Millimeter", "Centimeter", "Meter"],
             "expectedAnswer": "Millimeter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Millimeter, Centimeter, Meter. The person selects Millimeter for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Millimeter, Centimeter, Meter in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain ruler with unnumbered marks; exact units and measurements supplied in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Kilometer", "Inch", "Foot"],
-          "scenario": "During a routine measurements & units task, an adult compares Kilometer, Inch, Foot. The person selects Kilometer for the next step.",
+          "scenario": "The journey is described in kilometers. An inch is a length unit, and a foot is twelve inches.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which unit describes the journey in the text?",
             "options": ["Kilometer", "Inch", "Foot"],
             "expectedAnswer": "Kilometer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Kilometer, Inch, Foot. The person selects Kilometer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Kilometer, Inch, Foot in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Unlettered simple route diagram; distances remain in written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Yard", "Mile", "Ruler"],
-          "scenario": "During a routine measurements & units task, an adult compares Yard, Mile, Ruler. The person selects Yard for the next step.",
+          "scenario": "A yard equals three feet. A mile is a longer length unit, and a ruler is a measuring tool.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which listed unit equals three feet?",
             "options": ["Yard", "Mile", "Ruler"],
             "expectedAnswer": "Yard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Yard, Mile, Ruler. The person selects Yard for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Yard, Mile, Ruler in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Unnumbered measuring strip beside a simple object; no incorrect unit diagram. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tape Measure", "Gram", "Kilogram"],
-          "scenario": "During a routine measurements & units task, an adult compares Tape Measure, Gram, Kilogram. The person selects Tape Measure for the next step.",
+          "scenario": "Dina uses a tape measure for the long edge. A gram and a kilogram are units of mass.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool does Dina use for the long edge?",
             "options": ["Tape Measure", "Gram", "Kilogram"],
             "expectedAnswer": "Tape Measure"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Tape Measure, Gram, Kilogram. The person selects Tape Measure for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Tape Measure, Gram, Kilogram in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. One coiled plain tape measure with unnumbered marks; no fabricated measurement claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Milligram", "Ton", "Ounce"],
-          "scenario": "During a routine measurements & units task, an adult compares Milligram, Ton, Ounce. The person selects Milligram for the next step.",
+          "scenario": "A milligram is one thousandth of a gram. Ton can refer to different mass units; an ordinary ounce differs from a troy ounce.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which unit is one thousandth of a gram?",
             "options": ["Milligram", "Ton", "Ounce"],
             "expectedAnswer": "Milligram"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Milligram, Ton, Ounce. The person selects Milligram for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Milligram, Ton, Ounce in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain laboratory balance with a closed nonmedical sample; no drug or dose instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Measurements & Units: Short Description",
-      "text": "Maya is in a situation connected to measurements & units. She uses the new words to understand what she sees and what happens next. The learner compares millimeter, centimeter, and meter, noticing differences in appearance, measurement, material, or texture. The learner compares kilometer, inch, and foot, noticing differences in appearance, measurement, material, or texture. The learner compares yard, mile, and ruler, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Measurements & Units. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading length and mass units",
+      "text": "Dina measures a small box. She uses a ruler for a short edge and a tape measure for a longer one. The note gives one length in millimeters and a journey in kilometers. A yard is a different length unit. The small sample's mass is in milligrams. Dina reads the unit with each number. She does not compare two measurements until she knows what their units mean.",
+      "imageBrief": "Support for Reading length and mass units. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine measurements & units task, an adult compares Millimeter, Centimeter, Meter. The person selects Millimeter for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The note uses millimeter, one thousandth of a meter. A centimeter is one hundredth of a meter.\nWhich unit is one thousandth of a meter?",
         "answer": "Millimeter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Kilometer, Inch, Foot. The person selects Kilometer for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The journey is described in kilometers. An inch is a length unit, and a foot is twelve inches.\nWhich unit describes the journey in the text?",
         "answer": "Kilometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Yard, Mile, Ruler. The person selects Yard for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A yard equals three feet. A mile is a longer length unit, and a ruler is a measuring tool.\nWhich listed unit equals three feet?",
         "answer": "Yard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Tape Measure, Gram, Kilogram. The person selects Tape Measure for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina uses a tape measure for the long edge. A gram and a kilogram are units of mass.\nWhich tool does Dina use for the long edge?",
         "answer": "Tape Measure",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Milligram, Ton, Ounce. The person selects Milligram for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A milligram is one thousandth of a gram. Ton can refer to different mass units; an ordinary ounce differs from a troy ounce.\nWhich unit is one thousandth of a gram?",
         "answer": "Milligram",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Millimeter"
+        "prompt": "Dina measures a small box. She uses a ruler for a short edge and a tape measure for a longer one. The note gives one length in millimeters and a journey in kilometers. A yard is a different length unit. The small sample's mass is in milligrams. Dina reads the unit with each number. She does not compare two measurements until she knows what their units mean.\nWhat does Dina read with each number?",
+        "answer": "The measurement unit.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Meter"
+        "prompt": "Explain the difference between “Millimeter” and “Centimeter” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Polished” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Millimeter” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The note uses millimeter, one thousandth of a meter. A centimeter is one hundredth of a meter.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Measurements & Units: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading length and mass units",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina measures a small box. She uses a ruler for a short edge and a tape measure for a longer one. The note gives one length in millimeters and a journey in kilometers. A yard is a different length unit. The small sample's mass is in milligrams. Dina reads the unit with each number. She does not compare two measurements until she knows what their units mean. Ask: What does Dina read with each number?"
     },
     "spacedReview": "1 lesson(s) back: Polished, Brushed from patterns-textures-3\n3 lesson(s) back: Striped, Polka Dot from patterns-textures-1\n7 lesson(s) back: Wood, Stone from materials-1"
   },
@@ -206,152 +211,157 @@
     ],
     "targetWordsArabic": [
       "رطل",
-      "حجر",
-      "مقياس رسم",
-      "توازن",
+      "ستون؛ وحدة كتلة تساوي أربعة عشر رطلًا",
+      "ميزان",
+      "ميزان لمقارنة الكتل",
       "ثقيل",
       "مليلتر",
       "لتر",
       "غالون",
       "كوارت",
       "باينت",
-      "فنجان",
+      "كوب كوحدة حجم",
       "ملعقة كبيرة",
       "ملعقة صغيرة",
       "أونصة سائلة",
       "برميل"
     ],
     "usage": {
-      "goal": "Learn to use common measurements & units 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to measurements & units.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pound", "Stone", "Scale"],
-          "scenario": "During a routine measurements & units task, an adult compares Pound, Stone, Scale. The person selects Pound for the next step.",
+          "scenario": "The record gives mass in pounds. A stone is fourteen pounds in the customary system; a scale is a measuring instrument.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which mass unit does the record use?",
             "options": ["Pound", "Stone", "Scale"],
             "expectedAnswer": "Pound"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Pound, Stone, Scale. The person selects Pound for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Pound, Stone, Scale in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain scale with blank display; actual quantity and unit remain in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Balance", "Heavy", "Milliliter"],
-          "scenario": "During a routine measurements & units task, an adult compares Balance, Heavy, Milliliter. The person selects Balance for the next step.",
+          "scenario": "Dina compares masses on a balance. Heavy describes large weight, and milliliter is a volume unit.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which instrument does Dina use to compare masses?",
             "options": ["Balance", "Heavy", "Milliliter"],
             "expectedAnswer": "Balance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Balance, Heavy, Milliliter. The person selects Balance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Balance, Heavy, Milliliter in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Simple beam balance with two pans, no readable values or medical task. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Liter", "Gallon", "Quart"],
-          "scenario": "During a routine measurements & units task, an adult compares Liter, Gallon, Quart. The person selects Liter for the next step.",
+          "scenario": "One liter equals one thousand milliliters. A quart is one quarter of a gallon in its specified system; US and imperial volumes differ.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which unit equals one thousand milliliters?",
             "options": ["Liter", "Gallon", "Quart"],
             "expectedAnswer": "Liter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Liter, Gallon, Quart. The person selects Liter for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Liter, Gallon, Quart in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain measuring vessel with unnumbered graduation marks; no recipe or dosage claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pint", "Cup", "Tablespoon"],
-          "scenario": "During a routine measurements & units task, an adult compares Pint, Cup, Tablespoon. The person selects Pint for the next step.",
+          "scenario": "The record uses pint for a volume. Cup and tablespoon are also volume measures whose exact sizes depend on the specified system.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which volume unit does this record use?",
             "options": ["Pint", "Cup", "Tablespoon"],
             "expectedAnswer": "Pint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Pint, Cup, Tablespoon. The person selects Pint for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Pint, Cup, Tablespoon in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Unnumbered measuring jug; do not infer US or imperial capacity from its appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Teaspoon", "Fluid Ounce", "Barrel"],
-          "scenario": "During a routine measurements & units task, an adult compares Teaspoon, Fluid Ounce, Barrel. The person selects Teaspoon for the next step.",
+          "scenario": "The recipe specifies a teaspoon measure. A fluid ounce measures volume, not mass; barrel can describe several different capacities.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which measure does this recipe specify?",
             "options": ["Teaspoon", "Fluid Ounce", "Barrel"],
             "expectedAnswer": "Teaspoon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Teaspoon, Fluid Ounce, Barrel. The person selects Teaspoon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Teaspoon, Fluid Ounce, Barrel in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. One plain measuring spoon, no medication or exact capacity inferred from a picture. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Measurements & Units: Mini Dialogue",
-      "text": "Maya is in a situation connected to measurements & units. She uses the new words to understand what she sees and what happens next. The learner compares pound, stone, and scale, noticing differences in appearance, measurement, material, or texture. The learner compares balance, heavy, and milliliter, noticing differences in appearance, measurement, material, or texture. The learner compares liter, gallon, and quart, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Measurements & Units. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing mass and volume descriptions",
+      "text": "Dina reads a sample record that uses pounds for mass. She compares two samples on a balance. A scale also measures how heavy something is. The liquid record uses liters and milliliters. Another record uses pints. A teaspoon is a small volume measure in a recipe. Dina checks which measurement system the record uses, because names such as gallon, pint and cup can have different values.",
+      "imageBrief": "Support for Comparing mass and volume descriptions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine measurements & units task, an adult compares Pound, Stone, Scale. The person selects Pound for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The record gives mass in pounds. A stone is fourteen pounds in the customary system; a scale is a measuring instrument.\nWhich mass unit does the record use?",
         "answer": "Pound",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Balance, Heavy, Milliliter. The person selects Balance for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina compares masses on a balance. Heavy describes large weight, and milliliter is a volume unit.\nWhich instrument does Dina use to compare masses?",
         "answer": "Balance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Liter, Gallon, Quart. The person selects Liter for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "One liter equals one thousand milliliters. A quart is one quarter of a gallon in its specified system; US and imperial volumes differ.\nWhich unit equals one thousand milliliters?",
         "answer": "Liter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Pint, Cup, Tablespoon. The person selects Pint for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The record uses pint for a volume. Cup and tablespoon are also volume measures whose exact sizes depend on the specified system.\nWhich volume unit does this record use?",
         "answer": "Pint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Teaspoon, Fluid Ounce, Barrel. The person selects Teaspoon for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The recipe specifies a teaspoon measure. A fluid ounce measures volume, not mass; barrel can describe several different capacities.\nWhich measure does this recipe specify?",
         "answer": "Teaspoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Pound"
+        "prompt": "Dina reads a sample record that uses pounds for mass. She compares two samples on a balance. A scale also measures how heavy something is. The liquid record uses liters and milliliters. Another record uses pints. A teaspoon is a small volume measure in a recipe. Dina checks which measurement system the record uses, because names such as gallon, pint and cup can have different values.\nWhy does Dina check the measurement system?",
+        "answer": "Some unit names have different values in different systems.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Scale"
+        "prompt": "Explain the difference between “Pound” and “Stone” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Millimeter” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Pound” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The record gives mass in pounds. A stone is fourteen pounds in the customary system; a scale is a measuring instrument.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Measurements & Units: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing mass and volume descriptions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a sample record that uses pounds for mass. She compares two samples on a balance. A scale also measures how heavy something is. The liquid record uses liters and milliliters. Another record uses pints. A teaspoon is a small volume measure in a recipe. Dina checks which measurement system the record uses, because names such as gallon, pint and cup can have different values. Ask: Why does Dina check the measurement system?"
     },
     "spacedReview": "1 lesson(s) back: Millimeter, Centimeter from measurements-units-1\n3 lesson(s) back: Pinstripe, Chevron from patterns-textures-2\n7 lesson(s) back: Silver, Bronze from materials-2"
   },
@@ -389,147 +399,152 @@
       "درجة حرارة",
       "نقطة الغليان",
       "نقطة التجمّد",
-      "درجة الحرارة جسم",
-      "درجة الحرارة غرفة",
+      "درجة حرارة الجسم",
+      "درجة حرارة الغرفة",
       "مقياس حرارة",
       "حرارة",
       "ملي ثانية",
-      "الثاني",
+      "ثانية",
       "دقيقة",
       "ساعة",
       "يوم"
     ],
     "usage": {
-      "goal": "Learn to use common measurements & units 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to measurements & units.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Celsius", "Fahrenheit", "Kelvin"],
-          "scenario": "During a routine measurements & units task, an adult compares Celsius, Fahrenheit, Kelvin. The person selects Celsius for the next step.",
+          "scenario": "The weather note uses Celsius. Fahrenheit is another temperature scale; kelvin is an absolute temperature unit written without the word degree.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which scale does the weather note use?",
             "options": ["Celsius", "Fahrenheit", "Kelvin"],
             "expectedAnswer": "Celsius"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Celsius, Fahrenheit, Kelvin. The person selects Celsius for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Celsius, Fahrenheit, Kelvin in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain thermometer reference with blank unnumbered scale; weather supplied by text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Degree", "Boiling Point", "Freezing Point"],
-          "scenario": "During a routine measurements & units task, an adult compares Degree, Boiling Point, Freezing Point. The person selects Degree for the next step.",
+          "scenario": "Degree is used with Celsius or Fahrenheit readings. Boiling point and freezing point depend on the substance and stated conditions.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word is used with Celsius readings?",
             "options": ["Degree", "Boiling Point", "Freezing Point"],
             "expectedAnswer": "Degree"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Degree, Boiling Point, Freezing Point. The person selects Degree for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Degree, Boiling Point, Freezing Point in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Simple nonmedical thermometer icon with no letters or numerical reading. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Body Temperature", "Room Temperature", "Thermometer"],
-          "scenario": "During a routine measurements & units task, an adult compares Body Temperature, Room Temperature, Thermometer. The person selects Body Temperature for the next step.",
+          "scenario": "Body temperature is the temperature of a living body. Room temperature refers to the indoor environment, and a thermometer measures temperature.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which phrase names the temperature of a living body?",
             "options": ["Body Temperature", "Room Temperature", "Thermometer"],
             "expectedAnswer": "Body Temperature"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Body Temperature, Room Temperature, Thermometer. The person selects Body Temperature for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Body Temperature, Room Temperature, Thermometer in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain thermometer reference; no person, diagnosis or asserted normal reading. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Heat", "Millisecond", "Second"],
-          "scenario": "During a routine measurements & units task, an adult compares Heat, Millisecond, Second. The person selects Heat for the next step.",
+          "scenario": "Heat is energy transferred because of a temperature difference. A millisecond and a second are units of time.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names transferred energy in this description?",
             "options": ["Heat", "Millisecond", "Second"],
             "expectedAnswer": "Heat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Heat, Millisecond, Second. The person selects Heat for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Heat, Millisecond, Second in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Clearly identified simple unlettered educational heat-transfer diagram, no fire or hot-object handling. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Minute", "Hour", "Day"],
-          "scenario": "During a routine measurements & units task, an adult compares Minute, Hour, Day. The person selects Minute for the next step.",
+          "scenario": "A minute is sixty seconds. An hour is sixty minutes, and a day commonly means twenty-four hours.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which unit equals sixty seconds?",
             "options": ["Minute", "Hour", "Day"],
             "expectedAnswer": "Minute"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Minute, Hour, Day. The person selects Minute for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Minute, Hour, Day in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Plain stopwatch with blank display; exact conversion stated in text rather than generated markings. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Measurements & Units: Simple Message",
-      "text": "Maya is in a situation connected to measurements & units. She uses the new words to understand what she sees and what happens next. The learner compares celsius, fahrenheit, and kelvin, noticing differences in appearance, measurement, material, or texture. The learner compares degree, boiling point, and freezing point, noticing differences in appearance, measurement, material, or texture. The learner compares body temperature, room temperature, and thermometer, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Measurements & Units. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Temperature, energy and time",
+      "text": "Dina reads a weather note in Celsius. She knows that Fahrenheit is another temperature scale and kelvin an absolute temperature unit. A thermometer measures temperature. The lesson distinguishes body temperature from room temperature, and heat from temperature. Dina times a short activity in minutes. She checks both the number and the unit. This is a word exercise and does not ask her to judge anyone's health.",
+      "imageBrief": "Support for Temperature, energy and time. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine measurements & units task, an adult compares Celsius, Fahrenheit, Kelvin. The person selects Celsius for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The weather note uses Celsius. Fahrenheit is another temperature scale; kelvin is an absolute temperature unit written without the word degree.\nWhich scale does the weather note use?",
         "answer": "Celsius",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Degree, Boiling Point, Freezing Point. The person selects Degree for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Degree is used with Celsius or Fahrenheit readings. Boiling point and freezing point depend on the substance and stated conditions.\nWhich word is used with Celsius readings?",
         "answer": "Degree",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Body Temperature, Room Temperature, Thermometer. The person selects Body Temperature for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Body temperature is the temperature of a living body. Room temperature refers to the indoor environment, and a thermometer measures temperature.\nWhich phrase names the temperature of a living body?",
         "answer": "Body Temperature",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Heat, Millisecond, Second. The person selects Heat for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Heat is energy transferred because of a temperature difference. A millisecond and a second are units of time.\nWhich term names transferred energy in this description?",
         "answer": "Heat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Minute, Hour, Day. The person selects Minute for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A minute is sixty seconds. An hour is sixty minutes, and a day commonly means twenty-four hours.\nWhich unit equals sixty seconds?",
         "answer": "Minute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Celsius"
+        "prompt": "Dina reads a weather note in Celsius. She knows that Fahrenheit is another temperature scale and kelvin an absolute temperature unit. A thermometer measures temperature. The lesson distinguishes body temperature from room temperature, and heat from temperature. Dina times a short activity in minutes. She checks both the number and the unit. This is a word exercise and does not ask her to judge anyone's health.\nWhat instrument measures temperature?",
+        "answer": "A thermometer.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Kelvin"
+        "prompt": "Explain the difference between “Celsius” and “Fahrenheit” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pound” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Celsius” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The weather note uses Celsius. Fahrenheit is another temperature scale; kelvin is an absolute temperature unit written without the word degree.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Measurements & Units: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Temperature, energy and time",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a weather note in Celsius. She knows that Fahrenheit is another temperature scale and kelvin an absolute temperature unit. A thermometer measures temperature. The lesson distinguishes body temperature from room temperature, and heat from temperature. Dina times a short activity in minutes. She checks both the number and the unit. This is a word exercise and does not ask her to judge anyone's health. Ask: What instrument measures temperature?"
     },
     "spacedReview": "1 lesson(s) back: Pound, Stone from measurements-units-2\n3 lesson(s) back: Polished, Brushed from patterns-textures-3\n7 lesson(s) back: Plastic, Rubber from materials-3"
   },
@@ -546,79 +561,84 @@
     "targetWordsEnglish": ["Speed", "Velocity", "Acceleration", "Distance", "Rate"],
     "targetWordsArabic": ["سرعة", "سرعة متجهة", "تسارع", "مسافة", "معدل"],
     "usage": {
-      "goal": "Learn to use common measurements & units 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to measurements & units.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated term in a short supplied description and ask for the named item or explanation.",
+      "canDoStatement": "Can identify the word used for a described item or quantity with vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Speed", "Velocity", "Acceleration"],
-          "scenario": "During a routine measurements & units task, an adult compares Speed, Velocity, Acceleration. The person selects Speed for the next step.",
+          "scenario": "Speed is distance traveled per unit of time. Velocity includes direction; acceleration describes change in velocity over time.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term describes how fast the vehicle travels without specifying direction?",
             "options": ["Speed", "Velocity", "Acceleration"],
             "expectedAnswer": "Speed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Speed, Velocity, Acceleration. The person selects Speed for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Speed, Velocity, Acceleration in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Unlettered journey illustration; motion and speed supplied in writing, no fake instrument reading. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Distance", "Rate"],
-          "scenario": "During a routine measurements & units task, an adult compares Distance, Rate, Speed. The person selects Distance for the next step.",
+          "scenario": "Distance describes how far the vehicle travels. A rate relates quantities, often a quantity per unit of time.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term describes how far the vehicle travels?",
             "options": ["Distance", "Rate", "Speed"],
             "expectedAnswer": "Distance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a measurements & units context illustrating this situation: During a routine measurements & units task, an adult compares Distance, Rate, Speed. The person selects Distance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult measurements & units scene showing lesson-related items or actions including Distance, Rate in a natural setting."
+          "imageBrief": "Word-reference support for the written supported measurement, transaction and equipment vocabulary task. Unlettered route diagram with start and end dots; no numerical values. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Measurements & Units: Notice-Style Text",
-      "text": "Maya is in a situation connected to measurements & units. She uses the new words to understand what she sees and what happens next. The learner compares speed, velocity, and acceleration, noticing differences in appearance, measurement, material, or texture. The learner compares distance and rate, noticing differences in appearance, measurement, material, or texture. The words now belong to one memorable scene instead of an isolated list.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Measurements & Units. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing a journey measurement",
+      "text": "Dina reads a journey record. Speed tells her how fast the vehicle moves. Velocity also includes direction, and acceleration is a change in velocity over time. Distance tells her how far the vehicle travels. A rate compares one quantity with another, often time. Dina identifies the terms from the written descriptions. She does not try to calculate them from one picture of a parked vehicle.",
+      "imageBrief": "Support for Describing a journey measurement. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine measurements & units task, an adult compares Speed, Velocity, Acceleration. The person selects Speed for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Speed is distance traveled per unit of time. Velocity includes direction; acceleration describes change in velocity over time.\nWhich term describes how fast the vehicle travels without specifying direction?",
         "answer": "Speed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine measurements & units task, an adult compares Distance, Rate, Speed. The person selects Distance for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Distance describes how far the vehicle travels. A rate relates quantities, often a quantity per unit of time.\nWhich term describes how far the vehicle travels?",
         "answer": "Distance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Speed"
+        "prompt": "Dina reads a journey record. Speed tells her how fast the vehicle moves. Velocity also includes direction, and acceleration is a change in velocity over time. Distance tells her how far the vehicle travels. A rate compares one quantity with another, often time. Dina identifies the terms from the written descriptions. She does not try to calculate them from one picture of a parked vehicle.\nWhich term includes direction?",
+        "answer": "Velocity.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Acceleration"
+        "prompt": "Explain the difference between “Speed” and “Velocity” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Celsius” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Speed” in its supplied supported measurement, transaction and equipment vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Speed is distance traveled per unit of time. Velocity includes direction; acceleration describes change in velocity over time.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Measurements & Units: In Context",
-      "idea": "30-45 seconds contextual scene in the learning workspace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the learning workspace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Describing a journey measurement",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a journey record. Speed tells her how fast the vehicle moves. Velocity also includes direction, and acceleration is a change in velocity over time. Distance tells her how far the vehicle travels. A rate compares one quantity with another, often time. Dina identifies the terms from the written descriptions. She does not try to calculate them from one picture of a parked vehicle. Ask: Which term includes direction?"
     },
     "spacedReview": "1 lesson(s) back: Celsius, Fahrenheit from measurements-units-3\n3 lesson(s) back: Millimeter, Centimeter from measurements-units-1\n7 lesson(s) back: Insulation, Tile from materials-4"
   }

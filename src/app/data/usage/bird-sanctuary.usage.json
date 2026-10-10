@@ -27,7 +27,7 @@
       "Pelican"
     ],
     "targetWordsArabic": [
-      "أبو الحناء",
+      "أبو الحناء؛ روبن أمريكي حسب النوع",
       "عصفور",
       "القيق الأزرق",
       "طائر الكاردينال",
@@ -44,132 +44,115 @@
       "بجع"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "148-178 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Robin", "Sparrow", "Blue Jay", "Cardinal"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.",
+          "scenario": "The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Robin", "Sparrow", "Blue Jay"],
-            "expectedAnswer": "Robin"
+            "question": "Which bird has the described blue, white, and black plumage and crest?",
+            "options": ["Blue Jay", "Robin", "Sparrow"],
+            "expectedAnswer": "Blue Jay"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Robin as the central item; include Robin, Sparrow, and Blue Jay naturally where visually appropriate, but make the real-world use of Robin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Blue Jay in the stated bird sanctuary account: The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crow", "Pigeon", "Dove", "Finch"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.",
+          "scenario": "The guide contrasts Crow with the pigeon family, whose common names include Pigeon and Dove. A Finch commonly has a short stout bill suited to seeds. Pigeon and dove names overlap, so size alone is not a universal identification rule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Crow", "Pigeon", "Dove"],
-            "expectedAnswer": "Crow"
+            "question": "Which named bird is described with a short stout seed-adapted bill?",
+            "options": ["Finch", "Crow", "Pigeon"],
+            "expectedAnswer": "Finch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Crow as the central item; include Crow, Pigeon, and Dove naturally where visually appropriate, but make the real-world use of Crow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Finch in the stated bird sanctuary account: The guide contrasts Crow with the pigeon family, whose common names include Pigeon and Dove. A Finch commonly has a short stout bill suited to seeds. Pigeon and dove names overlap, so size alone is not a universal identification rule. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wren", "Starling", "Duck", "Swan"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.",
+          "scenario": "A Wren and Starling are small songbirds in this comparison. Duck and Swan are waterbirds; the Swan has the long neck described in the account. Some swan species are dark, so the learner does not treat white plumage as a universal rule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Wren", "Starling", "Duck"],
-            "expectedAnswer": "Wren"
+            "question": "Which waterbird has the described long neck?",
+            "options": ["Swan", "Wren", "Starling"],
+            "expectedAnswer": "Swan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Wren as the central item; include Wren, Starling, and Duck naturally where visually appropriate, but make the real-world use of Wren the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Swan in the stated bird sanctuary account: A Wren and Starling are small songbirds in this comparison. Duck and Swan are waterbirds; the Swan has the long neck described in the account. Some swan species are dark, so the learner does not treat white plumage as a universal rule. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Goose", "Heron", "Pelican"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.",
+          "scenario": "The waterbird guide distinguishes Goose and long-legged Heron from Pelican. The Pelican’s bill has a large throat pouch used in feeding. The text supplies the role; visitors do not approach or feed the birds.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Goose", "Heron", "Pelican"],
-            "expectedAnswer": "Goose"
+            "question": "Which bird has the described large throat pouch?",
+            "options": ["Pelican", "Goose", "Heron"],
+            "expectedAnswer": "Pelican"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Goose as the central item; include Goose, Heron, and Pelican naturally where visually appropriate, but make the real-world use of Goose the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Pelican in the stated bird sanctuary account: The waterbird guide distinguishes Goose and long-legged Heron from Pelican. The Pelican’s bill has a large throat pouch used in feeding. The text supplies the role; visitors do not approach or feed the birds. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bird Sanctuary: Practical Information",
-      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Robin, Sparrow, Blue Jay, and Cardinal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crow, Pigeon, Dove, and Finch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wren, Starling, Duck, and Swan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Goose, Heron, and Pelican. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bird Sanctuary: Comparing the named examples",
+      "text": "The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat. The guide contrasts Crow with the pigeon family, whose common names include Pigeon and Dove. A Finch commonly has a short stout bill suited to seeds. Pigeon and dove names overlap, so size alone is not a universal identification rule. A Wren and Starling are small songbirds in this comparison. Duck and Swan are waterbirds; the Swan has the long neck described in the account. Some swan species are dark, so the learner does not treat white plumage as a universal rule. The waterbird guide distinguishes Goose and long-legged Heron from Pelican. The Pelican’s bill has a large throat pouch used in feeding. The text supplies the role; visitors do not approach or feed the birds.",
+      "imageBrief": "One scientifically accurate bird sanctuary reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Robin, Sparrow, Blue Jay, and Cardinal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Robin",
+        "prompt": "The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat.\nWhich bird has the described blue, white, and black plumage and crest?",
+        "answer": "Blue Jay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crow, Pigeon, Dove, and Finch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Crow",
+        "prompt": "The guide contrasts Crow with the pigeon family, whose common names include Pigeon and Dove. A Finch commonly has a short stout bill suited to seeds. Pigeon and dove names overlap, so size alone is not a universal identification rule.\nWhich named bird is described with a short stout seed-adapted bill?",
+        "answer": "Finch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wren, Starling, Duck, and Swan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wren",
+        "prompt": "A Wren and Starling are small songbirds in this comparison. Duck and Swan are waterbirds; the Swan has the long neck described in the account. Some swan species are dark, so the learner does not treat white plumage as a universal rule.\nWhich waterbird has the described long neck?",
+        "answer": "Swan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Goose, Heron, and Pelican and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Goose",
+        "prompt": "The waterbird guide distinguishes Goose and long-legged Heron from Pelican. The Pelican’s bill has a large throat pouch used in feeding. The text supplies the role; visitors do not approach or feed the birds.\nWhich bird has the described large throat pouch?",
+        "answer": "Pelican",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat. The guide contrasts Crow with the pigeon family, whose common names include Pigeon and Dove. A Finch commonly has a short stout bill suited to seeds. Pigeon and dove names overlap, so size alone is not a universal identification rule. A Wren and Starling are small songbirds in this comparison. Duck and Swan are waterbirds; the Swan has the long neck described in the account. Some swan species are dark, so the learner does not treat white plumage as a universal rule. The waterbird guide distinguishes Goose and long-legged Heron from Pelican. The Pelican’s bill has a large throat pouch used in feeding. The text supplies the role; visitors do not approach or feed the birds.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Robin"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Cardinal"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Mantle” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Robin, Sparrow, Blue Jay, Cardinal, Crow, Pigeon, Dove, Finch, Wren, Starling, Duck, Swan, Goose, Heron, and Pelican in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Robin, Sparrow, Blue Jay, Cardinal, Crow, Pigeon, Dove, Finch, Wren, Starling, Duck, Swan, Goose, Heron, Pelican. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bird Sanctuary: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bird Sanctuary: Comparing the named examples",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The guide’s North American bird display compares Robin, Sparrow, Blue Jay, and Cardinal. The described Blue Jay has blue, white, and black plumage and a crest. Species and region are supplied by the account; bird names do not guarantee a shared habitat. Which bird has the described blue, white, and black plumage and crest?"
     },
     "spacedReview": "1 lesson(s) back: Mantle, Sulfur from volcano-5\n3 lesson(s) back: Seismograph, Tiltmeter from volcano-3\n7 lesson(s) back: Lagoon, Understory from jungle-4"
   },
@@ -206,8 +189,8 @@
       "نورس",
       "رفراف",
       "غاق",
-      "نسر",
-      "صقر",
+      "عقاب",
+      "باز؛ طائر جارح",
       "صقر",
       "بومة",
       "عقاب نساري",
@@ -218,132 +201,115 @@
       "كوندور"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "153-183 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Flamingo", "Crane", "Seagull", "Kingfisher"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.",
+          "scenario": "The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Flamingo", "Crane", "Seagull"],
-            "expectedAnswer": "Flamingo"
+            "question": "Which named bird is described perched before a prey-catching dive?",
+            "options": ["Kingfisher", "Flamingo", "Crane"],
+            "expectedAnswer": "Kingfisher"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Flamingo as the central item; include Flamingo, Crane, and Seagull naturally where visually appropriate, but make the real-world use of Flamingo the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Kingfisher in the stated bird sanctuary account: The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cormorant", "Eagle", "Hawk", "Falcon"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.",
+          "scenario": "A Cormorant dives for food in the water. Eagle, Hawk, and Falcon are birds of prey with different species and forms. The guide asks visitors to use the stated behavior and verified species reference rather than infer a species from one generic silhouette.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the diving waterbird here?",
             "options": ["Cormorant", "Eagle", "Hawk"],
             "expectedAnswer": "Cormorant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Cormorant as the central item; include Cormorant, Eagle, and Hawk naturally where visually appropriate, but make the real-world use of Cormorant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Cormorant in the stated bird sanctuary account: A Cormorant dives for food in the water. Eagle, Hawk, and Falcon are birds of prey with different species and forms. The guide asks visitors to use the stated behavior and verified species reference rather than infer a species from one generic silhouette. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Owl", "Osprey", "Vulture", "Kite"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.",
+          "scenario": "The account distinguishes Owl, Osprey, Vulture, and Kite. The Osprey specializes mainly in catching fish; many vultures feed largely on carrion. Kite names a bird of prey here, rather than a toy flown on a string.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Owl", "Osprey", "Vulture"],
-            "expectedAnswer": "Owl"
+            "question": "Which bird specializes mainly in catching fish?",
+            "options": ["Osprey", "Owl", "Vulture"],
+            "expectedAnswer": "Osprey"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Owl as the central item; include Owl, Osprey, and Vulture naturally where visually appropriate, but make the real-world use of Owl the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Osprey in the stated bird sanctuary account: The account distinguishes Owl, Osprey, Vulture, and Kite. The Osprey specializes mainly in catching fish; many vultures feed largely on carrion. Kite names a bird of prey here, rather than a toy flown on a string. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Harrier", "Kestrel", "Condor"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.",
+          "scenario": "A Harrier searches low over open ground in this account. A Kestrel is a small falcon, while a Condor is a very large vulture of the Americas. Their names do not imply that all three occur in the sanctuary at the same time.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target describes the bird searching low over open ground?",
             "options": ["Harrier", "Kestrel", "Condor"],
             "expectedAnswer": "Harrier"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Harrier as the central item; include Harrier, Kestrel, and Condor naturally where visually appropriate, but make the real-world use of Harrier the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Harrier in the stated bird sanctuary account: A Harrier searches low over open ground in this account. A Kestrel is a small falcon, while a Condor is a very large vulture of the Americas. Their names do not imply that all three occur in the sanctuary at the same time. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Bird Sanctuary",
-      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Flamingo, Crane, Seagull, and Kingfisher. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cormorant, Eagle, Hawk, and Falcon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Owl, Osprey, Vulture, and Kite. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Harrier, Kestrel, and Condor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bird Sanctuary: Understanding the important distinctions",
+      "text": "The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification. A Cormorant dives for food in the water. Eagle, Hawk, and Falcon are birds of prey with different species and forms. The guide asks visitors to use the stated behavior and verified species reference rather than infer a species from one generic silhouette. The account distinguishes Owl, Osprey, Vulture, and Kite. The Osprey specializes mainly in catching fish; many vultures feed largely on carrion. Kite names a bird of prey here, rather than a toy flown on a string. A Harrier searches low over open ground in this account. A Kestrel is a small falcon, while a Condor is a very large vulture of the Americas. Their names do not imply that all three occur in the sanctuary at the same time.",
+      "imageBrief": "One scientifically accurate bird sanctuary reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Flamingo, Crane, Seagull, and Kingfisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Flamingo",
+        "prompt": "The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification.\nWhich named bird is described perched before a prey-catching dive?",
+        "answer": "Kingfisher",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cormorant, Eagle, Hawk, and Falcon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Cormorant dives for food in the water. Eagle, Hawk, and Falcon are birds of prey with different species and forms. The guide asks visitors to use the stated behavior and verified species reference rather than infer a species from one generic silhouette.\nWhich target names the diving waterbird here?",
         "answer": "Cormorant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Owl, Osprey, Vulture, and Kite and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Owl",
+        "prompt": "The account distinguishes Owl, Osprey, Vulture, and Kite. The Osprey specializes mainly in catching fish; many vultures feed largely on carrion. Kite names a bird of prey here, rather than a toy flown on a string.\nWhich bird specializes mainly in catching fish?",
+        "answer": "Osprey",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Harrier, Kestrel, and Condor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Harrier searches low over open ground in this account. A Kestrel is a small falcon, while a Condor is a very large vulture of the Americas. Their names do not imply that all three occur in the sanctuary at the same time.\nWhich target describes the bird searching low over open ground?",
         "answer": "Harrier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification. A Cormorant dives for food in the water. Eagle, Hawk, and Falcon are birds of prey with different species and forms. The guide asks visitors to use the stated behavior and verified species reference rather than infer a species from one generic silhouette. The account distinguishes Owl, Osprey, Vulture, and Kite. The Osprey specializes mainly in catching fish; many vultures feed largely on carrion. Kite names a bird of prey here, rather than a toy flown on a string. A Harrier searches low over open ground in this account. A Kestrel is a small falcon, while a Condor is a very large vulture of the Americas. Their names do not imply that all three occur in the sanctuary at the same time.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Flamingo"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Kingfisher"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Robin” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Flamingo, Crane, Seagull, Kingfisher, Cormorant, Eagle, Hawk, Falcon, Owl, Osprey, Vulture, Kite, Harrier, Kestrel, and Condor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Flamingo, Crane, Seagull, Kingfisher, Cormorant, Eagle, Hawk, Falcon, Owl, Osprey, Vulture, Kite, Harrier, Kestrel, Condor. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bird Sanctuary: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bird Sanctuary: Understanding the important distinctions",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The guide shows separate references for Flamingo, Crane, Seagull, and Kingfisher. In this account the Kingfisher is perched above water with a pointed bill before diving for prey. Seagull is a common general name for gulls, not a precise species identification. Which named bird is described perched before a prey-catching dive?"
     },
     "spacedReview": "1 lesson(s) back: Robin, Sparrow from bird-sanctuary-1\n3 lesson(s) back: Cave, Lake from volcano-4\n7 lesson(s) back: Splash, Echo from jungle-5"
   },
@@ -386,138 +352,121 @@
       "عش",
       "مجثم",
       "يطير",
-      "يغني",
+      "يغرد",
       "يهاجر",
       "بناء العش",
-      "يطعم"
+      "يتغذى أو يطعم"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "142-172 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Beak", "Feather", "Wing", "Talon"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.",
+          "scenario": "A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Beak", "Feather", "Wing"],
-            "expectedAnswer": "Beak"
+            "question": "Which target names the sharp claw?",
+            "options": ["Talon", "Beak", "Feather"],
+            "expectedAnswer": "Talon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Beak as the central item; include Beak, Feather, and Wing naturally where visually appropriate, but make the real-world use of Beak the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Talon in the stated bird sanctuary account: A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crest", "Tail", "Breast", "Egg"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.",
+          "scenario": "A Crest is a tuft or arrangement of head feathers. Tail and Breast name other body regions, while an Egg contains developing young under suitable conditions. The guide identifies the head-feather structure in the written description.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure is formed by the head feathers?",
             "options": ["Crest", "Tail", "Breast"],
             "expectedAnswer": "Crest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Crest as the central item; include Crest, Tail, and Breast naturally where visually appropriate, but make the real-world use of Crest the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Crest in the stated bird sanctuary account: A Crest is a tuft or arrangement of head feathers. Tail and Breast name other body regions, while an Egg contains developing young under suitable conditions. The guide identifies the head-feather structure in the written description. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nest", "Perch", "Fly", "Sing"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.",
+          "scenario": "A Nest provides a place for eggs or young, while a Perch is a support on which a bird rests. Fly and Sing are verbs describing movement and patterned vocal sounds. The visitor watches without disturbing the resting bird.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Nest", "Perch", "Fly"],
-            "expectedAnswer": "Nest"
+            "question": "Which support can a bird rest on?",
+            "options": ["Perch", "Nest", "Fly"],
+            "expectedAnswer": "Perch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Nest as the central item; include Nest, Perch, and Fly naturally where visually appropriate, but make the real-world use of Nest the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Perch in the stated bird sanctuary account: A Nest provides a place for eggs or young, while a Perch is a support on which a bird rests. Fly and Sing are verbs describing movement and patterned vocal sounds. The visitor watches without disturbing the resting bird. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Migrate", "Nest Building", "Feed"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.",
+          "scenario": "Migrate means move seasonally or periodically between regions. Nest Building concerns preparing a nesting place, and Feed concerns eating or supplying food. The guide describes the recorded movement between regions rather than assuming every bird migrates.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
+            "question": "Which verb describes the periodic movement between regions?",
             "options": ["Migrate", "Nest Building", "Feed"],
             "expectedAnswer": "Migrate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult clearly carrying out the action Migrate; include Migrate, Nest Building, and Feed naturally where visually appropriate, but make the real-world use of Migrate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Migrate in the stated bird sanctuary account: Migrate means move seasonally or periodically between regions. Nest Building concerns preparing a nesting place, and Feed concerns eating or supplying food. The guide describes the recorded movement between regions rather than assuming every bird migrates. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Bird Sanctuary",
-      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Beak, Feather, Wing, and Talon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crest, Tail, Breast, and Egg. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nest, Perch, Fly, and Sing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Migrate, Nest Building, and Feed. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bird Sanctuary: Reading the observation record",
+      "text": "A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling. A Crest is a tuft or arrangement of head feathers. Tail and Breast name other body regions, while an Egg contains developing young under suitable conditions. The guide identifies the head-feather structure in the written description. A Nest provides a place for eggs or young, while a Perch is a support on which a bird rests. Fly and Sing are verbs describing movement and patterned vocal sounds. The visitor watches without disturbing the resting bird. Migrate means move seasonally or periodically between regions. Nest Building concerns preparing a nesting place, and Feed concerns eating or supplying food. The guide describes the recorded movement between regions rather than assuming every bird migrates.",
+      "imageBrief": "One scientifically accurate bird sanctuary reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beak, Feather, Wing, and Talon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Beak",
+        "prompt": "A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling.\nWhich target names the sharp claw?",
+        "answer": "Talon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crest, Tail, Breast, and Egg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Crest is a tuft or arrangement of head feathers. Tail and Breast name other body regions, while an Egg contains developing young under suitable conditions. The guide identifies the head-feather structure in the written description.\nWhich structure is formed by the head feathers?",
         "answer": "Crest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nest, Perch, Fly, and Sing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Nest",
+        "prompt": "A Nest provides a place for eggs or young, while a Perch is a support on which a bird rests. Fly and Sing are verbs describing movement and patterned vocal sounds. The visitor watches without disturbing the resting bird.\nWhich support can a bird rest on?",
+        "answer": "Perch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Migrate, Nest Building, and Feed and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "Migrate means move seasonally or periodically between regions. Nest Building concerns preparing a nesting place, and Feed concerns eating or supplying food. The guide describes the recorded movement between regions rather than assuming every bird migrates.\nWhich verb describes the periodic movement between regions?",
         "answer": "Migrate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling. A Crest is a tuft or arrangement of head feathers. Tail and Breast name other body regions, while an Egg contains developing young under suitable conditions. The guide identifies the head-feather structure in the written description. A Nest provides a place for eggs or young, while a Perch is a support on which a bird rests. Fly and Sing are verbs describing movement and patterned vocal sounds. The visitor watches without disturbing the resting bird. Migrate means move seasonally or periodically between regions. Nest Building concerns preparing a nesting place, and Feed concerns eating or supplying food. The guide describes the recorded movement between regions rather than assuming every bird migrates.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Beak"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Talon"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Flamingo” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Beak, Feather, Wing, Talon, Crest, Tail, Breast, Egg, Nest, Perch, Fly, Sing, Migrate, Nest Building, and Feed in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Beak, Feather, Wing, Talon, Crest, Tail, Breast, Egg, Nest, Perch, Fly, Sing, Migrate, Nest Building, Feed. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bird Sanctuary: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bird Sanctuary: Reading the observation record",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "A Beak is the bird’s bill, a Feather forms part of its covering, and a Wing supports flight or other movement. A Talon is a sharp claw, especially associated with birds of prey. The exhibit distinguishes body parts without inviting handling. Which target names the sharp claw?"
     },
     "spacedReview": "1 lesson(s) back: Flamingo, Crane from bird-sanctuary-2\n3 lesson(s) back: Mantle, Sulfur from volcano-5\n7 lesson(s) back: Crater, Lava from volcano-1"
   },
@@ -566,132 +515,115 @@
       "سياج نباتي"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "152-182 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Preen", "Soar", "Dive", "Flock"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.",
+          "scenario": "A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
+            "question": "Which verb means clean and arrange feathers?",
             "options": ["Preen", "Soar", "Dive"],
             "expectedAnswer": "Preen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult clearly carrying out the action Preen; include Preen, Soar, and Dive naturally where visually appropriate, but make the real-world use of Preen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Preen in the stated bird sanctuary account: A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Roost", "Tree", "Branch", "Birdhouse"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.",
+          "scenario": "Roost means rest or sleep at a chosen location. A Tree and its Branch may provide such a place, while a Birdhouse is a human-made nesting shelter. A bird using a branch is not automatically building a nest.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which verb means rest or sleep at the chosen location?",
             "options": ["Roost", "Tree", "Branch"],
             "expectedAnswer": "Roost"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Roost as the central item; include Roost, Tree, and Branch naturally where visually appropriate, but make the real-world use of Roost the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Roost in the stated bird sanctuary account: Roost means rest or sleep at a chosen location. A Tree and its Branch may provide such a place, while a Birdhouse is a human-made nesting shelter. A bird using a branch is not automatically building a nest. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Feeder", "Bath", "Pond", "Wetland"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.",
+          "scenario": "The Feeder holds supplied bird food under sanctuary arrangements. The Bath is a shallow water container for drinking or bathing. A Pond is a water body, and a Wetland has water-saturated ground. The visitor observes without supplying unauthorized food.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Feeder", "Bath", "Pond"],
-            "expectedAnswer": "Feeder"
+            "question": "Which target names the shallow drinking or bathing container?",
+            "options": ["Bath", "Feeder", "Pond"],
+            "expectedAnswer": "Bath"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Feeder as the central item; include Feeder, Bath, and Pond naturally where visually appropriate, but make the real-world use of Feeder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Bath in the stated bird sanctuary account: The Feeder holds supplied bird food under sanctuary arrangements. The Bath is a shallow water container for drinking or bathing. A Pond is a water body, and a Wetland has water-saturated ground. The visitor observes without supplying unauthorized food. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Meadow", "Cliff", "Hedge"],
-          "scenario": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.",
+          "scenario": "A Meadow is largely grass-covered land, and a Cliff is a steep rock face. A Hedge is a line of shrubs forming a boundary or shelter. The guide asks visitors to leave the habitat undisturbed rather than push through vegetation for a closer view.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Meadow", "Cliff", "Hedge"],
-            "expectedAnswer": "Meadow"
+            "question": "Which feature is the line of shrubs?",
+            "options": ["Hedge", "Meadow", "Cliff"],
+            "expectedAnswer": "Hedge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Meadow as the central item; include Meadow, Cliff, and Hedge naturally where visually appropriate, but make the real-world use of Meadow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Hedge in the stated bird sanctuary account: A Meadow is largely grass-covered land, and a Cliff is a steep rock face. A Hedge is a line of shrubs forming a boundary or shelter. The guide asks visitors to leave the habitat undisturbed rather than push through vegetation for a closer view. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written bird sanctuary account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bird Sanctuary: Practical Information",
-      "text": "At the bird sanctuary, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Preen, Soar, Dive, and Flock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Roost, Tree, Branch, and Birdhouse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Feeder, Bath, Pond, and Wetland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Meadow, Cliff, and Hedge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Bird Sanctuary. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bird Sanctuary: A guided visitor discussion",
+      "text": "A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list. Roost means rest or sleep at a chosen location. A Tree and its Branch may provide such a place, while a Birdhouse is a human-made nesting shelter. A bird using a branch is not automatically building a nest. The Feeder holds supplied bird food under sanctuary arrangements. The Bath is a shallow water container for drinking or bathing. A Pond is a water body, and a Wetland has water-saturated ground. The visitor observes without supplying unauthorized food. A Meadow is largely grass-covered land, and a Cliff is a steep rock face. A Hedge is a line of shrubs forming a boundary or shelter. The guide asks visitors to leave the habitat undisturbed rather than push through vegetation for a closer view.",
+      "imageBrief": "One scientifically accurate bird sanctuary reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preen, Soar, Dive, and Flock and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
+        "prompt": "A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list.\nWhich verb means clean and arrange feathers?",
         "answer": "Preen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roost, Tree, Branch, and Birdhouse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Roost means rest or sleep at a chosen location. A Tree and its Branch may provide such a place, while a Birdhouse is a human-made nesting shelter. A bird using a branch is not automatically building a nest.\nWhich verb means rest or sleep at the chosen location?",
         "answer": "Roost",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Feeder, Bath, Pond, and Wetland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Feeder",
+        "prompt": "The Feeder holds supplied bird food under sanctuary arrangements. The Bath is a shallow water container for drinking or bathing. A Pond is a water body, and a Wetland has water-saturated ground. The visitor observes without supplying unauthorized food.\nWhich target names the shallow drinking or bathing container?",
+        "answer": "Bath",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bird sanctuary setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meadow, Cliff, and Hedge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Meadow",
+        "prompt": "A Meadow is largely grass-covered land, and a Cliff is a steep rock face. A Hedge is a line of shrubs forming a boundary or shelter. The guide asks visitors to leave the habitat undisturbed rather than push through vegetation for a closer view.\nWhich feature is the line of shrubs?",
+        "answer": "Hedge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list. Roost means rest or sleep at a chosen location. A Tree and its Branch may provide such a place, while a Birdhouse is a human-made nesting shelter. A bird using a branch is not automatically building a nest. The Feeder holds supplied bird food under sanctuary arrangements. The Bath is a shallow water container for drinking or bathing. A Pond is a water body, and a Wetland has water-saturated ground. The visitor observes without supplying unauthorized food. A Meadow is largely grass-covered land, and a Cliff is a steep rock face. A Hedge is a line of shrubs forming a boundary or shelter. The guide asks visitors to leave the habitat undisturbed rather than push through vegetation for a closer view.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Preen"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Flock"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Beak” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bird sanctuary task. Use Preen, Soar, Dive, Flock, Roost, Tree, Branch, Birdhouse, Feeder, Bath, Pond, Wetland, Meadow, Cliff, and Hedge in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Preen, Soar, Dive, Flock, Roost, Tree, Branch, Birdhouse, Feeder, Bath, Pond, Wetland, Meadow, Cliff, Hedge. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bird Sanctuary: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bird Sanctuary: A guided visitor discussion",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "A bird can Preen by cleaning and arranging its feathers. Soar means glide or fly with little wing movement, and Dive describes a downward movement into air or water. Flock is the noun for a group of birds in this list. Which verb means clean and arrange feathers?"
     },
     "spacedReview": "1 lesson(s) back: Beak, Feather from bird-sanctuary-3\n3 lesson(s) back: Robin, Sparrow from bird-sanctuary-1\n7 lesson(s) back: Earthquake, Explosion from volcano-2"
   }

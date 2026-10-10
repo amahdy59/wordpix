@@ -38,138 +38,121 @@
       "بعوضة",
       "صرصور الليل",
       "جناح",
-      "هوائي",
-      "ساق",
+      "قرن استشعار",
+      "رجل الحشرة",
       "صدر",
-      "بطن"
+      "بطن الحشرة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "132-162 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ant", "Bee", "Butterfly", "Ladybug"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.",
+          "scenario": "The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ant", "Bee", "Butterfly"],
-            "expectedAnswer": "Ant"
+            "question": "Which target names the ladybird-family beetle?",
+            "options": ["Ladybug", "Ant", "Bee"],
+            "expectedAnswer": "Ladybug"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Ant as the central item; include Ant, Bee, and Butterfly naturally where visually appropriate, but make the real-world use of Ant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Ladybug in the stated insect world account: The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dragonfly", "Grasshopper", "Beetle", "Fly"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.",
+          "scenario": "Dragonfly has two pairs of adult wings, and Grasshopper has enlarged jumping legs. Beetle is characterized by hardened front wing covers, while Fly names insects with one main pair of wings in this account. The guide distinguishes the body features.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Dragonfly", "Grasshopper", "Beetle"],
-            "expectedAnswer": "Dragonfly"
+            "question": "Which insect has hardened front wing covers?",
+            "options": ["Beetle", "Dragonfly", "Grasshopper"],
+            "expectedAnswer": "Beetle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Dragonfly as the central item; include Dragonfly, Grasshopper, and Beetle naturally where visually appropriate, but make the real-world use of Dragonfly the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Beetle in the stated insect world account: Dragonfly has two pairs of adult wings, and Grasshopper has enlarged jumping legs. Beetle is characterized by hardened front wing covers, while Fly names insects with one main pair of wings in this account. The guide distinguishes the body features. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Mosquito", "Cricket", "Wing", "Antenna"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.",
+          "scenario": "Mosquito and Cricket are insect names. A Wing supports flight where present, while an Antenna is a paired head appendage for sensing. Antenna does not mean a radio aerial in this exhibit.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mosquito", "Cricket", "Wing"],
-            "expectedAnswer": "Mosquito"
+            "question": "Which appendage senses from the insect’s head?",
+            "options": ["Antenna", "Mosquito", "Cricket"],
+            "expectedAnswer": "Antenna"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Mosquito as the central item; include Mosquito, Cricket, and Wing naturally where visually appropriate, but make the real-world use of Mosquito the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Antenna in the stated insect world account: Mosquito and Cricket are insect names. A Wing supports flight where present, while an Antenna is a paired head appendage for sensing. Antenna does not mean a radio aerial in this exhibit. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Leg", "Thorax", "Abdomen"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.",
+          "scenario": "An adult insect’s Leg attaches to the Thorax, its middle body region. The Abdomen lies behind it. The comparison teaches insect anatomy rather than vertebrate body regions or a human diagram.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Leg", "Thorax", "Abdomen"],
-            "expectedAnswer": "Leg"
+            "question": "Which middle region bears the legs?",
+            "options": ["Thorax", "Leg", "Abdomen"],
+            "expectedAnswer": "Thorax"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Leg as the central item; include Leg, Thorax, and Abdomen naturally where visually appropriate, but make the real-world use of Leg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Thorax in the stated insect world account: An adult insect’s Leg attaches to the Thorax, its middle body region. The Abdomen lies behind it. The comparison teaches insect anatomy rather than vertebrate body regions or a human diagram. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Insect World: Practical Information",
-      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ant, Bee, Butterfly, and Ladybug. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dragonfly, Grasshopper, Beetle, and Fly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mosquito, Cricket, Wing, and Antenna. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Leg, Thorax, and Abdomen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Insect World: Comparing the named examples",
+      "text": "The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species. Dragonfly has two pairs of adult wings, and Grasshopper has enlarged jumping legs. Beetle is characterized by hardened front wing covers, while Fly names insects with one main pair of wings in this account. The guide distinguishes the body features. Mosquito and Cricket are insect names. A Wing supports flight where present, while an Antenna is a paired head appendage for sensing. Antenna does not mean a radio aerial in this exhibit. An adult insect’s Leg attaches to the Thorax, its middle body region. The Abdomen lies behind it. The comparison teaches insect anatomy rather than vertebrate body regions or a human diagram.",
+      "imageBrief": "One scientifically accurate insect world reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ant, Bee, Butterfly, and Ladybug and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ant",
+        "prompt": "The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species.\nWhich target names the ladybird-family beetle?",
+        "answer": "Ladybug",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dragonfly, Grasshopper, Beetle, and Fly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Dragonfly",
+        "prompt": "Dragonfly has two pairs of adult wings, and Grasshopper has enlarged jumping legs. Beetle is characterized by hardened front wing covers, while Fly names insects with one main pair of wings in this account. The guide distinguishes the body features.\nWhich insect has hardened front wing covers?",
+        "answer": "Beetle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mosquito, Cricket, Wing, and Antenna and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mosquito",
+        "prompt": "Mosquito and Cricket are insect names. A Wing supports flight where present, while an Antenna is a paired head appendage for sensing. Antenna does not mean a radio aerial in this exhibit.\nWhich appendage senses from the insect’s head?",
+        "answer": "Antenna",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Leg, Thorax, and Abdomen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Leg",
+        "prompt": "An adult insect’s Leg attaches to the Thorax, its middle body region. The Abdomen lies behind it. The comparison teaches insect anatomy rather than vertebrate body regions or a human diagram.\nWhich middle region bears the legs?",
+        "answer": "Thorax",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species. Dragonfly has two pairs of adult wings, and Grasshopper has enlarged jumping legs. Beetle is characterized by hardened front wing covers, while Fly names insects with one main pair of wings in this account. The guide distinguishes the body features. Mosquito and Cricket are insect names. A Wing supports flight where present, while an Antenna is a paired head appendage for sensing. Antenna does not mean a radio aerial in this exhibit. An adult insect’s Leg attaches to the Thorax, its middle body region. The Abdomen lies behind it. The comparison teaches insect anatomy rather than vertebrate body regions or a human diagram.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Ant"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Ladybug"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Camouflage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the insect world task. Use Ant, Bee, Butterfly, Ladybug, Dragonfly, Grasshopper, Beetle, Fly, Mosquito, Cricket, Wing, Antenna, Leg, Thorax, and Abdomen in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Ant, Bee, Butterfly, Ladybug, Dragonfly, Grasshopper, Beetle, Fly, Mosquito, Cricket, Wing, Antenna, Leg, Thorax, Abdomen. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Insect World: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Insect World: Comparing the named examples",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The exhibit compares Ant, Bee, Butterfly, and Ladybug. Ladybug is a common name for beetles of the ladybird family; many have spotted wing covers. Ants live in colonies, while honey production is not a property of every bee species. Which target names the ladybird-family beetle?"
     },
     "spacedReview": "1 lesson(s) back: Camouflage, Mimicry from butterfly-garden-4\n3 lesson(s) back: Molt, Instar from butterfly-garden-2\n7 lesson(s) back: Flamingo, Crane from bird-sanctuary-2"
   },
@@ -201,9 +184,9 @@
       "Pond Surface"
     ],
     "targetWordsArabic": [
-      "رأس",
+      "رأس الحشرة",
       "عين",
-      "فك سفلي",
+      "فك حشري",
       "إبرة لسع",
       "خرطوم",
       "خلية نحل",
@@ -218,132 +201,115 @@
       "سطح البركة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "135-165 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Head", "Eye", "Mandible", "Stinger"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.",
+          "scenario": "The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Head", "Eye", "Mandible"],
-            "expectedAnswer": "Head"
+            "question": "Which target names the biting or manipulating mouthpart?",
+            "options": ["Mandible", "Head", "Eye"],
+            "expectedAnswer": "Mandible"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Head as the central item; include Head, Eye, and Mandible naturally where visually appropriate, but make the real-world use of Head the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Mandible in the stated insect world account: The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Proboscis", "Hive", "Anthill", "Web"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.",
+          "scenario": "A Proboscis is an elongated feeding mouthpart. A Hive houses a bee colony, and an Anthill is an ant-made mound. A Web is a spider’s silk network in the comparison; spiders are arachnids, not insects.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Proboscis", "Hive", "Anthill"],
-            "expectedAnswer": "Proboscis"
+            "question": "Which target names the spider’s silk network?",
+            "options": ["Web", "Proboscis", "Hive"],
+            "expectedAnswer": "Web"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Proboscis as the central item; include Proboscis, Hive, and Anthill naturally where visually appropriate, but make the real-world use of Proboscis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Web in the stated insect world account: A Proboscis is an elongated feeding mouthpart. A Hive houses a bee colony, and an Anthill is an ant-made mound. A Web is a spider’s silk network in the comparison; spiders are arachnids, not insects. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cocoon", "Nest", "Burrow", "Leaf"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.",
+          "scenario": "A Cocoon is a silk covering made by certain developing insects. Nest and Burrow name shelter arrangements. Leaf is a plant part that may support or feed an organism. A cocoon is not the same thing as the pupa inside it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the silk covering?",
             "options": ["Cocoon", "Nest", "Burrow"],
             "expectedAnswer": "Cocoon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Cocoon as the central item; include Cocoon, Nest, and Burrow naturally where visually appropriate, but make the real-world use of Cocoon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Cocoon in the stated insect world account: A Cocoon is a silk covering made by certain developing insects. Nest and Burrow name shelter arrangements. Leaf is a plant part that may support or feed an organism. A cocoon is not the same thing as the pupa inside it. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bark", "Soil", "Pond Surface"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.",
+          "scenario": "Bark covers a tree’s outer surface, while Soil supports many land habitats. Pond Surface is the boundary between pond water and air. The written reference identifies the boundary without inviting visitors to collect animals.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bark", "Soil", "Pond Surface"],
-            "expectedAnswer": "Bark"
+            "question": "Which target names the water-air boundary?",
+            "options": ["Pond Surface", "Bark", "Soil"],
+            "expectedAnswer": "Pond Surface"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Bark as the central item; include Bark, Soil, and Pond Surface naturally where visually appropriate, but make the real-world use of Bark the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Pond Surface in the stated insect world account: Bark covers a tree’s outer surface, while Soil supports many land habitats. Pond Surface is the boundary between pond water and air. The written reference identifies the boundary without inviting visitors to collect animals. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Insect World",
-      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Head, Eye, Mandible, and Stinger. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Proboscis, Hive, Anthill, and Web. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cocoon, Nest, Burrow, and Leaf. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bark, Soil, and Pond Surface. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Insect World: Understanding the important distinctions",
+      "text": "The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger. A Proboscis is an elongated feeding mouthpart. A Hive houses a bee colony, and an Anthill is an ant-made mound. A Web is a spider’s silk network in the comparison; spiders are arachnids, not insects. A Cocoon is a silk covering made by certain developing insects. Nest and Burrow name shelter arrangements. Leaf is a plant part that may support or feed an organism. A cocoon is not the same thing as the pupa inside it. Bark covers a tree’s outer surface, while Soil supports many land habitats. Pond Surface is the boundary between pond water and air. The written reference identifies the boundary without inviting visitors to collect animals.",
+      "imageBrief": "One scientifically accurate insect world reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Head, Eye, Mandible, and Stinger and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Head",
+        "prompt": "The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger.\nWhich target names the biting or manipulating mouthpart?",
+        "answer": "Mandible",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Proboscis, Hive, Anthill, and Web and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Proboscis",
+        "prompt": "A Proboscis is an elongated feeding mouthpart. A Hive houses a bee colony, and an Anthill is an ant-made mound. A Web is a spider’s silk network in the comparison; spiders are arachnids, not insects.\nWhich target names the spider’s silk network?",
+        "answer": "Web",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cocoon, Nest, Burrow, and Leaf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Cocoon is a silk covering made by certain developing insects. Nest and Burrow name shelter arrangements. Leaf is a plant part that may support or feed an organism. A cocoon is not the same thing as the pupa inside it.\nWhich target names the silk covering?",
         "answer": "Cocoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bark, Soil, and Pond Surface and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bark",
+        "prompt": "Bark covers a tree’s outer surface, while Soil supports many land habitats. Pond Surface is the boundary between pond water and air. The written reference identifies the boundary without inviting visitors to collect animals.\nWhich target names the water-air boundary?",
+        "answer": "Pond Surface",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger. A Proboscis is an elongated feeding mouthpart. A Hive houses a bee colony, and an Anthill is an ant-made mound. A Web is a spider’s silk network in the comparison; spiders are arachnids, not insects. A Cocoon is a silk covering made by certain developing insects. Nest and Burrow name shelter arrangements. Leaf is a plant part that may support or feed an organism. A cocoon is not the same thing as the pupa inside it. Bark covers a tree’s outer surface, while Soil supports many land habitats. Pond Surface is the boundary between pond water and air. The written reference identifies the boundary without inviting visitors to collect animals.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Head"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Stinger"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ant” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the insect world task. Use Head, Eye, Mandible, Stinger, Proboscis, Hive, Anthill, Web, Cocoon, Nest, Burrow, Leaf, Bark, Soil, and Pond Surface in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Head, Eye, Mandible, Stinger, Proboscis, Hive, Anthill, Web, Cocoon, Nest, Burrow, Leaf, Bark, Soil, Pond Surface. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Insect World: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Insect World: Understanding the important distinctions",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The Head carries sensory structures including the Eye. A Mandible is a biting or manipulating mouthpart in insects, while a Stinger is a specialized delivery structure in some species. Not every insect has a stinger. Which target names the biting or manipulating mouthpart?"
     },
     "spacedReview": "1 lesson(s) back: Ant, Bee from insect-world-1\n3 lesson(s) back: Milkweed, Lavender from butterfly-garden-3\n7 lesson(s) back: Beak, Feather from bird-sanctuary-3"
   },
@@ -380,144 +346,127 @@
       "يرقة",
       "عذراء الحشرة",
       "عذراء الفراشة",
-      "تحول كامل",
+      "تحول حشري",
       "انسلاخ",
       "حورية حشرة",
-      "بالغ",
-      "سرب",
+      "حشرة بالغة",
+      "سرب حشرات",
       "يلقح الأزهار",
       "يلسع",
       "يزحف",
-      "طنين",
+      "يطن",
       "يحفر"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Egg", "Larva", "Caterpillar", "Pupa"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.",
+          "scenario": "The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Egg", "Larva", "Caterpillar"],
-            "expectedAnswer": "Egg"
+            "question": "Which general term names the immature feeding stage in this account?",
+            "options": ["Larva", "Egg", "Caterpillar"],
+            "expectedAnswer": "Larva"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Egg as the central item; include Egg, Larva, and Caterpillar naturally where visually appropriate, but make the real-world use of Egg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Larva in the stated insect world account: The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Chrysalis", "Metamorphosis", "Molt", "Nymph"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.",
+          "scenario": "Chrysalis names a butterfly pupa. Metamorphosis describes developmental change, and Molt names shedding the outer covering. A Nymph is an immature stage in incomplete metamorphosis, generally resembling the adult without being fully developed.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chrysalis", "Metamorphosis", "Molt"],
-            "expectedAnswer": "Chrysalis"
+            "question": "Which immature stage belongs to incomplete metamorphosis?",
+            "options": ["Nymph", "Chrysalis", "Metamorphosis"],
+            "expectedAnswer": "Nymph"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Chrysalis as the central item; include Chrysalis, Metamorphosis, and Molt naturally where visually appropriate, but make the real-world use of Chrysalis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Nymph in the stated insect world account: Chrysalis names a butterfly pupa. Metamorphosis describes developmental change, and Molt names shedding the outer covering. A Nymph is an immature stage in incomplete metamorphosis, generally resembling the adult without being fully developed. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Adult", "Swarm", "Pollinate", "Sting"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.",
+          "scenario": "Adult names the mature life stage, and Swarm names a gathered group. Pollinate means transfer pollen to the receptive flower part; this can enable fertilization but is not identical to it. Sting describes using a stinger.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Adult", "Swarm", "Pollinate"],
-            "expectedAnswer": "Adult"
+            "question": "Which verb names the pollen-transfer process?",
+            "options": ["Pollinate", "Adult", "Swarm"],
+            "expectedAnswer": "Pollinate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Adult as the central item; include Adult, Swarm, and Pollinate naturally where visually appropriate, but make the real-world use of Adult the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Pollinate in the stated insect world account: Adult names the mature life stage, and Swarm names a gathered group. Pollinate means transfer pollen to the receptive flower part; this can enable fertilization but is not identical to it. Sting describes using a stinger. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Crawl", "Buzz", "Dig"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.",
+          "scenario": "Crawl describes movement close to a surface, and Dig describes moving or removing earth. Buzz is the humming sound associated with some wing movement. The account identifies the sound rather than claiming every insect produces it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Crawl", "Buzz", "Dig"],
-            "expectedAnswer": "Crawl"
+            "question": "Which verb describes the humming sound?",
+            "options": ["Buzz", "Crawl", "Dig"],
+            "expectedAnswer": "Buzz"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Crawl as the central item; include Crawl, Buzz, and Dig naturally where visually appropriate, but make the real-world use of Crawl the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Buzz in the stated insect world account: Crawl describes movement close to a surface, and Dig describes moving or removing earth. Buzz is the humming sound associated with some wing movement. The account identifies the sound rather than claiming every insect produces it. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Insect World",
-      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Egg, Larva, Caterpillar, and Pupa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chrysalis, Metamorphosis, Molt, and Nymph. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Adult, Swarm, Pollinate, and Sting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crawl, Buzz, and Dig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Insect World: Reading the observation record",
+      "text": "The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult. Chrysalis names a butterfly pupa. Metamorphosis describes developmental change, and Molt names shedding the outer covering. A Nymph is an immature stage in incomplete metamorphosis, generally resembling the adult without being fully developed. Adult names the mature life stage, and Swarm names a gathered group. Pollinate means transfer pollen to the receptive flower part; this can enable fertilization but is not identical to it. Sting describes using a stinger. Crawl describes movement close to a surface, and Dig describes moving or removing earth. Buzz is the humming sound associated with some wing movement. The account identifies the sound rather than claiming every insect produces it.",
+      "imageBrief": "One scientifically accurate insect world reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Egg, Larva, Caterpillar, and Pupa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Egg",
+        "prompt": "The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult.\nWhich general term names the immature feeding stage in this account?",
+        "answer": "Larva",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Metamorphosis, Molt, and Nymph and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chrysalis",
+        "prompt": "Chrysalis names a butterfly pupa. Metamorphosis describes developmental change, and Molt names shedding the outer covering. A Nymph is an immature stage in incomplete metamorphosis, generally resembling the adult without being fully developed.\nWhich immature stage belongs to incomplete metamorphosis?",
+        "answer": "Nymph",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Adult, Swarm, Pollinate, and Sting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Adult",
+        "prompt": "Adult names the mature life stage, and Swarm names a gathered group. Pollinate means transfer pollen to the receptive flower part; this can enable fertilization but is not identical to it. Sting describes using a stinger.\nWhich verb names the pollen-transfer process?",
+        "answer": "Pollinate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crawl, Buzz, and Dig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Crawl",
+        "prompt": "Crawl describes movement close to a surface, and Dig describes moving or removing earth. Buzz is the humming sound associated with some wing movement. The account identifies the sound rather than claiming every insect produces it.\nWhich verb describes the humming sound?",
+        "answer": "Buzz",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult. Chrysalis names a butterfly pupa. Metamorphosis describes developmental change, and Molt names shedding the outer covering. A Nymph is an immature stage in incomplete metamorphosis, generally resembling the adult without being fully developed. Adult names the mature life stage, and Swarm names a gathered group. Pollinate means transfer pollen to the receptive flower part; this can enable fertilization but is not identical to it. Sting describes using a stinger. Crawl describes movement close to a surface, and Dig describes moving or removing earth. Buzz is the humming sound associated with some wing movement. The account identifies the sound rather than claiming every insect produces it.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Egg"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Pupa"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Head” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the insect world task. Use Egg, Larva, Caterpillar, Pupa, Chrysalis, Metamorphosis, Molt, Nymph, Adult, Swarm, Pollinate, Sting, Crawl, Buzz, and Dig in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Egg, Larva, Caterpillar, Pupa, Chrysalis, Metamorphosis, Molt, Nymph, Adult, Swarm, Pollinate, Sting, Crawl, Buzz, Dig. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Insect World: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Insect World: Reading the observation record",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The life-cycle display compares Egg, Larva, Caterpillar, and Pupa. Larva names the general immature stage in complete metamorphosis; Caterpillar is the larva of a butterfly or moth. The Pupa is the stage between larva and adult. Which general term names the immature feeding stage in this account?"
     },
     "spacedReview": "1 lesson(s) back: Head, Eye from insect-world-2\n3 lesson(s) back: Camouflage, Mimicry from butterfly-garden-4\n7 lesson(s) back: Preen, Soar from bird-sanctuary-4"
   },
@@ -548,7 +497,7 @@
       "Wasp"
     ],
     "targetWordsArabic": [
-      "ينسج شبكة",
+      "ينسج خيوطًا حريرية",
       "تمويه",
       "يهاجر",
       "يدخل في سبات",
@@ -556,7 +505,7 @@
       "حلزون",
       "بزاقة",
       "حريش",
-      "دودة ألفية الأرجل",
+      "ألفية الأرجل",
       "حشرة المن",
       "فرس النبي",
       "يراعة",
@@ -564,132 +513,115 @@
       "دبور"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "140-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Spin", "Camouflage", "Migrate", "Hibernate"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.",
+          "scenario": "Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which verb means produce the stated silk structure?",
             "options": ["Spin", "Camouflage", "Migrate"],
             "expectedAnswer": "Spin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Spin as the central item; include Spin, Camouflage, and Migrate naturally where visually appropriate, but make the real-world use of Spin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Spin in the stated insect world account: Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Earthworm", "Snail", "Slug", "Centipede"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.",
+          "scenario": "The comparison display includes Earthworm, Snail, Slug, and Centipede. Earthworm is an annelid, Snail and Slug are mollusks, and Centipede is a many-legged arthropod. These comparison animals are not insects despite the unit’s broad exhibit theme.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the annelid worm?",
             "options": ["Earthworm", "Snail", "Slug"],
             "expectedAnswer": "Earthworm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Earthworm as the central item; include Earthworm, Snail, and Slug naturally where visually appropriate, but make the real-world use of Earthworm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Earthworm in the stated insect world account: The comparison display includes Earthworm, Snail, Slug, and Centipede. Earthworm is an annelid, Snail and Slug are mollusks, and Centipede is a many-legged arthropod. These comparison animals are not insects despite the unit’s broad exhibit theme. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Millipede", "Aphid", "Praying Mantis", "Firefly"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.",
+          "scenario": "Millipede is a many-segmented arthropod with two leg pairs on most apparent segments, not an insect. Aphid, Praying Mantis, and Firefly are insects; Firefly belongs to the beetle family commonly associated with bioluminescence.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the non-insect with two leg pairs on most apparent segments?",
             "options": ["Millipede", "Aphid", "Praying Mantis"],
             "expectedAnswer": "Millipede"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Millipede as the central item; include Millipede, Aphid, and Praying Mantis naturally where visually appropriate, but make the real-world use of Millipede the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Millipede in the stated insect world account: Millipede is a many-segmented arthropod with two leg pairs on most apparent segments, not an insect. Aphid, Praying Mantis, and Firefly are insects; Firefly belongs to the beetle family commonly associated with bioluminescence. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Moth", "Wasp"],
-          "scenario": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.",
+          "scenario": "The guide contrasts Moth, a member of the butterfly-and-moth order, with Wasp, a member of a different insect group. Night activity alone is not a universal moth identifier, and the guide uses reliable species references rather than a simple color rule.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Moth", "Wasp", "Spin"],
+            "question": "Which target belongs to the butterfly-and-moth order?",
+            "options": ["Moth", "Wasp"],
             "expectedAnswer": "Moth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Moth as the central item; include Moth, Wasp, and Spin naturally where visually appropriate, but make the real-world use of Moth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Moth in the stated insect world account: The guide contrasts Moth, a member of the butterfly-and-moth order, with Wasp, a member of a different insect group. Night activity alone is not a universal moth identifier, and the guide uses reliable species references rather than a simple color rule. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written insect world account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Insect World: Practical Information",
-      "text": "At the insect world, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Spin, Camouflage, Migrate, and Hibernate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Earthworm, Snail, Slug, and Centipede. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Millipede, Aphid, Praying Mantis, and Firefly. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Moth and Wasp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Insect World. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Insect World: A guided visitor discussion",
+      "text": "Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior. The comparison display includes Earthworm, Snail, Slug, and Centipede. Earthworm is an annelid, Snail and Slug are mollusks, and Centipede is a many-legged arthropod. These comparison animals are not insects despite the unit’s broad exhibit theme. Millipede is a many-segmented arthropod with two leg pairs on most apparent segments, not an insect. Aphid, Praying Mantis, and Firefly are insects; Firefly belongs to the beetle family commonly associated with bioluminescence. The guide contrasts Moth, a member of the butterfly-and-moth order, with Wasp, a member of a different insect group. Night activity alone is not a universal moth identifier, and the guide uses reliable species references rather than a simple color rule.",
+      "imageBrief": "One scientifically accurate insect world reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spin, Camouflage, Migrate, and Hibernate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior.\nWhich verb means produce the stated silk structure?",
         "answer": "Spin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthworm, Snail, Slug, and Centipede and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The comparison display includes Earthworm, Snail, Slug, and Centipede. Earthworm is an annelid, Snail and Slug are mollusks, and Centipede is a many-legged arthropod. These comparison animals are not insects despite the unit’s broad exhibit theme.\nWhich target names the annelid worm?",
         "answer": "Earthworm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Millipede, Aphid, Praying Mantis, and Firefly and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Millipede is a many-segmented arthropod with two leg pairs on most apparent segments, not an insect. Aphid, Praying Mantis, and Firefly are insects; Firefly belongs to the beetle family commonly associated with bioluminescence.\nWhich target names the non-insect with two leg pairs on most apparent segments?",
         "answer": "Millipede",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the insect world setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moth, and Wasp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide contrasts Moth, a member of the butterfly-and-moth order, with Wasp, a member of a different insect group. Night activity alone is not a universal moth identifier, and the guide uses reliable species references rather than a simple color rule.\nWhich target belongs to the butterfly-and-moth order?",
         "answer": "Moth",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior. The comparison display includes Earthworm, Snail, Slug, and Centipede. Earthworm is an annelid, Snail and Slug are mollusks, and Centipede is a many-legged arthropod. These comparison animals are not insects despite the unit’s broad exhibit theme. Millipede is a many-segmented arthropod with two leg pairs on most apparent segments, not an insect. Aphid, Praying Mantis, and Firefly are insects; Firefly belongs to the beetle family commonly associated with bioluminescence. The guide contrasts Moth, a member of the butterfly-and-moth order, with Wasp, a member of a different insect group. Night activity alone is not a universal moth identifier, and the guide uses reliable species references rather than a simple color rule.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Spin"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Hibernate"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Egg” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the insect world task. Use Spin, Camouflage, Migrate, Hibernate, Earthworm, Snail, Slug, Centipede, Millipede, Aphid, Praying Mantis, Firefly, Moth, and Wasp in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Spin, Camouflage, Migrate, Hibernate, Earthworm, Snail, Slug, Centipede, Millipede, Aphid, Praying Mantis, Firefly, Moth, Wasp. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Insect World: In Context",
-      "idea": "40-60 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Insect World: A guided visitor discussion",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "Spin means produce silk structures such as a web or cocoon in the stated organism. Camouflage means blend with surroundings, Migrate means move between regions, and Hibernate describes greatly reduced winter activity where applicable. Not all insects perform each behavior. Which verb means produce the stated silk structure?"
     },
     "spacedReview": "1 lesson(s) back: Egg, Larva from insect-world-3\n3 lesson(s) back: Ant, Bee from insect-world-1\n7 lesson(s) back: Monarch, Swallowtail from butterfly-garden-1"
   }

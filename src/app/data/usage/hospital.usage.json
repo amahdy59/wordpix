@@ -37,17 +37,17 @@
       "طبيب أشعة",
       "طبيب أطفال",
       "طبيب نفسي",
-      "قابلة",
+      "قابلة أو اختصاصي توليد",
       "مساعد خدمات بالمستشفى",
       "طبيب عيون",
       "طبيب جلدية",
       "طبيب قلب"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -58,8 +58,16 @@
             "options": ["doctor", "nurse", "surgeon"],
             "expectedAnswer": "doctor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including doctor, nurse, surgeon in a natural setting."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including doctor, nurse, surgeon in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "During a routine care or examination situation, an adult reviews doctor, nurse, surgeon. The next step focuses on doctor.",
+            "sourceQuestion": "Which option is the focus of the next step?",
+            "sourceAnswer": "doctor",
+            "scenario": "Sam has an appointment with a doctor to discuss his health. A nurse checks the appointment record. The surgeon is working in another department.",
+            "question": "Who is Sam meeting to discuss his health?",
+            "imageBrief": "Vocabulary-reference support only. One modest adult male doctor at an empty consultation desk; no patient, clinical procedure or text. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 2,
@@ -70,52 +78,60 @@
             "options": ["paramedic", "receptionist", "pharmacist"],
             "expectedAnswer": "paramedic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including paramedic, receptionist, pharmacist in a natural setting."
+          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including paramedic, receptionist, pharmacist in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "During a routine care or examination situation, an adult reviews paramedic, receptionist, pharmacist. The next step focuses on paramedic.",
+            "sourceQuestion": "Which option is the focus of the next step?",
+            "sourceAnswer": "paramedic",
+            "scenario": "A paramedic arrives at the hospital in an ambulance. The receptionist records an appointment, and the pharmacist is working in the pharmacy.",
+            "question": "Who arrives in the ambulance?",
+            "imageBrief": "Vocabulary-reference support only. One modest adult male paramedic beside an ambulance; no patient, readable markings or emergency procedure. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 3,
           "targetWords": ["anesthesiologist", "radiologist", "pediatrician"],
-          "scenario": "During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist.",
+          "scenario": "Before an operation, a specialist explains how the patient will be kept comfortable and monitored during anesthesia. A radiologist reviews scans, and a pediatrician cares for younger patients.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which specialist manages anesthesia?",
             "options": ["anesthesiologist", "radiologist", "pediatrician"],
             "expectedAnswer": "anesthesiologist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including anesthesiologist, radiologist, pediatrician in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: Before an operation, a specialist explains how the patient will be kept comfortable and monitored during anesthesia. A radiologist reviews scans, and a pediatrician cares for younger patients. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["psychiatrist", "midwife", "orderly"],
-          "scenario": "During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist.",
+          "scenario": "The hospital describes three roles. A psychiatrist treats mental-health conditions; a midwife supports pregnancy and birth; an orderly helps move patients and supports ward tasks.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who supports pregnancy and birth?",
             "options": ["psychiatrist", "midwife", "orderly"],
-            "expectedAnswer": "psychiatrist"
+            "expectedAnswer": "midwife"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including psychiatrist, midwife, orderly in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The hospital describes three roles. A psychiatrist treats mental-health conditions; a midwife supports pregnancy and birth; an orderly helps move patients and supports ward tasks. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["ophthalmologist", "dermatologist", "cardiologist"],
-          "scenario": "During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist.",
+          "scenario": "A patient asks which clinic deals with skin problems. The receptionist distinguishes the eye specialist, the dermatologist, and the cardiologist, who treats heart conditions.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which specialist deals with skin conditions?",
             "options": ["ophthalmologist", "dermatologist", "cardiologist"],
-            "expectedAnswer": "ophthalmologist"
+            "expectedAnswer": "dermatologist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including ophthalmologist, dermatologist, cardiologist in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A patient asks which clinic deals with skin problems. The receptionist distinguishes the eye specialist, the dermatologist, and the cardiologist, who treats heart conditions. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital: Email",
-      "text": "Omar has an everyday task connected to l5 hospital. The new vocabulary helps him follow the situation and respond clearly. The patient may meet a doctor during the visit. A nurse handles one part of the care process and explains what happens next. A surgeon is part of the team supporting the patient. A paramedic handles one part of the care process and explains what happens next.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 1: understanding the hospital",
+      "text": "At the hospital information desk, Leila asks about staff roles. The receptionist arranges visits and answers practical questions. A doctor examines patients, and a nurse supports their care. A surgeon performs operations. Before an operation, an anesthesiologist manages anesthesia and monitors the patient. A radiologist interprets medical images. Different specialists work with different body systems. Leila learns the names so she can understand who she will meet. The conversation does not tell her which specialist or treatment she needs. An ophthalmologist diagnoses and treats eye conditions. The guide identifies this as a medical specialist, not simply a person who sells glasses.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
@@ -133,51 +149,45 @@
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews anesthesiologist, radiologist, pediatrician. The next step focuses on anesthesiologist.\nWhich option is the focus of the next step?",
+        "prompt": "Before an operation, a specialist explains how the patient will be kept comfortable and monitored during anesthesia. A radiologist reviews scans, and a pediatrician cares for younger patients.\nWhich specialist manages anesthesia?",
         "answer": "anesthesiologist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews psychiatrist, midwife, orderly. The next step focuses on psychiatrist.\nWhich option is the focus of the next step?",
-        "answer": "psychiatrist",
+        "prompt": "The hospital describes three roles. A psychiatrist treats mental-health conditions; a midwife supports pregnancy and birth; an orderly helps move patients and supports ward tasks.\nWho supports pregnancy and birth?",
+        "answer": "midwife",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews ophthalmologist, dermatologist, cardiologist. The next step focuses on ophthalmologist.\nWhich option is the focus of the next step?",
-        "answer": "ophthalmologist",
+        "prompt": "A patient asks which clinic deals with skin problems. The receptionist distinguishes the eye specialist, the dermatologist, and the cardiologist, who treats heart conditions.\nWhich specialist deals with skin conditions?",
+        "answer": "dermatologist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "doctor"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: Sam has an appointment with a doctor to discuss his health. A nurse checks the appointment record. The surgeon is working in another department.",
+        "answer": "A doctor examines patients and diagnoses and treats illness.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "paramedic"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Photo Booth” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At the hospital information desk, Leila asks about staff roles. The receptionist arranges visits and answers practical questions. A doctor examines patients, and a nurse supports their care. A surgeon performs operations. Before an operation, an anesthesiologist manages anesthesia and monitors the patient. A radiologist interprets medical images. Different specialists work with different body systems. Leila learns the names so she can understand who she will meet. The conversation does not tell her which specialist or treatment she needs. An ophthalmologist diagnoses and treats eye conditions. The guide identifies this as a medical specialist, not simply a person who sells glasses.\nWhich specialist diagnoses and treats eye conditions?",
+        "answer": "ophthalmologist",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 1: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "At the hospital information desk, Leila asks about staff roles."
     },
     "spacedReview": "1 lesson(s) back: Photo Booth, Karaoke from shopping-mall-4\n3 lesson(s) back: Restroom, Parking Garage from shopping-mall-2\n7 lesson(s) back: Photography, Video Editing from creative-hobbies-1"
   },
@@ -226,135 +236,134 @@
       "غرفة الإفاقة"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["neurologist", "orthopedist", "ENT specialist"],
-          "scenario": "During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist.",
+          "scenario": "A leaflet explains the neurology service for the brain and nervous system. The orthopedic service deals with bones and joints, while the ENT service covers ears, nose, and throat.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which specialist works with the nervous system?",
             "options": ["neurologist", "orthopedist", "ENT specialist"],
             "expectedAnswer": "neurologist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including neurologist, orthopedist, ENT specialist in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A leaflet explains the neurology service for the brain and nervous system. The orthopedic service deals with bones and joints, while the ENT service covers ears, nose, and throat. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["urologist", "oncologist", "gastroenterologist"],
-          "scenario": "During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist.",
+          "scenario": "The hospital directory lists urology for urinary-system conditions, oncology for cancer care, and gastroenterology for digestive-system conditions.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which specialist works with digestive-system conditions?",
             "options": ["urologist", "oncologist", "gastroenterologist"],
-            "expectedAnswer": "urologist"
+            "expectedAnswer": "gastroenterologist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including urologist, oncologist, gastroenterologist in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The hospital directory lists urology for urinary-system conditions, oncology for cancer care, and gastroenterology for digestive-system conditions. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["pulmonologist", "physiotherapist", "dietitian"],
-          "scenario": "During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist.",
+          "scenario": "A rehabilitation team describes its members. A pulmonologist specializes in lungs; a physiotherapist supports movement and function; a dietitian advises on nutrition.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who supports movement and physical function?",
             "options": ["pulmonologist", "physiotherapist", "dietitian"],
-            "expectedAnswer": "pulmonologist"
+            "expectedAnswer": "physiotherapist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including pulmonologist, physiotherapist, dietitian in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A rehabilitation team describes its members. A pulmonologist specializes in lungs; a physiotherapist supports movement and function; a dietitian advises on nutrition. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["lab technician", "EMT", "emergency room"],
-          "scenario": "During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician.",
+          "scenario": "In an orientation session, the educator describes a lab technician who examines samples and an EMT who provides emergency care within their training. The emergency room is the hospital area for urgent assessment.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which worker examines laboratory samples?",
             "options": ["lab technician", "EMT", "emergency room"],
             "expectedAnswer": "lab technician"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including lab technician, EMT, emergency room in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: In an orientation session, the educator describes a lab technician who examines samples and an EMT who provides emergency care within their training. The emergency room is the hospital area for urgent assessment. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["waiting room", "operating room", "recovery room"],
-          "scenario": "During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room.",
+          "scenario": "A visitor follows directions: wait in the waiting room, then meet staff before the operation. After the procedure, the patient is monitored in the recovery room.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where is the patient monitored just after the operation?",
             "options": ["waiting room", "operating room", "recovery room"],
-            "expectedAnswer": "waiting room"
+            "expectedAnswer": "recovery room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including waiting room, operating room, recovery room in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A visitor follows directions: wait in the waiting room, then meet staff before the operation. After the procedure, the patient is monitored in the recovery room. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 2: A short reading",
-      "text": "Maya reads a hospital directory to find the right clinic for her appointment. It lists a neurologist, an orthopedist, and an ENT specialist on different floors. Omar asks the receptionist where the physiotherapist works. The receptionist points to the map. Both visitors check the room numbers before leaving the reception area.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 2: understanding the hospital",
+      "text": "A visitor reads the hospital directory. Neurology concerns the nervous system, orthopedics concerns bones and joints, and ENT covers ears, nose, and throat. Oncology is the cancer service. The visitor waits in a waiting room until called. A lab technician works with samples in the laboratory. After an operation, patients may spend time in a recovery room while staff monitor them. The directory helps visitors understand names and locations; a qualified professional decides the appropriate care. An orthopedist specializes in bones and joints. An ENT specialist works with ears, nose, and throat; a urologist works with the urinary system; an oncologist works in cancer care. The operating room is where operations take place, and it is distinct from the recovery room.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews neurologist, orthopedist, ENT specialist. The next step focuses on neurologist.\nWhich option is the focus of the next step?",
+        "prompt": "A leaflet explains the neurology service for the brain and nervous system. The orthopedic service deals with bones and joints, while the ENT service covers ears, nose, and throat.\nWhich specialist works with the nervous system?",
         "answer": "neurologist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews urologist, oncologist, gastroenterologist. The next step focuses on urologist.\nWhich option is the focus of the next step?",
-        "answer": "urologist",
+        "prompt": "The hospital directory lists urology for urinary-system conditions, oncology for cancer care, and gastroenterology for digestive-system conditions.\nWhich specialist works with digestive-system conditions?",
+        "answer": "gastroenterologist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews pulmonologist, physiotherapist, dietitian. The next step focuses on pulmonologist.\nWhich option is the focus of the next step?",
-        "answer": "pulmonologist",
+        "prompt": "A rehabilitation team describes its members. A pulmonologist specializes in lungs; a physiotherapist supports movement and function; a dietitian advises on nutrition.\nWho supports movement and physical function?",
+        "answer": "physiotherapist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews lab technician, EMT, emergency room. The next step focuses on lab technician.\nWhich option is the focus of the next step?",
+        "prompt": "In an orientation session, the educator describes a lab technician who examines samples and an EMT who provides emergency care within their training. The emergency room is the hospital area for urgent assessment.\nWhich worker examines laboratory samples?",
         "answer": "lab technician",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews waiting room, operating room, recovery room. The next step focuses on waiting room.\nWhich option is the focus of the next step?",
-        "answer": "waiting room",
+        "prompt": "A visitor follows directions: wait in the waiting room, then meet staff before the operation. After the procedure, the patient is monitored in the recovery room.\nWhere is the patient monitored just after the operation?",
+        "answer": "recovery room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: A leaflet explains the neurology service for the brain and nervous system. The orthopedic service deals with bones and joints, while the ENT service covers ears, nose, and throat.",
+        "answer": "A neurologist works with the nervous system.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “doctor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What do Maya and Omar check before leaving reception?",
-        "answer": "The room numbers",
+        "prompt": "A visitor reads the hospital directory. Neurology concerns the nervous system, orthopedics concerns bones and joints, and ENT covers ears, nose, and throat. Oncology is the cancer service. The visitor waits in a waiting room until called. A lab technician works with samples in the laboratory. After an operation, patients may spend time in a recovery room while staff monitor them. The directory helps visitors understand names and locations; a qualified professional decides the appropriate care. An orthopedist specializes in bones and joints. An ENT specialist works with ears, nose, and throat; a urologist works with the urinary system; an oncologist works in cancer care. The operating room is where operations take place, and it is distinct from the recovery room.\nWhere may patients be monitored after an operation?",
+        "answer": "recovery room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 2: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "A visitor reads the hospital directory."
     },
     "spacedReview": "1 lesson(s) back: doctor, nurse from hospital-1\n3 lesson(s) back: Shopping Bag, Wallet from shopping-mall-3\n7 lesson(s) back: Weaving, Macramé from creative-hobbies-2"
   },
@@ -403,135 +412,134 @@
       "غرفة إعادة التأهيل"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["patient room", "intensive care unit", "maternity ward"],
-          "scenario": "During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room.",
+          "scenario": "A visitor asks about three hospital areas. A patient room accommodates patients; an intensive care unit provides close monitoring for critically ill people; a maternity ward supports care around childbirth.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which area provides close monitoring for critically ill patients?",
             "options": ["patient room", "intensive care unit", "maternity ward"],
-            "expectedAnswer": "patient room"
+            "expectedAnswer": "intensive care unit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including patient room, intensive care unit, maternity ward in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A visitor asks about three hospital areas. A patient room accommodates patients; an intensive care unit provides close monitoring for critically ill people; a maternity ward supports care around childbirth. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["nursery", "laboratory", "radiology"],
-          "scenario": "During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery.",
+          "scenario": "The orientation guide describes a nursery for newborn care, a laboratory for testing samples, and radiology for medical imaging.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which department works with medical images?",
             "options": ["nursery", "laboratory", "radiology"],
-            "expectedAnswer": "nursery"
+            "expectedAnswer": "radiology"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including nursery, laboratory, radiology in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The orientation guide describes a nursery for newborn care, a laboratory for testing samples, and radiology for medical imaging. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["cafeteria", "pharmacy", "consulting room"],
-          "scenario": "During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria.",
+          "scenario": "A visitor wants food rather than medical supplies. The cafeteria serves meals, the pharmacy supplies medicines, and a consulting room provides a private place to meet a clinician.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where can the visitor buy a meal?",
             "options": ["cafeteria", "pharmacy", "consulting room"],
             "expectedAnswer": "cafeteria"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including cafeteria, pharmacy, consulting room in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A visitor wants food rather than medical supplies. The cafeteria serves meals, the pharmacy supplies medicines, and a consulting room provides a private place to meet a clinician. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["triage area", "burn unit", "dialysis unit"],
-          "scenario": "During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area.",
+          "scenario": "Staff explain that triage assesses how urgently people need care. A burn unit specializes in burn injuries, and a dialysis unit provides dialysis treatment.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which area assesses the urgency of arriving patients?",
             "options": ["triage area", "burn unit", "dialysis unit"],
             "expectedAnswer": "triage area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including triage area, burn unit, dialysis unit in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: Staff explain that triage assesses how urgently people need care. A burn unit specializes in burn injuries, and a dialysis unit provides dialysis treatment. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["isolation room", "sterilization room", "rehabilitation room"],
-          "scenario": "During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room.",
+          "scenario": "The hospital orientation separates three areas: an isolation room limits transmission of certain infections; a sterilization room processes equipment; a rehabilitation room supports recovery of function.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which room processes equipment for safe reuse?",
             "options": ["isolation room", "sterilization room", "rehabilitation room"],
-            "expectedAnswer": "isolation room"
+            "expectedAnswer": "sterilization room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including isolation room, sterilization room, rehabilitation room in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The hospital orientation separates three areas: an isolation room limits transmission of certain infections; a sterilization room processes equipment; a rehabilitation room supports recovery of function. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 3: A short reading",
-      "text": "Omar follows the signs to a patient room. He passes the laboratory and radiology department on the way. Maya is waiting near the consulting room. They check the visitor information before entering the ward. Later, they meet in the cafeteria and ask where the hospital pharmacy is located.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 3: understanding the hospital",
+      "text": "The hospital guide explains its main areas. A consulting room is a private place to speak with a clinician. A maternity ward supports care around childbirth. The intensive care unit closely monitors people who are critically ill. At triage, staff assess urgency before arranging care. Equipment is processed in a sterilization room. The cafeteria serves meals for visitors and staff. Some areas have controlled access, so visitors ask staff where they may go rather than entering every room.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews patient room, intensive care unit, maternity ward. The next step focuses on patient room.\nWhich option is the focus of the next step?",
-        "answer": "patient room",
+        "prompt": "A visitor asks about three hospital areas. A patient room accommodates patients; an intensive care unit provides close monitoring for critically ill people; a maternity ward supports care around childbirth.\nWhich area provides close monitoring for critically ill patients?",
+        "answer": "intensive care unit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews nursery, laboratory, radiology. The next step focuses on nursery.\nWhich option is the focus of the next step?",
-        "answer": "nursery",
+        "prompt": "The orientation guide describes a nursery for newborn care, a laboratory for testing samples, and radiology for medical imaging.\nWhich department works with medical images?",
+        "answer": "radiology",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews cafeteria, pharmacy, consulting room. The next step focuses on cafeteria.\nWhich option is the focus of the next step?",
+        "prompt": "A visitor wants food rather than medical supplies. The cafeteria serves meals, the pharmacy supplies medicines, and a consulting room provides a private place to meet a clinician.\nWhere can the visitor buy a meal?",
         "answer": "cafeteria",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews triage area, burn unit, dialysis unit. The next step focuses on triage area.\nWhich option is the focus of the next step?",
+        "prompt": "Staff explain that triage assesses how urgently people need care. A burn unit specializes in burn injuries, and a dialysis unit provides dialysis treatment.\nWhich area assesses the urgency of arriving patients?",
         "answer": "triage area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews isolation room, sterilization room, rehabilitation room. The next step focuses on isolation room.\nWhich option is the focus of the next step?",
-        "answer": "isolation room",
+        "prompt": "The hospital orientation separates three areas: an isolation room limits transmission of certain infections; a sterilization room processes equipment; a rehabilitation room supports recovery of function.\nWhich room processes equipment for safe reuse?",
+        "answer": "sterilization room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: A visitor asks about three hospital areas. A patient room accommodates patients; an intensive care unit provides close monitoring for critically ill people; a maternity ward supports care around childbirth.",
+        "answer": "An intensive care unit closely monitors critically ill patients.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “neurologist” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where do Maya and Omar meet later?",
-        "answer": "In the cafeteria",
+        "prompt": "The hospital guide explains its main areas. A consulting room is a private place to speak with a clinician. A maternity ward supports care around childbirth. The intensive care unit closely monitors people who are critically ill. At triage, staff assess urgency before arranging care. Equipment is processed in a sterilization room. The cafeteria serves meals for visitors and staff. Some areas have controlled access, so visitors ask staff where they may go rather than entering every room.\nWhere do staff assess how urgently people need care?",
+        "answer": "triage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 3: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "The hospital guide explains its main areas."
     },
     "spacedReview": "1 lesson(s) back: neurologist, orthopedist from hospital-2\n3 lesson(s) back: Photo Booth, Karaoke from shopping-mall-4\n7 lesson(s) back: Gardening, Bonsai from creative-hobbies-3"
   },
@@ -580,135 +588,134 @@
       "قسطرة"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["blood bank", "stethoscope", "syringe"],
-          "scenario": "During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank.",
+          "scenario": "A hospital educator explains a blood bank that stores and manages donated blood, a stethoscope for listening to body sounds, and a syringe for moving fluids.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is used to listen to body sounds?",
             "options": ["blood bank", "stethoscope", "syringe"],
-            "expectedAnswer": "blood bank"
+            "expectedAnswer": "stethoscope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including blood bank, stethoscope, syringe in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A hospital educator explains a blood bank that stores and manages donated blood, a stethoscope for listening to body sounds, and a syringe for moving fluids. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["thermometer", "blood pressure monitor", "IV drip"],
-          "scenario": "During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer.",
+          "scenario": "At a display of equipment, a thermometer measures temperature and a blood pressure monitor measures blood pressure. An IV drip delivers fluid through a vein under clinical supervision.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which device measures temperature?",
             "options": ["thermometer", "blood pressure monitor", "IV drip"],
             "expectedAnswer": "thermometer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including thermometer, blood pressure monitor, IV drip in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: At a display of equipment, a thermometer measures temperature and a blood pressure monitor measures blood pressure. An IV drip delivers fluid through a vein under clinical supervision. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["wheelchair", "stretcher", "oxygen mask"],
-          "scenario": "During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair.",
+          "scenario": "The hospital shows mobility and breathing equipment. A wheelchair supports seated movement, a stretcher carries someone lying down, and an oxygen mask delivers oxygen when clinically prescribed.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item carries a person lying down?",
             "options": ["wheelchair", "stretcher", "oxygen mask"],
-            "expectedAnswer": "wheelchair"
+            "expectedAnswer": "stretcher"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including wheelchair, stretcher, oxygen mask in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The hospital shows mobility and breathing equipment. A wheelchair supports seated movement, a stretcher carries someone lying down, and an oxygen mask delivers oxygen when clinically prescribed. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["defibrillator", "scalpel", "bandage"],
-          "scenario": "During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator.",
+          "scenario": "An educator displays equipment without demonstrating use. A defibrillator can deliver a controlled electrical shock in certain emergencies; a scalpel is a surgical cutting instrument; a bandage covers or supports an injured area.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is a surgical cutting instrument?",
             "options": ["defibrillator", "scalpel", "bandage"],
-            "expectedAnswer": "defibrillator"
+            "expectedAnswer": "scalpel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including defibrillator, scalpel, bandage in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: An educator displays equipment without demonstrating use. A defibrillator can deliver a controlled electrical shock in certain emergencies; a scalpel is a surgical cutting instrument; a bandage covers or supports an injured area. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["cast", "ventilator", "catheter"],
-          "scenario": "During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast.",
+          "scenario": "The equipment guide describes a cast as rigid support for a broken bone, a ventilator as a machine supporting breathing, and a catheter as a tube used for a clinical purpose.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which device supports breathing?",
             "options": ["cast", "ventilator", "catheter"],
-            "expectedAnswer": "cast"
+            "expectedAnswer": "ventilator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including cast, ventilator, catheter in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The equipment guide describes a cast as rigid support for a broken bone, a ventilator as a machine supporting breathing, and a catheter as a tube used for a clinical purpose. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 4: A short reading",
-      "text": "A hospital guide shows the class photographs of a stethoscope, a syringe, and a thermometer. Maya matches the words to the pictures. Omar identifies a wheelchair and a stretcher. Another photograph shows an oxygen mask and an IV drip. They use the labels to describe the equipment in complete English sentences.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 4: understanding the hospital",
+      "text": "During a hospital orientation, an educator displays equipment and explains names. A thermometer measures temperature, and a stethoscope helps clinicians listen to body sounds. A wheelchair supports seated movement, while a stretcher carries someone lying down. A cast can protect a broken bone. A ventilator supports breathing under clinical supervision. The educator does not demonstrate surgery or equipment operation. Visitors learn vocabulary so they can understand explanations and ask questions during an appointment.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews blood bank, stethoscope, syringe. The next step focuses on blood bank.\nWhich option is the focus of the next step?",
-        "answer": "blood bank",
+        "prompt": "A hospital educator explains a blood bank that stores and manages donated blood, a stethoscope for listening to body sounds, and a syringe for moving fluids.\nWhich item is used to listen to body sounds?",
+        "answer": "stethoscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews thermometer, blood pressure monitor, IV drip. The next step focuses on thermometer.\nWhich option is the focus of the next step?",
+        "prompt": "At a display of equipment, a thermometer measures temperature and a blood pressure monitor measures blood pressure. An IV drip delivers fluid through a vein under clinical supervision.\nWhich device measures temperature?",
         "answer": "thermometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews wheelchair, stretcher, oxygen mask. The next step focuses on wheelchair.\nWhich option is the focus of the next step?",
-        "answer": "wheelchair",
+        "prompt": "The hospital shows mobility and breathing equipment. A wheelchair supports seated movement, a stretcher carries someone lying down, and an oxygen mask delivers oxygen when clinically prescribed.\nWhich item carries a person lying down?",
+        "answer": "stretcher",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews defibrillator, scalpel, bandage. The next step focuses on defibrillator.\nWhich option is the focus of the next step?",
-        "answer": "defibrillator",
+        "prompt": "An educator displays equipment without demonstrating use. A defibrillator can deliver a controlled electrical shock in certain emergencies; a scalpel is a surgical cutting instrument; a bandage covers or supports an injured area.\nWhich item is a surgical cutting instrument?",
+        "answer": "scalpel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews cast, ventilator, catheter. The next step focuses on cast.\nWhich option is the focus of the next step?",
-        "answer": "cast",
+        "prompt": "The equipment guide describes a cast as rigid support for a broken bone, a ventilator as a machine supporting breathing, and a catheter as a tube used for a clinical purpose.\nWhich device supports breathing?",
+        "answer": "ventilator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: A hospital educator explains a blood bank that stores and manages donated blood, a stethoscope for listening to body sounds, and a syringe for moving fluids.",
+        "answer": "A stethoscope helps clinicians listen to body sounds.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “patient room” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two transport items does Omar identify?",
-        "answer": "A wheelchair and a stretcher",
+        "prompt": "During a hospital orientation, an educator displays equipment and explains names. A thermometer measures temperature, and a stethoscope helps clinicians listen to body sounds. A wheelchair supports seated movement, while a stretcher carries someone lying down. A cast can protect a broken bone. A ventilator supports breathing under clinical supervision. The educator does not demonstrate surgery or equipment operation. Visitors learn vocabulary so they can understand explanations and ask questions during an appointment.\nWhich item supports seated movement?",
+        "answer": "wheelchair",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 4: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "During a hospital orientation, an educator displays equipment and explains names."
     },
     "spacedReview": "1 lesson(s) back: patient room, intensive care unit from hospital-3\n3 lesson(s) back: doctor, nurse from hospital-1\n7 lesson(s) back: Clothing Store, Shoe Store from shopping-mall-1"
   },
@@ -743,7 +750,7 @@
       "مقياس التأكسج النبضي",
       "جهاز تخطيط القلب الكهربائي",
       "جهاز رذاذ دوائي",
-      "رباط ضاغط لإيقاف النزيف",
+      "رباط ضاغط طبي",
       "كمامة جراحية",
       "مطرقة فحص المنعكسات",
       "قلب",
@@ -757,135 +764,134 @@
       "إصابة"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 5 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["pulse oximeter", "ECG machine", "nebulizer"],
-          "scenario": "During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter.",
+          "scenario": "At an equipment exhibition, a pulse oximeter estimates oxygen saturation using a sensor. An ECG machine records the heart’s electrical activity. A nebulizer turns liquid medicine into a mist.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which machine records the heart’s electrical activity?",
             "options": ["pulse oximeter", "ECG machine", "nebulizer"],
-            "expectedAnswer": "pulse oximeter"
+            "expectedAnswer": "ECG machine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including pulse oximeter, ECG machine, nebulizer in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: At an equipment exhibition, a pulse oximeter estimates oxygen saturation using a sensor. An ECG machine records the heart’s electrical activity. A nebulizer turns liquid medicine into a mist. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["tourniquet", "surgical mask", "reflex hammer"],
-          "scenario": "During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet.",
+          "scenario": "A tour guide identifies a tourniquet, a surgical mask, and a reflex hammer. The reflex hammer is used by clinicians to check certain reflexes. The tour provides names only, not instructions for use.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which tool is used to check reflexes?",
             "options": ["tourniquet", "surgical mask", "reflex hammer"],
-            "expectedAnswer": "tourniquet"
+            "expectedAnswer": "reflex hammer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including tourniquet, surgical mask, reflex hammer in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A tour guide identifies a tourniquet, a surgical mask, and a reflex hammer. The reflex hammer is used by clinicians to check certain reflexes. The tour provides names only, not instructions for use. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["heart", "lungs", "brain"],
-          "scenario": "During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart.",
+          "scenario": "An anatomical display shows the heart, lungs, and brain. The heart pumps blood, the lungs exchange gases, and the brain coordinates many body functions.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which organ pumps blood?",
             "options": ["heart", "lungs", "brain"],
             "expectedAnswer": "heart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including heart, lungs, brain in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: An anatomical display shows the heart, lungs, and brain. The heart pumps blood, the lungs exchange gases, and the brain coordinates many body functions. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["bone", "blood", "pulse"],
-          "scenario": "During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone.",
+          "scenario": "A teaching model shows bone and blood. The educator explains that a pulse is the rhythmic pressure wave in arteries associated with the heartbeat.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term describes the rhythmic beat felt at an artery?",
             "options": ["bone", "blood", "pulse"],
-            "expectedAnswer": "bone"
+            "expectedAnswer": "pulse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including bone, blood, pulse in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A teaching model shows bone and blood. The educator explains that a pulse is the rhythmic pressure wave in arteries associated with the heartbeat. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["fever", "infection", "injury"],
-          "scenario": "During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever.",
+          "scenario": "The educator distinguishes fever, infection, and injury. Fever means a raised body temperature; infection involves harmful microorganisms; injury means physical damage to the body. The terms are not diagnoses for the visitor.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term means physical damage?",
             "options": ["fever", "infection", "injury"],
-            "expectedAnswer": "fever"
+            "expectedAnswer": "injury"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including fever, infection, injury in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The educator distinguishes fever, infection, and injury. Fever means a raised body temperature; infection involves harmful microorganisms; injury means physical damage to the body. The terms are not diagnoses for the visitor. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 5: A short reading",
-      "text": "Omar learns the names pulse oximeter, ECG machine, and nebulizer from illustrated cards. Maya compares a surgical mask with an oxygen mask from an earlier lesson. A separate diagram shows the heart, lungs, and brain. They group the cards into equipment and body parts, then check their choices with the teacher.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 5: understanding the hospital",
+      "text": "An educator uses models rather than examining visitors. The heart pumps blood, the lungs exchange gases, and the brain coordinates body functions. A pulse oximeter estimates oxygen saturation; an ECG machine records heart electrical activity. The educator explains the difference between an injury and an infection. These words describe different ideas, and a fever is not itself proof of a particular disease. The session teaches vocabulary. A qualified clinician assesses a person’s symptoms and clinical information.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews pulse oximeter, ECG machine, nebulizer. The next step focuses on pulse oximeter.\nWhich option is the focus of the next step?",
-        "answer": "pulse oximeter",
+        "prompt": "At an equipment exhibition, a pulse oximeter estimates oxygen saturation using a sensor. An ECG machine records the heart’s electrical activity. A nebulizer turns liquid medicine into a mist.\nWhich machine records the heart’s electrical activity?",
+        "answer": "ECG machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews tourniquet, surgical mask, reflex hammer. The next step focuses on tourniquet.\nWhich option is the focus of the next step?",
-        "answer": "tourniquet",
+        "prompt": "A tour guide identifies a tourniquet, a surgical mask, and a reflex hammer. The reflex hammer is used by clinicians to check certain reflexes. The tour provides names only, not instructions for use.\nWhich tool is used to check reflexes?",
+        "answer": "reflex hammer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews heart, lungs, brain. The next step focuses on heart.\nWhich option is the focus of the next step?",
+        "prompt": "An anatomical display shows the heart, lungs, and brain. The heart pumps blood, the lungs exchange gases, and the brain coordinates many body functions.\nWhich organ pumps blood?",
         "answer": "heart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews bone, blood, pulse. The next step focuses on bone.\nWhich option is the focus of the next step?",
-        "answer": "bone",
+        "prompt": "A teaching model shows bone and blood. The educator explains that a pulse is the rhythmic pressure wave in arteries associated with the heartbeat.\nWhich term describes the rhythmic beat felt at an artery?",
+        "answer": "pulse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews fever, infection, injury. The next step focuses on fever.\nWhich option is the focus of the next step?",
-        "answer": "fever",
+        "prompt": "The educator distinguishes fever, infection, and injury. Fever means a raised body temperature; infection involves harmful microorganisms; injury means physical damage to the body. The terms are not diagnoses for the visitor.\nWhich term means physical damage?",
+        "answer": "injury",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: At an equipment exhibition, a pulse oximeter estimates oxygen saturation using a sensor. An ECG machine records the heart’s electrical activity. A nebulizer turns liquid medicine into a mist.",
+        "answer": "An ECG machine records the heart’s electrical activity.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “blood bank” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two groups do the learners make?",
-        "answer": "Equipment and body parts",
+        "prompt": "An educator uses models rather than examining visitors. The heart pumps blood, the lungs exchange gases, and the brain coordinates body functions. A pulse oximeter estimates oxygen saturation; an ECG machine records heart electrical activity. The educator explains the difference between an injury and an infection. These words describe different ideas, and a fever is not itself proof of a particular disease. The session teaches vocabulary. A qualified clinician assesses a person’s symptoms and clinical information.\nWhich machine records the heart’s electrical activity?",
+        "answer": "ECG machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 5: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "An educator uses models rather than examining visitors."
     },
     "spacedReview": "1 lesson(s) back: blood bank, stethoscope from hospital-4\n3 lesson(s) back: neurologist, orthopedist from hospital-2\n7 lesson(s) back: Restroom, Parking Garage from shopping-mall-2"
   },
@@ -934,135 +940,134 @@
       "تشخيص"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 6 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["fracture", "allergy", "rash"],
-          "scenario": "During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture.",
+          "scenario": "At a vocabulary session, a fracture means a broken bone. An allergy is an immune reaction to a substance, and a rash is a change affecting the skin’s appearance.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which word means a broken bone?",
             "options": ["fracture", "allergy", "rash"],
             "expectedAnswer": "fracture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including fracture, allergy, rash in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: At a vocabulary session, a fracture means a broken bone. An allergy is an immune reaction to a substance, and a rash is a change affecting the skin’s appearance. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["liver", "kidneys", "spine"],
-          "scenario": "During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver.",
+          "scenario": "A torso model shows the liver and kidneys. A separate spine model shows vertebrae. The kidneys filter blood and make urine.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which organs make urine?",
             "options": ["liver", "kidneys", "spine"],
-            "expectedAnswer": "liver"
+            "expectedAnswer": "kidneys"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including liver, kidneys, spine in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A torso model shows the liver and kidneys. A separate spine model shows vertebrae. The kidneys filter blood and make urine. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["stomach", "intestines", "muscles"],
-          "scenario": "During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach.",
+          "scenario": "A biology display identifies the stomach, intestines, and muscles. The stomach and intestines are involved in digestion, while muscles contract to produce movement.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which tissues contract to produce movement?",
             "options": ["stomach", "intestines", "muscles"],
-            "expectedAnswer": "stomach"
+            "expectedAnswer": "muscles"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including stomach, intestines, muscles in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A biology display identifies the stomach, intestines, and muscles. The stomach and intestines are involved in digestion, while muscles contract to produce movement. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["arteries", "appendix", "inflammation"],
-          "scenario": "During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries.",
+          "scenario": "The educator compares arteries, the appendix, and inflammation. Arteries carry blood away from the heart. The appendix is a small pouch connected to the large intestine. Inflammation is a protective response that can cause swelling and other changes.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which structures carry blood away from the heart?",
             "options": ["arteries", "appendix", "inflammation"],
             "expectedAnswer": "arteries"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including arteries, appendix, inflammation in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The educator compares arteries, the appendix, and inflammation. Arteries carry blood away from the heart. The appendix is a small pouch connected to the large intestine. Inflammation is a protective response that can cause swelling and other changes. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["nausea", "examination", "diagnosis"],
-          "scenario": "During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea.",
+          "scenario": "A patient describes nausea before an examination. The clinician listens and examines the patient before making a diagnosis. Nausea means feeling as though you may vomit.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names that feeling?",
             "options": ["nausea", "examination", "diagnosis"],
             "expectedAnswer": "nausea"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including nausea, examination, diagnosis in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A patient describes nausea before an examination. The clinician listens and examines the patient before making a diagnosis. Nausea means feeling as though you may vomit. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 6: A short reading",
-      "text": "Maya labels a diagram showing the liver, kidneys, stomach, and intestines. Omar identifies the spine and muscles on another drawing. The lesson also introduces fracture, allergy, and rash as words used in health conversations. They practice describing a picture clearly rather than trying to diagnose a person from it.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 6: understanding the hospital",
+      "text": "A patient describes nausea at an appointment. The clinician listens, asks questions, and conducts an examination before explaining a diagnosis. In a separate educational discussion, the class identifies kidneys, muscles, arteries, and the appendix on teaching models. Kidneys filter blood and make urine; muscles contract to produce movement. An artery carries blood away from the heart. The patient’s actual condition cannot be determined from a vocabulary lesson or an illustration.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews fracture, allergy, rash. The next step focuses on fracture.\nWhich option is the focus of the next step?",
+        "prompt": "At a vocabulary session, a fracture means a broken bone. An allergy is an immune reaction to a substance, and a rash is a change affecting the skin’s appearance.\nWhich word means a broken bone?",
         "answer": "fracture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews liver, kidneys, spine. The next step focuses on liver.\nWhich option is the focus of the next step?",
-        "answer": "liver",
+        "prompt": "A torso model shows the liver and kidneys. A separate spine model shows vertebrae. The kidneys filter blood and make urine.\nWhich organs make urine?",
+        "answer": "kidneys",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews stomach, intestines, muscles. The next step focuses on stomach.\nWhich option is the focus of the next step?",
-        "answer": "stomach",
+        "prompt": "A biology display identifies the stomach, intestines, and muscles. The stomach and intestines are involved in digestion, while muscles contract to produce movement.\nWhich tissues contract to produce movement?",
+        "answer": "muscles",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews arteries, appendix, inflammation. The next step focuses on arteries.\nWhich option is the focus of the next step?",
+        "prompt": "The educator compares arteries, the appendix, and inflammation. Arteries carry blood away from the heart. The appendix is a small pouch connected to the large intestine. Inflammation is a protective response that can cause swelling and other changes.\nWhich structures carry blood away from the heart?",
         "answer": "arteries",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews nausea, examination, diagnosis. The next step focuses on nausea.\nWhich option is the focus of the next step?",
+        "prompt": "A patient describes nausea before an examination. The clinician listens and examines the patient before making a diagnosis. Nausea means feeling as though you may vomit.\nWhich term names that feeling?",
         "answer": "nausea",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: At a vocabulary session, a fracture means a broken bone. An allergy is an immune reaction to a substance, and a rash is a change affecting the skin’s appearance.",
+        "answer": "A fracture is a break in a bone.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “pulse oximeter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Do the learners diagnose someone or describe a picture?",
-        "answer": "They describe a picture",
+        "prompt": "A patient describes nausea at an appointment. The clinician listens, asks questions, and conducts an examination before explaining a diagnosis. In a separate educational discussion, the class identifies kidneys, muscles, arteries, and the appendix on teaching models. Kidneys filter blood and make urine; muscles contract to produce movement. An artery carries blood away from the heart. The patient’s actual condition cannot be determined from a vocabulary lesson or an illustration.\nWhich organs filter blood and make urine?",
+        "answer": "kidneys",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 6: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "A patient describes nausea at an appointment."
     },
     "spacedReview": "1 lesson(s) back: pulse oximeter, ECG machine from hospital-5\n3 lesson(s) back: patient room, intensive care unit from hospital-3\n7 lesson(s) back: Shopping Bag, Wallet from shopping-mall-3"
   },
@@ -1100,10 +1105,10 @@
       "تحليل دم",
       "حقنة",
       "تطعيم",
-      "موجات فوق صوتية",
+      "فحص بالموجات فوق الصوتية",
       "فحص بالرنين المغناطيسي",
       "غُرز جراحية",
-      "علاج جسدي",
+      "علاج طبيعي",
       "خزعة",
       "غسيل الكلى",
       "نقل دم",
@@ -1111,135 +1116,134 @@
       "تنظير"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 7 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["prescription", "surgery", "X-ray"],
-          "scenario": "During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription.",
+          "scenario": "The clinician explains a prescription listing medicines, an operation called surgery, and an X-ray used for imaging. The patient can ask questions before decisions are made.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which document lists prescribed medicines?",
             "options": ["prescription", "surgery", "X-ray"],
             "expectedAnswer": "prescription"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including prescription, surgery, X-ray in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The clinician explains a prescription listing medicines, an operation called surgery, and an X-ray used for imaging. The patient can ask questions before decisions are made. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["blood test", "injection", "vaccination"],
-          "scenario": "During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test.",
+          "scenario": "A hospital information sheet describes a blood test on a sample, an injection delivering a substance, and vaccination intended to prepare immune protection against a particular infection.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term refers to preparing immune protection?",
             "options": ["blood test", "injection", "vaccination"],
-            "expectedAnswer": "blood test"
+            "expectedAnswer": "vaccination"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including blood test, injection, vaccination in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A hospital information sheet describes a blood test on a sample, an injection delivering a substance, and vaccination intended to prepare immune protection against a particular infection. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["ultrasound", "MRI scan", "stitches"],
-          "scenario": "During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound.",
+          "scenario": "A clinician discusses imaging options without choosing treatment for the reader. Ultrasound uses sound waves; an MRI scan uses magnetic fields and radio waves. Stitches join the edges of a wound.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which imaging test uses sound waves?",
             "options": ["ultrasound", "MRI scan", "stitches"],
             "expectedAnswer": "ultrasound"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including ultrasound, MRI scan, stitches in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A clinician discusses imaging options without choosing treatment for the reader. Ultrasound uses sound waves; an MRI scan uses magnetic fields and radio waves. Stitches join the edges of a wound. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["physical therapy", "biopsy", "dialysis"],
-          "scenario": "During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy.",
+          "scenario": "The patient leaflet explains physical therapy to support movement, a biopsy that removes a sample for examination, and dialysis that helps remove waste and excess fluid when kidneys cannot do so adequately.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which procedure removes a sample for examination?",
             "options": ["physical therapy", "biopsy", "dialysis"],
-            "expectedAnswer": "physical therapy"
+            "expectedAnswer": "biopsy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including physical therapy, biopsy, dialysis in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The patient leaflet explains physical therapy to support movement, a biopsy that removes a sample for examination, and dialysis that helps remove waste and excess fluid when kidneys cannot do so adequately. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["transfusion", "chemotherapy", "endoscopy"],
-          "scenario": "During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion.",
+          "scenario": "A clinician explains a transfusion using donated blood components, chemotherapy using medicines to treat cancer, and endoscopy using an instrument to look inside the body.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which procedure transfers blood components?",
             "options": ["transfusion", "chemotherapy", "endoscopy"],
             "expectedAnswer": "transfusion"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including transfusion, chemotherapy, endoscopy in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A clinician explains a transfusion using donated blood components, chemotherapy using medicines to treat cancer, and endoscopy using an instrument to look inside the body. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 7: A short reading",
-      "text": "The receptionist gives Omar directions to the blood test room. Maya has an appointment for an X-ray in another department. A poster lists ultrasound and MRI scan as other services. They check their appointment details and ask where to wait. The receptionist explains that the nurse will call their names.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 7: understanding the hospital",
+      "text": "A patient receives an information leaflet before deciding about a procedure. It explains a blood test, ultrasound, and MRI scanning in plain language. A biopsy removes a sample for examination. A transfusion provides blood components, while dialysis helps remove waste and excess fluid when kidneys cannot do so adequately. The patient writes down questions for the clinician. The leaflet describes words and purposes without providing instructions for performing a procedure or choosing a treatment.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews prescription, surgery, X-ray. The next step focuses on prescription.\nWhich option is the focus of the next step?",
+        "prompt": "The clinician explains a prescription listing medicines, an operation called surgery, and an X-ray used for imaging. The patient can ask questions before decisions are made.\nWhich document lists prescribed medicines?",
         "answer": "prescription",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews blood test, injection, vaccination. The next step focuses on blood test.\nWhich option is the focus of the next step?",
-        "answer": "blood test",
+        "prompt": "A hospital information sheet describes a blood test on a sample, an injection delivering a substance, and vaccination intended to prepare immune protection against a particular infection.\nWhich term refers to preparing immune protection?",
+        "answer": "vaccination",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews ultrasound, MRI scan, stitches. The next step focuses on ultrasound.\nWhich option is the focus of the next step?",
+        "prompt": "A clinician discusses imaging options without choosing treatment for the reader. Ultrasound uses sound waves; an MRI scan uses magnetic fields and radio waves. Stitches join the edges of a wound.\nWhich imaging test uses sound waves?",
         "answer": "ultrasound",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews physical therapy, biopsy, dialysis. The next step focuses on physical therapy.\nWhich option is the focus of the next step?",
-        "answer": "physical therapy",
+        "prompt": "The patient leaflet explains physical therapy to support movement, a biopsy that removes a sample for examination, and dialysis that helps remove waste and excess fluid when kidneys cannot do so adequately.\nWhich procedure removes a sample for examination?",
+        "answer": "biopsy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews transfusion, chemotherapy, endoscopy. The next step focuses on transfusion.\nWhich option is the focus of the next step?",
+        "prompt": "A clinician explains a transfusion using donated blood components, chemotherapy using medicines to treat cancer, and endoscopy using an instrument to look inside the body.\nWhich procedure transfers blood components?",
         "answer": "transfusion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: The clinician explains a prescription listing medicines, an operation called surgery, and an X-ray used for imaging. The patient can ask questions before decisions are made.",
+        "answer": "A prescription records instructions for prescribed medicines.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “fracture” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What appointment does Maya have?",
-        "answer": "An X-ray",
+        "prompt": "A patient receives an information leaflet before deciding about a procedure. It explains a blood test, ultrasound, and MRI scanning in plain language. A biopsy removes a sample for examination. A transfusion provides blood components, while dialysis helps remove waste and excess fluid when kidneys cannot do so adequately. The patient writes down questions for the clinician. The leaflet describes words and purposes without providing instructions for performing a procedure or choosing a treatment.\nWhich procedure removes a sample for examination?",
+        "answer": "biopsy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 7: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "A patient receives an information leaflet before deciding about a procedure."
     },
     "spacedReview": "1 lesson(s) back: fracture, allergy from hospital-6\n3 lesson(s) back: blood bank, stethoscope from hospital-4\n7 lesson(s) back: Photo Booth, Karaoke from shopping-mall-4"
   },
@@ -1277,8 +1281,8 @@
       "سرير مستشفى",
       "وسادة",
       "بطانية",
-      "ثوب طويل",
-      "خريطة ملاحية",
+      "ثوب فحص أو رداء مستشفى",
+      "سجل طبي للمريض",
       "لوح كتابة",
       "دواء",
       "حبوب دواء",
@@ -1288,135 +1292,134 @@
       "سيارة إسعاف"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 8 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["CT scan", "colonoscopy", "transplant"],
-          "scenario": "During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan.",
+          "scenario": "A hospital guide compares CT scanning, colonoscopy, and transplantation. A CT scan produces detailed images using X-rays. Colonoscopy examines the large bowel with a flexible camera. A transplant replaces an organ or tissue with donated material.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which procedure examines the large bowel?",
             "options": ["CT scan", "colonoscopy", "transplant"],
-            "expectedAnswer": "CT scan"
+            "expectedAnswer": "colonoscopy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including CT scan, colonoscopy, transplant in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A hospital guide compares CT scanning, colonoscopy, and transplantation. A CT scan produces detailed images using X-rays. Colonoscopy examines the large bowel with a flexible camera. A transplant replaces an organ or tissue with donated material. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["hospital bed", "pillow", "blanket"],
-          "scenario": "During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed.",
+          "scenario": "Before a patient arrives, staff prepare the hospital bed with a pillow and blanket. They check that the bed and nearby area are ready for the patient.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item supports the patient’s head?",
             "options": ["hospital bed", "pillow", "blanket"],
-            "expectedAnswer": "hospital bed"
+            "expectedAnswer": "pillow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including hospital bed, pillow, blanket in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: Before a patient arrives, staff prepare the hospital bed with a pillow and blanket. They check that the bed and nearby area are ready for the patient. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["gown", "chart", "clipboard"],
-          "scenario": "During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown.",
+          "scenario": "The patient puts on a gown for an examination. Staff use a chart to record care information and a clipboard to hold paper documents.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is worn by the patient?",
             "options": ["gown", "chart", "clipboard"],
             "expectedAnswer": "gown"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including gown, chart, clipboard in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The patient puts on a gown for an examination. Staff use a chart to record care information and a clipboard to hold paper documents. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["medicine", "pills", "ointment"],
-          "scenario": "During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine.",
+          "scenario": "A pharmacist explains that medicine is a general term. Pills are a solid form taken by mouth when prescribed; ointment is a preparation applied to a body surface as directed.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which option is a solid medicine form?",
             "options": ["medicine", "pills", "ointment"],
-            "expectedAnswer": "medicine"
+            "expectedAnswer": "pills"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including medicine, pills, ointment in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A pharmacist explains that medicine is a general term. Pills are a solid form taken by mouth when prescribed; ointment is a preparation applied to a body surface as directed. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["crutches", "walker", "ambulance"],
-          "scenario": "During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches.",
+          "scenario": "A mobility display shows crutches and a walker. Outside, an ambulance is parked for transporting people who need emergency care.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which vehicle transports people needing emergency care?",
             "options": ["crutches", "walker", "ambulance"],
-            "expectedAnswer": "crutches"
+            "expectedAnswer": "ambulance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including crutches, walker, ambulance in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: A mobility display shows crutches and a walker. Outside, an ambulance is parked for transporting people who need emergency care. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 8: A short reading",
-      "text": "Omar visits a relative in hospital. A chart and clipboard are beside the hospital bed. There is a pillow and blanket on the bed and a gown in the cupboard. Maya checks the visitor information. Their relative has a CT scan scheduled later, so they keep the visit short and agree to return tomorrow.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 8: understanding the hospital",
+      "text": "A visitor follows a staff member to a patient room. The hospital bed has a pillow and blanket. A clipboard holds paperwork, and the patient wears a gown during an examination. In the corridor, the visitor sees a walker and crutches used as mobility aids. The pharmacist explains that pills and ointment are different medicine forms. The visitor asks staff about arrangements rather than moving equipment or giving medicines. Clinical decisions remain with qualified professionals.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews CT scan, colonoscopy, transplant. The next step focuses on CT scan.\nWhich option is the focus of the next step?",
-        "answer": "CT scan",
+        "prompt": "A hospital guide compares CT scanning, colonoscopy, and transplantation. A CT scan produces detailed images using X-rays. Colonoscopy examines the large bowel with a flexible camera. A transplant replaces an organ or tissue with donated material.\nWhich procedure examines the large bowel?",
+        "answer": "colonoscopy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews hospital bed, pillow, blanket. The next step focuses on hospital bed.\nWhich option is the focus of the next step?",
-        "answer": "hospital bed",
+        "prompt": "Before a patient arrives, staff prepare the hospital bed with a pillow and blanket. They check that the bed and nearby area are ready for the patient.\nWhich item supports the patient’s head?",
+        "answer": "pillow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews gown, chart, clipboard. The next step focuses on gown.\nWhich option is the focus of the next step?",
+        "prompt": "The patient puts on a gown for an examination. Staff use a chart to record care information and a clipboard to hold paper documents.\nWhich item is worn by the patient?",
         "answer": "gown",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews medicine, pills, ointment. The next step focuses on medicine.\nWhich option is the focus of the next step?",
-        "answer": "medicine",
+        "prompt": "A pharmacist explains that medicine is a general term. Pills are a solid form taken by mouth when prescribed; ointment is a preparation applied to a body surface as directed.\nWhich option is a solid medicine form?",
+        "answer": "pills",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews crutches, walker, ambulance. The next step focuses on crutches.\nWhich option is the focus of the next step?",
-        "answer": "crutches",
+        "prompt": "A mobility display shows crutches and a walker. Outside, an ambulance is parked for transporting people who need emergency care.\nWhich vehicle transports people needing emergency care?",
+        "answer": "ambulance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: A hospital guide compares CT scanning, colonoscopy, and transplantation. A CT scan produces detailed images using X-rays. Colonoscopy examines the large bowel with a flexible camera. A transplant replaces an organ or tissue with donated material.",
+        "answer": "Colonoscopy examines the large bowel using a flexible camera.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “prescription” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Why do Maya and Omar keep their visit short?",
-        "answer": "Their relative has a CT scan scheduled later",
+        "prompt": "A visitor follows a staff member to a patient room. The hospital bed has a pillow and blanket. A clipboard holds paperwork, and the patient wears a gown during an examination. In the corridor, the visitor sees a walker and crutches used as mobility aids. The pharmacist explains that pills and ointment are different medicine forms. The visitor asks staff about arrangements rather than moving equipment or giving medicines. Clinical decisions remain with qualified professionals.\nWhich item holds paperwork?",
+        "answer": "clipboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 8: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "A visitor follows a staff member to a patient room."
     },
     "spacedReview": "1 lesson(s) back: prescription, surgery from hospital-7\n3 lesson(s) back: pulse oximeter, ECG machine from hospital-5\n7 lesson(s) back: doctor, nurse from hospital-1"
   },
@@ -1451,97 +1454,96 @@
       "أسطوانة أكسجين طبي"
     ],
     "usage": {
-      "goal": "Learn to use l5 hospital 9 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to l5 hospital.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Understand hospital roles, locations, and equipment in a supported explanation.",
+      "canDoStatement": "Can understand a supported hospital explanation and ask which person, room, or item is meant. Specialist medical vocabulary is an extension, not a claim that every term is common at the labelled CEFR task level.",
+      "textType": "patient-information",
+      "readingTarget": "Supported health-vocabulary reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["face shield", "hand sanitizer", "sharps container"],
-          "scenario": "During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield.",
+          "scenario": "At an orientation display, a face shield protects part of a worker’s face. Hand sanitizer is used for hand hygiene, and a sharps container holds used sharp medical items for safe disposal.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which container is intended for used sharp medical items?",
             "options": ["face shield", "hand sanitizer", "sharps container"],
-            "expectedAnswer": "face shield"
+            "expectedAnswer": "sharps container"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including face shield, hand sanitizer, sharps container in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: At an orientation display, a face shield protects part of a worker’s face. Hand sanitizer is used for hand hygiene, and a sharps container holds used sharp medical items for safe disposal. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["bedpan", "patient wristband", "call button"],
-          "scenario": "During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan.",
+          "scenario": "Staff show a bedpan for toileting support and a wristband identifying a patient. A call button allows the patient to request help from staff.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item allows a patient to request help?",
             "options": ["bedpan", "patient wristband", "call button"],
-            "expectedAnswer": "bedpan"
+            "expectedAnswer": "call button"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including bedpan, patient wristband, call button in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: Staff show a bedpan for toileting support and a wristband identifying a patient. A call button allows the patient to request help from staff. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["IV pole", "oxygen tank"],
-          "scenario": "During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole.",
+          "scenario": "The equipment display includes an IV pole that holds infusion containers and an oxygen tank that stores oxygen under pressure. Trained staff handle this equipment under hospital procedures.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item holds infusion containers?",
             "options": ["IV pole", "oxygen tank", "face shield"],
             "expectedAnswer": "IV pole"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l5 hospital context illustrating this situation: During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l5 hospital scene showing lesson-related items or actions including IV pole, oxygen tank in a natural setting."
+          "imageBrief": "Photorealistic adult hospital education setting supporting this text: The equipment display includes an IV pole that holds infusion containers and an oxygen tank that stores oxygen under pressure. Trained staff handle this equipment under hospital procedures. Show a manufactured teaching display or ordinary administrative setting, never treatment steps or a patient diagnosis. Do not show every named object. Medical equipment must have correct shape and context. No readable documents, patient identifiers, logos, text overlays, arrows, answer highlighting, exposed anatomy, blood, or gore. Invisible functions are established only by the written text. For equipment or anatomy scenes, show only the necessary display objects; include people only when the role or interaction is essential to the written task.",
+          "imageAlt": "Hospital education setting with equipment or anatomical teaching models related to the written explanation; final visible details require visual review."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L5 Hospital 9: A short reading",
-      "text": "Maya attends workplace orientation in a hospital. The guide identifies a face shield, hand sanitizer, and a sharps container. Omar locates the call button beside a patient's bed. A wristband carries the patient's details. They ask the guide about the IV pole and oxygen tank before writing the equipment names in their notes.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about L5 Hospital. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "L5 Hospital 9: understanding the hospital",
+      "text": "Before a patient arrives, staff check the room. A call button allows the patient to request help. A wristband helps identify the patient, and an IV pole holds infusion containers. A sharps container is designed for used sharp medical items. The educator also identifies a face shield and hand sanitizer. The visitor learns names without handling the equipment. Images support recognition; the written explanation establishes each item’s purpose, including functions that cannot be judged from appearance alone. The patient wristband records identification information that staff check during care. Its actual details are private and are not displayed in the lesson’s illustration.",
+      "imageBrief": "An adult hospital information or education session with correct hospital equipment and closed folders. No clinical procedure, readable patient information, stereotypes, labels, or diagnostic claim."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews face shield, hand sanitizer, sharps container. The next step focuses on face shield.\nWhich option is the focus of the next step?",
-        "answer": "face shield",
+        "prompt": "At an orientation display, a face shield protects part of a worker’s face. Hand sanitizer is used for hand hygiene, and a sharps container holds used sharp medical items for safe disposal.\nWhich container is intended for used sharp medical items?",
+        "answer": "sharps container",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews bedpan, patient wristband, call button. The next step focuses on bedpan.\nWhich option is the focus of the next step?",
-        "answer": "bedpan",
+        "prompt": "Staff show a bedpan for toileting support and a wristband identifying a patient. A call button allows the patient to request help from staff.\nWhich item allows a patient to request help?",
+        "answer": "call button",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews IV pole, oxygen tank, face shield. The next step focuses on IV pole.\nWhich option is the focus of the next step?",
+        "prompt": "The equipment display includes an IV pole that holds infusion containers and an oxygen tank that stores oxygen under pressure. Trained staff handle this equipment under hospital procedures.\nWhich item holds infusion containers?",
         "answer": "IV pole",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Explain one role, room, or device from the first scene to a hospital visitor, without giving medical advice.\nUse this information: At an orientation display, a face shield protects part of a worker’s face. Hand sanitizer is used for hand hygiene, and a sharps container holds used sharp medical items for safe disposal.",
+        "answer": "A sharps container holds used sharp medical items for safe disposal.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “CT scan” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where is the call button?",
-        "answer": "Beside a patient's bed",
+        "prompt": "Before a patient arrives, staff check the room. A call button allows the patient to request help. A wristband helps identify the patient, and an IV pole holds infusion containers. A sharps container is designed for used sharp medical items. The educator also identifies a face shield and hand sanitizer. The visitor learns names without handling the equipment. Images support recognition; the written explanation establishes each item’s purpose, including functions that cannot be judged from appearance alone. The patient wristband records identification information that staff check during care. Its actual details are private and are not displayed in the lesson’s illustration.\nWhich item allows a patient to request help?",
+        "answer": "call button",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "reading"
       }
     ],
     "video": {
-      "title": "L5 Hospital: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "L5 Hospital 9: understanding the hospital",
+      "idea": "Narrate the original patient-information text in an adult hospital education setting. Use correct equipment or teaching models. Do not demonstrate procedures.",
+      "scriptStarter": "Before a patient arrives, staff check the room."
     },
     "spacedReview": "1 lesson(s) back: CT scan, colonoscopy from hospital-8\n3 lesson(s) back: fracture, allergy from hospital-6\n7 lesson(s) back: neurologist, orthopedist from hospital-2"
   }

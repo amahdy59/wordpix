@@ -34,11 +34,11 @@
       "ممر هواء ساخن",
       "ممر هواء بارد",
       "مزود طاقة غير منقطعة",
-      "مولّد",
+      "مولّد كهربائي",
       "وحدة توزيع الطاقة (PDU)",
       "لوحة توصيل",
       "مبدّل شبكي",
-      "موجّه",
+      "موجّه شبكي",
       "جدار حماية",
       "موازن أحمال",
       "ألياف ضوئية"
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "105-135 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Server Rack", "Blade Server", "Cable Tray", "Raised Floor"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.",
+          "scenario": "During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Server Rack", "Blade Server", "Cable Tray"],
-            "expectedAnswer": "Server Rack"
+            "question": "Which structure supports the grouped cables?",
+            "options": ["Cable Tray", "Server Rack", "Blade Server"],
+            "expectedAnswer": "Cable Tray"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Server Rack as the central item; include Server Rack, Blade Server, and Cable Tray naturally where visually appropriate, but make the real-world use of Server Rack the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cable Tray in a data center context. Use the written scenario as the source of meaning: During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hot Aisle", "Cold Aisle", "Ups", "Generator"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.",
+          "scenario": "The guide explains the Hot Aisle and Cold Aisle airflow arrangement. A Ups supplies temporary power after an interruption, while a Generator provides electrical power from a mechanical energy source. Neither is demonstrated by visitors.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hot Aisle", "Cold Aisle", "Ups"],
-            "expectedAnswer": "Hot Aisle"
+            "question": "Which device supplies temporary power after an interruption?",
+            "options": ["Ups", "Hot Aisle", "Cold Aisle"],
+            "expectedAnswer": "Ups"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Hot Aisle as the central item; include Hot Aisle, Cold Aisle, and Ups naturally where visually appropriate, but make the real-world use of Hot Aisle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ups in a data center context. Use the written scenario as the source of meaning: The guide explains the Hot Aisle and Cold Aisle airflow arrangement. A Ups supplies temporary power after an interruption, while a Generator provides electrical power from a mechanical energy source. Neither is demonstrated by visitors. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pdu", "Patch Panel", "Switch", "Router"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.",
+          "scenario": "A Pdu distributes electrical power, and a Patch Panel organizes cable connections. A Switch connects network devices, while a Router forwards data between different networks.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pdu", "Patch Panel", "Switch"],
-            "expectedAnswer": "Pdu"
+            "question": "Which device forwards data between different networks?",
+            "options": ["Router", "Pdu", "Patch Panel"],
+            "expectedAnswer": "Router"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Pdu as the central item; include Pdu, Patch Panel, and Switch naturally where visually appropriate, but make the real-world use of Pdu the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Router in a data center context. Use the written scenario as the source of meaning: A Pdu distributes electrical power, and a Patch Panel organizes cable connections. A Switch connects network devices, while a Router forwards data between different networks. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Firewall", "Load Balancer", "Fiber Optic"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.",
+          "scenario": "The guide contrasts a Firewall controlling permitted traffic, a Load Balancer distributing requests among servers, and Fiber Optic connections carrying light pulses.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Firewall", "Load Balancer", "Fiber Optic"],
-            "expectedAnswer": "Firewall"
+            "question": "Which system distributes requests among servers?",
+            "options": ["Load Balancer", "Firewall", "Fiber Optic"],
+            "expectedAnswer": "Load Balancer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Firewall as the central item; include Firewall, Load Balancer, and Fiber Optic naturally where visually appropriate, but make the real-world use of Firewall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Load Balancer in a data center context. Use the written scenario as the source of meaning: The guide contrasts a Firewall controlling permitted traffic, a Load Balancer distributing requests among servers, and Fiber Optic connections carrying light pulses. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Data Center",
-      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Server Rack, Blade Server, Cable Tray, and Raised Floor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hot Aisle, Cold Aisle, Ups, and Generator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pdu, Patch Panel, Switch, and Router. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Firewall, Load Balancer, and Fiber Optic. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Data Center: A visitor’s questions",
+      "text": "During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface. The guide explains the Hot Aisle and Cold Aisle airflow arrangement. A Ups supplies temporary power after an interruption, while a Generator provides electrical power from a mechanical energy source. Neither is demonstrated by visitors. A Pdu distributes electrical power, and a Patch Panel organizes cable connections. A Switch connects network devices, while a Router forwards data between different networks. The guide contrasts a Firewall controlling permitted traffic, a Load Balancer distributing requests among servers, and Fiber Optic connections carrying light pulses.",
+      "imageBrief": "One uncluttered data center setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Server Rack, Blade Server, Cable Tray, and Raised Floor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Server Rack",
+        "prompt": "During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface.\nWhich structure supports the grouped cables?",
+        "answer": "Cable Tray",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Aisle, Cold Aisle, Ups, and Generator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hot Aisle",
+        "prompt": "The guide explains the Hot Aisle and Cold Aisle airflow arrangement. A Ups supplies temporary power after an interruption, while a Generator provides electrical power from a mechanical energy source. Neither is demonstrated by visitors.\nWhich device supplies temporary power after an interruption?",
+        "answer": "Ups",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pdu, Patch Panel, Switch, and Router and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pdu",
+        "prompt": "A Pdu distributes electrical power, and a Patch Panel organizes cable connections. A Switch connects network devices, while a Router forwards data between different networks.\nWhich device forwards data between different networks?",
+        "answer": "Router",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Firewall, Load Balancer, and Fiber Optic and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Firewall",
+        "prompt": "The guide contrasts a Firewall controlling permitted traffic, a Load Balancer distributing requests among servers, and Fiber Optic connections carrying light pulses.\nWhich system distributes requests among servers?",
+        "answer": "Load Balancer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface. The guide explains the Hot Aisle and Cold Aisle airflow arrangement. A Ups supplies temporary power after an interruption, while a Generator provides electrical power from a mechanical energy source. Neither is demonstrated by visitors. A Pdu distributes electrical power, and a Patch Panel organizes cable connections. A Switch connects network devices, while a Router forwards data between different networks. The guide contrasts a Firewall controlling permitted traffic, a Load Balancer distributing requests among servers, and Fiber Optic connections carrying light pulses.\nExplain the difference between Server Rack and Blade Server using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Server Rack"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Mechanical Keyboard” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the data center task. Use Server Rack, Blade Server, Cable Tray, Raised Floor, Hot Aisle, Cold Aisle, Ups, Generator, Pdu, Patch Panel, Switch, Router, Firewall, Load Balancer, and Fiber Optic in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Server Rack, Blade Server, Cable Tray, Raised Floor, Hot Aisle, Cold Aisle, Ups, Generator, Pdu, Patch Panel, Switch, Router, Firewall, Load Balancer, Fiber Optic to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Data Center: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Data Center: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Server Rack and Blade Server, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During an authorized data-center tour, Noor sees a Blade Server fitted into a Server Rack. A Cable Tray supports grouped cables, and a Raised Floor creates space for services beneath the walking surface. Pause and answer: Which structure supports the grouped cables?"
     },
     "spacedReview": "1 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3\n3 lesson(s) back: Smartphone, Tablet from tech-gadgets-1\n7 lesson(s) back: Smart Speaker, Voice Command from smart-home-1"
   },
@@ -203,7 +186,7 @@
     "targetWordsArabic": [
       "إيثرنت",
       "عرض النطاق",
-      "زمن الاستجابة",
+      "زمن التأخير",
       "نظام أسماء النطاقات",
       "شبكة خاصة افتراضية",
       "قرص صلب",
@@ -215,135 +198,118 @@
       "محرك أشرطة تخزين",
       "تخزين سحابة",
       "لقطة حالة",
-      "نسخ متماثل"
+      "نسخ متماثل للبيانات"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "112-142 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ethernet", "Bandwidth", "Latency", "Dns"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.",
+          "scenario": "A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ethernet", "Bandwidth", "Latency"],
-            "expectedAnswer": "Ethernet"
+            "question": "Which measure concerns request-and-response delay?",
+            "options": ["Latency", "Ethernet", "Bandwidth"],
+            "expectedAnswer": "Latency"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Ethernet as the central item; include Ethernet, Bandwidth, and Latency naturally where visually appropriate, but make the real-world use of Ethernet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Latency in a data center context. Use the written scenario as the source of meaning: A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vpn", "Hard Drive", "Ssd", "Raid"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.",
+          "scenario": "The equipment list includes a Vpn service, a Hard Drive, an Ssd, and a Raid arrangement. An Ssd stores data without a spinning disk. Raid alone is not a substitute for a separate recoverable backup.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Vpn", "Hard Drive", "Ssd"],
-            "expectedAnswer": "Vpn"
+            "question": "Which drive stores data without a spinning disk?",
+            "options": ["Ssd", "Vpn", "Hard Drive"],
+            "expectedAnswer": "Ssd"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Vpn as the central item; include Vpn, Hard Drive, and Ssd naturally where visually appropriate, but make the real-world use of Vpn the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ssd in a data center context. Use the written scenario as the source of meaning: The equipment list includes a Vpn service, a Hard Drive, an Ssd, and a Raid arrangement. An Ssd stores data without a spinning disk. Raid alone is not a substitute for a separate recoverable backup. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nas", "San", "Backup", "Tape Drive"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.",
+          "scenario": "The storage discussion distinguishes Nas for network file access, a San for a dedicated storage network, and a Backup copy for recovery. A Tape Drive can write archival data to tape.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Nas", "San", "Backup"],
-            "expectedAnswer": "Nas"
+            "question": "Which term names a separate copy kept for recovery?",
+            "options": ["Backup", "Nas", "San"],
+            "expectedAnswer": "Backup"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Nas as the central item; include Nas, San, and Backup naturally where visually appropriate, but make the real-world use of Nas the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Backup in a data center context. Use the written scenario as the source of meaning: The storage discussion distinguishes Nas for network file access, a San for a dedicated storage network, and a Backup copy for recovery. A Tape Drive can write archival data to tape. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cloud Storage", "Snapshot", "Replication"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.",
+          "scenario": "The administrator compares Cloud Storage, a Snapshot, and Replication. A Snapshot records a system or data state at a particular time; Replication maintains corresponding copies across systems.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cloud Storage", "Snapshot", "Replication"],
-            "expectedAnswer": "Cloud Storage"
+            "question": "Which term names a state recorded at a particular time?",
+            "options": ["Snapshot", "Cloud Storage", "Replication"],
+            "expectedAnswer": "Snapshot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Cloud Storage as the central item; include Cloud Storage, Snapshot, and Replication naturally where visually appropriate, but make the real-world use of Cloud Storage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Snapshot in a data center context. Use the written scenario as the source of meaning: The administrator compares Cloud Storage, a Snapshot, and Replication. A Snapshot records a system or data state at a particular time; Replication maintains corresponding copies across systems. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Data Center",
-      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ethernet, Bandwidth, Latency, and Dns. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vpn, Hard Drive, Ssd, and Raid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Nas, San, Backup, and Tape Drive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cloud Storage, Snapshot, and Replication. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Data Center: Understanding the different roles",
+      "text": "A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information. The equipment list includes a Vpn service, a Hard Drive, an Ssd, and a Raid arrangement. An Ssd stores data without a spinning disk. Raid alone is not a substitute for a separate recoverable backup. The storage discussion distinguishes Nas for network file access, a San for a dedicated storage network, and a Backup copy for recovery. A Tape Drive can write archival data to tape. The administrator compares Cloud Storage, a Snapshot, and Replication. A Snapshot records a system or data state at a particular time; Replication maintains corresponding copies across systems.",
+      "imageBrief": "One uncluttered data center setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ethernet, Bandwidth, Latency, and Dns and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ethernet",
+        "prompt": "A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information.\nWhich measure concerns request-and-response delay?",
+        "answer": "Latency",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vpn, Hard Drive, Ssd, and Raid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Vpn",
+        "prompt": "The equipment list includes a Vpn service, a Hard Drive, an Ssd, and a Raid arrangement. An Ssd stores data without a spinning disk. Raid alone is not a substitute for a separate recoverable backup.\nWhich drive stores data without a spinning disk?",
+        "answer": "Ssd",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Nas, San, Backup, and Tape Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Nas",
+        "prompt": "The storage discussion distinguishes Nas for network file access, a San for a dedicated storage network, and a Backup copy for recovery. A Tape Drive can write archival data to tape.\nWhich term names a separate copy kept for recovery?",
+        "answer": "Backup",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cloud Storage, Snapshot, and Replication and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cloud Storage",
+        "prompt": "The administrator compares Cloud Storage, a Snapshot, and Replication. A Snapshot records a system or data state at a particular time; Replication maintains corresponding copies across systems.\nWhich term names a state recorded at a particular time?",
+        "answer": "Snapshot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information. The equipment list includes a Vpn service, a Hard Drive, an Ssd, and a Raid arrangement. An Ssd stores data without a spinning disk. Raid alone is not a substitute for a separate recoverable backup. The storage discussion distinguishes Nas for network file access, a San for a dedicated storage network, and a Backup copy for recovery. A Tape Drive can write archival data to tape. The administrator compares Cloud Storage, a Snapshot, and Replication. A Snapshot records a system or data state at a particular time; Replication maintains corresponding copies across systems.\nExplain the difference between Ethernet and Bandwidth using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Ethernet"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Server Rack” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the data center task. Use Ethernet, Bandwidth, Latency, Dns, Vpn, Hard Drive, Ssd, Raid, Nas, San, Backup, Tape Drive, Cloud Storage, Snapshot, and Replication in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Ethernet, Bandwidth, Latency, Dns, Vpn, Hard Drive, Ssd, Raid, Nas, San, Backup, Tape Drive, Cloud Storage, Snapshot, Replication to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Data Center: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Data Center: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Ethernet and Bandwidth, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A network report discusses Ethernet, Bandwidth, Latency, and Dns. Bandwidth concerns carrying capacity; Latency concerns the delay in a request and response. Dns connects names with internet addressing information. Pause and answer: Which measure concerns request-and-response delay?"
     },
     "spacedReview": "1 lesson(s) back: Server Rack, Blade Server from data-center-1\n3 lesson(s) back: Smart Bulb, Security Camera from tech-gadgets-2\n7 lesson(s) back: Schedule, Scene from smart-home-2"
   },
@@ -375,19 +341,19 @@
       "Fire Suppression"
     ],
     "targetWordsArabic": [
-      "بلسم هواء",
+      "مكيّف هواء",
       "مُبرِّد",
       "برج تبريد",
       "مروحة",
       "فتحة تهوية",
       "مبادل حراري",
-      "احتواء",
+      "فصل مسارات الهواء",
       "منظّم حرارة",
-      "عامل ضابط رطوبة",
+      "التحكم في الرطوبة",
       "تبريد بالماء",
       "قارئ بطاقات تعريف",
       "بيومتري",
-      "بوابة أمنية مزدوجة",
+      "حجرة دخول أمنية ببابين متعاقبين",
       "مراقبة تلفزيونية مغلقة",
       "نظام إخماد حريق"
     ],
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "107-137 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Air Conditioner", "Chiller", "Cooling Tower", "Fan"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.",
+          "scenario": "The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Air Conditioner", "Chiller", "Cooling Tower"],
-            "expectedAnswer": "Air Conditioner"
+            "question": "Which machine removes heat from circulating liquid?",
+            "options": ["Chiller", "Air Conditioner", "Cooling Tower"],
+            "expectedAnswer": "Chiller"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Air Conditioner as the central item; include Air Conditioner, Chiller, and Cooling Tower naturally where visually appropriate, but make the real-world use of Air Conditioner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Chiller in a data center context. Use the written scenario as the source of meaning: The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Vent", "Heat Exchanger", "Containment", "Thermostat"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.",
+          "scenario": "The guide points out a Vent and a Heat Exchanger, then explains Containment: barriers separate warm exhaust air from cool intake air. A Thermostat monitors temperature for control.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Vent", "Heat Exchanger", "Containment"],
-            "expectedAnswer": "Vent"
+            "question": "Which arrangement separates warm exhaust from cool intake air?",
+            "options": ["Containment", "Vent", "Heat Exchanger"],
+            "expectedAnswer": "Containment"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Vent as the central item; include Vent, Heat Exchanger, and Containment naturally where visually appropriate, but make the real-world use of Vent the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Containment in a data center context. Use the written scenario as the source of meaning: The guide points out a Vent and a Heat Exchanger, then explains Containment: barriers separate warm exhaust air from cool intake air. A Thermostat monitors temperature for control. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Humidity Control", "Water Cooling", "Badge Reader", "Biometric"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.",
+          "scenario": "Humidity Control manages moisture levels, while Water Cooling carries heat away. At the entrance, a Badge Reader checks a card; a Biometric system can check a physical or behavioral identity trait.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Humidity Control", "Water Cooling", "Badge Reader"],
-            "expectedAnswer": "Humidity Control"
+            "question": "Which access device checks an identification card?",
+            "options": ["Badge Reader", "Humidity Control", "Water Cooling"],
+            "expectedAnswer": "Badge Reader"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Humidity Control as the central item; include Humidity Control, Water Cooling, and Badge Reader naturally where visually appropriate, but make the real-world use of Humidity Control the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Badge Reader in a data center context. Use the written scenario as the source of meaning: Humidity Control manages moisture levels, while Water Cooling carries heat away. At the entrance, a Badge Reader checks a card; a Biometric system can check a physical or behavioral identity trait. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mantrap", "Cctv", "Fire Suppression"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.",
+          "scenario": "The access plan includes a Mantrap with interlocking doors. Cctv monitors the area, and Fire Suppression equipment addresses a different safety function. Visitors follow authorized staff instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which access space uses interlocking doors?",
             "options": ["Mantrap", "Cctv", "Fire Suppression"],
             "expectedAnswer": "Mantrap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Mantrap as the central item; include Mantrap, Cctv, and Fire Suppression naturally where visually appropriate, but make the real-world use of Mantrap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mantrap in a data center context. Use the written scenario as the source of meaning: The access plan includes a Mantrap with interlocking doors. Cctv monitors the area, and Fire Suppression equipment addresses a different safety function. Visitors follow authorized staff instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Data Center",
-      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Air Conditioner, Chiller, Cooling Tower, and Fan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Vent, Heat Exchanger, Containment, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Humidity Control, Water Cooling, Badge Reader, and Biometric. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mantrap, Cctv, and Fire Suppression. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Data Center: Comparing the equipment",
+      "text": "The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions. The guide points out a Vent and a Heat Exchanger, then explains Containment: barriers separate warm exhaust air from cool intake air. A Thermostat monitors temperature for control. Humidity Control manages moisture levels, while Water Cooling carries heat away. At the entrance, a Badge Reader checks a card; a Biometric system can check a physical or behavioral identity trait. The access plan includes a Mantrap with interlocking doors. Cctv monitors the area, and Fire Suppression equipment addresses a different safety function. Visitors follow authorized staff instructions.",
+      "imageBrief": "One uncluttered data center setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Air Conditioner, Chiller, Cooling Tower, and Fan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Air Conditioner",
+        "prompt": "The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions.\nWhich machine removes heat from circulating liquid?",
+        "answer": "Chiller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vent, Heat Exchanger, Containment, and Thermostat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Vent",
+        "prompt": "The guide points out a Vent and a Heat Exchanger, then explains Containment: barriers separate warm exhaust air from cool intake air. A Thermostat monitors temperature for control.\nWhich arrangement separates warm exhaust from cool intake air?",
+        "answer": "Containment",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Humidity Control, Water Cooling, Badge Reader, and Biometric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Humidity Control",
+        "prompt": "Humidity Control manages moisture levels, while Water Cooling carries heat away. At the entrance, a Badge Reader checks a card; a Biometric system can check a physical or behavioral identity trait.\nWhich access device checks an identification card?",
+        "answer": "Badge Reader",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantrap, Cctv, and Fire Suppression and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The access plan includes a Mantrap with interlocking doors. Cctv monitors the area, and Fire Suppression equipment addresses a different safety function. Visitors follow authorized staff instructions.\nWhich access space uses interlocking doors?",
         "answer": "Mantrap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions. The guide points out a Vent and a Heat Exchanger, then explains Containment: barriers separate warm exhaust air from cool intake air. A Thermostat monitors temperature for control. Humidity Control manages moisture levels, while Water Cooling carries heat away. At the entrance, a Badge Reader checks a card; a Biometric system can check a physical or behavioral identity trait. The access plan includes a Mantrap with interlocking doors. Cctv monitors the area, and Fire Suppression equipment addresses a different safety function. Visitors follow authorized staff instructions.\nExplain the difference between Air Conditioner and Chiller using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Air Conditioner"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ethernet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the data center task. Use Air Conditioner, Chiller, Cooling Tower, Fan, Vent, Heat Exchanger, Containment, Thermostat, Humidity Control, Water Cooling, Badge Reader, Biometric, Mantrap, Cctv, and Fire Suppression in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Air Conditioner, Chiller, Cooling Tower, Fan, Vent, Heat Exchanger, Containment, Thermostat, Humidity Control, Water Cooling, Badge Reader, Biometric, Mantrap, Cctv, Fire Suppression to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Data Center: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Data Center: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Air Conditioner and Chiller, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The tour identifies an Air Conditioner, Chiller, Cooling Tower, and Fan. The Chiller removes heat from liquid used in the cooling system. The guide explains the names without providing operating instructions. Pause and answer: Which machine removes heat from circulating liquid?"
     },
     "spacedReview": "1 lesson(s) back: Ethernet, Bandwidth from data-center-2\n3 lesson(s) back: Mechanical Keyboard, Ergonomic Mouse from tech-gadgets-3\n7 lesson(s) back: Smart Thermostat, Temperature Sensor from smart-home-3"
   },
@@ -550,9 +499,9 @@
     ],
     "targetWordsArabic": [
       "سجل الوصول",
-      "قفص",
+      "حجرة معدات مسيّجة",
       "قفل",
-      "حارس",
+      "حارس أمن",
       "مراقبة",
       "فني",
       "مسؤول نظام",
@@ -560,8 +509,8 @@
       "تنبيه",
       "زمن التشغيل",
       "صيانة",
-      "هجرة",
-      "نشر",
+      "ترحيل البيانات أو الأنظمة",
+      "نشر الأنظمة أو البرامج",
       "تكرار احتياطي",
       "تحويل تلقائي إلى نظام احتياطي"
     ],
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the technology workplace or lab with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "85-115 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Access Log", "Cage", "Lock", "Guard"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.",
+          "scenario": "The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which record lists access events?",
             "options": ["Access Log", "Cage", "Lock"],
             "expectedAnswer": "Access Log"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Access Log as the central item; include Access Log, Cage, and Lock naturally where visually appropriate, but make the real-world use of Access Log the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Access Log in a data center context. Use the written scenario as the source of meaning: The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Monitoring", "Technician", "Administrator", "Dashboard"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.",
+          "scenario": "Monitoring provides measurements for the Technician and Administrator. A Dashboard summarizes those measurements and system status on one interface.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Monitoring", "Technician", "Administrator"],
-            "expectedAnswer": "Monitoring"
+            "question": "Which interface summarizes measurements and status?",
+            "options": ["Dashboard", "Monitoring", "Technician"],
+            "expectedAnswer": "Dashboard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Monitoring through a realistic adult task; include Monitoring, Technician, and Administrator naturally where visually appropriate, but make the real-world use of Monitoring the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dashboard in a data center context. Use the written scenario as the source of meaning: Monitoring provides measurements for the Technician and Administrator. A Dashboard summarizes those measurements and system status on one interface. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Alert", "Uptime", "Maintenance", "Migration"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.",
+          "scenario": "An Alert reports a problem affecting Uptime. The team schedules Maintenance, then plans a Migration to move the service to a different environment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Alert", "Uptime", "Maintenance"],
-            "expectedAnswer": "Alert"
+            "question": "Which planned activity moves the service to another environment?",
+            "options": ["Migration", "Alert", "Uptime"],
+            "expectedAnswer": "Migration"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult using or examining the Alert as the central item; include Alert, Uptime, and Maintenance naturally where visually appropriate, but make the real-world use of Alert the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Migration in a data center context. Use the written scenario as the source of meaning: An Alert reports a problem affecting Uptime. The team schedules Maintenance, then plans a Migration to move the service to a different environment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deployment", "Redundancy", "Failover"],
-          "scenario": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.",
+          "scenario": "The Deployment plan includes Redundancy so extra capacity is available. A documented Failover transfers service to a backup system when the primary system fails. These safeguards require professional testing.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Deployment", "Redundancy", "Failover"],
-            "expectedAnswer": "Deployment"
+            "question": "Which term describes transferring service to a backup system?",
+            "options": ["Failover", "Deployment", "Redundancy"],
+            "expectedAnswer": "Failover"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a technology workplace or lab. Show an adult illustrating Deployment through a realistic adult task; include Deployment, Redundancy, and Failover naturally where visually appropriate, but make the real-world use of Deployment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a technology workplace or lab completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Failover in a data center context. Use the written scenario as the source of meaning: The Deployment plan includes Redundancy so extra capacity is available. A documented Failover transfers service to a backup system when the primary system fails. These safeguards require professional testing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written data center situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Data Center",
-      "text": "At the data center, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Access Log, Cage, Lock, and Guard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monitoring, Technician, Administrator, and Dashboard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alert, Uptime, Maintenance, and Migration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Deployment, Redundancy, and Failover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Data Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Data Center: A guided walk",
+      "text": "The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access. Monitoring provides measurements for the Technician and Administrator. A Dashboard summarizes those measurements and system status on one interface. An Alert reports a problem affecting Uptime. The team schedules Maintenance, then plans a Migration to move the service to a different environment. The Deployment plan includes Redundancy so extra capacity is available. A documented Failover transfers service to a backup system when the primary system fails. These safeguards require professional testing.",
+      "imageBrief": "One uncluttered data center setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Access Log, Cage, Lock, and Guard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access.\nWhich record lists access events?",
         "answer": "Access Log",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monitoring, Technician, Administrator, and Dashboard and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Monitoring",
+        "prompt": "Monitoring provides measurements for the Technician and Administrator. A Dashboard summarizes those measurements and system status on one interface.\nWhich interface summarizes measurements and status?",
+        "answer": "Dashboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alert, Uptime, Maintenance, and Migration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Alert",
+        "prompt": "An Alert reports a problem affecting Uptime. The team schedules Maintenance, then plans a Migration to move the service to a different environment.\nWhich planned activity moves the service to another environment?",
+        "answer": "Migration",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the data center setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Deployment, Redundancy, and Failover and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Deployment",
+        "prompt": "The Deployment plan includes Redundancy so extra capacity is available. A documented Failover transfers service to a backup system when the primary system fails. These safeguards require professional testing.\nWhich term describes transferring service to a backup system?",
+        "answer": "Failover",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access. Monitoring provides measurements for the Technician and Administrator. A Dashboard summarizes those measurements and system status on one interface. An Alert reports a problem affecting Uptime. The team schedules Maintenance, then plans a Migration to move the service to a different environment. The Deployment plan includes Redundancy so extra capacity is available. A documented Failover transfers service to a backup system when the primary system fails. These safeguards require professional testing.\nExplain the difference between Access Log and Cage using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Access Log"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Air Conditioner” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the data center task. Use Access Log, Cage, Lock, Guard, Monitoring, Technician, Administrator, Dashboard, Alert, Uptime, Maintenance, Migration, Deployment, Redundancy, and Failover in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Access Log, Cage, Lock, Guard, Monitoring, Technician, Administrator, Dashboard, Alert, Uptime, Maintenance, Migration, Deployment, Redundancy, Failover to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Data Center: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Data Center: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Access Log and Cage, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The security team checks an Access Log listing entries to the equipment Cage. A Lock secures the enclosure, and a Guard supervises permitted access. Pause and answer: Which record lists access events?"
     },
     "spacedReview": "1 lesson(s) back: Air Conditioner, Chiller from data-center-3\n3 lesson(s) back: Server Rack, Blade Server from data-center-1\n7 lesson(s) back: Hdmi, Bluetooth from smart-home-4"
   }

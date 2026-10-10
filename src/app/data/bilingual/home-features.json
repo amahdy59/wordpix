@@ -38,8 +38,8 @@
     "arabicTranslation": "فناء مرصوف"
   },
   "deck": {
-    "definition": "A porch that resembles the deck on a ship.",
-    "arabicTranslation": "منصة خارجية خشبية"
+    "definition": "A raised outdoor platform beside a building, commonly made with wood or composite decking.",
+    "arabicTranslation": "منصة خارجية مرتفعة"
   },
   "balcony": {
     "definition": "A platform outside an upper floor of a building, enclosed by a railing.",
@@ -64,7 +64,7 @@
   "garden-shed": {
     "definition": "A small building used for storing garden tools.",
     "arabicTranslation": "مخزن أدوات الحديقة",
-    "exampleUsage": "The garden shed was used during the activity."
+    "exampleUsage": "They stored gardening tools in the garden shed."
   },
   "fireplace": {
     "definition": "An open recess in a wall at the base of a chimney where a fire can be built.",
@@ -86,7 +86,7 @@
     "arabicTranslation": "كرانيش علوية زخرفية"
   },
   "hardwood-floor": {
-    "definition": "A floor made from solid or engineered wood with a visible wood surface.",
+    "definition": "A floor with a solid or engineered hardwood surface, such as oak or maple.",
     "exampleUsage": "The living room has a hardwood floor.",
     "arabicTranslation": "أرضية خشبية"
   },
@@ -119,7 +119,7 @@
     "arabicTranslation": "نظام التدفئة والتهوية وتكييف الهواء (HVAC)"
   },
   "central-air": {
-    "definition": "A system that cools or heats air in a central unit and distributes it through ducts around a building.",
+    "definition": "A central air-conditioning system that distributes cooled air around a building, commonly through ducts.",
     "exampleUsage": "The house uses central air throughout the rooms.",
     "arabicTranslation": "تكييف مركزي"
   },
@@ -128,7 +128,7 @@
     "arabicTranslation": "فرن تدفئة"
   },
   "water-heater": {
-    "definition": "An appliance that heats and holds water so it is ready for household use.",
+    "definition": "An appliance that heats water for household use; it may use a storage tank or heat water on demand.",
     "arabicTranslation": "سخان مياه"
   },
   "plumbing": {
@@ -136,7 +136,7 @@
     "arabicTranslation": "سباكة"
   },
   "electrical-panel": {
-    "definition": "A cabinet in a building contains switches or fuses that regulate electricity and protect individual circuits from damage.",
+    "definition": "A cabinet containing devices that distribute electricity to building circuits and provide specified circuit protection.",
     "arabicTranslation": "لوحة كهربائية"
   },
   "circuit-breaker": {
@@ -148,11 +148,27 @@
     "arabicTranslation": "منظّم حرارة"
   },
   "septic-tank": {
-    "definition": "A large tank treats household wastewater by using bacteria to break down its solid waste.",
+    "definition": "A tank that separates solids and provides partial treatment of wastewater as part of a septic system.",
     "arabicTranslation": "خزان صرف صحي"
   },
   "well-water": {
-    "definition": "Water obtained by pumping a well that reaches underground water, for drinking or other household needs.",
+    "definition": "Water obtained from an underground source through a well; its quality must be assessed separately.",
     "arabicTranslation": "ماء بئر"
+  },
+  "living-room": {
+    "definition": "A room used for sitting, relaxing, and receiving visitors.",
+    "arabicTranslation": "غرفة معيشة"
+  },
+  "bedroom": {
+    "definition": "A room used mainly for sleeping.",
+    "arabicTranslation": "غرفة نوم"
+  },
+  "bathroom": {
+    "definition": "A room containing facilities for washing, and often a toilet.",
+    "arabicTranslation": "حمّام"
+  },
+  "kitchen": {
+    "definition": "A room or area where food is prepared.",
+    "arabicTranslation": "مطبخ"
   }
 }

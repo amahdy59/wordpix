@@ -28,152 +28,138 @@
     ],
     "targetWordsArabic": [
       "أساس",
-      "عمود",
-      "يبتسم بإشراق",
+      "عمود إنشائي",
+      "كمرة إنشائية",
       "جدار",
-      "طابق",
-      "سقف",
+      "أرضية أو طابق",
+      "سقف المبنى الخارجي",
       "درج",
       "بئر مصعد",
       "جدار حامل",
-      "جمالون",
+      "جمالون إنشائي",
       "خرسانة",
       "فولاذ",
       "طوب",
-      "كأس زجاج (كوب ماء)",
+      "زجاج",
       "خشب إنشائي"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Foundation", "Column", "Beam", "Wall"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Column, Beam, and Wall and choose the option that fits the situation.",
+          "scenario": "The model's foundation transfers the building loads to the ground. The column is vertical, the beam spans horizontally, and the wall encloses or divides space.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which part transfers the loads into the ground?",
             "options": ["Foundation", "Column", "Beam"],
             "expectedAnswer": "Foundation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Foundation through a realistic adult task; include Foundation, Column, and Beam naturally where visually appropriate, but make the real-world use of Foundation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An unlettered cutaway building model with the below-ground foundation exposed. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Floor", "Roof", "Staircase", "Elevator Shaft"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor, Roof, Staircase, and Elevator Shaft and choose the option that fits the situation.",
+          "scenario": "Karim stands beside the model's floor, its level surface. The roof covers the top, the staircase connects levels, and the elevator shaft provides the vertical elevator space.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the level surface in the model?",
             "options": ["Floor", "Roof", "Staircase"],
             "expectedAnswer": "Floor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Floor as the central item; include Floor, Roof, and Staircase naturally where visually appropriate, but make the real-world use of Floor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A single empty building floor in a cutaway model, no people or labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Load-Bearing Wall", "Truss", "Concrete", "Steel"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Load-Bearing Wall, Truss, Concrete, and Steel and choose the option that fits the situation.",
+          "scenario": "The guide identifies a load-bearing wall that supports loads. A truss is a connected framework; concrete and steel name materials rather than this wall's function.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which wall supports loads in the stated example?",
             "options": ["Load-Bearing Wall", "Truss", "Concrete"],
             "expectedAnswer": "Load-Bearing Wall"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Load-Bearing Wall as the central item; include Load-Bearing Wall, Truss, and Concrete naturally where visually appropriate, but make the real-world use of Load-Bearing Wall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A cutaway structural model showing a continuous supporting wall; the written context supplies its verified role. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Brick", "Glass", "Timber"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brick, Glass, and Timber and choose the option that fits the situation.",
+          "scenario": "The display has a fired-clay brick block. Glass is transparent glazing, and timber is prepared wood used in building.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which displayed item is the fired-clay building block?",
             "options": ["Brick", "Glass", "Timber"],
             "expectedAnswer": "Brick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Brick as the central item; include Brick, Glass, and Timber naturally where visually appropriate, but make the real-world use of Brick the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One rectangular red fired-clay brick, its faces and thickness visible on a neutral background. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Building & Construction",
-      "text": "At the building & construction, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Foundation, Column, Beam, and Wall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Floor, Roof, Staircase, and Elevator Shaft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Load-Bearing Wall, Truss, Concrete, and Steel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Brick, Glass, and Timber. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a structural model",
+      "text": "At a supervised education display, Karim studies a building model rather than enters a working site. The foundation transfers loads into the ground. A column is vertical; a beam spans horizontally. A wall may divide spaces, while a floor provides a level surface and a roof covers the building. The staircase connects levels, and the elevator shaft is the vertical space for an elevator. A load-bearing wall supports loads as well as enclosing space. A truss is a framework of connected members. The display compares concrete, steel, brick, glass and timber. Karim asks a qualified guide how the materials serve different functions. He does not infer a structure's safety from its color or copy the model as a construction plan.",
+      "imageBrief": "Support for Reading a structural model. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Foundation, Column, Beam, and Wall and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The model's foundation transfers the building loads to the ground. The column is vertical, the beam spans horizontally, and the wall encloses or divides space.\nWhich part transfers the loads into the ground?",
         "answer": "Foundation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Floor, Roof, Staircase, and Elevator Shaft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Karim stands beside the model's floor, its level surface. The roof covers the top, the staircase connects levels, and the elevator shaft provides the vertical elevator space.\nWhich term names the level surface in the model?",
         "answer": "Floor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Load-Bearing Wall, Truss, Concrete, and Steel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide identifies a load-bearing wall that supports loads. A truss is a connected framework; concrete and steel name materials rather than this wall's function.\nWhich wall supports loads in the stated example?",
         "answer": "Load-Bearing Wall",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brick, Glass, and Timber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The display has a fired-clay brick block. Glass is transparent glazing, and timber is prepared wood used in building.\nWhich displayed item is the fired-clay building block?",
         "answer": "Brick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At a supervised education display, Karim studies a building model rather than enters a working site. The foundation transfers loads into the ground. A column is vertical; a beam spans horizontally. A wall may divide spaces, while a floor provides a level surface and a roof covers the building. The staircase connects levels, and the elevator shaft is the vertical space for an elevator. A load-bearing wall supports loads as well as enclosing space. A truss is a framework of connected members. The display compares concrete, steel, brick, glass and timber. Karim asks a qualified guide how the materials serve different functions. He does not infer a structure's safety from its color or copy the model as a construction plan.\nWhy does Karim ask a qualified guide?",
+        "answer": "Material appearance alone does not explain structural function or establish safety.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Foundation"
+        "prompt": "Explain the difference between “Foundation” and “Column” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Beam"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Model Making Kit” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the building & construction task. Use Foundation, Column, Beam, Wall, Floor, Roof, Staircase, Elevator Shaft, Load-Bearing Wall, Truss, Concrete, Steel, Brick, Glass, and Timber in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Foundation” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The model's foundation transfers the building loads to the ground. The column is vertical, the beam spans horizontally, and the wall encloses or divides space.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Building & Construction: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading a structural model",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a supervised education display, Karim studies a building model rather than enters a working site. The foundation transfers loads into the ground. A column is vertical; a beam spans horizontally. A wall may divide spaces, while a floor provides a level surface and a roof covers the building. The staircase connects levels, and the elevator shaft is the vertical space for an elevator. A load-bearing wall supports loads as well as enclosing space. A truss is a framework of connected members. The display compares concrete, steel, brick, glass and timber. Karim asks a qualified guide how the materials serve different functions. He does not infer a structure's safety from its color or copy the model as a construction plan. Ask: Why does Karim ask a qualified guide?"
     },
     "spacedReview": "1 lesson(s) back: Model Making Kit, Laser Cutter from architect-s-studio-3\n3 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1\n7 lesson(s) back: Patent, Trademark from legal-documents-3"
   },
@@ -212,146 +198,132 @@
       "حديد تسليح",
       "حفر",
       "صبّ الأساس",
-      "هيكل تأطير",
+      "إنشاء الهيكل الإنشائي",
       "أعمال سقف",
       "سباكة",
       "أعمال كهربائية",
       "تركيب ألواح الجبس",
-      "لوحة فنية",
-      "أرضيات",
+      "أعمال الدهان",
+      "كسوة الأرضيات",
       "فحص"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Stone", "Aluminum", "Insulation", "Drywall"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stone, Aluminum, Insulation, and Drywall and choose the option that fits the situation.",
+          "scenario": "Karim compares stone, a natural mineral building material, with aluminum, a metal. Insulation limits heat transfer, and drywall is a board material for interior surfaces.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the natural mineral building material?",
             "options": ["Stone", "Aluminum", "Insulation"],
             "expectedAnswer": "Stone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Stone as the central item; include Stone, Aluminum, and Insulation naturally where visually appropriate, but make the real-world use of Stone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One rough natural building-stone sample, no label or inferred mineral species. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rebar", "Excavation", "Pouring Foundation", "Framing"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rebar, Excavation, Pouring Foundation, and Framing and choose the option that fits the situation.",
+          "scenario": "The display shows rebar, reinforcing steel used in concrete. Excavation removes ground; pouring foundation means placing foundation concrete in this schedule, and framing forms the supporting framework.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material reinforces the concrete?",
             "options": ["Rebar", "Excavation", "Pouring Foundation"],
             "expectedAnswer": "Rebar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Rebar as the central item; include Rebar, Excavation, and Pouring Foundation naturally where visually appropriate, but make the real-world use of Rebar the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A few steel reinforcing bars with clearly visible ribs on a neutral background. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Roofing", "Plumbing", "Electrical", "Drywall Installation"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roofing, Plumbing, Electrical, and Drywall Installation and choose the option that fits the situation.",
+          "scenario": "Roofing concerns forming or covering the roof. Plumbing concerns water and drainage; electrical names electrical-system work, and drywall installation fits interior boards.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity concerns forming or covering the roof?",
             "options": ["Roofing", "Plumbing", "Electrical"],
             "expectedAnswer": "Roofing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Roofing through a realistic adult task; include Roofing, Plumbing, and Electrical naturally where visually appropriate, but make the real-world use of Roofing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An empty building model with roof covering and layered edges visible; no unsafe work demonstration. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Painting", "Flooring", "Inspection"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Painting, Flooring, and Inspection and choose the option that fits the situation.",
+          "scenario": "Painting applies a coating to prepared surfaces. Flooring concerns the floor finish; inspection checks work against the relevant requirements.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity applies the surface coating?",
             "options": ["Painting", "Flooring", "Inspection"],
             "expectedAnswer": "Painting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Painting through a realistic adult task; include Painting, Flooring, and Inspection naturally where visually appropriate, but make the real-world use of Painting the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A paint roller beside a partly coated interior wall, no people or procedural instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: Building & Construction",
-      "text": "At the building & construction, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Stone, Aluminum, Insulation, and Drywall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rebar, Excavation, Pouring Foundation, and Framing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Roofing, Plumbing, Electrical, and Drywall Installation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Painting, Flooring, and Inspection. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing stages and materials",
+      "text": "Karim reads a supervised tour's schedule. Stone and aluminum are material names; insulation limits heat transfer, and drywall forms interior surfaces. Rebar reinforces concrete. Excavation removes ground before foundation work. Pouring foundation refers here to placing concrete for the foundation, while framing creates the building's supporting framework. Roofing forms or covers the roof. Plumbing concerns water and drainage systems; electrical is used here for electrical-system work. Drywall installation precedes finishing and painting. Flooring concerns the floor finish. Inspection means examining work against relevant requirements. The guide emphasizes that this vocabulary list is not a universal sequence or instruction manual. Skilled people coordinate the activities, and conditions, regulations and project designs determine the actual work.",
+      "imageBrief": "Support for Discussing stages and materials. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stone, Aluminum, Insulation, and Drywall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Karim compares stone, a natural mineral building material, with aluminum, a metal. Insulation limits heat transfer, and drywall is a board material for interior surfaces.\nWhich term names the natural mineral building material?",
         "answer": "Stone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rebar, Excavation, Pouring Foundation, and Framing and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The display shows rebar, reinforcing steel used in concrete. Excavation removes ground; pouring foundation means placing foundation concrete in this schedule, and framing forms the supporting framework.\nWhich material reinforces the concrete?",
         "answer": "Rebar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Roofing, Plumbing, Electrical, and Drywall Installation and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Roofing concerns forming or covering the roof. Plumbing concerns water and drainage; electrical names electrical-system work, and drywall installation fits interior boards.\nWhich activity concerns forming or covering the roof?",
         "answer": "Roofing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Painting, Flooring, and Inspection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Painting applies a coating to prepared surfaces. Flooring concerns the floor finish; inspection checks work against the relevant requirements.\nWhich activity applies the surface coating?",
         "answer": "Painting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Karim reads a supervised tour's schedule. Stone and aluminum are material names; insulation limits heat transfer, and drywall forms interior surfaces. Rebar reinforces concrete. Excavation removes ground before foundation work. Pouring foundation refers here to placing concrete for the foundation, while framing creates the building's supporting framework. Roofing forms or covers the roof. Plumbing concerns water and drainage systems; electrical is used here for electrical-system work. Drywall installation precedes finishing and painting. Flooring concerns the floor finish. Inspection means examining work against relevant requirements. The guide emphasizes that this vocabulary list is not a universal sequence or instruction manual. Skilled people coordinate the activities, and conditions, regulations and project designs determine the actual work.\nIs the vocabulary list a construction instruction manual?",
+        "answer": "No; the actual work depends on the project and qualified coordination.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Stone"
+        "prompt": "Explain the difference between “Stone” and “Aluminum” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Insulation"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Foundation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the building & construction task. Use Stone, Aluminum, Insulation, Drywall, Rebar, Excavation, Pouring Foundation, Framing, Roofing, Plumbing, Electrical, Drywall Installation, Painting, Flooring, and Inspection in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Stone” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Karim compares stone, a natural mineral building material, with aluminum, a metal. Insulation limits heat transfer, and drywall is a board material for interior surfaces.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Building & Construction: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing stages and materials",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Karim reads a supervised tour's schedule. Stone and aluminum are material names; insulation limits heat transfer, and drywall forms interior surfaces. Rebar reinforces concrete. Excavation removes ground before foundation work. Pouring foundation refers here to placing concrete for the foundation, while framing creates the building's supporting framework. Roofing forms or covers the roof. Plumbing concerns water and drainage systems; electrical is used here for electrical-system work. Drywall installation precedes finishing and painting. Flooring concerns the floor finish. Inspection means examining work against relevant requirements. The guide emphasizes that this vocabulary list is not a universal sequence or instruction manual. Skilled people coordinate the activities, and conditions, regulations and project designs determine the actual work. Ask: Is the vocabulary list a construction instruction manual?"
     },
     "spacedReview": "1 lesson(s) back: Foundation, Column from building-construction-1\n3 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2\n7 lesson(s) back: Freedom of Speech, Right to Privacy from rights-regulations-1"
   },
@@ -384,123 +356,109 @@
       "كهربائي",
       "سباك",
       "بنّاء",
-      "عامل حديد",
+      "عامل تركيب الحديد الإنشائي",
       "مشغل رافعة",
       "مسّاح",
       "مفتش سلامة"
     ],
     "usage": {
-      "goal": "Develop precise control of language for situations where learners need to discuss plans, design choices, and construction-related information, and respond flexibly in complex professional or public contexts.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["General Contractor", "Foreman", "Carpenter", "Electrician"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Contractor, Foreman, Carpenter, and Electrician and choose the option that fits the situation.",
+          "scenario": "In this project, the general contractor coordinates the overall building work. The foreman supervises the crew, the carpenter works with wood, and the electrician handles electrical systems.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who coordinates the overall work in this stated arrangement?",
             "options": ["General Contractor", "Foreman", "Carpenter"],
             "expectedAnswer": "General Contractor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult working with or speaking to the General Contractor; include General Contractor, Foreman, and Carpenter naturally where visually appropriate, but make the real-world use of General Contractor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An empty project coordination desk with a building model; identity comes from the written assignment. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Plumber", "Mason", "Ironworker", "Crane Operator"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumber, Mason, Ironworker, and Crane Operator and choose the option that fits the situation.",
+          "scenario": "The meeting assigns water and drainage work to the plumber. The mason handles brick or stone, the ironworker handles structural metal, and the crane operator operates the crane.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who is assigned the water and drainage systems?",
             "options": ["Plumber", "Mason", "Ironworker"],
             "expectedAnswer": "Plumber"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Plumber as the central item; include Plumber, Mason, and Ironworker naturally where visually appropriate, but make the real-world use of Plumber the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One modest male worker examining an isolated pipe assembly; no qualification or licensing claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Surveyor", "Safety Inspector"],
-          "scenario": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Surveyor, and Safety Inspector and choose the option that fits the situation.",
+          "scenario": "The surveyor measures and establishes site positions. The safety inspector examines conditions against safety requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who is assigned to establish the site positions?",
             "options": ["Surveyor", "Safety Inspector", "General Contractor"],
             "expectedAnswer": "Surveyor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Surveyor as the central item; include Surveyor, Safety Inspector, and General Contractor naturally where visually appropriate, but make the real-world use of Surveyor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One modest male surveyor with a survey instrument on a tripod in a cleared empty site; role is contextual. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Building & Construction",
-      "text": "At the building & construction, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers General Contractor, Foreman, Carpenter, and Electrician. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Plumber, Mason, Ironworker, and Crane Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Surveyor and Safety Inspector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Building & Construction. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Matching professional responsibilities",
+      "text": "A fictional project meeting assigns responsibilities without treating them as interchangeable. The general contractor coordinates the building work, and a foreman supervises a work crew. A carpenter works with wood; an electrician works with electrical systems. A plumber handles water and drainage systems, and a mason works with brick or stone. An ironworker erects or installs structural steel and related metal components. A crane operator operates lifting equipment, while a surveyor measures and establishes site positions. A safety inspector examines conditions against safety requirements. Karim checks the stated responsibility before contacting someone. A hard hat or tool in a photograph cannot establish a person's qualifications. Actual authority, licensing and responsibilities depend on local rules and the project's arrangements.",
+      "imageBrief": "Support for Matching professional responsibilities. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare General Contractor, Foreman, Carpenter, and Electrician and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "In this project, the general contractor coordinates the overall building work. The foreman supervises the crew, the carpenter works with wood, and the electrician handles electrical systems.\nWho coordinates the overall work in this stated arrangement?",
         "answer": "General Contractor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumber, Mason, Ironworker, and Crane Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The meeting assigns water and drainage work to the plumber. The mason handles brick or stone, the ironworker handles structural metal, and the crane operator operates the crane.\nWho is assigned the water and drainage systems?",
         "answer": "Plumber",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the building & construction setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Surveyor, and Safety Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The surveyor measures and establishes site positions. The safety inspector examines conditions against safety requirements.\nWho is assigned to establish the site positions?",
         "answer": "Surveyor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A fictional project meeting assigns responsibilities without treating them as interchangeable. The general contractor coordinates the building work, and a foreman supervises a work crew. A carpenter works with wood; an electrician works with electrical systems. A plumber handles water and drainage systems, and a mason works with brick or stone. An ironworker erects or installs structural steel and related metal components. A crane operator operates lifting equipment, while a surveyor measures and establishes site positions. A safety inspector examines conditions against safety requirements. Karim checks the stated responsibility before contacting someone. A hard hat or tool in a photograph cannot establish a person's qualifications. Actual authority, licensing and responsibilities depend on local rules and the project's arrangements.\nWhy is a hard hat insufficient to establish a role?",
+        "answer": "Appearance does not establish qualifications or assigned responsibility.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "General Contractor"
+        "prompt": "Explain the difference between “General Contractor” and “Foreman” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Carpenter"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Stone” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the building & construction task. Use General Contractor, Foreman, Carpenter, Electrician, Plumber, Mason, Ironworker, Crane Operator, Surveyor, and Safety Inspector in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “General Contractor” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: In this project, the general contractor coordinates the overall building work. The foreman supervises the crew, the carpenter works with wood, and the electrician handles electrical systems.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Building & Construction: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Matching professional responsibilities",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A fictional project meeting assigns responsibilities without treating them as interchangeable. The general contractor coordinates the building work, and a foreman supervises a work crew. A carpenter works with wood; an electrician works with electrical systems. A plumber handles water and drainage systems, and a mason works with brick or stone. An ironworker erects or installs structural steel and related metal components. A crane operator operates lifting equipment, while a surveyor measures and establishes site positions. A safety inspector examines conditions against safety requirements. Karim checks the stated responsibility before contacting someone. A hard hat or tool in a photograph cannot establish a person's qualifications. Actual authority, licensing and responsibilities depend on local rules and the project's arrangements. Ask: Why is a hard hat insufficient to establish a role?"
     },
     "spacedReview": "1 lesson(s) back: Stone, Aluminum from building-construction-2\n3 lesson(s) back: Model Making Kit, Laser Cutter from architect-s-studio-3\n7 lesson(s) back: Ordinance, Regulation from rights-regulations-2"
   }

@@ -44,135 +44,141 @@
       "قريب"
     ],
     "usage": {
-      "goal": "Learn to use common spatial relations 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "short-narrative",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
       "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Big", "Small", "Large"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Big, Small, Large. The correct relationship in the scene is big.",
+          "scenario": "Mona calls one box big. A second box is small. Large can also mean big, so the question asks for Mona's exact word.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word does Mona use for the first box?",
             "options": ["Big", "Small", "Large"],
             "expectedAnswer": "Big"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Big, Small, Large. The correct relationship in the scene is big. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Big, Small, Large in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A large box beside a clearly smaller box, coherent scale reference; no answer highlight. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tiny", "Huge", "Enormous"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Tiny, Huge, Enormous. The correct relationship in the scene is tiny.",
+          "scenario": "Mona calls the very small box tiny. Huge and enormous describe very large things and can have similar meanings.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word does she use for the very small box?",
             "options": ["Tiny", "Huge", "Enormous"],
             "expectedAnswer": "Tiny"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Tiny, Huge, Enormous. The correct relationship in the scene is tiny. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Tiny, Huge, Enormous in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A very small box beside an ordinary-size box, consistent scale without people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Miniature", "Medium", "Wide"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Miniature, Medium, Wide. The correct relationship in the scene is miniature.",
+          "scenario": "The miniature chair is a small copy of a chair. Medium is a middle size; wide describes a large width.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the small copy?",
             "options": ["Miniature", "Medium", "Wide"],
             "expectedAnswer": "Miniature"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Miniature, Medium, Wide. The correct relationship in the scene is miniature. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Miniature, Medium, Wide in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A miniature chair beside an ordinary chair of the same design, clear scale reference. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Narrow", "Close", "Far Away"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Narrow, Close, Far Away. The correct relationship in the scene is narrow.",
+          "scenario": "The path is narrow: there is little width. Mona is close to the door; the other room is far away.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the path's little width?",
             "options": ["Narrow", "Close", "Far Away"],
             "expectedAnswer": "Narrow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Narrow, Close, Far Away. The correct relationship in the scene is narrow. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Narrow, Close, Far Away in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A narrow clear passage between two plain walls, no people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Adjacent", "Distant", "Nearby"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Adjacent, Distant, Nearby. The correct relationship in the scene is adjacent.",
+          "scenario": "The adjacent table is next to the shelf. Distant means far away; nearby means not far away.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word does Mona use for the table next to the shelf?",
             "options": ["Adjacent", "Distant", "Nearby"],
             "expectedAnswer": "Adjacent"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Adjacent, Distant, Nearby. The correct relationship in the scene is adjacent. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Adjacent, Distant, Nearby in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A table directly beside a plain shelf, no labels or other clutter. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations 1: A short reading",
-      "text": "Maya compares two meeting rooms. One is large and wide, while the other is small and narrow. The large room is close to the entrance. The smaller room is far away, beside the storage area. Maya chooses the nearby room because visitors will find it more easily. Omar helps her arrange the chairs.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing boxes and distances",
+      "text": "Mona moves boxes in a room. The big box is by the door. The tiny box is on a nearby shelf. A miniature chair is inside it. The path between the boxes is narrow. An adjacent table is next to the shelf. Mona says that big and large can have similar meanings. She uses the written description to identify each item, not one photograph without a size reference.",
+      "imageBrief": "Support for Describing boxes and distances. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Big, Small, Large. The correct relationship in the scene is big.\nWhich option correctly describes the position in the scene?",
+        "prompt": "Mona calls one box big. A second box is small. Large can also mean big, so the question asks for Mona's exact word.\nWhich word does Mona use for the first box?",
         "answer": "Big",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Tiny, Huge, Enormous. The correct relationship in the scene is tiny.\nWhich option correctly describes the position in the scene?",
+        "prompt": "Mona calls the very small box tiny. Huge and enormous describe very large things and can have similar meanings.\nWhich word does she use for the very small box?",
         "answer": "Tiny",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Miniature, Medium, Wide. The correct relationship in the scene is miniature.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The miniature chair is a small copy of a chair. Medium is a middle size; wide describes a large width.\nWhich word describes the small copy?",
         "answer": "Miniature",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Narrow, Close, Far Away. The correct relationship in the scene is narrow.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The path is narrow: there is little width. Mona is close to the door; the other room is far away.\nWhich word describes the path's little width?",
         "answer": "Narrow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Adjacent, Distant, Nearby. The correct relationship in the scene is adjacent.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The adjacent table is next to the shelf. Distant means far away; nearby means not far away.\nWhich word does Mona use for the table next to the shelf?",
         "answer": "Adjacent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Rv” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Why does Maya choose the nearby meeting room?",
-        "answer": "Visitors will find it more easily",
+        "prompt": "Mona moves boxes in a room. The big box is by the door. The tiny box is on a nearby shelf. A miniature chair is inside it. The path between the boxes is narrow. An adjacent table is next to the shelf. Mona says that big and large can have similar meanings. She uses the written description to identify each item, not one photograph without a size reference.\nWhere is the adjacent table?",
+        "answer": "Next to the shelf.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Big” and “Small” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Big” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Mona calls one box big. A second box is small. Large can also mean big, so the question asks for Mona's exact word.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spatial Relations: In Context",
-      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Describing boxes and distances",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona moves boxes in a room. The big box is by the door. The tiny box is on a nearby shelf. A miniature chair is inside it. The path between the boxes is narrow. An adjacent table is next to the shelf. Mona says that big and large can have similar meanings. She uses the written description to identify each item, not one photograph without a size reference. Ask: Where is the adjacent table?"
     },
     "spacedReview": "1 lesson(s) back: Rv, Trailer from gas-station-4\n3 lesson(s) back: Chips, Gum from gas-station-2\n7 lesson(s) back: Wall Chart, Clock from first-aid-room-6"
   },
@@ -204,7 +210,7 @@
       "Flat"
     ],
     "targetWordsArabic": [
-      "عن بُعد",
+      "بعيد الموقع",
       "قريب",
       "في متناول اليد",
       "بعيد عن متناول اليد",
@@ -221,135 +227,141 @@
       "مسطّح"
     ],
     "usage": {
-      "goal": "Learn to use common spatial relations 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "short-narrative",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
       "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Remote", "Proximate", "Within Reach"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Remote, Proximate, Within Reach. The correct relationship in the scene is remote.",
+          "scenario": "The store is remote, far from here. Proximate is a formal word for near. A tool within reach is close enough to touch.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the faraway store?",
             "options": ["Remote", "Proximate", "Within Reach"],
             "expectedAnswer": "Remote"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Remote, Proximate, Within Reach. The correct relationship in the scene is remote. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Remote, Proximate, Within Reach in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A small building far across an open landscape; relative distance is supplied by text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Out of Reach", "Arm's Length", "High"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Out of Reach, Arm's Length, High. The correct relationship in the scene is out of reach.",
+          "scenario": "The shelf is out of reach: Mona cannot touch it from where she stands. Arm's length is about the length of an extended arm; high describes a raised position.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which phrase describes the shelf she cannot touch from her position?",
             "options": ["Out of Reach", "Arm's Length", "High"],
             "expectedAnswer": "Out of Reach"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Out of Reach, Arm's Length, High. The correct relationship in the scene is out of reach. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Out of Reach, Arm's Length, High in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A high shelf with one modest adult man standing safely below, no climbing; actual reach is contextual. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Low", "Tall", "Short"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Low, Tall, Short. The correct relationship in the scene is low.",
+          "scenario": "Mona chooses a low shelf, near the ground. Tall describes much height; short can describe little height or length.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the shelf near the ground?",
             "options": ["Low", "Tall", "Short"],
             "expectedAnswer": "Low"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Low, Tall, Short. The correct relationship in the scene is low. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Low, Tall, Short in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A low shelf beside a taller shelving unit, consistent scale and no person. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Deep", "Shallow", "Elevated"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Deep, Shallow, Elevated. The correct relationship in the scene is deep.",
+          "scenario": "The deep tray extends far down. A shallow tray has little depth; an elevated surface is raised above the surrounding level.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the tray that extends far down?",
             "options": ["Deep", "Shallow", "Elevated"],
             "expectedAnswer": "Deep"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Deep, Shallow, Elevated. The correct relationship in the scene is deep. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Deep, Shallow, Elevated in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A deep open tray beside a shallow one of the same width, depth clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sunken", "Level", "Flat"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Sunken, Level, Flat. The correct relationship in the scene is sunken.",
+          "scenario": "The sunken area is lower than the floor around it. A level surface is horizontal; flat means not curved or uneven in this description.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the lower area?",
             "options": ["Sunken", "Level", "Flat"],
             "expectedAnswer": "Sunken"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Sunken, Level, Flat. The correct relationship in the scene is sunken. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Sunken, Level, Flat in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A model room with a clearly sunken floor section, no people or safety certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations 2: A short reading",
-      "text": "Omar moves a box from a high shelf to a low one. It was out of reach, but now it is within reach. Maya places a shallow tray beside a deep bowl. They keep the table level and flat. A tall cabinet stays at the back so it will not block the window.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finding a reachable shelf",
+      "text": "Mona looks for a safe place to store a box. The remote store is far away. A shelf is out of reach, so she asks for help. She chooses a low shelf. A deep tray holds the small items. The sunken area of the floor is lower than the rest. Mona describes the position from the ground. She does not climb or assume that a photograph proves she can reach something.",
+      "imageBrief": "Support for Finding a reachable shelf. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Remote, Proximate, Within Reach. The correct relationship in the scene is remote.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The store is remote, far from here. Proximate is a formal word for near. A tool within reach is close enough to touch.\nWhich word describes the faraway store?",
         "answer": "Remote",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Out of Reach, Arm's Length, High. The correct relationship in the scene is out of reach.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The shelf is out of reach: Mona cannot touch it from where she stands. Arm's length is about the length of an extended arm; high describes a raised position.\nWhich phrase describes the shelf she cannot touch from her position?",
         "answer": "Out of Reach",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Low, Tall, Short. The correct relationship in the scene is low.\nWhich option correctly describes the position in the scene?",
+        "prompt": "Mona chooses a low shelf, near the ground. Tall describes much height; short can describe little height or length.\nWhich word describes the shelf near the ground?",
         "answer": "Low",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Deep, Shallow, Elevated. The correct relationship in the scene is deep.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The deep tray extends far down. A shallow tray has little depth; an elevated surface is raised above the surrounding level.\nWhich word describes the tray that extends far down?",
         "answer": "Deep",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Sunken, Level, Flat. The correct relationship in the scene is sunken.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The sunken area is lower than the floor around it. A level surface is horizontal; flat means not curved or uneven in this description.\nWhich word describes the lower area?",
         "answer": "Sunken",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Big” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Why does the tall cabinet stay at the back?",
-        "answer": "So it will not block the window",
+        "prompt": "Mona looks for a safe place to store a box. The remote store is far away. A shelf is out of reach, so she asks for help. She chooses a low shelf. A deep tray holds the small items. The sunken area of the floor is lower than the rest. Mona describes the position from the ground. She does not climb or assume that a photograph proves she can reach something.\nWhat does Mona do when the shelf is out of reach?",
+        "answer": "She asks for help.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Remote” and “Proximate” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Remote” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The store is remote, far from here. Proximate is a formal word for near. A tool within reach is close enough to touch.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spatial Relations: In Context",
-      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finding a reachable shelf",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona looks for a safe place to store a box. The remote store is far away. A shelf is out of reach, so she asks for help. She chooses a low shelf. A deep tray holds the small items. The sunken area of the floor is lower than the rest. Mona describes the position from the ground. She does not climb or assume that a photograph proves she can reach something. Ask: What does Mona do when the shelf is out of reach?"
     },
     "spacedReview": "1 lesson(s) back: Big, Small from spatial-relations-1\n3 lesson(s) back: Canopy, Parking Spot from gas-station-3\n7 lesson(s) back: Nosebleed, Bee Sting from first-aid-room-7"
   },
@@ -378,7 +390,7 @@
     "targetWordsArabic": [
       "أفقي",
       "رأسي",
-      "قطري",
+      "مائل قطريًا",
       "متوازٍ",
       "متعامد",
       "مصطفّ",
@@ -388,116 +400,122 @@
       "متعدد الطبقات"
     ],
     "usage": {
-      "goal": "Learn to use common spatial relations 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to spatial relations.",
-      "textType": "short-narrative",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
       "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Horizontal", "Vertical", "Diagonal"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Horizontal, Vertical, Diagonal. The correct relationship in the scene is horizontal.",
+          "scenario": "The horizontal rod lies side to side. A vertical rod runs up and down, and a diagonal rod is slanted in this arrangement.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which rod lies side to side?",
             "options": ["Horizontal", "Vertical", "Diagonal"],
             "expectedAnswer": "Horizontal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Horizontal, Vertical, Diagonal. The correct relationship in the scene is horizontal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Horizontal, Vertical, Diagonal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One horizontal rod beside a vertical and slanted rod, clear orientations without labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Parallel", "Perpendicular", "Aligned"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Parallel, Perpendicular, Aligned. The correct relationship in the scene is parallel.",
+          "scenario": "The parallel rods stay the same distance apart. Perpendicular rods meet at a right angle; aligned objects are placed in a line or intended position.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the rods that stay the same distance apart?",
             "options": ["Parallel", "Perpendicular", "Aligned"],
             "expectedAnswer": "Parallel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Parallel, Perpendicular, Aligned. The correct relationship in the scene is parallel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Parallel, Perpendicular, Aligned in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. Two straight parallel rods on a flat surface, no measurement or symbols. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scattered", "Clustered", "Stacked"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Scattered, Clustered, Stacked. The correct relationship in the scene is scattered.",
+          "scenario": "The scattered blocks are spread irregularly. Clustered blocks sit close together; stacked blocks sit one above another.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the irregularly spread blocks?",
             "options": ["Scattered", "Clustered", "Stacked"],
             "expectedAnswer": "Scattered"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Scattered, Clustered, Stacked. The correct relationship in the scene is scattered. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Scattered, Clustered, Stacked in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A few plain blocks scattered across a neutral tabletop, no letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Layered"],
-          "scenario": "In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered.",
+          "scenario": "The sample is layered, with one layer above another. The word describes its arrangement rather than its color.",
           "check": {
-            "question": "Which option correctly describes the position in the scene?",
+            "question": "Which word describes the sample's arrangement?",
             "options": ["Layered", "Horizontal", "Vertical"],
             "expectedAnswer": "Layered"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a spatial relations context illustrating this situation: In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult spatial relations scene showing lesson-related items or actions including Layered in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A simple stack of visibly distinct flat material layers shown from the edge. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Spatial Relations 3: A short reading",
-      "text": "Maya arranges papers in stacked trays. The files are aligned, but loose notes are scattered across the desk. Omar draws a horizontal line and a vertical line on the board. Then he adds a diagonal arrow. They compare parallel and perpendicular lines before putting the notes into clustered groups for the meeting.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Spatial Relations. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Arranging simple objects",
+      "text": "Mona arranges a display. A horizontal rod lies from side to side. Two parallel rods stay the same distance apart. Small blocks are scattered across the table. The final sample is layered, with one layer above another. Mona checks the written instructions before moving anything. The display helps her compare positions. She uses a short description and a simple model; it is not a measurement certificate.",
+      "imageBrief": "Support for Arranging simple objects. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Horizontal, Vertical, Diagonal. The correct relationship in the scene is horizontal.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The horizontal rod lies side to side. A vertical rod runs up and down, and a diagonal rod is slanted in this arrangement.\nWhich rod lies side to side?",
         "answer": "Horizontal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Parallel, Perpendicular, Aligned. The correct relationship in the scene is parallel.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The parallel rods stay the same distance apart. Perpendicular rods meet at a right angle; aligned objects are placed in a line or intended position.\nWhich word describes the rods that stay the same distance apart?",
         "answer": "Parallel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Scattered, Clustered, Stacked. The correct relationship in the scene is scattered.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The scattered blocks are spread irregularly. Clustered blocks sit close together; stacked blocks sit one above another.\nWhich word describes the irregularly spread blocks?",
         "answer": "Scattered",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In a practical location task, an adult compares these position expressions: Layered, Horizontal, Vertical. The correct relationship in the scene is layered.\nWhich option correctly describes the position in the scene?",
+        "prompt": "The sample is layered, with one layer above another. The word describes its arrangement rather than its color.\nWhich word describes the sample's arrangement?",
         "answer": "Layered",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Remote” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which three line directions does Omar draw?",
-        "answer": "Horizontal, vertical, and diagonal",
+        "prompt": "Mona arranges a display. A horizontal rod lies from side to side. Two parallel rods stay the same distance apart. Small blocks are scattered across the table. The final sample is layered, with one layer above another. Mona checks the written instructions before moving anything. The display helps her compare positions. She uses a short description and a simple model; it is not a measurement certificate.\nHow are the layers arranged?",
+        "answer": "One layer above another.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Horizontal” and “Vertical” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Horizontal” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The horizontal rod lies side to side. A vertical rod runs up and down, and a diagonal rod is slanted in this arrangement.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spatial Relations: In Context",
-      "idea": "30-45 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Arranging simple objects",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona arranges a display. A horizontal rod lies from side to side. Two parallel rods stay the same distance apart. Small blocks are scattered across the table. The final sample is layered, with one layer above another. Mona checks the written instructions before moving anything. The display helps her compare positions. She uses a short description and a simple model; it is not a measurement certificate. Ask: How are the layers arranged?"
     },
     "spacedReview": "1 lesson(s) back: Remote, Proximate from spatial-relations-2\n3 lesson(s) back: Rv, Trailer from gas-station-4\n7 lesson(s) back: Compress, Gloves from first-aid-room-8"
   }

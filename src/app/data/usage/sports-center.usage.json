@@ -39,141 +39,146 @@
       "تنس الطاولة",
       "غولف",
       "بولينغ",
-      "مقدمة باطن القدم",
+      "كرة",
       "مضرب",
-      "مضرب خشبي"
+      "مضرب"
     ],
     "usage": {
-      "goal": "Learn to use common l4 sports center 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 sports center.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
+      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["soccer", "basketball", "tennis"],
-          "scenario": "During a routine l4 sports center task, an adult compares soccer, basketball, tennis. The person selects soccer for the next step.",
+          "scenario": "Dina books soccer, the game commonly called football outside the US. Basketball uses a hoop, while tennis uses rackets and a net.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which game does Dina book?",
             "options": ["soccer", "basketball", "tennis"],
             "expectedAnswer": "soccer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares soccer, basketball, tennis. The person selects soccer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including soccer, basketball, tennis in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty soccer field with one unbranded ball and goal; no participant or live match. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["volleyball", "baseball", "football"],
-          "scenario": "During a routine l4 sports center task, an adult compares volleyball, baseball, football. The person selects volleyball for the next step.",
+          "scenario": "The session is volleyball, played across a net. Baseball uses a bat and ball, while football here means American football.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which game is named for this session?",
             "options": ["volleyball", "baseball", "football"],
             "expectedAnswer": "volleyball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares volleyball, baseball, football. The person selects volleyball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including volleyball, baseball, football in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty volleyball court with coherent net; no player, logo or result. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["rugby", "cricket", "badminton"],
-          "scenario": "During a routine l4 sports center task, an adult compares rugby, cricket, badminton. The person selects rugby for the next step.",
+          "scenario": "Dina asks about rugby, played with an oval ball. Cricket uses a bat and ball; badminton uses a shuttlecock.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which game does Dina ask about?",
             "options": ["rugby", "cricket", "badminton"],
             "expectedAnswer": "rugby"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares rugby, cricket, badminton. The person selects rugby for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including rugby, cricket, badminton in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One plain rugby ball; no contact action or incidental people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["table tennis", "golf", "bowling"],
-          "scenario": "During a routine l4 sports center task, an adult compares table tennis, golf, bowling. The person selects table tennis for the next step.",
+          "scenario": "Dina chooses table tennis. Golf uses clubs to hit a small ball into holes; bowling uses a ball to knock down pins.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which table-based game does Dina choose?",
             "options": ["table tennis", "golf", "bowling"],
             "expectedAnswer": "table tennis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares table tennis, golf, bowling. The person selects table tennis for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including table tennis, golf, bowling in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain table-tennis table with small net and paddle, empty venue. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["ball", "racket", "bat"],
-          "scenario": "During a routine l4 sports center task, an adult compares ball, racket, bat. The person selects ball for the next step.",
+          "scenario": "A ball is used in many sports. A racket has a framed striking surface, while a bat is a club-like striking tool.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which general term names the object thrown or kicked?",
             "options": ["ball", "racket", "bat"],
             "expectedAnswer": "ball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares ball, racket, bat. The person selects ball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including ball, racket, bat in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One plain round sports ball on a neutral surface, no branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L4 Sports Center: Short Description",
-      "text": "Maya is in a situation connected to l4 sports center. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check soccer, basketball, and tennis. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check volleyball, baseball, and football. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Sports Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing a sport session",
+      "text": "Dina reads the sports-center timetable. Soccer and basketball use different courts or fields and rules. She asks about volleyball, then rugby and table tennis. Other sessions include tennis, baseball and cricket. Dina looks at a ball, a racket and a bat in the equipment display. She reads the session name before booking and asks staff to explain an unfamiliar sport.",
+      "imageBrief": "Support for Choosing a sport session. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine l4 sports center task, an adult compares soccer, basketball, tennis. The person selects soccer for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina books soccer, the game commonly called football outside the US. Basketball uses a hoop, while tennis uses rackets and a net.\nWhich game does Dina book?",
         "answer": "soccer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares volleyball, baseball, football. The person selects volleyball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The session is volleyball, played across a net. Baseball uses a bat and ball, while football here means American football.\nWhich game is named for this session?",
         "answer": "volleyball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares rugby, cricket, badminton. The person selects rugby for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina asks about rugby, played with an oval ball. Cricket uses a bat and ball; badminton uses a shuttlecock.\nWhich game does Dina ask about?",
         "answer": "rugby",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares table tennis, golf, bowling. The person selects table tennis for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Dina chooses table tennis. Golf uses clubs to hit a small ball into holes; bowling uses a ball to knock down pins.\nWhich table-based game does Dina choose?",
         "answer": "table tennis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares ball, racket, bat. The person selects ball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A ball is used in many sports. A racket has a framed striking surface, while a bat is a club-like striking tool.\nWhich general term names the object thrown or kicked?",
         "answer": "ball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "soccer"
+        "prompt": "Dina reads the sports-center timetable. Soccer and basketball use different courts or fields and rules. She asks about volleyball, then rugby and table tennis. Other sessions include tennis, baseball and cricket. Dina looks at a ball, a racket and a bat in the equipment display. She reads the session name before booking and asks staff to explain an unfamiliar sport.\nWhat does Dina read before booking?",
+        "answer": "The session name.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "tennis"
+        "prompt": "Explain the difference between “soccer” and “basketball” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Scoreboard” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “soccer” in its supplied supported sports and coastal vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dina books soccer, the game commonly called football outside the US. Basketball uses a hoop, while tennis uses rackets and a net.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L4 Sports Center: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing a sport session",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads the sports-center timetable. Soccer and basketball use different courts or fields and rules. She asks about volleyball, then rugby and table tennis. Other sessions include tennis, baseball and cricket. Dina looks at a ball, a racket and a bat in the equipment display. She reads the session name before booking and asks staff to explain an unfamiliar sport. Ask: What does Dina read before booking?"
     },
     "spacedReview": "1 lesson(s) back: Scoreboard, Cones from sports-equipment-4\n3 lesson(s) back: Golf Club, Lacrosse Stick from sports-equipment-2\n7 lesson(s) back: ATM, Balance from money-currency-2"
   },
@@ -209,149 +214,154 @@
       "واقي الساق",
       "واقي الركبة",
       "قفاز",
-      "صافي",
+      "شبكة",
       "مرمى",
-      "قرط حلقي",
+      "حلقة كرة السلة",
       "لوحة نتائج",
       "صافرة",
       "ساعة توقيت",
-      "قُمع",
+      "قمع تدريب",
       "جري",
       "عدو سريع",
       "سباق تتابع",
       "سباق حواجز"
     ],
     "usage": {
-      "goal": "Learn to use common l4 sports center 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 sports center.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
+      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["helmet", "shin guard", "knee pad"],
-          "scenario": "During a routine l4 sports center task, an adult compares helmet, shin guard, knee pad. The person selects helmet for the next step.",
+          "scenario": "The helmet is protective headgear. A shin guard covers the lower leg, and a knee pad covers a knee.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is worn on the head?",
             "options": ["helmet", "shin guard", "knee pad"],
             "expectedAnswer": "helmet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares helmet, shin guard, knee pad. The person selects helmet for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including helmet, shin guard, knee pad in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. One plain standalone sports helmet; no rating or fit claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["glove", "net", "goal"],
-          "scenario": "During a routine l4 sports center task, an adult compares glove, net, goal. The person selects glove for the next step.",
+          "scenario": "The glove is worn on a hand. A net is a mesh structure, while a goal is a scoring target in some games.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is worn on a hand?",
             "options": ["glove", "net", "goal"],
             "expectedAnswer": "glove"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares glove, net, goal. The person selects glove for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including glove, net, goal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain sports glove on a tabletop; no wearer or branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["hoop", "scoreboard", "whistle"],
-          "scenario": "During a routine l4 sports center task, an adult compares hoop, scoreboard, whistle. The person selects hoop for the next step.",
+          "scenario": "The hoop is the basketball ring. A scoreboard displays results, and a whistle gives a sound signal.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the basketball ring?",
             "options": ["hoop", "scoreboard", "whistle"],
             "expectedAnswer": "hoop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares hoop, scoreboard, whistle. The person selects hoop for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including hoop, scoreboard, whistle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Coherent empty basketball hoop and net, no logos or score text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["stopwatch", "cone", "running"],
-          "scenario": "During a routine l4 sports center task, an adult compares stopwatch, cone, running. The person selects stopwatch for the next step.",
+          "scenario": "The stopwatch measures elapsed time. A cone marks a practice area; running is movement on foot.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool measures elapsed time?",
             "options": ["stopwatch", "cone", "running"],
             "expectedAnswer": "stopwatch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares stopwatch, cone, running. The person selects stopwatch for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including stopwatch, cone, running in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain stopwatch with blank display; no exact reading inferred. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["sprinting", "relay race", "hurdles"],
-          "scenario": "During a routine l4 sports center task, an adult compares sprinting, relay race, hurdles. The person selects sprinting for the next step.",
+          "scenario": "The guide describes sprinting as fast running over a short distance. A relay race uses team stages; hurdles is a race over obstacles.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term describes the fast short-distance running?",
             "options": ["sprinting", "relay race", "hurdles"],
             "expectedAnswer": "sprinting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares sprinting, relay race, hurdles. The person selects sprinting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including sprinting, relay race, hurdles in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty short running-track section; motion and session supplied by text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L4 Sports Center: Mini Dialogue",
-      "text": "Maya is in a situation connected to l4 sports center. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check helmet, shin guard, and knee pad. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check glove, net, and goal. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Sports Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Equipment for a track session",
+      "text": "Dina asks a coach about the equipment list. A helmet, shin guard and knee pad protect different areas. The court has a hoop and a scoreboard. A whistle gives a signal, while a stopwatch measures time. On the track, Dina reads about sprinting, a relay race and hurdles. She asks staff which session is suitable for her; the lesson does not require her to perform it.",
+      "imageBrief": "Support for Equipment for a track session. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine l4 sports center task, an adult compares helmet, shin guard, knee pad. The person selects helmet for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The helmet is protective headgear. A shin guard covers the lower leg, and a knee pad covers a knee.\nWhich item is worn on the head?",
         "answer": "helmet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares glove, net, goal. The person selects glove for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The glove is worn on a hand. A net is a mesh structure, while a goal is a scoring target in some games.\nWhich item is worn on a hand?",
         "answer": "glove",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares hoop, scoreboard, whistle. The person selects hoop for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The hoop is the basketball ring. A scoreboard displays results, and a whistle gives a sound signal.\nWhich item is the basketball ring?",
         "answer": "hoop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares stopwatch, cone, running. The person selects stopwatch for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The stopwatch measures elapsed time. A cone marks a practice area; running is movement on foot.\nWhich tool measures elapsed time?",
         "answer": "stopwatch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares sprinting, relay race, hurdles. The person selects sprinting for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The guide describes sprinting as fast running over a short distance. A relay race uses team stages; hurdles is a race over obstacles.\nWhich term describes the fast short-distance running?",
         "answer": "sprinting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "helmet"
+        "prompt": "Dina asks a coach about the equipment list. A helmet, shin guard and knee pad protect different areas. The court has a hoop and a scoreboard. A whistle gives a signal, while a stopwatch measures time. On the track, Dina reads about sprinting, a relay race and hurdles. She asks staff which session is suitable for her; the lesson does not require her to perform it.\nWhat does a stopwatch measure?",
+        "answer": "Elapsed time.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "knee pad"
+        "prompt": "Explain the difference between “helmet” and “shin guard” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “soccer” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “helmet” in its supplied supported sports and coastal vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The helmet is protective headgear. A shin guard covers the lower leg, and a knee pad covers a knee.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L4 Sports Center: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Equipment for a track session",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina asks a coach about the equipment list. A helmet, shin guard and knee pad protect different areas. The court has a hoop and a scoreboard. A whistle gives a signal, while a stopwatch measures time. On the track, Dina reads about sprinting, a relay race and hurdles. She asks staff which session is suitable for her; the lesson does not require her to perform it. Ask: What does a stopwatch measure?"
     },
     "spacedReview": "1 lesson(s) back: soccer, basketball from sports-center-1\n3 lesson(s) back: Dumbbell, Barbell from sports-equipment-3\n7 lesson(s) back: Cost, Discount from money-currency-3"
   },
@@ -387,11 +397,11 @@
       "وثب عالٍ",
       "رمي الرمح",
       "رمي القرص",
-      "قبو معماري عمود",
+      "القفز بالزانة",
       "ماراثون",
       "مسند انطلاق",
-      "طابور مذاق نهائي",
-      "مسبح سباحة",
+      "خط النهاية",
+      "مسبح",
       "لوح قفز إلى الماء",
       "حارة سباق",
       "لوح سباحة",
@@ -400,136 +410,141 @@
       "سباحة حرة"
     ],
     "usage": {
-      "goal": "Learn to use common l4 sports center 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 sports center.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
+      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["long jump", "high jump", "javelin"],
-          "scenario": "During a routine l4 sports center task, an adult compares long jump, high jump, javelin. The person selects long jump for the next step.",
+          "scenario": "Long jump aims for distance. High jump clears a raised bar; javelin here names the event using a thrown spear-shaped implement.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which event aims for jump distance?",
             "options": ["long jump", "high jump", "javelin"],
             "expectedAnswer": "long jump"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares long jump, high jump, javelin. The person selects long jump for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including long jump, high jump, javelin in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty long-jump pit and takeoff area, no jumping action or rule-specific measurements. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["discus", "pole vault", "marathon"],
-          "scenario": "During a routine l4 sports center task, an adult compares discus, pole vault, marathon. The person selects discus for the next step.",
+          "scenario": "Discus here names the event using a thrown disk. Pole vault uses a pole to clear a bar, while a marathon is a long-distance race.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which event uses a thrown disk?",
             "options": ["discus", "pole vault", "marathon"],
             "expectedAnswer": "discus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares discus, pole vault, marathon. The person selects discus for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including discus, pole vault, marathon in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Standalone discus reference; no throwing instruction or person. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["starting block", "finish line", "swimming pool"],
-          "scenario": "During a routine l4 sports center task, an adult compares starting block, finish line, swimming pool. The person selects starting block for the next step.",
+          "scenario": "A starting block supports a sprinter's foot at the start. Finish line marks the race end, and swimming pool is the water facility.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item supports the foot at a sprint start?",
             "options": ["starting block", "finish line", "swimming pool"],
             "expectedAnswer": "starting block"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares starting block, finish line, swimming pool. The person selects starting block for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including starting block, finish line, swimming pool in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Coherent pair of starting-block footplates on empty track. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["diving board", "lane", "kickboard"],
-          "scenario": "During a routine l4 sports center task, an adult compares diving board, lane, kickboard. The person selects diving board for the next step.",
+          "scenario": "The diving board is a springboard above the water. A lane marks a swimmer's route; a kickboard is used in swimming practice.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the springboard above the water?",
             "options": ["diving board", "lane", "kickboard"],
             "expectedAnswer": "diving board"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares diving board, lane, kickboard. The person selects diving board for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including diving board, lane, kickboard in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty pool with coherent springboard; no dive, person or depth/safety claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["swim cap", "backstroke", "freestyle"],
-          "scenario": "During a routine l4 sports center task, an adult compares swim cap, backstroke, freestyle. The person selects swim cap for the next step.",
+          "scenario": "A swim cap covers hair. Backstroke is performed on the back; freestyle usually refers to front crawl in everyday swimming discussion.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item covers the hair?",
             "options": ["swim cap", "backstroke", "freestyle"],
             "expectedAnswer": "swim cap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares swim cap, backstroke, freestyle. The person selects swim cap for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including swim cap, backstroke, freestyle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Standalone swim cap with plain surface, no model or logo. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L4 Sports Center: Simple Message",
-      "text": "Maya is in a situation connected to l4 sports center. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check long jump, high jump, and javelin. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check discus, pole vault, and marathon. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Sports Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Athletics and swimming words",
+      "text": "Dina visits the equipment display. A long jump differs from a high jump and a pole vault. She reads about the discus and javelin events. Starting blocks are used at a sprint start, and the finish line marks the end. At the swimming pool, Dina sees a diving board and lanes. She asks about a swim cap, backstroke and freestyle before choosing a supervised lesson.",
+      "imageBrief": "Support for Athletics and swimming words. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine l4 sports center task, an adult compares long jump, high jump, javelin. The person selects long jump for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Long jump aims for distance. High jump clears a raised bar; javelin here names the event using a thrown spear-shaped implement.\nWhich event aims for jump distance?",
         "answer": "long jump",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares discus, pole vault, marathon. The person selects discus for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Discus here names the event using a thrown disk. Pole vault uses a pole to clear a bar, while a marathon is a long-distance race.\nWhich event uses a thrown disk?",
         "answer": "discus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares starting block, finish line, swimming pool. The person selects starting block for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A starting block supports a sprinter's foot at the start. Finish line marks the race end, and swimming pool is the water facility.\nWhich item supports the foot at a sprint start?",
         "answer": "starting block",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares diving board, lane, kickboard. The person selects diving board for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The diving board is a springboard above the water. A lane marks a swimmer's route; a kickboard is used in swimming practice.\nWhich item is the springboard above the water?",
         "answer": "diving board",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares swim cap, backstroke, freestyle. The person selects swim cap for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A swim cap covers hair. Backstroke is performed on the back; freestyle usually refers to front crawl in everyday swimming discussion.\nWhich item covers the hair?",
         "answer": "swim cap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "long jump"
+        "prompt": "Dina visits the equipment display. A long jump differs from a high jump and a pole vault. She reads about the discus and javelin events. Starting blocks are used at a sprint start, and the finish line marks the end. At the swimming pool, Dina sees a diving board and lanes. She asks about a swim cap, backstroke and freestyle before choosing a supervised lesson.\nWhat marks the end of a race?",
+        "answer": "The finish line.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "javelin"
+        "prompt": "Explain the difference between “long jump” and “high jump” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “helmet” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “long jump” in its supplied supported sports and coastal vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Long jump aims for distance. High jump clears a raised bar; javelin here names the event using a thrown spear-shaped implement.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L4 Sports Center: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Athletics and swimming words",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina visits the equipment display. A long jump differs from a high jump and a pole vault. She reads about the discus and javelin events. Starting blocks are used at a sprint start, and the finish line marks the end. At the swimming pool, Dina sees a diving board and lanes. She asks about a swim cap, backstroke and freestyle before choosing a supervised lesson. Ask: What marks the end of a race?"
     },
     "spacedReview": "1 lesson(s) back: helmet, shin guard from sports-center-2\n3 lesson(s) back: Scoreboard, Cones from sports-equipment-4\n7 lesson(s) back: Insurance, Investment from money-currency-4"
   },
@@ -561,153 +576,158 @@
       "shower"
     ],
     "targetWordsArabic": [
-      "يمسح بلطف فراشة",
+      "سباحة الفراشة",
       "كرة الماء",
       "سباحة فنية متزامنة",
       "صالة رياضية",
-      "غرفة خزانة",
+      "غرفة تبديل الملابس والخزائن",
       "مقعد",
       "مدرجات",
-      "مسار",
+      "مضمار",
       "ملعب",
       "ملعب محدد الحدود",
-      "خاتم",
+      "حلبة",
       "بساط رياضي",
       "جهاز مشي",
       "غرفة أوزان",
       "دُش"
     ],
     "usage": {
-      "goal": "Learn to use common l4 sports center 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 sports center.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
+      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["butterfly stroke", "water polo", "synchronized swimming"],
-          "scenario": "During a routine l4 sports center task, an adult compares butterfly stroke, water polo, synchronized swimming. The person selects butterfly stroke for the next step.",
+          "scenario": "Butterfly stroke uses simultaneous arm recovery and a dolphin kick. Water polo is a pool team game; synchronized swimming means coordinated routines.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which stroke is described with simultaneous arm recovery?",
             "options": ["butterfly stroke", "water polo", "synchronized swimming"],
             "expectedAnswer": "butterfly stroke"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares butterfly stroke, water polo, synchronized swimming. The person selects butterfly stroke for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including butterfly stroke, water polo, synchronized swimming in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Hold active stroke generation unless a verified anatomical reference and approved subject plan exist. An empty pool can support the written task. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["gymnasium", "locker room", "bench"],
-          "scenario": "During a routine l4 sports center task, an adult compares gymnasium, locker room, bench. The person selects gymnasium for the next step.",
+          "scenario": "The gymnasium is an indoor exercise space. A locker room is for changing and storage; a bench is a long seat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the indoor exercise space?",
             "options": ["gymnasium", "locker room", "bench"],
             "expectedAnswer": "gymnasium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares gymnasium, locker room, bench. The person selects gymnasium for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including gymnasium, locker room, bench in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty indoor gymnasium with coherent sports equipment, no people or readable marks. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["bleachers", "track", "field"],
-          "scenario": "During a routine l4 sports center task, an adult compares bleachers, track, field. The person selects bleachers for the next step.",
+          "scenario": "Bleachers are tiered spectator seats. A track is for races or running, while a field is an outdoor sports area.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the tiered spectator seats?",
             "options": ["bleachers", "track", "field"],
             "expectedAnswer": "bleachers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares bleachers, track, field. The person selects bleachers for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including bleachers, track, field in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty tiered bleachers, no audience or readable signage. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["court", "ring", "mat"],
-          "scenario": "During a routine l4 sports center task, an adult compares court, ring, mat. The person selects court for the next step.",
+          "scenario": "A court is a marked playing area. A ring is an enclosed boxing or wrestling area; a mat is a floor pad for some activities.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the marked playing area?",
             "options": ["court", "ring", "mat"],
             "expectedAnswer": "court"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares court, ring, mat. The person selects court for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including court, ring, mat in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty marked court, no legal courtroom or trademark. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["treadmill", "weight room", "shower"],
-          "scenario": "During a routine l4 sports center task, an adult compares treadmill, weight room, shower. The person selects treadmill for the next step.",
+          "scenario": "A treadmill has a moving belt for walking or running in place. Weight room is for strength equipment, and shower is a washing facility.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which machine has the moving belt?",
             "options": ["treadmill", "weight room", "shower"],
             "expectedAnswer": "treadmill"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares treadmill, weight room, shower. The person selects treadmill for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including treadmill, weight room, shower in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Stationary unoccupied treadmill, display blank, no exercise or electrical repair instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L4 Sports Center: Notice-Style Text",
-      "text": "Maya is in a situation connected to l4 sports center. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check butterfly stroke, water polo, and synchronized swimming. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check gymnasium, locker room, and bench. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Sports Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Facilities and swimming sessions",
+      "text": "Dina reads about butterfly stroke and water polo. Synchronized swimming is now commonly called artistic swimming. She then walks through the gymnasium. The locker room has a bench, and the sports area has bleachers. A court is marked for ball games. Dina asks where the treadmill and weight room are. She uses the written guide and asks staff before entering a restricted or supervised area.",
+      "imageBrief": "Support for Facilities and swimming sessions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine l4 sports center task, an adult compares butterfly stroke, water polo, synchronized swimming. The person selects butterfly stroke for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Butterfly stroke uses simultaneous arm recovery and a dolphin kick. Water polo is a pool team game; synchronized swimming means coordinated routines.\nWhich stroke is described with simultaneous arm recovery?",
         "answer": "butterfly stroke",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares gymnasium, locker room, bench. The person selects gymnasium for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The gymnasium is an indoor exercise space. A locker room is for changing and storage; a bench is a long seat.\nWhich term names the indoor exercise space?",
         "answer": "gymnasium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares bleachers, track, field. The person selects bleachers for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Bleachers are tiered spectator seats. A track is for races or running, while a field is an outdoor sports area.\nWhich term names the tiered spectator seats?",
         "answer": "bleachers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares court, ring, mat. The person selects court for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A court is a marked playing area. A ring is an enclosed boxing or wrestling area; a mat is a floor pad for some activities.\nWhich term names the marked playing area?",
         "answer": "court",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares treadmill, weight room, shower. The person selects treadmill for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A treadmill has a moving belt for walking or running in place. Weight room is for strength equipment, and shower is a washing facility.\nWhich machine has the moving belt?",
         "answer": "treadmill",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "butterfly stroke"
+        "prompt": "Dina reads about butterfly stroke and water polo. Synchronized swimming is now commonly called artistic swimming. She then walks through the gymnasium. The locker room has a bench, and the sports area has bleachers. A court is marked for ball games. Dina asks where the treadmill and weight room are. She uses the written guide and asks staff before entering a restricted or supervised area.\nWhat does Dina do before entering a restricted area?",
+        "answer": "She asks staff.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "synchronized swimming"
+        "prompt": "Explain the difference between “butterfly stroke” and “water polo” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “long jump” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “butterfly stroke” in its supplied supported sports and coastal vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Butterfly stroke uses simultaneous arm recovery and a dolphin kick. Water polo is a pool team game; synchronized swimming means coordinated routines.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L4 Sports Center: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Facilities and swimming sessions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads about butterfly stroke and water polo. Synchronized swimming is now commonly called artistic swimming. She then walks through the gymnasium. The locker room has a bench, and the sports area has bleachers. A court is marked for ball games. Dina asks where the treadmill and weight room are. She uses the written guide and asks staff before entering a restricted or supervised area. Ask: What does Dina do before entering a restricted area?"
     },
     "spacedReview": "1 lesson(s) back: long jump, high jump from sports-center-3\n3 lesson(s) back: soccer, basketball from sports-center-1\n7 lesson(s) back: Soccer Ball, Basketball from sports-equipment-1"
   },
@@ -737,130 +757,135 @@
     ],
     "targetWordsArabic": [
       "رياضي",
-      "حافلة سفر",
+      "مدرب",
       "حكم",
       "زميل في الفريق",
       "إحماء",
-      "مرونة",
-      "نتيجة",
-      "بطاقة مرور",
+      "يمدد عضلاته",
+      "يسجل نقاطًا أو هدفًا",
+      "يمرر الكرة",
       "يركل",
       "يرمي",
       "يلتقط",
       "يراوغ بالكرة"
     ],
     "usage": {
-      "goal": "Learn to use common l4 sports center 5 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to l4 sports center.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Identify a stated item, activity or role from a short supplied description and ask for clarification.",
+      "canDoStatement": "Can identify described sports and coastal terms using supplied vocabulary support.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["athlete", "coach", "referee"],
-          "scenario": "During a routine l4 sports center task, an adult compares athlete, coach, referee. The person selects athlete for the next step.",
+          "scenario": "An athlete participates in sport. A coach trains players, and a referee applies the game's rules.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the sport participant?",
             "options": ["athlete", "coach", "referee"],
             "expectedAnswer": "athlete"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares athlete, coach, referee. The person selects athlete for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including athlete, coach, referee in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain sports kit reference supports written roles; no identity or job inferred from clothes. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["teammate", "warm up", "stretch"],
-          "scenario": "During a routine l4 sports center task, an adult compares teammate, warm up, stretch. The person selects teammate for the next step.",
+          "scenario": "A teammate is another member of the same team. Warm up means prepare with gradual activity, and stretch means extend a body part or muscle.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names another member of the same team?",
             "options": ["teammate", "warm up", "stretch"],
             "expectedAnswer": "teammate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares teammate, warm up, stretch. The person selects teammate for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including teammate, warm up, stretch in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty team bench with unbranded kit bags; belonging and actions established in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["score", "pass", "kick"],
-          "scenario": "During a routine l4 sports center task, an adult compares score, pass, kick. The person selects score for the next step.",
+          "scenario": "Score here means gain points or a goal. Pass means send a ball to a teammate, and kick means strike it with a foot.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which verb means gain points or a goal?",
             "options": ["score", "pass", "kick"],
             "expectedAnswer": "score"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares score, pass, kick. The person selects score for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including score, pass, kick in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Empty sports goal supports text; no current result or action claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["throw", "catch", "dribble"],
-          "scenario": "During a routine l4 sports center task, an adult compares throw, catch, dribble. The person selects throw for the next step.",
+          "scenario": "Throw means send an object through the air with the hand. Catch means receive it, and dribble means control a ball with repeated bounces or touches.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which verb names sending an object through the air by hand?",
             "options": ["throw", "catch", "dribble"],
             "expectedAnswer": "throw"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a l4 sports center context illustrating this situation: During a routine l4 sports center task, an adult compares throw, catch, dribble. The person selects throw for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult l4 sports center scene showing lesson-related items or actions including throw, catch, dribble in a natural setting."
+          "imageBrief": "Word-reference support for the written supported sports and coastal vocabulary task. Plain ball on neutral background; temporal action supplied by text, no malformed hands. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "L4 Sports Center: Short Description",
-      "text": "Maya is in a situation connected to l4 sports center. She uses the new words to understand what she sees and what happens next. Before the activity begins, the player and coach check athlete, coach, and referee. The words connect to preparation, equipment, or participation. Before the activity begins, the player and coach check teammate, warm up, and stretch. The words connect to preparation, equipment, or participation.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about L4 Sports Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Team roles and ball actions",
+      "text": "Dina watches a narrated sports lesson. The text names an athlete, a coach and a referee. A teammate is another member of the same team. The coach explains warm up and stretch as activity words. Dina reads score, pass, kick, throw, catch and dribble in short sentences. She identifies each word from its stated meaning, without guessing someone's role or movement from one photograph.",
+      "imageBrief": "Support for Team roles and ball actions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine l4 sports center task, an adult compares athlete, coach, referee. The person selects athlete for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An athlete participates in sport. A coach trains players, and a referee applies the game's rules.\nWhich word names the sport participant?",
         "answer": "athlete",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares teammate, warm up, stretch. The person selects teammate for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A teammate is another member of the same team. Warm up means prepare with gradual activity, and stretch means extend a body part or muscle.\nWhich word names another member of the same team?",
         "answer": "teammate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares score, pass, kick. The person selects score for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Score here means gain points or a goal. Pass means send a ball to a teammate, and kick means strike it with a foot.\nWhich verb means gain points or a goal?",
         "answer": "score",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine l4 sports center task, an adult compares throw, catch, dribble. The person selects throw for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Throw means send an object through the air with the hand. Catch means receive it, and dribble means control a ball with repeated bounces or touches.\nWhich verb names sending an object through the air by hand?",
         "answer": "throw",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "athlete"
+        "prompt": "Dina watches a narrated sports lesson. The text names an athlete, a coach and a referee. A teammate is another member of the same team. The coach explains warm up and stretch as activity words. Dina reads score, pass, kick, throw, catch and dribble in short sentences. She identifies each word from its stated meaning, without guessing someone's role or movement from one photograph.\nWho is a teammate?",
+        "answer": "Another member of the same team.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "referee"
+        "prompt": "Explain the difference between “athlete” and “coach” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “butterfly stroke” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “athlete” in its supplied supported sports and coastal vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: An athlete participates in sport. A coach trains players, and a referee applies the game's rules.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "L4 Sports Center: In Context",
-      "idea": "30-45 seconds contextual scene in the sports setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the sports setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Team roles and ball actions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina watches a narrated sports lesson. The text names an athlete, a coach and a referee. A teammate is another member of the same team. The coach explains warm up and stretch as activity words. Dina reads score, pass, kick, throw, catch and dribble in short sentences. She identifies each word from its stated meaning, without guessing someone's role or movement from one photograph. Ask: Who is a teammate?"
     },
     "spacedReview": "1 lesson(s) back: butterfly stroke, water polo from sports-center-4\n3 lesson(s) back: helmet, shin guard from sports-center-2\n7 lesson(s) back: Golf Club, Lacrosse Stick from sports-equipment-2"
   }

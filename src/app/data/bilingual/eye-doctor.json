@@ -1,7 +1,7 @@
 {
   "eye-chart": {
-    "definition": "A chart of letters or symbols viewed from a standard distance assesses how clearly a person can see.",
-    "arabicTranslation": "خريطة ملاحية عين"
+    "definition": "A chart of letters or symbols used to measure how clearly a person sees at a set distance.",
+    "arabicTranslation": "لوحة فحص النظر"
   },
   "phoropter": {
     "definition": "An eye-examination instrument containing different lenses that an eye-care professional uses to compare visual corrections.",
@@ -87,15 +87,15 @@
     "arabicTranslation": "نظارة شمسية"
   },
   "contact-lens": {
-    "definition": "A thin, curved lens made of glass or plastic that rests on the cornea to improve vision or deliver medicine.",
+    "definition": "A thin lens placed on the surface of the eye to correct vision or for another prescribed purpose.",
     "arabicTranslation": "عدسة لاصقة"
   },
   "frame": {
-    "definition": "The supporting shape or structure of a building.",
-    "arabicTranslation": "إطار"
+    "definition": "The structure that holds eyeglass lenses in place.",
+    "arabicTranslation": "إطار نظارة"
   },
   "lens": {
-    "definition": "Biconvex transparent body situated behind the iris in the eye.",
+    "definition": "A transparent piece of optical material used to focus light, including a lens in glasses.",
     "arabicTranslation": "عدسة"
   },
   "case": {
@@ -198,7 +198,7 @@
     "arabicTranslation": "حَوَل العينين"
   },
   "floaters": {
-    "definition": "Spots before the eyes caused by opaque cell fragments in the vitreous humor and lens.",
+    "definition": "Small spots or shapes that seem to drift across vision, often related to changes in the vitreous gel.",
     "arabicTranslation": "عوائم بصرية"
   },
   "macular-degeneration": {
@@ -239,8 +239,8 @@
     "arabicTranslation": "كسل العين"
   },
   "prescription": {
-    "definition": "Available only with a doctor's written prescription.",
-    "arabicTranslation": "وصفة طبية"
+    "definition": "A written record specifying the lens correction or medicine recommended by a qualified professional.",
+    "arabicTranslation": "وصفة نظارات أو وصفة طبية"
   },
   "eye-drops": {
     "definition": "Sterile liquid medication or lubricant formulated to be placed in the eyes for a specific purpose.",
@@ -253,12 +253,12 @@
     "arabicTranslation": "جراحة بالليزر"
   },
   "lens-implant": {
-    "definition": "A clear plastic lens inserted into the eye, usually after cataract surgery removes the eye’s natural lens.",
-    "arabicTranslation": "زرعة أسنان عدسة"
+    "definition": "An artificial lens placed inside the eye, often during cataract surgery.",
+    "arabicTranslation": "عدسة مزروعة داخل العين"
   },
   "patching": {
-    "definition": "The act of mending a hole in a garment by sewing a patch over it.",
-    "arabicTranslation": "تغطية العين"
+    "definition": "Covering an eye with a patch as part of treatment prescribed by an eye-care professional.",
+    "arabicTranslation": "تغطية العين برقعة"
   },
   "therapy": {
     "definition": "(medicine) the act of caring for someone (as by medication or remedial training etc.).",
@@ -367,8 +367,8 @@
     "arabicTranslation": "صلبة العين"
   },
   "macula": {
-    "definition": "A cooler darker spot appearing periodically on the sun's photosphere.",
-    "arabicTranslation": "بقعة صفراء"
+    "definition": "The central area of the retina responsible for detailed central vision.",
+    "arabicTranslation": "البقعة الصفراء في الشبكية"
   },
   "vitreous-humor": {
     "definition": "A clear, colorless gel fills the large cavity behind the lens inside the eyeball.",
@@ -443,8 +443,8 @@
     "arabicTranslation": "بطاقة تأمين"
   },
   "appointment": {
-    "definition": "The act of putting a person into a non-elective position.",
-    "arabicTranslation": "موعد"
+    "definition": "An arranged date and time for an eye-care visit.",
+    "arabicTranslation": "موعد فحص"
   },
   "pre-testing-room": {
     "definition": "A room where preliminary eye measurements and screening tests are performed before the main examination.",
@@ -485,5 +485,13 @@
     "definition": "A cleaning device that uses high-frequency sound waves in a liquid to remove dirt from small objects.",
     "exampleUsage": "The ultrasonic cleaner was used for compatible optical parts.",
     "arabicTranslation": "منظف بالموجات فوق الصوتية"
+  },
+  "glasses": {
+    "definition": "Corrective lenses mounted in a frame resting on the bridge of the nose and ears.",
+    "arabicTranslation": "نظارات طبية"
+  },
+  "mirror": {
+    "definition": "A reflective glass surface allowing patients to evaluate frame fit on their face.",
+    "arabicTranslation": "مرآة تجربة الإطارات"
   }
 }

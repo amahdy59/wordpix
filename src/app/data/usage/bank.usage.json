@@ -47,31 +47,31 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "117-147 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lobby", "Teller Window", "Vault", "Safe Deposit Box"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.",
+          "scenario": "Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Lobby", "Teller Window", "Vault"],
-            "expectedAnswer": "Lobby"
+            "question": "Where does Amir speak to the teller?",
+            "options": ["Teller Window", "Lobby", "Vault"],
+            "expectedAnswer": "Teller Window"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Lobby as the central item; include Lobby, Teller Window, and Vault naturally where visually appropriate, but make the real-world use of Lobby the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Teller Window in a bank context. Use the written scenario as the source of meaning: Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["ATM", "Drive-Through", "Office", "Waiting Area"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.",
+          "scenario": "Amir passes the Drive-Through, Office, and Waiting Area. He uses an ATM to request an available account transaction rather than joining the counter queue. The available services depend on the machine and account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which machine does Amir use for the account transaction?",
             "options": ["ATM", "Drive-Through", "Office"],
             "expectedAnswer": "ATM"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the ATM as the central item; include ATM, Drive-Through, and Office naturally where visually appropriate, but make the real-world use of ATM the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for ATM in a bank context. Use the written scenario as the source of meaning: Amir passes the Drive-Through, Office, and Waiting Area. He uses an ATM to request an available account transaction rather than joining the counter queue. The available services depend on the machine and account. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
@@ -81,100 +81,83 @@
             "Checking Account",
             "Savings Account"
           ],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.",
+          "scenario": "At the Security Desk, a visitor asks where to find Currency Exchange. Amir’s separate question concerns a Checking Account for regular payments, compared with a Savings Account for keeping money under its stated terms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Security Desk", "Currency Exchange", "Checking Account"],
-            "expectedAnswer": "Security Desk"
+            "question": "Which account is described as suitable for regular payments?",
+            "options": ["Checking Account", "Security Desk", "Currency Exchange"],
+            "expectedAnswer": "Checking Account"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Security Desk as the central item; include Security Desk, Currency Exchange, and Checking Account naturally where visually appropriate, but make the real-world use of Security Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Checking Account in a bank context. Use the written scenario as the source of meaning: At the Security Desk, a visitor asks where to find Currency Exchange. Amir’s separate question concerns a Checking Account for regular payments, compared with a Savings Account for keeping money under its stated terms. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Joint Account", "Business Account", "Certificate of Deposit"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.",
+          "scenario": "The adviser distinguishes a Joint Account held by multiple people, a Business Account for organizational transactions, and a Certificate of Deposit holding funds for an agreed term.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which account is held by multiple people?",
             "options": ["Joint Account", "Business Account", "Certificate of Deposit"],
             "expectedAnswer": "Joint Account"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Joint Account as the central item; include Joint Account, Business Account, and Certificate of Deposit naturally where visually appropriate, but make the real-world use of Joint Account the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Joint Account in a bank context. Use the written scenario as the source of meaning: The adviser distinguishes a Joint Account held by multiple people, a Business Account for organizational transactions, and a Certificate of Deposit holding funds for an agreed term. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bank: Practical Information",
-      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Lobby, Teller Window, Vault, and Safe Deposit Box. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers ATM, Drive-Through, Office, and Waiting Area. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Desk, Currency Exchange, Checking Account, and Savings Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Joint Account, Business Account, and Certificate of Deposit. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bank: A visitor’s questions",
+      "text": "Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items. Amir passes the Drive-Through, Office, and Waiting Area. He uses an ATM to request an available account transaction rather than joining the counter queue. The available services depend on the machine and account. At the Security Desk, a visitor asks where to find Currency Exchange. Amir’s separate question concerns a Checking Account for regular payments, compared with a Savings Account for keeping money under its stated terms. The adviser distinguishes a Joint Account held by multiple people, a Business Account for organizational transactions, and a Certificate of Deposit holding funds for an agreed term.",
+      "imageBrief": "One uncluttered bank setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobby, Teller Window, Vault, and Safe Deposit Box and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Lobby",
+        "prompt": "Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items.\nWhere does Amir speak to the teller?",
+        "answer": "Teller Window",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ATM, Drive-Through, Office, and Waiting Area and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Amir passes the Drive-Through, Office, and Waiting Area. He uses an ATM to request an available account transaction rather than joining the counter queue. The available services depend on the machine and account.\nWhich machine does Amir use for the account transaction?",
         "answer": "ATM",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Desk, Currency Exchange, Checking Account, and Savings Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Security Desk",
+        "prompt": "At the Security Desk, a visitor asks where to find Currency Exchange. Amir’s separate question concerns a Checking Account for regular payments, compared with a Savings Account for keeping money under its stated terms.\nWhich account is described as suitable for regular payments?",
+        "answer": "Checking Account",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Joint Account, Business Account, and Certificate of Deposit and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The adviser distinguishes a Joint Account held by multiple people, a Business Account for organizational transactions, and a Certificate of Deposit holding funds for an agreed term.\nWhich account is held by multiple people?",
         "answer": "Joint Account",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items. Amir passes the Drive-Through, Office, and Waiting Area. He uses an ATM to request an available account transaction rather than joining the counter queue. The available services depend on the machine and account. At the Security Desk, a visitor asks where to find Currency Exchange. Amir’s separate question concerns a Checking Account for regular payments, compared with a Savings Account for keeping money under its stated terms. The adviser distinguishes a Joint Account held by multiple people, a Business Account for organizational transactions, and a Certificate of Deposit holding funds for an agreed term.\nExplain the difference between Lobby and Teller Window using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Lobby"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Scrubs” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bank task. Use Lobby, Teller Window, Vault, Safe Deposit Box, ATM, Drive-Through, Office, Waiting Area, Security Desk, Currency Exchange, Checking Account, Savings Account, Joint Account, Business Account, and Certificate of Deposit in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Lobby, Teller Window, Vault, Safe Deposit Box, ATM, Drive-Through, Office, Waiting Area, Security Desk, Currency Exchange, Checking Account, Savings Account, Joint Account, Business Account, Certificate of Deposit to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bank: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bank: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Lobby and Teller Window, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Amir enters the Lobby and asks for the Teller Window to discuss a routine transaction. The Vault is a secured room, while a Safe Deposit Box is a rented compartment for important items. Pause and answer: Where does Amir speak to the teller?"
     },
     "spacedReview": "1 lesson(s) back: Scrubs, Lab Coat from formal-business-wear-3\n3 lesson(s) back: Suit, Dress Shirt from formal-business-wear-1\n7 lesson(s) back: Freelancer, Contractor from freelancing-remote-work-1"
   },
@@ -226,129 +209,112 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "122-152 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Money Market", "Retirement Account", "Student Account", "Trust Account"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.",
+          "scenario": "The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Money Market", "Retirement Account", "Student Account"],
-            "expectedAnswer": "Money Market"
+            "question": "Which account holds funds managed for a beneficiary?",
+            "options": ["Trust Account", "Money Market", "Retirement Account"],
+            "expectedAnswer": "Trust Account"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Money Market as the central item; include Money Market, Retirement Account, and Student Account naturally where visually appropriate, but make the real-world use of Money Market the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Trust Account in a bank context. Use the written scenario as the source of meaning: The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Escrow", "Deposit", "Withdraw", "Transfer"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.",
+          "scenario": "Amir asks about Escrow, which holds funds until conditions are met. The adviser then distinguishes Deposit, Withdraw, and Transfer: Withdraw means take money out of an account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Escrow", "Deposit", "Withdraw"],
-            "expectedAnswer": "Escrow"
+            "question": "Which action takes money out of an account?",
+            "options": ["Withdraw", "Escrow", "Deposit"],
+            "expectedAnswer": "Withdraw"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Escrow as the central item; include Escrow, Deposit, and Withdraw naturally where visually appropriate, but make the real-world use of Escrow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Withdraw in a bank context. Use the written scenario as the source of meaning: Amir asks about Escrow, which holds funds until conditions are met. The adviser then distinguishes Deposit, Withdraw, and Transfer: Withdraw means take money out of an account. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Wire", "Cash Check", "Open Account", "Close Account"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.",
+          "scenario": "The bank explains Wire as an electronic money-transfer method. Cash Check exchanges a valid check for cash; Open Account and Close Account begin and end an account relationship. Eligibility, timing, and fees require the bank’s own terms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the electronic money-transfer method?",
             "options": ["Wire", "Cash Check", "Open Account"],
             "expectedAnswer": "Wire"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Wire as the central item; include Wire, Cash Check, and Open Account naturally where visually appropriate, but make the real-world use of Wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Wire in a bank context. Use the written scenario as the source of meaning: The bank explains Wire as an electronic money-transfer method. Cash Check exchanges a valid check for cash; Open Account and Close Account begin and end an account relationship. Eligibility, timing, and fees require the bank’s own terms. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Apply for Loan", "Pay Bill", "Check Balance"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.",
+          "scenario": "Before deciding whether to Apply for Loan or Pay Bill, Amir wants to Check Balance to view the amount currently recorded in the account. The exercise does not recommend borrowing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Apply for Loan", "Pay Bill", "Check Balance"],
-            "expectedAnswer": "Apply for Loan"
+            "question": "Which action views the amount currently recorded in the account?",
+            "options": ["Check Balance", "Apply for Loan", "Pay Bill"],
+            "expectedAnswer": "Check Balance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Apply for Loan as the central item; include Apply for Loan, Pay Bill, and Check Balance naturally where visually appropriate, but make the real-world use of Apply for Loan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Check Balance in a bank context. Use the written scenario as the source of meaning: Before deciding whether to Apply for Loan or Pay Bill, Amir wants to Check Balance to view the amount currently recorded in the account. The exercise does not recommend borrowing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Bank",
-      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Money Market, Retirement Account, Student Account, and Trust Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Escrow, Deposit, Withdraw, and Transfer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Wire, Cash Check, Open Account, and Close Account. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Apply for Loan, Pay Bill, and Check Balance. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bank: Understanding the different roles",
+      "text": "The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary. Amir asks about Escrow, which holds funds until conditions are met. The adviser then distinguishes Deposit, Withdraw, and Transfer: Withdraw means take money out of an account. The bank explains Wire as an electronic money-transfer method. Cash Check exchanges a valid check for cash; Open Account and Close Account begin and end an account relationship. Eligibility, timing, and fees require the bank’s own terms. Before deciding whether to Apply for Loan or Pay Bill, Amir wants to Check Balance to view the amount currently recorded in the account. The exercise does not recommend borrowing.",
+      "imageBrief": "One uncluttered bank setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Money Market, Retirement Account, Student Account, and Trust Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Money Market",
+        "prompt": "The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary.\nWhich account holds funds managed for a beneficiary?",
+        "answer": "Trust Account",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Deposit, Withdraw, and Transfer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Escrow",
+        "prompt": "Amir asks about Escrow, which holds funds until conditions are met. The adviser then distinguishes Deposit, Withdraw, and Transfer: Withdraw means take money out of an account.\nWhich action takes money out of an account?",
+        "answer": "Withdraw",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wire, Cash Check, Open Account, and Close Account and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The bank explains Wire as an electronic money-transfer method. Cash Check exchanges a valid check for cash; Open Account and Close Account begin and end an account relationship. Eligibility, timing, and fees require the bank’s own terms.\nWhich term names the electronic money-transfer method?",
         "answer": "Wire",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Apply for Loan, Pay Bill, and Check Balance and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Apply for Loan",
+        "prompt": "Before deciding whether to Apply for Loan or Pay Bill, Amir wants to Check Balance to view the amount currently recorded in the account. The exercise does not recommend borrowing.\nWhich action views the amount currently recorded in the account?",
+        "answer": "Check Balance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary. Amir asks about Escrow, which holds funds until conditions are met. The adviser then distinguishes Deposit, Withdraw, and Transfer: Withdraw means take money out of an account. The bank explains Wire as an electronic money-transfer method. Cash Check exchanges a valid check for cash; Open Account and Close Account begin and end an account relationship. Eligibility, timing, and fees require the bank’s own terms. Before deciding whether to Apply for Loan or Pay Bill, Amir wants to Check Balance to view the amount currently recorded in the account. The exercise does not recommend borrowing.\nExplain the difference between Money Market and Retirement Account using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Money Market"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lobby” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bank task. Use Money Market, Retirement Account, Student Account, Trust Account, Escrow, Deposit, Withdraw, Transfer, Wire, Cash Check, Open Account, Close Account, Apply for Loan, Pay Bill, and Check Balance in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Money Market, Retirement Account, Student Account, Trust Account, Escrow, Deposit, Withdraw, Transfer, Wire, Cash Check, Open Account, Close Account, Apply for Loan, Pay Bill, Check Balance to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bank: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bank: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Money Market and Retirement Account, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The adviser discusses the Money Market as a short-term financial market, distinct from a money-market deposit account. The glossary also lists a Retirement Account, Student Account, and Trust Account. A Trust Account holds funds managed for a beneficiary. Pause and answer: Which account holds funds managed for a beneficiary?"
     },
     "spacedReview": "1 lesson(s) back: Lobby, Teller Window from bank-1\n3 lesson(s) back: Pantsuit, Wrap Dress from formal-business-wear-2\n7 lesson(s) back: Dropbox, Figma from freelancing-remote-work-2"
   },
@@ -390,110 +356,93 @@
       "goal": "Use precise, practical vocabulary to understand financial terms and ask clear questions about routine services or decisions and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the financial services setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "73-103 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Teller", "Bank Manager", "Loan Officer", "Financial Advisor"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.",
+          "scenario": "A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Teller", "Bank Manager", "Loan Officer"],
-            "expectedAnswer": "Teller"
+            "question": "Who explains the lending requirements?",
+            "options": ["Loan Officer", "Teller", "Bank Manager"],
+            "expectedAnswer": "Loan Officer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Teller as the central item; include Teller, Bank Manager, and Loan Officer naturally where visually appropriate, but make the real-world use of Teller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Loan Officer in a bank context. Use the written scenario as the source of meaning: A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Security Guard", "Accountant", "Auditor", "Branch Manager"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.",
+          "scenario": "The Security Guard manages site security. An Accountant maintains financial records, while an Auditor examines those records and practices. The Branch Manager is responsible for this branch.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Security Guard", "Accountant", "Auditor"],
-            "expectedAnswer": "Security Guard"
+            "question": "Who examines the accounting records and practices?",
+            "options": ["Auditor", "Security Guard", "Accountant"],
+            "expectedAnswer": "Auditor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Security Guard as the central item; include Security Guard, Accountant, and Auditor naturally where visually appropriate, but make the real-world use of Security Guard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Auditor in a bank context. Use the written scenario as the source of meaning: The Security Guard manages site security. An Accountant maintains financial records, while an Auditor examines those records and practices. The Branch Manager is responsible for this branch. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Customer Service", "Compliance Officer"],
-          "scenario": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.",
+          "scenario": "Customer Service helps with account questions. A Compliance Officer checks whether the organization follows applicable requirements and its own policies. The written account describes these responsibilities, which clothing cannot prove.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Customer Service", "Compliance Officer", "Teller"],
-            "expectedAnswer": "Customer Service"
+            "question": "Which role checks organizational compliance?",
+            "options": ["Compliance Officer", "Customer Service"],
+            "expectedAnswer": "Compliance Officer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a financial services setting. Show an adult using or examining the Customer Service as the central item; include Customer Service, Compliance Officer, and Teller naturally where visually appropriate, but make the real-world use of Customer Service the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a financial services setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Compliance Officer in a bank context. Use the written scenario as the source of meaning: Customer Service helps with account questions. A Compliance Officer checks whether the organization follows applicable requirements and its own policies. The written account describes these responsibilities, which clothing cannot prove. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written bank situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the bank, a traveler handles a real-world responsibility and must make a clear decision. First, the traveler considers Teller, Bank Manager, Loan Officer, and Financial Advisor. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Next, the traveler considers Security Guard, Accountant, Auditor, and Branch Manager. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. Finally, the traveler considers Customer Service and Compliance Officer. The choice depends on the role of each term in the context, so the traveler checks the details before moving on. By the end, the traveler can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Bank. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Bank: Comparing the equipment",
+      "text": "A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications. The Security Guard manages site security. An Accountant maintains financial records, while an Auditor examines those records and practices. The Branch Manager is responsible for this branch. Customer Service helps with account questions. A Compliance Officer checks whether the organization follows applicable requirements and its own policies. The written account describes these responsibilities, which clothing cannot prove.",
+      "imageBrief": "One uncluttered bank setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Teller, Bank Manager, Loan Officer, and Financial Advisor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Teller",
+        "prompt": "A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications.\nWho explains the lending requirements?",
+        "answer": "Loan Officer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Guard, Accountant, Auditor, and Branch Manager and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Security Guard",
+        "prompt": "The Security Guard manages site security. An Accountant maintains financial records, while an Auditor examines those records and practices. The Branch Manager is responsible for this branch.\nWho examines the accounting records and practices?",
+        "answer": "Auditor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the bank setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Customer Service, and Compliance Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Customer Service",
+        "prompt": "Customer Service helps with account questions. A Compliance Officer checks whether the organization follows applicable requirements and its own policies. The written account describes these responsibilities, which clothing cannot prove.\nWhich role checks organizational compliance?",
+        "answer": "Compliance Officer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications. The Security Guard manages site security. An Accountant maintains financial records, while an Auditor examines those records and practices. The Branch Manager is responsible for this branch. Customer Service helps with account questions. A Compliance Officer checks whether the organization follows applicable requirements and its own policies. The written account describes these responsibilities, which clothing cannot prove.\nExplain the difference between Teller and Bank Manager using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Teller"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Money Market” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the bank task. Use Teller, Bank Manager, Loan Officer, Financial Advisor, Security Guard, Accountant, Auditor, Branch Manager, Customer Service, and Compliance Officer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Teller, Bank Manager, Loan Officer, Financial Advisor, Security Guard, Accountant, Auditor, Branch Manager, Customer Service, Compliance Officer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Bank: In Context",
-      "idea": "45-70 seconds contextual scene in the financial setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the financial setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Bank: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Teller and Bank Manager, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Teller handles permitted counter transactions, and the Bank Manager supervises operations. A Loan Officer explains lending requirements; a Financial Advisor provides guidance within their qualifications. Pause and answer: Who explains the lending requirements?"
     },
     "spacedReview": "1 lesson(s) back: Money Market, Retirement Account from bank-2\n3 lesson(s) back: Scrubs, Lab Coat from formal-business-wear-3\n7 lesson(s) back: Invoice, Contract from freelancing-remote-work-3"
   }

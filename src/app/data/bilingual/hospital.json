@@ -1,6 +1,6 @@
 {
   "doctor": {
-    "definition": "Children take the roles of physician or patient or nurse and pretend they are at the physician's office.",
+    "definition": "A trained medical professional who diagnoses and treats illness.",
     "arabicTranslation": "طبيب"
   },
   "nurse": {
@@ -20,11 +20,11 @@
     "arabicTranslation": "موظف استقبال"
   },
   "pharmacist": {
-    "definition": "A health professional trained in the art of preparing and dispensing drugs.",
+    "definition": "A healthcare professional who prepares or supplies medicines and advises on their safe use.",
     "arabicTranslation": "صيدلي"
   },
   "anesthesiologist": {
-    "definition": "A specialist who administers an anesthetic to a patient before they are treated.",
+    "definition": "A doctor who manages anesthesia and monitors a patient during certain procedures.",
     "arabicTranslation": "طبيب تخدير"
   },
   "radiologist": {
@@ -40,8 +40,8 @@
     "arabicTranslation": "طبيب نفسي"
   },
   "midwife": {
-    "definition": "A woman skilled in aiding the delivery of babies.",
-    "arabicTranslation": "قابلة"
+    "definition": "A trained healthcare professional who supports pregnancy, birth, and care after birth.",
+    "arabicTranslation": "قابلة أو اختصاصي توليد"
   },
   "orderly": {
     "definition": "A hospital worker who helps move patients and supports everyday ward tasks.",
@@ -100,7 +100,7 @@
   "lab-technician": {
     "definition": "A trained technical worker who prepares materials, operates laboratory instruments, conducts routine tests, and records findings under scientists’ or senior staff’s supervision.",
     "arabicTranslation": "فني مختبر",
-    "exampleUsage": "The lab technician was used during the activity."
+    "exampleUsage": "The lab technician prepared samples for the laboratory tests."
   },
   "emt": {
     "definition": "A trained worker who gives emergency medical care before a patient reaches hospital.",
@@ -116,7 +116,7 @@
     "arabicTranslation": "غرفة انتظار"
   },
   "operating-room": {
-    "definition": "A specially equipped hospital room is used for surgery and kept sterile to reduce the risk of infection.",
+    "definition": "A specially equipped hospital room used for surgery, with procedures that reduce infection risk.",
     "arabicTranslation": "غرفة عمليات"
   },
   "recovery-room": {
@@ -142,7 +142,7 @@
     "definition": "A hospital area where newborn babies receive care."
   },
   "laboratory": {
-    "definition": "A region resembling a laboratory inasmuch as it offers opportunities for observation and practice and experimentation.",
+    "definition": "A hospital workspace where samples are tested and analyzed.",
     "arabicTranslation": "مختبر"
   },
   "radiology": {
@@ -183,7 +183,7 @@
   },
   "sterilization-room": {
     "definition": "A controlled area where reusable medical instruments are cleaned, packaged, and sterilized.",
-    "exampleUsage": "Sterile instruments were prepared in the sterilization room.",
+    "exampleUsage": "Staff processed compatible instruments in the sterilization room according to the hospital’s specified method.",
     "arabicTranslation": "غرفة التعقيم"
   },
   "rehabilitation-room": {
@@ -198,16 +198,16 @@
   "stethoscope": {
     "definition": "A medical instrument for listening to the sounds generated inside the body.",
     "arabicTranslation": "سماعة طبية",
-    "exampleUsage": "The stethoscope was used during the activity."
+    "exampleUsage": "The clinician listened to body sounds with a stethoscope."
   },
   "syringe": {
-    "definition": "To spray or irrigate (a body part) with a syringe.",
+    "definition": "A medical device used to inject, withdraw, or transfer fluids.",
     "arabicTranslation": "حقنة"
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
     "arabicTranslation": "مقياس حرارة",
-    "exampleUsage": "The thermometer was used during the activity."
+    "exampleUsage": "The nurse checked the patient’s temperature with a thermometer."
   },
   "blood-pressure-monitor": {
     "definition": "A device used to measure and display blood pressure.",
@@ -228,32 +228,32 @@
     "arabicTranslation": "نقالة"
   },
   "oxygen-mask": {
-    "definition": "A device worn over the nose and mouth delivers oxygen from a connected storage tank.",
+    "definition": "A device worn over the nose and mouth to deliver oxygen from a connected supply.",
     "arabicTranslation": "قناع أكسجين",
-    "exampleUsage": "The oxygen mask was used during the activity."
+    "exampleUsage": "The patient’s oxygen mask was connected to a clinical oxygen supply."
   },
   "defibrillator": {
     "definition": "A device that gives an electric shock to help restore a normal heart rhythm.",
     "arabicTranslation": "جهاز مزيل الرجفان",
-    "exampleUsage": "The defibrillator was used during the activity."
+    "exampleUsage": "The clinician identified the defibrillator among the emergency equipment."
   },
   "scalpel": {
     "definition": "A thin straight surgical knife used in dissection and surgery.",
-    "exampleUsage": "The glossary uses the term \"scalpel\" in an educational description.",
+    "exampleUsage": "A scalpel was included in the surgical-tool display.",
     "arabicTranslation": "مشرط"
   },
   "bandage": {
-    "definition": "To dress by covering or binding.",
+    "definition": "A strip or covering used to protect or support an injured area.",
     "arabicTranslation": "ضمادة"
   },
   "cast": {
-    "definition": "Container into which liquid is poured to create a given shape when it hardens.",
+    "definition": "A rigid covering used to support and protect a broken bone while it heals.",
     "arabicTranslation": "جبيرة جبسية"
   },
   "ventilator": {
     "definition": "A medical machine that helps a patient breathe.",
     "arabicTranslation": "جهاز تنفس اصطناعي",
-    "exampleUsage": "The ventilator was used during the activity."
+    "exampleUsage": "Clinical staff monitored the ventilator supporting the patient’s breathing."
   },
   "catheter": {
     "definition": "A thin flexible tube inserted into the body to permit introduction or withdrawal of fluids or to keep the passageway open.",
@@ -274,8 +274,8 @@
     "arabicTranslation": "جهاز رذاذ دوائي"
   },
   "tourniquet": {
-    "definition": "Bandage that stops the flow of blood from an artery by applying pressure.",
-    "arabicTranslation": "رباط ضاغط لإيقاف النزيف"
+    "definition": "A device that applies pressure to temporarily restrict blood flow for a specific clinical or emergency purpose.",
+    "arabicTranslation": "رباط ضاغط طبي"
   },
   "surgical-mask": {
     "definition": "A disposable medical mask designed to reduce the spread of droplets and protect a clinical field from contamination.",
@@ -332,7 +332,7 @@
     "arabicTranslation": "حساسية"
   },
   "rash": {
-    "definition": "A series of unexpected and unpleasant occurrences.",
+    "definition": "A change in the skin that may involve spots, redness, or irritation.",
     "arabicTranslation": "طفح جلدي"
   },
   "liver": {
@@ -344,11 +344,11 @@
     "arabicTranslation": "كليتان"
   },
   "spine": {
-    "definition": "The part of a book's cover that encloses the inner side of the book's pages and that faces outward when the book is shelved.",
+    "definition": "The backbone, formed from vertebrae and supporting the body while protecting the spinal cord.",
     "arabicTranslation": "عمود فقري"
   },
   "stomach": {
-    "definition": "The digestive organ that receives food and begins breaking it down.",
+    "definition": "A digestive organ that mixes food with digestive juices and helps break it down.",
     "arabicTranslation": "معدة"
   },
   "intestines": {
@@ -373,7 +373,7 @@
     "arabicTranslation": "التهاب"
   },
   "nausea": {
-    "definition": "The state that precedes vomiting.",
+    "definition": "A feeling that you may vomit, whether or not vomiting happens.",
     "arabicTranslation": "غثيان"
   },
   "examination": {
@@ -385,11 +385,11 @@
     "arabicTranslation": "تشخيص"
   },
   "prescription": {
-    "definition": "A drug that is available only with written instructions from a doctor or dentist to a pharmacist.",
+    "definition": "Written instructions from an authorized healthcare professional for supplying or using a medicine.",
     "arabicTranslation": "وصفة طبية"
   },
   "surgery": {
-    "definition": "A room in a hospital equipped for the performance of surgical operations.",
+    "definition": "An operation performed by trained medical professionals to treat or investigate a condition.",
     "arabicTranslation": "جراحة"
   },
   "x-ray": {
@@ -409,8 +409,8 @@
     "arabicTranslation": "تطعيم"
   },
   "ultrasound": {
-    "arabicTranslation": "موجات فوق صوتية",
-    "definition": "Very high frequency sound."
+    "arabicTranslation": "فحص بالموجات فوق الصوتية",
+    "definition": "An imaging examination that uses high-frequency sound waves to form pictures inside the body."
   },
   "mri-scan": {
     "definition": "A diagnostic imaging examination that uses strong magnetic fields and radio waves to create detailed images inside the body.",
@@ -423,8 +423,8 @@
     "arabicTranslation": "غُرز جراحية"
   },
   "physical-therapy": {
-    "definition": "A health care discipline that assesses movement problems and treats them with exercise, hands-on techniques, and other physical methods.",
-    "arabicTranslation": "علاج جسدي"
+    "definition": "Professional care that supports movement and physical function using exercise and other methods.",
+    "arabicTranslation": "علاج طبيعي"
   },
   "biopsy": {
     "definition": "Examination of tissues or liquids from the living body to determine the existence or cause of a disease.",
@@ -435,7 +435,7 @@
     "arabicTranslation": "غسيل الكلى"
   },
   "transfusion": {
-    "definition": "The introduction of blood or blood plasma into a vein or artery.",
+    "definition": "Transfer of donated blood or blood components into a patient’s bloodstream.",
     "arabicTranslation": "نقل دم"
   },
   "chemotherapy": {
@@ -471,12 +471,12 @@
     "arabicTranslation": "بطانية"
   },
   "gown": {
-    "definition": "The members of a university as distinguished from the other residents of the town in which the university is located.",
-    "arabicTranslation": "ثوب طويل"
+    "definition": "A loose garment worn by a patient during certain examinations or hospital care.",
+    "arabicTranslation": "ثوب فحص أو رداء مستشفى"
   },
   "chart": {
-    "arabicTranslation": "خريطة ملاحية",
-    "definition": "A record of a patient's medical information and treatment."
+    "arabicTranslation": "سجل طبي للمريض",
+    "definition": "A record of a patient’s medical information and care."
   },
   "clipboard": {
     "definition": "A small writing board with a clip at the top for holding papers.",
@@ -512,7 +512,7 @@
     "arabicTranslation": "واقي وجه"
   },
   "hand-sanitizer": {
-    "definition": "A liquid or gel used to clean your hands when soap and water are unavailable.",
+    "definition": "A liquid or gel product used to reduce microorganisms on the hands.",
     "arabicTranslation": "معقم اليدين"
   },
   "sharps-container": {

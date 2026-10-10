@@ -34,7 +34,7 @@
       "نافذة دائرية",
       "خزان اتزان",
       "مروحة دافعة",
-      "دفّة",
+      "دفة",
       "أنبوب إطلاق طوربيد",
       "قُبّة سونار",
       "لوحة تحكم",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "143-173 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hull", "Conning Tower", "Periscope", "Hatch"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.",
+          "scenario": "A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hull", "Conning Tower", "Periscope"],
-            "expectedAnswer": "Hull"
+            "question": "Which instrument provides the described sheltered view?",
+            "options": ["Periscope", "Hull", "Conning Tower"],
+            "expectedAnswer": "Periscope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Hull as the central item; include Hull, Conning Tower, and Periscope naturally where visually appropriate, but make the real-world use of Hull the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Periscope in a submarine context. Use the written scenario as the source of meaning: A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Porthole", "Ballast Tank", "Propeller", "Rudder"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.",
+          "scenario": "A Porthole is a viewing window in this display vessel. The Ballast Tank is part of buoyancy control, the Propeller produces thrust, and the Rudder helps steer through water. Real submarines differ in layout and do not all have viewing windows.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Porthole", "Ballast Tank", "Propeller"],
-            "expectedAnswer": "Porthole"
+            "question": "Which movable surface helps steer the vessel?",
+            "options": ["Rudder", "Porthole", "Ballast Tank"],
+            "expectedAnswer": "Rudder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Porthole as the central item; include Porthole, Ballast Tank, and Propeller naturally where visually appropriate, but make the real-world use of Porthole the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Rudder in a submarine context. Use the written scenario as the source of meaning: A Porthole is a viewing window in this display vessel. The Ballast Tank is part of buoyancy control, the Propeller produces thrust, and the Rudder helps steer through water. Real submarines differ in layout and do not all have viewing windows. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Torpedo Tube", "Sonar Dome", "Control Panel", "Navigation Screen"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.",
+          "scenario": "The guide identifies a Torpedo Tube in the historical military exhibit without demonstrating weapons. The Sonar Dome protects sonar equipment. A Control Panel holds controls, and a Navigation Screen displays route information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Torpedo Tube", "Sonar Dome", "Control Panel"],
-            "expectedAnswer": "Torpedo Tube"
+            "question": "Which rounded cover protects sonar equipment?",
+            "options": ["Sonar Dome", "Torpedo Tube", "Control Panel"],
+            "expectedAnswer": "Sonar Dome"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Torpedo Tube as the central item; include Torpedo Tube, Sonar Dome, and Control Panel naturally where visually appropriate, but make the real-world use of Torpedo Tube the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sonar Dome in a submarine context. Use the written scenario as the source of meaning: The guide identifies a Torpedo Tube in the historical military exhibit without demonstrating weapons. The Sonar Dome protects sonar equipment. A Control Panel holds controls, and a Navigation Screen displays route information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Depth Gauge", "Compass", "Radar"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.",
+          "scenario": "The Depth Gauge reports depth below the surface. The Compass provides a direction reference. Radar uses radio waves and is not presented as a general way to see through seawater. The visit teaches names without navigation instructions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument reports depth below the water surface?",
             "options": ["Depth Gauge", "Compass", "Radar"],
             "expectedAnswer": "Depth Gauge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Depth Gauge as the central item; include Depth Gauge, Compass, and Radar naturally where visually appropriate, but make the real-world use of Depth Gauge the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Depth Gauge in a submarine context. Use the written scenario as the source of meaning: The Depth Gauge reports depth below the surface. The Compass provides a direction reference. Radar uses radio waves and is not presented as a general way to see through seawater. The visit teaches names without navigation instructions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Submarine",
-      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hull, Conning Tower, Periscope, and Hatch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Porthole, Ballast Tank, Propeller, and Rudder. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Depth Gauge, Compass, and Radar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Submarine: A visitor’s questions",
+      "text": "A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening. A Porthole is a viewing window in this display vessel. The Ballast Tank is part of buoyancy control, the Propeller produces thrust, and the Rudder helps steer through water. Real submarines differ in layout and do not all have viewing windows. The guide identifies a Torpedo Tube in the historical military exhibit without demonstrating weapons. The Sonar Dome protects sonar equipment. A Control Panel holds controls, and a Navigation Screen displays route information. The Depth Gauge reports depth below the surface. The Compass provides a direction reference. Radar uses radio waves and is not presented as a general way to see through seawater. The visit teaches names without navigation instructions.",
+      "imageBrief": "One uncluttered submarine setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hull, Conning Tower, Periscope, and Hatch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hull",
+        "prompt": "A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening.\nWhich instrument provides the described sheltered view?",
+        "answer": "Periscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Porthole, Ballast Tank, Propeller, and Rudder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Porthole",
+        "prompt": "A Porthole is a viewing window in this display vessel. The Ballast Tank is part of buoyancy control, the Propeller produces thrust, and the Rudder helps steer through water. Real submarines differ in layout and do not all have viewing windows.\nWhich movable surface helps steer the vessel?",
+        "answer": "Rudder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Torpedo Tube, Sonar Dome, Control Panel, and Navigation Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Torpedo Tube",
+        "prompt": "The guide identifies a Torpedo Tube in the historical military exhibit without demonstrating weapons. The Sonar Dome protects sonar equipment. A Control Panel holds controls, and a Navigation Screen displays route information.\nWhich rounded cover protects sonar equipment?",
+        "answer": "Sonar Dome",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Gauge, Compass, and Radar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Depth Gauge reports depth below the surface. The Compass provides a direction reference. Radar uses radio waves and is not presented as a general way to see through seawater. The visit teaches names without navigation instructions.\nWhich instrument reports depth below the water surface?",
         "answer": "Depth Gauge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening. A Porthole is a viewing window in this display vessel. The Ballast Tank is part of buoyancy control, the Propeller produces thrust, and the Rudder helps steer through water. Real submarines differ in layout and do not all have viewing windows. The guide identifies a Torpedo Tube in the historical military exhibit without demonstrating weapons. The Sonar Dome protects sonar equipment. A Control Panel holds controls, and a Navigation Screen displays route information. The Depth Gauge reports depth below the surface. The Compass provides a direction reference. Radar uses radio waves and is not presented as a general way to see through seawater. The visit teaches names without navigation instructions.\nExplain the difference between Hull and Conning Tower using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hull"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Log Sheet” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the submarine task. Use Hull, Conning Tower, Periscope, Hatch, Porthole, Ballast Tank, Propeller, Rudder, Torpedo Tube, Sonar Dome, Control Panel, Navigation Screen, Depth Gauge, Compass, and Radar in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hull, Conning Tower, Periscope, Hatch, Porthole, Ballast Tank, Propeller, Rudder, Torpedo Tube, Sonar Dome, Control Panel, Navigation Screen, Depth Gauge, Compass, Radar to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Submarine: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Submarine: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hull and Conning Tower, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A museum guide describes the Hull as the vessel’s main body and the Conning Tower as a raised structure associated with command or observation in this historical design. A Periscope provides a view from a sheltered position. A Hatch is an access opening. Pause and answer: Which instrument provides the described sheltered view?"
     },
     "spacedReview": "1 lesson(s) back: Log Sheet, Report from laboratory-5\n3 lesson(s) back: Hazard Sign, Apron from laboratory-3\n7 lesson(s) back: Motion, Brief from courtroom-4"
   },
@@ -207,13 +190,13 @@
       "جهاز اتصال لاسلكي",
       "إنذار",
       "سرير بطابقين",
-      "مطبخ صغير",
+      "مطبخ السفينة",
       "قاعة طعام الطاقم",
       "خزانة تخزين",
-      "-",
+      "حمّام",
       "دُش",
       "غسيل الملابس",
-      "-",
+      "مكتبة",
       "غرفة ترفيه",
       "مقصورة القبطان"
     ],
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "121-151 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sonar Display", "Helm", "Throttle", "Communication Radio"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.",
+          "scenario": "The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sonar Display", "Helm", "Throttle"],
-            "expectedAnswer": "Sonar Display"
+            "question": "Which target names the steering controls?",
+            "options": ["Helm", "Sonar Display", "Throttle"],
+            "expectedAnswer": "Helm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Sonar Display as the central item; include Sonar Display, Helm, and Throttle naturally where visually appropriate, but make the real-world use of Sonar Display the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Helm in a submarine context. Use the written scenario as the source of meaning: The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Alarm", "Bunk Bed", "Galley", "Mess Hall"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.",
+          "scenario": "An Alarm warns of a specified problem. A Bunk Bed provides sleeping space, the Galley is the food-preparation area, and the Mess Hall is the shared dining space in this exhibit.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Alarm", "Bunk Bed", "Galley"],
-            "expectedAnswer": "Alarm"
+            "question": "Which area is used for food preparation?",
+            "options": ["Galley", "Alarm", "Bunk Bed"],
+            "expectedAnswer": "Galley"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Alarm as the central item; include Alarm, Bunk Bed, and Galley naturally where visually appropriate, but make the real-world use of Alarm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Galley in a submarine context. Use the written scenario as the source of meaning: An Alarm warns of a specified problem. A Bunk Bed provides sleeping space, the Galley is the food-preparation area, and the Mess Hall is the shared dining space in this exhibit. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Locker", "Bathroom", "Shower", "Laundry"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.",
+          "scenario": "A Storage Locker holds belongings or equipment. The Bathroom contains washing or toilet facilities, the Shower supplies washing water, and Laundry concerns washing clothing. Facilities and available water depend on vessel design and operation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which compartment holds belongings or equipment?",
             "options": ["Storage Locker", "Bathroom", "Shower"],
             "expectedAnswer": "Storage Locker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Storage Locker as the central item; include Storage Locker, Bathroom, and Shower naturally where visually appropriate, but make the real-world use of Storage Locker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Storage Locker in a submarine context. Use the written scenario as the source of meaning: A Storage Locker holds belongings or equipment. The Bathroom contains washing or toilet facilities, the Shower supplies washing water, and Laundry concerns washing clothing. Facilities and available water depend on vessel design and operation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Library", "Recreation Room", "Captain's Cabin"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.",
+          "scenario": "The Library holds reading material, the Recreation Room supports relaxation, and the Captain's Cabin is the captain’s private assigned space. The museum layout is one example rather than a requirement for every submarine.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Library", "Recreation Room", "Captain's Cabin"],
-            "expectedAnswer": "Library"
+            "question": "Which room is intended for relaxation?",
+            "options": ["Recreation Room", "Library", "Captain's Cabin"],
+            "expectedAnswer": "Recreation Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Library as the central item; include Library, Recreation Room, and Captain's Cabin naturally where visually appropriate, but make the real-world use of Library the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Recreation Room in a submarine context. Use the written scenario as the source of meaning: The Library holds reading material, the Recreation Room supports relaxation, and the Captain's Cabin is the captain’s private assigned space. The museum layout is one example rather than a requirement for every submarine. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Submarine",
-      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar Display, Helm, Throttle, and Communication Radio. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Alarm, Bunk Bed, Galley, and Mess Hall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Storage Locker, Bathroom, Shower, and Laundry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Library, Recreation Room, and Captain's Cabin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Submarine: Understanding the different roles",
+      "text": "The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system. An Alarm warns of a specified problem. A Bunk Bed provides sleeping space, the Galley is the food-preparation area, and the Mess Hall is the shared dining space in this exhibit. A Storage Locker holds belongings or equipment. The Bathroom contains washing or toilet facilities, the Shower supplies washing water, and Laundry concerns washing clothing. Facilities and available water depend on vessel design and operation. The Library holds reading material, the Recreation Room supports relaxation, and the Captain's Cabin is the captain’s private assigned space. The museum layout is one example rather than a requirement for every submarine.",
+      "imageBrief": "One uncluttered submarine setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar Display, Helm, Throttle, and Communication Radio and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sonar Display",
+        "prompt": "The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system.\nWhich target names the steering controls?",
+        "answer": "Helm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alarm, Bunk Bed, Galley, and Mess Hall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Alarm",
+        "prompt": "An Alarm warns of a specified problem. A Bunk Bed provides sleeping space, the Galley is the food-preparation area, and the Mess Hall is the shared dining space in this exhibit.\nWhich area is used for food preparation?",
+        "answer": "Galley",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Locker, Bathroom, Shower, and Laundry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Storage Locker holds belongings or equipment. The Bathroom contains washing or toilet facilities, the Shower supplies washing water, and Laundry concerns washing clothing. Facilities and available water depend on vessel design and operation.\nWhich compartment holds belongings or equipment?",
         "answer": "Storage Locker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Library, Recreation Room, and Captain's Cabin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Library",
+        "prompt": "The Library holds reading material, the Recreation Room supports relaxation, and the Captain's Cabin is the captain’s private assigned space. The museum layout is one example rather than a requirement for every submarine.\nWhich room is intended for relaxation?",
+        "answer": "Recreation Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system. An Alarm warns of a specified problem. A Bunk Bed provides sleeping space, the Galley is the food-preparation area, and the Mess Hall is the shared dining space in this exhibit. A Storage Locker holds belongings or equipment. The Bathroom contains washing or toilet facilities, the Shower supplies washing water, and Laundry concerns washing clothing. Facilities and available water depend on vessel design and operation. The Library holds reading material, the Recreation Room supports relaxation, and the Captain's Cabin is the captain’s private assigned space. The museum layout is one example rather than a requirement for every submarine.\nExplain the difference between Sonar Display and Helm using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sonar Display"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hull” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the submarine task. Use Sonar Display, Helm, Throttle, Communication Radio, Alarm, Bunk Bed, Galley, Mess Hall, Storage Locker, Bathroom, Shower, Laundry, Library, Recreation Room, and Captain's Cabin in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Sonar Display, Helm, Throttle, Communication Radio, Alarm, Bunk Bed, Galley, Mess Hall, Storage Locker, Bathroom, Shower, Laundry, Library, Recreation Room, Captain's Cabin to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Submarine: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Submarine: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Sonar Display and Helm, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Sonar Display shows information obtained through underwater sound. The Helm controls steering; the Throttle controls propulsion power in this design. A Communication Radio carries supported messages under conditions appropriate to its system. Pause and answer: Which target names the steering controls?"
     },
     "spacedReview": "1 lesson(s) back: Hull, Conning Tower from submarine-1\n3 lesson(s) back: Indicator, Reagent from laboratory-4\n7 lesson(s) back: Defendant, Plaintiff from courtroom-5"
   },
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "131-161 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Captain", "Navigator", "Engineer", "Sonar Operator"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.",
+          "scenario": "The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who is in command of the vessel?",
             "options": ["Captain", "Navigator", "Engineer"],
             "expectedAnswer": "Captain"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Captain as the central item; include Captain, Navigator, and Engineer naturally where visually appropriate, but make the real-world use of Captain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Captain in a submarine context. Use the written scenario as the source of meaning: The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Radio Operator", "Cook", "Medic", "Diver"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.",
+          "scenario": "A Radio Operator manages radio communications, and the Cook prepares meals. The Medic provides medical assistance within the assigned training, while a Diver works underwater under the required professional arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Radio Operator", "Cook", "Medic"],
-            "expectedAnswer": "Radio Operator"
+            "question": "Who provides the described medical assistance?",
+            "options": ["Medic", "Radio Operator", "Cook"],
+            "expectedAnswer": "Medic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Radio Operator as the central item; include Radio Operator, Cook, and Medic naturally where visually appropriate, but make the real-world use of Radio Operator the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Medic in a submarine context. Use the written scenario as the source of meaning: A Radio Operator manages radio communications, and the Cook prepares meals. The Medic provides medical assistance within the assigned training, while a Diver works underwater under the required professional arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Technician", "First Officer", "Depth Meter", "Sea Chart"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.",
+          "scenario": "A Technician maintains assigned equipment. The First Officer supports the captain within this crew structure. A Depth Meter reports depth, while a Sea Chart maps marine navigation information such as coastlines and depths.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Technician", "First Officer", "Depth Meter"],
-            "expectedAnswer": "Technician"
+            "question": "Which target names the marine navigation map?",
+            "options": ["Sea Chart", "Technician", "First Officer"],
+            "expectedAnswer": "Sea Chart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Technician as the central item; include Technician, First Officer, and Depth Meter naturally where visually appropriate, but make the real-world use of Technician the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sea Chart in a submarine context. Use the written scenario as the source of meaning: A Technician maintains assigned equipment. The First Officer supports the captain within this crew structure. A Depth Meter reports depth, while a Sea Chart maps marine navigation information such as coastlines and depths. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["GPS", "Buoy", "Anchor"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.",
+          "scenario": "GPS relies on signals from satellites and is not a direct underwater position fix for a deeply submerged receiver. A Buoy floats at the surface, while an Anchor can help hold a vessel in place by gripping the bottom.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["GPS", "Buoy", "Anchor"],
-            "expectedAnswer": "GPS"
+            "question": "Which device can grip the bottom to help hold a vessel in place?",
+            "options": ["Anchor", "GPS", "Buoy"],
+            "expectedAnswer": "Anchor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the GPS as the central item; include GPS, Buoy, and Anchor naturally where visually appropriate, but make the real-world use of GPS the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Anchor in a submarine context. Use the written scenario as the source of meaning: GPS relies on signals from satellites and is not a direct underwater position fix for a deeply submerged receiver. A Buoy floats at the surface, while an Anchor can help hold a vessel in place by gripping the bottom. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Submarine",
-      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Captain, Navigator, Engineer, and Sonar Operator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Radio Operator, Cook, Medic, and Diver. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Technician, First Officer, Depth Meter, and Sea Chart. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers GPS, Buoy, and Anchor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Submarine: Comparing the equipment",
+      "text": "The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account. A Radio Operator manages radio communications, and the Cook prepares meals. The Medic provides medical assistance within the assigned training, while a Diver works underwater under the required professional arrangements. A Technician maintains assigned equipment. The First Officer supports the captain within this crew structure. A Depth Meter reports depth, while a Sea Chart maps marine navigation information such as coastlines and depths. GPS relies on signals from satellites and is not a direct underwater position fix for a deeply submerged receiver. A Buoy floats at the surface, while an Anchor can help hold a vessel in place by gripping the bottom.",
+      "imageBrief": "One uncluttered submarine setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Captain, Navigator, Engineer, and Sonar Operator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account.\nWho is in command of the vessel?",
         "answer": "Captain",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Radio Operator, Cook, Medic, and Diver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Radio Operator",
+        "prompt": "A Radio Operator manages radio communications, and the Cook prepares meals. The Medic provides medical assistance within the assigned training, while a Diver works underwater under the required professional arrangements.\nWho provides the described medical assistance?",
+        "answer": "Medic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Technician, First Officer, Depth Meter, and Sea Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Technician",
+        "prompt": "A Technician maintains assigned equipment. The First Officer supports the captain within this crew structure. A Depth Meter reports depth, while a Sea Chart maps marine navigation information such as coastlines and depths.\nWhich target names the marine navigation map?",
+        "answer": "Sea Chart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS, Buoy, and Anchor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "GPS",
+        "prompt": "GPS relies on signals from satellites and is not a direct underwater position fix for a deeply submerged receiver. A Buoy floats at the surface, while an Anchor can help hold a vessel in place by gripping the bottom.\nWhich device can grip the bottom to help hold a vessel in place?",
+        "answer": "Anchor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account. A Radio Operator manages radio communications, and the Cook prepares meals. The Medic provides medical assistance within the assigned training, while a Diver works underwater under the required professional arrangements. A Technician maintains assigned equipment. The First Officer supports the captain within this crew structure. A Depth Meter reports depth, while a Sea Chart maps marine navigation information such as coastlines and depths. GPS relies on signals from satellites and is not a direct underwater position fix for a deeply submerged receiver. A Buoy floats at the surface, while an Anchor can help hold a vessel in place by gripping the bottom.\nExplain the difference between Captain and Navigator using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Captain"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sonar Display” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the submarine task. Use Captain, Navigator, Engineer, Sonar Operator, Radio Operator, Cook, Medic, Diver, Technician, First Officer, Depth Meter, Sea Chart, GPS, Buoy, and Anchor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Captain, Navigator, Engineer, Sonar Operator, Radio Operator, Cook, Medic, Diver, Technician, First Officer, Depth Meter, Sea Chart, GPS, Buoy, Anchor to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Submarine: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Submarine: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Captain and Navigator, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The crew glossary describes the Captain as the person in command and the Navigator as responsible for navigation. An Engineer works with machinery and technical systems; a Sonar Operator interprets sonar information. Roles are assigned in the written account. Pause and answer: Who is in command of the vessel?"
     },
     "spacedReview": "1 lesson(s) back: Sonar Display, Helm from submarine-2\n3 lesson(s) back: Log Sheet, Report from laboratory-5\n7 lesson(s) back: Beaker, Flask from laboratory-1"
   },
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "130-160 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Searchlight", "Underwater Camera", "Echo Sounder", "Current Meter"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.",
+          "scenario": "A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Searchlight", "Underwater Camera", "Echo Sounder"],
-            "expectedAnswer": "Searchlight"
+            "question": "Which instrument measures water movement?",
+            "options": ["Current Meter", "Searchlight", "Underwater Camera"],
+            "expectedAnswer": "Current Meter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Searchlight as the central item; include Searchlight, Underwater Camera, and Echo Sounder naturally where visually appropriate, but make the real-world use of Searchlight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Current Meter in a submarine context. Use the written scenario as the source of meaning: A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Logbook", "Whale", "Shark", "Jellyfish"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.",
+          "scenario": "A wildlife discussion contrasts a Whale, an air-breathing mammal, with a Shark, a fish with gill slits. A Jellyfish has a gelatinous body and may have stinging tentacles. The Logbook records observations without inventing species identifications.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Logbook", "Whale", "Shark"],
-            "expectedAnswer": "Logbook"
+            "question": "Which target names the fish with gill slits?",
+            "options": ["Shark", "Logbook", "Whale"],
+            "expectedAnswer": "Shark"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Logbook as the central item; include Logbook, Whale, and Shark naturally where visually appropriate, but make the real-world use of Logbook the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Shark in a submarine context. Use the written scenario as the source of meaning: A wildlife discussion contrasts a Whale, an air-breathing mammal, with a Shark, a fish with gill slits. A Jellyfish has a gelatinous body and may have stinging tentacles. The Logbook records observations without inventing species identifications. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Giant Squid", "Anglerfish", "Sea Turtle", "Coral"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.",
+          "scenario": "The documentary segment describes a Giant Squid and an Anglerfish as deep-sea examples, then a Sea Turtle and Coral in different habitats. Coral is a marine animal, and many reef-building corals produce hard skeletons. The animals need not occur together.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Giant Squid", "Anglerfish", "Sea Turtle"],
-            "expectedAnswer": "Giant Squid"
+            "question": "Which target names the marine animal commonly forming reef-building colonies?",
+            "options": ["Coral", "Giant Squid", "Anglerfish"],
+            "expectedAnswer": "Coral"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Giant Squid as the central item; include Giant Squid, Anglerfish, and Sea Turtle naturally where visually appropriate, but make the real-world use of Giant Squid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Coral in a submarine context. Use the written scenario as the source of meaning: The documentary segment describes a Giant Squid and an Anglerfish as deep-sea examples, then a Sea Turtle and Coral in different habitats. Coral is a marine animal, and many reef-building corals produce hard skeletons. The animals need not occur together. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Seaweed", "Plankton", "Shipwreck"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.",
+          "scenario": "Seaweed names marine algae. Plankton drift with water currents, while a Shipwreck is the remains of a damaged or sunken vessel. The guide keeps organism names separate from the human-made wreck.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Seaweed", "Plankton", "Shipwreck"],
-            "expectedAnswer": "Seaweed"
+            "question": "Which organisms drift with water currents?",
+            "options": ["Plankton", "Seaweed", "Shipwreck"],
+            "expectedAnswer": "Plankton"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Seaweed as the central item; include Seaweed, Plankton, and Shipwreck naturally where visually appropriate, but make the real-world use of Seaweed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Plankton in a submarine context. Use the written scenario as the source of meaning: Seaweed names marine algae. Plankton drift with water currents, while a Shipwreck is the remains of a damaged or sunken vessel. The guide keeps organism names separate from the human-made wreck. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Submarine",
-      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Searchlight, Underwater Camera, Echo Sounder, and Current Meter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Logbook, Whale, Shark, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Giant Squid, Anglerfish, Sea Turtle, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Seaweed, Plankton, and Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Submarine: A guided walk",
+      "text": "A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction. A wildlife discussion contrasts a Whale, an air-breathing mammal, with a Shark, a fish with gill slits. A Jellyfish has a gelatinous body and may have stinging tentacles. The Logbook records observations without inventing species identifications. The documentary segment describes a Giant Squid and an Anglerfish as deep-sea examples, then a Sea Turtle and Coral in different habitats. Coral is a marine animal, and many reef-building corals produce hard skeletons. The animals need not occur together. Seaweed names marine algae. Plankton drift with water currents, while a Shipwreck is the remains of a damaged or sunken vessel. The guide keeps organism names separate from the human-made wreck.",
+      "imageBrief": "One uncluttered submarine setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searchlight, Underwater Camera, Echo Sounder, and Current Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Searchlight",
+        "prompt": "A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction.\nWhich instrument measures water movement?",
+        "answer": "Current Meter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Logbook, Whale, Shark, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Logbook",
+        "prompt": "A wildlife discussion contrasts a Whale, an air-breathing mammal, with a Shark, a fish with gill slits. A Jellyfish has a gelatinous body and may have stinging tentacles. The Logbook records observations without inventing species identifications.\nWhich target names the fish with gill slits?",
+        "answer": "Shark",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Giant Squid, Anglerfish, Sea Turtle, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Giant Squid",
+        "prompt": "The documentary segment describes a Giant Squid and an Anglerfish as deep-sea examples, then a Sea Turtle and Coral in different habitats. Coral is a marine animal, and many reef-building corals produce hard skeletons. The animals need not occur together.\nWhich target names the marine animal commonly forming reef-building colonies?",
+        "answer": "Coral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seaweed, Plankton, and Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Seaweed",
+        "prompt": "Seaweed names marine algae. Plankton drift with water currents, while a Shipwreck is the remains of a damaged or sunken vessel. The guide keeps organism names separate from the human-made wreck.\nWhich organisms drift with water currents?",
+        "answer": "Plankton",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction. A wildlife discussion contrasts a Whale, an air-breathing mammal, with a Shark, a fish with gill slits. A Jellyfish has a gelatinous body and may have stinging tentacles. The Logbook records observations without inventing species identifications. The documentary segment describes a Giant Squid and an Anglerfish as deep-sea examples, then a Sea Turtle and Coral in different habitats. Coral is a marine animal, and many reef-building corals produce hard skeletons. The animals need not occur together. Seaweed names marine algae. Plankton drift with water currents, while a Shipwreck is the remains of a damaged or sunken vessel. The guide keeps organism names separate from the human-made wreck.\nExplain the difference between Searchlight and Underwater Camera using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Searchlight"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Captain” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the submarine task. Use Searchlight, Underwater Camera, Echo Sounder, Current Meter, Logbook, Whale, Shark, Jellyfish, Giant Squid, Anglerfish, Sea Turtle, Coral, Seaweed, Plankton, and Shipwreck in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Searchlight, Underwater Camera, Echo Sounder, Current Meter, Logbook, Whale, Shark, Jellyfish, Giant Squid, Anglerfish, Sea Turtle, Coral, Seaweed, Plankton, Shipwreck to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Submarine: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Submarine: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Searchlight and Underwater Camera, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Searchlight produces a directed light beam, and an Underwater Camera captures images. An Echo Sounder uses returning sound to measure distance. A Current Meter measures water movement, including speed and sometimes direction. Pause and answer: Which instrument measures water movement?"
     },
     "spacedReview": "1 lesson(s) back: Captain, Navigator from submarine-3\n3 lesson(s) back: Hull, Conning Tower from submarine-1\n7 lesson(s) back: Hot Plate, Scale from laboratory-2"
   },
@@ -706,96 +638,79 @@
     "cefrStage": "B2",
     "stageName": "B2 Fluency & Work",
     "targetWordsEnglish": ["Sonar", "Radio", "Engine", "Pump", "Valve", "Officer"],
-    "targetWordsArabic": ["سونار", "إذاعة", "محرك", "مضخة", "صمام", "ضابط"],
+    "targetWordsArabic": ["سونار", "جهاز لاسلكي", "محرك", "مضخة", "صمام", "ضابط"],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "62-92 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sonar", "Radio", "Engine", "Pump"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.",
+          "scenario": "The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which system uses underwater sound?",
             "options": ["Sonar", "Radio", "Engine"],
             "expectedAnswer": "Sonar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Sonar as the central item; include Sonar, Radio, and Engine naturally where visually appropriate, but make the real-world use of Sonar the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sonar in a submarine context. Use the written scenario as the source of meaning: The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Valve", "Officer"],
-          "scenario": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.",
+          "scenario": "An Officer holds an assigned authority role in the crew. A Valve controls fluid flow in a pipe or system. The display provides these meanings without inviting a visitor to operate machinery or infer rank from appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Valve", "Officer", "Sonar"],
+            "question": "Which mechanical component controls fluid flow?",
+            "options": ["Valve", "Officer"],
             "expectedAnswer": "Valve"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Valve as the central item; include Valve, Officer, and Sonar naturally where visually appropriate, but make the real-world use of Valve the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Valve in a submarine context. Use the written scenario as the source of meaning: An Officer holds an assigned authority role in the crew. A Valve controls fluid flow in a pipe or system. The display provides these meanings without inviting a visitor to operate machinery or infer rank from appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written submarine situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Submarine",
-      "text": "At the submarine, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sonar, Radio, Engine, and Pump. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Valve and Officer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Submarine. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Submarine: A practical discussion",
+      "text": "The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes. An Officer holds an assigned authority role in the crew. A Valve controls fluid flow in a pipe or system. The display provides these meanings without inviting a visitor to operate machinery or infer rank from appearance.",
+      "imageBrief": "One uncluttered submarine setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sonar, Radio, Engine, and Pump and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes.\nWhich system uses underwater sound?",
         "answer": "Sonar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the submarine setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Valve, and Officer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An Officer holds an assigned authority role in the crew. A Valve controls fluid flow in a pipe or system. The display provides these meanings without inviting a visitor to operate machinery or infer rank from appearance.\nWhich mechanical component controls fluid flow?",
         "answer": "Valve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes. An Officer holds an assigned authority role in the crew. A Valve controls fluid flow in a pipe or system. The display provides these meanings without inviting a visitor to operate machinery or infer rank from appearance.\nExplain the difference between Sonar and Radio using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sonar"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Searchlight” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the submarine task. Use Sonar, Radio, Engine, Pump, Valve, and Officer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Sonar, Radio, Engine, Pump, Valve, Officer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Submarine: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Submarine: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Sonar and Radio, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The engineer contrasts Sonar using underwater sound with Radio using radio waves. An Engine supplies mechanical work, and a Pump moves fluid through a system. Sonar may listen passively or transmit sound and receive echoes. Pause and answer: Which system uses underwater sound?"
     },
     "spacedReview": "1 lesson(s) back: Searchlight, Underwater Camera from submarine-4\n3 lesson(s) back: Sonar Display, Helm from submarine-2\n7 lesson(s) back: Hazard Sign, Apron from laboratory-3"
   }

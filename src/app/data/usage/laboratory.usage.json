@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "125-155 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Beaker", "Flask", "Test Tube", "Pipette"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.",
+          "scenario": "During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Beaker", "Flask", "Test Tube"],
-            "expectedAnswer": "Beaker"
+            "question": "Which instrument transfers a measured liquid volume?",
+            "options": ["Pipette", "Beaker", "Flask"],
+            "expectedAnswer": "Pipette"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Beaker as the central item; include Beaker, Flask, and Test Tube naturally where visually appropriate, but make the real-world use of Beaker the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pipette in a laboratory context. Use the written scenario as the source of meaning: During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Graduated Cylinder", "Petri Dish", "Funnel", "Burette"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.",
+          "scenario": "A Graduated Cylinder measures liquid volume, and a Petri Dish holds suitable cultures under controlled procedures. A Funnel guides material into an opening. A Burette dispenses measured liquid through its outlet.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Graduated Cylinder", "Petri Dish", "Funnel"],
-            "expectedAnswer": "Graduated Cylinder"
+            "question": "Which graduated instrument dispenses measured liquid through an outlet?",
+            "options": ["Burette", "Graduated Cylinder", "Petri Dish"],
+            "expectedAnswer": "Burette"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Graduated Cylinder as the central item; include Graduated Cylinder, Petri Dish, and Funnel naturally where visually appropriate, but make the real-world use of Graduated Cylinder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Burette in a laboratory context. Use the written scenario as the source of meaning: A Graduated Cylinder measures liquid volume, and a Petri Dish holds suitable cultures under controlled procedures. A Funnel guides material into an opening. A Burette dispenses measured liquid through its outlet. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass", "Dropper"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.",
+          "scenario": "The Erlenmeyer Flask has sloping sides and a narrow neck. The Volumetric Flask has a mark corresponding to a specified volume under its calibration conditions. A Watch Glass is a shallow dish; a Dropper releases drops.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Erlenmeyer Flask", "Volumetric Flask", "Watch Glass"],
-            "expectedAnswer": "Erlenmeyer Flask"
+            "question": "Which flask has a mark for a specified calibrated volume?",
+            "options": ["Volumetric Flask", "Erlenmeyer Flask", "Watch Glass"],
+            "expectedAnswer": "Volumetric Flask"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Erlenmeyer Flask as the central item; include Erlenmeyer Flask, Volumetric Flask, and Watch Glass naturally where visually appropriate, but make the real-world use of Erlenmeyer Flask the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Volumetric Flask in a laboratory context. Use the written scenario as the source of meaning: The Erlenmeyer Flask has sloping sides and a narrow neck. The Volumetric Flask has a mark corresponding to a specified volume under its calibration conditions. A Watch Glass is a shallow dish; a Dropper releases drops. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Microscope", "Bunsen Burner", "Centrifuge"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.",
+          "scenario": "The guide shows a Microscope for viewing small details and a Bunsen Burner as trained laboratory heating equipment. The Centrifuge rotates samples to help separate components under an approved procedure. Appearance cannot establish sample identity.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Microscope", "Bunsen Burner", "Centrifuge"],
-            "expectedAnswer": "Microscope"
+            "question": "Which device rotates samples to help separate components?",
+            "options": ["Centrifuge", "Microscope", "Bunsen Burner"],
+            "expectedAnswer": "Centrifuge"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Microscope as the central item; include Microscope, Bunsen Burner, and Centrifuge naturally where visually appropriate, but make the real-world use of Microscope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Centrifuge in a laboratory context. Use the written scenario as the source of meaning: The guide shows a Microscope for viewing small details and a Bunsen Burner as trained laboratory heating equipment. The Centrifuge rotates samples to help separate components under an approved procedure. Appearance cannot establish sample identity. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Laboratory",
-      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Beaker, Flask, Test Tube, and Pipette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graduated Cylinder, Petri Dish, Funnel, and Burette. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Microscope, Bunsen Burner, and Centrifuge. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Laboratory: A visitor’s questions",
+      "text": "During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals. A Graduated Cylinder measures liquid volume, and a Petri Dish holds suitable cultures under controlled procedures. A Funnel guides material into an opening. A Burette dispenses measured liquid through its outlet. The Erlenmeyer Flask has sloping sides and a narrow neck. The Volumetric Flask has a mark corresponding to a specified volume under its calibration conditions. A Watch Glass is a shallow dish; a Dropper releases drops. The guide shows a Microscope for viewing small details and a Bunsen Burner as trained laboratory heating equipment. The Centrifuge rotates samples to help separate components under an approved procedure. Appearance cannot establish sample identity.",
+      "imageBrief": "One uncluttered laboratory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaker, Flask, Test Tube, and Pipette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Beaker",
+        "prompt": "During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals.\nWhich instrument transfers a measured liquid volume?",
+        "answer": "Pipette",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graduated Cylinder, Petri Dish, Funnel, and Burette and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Graduated Cylinder",
+        "prompt": "A Graduated Cylinder measures liquid volume, and a Petri Dish holds suitable cultures under controlled procedures. A Funnel guides material into an opening. A Burette dispenses measured liquid through its outlet.\nWhich graduated instrument dispenses measured liquid through an outlet?",
+        "answer": "Burette",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Erlenmeyer Flask, Volumetric Flask, Watch Glass, and Dropper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Erlenmeyer Flask",
+        "prompt": "The Erlenmeyer Flask has sloping sides and a narrow neck. The Volumetric Flask has a mark corresponding to a specified volume under its calibration conditions. A Watch Glass is a shallow dish; a Dropper releases drops.\nWhich flask has a mark for a specified calibrated volume?",
+        "answer": "Volumetric Flask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Microscope, Bunsen Burner, and Centrifuge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Microscope",
+        "prompt": "The guide shows a Microscope for viewing small details and a Bunsen Burner as trained laboratory heating equipment. The Centrifuge rotates samples to help separate components under an approved procedure. Appearance cannot establish sample identity.\nWhich device rotates samples to help separate components?",
+        "answer": "Centrifuge",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals. A Graduated Cylinder measures liquid volume, and a Petri Dish holds suitable cultures under controlled procedures. A Funnel guides material into an opening. A Burette dispenses measured liquid through its outlet. The Erlenmeyer Flask has sloping sides and a narrow neck. The Volumetric Flask has a mark corresponding to a specified volume under its calibration conditions. A Watch Glass is a shallow dish; a Dropper releases drops. The guide shows a Microscope for viewing small details and a Bunsen Burner as trained laboratory heating equipment. The Centrifuge rotates samples to help separate components under an approved procedure. Appearance cannot establish sample identity.\nExplain the difference between Beaker and Flask using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Beaker"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Defendant” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Beaker, Flask, Test Tube, Pipette, Graduated Cylinder, Petri Dish, Funnel, Burette, Erlenmeyer Flask, Volumetric Flask, Watch Glass, Dropper, Microscope, Bunsen Burner, and Centrifuge in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Beaker, Flask, Test Tube, Pipette, Graduated Cylinder, Petri Dish, Funnel, Burette, Erlenmeyer Flask, Volumetric Flask, Watch Glass, Dropper, Microscope, Bunsen Burner, Centrifuge to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Laboratory: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Laboratory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Beaker and Flask, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During a supervised laboratory visit, the guide compares a Beaker, Flask, and Test Tube with a Pipette. The Pipette transfers a measured volume of liquid; the visitors identify equipment without handling unknown chemicals. Pause and answer: Which instrument transfers a measured liquid volume?"
     },
     "spacedReview": "1 lesson(s) back: Defendant, Plaintiff from courtroom-5\n3 lesson(s) back: Trial, Hearing from courtroom-3\n7 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4"
   },
@@ -202,7 +185,7 @@
     ],
     "targetWordsArabic": [
       "لوح تسخين",
-      "مقياس رسم",
+      "ميزان",
       "مقياس حرارة",
       "مقياس الرقم الهيدروجيني",
       "مطياف",
@@ -215,135 +198,118 @@
       "طفاية حريق",
       "محطة غسل العينين",
       "دُش طوارئ للمواد الكيميائية",
-      "أول إسعاف طقم"
+      "حقيبة إسعافات أولية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "139-169 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hot Plate", "Scale", "Thermometer", "pH Meter"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.",
+          "scenario": "The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hot Plate", "Scale", "Thermometer"],
-            "expectedAnswer": "Hot Plate"
+            "question": "Which instrument weighs the sample?",
+            "options": ["Scale", "Hot Plate", "Thermometer"],
+            "expectedAnswer": "Scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Hot Plate as the central item; include Hot Plate, Scale, and Thermometer naturally where visually appropriate, but make the real-world use of Hot Plate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Scale in a laboratory context. Use the written scenario as the source of meaning: The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Spectrometer", "Incubator", "Fume Hood", "Lab Coat"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.",
+          "scenario": "A Spectrometer measures a spectrum, and an Incubator maintains specified conditions for samples. A Fume Hood helps control airborne exposure during suitable work. A Lab Coat is protective clothing; neither item alone establishes that any procedure is safe.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Spectrometer", "Incubator", "Fume Hood"],
-            "expectedAnswer": "Spectrometer"
+            "question": "Which enclosure helps control airborne exposure?",
+            "options": ["Fume Hood", "Spectrometer", "Incubator"],
+            "expectedAnswer": "Fume Hood"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Spectrometer as the central item; include Spectrometer, Incubator, and Fume Hood naturally where visually appropriate, but make the real-world use of Spectrometer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Fume Hood in a laboratory context. Use the written scenario as the source of meaning: A Spectrometer measures a spectrum, and an Incubator maintains specified conditions for samples. A Fume Hood helps control airborne exposure during suitable work. A Lab Coat is protective clothing; neither item alone establishes that any procedure is safe. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Safety Goggles", "Latex Gloves", "Face Shield", "Fire Extinguisher"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.",
+          "scenario": "The protective-equipment discussion covers Safety Goggles, Latex Gloves, and a Face Shield. Latex Gloves are not suitable for every chemical and can cause allergic reactions. The Fire Extinguisher belongs to the site’s emergency arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Safety Goggles", "Latex Gloves", "Face Shield"],
-            "expectedAnswer": "Safety Goggles"
+            "question": "Which hand coverings require attention to chemical compatibility and latex allergy?",
+            "options": ["Latex Gloves", "Safety Goggles", "Face Shield"],
+            "expectedAnswer": "Latex Gloves"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Safety Goggles as the central item; include Safety Goggles, Latex Gloves, and Face Shield naturally where visually appropriate, but make the real-world use of Safety Goggles the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Latex Gloves in a laboratory context. Use the written scenario as the source of meaning: The protective-equipment discussion covers Safety Goggles, Latex Gloves, and a Face Shield. Latex Gloves are not suitable for every chemical and can cause allergic reactions. The Fire Extinguisher belongs to the site’s emergency arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.",
+          "scenario": "The visitor locates the Eyewash Station, Chemical Shower, and First Aid Kit with the guide. The Eyewash Station is intended for eye rinsing after exposure, while the Chemical Shower addresses body or clothing exposure under the emergency plan.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which station is intended for eye rinsing?",
             "options": ["Eyewash Station", "Chemical Shower", "First Aid Kit"],
             "expectedAnswer": "Eyewash Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or approaching the Eyewash Station as the main location; include Eyewash Station, Chemical Shower, and First Aid Kit naturally where visually appropriate, but make the real-world use of Eyewash Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Eyewash Station in a laboratory context. Use the written scenario as the source of meaning: The visitor locates the Eyewash Station, Chemical Shower, and First Aid Kit with the guide. The Eyewash Station is intended for eye rinsing after exposure, while the Chemical Shower addresses body or clothing exposure under the emergency plan. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Laboratory",
-      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hot Plate, Scale, Thermometer, and pH Meter. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Spectrometer, Incubator, Fume Hood, and Lab Coat. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Eyewash Station, Chemical Shower, and First Aid Kit. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Laboratory: Understanding the different roles",
+      "text": "The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color. A Spectrometer measures a spectrum, and an Incubator maintains specified conditions for samples. A Fume Hood helps control airborne exposure during suitable work. A Lab Coat is protective clothing; neither item alone establishes that any procedure is safe. The protective-equipment discussion covers Safety Goggles, Latex Gloves, and a Face Shield. Latex Gloves are not suitable for every chemical and can cause allergic reactions. The Fire Extinguisher belongs to the site’s emergency arrangements. The visitor locates the Eyewash Station, Chemical Shower, and First Aid Kit with the guide. The Eyewash Station is intended for eye rinsing after exposure, while the Chemical Shower addresses body or clothing exposure under the emergency plan.",
+      "imageBrief": "One uncluttered laboratory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hot Plate, Scale, Thermometer, and pH Meter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hot Plate",
+        "prompt": "The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color.\nWhich instrument weighs the sample?",
+        "answer": "Scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Spectrometer, Incubator, Fume Hood, and Lab Coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Spectrometer",
+        "prompt": "A Spectrometer measures a spectrum, and an Incubator maintains specified conditions for samples. A Fume Hood helps control airborne exposure during suitable work. A Lab Coat is protective clothing; neither item alone establishes that any procedure is safe.\nWhich enclosure helps control airborne exposure?",
+        "answer": "Fume Hood",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safety Goggles, Latex Gloves, Face Shield, and Fire Extinguisher and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Safety Goggles",
+        "prompt": "The protective-equipment discussion covers Safety Goggles, Latex Gloves, and a Face Shield. Latex Gloves are not suitable for every chemical and can cause allergic reactions. The Fire Extinguisher belongs to the site’s emergency arrangements.\nWhich hand coverings require attention to chemical compatibility and latex allergy?",
+        "answer": "Latex Gloves",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eyewash Station, Chemical Shower, and First Aid Kit and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The visitor locates the Eyewash Station, Chemical Shower, and First Aid Kit with the guide. The Eyewash Station is intended for eye rinsing after exposure, while the Chemical Shower addresses body or clothing exposure under the emergency plan.\nWhich station is intended for eye rinsing?",
         "answer": "Eyewash Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color. A Spectrometer measures a spectrum, and an Incubator maintains specified conditions for samples. A Fume Hood helps control airborne exposure during suitable work. A Lab Coat is protective clothing; neither item alone establishes that any procedure is safe. The protective-equipment discussion covers Safety Goggles, Latex Gloves, and a Face Shield. Latex Gloves are not suitable for every chemical and can cause allergic reactions. The Fire Extinguisher belongs to the site’s emergency arrangements. The visitor locates the Eyewash Station, Chemical Shower, and First Aid Kit with the guide. The Eyewash Station is intended for eye rinsing after exposure, while the Chemical Shower addresses body or clothing exposure under the emergency plan.\nExplain the difference between Hot Plate and Scale using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hot Plate"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Beaker” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Hot Plate, Scale, Thermometer, pH Meter, Spectrometer, Incubator, Fume Hood, Lab Coat, Safety Goggles, Latex Gloves, Face Shield, Fire Extinguisher, Eyewash Station, Chemical Shower, and First Aid Kit in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hot Plate, Scale, Thermometer, pH Meter, Spectrometer, Incubator, Fume Hood, Lab Coat, Safety Goggles, Latex Gloves, Face Shield, Fire Extinguisher, Eyewash Station, Chemical Shower, First Aid Kit to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Laboratory: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Laboratory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hot Plate and Scale, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The demonstration display has a Hot Plate for heating, a Scale for weighing a sample, and a Thermometer for temperature. A pH Meter measures acidity or alkalinity in the relevant solution; the reading is not inferred from liquid color. Pause and answer: Which instrument weighs the sample?"
     },
     "spacedReview": "1 lesson(s) back: Beaker, Flask from laboratory-1\n3 lesson(s) back: Motion, Brief from courtroom-4\n7 lesson(s) back: Application, Identification from embassy-5"
   },
@@ -376,16 +342,16 @@
     ],
     "targetWordsArabic": [
       "علامة خطر",
-      "مريلة مطبخ (مريلة)",
-      "ماسك طعام (ملقاط)",
-      "ملقط تثبيت",
+      "مئزر",
+      "ملقط",
+      "مشبك تثبيت مخبري",
       "حامل مختبري رأسي",
-      "ملعقة تقليب (سباتيولا)",
+      "ملعقة مسطّحة",
       "قضيب تحريك",
       "هاون ومدقّة",
       "مشرط",
-      "ملقط جراحي",
-      "حقنة",
+      "ملقط",
+      "محقنة",
       "عدسة مكبرة",
       "حمض",
       "قاعدة كيميائية",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hazard Sign", "Apron", "Tongs", "Clamp"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.",
+          "scenario": "A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hazard Sign", "Apron", "Tongs"],
-            "expectedAnswer": "Hazard Sign"
+            "question": "Which device holds equipment in position?",
+            "options": ["Clamp", "Hazard Sign", "Apron"],
+            "expectedAnswer": "Clamp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Hazard Sign as the central item; include Hazard Sign, Apron, and Tongs naturally where visually appropriate, but make the real-world use of Hazard Sign the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Clamp in a laboratory context. Use the written scenario as the source of meaning: A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ring Stand", "Spatula", "Stirring Rod", "Mortar and Pestle"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.",
+          "scenario": "The Ring Stand supports laboratory equipment, a Spatula transfers small amounts of material, and a Stirring Rod mixes suitable liquids. The Mortar and Pestle are a bowl and matching tool for grinding material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ring Stand", "Spatula", "Stirring Rod"],
-            "expectedAnswer": "Ring Stand"
+            "question": "Which pair grinds material in a bowl?",
+            "options": ["Mortar and Pestle", "Ring Stand", "Spatula"],
+            "expectedAnswer": "Mortar and Pestle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Ring Stand as the central item; include Ring Stand, Spatula, and Stirring Rod naturally where visually appropriate, but make the real-world use of Ring Stand the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mortar and Pestle in a laboratory context. Use the written scenario as the source of meaning: The Ring Stand supports laboratory equipment, a Spatula transfers small amounts of material, and a Stirring Rod mixes suitable liquids. The Mortar and Pestle are a bowl and matching tool for grinding material. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scalpel", "Forceps", "Syringe", "Magnifying Glass"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Scalpel for cutting in approved work, Forceps for gripping small objects, and a Syringe for drawing or dispensing liquid. A Magnifying Glass enlarges nearby details. The display teaches names rather than procedures.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Scalpel", "Forceps", "Syringe"],
-            "expectedAnswer": "Scalpel"
+            "question": "Which instrument grips small objects?",
+            "options": ["Forceps", "Scalpel", "Syringe"],
+            "expectedAnswer": "Forceps"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Scalpel as the central item; include Scalpel, Forceps, and Syringe naturally where visually appropriate, but make the real-world use of Scalpel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Forceps in a laboratory context. Use the written scenario as the source of meaning: The guide distinguishes a Scalpel for cutting in approved work, Forceps for gripping small objects, and a Syringe for drawing or dispensing liquid. A Magnifying Glass enlarges nearby details. The display teaches names rather than procedures. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Acid", "Base", "Solution"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.",
+          "scenario": "The written glossary uses the proton-transfer model: an Acid can donate a proton, while a Base can accept one. A Solution is a homogeneous mixture. These chemical properties cannot be established from an unlabeled photograph or by tasting.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Acid", "Base", "Solution"],
-            "expectedAnswer": "Acid"
+            "question": "Which substance can accept a proton in the stated model?",
+            "options": ["Base", "Acid", "Solution"],
+            "expectedAnswer": "Base"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Acid as the central item; include Acid, Base, and Solution naturally where visually appropriate, but make the real-world use of Acid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Base in a laboratory context. Use the written scenario as the source of meaning: The written glossary uses the proton-transfer model: an Acid can donate a proton, while a Base can accept one. A Solution is a homogeneous mixture. These chemical properties cannot be established from an unlabeled photograph or by tasting. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Laboratory",
-      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Hazard Sign, Apron, Tongs, and Clamp. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Scalpel, Forceps, Syringe, and Magnifying Glass. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Acid, Base, and Solution. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Laboratory: Comparing the equipment",
+      "text": "A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction. The Ring Stand supports laboratory equipment, a Spatula transfers small amounts of material, and a Stirring Rod mixes suitable liquids. The Mortar and Pestle are a bowl and matching tool for grinding material. The guide distinguishes a Scalpel for cutting in approved work, Forceps for gripping small objects, and a Syringe for drawing or dispensing liquid. A Magnifying Glass enlarges nearby details. The display teaches names rather than procedures. The written glossary uses the proton-transfer model: an Acid can donate a proton, while a Base can accept one. A Solution is a homogeneous mixture. These chemical properties cannot be established from an unlabeled photograph or by tasting.",
+      "imageBrief": "One uncluttered laboratory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hazard Sign, Apron, Tongs, and Clamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hazard Sign",
+        "prompt": "A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction.\nWhich device holds equipment in position?",
+        "answer": "Clamp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ring Stand, Spatula, Stirring Rod, and Mortar and Pestle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ring Stand",
+        "prompt": "The Ring Stand supports laboratory equipment, a Spatula transfers small amounts of material, and a Stirring Rod mixes suitable liquids. The Mortar and Pestle are a bowl and matching tool for grinding material.\nWhich pair grinds material in a bowl?",
+        "answer": "Mortar and Pestle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scalpel, Forceps, Syringe, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Scalpel",
+        "prompt": "The guide distinguishes a Scalpel for cutting in approved work, Forceps for gripping small objects, and a Syringe for drawing or dispensing liquid. A Magnifying Glass enlarges nearby details. The display teaches names rather than procedures.\nWhich instrument grips small objects?",
+        "answer": "Forceps",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Acid, Base, and Solution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Acid",
+        "prompt": "The written glossary uses the proton-transfer model: an Acid can donate a proton, while a Base can accept one. A Solution is a homogeneous mixture. These chemical properties cannot be established from an unlabeled photograph or by tasting.\nWhich substance can accept a proton in the stated model?",
+        "answer": "Base",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction. The Ring Stand supports laboratory equipment, a Spatula transfers small amounts of material, and a Stirring Rod mixes suitable liquids. The Mortar and Pestle are a bowl and matching tool for grinding material. The guide distinguishes a Scalpel for cutting in approved work, Forceps for gripping small objects, and a Syringe for drawing or dispensing liquid. A Magnifying Glass enlarges nearby details. The display teaches names rather than procedures. The written glossary uses the proton-transfer model: an Acid can donate a proton, while a Base can accept one. A Solution is a homogeneous mixture. These chemical properties cannot be established from an unlabeled photograph or by tasting.\nExplain the difference between Hazard Sign and Apron using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Hazard Sign"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hot Plate” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Hazard Sign, Apron, Tongs, Clamp, Ring Stand, Spatula, Stirring Rod, Mortar and Pestle, Scalpel, Forceps, Syringe, Magnifying Glass, Acid, Base, and Solution in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Hazard Sign, Apron, Tongs, Clamp, Ring Stand, Spatula, Stirring Rod, Mortar and Pestle, Scalpel, Forceps, Syringe, Magnifying Glass, Acid, Base, Solution to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Laboratory: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Laboratory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Hazard Sign and Apron, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Hazard Sign identifies a stated danger. An Apron covers the front of the body, Tongs grip material, and a Clamp holds equipment in position. Visitors follow staff instructions and do not interpret a generated sign as an operational instruction. Pause and answer: Which device holds equipment in position?"
     },
     "spacedReview": "1 lesson(s) back: Hot Plate, Scale from laboratory-2\n3 lesson(s) back: Defendant, Plaintiff from courtroom-5\n7 lesson(s) back: Judge, Lawyer from courtroom-1"
   },
@@ -552,7 +501,7 @@
       "دليل كيميائي",
       "كاشف كيميائي",
       "عينة",
-      "عينة اختبار",
+      "عينة للفحص",
       "شريحة مجهرية",
       "صبغة",
       "بلورة",
@@ -560,138 +509,121 @@
       "ورق رسم بياني",
       "آلة حاسبة",
       "حاسوب",
-      "خريطة ملاحية بيانات",
+      "مخطط بيانات",
       "مؤقت",
-      "علامة",
+      "ملصق تعريفي",
       "رمز شريطي"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "134-164 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Indicator", "Reagent", "Sample", "Specimen"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.",
+          "scenario": "An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Indicator", "Reagent", "Sample"],
-            "expectedAnswer": "Indicator"
+            "question": "Which target names a chemical used in testing or reactions?",
+            "options": ["Reagent", "Indicator", "Sample"],
+            "expectedAnswer": "Reagent"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Indicator as the central item; include Indicator, Reagent, and Sample naturally where visually appropriate, but make the real-world use of Indicator the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Reagent in a laboratory context. Use the written scenario as the source of meaning: An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Slide", "Stain", "Crystal", "Lab Notebook"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.",
+          "scenario": "A Slide holds material for microscope viewing. A Stain can improve contrast, a Crystal has ordered internal structure, and a Lab Notebook records observations. The image can show equipment but cannot prove molecular arrangement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which flat support holds material for microscope viewing?",
             "options": ["Slide", "Stain", "Crystal"],
             "expectedAnswer": "Slide"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Slide as the central item; include Slide, Stain, and Crystal naturally where visually appropriate, but make the real-world use of Slide the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Slide in a laboratory context. Use the written scenario as the source of meaning: A Slide holds material for microscope viewing. A Stain can improve contrast, a Crystal has ordered internal structure, and a Lab Notebook records observations. The image can show equipment but cannot prove molecular arrangement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Graph Paper", "Calculator", "Computer", "Data Chart"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.",
+          "scenario": "Graph Paper supports plotting, a Calculator performs calculations, and a Computer processes data. A Data Chart presents results in an organized visual form. Interpretation requires the stated data and does not follow from decorative bars in an image.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Graph Paper", "Calculator", "Computer"],
-            "expectedAnswer": "Graph Paper"
+            "question": "Which target names the organized visual presentation of results?",
+            "options": ["Data Chart", "Graph Paper", "Calculator"],
+            "expectedAnswer": "Data Chart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Graph Paper as the central item; include Graph Paper, Calculator, and Computer naturally where visually appropriate, but make the real-world use of Graph Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Data Chart in a laboratory context. Use the written scenario as the source of meaning: Graph Paper supports plotting, a Calculator performs calculations, and a Computer processes data. A Data Chart presents results in an organized visual form. Interpretation requires the stated data and does not follow from decorative bars in an image. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Timer", "Label", "Barcode"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.",
+          "scenario": "A Timer measures an interval. A Label carries identifying information, and a Barcode encodes information for a compatible reader. The learner uses the written description rather than trying to decode invented marks in the illustration.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Timer", "Label", "Barcode"],
-            "expectedAnswer": "Timer"
+            "question": "Which target encodes information for a compatible reader?",
+            "options": ["Barcode", "Timer", "Label"],
+            "expectedAnswer": "Barcode"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Timer as the central item; include Timer, Label, and Barcode naturally where visually appropriate, but make the real-world use of Timer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Barcode in a laboratory context. Use the written scenario as the source of meaning: A Timer measures an interval. A Label carries identifying information, and a Barcode encodes information for a compatible reader. The learner uses the written description rather than trying to decode invented marks in the illustration. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Laboratory",
-      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Indicator, Reagent, Sample, and Specimen. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Slide, Stain, Crystal, and Lab Notebook. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Graph Paper, Calculator, Computer, and Data Chart. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Timer, Label, and Barcode. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Laboratory: A guided walk",
+      "text": "An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance. A Slide holds material for microscope viewing. A Stain can improve contrast, a Crystal has ordered internal structure, and a Lab Notebook records observations. The image can show equipment but cannot prove molecular arrangement. Graph Paper supports plotting, a Calculator performs calculations, and a Computer processes data. A Data Chart presents results in an organized visual form. Interpretation requires the stated data and does not follow from decorative bars in an image. A Timer measures an interval. A Label carries identifying information, and a Barcode encodes information for a compatible reader. The learner uses the written description rather than trying to decode invented marks in the illustration.",
+      "imageBrief": "One uncluttered laboratory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Indicator, Reagent, Sample, and Specimen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Indicator",
+        "prompt": "An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance.\nWhich target names a chemical used in testing or reactions?",
+        "answer": "Reagent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Slide, Stain, Crystal, and Lab Notebook and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Slide holds material for microscope viewing. A Stain can improve contrast, a Crystal has ordered internal structure, and a Lab Notebook records observations. The image can show equipment but cannot prove molecular arrangement.\nWhich flat support holds material for microscope viewing?",
         "answer": "Slide",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Graph Paper, Calculator, Computer, and Data Chart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Graph Paper",
+        "prompt": "Graph Paper supports plotting, a Calculator performs calculations, and a Computer processes data. A Data Chart presents results in an organized visual form. Interpretation requires the stated data and does not follow from decorative bars in an image.\nWhich target names the organized visual presentation of results?",
+        "answer": "Data Chart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Timer, Label, and Barcode and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Timer",
+        "prompt": "A Timer measures an interval. A Label carries identifying information, and a Barcode encodes information for a compatible reader. The learner uses the written description rather than trying to decode invented marks in the illustration.\nWhich target encodes information for a compatible reader?",
+        "answer": "Barcode",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance. A Slide holds material for microscope viewing. A Stain can improve contrast, a Crystal has ordered internal structure, and a Lab Notebook records observations. The image can show equipment but cannot prove molecular arrangement. Graph Paper supports plotting, a Calculator performs calculations, and a Computer processes data. A Data Chart presents results in an organized visual form. Interpretation requires the stated data and does not follow from decorative bars in an image. A Timer measures an interval. A Label carries identifying information, and a Barcode encodes information for a compatible reader. The learner uses the written description rather than trying to decode invented marks in the illustration.\nExplain the difference between Indicator and Reagent using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Indicator"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hazard Sign” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Indicator, Reagent, Sample, Specimen, Slide, Stain, Crystal, Lab Notebook, Graph Paper, Calculator, Computer, Data Chart, Timer, Label, and Barcode in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Indicator, Reagent, Sample, Specimen, Slide, Stain, Crystal, Lab Notebook, Graph Paper, Calculator, Computer, Data Chart, Timer, Label, Barcode to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Laboratory: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Laboratory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Indicator and Reagent, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: An Indicator changes in a specified way to provide information, often through color. A Reagent is used in testing or reactions. Sample and Specimen identify material collected for examination; identity and composition come from records, not appearance. Pause and answer: Which target names a chemical used in testing or reactions?"
     },
     "spacedReview": "1 lesson(s) back: Hazard Sign, Apron from laboratory-3\n3 lesson(s) back: Beaker, Flask from laboratory-1\n7 lesson(s) back: Prosecution Table, Lectern from courtroom-2"
   },
@@ -726,146 +658,129 @@
       "ورقة سجل",
       "تقرير",
       "جهاز تعقيم بالبخار",
-      "مركب",
+      "مركب كيميائي",
       "حفاز",
       "مذيب",
       "إنزيم",
       "يحلل",
-      "يركّب",
-      "يُعاير",
+      "يركب كيميائيًا",
+      "يعاير",
       "يرشّح",
       "يستخلص",
-      "يعقّم",
-      "وثيقة",
+      "يعقم",
+      "يوثق",
       "مراجعة الأقران"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "138-168 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Log Sheet", "Report", "Autoclave", "Compound"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.",
+          "scenario": "A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Log Sheet", "Report", "Autoclave"],
-            "expectedAnswer": "Log Sheet"
+            "question": "Which equipment uses pressurized steam for suitable sterilization work?",
+            "options": ["Autoclave", "Log Sheet", "Report"],
+            "expectedAnswer": "Autoclave"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Log Sheet as the central item; include Log Sheet, Report, and Autoclave naturally where visually appropriate, but make the real-world use of Log Sheet the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Autoclave in a laboratory context. Use the written scenario as the source of meaning: A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Catalyst", "Solvent", "Enzyme", "Analyze"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.",
+          "scenario": "A Catalyst increases a reaction rate and is regenerated in the process. A Solvent dissolves a substance, and an Enzyme is a biological catalyst. Analyze means examine material or data systematically; no reaction recipe is supplied.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which general term names the rate-increasing substance regenerated in the process?",
             "options": ["Catalyst", "Solvent", "Enzyme"],
             "expectedAnswer": "Catalyst"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Catalyst as the central item; include Catalyst, Solvent, and Enzyme naturally where visually appropriate, but make the real-world use of Catalyst the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Catalyst in a laboratory context. Use the written scenario as the source of meaning: A Catalyst increases a reaction rate and is regenerated in the process. A Solvent dissolves a substance, and an Enzyme is a biological catalyst. Analyze means examine material or data systematically; no reaction recipe is supplied. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Synthesize", "Calibrate", "Filter", "Extract"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.",
+          "scenario": "The guide defines Synthesize as producing a substance, Calibrate as comparing measurement readings with a reference, Filter as separating through a filtering medium, and Extract as separating a component from a mixture. Calibration is not simply turning a dial until a result looks convenient.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Synthesize", "Calibrate", "Filter"],
-            "expectedAnswer": "Synthesize"
+            "question": "Which verb concerns comparing measurements with a reference?",
+            "options": ["Calibrate", "Synthesize", "Filter"],
+            "expectedAnswer": "Calibrate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Synthesize as the central item; include Synthesize, Calibrate, and Filter naturally where visually appropriate, but make the real-world use of Synthesize the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Calibrate in a laboratory context. Use the written scenario as the source of meaning: The guide defines Synthesize as producing a substance, Calibrate as comparing measurement readings with a reference, Filter as separating through a filtering medium, and Extract as separating a component from a mixture. Calibration is not simply turning a dial until a result looks convenient. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sterilize", "Document", "Peer Review"],
-          "scenario": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.",
+          "scenario": "Sterilize concerns eliminating viable microorganisms through an appropriate validated process. Document means record the work and results. Peer Review is assessment by relevant specialists, which does not guarantee that a study has no errors.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sterilize", "Document", "Peer Review"],
-            "expectedAnswer": "Sterilize"
+            "question": "Which verb means record the work and results?",
+            "options": ["Document", "Sterilize", "Peer Review"],
+            "expectedAnswer": "Document"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Sterilize as the central item; include Sterilize, Document, and Peer Review naturally where visually appropriate, but make the real-world use of Sterilize the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Document in a laboratory context. Use the written scenario as the source of meaning: Sterilize concerns eliminating viable microorganisms through an appropriate validated process. Document means record the work and results. Peer Review is assessment by relevant specialists, which does not guarantee that a study has no errors. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written laboratory situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Laboratory",
-      "text": "At the laboratory, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers Log Sheet, Report, Autoclave, and Compound. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Catalyst, Solvent, Enzyme, and Analyze. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Synthesize, Calibrate, Filter, and Extract. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers Sterilize, Document, and Peer Review. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Laboratory. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Laboratory: A practical discussion",
+      "text": "A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization. A Catalyst increases a reaction rate and is regenerated in the process. A Solvent dissolves a substance, and an Enzyme is a biological catalyst. Analyze means examine material or data systematically; no reaction recipe is supplied. The guide defines Synthesize as producing a substance, Calibrate as comparing measurement readings with a reference, Filter as separating through a filtering medium, and Extract as separating a component from a mixture. Calibration is not simply turning a dial until a result looks convenient. Sterilize concerns eliminating viable microorganisms through an appropriate validated process. Document means record the work and results. Peer Review is assessment by relevant specialists, which does not guarantee that a study has no errors.",
+      "imageBrief": "One uncluttered laboratory setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Log Sheet, Report, Autoclave, and Compound and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Log Sheet",
+        "prompt": "A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization.\nWhich equipment uses pressurized steam for suitable sterilization work?",
+        "answer": "Autoclave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catalyst, Solvent, Enzyme, and Analyze and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Catalyst increases a reaction rate and is regenerated in the process. A Solvent dissolves a substance, and an Enzyme is a biological catalyst. Analyze means examine material or data systematically; no reaction recipe is supplied.\nWhich general term names the rate-increasing substance regenerated in the process?",
         "answer": "Catalyst",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synthesize, Calibrate, Filter, and Extract and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Synthesize",
+        "prompt": "The guide defines Synthesize as producing a substance, Calibrate as comparing measurement readings with a reference, Filter as separating through a filtering medium, and Extract as separating a component from a mixture. Calibration is not simply turning a dial until a result looks convenient.\nWhich verb concerns comparing measurements with a reference?",
+        "answer": "Calibrate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the laboratory setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sterilize, Document, and Peer Review and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sterilize",
+        "prompt": "Sterilize concerns eliminating viable microorganisms through an appropriate validated process. Document means record the work and results. Peer Review is assessment by relevant specialists, which does not guarantee that a study has no errors.\nWhich verb means record the work and results?",
+        "answer": "Document",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization. A Catalyst increases a reaction rate and is regenerated in the process. A Solvent dissolves a substance, and an Enzyme is a biological catalyst. Analyze means examine material or data systematically; no reaction recipe is supplied. The guide defines Synthesize as producing a substance, Calibrate as comparing measurement readings with a reference, Filter as separating through a filtering medium, and Extract as separating a component from a mixture. Calibration is not simply turning a dial until a result looks convenient. Sterilize concerns eliminating viable microorganisms through an appropriate validated process. Document means record the work and results. Peer Review is assessment by relevant specialists, which does not guarantee that a study has no errors.\nExplain the difference between Log Sheet and Report using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Log Sheet"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Indicator” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the laboratory task. Use Log Sheet, Report, Autoclave, Compound, Catalyst, Solvent, Enzyme, Analyze, Synthesize, Calibrate, Filter, Extract, Sterilize, Document, and Peer Review in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Log Sheet, Report, Autoclave, Compound, Catalyst, Solvent, Enzyme, Analyze, Synthesize, Calibrate, Filter, Extract, Sterilize, Document, Peer Review to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Laboratory: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Laboratory: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Log Sheet and Report, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Log Sheet records events, and a Report presents findings. An Autoclave uses pressurized steam under specified conditions to sterilize suitable material. A Compound contains chemically bonded elements; equipment appearance does not certify sterilization. Pause and answer: Which equipment uses pressurized steam for suitable sterilization work?"
     },
     "spacedReview": "1 lesson(s) back: Indicator, Reagent from laboratory-4\n3 lesson(s) back: Hot Plate, Scale from laboratory-2\n7 lesson(s) back: Trial, Hearing from courtroom-3"
   }

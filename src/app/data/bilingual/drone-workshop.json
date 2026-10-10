@@ -26,7 +26,7 @@
   },
   "nano-drone": {
     "definition": "A very small, lightweight drone designed for short-range flying, training, or indoor use.",
-    "exampleUsage": "The nano drone was small enough to fly safely in the practice room.",
+    "exampleUsage": "The nano drone was small enough to fit on the display tray; the instructor determined where flight was permitted.",
     "arabicTranslation": "طائرة مسيّرة صغيرة جدًا"
   },
   "delivery-drone": {
@@ -52,18 +52,18 @@
   "propeller": {
     "definition": "A mechanical device that rotates to push against air or water.",
     "arabicTranslation": "مروحة دافعة",
-    "exampleUsage": "The propeller was used during the activity."
+    "exampleUsage": "The propeller rotated to produce thrust."
   },
   "motor": {
-    "definition": "A nonspecific agent that imparts motion.",
+    "definition": "A machine converting electrical energy into movement, such as rotating a propeller.",
     "arabicTranslation": "محرك"
   },
   "frame": {
-    "definition": "The supporting shape or structure of a building.",
-    "arabicTranslation": "إطار"
+    "definition": "The supporting structure holding a drone’s components together.",
+    "arabicTranslation": "هيكل المسيّرة"
   },
   "battery": {
-    "definition": "A collection of related things intended for use together.",
+    "definition": "A device storing and supplying electrical energy for a drone.",
     "arabicTranslation": "بطارية"
   },
   "esc": {
@@ -83,7 +83,7 @@
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
     "arabicTranslation": "هوائي",
-    "exampleUsage": "The antenna was used during the activity."
+    "exampleUsage": "The antenna carried signals for the supported communication system."
   },
   "camera": {
     "definition": "Equipment for taking photographs (usually consisting of a lightproof box with a lens at one end and light-sensitive film at the other).",
@@ -114,8 +114,8 @@
     "arabicTranslation": "دوران حول المحور الرأسي"
   },
   "pitch": {
-    "definition": "The act of throwing a baseball or softball by the pitcher towards home plate, which initiates play by giving the batter a chance to hit it.",
-    "arabicTranslation": "حدّة الصوت"
+    "definition": "The rotation of a drone about its side-to-side axis, tilting its nose up or down.",
+    "arabicTranslation": "ميل مقدمة المسيّرة لأعلى أو لأسفل"
   },
   "roll": {
     "arabicTranslation": "ميل حول المحور الطولي",
@@ -130,23 +130,23 @@
     "arabicTranslation": "وضع أمان تلقائي"
   },
   "return-to-home": {
-    "arabicTranslation": "العودة التلقائية إلى نقطة الانطلاق",
-    "definition": "A drone function that automatically flies it back to its launch point."
+    "arabicTranslation": "العودة إلى نقطة البداية المسجّلة",
+    "definition": "A drone function intended to return it to a recorded home point under suitable configured conditions."
   },
   "soldering-iron": {
     "definition": "A handheld tool with a heated tip used to melt and apply solder, a metal alloy that joins electrical parts.",
     "arabicTranslation": "كاوية لحام",
-    "exampleUsage": "The soldering iron was used during the activity."
+    "exampleUsage": "The trained technician placed the cooled soldering iron in its holder."
   },
   "multimeter": {
     "definition": "A portable instrument that tests several features of electricity, including voltage, current, and resistance, in a circuit.",
     "arabicTranslation": "ملتيميتر",
-    "exampleUsage": "The multimeter was used during the activity."
+    "exampleUsage": "The trained technician selected a suitable multimeter for the specified electrical measurement."
   },
   "screwdriver": {
     "definition": "A hand tool with a handle and a tip for turning screws.",
     "arabicTranslation": "مفك براغي",
-    "exampleUsage": "The screwdriver was used during the activity."
+    "exampleUsage": "The technician selected a screwdriver that matched the screw head."
   },
   "hex-wrench": {
     "arabicTranslation": "مفتاح سداسي",
@@ -155,7 +155,7 @@
   "pliers": {
     "definition": "A hand tool with two handles used for gripping or cutting.",
     "arabicTranslation": "كماشة",
-    "exampleUsage": "The pliers was used during the activity."
+    "exampleUsage": "The technician used pliers to grip the small metal part."
   },
   "heat-shrink": {
     "arabicTranslation": "أنبوب عازل يتقلص بالحرارة",
@@ -178,8 +178,8 @@
     "definition": "A tool used to check and correct the balance of a drone propeller."
   },
   "firmware": {
-    "definition": "(computer science) coded instructions that are stored permanently in read-only memory.",
-    "arabicTranslation": "برمجيات ثابتة"
+    "definition": "Software instructions controlling hardware functions, often stored in rewritable non-volatile memory.",
+    "arabicTranslation": "برنامج ثابت"
   },
   "ground-station": {
     "arabicTranslation": "محطة تحكم أرضية",
@@ -208,12 +208,12 @@
   "calibration": {
     "definition": "The act of checking or adjusting (by comparison with a standard) the accuracy of a measuring instrument.",
     "arabicTranslation": "معايرة",
-    "exampleUsage": "The calibration was used during the activity."
+    "exampleUsage": "The technician checked the manufacturer’s calibration requirements for the sensor."
   },
   "simulator": {
     "definition": "A machine that simulates an environment for the purpose of training or research.",
     "arabicTranslation": "محاكي",
-    "exampleUsage": "The simulator was used during the activity."
+    "exampleUsage": "The trainee practiced control inputs in a simulator before the approved flight session."
   },
   "mapping": {
     "arabicTranslation": "رسم خرائط",
@@ -245,8 +245,8 @@
     "arabicTranslation": "فحص ما قبل الطيران"
   },
   "spotter": {
-    "definition": "A worker employed at a dry-cleaning establishment to remove spots.",
-    "arabicTranslation": "مراقب"
+    "definition": "A person who helps observe the drone and surrounding conditions during an authorized flight.",
+    "arabicTranslation": "مراقب الطيران"
   },
   "insurance": {
     "definition": "Promise of reimbursement in the case of loss.",

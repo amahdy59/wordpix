@@ -44,132 +44,108 @@
       "مستقيم"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of internal organs using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Heart", "Brain", "Lungs", "Liver"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Heart, Brain, Lungs, and Liver and choose the option that fits the situation.",
+          "scenario": "A tutor places a torso model on the table. She points to the organ that pumps blood, then identifies the brain, lungs, and liver.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which organ pumps blood?",
             "options": ["Heart", "Brain", "Lungs"],
             "expectedAnswer": "Heart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Heart as the central item; include Heart, Brain, and Lungs naturally where visually appropriate, but make the real-world use of Heart the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A torso teaching model beside an adult tutor, showing anatomically correct heart, lungs, and liver. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A torso teaching model beside an adult tutor, showing anatomically correct heart, lungs, and liver."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Kidneys", "Stomach", "Pancreas", "Spleen"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kidneys, Stomach, Pancreas, and Spleen and choose the option that fits the situation.",
+          "scenario": "In a biology lesson, students compare four organs. The kidneys filter blood and make urine. The stomach helps break down food, and the pancreas makes digestive enzymes and insulin.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which organs make urine?",
             "options": ["Kidneys", "Stomach", "Pancreas"],
             "expectedAnswer": "Kidneys"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Kidneys as the central item; include Kidneys, Stomach, and Pancreas naturally where visually appropriate, but make the real-world use of Kidneys the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult classroom with separate anatomical teaching models of kidneys, stomach, pancreas, and spleen. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult classroom with separate anatomical teaching models of kidneys, stomach, pancreas, and spleen."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Gallbladder", "Bladder", "Esophagus", "Small Intestine"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gallbladder, Bladder, Esophagus, and Small Intestine and choose the option that fits the situation.",
+          "scenario": "The tutor traces food moving from the esophagus to the stomach and then the small intestine. She explains that the gallbladder stores bile, while the bladder stores urine.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which organ stores urine?",
             "options": ["Gallbladder", "Bladder", "Esophagus"],
-            "expectedAnswer": "Gallbladder"
+            "expectedAnswer": "Bladder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Gallbladder as the central item; include Gallbladder, Bladder, and Esophagus naturally where visually appropriate, but make the real-world use of Gallbladder the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Anatomically correct digestive and urinary teaching models side by side, without labels or arrows. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Anatomically correct digestive and urinary teaching models side by side, without labels or arrows."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Large Intestine", "Colon", "Rectum"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Large Intestine, Colon, and Rectum and choose the option that fits the situation.",
+          "scenario": "A digestive-system model shows the large intestine around the small intestine. The colon is a major part of the large intestine. The rectum holds stool before it leaves the body.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which part holds stool before it leaves the body?",
             "options": ["Large Intestine", "Colon", "Rectum"],
-            "expectedAnswer": "Large Intestine"
+            "expectedAnswer": "Rectum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Large Intestine as the central item; include Large Intestine, Colon, and Rectum naturally where visually appropriate, but make the real-world use of Large Intestine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct digestive-system teaching model, with the large intestine and rectum visible. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct digestive-system teaching model, with the large intestine and rectum visible."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Internal Organs",
-      "text": "At the internal organs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Heart, Brain, Lungs, and Liver. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Kidneys, Stomach, Pancreas, and Spleen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gallbladder, Bladder, Esophagus, and Small Intestine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Large Intestine, Colon, and Rectum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Internal Organs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Internal Organs 1: an anatomy teaching session",
+      "text": "A tutor places a torso model on the table. She points to the organ that pumps blood, then identifies the brain, lungs, and liver. In a biology lesson, students compare four organs. The kidneys filter blood and make urine. The stomach helps break down food, and the pancreas makes digestive enzymes and insulin. The tutor traces food moving from the esophagus to the stomach and then the small intestine. She explains that the gallbladder stores bile, while the bladder stores urine. A digestive-system model shows the large intestine around the small intestine. The colon is a major part of the large intestine. The rectum holds stool before it leaves the body. The spleen supports immune functions and filters blood. It is different from the stomach even though both are on the left side of the upper abdomen.",
+      "imageBrief": "Educational photograph of A torso teaching model beside an adult tutor, showing anatomically correct heart, lungs, and liver. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Heart, Brain, Lungs, and Liver and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A tutor places a torso model on the table. She points to the organ that pumps blood, then identifies the brain, lungs, and liver.\nWhich organ pumps blood?",
         "answer": "Heart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kidneys, Stomach, Pancreas, and Spleen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In a biology lesson, students compare four organs. The kidneys filter blood and make urine. The stomach helps break down food, and the pancreas makes digestive enzymes and insulin.\nWhich organs make urine?",
         "answer": "Kidneys",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gallbladder, Bladder, Esophagus, and Small Intestine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gallbladder",
+        "prompt": "The tutor traces food moving from the esophagus to the stomach and then the small intestine. She explains that the gallbladder stores bile, while the bladder stores urine.\nWhich organ stores urine?",
+        "answer": "Bladder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Large Intestine, Colon, and Rectum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Large Intestine",
+        "prompt": "A digestive-system model shows the large intestine around the small intestine. The colon is a major part of the large intestine. The rectum holds stool before it leaves the body.\nWhich part holds stool before it leaves the body?",
+        "answer": "Rectum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Heart"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Liver"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pain” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the internal organs task. Use Heart, Brain, Lungs, Liver, Kidneys, Stomach, Pancreas, Spleen, Gallbladder, Bladder, Esophagus, Small Intestine, Large Intestine, Colon, and Rectum in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain to another learner the function or location described in the first scene. Use a complete sentence rather than one word.\nUse this information: A tutor places a torso model on the table. She points to the organ that pumps blood, then identifies the brain, lungs, and liver.",
+        "answer": "The heart pumps blood around the body.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Internal Organs: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Internal Organs 1: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A tutor places a torso model on the table. She points to the organ that pumps blood, then identifies the brain, lungs, and liver."
     },
     "spacedReview": "1 lesson(s) back: Pain, Tickle from five-senses-4\n3 lesson(s) back: Volume, Frequency from five-senses-2\n7 lesson(s) back: oboe, bassoon from music-room-2"
   },
@@ -218,132 +194,108 @@
       "حجرة قلبية"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of internal organs using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Appendix", "Duodenum", "Jejunum", "Ileum"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Duodenum, Jejunum, and Ileum and choose the option that fits the situation.",
+          "scenario": "A learner follows the small intestine on a model. Its first section is the duodenum, followed by the jejunum and ileum. The appendix is attached near the beginning of the large intestine.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which section comes immediately after the stomach?",
             "options": ["Appendix", "Duodenum", "Jejunum"],
-            "expectedAnswer": "Appendix"
+            "expectedAnswer": "Duodenum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Appendix as the central item; include Appendix, Duodenum, and Jejunum naturally where visually appropriate, but make the real-world use of Appendix the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A digestive-system model displaying the small intestine and appendix accurately; no text or numbered labels. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A digestive-system model displaying the small intestine and appendix accurately; no text or numbered labels."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Trachea", "Bronchi", "Bronchioles", "Alveoli"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trachea, Bronchi, Bronchioles, and Alveoli and choose the option that fits the situation.",
+          "scenario": "In a breathing lesson, air passes down the trachea and enters the bronchi. Smaller bronchioles lead to tiny air sacs called alveoli, where gases move between air and blood.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Trachea", "Bronchi", "Bronchioles"],
-            "expectedAnswer": "Trachea"
+            "question": "Which structures are the tiny air sacs?",
+            "options": ["Trachea", "Bronchi", "Bronchioles", "Alveoli"],
+            "expectedAnswer": "Alveoli"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Trachea as the central item; include Trachea, Bronchi, and Bronchioles naturally where visually appropriate, but make the real-world use of Trachea the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A lung teaching model with enlarged alveolar sacs beside it; anatomically accurate, no labels. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A lung teaching model with enlarged alveolar sacs beside it; anatomically accurate, no labels."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Diaphragm", "Larynx", "Pharynx", "Nasal Cavity"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diaphragm, Larynx, Pharynx, and Nasal Cavity and choose the option that fits the situation.",
+          "scenario": "A tutor explains the breathing model. The diaphragm is the muscle below the lungs that helps breathing. The larynx is the voice box, and the nasal cavity is inside the nose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which muscle lies below the lungs?",
             "options": ["Diaphragm", "Larynx", "Pharynx"],
             "expectedAnswer": "Diaphragm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Diaphragm as the central item; include Diaphragm, Larynx, and Pharynx naturally where visually appropriate, but make the real-world use of Diaphragm the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A non-graphic torso model with lungs and the curved diaphragm below them. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A non-graphic torso model with lungs and the curved diaphragm below them."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pleura", "Oxygen", "Heart Chamber"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pleura, Oxygen, and Heart Chamber and choose the option that fits the situation.",
+          "scenario": "The tutor explains three terms: oxygen is a gas used by body cells; pleura is a membrane around the lungs; a heart chamber is a space inside the heart.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names a gas?",
             "options": ["Pleura", "Oxygen", "Heart Chamber"],
-            "expectedAnswer": "Pleura"
+            "expectedAnswer": "Oxygen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pleura as the central item; include Pleura, Oxygen, and Heart Chamber naturally where visually appropriate, but make the real-world use of Pleura the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Lung and heart teaching models on an adult classroom table; oxygen cannot be shown as a visible gas. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Lung and heart teaching models on an adult classroom table; oxygen cannot be shown as a visible gas."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Internal Organs",
-      "text": "At the internal organs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Appendix, Duodenum, Jejunum, and Ileum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trachea, Bronchi, Bronchioles, and Alveoli. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Diaphragm, Larynx, Pharynx, and Nasal Cavity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pleura, Oxygen, and Heart Chamber. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Internal Organs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Internal Organs 2: an anatomy teaching session",
+      "text": "A learner follows the small intestine on a model. Its first section is the duodenum, followed by the jejunum and ileum. The appendix is attached near the beginning of the large intestine. In a breathing lesson, air passes down the trachea and enters the bronchi. Smaller bronchioles lead to tiny air sacs called alveoli, where gases move between air and blood. A tutor explains the breathing model. The diaphragm is the muscle below the lungs that helps breathing. The larynx is the voice box, and the nasal cavity is inside the nose. The tutor explains three terms: oxygen is a gas used by body cells; pleura is a membrane around the lungs; a heart chamber is a space inside the heart. The pharynx is the throat passage involved in the routes for air and food. The tutor distinguishes it from the larynx, or voice box.",
+      "imageBrief": "Educational photograph of A digestive-system model displaying the small intestine and appendix accurately; no text or numbered labels. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appendix, Duodenum, Jejunum, and Ileum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Appendix",
+        "prompt": "A learner follows the small intestine on a model. Its first section is the duodenum, followed by the jejunum and ileum. The appendix is attached near the beginning of the large intestine.\nWhich section comes immediately after the stomach?",
+        "answer": "Duodenum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trachea, Bronchi, Bronchioles, and Alveoli and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Trachea",
+        "prompt": "In a breathing lesson, air passes down the trachea and enters the bronchi. Smaller bronchioles lead to tiny air sacs called alveoli, where gases move between air and blood.\nWhich structures are the tiny air sacs?",
+        "answer": "Alveoli",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diaphragm, Larynx, Pharynx, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A tutor explains the breathing model. The diaphragm is the muscle below the lungs that helps breathing. The larynx is the voice box, and the nasal cavity is inside the nose.\nWhich muscle lies below the lungs?",
         "answer": "Diaphragm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pleura, Oxygen, and Heart Chamber and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pleura",
+        "prompt": "The tutor explains three terms: oxygen is a gas used by body cells; pleura is a membrane around the lungs; a heart chamber is a space inside the heart.\nWhich term names a gas?",
+        "answer": "Oxygen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Appendix"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Ileum"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Heart” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the internal organs task. Use Appendix, Duodenum, Jejunum, Ileum, Trachea, Bronchi, Bronchioles, Alveoli, Diaphragm, Larynx, Pharynx, Nasal Cavity, Pleura, Oxygen, and Heart Chamber in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain to another learner the function or location described in the first scene. Use a complete sentence rather than one word.\nUse this information: A learner follows the small intestine on a model. Its first section is the duodenum, followed by the jejunum and ileum. The appendix is attached near the beginning of the large intestine.",
+        "answer": "The duodenum is the first part of the small intestine after the stomach.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Internal Organs: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Internal Organs 2: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A learner follows the small intestine on a model. Its first section is the duodenum, followed by the jejunum and ileum. The appendix is attached near the beginning of the large intestine."
     },
     "spacedReview": "1 lesson(s) back: Heart, Brain from internal-organs-1\n3 lesson(s) back: Tongue, Taste Bud from five-senses-3\n7 lesson(s) back: piano, keyboard from music-room-3"
   },
@@ -376,7 +328,7 @@
     ],
     "targetWordsArabic": [
       "شريان أبهر",
-      "عرق الجناح",
+      "وريد",
       "شريان",
       "شعيرة دموية",
       "خلية دم حمراء",
@@ -392,132 +344,108 @@
       "مخيخ"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of internal organs using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Aorta", "Vein", "Artery", "Capillary"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aorta, Vein, Artery, and Capillary and choose the option that fits the situation.",
+          "scenario": "A heart model connects to red and blue vessel models. An artery carries blood away from the heart, a vein carries blood toward it, and a capillary allows exchange with tissues. The aorta is the largest artery.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which vessel type carries blood toward the heart?",
             "options": ["Aorta", "Vein", "Artery"],
-            "expectedAnswer": "Aorta"
+            "expectedAnswer": "Vein"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Aorta as the central item; include Aorta, Vein, and Artery naturally where visually appropriate, but make the real-world use of Aorta the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct model of the heart and blood vessels; colors conventional rather than blood oxygen proofs. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct model of the heart and blood vessels; colors conventional rather than blood oxygen proofs."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Red Blood Cell", "White Blood Cell", "Platelet", "Plasma"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Blood Cell, White Blood Cell, Platelet, and Plasma and choose the option that fits the situation.",
+          "scenario": "A tutor uses enlarged blood-component models. A red blood cell carries oxygen. White blood cells help defend the body, platelets help form clots, and plasma is the liquid part.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which component carries oxygen?",
             "options": ["Red Blood Cell", "White Blood Cell", "Platelet"],
             "expectedAnswer": "Red Blood Cell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Red Blood Cell as the central item; include Red Blood Cell, White Blood Cell, and Platelet naturally where visually appropriate, but make the real-world use of Red Blood Cell the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Scientifically accurate enlarged blood-cell models on a table, not literal giant cells inside a body. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Scientifically accurate enlarged blood-cell models on a table, not literal giant cells inside a body."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pulse", "Spinal Cord", "Nerve", "Neuron"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pulse, Spinal Cord, Nerve, and Neuron and choose the option that fits the situation.",
+          "scenario": "An adult learner feels a pulse at the wrist. The teacher explains that the spinal cord carries signals between the brain and body. A neuron is a nerve cell.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pulse", "Spinal Cord", "Nerve"],
-            "expectedAnswer": "Pulse"
+            "question": "Which term names a nerve cell?",
+            "options": ["Pulse", "Spinal Cord", "Nerve", "Neuron"],
+            "expectedAnswer": "Neuron"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pulse as the central item; include Pulse, Spinal Cord, and Nerve naturally where visually appropriate, but make the real-world use of Pulse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult classroom with a neuron model beside a spine model; no clinical procedure or diagnostic implication. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult classroom with a neuron model beside a spine model; no clinical procedure or diagnostic implication."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Synapse", "Cerebrum", "Cerebellum"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synapse, Cerebrum, and Cerebellum and choose the option that fits the situation.",
+          "scenario": "On a brain model, the tutor identifies the cerebrum and cerebellum. The cerebellum helps coordinate movement and balance. A synapse is a place where a nerve cell communicates with another cell.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which brain region helps coordinate balance?",
             "options": ["Synapse", "Cerebrum", "Cerebellum"],
-            "expectedAnswer": "Synapse"
+            "expectedAnswer": "Cerebellum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Synapse as the central item; include Synapse, Cerebrum, and Cerebellum naturally where visually appropriate, but make the real-world use of Synapse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A scientifically accurate brain teaching model with the cerebellum visible at the lower rear. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A scientifically accurate brain teaching model with the cerebellum visible at the lower rear."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: Internal Organs",
-      "text": "At the internal organs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Aorta, Vein, Artery, and Capillary. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Red Blood Cell, White Blood Cell, Platelet, and Plasma. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pulse, Spinal Cord, Nerve, and Neuron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Synapse, Cerebrum, and Cerebellum. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Internal Organs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Internal Organs 3: an anatomy teaching session",
+      "text": "A heart model connects to red and blue vessel models. An artery carries blood away from the heart, a vein carries blood toward it, and a capillary allows exchange with tissues. The aorta is the largest artery. A tutor uses enlarged blood-component models. A red blood cell carries oxygen. White blood cells help defend the body, platelets help form clots, and plasma is the liquid part. An adult learner feels a pulse at the wrist. The teacher explains that the spinal cord carries signals between the brain and body. A neuron is a nerve cell. On a brain model, the tutor identifies the cerebrum and cerebellum. The cerebellum helps coordinate movement and balance. A synapse is a place where a nerve cell communicates with another cell. A white blood cell helps defend the body, while a platelet is a small blood fragment involved in clotting. Neither has the same role as a red blood cell.",
+      "imageBrief": "Educational photograph of An anatomically correct model of the heart and blood vessels; colors conventional rather than blood oxygen proofs. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aorta, Vein, Artery, and Capillary and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Aorta",
+        "prompt": "A heart model connects to red and blue vessel models. An artery carries blood away from the heart, a vein carries blood toward it, and a capillary allows exchange with tissues. The aorta is the largest artery.\nWhich vessel type carries blood toward the heart?",
+        "answer": "Vein",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Red Blood Cell, White Blood Cell, Platelet, and Plasma and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A tutor uses enlarged blood-component models. A red blood cell carries oxygen. White blood cells help defend the body, platelets help form clots, and plasma is the liquid part.\nWhich component carries oxygen?",
         "answer": "Red Blood Cell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pulse, Spinal Cord, Nerve, and Neuron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pulse",
+        "prompt": "An adult learner feels a pulse at the wrist. The teacher explains that the spinal cord carries signals between the brain and body. A neuron is a nerve cell.\nWhich term names a nerve cell?",
+        "answer": "Neuron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Synapse, Cerebrum, and Cerebellum and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Synapse",
+        "prompt": "On a brain model, the tutor identifies the cerebrum and cerebellum. The cerebellum helps coordinate movement and balance. A synapse is a place where a nerve cell communicates with another cell.\nWhich brain region helps coordinate balance?",
+        "answer": "Cerebellum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Aorta"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Capillary"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Appendix” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the internal organs task. Use Aorta, Vein, Artery, Capillary, Red Blood Cell, White Blood Cell, Platelet, Plasma, Pulse, Spinal Cord, Nerve, Neuron, Synapse, Cerebrum, and Cerebellum in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain to another learner the function or location described in the first scene. Use a complete sentence rather than one word.\nUse this information: A heart model connects to red and blue vessel models. An artery carries blood away from the heart, a vein carries blood toward it, and a capillary allows exchange with tissues. The aorta is the largest artery.",
+        "answer": "A vein carries blood toward the heart.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Internal Organs: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Internal Organs 3: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A heart model connects to red and blue vessel models. An artery carries blood away from the heart, a vein carries blood toward it, and a capillary allows exchange with tissues. The aorta is the largest artery."
     },
     "spacedReview": "1 lesson(s) back: Appendix, Duodenum from internal-organs-2\n3 lesson(s) back: Pain, Tickle from five-senses-4\n7 lesson(s) back: harmony, dynamics from music-room-4"
   },
@@ -549,7 +477,7 @@
     "targetWordsArabic": [
       "جذع الدماغ",
       "رد فعل انعكاسي",
-      "إشارة",
+      "إشارة عصبية",
       "غدة درقية",
       "غدة نخامية",
       "غدة كظرية",
@@ -562,132 +490,108 @@
       "كورتيزول"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of internal organs using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Brain Stem", "Reflex", "Signal", "Thyroid"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Stem, Reflex, Signal, and Thyroid and choose the option that fits the situation.",
+          "scenario": "The tutor explains that the brain stem connects the brain with the spinal cord and supports vital functions. A reflex is an automatic response, while a signal carries a message. The thyroid is a gland in the neck.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term means an automatic response?",
             "options": ["Brain Stem", "Reflex", "Signal"],
-            "expectedAnswer": "Brain Stem"
+            "expectedAnswer": "Reflex"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Brain Stem as the central item; include Brain Stem, Reflex, and Signal naturally where visually appropriate, but make the real-world use of Brain Stem the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Brain and neck teaching models on a classroom desk; reflex meaning comes from written context. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Brain and neck teaching models on a classroom desk; reflex meaning comes from written context."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pituitary Gland", "Adrenal Gland", "Hormone", "Insulin"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pituitary Gland, Adrenal Gland, Hormone, and Insulin and choose the option that fits the situation.",
+          "scenario": "A diagram lesson compares glands and hormones. The pituitary gland is beneath the brain, and adrenal glands sit above the kidneys. Insulin is a hormone made by the pancreas.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pituitary Gland", "Adrenal Gland", "Hormone"],
-            "expectedAnswer": "Pituitary Gland"
+            "question": "Which hormone is made by the pancreas?",
+            "options": ["Pituitary Gland", "Adrenal Gland", "Hormone", "Insulin"],
+            "expectedAnswer": "Insulin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pituitary Gland as the central item; include Pituitary Gland, Adrenal Gland, and Hormone naturally where visually appropriate, but make the real-world use of Pituitary Gland the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Anatomical endocrine-system teaching models with pituitary and adrenal positions correct; no medicine packaging. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Anatomical endocrine-system teaching models with pituitary and adrenal positions correct; no medicine packaging."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Testosterone", "Estrogen", "Metabolism", "Gland"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Testosterone, Estrogen, Metabolism, and Gland and choose the option that fits the situation.",
+          "scenario": "A tutor explains that testosterone and estrogen are hormones present in people of all sexes in different amounts. Metabolism means the chemical processes that keep the body functioning. A gland makes and releases substances.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word names the body’s chemical processes?",
             "options": ["Testosterone", "Estrogen", "Metabolism"],
-            "expectedAnswer": "Testosterone"
+            "expectedAnswer": "Metabolism"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Testosterone as the central item; include Testosterone, Estrogen, and Metabolism naturally where visually appropriate, but make the real-world use of Testosterone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult biology discussion beside a generic torso model; hormones and metabolism are not inferred from appearance. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult biology discussion beside a generic torso model; hormones and metabolism are not inferred from appearance."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cortisol"],
-          "scenario": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cortisol and choose the option that fits the situation.",
+          "scenario": "The class discusses cortisol. It is made by the adrenal glands and helps regulate the stress response and metabolism. The lesson explains the term without advising learners to change hormone levels.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which hormone is discussed?",
             "options": ["Cortisol", "Brain Stem", "Reflex"],
             "expectedAnswer": "Cortisol"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Cortisol as the central item; include Cortisol, Brain Stem, and Reflex naturally where visually appropriate, but make the real-world use of Cortisol the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Adult learners discussing an endocrine teaching model, without tests, supplements, or treatment instructions. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Adult learners discussing an endocrine teaching model, without tests, supplements, or treatment instructions."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Internal Organs",
-      "text": "At the internal organs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Brain Stem, Reflex, Signal, and Thyroid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pituitary Gland, Adrenal Gland, Hormone, and Insulin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Testosterone, Estrogen, Metabolism, and Gland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Cortisol. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Internal Organs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Internal Organs 4: an anatomy teaching session",
+      "text": "The tutor explains that the brain stem connects the brain with the spinal cord and supports vital functions. A reflex is an automatic response, while a signal carries a message. The thyroid is a gland in the neck. A diagram lesson compares glands and hormones. The pituitary gland is beneath the brain, and adrenal glands sit above the kidneys. Insulin is a hormone made by the pancreas. A tutor explains that testosterone and estrogen are hormones present in people of all sexes in different amounts. Metabolism means the chemical processes that keep the body functioning. A gland makes and releases substances. The class discusses cortisol. It is made by the adrenal glands and helps regulate the stress response and metabolism. The lesson explains the term without advising learners to change hormone levels. An adrenal gland sits above a kidney and releases hormones including cortisol. The educator distinguishes the gland from the kidney below it.",
+      "imageBrief": "Educational photograph of Brain and neck teaching models on a classroom desk; reflex meaning comes from written context. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Stem, Reflex, Signal, and Thyroid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Brain Stem",
+        "prompt": "The tutor explains that the brain stem connects the brain with the spinal cord and supports vital functions. A reflex is an automatic response, while a signal carries a message. The thyroid is a gland in the neck.\nWhich term means an automatic response?",
+        "answer": "Reflex",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pituitary Gland, Adrenal Gland, Hormone, and Insulin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pituitary Gland",
+        "prompt": "A diagram lesson compares glands and hormones. The pituitary gland is beneath the brain, and adrenal glands sit above the kidneys. Insulin is a hormone made by the pancreas.\nWhich hormone is made by the pancreas?",
+        "answer": "Insulin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Testosterone, Estrogen, Metabolism, and Gland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Testosterone",
+        "prompt": "A tutor explains that testosterone and estrogen are hormones present in people of all sexes in different amounts. Metabolism means the chemical processes that keep the body functioning. A gland makes and releases substances.\nWhich word names the body’s chemical processes?",
+        "answer": "Metabolism",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the internal organs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cortisol and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The class discusses cortisol. It is made by the adrenal glands and helps regulate the stress response and metabolism. The lesson explains the term without advising learners to change hormone levels.\nWhich hormone is discussed?",
         "answer": "Cortisol",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Brain Stem"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Thyroid"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Aorta” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the internal organs task. Use Brain Stem, Reflex, Signal, Thyroid, Pituitary Gland, Adrenal Gland, Hormone, Insulin, Testosterone, Estrogen, Metabolism, Gland, and Cortisol in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain to another learner the function or location described in the first scene. Use a complete sentence rather than one word.\nUse this information: The tutor explains that the brain stem connects the brain with the spinal cord and supports vital functions. A reflex is an automatic response, while a signal carries a message. The thyroid is a gland in the neck.",
+        "answer": "A reflex is an automatic response to a stimulus.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Internal Organs: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Internal Organs 4: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "The tutor explains that the brain stem connects the brain with the spinal cord and supports vital functions. A reflex is an automatic response, while a signal carries a message. The thyroid is a gland in the neck."
     },
     "spacedReview": "1 lesson(s) back: Aorta, Vein from internal-organs-3\n3 lesson(s) back: Heart, Brain from internal-organs-1\n7 lesson(s) back: Vision, Eye from five-senses-1"
   }

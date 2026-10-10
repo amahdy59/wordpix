@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key fruits 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named fruit and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,7 +59,15 @@
             "expectedAnswer": "Banana"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options. Question: Which fruit does the shopper compare with the other options? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apple, Banana, Orange in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apple, Banana, Orange in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the fresh-fruit display, a shopper sees apple, banana, and orange and compares banana with the other options.",
+            "sourceQuestion": "Which fruit does the shopper compare with the other options?",
+            "sourceAnswer": "Banana",
+            "scenario": "Maya sees an apple, banana and orange. She chooses the long curved banana for her snack.",
+            "question": "Which fruit does Maya choose for her snack?",
+            "imageBrief": "Distinct apple, curved yellow banana and orange on produce counter. No label, marked fruit or text."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,7 +79,15 @@
             "expectedAnswer": "Watermelon"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the morning fruit stand, a customer selects a crisp, freshly sliced ripe watermelon displaying vibrant red flesh and dark seeds. Question: Which large, refreshing sweet melon does the customer choose? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Grape, Strawberry, Watermelon in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Grape, Strawberry, Watermelon in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the morning fruit stand, a customer selects a crisp, freshly sliced ripe watermelon displaying vibrant red flesh and dark seeds.",
+            "sourceQuestion": "Which large, refreshing sweet melon does the customer choose?",
+            "sourceAnswer": "Watermelon",
+            "scenario": "The seller cuts a watermelon with green skin and red flesh. A grape and strawberry are smaller fruits nearby.",
+            "question": "Which large fruit has been cut open?",
+            "imageBrief": "Cut watermelon with green rind and red flesh beside grapes and strawberries. No juice claims, knife handling or labels."
+          }
         },
         {
           "chunkNumber": 3,
@@ -83,7 +99,15 @@
             "expectedAnswer": "Peach"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe. Question: Which fruit does the shopper ask about? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pineapple, Mango, Peach in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pineapple, Mango, Peach in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the weekend market counter, a shopper sees pineapple, mango, and peach and asks whether peach is ripe.",
+            "sourceQuestion": "Which fruit does the shopper ask about?",
+            "sourceAnswer": "Peach",
+            "scenario": "Rana asks for a peach, the fruit with fuzzy skin. Pineapple has rough skin and pointed leaves, and mango has one large seed.",
+            "question": "Which fuzzy-skinned fruit does Rana request?",
+            "imageBrief": "Ripe peach with visibly fuzzy skin beside pineapple and mango. No labels or implied taste from image."
+          }
         },
         {
           "chunkNumber": 4,
@@ -95,7 +119,15 @@
             "expectedAnswer": "Pear"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Arranged on a porcelain fruit platter, a ripe golden Bosc pear rests beside green apples and sweet plums. Question: Which teardrop-shaped sweet fruit is arranged on the platter? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pear, Blueberry, Raspberry in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Pear, Blueberry, Raspberry in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "Arranged on a porcelain fruit platter, a ripe golden Bosc pear rests beside green apples and sweet plums.",
+            "sourceQuestion": "Which teardrop-shaped sweet fruit is arranged on the platter?",
+            "sourceAnswer": "Pear",
+            "scenario": "Hana chooses a pear with a narrow top and rounder bottom. A blueberry and raspberry are in a separate small bowl.",
+            "question": "Which fruit does Hana choose?",
+            "imageBrief": "Pear beside small bowl with separate blueberry and raspberry, not apples/plums substituted for lesson targets. No text."
+          }
         },
         {
           "chunkNumber": 5,
@@ -107,14 +139,22 @@
             "expectedAnswer": "Blackberry"
           },
           "imageBrief": "Adult learning visual support for this exact situation: In the fresh berry section, small wooden punnets display plump, glossy ripe blackberries bursting with deep purple juice. Question: Which dark, glossy clustered berries are displayed in the wooden punnets? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Blackberry, Cranberry, Gooseberry in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Blackberry, Cranberry, Gooseberry in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "In the fresh berry section, small wooden punnets display plump, glossy ripe blackberries bursting with deep purple juice.",
+            "sourceQuestion": "Which dark, glossy clustered berries are displayed in the wooden punnets?",
+            "sourceAnswer": "Blackberry",
+            "scenario": "The seller names the dark clustered fruit as blackberry. Cranberry is a tart red berry; gooseberry is another small fruit.",
+            "question": "Which fruit does the seller name as the dark clustered fruit?",
+            "imageBrief": "Species-accurate dark blackberry aggregate beside red cranberry and green gooseberry with visible veins. No labels, liquids or taste inference."
+          }
         }
       ]
     },
     "reading": {
       "title": "Fruits 1: Choosing Fruit at the Market",
-      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has apple, banana, orange, grape, and strawberry. Another display offers watermelon, pineapple, mango, peach, and pear. For a mixed fruit dish, the shopper considers blueberry, raspberry, blackberry, cranberry, and gooseberry. The shopper checks ripeness and buys only what will be used.",
-      "imageBrief": "Show the main adult everyday situation from “Fruit for the Week” with the key objects clearly visible, naturally arranged, and free of written labels."
+      "text": "At the market, Maya asks for an apple, a banana and an orange. She tastes one grape before buying a bunch. A strawberry and a blueberry are on a sample plate beside a raspberry, a blackberry and a gooseberry. She chooses a watermelon, pineapple and mango to share. A peach and pear are for later, and she buys cranberry sauce in a sealed jar.",
+      "imageBrief": "Produce stall with separate apples, bananas, oranges, grapes, watermelon, pineapple, mango, peaches, pears and berry boxes. Keep species distinct; no readable labels."
     },
     "exercises": [
       {
@@ -153,24 +193,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use “Apple” in one short sentence about an everyday situation.",
-        "answer": "At the market, Jo chooses an apple for lunch, a banana for breakfast, and an orange for juice.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "fruits-1-personal-use"
+        "prompt": "Read the passage: At the market, Maya asks for an apple, a banana and an orange. She tastes one grape before buying a bunch. A strawberry and a blueberry are on a sample plate beside a raspberry, a blackberry and a gooseberry. She chooses a watermelon, pineapple and mango to share. A peach and pear are for later, and she buys cranberry sauce in a sealed jar.\nWhich three fruits does Maya choose to share?",
+        "answer": "watermelon, pineapple and mango",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Name another lesson word that can be used with “Blackberry” in the same situation.",
-        "answer": "Cranberry",
+        "prompt": "Ask a fruit seller for an apple and a banana.",
+        "answer": "I would like an apple and a banana, please.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "Tell a colleague that you chose a pear for later.",
+        "answer": "I chose a pear for later.",
         "questionType": "transfer",
-        "responseMode": "short-answer",
-        "contextTag": "fruits-1-transfer"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Fruits 1: Words in Action",
-      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
-      "scriptStarter": "At the market, Jo chooses an apple for lunch, a banana for breakfast, and an orange for juice."
+      "title": "Choosing Fruit at an Adult Market",
+      "idea": "Adult shopper at a produce stall. Narration identifies fruit varieties and requested purchases. Appearance supports familiar species; taste, aroma and similar varieties come from the spoken context. No raw elderberry tasting, sharp tools or nutrition claims.",
+      "scriptStarter": "Maya sees an apple, banana and orange. She chooses the long curved banana for her snack."
     },
     "spacedReview": "1 lesson(s) back: Lamp, Phone from living-room-5\n3 lesson(s) back: Floor Lamp, Table Lamp from living-room-3\n7 lesson(s) back: Oven Mitt, Apron from kitchen-4"
   },
@@ -220,21 +267,21 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key fruits 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named fruit and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mulberry", "Boysenberry", "Acai Berry"],
-          "scenario": "At the specialty farm shop, a basket of ripe boysenberries shows their distinct reddish-purple hue and juicy texture.",
+          "scenario": "The seller says, “This berry is a boysenberry.” A mulberry and prepared acai berry pulp are other products.",
           "check": {
-            "question": "Which large reddish-purple hybrid berry is featured at the farm shop?",
+            "question": "Which berry does the seller name?",
             "options": ["Mulberry", "Acai Berry", "Boysenberry"],
             "expectedAnswer": "Boysenberry"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: At the specialty farm shop, a basket of ripe boysenberries shows their distinct reddish-purple hue and juicy texture. Question: Which large reddish-purple hybrid berry is featured at the farm shop? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the fruits situation; the final visible-content description requires image review."
+          "imageBrief": "Dark ripe boysenberries in a shallow punnet beside mulberries and a closed plain prepared-pulp container. Text supplies variety identification; no labels or tasting.",
+          "imageAlt": "Dark ripe boysenberries in a shallow punnet beside mulberries and a closed plain prepared-pulp container."
         },
         {
           "chunkNumber": 2,
@@ -246,7 +293,15 @@
             "expectedAnswer": "Papaya"
           },
           "imageBrief": "Adult learning visual support for this exact situation: On the tropical fruit counter, a ripe papaya is cut in half lengthwise, revealing its bright orange flesh and round black seeds. Question: Which tropical fruit is sliced in half to show vibrant orange flesh and black seeds? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lingonberry, Elderberry, Papaya in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lingonberry, Elderberry, Papaya in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "On the tropical fruit counter, a ripe papaya is cut in half lengthwise, revealing its bright orange flesh and round black seeds.",
+            "sourceQuestion": "Which tropical fruit is sliced in half to show vibrant orange flesh and black seeds?",
+            "sourceAnswer": "Papaya",
+            "scenario": "Hana buys a papaya cut in half, with orange flesh and black seeds. Prepared lingonberry and elderberry products are in sealed containers.",
+            "question": "Which fruit is cut in half to show orange flesh and black seeds?",
+            "imageBrief": "Cut papaya with orange flesh and black seeds beside two sealed plain prepared-fruit containers. No raw elderberry tasting or readable packaging."
+          }
         },
         {
           "chunkNumber": 3,
@@ -258,7 +313,15 @@
             "expectedAnswer": "Coconut"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the island produce market, a whole brown fibrous coconut rests beside a cracked half showing pure white meat and clear water. Question: Which hard-shelled tropical nut is cracked open to reveal fresh white meat? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Coconut, Passion Fruit, Guava in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Coconut, Passion Fruit, Guava in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the island produce market, a whole brown fibrous coconut rests beside a cracked half showing pure white meat and clear water.",
+            "sourceQuestion": "Which hard-shelled tropical nut is cracked open to reveal fresh white meat?",
+            "sourceAnswer": "Coconut",
+            "scenario": "The coconut has a hard inner shell and white flesh. A cut passion fruit contains seedy pulp; a guava is beside it.",
+            "question": "Which fruit has a hard inner shell and white flesh?",
+            "imageBrief": "Coconut half with white flesh beside cut passion fruit with seedy pulp and whole guava. No knife, false coconut nut classification or text."
+          }
         },
         {
           "chunkNumber": 4,
@@ -270,7 +333,15 @@
             "expectedAnswer": "Lychee"
           },
           "imageBrief": "Adult learning visual support for this exact situation: Displayed on crushed ice, a cluster of fresh lychees shows their bumpy reddish-pink peel and one fruit peeled to show translucent sweet flesh. Question: Which fragrant Asian fruit has a textured reddish peel and translucent white flesh? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lychee, Dragon Fruit, Star Fruit in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lychee, Dragon Fruit, Star Fruit in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "Displayed on crushed ice, a cluster of fresh lychees shows their bumpy reddish-pink peel and one fruit peeled to show translucent sweet flesh.",
+            "sourceQuestion": "Which fragrant Asian fruit has a textured reddish peel and translucent white flesh?",
+            "sourceAnswer": "Lychee",
+            "scenario": "The seller identifies the small rough-skinned fruit as lychee. One peeled lychee shows pale flesh beside dragon fruit and star fruit.",
+            "question": "Which fruit does the seller identify?",
+            "imageBrief": "Whole rough-skinned lychees and one peeled lychee beside dragon fruit and sliced star fruit. No taste/aroma inference, ice-bed contamination or labels."
+          }
         },
         {
           "chunkNumber": 5,
@@ -282,18 +353,26 @@
             "expectedAnswer": "Jackfruit"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the exotic fruit market, a massive spiky green jackfruit is displayed with a large yellow pod sliced open for shoppers. Question: Which enormous spiky tropical fruit contains rich, sweet golden-yellow pods? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Jackfruit, Durian, Rambutan in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Jackfruit, Durian, Rambutan in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the exotic fruit market, a massive spiky green jackfruit is displayed with a large yellow pod sliced open for shoppers.",
+            "sourceQuestion": "Which enormous spiky tropical fruit contains rich, sweet golden-yellow pods?",
+            "sourceAnswer": "Jackfruit",
+            "scenario": "Rana sees a large jackfruit cut open to show yellow fruit pieces. Durian has sharper spines, and rambutan is a small hairy-skinned fruit.",
+            "question": "Which large fruit is cut open to show yellow pieces?",
+            "imageBrief": "Large rough-skinned jackfruit with a cut section showing yellow pods beside whole spiny durian and smaller rambutan. Exact species, no knife handling or text."
+          }
         }
       ]
     },
     "reading": {
       "title": "Fruits 2: Choosing Fruit at the Market",
-      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has mulberry, boysenberry, acai berry, lingonberry, and elderberry. Another display offers papaya, coconut, passion fruit, guava, and lychee. For a mixed fruit dish, the shopper considers dragon fruit, star fruit, jackfruit, durian, and rambutan. The shopper checks ripeness and buys only what will be used.",
-      "imageBrief": "Show the main adult everyday situation from “A Fruit-Tasting Market” with the key objects clearly visible, naturally arranged, and free of written labels."
+      "text": "A fruit seller shows Maya a papaya and coconut. She buys guava and lychee, then asks about passion fruit. Rambutan has a hairy outer skin; dragon fruit has bright skin and white or red flesh with small seeds. Star fruit is beside a large jackfruit and durian. The seller names the prepared fruit products as acai berry, lingonberry and elderberry. Maya leaves the mulberry and boysenberry for another day.",
+      "imageBrief": "Produce display with species-accurate papaya, coconut, guava, lychee, passion fruit, rambutan, dragon fruit and star fruit. No raw elderberry tasting or false species substitution."
     },
     "exercises": [
       {
-        "prompt": "At the specialty farm shop, a basket of ripe boysenberries shows their distinct reddish-purple hue and juicy texture.\nWhich large reddish-purple hybrid berry is featured at the farm shop?",
+        "prompt": "The seller says, “This berry is a boysenberry.” A mulberry and prepared acai berry pulp are other products.\nWhich berry does the seller name?",
         "answer": "Boysenberry",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -328,59 +407,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use “Mulberry” in one short sentence about an everyday situation.",
-        "answer": "At the café, the bowls contain mulberries, boysenberries, and açaí berries for three different smoothies.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "fruits-2-personal-use"
-      },
-      {
-        "prompt": "Name another lesson word that can be used with “Jackfruit” in the same situation.",
-        "answer": "Durian",
-        "questionType": "transfer",
+        "prompt": "Read the passage: A fruit seller shows Maya a papaya and coconut. She buys guava and lychee, then asks about passion fruit. Rambutan has a hairy outer skin; dragon fruit has bright skin and white or red flesh with small seeds. Star fruit is beside a large jackfruit and durian. The seller names the prepared fruit products as acai berry, lingonberry and elderberry. Maya leaves the mulberry and boysenberry for another day.\nWhat does Maya buy?",
+        "answer": "a guava and lychees",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "fruits-2-transfer"
+        "contextTag": "reading"
       },
       {
-        "prompt": "Which berries are in the middle bowl?",
-        "answer": "Boysenberry",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-2-scene-1"
+        "prompt": "Ask the seller which fruit is papaya.",
+        "answer": "Which fruit is the papaya?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Which fruit is the largest?",
-        "answer": "Papaya",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-2-scene-2"
-      },
-      {
-        "prompt": "Which fruit does Nina open?",
-        "answer": "Coconut",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-2-scene-3"
-      },
-      {
-        "prompt": "Which fruit does the chef peel?",
-        "answer": "Lychee",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-2-scene-4"
-      },
-      {
-        "prompt": "Which fruit does the shopkeeper cut?",
-        "answer": "Jackfruit",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-2-scene-5"
+        "prompt": "Tell the seller that you want prepared acai berry pulp.",
+        "answer": "I would like prepared acai berry pulp.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Fruits 2: Words in Action",
-      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
-      "scriptStarter": "At the café, the bowls contain mulberries, boysenberries, and açaí berries for three different smoothies."
+      "title": "Choosing Fruit at an Adult Market",
+      "idea": "Adult shopper at a produce stall. Narration identifies fruit varieties and requested purchases. Appearance supports familiar species; taste, aroma and similar varieties come from the spoken context. No raw elderberry tasting, sharp tools or nutrition claims.",
+      "scriptStarter": "The seller says, “This berry is a boysenberry.” A mulberry and prepared acai berry pulp are other products."
     },
     "spacedReview": "1 lesson(s) back: Apple, Banana from fruits-1\n3 lesson(s) back: Tablecloth, Placemat from living-room-4\n7 lesson(s) back: Cheese, Rice from kitchen-5"
   },
@@ -430,8 +481,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key fruits 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named fruit and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -444,19 +495,27 @@
             "expectedAnswer": "Lemon"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe. Question: Which item does the shopper ask about in the example with lemon, lime? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lemon, Lime, Grapefruit in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Lemon, Lime, Grapefruit in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the weekend market counter, a shopper sees lemon, lime, and grapefruit and asks whether lemon is ripe.",
+            "sourceQuestion": "Which item does the shopper ask about in the example with lemon, lime?",
+            "sourceAnswer": "Lemon",
+            "scenario": "Karim chooses a yellow lemon for his drink. A green lime and larger grapefruit remain on the counter.",
+            "question": "Which fruit does Karim choose?",
+            "imageBrief": "Yellow lemon beside green lime and large grapefruit, neutral produce counter without labels."
+          }
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tangerine", "Mandarin", "Clementine"],
-          "scenario": "In a fruit bowl on the breakfast table, small sweet clementines are piled together, with one easy-to-peel fruit half unpeeled.",
+          "scenario": "The seller says, “These are clementines, a type of mandarin.” Tangerine is another name used for some mandarins. The varieties may look similar.",
           "check": {
-            "question": "Which small, easy-to-peel sweet citrus fruit is partially unpeeled in the bowl?",
+            "question": "Which variety does the seller name?",
             "options": ["Clementine", "Tangerine", "Mandarin"],
             "expectedAnswer": "Clementine"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: In a fruit bowl on the breakfast table, small sweet clementines are piled together, with one easy-to-peel fruit half unpeeled. Question: Which small, easy-to-peel sweet citrus fruit is partially unpeeled in the bowl? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the fruits situation; the final visible-content description requires image review."
+          "imageBrief": "Small orange citrus fruit with one partly peeled. Written seller statement identifies clementine; do not pretend appearance alone distinguishes mandarin/tangerine/clementine. No labels.",
+          "imageAlt": "Small orange citrus fruit with one partly peeled."
         },
         {
           "chunkNumber": 3,
@@ -468,19 +527,27 @@
             "expectedAnswer": "Pomelo"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner. Question: Which produce item is the focus of the purchase in the example with kumquat, blood orange? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Kumquat, Blood Orange, Pomelo in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Kumquat, Blood Orange, Pomelo in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the meal-prep table, a shopper sees kumquat, blood orange, and pomelo and sets pomelo aside for dinner.",
+            "sourceQuestion": "Which produce item is the focus of the purchase in the example with kumquat, blood orange?",
+            "sourceAnswer": "Pomelo",
+            "scenario": "Maya buys the large pomelo with a thick rind. A small kumquat and cut blood orange are beside it.",
+            "question": "Which large citrus fruit does Maya buy?",
+            "imageBrief": "Large pomelo with thick pale rind visible in cut half beside small kumquat and blood orange with red flesh. No labels or taste inference."
+          }
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Yuzu", "Cherry", "Plum"],
-          "scenario": "In the Japanese culinary market, aromatic yellow yuzu citrus fruits with bumpy fragrant rinds are arranged in a cedar box.",
+          "scenario": "The seller names the bumpy citrus fruit as yuzu. A cherry and plum are in a separate bowl. Yuzu can be used for its citrus aroma.",
           "check": {
-            "question": "Which highly aromatic Japanese citrus fruit has a textured yellow rind?",
+            "question": "Which citrus fruit does the seller name?",
             "options": ["Plum", "Yuzu", "Cherry"],
             "expectedAnswer": "Yuzu"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: In the Japanese culinary market, aromatic yellow yuzu citrus fruits with bumpy fragrant rinds are arranged in a cedar box. Question: Which highly aromatic Japanese citrus fruit has a textured yellow rind? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the fruits situation; the final visible-content description requires image review."
+          "imageBrief": "Bumpy yellow yuzu beside separate cherry and plum. Exact species support, no aroma or country inferred from image and no labels.",
+          "imageAlt": "Bumpy yellow yuzu beside separate cherry and plum."
         },
         {
           "chunkNumber": 5,
@@ -492,14 +559,22 @@
             "expectedAnswer": "Date"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast. Question: What goes into the basket in the example with apricot, nectarine? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apricot, Nectarine, Date in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Apricot, Nectarine, Date in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the morning produce stall, a shopper sees apricot, nectarine, and date and chooses date for breakfast.",
+            "sourceQuestion": "What goes into the basket in the example with apricot, nectarine?",
+            "sourceAnswer": "Date",
+            "scenario": "Karim buys a packet of dates, the fruits of a date palm. An apricot and smooth-skinned nectarine stay on the counter.",
+            "question": "Which palm fruit does Karim buy?",
+            "imageBrief": "Dates in open plain packet beside apricot and nectarine. No readable packaging, pit swallowing or text."
+          }
         }
       ]
     },
     "reading": {
       "title": "Fruits 3: Choosing Fruit at the Market",
-      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has lemon, lime, grapefruit, tangerine, and mandarin. Another display offers clementine, kumquat, blood orange, pomelo, and yuzu. For a mixed fruit dish, the shopper considers cherry, plum, apricot, nectarine, and date. The shopper checks ripeness and buys only what will be used.",
-      "imageBrief": "Show the main adult everyday situation from “Choosing Citrus and Stone Fruit” with the key objects clearly visible, naturally arranged, and free of written labels."
+      "text": "Karim buys a lemon and lime for drinks. He compares a tangerine with a mandarin and clementine. A cut blood orange shows red flesh beside a grapefruit and large pomelo. The seller explains that the small kumquat is a different citrus fruit and points out yuzu. Karim adds a cherry, plum, apricot and nectarine to a small tasting box, then buys a packet of dates.",
+      "imageBrief": "Citrus counter with lemon, lime, grapefruit, tangerines, clementines, blood orange with red flesh and pomelo; species-accurate yuzu separate. No substitution with mango."
     },
     "exercises": [
       {
@@ -510,7 +585,7 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In a fruit bowl on the breakfast table, small sweet clementines are piled together, with one easy-to-peel fruit half unpeeled.\nWhich small, easy-to-peel sweet citrus fruit is partially unpeeled in the bowl?",
+        "prompt": "The seller says, “These are clementines, a type of mandarin.” Tangerine is another name used for some mandarins. The varieties may look similar.\nWhich variety does the seller name?",
         "answer": "Clementine",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -524,7 +599,7 @@
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the Japanese culinary market, aromatic yellow yuzu citrus fruits with bumpy fragrant rinds are arranged in a cedar box.\nWhich highly aromatic Japanese citrus fruit has a textured yellow rind?",
+        "prompt": "The seller names the bumpy citrus fruit as yuzu. A cherry and plum are in a separate bowl. Yuzu can be used for its citrus aroma.\nWhich citrus fruit does the seller name?",
         "answer": "Yuzu",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -538,59 +613,31 @@
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use “Lemon” in one short sentence about an everyday situation.",
-        "answer": "For breakfast, Salma squeezes a lemon, slices a lime, and halves a grapefruit.",
-        "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "fruits-3-personal-use"
-      },
-      {
-        "prompt": "Name another lesson word that can be used with “Apricot” in the same situation.",
-        "answer": "Nectarine",
-        "questionType": "transfer",
+        "prompt": "Read the passage: Karim buys a lemon and lime for drinks. He compares a tangerine with a mandarin and clementine. A cut blood orange shows red flesh beside a grapefruit and large pomelo. The seller explains that the small kumquat is a different citrus fruit and points out yuzu. Karim adds a cherry, plum, apricot and nectarine to a small tasting box, then buys a packet of dates.\nWhy does Karim buy a lemon and lime?",
+        "answer": "for drinks",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "fruits-3-transfer"
+        "contextTag": "reading"
       },
       {
-        "prompt": "Which fruit does Salma squeeze?",
-        "answer": "Lemon",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-3-scene-1"
+        "prompt": "Ask for a lemon for your drink.",
+        "answer": "Could I have a lemon, please?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Which fruit appears twice?",
-        "answer": "Clementine",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-3-scene-2"
-      },
-      {
-        "prompt": "Which fruit is the largest?",
-        "answer": "Pomelo",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-3-scene-3"
-      },
-      {
-        "prompt": "What does the cook add to the sauce?",
-        "answer": "Yuzu",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-3-scene-4"
-      },
-      {
-        "prompt": "Which fruit does Adil pack three of?",
-        "answer": "Date",
-        "questionType": "context-cloze",
-        "responseMode": "choice",
-        "contextTag": "fruits-3-scene-5"
+        "prompt": "Ask the seller whether the small citrus fruit is a clementine.",
+        "answer": "Is this a clementine?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Fruits 3: Words in Action",
-      "idea": "A 30–50 second adult everyday scene based on the curated lesson situations. Show each target naturally, pause for one context question, then model the answer in a complete sentence.",
-      "scriptStarter": "For breakfast, Salma squeezes a lemon, slices a lime, and halves a grapefruit."
+      "title": "Choosing Fruit at an Adult Market",
+      "idea": "Adult shopper at a produce stall. Narration identifies fruit varieties and requested purchases. Appearance supports familiar species; taste, aroma and similar varieties come from the spoken context. No raw elderberry tasting, sharp tools or nutrition claims.",
+      "scriptStarter": "Karim chooses a yellow lemon for his drink. A green lime and larger grapefruit remain on the counter."
     },
     "spacedReview": "1 lesson(s) back: Mulberry, Boysenberry from fruits-2\n3 lesson(s) back: Lamp, Phone from living-room-5\n7 lesson(s) back: Sofa, Armchair from living-room-1"
   },
@@ -608,21 +655,21 @@
     "targetWordsArabic": ["تين", "زيتونة", "أفوكادو", "كاكي", "رمان"],
     "usage": {
       "goal": "Learn to recognize and use key fruits 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to fruits in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named fruit and a shopper’s choice.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Fig", "Olive", "Avocado"],
-          "scenario": "On a gourmet cheese board, ripe purple mission figs are quartered to reveal their sweet, jammy ruby-pink interior.",
+          "scenario": "Rana buys a fig cut open to show many tiny seeds. The olive is cured in a jar and the avocado has one large seed.",
           "check": {
-            "question": "Which sweet Mediterranean fruit is sliced open to display its honeyed ruby interior?",
+            "question": "Which fruit is cut open to show many tiny seeds?",
             "options": ["Fig", "Olive", "Avocado"],
             "expectedAnswer": "Fig"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: On a gourmet cheese board, ripe purple mission figs are quartered to reveal their sweet, jammy ruby-pink interior. Question: Which sweet Mediterranean fruit is sliced open to display its honeyed ruby interior? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the fruits situation; the final visible-content description requires image review."
+          "imageBrief": "Cut fig with many tiny seeds beside closed olive jar and avocado half with large seed. No labels, unprepared olive tasting or nutrition claims.",
+          "imageAlt": "Cut fig with many tiny seeds beside closed olive jar and avocado half with large seed."
         },
         {
           "chunkNumber": 2,
@@ -634,18 +681,26 @@
             "expectedAnswer": "Persimmon"
           },
           "imageBrief": "Adult learning visual support for this exact situation: At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner. Question: What is the shopper comparing with the alternatives in the example with persimmon, pomegranate? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Persimmon, Pomegranate in a natural setting."
+          "imageAlt": "Adult fruits scene showing lesson-related items or actions including Persimmon, Pomegranate in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At the meal-prep table, a shopper sees persimmon and pomegranate and sets persimmon aside for dinner.",
+            "sourceQuestion": "What is the shopper comparing with the alternatives in the example with persimmon, pomegranate?",
+            "sourceAnswer": "Persimmon",
+            "scenario": "Rana sets aside a ripe persimmon for later. A pomegranate has many juicy arils inside its thick rind.",
+            "question": "Which fruit does Rana set aside for later?",
+            "imageBrief": "Ripe orange persimmon beside cut pomegranate showing juicy arils. No arrow, labels or proof of taste/ripeness solely from image."
+          }
         }
       ]
     },
     "reading": {
       "title": "Fruits 4: Choosing Fruit at the Market",
-      "text": "At a produce market, a shopper chooses fruit for breakfast, snacks, and a weekend meal. The first stall has fig, olive, avocado, persimmon, and pomegranate. The shopper checks ripeness and buys only what will be used. The vocabulary is used in a realistic fruits context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered fruits scene supporting the reading and showing the first six target words."
+      "text": "Rana buys a fig and pomegranate for a snack. She chooses an avocado for a salad and a ripe persimmon for later. A jar contains olives; she takes one olive with lunch. At home, she puts each fruit in a separate bowl so her family can choose what they want.",
+      "imageBrief": "Kitchen table with figs, pomegranate, avocado, ripe persimmon and closed olive jar in separate areas. Show actual fruit species, without readable packaging."
     },
     "exercises": [
       {
-        "prompt": "On a gourmet cheese board, ripe purple mission figs are quartered to reveal their sweet, jammy ruby-pink interior.\nWhich sweet Mediterranean fruit is sliced open to display its honeyed ruby interior?",
+        "prompt": "Rana buys a fig cut open to show many tiny seeds. The olive is cured in a jar and the avocado has one large seed.\nWhich fruit is cut open to show many tiny seeds?",
         "answer": "Fig",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -659,32 +714,31 @@
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Write or say one sentence using “Fig” in a different everyday situation.",
-        "answer": "On a gourmet cheese board, ripe purple mission figs are quartered to reveal their sweet, jammy ruby-pink interior.",
+        "prompt": "Read the passage: Rana buys a fig and pomegranate for a snack. She chooses an avocado for a salad and a ripe persimmon for later. A jar contains olives; she takes one olive with lunch. At home, she puts each fruit in a separate bowl so her family can choose what they want.\nWhat does Rana choose for a salad?",
+        "answer": "an avocado",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
+      },
+      {
+        "prompt": "Tell a seller you would like a ripe persimmon.",
+        "answer": "I would like a ripe persimmon, please.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "fruits-4-personal-use"
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Ask someone to explain a lesson word in a new situation.",
-        "answer": "What does “Fig” mean here?",
+        "prompt": "Ask where the avocado is on the display.",
+        "answer": "Where is the avocado?",
         "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "fruits-4-transfer"
-      },
-      {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Olive"
-      },
-      {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Pomegranate"
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Fruits: See It, Say It",
-      "idea": "30–50 second contextual video set in a market. Show fig, olive, avocado, persimmon, and pomegranate naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In the grocery aisle, a shopper sees fig, olive, and avocado and puts fig into a reusable bag."
+      "title": "Choosing Fruit at an Adult Market",
+      "idea": "Adult shopper at a produce stall. Narration identifies fruit varieties and requested purchases. Appearance supports familiar species; taste, aroma and similar varieties come from the spoken context. No raw elderberry tasting, sharp tools or nutrition claims.",
+      "scriptStarter": "Rana buys a fig cut open to show many tiny seeds. The olive is cured in a jar and the avocado has one large seed."
     },
     "spacedReview": "1 lesson(s) back: Lemon, Lime from fruits-3\n3 lesson(s) back: Apple, Banana from fruits-1\n7 lesson(s) back: Drawer, Magazine Rack from living-room-2"
   }

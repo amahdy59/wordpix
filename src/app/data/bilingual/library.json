@@ -1,12 +1,12 @@
 {
   "novel": {
-    "definition": "A printed and bound book that is an extended work of fiction.",
+    "definition": "A long work of fiction, available as a printed, digital or audio publication.",
     "exampleUsage": "She borrowed a novel about a family adventure.",
     "arabicTranslation": "رواية"
   },
   "picture-book": {
     "definition": "A book in which pictures are a major part of the story or information, often written for children.",
-    "exampleUsage": "The child chose a picture book.",
+    "exampleUsage": "The adult visitor chooses a picture book for a family reading visit.",
     "arabicTranslation": "كتاب مصوّر"
   },
   "reference-book": {
@@ -21,14 +21,16 @@
   },
   "magazine": {
     "definition": "A thin publication with articles and pictures, released regularly.",
-    "arabicTranslation": "مجلة"
+    "arabicTranslation": "مجلة",
+    "exampleUsage": "The magazine contains articles about local arts."
   },
   "newspaper": {
-    "definition": "A daily or weekly publication on folded sheets.",
-    "arabicTranslation": "صحيفة"
+    "definition": "A publication reporting news and other information, in print or digital form.",
+    "arabicTranslation": "صحيفة",
+    "exampleUsage": "Omar reads today’s newspaper."
   },
   "encyclopedia": {
-    "definition": "A book containing information about many subjects.",
+    "definition": "A reference work containing information across many subjects or a particular field, in print or digital form.",
     "exampleUsage": "He used an encyclopedia to learn about planets.",
     "arabicTranslation": "موسوعة"
   },
@@ -59,7 +61,7 @@
   },
   "bean-bag": {
     "definition": "A soft seat shaped by loose filling inside a fabric cover.",
-    "exampleUsage": "Children sat on bean bags in the reading area.",
+    "exampleUsage": "Omar relaxes in a bean bag after studying.",
     "arabicTranslation": "مقعد مملوء بحبيبات"
   },
   "step-stool": {
@@ -113,8 +115,9 @@
     "arabicTranslation": "مركز مصادر التعلم"
   },
   "study-room": {
-    "definition": "A quiet, tidy room where people study, read, and finish schoolwork.",
-    "arabicTranslation": "غرفة دراسة"
+    "definition": "A room provided for individual or group study, subject to local use rules.",
+    "arabicTranslation": "غرفة دراسة",
+    "exampleUsage": "The classmates book a study room."
   },
   "return-desk": {
     "definition": "A library counter where borrowed materials are returned or processed.",
@@ -132,13 +135,13 @@
     "arabicTranslation": "أرشيف"
   },
   "reading": {
-    "definition": "Looking at words in a book or other text.",
-    "exampleUsage": "Reading helps her learn new words.",
+    "definition": "Understanding or interpreting written text.",
+    "exampleUsage": "Omar is reading a poem.",
     "arabicTranslation": "القراءة"
   },
   "borrowing": {
-    "definition": "Taking a library item home for a limited time and returning it later.",
-    "exampleUsage": "Borrowing books is free with a library card.",
+    "definition": "Taking an eligible library item for an agreed period and returning it later.",
+    "exampleUsage": "Maya asks whether borrowing this item requires a library account.",
     "arabicTranslation": "استعارة الكتب"
   },
   "returning": {
@@ -152,8 +155,8 @@
     "arabicTranslation": "البحث"
   },
   "studying": {
-    "definition": "Reading carefully with intent to remember.",
-    "exampleUsage": "The students are studying quietly at the tables.",
+    "definition": "Working carefully on a subject to learn or understand it.",
+    "exampleUsage": "Maya is studying a chapter for her course.",
     "arabicTranslation": "الدراسة"
   },
   "browsing": {
@@ -178,12 +181,13 @@
   },
   "whispering": {
     "definition": "Speaking very quietly so that other people in the library are not disturbed.",
-    "exampleUsage": "The children were whispering in the reading room.",
+    "exampleUsage": "The adults are whispering near the reading tables.",
     "arabicTranslation": "الهمس"
   },
   "library-card": {
-    "definition": "A card that shows you have permission to use the library.",
-    "arabicTranslation": "بطاقة مكتبة"
+    "definition": "A card identifying a person’s library account or service registration.",
+    "arabicTranslation": "بطاقة مكتبة",
+    "exampleUsage": "Maya shows her library card at the desk."
   },
   "barcode-scanner": {
     "definition": "An electronic device that reads printed barcodes to identify library items or records.",
@@ -191,9 +195,9 @@
     "arabicTranslation": "ماسح باركود"
   },
   "stamp": {
-    "definition": "A small tool used to print an official mark on a library item or paper.",
-    "exampleUsage": "The librarian used a stamp to mark the return date.",
-    "arabicTranslation": "طابع"
+    "definition": "A tool that makes a mark, such as a date, on paper.",
+    "exampleUsage": "The stamp marks a date on paper.",
+    "arabicTranslation": "ختم"
   },
   "bookmark": {
     "definition": "A marker (a piece of paper or ribbon) placed between the pages of a book to mark the reader's place.",
@@ -206,8 +210,9 @@
     "arabicTranslation": "غلاف الكتاب"
   },
   "label": {
-    "definition": "A brief description given for purposes of identification.",
-    "arabicTranslation": "ملصق تعريفي"
+    "definition": "An attached marker identifying a library item or shelf category.",
+    "arabicTranslation": "ملصق تعريفي",
+    "exampleUsage": "The label identifies the history shelf."
   },
   "catalog": {
     "definition": "A searchable list of the books and other items held by a library.",
@@ -227,7 +232,7 @@
   "scanner": {
     "definition": "A device that turns a paper image or document into a digital file.",
     "arabicTranslation": "ماسح ضوئي",
-    "exampleUsage": "The scanner was used during the activity."
+    "exampleUsage": "The scanner creates a digital image of Omar’s permitted notes."
   },
   "librarian": {
     "definition": "A person who works in or manages a library.",
@@ -235,22 +240,24 @@
     "arabicTranslation": "أمين مكتبة"
   },
   "assistant": {
-    "definition": "A person who contributes to the fulfillment of a need or furtherance of an effort or purpose.",
+    "definition": "A staff member who helps with library work and visitor needs.",
     "exampleUsage": "The assistant returned the books to their shelves.",
-    "arabicTranslation": "مساعد المكتبة"
+    "arabicTranslation": "مساعد مكتبة"
   },
   "volunteer": {
     "definition": "A person who freely helps without being paid.",
-    "arabicTranslation": "متطوع"
+    "arabicTranslation": "متطوع",
+    "exampleUsage": "A volunteer helps organize the adult reading event."
   },
   "reader": {
     "exampleUsage": "The reader sat quietly with a book.",
     "arabicTranslation": "قارئ",
-    "definition": "A person who enjoys reading."
+    "definition": "A person who reads or uses written materials."
   },
   "student": {
-    "definition": "A person who studies at a school.",
-    "arabicTranslation": "طالب"
+    "definition": "A person learning through a course or educational program.",
+    "arabicTranslation": "طالب",
+    "exampleUsage": "Maya is a student on an evening course."
   },
   "researcher": {
     "definition": "A person who studies a subject carefully to discover or check information.",
@@ -263,7 +270,7 @@
     "arabicTranslation": "مؤلف"
   },
   "storyteller": {
-    "exampleUsage": "The storyteller read a tale to the children.",
+    "exampleUsage": "The storyteller tells a tale at an adult library event.",
     "arabicTranslation": "راوي قصص",
     "definition": "A person who tells a story."
   },
@@ -276,5 +283,20 @@
     "definition": "A person who cleans the library and keeps its rooms tidy.",
     "exampleUsage": "The cleaner wiped the tables after closing time.",
     "arabicTranslation": "عامل نظافة"
+  },
+  "bookshelf": {
+    "definition": "A shelf or set of shelves used to hold books.",
+    "arabicTranslation": "رف كتب",
+    "exampleUsage": "Omar returns the poetry book to the bookshelf."
+  },
+  "chair": {
+    "definition": "A seat for one person, usually supported by legs and with a back.",
+    "arabicTranslation": "كرسي",
+    "exampleUsage": "Maya sits on a chair at the study desk."
+  },
+  "lamp": {
+    "definition": "A device that provides light.",
+    "arabicTranslation": "مصباح",
+    "exampleUsage": "The lamp lights the desk."
   }
 }

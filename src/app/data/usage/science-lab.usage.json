@@ -40,136 +40,119 @@
       "نظارات واقية سلامة",
       "معطف مختبر",
       "مادة كيميائية",
-      "عنصر",
-      "مركب"
+      "عنصر كيميائي",
+      "مركّب كيميائي"
     ],
     "usage": {
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["microscope", "test tube", "beaker", "flask"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare microscope, test tube, beaker, and flask and choose the option that fits the situation.",
+          "scenario": "During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which instrument reveals tiny details?",
             "options": ["microscope", "test tube", "beaker"],
             "expectedAnswer": "microscope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the microscope as the central item; include microscope, test tube, and beaker naturally where visually appropriate, but make the real-world use of microscope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for microscope in a science lab context. Use the written scenario as the source of meaning: During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bunsen burner", "petri dish", "pipette", "graduated cylinder"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bunsen burner, petri dish, pipette, and graduated cylinder and choose the option that fits the situation.",
+          "scenario": "The scientist identifies a Bunsen burner for supervised heating and a petri dish for controlled samples. A pipette transfers small liquid volumes; a graduated cylinder measures volume using marked divisions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bunsen burner", "petri dish", "pipette"],
-            "expectedAnswer": "Bunsen burner"
+            "question": "Which tool transfers small liquid volumes?",
+            "options": ["pipette", "Bunsen burner", "petri dish"],
+            "expectedAnswer": "pipette"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Bunsen burner as the central item; include Bunsen burner, petri dish, and pipette naturally where visually appropriate, but make the real-world use of Bunsen burner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for pipette in a science lab context. Use the written scenario as the source of meaning: The scientist identifies a Bunsen burner for supervised heating and a petri dish for controlled samples. A pipette transfers small liquid volumes; a graduated cylinder measures volume using marked divisions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["funnel", "tongs", "safety goggles", "lab coat"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare funnel, tongs, safety goggles, and lab coat and choose the option that fits the situation.",
+          "scenario": "On the inactive demonstration bench, a funnel directs liquid into a container. Tongs grip an object without direct hand contact. Safety goggles protect the eyes, and a lab coat is protective outerwear.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["funnel", "tongs", "safety goggles"],
-            "expectedAnswer": "funnel"
+            "question": "Which tool grips an object without direct hand contact?",
+            "options": ["tongs", "funnel", "safety goggles"],
+            "expectedAnswer": "tongs"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the funnel as the central item; include funnel, tongs, and safety goggles naturally where visually appropriate, but make the real-world use of funnel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for tongs in a science lab context. Use the written scenario as the source of meaning: On the inactive demonstration bench, a funnel directs liquid into a container. Tongs grip an object without direct hand contact. Safety goggles protect the eyes, and a lab coat is protective outerwear. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["chemical", "element", "compound"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chemical, element, and compound and choose the option that fits the situation.",
+          "scenario": "The lesson distinguishes a chemical substance, an element made from one type of atom, and a compound made of different elements chemically bonded together. The examples are labels in a written glossary, not a mixing exercise.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["chemical", "element", "compound"],
-            "expectedAnswer": "chemical"
+            "question": "Which term describes different elements chemically bonded together?",
+            "options": ["compound", "chemical", "element"],
+            "expectedAnswer": "compound"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating chemical through a realistic adult task; include chemical, element, and compound naturally where visually appropriate, but make the real-world use of chemical the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for compound in a science lab context. Use the written scenario as the source of meaning: The lesson distinguishes a chemical substance, an element made from one type of atom, and a compound made of different elements chemically bonded together. The examples are labels in a written glossary, not a mixing exercise. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Science Lab",
-      "text": "At the science lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers microscope, test tube, beaker, and flask. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers Bunsen burner, petri dish, pipette, and graduated cylinder. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers funnel, tongs, safety goggles, and lab coat. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers chemical, element, and compound. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Science Lab: A visitor’s questions",
+      "text": "During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses. The scientist identifies a Bunsen burner for supervised heating and a petri dish for controlled samples. A pipette transfers small liquid volumes; a graduated cylinder measures volume using marked divisions. On the inactive demonstration bench, a funnel directs liquid into a container. Tongs grip an object without direct hand contact. Safety goggles protect the eyes, and a lab coat is protective outerwear. The lesson distinguishes a chemical substance, an element made from one type of atom, and a compound made of different elements chemically bonded together. The examples are labels in a written glossary, not a mixing exercise.",
+      "imageBrief": "One uncluttered science lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare microscope, test tube, beaker, and flask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses.\nWhich instrument reveals tiny details?",
         "answer": "microscope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bunsen burner, petri dish, pipette, and graduated cylinder and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bunsen burner",
+        "prompt": "The scientist identifies a Bunsen burner for supervised heating and a petri dish for controlled samples. A pipette transfers small liquid volumes; a graduated cylinder measures volume using marked divisions.\nWhich tool transfers small liquid volumes?",
+        "answer": "pipette",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare funnel, tongs, safety goggles, and lab coat and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "funnel",
+        "prompt": "On the inactive demonstration bench, a funnel directs liquid into a container. Tongs grip an object without direct hand contact. Safety goggles protect the eyes, and a lab coat is protective outerwear.\nWhich tool grips an object without direct hand contact?",
+        "answer": "tongs",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chemical, element, and compound and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "chemical",
+        "prompt": "The lesson distinguishes a chemical substance, an element made from one type of atom, and a compound made of different elements chemically bonded together. The examples are labels in a written glossary, not a mixing exercise.\nWhich term describes different elements chemically bonded together?",
+        "answer": "compound",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses. The scientist identifies a Bunsen burner for supervised heating and a petri dish for controlled samples. A pipette transfers small liquid volumes; a graduated cylinder measures volume using marked divisions. On the inactive demonstration bench, a funnel directs liquid into a container. Tongs grip an object without direct hand contact. Safety goggles protect the eyes, and a lab coat is protective outerwear. The lesson distinguishes a chemical substance, an element made from one type of atom, and a compound made of different elements chemically bonded together. The examples are labels in a written glossary, not a mixing exercise.\nExplain the difference between microscope and test tube using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "microscope"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "flask"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Telescope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 science lab task. Use microscope, test tube, beaker, flask, Bunsen burner, petri dish, pipette, graduated cylinder, funnel, tongs, safety goggles, lab coat, chemical, element, and compound in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms microscope, test tube, beaker, flask, Bunsen burner, petri dish, pipette, graduated cylinder, funnel, tongs, safety goggles, lab coat, chemical, element, compound to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Science Lab: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Science Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between microscope and test tube, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During an introductory lab visit, a scientist shows a microscope for seeing tiny details. A test tube, beaker, and flask are containers with different shapes and laboratory uses. Pause and answer: Which instrument reveals tiny details?"
     },
     "spacedReview": "1 lesson(s) back: Telescope, Camera from observatory-5\n3 lesson(s) back: Spectrograph, CCD Camera from observatory-3\n7 lesson(s) back: fire boots, gloves from fire-station-3"
   },
@@ -208,7 +191,7 @@
       "قاعدة كيميائية",
       "محلول",
       "بلورة",
-      "وقود",
+      "غاز",
       "سائل",
       "خلية",
       "بكتيريا",
@@ -221,129 +204,112 @@
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "readingTarget": "105-135 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["molecule", "atom", "reaction", "acid"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare molecule, atom, reaction, and acid and choose the option that fits the situation.",
+          "scenario": "The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names atoms bonded together as a unit?",
             "options": ["molecule", "atom", "reaction"],
             "expectedAnswer": "molecule"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the molecule as the central item; include molecule, atom, and reaction naturally where visually appropriate, but make the real-world use of molecule the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for molecule in a science lab context. Use the written scenario as the source of meaning: The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["base", "solution", "crystal", "gas"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare base, solution, crystal, and gas and choose the option that fits the situation.",
+          "scenario": "The glossary distinguishes a base, a solution, a crystal, and a gas. A gas expands to fill its container. The visitor learns the meanings without tasting, mixing, or handling any substance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["base", "solution", "crystal"],
-            "expectedAnswer": "base"
+            "question": "Which state of matter expands to fill its container?",
+            "options": ["gas", "base", "solution"],
+            "expectedAnswer": "gas"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the base as the central item; include base, solution, and crystal naturally where visually appropriate, but make the real-world use of base the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for gas in a science lab context. Use the written scenario as the source of meaning: The glossary distinguishes a base, a solution, a crystal, and a gas. A gas expands to fill its container. The visitor learns the meanings without tasting, mixing, or handling any substance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["liquid", "cell", "bacteria", "virus"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liquid, cell, bacteria, and virus and choose the option that fits the situation.",
+          "scenario": "A diagram compares liquid samples, a cell, bacteria, and a virus. A cell is a basic living unit; bacteria are cellular organisms, while viruses reproduce using host cells.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["liquid", "cell", "bacteria"],
-            "expectedAnswer": "liquid"
+            "question": "Which term names a basic structural unit of living organisms?",
+            "options": ["cell", "liquid", "bacteria"],
+            "expectedAnswer": "cell"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the liquid as the central item; include liquid, cell, and bacteria naturally where visually appropriate, but make the real-world use of liquid the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for cell in a science lab context. Use the written scenario as the source of meaning: A diagram compares liquid samples, a cell, bacteria, and a virus. A cell is a basic living unit; bacteria are cellular organisms, while viruses reproduce using host cells. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["DNA", "gene", "organism"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA, gene, and organism and choose the option that fits the situation.",
+          "scenario": "The researcher explains that DNA stores genetic information and that a gene is a functional region of genetic material. An organism is an individual living thing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which molecule stores genetic information?",
             "options": ["DNA", "gene", "organism"],
             "expectedAnswer": "DNA"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the DNA as the central item; include DNA, gene, and organism naturally where visually appropriate, but make the real-world use of DNA the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for DNA in a science lab context. Use the written scenario as the source of meaning: The researcher explains that DNA stores genetic information and that a gene is a functional region of genetic material. An organism is an individual living thing. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at Science Lab",
-      "text": "At the science lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers molecule, atom, reaction, and acid. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers base, solution, crystal, and gas. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers liquid, cell, bacteria, and virus. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers DNA, gene, and organism. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Science Lab: Understanding the different roles",
+      "text": "The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category. The glossary distinguishes a base, a solution, a crystal, and a gas. A gas expands to fill its container. The visitor learns the meanings without tasting, mixing, or handling any substance. A diagram compares liquid samples, a cell, bacteria, and a virus. A cell is a basic living unit; bacteria are cellular organisms, while viruses reproduce using host cells. The researcher explains that DNA stores genetic information and that a gene is a functional region of genetic material. An organism is an individual living thing.",
+      "imageBrief": "One uncluttered science lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare molecule, atom, reaction, and acid and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category.\nWhich term names atoms bonded together as a unit?",
         "answer": "molecule",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare base, solution, crystal, and gas and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "base",
+        "prompt": "The glossary distinguishes a base, a solution, a crystal, and a gas. A gas expands to fill its container. The visitor learns the meanings without tasting, mixing, or handling any substance.\nWhich state of matter expands to fill its container?",
+        "answer": "gas",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare liquid, cell, bacteria, and virus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "liquid",
+        "prompt": "A diagram compares liquid samples, a cell, bacteria, and a virus. A cell is a basic living unit; bacteria are cellular organisms, while viruses reproduce using host cells.\nWhich term names a basic structural unit of living organisms?",
+        "answer": "cell",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DNA, gene, and organism and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The researcher explains that DNA stores genetic information and that a gene is a functional region of genetic material. An organism is an individual living thing.\nWhich molecule stores genetic information?",
         "answer": "DNA",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category. The glossary distinguishes a base, a solution, a crystal, and a gas. A gas expands to fill its container. The visitor learns the meanings without tasting, mixing, or handling any substance. A diagram compares liquid samples, a cell, bacteria, and a virus. A cell is a basic living unit; bacteria are cellular organisms, while viruses reproduce using host cells. The researcher explains that DNA stores genetic information and that a gene is a functional region of genetic material. An organism is an individual living thing.\nExplain the difference between molecule and atom using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "molecule"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "acid"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “microscope” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 science lab task. Use molecule, atom, reaction, acid, base, solution, crystal, gas, liquid, cell, bacteria, virus, DNA, gene, and organism in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms molecule, atom, reaction, acid, base, solution, crystal, gas, liquid, cell, bacteria, virus, DNA, gene, organism to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Science Lab: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Science Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between molecule and atom, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The scientist compares a molecule, an atom, a reaction, and an acid. A molecule consists of atoms bonded together; a reaction changes substances, while an acid describes a chemical category. Pause and answer: Which term names atoms bonded together as a unit?"
     },
     "spacedReview": "1 lesson(s) back: microscope, test tube from science-lab-1\n3 lesson(s) back: Saturn, Uranus from observatory-4\n7 lesson(s) back: emergency exit, fire escape from fire-station-4"
   },
@@ -375,10 +341,10 @@
       "pulley"
     ],
     "targetWordsArabic": [
-      "نسيج",
+      "نسيج حيوي",
       "عضو",
-      "تمثيل ضوئي",
-      "تطور",
+      "بناء ضوئي",
+      "تطور حيوي",
       "نظام بيئي",
       "عينة اختبار",
       "مغناطيس",
@@ -388,136 +354,119 @@
       "دائرة كهربائية",
       "بطارية",
       "سلك",
-      "مبدّل شبكي",
+      "مفتاح كهربائي",
       "بكرة"
     ],
     "usage": {
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["tissue", "organ", "photosynthesis", "evolution"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tissue, organ, photosynthesis, and evolution and choose the option that fits the situation.",
+          "scenario": "The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names an organized group of cells?",
             "options": ["tissue", "organ", "photosynthesis"],
             "expectedAnswer": "tissue"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the tissue as the central item; include tissue, organ, and photosynthesis naturally where visually appropriate, but make the real-world use of tissue the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for tissue in a science lab context. Use the written scenario as the source of meaning: The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["ecosystem", "specimen", "magnet", "prism"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ecosystem, specimen, magnet, and prism and choose the option that fits the situation.",
+          "scenario": "The visitor sees an ecosystem diagram and a recorded specimen image. On the optics display, a magnet produces a magnetic field, while a prism can bend and separate light.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["ecosystem", "specimen", "magnet"],
-            "expectedAnswer": "ecosystem"
+            "question": "Which optical object can separate light into colors?",
+            "options": ["prism", "ecosystem", "specimen"],
+            "expectedAnswer": "prism"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the ecosystem as the central item; include ecosystem, specimen, and magnet naturally where visually appropriate, but make the real-world use of ecosystem the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for prism in a science lab context. Use the written scenario as the source of meaning: The visitor sees an ecosystem diagram and a recorded specimen image. On the optics display, a magnet produces a magnetic field, while a prism can bend and separate light. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["lens", "pendulum", "circuit", "battery"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lens, pendulum, circuit, and battery and choose the option that fits the situation.",
+          "scenario": "The display contains a lens, a pendulum, and a circuit powered by a battery. The pendulum is the freely swinging object; the lens bends light and the circuit carries current.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["lens", "pendulum", "circuit"],
-            "expectedAnswer": "lens"
+            "question": "Which object swings freely about a support?",
+            "options": ["pendulum", "lens", "circuit"],
+            "expectedAnswer": "pendulum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the lens as the central item; include lens, pendulum, and circuit naturally where visually appropriate, but make the real-world use of lens the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for pendulum in a science lab context. Use the written scenario as the source of meaning: The display contains a lens, a pendulum, and a circuit powered by a battery. The pendulum is the freely swinging object; the lens bends light and the circuit carries current. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["wire", "switch", "pulley"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare wire, switch, and pulley and choose the option that fits the situation.",
+          "scenario": "A wire connects the circuit components. A switch opens or closes the circuit. On a separate mechanics display, a pulley changes the direction of a pulling force.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["wire", "switch", "pulley"],
-            "expectedAnswer": "wire"
+            "question": "Which component opens or closes the electrical circuit?",
+            "options": ["switch", "wire", "pulley"],
+            "expectedAnswer": "switch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the wire as the central item; include wire, switch, and pulley naturally where visually appropriate, but make the real-world use of wire the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for switch in a science lab context. Use the written scenario as the source of meaning: A wire connects the circuit components. A switch opens or closes the circuit. On a separate mechanics display, a pulley changes the direction of a pulling force. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Science Lab",
-      "text": "At the science lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers tissue, organ, photosynthesis, and evolution. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers ecosystem, specimen, magnet, and prism. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers lens, pendulum, circuit, and battery. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers wire, switch, and pulley. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Science Lab: Comparing the equipment",
+      "text": "The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations. The visitor sees an ecosystem diagram and a recorded specimen image. On the optics display, a magnet produces a magnetic field, while a prism can bend and separate light. The display contains a lens, a pendulum, and a circuit powered by a battery. The pendulum is the freely swinging object; the lens bends light and the circuit carries current. A wire connects the circuit components. A switch opens or closes the circuit. On a separate mechanics display, a pulley changes the direction of a pulling force.",
+      "imageBrief": "One uncluttered science lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare tissue, organ, photosynthesis, and evolution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations.\nWhich term names an organized group of cells?",
         "answer": "tissue",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare ecosystem, specimen, magnet, and prism and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "ecosystem",
+        "prompt": "The visitor sees an ecosystem diagram and a recorded specimen image. On the optics display, a magnet produces a magnetic field, while a prism can bend and separate light.\nWhich optical object can separate light into colors?",
+        "answer": "prism",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lens, pendulum, circuit, and battery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "lens",
+        "prompt": "The display contains a lens, a pendulum, and a circuit powered by a battery. The pendulum is the freely swinging object; the lens bends light and the circuit carries current.\nWhich object swings freely about a support?",
+        "answer": "pendulum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare wire, switch, and pulley and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "wire",
+        "prompt": "A wire connects the circuit components. A switch opens or closes the circuit. On a separate mechanics display, a pulley changes the direction of a pulling force.\nWhich component opens or closes the electrical circuit?",
+        "answer": "switch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations. The visitor sees an ecosystem diagram and a recorded specimen image. On the optics display, a magnet produces a magnetic field, while a prism can bend and separate light. The display contains a lens, a pendulum, and a circuit powered by a battery. The pendulum is the freely swinging object; the lens bends light and the circuit carries current. A wire connects the circuit components. A switch opens or closes the circuit. On a separate mechanics display, a pulley changes the direction of a pulling force.\nExplain the difference between tissue and organ using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "tissue"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "evolution"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “molecule” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 science lab task. Use tissue, organ, photosynthesis, evolution, ecosystem, specimen, magnet, prism, lens, pendulum, circuit, battery, wire, switch, and pulley in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms tissue, organ, photosynthesis, evolution, ecosystem, specimen, magnet, prism, lens, pendulum, circuit, battery, wire, switch, pulley to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Science Lab: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Science Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between tissue and organ, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The scientist distinguishes tissue, an organ, photosynthesis, and evolution. Tissue is an organized group of cells; an organ contains tissues. Photosynthesis uses light energy, while evolution concerns inherited population changes across generations. Pause and answer: Which term names an organized group of cells?"
     },
     "spacedReview": "1 lesson(s) back: molecule, atom from science-lab-2\n3 lesson(s) back: Telescope, Camera from observatory-5\n7 lesson(s) back: Optical Telescope, Reflecting Telescope from observatory-1"
   },
@@ -557,141 +506,124 @@
       "ملاحظة",
       "بيانات",
       "رسم بياني",
-      "خريطة ملاحية",
+      "مخطط بياني",
       "استنتاج",
       "متغير",
       "عامل ضابط",
       "قياس",
-      "مقياس رسم",
+      "ميزان",
       "آلة حاسبة"
     ],
     "usage": {
       "goal": "Develop the language needed to understand scientific vocabulary, observations, and safety-related information in a realistic adult context.",
       "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the science or research setting.",
       "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "readingTarget": "97-127 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["lever", "spring", "thermometer", "hypothesis"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lever, spring, thermometer, and hypothesis and choose the option that fits the situation.",
+          "scenario": "The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["lever", "spring", "thermometer"],
-            "expectedAnswer": "lever"
+            "question": "Which instrument measures temperature?",
+            "options": ["thermometer", "lever", "spring"],
+            "expectedAnswer": "thermometer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the lever as the central item; include lever, spring, and thermometer naturally where visually appropriate, but make the real-world use of lever the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for thermometer in a science lab context. Use the written scenario as the source of meaning: The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["experiment", "observation", "data", "graph"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare experiment, observation, data, and graph and choose the option that fits the situation.",
+          "scenario": "An experiment produces an observation and recorded data. The scientist plots the measured values on a graph so their relationship is easier to inspect.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["experiment", "observation", "data"],
-            "expectedAnswer": "experiment"
+            "question": "What visual display shows the measured values and their relationship?",
+            "options": ["graph", "experiment", "observation"],
+            "expectedAnswer": "graph"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating experiment through a realistic adult task; include experiment, observation, and data naturally where visually appropriate, but make the real-world use of experiment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for graph in a science lab context. Use the written scenario as the source of meaning: An experiment produces an observation and recorded data. The scientist plots the measured values on a graph so their relationship is easier to inspect. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["chart", "conclusion", "variable", "control"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chart, conclusion, variable, and control and choose the option that fits the situation.",
+          "scenario": "The report contains a chart and a cautious conclusion. It explains which variable was changed and identifies a control used for comparison. The comparison helps evaluate the proposed explanation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["chart", "conclusion", "variable"],
-            "expectedAnswer": "chart"
+            "question": "What comparison condition helps evaluate the changed variable?",
+            "options": ["control", "chart", "conclusion"],
+            "expectedAnswer": "control"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the chart as the central item; include chart, conclusion, and variable naturally where visually appropriate, but make the real-world use of chart the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for control in a science lab context. Use the written scenario as the source of meaning: The report contains a chart and a cautious conclusion. It explains which variable was changed and identifies a control used for comparison. The comparison helps evaluate the proposed explanation. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["measurement", "scale", "calculator"],
-          "scenario": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare measurement, scale, and calculator and choose the option that fits the situation.",
+          "scenario": "The observer records a measurement from a scale and uses a calculator to process the numbers. The scale measures mass or weight; the calculator performs arithmetic.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["measurement", "scale", "calculator"],
-            "expectedAnswer": "measurement"
+            "question": "Which instrument measures mass or weight?",
+            "options": ["scale", "measurement", "calculator"],
+            "expectedAnswer": "scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating measurement through a realistic adult task; include measurement, scale, and calculator naturally where visually appropriate, but make the real-world use of measurement the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for scale in a science lab context. Use the written scenario as the source of meaning: The observer records a measurement from a scale and uses a calculator to process the numbers. The scale measures mass or weight; the calculator performs arithmetic. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written science lab situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Science Lab",
-      "text": "At the science lab, a technician handles a real-world responsibility and must make a clear decision. First, the technician considers lever, spring, thermometer, and hypothesis. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers experiment, observation, data, and graph. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Next, the technician considers chart, conclusion, variable, and control. The choice depends on the role of each term in the context, so the technician checks the details before moving on. Finally, the technician considers measurement, scale, and calculator. The choice depends on the role of each term in the context, so the technician checks the details before moving on. By the end, the technician can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about L7 Science Lab. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Science Lab: A guided walk",
+      "text": "The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion. An experiment produces an observation and recorded data. The scientist plots the measured values on a graph so their relationship is easier to inspect. The report contains a chart and a cautious conclusion. It explains which variable was changed and identifies a control used for comparison. The comparison helps evaluate the proposed explanation. The observer records a measurement from a scale and uses a calculator to process the numbers. The scale measures mass or weight; the calculator performs arithmetic.",
+      "imageBrief": "One uncluttered science lab setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare lever, spring, thermometer, and hypothesis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "lever",
+        "prompt": "The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion.\nWhich instrument measures temperature?",
+        "answer": "thermometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare experiment, observation, data, and graph and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "experiment",
+        "prompt": "An experiment produces an observation and recorded data. The scientist plots the measured values on a graph so their relationship is easier to inspect.\nWhat visual display shows the measured values and their relationship?",
+        "answer": "graph",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare chart, conclusion, variable, and control and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "chart",
+        "prompt": "The report contains a chart and a cautious conclusion. It explains which variable was changed and identifies a control used for comparison. The comparison helps evaluate the proposed explanation.\nWhat comparison condition helps evaluate the changed variable?",
+        "answer": "control",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the l7 science lab setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare measurement, scale, and calculator and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "measurement",
+        "prompt": "The observer records a measurement from a scale and uses a calculator to process the numbers. The scale measures mass or weight; the calculator performs arithmetic.\nWhich instrument measures mass or weight?",
+        "answer": "scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion. An experiment produces an observation and recorded data. The scientist plots the measured values on a graph so their relationship is easier to inspect. The report contains a chart and a cautious conclusion. It explains which variable was changed and identifies a control used for comparison. The comparison helps evaluate the proposed explanation. The observer records a measurement from a scale and uses a calculator to process the numbers. The scale measures mass or weight; the calculator performs arithmetic.\nExplain the difference between lever and spring using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "lever"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "hypothesis"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “tissue” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the l7 science lab task. Use lever, spring, thermometer, hypothesis, experiment, observation, data, graph, chart, conclusion, variable, control, measurement, scale, and calculator in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms lever, spring, thermometer, hypothesis, experiment, observation, data, graph, chart, conclusion, variable, control, measurement, scale, calculator to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "L7 Science Lab: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Science Lab: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between lever and spring, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The scientist shows a lever and a spring, then records temperature using a thermometer. The proposed explanation for the observed change is a hypothesis, not an established conclusion. Pause and answer: Which instrument measures temperature?"
     },
     "spacedReview": "1 lesson(s) back: tissue, organ from science-lab-3\n3 lesson(s) back: microscope, test tube from science-lab-1\n7 lesson(s) back: Asteroid, Nebula from observatory-2"
   }

@@ -27,7 +27,7 @@
       "Stole"
     ],
     "targetWordsArabic": [
-      "مرحلة",
+      "منصة الحفل",
       "منصة",
       "ميكروفون",
       "خطاب",
@@ -37,147 +37,141 @@
       "موكب الخروج",
       "تصفيق",
       "موسيقى",
-      "قبعة بواقٍ",
+      "قبعة التخرج",
       "ثوب طويل",
       "شرابة القبعة",
       "حبل شرف للتخرج",
       "وشاح تخرج"
     ],
     "usage": {
-      "goal": "Learn to use the graduation 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the graduation.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish graduation objects, academic terms and stated plans in a supported adult account.",
+      "canDoStatement": "Can identify practical details in a supported graduation account and explain one distinction. Institutional and specialist academic terms extend the supported task level; individual terms are not certified at the unit CEFR label.",
+      "textType": "graduation-personal-account",
+      "readingTarget": "Supported linked graduation account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Stage", "Podium", "Microphone"],
-          "scenario": "During a routine the graduation task, an adult compares Stage, Podium, Microphone. The person selects Stage for the next step.",
+          "scenario": "Before the adult graduation ceremony, the organizer checks the stage where speakers will stand. A podium gives a speaker a raised place, while a microphone carries the speaker’s voice to the audience.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which device carries the speaker’s voice?",
             "options": ["Stage", "Podium", "Microphone"],
-            "expectedAnswer": "Stage"
+            "expectedAnswer": "Microphone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Stage, Podium, Microphone. The person selects Stage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Stage, Podium, Microphone in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult organizer checking a microphone beside a small podium on a graduation stage. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult organizer checking a microphone beside a small podium on a graduation stage."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Speech", "Diploma", "Handshake"],
-          "scenario": "During a routine the graduation task, an adult compares Speech, Diploma, Handshake. The person selects Speech for the next step.",
+          "scenario": "A graduate gives a short speech thanking the teachers. Later, she receives her diploma, a document confirming completed study. She accepts a handshake from the presenter; other graduates may prefer a different greeting.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item confirms completed study?",
             "options": ["Speech", "Diploma", "Handshake"],
-            "expectedAnswer": "Speech"
+            "expectedAnswer": "Diploma"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Speech, Diploma, Handshake. The person selects Speech for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Speech, Diploma, Handshake in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult graduate receiving a document from an adult presenter on a stage. No readable document text. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult graduate receiving a document from an adult presenter on a stage. No readable document text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Procession", "Recessional", "Applause"],
-          "scenario": "During a routine the graduation task, an adult compares Procession, Recessional, Applause. The person selects Procession for the next step.",
+          "scenario": "The procession is the ordered group entering at the start. The recessional is the group leaving at the end. Applause is the audience clapping, rather than either movement of the group.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which movement happens at the end?",
             "options": ["Procession", "Recessional", "Applause"],
-            "expectedAnswer": "Procession"
+            "expectedAnswer": "Recessional"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Procession, Recessional, Applause. The person selects Procession for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Procession, Recessional, Applause in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult graduates walking in an orderly group beside rows of audience seating. Written context establishes timing. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult graduates walking in an orderly group beside rows of audience seating. Written context establishes timing."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Music", "Cap", "Gown"],
-          "scenario": "During a routine the graduation task, an adult compares Music, Cap, Gown. The person selects Music for the next step.",
+          "scenario": "Music plays while the adult graduates arrive. At this institution, they wear an academic cap on the head and a long gown over their clothes. Academic dress varies; the cap and gown do not identify a specific degree by themselves.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which garment is worn over the graduate’s clothes?",
             "options": ["Music", "Cap", "Gown"],
-            "expectedAnswer": "Music"
+            "expectedAnswer": "Gown"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Music, Cap, Gown. The person selects Music for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Music, Cap, Gown in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult graduates in plain academic caps and long gowns entering a ceremony hall. No invented institutional insignia. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult graduates in plain academic caps and long gowns entering a ceremony hall. No invented institutional insignia."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Tassel", "Honor Cord", "Stole"],
-          "scenario": "During a routine the graduation task, an adult compares Tassel, Honor Cord, Stole. The person selects Tassel for the next step.",
+          "scenario": "An organizer explains three details of academic clothing. A tassel is a group of cords attached to a cap. An honor cord hangs around the shoulders to mark a distinction here. A stole is a narrow strip of cloth resting over the shoulders. Their meanings and colors vary by institution.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which detail is attached to the cap?",
             "options": ["Tassel", "Honor Cord", "Stole"],
             "expectedAnswer": "Tassel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Tassel, Honor Cord, Stole. The person selects Tassel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Tassel, Honor Cord, Stole in a natural setting."
+          "imageBrief": "Photorealistic scene: A display of an academic cap with a tassel, a simple cord, and a plain narrow stole beside an adult organizer. No readable labels. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "A display of an academic cap with a tassel, a simple cord, and a plain narrow stole beside an adult organizer. No readable labels."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Graduation: Email",
-      "text": "Omar has an everyday task connected to the graduation. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss stage, podium, and microphone. The context makes the relationship between the words clear. In the social situation, the people experience or discuss speech, diploma, and handshake. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Graduation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Before the ceremony",
+      "text": "Salma arrives early for her adult graduation ceremony. An organizer checks the stage, podium and microphone. Salma has prepared a short speech. Later, she will receive her diploma and may greet the presenter with a handshake. The procession brings graduates into the hall, and the recessional takes them out at the end. The audience offers applause. Music accompanies the entrance. Salma wears an academic cap and gown. The cap has a tassel. An honor cord and a stole mark distinctions at her institution, but their colors do not have a universal meaning. She follows the organizer’s instructions rather than guessing from another university’s photographs.",
+      "imageBrief": "Photorealistic scene: An adult organizer checking a microphone beside a small podium on a graduation stage. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the graduation task, an adult compares Stage, Podium, Microphone. The person selects Stage for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Stage",
+        "prompt": "Before the adult graduation ceremony, the organizer checks the stage where speakers will stand. A podium gives a speaker a raised place, while a microphone carries the speaker’s voice to the audience.\nWhich device carries the speaker’s voice?",
+        "answer": "Microphone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Speech, Diploma, Handshake. The person selects Speech for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Speech",
+        "prompt": "A graduate gives a short speech thanking the teachers. Later, she receives her diploma, a document confirming completed study. She accepts a handshake from the presenter; other graduates may prefer a different greeting.\nWhich item confirms completed study?",
+        "answer": "Diploma",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Procession, Recessional, Applause. The person selects Procession for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Procession",
+        "prompt": "The procession is the ordered group entering at the start. The recessional is the group leaving at the end. Applause is the audience clapping, rather than either movement of the group.\nWhich movement happens at the end?",
+        "answer": "Recessional",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Music, Cap, Gown. The person selects Music for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Music",
+        "prompt": "Music plays while the adult graduates arrive. At this institution, they wear an academic cap on the head and a long gown over their clothes. Academic dress varies; the cap and gown do not identify a specific degree by themselves.\nWhich garment is worn over the graduate’s clothes?",
+        "answer": "Gown",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Tassel, Honor Cord, Stole. The person selects Tassel for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An organizer explains three details of academic clothing. A tassel is a group of cords attached to a cap. An honor cord hangs around the shoulders to mark a distinction here. A stole is a narrow strip of cloth resting over the shoulders. Their meanings and colors vary by institution.\nWhich detail is attached to the cap?",
         "answer": "Tassel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Stage"
+        "prompt": "Salma arrives early for her adult graduation ceremony. An organizer checks the stage, podium and microphone. Salma has prepared a short speech. Later, she will receive her diploma and may greet the presenter with a handshake. The procession brings graduates into the hall, and the recessional takes them out at the end. The audience offers applause. Music accompanies the entrance. Salma wears an academic cap and gown. The cap has a tassel. An honor cord and a stole mark distinctions at her institution, but their colors do not have a universal meaning. She follows the organizer’s instructions rather than guessing from another university’s photographs.\nWhy does Salma follow her own organizer’s instructions?",
+        "answer": "Academic clothing and its meanings vary by institution",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Speech"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ribbon” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Before the adult graduation ceremony, the organizer checks the stage where speakers will stand. A podium gives a speaker a raised place, while a microphone carries the speaker’s voice to the audience.\nExplain how one term fits the situation in a complete sentence.",
+        "answer": "The microphone carries the speaker’s voice to the audience.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Graduation: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Before the ceremony",
+      "idea": "Narrate the adult graduation account and pause for one practical detail question. Acknowledge institutional variation and different personal plans.",
+      "scriptStarter": "Before the adult graduation ceremony, the organizer checks the stage where speakers will stand. A podium gives a speaker a raised place, while a microphone carries the speaker’s voice to the audience."
     },
     "spacedReview": "1 lesson(s) back: Ribbon, Fairy Lights from wedding-4\n3 lesson(s) back: Bouquet, Boutonniere from wedding-2\n7 lesson(s) back: Popcorn, Juice Box from birthday-party-2"
   },
@@ -212,154 +206,148 @@
       "وشاح عريض",
       "أحذية رسمية",
       "خاتم التخرج",
-      "دبوس",
+      "دبوس تذكاري",
       "ميدالية",
       "رمي قبعات التخرج",
       "كتاب الذكريات السنوي",
       "صورة الصف",
-      "الخريج الأول المتحدث في الحفل",
-      "الخريج الثاني في الترتيب",
+      "متحدث التخرج الوداعي، وغالبًا أحد الأوائل",
+      "متحدث افتتاح التخرج، وغالبًا الثاني في الترتيب",
       "مرتبة الشرف",
-      "بتقدير امتياز",
+      "بمرتبة الشرف",
       "خريجون",
       "الجامعة أو المدرسة التي تخرج منها الشخص",
       "حفل تخرج"
     ],
     "usage": {
-      "goal": "Learn to use the graduation 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the graduation.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish graduation objects, academic terms and stated plans in a supported adult account.",
+      "canDoStatement": "Can identify practical details in a supported graduation account and explain one distinction. Institutional and specialist academic terms extend the supported task level; individual terms are not certified at the unit CEFR label.",
+      "textType": "graduation-personal-account",
+      "readingTarget": "Supported linked graduation account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sash", "Dress Shoes", "Class Ring"],
-          "scenario": "During a routine the graduation task, an adult compares Sash, Dress Shoes, Class Ring. The person selects Sash for the next step.",
+          "scenario": "At a clothing display, a sash is a broad band worn across the body. Dress shoes are formal footwear. A class ring is jewelry representing a school or graduating class. None is required at every graduation.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item represents a school or graduating class?",
             "options": ["Sash", "Dress Shoes", "Class Ring"],
-            "expectedAnswer": "Sash"
+            "expectedAnswer": "Class Ring"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Sash, Dress Shoes, Class Ring. The person selects Sash for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Sash, Dress Shoes, Class Ring in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult examining a broad sash, formal shoes and a plain commemorative ring on a display table. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult examining a broad sash, formal shoes and a plain commemorative ring on a display table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pin", "Medal", "Cap Toss"],
-          "scenario": "During a routine the graduation task, an adult compares Pin, Medal, Cap Toss. The person selects Pin for the next step.",
+          "scenario": "A graduate wears a small pin fixed to her gown and a medal hanging from a ribbon. The organizer describes a cap toss as throwing academic caps into the air together, but this ceremony ends with a group photograph instead.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item hangs from a ribbon?",
             "options": ["Pin", "Medal", "Cap Toss"],
-            "expectedAnswer": "Pin"
+            "expectedAnswer": "Medal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Pin, Medal, Cap Toss. The person selects Pin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Pin, Medal, Cap Toss in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult graduate with a small pin on a gown and a medal on a ribbon. Do not stage thrown objects. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult graduate with a small pin on a gown and a medal on a ribbon. Do not stage thrown objects."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Yearbook", "Class Photo", "Valedictorian"],
-          "scenario": "During a routine the graduation task, an adult compares Yearbook, Class Photo, Valedictorian. The person selects Yearbook for the next step.",
+          "scenario": "Alumni look through a yearbook, a book of school photographs and memories. A class photo shows the graduating group. They remember the valedictorian, the student selected to give a farewell speech, commonly a highest-ranking student in some US schools.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item shows the graduating group together?",
             "options": ["Yearbook", "Class Photo", "Valedictorian"],
-            "expectedAnswer": "Yearbook"
+            "expectedAnswer": "Class Photo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Yearbook, Class Photo, Valedictorian. The person selects Yearbook for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Yearbook, Class Photo, Valedictorian in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults looking through a yearbook and a group photograph with faces and text indistinct. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults looking through a yearbook and a group photograph with faces and text indistinct."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Salutatorian", "Honors", "Cum Laude"],
-          "scenario": "During a routine the graduation task, an adult compares Salutatorian, Honors, Cum Laude. The person selects Salutatorian for the next step.",
+          "scenario": "The glossary describes the salutatorian as the student usually ranked second who gives an opening address in some US schools. Honors means special academic recognition. Cum laude is a Latin honor meaning with praise; criteria depend on the institution. These labels are not used everywhere.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which phrase is the Latin academic honor described?",
             "options": ["Salutatorian", "Honors", "Cum Laude"],
-            "expectedAnswer": "Salutatorian"
+            "expectedAnswer": "Cum Laude"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Salutatorian, Honors, Cum Laude. The person selects Salutatorian for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Salutatorian, Honors, Cum Laude in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing an academic ceremony program at a desk, with no readable text or invented award markings. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing an academic ceremony program at a desk, with no readable text or invented award markings."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Alumni", "Alma Mater", "Commencement"],
-          "scenario": "During a routine the graduation task, an adult compares Alumni, Alma Mater, Commencement. The person selects Alumni for the next step.",
+          "scenario": "After commencement, the graduation ceremony, former students gather as alumni. They call the school their alma mater, meaning the institution where they studied or graduated. Commencement names the event; alumni names the people.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the former students?",
             "options": ["Alumni", "Alma Mater", "Commencement"],
             "expectedAnswer": "Alumni"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Alumni, Alma Mater, Commencement. The person selects Alumni for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Alumni, Alma Mater, Commencement in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult former students greeting each other outside a graduation hall. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult former students greeting each other outside a graduation hall."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Graduation: Personal Message",
-      "text": "Omar has an everyday task connected to the graduation. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss sash, dress shoes, and class ring. The context makes the relationship between the words clear. In the social situation, the people experience or discuss pin, medal, and cap toss. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Graduation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Looking back together",
+      "text": "At a reunion after commencement, adult alumni remember their alma mater. A display includes a sash, dress shoes and a class ring. Someone shows a pin and medal, while a photograph recalls a cap toss at an earlier event. This year the group chooses a class photo instead. A yearbook includes memories of speakers. The glossary explains valedictorian and salutatorian as titles used in some US schools, commonly linked to academic rank and speeches. It also explains honors and cum laude. The alumni learn that recognition rules vary. They do not assume every school uses the same titles or selects speakers in the same way.",
+      "imageBrief": "Photorealistic scene: An adult examining a broad sash, formal shoes and a plain commemorative ring on a display table. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the graduation task, an adult compares Sash, Dress Shoes, Class Ring. The person selects Sash for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Sash",
+        "prompt": "At a clothing display, a sash is a broad band worn across the body. Dress shoes are formal footwear. A class ring is jewelry representing a school or graduating class. None is required at every graduation.\nWhich item represents a school or graduating class?",
+        "answer": "Class Ring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Pin, Medal, Cap Toss. The person selects Pin for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Pin",
+        "prompt": "A graduate wears a small pin fixed to her gown and a medal hanging from a ribbon. The organizer describes a cap toss as throwing academic caps into the air together, but this ceremony ends with a group photograph instead.\nWhich item hangs from a ribbon?",
+        "answer": "Medal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Yearbook, Class Photo, Valedictorian. The person selects Yearbook for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Yearbook",
+        "prompt": "Alumni look through a yearbook, a book of school photographs and memories. A class photo shows the graduating group. They remember the valedictorian, the student selected to give a farewell speech, commonly a highest-ranking student in some US schools.\nWhich item shows the graduating group together?",
+        "answer": "Class Photo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Salutatorian, Honors, Cum Laude. The person selects Salutatorian for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Salutatorian",
+        "prompt": "The glossary describes the salutatorian as the student usually ranked second who gives an opening address in some US schools. Honors means special academic recognition. Cum laude is a Latin honor meaning with praise; criteria depend on the institution. These labels are not used everywhere.\nWhich phrase is the Latin academic honor described?",
+        "answer": "Cum Laude",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Alumni, Alma Mater, Commencement. The person selects Alumni for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "After commencement, the graduation ceremony, former students gather as alumni. They call the school their alma mater, meaning the institution where they studied or graduated. Commencement names the event; alumni names the people.\nWhich term names the former students?",
         "answer": "Alumni",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Sash"
+        "prompt": "At a reunion after commencement, adult alumni remember their alma mater. A display includes a sash, dress shoes and a class ring. Someone shows a pin and medal, while a photograph recalls a cap toss at an earlier event. This year the group chooses a class photo instead. A yearbook includes memories of speakers. The glossary explains valedictorian and salutatorian as titles used in some US schools, commonly linked to academic rank and speeches. It also explains honors and cum laude. The alumni learn that recognition rules vary. They do not assume every school uses the same titles or selects speakers in the same way.\nWhat does this year’s group choose instead of a cap toss?",
+        "answer": "A class photo",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pin"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Stage” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At a clothing display, a sash is a broad band worn across the body. Dress shoes are formal footwear. A class ring is jewelry representing a school or graduating class. None is required at every graduation.\nExplain how one term fits the situation in a complete sentence.",
+        "answer": "The class ring represents a school or graduating class.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Graduation: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Looking back together",
+      "idea": "Narrate the adult graduation account and pause for one practical detail question. Acknowledge institutional variation and different personal plans.",
+      "scriptStarter": "At a clothing display, a sash is a broad band worn across the body. Dress shoes are formal footwear. A class ring is jewelry representing a school or graduating class. None is required at every graduation."
     },
     "spacedReview": "1 lesson(s) back: Stage, Podium from graduation-1\n3 lesson(s) back: Bride, Groom from wedding-3\n7 lesson(s) back: Present, Wrapping Paper from birthday-party-3"
   },
@@ -396,152 +384,146 @@
       "بالونات",
       "لافتة",
       "هدية",
-      "بطاقة",
+      "بطاقة تهنئة",
       "زهور",
       "شمبانيا",
-      "يحمّص",
+      "كلمة لرفع الكأس وتقديم التمنيات",
       "عشاء",
       "درجة علمية",
       "تخصص رئيسي",
-      "قاصر",
+      "تخصص فرعي",
       "المعدل التراكمي",
       "كشف درجات"
     ],
     "usage": {
-      "goal": "Learn to use the graduation 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the graduation.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish graduation objects, academic terms and stated plans in a supported adult account.",
+      "canDoStatement": "Can identify practical details in a supported graduation account and explain one distinction. Institutional and specialist academic terms extend the supported task level; individual terms are not certified at the unit CEFR label.",
+      "textType": "graduation-personal-account",
+      "readingTarget": "Supported linked graduation account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Party", "Cake", "Balloons"],
-          "scenario": "During a routine the graduation task, an adult compares Party, Cake, Balloons. The person selects Party for the next step.",
+          "scenario": "After graduation, Salma hosts a small party. A cake is ready to share, and balloons decorate the room. The celebration is separate from the formal ceremony.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item will the guests share as food?",
             "options": ["Party", "Cake", "Balloons"],
-            "expectedAnswer": "Party"
+            "expectedAnswer": "Cake"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Party, Cake, Balloons. The person selects Party for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Party, Cake, Balloons in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests at a small celebration with a cake and inflated party balloons. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult guests at a small celebration with a cake and inflated party balloons."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Banner", "Gift", "Card"],
-          "scenario": "During a routine the graduation task, an adult compares Banner, Gift, Card. The person selects Banner for the next step.",
+          "scenario": "At the party entrance, a banner decorates the wall. An adult guest brings a gift and a greeting card with good wishes inside. The card is for congratulations, rather than identity verification.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item contains the guest’s written good wishes?",
             "options": ["Banner", "Gift", "Card"],
-            "expectedAnswer": "Banner"
+            "expectedAnswer": "Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Banner, Gift, Card. The person selects Banner for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Banner, Gift, Card in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult guest placing a wrapped gift and folded greeting card on a table beneath a blank decorative banner. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult guest placing a wrapped gift and folded greeting card on a table beneath a blank decorative banner."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Flowers", "Champagne", "Toast"],
-          "scenario": "During a routine the graduation task, an adult compares Flowers, Champagne, Toast. The person selects Flowers for the next step.",
+          "scenario": "A graduate receives flowers. At the adult dinner, a guest gives a toast, a short speech wishing the graduate success. Champagne is sparkling wine from the Champagne region of France; some adults have it, while others choose water or juice. A toast does not require alcohol.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the short speech of good wishes?",
             "options": ["Flowers", "Champagne", "Toast"],
-            "expectedAnswer": "Flowers"
+            "expectedAnswer": "Toast"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Flowers, Champagne, Toast. The person selects Flowers for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Flowers, Champagne, Toast in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests raising ordinary glasses at a celebration dinner, with flowers on a side table. Do not identify a drink’s contents from appearance. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adult guests raising ordinary glasses at a celebration dinner, with flowers on a side table. Do not identify a drink’s contents from appearance."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dinner", "Degree", "Major"],
-          "scenario": "During a routine the graduation task, an adult compares Dinner, Degree, Major. The person selects Dinner for the next step.",
+          "scenario": "During dinner, Adam explains his degree, the qualification earned after university study. His major was biology, his main field of study. Dinner names the evening meal rather than the qualification or subject.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names Adam’s main field of study?",
             "options": ["Dinner", "Degree", "Major"],
-            "expectedAnswer": "Dinner"
+            "expectedAnswer": "Major"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Dinner, Degree, Major. The person selects Dinner for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Dinner, Degree, Major in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults talking over dinner after a graduation ceremony. Academic qualifications come from written context. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults talking over dinner after a graduation ceremony. Academic qualifications come from written context."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Minor", "Gpa", "Transcript"],
-          "scenario": "During a routine the graduation task, an adult compares Minor, Gpa, Transcript. The person selects Minor for the next step.",
+          "scenario": "Adam’s minor was history, a secondary field alongside his major. His GPA is a grade point average, calculated under his institution’s rules. His transcript is the official record listing courses and grades; a photograph cannot prove a GPA.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which document lists courses and grades?",
             "options": ["Minor", "Gpa", "Transcript"],
-            "expectedAnswer": "Minor"
+            "expectedAnswer": "Transcript"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Minor, Gpa, Transcript. The person selects Minor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Minor, Gpa, Transcript in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult explaining academic records at a table, with blank document pages and no visible grades. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult explaining academic records at a table, with blank document pages and no visible grades."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Graduation: Short Dialogue",
-      "text": "Omar has an everyday task connected to the graduation. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss party, cake, and balloons. The context makes the relationship between the words clear. In the social situation, the people experience or discuss banner, gift, and card. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Graduation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "An evening of congratulations",
+      "text": "After graduation, Salma hosts an adult party with a cake and balloons. A banner hangs near a table where guests leave a gift or card. Flowers brighten the room. During dinner, a guest gives a toast. Some adults choose Champagne and others water or juice; everyone can join the good wishes. Adam describes his degree and his biology major. His history minor was a secondary field. His GPA summarizes grades under his institution’s rules, and his transcript lists courses and grades. The guests congratulate him without treating a particular drink, grade, or expensive gift as necessary for celebration.",
+      "imageBrief": "Photorealistic scene: Adult guests at a small celebration with a cake and inflated party balloons. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the graduation task, an adult compares Party, Cake, Balloons. The person selects Party for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Party",
+        "prompt": "After graduation, Salma hosts a small party. A cake is ready to share, and balloons decorate the room. The celebration is separate from the formal ceremony.\nWhich item will the guests share as food?",
+        "answer": "Cake",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Banner, Gift, Card. The person selects Banner for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Banner",
+        "prompt": "At the party entrance, a banner decorates the wall. An adult guest brings a gift and a greeting card with good wishes inside. The card is for congratulations, rather than identity verification.\nWhich item contains the guest’s written good wishes?",
+        "answer": "Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Flowers, Champagne, Toast. The person selects Flowers for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Flowers",
+        "prompt": "A graduate receives flowers. At the adult dinner, a guest gives a toast, a short speech wishing the graduate success. Champagne is sparkling wine from the Champagne region of France; some adults have it, while others choose water or juice. A toast does not require alcohol.\nWhich word names the short speech of good wishes?",
+        "answer": "Toast",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Dinner, Degree, Major. The person selects Dinner for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dinner",
+        "prompt": "During dinner, Adam explains his degree, the qualification earned after university study. His major was biology, his main field of study. Dinner names the evening meal rather than the qualification or subject.\nWhich term names Adam’s main field of study?",
+        "answer": "Major",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Minor, Gpa, Transcript. The person selects Minor for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Minor",
+        "prompt": "Adam’s minor was history, a secondary field alongside his major. His GPA is a grade point average, calculated under his institution’s rules. His transcript is the official record listing courses and grades; a photograph cannot prove a GPA.\nWhich document lists courses and grades?",
+        "answer": "Transcript",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Party"
+        "prompt": "After graduation, Salma hosts an adult party with a cake and balloons. A banner hangs near a table where guests leave a gift or card. Flowers brighten the room. During dinner, a guest gives a toast. Some adults choose Champagne and others water or juice; everyone can join the good wishes. Adam describes his degree and his biology major. His history minor was a secondary field. His GPA summarizes grades under his institution’s rules, and his transcript lists courses and grades. The guests congratulate him without treating a particular drink, grade, or expensive gift as necessary for celebration.\nDo guests need alcohol to join the toast?",
+        "answer": "No; everyone can join the good wishes",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Banner"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sash” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "After graduation, Salma hosts a small party. A cake is ready to share, and balloons decorate the room. The celebration is separate from the formal ceremony.\nExplain how one term fits the situation in a complete sentence.",
+        "answer": "The cake is food that the guests will share.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Graduation: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "An evening of congratulations",
+      "idea": "Narrate the adult graduation account and pause for one practical detail question. Acknowledge institutional variation and different personal plans.",
+      "scriptStarter": "After graduation, Salma hosts a small party. A cake is ready to share, and balloons decorate the room. The celebration is separate from the formal ceremony."
     },
     "spacedReview": "1 lesson(s) back: Sash, Dress Shoes from graduation-2\n3 lesson(s) back: Ribbon, Fairy Lights from wedding-4\n7 lesson(s) back: Party Horn, Whistle from birthday-party-4"
   },
@@ -573,157 +555,151 @@
       "Moving"
     ],
     "targetWordsArabic": [
-      "رسالة علمية",
-      "أطروحة",
+      "رسالة بحثية",
+      "أطروحة بحثية",
       "فصل دراسي",
       "وحدة دراسية",
       "عميد",
       "فخور",
       "متحمس",
       "متوتر",
-      "حنين للماضي",
+      "يشعر بالحنين إلى الماضي",
       "ممتن",
       "البحث عن وظيفة",
       "الدراسات العليا",
       "تدريب عملي",
       "سنة فاصلة",
-      "انتقال"
+      "انتقال إلى سكن آخر"
     ],
     "usage": {
-      "goal": "Learn to use the graduation 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the graduation.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish graduation objects, academic terms and stated plans in a supported adult account.",
+      "canDoStatement": "Can identify practical details in a supported graduation account and explain one distinction. Institutional and specialist academic terms extend the supported task level; individual terms are not certified at the unit CEFR label.",
+      "textType": "graduation-personal-account",
+      "readingTarget": "Supported linked graduation account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Thesis", "Dissertation", "Semester"],
-          "scenario": "During a routine the graduation task, an adult compares Thesis, Dissertation, Semester. The person selects Thesis for the next step.",
+          "scenario": "At an advice session, the tutor explains that a thesis and a dissertation are extended academic research works; the names and degree levels vary by country and institution. A semester is a study term, often one of two main terms in an academic year.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names a period of the academic year?",
             "options": ["Thesis", "Dissertation", "Semester"],
-            "expectedAnswer": "Thesis"
+            "expectedAnswer": "Semester"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Thesis, Dissertation, Semester. The person selects Thesis for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Thesis, Dissertation, Semester in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult tutor discussing academic research with adult students at a desk. No readable thesis text. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult tutor discussing academic research with adult students at a desk. No readable thesis text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Credit", "Dean", "Proud"],
-          "scenario": "During a routine the graduation task, an adult compares Credit, Dean, Proud. The person selects Credit for the next step.",
+          "scenario": "A graduate receives credit for completed study under the institution’s course rules. The dean leads a faculty or school within the university. The graduate says she feels proud of completing her course; the feeling is stated rather than inferred from her face.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which person leads the faculty or school?",
             "options": ["Credit", "Dean", "Proud"],
-            "expectedAnswer": "Credit"
+            "expectedAnswer": "Dean"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Credit, Dean, Proud. The person selects Credit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Credit, Dean, Proud in a natural setting."
+          "imageBrief": "Photorealistic scene: An adult graduate speaking with an adult academic organizer beside a desk. No inferred emotional or academic status from appearance. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "An adult graduate speaking with an adult academic organizer beside a desk. No inferred emotional or academic status from appearance."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Excited", "Nervous", "Nostalgic"],
-          "scenario": "During a routine the graduation task, an adult compares Excited, Nervous, Nostalgic. The person selects Excited for the next step.",
+          "scenario": "Before leaving campus, Mona says she feels excited about new plans and nervous about an unfamiliar job. She also feels nostalgic as she remembers enjoyable moments with classmates. These feelings can occur together.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word describes fond thoughts and longing connected with the past?",
             "options": ["Excited", "Nervous", "Nostalgic"],
-            "expectedAnswer": "Excited"
+            "expectedAnswer": "Nostalgic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Excited, Nervous, Nostalgic. The person selects Excited for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Excited, Nervous, Nostalgic in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults talking on a campus walkway beside packed bags. Their feelings come from written dialogue. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults talking on a campus walkway beside packed bags. Their feelings come from written dialogue."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Grateful", "Job Search", "Graduate School"],
-          "scenario": "During a routine the graduation task, an adult compares Grateful, Job Search, Graduate School. The person selects Grateful for the next step.",
+          "scenario": "Omar feels grateful for his tutor’s support. His next step is a job search, finding and applying for work. His friend plans graduate school, advanced university study after an undergraduate degree. Neither path is presented as the only successful choice.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which plan involves advanced university study?",
             "options": ["Grateful", "Job Search", "Graduate School"],
-            "expectedAnswer": "Grateful"
+            "expectedAnswer": "Graduate School"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Grateful, Job Search, Graduate School. The person selects Grateful for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Grateful, Job Search, Graduate School in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing different plans with a tutor at a campus advice desk. No readable applications or invented admission decisions. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing different plans with a tutor at a campus advice desk. No readable applications or invented admission decisions."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Internship", "Gap Year", "Moving"],
-          "scenario": "During a routine the graduation task, an adult compares Internship, Gap Year, Moving. The person selects Internship for the next step.",
+          "scenario": "A careers adviser compares an internship, supervised practical work experience, with a gap year, a planned break between stages of study or work. Moving means changing where someone lives. A graduate may combine or choose different plans according to circumstances.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which plan provides supervised practical work experience?",
             "options": ["Internship", "Gap Year", "Moving"],
             "expectedAnswer": "Internship"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the graduation context illustrating this situation: During a routine the graduation task, an adult compares Internship, Gap Year, Moving. The person selects Internship for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the graduation scene showing lesson-related items or actions including Internship, Gap Year, Moving in a natural setting."
+          "imageBrief": "Photorealistic scene: Adults discussing work and study plans in a careers office with a travel bag and ordinary notebooks nearby. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers.",
+          "imageAlt": "Adults discussing work and study plans in a careers office with a travel bag and ordinary notebooks nearby."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Graduation: Everyday Description",
-      "text": "Omar has an everyday task connected to the graduation. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss thesis, dissertation, and semester. The context makes the relationship between the words clear. In the social situation, the people experience or discuss credit, dean, and proud. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Graduation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Different next steps",
+      "text": "At a careers session, a tutor explains thesis and dissertation as research-writing terms whose use varies by institution. Students ask about a semester and the credit awarded for completed study. The dean congratulates the adult graduates. Mona feels proud, excited and nervous; she also feels nostalgic about campus memories. Omar feels grateful for his tutor’s support and begins a job search. A friend plans graduate school. Other graduates discuss an internship, a gap year and moving to another city. The adviser asks about their individual circumstances. There is no single next step that every graduate must choose.",
+      "imageBrief": "Photorealistic scene: An adult tutor discussing academic research with adult students at a desk. No readable thesis text. Natural adult-focused composition. Ceremonial timing, qualification, honors, course details and emotion are established by text. Do not invent institution-specific academic regalia. No readable labels, logos, overlays, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the graduation task, an adult compares Thesis, Dissertation, Semester. The person selects Thesis for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Thesis",
+        "prompt": "At an advice session, the tutor explains that a thesis and a dissertation are extended academic research works; the names and degree levels vary by country and institution. A semester is a study term, often one of two main terms in an academic year.\nWhich term names a period of the academic year?",
+        "answer": "Semester",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Credit, Dean, Proud. The person selects Credit for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Credit",
+        "prompt": "A graduate receives credit for completed study under the institution’s course rules. The dean leads a faculty or school within the university. The graduate says she feels proud of completing her course; the feeling is stated rather than inferred from her face.\nWhich person leads the faculty or school?",
+        "answer": "Dean",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Excited, Nervous, Nostalgic. The person selects Excited for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Excited",
+        "prompt": "Before leaving campus, Mona says she feels excited about new plans and nervous about an unfamiliar job. She also feels nostalgic as she remembers enjoyable moments with classmates. These feelings can occur together.\nWhich word describes fond thoughts and longing connected with the past?",
+        "answer": "Nostalgic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Grateful, Job Search, Graduate School. The person selects Grateful for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Grateful",
+        "prompt": "Omar feels grateful for his tutor’s support. His next step is a job search, finding and applying for work. His friend plans graduate school, advanced university study after an undergraduate degree. Neither path is presented as the only successful choice.\nWhich plan involves advanced university study?",
+        "answer": "Graduate School",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the graduation task, an adult compares Internship, Gap Year, Moving. The person selects Internship for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A careers adviser compares an internship, supervised practical work experience, with a gap year, a planned break between stages of study or work. Moving means changing where someone lives. A graduate may combine or choose different plans according to circumstances.\nWhich plan provides supervised practical work experience?",
         "answer": "Internship",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Thesis"
+        "prompt": "At a careers session, a tutor explains thesis and dissertation as research-writing terms whose use varies by institution. Students ask about a semester and the credit awarded for completed study. The dean congratulates the adult graduates. Mona feels proud, excited and nervous; she also feels nostalgic about campus memories. Omar feels grateful for his tutor’s support and begins a job search. A friend plans graduate school. Other graduates discuss an internship, a gap year and moving to another city. The adviser asks about their individual circumstances. There is no single next step that every graduate must choose.\nDoes the adviser expect every graduate to choose the same next step?",
+        "answer": "No; the adviser considers individual circumstances",
+        "questionType": "comparison",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Credit"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Party” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At an advice session, the tutor explains that a thesis and a dissertation are extended academic research works; the names and degree levels vary by country and institution. A semester is a study term, often one of two main terms in an academic year.\nExplain how one term fits the situation in a complete sentence.",
+        "answer": "A semester is a study term within the academic year.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Graduation: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Different next steps",
+      "idea": "Narrate the adult graduation account and pause for one practical detail question. Acknowledge institutional variation and different personal plans.",
+      "scriptStarter": "At an advice session, the tutor explains that a thesis and a dissertation are extended academic research works; the names and degree levels vary by country and institution. A semester is a study term, often one of two main terms in an academic year."
     },
     "spacedReview": "1 lesson(s) back: Party, Cake from graduation-3\n3 lesson(s) back: Stage, Podium from graduation-1\n7 lesson(s) back: Altar, Aisle from wedding-1"
   }

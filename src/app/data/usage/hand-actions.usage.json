@@ -45,116 +45,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key hand actions 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
-      "textType": "instructional-guide",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Grab", "Hold", "Grip"],
-          "scenario": "At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab.",
+          "scenario": "Nora quickly takes the small pouch to grab it. She will hold it in her hand and grip its handle firmly.",
           "check": {
-            "question": "What hand action is being demonstrated?",
+            "question": "Which verb names taking the pouch quickly?",
             "options": ["Hold", "Grip", "Grab"],
             "expectedAnswer": "Grab"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Grab, Hold, Grip in a natural setting."
+          "imageBrief": "Adult hand holding light fabric pouch by handle. Context supplies speed and force, no arrows or text.",
+          "imageAlt": "Adult hand holding light fabric pouch by handle."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Clutch", "Grasp", "Squeeze"],
-          "scenario": "At a storeroom, an adult demonstrates how to clutch, grasp, and squeeze a light object safely. The highlighted action is clutch.",
+          "scenario": "Nora holds her bag tightly to clutch it. She grasps the strap; to squeeze means press from opposite sides.",
           "check": {
-            "question": "What action should the worker use here?",
+            "question": "Which verb describes holding her bag tightly?",
             "options": ["Squeeze", "Clutch", "Grasp"],
             "expectedAnswer": "Clutch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a storeroom, an adult demonstrates how to clutch, grasp, and squeeze a light object safely. The highlighted action is clutch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Clutch, Grasp, Squeeze in a natural setting."
+          "imageBrief": "Adult holding small bag against body. Context distinguishes similar hold/grasp/clutch actions; no emotional inference or text.",
+          "imageAlt": "Adult holding small bag against body."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clench", "Pinch", "Carry"],
-          "scenario": "At a warehouse training, an adult demonstrates how to clench, pinch, and carry a light object safely. The highlighted action is clench.",
+          "scenario": "Nora closes her fingers tightly to clench her fist. She can pinch a small edge between fingers and carry a light bag.",
           "check": {
-            "question": "What hand action is being demonstrated in the example with clench, pinch?",
+            "question": "Which verb names closing the fist tightly?",
             "options": ["Clench", "Pinch", "Carry"],
             "expectedAnswer": "Clench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a warehouse training, an adult demonstrates how to clench, pinch, and carry a light object safely. The highlighted action is clench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Clench, Pinch, Carry in a natural setting."
+          "imageBrief": "Adult hand closed into ordinary fist beside light fabric bag. No aggression, injury or text.",
+          "imageAlt": "Adult hand closed into ordinary fist beside light fabric bag."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lift", "Push", "Pull"],
-          "scenario": "While moving light office supplies, an adult demonstrates how to lift, push, and pull an object. The highlighted action is lift.",
+          "scenario": "Nora raises a light box from the desk to lift it. To push means move it away; to pull means draw it towards her.",
           "check": {
-            "question": "What action should the worker use here in the example with lift, push?",
+            "question": "Which verb names raising the box?",
             "options": ["Push", "Pull", "Lift"],
             "expectedAnswer": "Lift"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: While moving light office supplies, an adult demonstrates how to lift, push, and pull an object. The highlighted action is lift. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Lift, Push, Pull in a natural setting."
+          "imageBrief": "Adult raising small light cardboard box slightly above desk. No heavy-lifting technique, labels or text.",
+          "imageAlt": "Adult raising small light cardboard box slightly above desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Drag", "Shove", "Tug"],
-          "scenario": "At a delivery desk, an adult demonstrates how to drag, shove, and tug a light object safely. The highlighted action is drag.",
+          "scenario": "Nora pulls a cloth bag along the table to drag it. A shove is a forceful push; a tug is a short pull.",
           "check": {
-            "question": "Which verb describes how the object is being handled?",
+            "question": "Which verb names pulling the bag along the surface?",
             "options": ["Tug", "Drag", "Shove"],
             "expectedAnswer": "Drag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: At a delivery desk, an adult demonstrates how to drag, shove, and tug a light object safely. The highlighted action is drag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Drag, Shove, Tug in a natural setting."
+          "imageBrief": "Adult moving light fabric bag across clear tabletop. Context supplies movement, no unsafe heavy load, arrows or text.",
+          "imageAlt": "Adult moving light fabric bag across clear tabletop."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Handling Supplies Safely",
-      "text": "During a workplace training session, adults practise handling light supplies safely. For small objects, a person may grab, hold, grip, clutch, and grasp. For boxes and packages, they may squeeze, clench, pinch, carry, and lift. When an item must move across a surface, they may push, pull, drag, shove, and tug. People choose the action that fits the object instead of using unnecessary force.",
-      "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
+      "text": "At the desk Nora grabs a pouch, holds it and grips its handle. She clutches the bag and grasps the strap. She squeezes a sponge, clenches a fist and pinches cloth. She carries and lifts a light box. She pushes and pulls it, then drags a bag along the table. A shove is forceful; a tug is a short pull.",
+      "imageBrief": "Adult at clear craft desk with light cloth and paper objects. Narration supplies force and sequence. No heavy-lifting tutorial, unwanted touching, chemicals, sharp-tool demonstration, medical treatment or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Grab"
+        "prompt": "Nora quickly takes the small pouch to grab it. She will hold it in her hand and grip its handle firmly.\nWhich verb names taking the pouch quickly?",
+        "answer": "Grab",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Clutch"
+        "prompt": "Nora holds her bag tightly to clutch it. She grasps the strap; to squeeze means press from opposite sides.\nWhich verb describes holding her bag tightly?",
+        "answer": "Clutch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Clench"
+        "prompt": "Nora closes her fingers tightly to clench her fist. She can pinch a small edge between fingers and carry a light bag.\nWhich verb names closing the fist tightly?",
+        "answer": "Clench",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Lift"
+        "prompt": "Nora raises a light box from the desk to lift it. To push means move it away; to pull means draw it towards her.\nWhich verb names raising the box?",
+        "answer": "Lift",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Drag"
+        "prompt": "Nora pulls a cloth bag along the table to drag it. A shove is a forceful push; a tug is a short pull.\nWhich verb names pulling the bag along the surface?",
+        "answer": "Drag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Grab"
+        "prompt": "Read the passage: At the desk Nora grabs a pouch, holds it and grips its handle. She clutches the bag and grasps the strap. She squeezes a sponge, clenches a fist and pinches cloth. She carries and lifts a light box. She pushes and pulls it, then drags a bag along the table. A shove is forceful; a tug is a short pull.\nWhat does Nora squeeze?",
+        "answer": "A sponge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Hold"
+        "prompt": "Ask someone to pass you a light bag to carry.",
+        "answer": "Please pass me the bag to carry.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Squeeze"
+        "prompt": "Someone raises a box from the desk. Name the action.",
+        "answer": "Lift",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Hand Actions: See It, Say It",
-      "idea": "30–50 second contextual video set in a activity table. Show grab, hold, grip, clutch, and grasp naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a packing station, an adult demonstrates how to grab, hold, and grip a light object safely. The highlighted action is grab."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora quickly takes the small pouch to grab it. She will hold it in her hand and grip its handle firmly."
     },
     "spacedReview": "1 lesson(s) back: Bend, Stretch from movement-verbs-4\n3 lesson(s) back: Climb, Crawl from movement-verbs-2\n7 lesson(s) back: Northwest, Southeast from giving-directions-2"
   },
@@ -199,121 +223,145 @@
       "يرمي بقوة",
       "يرمي في قوس عالٍ",
       "يمرر أو يناول",
-      "يسقط",
+      "يُسقط",
       "يلعب بالكرات في الهواء"
     ],
     "usage": {
       "goal": "Learn to recognize and use key hand actions 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Yank", "Press", "Twist"],
-          "scenario": "With my hands, I can yank, press, twist.",
+          "scenario": "The story says Nora pulls a stuck ribbon suddenly to yank it. She can press a button and twist a cap for other tasks.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb means the sudden sharp pull?",
             "options": ["Yank", "Press", "Twist"],
             "expectedAnswer": "Yank"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can yank, press, twist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Yank, Press, Twist in a natural setting."
+          "imageBrief": "Adult holding ribbon above clear tabletop. Context supplies suddenness; no electrical wire, violent motion or text.",
+          "imageAlt": "Adult holding ribbon above clear tabletop."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Turn", "Wring", "Throw"],
-          "scenario": "With my hands, I can turn, wring, throw.",
+          "scenario": "Nora rotates a jar lid to turn it. She will wring a wet cloth and throw a soft ball later.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb describes rotating the lid?",
             "options": ["Turn", "Wring", "Throw"],
             "expectedAnswer": "Turn"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can turn, wring, throw. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Turn, Wring, Throw in a natural setting."
+          "imageBrief": "Adult turning lid of ordinary jar on stable table. No pressure vessel, hot contents, direction arrow or text.",
+          "imageAlt": "Adult turning lid of ordinary jar on stable table."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Catch", "Toss", "Pitch"],
-          "scenario": "With my hands, I can catch, toss, pitch.",
+          "scenario": "Nora receives the thrown soft ball in her hands to catch it. A toss is a light throw; in baseball a pitcher may pitch a ball.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names receiving the moving ball?",
             "options": ["Catch", "Toss", "Pitch"],
             "expectedAnswer": "Catch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can catch, toss, pitch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Catch, Toss, Pitch in a natural setting."
+          "imageBrief": "Adult hands receiving soft ball in open recreation area. Context supplies motion, no hard projectile near face or text.",
+          "imageAlt": "Adult hands receiving soft ball in open recreation area."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fling", "Hurl", "Lob"],
-          "scenario": "With my hands, I can fling, hurl, lob.",
+          "scenario": "The story says Nora throws a soft cushion suddenly to fling it. To hurl is throw forcefully; to lob is throw in a high arc.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb describes the sudden throw in the story?",
             "options": ["Fling", "Hurl", "Lob"],
             "expectedAnswer": "Fling"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can fling, hurl, lob. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Fling, Hurl, Lob in a natural setting."
+          "imageBrief": "Soft cushion in ordinary recreation space with adults standing apart. Context supplies movement; no violent throwing at people, trajectory arrow or text.",
+          "imageAlt": "Soft cushion in ordinary recreation space with adults standing apart."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Pass", "Drop", "Juggle"],
-          "scenario": "With my hands, I can pass, drop, juggle.",
+          "scenario": "Nora hands a ball to Sami to pass it. To drop is let it fall; to juggle is repeatedly toss and catch several objects.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names giving the ball to Sami?",
             "options": ["Pass", "Drop", "Juggle"],
             "expectedAnswer": "Pass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can pass, drop, juggle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Pass, Drop, Juggle in a natural setting."
+          "imageBrief": "Two adults handing a soft ball between them. No airborne juggling montage, sharp object or text.",
+          "imageAlt": "Two adults handing a soft ball between them."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I yank, press, and twist. Then I turn and wring. I practice each action with safe classroom objects. We also remember earlier words such as grab and hold. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
+      "text": "The story says Nora yanks a ribbon, presses a button and twists a cap. She turns a lid and wrings a cloth. At recreation she throws a soft ball; Sami catches it. A toss is light, while a baseball player may pitch. Fling and hurl describe forceful throws; a lob follows a high arc. Nora passes the ball rather than dropping it. Performers may juggle several balls.",
+      "imageBrief": "Adult at clear craft desk with light cloth and paper objects. Narration supplies force and sequence. No heavy-lifting tutorial, unwanted touching, chemicals, sharp-tool demonstration, medical treatment or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Yank"
+        "prompt": "The story says Nora pulls a stuck ribbon suddenly to yank it. She can press a button and twist a cap for other tasks.\nWhich verb means the sudden sharp pull?",
+        "answer": "Yank",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Turn"
+        "prompt": "Nora rotates a jar lid to turn it. She will wring a wet cloth and throw a soft ball later.\nWhich verb describes rotating the lid?",
+        "answer": "Turn",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Catch"
+        "prompt": "Nora receives the thrown soft ball in her hands to catch it. A toss is a light throw; in baseball a pitcher may pitch a ball.\nWhich verb names receiving the moving ball?",
+        "answer": "Catch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Fling"
+        "prompt": "The story says Nora throws a soft cushion suddenly to fling it. To hurl is throw forcefully; to lob is throw in a high arc.\nWhich verb describes the sudden throw in the story?",
+        "answer": "Fling",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pass"
+        "prompt": "Nora hands a ball to Sami to pass it. To drop is let it fall; to juggle is repeatedly toss and catch several objects.\nWhich verb names giving the ball to Sami?",
+        "answer": "Pass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Yank"
+        "prompt": "Read the passage: The story says Nora yanks a ribbon, presses a button and twists a cap. She turns a lid and wrings a cloth. At recreation she throws a soft ball; Sami catches it. A toss is light, while a baseball player may pitch. Fling and hurl describe forceful throws; a lob follows a high arc. Nora passes the ball rather than dropping it. Performers may juggle several balls.\nWhat does Nora turn?",
+        "answer": "A lid",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Press"
+        "prompt": "Ask someone to pass the ball.",
+        "answer": "Please pass the ball.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Throw"
+        "prompt": "A wet cloth is twisted to remove water. Name the action.",
+        "answer": "Wring",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Hand Actions: See It, Say It",
-      "idea": "30–50 second contextual video set in a activity table. Show yank, press, twist, turn, and wring naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: With my hands, I can yank, press, twist."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "The story says Nora pulls a stuck ribbon suddenly to yank it. She can press a button and twist a cap for other tasks."
     },
     "spacedReview": "1 lesson(s) back: Grab, Hold from hand-actions-1\n3 lesson(s) back: Dance, Spin from movement-verbs-3\n7 lesson(s) back: Intersection, Corner from giving-directions-3"
   },
@@ -363,116 +411,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key hand actions 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Touch", "Tap", "Poke"],
-          "scenario": "With my hands, I can touch, tap, poke.",
+          "scenario": "Nora lightly puts her fingertip on the cloth to touch it. A tap is a quick light contact; a poke presses into something.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names the light contact with the cloth?",
             "options": ["Touch", "Tap", "Poke"],
             "expectedAnswer": "Touch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can touch, tap, poke. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Touch, Tap, Poke in a natural setting."
+          "imageBrief": "Adult fingertip resting on fabric swatch. No injury, sharp pointed tool or text.",
+          "imageAlt": "Adult fingertip resting on fabric swatch."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stroke", "Pat", "Rub"],
-          "scenario": "With my hands, I can stroke, pat, rub.",
+          "scenario": "Nora moves her hand gently along the cloth to stroke it. A pat is repeated flat-hand contact; a rub moves back and forth.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb describes the gentle movement along the cloth?",
             "options": ["Stroke", "Pat", "Rub"],
             "expectedAnswer": "Stroke"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can stroke, pat, rub. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Stroke, Pat, Rub in a natural setting."
+          "imageBrief": "Adult hand smoothing fabric swatch on table. Context distinguishes near-synonyms, no animal restraint or text.",
+          "imageAlt": "Adult hand smoothing fabric swatch on table."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scratch", "Tickle", "Caress"],
-          "scenario": "With my hands, I can scratch, tickle, caress.",
+          "scenario": "The story says the twig scrapes the wood to scratch its surface. Tickle and caress describe different kinds of gentle touch.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names scraping the wooden surface?",
             "options": ["Scratch", "Tickle", "Caress"],
             "expectedAnswer": "Scratch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can scratch, tickle, caress. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Scratch, Tickle, Caress in a natural setting."
+          "imageBrief": "Small twig beside wood with shallow surface mark. No scratching injured skin, unwanted touching or text.",
+          "imageAlt": "Small twig beside wood with shallow surface mark."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Massage", "Write", "Draw"],
-          "scenario": "With my hands, I can massage, write, draw.",
+          "scenario": "The description says a person rubs muscles with the hands to massage them. To write forms words; to draw creates a picture.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names rubbing the muscles in the description?",
             "options": ["Massage", "Write", "Draw"],
             "expectedAnswer": "Massage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can massage, write, draw. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Massage, Write, Draw in a natural setting."
+          "imageBrief": "Adult rubbing own clothed forearm lightly while seated. No treatment outcome, manipulation technique, clinical claim or text.",
+          "imageAlt": "Adult rubbing own clothed forearm lightly while seated."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Paint", "Type", "Fold"],
-          "scenario": "With my hands, I can paint, type, fold.",
+          "scenario": "Nora applies colour with a brush to paint a card. She will type a message later and fold the card.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names applying the colour with a brush?",
             "options": ["Paint", "Type", "Fold"],
             "expectedAnswer": "Paint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can paint, type, fold. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Paint, Type, Fold in a natural setting."
+          "imageBrief": "Adult brush applying simple colour area to blank card on stable desk. No legible lettering, chemical hazard or text.",
+          "imageAlt": "Adult brush applying simple colour area to blank card on stable desk."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I touch, tap, and poke. Then I stroke and pat. I practice each action with safe classroom objects. We also remember earlier words such as yank and press. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
+      "text": "Nora touches, taps and pokes a fabric sample. She strokes, pats and rubs the cloth. A twig can scratch wood. Tickle and caress describe gentle contact; massage means rubbing or pressing muscles. At her desk Nora writes, draws and paints. She types a message, then folds the card. She identifies each word from its stated action and object.",
+      "imageBrief": "Adult at clear craft desk with light cloth and paper objects. Narration supplies force and sequence. No heavy-lifting tutorial, unwanted touching, chemicals, sharp-tool demonstration, medical treatment or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Touch"
+        "prompt": "Nora lightly puts her fingertip on the cloth to touch it. A tap is a quick light contact; a poke presses into something.\nWhich verb names the light contact with the cloth?",
+        "answer": "Touch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Stroke"
+        "prompt": "Nora moves her hand gently along the cloth to stroke it. A pat is repeated flat-hand contact; a rub moves back and forth.\nWhich verb describes the gentle movement along the cloth?",
+        "answer": "Stroke",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Scratch"
+        "prompt": "The story says the twig scrapes the wood to scratch its surface. Tickle and caress describe different kinds of gentle touch.\nWhich verb names scraping the wooden surface?",
+        "answer": "Scratch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Massage"
+        "prompt": "The description says a person rubs muscles with the hands to massage them. To write forms words; to draw creates a picture.\nWhich verb names rubbing the muscles in the description?",
+        "answer": "Massage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Paint"
+        "prompt": "Nora applies colour with a brush to paint a card. She will type a message later and fold the card.\nWhich verb names applying the colour with a brush?",
+        "answer": "Paint",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Touch"
+        "prompt": "Read the passage: Nora touches, taps and pokes a fabric sample. She strokes, pats and rubs the cloth. A twig can scratch wood. Tickle and caress describe gentle contact; massage means rubbing or pressing muscles. At her desk Nora writes, draws and paints. She types a message, then folds the card. She identifies each word from its stated action and object.\nWhat can scratch the wood?",
+        "answer": "A twig",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Tap"
+        "prompt": "Say that you can draw a simple picture.",
+        "answer": "I can draw a simple picture.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Rub"
+        "prompt": "Someone applies colour with a brush. Name the action.",
+        "answer": "Paint",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Hand Actions: See It, Say It",
-      "idea": "30–50 second contextual video set in a activity table. Show touch, tap, poke, stroke, and pat naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: With my hands, I can touch, tap, poke."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora lightly puts her fingertip on the cloth to touch it. A tap is a quick light contact; a poke presses into something."
     },
     "spacedReview": "1 lesson(s) back: Yank, Press from hand-actions-2\n3 lesson(s) back: Bend, Stretch from movement-verbs-4\n7 lesson(s) back: Tower, Church from giving-directions-4"
   },
@@ -490,68 +562,83 @@
     "targetWordsArabic": ["يمزق", "يقطع أو يقص", "يلصق بالغراء", "يخيط", "يحيك الصوف"],
     "usage": {
       "goal": "Learn to recognize and use key hand actions 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to hand actions in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify an action and describe its object or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tear", "Cut", "Glue"],
-          "scenario": "With my hands, I can tear, cut, glue.",
+          "scenario": "Nora pulls paper apart to tear it. Scissors can cut another sheet; adhesive can glue pieces together.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names pulling the paper apart?",
             "options": ["Tear", "Cut", "Glue"],
             "expectedAnswer": "Tear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can tear, cut, glue. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Tear, Cut, Glue in a natural setting."
+          "imageBrief": "Adult hands tearing plain paper on clear craft desk, closed scissors and capped adhesive aside. No readable paper or text.",
+          "imageAlt": "Adult hands tearing plain paper on clear craft desk, closed scissors and capped adhesive aside."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sew", "Knit"],
-          "scenario": "With my hands, I can sew, knit.",
+          "scenario": "Nora joins cloth with needle and thread to sew. To knit means make fabric by joining loops of yarn.",
           "check": {
-            "question": "Which word is shown in the picture?",
+            "question": "Which verb names joining the cloth with needle and thread?",
             "options": ["Sew", "Knit", "Tear"],
             "expectedAnswer": "Sew"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a hand actions context illustrating this situation: With my hands, I can sew, knit. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult hand actions scene showing lesson-related items or actions including Sew, Knit in a natural setting."
+          "imageBrief": "Adult seated at craft table with simple cloth, thread and sewing needle. No step-by-step sharp-tool instruction, child, text or labels.",
+          "imageAlt": "Adult seated at craft table with simple cloth, thread and sewing needle."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Hand Actions Mini Story",
-      "text": "At the activity table, I use my hands in different ways. I tear, cut, and glue. Then I sew and knit. I practice each action with safe classroom objects. We also remember earlier words such as touch and tap. The vocabulary is used in a realistic hand actions context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered hand actions scene supporting the reading and showing the first six target words."
+      "text": "At a craft table Nora tears paper, cuts another sheet and glues the shapes together. She sews a button onto cloth with needle and thread. Later she knits a scarf from yarn. The words tear, cut, glue, sew and knit describe different ways of working with materials.",
+      "imageBrief": "Adult at clear craft desk with light cloth and paper objects. Narration supplies force and sequence. No heavy-lifting tutorial, unwanted touching, chemicals, sharp-tool demonstration, medical treatment or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Tear"
+        "prompt": "Nora pulls paper apart to tear it. Scissors can cut another sheet; adhesive can glue pieces together.\nWhich verb names pulling the paper apart?",
+        "answer": "Tear",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sew"
+        "prompt": "Nora joins cloth with needle and thread to sew. To knit means make fabric by joining loops of yarn.\nWhich verb names joining the cloth with needle and thread?",
+        "answer": "Sew",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Tear"
+        "prompt": "Read the passage: At a craft table Nora tears paper, cuts another sheet and glues the shapes together. She sews a button onto cloth with needle and thread. Later she knits a scarf from yarn. The words tear, cut, glue, sew and knit describe different ways of working with materials.\nWhat does Nora knit?",
+        "answer": "A scarf",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Cut"
+        "prompt": "Say that you sew a button onto cloth.",
+        "answer": "I sew a button onto cloth.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Knit"
+        "prompt": "Someone makes fabric by joining yarn loops. Name the action.",
+        "answer": "Knit",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Hand Actions: See It, Say It",
-      "idea": "30–50 second contextual video set in a activity table. Show tear, cut, glue, sew, and knit naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: With my hands, I can tear, cut, glue."
+      "title": "Naming Actions in Context",
+      "idea": "Adult observer and simple home, craft or performance context. Narration supplies exact speed, force and sequence; related verbs overlap and cannot always be distinguished by a still. Specialist movement described in reports or equipment displays. No instruction to imitate stunts, treatment claims or safety guarantees.",
+      "scriptStarter": "Nora pulls paper apart to tear it. Scissors can cut another sheet; adhesive can glue pieces together."
     },
     "spacedReview": "1 lesson(s) back: Touch, Tap from hand-actions-3\n3 lesson(s) back: Grab, Hold from hand-actions-1\n7 lesson(s) back: Walk, Run from movement-verbs-1"
   }

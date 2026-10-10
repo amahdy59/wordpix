@@ -28,7 +28,7 @@
     ],
     "targetWordsArabic": [
       "يستيقظ",
-      "ساعة المنبه (منبه)",
+      "ساعة منبّهة",
       "ينهض من السرير",
       "يتمدد",
       "ينظف أسنانه بالفرشاة",
@@ -45,116 +45,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to daily routines in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wake Up", "Alarm Clock", "Get Out of Bed"],
-          "scenario": "An alarm clock rings at seven. Hana wakes up, turns it off, and gets out of bed.",
+          "scenario": "An alarm clock rings. Hana stops sleeping and wakes up, then gets out of bed.",
           "check": {
-            "question": "What does the person do at this point in the day?",
+            "question": "Which phrase means to stop sleeping?",
             "options": ["Get Out of Bed", "Wake Up", "Alarm Clock"],
             "expectedAnswer": "Wake Up"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: An alarm clock rings at seven. Hana wakes up, turns it off, and gets out of bed. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Wake Up, Alarm Clock, Get Out of Bed in a natural setting."
+          "imageBrief": "Clothed adult awake beside bed with blank alarm clock. No text or exact clock time requirement.",
+          "imageAlt": "Clothed adult awake beside bed with blank alarm clock."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stretch", "Brush Teeth", "Wash Face"],
-          "scenario": "Before work, Hana stretches, brushes her teeth, and washes her face. The first action shown is stretching.",
+          "scenario": "Before work Hana extends her arms to stretch. She will brush her teeth and wash her face next.",
           "check": {
-            "question": "What activity should the learner identify in the example with stretch, brush teeth?",
+            "question": "Which verb describes extending her arms?",
             "options": ["Stretch", "Brush Teeth", "Wash Face"],
             "expectedAnswer": "Stretch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: Before work, Hana stretches, brushes her teeth, and washes her face. The first action shown is stretching. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Stretch, Brush Teeth, Wash Face in a natural setting."
+          "imageBrief": "Clothed adult stretching arms beside bed. Toothbrush not used simultaneously; no medical instructions or text.",
+          "imageAlt": "Clothed adult stretching arms beside bed."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Take a Shower", "Get Dressed", "Eat Breakfast"],
-          "scenario": "After taking a shower, Omar gets dressed and eats breakfast. The scene begins with the shower.",
+          "scenario": "Omar washes under water from a shower: he takes a shower. He gets dressed and eats breakfast afterwards.",
           "check": {
-            "question": "Which activity is the person doing?",
+            "question": "Which phrase names washing under the shower water?",
             "options": ["Get Dressed", "Eat Breakfast", "Take a Shower"],
             "expectedAnswer": "Take a Shower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: After taking a shower, Omar gets dressed and eats breakfast. The scene begins with the shower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Take a Shower, Get Dressed, Eat Breakfast in a natural setting."
+          "imageBrief": "Closed shower curtain with clean towel and clothes nearby. No nudity, exposed bathing adult or text.",
+          "imageAlt": "Closed shower curtain with clean towel and clothes nearby."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pack Bag", "Commute", "Arrive"],
-          "scenario": "During a weekday morning, an adult's routine includes pack bag, commute, and arrive. The highlighted part of the routine is pack bag.",
+          "scenario": "Hana puts her notebook and lunch in her bag to pack it. Then she will commute to work and arrive at the office.",
           "check": {
-            "question": "Which activity is the person doing in the example with pack bag, commute?",
+            "question": "Which activity describes putting needed items in the bag?",
             "options": ["Arrive", "Pack Bag", "Commute"],
             "expectedAnswer": "Pack Bag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a weekday morning, an adult's routine includes pack bag, commute, and arrive. The highlighted part of the routine is pack bag. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Pack Bag, Commute, Arrive in a natural setting."
+          "imageBrief": "Adult putting notebook and lunch container in work bag at home. No readable notebook cover or text.",
+          "imageAlt": "Adult putting notebook and lunch container in work bag at home."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Start Work", "Attend Class", "Take Notes"],
-          "scenario": "During a workday, an adult's routine includes start work, attend class, and take notes. The highlighted part of the routine is start work.",
+          "scenario": "Hana begins her job tasks to start work. This evening she will attend class and take notes.",
           "check": {
-            "question": "Which routine step matches the scene?",
+            "question": "Which activity means beginning her job tasks?",
             "options": ["Start Work", "Attend Class", "Take Notes"],
             "expectedAnswer": "Start Work"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a workday, an adult's routine includes start work, attend class, and take notes. The highlighted part of the routine is start work. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Start Work, Attend Class, Take Notes in a natural setting."
+          "imageBrief": "Adult opening an unlabelled work folder at desk. Written context distinguishes work from class; no readable documents or text.",
+          "imageAlt": "Adult opening an unlabelled work folder at desk."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Routines 1: A Weekday and Weekend Routine",
-      "text": "An adult plans work, study, home tasks, and rest across the week. A normal morning may include wake up, alarm clock, get out of bed, stretch, and brush teeth. During work or study, the routine may include wash face, take a shower, get dressed, eat breakfast, and pack bag. After work and at weekends, the person may commute, arrive, start work, attend class, and take notes. The routine stays flexible when plans change.",
-      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+      "text": "When the alarm clock rings, Rami wakes up and gets out of bed. He stretches, brushes his teeth and washes his face. He takes a shower, gets dressed, eats breakfast and packs his bag. He commutes to the office and arrives before nine to start work. That evening, he attends class and takes notes.",
+      "imageBrief": "Clothed adult morning preparation with closed work bag, bread and cup on table. No bathroom actions at the breakfast table, readable text or precise clock requirement."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Wake Up"
+        "prompt": "An alarm clock rings. Hana stops sleeping and wakes up, then gets out of bed.\nWhich phrase means to stop sleeping?",
+        "answer": "Wake Up",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Stretch"
+        "prompt": "Before work Hana extends her arms to stretch. She will brush her teeth and wash her face next.\nWhich verb describes extending her arms?",
+        "answer": "Stretch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Take a Shower"
+        "prompt": "Omar washes under water from a shower: he takes a shower. He gets dressed and eats breakfast afterwards.\nWhich phrase names washing under the shower water?",
+        "answer": "Take a Shower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Pack Bag"
+        "prompt": "Hana puts her notebook and lunch in her bag to pack it. Then she will commute to work and arrive at the office.\nWhich activity describes putting needed items in the bag?",
+        "answer": "Pack Bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Start Work"
+        "prompt": "Hana begins her job tasks to start work. This evening she will attend class and take notes.\nWhich activity means beginning her job tasks?",
+        "answer": "Start Work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Wake Up"
+        "prompt": "Read the passage: When the alarm clock rings, Rami wakes up and gets out of bed. He stretches, brushes his teeth and washes his face. He takes a shower, gets dressed, eats breakfast and packs his bag. He commutes to the office and arrives before nine to start work. That evening, he attends class and takes notes.\nWhere does Rami commute to?",
+        "answer": "The office",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Alarm Clock"
+        "prompt": "Say that you commute to work by bus.",
+        "answer": "I commute to work by bus.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Wash Face"
+        "prompt": "You need the important points from a class. Say that you will take notes.",
+        "answer": "I will take notes during class.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Daily Routines: See It, Say It",
-      "idea": "30–50 second contextual video set in a day. Show wake up, alarm clock, get out of bed, stretch, and brush teeth naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: An alarm clock rings at seven. Hana wakes up, turns it off, and gets out of bed."
+      "title": "Adult Daily Routines",
+      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
+      "scriptStarter": "An alarm clock rings. Hana stops sleeping and wakes up, then gets out of bed."
     },
     "spacedReview": "1 lesson(s) back: Top, Bottom from prepositions-of-place-3\n3 lesson(s) back: In, On from prepositions-of-place-1\n7 lesson(s) back: Wake Up, Get Up from daily-action-verbs-1"
   },
@@ -204,116 +228,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to daily routines in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Have a Meeting", "Lunch Break", "Collaborate"],
-          "scenario": "During a weekend plan, an adult's routine includes have a meeting, lunch break, and collaborate. The highlighted part of the routine is have a meeting.",
+          "scenario": "Two colleagues gather to have a meeting. They collaborate on a plan, then take a lunch break.",
           "check": {
-            "question": "Which routine step matches the scene in the example with have a meeting, lunch break?",
+            "question": "Which phrase names gathering to discuss their plan?",
             "options": ["Have a Meeting", "Lunch Break", "Collaborate"],
             "expectedAnswer": "Have a Meeting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a weekend plan, an adult's routine includes have a meeting, lunch break, and collaborate. The highlighted part of the routine is have a meeting. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Have a Meeting, Lunch Break, Collaborate in a natural setting."
+          "imageBrief": "Two adult colleagues talking at office table with closed folders. No lunch being eaten during discussion, logos or text.",
+          "imageAlt": "Two adult colleagues talking at office table with closed folders."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Submit Work", "Leave Office", "After School"],
-          "scenario": "During a study day, an adult's routine includes submit work, leave office, and after school. The highlighted part of the routine is submit work.",
+          "scenario": "Lina sends her finished report to submit her work. She will leave the office later; her adult sister’s teaching course ends after school.",
           "check": {
-            "question": "What part of the routine is taking place?",
+            "question": "Which activity means handing in the completed report?",
             "options": ["Leave Office", "After School", "Submit Work"],
             "expectedAnswer": "Submit Work"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a study day, an adult's routine includes submit work, leave office, and after school. The highlighted part of the routine is submit work. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Submit Work, Leave Office, After School in a natural setting."
+          "imageBrief": "Adult passing closed report folder to colleague. Context establishes completion; no readable report or text.",
+          "imageAlt": "Adult passing closed report folder to colleague."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Homework", "Exercise", "Practice"],
-          "scenario": "After class, Sami finishes his homework, does some exercise, and then practises the guitar. The homework is on the desk.",
+          "scenario": "After his adult English class Sami completes his homework. Later he will exercise and practice speaking.",
           "check": {
-            "question": "What part of the routine is taking place in the example with homework, exercise?",
+            "question": "Which word names the work assigned by his teacher?",
             "options": ["Practice", "Homework", "Exercise"],
             "expectedAnswer": "Homework"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: After class, Sami finishes his homework, does some exercise, and then practises the guitar. The homework is on the desk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Homework, Exercise, Practice in a natural setting."
+          "imageBrief": "Adult learner writing in notebook at home. No legible writing, child classroom or text.",
+          "imageAlt": "Adult learner writing in notebook at home."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Grocery Shop", "Cook Dinner", "Walk the Dog"],
-          "scenario": "During a workday, an adult's routine includes grocery shop, cook dinner, and walk the dog. The highlighted part of the routine is grocery shop.",
+          "scenario": "Lina buys food at a shop to grocery shop. At home she will cook dinner, then walk the dog.",
           "check": {
-            "question": "What does the person do at this point in the day in the example with grocery shop, cook dinner?",
+            "question": "Which activity means shopping for food?",
             "options": ["Grocery Shop", "Cook Dinner", "Walk the Dog"],
             "expectedAnswer": "Grocery Shop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a workday, an adult's routine includes grocery shop, cook dinner, and walk the dog. The highlighted part of the routine is grocery shop. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Grocery Shop, Cook Dinner, Walk the Dog in a natural setting."
+          "imageBrief": "Adult selecting vegetables in a shop. Blank price tags, no cooking scene or text.",
+          "imageAlt": "Adult selecting vegetables in a shop."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Play Outside", "Read a Book", "Watch TV"],
-          "scenario": "During an evening at home, an adult's routine includes play outside, read a book, and watch tv. The highlighted part of the routine is play outside.",
+          "scenario": "Lina and her friends play outside in the garden. Later she will read a book and watch TV inside.",
           "check": {
-            "question": "What activity should the learner identify in the example with play outside, read a book?",
+            "question": "Which phrase describes playing outdoors?",
             "options": ["Read a Book", "Watch TV", "Play Outside"],
             "expectedAnswer": "Play Outside"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During an evening at home, an adult's routine includes play outside, read a book, and watch tv. The highlighted part of the routine is play outside. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Play Outside, Read a Book, Watch TV in a natural setting."
+          "imageBrief": "Adults playing a simple lawn game in enclosed garden. No children, TV outside, logos or text.",
+          "imageAlt": "Adults playing a simple lawn game in enclosed garden."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Routines 2: A Weekday and Weekend Routine",
-      "text": "An adult plans work, study, home tasks, and rest across the week. A normal morning may include have a meeting, lunch break, collaborate, submit work, and leave office. During work or study, the routine may include after school, homework, exercise, practice, and grocery shop. After work and at weekends, the person may cook dinner, walk the dog, play outside, read a book, and watch tv. The routine stays flexible when plans change.",
-      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+      "text": "Lina and a colleague have a meeting and collaborate on a report. After a lunch break, she submits her work and leaves the office. Her sister visits after school. Sami finishes his homework, exercises and practices speaking. Lina grocery-shops, cooks dinner and walks the dog. Her friends play outside. Later she reads a book and watches TV.",
+      "imageBrief": "Adult home work table with closed folders and ordinary household objects appropriate to the passage. No simultaneous impossible routine, chemicals or readable text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Have a Meeting"
+        "prompt": "Two colleagues gather to have a meeting. They collaborate on a plan, then take a lunch break.\nWhich phrase names gathering to discuss their plan?",
+        "answer": "Have a Meeting",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Submit Work"
+        "prompt": "Lina sends her finished report to submit her work. She will leave the office later; her adult sister’s teaching course ends after school.\nWhich activity means handing in the completed report?",
+        "answer": "Submit Work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Homework"
+        "prompt": "After his adult English class Sami completes his homework. Later he will exercise and practice speaking.\nWhich word names the work assigned by his teacher?",
+        "answer": "Homework",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Grocery Shop"
+        "prompt": "Lina buys food at a shop to grocery shop. At home she will cook dinner, then walk the dog.\nWhich activity means shopping for food?",
+        "answer": "Grocery Shop",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Play Outside"
+        "prompt": "Lina and her friends play outside in the garden. Later she will read a book and watch TV inside.\nWhich phrase describes playing outdoors?",
+        "answer": "Play Outside",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Have a Meeting"
+        "prompt": "Read the passage: Lina and a colleague have a meeting and collaborate on a report. After a lunch break, she submits her work and leaves the office. Her sister visits after school. Sami finishes his homework, exercises and practices speaking. Lina grocery-shops, cooks dinner and walks the dog. Her friends play outside. Later she reads a book and watches TV.\nWhat do Lina and her colleague collaborate on?",
+        "answer": "A report",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Lunch Break"
+        "prompt": "Tell a colleague you have a meeting after lunch.",
+        "answer": "I have a meeting after lunch.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "After School"
+        "prompt": "Ask whether your colleague has submitted the report.",
+        "answer": "Have you submitted the report?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Daily Routines: See It, Say It",
-      "idea": "30–50 second contextual video set in a day. Show have a meeting, lunch break, collaborate, submit work, and leave office naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a weekend plan, an adult's routine includes have a meeting, lunch break, and collaborate. The highlighted part of the routine is have a meeting."
+      "title": "Adult Daily Routines",
+      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
+      "scriptStarter": "Two colleagues gather to have a meeting. They collaborate on a plan, then take a lunch break."
     },
     "spacedReview": "1 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1\n3 lesson(s) back: Against, Around from prepositions-of-place-2\n7 lesson(s) back: Gulp, Bite from daily-action-verbs-2"
   },
@@ -363,116 +411,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to daily routines in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Eat Dinner", "Wash Dishes", "Relax"],
-          "scenario": "After work, Noor eats dinner, washes the dishes, and relaxes on the sofa.",
+          "scenario": "After work Noor eats dinner, then washes the dishes and relaxes.",
           "check": {
-            "question": "What activity should the learner identify in the example with eat dinner, wash dishes?",
+            "question": "Which activity does Noor do first?",
             "options": ["Wash Dishes", "Relax", "Eat Dinner"],
             "expectedAnswer": "Eat Dinner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: After work, Noor eats dinner, washes the dishes, and relaxes on the sofa. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Eat Dinner, Wash Dishes, Relax in a natural setting."
+          "imageBrief": "Adult eating evening meal at dining table. Dirty dishes not being washed simultaneously; no readable text.",
+          "imageAlt": "Adult eating evening meal at dining table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Take a Bath", "Put On Pajamas", "Read"],
-          "scenario": "Before bed, Rami takes a bath, puts on pajamas, and reads for a few minutes.",
+          "scenario": "Before bed Rami takes a bath. Afterwards he puts on pajamas and reads.",
           "check": {
-            "question": "Which activity is the person doing in the example with take a bath, put on pajamas?",
+            "question": "Which activity does Rami do before putting on pajamas?",
             "options": ["Read", "Take a Bath", "Put On Pajamas"],
             "expectedAnswer": "Take a Bath"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: Before bed, Rami takes a bath, puts on pajamas, and reads for a few minutes. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Take a Bath, Put On Pajamas, Read in a natural setting."
+          "imageBrief": "Empty bathtub with towel and folded pajamas nearby. Passage supplies sequence; no nudity or text.",
+          "imageAlt": "Empty bathtub with towel and folded pajamas nearby."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Set Alarm", "Go to Bed", "Fall Asleep"],
-          "scenario": "Maha sets the alarm, goes to bed, and later falls asleep.",
+          "scenario": "Maha sets an alarm to ring in the morning. Then she goes to bed and falls asleep.",
           "check": {
-            "question": "Which activity is the person doing in the example with set alarm, go to bed?",
+            "question": "Which activity does Maha do before going to bed?",
             "options": ["Set Alarm", "Go to Bed", "Fall Asleep"],
             "expectedAnswer": "Set Alarm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: Maha sets the alarm, goes to bed, and later falls asleep. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Set Alarm, Go to Bed, Fall Asleep in a natural setting."
+          "imageBrief": "Clothed adult adjusting alarm beside bed. Blank clock face; narration supplies the chosen time, no text.",
+          "imageAlt": "Clothed adult adjusting alarm beside bed."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sleep In", "Brunch", "Go Shopping"],
-          "scenario": "During an evening at home, an adult's routine includes sleep in, brunch, and go shopping. The highlighted part of the routine is sleep in.",
+          "scenario": "On Saturday Rami stays asleep later than usual to sleep in. Afterwards he has brunch and goes shopping.",
           "check": {
-            "question": "Which routine step matches the scene in the example with sleep in, brunch?",
+            "question": "Which phrase means sleeping later than usual in the morning?",
             "options": ["Brunch", "Go Shopping", "Sleep In"],
             "expectedAnswer": "Sleep In"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During an evening at home, an adult's routine includes sleep in, brunch, and go shopping. The highlighted part of the routine is sleep in. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Sleep In, Brunch, Go Shopping in a natural setting."
+          "imageBrief": "Adult asleep under blanket with morning daylight. Context supplies later-than-usual time; no text or clock digits.",
+          "imageAlt": "Adult asleep under blanket with morning daylight."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Visit Friends", "Go to the Park", "Play Sports"],
-          "scenario": "During a weekend plan, an adult's routine includes visit friends, go to the park, and play sports. The highlighted part of the routine is visit friends.",
+          "scenario": "On Saturday Lina goes to her friends’ home to visit friends. Later they go to the park and play sports.",
           "check": {
-            "question": "What part of the routine is taking place in the example with visit friends, go to the park?",
+            "question": "Which activity names spending time with friends at their home?",
             "options": ["Play Sports", "Visit Friends", "Go to the Park"],
             "expectedAnswer": "Visit Friends"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: During a weekend plan, an adult's routine includes visit friends, go to the park, and play sports. The highlighted part of the routine is visit friends. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Visit Friends, Go to the Park, Play Sports in a natural setting."
+          "imageBrief": "Adult arriving at friends’ doorway with two adults welcoming her. Written context supplies relationship; no text.",
+          "imageAlt": "Adult arriving at friends’ doorway with two adults welcoming her."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Daily Routines 3: A Weekday and Weekend Routine",
-      "text": "An adult plans work, study, home tasks, and rest across the week. A normal morning may include eat dinner, wash dishes, relax, take a bath, and put on pajamas. During work or study, the routine may include read, set alarm, go to bed, fall asleep, and sleep in. After work and at weekends, the person may brunch, go shopping, visit friends, go to the park, and play sports. The routine stays flexible when plans change.",
-      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+      "text": "Rami eats dinner, washes dishes and relaxes. He takes a bath and puts on pajamas. He reads, sets an alarm, goes to bed and falls asleep. On Saturday he sleeps in and has brunch. Later he goes shopping, visits friends, goes to the park and plays sports.",
+      "imageBrief": "Adult evening bedroom with book, folded pajamas and towel. No nudity, visible dreams, medical procedures or text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Eat Dinner"
+        "prompt": "After work Noor eats dinner, then washes the dishes and relaxes.\nWhich activity does Noor do first?",
+        "answer": "Eat Dinner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Take a Bath"
+        "prompt": "Before bed Rami takes a bath. Afterwards he puts on pajamas and reads.\nWhich activity does Rami do before putting on pajamas?",
+        "answer": "Take a Bath",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Set Alarm"
+        "prompt": "Maha sets an alarm to ring in the morning. Then she goes to bed and falls asleep.\nWhich activity does Maha do before going to bed?",
+        "answer": "Set Alarm",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sleep In"
+        "prompt": "On Saturday Rami stays asleep later than usual to sleep in. Afterwards he has brunch and goes shopping.\nWhich phrase means sleeping later than usual in the morning?",
+        "answer": "Sleep In",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Visit Friends"
+        "prompt": "On Saturday Lina goes to her friends’ home to visit friends. Later they go to the park and play sports.\nWhich activity names spending time with friends at their home?",
+        "answer": "Visit Friends",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Eat Dinner"
+        "prompt": "Read the passage: Rami eats dinner, washes dishes and relaxes. He takes a bath and puts on pajamas. He reads, sets an alarm, goes to bed and falls asleep. On Saturday he sleeps in and has brunch. Later he goes shopping, visits friends, goes to the park and plays sports.\nWhat meal does Rami have on Saturday?",
+        "answer": "Brunch",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Wash Dishes"
+        "prompt": "Say that you read before going to bed.",
+        "answer": "I read before going to bed.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Read"
+        "prompt": "You do not need to wake up early on Saturday. Say you can sleep in.",
+        "answer": "I can sleep in on Saturday.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Daily Routines: See It, Say It",
-      "idea": "30–50 second contextual video set in a day. Show eat dinner, wash dishes, relax, take a bath, and put on pajamas naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: After work, Noor eats dinner, washes the dishes, and relaxes on the sofa."
+      "title": "Adult Daily Routines",
+      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
+      "scriptStarter": "After work Noor eats dinner, then washes the dishes and relaxes."
     },
     "spacedReview": "1 lesson(s) back: Have a Meeting, Lunch Break from daily-routines-2\n3 lesson(s) back: Top, Bottom from prepositions-of-place-3\n7 lesson(s) back: Bathe, Shave from daily-action-verbs-3"
   },
@@ -495,68 +567,83 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key daily routines 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to daily routines in very simple everyday situations.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a daily action and describe a short routine.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clean House", "Do Laundry", "Go Out"],
-          "scenario": "On Saturday, Lina cleans the house and does the laundry before going out in the afternoon.",
+          "scenario": "Lina removes dust and tidies rooms to clean the house. She will do laundry before she goes out.",
           "check": {
-            "question": "What part of the routine is taking place in the example with clean house, do laundry?",
+            "question": "Which activity describes cleaning the rooms of her home?",
             "options": ["Go Out", "Clean House", "Do Laundry"],
             "expectedAnswer": "Clean House"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: On Saturday, Lina cleans the house and does the laundry before going out in the afternoon. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Clean House, Do Laundry, Go Out in a natural setting."
+          "imageBrief": "Adult wiping a home table with cloth. Laundry basket separate; no mixed chemicals or text.",
+          "imageAlt": "Adult wiping a home table with cloth."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stay Home"],
-          "scenario": "It is raining heavily, so Karim decides to stay home for the evening.",
+          "scenario": "It rains heavily. Karim decides to stay home instead of going out.",
           "check": {
-            "question": "What part of the routine is taking place in the example with stay home?",
+            "question": "Which activity does Karim choose?",
             "options": ["Stay Home", "Clean House", "Do Laundry"],
             "expectedAnswer": "Stay Home"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a daily routines context illustrating this situation: It is raining heavily, so Karim decides to stay home for the evening. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult daily routines scene showing lesson-related items or actions including Stay Home in a natural setting."
+          "imageBrief": "Adult reading indoors beside window showing rain. Written context supplies decision; no readable book pages or text.",
+          "imageAlt": "Adult reading indoors beside window showing rain."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Plans for Saturday",
-      "text": "On Saturday morning, Dalia cleans the house and does the laundry before lunch. In the afternoon, she plans to go out and meet a friend. If the weather becomes bad, she will stay home instead. She finishes the important chores first so she can enjoy the rest of the day without rushing.",
-      "imageBrief": "One uncluttered daily routines scene supporting the reading and showing the first six target words."
+      "text": "On Saturday morning Dalia cleans the house and does laundry before lunch. In the afternoon she plans to go out and meet a friend. If the weather becomes bad, she will stay home instead. She finishes the chores first so she can enjoy the rest of the day without rushing.",
+      "imageBrief": "Adult relaxing indoors beside a window with a book and laundry basket. Context supplies time, weather decisions or energy; no visible thought symbols or text."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Clean House"
+        "prompt": "Lina removes dust and tidies rooms to clean the house. She will do laundry before she goes out.\nWhich activity describes cleaning the rooms of her home?",
+        "answer": "Clean House",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Stay Home"
+        "prompt": "It rains heavily. Karim decides to stay home instead of going out.\nWhich activity does Karim choose?",
+        "answer": "Stay Home",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Clean House"
+        "prompt": "Read the passage: On Saturday morning Dalia cleans the house and does laundry before lunch. In the afternoon she plans to go out and meet a friend. If the weather becomes bad, she will stay home instead. She finishes the chores first so she can enjoy the rest of the day without rushing.\nWhat will Dalia do if the weather becomes bad?",
+        "answer": "Stay home",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Do Laundry"
+        "prompt": "Tell a friend you will stay home this evening.",
+        "answer": "I will stay home this evening.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Stay Home"
+        "prompt": "You plan to meet a friend outside your home. Say you will go out.",
+        "answer": "I will go out to meet a friend.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Daily Routines: See It, Say It",
-      "idea": "30–50 second contextual video set in a day. Show clean house, do laundry, go out, and stay home naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: On Saturday, Lina cleans the house and does the laundry before going out in the afternoon."
+      "title": "Adult Daily Routines",
+      "idea": "One adult action at a time with ordinary work and home settings. Narration supplies order, duration, sound, dreams and relaxation; a still frame does not prove those. Keep personal care clothed or show objects only. No treatment, dental technique or fitness prescriptions.",
+      "scriptStarter": "Lina removes dust and tidies rooms to clean the house. She will do laundry before she goes out."
     },
     "spacedReview": "1 lesson(s) back: Eat Dinner, Wash Dishes from daily-routines-3\n3 lesson(s) back: Wake Up, Alarm Clock from daily-routines-1\n7 lesson(s) back: Snore, Doze from daily-action-verbs-4"
   }

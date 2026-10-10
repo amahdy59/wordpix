@@ -29,13 +29,13 @@
     "targetWordsArabic": [
       "كاميرا DSLR",
       "كاميرا بدون مرآة",
-      "عدسة",
+      "عدسة كاميرا",
       "عدسة واسعة الزاوية",
       "عدسة مقربة",
       "حامل ثلاثي",
       "حامل كاميرا أحادي",
       "حزام كاميرا",
-      "قبعة بواقٍ عدسة",
+      "غطاء العدسة",
       "حقيبة كاميرا",
       "فلاش",
       "سوفت بوكس؛ صندوق إضاءة ناعمة",
@@ -44,147 +44,134 @@
       "عاكس ضوء"
     ],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "instructional-guide",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["DSLR Camera", "Mirrorless Camera", "Lens"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DSLR Camera, Mirrorless Camera, and Lens and choose the option that fits the situation.",
+          "scenario": "Maya visits an adult photography club. A DSLR camera uses a reflex mirror system, while a mirrorless camera lacks that reflex mirror. A lens focuses light for an image. She asks which camera type lacks the reflex mirror, without assuming all bodies can be identified from an unlabelled photograph.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which type lacks the reflex mirror?",
             "options": ["DSLR Camera", "Mirrorless Camera", "Lens"],
-            "expectedAnswer": "DSLR Camera"
+            "expectedAnswer": "Mirrorless Camera"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the DSLR Camera as the central item; include DSLR Camera, Mirrorless Camera, and Lens naturally where visually appropriate, but make the real-world use of DSLR Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Maya visits an adult photography club. A DSLR camera uses a reflex mirror system, while a mirrorless camera lacks that reflex mirror. A lens focuses light for an image. She asks which camera type lacks the reflex mirror, without assuming all bodies can be identified from an unlabelled photograph. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wide-Angle Lens", "Telephoto Lens", "Tripod"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide-Angle Lens, Telephoto Lens, and Tripod and choose the option that fits the situation.",
+          "scenario": "A wide-angle lens includes a broad view, while a telephoto lens makes a distant subject appear larger than a shorter focal-length view. A tripod supports the camera on three legs. Omar needs the support, rather than a different lens.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides three-legged support?",
             "options": ["Wide-Angle Lens", "Telephoto Lens", "Tripod"],
-            "expectedAnswer": "Wide-Angle Lens"
+            "expectedAnswer": "Tripod"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Wide-Angle Lens as the central item; include Wide-Angle Lens, Telephoto Lens, and Tripod naturally where visually appropriate, but make the real-world use of Wide-Angle Lens the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A wide-angle lens includes a broad view, while a telephoto lens makes a distant subject appear larger than a shorter focal-length view. A tripod supports the camera on three legs. Omar needs the support, rather than a different lens. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Monopod", "Camera Strap", "Lens Cap"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monopod, Camera Strap, and Lens Cap and choose the option that fits the situation.",
+          "scenario": "A monopod is a one-legged support. A camera strap helps carry a camera, while a lens cap covers the lens when not photographing. Maya needs to cover the unused lens, not support the camera while taking a picture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item covers the lens?",
             "options": ["Monopod", "Camera Strap", "Lens Cap"],
-            "expectedAnswer": "Monopod"
+            "expectedAnswer": "Lens Cap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Monopod as the central item; include Monopod, Camera Strap, and Lens Cap naturally where visually appropriate, but make the real-world use of Monopod the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A monopod is a one-legged support. A camera strap helps carry a camera, while a lens cap covers the lens when not photographing. Maya needs to cover the unused lens, not support the camera while taking a picture. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Camera Bag", "Flash", "Softbox"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera Bag, Flash, and Softbox and choose the option that fits the situation.",
+          "scenario": "Omar stores equipment in a camera bag. A flash produces brief light, and a softbox spreads light through a modifier. The bag stores items rather than creating or modifying light.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item stores the equipment?",
             "options": ["Camera Bag", "Flash", "Softbox"],
             "expectedAnswer": "Camera Bag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Camera Bag as the central item; include Camera Bag, Flash, and Softbox naturally where visually appropriate, but make the real-world use of Camera Bag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Omar stores equipment in a camera bag. A flash produces brief light, and a softbox spreads light through a modifier. The bag stores items rather than creating or modifying light. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Umbrella Light", "Ring Light", "Reflector"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Umbrella Light, Ring Light, and Reflector and choose the option that fits the situation.",
+          "scenario": "An umbrella light setup uses a reflective or translucent umbrella. A ring light is circular, while a reflector redirects existing light rather than generating its own. Maya asks about redirecting light from another source.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item redirects existing light?",
             "options": ["Umbrella Light", "Ring Light", "Reflector"],
-            "expectedAnswer": "Umbrella Light"
+            "expectedAnswer": "Reflector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Umbrella Light as the central item; include Umbrella Light, Ring Light, and Reflector naturally where visually appropriate, but make the real-world use of Umbrella Light the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: An umbrella light setup uses a reflective or translucent umbrella. A ring light is circular, while a reflector redirects existing light rather than generating its own. Maya asks about redirecting light from another source. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Photography Studio",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers DSLR Camera, Mirrorless Camera, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wide-Angle Lens, Telephoto Lens, and Tripod. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Monopod, Camera Strap, and Lens Cap. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Camera Bag, Flash, and Softbox. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Umbrella Light, Ring Light, and Reflector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing and storing equipment",
+      "text": "Maya compares a DSLR camera and mirrorless camera, asking about their different mirror systems. A lens focuses light; a wide-angle lens and telephoto lens give different views. Omar puts a tripod beside a monopod and checks the camera strap. Maya covers an unused lens with its lens cap before putting it in the camera bag. The club then compares flash, softbox and umbrella light, followed by ring light and reflector. They discuss purposes rather than assuming body shape alone proves camera type. The participants agree before photographing one another.",
+      "imageBrief": "Photorealistic adult studio discussion: Maya visits an adult photography club. A DSLR camera uses a reflex mirror system, while a mirrorless camera lacks that reflex mirror. A lens focuses light for an image. She asks which camera type lacks the reflex mirror, without assuming all bodies can be identified from an unlabelled photograph. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DSLR Camera, Mirrorless Camera, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "DSLR Camera",
+        "prompt": "Maya visits an adult photography club. A DSLR camera uses a reflex mirror system, while a mirrorless camera lacks that reflex mirror. A lens focuses light for an image. She asks which camera type lacks the reflex mirror, without assuming all bodies can be identified from an unlabelled photograph.\nWhich type lacks the reflex mirror?",
+        "answer": "Mirrorless Camera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide-Angle Lens, Telephoto Lens, and Tripod and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wide-Angle Lens",
+        "prompt": "A wide-angle lens includes a broad view, while a telephoto lens makes a distant subject appear larger than a shorter focal-length view. A tripod supports the camera on three legs. Omar needs the support, rather than a different lens.\nWhich item provides three-legged support?",
+        "answer": "Tripod",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monopod, Camera Strap, and Lens Cap and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Monopod",
+        "prompt": "A monopod is a one-legged support. A camera strap helps carry a camera, while a lens cap covers the lens when not photographing. Maya needs to cover the unused lens, not support the camera while taking a picture.\nWhich item covers the lens?",
+        "answer": "Lens Cap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera Bag, Flash, and Softbox and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Omar stores equipment in a camera bag. A flash produces brief light, and a softbox spreads light through a modifier. The bag stores items rather than creating or modifying light.\nWhich item stores the equipment?",
         "answer": "Camera Bag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Umbrella Light, Ring Light, and Reflector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Umbrella Light",
+        "prompt": "An umbrella light setup uses a reflective or translucent umbrella. A ring light is circular, while a reflector redirects existing light rather than generating its own. Maya asks about redirecting light from another source.\nWhich item redirects existing light?",
+        "answer": "Reflector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "DSLR Camera"
+        "prompt": "Maya compares a DSLR camera and mirrorless camera, asking about their different mirror systems. A lens focuses light; a wide-angle lens and telephoto lens give different views. Omar puts a tripod beside a monopod and checks the camera strap. Maya covers an unused lens with its lens cap before putting it in the camera bag. The club then compares flash, softbox and umbrella light, followed by ring light and reflector. They discuss purposes rather than assuming body shape alone proves camera type. The participants agree before photographing one another.\nWhat does Maya put over the unused lens?",
+        "answer": "Its lens cap",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Wide-Angle Lens"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Breakdance” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use DSLR Camera, Mirrorless Camera, Lens, Wide-Angle Lens, Telephoto Lens, Tripod, Monopod, Camera Strap, Lens Cap, Camera Bag, Flash, Softbox, Umbrella Light, Ring Light, and Reflector in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using DSLR Camera and Mirrorless Camera.",
+        "answer": "A DSLR camera uses a reflex mirror, while a mirrorless camera lacks it.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing and storing equipment",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "Maya visits an adult photography club. A DSLR camera uses a reflex mirror system, while a mirrorless camera lacks that reflex mirror. A lens focuses light for an image. She asks which camera type lacks the reflex mirror, without assuming all bodies can be identified from an unlabelled photograph."
     },
     "spacedReview": "1 lesson(s) back: Breakdance, Mirror from dance-studio-5\n3 lesson(s) back: Tap, Hip-Hop from dance-studio-3\n7 lesson(s) back: Spray Paint, Varnish from art-studio-4"
   },
@@ -216,10 +203,10 @@
       "Extension Cord"
     ],
     "targetWordsArabic": [
-      "ناشر روائح",
+      "ناشر ضوء",
       "حامل إضاءة",
       "إضاءة مستمرة",
-      "ضوء وامض للتصوير",
+      "فلاش استوديو",
       "مرشح جل لوني",
       "خلفية",
       "ورق خلفية تصوير",
@@ -227,153 +214,140 @@
       "طاولة إكسسوارات التصوير",
       "محطة مكياج",
       "حامل ملابس",
-      "ملقط تثبيت",
+      "مشبك تثبيت",
       "كيس رمل للتثبيت",
       "شريط غافر",
       "سلك تمديد كهربائي"
     ],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Diffuser", "Light Stand", "Continuous Light"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diffuser, Light Stand, and Continuous Light and choose the option that fits the situation.",
+          "scenario": "A diffuser spreads transmitted light. A light stand supports equipment, and continuous light remains on rather than firing only for an exposure. Omar asks about the support rather than the light source or modifier.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item supports the equipment?",
             "options": ["Diffuser", "Light Stand", "Continuous Light"],
-            "expectedAnswer": "Diffuser"
+            "expectedAnswer": "Light Stand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Diffuser as the central item; include Diffuser, Light Stand, and Continuous Light naturally where visually appropriate, but make the real-world use of Diffuser the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A diffuser spreads transmitted light. A light stand supports equipment, and continuous light remains on rather than firing only for an exposure. Omar asks about the support rather than the light source or modifier. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Strobe", "Gel Filter", "Backdrop"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Strobe, Gel Filter, and Backdrop and choose the option that fits the situation.",
+          "scenario": "A strobe produces a brief photographic flash. A gel filter changes or corrects light color, while a backdrop provides the background behind a subject. Maya wants to change the background surface rather than the lighting color.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides the background surface?",
             "options": ["Strobe", "Gel Filter", "Backdrop"],
-            "expectedAnswer": "Strobe"
+            "expectedAnswer": "Backdrop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Strobe as the central item; include Strobe, Gel Filter, and Backdrop naturally where visually appropriate, but make the real-world use of Strobe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A strobe produces a brief photographic flash. A gel filter changes or corrects light color, while a backdrop provides the background behind a subject. Maya wants to change the background surface rather than the lighting color. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Background Paper", "Posing Stool", "Props Table"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Background Paper, Posing Stool, and Props Table and choose the option that fits the situation.",
+          "scenario": "Background paper provides a photographic background. A posing stool seats the adult subject, while a props table holds objects for the session. Omar needs a surface for organizing small props rather than a seat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item organizes the props?",
             "options": ["Background Paper", "Posing Stool", "Props Table"],
-            "expectedAnswer": "Background Paper"
+            "expectedAnswer": "Props Table"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Background Paper as the central item; include Background Paper, Posing Stool, and Props Table naturally where visually appropriate, but make the real-world use of Background Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Background paper provides a photographic background. A posing stool seats the adult subject, while a props table holds objects for the session. Omar needs a surface for organizing small props rather than a seat. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Makeup Station", "Wardrobe Rack", "Clamp"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Makeup Station, Wardrobe Rack, and Clamp and choose the option that fits the situation.",
+          "scenario": "At the makeup station, the adult participant may choose grooming before the session. A wardrobe rack holds clothing, while a clamp fastens suitable equipment or material. Grooming and clothing choices are agreed, not inferred from gender.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which item holds clothing?",
             "options": ["Makeup Station", "Wardrobe Rack", "Clamp"],
-            "expectedAnswer": "Makeup Station"
+            "expectedAnswer": "Wardrobe Rack"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or approaching the Makeup Station as the main location; include Makeup Station, Wardrobe Rack, and Clamp naturally where visually appropriate, but make the real-world use of Makeup Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: At the makeup station, the adult participant may choose grooming before the session. A wardrobe rack holds clothing, while a clamp fastens suitable equipment or material. Grooming and clothing choices are agreed, not inferred from gender. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sandbag", "Gaffer Tape", "Extension Cord"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandbag, Gaffer Tape, and Extension Cord and choose the option that fits the situation.",
+          "scenario": "A sandbag provides weight for suitable equipment support. Gaffer tape is cloth-backed tape for temporary studio tasks. An extension cord supplies electricity over a longer distance. Staff manage safe placement; the vocabulary account does not teach electrical loading or stand rigging.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides weight?",
             "options": ["Sandbag", "Gaffer Tape", "Extension Cord"],
             "expectedAnswer": "Sandbag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Sandbag as the central item; include Sandbag, Gaffer Tape, and Extension Cord naturally where visually appropriate, but make the real-world use of Sandbag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A sandbag provides weight for suitable equipment support. Gaffer tape is cloth-backed tape for temporary studio tasks. An extension cord supplies electricity over a longer distance. Staff manage safe placement; the vocabulary account does not teach electrical loading or stand rigging. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Photography Studio",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Diffuser, Light Stand, and Continuous Light. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Strobe, Gel Filter, and Backdrop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Background Paper, Posing Stool, and Props Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Makeup Station, Wardrobe Rack, and Clamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sandbag, Gaffer Tape, and Extension Cord. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing an agreed session",
+      "text": "Omar asks about a diffuser, light stand and continuous light before comparing a strobe with a gel filter. Maya chooses a backdrop, while background paper provides another option. The adult subject uses a posing stool, and small props wait on the props table. Grooming at the makeup station is optional and agreed. Clothes hang on the wardrobe rack. Staff handle the clamp, sandbag, gaffer tape and extension cord according to actual equipment guidance. They keep paths clear; this account explains vocabulary rather than giving electrical-loading or rigging instructions.",
+      "imageBrief": "Photorealistic adult studio discussion: A diffuser spreads transmitted light. A light stand supports equipment, and continuous light remains on rather than firing only for an exposure. Omar asks about the support rather than the light source or modifier. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diffuser, Light Stand, and Continuous Light and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Diffuser",
+        "prompt": "A diffuser spreads transmitted light. A light stand supports equipment, and continuous light remains on rather than firing only for an exposure. Omar asks about the support rather than the light source or modifier.\nWhich item supports the equipment?",
+        "answer": "Light Stand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Strobe, Gel Filter, and Backdrop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Strobe",
+        "prompt": "A strobe produces a brief photographic flash. A gel filter changes or corrects light color, while a backdrop provides the background behind a subject. Maya wants to change the background surface rather than the lighting color.\nWhich item provides the background surface?",
+        "answer": "Backdrop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Background Paper, Posing Stool, and Props Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Background Paper",
+        "prompt": "Background paper provides a photographic background. A posing stool seats the adult subject, while a props table holds objects for the session. Omar needs a surface for organizing small props rather than a seat.\nWhich item organizes the props?",
+        "answer": "Props Table",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Makeup Station, Wardrobe Rack, and Clamp and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Makeup Station",
+        "prompt": "At the makeup station, the adult participant may choose grooming before the session. A wardrobe rack holds clothing, while a clamp fastens suitable equipment or material. Grooming and clothing choices are agreed, not inferred from gender.\nWhich item holds clothing?",
+        "answer": "Wardrobe Rack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sandbag, Gaffer Tape, and Extension Cord and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A sandbag provides weight for suitable equipment support. Gaffer tape is cloth-backed tape for temporary studio tasks. An extension cord supplies electricity over a longer distance. Staff manage safe placement; the vocabulary account does not teach electrical loading or stand rigging.\nWhich item provides weight?",
         "answer": "Sandbag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Diffuser"
+        "prompt": "Omar asks about a diffuser, light stand and continuous light before comparing a strobe with a gel filter. Maya chooses a backdrop, while background paper provides another option. The adult subject uses a posing stool, and small props wait on the props table. Grooming at the makeup station is optional and agreed. Clothes hang on the wardrobe rack. Staff handle the clamp, sandbag, gaffer tape and extension cord according to actual equipment guidance. They keep paths clear; this account explains vocabulary rather than giving electrical-loading or rigging instructions.\nWhere do the small props wait?",
+        "answer": "On the props table",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Strobe"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “DSLR Camera” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use Diffuser, Light Stand, Continuous Light, Strobe, Gel Filter, Backdrop, Background Paper, Posing Stool, Props Table, Makeup Station, Wardrobe Rack, Clamp, Sandbag, Gaffer Tape, and Extension Cord in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using Diffuser and Light Stand.",
+        "answer": "The diffuser spreads light, while the light stand supports equipment.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing an agreed session",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "A diffuser spreads transmitted light. A light stand supports equipment, and continuous light remains on rather than firing only for an exposure. Omar asks about the support rather than the light source or modifier."
     },
     "spacedReview": "1 lesson(s) back: DSLR Camera, Mirrorless Camera from photography-studio-1\n3 lesson(s) back: Slide, Bend from dance-studio-4\n7 lesson(s) back: Marker, Ink from art-studio-5"
   },
@@ -414,155 +388,142 @@
       "قرص ضبط",
       "حلقة التركيز",
       "مستشعر الصورة",
-      "غطاء المحرك عدسة",
-      "شاشة مراقبة حاسوب",
+      "واقٍ من الضوء للعدسة",
+      "شاشة حاسوب",
       "برنامج تحرير الصور",
-      "عجلة لون",
-      "رسم بياني لتوزيع سطوع الصورة",
+      "دائرة الألوان",
+      "رسم بياني لتوزيع قيم الصورة",
       "أداة القص"
     ],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Shutter Button", "Viewfinder", "LCD Screen"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Button, Viewfinder, and LCD Screen and choose the option that fits the situation.",
+          "scenario": "The shutter button triggers image capture. A viewfinder helps compose the view, while an LCD screen displays camera information or images. Maya wants to review the captured image on the screen.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item displays the image?",
             "options": ["Shutter Button", "Viewfinder", "LCD Screen"],
-            "expectedAnswer": "Shutter Button"
+            "expectedAnswer": "LCD Screen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Shutter Button as the central item; include Shutter Button, Viewfinder, and LCD Screen naturally where visually appropriate, but make the real-world use of Shutter Button the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: The shutter button triggers image capture. A viewfinder helps compose the view, while an LCD screen displays camera information or images. Maya wants to review the captured image on the screen. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Memory Card", "Battery", "Hot Shoe"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memory Card, Battery, and Hot Shoe and choose the option that fits the situation.",
+          "scenario": "A memory card stores files. A battery supplies electrical energy, and a hot shoe is a mounting and connection point for compatible accessories. Omar checks file storage rather than power or accessory mounting.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item stores files?",
             "options": ["Memory Card", "Battery", "Hot Shoe"],
             "expectedAnswer": "Memory Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Memory Card as the central item; include Memory Card, Battery, and Hot Shoe naturally where visually appropriate, but make the real-world use of Memory Card the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A memory card stores files. A battery supplies electrical energy, and a hot shoe is a mounting and connection point for compatible accessories. Omar checks file storage rather than power or accessory mounting. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dial", "Focus Ring", "Image Sensor"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dial, Focus Ring, and Image Sensor and choose the option that fits the situation.",
+          "scenario": "A dial changes settings. A focus ring adjusts focus on a suitable lens, while the image sensor records incoming light electronically. Maya wants the manually rotated focusing control, rather than the internal component.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the focusing control?",
             "options": ["Dial", "Focus Ring", "Image Sensor"],
-            "expectedAnswer": "Dial"
+            "expectedAnswer": "Focus Ring"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Dial as the central item; include Dial, Focus Ring, and Image Sensor naturally where visually appropriate, but make the real-world use of Dial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A dial changes settings. A focus ring adjusts focus on a suitable lens, while the image sensor records incoming light electronically. Maya wants the manually rotated focusing control, rather than the internal component. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lens Hood", "Computer Monitor", "Editing Software"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lens Hood, Computer Monitor, and Editing Software and choose the option that fits the situation.",
+          "scenario": "A lens hood helps shield the lens from unwanted stray light. A computer monitor displays an image, while editing software provides tools for changing it. Omar needs the application, not the camera attachment or display hardware.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides editing tools?",
             "options": ["Lens Hood", "Computer Monitor", "Editing Software"],
-            "expectedAnswer": "Lens Hood"
+            "expectedAnswer": "Editing Software"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Lens Hood as the central item; include Lens Hood, Computer Monitor, and Editing Software naturally where visually appropriate, but make the real-world use of Lens Hood the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A lens hood helps shield the lens from unwanted stray light. A computer monitor displays an image, while editing software provides tools for changing it. Omar needs the application, not the camera attachment or display hardware. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Color Wheel", "Histogram", "Crop Tool"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Wheel, Histogram, and Crop Tool and choose the option that fits the situation.",
+          "scenario": "A color wheel represents color relationships. A histogram shows how image values are distributed, while a crop tool removes outer parts of an image. Maya wants to trim the edges, not inspect a distribution chart.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tool trims the edges?",
             "options": ["Color Wheel", "Histogram", "Crop Tool"],
-            "expectedAnswer": "Color Wheel"
+            "expectedAnswer": "Crop Tool"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Color Wheel as the central item; include Color Wheel, Histogram, and Crop Tool naturally where visually appropriate, but make the real-world use of Color Wheel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A color wheel represents color relationships. A histogram shows how image values are distributed, while a crop tool removes outer parts of an image. Maya wants to trim the edges, not inspect a distribution chart. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shutter Button, Viewfinder, and LCD Screen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Memory Card, Battery, and Hot Shoe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dial, Focus Ring, and Image Sensor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lens Hood, Computer Monitor, and Editing Software. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Color Wheel, Histogram, and Crop Tool. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Capturing and reviewing an image",
+      "text": "Maya uses the viewfinder to compose, then the shutter button to capture. She reviews the image on the LCD screen. The memory card stores files, the battery supplies power and the hot shoe connects compatible accessories. A dial changes settings, and a focus ring adjusts a suitable lens. The image sensor records light internally. Omar removes a lens hood after the session, then uses editing software on a computer monitor. He compares a color wheel and histogram before selecting the crop tool. The internal sensor is explained in text, not exposed for a photograph.",
+      "imageBrief": "Photorealistic adult studio discussion: The shutter button triggers image capture. A viewfinder helps compose the view, while an LCD screen displays camera information or images. Maya wants to review the captured image on the screen. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Button, Viewfinder, and LCD Screen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Shutter Button",
+        "prompt": "The shutter button triggers image capture. A viewfinder helps compose the view, while an LCD screen displays camera information or images. Maya wants to review the captured image on the screen.\nWhich item displays the image?",
+        "answer": "LCD Screen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Memory Card, Battery, and Hot Shoe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A memory card stores files. A battery supplies electrical energy, and a hot shoe is a mounting and connection point for compatible accessories. Omar checks file storage rather than power or accessory mounting.\nWhich item stores files?",
         "answer": "Memory Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dial, Focus Ring, and Image Sensor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Dial",
+        "prompt": "A dial changes settings. A focus ring adjusts focus on a suitable lens, while the image sensor records incoming light electronically. Maya wants the manually rotated focusing control, rather than the internal component.\nWhich item is the focusing control?",
+        "answer": "Focus Ring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lens Hood, Computer Monitor, and Editing Software and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Lens Hood",
+        "prompt": "A lens hood helps shield the lens from unwanted stray light. A computer monitor displays an image, while editing software provides tools for changing it. Omar needs the application, not the camera attachment or display hardware.\nWhich item provides editing tools?",
+        "answer": "Editing Software",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Color Wheel, Histogram, and Crop Tool and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Color Wheel",
+        "prompt": "A color wheel represents color relationships. A histogram shows how image values are distributed, while a crop tool removes outer parts of an image. Maya wants to trim the edges, not inspect a distribution chart.\nWhich tool trims the edges?",
+        "answer": "Crop Tool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Shutter Button"
+        "prompt": "Maya uses the viewfinder to compose, then the shutter button to capture. She reviews the image on the LCD screen. The memory card stores files, the battery supplies power and the hot shoe connects compatible accessories. A dial changes settings, and a focus ring adjusts a suitable lens. The image sensor records light internally. Omar removes a lens hood after the session, then uses editing software on a computer monitor. He compares a color wheel and histogram before selecting the crop tool. The internal sensor is explained in text, not exposed for a photograph.\nWhere does Maya review the image?",
+        "answer": "On the LCD screen",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Memory Card"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Diffuser” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use Shutter Button, Viewfinder, LCD Screen, Memory Card, Battery, Hot Shoe, Dial, Focus Ring, Image Sensor, Lens Hood, Computer Monitor, Editing Software, Color Wheel, Histogram, and Crop Tool in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using Shutter Button and Viewfinder.",
+        "answer": "The shutter button captures an image, while the viewfinder helps compose it.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Capturing and reviewing an image",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "The shutter button triggers image capture. A viewfinder helps compose the view, while an LCD screen displays camera information or images. Maya wants to review the captured image on the screen."
     },
     "spacedReview": "1 lesson(s) back: Diffuser, Light Stand from photography-studio-2\n3 lesson(s) back: Breakdance, Mirror from dance-studio-5\n7 lesson(s) back: Leotard, Tights from dance-studio-1"
   },
@@ -596,162 +557,149 @@
     "targetWordsArabic": [
       "أداة الفرشاة",
       "طبقة",
-      "يرشّح",
+      "مرشح صور",
       "إعداد مسبق",
       "تصدير",
       "صورة شخصية",
       "صورة منظر طبيعي",
       "تصوير الأجسام الصغيرة عن قرب",
       "صورة منتج",
-      "أزياء",
+      "تصوير الأزياء",
       "زفاف",
-      "حدث",
+      "فعالية",
       "تصوير الطعام",
       "أبيض وأسود",
       "صورة بانورامية"
     ],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "instructional-guide",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Brush Tool", "Layer", "Filter"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brush Tool, Layer, and Filter and choose the option that fits the situation.",
+          "scenario": "A brush tool applies a local image adjustment or mark. A layer is a separate editing level, while a filter applies an image effect in this software context. Filter here is a noun for the effect tool, not the verb for filtering liquid.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the separate editing level?",
             "options": ["Brush Tool", "Layer", "Filter"],
-            "expectedAnswer": "Brush Tool"
+            "expectedAnswer": "Layer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Brush Tool as the central item; include Brush Tool, Layer, and Filter naturally where visually appropriate, but make the real-world use of Brush Tool the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A brush tool applies a local image adjustment or mark. A layer is a separate editing level, while a filter applies an image effect in this software context. Filter here is a noun for the effect tool, not the verb for filtering liquid. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Preset", "Export", "Portrait"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preset, Export, and Portrait and choose the option that fits the situation.",
+          "scenario": "A preset stores a group of settings. Export saves a version in a chosen format, while a portrait is an image of a person. Omar needs to save the completed version rather than load settings or choose a subject type.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which action saves that version?",
             "options": ["Preset", "Export", "Portrait"],
-            "expectedAnswer": "Preset"
+            "expectedAnswer": "Export"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Preset as the central item; include Preset, Export, and Portrait naturally where visually appropriate, but make the real-world use of Preset the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A preset stores a group of settings. Export saves a version in a chosen format, while a portrait is an image of a person. Omar needs to save the completed version rather than load settings or choose a subject type. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Landscape", "Macro", "Product Shot"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Landscape, Macro, and Product Shot and choose the option that fits the situation.",
+          "scenario": "Landscape photography depicts scenery. Macro photography shows small subjects in close detail, while a product shot presents an item. The client asks for an image of a package for a catalog, not a scenic view.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which type matches the package request?",
             "options": ["Landscape", "Macro", "Product Shot"],
-            "expectedAnswer": "Landscape"
+            "expectedAnswer": "Product Shot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Landscape as the central item; include Landscape, Macro, and Product Shot naturally where visually appropriate, but make the real-world use of Landscape the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Landscape photography depicts scenery. Macro photography shows small subjects in close detail, while a product shot presents an item. The client asks for an image of a package for a catalog, not a scenic view. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fashion", "Wedding", "Event"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion, Wedding, and Event and choose the option that fits the situation.",
+          "scenario": "Fashion here means photography presenting clothing or style. Wedding names the marriage celebration being photographed, and event refers more broadly to an organized occasion. Adult participants agree on what may be photographed and shared.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target specifically names the marriage celebration?",
             "options": ["Fashion", "Wedding", "Event"],
-            "expectedAnswer": "Fashion"
+            "expectedAnswer": "Wedding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Fashion as the central item; include Fashion, Wedding, and Event naturally where visually appropriate, but make the real-world use of Fashion the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Fashion here means photography presenting clothing or style. Wedding names the marriage celebration being photographed, and event refers more broadly to an organized occasion. Adult participants agree on what may be photographed and shared. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Food Photography", "Black and White", "Panorama"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Photography, Black and White, and Panorama and choose the option that fits the situation.",
+          "scenario": "Food photography presents food or drinks. Black and white uses gray tones rather than full color, while a panorama depicts a wide continuous view, sometimes assembled from several images. The client asks for the wide view.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which type matches that request?",
             "options": ["Food Photography", "Black and White", "Panorama"],
-            "expectedAnswer": "Food Photography"
+            "expectedAnswer": "Panorama"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Food Photography as the central item; include Food Photography, Black and White, and Panorama naturally where visually appropriate, but make the real-world use of Food Photography the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Food photography presents food or drinks. Black and white uses gray tones rather than full color, while a panorama depicts a wide continuous view, sometimes assembled from several images. The client asks for the wide view. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Photography Studio",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Brush Tool, Layer, and Filter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Preset, Export, and Portrait. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Landscape, Macro, and Product Shot. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fashion, Wedding, and Event. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Food Photography, Black and White, and Panorama. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Editing and describing the assignment",
+      "text": "Maya works with a brush tool, layer and filter before saving a preset. Omar chooses export to save a finished version. Their assignments differ: a portrait shows a person, a landscape shows scenery, macro shows small close details and a product shot presents an item. Fashion concerns clothing or style, while wedding and event describe occasions. Food photography presents meals; black and white uses gray tones, while a panorama gives a wide view. They agree on sharing and disclose important edits rather than misrepresenting a product or a person.",
+      "imageBrief": "Photorealistic adult studio discussion: A brush tool applies a local image adjustment or mark. A layer is a separate editing level, while a filter applies an image effect in this software context. Filter here is a noun for the effect tool, not the verb for filtering liquid. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brush Tool, Layer, and Filter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Brush Tool",
+        "prompt": "A brush tool applies a local image adjustment or mark. A layer is a separate editing level, while a filter applies an image effect in this software context. Filter here is a noun for the effect tool, not the verb for filtering liquid.\nWhich term names the separate editing level?",
+        "answer": "Layer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Preset, Export, and Portrait and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Preset",
+        "prompt": "A preset stores a group of settings. Export saves a version in a chosen format, while a portrait is an image of a person. Omar needs to save the completed version rather than load settings or choose a subject type.\nWhich action saves that version?",
+        "answer": "Export",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Landscape, Macro, and Product Shot and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Landscape",
+        "prompt": "Landscape photography depicts scenery. Macro photography shows small subjects in close detail, while a product shot presents an item. The client asks for an image of a package for a catalog, not a scenic view.\nWhich type matches the package request?",
+        "answer": "Product Shot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion, Wedding, and Event and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Fashion",
+        "prompt": "Fashion here means photography presenting clothing or style. Wedding names the marriage celebration being photographed, and event refers more broadly to an organized occasion. Adult participants agree on what may be photographed and shared.\nWhich target specifically names the marriage celebration?",
+        "answer": "Wedding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Photography, Black and White, and Panorama and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Food Photography",
+        "prompt": "Food photography presents food or drinks. Black and white uses gray tones rather than full color, while a panorama depicts a wide continuous view, sometimes assembled from several images. The client asks for the wide view.\nWhich type matches that request?",
+        "answer": "Panorama",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Brush Tool"
+        "prompt": "Maya works with a brush tool, layer and filter before saving a preset. Omar chooses export to save a finished version. Their assignments differ: a portrait shows a person, a landscape shows scenery, macro shows small close details and a product shot presents an item. Fashion concerns clothing or style, while wedding and event describe occasions. Food photography presents meals; black and white uses gray tones, while a panorama gives a wide view. They agree on sharing and disclose important edits rather than misrepresenting a product or a person.\nWhich action saves Omar’s finished version?",
+        "answer": "Export",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Preset"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Shutter Button” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use Brush Tool, Layer, Filter, Preset, Export, Portrait, Landscape, Macro, Product Shot, Fashion, Wedding, Event, Food Photography, Black and White, and Panorama in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using Brush Tool and Layer.",
+        "answer": "A brush tool makes local changes, while a layer is a separate editing level.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Editing and describing the assignment",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "A brush tool applies a local image adjustment or mark. A layer is a separate editing level, while a filter applies an image effect in this software context. Filter here is a noun for the effect tool, not the verb for filtering liquid."
     },
     "spacedReview": "1 lesson(s) back: Shutter Button, Viewfinder from photography-studio-3\n3 lesson(s) back: DSLR Camera, Mirrorless Camera from photography-studio-1\n7 lesson(s) back: Changing Room, Water Fountain from dance-studio-2"
   },
@@ -788,159 +736,146 @@
       "فتحة العدسة",
       "سرعة الغالق",
       "إعداد حساسية الكاميرا للضوء",
-      "ضبط البؤرة",
-      "تعريض ضوئي",
+      "ضبط التركيز",
+      "التعريض الضوئي",
       "توازن اللون الأبيض",
-      "تقريب أو إبعاد المشهد",
+      "يقرب أو يبعد المشهد",
       "زاوية واسعة",
-      "يحرر",
+      "يعدل الصورة",
       "اقتصاص الصورة",
       "تنقيح الصورة",
       "طباعة",
-      "إطار"
+      "إطار صورة"
     ],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Camera", "Light Box", "Aperture"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Light Box, and Aperture and choose the option that fits the situation.",
+          "scenario": "A camera records photographs. A light box in this account is an illuminated product-photo enclosure. Aperture is the lens opening through which light enters. The opening is a camera feature, not the whole camera or enclosure.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the opening?",
             "options": ["Camera", "Light Box", "Aperture"],
-            "expectedAnswer": "Camera"
+            "expectedAnswer": "Aperture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Camera as the central item; include Camera, Light Box, and Aperture naturally where visually appropriate, but make the real-world use of Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: A camera records photographs. A light box in this account is an illuminated product-photo enclosure. Aperture is the lens opening through which light enters. The opening is a camera feature, not the whole camera or enclosure. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Shutter Speed", "ISO", "Focus"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Speed, ISO, and Focus and choose the option that fits the situation.",
+          "scenario": "Shutter speed describes exposure duration. ISO is a setting affecting image brightness and noise, while focus concerns image sharpness at the selected distance. Omar asks about how long light is recorded rather than changing the focusing distance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term concerns duration?",
             "options": ["Shutter Speed", "ISO", "Focus"],
             "expectedAnswer": "Shutter Speed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Shutter Speed as the central item; include Shutter Speed, ISO, and Focus naturally where visually appropriate, but make the real-world use of Shutter Speed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Shutter speed describes exposure duration. ISO is a setting affecting image brightness and noise, while focus concerns image sharpness at the selected distance. Omar asks about how long light is recorded rather than changing the focusing distance. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Exposure", "White Balance", "Zoom"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exposure, White Balance, and Zoom and choose the option that fits the situation.",
+          "scenario": "Exposure concerns the light recorded during capture. White balance adjusts color rendering for the light source, while zoom changes the angle of view or magnification. A digital crop may also be called digital zoom, but does not change the lens focal length.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which setting concerns color rendering?",
             "options": ["Exposure", "White Balance", "Zoom"],
-            "expectedAnswer": "Exposure"
+            "expectedAnswer": "White Balance"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Exposure as the central item; include Exposure, White Balance, and Zoom naturally where visually appropriate, but make the real-world use of Exposure the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Exposure concerns the light recorded during capture. White balance adjusts color rendering for the light source, while zoom changes the angle of view or magnification. A digital crop may also be called digital zoom, but does not change the lens focal length. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wide Angle", "Edit", "Crop"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide Angle, Edit, and Crop and choose the option that fits the situation.",
+          "scenario": "Wide angle describes a broad field of view. Edit means change or adjust an image, and crop removes outer areas. Maya wants to remove unwanted space at the edges rather than make a wider capture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which action matches that request?",
             "options": ["Wide Angle", "Edit", "Crop"],
-            "expectedAnswer": "Wide Angle"
+            "expectedAnswer": "Crop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Wide Angle as the central item; include Wide Angle, Edit, and Crop naturally where visually appropriate, but make the real-world use of Wide Angle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Wide angle describes a broad field of view. Edit means change or adjust an image, and crop removes outer areas. Maya wants to remove unwanted space at the edges rather than make a wider capture. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Retouch", "Print", "Frame"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retouch, Print, and Frame and choose the option that fits the situation.",
+          "scenario": "Retouch means make detailed image adjustments. Print creates a physical paper image, while frame here means a border or holder around it. The client requests an accurately presented print rather than undisclosed changes to a person’s features.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
+            "question": "Which action creates the paper image?",
             "options": ["Retouch", "Print", "Frame"],
-            "expectedAnswer": "Retouch"
+            "expectedAnswer": "Print"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult clearly carrying out the action Retouch; include Retouch, Print, and Frame naturally where visually appropriate, but make the real-world use of Retouch the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Retouch means make detailed image adjustments. Print creates a physical paper image, while frame here means a border or holder around it. The client requests an accurately presented print rather than undisclosed changes to a person’s features. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Photography Studio",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camera, Light Box, and Aperture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Shutter Speed, ISO, and Focus. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Exposure, White Balance, and Zoom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Wide Angle, Edit, and Crop. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Retouch, Print, and Frame. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Understanding the terms before changing settings",
+      "text": "Omar compares a camera and light box, then asks about aperture. The opening admits light, while shutter speed concerns capture duration. ISO affects brightness and noise; focus concerns sharpness at the chosen distance. Exposure refers to recorded light. White balance concerns color rendering, and zoom changes the view or magnification. Maya compares wide angle with the decision to edit and crop an image. She asks before retouching personal features. Print produces a paper copy, and a frame supports or borders it. The account explains concepts rather than claiming one setting guarantees a good photograph.",
+      "imageBrief": "Photorealistic adult studio discussion: A camera records photographs. A light box in this account is an illuminated product-photo enclosure. Aperture is the lens opening through which light enters. The opening is a camera feature, not the whole camera or enclosure. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camera, Light Box, and Aperture and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Camera",
+        "prompt": "A camera records photographs. A light box in this account is an illuminated product-photo enclosure. Aperture is the lens opening through which light enters. The opening is a camera feature, not the whole camera or enclosure.\nWhich term names the opening?",
+        "answer": "Aperture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shutter Speed, ISO, and Focus and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Shutter speed describes exposure duration. ISO is a setting affecting image brightness and noise, while focus concerns image sharpness at the selected distance. Omar asks about how long light is recorded rather than changing the focusing distance.\nWhich term concerns duration?",
         "answer": "Shutter Speed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Exposure, White Balance, and Zoom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Exposure",
+        "prompt": "Exposure concerns the light recorded during capture. White balance adjusts color rendering for the light source, while zoom changes the angle of view or magnification. A digital crop may also be called digital zoom, but does not change the lens focal length.\nWhich setting concerns color rendering?",
+        "answer": "White Balance",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wide Angle, Edit, and Crop and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Wide Angle",
+        "prompt": "Wide angle describes a broad field of view. Edit means change or adjust an image, and crop removes outer areas. Maya wants to remove unwanted space at the edges rather than make a wider capture.\nWhich action matches that request?",
+        "answer": "Crop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retouch, Print, and Frame and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Retouch",
+        "prompt": "Retouch means make detailed image adjustments. Print creates a physical paper image, while frame here means a border or holder around it. The client requests an accurately presented print rather than undisclosed changes to a person’s features.\nWhich action creates the paper image?",
+        "answer": "Print",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Camera"
+        "prompt": "Omar compares a camera and light box, then asks about aperture. The opening admits light, while shutter speed concerns capture duration. ISO affects brightness and noise; focus concerns sharpness at the chosen distance. Exposure refers to recorded light. White balance concerns color rendering, and zoom changes the view or magnification. Maya compares wide angle with the decision to edit and crop an image. She asks before she will retouch personal features. Print produces a paper copy, and a frame supports or borders it. The account explains concepts rather than claiming one setting guarantees a good photograph.\nWhich setting concerns color rendering?",
+        "answer": "White balance",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Shutter Speed"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Brush Tool” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use Camera, Light Box, Aperture, Shutter Speed, ISO, Focus, Exposure, White Balance, Zoom, Wide Angle, Edit, Crop, Retouch, Print, and Frame in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using Camera and Light Box.",
+        "answer": "The camera records an image, while this light box illuminates a product.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Understanding the terms before changing settings",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "A camera records photographs. A light box in this account is an illuminated product-photo enclosure. Aperture is the lens opening through which light enters. The opening is a camera feature, not the whole camera or enclosure."
     },
     "spacedReview": "1 lesson(s) back: Brush Tool, Layer from photography-studio-4\n3 lesson(s) back: Diffuser, Light Stand from photography-studio-2\n7 lesson(s) back: Tap, Hip-Hop from dance-studio-3"
   },
@@ -955,73 +890,60 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Portfolio", "Gallery"],
-    "targetWordsArabic": ["محفظة استثمارية", "معرض صور"],
+    "targetWordsArabic": ["مجموعة أعمال المصور", "معرض صور"],
     "usage": {
-      "goal": "Learn to discuss camera equipment, settings, and studio workflow in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the photography studio.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated photography item, image type, editing action or concept.",
+      "canDoStatement": "Can follow a supported adult photography discussion and explain a practical distinction. Specialist photography terms extend the supported task level; this is not equipment-operation training.",
+      "textType": "adult-photography-club-account",
+      "readingTarget": "Supported connected photography discussion",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Portfolio", "Gallery"],
-          "scenario": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portfolio, and Gallery and choose the option that fits the situation.",
+          "scenario": "Maya prepares a portfolio, a selected collection showing her work. A gallery is a display of images or a place showing them. Portfolio here does not mean investments. She wants to show a selected body of her own photographs when applying for work.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Portfolio", "Gallery", "Option 1"],
+            "question": "Which term names her selected collection?",
+            "options": ["Portfolio", "Gallery"],
             "expectedAnswer": "Portfolio"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a photography studio. Show an adult using or examining the Portfolio as the central item; include Portfolio, Gallery, and Option 1 naturally where visually appropriate, but make the real-world use of Portfolio the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a photography studio completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult studio discussion: Maya prepares a portfolio, a selected collection showing her work. A gallery is a display of images or a place showing them. Portfolio here does not mean investments. She wants to show a selected body of her own photographs when applying for work. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers.",
+          "imageAlt": "Adults discussing relevant camera, lighting or editing equipment in an orderly studio."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the photography studio, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Portfolio and Gallery. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Photography Studio. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Selecting work for a portfolio",
+      "text": "Maya selects her own photographs for a portfolio. She wants a small collection that shows the range and quality of her work. Omar asks whether the gallery will display them on a wall or online. Maya confirms permission for any recognizable people before sharing and explains important edits. In this account, portfolio is a collection of work, while gallery is the display or place displaying it. Neither term is a promise that every picture is original, licensed or suitable for public use without checking.",
+      "imageBrief": "Photorealistic adult studio discussion: Maya prepares a portfolio, a selected collection showing her work. A gallery is a display of images or a place showing them. Portfolio here does not mean investments. She wants to show a selected body of her own photographs when applying for work. Show a few relevant camera or lighting items, stable supports and clear walkways. Keep electrical equipment inactive, cords managed and internal sensors enclosed. Adults consent to posing; no minors, branded camera claims, revealing makeover, reproduced photographs, readable private screens, overlays or answer highlighting. Internal settings, permission and software effects come from text; do not invent a readable interface to supply answers."
     },
     "exercises": [
       {
-        "prompt": "In the photography studio setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portfolio, and Gallery and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Maya prepares a portfolio, a selected collection showing her work. A gallery is a display of images or a place showing them. Portfolio here does not mean investments. She wants to show a selected body of her own photographs when applying for work.\nWhich term names her selected collection?",
         "answer": "Portfolio",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Portfolio"
+        "prompt": "Maya selects her own photographs for a portfolio. She wants a small collection that shows the range and quality of her work. Omar asks whether the gallery will display them on a wall or online. Maya confirms permission for any recognizable people before sharing and explains important edits. In this account, portfolio is a collection of work, while gallery is the display or place displaying it. Neither term is a promise that every picture is original, licensed or suitable for public use without checking.\nWhy does Maya select photographs for the portfolio?",
+        "answer": "To show the range and quality of her work",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Gallery"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Camera” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the photography studio task. Use Portfolio, and Gallery in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain a distinction using Portfolio and Gallery.",
+        "answer": "The portfolio is selected work, while the gallery is its display.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Photography Studio: In Context",
-      "idea": "35-50 seconds contextual scene in the creative space. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the creative space. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Selecting work for a portfolio",
+      "idea": "Read the adult studio account and pause for its stated distinction. Use original anonymous example work and no private screen data, active rigging or electrical demonstration.",
+      "scriptStarter": "Maya prepares a portfolio, a selected collection showing her work. A gallery is a display of images or a place showing them. Portfolio here does not mean investments. She wants to show a selected body of her own photographs when applying for work."
     },
     "spacedReview": "1 lesson(s) back: Camera, Light Box from photography-studio-5\n3 lesson(s) back: Shutter Button, Viewfinder from photography-studio-3\n7 lesson(s) back: Slide, Bend from dance-studio-4"
   }

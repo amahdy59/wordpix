@@ -1,199 +1,252 @@
 {
   "left": {
     "definition": "Location near or direction toward the left side.",
-    "arabicTranslation": "يسار"
+    "arabicTranslation": "يسار",
+    "exampleUsage": "Turn left at the corner."
   },
   "right": {
-    "definition": "Location near or direction toward the right side.",
-    "arabicTranslation": "حق"
+    "definition": "The side opposite the left; here a direction.",
+    "arabicTranslation": "يمين",
+    "exampleUsage": "Turn right after the park."
   },
   "straight": {
     "arabicTranslation": "مباشرة دون انعطاف",
-    "definition": "Continuing in one direction without turning."
+    "definition": "Continuing in one direction without turning.",
+    "exampleUsage": "Go straight along this path."
   },
   "forward": {
     "definition": "At or near or directed toward the front.",
-    "arabicTranslation": "إلى الأمام"
+    "arabicTranslation": "إلى الأمام",
+    "exampleUsage": "Move forward towards the doorway."
   },
   "backward": {
-    "definition": "In a manner or order or direction the reverse of normal.",
-    "arabicTranslation": "إلى الخلف"
+    "definition": "Towards the back, opposite forward.",
+    "arabicTranslation": "إلى الخلف",
+    "exampleUsage": "Step backward away from the table."
   },
   "up": {
-    "definition": "Being or moving higher in position or greater in some value.",
-    "arabicTranslation": "إلى الأعلى"
+    "definition": "Towards a higher place or position.",
+    "arabicTranslation": "إلى الأعلى",
+    "exampleUsage": "Go up to the next floor."
   },
   "down": {
-    "definition": "Spatially or metaphorically from a higher to a lower level or position.",
-    "arabicTranslation": "إلى الأسفل"
+    "definition": "Towards a lower place or position.",
+    "arabicTranslation": "إلى الأسفل",
+    "exampleUsage": "Go down to the entrance."
   },
   "turn": {
-    "definition": "The act of changing or reversing the direction of the course.",
-    "arabicTranslation": "يدير"
+    "definition": "To change the direction in which you are facing or moving.",
+    "arabicTranslation": "ينعطف",
+    "exampleUsage": "Turn at the next corner."
   },
   "stop": {
     "definition": "To cease moving or bring movement to an end.",
-    "arabicTranslation": "يتوقف"
+    "arabicTranslation": "يتوقف",
+    "exampleUsage": "Stop beside the bench."
   },
   "go": {
-    "definition": "To move away from a place into another direction.",
-    "arabicTranslation": "يذهب"
+    "definition": "To move or travel from one place to another.",
+    "arabicTranslation": "يذهب",
+    "exampleUsage": "Go to the reception desk."
   },
   "north": {
     "arabicTranslation": "شمال",
-    "definition": "The direction toward the North Pole."
+    "definition": "The direction toward the North Pole.",
+    "exampleUsage": "The park is north of the station."
   },
   "south": {
-    "definition": "The direction corresponding to the southward cardinal compass point.",
-    "arabicTranslation": "جنوب"
+    "definition": "The cardinal direction opposite north.",
+    "arabicTranslation": "جنوب",
+    "exampleUsage": "The office is south of the park."
   },
   "east": {
-    "definition": "The compass direction toward which the Sun rises.",
-    "arabicTranslation": "شرق"
+    "definition": "The cardinal direction opposite west, to the right when facing north.",
+    "arabicTranslation": "شرق",
+    "exampleUsage": "The library is east of the station."
   },
   "west": {
-    "definition": "The compass direction toward which the Sun sets.",
-    "arabicTranslation": "غرب"
+    "definition": "The cardinal direction opposite east, to the left when facing north.",
+    "arabicTranslation": "غرب",
+    "exampleUsage": "The school is west of the park."
   },
   "northeast": {
     "definition": "The compass point midway between north and east.",
-    "arabicTranslation": "شمال شرقي"
+    "arabicTranslation": "شمال شرقي",
+    "exampleUsage": "The museum is northeast of the square."
   },
   "northwest": {
     "definition": "The compass point midway between north and west.",
-    "arabicTranslation": "شمال غربي"
+    "arabicTranslation": "شمال غربي",
+    "exampleUsage": "The park is northwest of the station."
   },
   "southeast": {
     "definition": "The compass point midway between south and east.",
-    "arabicTranslation": "جنوب شرقي"
+    "arabicTranslation": "جنوب شرقي",
+    "exampleUsage": "The office is southeast of the square."
   },
   "southwest": {
     "definition": "The compass point midway between south and west.",
-    "arabicTranslation": "جنوب غربي"
+    "arabicTranslation": "جنوب غربي",
+    "exampleUsage": "The school is southwest of the library."
   },
   "compass": {
-    "definition": "An area in which something acts or operates or has power or control:.",
-    "arabicTranslation": "بوصلة"
+    "definition": "An instrument used to find directions, commonly with a magnetic needle.",
+    "arabicTranslation": "بوصلة",
+    "exampleUsage": "Nora checks the direction with a compass."
   },
   "direction": {
-    "definition": "A line leading to a place or point.",
-    "arabicTranslation": "اتجاه"
+    "definition": "The way towards which someone or something faces or moves.",
+    "arabicTranslation": "اتجاه",
+    "exampleUsage": "Nora asks which direction to go."
   },
   "near": {
-    "definition": "Not far distant in time or space or degree or circumstances.",
-    "arabicTranslation": "قريب"
+    "definition": "Not far away in space.",
+    "arabicTranslation": "قريب",
+    "exampleUsage": "The café is near the station."
   },
   "far": {
     "definition": "At a great distance from a person, place, or object.",
-    "arabicTranslation": "بعيد"
+    "arabicTranslation": "بعيد",
+    "exampleUsage": "The hospital is far from the station."
   },
   "close": {
-    "definition": "Not far distant in time or space or degree or circumstances.",
-    "arabicTranslation": "قريب"
+    "definition": "Near in distance; here close to a place.",
+    "arabicTranslation": "قريب",
+    "exampleUsage": "The park is close to the café."
   },
   "nearby": {
-    "definition": "Not far away in relative terms.",
-    "arabicTranslation": "قريب"
+    "definition": "Not far away; in the area near a place.",
+    "arabicTranslation": "بالقرب",
+    "exampleUsage": "There is a shop nearby."
   },
   "distant": {
-    "definition": "Separated in space or coming from or going to a distance.",
-    "arabicTranslation": "بعيد"
+    "definition": "Far away in space.",
+    "arabicTranslation": "بعيد",
+    "exampleUsage": "The tower looks distant from here."
   },
   "here": {
     "arabicTranslation": "هنا",
-    "definition": "At this place or in this location."
+    "definition": "At this place or in this location.",
+    "exampleUsage": "Please wait here beside the desk."
   },
   "there": {
     "arabicTranslation": "هناك",
-    "definition": "A location other than here."
+    "definition": "A location other than here.",
+    "exampleUsage": "The entrance is there beside the tree."
   },
   "everywhere": {
     "arabicTranslation": "في كل مكان",
-    "definition": "In all places or throughout an area."
+    "definition": "In all places or throughout an area.",
+    "exampleUsage": "There are trees everywhere in this park."
   },
   "nowhere": {
-    "arabicTranslation": "لا مكان",
-    "definition": "In no place; not anywhere."
+    "arabicTranslation": "في لا مكان",
+    "definition": "In or to no place; not anywhere.",
+    "exampleUsage": "Nora can find her keys nowhere in the room."
   },
   "somewhere": {
     "definition": "An indefinite or unknown location.",
-    "arabicTranslation": "في مكان ما"
+    "arabicTranslation": "في مكان ما",
+    "exampleUsage": "The keys are somewhere in the bag."
   },
   "intersection": {
     "definition": "A place where two or more roads meet or cross.",
-    "arabicTranslation": "تقاطع طرق"
+    "arabicTranslation": "تقاطع طرق",
+    "exampleUsage": "Two roads meet at the intersection."
   },
   "corner": {
-    "definition": "The intersection of two streets.",
-    "arabicTranslation": "ناصية"
+    "definition": "The place where two streets or edges meet; here a street corner.",
+    "arabicTranslation": "ناصية",
+    "exampleUsage": "Nora waits at the street corner."
   },
   "block": {
     "definition": "An area of buildings enclosed by streets, often used to describe walking distance.",
-    "arabicTranslation": "كتلة مبانٍ بين شوارع"
+    "arabicTranslation": "كتلة مبانٍ بين شوارع",
+    "exampleUsage": "The office is one block from the station."
   },
   "crosswalk": {
-    "definition": "A marked place where people cross a road safely.",
-    "arabicTranslation": "ممر مشاة"
+    "definition": "A marked part of a road intended for pedestrians to cross.",
+    "arabicTranslation": "ممر مشاة",
+    "exampleUsage": "Nora waits beside the crosswalk."
   },
   "traffic-light": {
-    "definition": "The light’s current color tells drivers whether they may proceed, should use caution, or must stop.",
-    "arabicTranslation": "إشارة مرور"
+    "definition": "A signalling device with lights used to control road traffic.",
+    "arabicTranslation": "إشارة مرور",
+    "exampleUsage": "The traffic light controls vehicles at the junction."
   },
   "roundabout": {
     "definition": "A circular road junction where traffic moves around a central island.",
-    "arabicTranslation": "دوار مروري"
+    "arabicTranslation": "دوار مروري",
+    "exampleUsage": "The road goes around the island at the roundabout."
   },
   "one-way": {
-    "definition": "Moving one way means following a single direction, with no change of course or return.",
-    "arabicTranslation": "اتجاه واحد"
+    "definition": "Allowing traffic to travel in only one direction; here a one-way street.",
+    "arabicTranslation": "باتجاه واحد",
+    "exampleUsage": "Vehicles travel in one direction on the one-way street."
   },
   "dead-end": {
     "definition": "A street that ends without joining another street.",
-    "arabicTranslation": "طريق مسدود"
+    "arabicTranslation": "طريق مسدود",
+    "exampleUsage": "The dead end has no road continuing beyond it."
   },
   "highway": {
-    "definition": "A major road for any form of motor transport.",
-    "arabicTranslation": "طريق سريع"
+    "definition": "A main road, especially one used for longer-distance travel.",
+    "arabicTranslation": "طريق رئيسي",
+    "exampleUsage": "The highway connects the two towns."
   },
   "sidewalk": {
-    "definition": "Walk consisting of a paved area for pedestrians.",
-    "arabicTranslation": "رصيف مشاة"
+    "definition": "A path beside a road intended for pedestrians; American English for pavement.",
+    "arabicTranslation": "رصيف مشاة",
+    "exampleUsage": "Nora walks on the sidewalk."
   },
   "building": {
     "definition": "A structure that has a roof and walls and stands more or less permanently in one place.",
-    "arabicTranslation": "مبنى"
+    "arabicTranslation": "مبنى",
+    "exampleUsage": "The office is in that building."
   },
   "bridge": {
-    "definition": "A structure built over water or a low place for people to cross.",
-    "arabicTranslation": "قوس القدم"
+    "definition": "A structure carrying a road or path across an obstacle such as a river.",
+    "arabicTranslation": "جسر",
+    "exampleUsage": "The bridge crosses the river."
   },
   "monument": {
     "definition": "A structure erected to commemorate persons or events.",
-    "arabicTranslation": "نصب تذكاري"
+    "arabicTranslation": "نصب تذكاري",
+    "exampleUsage": "The monument commemorates a historic event."
   },
   "fountain": {
     "definition": "A structure that sends water upward and lets it fall back down.",
-    "arabicTranslation": "نافورة"
+    "arabicTranslation": "نافورة",
+    "exampleUsage": "Water rises from the fountain."
   },
   "statue": {
-    "definition": "A carved figure made to look like a person or animal.",
-    "exampleUsage": "The statue was identified during the lesson.",
+    "definition": "A three-dimensional figure of a person, animal or other subject.",
+    "exampleUsage": "The statue stands in the square.",
     "arabicTranslation": "تمثال"
   },
   "tower": {
-    "definition": "A structure taller than its diameter.",
-    "arabicTranslation": "برج"
+    "definition": "A tall narrow building or structure.",
+    "arabicTranslation": "برج",
+    "exampleUsage": "The tower rises above the other buildings."
   },
   "church": {
-    "definition": "A place for public (especially Christian) worship.",
-    "arabicTranslation": "كنيسة"
+    "definition": "A building used for Christian worship.",
+    "arabicTranslation": "كنيسة",
+    "exampleUsage": "The church is beside the square."
   },
   "park": {
     "definition": "A public outdoor area used for walking, relaxing, and recreation.",
-    "arabicTranslation": "حديقة عامة"
+    "arabicTranslation": "حديقة عامة",
+    "exampleUsage": "Nora visits the park after work."
   },
   "school": {
-    "definition": "A building where young people receive education.",
-    "arabicTranslation": "مدرسة"
+    "definition": "A place or institution where people receive education.",
+    "arabicTranslation": "مدرسة",
+    "exampleUsage": "The school is near the community centre."
+  },
+  "hospital": {
+    "definition": "A place where people receive medical care, sometimes while staying there.",
+    "arabicTranslation": "مستشفى",
+    "exampleUsage": "The hospital is across from the park."
   }
 }

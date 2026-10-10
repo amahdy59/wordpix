@@ -48,6 +48,45 @@ function containsTarget(text: string, target: string): boolean {
     percentage: ["percent"],
     "acute angle": ["angle is acute", "acute"],
     "bridge of nose": ["bridge of the nose", "bridge of her nose", "bridge of his nose"],
+    // Locked catalogue headings omit articles and use base verbs. Recognize
+    // these reviewed grammatical forms without stripping words globally:
+    // "wash her hands" must still not count as "wash face".
+    "brush teeth": [
+      "brush her teeth",
+      "brush his teeth",
+      "brush your teeth",
+      "brush their teeth",
+      "brushes her teeth",
+      "brushes his teeth",
+      "brushes their teeth",
+    ],
+    taste: ["tastes", "tasted", "tasting"],
+    "get out of bed": ["gets out of bed", "got out of bed", "getting out of bed"],
+    "wash face": [
+      "wash her face",
+      "wash his face",
+      "wash your face",
+      "wash their face",
+      "washes her face",
+      "washes his face",
+      "washes their face",
+    ],
+    "get dressed": ["gets dressed", "got dressed", "getting dressed"],
+    "eat breakfast": ["eats breakfast", "ate breakfast", "eating breakfast"],
+    "leave office": [
+      "leave the office",
+      "leaves the office",
+      "left the office",
+      "leaving the office",
+    ],
+    "wash dishes": ["washes dishes", "wash the dishes", "washes the dishes", "washed the dishes"],
+    relax: ["relaxes", "relaxed", "relaxing"],
+    "put on pajamas": ["puts on pajamas", "put on her pajamas", "put on his pajamas"],
+    "go to bed": ["goes to bed", "went to bed", "going to bed"],
+    "fall asleep": ["falls asleep", "fell asleep", "falling asleep"],
+    "second cousin": ["second cousins"],
+    grasp: ["grasps", "grasped", "grasping"],
+    "go shopping": ["goes shopping", "went shopping", "going shopping"],
   };
   return [normalizedTarget, ...(conceptAliases[normalizedTarget] ?? [])].some((candidate) =>
     normalizedText.includes(` ${normalize(candidate)} `)

@@ -30,7 +30,7 @@
       "دب قطبي",
       "ثعلب قطبي",
       "فظ",
-      "ختم",
+      "فقمة",
       "بطريق",
       "بومة ثلجية",
       "رنة",
@@ -41,135 +41,118 @@
       "قارض اللاموس",
       "جبل جليدي",
       "نهر جليدي",
-      "غطاء جليدي"
+      "غطاء جليدي قاري"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "148-178 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Polar Bear", "Arctic Fox", "Walrus", "Seal"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.",
+          "scenario": "At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Polar Bear", "Arctic Fox", "Walrus"],
-            "expectedAnswer": "Polar Bear"
+            "question": "Which target names the flippered marine mammal distinguished from the walrus here?",
+            "options": ["Seal", "Polar Bear", "Arctic Fox"],
+            "expectedAnswer": "Seal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Polar Bear as the central item; include Polar Bear, Arctic Fox, and Walrus naturally where visually appropriate, but make the real-world use of Polar Bear the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Seal in a arctic context. Use the written scenario as the source of meaning: At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Penguin", "Snowy Owl", "Reindeer", "Arctic Hare"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.",
+          "scenario": "The exhibit compares Arctic wildlife with other regions. Snowy Owl, Reindeer, and Arctic Hare belong in its Arctic discussion. Penguin appears in a separate comparison panel: penguins do not naturally live in the Arctic.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target belongs to the separate non-Arctic comparison?",
             "options": ["Penguin", "Snowy Owl", "Reindeer"],
             "expectedAnswer": "Penguin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Penguin as the central item; include Penguin, Snowy Owl, and Reindeer naturally where visually appropriate, but make the real-world use of Penguin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Penguin in a arctic context. Use the written scenario as the source of meaning: The exhibit compares Arctic wildlife with other regions. Snowy Owl, Reindeer, and Arctic Hare belong in its Arctic discussion. Penguin appears in a separate comparison panel: penguins do not naturally live in the Arctic. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Narwhal", "Beluga Whale", "Puffin", "Lemming"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.",
+          "scenario": "The guide describes a Narwhal, many males of which have a long tusk, and a Beluga Whale with a rounded forehead. A Puffin is a seabird, while a Lemming is a small rodent. These animals have distinct habitats and are not placed together for convenience.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which whale is associated with the long tusk?",
             "options": ["Narwhal", "Beluga Whale", "Puffin"],
             "expectedAnswer": "Narwhal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult illustrating Narwhal through a realistic adult task; include Narwhal, Beluga Whale, and Puffin naturally where visually appropriate, but make the real-world use of Narwhal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Narwhal in a arctic context. Use the written scenario as the source of meaning: The guide describes a Narwhal, many males of which have a long tusk, and a Beluga Whale with a rounded forehead. A Puffin is a seabird, while a Lemming is a small rodent. These animals have distinct habitats and are not placed together for convenience. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Iceberg", "Glacier", "Ice Sheet"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.",
+          "scenario": "An Iceberg floats in water after breaking away from land ice. A Glacier is a flowing land-ice mass, and an Ice Sheet covers a very large land area. Floating sea ice and land-derived ice are distinct.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which land-derived ice mass floats in water?",
             "options": ["Iceberg", "Glacier", "Ice Sheet"],
             "expectedAnswer": "Iceberg"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Iceberg as the central item; include Iceberg, Glacier, and Ice Sheet naturally where visually appropriate, but make the real-world use of Iceberg the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Iceberg in a arctic context. Use the written scenario as the source of meaning: An Iceberg floats in water after breaking away from land ice. A Glacier is a flowing land-ice mass, and an Ice Sheet covers a very large land area. Floating sea ice and land-derived ice are distinct. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Arctic",
-      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Polar Bear, Arctic Fox, Walrus, and Seal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Penguin, Snowy Owl, Reindeer, and Arctic Hare. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Narwhal, Beluga Whale, Puffin, and Lemming. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Iceberg, Glacier, and Ice Sheet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Arctic: A visitor’s questions",
+      "text": "At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance. The exhibit compares Arctic wildlife with other regions. Snowy Owl, Reindeer, and Arctic Hare belong in its Arctic discussion. Penguin appears in a separate comparison panel: penguins do not naturally live in the Arctic. The guide describes a Narwhal, many males of which have a long tusk, and a Beluga Whale with a rounded forehead. A Puffin is a seabird, while a Lemming is a small rodent. These animals have distinct habitats and are not placed together for convenience. An Iceberg floats in water after breaking away from land ice. A Glacier is a flowing land-ice mass, and an Ice Sheet covers a very large land area. Floating sea ice and land-derived ice are distinct.",
+      "imageBrief": "One uncluttered arctic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Polar Bear, Arctic Fox, Walrus, and Seal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Polar Bear",
+        "prompt": "At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance.\nWhich target names the flippered marine mammal distinguished from the walrus here?",
+        "answer": "Seal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Penguin, Snowy Owl, Reindeer, and Arctic Hare and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The exhibit compares Arctic wildlife with other regions. Snowy Owl, Reindeer, and Arctic Hare belong in its Arctic discussion. Penguin appears in a separate comparison panel: penguins do not naturally live in the Arctic.\nWhich target belongs to the separate non-Arctic comparison?",
         "answer": "Penguin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Narwhal, Beluga Whale, Puffin, and Lemming and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The guide describes a Narwhal, many males of which have a long tusk, and a Beluga Whale with a rounded forehead. A Puffin is a seabird, while a Lemming is a small rodent. These animals have distinct habitats and are not placed together for convenience.\nWhich whale is associated with the long tusk?",
         "answer": "Narwhal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iceberg, Glacier, and Ice Sheet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An Iceberg floats in water after breaking away from land ice. A Glacier is a flowing land-ice mass, and an Ice Sheet covers a very large land area. Floating sea ice and land-derived ice are distinct.\nWhich land-derived ice mass floats in water?",
         "answer": "Iceberg",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance. The exhibit compares Arctic wildlife with other regions. Snowy Owl, Reindeer, and Arctic Hare belong in its Arctic discussion. Penguin appears in a separate comparison panel: penguins do not naturally live in the Arctic. The guide describes a Narwhal, many males of which have a long tusk, and a Beluga Whale with a rounded forehead. A Puffin is a seabird, while a Lemming is a small rodent. These animals have distinct habitats and are not placed together for convenience. An Iceberg floats in water after breaking away from land ice. A Glacier is a flowing land-ice mass, and an Ice Sheet covers a very large land area. Floating sea ice and land-derived ice are distinct.\nExplain the difference between Polar Bear and Arctic Fox using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Polar Bear"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sonar” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the arctic task. Use Polar Bear, Arctic Fox, Walrus, Seal, Penguin, Snowy Owl, Reindeer, Arctic Hare, Narwhal, Beluga Whale, Puffin, Lemming, Iceberg, Glacier, and Ice Sheet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Polar Bear, Arctic Fox, Walrus, Seal, Penguin, Snowy Owl, Reindeer, Arctic Hare, Narwhal, Beluga Whale, Puffin, Lemming, Iceberg, Glacier, Ice Sheet to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Arctic: In Context",
-      "idea": "45-70 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Arctic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Polar Bear and Arctic Fox, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At a northern research visitor center, the guide describes a Polar Bear, Arctic Fox, Walrus, and Seal. The Seal is a flippered marine mammal; Walrus is a distinct related animal often recognized by tusks. Wildlife is observed at a distance under local guidance. Pause and answer: Which target names the flippered marine mammal distinguished from the walrus here?"
     },
     "spacedReview": "1 lesson(s) back: Sonar, Radio from submarine-5\n3 lesson(s) back: Captain, Navigator from submarine-3\n7 lesson(s) back: Indicator, Reagent from laboratory-4"
   },
@@ -201,13 +184,13 @@
       "Coastline"
     ],
     "targetWordsArabic": [
-      "قبعة بواقٍ ثلج",
+      "غطاء جليدي صغير",
       "حقل ثلجي",
       "صقيع",
       "كتلة جليدية متدلية",
       "ندفة ثلج",
       "ثلج ذائب جزئيًا",
-      "ثلج عبوة",
+      "جليد بحري عائم",
       "شق جليدي عميق",
       "كهف جليدي",
       "تندرا",
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "138-168 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ice Cap", "Snowfield", "Frost", "Icicle"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.",
+          "scenario": "An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ice Cap", "Snowfield", "Frost"],
-            "expectedAnswer": "Ice Cap"
+            "question": "Which pointed piece of ice hangs from a surface?",
+            "options": ["Icicle", "Ice Cap", "Snowfield"],
+            "expectedAnswer": "Icicle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Ice Cap as the central item; include Ice Cap, Snowfield, and Frost naturally where visually appropriate, but make the real-world use of Ice Cap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Icicle in a arctic context. Use the written scenario as the source of meaning: An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Snowflake", "Slush", "Pack Ice", "Crevasse"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.",
+          "scenario": "A Snowflake is an ice crystal or collection of crystals. Slush mixes partly melted snow and water. Pack Ice consists of floating sea-ice pieces, while a Crevasse is a deep crack in glacier ice. None indicates a safe walking route.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Snowflake", "Slush", "Pack Ice"],
-            "expectedAnswer": "Snowflake"
+            "question": "Which target describes floating sea-ice pieces?",
+            "options": ["Pack Ice", "Snowflake", "Slush"],
+            "expectedAnswer": "Pack Ice"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snowflake as the central item; include Snowflake, Slush, and Pack Ice naturally where visually appropriate, but make the real-world use of Snowflake the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pack Ice in a arctic context. Use the written scenario as the source of meaning: A Snowflake is an ice crystal or collection of crystals. Slush mixes partly melted snow and water. Pack Ice consists of floating sea-ice pieces, while a Crevasse is a deep crack in glacier ice. None indicates a safe walking route. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Ice Cave", "Tundra", "Fjord", "Frozen Lake"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.",
+          "scenario": "The display contrasts an Ice Cave, Tundra with low vegetation, a Fjord, and a Frozen Lake. The Fjord is a long narrow sea inlet bordered by steep sides. A frozen surface does not establish safe ice thickness.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ice Cave", "Tundra", "Fjord"],
-            "expectedAnswer": "Ice Cave"
+            "question": "Which feature is the long narrow sea inlet?",
+            "options": ["Fjord", "Ice Cave", "Tundra"],
+            "expectedAnswer": "Fjord"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Ice Cave as the central item; include Ice Cave, Tundra, and Fjord naturally where visually appropriate, but make the real-world use of Ice Cave the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Fjord in a arctic context. Use the written scenario as the source of meaning: The display contrasts an Ice Cave, Tundra with low vegetation, a Fjord, and a Frozen Lake. The Fjord is a long narrow sea inlet bordered by steep sides. A frozen surface does not establish safe ice thickness. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mountain", "Valley", "Coastline"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.",
+          "scenario": "A Mountain rises above surrounding land, and a Valley lies between higher areas. The Coastline marks the boundary where land meets the sea. A map supplies location; an invented illustration does not establish the site’s position.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mountain", "Valley", "Coastline"],
-            "expectedAnswer": "Mountain"
+            "question": "Which target describes the land-sea boundary?",
+            "options": ["Coastline", "Mountain", "Valley"],
+            "expectedAnswer": "Coastline"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Mountain as the central item; include Mountain, Valley, and Coastline naturally where visually appropriate, but make the real-world use of Mountain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Coastline in a arctic context. Use the written scenario as the source of meaning: A Mountain rises above surrounding land, and a Valley lies between higher areas. The Coastline marks the boundary where land meets the sea. A map supplies location; an invented illustration does not establish the site’s position. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Arctic",
-      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Ice Cap, Snowfield, Frost, and Icicle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowflake, Slush, Pack Ice, and Crevasse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Ice Cave, Tundra, Fjord, and Frozen Lake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain, Valley, and Coastline. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Arctic: Understanding the different roles",
+      "text": "An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice. A Snowflake is an ice crystal or collection of crystals. Slush mixes partly melted snow and water. Pack Ice consists of floating sea-ice pieces, while a Crevasse is a deep crack in glacier ice. None indicates a safe walking route. The display contrasts an Ice Cave, Tundra with low vegetation, a Fjord, and a Frozen Lake. The Fjord is a long narrow sea inlet bordered by steep sides. A frozen surface does not establish safe ice thickness. A Mountain rises above surrounding land, and a Valley lies between higher areas. The Coastline marks the boundary where land meets the sea. A map supplies location; an invented illustration does not establish the site’s position.",
+      "imageBrief": "One uncluttered arctic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cap, Snowfield, Frost, and Icicle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ice Cap",
+        "prompt": "An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice.\nWhich pointed piece of ice hangs from a surface?",
+        "answer": "Icicle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowflake, Slush, Pack Ice, and Crevasse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Snowflake",
+        "prompt": "A Snowflake is an ice crystal or collection of crystals. Slush mixes partly melted snow and water. Pack Ice consists of floating sea-ice pieces, while a Crevasse is a deep crack in glacier ice. None indicates a safe walking route.\nWhich target describes floating sea-ice pieces?",
+        "answer": "Pack Ice",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ice Cave, Tundra, Fjord, and Frozen Lake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ice Cave",
+        "prompt": "The display contrasts an Ice Cave, Tundra with low vegetation, a Fjord, and a Frozen Lake. The Fjord is a long narrow sea inlet bordered by steep sides. A frozen surface does not establish safe ice thickness.\nWhich feature is the long narrow sea inlet?",
+        "answer": "Fjord",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain, Valley, and Coastline and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mountain",
+        "prompt": "A Mountain rises above surrounding land, and a Valley lies between higher areas. The Coastline marks the boundary where land meets the sea. A map supplies location; an invented illustration does not establish the site’s position.\nWhich target describes the land-sea boundary?",
+        "answer": "Coastline",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice. A Snowflake is an ice crystal or collection of crystals. Slush mixes partly melted snow and water. Pack Ice consists of floating sea-ice pieces, while a Crevasse is a deep crack in glacier ice. None indicates a safe walking route. The display contrasts an Ice Cave, Tundra with low vegetation, a Fjord, and a Frozen Lake. The Fjord is a long narrow sea inlet bordered by steep sides. A frozen surface does not establish safe ice thickness. A Mountain rises above surrounding land, and a Valley lies between higher areas. The Coastline marks the boundary where land meets the sea. A map supplies location; an invented illustration does not establish the site’s position.\nExplain the difference between Ice Cap and Snowfield using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Ice Cap"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Polar Bear” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the arctic task. Use Ice Cap, Snowfield, Frost, Icicle, Snowflake, Slush, Pack Ice, Crevasse, Ice Cave, Tundra, Fjord, Frozen Lake, Mountain, Valley, and Coastline in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Ice Cap, Snowfield, Frost, Icicle, Snowflake, Slush, Pack Ice, Crevasse, Ice Cave, Tundra, Fjord, Frozen Lake, Mountain, Valley, Coastline to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Arctic: In Context",
-      "idea": "45-70 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Arctic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Ice Cap and Snowfield, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: An Ice Cap is a smaller dome-like land-ice mass than an ice sheet. A Snowfield is an extensive snow-covered area. Frost forms on cold surfaces, while an Icicle hangs as a pointed piece of ice. Pause and answer: Which pointed piece of ice hangs from a surface?"
     },
     "spacedReview": "1 lesson(s) back: Polar Bear, Arctic Fox from arctic-1\n3 lesson(s) back: Searchlight, Underwater Camera from submarine-4\n7 lesson(s) back: Log Sheet, Report from laboratory-5"
   },
@@ -377,7 +343,7 @@
     "targetWordsArabic": [
       "شبه جزيرة",
       "جزيرة",
-      "حجرة خدمة",
+      "خليج",
       "جرف",
       "معطف باركا",
       "أحذية ثلج",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "138-168 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Peninsula", "Island", "Bay", "Cliff"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.",
+          "scenario": "The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Peninsula", "Island", "Bay"],
-            "expectedAnswer": "Peninsula"
+            "question": "Which feature is an inlet partly enclosed by land?",
+            "options": ["Bay", "Peninsula", "Island"],
+            "expectedAnswer": "Bay"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Peninsula as the central item; include Peninsula, Island, and Bay naturally where visually appropriate, but make the real-world use of Peninsula the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Bay in a arctic context. Use the written scenario as the source of meaning: The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Parka", "Snow Boots", "Fur Hat", "Mittens"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.",
+          "scenario": "A Parka is a warm coat, Snow Boots are footwear for snowy conditions, and a Fur Hat covers the head. Mittens keep four fingers together while the thumb has a separate section. Clothing suitability depends on the actual conditions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Parka", "Snow Boots", "Fur Hat"],
-            "expectedAnswer": "Parka"
+            "question": "Which hand coverings keep four fingers together?",
+            "options": ["Mittens", "Parka", "Snow Boots"],
+            "expectedAnswer": "Mittens"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Parka as the central item; include Parka, Snow Boots, and Fur Hat naturally where visually appropriate, but make the real-world use of Parka the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mittens in a arctic context. Use the written scenario as the source of meaning: A Parka is a warm coat, Snow Boots are footwear for snowy conditions, and a Fur Hat covers the head. Mittens keep four fingers together while the thumb has a separate section. Clothing suitability depends on the actual conditions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Scarf", "Thermal Underwear", "Goggles", "Face Mask"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.",
+          "scenario": "A Scarf wraps the neck. Thermal Underwear forms an insulating inner clothing layer, Goggles cover the eyes, and a Face Mask here shields part of the face from cold wind. The visitor asks staff about suitable equipment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Scarf", "Thermal Underwear", "Goggles"],
-            "expectedAnswer": "Scarf"
+            "question": "Which item is the insulating inner clothing layer?",
+            "options": ["Thermal Underwear", "Scarf", "Goggles"],
+            "expectedAnswer": "Thermal Underwear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Scarf as the central item; include Scarf, Thermal Underwear, and Goggles naturally where visually appropriate, but make the real-world use of Scarf the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Thermal Underwear in a arctic context. Use the written scenario as the source of meaning: A Scarf wraps the neck. Thermal Underwear forms an insulating inner clothing layer, Goggles cover the eyes, and a Face Mask here shields part of the face from cold wind. The visitor asks staff about suitable equipment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Snow Pants", "Wool Socks", "Dog Sled"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.",
+          "scenario": "Snow Pants cover the legs, and Wool Socks help insulate the feet. A Dog Sled carries people or supplies while dogs pull it. The display distinguishes garments from transport rather than suggesting an unguided journey.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Snow Pants", "Wool Socks", "Dog Sled"],
-            "expectedAnswer": "Snow Pants"
+            "question": "Which target names the transport pulled by dogs?",
+            "options": ["Dog Sled", "Snow Pants", "Wool Socks"],
+            "expectedAnswer": "Dog Sled"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snow Pants as the central item; include Snow Pants, Wool Socks, and Dog Sled naturally where visually appropriate, but make the real-world use of Snow Pants the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dog Sled in a arctic context. Use the written scenario as the source of meaning: Snow Pants cover the legs, and Wool Socks help insulate the feet. A Dog Sled carries people or supplies while dogs pull it. The display distinguishes garments from transport rather than suggesting an unguided journey. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Arctic",
-      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Peninsula, Island, Bay, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Parka, Snow Boots, Fur Hat, and Mittens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Scarf, Thermal Underwear, Goggles, and Face Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snow Pants, Wool Socks, and Dog Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Arctic: Comparing the equipment",
+      "text": "The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment. A Parka is a warm coat, Snow Boots are footwear for snowy conditions, and a Fur Hat covers the head. Mittens keep four fingers together while the thumb has a separate section. Clothing suitability depends on the actual conditions. A Scarf wraps the neck. Thermal Underwear forms an insulating inner clothing layer, Goggles cover the eyes, and a Face Mask here shields part of the face from cold wind. The visitor asks staff about suitable equipment. Snow Pants cover the legs, and Wool Socks help insulate the feet. A Dog Sled carries people or supplies while dogs pull it. The display distinguishes garments from transport rather than suggesting an unguided journey.",
+      "imageBrief": "One uncluttered arctic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Peninsula, Island, Bay, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Peninsula",
+        "prompt": "The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment.\nWhich feature is an inlet partly enclosed by land?",
+        "answer": "Bay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Parka, Snow Boots, Fur Hat, and Mittens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Parka",
+        "prompt": "A Parka is a warm coat, Snow Boots are footwear for snowy conditions, and a Fur Hat covers the head. Mittens keep four fingers together while the thumb has a separate section. Clothing suitability depends on the actual conditions.\nWhich hand coverings keep four fingers together?",
+        "answer": "Mittens",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scarf, Thermal Underwear, Goggles, and Face Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Scarf",
+        "prompt": "A Scarf wraps the neck. Thermal Underwear forms an insulating inner clothing layer, Goggles cover the eyes, and a Face Mask here shields part of the face from cold wind. The visitor asks staff about suitable equipment.\nWhich item is the insulating inner clothing layer?",
+        "answer": "Thermal Underwear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snow Pants, Wool Socks, and Dog Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Snow Pants",
+        "prompt": "Snow Pants cover the legs, and Wool Socks help insulate the feet. A Dog Sled carries people or supplies while dogs pull it. The display distinguishes garments from transport rather than suggesting an unguided journey.\nWhich target names the transport pulled by dogs?",
+        "answer": "Dog Sled",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment. A Parka is a warm coat, Snow Boots are footwear for snowy conditions, and a Fur Hat covers the head. Mittens keep four fingers together while the thumb has a separate section. Clothing suitability depends on the actual conditions. A Scarf wraps the neck. Thermal Underwear forms an insulating inner clothing layer, Goggles cover the eyes, and a Face Mask here shields part of the face from cold wind. The visitor asks staff about suitable equipment. Snow Pants cover the legs, and Wool Socks help insulate the feet. A Dog Sled carries people or supplies while dogs pull it. The display distinguishes garments from transport rather than suggesting an unguided journey.\nExplain the difference between Peninsula and Island using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Peninsula"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ice Cap” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the arctic task. Use Peninsula, Island, Bay, Cliff, Parka, Snow Boots, Fur Hat, Mittens, Scarf, Thermal Underwear, Goggles, Face Mask, Snow Pants, Wool Socks, and Dog Sled in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Peninsula, Island, Bay, Cliff, Parka, Snow Boots, Fur Hat, Mittens, Scarf, Thermal Underwear, Goggles, Face Mask, Snow Pants, Wool Socks, Dog Sled to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Arctic: In Context",
-      "idea": "45-70 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Arctic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Peninsula and Island, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The geography guide distinguishes a Peninsula projecting into water, an Island surrounded by water, a Bay partly enclosed by land, and a Cliff with a steep face. Here Bay has a geographic meaning, not a service compartment. Pause and answer: Which feature is an inlet partly enclosed by land?"
     },
     "spacedReview": "1 lesson(s) back: Ice Cap, Snowfield from arctic-2\n3 lesson(s) back: Sonar, Radio from submarine-5\n7 lesson(s) back: Hull, Conning Tower from submarine-1"
   },
@@ -551,7 +500,7 @@
     "targetWordsArabic": [
       "مركبة ثلجية",
       "كاسحة جليد",
-      "كاياك",
+      "قارب كاياك",
       "زلاجات",
       "أحذية ثلجية عريضة",
       "مروحية",
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "141-171 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Snowmobile", "Ice Breaker", "Kayak", "Skis"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.",
+          "scenario": "A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Snowmobile", "Ice Breaker", "Kayak"],
-            "expectedAnswer": "Snowmobile"
+            "question": "Which transport is the specially designed ship?",
+            "options": ["Ice Breaker", "Snowmobile", "Kayak"],
+            "expectedAnswer": "Ice Breaker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snowmobile as the central item; include Snowmobile, Ice Breaker, and Kayak naturally where visually appropriate, but make the real-world use of Snowmobile the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Ice Breaker in a arctic context. Use the written scenario as the source of meaning: A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Snowshoes", "Helicopter", "Research Vessel", "Sled"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.",
+          "scenario": "Snowshoes spread a walker’s weight over a larger area of snow. A Helicopter uses rotors, a Research Vessel supports scientific work at sea, and a Sled slides over snow or ice. The exhibit supplies definitions rather than route advice.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which footwear spreads a walker’s weight over snow?",
             "options": ["Snowshoes", "Helicopter", "Research Vessel"],
             "expectedAnswer": "Snowshoes"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snowshoes as the central item; include Snowshoes, Helicopter, and Research Vessel naturally where visually appropriate, but make the real-world use of Snowshoes the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Snowshoes in a arctic context. Use the written scenario as the source of meaning: Snowshoes spread a walker’s weight over a larger area of snow. A Helicopter uses rotors, a Research Vessel supports scientific work at sea, and a Sled slides over snow or ice. The exhibit supplies definitions rather than route advice. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Toboggan", "Igloo", "Research Station", "Northern Lights"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.",
+          "scenario": "A Toboggan is a sliding sled. An Igloo is a snow-block shelter in this glossary; it does not represent every Arctic community’s housing. A Research Station supports scientific work. Northern Lights are a natural sky phenomenon.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Toboggan", "Igloo", "Research Station"],
-            "expectedAnswer": "Toboggan"
+            "question": "Which target names the snow-block shelter?",
+            "options": ["Igloo", "Toboggan", "Research Station"],
+            "expectedAnswer": "Igloo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Toboggan as the central item; include Toboggan, Igloo, and Research Station naturally where visually appropriate, but make the real-world use of Toboggan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Igloo in a arctic context. Use the written scenario as the source of meaning: A Toboggan is a sliding sled. An Igloo is a snow-block shelter in this glossary; it does not represent every Arctic community’s housing. A Research Station supports scientific work. Northern Lights are a natural sky phenomenon. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Midnight Sun", "Ice Fishing", "Campfire"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.",
+          "scenario": "Midnight Sun describes the Sun remaining above the horizon around midnight during polar summer. Ice Fishing takes place through openings in frozen water under appropriate guidance. A Campfire is an outdoor fire whose permitted use depends on local conditions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which phenomenon keeps the Sun visible around midnight in polar summer?",
             "options": ["Midnight Sun", "Ice Fishing", "Campfire"],
             "expectedAnswer": "Midnight Sun"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Midnight Sun as the central item; include Midnight Sun, Ice Fishing, and Campfire naturally where visually appropriate, but make the real-world use of Midnight Sun the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Midnight Sun in a arctic context. Use the written scenario as the source of meaning: Midnight Sun describes the Sun remaining above the horizon around midnight during polar summer. Ice Fishing takes place through openings in frozen water under appropriate guidance. A Campfire is an outdoor fire whose permitted use depends on local conditions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Arctic",
-      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Snowmobile, Ice Breaker, Kayak, and Skis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snowshoes, Helicopter, Research Vessel, and Sled. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Toboggan, Igloo, Research Station, and Northern Lights. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Midnight Sun, Ice Fishing, and Campfire. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Arctic: A guided walk",
+      "text": "A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning. Snowshoes spread a walker’s weight over a larger area of snow. A Helicopter uses rotors, a Research Vessel supports scientific work at sea, and a Sled slides over snow or ice. The exhibit supplies definitions rather than route advice. A Toboggan is a sliding sled. An Igloo is a snow-block shelter in this glossary; it does not represent every Arctic community’s housing. A Research Station supports scientific work. Northern Lights are a natural sky phenomenon. Midnight Sun describes the Sun remaining above the horizon around midnight during polar summer. Ice Fishing takes place through openings in frozen water under appropriate guidance. A Campfire is an outdoor fire whose permitted use depends on local conditions.",
+      "imageBrief": "One uncluttered arctic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowmobile, Ice Breaker, Kayak, and Skis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Snowmobile",
+        "prompt": "A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning.\nWhich transport is the specially designed ship?",
+        "answer": "Ice Breaker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoes, Helicopter, Research Vessel, and Sled and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Snowshoes spread a walker’s weight over a larger area of snow. A Helicopter uses rotors, a Research Vessel supports scientific work at sea, and a Sled slides over snow or ice. The exhibit supplies definitions rather than route advice.\nWhich footwear spreads a walker’s weight over snow?",
         "answer": "Snowshoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Toboggan, Igloo, Research Station, and Northern Lights and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Toboggan",
+        "prompt": "A Toboggan is a sliding sled. An Igloo is a snow-block shelter in this glossary; it does not represent every Arctic community’s housing. A Research Station supports scientific work. Northern Lights are a natural sky phenomenon.\nWhich target names the snow-block shelter?",
+        "answer": "Igloo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Midnight Sun, Ice Fishing, and Campfire and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Midnight Sun describes the Sun remaining above the horizon around midnight during polar summer. Ice Fishing takes place through openings in frozen water under appropriate guidance. A Campfire is an outdoor fire whose permitted use depends on local conditions.\nWhich phenomenon keeps the Sun visible around midnight in polar summer?",
         "answer": "Midnight Sun",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning. Snowshoes spread a walker’s weight over a larger area of snow. A Helicopter uses rotors, a Research Vessel supports scientific work at sea, and a Sled slides over snow or ice. The exhibit supplies definitions rather than route advice. A Toboggan is a sliding sled. An Igloo is a snow-block shelter in this glossary; it does not represent every Arctic community’s housing. A Research Station supports scientific work. Northern Lights are a natural sky phenomenon. Midnight Sun describes the Sun remaining above the horizon around midnight during polar summer. Ice Fishing takes place through openings in frozen water under appropriate guidance. A Campfire is an outdoor fire whose permitted use depends on local conditions.\nExplain the difference between Snowmobile and Ice Breaker using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Snowmobile"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Peninsula” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the arctic task. Use Snowmobile, Ice Breaker, Kayak, Skis, Snowshoes, Helicopter, Research Vessel, Sled, Toboggan, Igloo, Research Station, Northern Lights, Midnight Sun, Ice Fishing, and Campfire in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Snowmobile, Ice Breaker, Kayak, Skis, Snowshoes, Helicopter, Research Vessel, Sled, Toboggan, Igloo, Research Station, Northern Lights, Midnight Sun, Ice Fishing, Campfire to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Arctic: In Context",
-      "idea": "45-70 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Arctic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Snowmobile and Ice Breaker, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Snowmobile travels over snow, an Ice Breaker is a ship designed to move through sea ice, a Kayak is paddled, and Skis let a wearer glide on snow. Actual transport depends on terrain and professional planning. Pause and answer: Which transport is the specially designed ship?"
     },
     "spacedReview": "1 lesson(s) back: Peninsula, Island from arctic-3\n3 lesson(s) back: Polar Bear, Arctic Fox from arctic-1\n7 lesson(s) back: Sonar Display, Helm from submarine-2"
   },
@@ -723,7 +655,7 @@
       "تلسكوب",
       "علم",
       "محطة طقس",
-      "طبق استقبال الأقمار الصناعية",
+      "طبق اتصالات بالأقمار الصناعية",
       "حوت",
       "تربة متجمدة باستمرار",
       "ثلج",
@@ -737,110 +669,93 @@
       "goal": "Use precise, practical vocabulary to understand scientific vocabulary, observations, and safety-related information and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the science or research setting with reasonable fluency.",
       "textType": "narrative",
-      "readingTarget": "120-170 words",
+      "readingTarget": "106-136 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Flag", "Weather Station", "Satellite Dish"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.",
+          "scenario": "A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Telescope", "Flag", "Weather Station"],
-            "expectedAnswer": "Telescope"
+            "question": "Which installation measures atmospheric conditions?",
+            "options": ["Weather Station", "Telescope", "Flag"],
+            "expectedAnswer": "Weather Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Telescope as the central item; include Telescope, Flag, and Weather Station naturally where visually appropriate, but make the real-world use of Telescope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Weather Station in a arctic context. Use the written scenario as the source of meaning: A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Whale", "Permafrost", "Snow", "Aurora"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.",
+          "scenario": "A Whale is an air-breathing marine mammal. Permafrost is ground remaining at or below freezing for at least two consecutive years. Snow is frozen precipitation. Aurora names the polar light display, also called northern lights in the Northern Hemisphere.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Whale", "Permafrost", "Snow"],
-            "expectedAnswer": "Whale"
+            "question": "Which target names the persistently frozen ground?",
+            "options": ["Permafrost", "Whale", "Snow"],
+            "expectedAnswer": "Permafrost"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Whale as the central item; include Whale, Permafrost, and Snow naturally where visually appropriate, but make the real-world use of Whale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Permafrost in a arctic context. Use the written scenario as the source of meaning: A Whale is an air-breathing marine mammal. Permafrost is ground remaining at or below freezing for at least two consecutive years. Snow is frozen precipitation. Aurora names the polar light display, also called northern lights in the Northern Hemisphere. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Snowshoe", "Expedition", "Compass", "Icebreaker"],
-          "scenario": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.",
+          "scenario": "A Snowshoe supports travel over snow, and an Expedition is an organized journey for a purpose. A Compass supplies a direction reference. An Icebreaker is a ship designed for ice; the guide notes the earlier spelling Ice Breaker for the same ship type.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Snowshoe", "Expedition", "Compass"],
-            "expectedAnswer": "Snowshoe"
+            "question": "Which instrument supplies a direction reference?",
+            "options": ["Compass", "Snowshoe", "Expedition"],
+            "expectedAnswer": "Compass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a science or research setting. Show an adult using or examining the Snowshoe as the central item; include Snowshoe, Expedition, and Compass naturally where visually appropriate, but make the real-world use of Snowshoe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a science or research setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Compass in a arctic context. Use the written scenario as the source of meaning: A Snowshoe supports travel over snow, and an Expedition is an organized journey for a purpose. A Compass supplies a direction reference. An Icebreaker is a ship designed for ice; the guide notes the earlier spelling Ice Breaker for the same ship type. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written arctic situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Adult Learner at The Arctic",
-      "text": "At the arctic, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Telescope, Flag, Weather Station, and Satellite Dish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whale, Permafrost, Snow, and Aurora. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snowshoe, Expedition, Compass, and Icebreaker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Arctic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Arctic: A practical discussion",
+      "text": "A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings. A Whale is an air-breathing marine mammal. Permafrost is ground remaining at or below freezing for at least two consecutive years. Snow is frozen precipitation. Aurora names the polar light display, also called northern lights in the Northern Hemisphere. A Snowshoe supports travel over snow, and an Expedition is an organized journey for a purpose. A Compass supplies a direction reference. An Icebreaker is a ship designed for ice; the guide notes the earlier spelling Ice Breaker for the same ship type.",
+      "imageBrief": "One uncluttered arctic setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telescope, Flag, Weather Station, and Satellite Dish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Telescope",
+        "prompt": "A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings.\nWhich installation measures atmospheric conditions?",
+        "answer": "Weather Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale, Permafrost, Snow, and Aurora and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Whale",
+        "prompt": "A Whale is an air-breathing marine mammal. Permafrost is ground remaining at or below freezing for at least two consecutive years. Snow is frozen precipitation. Aurora names the polar light display, also called northern lights in the Northern Hemisphere.\nWhich target names the persistently frozen ground?",
+        "answer": "Permafrost",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the arctic setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snowshoe, Expedition, Compass, and Icebreaker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Snowshoe",
+        "prompt": "A Snowshoe supports travel over snow, and an Expedition is an organized journey for a purpose. A Compass supplies a direction reference. An Icebreaker is a ship designed for ice; the guide notes the earlier spelling Ice Breaker for the same ship type.\nWhich instrument supplies a direction reference?",
+        "answer": "Compass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings. A Whale is an air-breathing marine mammal. Permafrost is ground remaining at or below freezing for at least two consecutive years. Snow is frozen precipitation. Aurora names the polar light display, also called northern lights in the Northern Hemisphere. A Snowshoe supports travel over snow, and an Expedition is an organized journey for a purpose. A Compass supplies a direction reference. An Icebreaker is a ship designed for ice; the guide notes the earlier spelling Ice Breaker for the same ship type.\nExplain the difference between Telescope and Flag using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Telescope"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Snowmobile” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the arctic task. Use Telescope, Flag, Weather Station, Satellite Dish, Whale, Permafrost, Snow, Aurora, Snowshoe, Expedition, Compass, and Icebreaker in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Telescope, Flag, Weather Station, Satellite Dish, Whale, Permafrost, Snow, Aurora, Snowshoe, Expedition, Compass, Icebreaker to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Arctic: In Context",
-      "idea": "45-70 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Arctic: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Telescope and Flag, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Telescope supports distant viewing, and a Flag represents an organization or country. A Weather Station measures atmospheric conditions. A Satellite Dish supports specified satellite communication; equipment appearance alone does not reveal current readings. Pause and answer: Which installation measures atmospheric conditions?"
     },
     "spacedReview": "1 lesson(s) back: Snowmobile, Ice Breaker from arctic-4\n3 lesson(s) back: Ice Cap, Snowfield from arctic-2\n7 lesson(s) back: Captain, Navigator from submarine-3"
   }

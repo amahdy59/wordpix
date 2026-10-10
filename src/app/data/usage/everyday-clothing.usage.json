@@ -44,10 +44,10 @@
       "بنطال ضيق"
     ],
     "usage": {
-      "goal": "Learn to use everyday clothing 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to everyday clothing.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -59,124 +59,126 @@
             "expectedAnswer": "Blouse"
           },
           "imageBrief": "Show an adult in a clothing shop, with T-Shirt, Shirt, and Blouse visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including T-Shirt, Shirt, Blouse in a natural setting."
+          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including T-Shirt, Shirt, Blouse in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Blouse while also considering T-Shirt and Shirt. He compares the fabrics, fit, and purpose before making a practical choice.",
+            "sourceQuestion": "Which target does Omar notice first in this situation?",
+            "sourceAnswer": "Blouse",
+            "scenario": "At the clothing shop, Omar buys a blouse as a gift for his sister. He buys a T-shirt for himself and leaves the shirt on the rack.",
+            "question": "Which item does Omar buy for his sister?",
+            "imageBrief": "Vocabulary-reference support only. One opaque loose blouse on a hanger, sleeves and front clearly visible; no person. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sweater", "Hoodie", "Tank Top"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweater while also considering Hoodie and Tank Top. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Omar wants a warm knitted sweater for the office. He leaves the hoodie and tank top on the shelf because he has chosen the knitted item. A polo shirt has a collar and a short buttoned neck, but Omar wants a sweater today.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Omar choose for the office?",
             "options": ["Sweater", "Hoodie", "Tank Top"],
             "expectedAnswer": "Sweater"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Sweater, Hoodie, and Tank Top visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Sweater, Hoodie, Tank Top in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A knitted long-sleeved sweater laid flat; no hood or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Polo Shirt", "Cardigan", "Pullover"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Cardigan while also considering Polo Shirt and Pullover. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Omar tries on a cardigan with buttons down the front. He can open it without pulling it over his head. The pullover has no front opening.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item can Omar open at the front?",
             "options": ["Polo Shirt", "Cardigan", "Pullover"],
             "expectedAnswer": "Cardigan"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Polo Shirt, Cardigan, and Pullover visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Polo Shirt, Cardigan, Pullover in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A knitted cardigan with a complete buttoned front opening, laid flat. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Vest", "Jeans", "Pants"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Pants while also considering Vest and Jeans. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "The pants in the fitting room are too small. Omar asks for a larger size. The vest and jeans already fit him.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Omar need in a larger size?",
             "options": ["Vest", "Jeans", "Pants"],
             "expectedAnswer": "Pants"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Vest, Jeans, and Pants visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Vest, Jeans, Pants in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of plain full-length tailored pants, laid flat; no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Shorts", "Skirt", "Leggings"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Shorts while also considering Skirt and Leggings. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Omar packs shorts for the weekend. They finish above his knees. He leaves the skirt and leggings in the shop.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Omar pack for the weekend?",
             "options": ["Shorts", "Skirt", "Leggings"],
             "expectedAnswer": "Shorts"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Shorts, Skirt, and Leggings visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Shorts, Skirt, Leggings in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain shorts laid flat; show both short legs and waistband. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ]
     },
     "reading": {
-      "title": "Everyday Clothing: Email",
-      "text": "Omar has an everyday task connected to everyday clothing. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare t-shirt, shirt, and blouse. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare sweater, hoodie, and tank top. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Everyday Clothing. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing clothes for a new job",
+      "text": "Omar starts a new office job on Monday. He takes a shirt and a sweater into the fitting room. The shirt is too small, so he asks for a larger size. He tries on a cardigan that opens at the front. He chooses pants for work and keeps his shorts for the weekend. He checks the price before paying.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Choosing clothes for a new job. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
         "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Blouse while also considering T-Shirt and Shirt. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
         "answer": "Blouse",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweater while also considering Hoodie and Tank Top. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Omar wants a warm knitted sweater for the office. He leaves the hoodie and tank top on the shelf because he has chosen the knitted item. A polo shirt has a collar and a short buttoned neck, but Omar wants a sweater today.\nWhich item does Omar choose for the office?",
         "answer": "Sweater",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Cardigan while also considering Polo Shirt and Pullover. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Omar tries on a cardigan with buttons down the front. He can open it without pulling it over his head. The pullover has no front opening.\nWhich item can Omar open at the front?",
         "answer": "Cardigan",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Pants while also considering Vest and Jeans. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "The pants in the fitting room are too small. Omar asks for a larger size. The vest and jeans already fit him.\nWhich item does Omar need in a larger size?",
         "answer": "Pants",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Shorts while also considering Skirt and Leggings. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Omar packs shorts for the weekend. They finish above his knees. He leaves the skirt and leggings in the shop.\nWhich item does Omar pack for the weekend?",
         "answer": "Shorts",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "T-Shirt"
+        "prompt": "Omar starts a new office job on Monday. He takes a shirt and a sweater into the fitting room. The shirt is too small, so he asks for a larger size. He tries on a cardigan that opens at the front. He chooses pants for work and keeps his shorts for the weekend. He checks the price before paying.\nWhy does Omar need a larger size?",
+        "answer": "The shirt is too small.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sweater"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Marriage” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Sweater”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Omar wants a warm knitted sweater for the office. He leaves the hoodie and tank top on the shelf because he has chosen the knitted item. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Everyday Clothing: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing clothes for a new job",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar starts a new office job on Monday. He takes a shirt and a sweater into the fitting room. The shirt is too small, so he asks for a larger size. He tries on a cardigan that opens at the front. He chooses pants for work and keeps his shorts for the weekend. He checks the price before paying. Pause and ask: Why does Omar need a larger size?"
     },
     "spacedReview": "1 lesson(s) back: Marriage, Parenthood from ages-life-stages-4\n3 lesson(s) back: Growth Spurt, Young Adult from ages-life-stages-2\n7 lesson(s) back: Bruise, Scar from skin-hair-2"
   },
@@ -212,7 +214,7 @@
       "بنطال كارغو",
       "بنطال كاكي",
       "بنطال كابري",
-      "بنطال كولوت واسع",
+      "بنطال واسع قصير يشبه التنورة",
       "سترة",
       "معطف",
       "معطف مطر",
@@ -225,139 +227,133 @@
       "سترة صوف صناعي"
     ],
     "usage": {
-      "goal": "Learn to use everyday clothing 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to everyday clothing.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sweatpants", "Cargo Pants", "Khakis"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweatpants while also considering Cargo Pants and Khakis. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Sam wants soft casual pants for an evening at home. He chooses sweatpants instead of cargo pants with side pockets or his khakis.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which pants does Sam choose for an evening at home?",
             "options": ["Sweatpants", "Cargo Pants", "Khakis"],
             "expectedAnswer": "Sweatpants"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Sweatpants, Cargo Pants, and Khakis visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Sweatpants, Cargo Pants, Khakis in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Soft sweatpants with elastic waistband and cuffs, laid flat. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Capris", "Culottes", "Jacket"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Culottes while also considering Capris and Jacket. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "In the shop, Sam sees culottes with two wide legs ending below the knees. The capris have narrower legs, and the jacket hangs above them.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item has two wide legs ending below the knees?",
             "options": ["Capris", "Culottes", "Jacket"],
             "expectedAnswer": "Culottes"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Capris, Culottes, and Jacket visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Capris, Culottes, Jacket in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Wide-legged culottes ending below the knees, laid flat without a wearer. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Coat", "Raincoat", "Windbreaker"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Windbreaker while also considering Coat and Raincoat. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Sam packs a light windbreaker for a breezy walk. He keeps the heavy coat at home. He packs the raincoat separately for wet weather.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Sam pack for a breezy walk?",
             "options": ["Coat", "Raincoat", "Windbreaker"],
             "expectedAnswer": "Windbreaker"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Coat, Raincoat, and Windbreaker visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Coat, Raincoat, Windbreaker in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Lightweight windbreaker with a zip and plain fabric, laid flat. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Parka", "Blazer", "Trench Coat"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Parka while also considering Blazer and Trench Coat. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "The mountain forecast is very cold. Sam packs his insulated parka with a hood. His blazer and trench coat stay in the wardrobe.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Sam pack for the very cold trip?",
             "options": ["Parka", "Blazer", "Trench Coat"],
             "expectedAnswer": "Parka"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Parka, Blazer, and Trench Coat visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Parka, Blazer, Trench Coat in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A thick insulated hooded parka laid flat, with no fur or branding. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Puffer Jacket", "Denim Jacket", "Fleece"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Denim Jacket while also considering Puffer Jacket and Fleece. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "For dinner with his friend, Sam chooses the jacket made from blue denim. The puffer jacket and fleece stay in his bag.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which jacket does Sam choose for dinner?",
             "options": ["Puffer Jacket", "Denim Jacket", "Fleece"],
             "expectedAnswer": "Denim Jacket"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Puffer Jacket, Denim Jacket, and Fleece visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Puffer Jacket, Denim Jacket, Fleece in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A blue denim jacket with visible woven denim and seams, laid flat. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ]
     },
     "reading": {
-      "title": "Everyday Clothing: Personal Message",
-      "text": "Omar has an everyday task connected to everyday clothing. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare sweatpants, cargo pants, and khakis. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare capris, culottes, and jacket. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Everyday Clothing. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Packing for a cool weekend",
+      "text": "Sam packs for a weekend away. He puts sweatpants in his bag for a quiet evening. He chooses a windbreaker for a breezy walk. If the weather gets colder, he can wear his warm parka. He also takes a denim jacket to visit a friend. Before closing the bag, he checks the weather forecast again.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Packing for a cool weekend. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sweatpants while also considering Cargo Pants and Khakis. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Sam wants soft casual pants for an evening at home. He chooses sweatpants instead of cargo pants with side pockets or his khakis.\nWhich pants does Sam choose for an evening at home?",
         "answer": "Sweatpants",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Culottes while also considering Capris and Jacket. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "In the shop, Sam sees culottes with two wide legs ending below the knees. The capris have narrower legs, and the jacket hangs above them.\nWhich item has two wide legs ending below the knees?",
         "answer": "Culottes",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Windbreaker while also considering Coat and Raincoat. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Sam packs a light windbreaker for a breezy walk. He keeps the heavy coat at home. He packs the raincoat separately for wet weather.\nWhich item does Sam pack for a breezy walk?",
         "answer": "Windbreaker",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Parka while also considering Blazer and Trench Coat. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "The mountain forecast is very cold. Sam packs his insulated parka with a hood. His blazer and trench coat stay in the wardrobe.\nWhich item does Sam pack for the very cold trip?",
         "answer": "Parka",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Denim Jacket while also considering Puffer Jacket and Fleece. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "For dinner with his friend, Sam chooses the jacket made from blue denim. The puffer jacket and fleece stay in his bag.\nWhich jacket does Sam choose for dinner?",
         "answer": "Denim Jacket",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Sweatpants"
+        "prompt": "Sam packs for a weekend away. He puts sweatpants in his bag for a quiet evening. He chooses a windbreaker for a breezy walk. If the weather gets colder, he can wear his warm parka. He also takes a denim jacket to visit a friend. Before closing the bag, he checks the weather forecast again.\nWhat does Sam check before closing the bag?",
+        "answer": "The weather forecast.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Capris"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “T-Shirt” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Sweatpants”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Sam wants soft casual pants for an evening at home. He chooses sweatpants instead of cargo pants with side pockets or his khakis. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Everyday Clothing: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Packing for a cool weekend",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Sam packs for a weekend away. He puts sweatpants in his bag for a quiet evening. He chooses a windbreaker for a breezy walk. If the weather gets colder, he can wear his warm parka. He also takes a denim jacket to visit a friend. Before closing the bag, he checks the weather forecast again. Pause and ask: What does Sam check before closing the bag?"
     },
     "spacedReview": "1 lesson(s) back: T-Shirt, Shirt from everyday-clothing-1\n3 lesson(s) back: Senior, Retiree from ages-life-stages-3\n7 lesson(s) back: Comb, Brush from skin-hair-3"
   },
@@ -406,139 +402,133 @@
       "سروال داخلي واسع"
     ],
     "usage": {
-      "goal": "Learn to use everyday clothing 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to everyday clothing.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dress", "Sundress", "Maxi Dress"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sundress while also considering Dress and Maxi Dress. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Leila hangs a light sleeveless sundress in the wardrobe. The other dress is for work, and the maxi dress reaches her ankles. The mini dress is much shorter than the maxi dress.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Leila hang in the wardrobe?",
             "options": ["Dress", "Sundress", "Maxi Dress"],
             "expectedAnswer": "Sundress"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Dress, Sundress, and Maxi Dress visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Dress, Sundress, Maxi Dress in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A light sleeveless sundress on a hanger, no wearer; avoid transparent fabric. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mini Dress", "Jumpsuit", "Romper"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Romper while also considering Mini Dress and Jumpsuit. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Leila folds a romper for her adult sister. It is one garment with a top joined to shorts. The jumpsuit has full-length legs.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which garment has a top joined to shorts?",
             "options": ["Mini Dress", "Jumpsuit", "Romper"],
             "expectedAnswer": "Romper"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Mini Dress, Jumpsuit, and Romper visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Mini Dress, Jumpsuit, Romper in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An opaque adult-size romper laid flat, showing joined top and short legs. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Overalls", "Tracksuit", "Uniform"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Overalls while also considering Tracksuit and Uniform. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Leila puts her work overalls on a separate shelf. They have a bib at the front and straps over the shoulders. Her tracksuit stays in a drawer. Leila also prepares her uniform, the standard clothing she wears at work.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item has a front bib and shoulder straps?",
             "options": ["Overalls", "Tracksuit", "Uniform"],
             "expectedAnswer": "Overalls"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Overalls, Tracksuit, and Uniform visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Overalls, Tracksuit, Uniform in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Adult work overalls laid flat, complete bib and shoulder straps visible. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Onesie", "Underwear", "Bra"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Underwear while also considering Onesie and Bra. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Leila puts the family's underwear in a drawer. She hangs the adult onesie in the wardrobe and folds the bra on another shelf.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which general category goes in the drawer?",
             "options": ["Onesie", "Underwear", "Bra"],
             "expectedAnswer": "Underwear"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Onesie, Underwear, and Bra visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Onesie, Underwear, Bra in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Folded plain opaque undergarments on a shelf; no person or body. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Socks", "Undershirt", "Boxer Shorts"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Boxer Shorts while also considering Socks and Undershirt. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Leila folds her husband's loose boxer shorts. His socks are already paired, and his undershirt is hanging to dry.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Leila fold?",
             "options": ["Socks", "Undershirt", "Boxer Shorts"],
             "expectedAnswer": "Boxer Shorts"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Socks, Undershirt, and Boxer Shorts visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Socks, Undershirt, Boxer Shorts in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain loose adult boxer shorts laid flat; no person or body. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ]
     },
     "reading": {
-      "title": "Everyday Clothing: Short Dialogue",
-      "text": "Omar has an everyday task connected to everyday clothing. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare dress, sundress, and maxi dress. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare mini dress, jumpsuit, and romper. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Everyday Clothing. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Sorting clean clothes",
+      "text": "Leila sorts clean clothes at home. She hangs a sundress in the wardrobe and folds a romper for her adult sister. Her work overalls go on a separate shelf. She puts underwear and socks in a drawer. A clean undershirt and boxer shorts belong to her husband. She leaves the family uniforms ready for Monday.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Sorting clean clothes. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Sundress while also considering Dress and Maxi Dress. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Leila hangs a light sleeveless sundress in the wardrobe. The other dress is for work, and the maxi dress reaches her ankles. The mini dress is much shorter than the maxi dress.\nWhich item does Leila hang in the wardrobe?",
         "answer": "Sundress",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Romper while also considering Mini Dress and Jumpsuit. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Leila folds a romper for her adult sister. It is one garment with a top joined to shorts. The jumpsuit has full-length legs.\nWhich garment has a top joined to shorts?",
         "answer": "Romper",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Overalls while also considering Tracksuit and Uniform. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Leila puts her work overalls on a separate shelf. They have a bib at the front and straps over the shoulders. Her tracksuit stays in a drawer. Leila also prepares her uniform, the standard clothing she wears at work.\nWhich item has a front bib and shoulder straps?",
         "answer": "Overalls",
-        "contextTag": "scene-3",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Underwear while also considering Onesie and Bra. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Leila puts the family's underwear in a drawer. She hangs the adult onesie in the wardrobe and folds the bra on another shelf.\nWhich general category goes in the drawer?",
         "answer": "Underwear",
-        "contextTag": "scene-4",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Boxer Shorts while also considering Socks and Undershirt. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Leila folds her husband's loose boxer shorts. His socks are already paired, and his undershirt is hanging to dry.\nWhich item does Leila fold?",
         "answer": "Boxer Shorts",
-        "contextTag": "scene-5",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Dress"
+        "prompt": "Leila sorts clean clothes at home. She hangs a sundress in the wardrobe and folds a romper for her adult sister. Her work overalls go on a separate shelf. She puts underwear and socks in a drawer. A clean undershirt and boxer shorts belong to her husband. She leaves the family uniforms ready for Monday.\nWhere does Leila put the underwear and socks?",
+        "answer": "In a drawer.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Mini Dress"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sweatpants” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Sundress”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Leila hangs a light sleeveless sundress in the wardrobe. The other dress is for work, and the maxi dress reaches her ankles. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Everyday Clothing: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Sorting clean clothes",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Leila sorts clean clothes at home. She hangs a sundress in the wardrobe and folds a romper for her adult sister. Her work overalls go on a separate shelf. She puts underwear and socks in a drawer. A clean undershirt and boxer shorts belong to her husband. She leaves the family uniforms ready for Monday. Pause and ask: Where does Leila put the underwear and socks?"
     },
     "spacedReview": "1 lesson(s) back: Sweatpants, Cargo Pants from everyday-clothing-2\n3 lesson(s) back: Marriage, Parenthood from ages-life-stages-4\n7 lesson(s) back: Face Mask, Eye Cream from skin-hair-4"
   },
@@ -554,89 +544,83 @@
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Pajamas", "Nightgown", "Robe", "Bathrobe", "Slippers"],
     "targetWordsArabic": [
-      "بي جامة / ملابس النوم",
+      "بيجامة؛ ملابس نوم",
       "قميص نوم",
-      "روب حمام / برنس",
+      "رداء فضفاض",
       "رداء حمام",
       "شبشب / خف منزلي"
     ],
     "usage": {
-      "goal": "Learn to use everyday clothing 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to everyday clothing.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pajamas", "Nightgown", "Robe"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Robe while also considering Pajamas and Nightgown. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Sam wears a robe over his pajamas while reading before bed. A nightgown is hanging in the wardrobe.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which garment does Sam wear over his pajamas?",
             "options": ["Pajamas", "Nightgown", "Robe"],
             "expectedAnswer": "Robe"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Pajamas, Nightgown, and Robe visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Pajamas, Nightgown, Robe in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. An opaque adult robe with a tied belt, laid flat without a wearer. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bathrobe", "Slippers"],
-          "scenario": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers. He compares the fabrics, fit, and purpose before making a practical choice.",
+          "scenario": "Sam hangs his absorbent bathrobe near the shower. His slippers stay beside the bed so he can find them later.",
           "check": {
-            "question": "Which target does Omar notice first in this situation?",
+            "question": "Which item does Sam hang near the shower?",
             "options": ["Bathrobe", "Slippers", "Pajamas"],
             "expectedAnswer": "Bathrobe"
           },
-          "imageBrief": "Show an adult in a clothing shop, with Bathrobe and Slippers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult everyday clothing scene showing lesson-related items or actions including Bathrobe, Slippers in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A thick terry-cloth bathrobe on a hanger; no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ]
     },
     "reading": {
-      "title": "Everyday Clothing: Tips/Notice",
-      "text": "Omar has an everyday task connected to everyday clothing. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare pajamas, nightgown, and robe. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare bathrobe and slippers. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Everyday Clothing. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Getting ready for bed",
+      "text": "After a long day, Sam changes into pajamas. His slippers are beside the bed. He puts a soft robe over his pajamas while he reads. The bathrobe hangs near the shower because he uses it after washing. Before sleeping, he turns off the lamp and leaves his slippers where he can find them.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Getting ready for bed. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Robe while also considering Pajamas and Nightgown. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Sam wears a robe over his pajamas while reading before bed. A nightgown is hanging in the wardrobe.\nWhich garment does Sam wear over his pajamas?",
         "answer": "Robe",
-        "contextTag": "scene-1",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "At a clothing shop, Omar is choosing what to wear for work and the weekend. Omar notices Bathrobe while also considering Slippers. He compares the fabrics, fit, and purpose before making a practical choice.\nWhich target does Omar notice first in this situation?",
+        "prompt": "Sam hangs his absorbent bathrobe near the shower. His slippers stay beside the bed so he can find them later.\nWhich item does Sam hang near the shower?",
         "answer": "Bathrobe",
-        "contextTag": "scene-2",
+        "questionType": "meaning",
         "responseMode": "short-answer",
-        "questionType": "meaning"
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pajamas"
+        "prompt": "After a long day, Sam changes into pajamas. His slippers are beside the bed. He puts a soft robe over his pajamas while he reads. The bathrobe hangs near the shower because he uses it after washing. Before sleeping, he turns off the lamp and leaves his slippers where he can find them.\nWhere is Sam's bathrobe?",
+        "answer": "Near the shower.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Bathrobe"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dress” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Robe”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Sam wears a robe over his pajamas while reading before bed. A nightgown is hanging in the wardrobe. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Everyday Clothing: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Getting ready for bed",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: After a long day, Sam changes into pajamas. His slippers are beside the bed. He puts a soft robe over his pajamas while he reads. The bathrobe hangs near the shower because he uses it after washing. Before sleeping, he turns off the lamp and leaves his slippers where he can find them. Pause and ask: Where is Sam's bathrobe?"
     },
     "spacedReview": "1 lesson(s) back: Dress, Sundress from everyday-clothing-3\n3 lesson(s) back: T-Shirt, Shirt from everyday-clothing-1\n7 lesson(s) back: Newborn, Baby from ages-life-stages-1"
   }

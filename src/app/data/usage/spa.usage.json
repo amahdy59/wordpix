@@ -37,142 +37,141 @@
       "بالحجارة الساخنة",
       "تدليك الأنسجة العميقة",
       "تدليك انعكاسي",
-      "تدليك سويدي",
+      "مساج سويدي علاجي",
       "تقشير",
       "مقشّر للجسم",
       "لفّ الجسم بالأعشاب البحرية",
       "قناع للوجه"
     ],
     "usage": {
-      "goal": "Learn to use the spa 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "172-202 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Massage", "Facial", "Body Wrap"],
-          "scenario": "During a routine the spa task, an adult compares Massage, Facial, Body Wrap. The person selects Massage for the next step.",
+          "scenario": "A relaxation massage uses soothing rhythmic kneading, gliding strokes, and warmed oils across tight muscles to relieve physical tension. A facial cleanses pores, and body wraps detoxify. The therapist administers a calming full-body massage.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which manual therapy uses rhythmic kneading and oils to relieve muscular tension?",
             "options": ["Massage", "Facial", "Body Wrap"],
             "expectedAnswer": "Massage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Massage, Facial, Body Wrap. The person selects Massage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Massage, Facial, Body Wrap in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Massage as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Scrub", "Manicure", "Pedicure"],
-          "scenario": "During a routine the spa task, an adult compares Scrub, Manicure, Pedicure. The person selects Scrub for the next step.",
+          "scenario": "An exfoliating body scrub applies coarse sea salts or sugar granules suspended in rich oils to slough dead epidermal cells off the skin. Manicures trim nails, and pedicures buff feet. The aesthetician applies an invigorating salt scrub before the shower.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which exfoliating skin treatment buffs away dead cells with coarse granules?",
             "options": ["Scrub", "Manicure", "Pedicure"],
             "expectedAnswer": "Scrub"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Scrub, Manicure, Pedicure. The person selects Scrub for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Scrub, Manicure, Pedicure in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Scrub as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Aromatherapy", "Hot Stone", "Deep Tissue"],
-          "scenario": "During a routine the spa task, an adult compares Aromatherapy, Hot Stone, Deep Tissue. The person selects Aromatherapy for the next step.",
+          "scenario": "Therapeutic aromatherapy blends pure botanical essential oils into treatment sessions to promote deep relaxation through inhalation and cutaneous absorption. Hot stones warm tissues, and wraps hydrate. The room fills with lavender aromatherapy scents.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which wellness therapy uses aromatic plant essential oils to enhance relaxation?",
             "options": ["Aromatherapy", "Hot Stone", "Deep Tissue"],
             "expectedAnswer": "Aromatherapy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Aromatherapy, Hot Stone, Deep Tissue. The person selects Aromatherapy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Aromatherapy, Hot Stone, Deep Tissue in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Aromatherapy as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Reflexology", "Swedish Massage", "Exfoliation"],
-          "scenario": "During a routine the spa task, an adult compares Reflexology, Swedish Massage, Exfoliation. The person selects Reflexology for the next step.",
+          "scenario": "Foot reflexology applies firm thumb and finger acupressure to specific reflex zones on the soles and toes that correlate with internal body organs. Deep tissue targets knots, and Swedish massage glides. The therapist stimulates reflex points during reflexology.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which specialized therapy applies targeted acupressure to reflex zones on the feet?",
             "options": ["Reflexology", "Swedish Massage", "Exfoliation"],
             "expectedAnswer": "Reflexology"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Reflexology, Swedish Massage, Exfoliation. The person selects Reflexology for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Reflexology, Swedish Massage, Exfoliation in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Reflexology as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Body Scrub", "Seaweed Wrap", "Facial Mask"],
-          "scenario": "During a routine the spa task, an adult compares Body Scrub, Seaweed Wrap, Facial Mask. The person selects Body Scrub for the next step.",
+          "scenario": "An exfoliating body scrub buffs rough patches along elbows, shoulders, and legs using fine walnut or jojoba grains. Seaweed wraps nourish, and facial masks tone. The client rinses off the mineral-rich body scrub in the hydrotherapy shower.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which granular skin treatment buffs away surface dryness across the entire body?",
             "options": ["Body Scrub", "Seaweed Wrap", "Facial Mask"],
             "expectedAnswer": "Body Scrub"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Body Scrub, Seaweed Wrap, Facial Mask. The person selects Body Scrub for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Body Scrub, Seaweed Wrap, Facial Mask in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Body Scrub as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 1: A short reading",
-      "text": "Maya reads the spa menu before booking. She compares a massage with a facial and asks how long each appointment takes. Omar chooses a manicure instead of a pedicure. The receptionist explains the available times. They confirm their bookings and ask what they should bring before leaving the reception desk.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Therapeutic bodywork, exfoliating scrubs and reflexology",
+      "text": "A relaxation massage uses soothing rhythmic kneading, gliding strokes, and warmed oils across tight muscles to relieve physical tension. A facial cleanses pores, and body wraps detoxify. The therapist administers a calming full-body massage. An exfoliating body scrub applies coarse sea salts or sugar granules suspended in rich oils to slough dead epidermal cells off the skin. Manicures trim nails, and pedicures buff feet. The aesthetician applies an invigorating salt scrub before the shower. Therapeutic aromatherapy blends pure botanical essential oils into treatment sessions to promote deep relaxation through inhalation and cutaneous absorption. Hot stones warm tissues, and wraps hydrate. The room fills with lavender aromatherapy scents. Foot reflexology applies firm thumb and finger acupressure to specific reflex zones on the soles and toes that correlate with internal body organs. Deep tissue targets knots, and Swedish massage glides. The therapist stimulates reflex points during reflexology. An exfoliating body scrub buffs rough patches along elbows, shoulders, and legs using fine walnut or jojoba grains. Seaweed wraps nourish, and facial masks tone. The client rinses off the mineral-rich body scrub in the hydrotherapy shower.",
+      "imageBrief": "Use independently inspected word references to support Therapeutic bodywork, exfoliating scrubs and reflexology; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Massage, Facial, Body Wrap. The person selects Massage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A relaxation massage uses soothing rhythmic kneading, gliding strokes, and warmed oils across tight muscles to relieve physical tension. A facial cleanses pores, and body wraps detoxify. The therapist administers a calming full-body massage.\nWhich manual therapy uses rhythmic kneading and oils to relieve muscular tension?",
         "answer": "Massage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Scrub, Manicure, Pedicure. The person selects Scrub for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An exfoliating body scrub applies coarse sea salts or sugar granules suspended in rich oils to slough dead epidermal cells off the skin. Manicures trim nails, and pedicures buff feet. The aesthetician applies an invigorating salt scrub before the shower.\nWhich exfoliating skin treatment buffs away dead cells with coarse granules?",
         "answer": "Scrub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Aromatherapy, Hot Stone, Deep Tissue. The person selects Aromatherapy for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Therapeutic aromatherapy blends pure botanical essential oils into treatment sessions to promote deep relaxation through inhalation and cutaneous absorption. Hot stones warm tissues, and wraps hydrate. The room fills with lavender aromatherapy scents.\nWhich wellness therapy uses aromatic plant essential oils to enhance relaxation?",
         "answer": "Aromatherapy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Reflexology, Swedish Massage, Exfoliation. The person selects Reflexology for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Foot reflexology applies firm thumb and finger acupressure to specific reflex zones on the soles and toes that correlate with internal body organs. Deep tissue targets knots, and Swedish massage glides. The therapist stimulates reflex points during reflexology.\nWhich specialized therapy applies targeted acupressure to reflex zones on the feet?",
         "answer": "Reflexology",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Body Scrub, Seaweed Wrap, Facial Mask. The person selects Body Scrub for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An exfoliating body scrub buffs rough patches along elbows, shoulders, and legs using fine walnut or jojoba grains. Seaweed wraps nourish, and facial masks tone. The client rinses off the mineral-rich body scrub in the hydrotherapy shower.\nWhich granular skin treatment buffs away surface dryness across the entire body?",
         "answer": "Body Scrub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A relaxation massage uses soothing rhythmic kneading, gliding strokes, and warmed oils across tight muscles to relieve physical tension. A facial cleanses pores, and body wraps detoxify. The therapist administers a calming full-body massage. An exfoliating body scrub applies coarse sea salts or sugar granules suspended in rich oils to slough dead epidermal cells off the skin. Manicures trim nails, and pedicures buff feet. The aesthetician applies an invigorating salt scrub before the shower. Therapeutic aromatherapy blends pure botanical essential oils into treatment sessions to promote deep relaxation through inhalation and cutaneous absorption. Hot stones warm tissues, and wraps hydrate. The room fills with lavender aromatherapy scents. Foot reflexology applies firm thumb and finger acupressure to specific reflex zones on the soles and toes that correlate with internal body organs. Deep tissue targets knots, and Swedish massage glides. The therapist stimulates reflex points during reflexology. An exfoliating body scrub buffs rough patches along elbows, shoulders, and legs using fine walnut or jojoba grains. Seaweed wraps nourish, and facial masks tone. The client rinses off the mineral-rich body scrub in the hydrotherapy shower.\nCompare “Massage” and “Facial” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Sink” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar choose instead of a pedicure?",
-        "answer": "A manicure",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Massage, Facial, Body Wrap, Scrub, Manicure, Pedicure, Aromatherapy, Hot Stone, Deep Tissue, Reflexology, Swedish Massage, Exfoliation, Body Scrub, Seaweed Wrap, Facial Mask in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Therapeutic bodywork, exfoliating scrubs and reflexology",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A relaxation massage uses soothing rhythmic kneading, gliding strokes, and warmed oils across tight muscles to relieve physical tension. A facial cleanses pores, and body wraps detoxify. The therapist administers a calming full-body massage. Which manual therapy uses rhythmic kneading and oils to relieve muscular tension?"
     },
     "spacedReview": "1 lesson(s) back: Sink, Sterilizer from barbershop-4\n3 lesson(s) back: Shaving Brush, Spray Bottle from barbershop-2\n7 lesson(s) back: Taper, Bob Cut from hair-salon-5"
   },
@@ -205,7 +204,7 @@
     ],
     "targetWordsArabic": [
       "قناع طيني",
-      "خيار",
+      "شرائح خيار مهدئة للعين",
       "تدليك تايلاندي",
       "تدليك رياضي",
       "تصريف لمفاوي",
@@ -221,135 +220,134 @@
       "جهاز بخار للوجه"
     ],
     "usage": {
-      "goal": "Learn to use the spa 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "185-215 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clay Mask", "Cucumber Slices", "Thai Massage"],
-          "scenario": "During a routine the spa task, an adult compares Clay Mask, Cucumber Slices, Thai Massage. The person selects Clay Mask for the next step.",
+          "scenario": "A mineral clay mask is smoothed across facial contours to draw out excess sebum, absorb impurities, and tighten enlarged skin pores. Cucumber slices cool lids, and baths soak feet. The aesthetician brushes a warm clay mask over the forehead and cheeks.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which mineral paste dries on facial skin to absorb excess oil and impurities?",
             "options": ["Clay Mask", "Cucumber Slices", "Thai Massage"],
             "expectedAnswer": "Clay Mask"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Clay Mask, Cucumber Slices, Thai Massage. The person selects Clay Mask for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Clay Mask, Cucumber Slices, Thai Massage in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Clay Mask as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sports Massage", "Lymphatic Drainage", "Cupping Therapy"],
-          "scenario": "During a routine the spa task, an adult compares Sports Massage, Lymphatic Drainage, Cupping Therapy. The person selects Sports Massage for the next step.",
+          "scenario": "A targeted sports massage combines deep compression, friction strokes, and assisted stretching to alleviate muscle soreness and enhance athletic recovery. Thai massage stretches joints, and cupping uses cups. The therapist applies sports massage to tight calf muscles.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which specialized vigorous massage alleviates muscle soreness for athletic recovery?",
             "options": ["Sports Massage", "Lymphatic Drainage", "Cupping Therapy"],
             "expectedAnswer": "Sports Massage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Sports Massage, Lymphatic Drainage, Cupping Therapy. The person selects Sports Massage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Sports Massage, Lymphatic Drainage, Cupping Therapy in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Sports Massage as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hot Stone Therapy", "Cold Therapy", "Hydrotherapy"],
-          "scenario": "During a routine the spa task, an adult compares Hot Stone Therapy, Cold Therapy, Hydrotherapy. The person selects Hot Stone Therapy for the next step.",
+          "scenario": "Hot stone therapy places smooth, heated volcanic basalt stones along spinal energy meridians to melt deep muscular stiffness with radiant warmth. Cold therapy constricts vessels, and baths relax. The therapist glides a hot stone therapy basalt stone across the shoulders.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which restorative treatment places heated basalt stones along spinal muscles?",
             "options": ["Hot Stone Therapy", "Cold Therapy", "Hydrotherapy"],
             "expectedAnswer": "Hot Stone Therapy"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Hot Stone Therapy, Cold Therapy, Hydrotherapy. The person selects Hot Stone Therapy for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Hot Stone Therapy, Cold Therapy, Hydrotherapy in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Hot Stone Therapy as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Flotation Tank", "Mineral Bath", "Paraffin Wax Treatment"],
-          "scenario": "During a routine the spa task, an adult compares Flotation Tank, Mineral Bath, Paraffin Wax Treatment. The person selects Flotation Tank for the next step.",
+          "scenario": "A sensory flotation tank contains skin-temperature water saturated with dense Epsom salt allowing individuals to float effortlessly in total darkness and silence. Mineral baths soak limbs, and steamers moisten skin. The visitor floats weightlessly inside the flotation tank.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which enclosed buoyant pool saturated with Epsom salt provides sensory isolation?",
             "options": ["Flotation Tank", "Mineral Bath", "Paraffin Wax Treatment"],
             "expectedAnswer": "Flotation Tank"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Flotation Tank, Mineral Bath, Paraffin Wax Treatment. The person selects Flotation Tank for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Flotation Tank, Mineral Bath, Paraffin Wax Treatment in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Flotation Tank as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Foot Soak", "Scalp Treatment", "Facial Steamer"],
-          "scenario": "During a routine the spa task, an adult compares Foot Soak, Scalp Treatment, Facial Steamer. The person selects Foot Soak for the next step.",
+          "scenario": "A therapeutic foot soak immerses tired feet in a warm basin infused with sea minerals, eucalyptus oils, and botanical herbs. Scalp treatments condition hair, and wax soothes joints. The guest relaxes during a lavender foot soak before their pedicure.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which warm herbal water basin immerses tired feet before treatments?",
             "options": ["Foot Soak", "Scalp Treatment", "Facial Steamer"],
             "expectedAnswer": "Foot Soak"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Foot Soak, Scalp Treatment, Facial Steamer. The person selects Foot Soak for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Foot Soak, Scalp Treatment, Facial Steamer in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Foot Soak as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 2: A short reading",
-      "text": "The spa menu lists Thai massage, sports massage, and hot stone therapy. Maya asks how the appointments differ before selecting one. A facial photograph shows a clay mask and cucumber slices. Omar checks the appointment length rather than guessing from the name. The receptionist answers their questions and confirms the available times.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Mineral clay masks, athletic sports massage and flotation tanks",
+      "text": "A mineral clay mask is smoothed across facial contours to draw out excess sebum, absorb impurities, and tighten enlarged skin pores. Cucumber slices cool lids, and baths soak feet. The aesthetician brushes a warm clay mask over the forehead and cheeks. A targeted sports massage combines deep compression, friction strokes, and assisted stretching to alleviate muscle soreness and enhance athletic recovery. Thai massage stretches joints, and cupping uses cups. The therapist applies sports massage to tight calf muscles. Hot stone therapy places smooth, heated volcanic basalt stones along spinal energy meridians to melt deep muscular stiffness with radiant warmth. Cold therapy constricts vessels, and baths relax. The therapist glides a hot stone therapy basalt stone across the shoulders. A sensory flotation tank contains skin-temperature water saturated with dense Epsom salt allowing individuals to float effortlessly in total darkness and silence. Mineral baths soak limbs, and steamers moisten skin. The visitor floats weightlessly inside the flotation tank. A therapeutic foot soak immerses tired feet in a warm basin infused with sea minerals, eucalyptus oils, and botanical herbs. Scalp treatments condition hair, and wax soothes joints. The guest relaxes during a lavender foot soak before their pedicure.",
+      "imageBrief": "Use independently inspected word references to support Mineral clay masks, athletic sports massage and flotation tanks; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Clay Mask, Cucumber Slices, Thai Massage. The person selects Clay Mask for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A mineral clay mask is smoothed across facial contours to draw out excess sebum, absorb impurities, and tighten enlarged skin pores. Cucumber slices cool lids, and baths soak feet. The aesthetician brushes a warm clay mask over the forehead and cheeks.\nWhich mineral paste dries on facial skin to absorb excess oil and impurities?",
         "answer": "Clay Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Sports Massage, Lymphatic Drainage, Cupping Therapy. The person selects Sports Massage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A targeted sports massage combines deep compression, friction strokes, and assisted stretching to alleviate muscle soreness and enhance athletic recovery. Thai massage stretches joints, and cupping uses cups. The therapist applies sports massage to tight calf muscles.\nWhich specialized vigorous massage alleviates muscle soreness for athletic recovery?",
         "answer": "Sports Massage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Hot Stone Therapy, Cold Therapy, Hydrotherapy. The person selects Hot Stone Therapy for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Hot stone therapy places smooth, heated volcanic basalt stones along spinal energy meridians to melt deep muscular stiffness with radiant warmth. Cold therapy constricts vessels, and baths relax. The therapist glides a hot stone therapy basalt stone across the shoulders.\nWhich restorative treatment places heated basalt stones along spinal muscles?",
         "answer": "Hot Stone Therapy",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Flotation Tank, Mineral Bath, Paraffin Wax Treatment. The person selects Flotation Tank for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A sensory flotation tank contains skin-temperature water saturated with dense Epsom salt allowing individuals to float effortlessly in total darkness and silence. Mineral baths soak limbs, and steamers moisten skin. The visitor floats weightlessly inside the flotation tank.\nWhich enclosed buoyant pool saturated with Epsom salt provides sensory isolation?",
         "answer": "Flotation Tank",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Foot Soak, Scalp Treatment, Facial Steamer. The person selects Foot Soak for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A therapeutic foot soak immerses tired feet in a warm basin infused with sea minerals, eucalyptus oils, and botanical herbs. Scalp treatments condition hair, and wax soothes joints. The guest relaxes during a lavender foot soak before their pedicure.\nWhich warm herbal water basin immerses tired feet before treatments?",
         "answer": "Foot Soak",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A mineral clay mask is smoothed across facial contours to draw out excess sebum, absorb impurities, and tighten enlarged skin pores. Cucumber slices cool lids, and baths soak feet. The aesthetician brushes a warm clay mask over the forehead and cheeks. A targeted sports massage combines deep compression, friction strokes, and assisted stretching to alleviate muscle soreness and enhance athletic recovery. Thai massage stretches joints, and cupping uses cups. The therapist applies sports massage to tight calf muscles. Hot stone therapy places smooth, heated volcanic basalt stones along spinal energy meridians to melt deep muscular stiffness with radiant warmth. Cold therapy constricts vessels, and baths relax. The therapist glides a hot stone therapy basalt stone across the shoulders. A sensory flotation tank contains skin-temperature water saturated with dense Epsom salt allowing individuals to float effortlessly in total darkness and silence. Mineral baths soak limbs, and steamers moisten skin. The visitor floats weightlessly inside the flotation tank. A therapeutic foot soak immerses tired feet in a warm basin infused with sea minerals, eucalyptus oils, and botanical herbs. Scalp treatments condition hair, and wax soothes joints. The guest relaxes during a lavender foot soak before their pedicure.\nCompare “Clay Mask” and “Cucumber Slices” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Massage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does the facial photograph show?",
-        "answer": "A clay mask and cucumber slices",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Clay Mask, Cucumber Slices, Thai Massage, Sports Massage, Lymphatic Drainage, Cupping Therapy, Hot Stone Therapy, Cold Therapy, Hydrotherapy, Flotation Tank, Mineral Bath, Paraffin Wax Treatment, Foot Soak, Scalp Treatment, Facial Steamer in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Mineral clay masks, athletic sports massage and flotation tanks",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A mineral clay mask is smoothed across facial contours to draw out excess sebum, absorb impurities, and tighten enlarged skin pores. Cucumber slices cool lids, and baths soak feet. The aesthetician brushes a warm clay mask over the forehead and cheeks. Which mineral paste dries on facial skin to absorb excess oil and impurities?"
     },
     "spacedReview": "1 lesson(s) back: Massage, Facial from spa-1\n3 lesson(s) back: Gel, Pomade from barbershop-3\n7 lesson(s) back: Conditioner, Hairspray from hair-salon-6"
   },
@@ -391,142 +389,141 @@
       "دُش",
       "غرفة تبديل الملابس والخزائن",
       "منطقة الاستقبال",
-      "-",
+      "حديقة استرخاء",
       "شرفة",
       "حوض غطس",
       "غرفة ملح",
       "حمام طين"
     ],
     "usage": {
-      "goal": "Learn to use the spa 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "177-207 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dermaroller", "LED Light Therapy", "Sauna"],
-          "scenario": "During a routine the spa task, an adult compares Dermaroller, LED Light Therapy, Sauna. The person selects Dermaroller for the next step.",
+          "scenario": "A microneedling dermaroller features hundreds of surgical micro-pins rolled across skin to stimulate collagen regeneration and improve serum absorption. LED light treats blemishes, and saunas heat rooms. The licensed practitioner maneuvers the sterile dermaroller.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which handheld rolling device with micro-pins stimulates skin collagen?",
             "options": ["Dermaroller", "LED Light Therapy", "Sauna"],
             "expectedAnswer": "Dermaroller"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Dermaroller, LED Light Therapy, Sauna. The person selects Dermaroller for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Dermaroller, LED Light Therapy, Sauna in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Dermaroller as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Steam Room", "Hot Tub", "Pool"],
-          "scenario": "During a routine the spa task, an adult compares Steam Room, Hot Tub, Pool. The person selects Steam Room for the next step.",
+          "scenario": "A humid steam room maintains high temperatures around forty-five degrees Celsius with near total humidity to open pores and ease breathing. Saunas provide dry heat, and hot tubs bubble. The guest breathes moist eucalyptus vapor in the steam room.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which heated ceramic chamber delivers near one hundred percent humidity?",
             "options": ["Steam Room", "Hot Tub", "Pool"],
             "expectedAnswer": "Steam Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Steam Room, Hot Tub, Pool. The person selects Steam Room for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Steam Room, Hot Tub, Pool in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Steam Room as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Relaxation Room", "Shower", "Locker Room"],
-          "scenario": "During a routine the spa task, an adult compares Relaxation Room, Shower, Locker Room. The person selects Relaxation Room for the next step.",
+          "scenario": "A serene relaxation room provides cushioned recliners, soft blankets, dimmed lighting, and warm herbal teas for guests resting between spa therapies. Showers rinse bodies, and lockers store robes. The client naps in the quiet relaxation room after the massage.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which quiet lounge provides recliners and tea for resting between spa sessions?",
             "options": ["Relaxation Room", "Shower", "Locker Room"],
             "expectedAnswer": "Relaxation Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Relaxation Room, Shower, Locker Room. The person selects Relaxation Room for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Relaxation Room, Shower, Locker Room in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Relaxation Room as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Reception", "Garden", "Terrace"],
-          "scenario": "During a routine the spa task, an adult compares Reception, Garden, Terrace. The person selects Reception for the next step.",
+          "scenario": "The spa reception counter welcomes guests, confirms appointment itineraries, and coordinates private treatment suite assignments. Gardens provide outdoor views, and terraces offer sun. The concierge greets clients at the spa reception desk.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which front welcome desk checks in guests and coordinates spa itineraries?",
             "options": ["Reception", "Garden", "Terrace"],
             "expectedAnswer": "Reception"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Reception, Garden, Terrace. The person selects Reception for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Reception, Garden, Terrace in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Reception as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Plunge Pool", "Salt Room", "Mud Bath"],
-          "scenario": "During a routine the spa task, an adult compares Plunge Pool, Salt Room, Mud Bath. The person selects Plunge Pool for the next step.",
+          "scenario": "A cold plunge pool is a chilled hydrotherapy bath maintained between ten and fifteen degrees Celsius that constricts blood vessels after hot sauna sessions. Salt rooms offer salt air, and mud baths coat limbs. The bather immerses briefly in the cold plunge pool.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which chilled hydrotherapy pool provides rapid cooling after hot saunas?",
             "options": ["Plunge Pool", "Salt Room", "Mud Bath"],
             "expectedAnswer": "Plunge Pool"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Plunge Pool, Salt Room, Mud Bath. The person selects Plunge Pool for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Plunge Pool, Salt Room, Mud Bath in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Plunge Pool as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 3: A short reading",
-      "text": "Maya tours the spa before her appointment. The receptionist points out the sauna, steam room, and pool. Omar finds the locker room and shower. A relaxation room has quiet seating. They read the facility information and ask which areas are included in their bookings before putting their bags in the lockers.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Microneedling rollers, steam rooms and cold plunge pools",
+      "text": "A microneedling dermaroller features hundreds of surgical micro-pins rolled across skin to stimulate collagen regeneration and improve serum absorption. LED light treats blemishes, and saunas heat rooms. The licensed practitioner maneuvers the sterile dermaroller. A humid steam room maintains high temperatures around forty-five degrees Celsius with near total humidity to open pores and ease breathing. Saunas provide dry heat, and hot tubs bubble. The guest breathes moist eucalyptus vapor in the steam room. A serene relaxation room provides cushioned recliners, soft blankets, dimmed lighting, and warm herbal teas for guests resting between spa therapies. Showers rinse bodies, and lockers store robes. The client naps in the quiet relaxation room after the massage. The spa reception counter welcomes guests, confirms appointment itineraries, and coordinates private treatment suite assignments. Gardens provide outdoor views, and terraces offer sun. The concierge greets clients at the spa reception desk. A cold plunge pool is a chilled hydrotherapy bath maintained between ten and fifteen degrees Celsius that constricts blood vessels after hot sauna sessions. Salt rooms offer salt air, and mud baths coat limbs. The bather immerses briefly in the cold plunge pool.",
+      "imageBrief": "Use independently inspected word references to support Microneedling rollers, steam rooms and cold plunge pools; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Dermaroller, LED Light Therapy, Sauna. The person selects Dermaroller for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A microneedling dermaroller features hundreds of surgical micro-pins rolled across skin to stimulate collagen regeneration and improve serum absorption. LED light treats blemishes, and saunas heat rooms. The licensed practitioner maneuvers the sterile dermaroller.\nWhich handheld rolling device with micro-pins stimulates skin collagen?",
         "answer": "Dermaroller",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Steam Room, Hot Tub, Pool. The person selects Steam Room for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A humid steam room maintains high temperatures around forty-five degrees Celsius with near total humidity to open pores and ease breathing. Saunas provide dry heat, and hot tubs bubble. The guest breathes moist eucalyptus vapor in the steam room.\nWhich heated ceramic chamber delivers near one hundred percent humidity?",
         "answer": "Steam Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Relaxation Room, Shower, Locker Room. The person selects Relaxation Room for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A serene relaxation room provides cushioned recliners, soft blankets, dimmed lighting, and warm herbal teas for guests resting between spa therapies. Showers rinse bodies, and lockers store robes. The client naps in the quiet relaxation room after the massage.\nWhich quiet lounge provides recliners and tea for resting between spa sessions?",
         "answer": "Relaxation Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Reception, Garden, Terrace. The person selects Reception for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The spa reception counter welcomes guests, confirms appointment itineraries, and coordinates private treatment suite assignments. Gardens provide outdoor views, and terraces offer sun. The concierge greets clients at the spa reception desk.\nWhich front welcome desk checks in guests and coordinates spa itineraries?",
         "answer": "Reception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Plunge Pool, Salt Room, Mud Bath. The person selects Plunge Pool for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A cold plunge pool is a chilled hydrotherapy bath maintained between ten and fifteen degrees Celsius that constricts blood vessels after hot sauna sessions. Salt rooms offer salt air, and mud baths coat limbs. The bather immerses briefly in the cold plunge pool.\nWhich chilled hydrotherapy pool provides rapid cooling after hot saunas?",
         "answer": "Plunge Pool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A microneedling dermaroller features hundreds of surgical micro-pins rolled across skin to stimulate collagen regeneration and improve serum absorption. LED light treats blemishes, and saunas heat rooms. The licensed practitioner maneuvers the sterile dermaroller. A humid steam room maintains high temperatures around forty-five degrees Celsius with near total humidity to open pores and ease breathing. Saunas provide dry heat, and hot tubs bubble. The guest breathes moist eucalyptus vapor in the steam room. A serene relaxation room provides cushioned recliners, soft blankets, dimmed lighting, and warm herbal teas for guests resting between spa therapies. Showers rinse bodies, and lockers store robes. The client naps in the quiet relaxation room after the massage. The spa reception counter welcomes guests, confirms appointment itineraries, and coordinates private treatment suite assignments. Gardens provide outdoor views, and terraces offer sun. The concierge greets clients at the spa reception desk. A cold plunge pool is a chilled hydrotherapy bath maintained between ten and fifteen degrees Celsius that constricts blood vessels after hot sauna sessions. Salt rooms offer salt air, and mud baths coat limbs. The bather immerses briefly in the cold plunge pool.\nCompare “Dermaroller” and “LED Light Therapy” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Clay Mask” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where do Maya and Omar put their bags?",
-        "answer": "In the lockers",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Dermaroller, LED Light Therapy, Sauna, Steam Room, Hot Tub, Pool, Relaxation Room, Shower, Locker Room, Reception, Garden, Terrace, Plunge Pool, Salt Room, Mud Bath in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Microneedling rollers, steam rooms and cold plunge pools",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A microneedling dermaroller features hundreds of surgical micro-pins rolled across skin to stimulate collagen regeneration and improve serum absorption. LED light treats blemishes, and saunas heat rooms. The licensed practitioner maneuvers the sterile dermaroller. Which handheld rolling device with micro-pins stimulates skin collagen?"
     },
     "spacedReview": "1 lesson(s) back: Clay Mask, Cucumber Slices from spa-2\n3 lesson(s) back: Sink, Sterilizer from barbershop-4\n7 lesson(s) back: Reception, Appointment Book from hair-salon-7"
   },
@@ -571,139 +568,138 @@
       "كريم للبشرة",
       "قناع للبشرة",
       "سيروم للبشرة",
-      "ملح",
+      "ملح استحمام معدني",
       "طين"
     ],
     "usage": {
-      "goal": "Learn to use the spa 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "182-212 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Towel Warmer", "Infrared Sauna", "Cryotherapy"],
-          "scenario": "During a routine the spa task, an adult compares Towel Warmer, Infrared Sauna, Cryotherapy. The person selects Towel Warmer for the next step.",
+          "scenario": "A commercial towel warmer is an insulated electrical cabinet that heats and steams folded cotton towels to comforting temperatures for therapists. Infrared saunas heat bodies, and cryotherapy freezes. The aesthetician takes a warm moist towel from the towel warmer.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which electrical cabinet heats and steams cotton towels for spa treatments?",
             "options": ["Towel Warmer", "Infrared Sauna", "Cryotherapy"],
             "expectedAnswer": "Towel Warmer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Towel Warmer, Infrared Sauna, Cryotherapy. The person selects Towel Warmer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Towel Warmer, Infrared Sauna, Cryotherapy in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Towel Warmer as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Salt Scrub", "Sugar Scrub", "Coffee Scrub"],
-          "scenario": "During a routine the spa task, an adult compares Salt Scrub, Sugar Scrub, Coffee Scrub. The person selects Salt Scrub for the next step.",
+          "scenario": "A fragrant salt scrub combines coarse dead sea crystals with nourishing almond oil to invigorate sluggish skin circulation and buff dead cells. Sugar scrubs soften, and coffee scrubs tone. The therapist massages the fragrant salt scrub onto the arms.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which mineral crystal scrub buffs skin and stimulates surface circulation?",
             "options": ["Salt Scrub", "Sugar Scrub", "Coffee Scrub"],
             "expectedAnswer": "Salt Scrub"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Salt Scrub, Sugar Scrub, Coffee Scrub. The person selects Salt Scrub for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Salt Scrub, Sugar Scrub, Coffee Scrub in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Salt Scrub as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clay Wrap", "Detox Wrap", "Essential Oil"],
-          "scenario": "During a routine the spa task, an adult compares Clay Wrap, Detox Wrap, Essential Oil. The person selects Clay Wrap for the next step.",
+          "scenario": "A purifying clay wrap coats the body in mineral-rich volcanic mud before insulating sheets trap body heat to encourage perspiration and skin softening. Detox wraps contour, and lotions moisturize. The client rests comfortably encased in the warm clay wrap.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which therapeutic body treatment encases skin in warm mineral clay and thermal wrap?",
             "options": ["Clay Wrap", "Detox Wrap", "Essential Oil"],
             "expectedAnswer": "Clay Wrap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Clay Wrap, Detox Wrap, Essential Oil. The person selects Clay Wrap for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Clay Wrap, Detox Wrap, Essential Oil in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Clay Wrap as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lotion", "Cream", "Mask"],
-          "scenario": "During a routine the spa task, an adult compares Lotion, Cream, Mask. The person selects Lotion for the next step.",
+          "scenario": "A nourishing body lotion is a lightweight water-based emulsion enriched with shea butter and vitamins massaged into skin to lock in moisture. Essential oils scent rooms, and creams provide heavy moisture. The therapist applies soothing body lotion after the scrub.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which lightweight hydrating emulsion is smoothed over skin to restore moisture?",
             "options": ["Lotion", "Cream", "Mask"],
             "expectedAnswer": "Lotion"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Lotion, Cream, Mask. The person selects Lotion for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Lotion, Cream, Mask in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Lotion as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Serum", "Salt", "Mud"],
-          "scenario": "During a routine the spa task, an adult compares Serum, Salt, Mud. The person selects Serum for the next step.",
+          "scenario": "An intensive facial serum delivers highly concentrated active botanical extracts and hyaluronic acid deep into the epidermal layers. Essential oils scent baths, and mud packs detoxify. The aesthetician gently pats vitamin-rich serum around the eyes.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which concentrated liquid skincare formula delivers active vitamins deep into skin?",
             "options": ["Serum", "Salt", "Mud"],
             "expectedAnswer": "Serum"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Serum, Salt, Mud. The person selects Serum for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Serum, Salt, Mud in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Serum as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 4: A short reading",
-      "text": "The spa receptionist explains the product names on a display. Maya compares a salt scrub, sugar scrub, and coffee scrub. A towel warmer stands behind the service counter. Omar asks about an essential oil used in an appointment. They check what the booked service includes before paying at reception.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Towel warming cabinets, mineral salt wraps and skin serums",
+      "text": "A commercial towel warmer is an insulated electrical cabinet that heats and steams folded cotton towels to comforting temperatures for therapists. Infrared saunas heat bodies, and cryotherapy freezes. The aesthetician takes a warm moist towel from the towel warmer. A fragrant salt scrub combines coarse dead sea crystals with nourishing almond oil to invigorate sluggish skin circulation and buff dead cells. Sugar scrubs soften, and coffee scrubs tone. The therapist massages the fragrant salt scrub onto the arms. A purifying clay wrap coats the body in mineral-rich volcanic mud before insulating sheets trap body heat to encourage perspiration and skin softening. Detox wraps contour, and lotions moisturize. The client rests comfortably encased in the warm clay wrap. A nourishing body lotion is a lightweight water-based emulsion enriched with shea butter and vitamins massaged into skin to lock in moisture. Essential oils scent rooms, and creams provide heavy moisture. The therapist applies soothing body lotion after the scrub. An intensive facial serum delivers highly concentrated active botanical extracts and hyaluronic acid deep into the epidermal layers. Essential oils scent baths, and mud packs detoxify. The aesthetician gently pats vitamin-rich serum around the eyes.",
+      "imageBrief": "Use independently inspected word references to support Towel warming cabinets, mineral salt wraps and skin serums; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Towel Warmer, Infrared Sauna, Cryotherapy. The person selects Towel Warmer for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A commercial towel warmer is an insulated electrical cabinet that heats and steams folded cotton towels to comforting temperatures for therapists. Infrared saunas heat bodies, and cryotherapy freezes. The aesthetician takes a warm moist towel from the towel warmer.\nWhich electrical cabinet heats and steams cotton towels for spa treatments?",
         "answer": "Towel Warmer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Salt Scrub, Sugar Scrub, Coffee Scrub. The person selects Salt Scrub for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A fragrant salt scrub combines coarse dead sea crystals with nourishing almond oil to invigorate sluggish skin circulation and buff dead cells. Sugar scrubs soften, and coffee scrubs tone. The therapist massages the fragrant salt scrub onto the arms.\nWhich mineral crystal scrub buffs skin and stimulates surface circulation?",
         "answer": "Salt Scrub",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Clay Wrap, Detox Wrap, Essential Oil. The person selects Clay Wrap for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A purifying clay wrap coats the body in mineral-rich volcanic mud before insulating sheets trap body heat to encourage perspiration and skin softening. Detox wraps contour, and lotions moisturize. The client rests comfortably encased in the warm clay wrap.\nWhich therapeutic body treatment encases skin in warm mineral clay and thermal wrap?",
         "answer": "Clay Wrap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Lotion, Cream, Mask. The person selects Lotion for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A nourishing body lotion is a lightweight water-based emulsion enriched with shea butter and vitamins massaged into skin to lock in moisture. Essential oils scent rooms, and creams provide heavy moisture. The therapist applies soothing body lotion after the scrub.\nWhich lightweight hydrating emulsion is smoothed over skin to restore moisture?",
         "answer": "Lotion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Serum, Salt, Mud. The person selects Serum for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An intensive facial serum delivers highly concentrated active botanical extracts and hyaluronic acid deep into the epidermal layers. Essential oils scent baths, and mud packs detoxify. The aesthetician gently pats vitamin-rich serum around the eyes.\nWhich concentrated liquid skincare formula delivers active vitamins deep into skin?",
         "answer": "Serum",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A commercial towel warmer is an insulated electrical cabinet that heats and steams folded cotton towels to comforting temperatures for therapists. Infrared saunas heat bodies, and cryotherapy freezes. The aesthetician takes a warm moist towel from the towel warmer. A fragrant salt scrub combines coarse dead sea crystals with nourishing almond oil to invigorate sluggish skin circulation and buff dead cells. Sugar scrubs soften, and coffee scrubs tone. The therapist massages the fragrant salt scrub onto the arms. A purifying clay wrap coats the body in mineral-rich volcanic mud before insulating sheets trap body heat to encourage perspiration and skin softening. Detox wraps contour, and lotions moisturize. The client rests comfortably encased in the warm clay wrap. A nourishing body lotion is a lightweight water-based emulsion enriched with shea butter and vitamins massaged into skin to lock in moisture. Essential oils scent rooms, and creams provide heavy moisture. The therapist applies soothing body lotion after the scrub. An intensive facial serum delivers highly concentrated active botanical extracts and hyaluronic acid deep into the epidermal layers. Essential oils scent baths, and mud packs detoxify. The aesthetician gently pats vitamin-rich serum around the eyes.\nCompare “Towel Warmer” and “Infrared Sauna” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Dermaroller” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which three scrubs does Maya compare?",
-        "answer": "A salt scrub, sugar scrub, and coffee scrub",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Towel Warmer, Infrared Sauna, Cryotherapy, Salt Scrub, Sugar Scrub, Coffee Scrub, Clay Wrap, Detox Wrap, Essential Oil, Lotion, Cream, Mask, Serum, Salt, Mud in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Towel warming cabinets, mineral salt wraps and skin serums",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A commercial towel warmer is an insulated electrical cabinet that heats and steams folded cotton towels to comforting temperatures for therapists. Infrared saunas heat bodies, and cryotherapy freezes. The aesthetician takes a warm moist towel from the towel warmer. Which electrical cabinet heats and steams cotton towels for spa treatments?"
     },
     "spacedReview": "1 lesson(s) back: Dermaroller, LED Light Therapy from spa-3\n3 lesson(s) back: Massage, Facial from spa-1\n7 lesson(s) back: Buzz Cut, Fade from barbershop-1"
   },
@@ -735,7 +731,7 @@
       "Peppermint Oil"
     ],
     "targetWordsArabic": [
-      "شمعة",
+      "شمعة استرخاء معطرة",
       "بخور",
       "عشبة",
       "ناشر روائح",
@@ -752,135 +748,134 @@
       "زيت النعناع الفلفلي"
     ],
     "usage": {
-      "goal": "Learn to use the spa 5 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "172-202 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Candle", "Incense", "Herb"],
-          "scenario": "During a routine the spa task, an adult compares Candle, Incense, Herb. The person selects Candle for the next step.",
+          "scenario": "A scented soy candle emits a warm glowing flame and delicate lavender aromas that create an intimate, calming sanctuary atmosphere. Incense releases smoke, and herbs scent oils. The therapist lights an amber soy candle on the credenza.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which wax light source emits a warm gentle flame and aromatherapy fragrance?",
             "options": ["Candle", "Incense", "Herb"],
             "expectedAnswer": "Candle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Candle, Incense, Herb. The person selects Candle for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Candle, Incense, Herb in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Candle as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Diffuser", "Moisturizer", "Toner"],
-          "scenario": "During a routine the spa task, an adult compares Diffuser, Moisturizer, Toner. The person selects Diffuser for the next step.",
+          "scenario": "An ultrasonic essential oil diffuser vaporizes water and botanical essences into a cool micro-fine mist that scents treatment rooms naturally. Moisturizers soften, and toners balance skin. The diffuser disperses sweet orange and cedarwood mist.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ultrasonic electronic device vaporizes water and essential oils into a fragrant mist?",
             "options": ["Diffuser", "Moisturizer", "Toner"],
             "expectedAnswer": "Diffuser"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Diffuser, Moisturizer, Toner. The person selects Diffuser for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Diffuser, Moisturizer, Toner in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Diffuser as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cleanser", "Eye Cream", "Aloe Vera Gel"],
-          "scenario": "During a routine the spa task, an adult compares Cleanser, Eye Cream, Aloe Vera Gel. The person selects Cleanser for the next step.",
+          "scenario": "A gentle facial cleanser washes away excess surface oils, cosmetic makeup, and environmental impurities without stripping natural skin barriers. Eye creams nourish, and aloe gels cool. The aesthetician massages foaming cleanser across the face.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which gentle skincare formula cleanses makeup and impurities off facial skin?",
             "options": ["Cleanser", "Eye Cream", "Aloe Vera Gel"],
             "expectedAnswer": "Cleanser"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Cleanser, Eye Cream, Aloe Vera Gel. The person selects Cleanser for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Cleanser, Eye Cream, Aloe Vera Gel in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Cleanser as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Jojoba Oil", "Coconut Oil", "Eucalyptus Oil"],
-          "scenario": "During a routine the spa task, an adult compares Jojoba Oil, Coconut Oil, Eucalyptus Oil. The person selects Jojoba Oil for the next step.",
+          "scenario": "Organic jojoba oil is a non-comedogenic liquid plant wax closely mirroring human sebum, ideal for balancing sensitive facial complexions. Coconut oil moisturizes hair, and eucalyptus oil clears sinuses. The aesthetician blends cold-pressed jojoba oil with frankincense.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which botanical liquid plant wax closely resembles natural skin sebum?",
             "options": ["Jojoba Oil", "Coconut Oil", "Eucalyptus Oil"],
             "expectedAnswer": "Jojoba Oil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Jojoba Oil, Coconut Oil, Eucalyptus Oil. The person selects Jojoba Oil for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Jojoba Oil, Coconut Oil, Eucalyptus Oil in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Jojoba Oil as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Lavender Oil", "Tea Tree Oil", "Peppermint Oil"],
-          "scenario": "During a routine the spa task, an adult compares Lavender Oil, Tea Tree Oil, Peppermint Oil. The person selects Lavender Oil for the next step.",
+          "scenario": "Calming lavender oil is a versatile essential oil extracted from purple floral spikes renowned for soothing nervous stress and skin irritation. Tea tree oil clarifies, and peppermint oil cools. A drop of lavender oil is rubbed into the temple pressure points.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which floral essential oil is renowned for its calming and skin-soothing properties?",
             "options": ["Lavender Oil", "Tea Tree Oil", "Peppermint Oil"],
             "expectedAnswer": "Lavender Oil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Lavender Oil, Tea Tree Oil, Peppermint Oil. The person selects Lavender Oil for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Lavender Oil, Tea Tree Oil, Peppermint Oil in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Lavender Oil as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 5: A short reading",
-      "text": "Maya notices a candle and diffuser in the reception area. A product display holds moisturizer, toner, cleanser, and eye cream. Omar reads the label on aloe vera gel. They use the display to practice the product names from their lesson. The receptionist answers a question about the items available to buy.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Ambient candles, essential oil diffusers and facial cleansers",
+      "text": "A scented soy candle emits a warm glowing flame and delicate lavender aromas that create an intimate, calming sanctuary atmosphere. Incense releases smoke, and herbs scent oils. The therapist lights an amber soy candle on the credenza. An ultrasonic essential oil diffuser vaporizes water and botanical essences into a cool micro-fine mist that scents treatment rooms naturally. Moisturizers soften, and toners balance skin. The diffuser disperses sweet orange and cedarwood mist. A gentle facial cleanser washes away excess surface oils, cosmetic makeup, and environmental impurities without stripping natural skin barriers. Eye creams nourish, and aloe gels cool. The aesthetician massages foaming cleanser across the face. Organic jojoba oil is a non-comedogenic liquid plant wax closely mirroring human sebum, ideal for balancing sensitive facial complexions. Coconut oil moisturizes hair, and eucalyptus oil clears sinuses. The aesthetician blends cold-pressed jojoba oil with frankincense. Calming lavender oil is a versatile essential oil extracted from purple floral spikes renowned for soothing nervous stress and skin irritation. Tea tree oil clarifies, and peppermint oil cools. A drop of lavender oil is rubbed into the temple pressure points.",
+      "imageBrief": "Use independently inspected word references to support Ambient candles, essential oil diffusers and facial cleansers; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Candle, Incense, Herb. The person selects Candle for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A scented soy candle emits a warm glowing flame and delicate lavender aromas that create an intimate, calming sanctuary atmosphere. Incense releases smoke, and herbs scent oils. The therapist lights an amber soy candle on the credenza.\nWhich wax light source emits a warm gentle flame and aromatherapy fragrance?",
         "answer": "Candle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Diffuser, Moisturizer, Toner. The person selects Diffuser for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An ultrasonic essential oil diffuser vaporizes water and botanical essences into a cool micro-fine mist that scents treatment rooms naturally. Moisturizers soften, and toners balance skin. The diffuser disperses sweet orange and cedarwood mist.\nWhich ultrasonic electronic device vaporizes water and essential oils into a fragrant mist?",
         "answer": "Diffuser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Cleanser, Eye Cream, Aloe Vera Gel. The person selects Cleanser for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A gentle facial cleanser washes away excess surface oils, cosmetic makeup, and environmental impurities without stripping natural skin barriers. Eye creams nourish, and aloe gels cool. The aesthetician massages foaming cleanser across the face.\nWhich gentle skincare formula cleanses makeup and impurities off facial skin?",
         "answer": "Cleanser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Jojoba Oil, Coconut Oil, Eucalyptus Oil. The person selects Jojoba Oil for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Organic jojoba oil is a non-comedogenic liquid plant wax closely mirroring human sebum, ideal for balancing sensitive facial complexions. Coconut oil moisturizes hair, and eucalyptus oil clears sinuses. The aesthetician blends cold-pressed jojoba oil with frankincense.\nWhich botanical liquid plant wax closely resembles natural skin sebum?",
         "answer": "Jojoba Oil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Lavender Oil, Tea Tree Oil, Peppermint Oil. The person selects Lavender Oil for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Calming lavender oil is a versatile essential oil extracted from purple floral spikes renowned for soothing nervous stress and skin irritation. Tea tree oil clarifies, and peppermint oil cools. A drop of lavender oil is rubbed into the temple pressure points.\nWhich floral essential oil is renowned for its calming and skin-soothing properties?",
         "answer": "Lavender Oil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A scented soy candle emits a warm glowing flame and delicate lavender aromas that create an intimate, calming sanctuary atmosphere. Incense releases smoke, and herbs scent oils. The therapist lights an amber soy candle on the credenza. An ultrasonic essential oil diffuser vaporizes water and botanical essences into a cool micro-fine mist that scents treatment rooms naturally. Moisturizers soften, and toners balance skin. The diffuser disperses sweet orange and cedarwood mist. A gentle facial cleanser washes away excess surface oils, cosmetic makeup, and environmental impurities without stripping natural skin barriers. Eye creams nourish, and aloe gels cool. The aesthetician massages foaming cleanser across the face. Organic jojoba oil is a non-comedogenic liquid plant wax closely mirroring human sebum, ideal for balancing sensitive facial complexions. Coconut oil moisturizes hair, and eucalyptus oil clears sinuses. The aesthetician blends cold-pressed jojoba oil with frankincense. Calming lavender oil is a versatile essential oil extracted from purple floral spikes renowned for soothing nervous stress and skin irritation. Tea tree oil clarifies, and peppermint oil cools. A drop of lavender oil is rubbed into the temple pressure points.\nCompare “Candle” and “Incense” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Towel Warmer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which product label does Omar read?",
-        "answer": "The label on aloe vera gel",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Candle, Incense, Herb, Diffuser, Moisturizer, Toner, Cleanser, Eye Cream, Aloe Vera Gel, Jojoba Oil, Coconut Oil, Eucalyptus Oil, Lavender Oil, Tea Tree Oil, Peppermint Oil in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Ambient candles, essential oil diffusers and facial cleansers",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A scented soy candle emits a warm glowing flame and delicate lavender aromas that create an intimate, calming sanctuary atmosphere. Incense releases smoke, and herbs scent oils. The therapist lights an amber soy candle on the credenza. Which wax light source emits a warm gentle flame and aromatherapy fragrance?"
     },
     "spacedReview": "1 lesson(s) back: Towel Warmer, Infrared Sauna from spa-4\n3 lesson(s) back: Clay Mask, Cucumber Slices from spa-2\n7 lesson(s) back: Shaving Brush, Spray Bottle from barbershop-2"
   },
@@ -914,12 +909,12 @@
     "targetWordsArabic": [
       "مرطب شفاه",
       "طاولة تدليك",
-      "روب حمام / برنس",
-      "شبشب / خف منزلي",
+      "روب استحمام مريح",
+      "خف حمام داخلي",
       "منشفة",
       "عصابة رأس",
       "قناع عين",
-      "وسادة زينة (خدادية)",
+      "وسادة استرخاء",
       "سرير مُدفّأ",
       "حوض",
       "مسند رأس",
@@ -929,135 +924,134 @@
       "عنصر مائي للزينة"
     ],
     "usage": {
-      "goal": "Learn to use the spa 6 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "181-211 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lip Balm", "Massage Table", "Robe"],
-          "scenario": "During a routine the spa task, an adult compares Lip Balm, Massage Table, Robe. The person selects Lip Balm for the next step.",
+          "scenario": "A nourishing lip balm combines beeswax, cocoa butter, and vitamin E to protect delicate lip tissue from dryness and environmental chapping. Headbands keep hair back, and robes cover bodies. The client applies moisturizing lip balm before leaving the spa.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which emollient stick or ointment protects delicate lips against chapping?",
             "options": ["Lip Balm", "Massage Table", "Robe"],
             "expectedAnswer": "Lip Balm"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Lip Balm, Massage Table, Robe. The person selects Lip Balm for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Lip Balm, Massage Table, Robe in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Lip Balm as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Slippers", "Towel", "Headband"],
-          "scenario": "During a routine the spa task, an adult compares Slippers, Towel, Headband. The person selects Slippers for the next step.",
+          "scenario": "Plush terrycloth slippers protect guest feet and maintain pristine hygienic floor conditions across wet and dry treatment corridors. Eye masks block glare, and headbands wrap hair. The guest steps into comfortable white spa slippers.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which soft disposable slip-on footwear is worn across spa corridors?",
             "options": ["Slippers", "Towel", "Headband"],
             "expectedAnswer": "Slippers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Slippers, Towel, Headband. The person selects Slippers for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Slippers, Towel, Headband in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Slippers as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Eye Mask", "Cushion", "Heated Bed"],
-          "scenario": "During a routine the spa task, an adult compares Eye Mask, Cushion, Heated Bed. The person selects Eye Mask for the next step.",
+          "scenario": "A padded silk eye mask rests gently over the eyes to block ambient room lighting and encourage serene meditative sleep during body wraps. Cushions support backs, and towels dry skin. The therapist places a lavender-scented eye mask over the resting guest.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which cushioned fabric shield blocks ambient light over closed eyes?",
             "options": ["Eye Mask", "Cushion", "Heated Bed"],
             "expectedAnswer": "Eye Mask"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Eye Mask, Cushion, Heated Bed. The person selects Eye Mask for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Eye Mask, Cushion, Heated Bed in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Eye Mask as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Basin", "Headrest", "Heated Blanket"],
-          "scenario": "During a routine the spa task, an adult compares Basin, Headrest, Heated Blanket. The person selects Basin for the next step.",
+          "scenario": "A hammered copper soaking basin holds warm water infused with rose petals and mineral salts for soothing hand or foot rituals. Heated beds warm bodies, and headrests cradle necks. The technician prepares a fragrant foot bath inside the hammered basin.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which ornate water container holds warm water for foot or hand soaking rituals?",
             "options": ["Basin", "Headrest", "Heated Blanket"],
             "expectedAnswer": "Basin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Basin, Headrest, Heated Blanket. The person selects Basin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Basin, Headrest, Heated Blanket in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Basin as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Meditation Cushion", "Zen Garden", "Water Feature"],
-          "scenario": "During a routine the spa task, an adult compares Meditation Cushion, Zen Garden, Water Feature. The person selects Meditation Cushion for the next step.",
+          "scenario": "A round zafu meditation cushion raises the hips and aligns the spine to ensure comfortable, sustained posture during mindfulness practice. Zen gardens feature gravel, and water features trickle. The practitioner sits cross-legged on the firm meditation cushion.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which firm round cushion elevates hips for aligned posture during meditation?",
             "options": ["Meditation Cushion", "Zen Garden", "Water Feature"],
             "expectedAnswer": "Meditation Cushion"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Meditation Cushion, Zen Garden, Water Feature. The person selects Meditation Cushion for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Meditation Cushion, Zen Garden, Water Feature in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Meditation Cushion as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 6: A short reading",
-      "text": "Omar receives a robe, slippers, and a towel when he checks in. Maya puts a headband and lip balm in her bag. In the treatment room, a cushion rests on the massage table. A folded eye mask is nearby. They ask where to leave their belongings before their appointments begin.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Protective lip balms, relaxation slippers and meditation cushions",
+      "text": "A nourishing lip balm combines beeswax, cocoa butter, and vitamin E to protect delicate lip tissue from dryness and environmental chapping. Headbands keep hair back, and robes cover bodies. The client applies moisturizing lip balm before leaving the spa. Plush terrycloth slippers protect guest feet and maintain pristine hygienic floor conditions across wet and dry treatment corridors. Eye masks block glare, and headbands wrap hair. The guest steps into comfortable white spa slippers. A padded silk eye mask rests gently over the eyes to block ambient room lighting and encourage serene meditative sleep during body wraps. Cushions support backs, and towels dry skin. The therapist places a lavender-scented eye mask over the resting guest. A hammered copper soaking basin holds warm water infused with rose petals and mineral salts for soothing hand or foot rituals. Heated beds warm bodies, and headrests cradle necks. The technician prepares a fragrant foot bath inside the hammered basin. A round zafu meditation cushion raises the hips and aligns the spine to ensure comfortable, sustained posture during mindfulness practice. Zen gardens feature gravel, and water features trickle. The practitioner sits cross-legged on the firm meditation cushion.",
+      "imageBrief": "Use independently inspected word references to support Protective lip balms, relaxation slippers and meditation cushions; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Lip Balm, Massage Table, Robe. The person selects Lip Balm for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A nourishing lip balm combines beeswax, cocoa butter, and vitamin E to protect delicate lip tissue from dryness and environmental chapping. Headbands keep hair back, and robes cover bodies. The client applies moisturizing lip balm before leaving the spa.\nWhich emollient stick or ointment protects delicate lips against chapping?",
         "answer": "Lip Balm",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Slippers, Towel, Headband. The person selects Slippers for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Plush terrycloth slippers protect guest feet and maintain pristine hygienic floor conditions across wet and dry treatment corridors. Eye masks block glare, and headbands wrap hair. The guest steps into comfortable white spa slippers.\nWhich soft disposable slip-on footwear is worn across spa corridors?",
         "answer": "Slippers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Eye Mask, Cushion, Heated Bed. The person selects Eye Mask for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A padded silk eye mask rests gently over the eyes to block ambient room lighting and encourage serene meditative sleep during body wraps. Cushions support backs, and towels dry skin. The therapist places a lavender-scented eye mask over the resting guest.\nWhich cushioned fabric shield blocks ambient light over closed eyes?",
         "answer": "Eye Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Basin, Headrest, Heated Blanket. The person selects Basin for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A hammered copper soaking basin holds warm water infused with rose petals and mineral salts for soothing hand or foot rituals. Heated beds warm bodies, and headrests cradle necks. The technician prepares a fragrant foot bath inside the hammered basin.\nWhich ornate water container holds warm water for foot or hand soaking rituals?",
         "answer": "Basin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Meditation Cushion, Zen Garden, Water Feature. The person selects Meditation Cushion for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A round zafu meditation cushion raises the hips and aligns the spine to ensure comfortable, sustained posture during mindfulness practice. Zen gardens feature gravel, and water features trickle. The practitioner sits cross-legged on the firm meditation cushion.\nWhich firm round cushion elevates hips for aligned posture during meditation?",
         "answer": "Meditation Cushion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A nourishing lip balm combines beeswax, cocoa butter, and vitamin E to protect delicate lip tissue from dryness and environmental chapping. Headbands keep hair back, and robes cover bodies. The client applies moisturizing lip balm before leaving the spa. Plush terrycloth slippers protect guest feet and maintain pristine hygienic floor conditions across wet and dry treatment corridors. Eye masks block glare, and headbands wrap hair. The guest steps into comfortable white spa slippers. A padded silk eye mask rests gently over the eyes to block ambient room lighting and encourage serene meditative sleep during body wraps. Cushions support backs, and towels dry skin. The therapist places a lavender-scented eye mask over the resting guest. A hammered copper soaking basin holds warm water infused with rose petals and mineral salts for soothing hand or foot rituals. Heated beds warm bodies, and headrests cradle necks. The technician prepares a fragrant foot bath inside the hammered basin. A round zafu meditation cushion raises the hips and aligns the spine to ensure comfortable, sustained posture during mindfulness practice. Zen gardens feature gravel, and water features trickle. The practitioner sits cross-legged on the firm meditation cushion.\nCompare “Lip Balm” and “Massage Table” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Candle” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What rests on the massage table?",
-        "answer": "A cushion",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Lip Balm, Massage Table, Robe, Slippers, Towel, Headband, Eye Mask, Cushion, Heated Bed, Basin, Headrest, Heated Blanket, Meditation Cushion, Zen Garden, Water Feature in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Protective lip balms, relaxation slippers and meditation cushions",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A nourishing lip balm combines beeswax, cocoa butter, and vitamin E to protect delicate lip tissue from dryness and environmental chapping. Headbands keep hair back, and robes cover bodies. The client applies moisturizing lip balm before leaving the spa. Which emollient stick or ointment protects delicate lips against chapping?"
     },
     "spacedReview": "1 lesson(s) back: Candle, Incense from spa-5\n3 lesson(s) back: Dermaroller, LED Light Therapy from spa-3\n7 lesson(s) back: Gel, Pomade from barbershop-3"
   },
@@ -1106,135 +1100,134 @@
       "موسيقى محيطية هادئة"
     ],
     "usage": {
-      "goal": "Learn to use the spa 7 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "173-203 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bamboo Mat", "Stone Pathway", "Meditation"],
-          "scenario": "During a routine the spa task, an adult compares Bamboo Mat, Stone Pathway, Meditation. The person selects Bamboo Mat for the next step.",
+          "scenario": "A natural woven bamboo mat provides an organic, tactile flooring surface that resists moisture and cushions bare feet in relaxation pavilions. Stone pathways guide strolls, and yoga stretches muscles. The guest steps onto the cool woven bamboo mat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which woven natural cane floor covering cushions bare feet in spa pavilions?",
             "options": ["Bamboo Mat", "Stone Pathway", "Meditation"],
             "expectedAnswer": "Bamboo Mat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Bamboo Mat, Stone Pathway, Meditation. The person selects Bamboo Mat for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Bamboo Mat, Stone Pathway, Meditation in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Bamboo Mat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Yoga", "Breathing", "Mindfulness"],
-          "scenario": "During a routine the spa task, an adult compares Yoga, Breathing, Mindfulness. The person selects Yoga for the next step.",
+          "scenario": "Mindful restorative yoga integrates slow gentle poses, conscious breathing, and deep bodily stretches to release chronic physical tension. Sleep restores vitality, and tea hydrates. The instructor leads a relaxing morning yoga session on the deck.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which mindful movement discipline combines physical postures with conscious breathing?",
             "options": ["Yoga", "Breathing", "Mindfulness"],
             "expectedAnswer": "Yoga"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Yoga, Breathing, Mindfulness. The person selects Yoga for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Yoga, Breathing, Mindfulness in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Yoga as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Stretching", "Detox", "Hydration"],
-          "scenario": "During a routine the spa task, an adult compares Stretching, Detox, Hydration. The person selects Stretching for the next step.",
+          "scenario": "Gentle whole-body stretching elongates tightened muscle fibers, enhances joint flexibility, and relieves tension built up during daily work. Balance aligns posture, and relaxation calms thoughts. The guest completes gentle hamstring stretching after the sauna.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which physical activity gently elongates muscle fibers to enhance flexibility?",
             "options": ["Stretching", "Detox", "Hydration"],
             "expectedAnswer": "Stretching"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Stretching, Detox, Hydration. The person selects Stretching for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Stretching, Detox, Hydration in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Stretching as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sleep", "Balance", "Relaxation"],
-          "scenario": "During a routine the spa task, an adult compares Sleep, Balance, Relaxation. The person selects Sleep for the next step.",
+          "scenario": "Deep restorative sleep allows the central nervous system to reset, tissues to repair, and stress hormone levels to normalize. Balance aligns posture, and mindfulness centers awareness. The guest enjoys uninterrupted restorative sleep in the quiet sanctuary.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which natural biological state of rest repairs cellular tissues and reduces stress?",
             "options": ["Sleep", "Balance", "Relaxation"],
             "expectedAnswer": "Sleep"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Sleep, Balance, Relaxation. The person selects Sleep for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Sleep, Balance, Relaxation in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Sleep as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Herbal Tea", "Infused Water", "Ambient Music"],
-          "scenario": "During a routine the spa task, an adult compares Herbal Tea, Infused Water, Ambient Music. The person selects Herbal Tea for the next step.",
+          "scenario": "A soothing cup of herbal tea brewed from chamomile flowers and mint leaves hydrates the body and promotes tranquil digestive comfort after spa visits. Infused water refreshes, and music calms. The attendant serves steaming herbal tea on a wooden tray.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which warm caffeine-free botanical infusion promotes relaxation and digestion?",
             "options": ["Herbal Tea", "Infused Water", "Ambient Music"],
             "expectedAnswer": "Herbal Tea"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Herbal Tea, Infused Water, Ambient Music. The person selects Herbal Tea for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Herbal Tea, Infused Water, Ambient Music in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Herbal Tea as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 7: A short reading",
-      "text": "A stone pathway leads to the spa's quiet garden. Maya brings a bamboo mat to a yoga session. Omar joins a meditation class where the instructor introduces breathing and mindfulness vocabulary. They follow the session schedule and take a break afterward. Maya describes the garden to Omar while they collect their belongings.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Woven bamboo mats, restorative yoga and herbal tea infusions",
+      "text": "A natural woven bamboo mat provides an organic, tactile flooring surface that resists moisture and cushions bare feet in relaxation pavilions. Stone pathways guide strolls, and yoga stretches muscles. The guest steps onto the cool woven bamboo mat. Mindful restorative yoga integrates slow gentle poses, conscious breathing, and deep bodily stretches to release chronic physical tension. Sleep restores vitality, and tea hydrates. The instructor leads a relaxing morning yoga session on the deck. Gentle whole-body stretching elongates tightened muscle fibers, enhances joint flexibility, and relieves tension built up during daily work. Balance aligns posture, and relaxation calms thoughts. The guest completes gentle hamstring stretching after the sauna. Deep restorative sleep allows the central nervous system to reset, tissues to repair, and stress hormone levels to normalize. Balance aligns posture, and mindfulness centers awareness. The guest enjoys uninterrupted restorative sleep in the quiet sanctuary. A soothing cup of herbal tea brewed from chamomile flowers and mint leaves hydrates the body and promotes tranquil digestive comfort after spa visits. Infused water refreshes, and music calms. The attendant serves steaming herbal tea on a wooden tray.",
+      "imageBrief": "Use independently inspected word references to support Woven bamboo mats, restorative yoga and herbal tea infusions; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Bamboo Mat, Stone Pathway, Meditation. The person selects Bamboo Mat for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A natural woven bamboo mat provides an organic, tactile flooring surface that resists moisture and cushions bare feet in relaxation pavilions. Stone pathways guide strolls, and yoga stretches muscles. The guest steps onto the cool woven bamboo mat.\nWhich woven natural cane floor covering cushions bare feet in spa pavilions?",
         "answer": "Bamboo Mat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Yoga, Breathing, Mindfulness. The person selects Yoga for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Mindful restorative yoga integrates slow gentle poses, conscious breathing, and deep bodily stretches to release chronic physical tension. Sleep restores vitality, and tea hydrates. The instructor leads a relaxing morning yoga session on the deck.\nWhich mindful movement discipline combines physical postures with conscious breathing?",
         "answer": "Yoga",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Stretching, Detox, Hydration. The person selects Stretching for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Gentle whole-body stretching elongates tightened muscle fibers, enhances joint flexibility, and relieves tension built up during daily work. Balance aligns posture, and relaxation calms thoughts. The guest completes gentle hamstring stretching after the sauna.\nWhich physical activity gently elongates muscle fibers to enhance flexibility?",
         "answer": "Stretching",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Sleep, Balance, Relaxation. The person selects Sleep for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Deep restorative sleep allows the central nervous system to reset, tissues to repair, and stress hormone levels to normalize. Balance aligns posture, and mindfulness centers awareness. The guest enjoys uninterrupted restorative sleep in the quiet sanctuary.\nWhich natural biological state of rest repairs cellular tissues and reduces stress?",
         "answer": "Sleep",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Herbal Tea, Infused Water, Ambient Music. The person selects Herbal Tea for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A soothing cup of herbal tea brewed from chamomile flowers and mint leaves hydrates the body and promotes tranquil digestive comfort after spa visits. Infused water refreshes, and music calms. The attendant serves steaming herbal tea on a wooden tray.\nWhich warm caffeine-free botanical infusion promotes relaxation and digestion?",
         "answer": "Herbal Tea",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "A natural woven bamboo mat provides an organic, tactile flooring surface that resists moisture and cushions bare feet in relaxation pavilions. Stone pathways guide strolls, and yoga stretches muscles. The guest steps onto the cool woven bamboo mat. Mindful restorative yoga integrates slow gentle poses, conscious breathing, and deep bodily stretches to release chronic physical tension. Sleep restores vitality, and tea hydrates. The instructor leads a relaxing morning yoga session on the deck. Gentle whole-body stretching elongates tightened muscle fibers, enhances joint flexibility, and relieves tension built up during daily work. Balance aligns posture, and relaxation calms thoughts. The guest completes gentle hamstring stretching after the sauna. Deep restorative sleep allows the central nervous system to reset, tissues to repair, and stress hormone levels to normalize. Balance aligns posture, and mindfulness centers awareness. The guest enjoys uninterrupted restorative sleep in the quiet sanctuary. A soothing cup of herbal tea brewed from chamomile flowers and mint leaves hydrates the body and promotes tranquil digestive comfort after spa visits. Infused water refreshes, and music calms. The attendant serves steaming herbal tea on a wooden tray.\nCompare “Bamboo Mat” and “Stone Pathway” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Lip Balm” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Maya bring to the yoga session?",
-        "answer": "A bamboo mat",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Bamboo Mat, Stone Pathway, Meditation, Yoga, Breathing, Mindfulness, Stretching, Detox, Hydration, Sleep, Balance, Relaxation, Herbal Tea, Infused Water, Ambient Music in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Woven bamboo mats, restorative yoga and herbal tea infusions",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A natural woven bamboo mat provides an organic, tactile flooring surface that resists moisture and cushions bare feet in relaxation pavilions. Stone pathways guide strolls, and yoga stretches muscles. The guest steps onto the cool woven bamboo mat. Which woven natural cane floor covering cushions bare feet in spa pavilions?"
     },
     "spacedReview": "1 lesson(s) back: Lip Balm, Massage Table from spa-6\n3 lesson(s) back: Towel Warmer, Infrared Sauna from spa-4\n7 lesson(s) back: Sink, Sterilizer from barbershop-4"
   },
@@ -1281,135 +1274,134 @@
       "مدرب"
     ],
     "usage": {
-      "goal": "Learn to use the spa 8 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the spa.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "168-198 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Acupuncture", "Shiatsu", "Hot Wax"],
-          "scenario": "During a routine the spa task, an adult compares Acupuncture, Shiatsu, Hot Wax. The person selects Acupuncture for the next step.",
+          "scenario": "Traditional acupuncture inserts sterile hair-thin filiform needles into specific neurovascular anatomical points to rebalance energy and relieve chronic pain. Shiatsu presses fingers, and hot wax softens skin. The licensed practitioner gently taps an acupuncture needle into place.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which traditional therapeutic modality inserts fine sterile needles into specific points?",
             "options": ["Acupuncture", "Shiatsu", "Hot Wax"],
             "expectedAnswer": "Acupuncture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Acupuncture, Shiatsu, Hot Wax. The person selects Acupuncture for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Acupuncture, Shiatsu, Hot Wax in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Acupuncture as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meditation Room", "Therapist", "Esthetician"],
-          "scenario": "During a routine the spa task, an adult compares Meditation Room, Therapist, Esthetician. The person selects Meditation Room for the next step.",
+          "scenario": "A dedicated quiet meditation room offers soft floor cushions, dim indirect lighting, and acoustic isolation for silent contemplation and breathing exercises. Therapists administer treatments, and nutritionists plan diets. Guests enter the meditation room in absolute silence.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which quiet insulated sanctuary accommodates silent reflection and mindfulness?",
             "options": ["Meditation Room", "Therapist", "Esthetician"],
             "expectedAnswer": "Meditation Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Meditation Room, Therapist, Esthetician. The person selects Meditation Room for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Meditation Room, Therapist, Esthetician in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Meditation Room as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Receptionist", "Nail Technician", "Masseuse"],
-          "scenario": "During a routine the spa task, an adult compares Receptionist, Nail Technician, Masseuse. The person selects Receptionist for the next step.",
+          "scenario": "A friendly spa receptionist greets arriving guests, checks medical intake forms, answers treatment questions, and processes payments. Estheticians care for skin, and nail techs paint nails. The spa receptionist presents the treatment menu to the new guest.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which front-desk professional coordinates bookings, intake forms and payments?",
             "options": ["Receptionist", "Nail Technician", "Masseuse"],
             "expectedAnswer": "Receptionist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Receptionist, Nail Technician, Masseuse. The person selects Receptionist for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Receptionist, Nail Technician, Masseuse in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Receptionist as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Yoga Instructor", "Attendant", "Concierge"],
-          "scenario": "During a routine the spa task, an adult compares Yoga Instructor, Attendant, Concierge. The person selects Yoga Instructor for the next step.",
+          "scenario": "A certified yoga instructor demonstrates posture alignments, guides mindful breathwork, and assists guests in modifying stretches safely. Masseuses knead muscles, and concierges book taxis. The yoga instructor leads the morning breathing workshop.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which movement professional teaches posture alignment and guided breathwork?",
             "options": ["Yoga Instructor", "Attendant", "Concierge"],
             "expectedAnswer": "Yoga Instructor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Yoga Instructor, Attendant, Concierge. The person selects Yoga Instructor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Yoga Instructor, Attendant, Concierge in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Yoga Instructor as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Nutritionist", "Trainer"],
-          "scenario": "During a routine the spa task, an adult compares Nutritionist, Trainer, Acupuncture. The person selects Nutritionist for the next step.",
+          "scenario": "A holistic spa nutritionist evaluates dietary patterns, hydration status, and nutritional goals to recommend balanced eating plans for vibrant health. Trainers coach fitness, and attendants replenish towels. The guest consults a nutritionist regarding anti-inflammatory meal choices.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which wellness specialist evaluates dietary habits and recommends balanced nutrition?",
             "options": ["Nutritionist", "Trainer", "Acupuncture"],
             "expectedAnswer": "Nutritionist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the spa context illustrating this situation: During a routine the spa task, an adult compares Nutritionist, Trainer, Acupuncture. The person selects Nutritionist for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the spa scene showing lesson-related items or actions including Nutritionist, Trainer in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the spa account, showing Nutritionist as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Spa 8: A short reading",
-      "text": "Maya checks the staff list at reception. It includes a therapist, an esthetician, and a nail technician. Omar asks where the meditation room is located. The menu also lists acupuncture and shiatsu appointments. They ask the receptionist about the services and available practitioners before deciding which appointment to book.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Spa. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Acupuncture therapy, quiet meditation rooms and wellness staff",
+      "text": "Traditional acupuncture inserts sterile hair-thin filiform needles into specific neurovascular anatomical points to rebalance energy and relieve chronic pain. Shiatsu presses fingers, and hot wax softens skin. The licensed practitioner gently taps an acupuncture needle into place. A dedicated quiet meditation room offers soft floor cushions, dim indirect lighting, and acoustic isolation for silent contemplation and breathing exercises. Therapists administer treatments, and nutritionists plan diets. Guests enter the meditation room in absolute silence. A friendly spa receptionist greets arriving guests, checks medical intake forms, answers treatment questions, and processes payments. Estheticians care for skin, and nail techs paint nails. The spa receptionist presents the treatment menu to the new guest. A certified yoga instructor demonstrates posture alignments, guides mindful breathwork, and assists guests in modifying stretches safely. Masseuses knead muscles, and concierges book taxis. The yoga instructor leads the morning breathing workshop. A holistic spa nutritionist evaluates dietary patterns, hydration status, and nutritional goals to recommend balanced eating plans for vibrant health. Trainers coach fitness, and attendants replenish towels. The guest consults a nutritionist regarding anti-inflammatory meal choices.",
+      "imageBrief": "Use independently inspected word references to support Acupuncture therapy, quiet meditation rooms and wellness staff; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the spa task, an adult compares Acupuncture, Shiatsu, Hot Wax. The person selects Acupuncture for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Traditional acupuncture inserts sterile hair-thin filiform needles into specific neurovascular anatomical points to rebalance energy and relieve chronic pain. Shiatsu presses fingers, and hot wax softens skin. The licensed practitioner gently taps an acupuncture needle into place.\nWhich traditional therapeutic modality inserts fine sterile needles into specific points?",
         "answer": "Acupuncture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Meditation Room, Therapist, Esthetician. The person selects Meditation Room for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A dedicated quiet meditation room offers soft floor cushions, dim indirect lighting, and acoustic isolation for silent contemplation and breathing exercises. Therapists administer treatments, and nutritionists plan diets. Guests enter the meditation room in absolute silence.\nWhich quiet insulated sanctuary accommodates silent reflection and mindfulness?",
         "answer": "Meditation Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Receptionist, Nail Technician, Masseuse. The person selects Receptionist for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A friendly spa receptionist greets arriving guests, checks medical intake forms, answers treatment questions, and processes payments. Estheticians care for skin, and nail techs paint nails. The spa receptionist presents the treatment menu to the new guest.\nWhich front-desk professional coordinates bookings, intake forms and payments?",
         "answer": "Receptionist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Yoga Instructor, Attendant, Concierge. The person selects Yoga Instructor for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A certified yoga instructor demonstrates posture alignments, guides mindful breathwork, and assists guests in modifying stretches safely. Masseuses knead muscles, and concierges book taxis. The yoga instructor leads the morning breathing workshop.\nWhich movement professional teaches posture alignment and guided breathwork?",
         "answer": "Yoga Instructor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the spa task, an adult compares Nutritionist, Trainer, Acupuncture. The person selects Nutritionist for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A holistic spa nutritionist evaluates dietary patterns, hydration status, and nutritional goals to recommend balanced eating plans for vibrant health. Trainers coach fitness, and attendants replenish towels. The guest consults a nutritionist regarding anti-inflammatory meal choices.\nWhich wellness specialist evaluates dietary habits and recommends balanced nutrition?",
         "answer": "Nutritionist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
+        "prompt": "Traditional acupuncture inserts sterile hair-thin filiform needles into specific neurovascular anatomical points to rebalance energy and relieve chronic pain. Shiatsu presses fingers, and hot wax softens skin. The licensed practitioner gently taps an acupuncture needle into place. A dedicated quiet meditation room offers soft floor cushions, dim indirect lighting, and acoustic isolation for silent contemplation and breathing exercises. Therapists administer treatments, and nutritionists plan diets. Guests enter the meditation room in absolute silence. A friendly spa receptionist greets arriving guests, checks medical intake forms, answers treatment questions, and processes payments. Estheticians care for skin, and nail techs paint nails. The spa receptionist presents the treatment menu to the new guest. A certified yoga instructor demonstrates posture alignments, guides mindful breathwork, and assists guests in modifying stretches safely. Masseuses knead muscles, and concierges book taxis. The yoga instructor leads the morning breathing workshop. A holistic spa nutritionist evaluates dietary patterns, hydration status, and nutritional goals to recommend balanced eating plans for vibrant health. Trainers coach fitness, and attendants replenish towels. The guest consults a nutritionist regarding anti-inflammatory meal choices.\nCompare “Acupuncture” and “Shiatsu” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Bamboo Mat” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does Omar ask to go?",
-        "answer": "To the meditation room",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short visitor or traveler account using Acupuncture, Shiatsu, Hot Wax, Meditation Room, Therapist, Esthetician, Receptionist, Nail Technician, Masseuse, Yoga Instructor, Attendant, Concierge, Nutritionist, Trainer in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Spa: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Acupuncture therapy, quiet meditation rooms and wellness staff",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "Traditional acupuncture inserts sterile hair-thin filiform needles into specific neurovascular anatomical points to rebalance energy and relieve chronic pain. Shiatsu presses fingers, and hot wax softens skin. The licensed practitioner gently taps an acupuncture needle into place. Which traditional therapeutic modality inserts fine sterile needles into specific points?"
     },
     "spacedReview": "1 lesson(s) back: Bamboo Mat, Stone Pathway from spa-7\n3 lesson(s) back: Candle, Incense from spa-5\n7 lesson(s) back: Massage, Facial from spa-1"
   }

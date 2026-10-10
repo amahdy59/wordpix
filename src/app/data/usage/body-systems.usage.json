@@ -31,9 +31,9 @@
       "عضلة ذات الرأسين",
       "العضلة ثلاثية الرؤوس",
       "العضلة رباعية الرؤوس",
-      "أوتار الركبة",
+      "عضلة خلف الفخذ",
       "عضلة بطة الساق",
-      "بطني",
+      "بطني أو متعلق بعضلات البطن",
       "عضلة دالية",
       "عضلة ألوية",
       "عضلة صدرية",
@@ -44,132 +44,108 @@
       "لوزة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of body systems using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Muscle", "Bicep", "Tricep", "Quadricep"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muscle, Bicep, Tricep, and Quadricep and choose the option that fits the situation.",
+          "scenario": "A trainer uses a muscle model. The biceps helps bend the elbow, the triceps helps straighten it, and the quadriceps helps straighten the knee. These muscles contract to produce movement.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Muscle", "Bicep", "Tricep"],
-            "expectedAnswer": "Muscle"
+            "question": "Which muscle group helps straighten the knee?",
+            "options": ["Muscle", "Bicep", "Tricep", "Quadricep"],
+            "expectedAnswer": "Quadricep"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Muscle as the central item; include Muscle, Bicep, and Tricep naturally where visually appropriate, but make the real-world use of Muscle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically accurate upper-arm and thigh muscle teaching model; no lifting instruction. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically accurate upper-arm and thigh muscle teaching model; no lifting instruction."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hamstring", "Calf Muscle", "Abdominal", "Deltoid"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hamstring, Calf Muscle, Abdominal, and Deltoid and choose the option that fits the situation.",
+          "scenario": "A biology tutor identifies the hamstrings at the back of the thigh, calf muscles at the back of the lower leg, abdominal muscles at the front of the trunk, and deltoids around the shoulders.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which muscles are at the back of the thigh?",
             "options": ["Hamstring", "Calf Muscle", "Abdominal"],
             "expectedAnswer": "Hamstring"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Hamstring through a realistic adult task; include Hamstring, Calf Muscle, and Abdominal naturally where visually appropriate, but make the real-world use of Hamstring the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult classroom with an anatomically correct full-body muscle model. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult classroom with an anatomically correct full-body muscle model."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Gluteus", "Pectoral", "White Blood Cell", "Antibody"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gluteus, Pectoral, White Blood Cell, and Antibody and choose the option that fits the situation.",
+          "scenario": "The class compares muscles with immune structures. Gluteal muscles move the hip, and pectoral muscles are in the chest. White blood cells help defend the body, and antibodies are proteins involved in immune responses.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gluteus", "Pectoral", "White Blood Cell"],
-            "expectedAnswer": "Gluteus"
+            "question": "Which option names proteins involved in immune defense?",
+            "options": ["Gluteus", "Pectoral", "White Blood Cell", "Antibody"],
+            "expectedAnswer": "Antibody"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Gluteus as the central item; include Gluteus, Pectoral, and White Blood Cell naturally where visually appropriate, but make the real-world use of Gluteus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Muscle teaching model alongside enlarged blood-cell models; antibodies discussed rather than shown as medicines. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Muscle teaching model alongside enlarged blood-cell models; antibodies discussed rather than shown as medicines."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Antigen", "Lymph Node", "Tonsil"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antigen, Lymph Node, and Tonsil and choose the option that fits the situation.",
+          "scenario": "The tutor explains that an antigen can trigger an immune response. Lymph nodes contain immune cells and filter lymph. Tonsils are areas of immune tissue near the back of the throat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structures filter lymph?",
             "options": ["Antigen", "Lymph Node", "Tonsil"],
-            "expectedAnswer": "Antigen"
+            "expectedAnswer": "Lymph Node"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Antigen as the central item; include Antigen, Lymph Node, and Tonsil naturally where visually appropriate, but make the real-world use of Antigen the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct lymphatic-system teaching model in an adult classroom. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct lymphatic-system teaching model in an adult classroom."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Body Systems",
-      "text": "At the body systems, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Muscle, Bicep, Tricep, and Quadricep. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hamstring, Calf Muscle, Abdominal, and Deltoid. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gluteus, Pectoral, White Blood Cell, and Antibody. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Antigen, Lymph Node, and Tonsil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Body Systems. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Body Systems 1: an anatomy teaching session",
+      "text": "A trainer uses a muscle model. The biceps helps bend the elbow, the triceps helps straighten it, and the quadriceps helps straighten the knee. These muscles contract to produce movement. A biology tutor identifies the hamstrings at the back of the thigh, calf muscles at the back of the lower leg, abdominal muscles at the front of the trunk, and deltoids around the shoulders. The class compares muscles with immune structures. Gluteal muscles move the hip, and pectoral muscles are in the chest. White blood cells help defend the body, and antibodies are proteins involved in immune responses. The tutor explains that an antigen can trigger an immune response. Lymph nodes contain immune cells and filter lymph. Tonsils are areas of immune tissue near the back of the throat. The tutor explains that bicep and tricep are common informal forms of the anatomical names biceps and triceps. A calf muscle helps move the ankle, and a deltoid helps move the shoulder. A gluteus is a buttock muscle involved in hip movement. A white blood cell is an immune cell, while a tonsil is a group of immune tissues near the back of the throat.",
+      "imageBrief": "Educational photograph of An anatomically accurate upper-arm and thigh muscle teaching model; no lifting instruction. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muscle, Bicep, Tricep, and Quadricep and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Muscle",
+        "prompt": "A trainer uses a muscle model. The biceps helps bend the elbow, the triceps helps straighten it, and the quadriceps helps straighten the knee. These muscles contract to produce movement.\nWhich muscle group helps straighten the knee?",
+        "answer": "Quadricep",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hamstring, Calf Muscle, Abdominal, and Deltoid and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A biology tutor identifies the hamstrings at the back of the thigh, calf muscles at the back of the lower leg, abdominal muscles at the front of the trunk, and deltoids around the shoulders.\nWhich muscles are at the back of the thigh?",
         "answer": "Hamstring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gluteus, Pectoral, White Blood Cell, and Antibody and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gluteus",
+        "prompt": "The class compares muscles with immune structures. Gluteal muscles move the hip, and pectoral muscles are in the chest. White blood cells help defend the body, and antibodies are proteins involved in immune responses.\nWhich option names proteins involved in immune defense?",
+        "answer": "Antibody",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Antigen, Lymph Node, and Tonsil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Antigen",
+        "prompt": "The tutor explains that an antigen can trigger an immune response. Lymph nodes contain immune cells and filter lymph. Tonsils are areas of immune tissue near the back of the throat.\nWhich structures filter lymph?",
+        "answer": "Lymph Node",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Muscle"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Quadricep"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Periosteum” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the body systems task. Use Muscle, Bicep, Tricep, Quadricep, Hamstring, Calf Muscle, Abdominal, Deltoid, Gluteus, Pectoral, White Blood Cell, Antibody, Antigen, Lymph Node, and Tonsil in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Give a one-sentence explanation of the first scene’s body structure or process to a classmate.\nUse this information: A trainer uses a muscle model. The biceps helps bend the elbow, the triceps helps straighten it, and the quadriceps helps straighten the knee. These muscles contract to produce movement.",
+        "answer": "The quadriceps at the front of the thigh helps straighten the knee.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Body Systems: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Body Systems 1: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "A trainer uses a muscle model. The biceps helps bend the elbow, the triceps helps straighten it, and the quadriceps helps straighten the knee. These muscles contract to produce movement."
     },
     "spacedReview": "1 lesson(s) back: Periosteum, Synovial Fluid from skeleton-4\n3 lesson(s) back: Sacrum, Coccyx from skeleton-2\n7 lesson(s) back: Appendix, Duodenum from internal-organs-2"
   },
@@ -218,132 +194,108 @@
       "ترطيب الجسم"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of body systems using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Thymus", "Bone Marrow", "Immune Response", "Vaccine"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thymus, Bone Marrow, Immune Response, and Vaccine and choose the option that fits the situation.",
+          "scenario": "An educator explains that bone marrow makes blood cells and the thymus helps certain immune cells mature. A vaccine prepares the immune system to recognize a particular infection.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which organ helps certain immune cells mature?",
             "options": ["Thymus", "Bone Marrow", "Immune Response"],
             "expectedAnswer": "Thymus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Thymus as the central item; include Thymus, Bone Marrow, and Immune Response naturally where visually appropriate, but make the real-world use of Thymus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A torso teaching model with a separate bone cross-section model; no injections or medical advice. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A torso teaching model with a separate bone cross-section model; no injections or medical advice."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Infection", "Kidney", "Bladder", "Ureter"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Infection, Kidney, Bladder, and Ureter and choose the option that fits the situation.",
+          "scenario": "A tutor traces the urinary system. Kidneys make urine, ureters carry it to the bladder, and the bladder stores it. Infection means harmful microorganisms enter and grow in the body.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Infection", "Kidney", "Bladder"],
-            "expectedAnswer": "Infection"
+            "question": "Which tubes carry urine from the kidneys to the bladder?",
+            "options": ["Infection", "Kidney", "Bladder", "Ureter"],
+            "expectedAnswer": "Ureter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Infection through a realistic adult task; include Infection, Kidney, and Bladder naturally where visually appropriate, but make the real-world use of Infection the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct urinary-system teaching model, with two kidneys, ureters, and bladder. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct urinary-system teaching model, with two kidneys, ureters, and bladder."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Urethra", "Urine", "Filtration", "Nephron"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Urethra, Urine, Filtration, and Nephron and choose the option that fits the situation.",
+          "scenario": "A nephron is a microscopic filtering unit in a kidney. During filtration, substances pass from blood into the nephron. Urine later leaves the body through the urethra.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tube carries urine out of the body?",
             "options": ["Urethra", "Urine", "Filtration"],
             "expectedAnswer": "Urethra"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Urethra as the central item; include Urethra, Urine, and Filtration naturally where visually appropriate, but make the real-world use of Urethra the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Urinary-system model beside an enlarged nephron model; scale differences clear through separate models. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Urinary-system model beside an enlarged nephron model; scale differences clear through separate models."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Renal", "Toxin", "Hydration"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renal, Toxin, and Hydration and choose the option that fits the situation.",
+          "scenario": "An educator explains that renal means related to the kidneys. A toxin is a poisonous substance made by a living organism. Hydration concerns water in the body.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which adjective means related to the kidneys?",
             "options": ["Renal", "Toxin", "Hydration"],
             "expectedAnswer": "Renal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Renal through a realistic adult task; include Renal, Toxin, and Hydration naturally where visually appropriate, but make the real-world use of Renal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An adult discussing kidney models at a desk, with a water glass nearby; no treatment or fluid-intake recommendation. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An adult discussing kidney models at a desk, with a water glass nearby; no treatment or fluid-intake recommendation."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Body Systems",
-      "text": "At the body systems, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Thymus, Bone Marrow, Immune Response, and Vaccine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Infection, Kidney, Bladder, and Ureter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Urethra, Urine, Filtration, and Nephron. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Renal, Toxin, and Hydration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Body Systems. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Body Systems 2: an anatomy teaching session",
+      "text": "An educator explains that bone marrow makes blood cells and the thymus helps certain immune cells mature. A vaccine prepares the immune system to recognize a particular infection. A tutor traces the urinary system. Kidneys make urine, ureters carry it to the bladder, and the bladder stores it. Infection means harmful microorganisms enter and grow in the body. A nephron is a microscopic filtering unit in a kidney. During filtration, substances pass from blood into the nephron. Urine later leaves the body through the urethra. An educator explains that renal means related to the kidneys. A toxin is a poisonous substance made by a living organism. Hydration concerns water in the body. The educator calls the body’s coordinated defense an immune response. It involves several kinds of cells and tissues, not one organ acting alone.",
+      "imageBrief": "Educational photograph of A torso teaching model with a separate bone cross-section model; no injections or medical advice. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thymus, Bone Marrow, Immune Response, and Vaccine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An educator explains that bone marrow makes blood cells and the thymus helps certain immune cells mature. A vaccine prepares the immune system to recognize a particular infection.\nWhich organ helps certain immune cells mature?",
         "answer": "Thymus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Infection, Kidney, Bladder, and Ureter and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Infection",
+        "prompt": "A tutor traces the urinary system. Kidneys make urine, ureters carry it to the bladder, and the bladder stores it. Infection means harmful microorganisms enter and grow in the body.\nWhich tubes carry urine from the kidneys to the bladder?",
+        "answer": "Ureter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Urethra, Urine, Filtration, and Nephron and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A nephron is a microscopic filtering unit in a kidney. During filtration, substances pass from blood into the nephron. Urine later leaves the body through the urethra.\nWhich tube carries urine out of the body?",
         "answer": "Urethra",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Renal, Toxin, and Hydration and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "An educator explains that renal means related to the kidneys. A toxin is a poisonous substance made by a living organism. Hydration concerns water in the body.\nWhich adjective means related to the kidneys?",
         "answer": "Renal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Thymus"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Vaccine"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Muscle” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the body systems task. Use Thymus, Bone Marrow, Immune Response, Vaccine, Infection, Kidney, Bladder, Ureter, Urethra, Urine, Filtration, Nephron, Renal, Toxin, and Hydration in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Give a one-sentence explanation of the first scene’s body structure or process to a classmate.\nUse this information: An educator explains that bone marrow makes blood cells and the thymus helps certain immune cells mature. A vaccine prepares the immune system to recognize a particular infection.",
+        "answer": "The thymus helps certain immune cells mature.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Body Systems: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Body Systems 2: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "An educator explains that bone marrow makes blood cells and the thymus helps certain immune cells mature. A vaccine prepares the immune system to recognize a particular infection."
     },
     "spacedReview": "1 lesson(s) back: Muscle, Bicep from body-systems-1\n3 lesson(s) back: Pelvis, Femur from skeleton-3\n7 lesson(s) back: Aorta, Vein from internal-organs-3"
   },
@@ -375,14 +327,14 @@
       "Sweat Gland"
     ],
     "targetWordsArabic": [
-      "قسمة خلية",
+      "انقسام الخلية",
       "الحمض النووي DNA",
       "جين",
       "كروموسوم",
       "جنين مبكر",
       "جنين",
       "حمل",
-      "ميلاد",
+      "ولادة",
       "نمو",
       "بلوغ",
       "طبقة من الجلد",
@@ -392,132 +344,108 @@
       "غدة عرقية"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of body systems using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cell Division", "DNA", "Gene", "Chromosome"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell Division, DNA, Gene, and Chromosome and choose the option that fits the situation.",
+          "scenario": "The biology class examines a cell model. DNA carries genetic information. A gene is a section of DNA, and chromosomes package DNA. Cell division produces new cells.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which option names a section of DNA?",
             "options": ["Cell Division", "DNA", "Gene"],
-            "expectedAnswer": "Cell Division"
+            "expectedAnswer": "Gene"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Cell Division as the central item; include Cell Division, DNA, and Gene naturally where visually appropriate, but make the real-world use of Cell Division the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A scientific cell teaching model with separate DNA and chromosome models, without text. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A scientific cell teaching model with separate DNA and chromosome models, without text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Embryo", "Fetus", "Pregnancy", "Birth"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embryo, Fetus, Pregnancy, and Birth and choose the option that fits the situation.",
+          "scenario": "An educator describes development before and after birth. During pregnancy, an early developing human is called an embryo and later a fetus. Birth is the process of leaving the womb.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the later stage before birth?",
             "options": ["Embryo", "Fetus", "Pregnancy"],
-            "expectedAnswer": "Embryo"
+            "expectedAnswer": "Fetus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Embryo as the central item; include Embryo, Fetus, and Pregnancy naturally where visually appropriate, but make the real-world use of Embryo the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of Non-graphic classroom setting with closed educational books; prenatal stages rely on written context, no ultrasound diagnosis. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "Non-graphic classroom setting with closed educational books; prenatal stages rely on written context, no ultrasound diagnosis."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Growth", "Puberty", "Skin Layer", "Epidermis"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Growth, Puberty, Skin Layer, and Epidermis and choose the option that fits the situation.",
+          "scenario": "A tutor distinguishes growth from puberty. Growth includes an increase in body size; puberty involves changes toward reproductive maturity. The epidermis is the outer skin layer.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Growth", "Puberty", "Skin Layer"],
-            "expectedAnswer": "Growth"
+            "question": "Which word names the outer skin layer?",
+            "options": ["Growth", "Puberty", "Skin Layer", "Epidermis"],
+            "expectedAnswer": "Epidermis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Growth as the central item; include Growth, Puberty, and Skin Layer naturally where visually appropriate, but make the real-world use of Growth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An anatomically correct enlarged skin cross-section teaching model in a classroom. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An anatomically correct enlarged skin cross-section teaching model in a classroom."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dermis", "Hair Follicle", "Sweat Gland"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dermis, Hair Follicle, and Sweat Gland and choose the option that fits the situation.",
+          "scenario": "A skin model shows the dermis below the epidermis. Hair grows from a follicle, and sweat glands release sweat. The tutor identifies each structure without giving skin-care advice.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure releases sweat?",
             "options": ["Dermis", "Hair Follicle", "Sweat Gland"],
-            "expectedAnswer": "Dermis"
+            "expectedAnswer": "Sweat Gland"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Dermis as the central item; include Dermis, Hair Follicle, and Sweat Gland naturally where visually appropriate, but make the real-world use of Dermis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A correct enlarged skin cross-section showing a hair follicle and coiled sweat gland. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A correct enlarged skin cross-section showing a hair follicle and coiled sweat gland."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: Body Systems",
-      "text": "At the body systems, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cell Division, DNA, Gene, and Chromosome. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Embryo, Fetus, Pregnancy, and Birth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Growth, Puberty, Skin Layer, and Epidermis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dermis, Hair Follicle, and Sweat Gland. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Body Systems. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Body Systems 3: an anatomy teaching session",
+      "text": "The biology class examines a cell model. DNA carries genetic information. A gene is a section of DNA, and chromosomes package DNA. Cell division produces new cells. An educator describes development before and after birth. During pregnancy, an early developing human is called an embryo and later a fetus. Birth is the process of leaving the womb. A tutor distinguishes growth from puberty. Growth includes an increase in body size; puberty involves changes toward reproductive maturity. The epidermis is the outer skin layer. A skin model shows the dermis below the epidermis. Hair grows from a follicle, and sweat glands release sweat. The tutor identifies each structure without giving skin-care advice. On the cell model, a chromosome packages DNA. On the skin model, a hair follicle surrounds a growing hair’s root. The class compares these different scales using separate models.",
+      "imageBrief": "Educational photograph of A scientific cell teaching model with separate DNA and chromosome models, without text. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cell Division, DNA, Gene, and Chromosome and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cell Division",
+        "prompt": "The biology class examines a cell model. DNA carries genetic information. A gene is a section of DNA, and chromosomes package DNA. Cell division produces new cells.\nWhich option names a section of DNA?",
+        "answer": "Gene",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embryo, Fetus, Pregnancy, and Birth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Embryo",
+        "prompt": "An educator describes development before and after birth. During pregnancy, an early developing human is called an embryo and later a fetus. Birth is the process of leaving the womb.\nWhich term names the later stage before birth?",
+        "answer": "Fetus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Growth, Puberty, Skin Layer, and Epidermis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Growth",
+        "prompt": "A tutor distinguishes growth from puberty. Growth includes an increase in body size; puberty involves changes toward reproductive maturity. The epidermis is the outer skin layer.\nWhich word names the outer skin layer?",
+        "answer": "Epidermis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dermis, Hair Follicle, and Sweat Gland and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Dermis",
+        "prompt": "A skin model shows the dermis below the epidermis. Hair grows from a follicle, and sweat glands release sweat. The tutor identifies each structure without giving skin-care advice.\nWhich structure releases sweat?",
+        "answer": "Sweat Gland",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Cell Division"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Chromosome"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Thymus” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the body systems task. Use Cell Division, DNA, Gene, Chromosome, Embryo, Fetus, Pregnancy, Birth, Growth, Puberty, Skin Layer, Epidermis, Dermis, Hair Follicle, and Sweat Gland in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Give a one-sentence explanation of the first scene’s body structure or process to a classmate.\nUse this information: The biology class examines a cell model. DNA carries genetic information. A gene is a section of DNA, and chromosomes package DNA. Cell division produces new cells.",
+        "answer": "A gene is a section of DNA.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Body Systems: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Body Systems 3: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "The biology class examines a cell model. DNA carries genetic information. A gene is a section of DNA, and chromosomes package DNA. Cell division produces new cells."
     },
     "spacedReview": "1 lesson(s) back: Thymus, Bone Marrow from body-systems-2\n3 lesson(s) back: Periosteum, Synovial Fluid from skeleton-4\n7 lesson(s) back: Brain Stem, Reflex from internal-organs-4"
   },
@@ -534,94 +462,70 @@
     "targetWordsEnglish": ["Oil Gland", "Melanin", "Keratin", "Collagen", "Pore"],
     "targetWordsArabic": ["غدة دهنية", "ميلانين", "كيراتين", "كولاجين", "مسام"],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Understand an educational explanation of body systems using the lesson’s specialist terms.",
+      "canDoStatement": "Can match a body structure or process to its function in a supported explanation. Specialist terms extend the unit’s task level; they are not claimed to be common CEFR vocabulary.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported specialist reading",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Oil Gland", "Melanin", "Keratin", "Collagen"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Gland, Melanin, Keratin, and Collagen and choose the option that fits the situation.",
+          "scenario": "The tutor describes skin and hair: oil glands release oil, melanin contributes to skin color, keratin is a structural protein in hair and nails, and collagen supports connective tissues.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which substance contributes to skin color?",
             "options": ["Oil Gland", "Melanin", "Keratin"],
-            "expectedAnswer": "Oil Gland"
+            "expectedAnswer": "Melanin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Oil Gland as the central item; include Oil Gland, Melanin, and Keratin naturally where visually appropriate, but make the real-world use of Oil Gland the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of A scientific skin cross-section model beside hair and nail models; no racial stereotypes or color hierarchy. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "A scientific skin cross-section model beside hair and nail models; no racial stereotypes or color hierarchy."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pore"],
-          "scenario": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pore and choose the option that fits the situation.",
+          "scenario": "A learner examines an enlarged skin model. A pore is a small opening at the surface of the skin. The model is a teaching aid, not an image used to diagnose a condition.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names a small skin opening?",
             "options": ["Pore", "Oil Gland", "Melanin"],
             "expectedAnswer": "Pore"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pore as the central item; include Pore, Oil Gland, and Melanin naturally where visually appropriate, but make the real-world use of Pore the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Educational photograph of An enlarged scientific skin-surface teaching model with pores, without labels or artificial answer highlighting. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes.",
+          "imageAlt": "An enlarged scientific skin-surface teaching model with pores, without labels or artificial answer highlighting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: Body Systems",
-      "text": "At the body systems, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Oil Gland, Melanin, Keratin, and Collagen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pore. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about Body Systems. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Body Systems 4: an anatomy teaching session",
+      "text": "The tutor describes skin and hair: oil glands release oil, melanin contributes to skin color, keratin is a structural protein in hair and nails, and collagen supports connective tissues. A learner examines an enlarged skin model. A pore is a small opening at the surface of the skin. The model is a teaching aid, not an image used to diagnose a condition. An oil gland releases oil into a hair follicle or onto the skin surface. The educator distinguishes that oil from the pigment melanin.",
+      "imageBrief": "Educational photograph of A scientific skin cross-section model beside hair and nail models; no racial stereotypes or color hierarchy. Anatomically accurate manufactured teaching models only; no gore, exposed patient anatomy, diagnosis, treatment steps, readable labels, arrows, logos, or answer highlighting. Written text supplies functions and invisible processes."
     },
     "exercises": [
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Oil Gland, Melanin, Keratin, and Collagen and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Oil Gland",
+        "prompt": "The tutor describes skin and hair: oil glands release oil, melanin contributes to skin color, keratin is a structural protein in hair and nails, and collagen supports connective tissues.\nWhich substance contributes to skin color?",
+        "answer": "Melanin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the body systems setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pore and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A learner examines an enlarged skin model. A pore is a small opening at the surface of the skin. The model is a teaching aid, not an image used to diagnose a condition.\nWhich term names a small skin opening?",
         "answer": "Pore",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Oil Gland"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Collagen"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cell Division” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the body systems task. Use Oil Gland, Melanin, Keratin, Collagen, and Pore in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Give a one-sentence explanation of the first scene’s body structure or process to a classmate.\nUse this information: The tutor describes skin and hair: oil glands release oil, melanin contributes to skin color, keratin is a structural protein in hair and nails, and collagen supports connective tissues.",
+        "answer": "Melanin contributes to skin color.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "Body Systems: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Body Systems 4: an anatomy teaching session",
+      "idea": "Use accurate teaching models with narrated functions. Pause for the first scene question. Do not depict diagnosis or treatment.",
+      "scriptStarter": "The tutor describes skin and hair: oil glands release oil, melanin contributes to skin color, keratin is a structural protein in hair and nails, and collagen supports connective tissues."
     },
     "spacedReview": "1 lesson(s) back: Cell Division, DNA from body-systems-3\n3 lesson(s) back: Muscle, Bicep from body-systems-1\n7 lesson(s) back: Skull, Cranium from skeleton-1"
   }

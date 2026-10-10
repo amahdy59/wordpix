@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key prepositions of place 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to prepositions of place in very simple everyday situations.",
-      "textType": "instructional-guide",
+      "canDoStatement": "With the supplied context, can choose a word for a stated location or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,7 +59,15 @@
             "expectedAnswer": "In"
           },
           "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: A folder is in a tray, a notebook is on the desk, and a bag is under the desk. The highlighted folder is in the tray. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including In, On, Under in a natural setting."
+          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including In, On, Under in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "A folder is in a tray, a notebook is on the desk, and a bag is under the desk. The highlighted folder is in the tray.",
+            "sourceQuestion": "Which place word describes the selected position?",
+            "sourceAnswer": "In",
+            "scenario": "Rana puts a notebook in a drawer. A pen is on the desk, and a bag is under the chair. The notebook is contained by the drawer.",
+            "question": "Which word describes the notebook’s position relative to the drawer?",
+            "imageBrief": "Office desk with an open drawer containing a notebook, pen on desk and bag beneath a chair. Distinct clear placement; no arrows or labels."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,43 +79,51 @@
             "expectedAnswer": "Behind"
           },
           "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: A printer is behind the chair, a small table is in front of the chair, and a bin is next to it. The highlighted printer is behind the chair. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Behind, In Front Of, Next To in a natural setting."
+          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Behind, In Front Of, Next To in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "A printer is behind the chair, a small table is in front of the chair, and a bin is next to it. The highlighted printer is behind the chair.",
+            "sourceQuestion": "Which position word matches the scene?",
+            "sourceAnswer": "Behind",
+            "scenario": "The printer is behind the chair. A table is in front of the window, and a bin is next to the door. Stand on the room’s entrance side to read these positions.",
+            "question": "Where is the printer relative to the chair?",
+            "imageBrief": "Office viewed from entrance: printer behind chair, table in front of window and bin beside door. No mirrors or conflicting perspective."
+          }
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Between", "Above", "Below"],
-          "scenario": "A chair is between two desks, a clock is above the chair, and a box is below the clock. The highlighted chair is between the desks.",
+          "scenario": "A chair is between two desks: there is a desk on each side. A clock is above a noticeboard, and a box is below it.",
           "check": {
-            "question": "Where is the chair in relation to the desks?",
+            "question": "Which word means there is a desk on each side of the chair?",
             "options": ["Above", "Below", "Between"],
             "expectedAnswer": "Between"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: A chair is between two desks, a clock is above the chair, and a box is below the clock. The highlighted chair is between the desks. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Between, Above, Below in a natural setting."
+          "imageBrief": "Office chair exactly between two desks; clock above blank noticeboard and box below. No readable clock-time requirement.",
+          "imageAlt": "Office chair exactly between two desks; clock above blank noticeboard and box below."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Inside", "Outside", "Beside"],
-          "scenario": "One parcel is inside the office, another is outside the open door, and a small table is beside the door. The highlighted parcel is inside.",
+          "scenario": "Samir keeps his shoes inside a cupboard. His bicycle stays outside the flat, and a bag is beside the cupboard.",
           "check": {
-            "question": "Where is the object in relation to the reference point?",
+            "question": "Where are the shoes relative to the cupboard?",
             "options": ["Beside", "Inside", "Outside"],
             "expectedAnswer": "Inside"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: One parcel is inside the office, another is outside the open door, and a small table is beside the door. The highlighted parcel is inside. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Inside, Outside, Beside in a natural setting."
+          "imageBrief": "Open cupboard with shoes fully inside and bag beside it. Bicycle visible beyond an open flat doorway.",
+          "imageAlt": "Open cupboard with shoes fully inside and bag beside it."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Near", "Far", "Opposite"],
-          "scenario": "A café is near the office, a bus stop is far from it, and a bank is opposite the office entrance. The highlighted café is near the office.",
+          "scenario": "Hana chooses a desk near the door so she can reach it quickly. Another desk is far from the door, and a chair is opposite the window.",
           "check": {
-            "question": "Where is the object in relation to the reference point in the example with near, far?",
+            "question": "Which word describes Hana’s desk being a short distance from the door?",
             "options": ["Near", "Far", "Opposite"],
             "expectedAnswer": "Near"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: A café is near the office, a bus stop is far from it, and a bank is opposite the office entrance. The highlighted café is near the office. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Near, Far, Opposite in a natural setting."
+          "imageBrief": "Two office desks at visibly different distances from a doorway, with a chair across from a window. No answer arrows or colour emphasis.",
+          "imageAlt": "Two office desks at visibly different distances from a doorway, with a chair across from a window."
         }
       ],
       "phrases": []
@@ -115,46 +131,70 @@
     "reading": {
       "title": "Moving into a New Office",
       "text": "During an office move, a supervisor gives clear directions. A laptop goes in a drawer and a notebook stays on the desk. A bag is under the chair, while the printer is behind it. A small table is in front of the window and a bin is next to the door. A chair sits between two desks. A clock is above the noticeboard and a box is below it.",
-      "imageBrief": "One uncluttered prepositions of place scene supporting the reading and showing the first six target words."
+      "imageBrief": "Office room with laptop in open drawer, notebook on desk, bag under chair, printer behind chair, table in front of window, bin next to door, chair between desks and clock above blank noticeboard. Exact layout; no text or arrows."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "In"
+        "prompt": "A folder is in a tray, a notebook is on the desk, and a bag is under the desk. The highlighted folder is in the tray.\nWhich place word describes the selected position?",
+        "answer": "In",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Behind"
+        "prompt": "A printer is behind the chair, a small table is in front of the chair, and a bin is next to it. The highlighted printer is behind the chair.\nWhich position word matches the scene?",
+        "answer": "Behind",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Between"
+        "prompt": "A chair is between two desks: there is a desk on each side. A clock is above a noticeboard, and a box is below it.\nWhich word means there is a desk on each side of the chair?",
+        "answer": "Between",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Inside"
+        "prompt": "Samir keeps his shoes inside a cupboard. His bicycle stays outside the flat, and a bag is beside the cupboard.\nWhere are the shoes relative to the cupboard?",
+        "answer": "Inside",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Near"
+        "prompt": "Hana chooses a desk near the door so she can reach it quickly. Another desk is far from the door, and a chair is opposite the window.\nWhich word describes Hana’s desk being a short distance from the door?",
+        "answer": "Near",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "In"
+        "prompt": "Read the passage: During an office move, a supervisor gives clear directions. A laptop goes in a drawer and a notebook stays on the desk. A bag is under the chair, while the printer is behind it. A small table is in front of the window and a bin is next to the door. A chair sits between two desks. A clock is above the noticeboard and a box is below it.\nWhere is the bag?",
+        "answer": "under the chair",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "On"
+        "prompt": "Say where a notebook is using in, on or under.",
+        "answer": "The notebook is in the drawer.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Next To"
+        "prompt": "In a new room, ask where a bag is and give a possible location.",
+        "answer": "Where is the bag? It is beside the chair.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Prepositions of Place: See It, Say It",
-      "idea": "30–50 second contextual video set in a room. Show in, on, under, behind, and in front of naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: A folder is in a tray, a notebook is on the desk, and a bag is under the desk. The highlighted folder is in the tray."
+      "title": "Describing Places",
+      "idea": "Show the scene’s exact spatial layout without labels or arrows. Narration supplies movement and perspective when a still reference cannot prove it.",
+      "scriptStarter": "Rana puts a notebook in a drawer. A pen is on the desk, and a bag is under the chair. The notebook is contained by the drawer."
     },
     "spacedReview": "1 lesson(s) back: Snore, Doze from daily-action-verbs-4\n3 lesson(s) back: Gulp, Bite from daily-action-verbs-2\n7 lesson(s) back: June, July from days-months-2"
   },
@@ -204,116 +244,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key prepositions of place 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to prepositions of place in very simple everyday situations.",
-      "textType": "instructional-guide",
+      "canDoStatement": "With the supplied context, can choose a word for a stated location or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Against", "Around", "Among"],
-          "scenario": "During an office move, boxes and furniture demonstrate the relationships against, around, and among. The highlighted relationship is against.",
+          "scenario": "A folded ladder rests against the wall, touching it. Boxes stand around a table, and a small box is among the larger ones.",
           "check": {
-            "question": "Where is the object in relation to the reference point in the example with against, around?",
+            "question": "Which word describes the ladder touching and leaning on the wall?",
             "options": ["Against", "Around", "Among"],
             "expectedAnswer": "Against"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: During an office move, boxes and furniture demonstrate the relationships against, around, and among. The highlighted relationship is against. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Against, Around, Among in a natural setting."
+          "imageBrief": "Folded ladder safely resting against wall; closed boxes around table and small box among larger boxes. No person climbing.",
+          "imageAlt": "Folded ladder safely resting against wall; closed boxes around table and small box among larger boxes."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Within", "Beyond", "Into"],
-          "scenario": "During a delivery setup, boxes and furniture demonstrate the relationships within, beyond, and into. The highlighted relationship is within.",
+          "scenario": "The meeting room is within the office building. The garden is beyond the rear door. Rana walks into the meeting room.",
           "check": {
-            "question": "What spatial relationship is being shown?",
+            "question": "Which word means the meeting room is inside the building’s limits?",
             "options": ["Beyond", "Into", "Within"],
             "expectedAnswer": "Within"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: During a delivery setup, boxes and furniture demonstrate the relationships within, beyond, and into. The highlighted relationship is within. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Within, Beyond, Into in a natural setting."
+          "imageBrief": "Cutaway-style office plan with one meeting room inside a building outline and garden outside at rear. No text labels or route arrows.",
+          "imageAlt": "Cutaway-style office plan with one meeting room inside a building outline and garden outside at rear."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Out Of", "Onto", "Off"],
-          "scenario": "During an apartment layout, boxes and furniture demonstrate the relationships out of, onto, and off. The highlighted relationship is out of.",
+          "scenario": "Omar takes a folder out of a drawer and puts it onto the desk. He moves a cup off the desk. The folder’s first movement is from inside the drawer to outside it.",
           "check": {
-            "question": "Which place word describes the selected position in the example with out of, onto?",
+            "question": "Which phrase describes the folder’s first movement?",
             "options": ["Off", "Out Of", "Onto"],
             "expectedAnswer": "Out Of"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: During an apartment layout, boxes and furniture demonstrate the relationships out of, onto, and off. The highlighted relationship is out of. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Out Of, Onto, Off in a natural setting."
+          "imageBrief": "Office desk with open drawer and folder partly withdrawn from it; cup at a separate side table. No motion arrows or unsafe spilling.",
+          "imageAlt": "Office desk with open drawer and folder partly withdrawn from it; cup at a separate side table."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Through", "Across", "Along"],
-          "scenario": "In a reception area, boxes and furniture demonstrate the relationships through, across, and along. The highlighted relationship is through.",
+          "scenario": "Rana carries a box through the open doorway. Then she walks across the room and along the wall. Her first route passes from one side of the doorway to the other.",
           "check": {
-            "question": "Which place word describes the selected position in the example with through, across?",
+            "question": "Which word describes passing from one side of the doorway to the other?",
             "options": ["Through", "Across", "Along"],
             "expectedAnswer": "Through"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a reception area, boxes and furniture demonstrate the relationships through, across, and along. The highlighted relationship is through. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Through, Across, Along in a natural setting."
+          "imageBrief": "Open office doorway with clear floor and closed box beside it. Passage supplies movement order; no arrows or labels.",
+          "imageAlt": "Open office doorway with clear floor and closed box beside it."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Over", "Past", "Toward"],
-          "scenario": "In a storeroom, boxes and furniture demonstrate the relationships over, past, and toward. The highlighted relationship is over.",
+          "scenario": "A cable runs over the top of the door frame. A trolley moves past the chair toward the exit. The cable is above and across the door frame.",
           "check": {
-            "question": "Which position word matches the scene in the example with over, past?",
+            "question": "Which word describes the cable’s route above and across the door frame?",
             "options": ["Past", "Toward", "Over"],
             "expectedAnswer": "Over"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a storeroom, boxes and furniture demonstrate the relationships over, past, and toward. The highlighted relationship is over. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Over, Past, Toward in a natural setting."
+          "imageBrief": "Office doorway with secured cable routed across its upper frame and clear floor. No trip hazard, exposed wiring or active electrical work.",
+          "imageAlt": "Office doorway with secured cable routed across its upper frame and clear floor."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Prepositions of Place 2: Organising an Office Move",
-      "text": "During a small office move, clear location language prevents mistakes. The instructions use against, around, among, within, and beyond. For routes and movement, the team also uses into, out of, onto, off, and through. To describe exact parts of a surface or room, the note includes across, along, over, past, and toward. Each instruction is checked before a box or piece of furniture is moved.",
-      "imageBrief": "One uncluttered prepositions of place scene supporting the reading and showing the first six target words."
+      "text": "Rana leans a folder against the wall. Boxes stand around the desk, with one small box among the larger ones. She walks into the room through the door and takes a bag out of a cupboard. The trolley moves along the wall and past the chair toward the exit.",
+      "imageBrief": "Office move with folder against wall, boxes around a desk, small box among larger ones and trolley by an open exit. Clear spatial relationships."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Against"
+        "prompt": "A folded ladder rests against the wall, touching it. Boxes stand around a table, and a small box is among the larger ones.\nWhich word describes the ladder touching and leaning on the wall?",
+        "answer": "Against",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Within"
+        "prompt": "The meeting room is within the office building. The garden is beyond the rear door. Rana walks into the meeting room.\nWhich word means the meeting room is inside the building’s limits?",
+        "answer": "Within",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Out Of"
+        "prompt": "Omar takes a folder out of a drawer and puts it onto the desk. He moves a cup off the desk. The folder’s first movement is from inside the drawer to outside it.\nWhich phrase describes the folder’s first movement?",
+        "answer": "Out Of",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Through"
+        "prompt": "Rana carries a box through the open doorway. Then she walks across the room and along the wall. Her first route passes from one side of the doorway to the other.\nWhich word describes passing from one side of the doorway to the other?",
+        "answer": "Through",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Over"
+        "prompt": "A cable runs over the top of the door frame. A trolley moves past the chair toward the exit. The cable is above and across the door frame.\nWhich word describes the cable’s route above and across the door frame?",
+        "answer": "Over",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Against"
+        "prompt": "Read the passage: Rana leans a folder against the wall. Boxes stand around the desk, with one small box among the larger ones. She walks into the room through the door and takes a bag out of a cupboard. The trolley moves along the wall and past the chair toward the exit.\nWhere does the trolley move?",
+        "answer": "along the wall and past the chair toward the exit",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Around"
+        "prompt": "Describe one movement through a room using through or along.",
+        "answer": "I walk through the door and along the wall.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Into"
+        "prompt": "A friend is moving a folder. Give an instruction using out of and onto.",
+        "answer": "Take the folder out of the drawer and put it onto the desk.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Prepositions of Place: See It, Say It",
-      "idea": "30–50 second contextual video set in a room. Show against, around, among, within, and beyond naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During an office move, boxes and furniture demonstrate the relationships against, around, and among. The highlighted relationship is against."
+      "title": "Describing Places",
+      "idea": "Show the scene’s exact spatial layout without labels or arrows. Narration supplies movement and perspective when a still reference cannot prove it.",
+      "scriptStarter": "A folded ladder rests against the wall, touching it. Boxes stand around a table, and a small box is among the larger ones."
     },
     "spacedReview": "1 lesson(s) back: In, On from prepositions-of-place-1\n3 lesson(s) back: Bathe, Shave from daily-action-verbs-3\n7 lesson(s) back: Today, Tomorrow from days-months-3"
   },
@@ -343,7 +407,7 @@
       "أعلى",
       "أسفل",
       "يسار",
-      "حق",
+      "يمين",
       "مركز",
       "وسط",
       "زاوية",
@@ -353,100 +417,121 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key prepositions of place 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to prepositions of place in very simple everyday situations.",
-      "textType": "instructional-guide",
+      "canDoStatement": "With the supplied context, can choose a word for a stated location or movement.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Top", "Bottom", "Left"],
-          "scenario": "During a delivery setup, a marker is shown at positions including top, bottom, and left. The highlighted position is top.",
+          "scenario": "A blank label is at the top of a folder. A clip is at the bottom, and a pen lies to the left of the folder. Read the layout from the learner’s viewpoint.",
           "check": {
-            "question": "Which position word matches the scene in the example with top, bottom?",
+            "question": "Which word names the upper part of the folder?",
             "options": ["Bottom", "Left", "Top"],
             "expectedAnswer": "Top"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: During a delivery setup, a marker is shown at positions including top, bottom, and left. The highlighted position is top. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Top, Bottom, Left in a natural setting."
+          "imageBrief": "Top-down view of folder with blank label at its upper edge, clip at lower edge and pen on viewer’s left. No written text or arrows.",
+          "imageAlt": "Top-down view of folder with blank label at its upper edge, clip at lower edge and pen on viewer’s left."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Right", "Center", "Middle"],
-          "scenario": "During an apartment layout, a marker is shown at positions including right, center, and middle. The highlighted position is right.",
+          "scenario": "A notebook is on the right side of the desk as you face it. The laptop is in the center, or middle, of the desk.",
           "check": {
-            "question": "Which side of the layout is highlighted?",
+            "question": "Which word names the notebook’s side as the learner faces the desk?",
             "options": ["Middle", "Right", "Center"],
             "expectedAnswer": "Right"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: During an apartment layout, a marker is shown at positions including right, center, and middle. The highlighted position is right. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Right, Center, Middle in a natural setting."
+          "imageBrief": "Desk viewed from learner’s front: notebook clearly on viewer’s right and laptop centered. No mirror image or readable screens.",
+          "imageAlt": "Desk viewed from learner’s front: notebook clearly on viewer’s right and laptop centered."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Corner", "Edge", "Side"],
-          "scenario": "In a reception area, a marker is shown at positions including corner, edge, and side. The highlighted position is corner.",
+          "scenario": "A wastebasket stands in the corner where two walls meet. A ruler lies along the edge of a table, and a chair is at its side.",
           "check": {
-            "question": "Where is the object in relation to the reference point in the example with corner, edge?",
+            "question": "Which word names the place where the two walls meet?",
             "options": ["Corner", "Edge", "Side"],
             "expectedAnswer": "Corner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a reception area, a marker is shown at positions including corner, edge, and side. The highlighted position is corner. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including Corner, Edge, Side in a natural setting."
+          "imageBrief": "Wastebasket in room corner, ruler along table edge and chair at side. No labels or answer emphasis.",
+          "imageAlt": "Wastebasket in room corner, ruler along table edge and chair at side."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["End"],
-          "scenario": "In a storeroom, a marker is shown at positions including end. The highlighted position is end.",
+          "scenario": "A box is at the end of the long shelf, beside its final support. There are no more shelves beyond that point.",
           "check": {
-            "question": "Where is the object in relation to the reference point in the example with end?",
+            "question": "Which word names the final part of the shelf?",
             "options": ["Top", "Bottom", "End"],
             "expectedAnswer": "End"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a prepositions of place context illustrating this situation: In a storeroom, a marker is shown at positions including end. The highlighted position is end. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult prepositions of place scene showing lesson-related items or actions including End in a natural setting."
+          "imageBrief": "Long shelf with closed box at its last section beside final support. No arrow or written labels.",
+          "imageAlt": "Long shelf with closed box at its last section beside final support."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Prepositions of Place 3: Organising an Office Move",
-      "text": "During a small office move, clear location language prevents mistakes. The instructions use top, bottom, left, right, and center. For routes and movement, the team also uses middle, corner, edge, side, and end. Each instruction is checked before a box or piece of furniture is moved. The vocabulary is used in a realistic prepositions of place context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered prepositions of place scene supporting the reading and showing the first six target words."
+      "text": "Samir puts a label at the top of a folder and a clip at the bottom. A pen is on the left of the desk and a notebook is on the right. The laptop is in the center. A bin stands in the corner, beside the end of the shelf.",
+      "imageBrief": "Desk viewed from the learner’s side: pen left, notebook right, laptop center; folder with blank label at top and clip at bottom. Bin in corner beside shelf end."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Top"
+        "prompt": "A blank label is at the top of a folder. A clip is at the bottom, and a pen lies to the left of the folder. Read the layout from the learner’s viewpoint.\nWhich word names the upper part of the folder?",
+        "answer": "Top",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Right"
+        "prompt": "A notebook is on the right side of the desk as you face it. The laptop is in the center, or middle, of the desk.\nWhich word names the notebook’s side as the learner faces the desk?",
+        "answer": "Right",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Corner"
+        "prompt": "A wastebasket stands in the corner where two walls meet. A ruler lies along the edge of a table, and a chair is at its side.\nWhich word names the place where the two walls meet?",
+        "answer": "Corner",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "End"
+        "prompt": "A box is at the end of the long shelf, beside its final support. There are no more shelves beyond that point.\nWhich word names the final part of the shelf?",
+        "answer": "End",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Top"
+        "prompt": "Read the passage: Samir puts a label at the top of a folder and a clip at the bottom. A pen is on the left of the desk and a notebook is on the right. The laptop is in the center. A bin stands in the corner, beside the end of the shelf.\nWhat is on the right of the desk?",
+        "answer": "a notebook",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Bottom"
+        "prompt": "Describe two objects on the left and right of a desk from your viewpoint.",
+        "answer": "The pen is on the left and the notebook is on the right.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Middle"
+        "prompt": "You and a friend face the same desk. Ask them to put a book on its right side.",
+        "answer": "Please put the book on the right side of the desk.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Prepositions of Place: See It, Say It",
-      "idea": "30–50 second contextual video set in a room. Show top, bottom, left, right, and center naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a delivery setup, a marker is shown at positions including top, bottom, and left. The highlighted position is top."
+      "title": "Describing Places",
+      "idea": "Show the scene’s exact spatial layout without labels or arrows. Narration supplies movement and perspective when a still reference cannot prove it.",
+      "scriptStarter": "A blank label is at the top of a folder. A clip is at the bottom, and a pen lies to the left of the folder. Read the layout from the learner’s viewpoint."
     },
     "spacedReview": "1 lesson(s) back: Against, Around from prepositions-of-place-2\n3 lesson(s) back: Snore, Doze from daily-action-verbs-4\n7 lesson(s) back: Diary, Agenda from days-months-4"
   }

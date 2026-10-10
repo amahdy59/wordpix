@@ -33,7 +33,7 @@
       "هيكل إضاءة",
       "نظام صوت",
       "خلفية",
-      "مرحلة",
+      "منصة العرض",
       "أماكن جلوس",
       "منطقة الصحافة",
       "قسم كبار الضيوف",
@@ -44,136 +44,122 @@
       "مكياج"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Catwalk", "Backstage", "Front Row", "Lighting Rig"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.",
+          "scenario": "The team identifies the catwalk as the presentation platform. Backstage is out of the audience's view; front row names the nearest seats, and the lighting rig holds lights.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which platform is used for the clothing presentation?",
             "options": ["Catwalk", "Backstage", "Front Row"],
             "expectedAnswer": "Catwalk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Catwalk as the central item; include Catwalk, Backstage, and Front Row naturally where visually appropriate, but make the real-world use of Catwalk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty runway platform with no models, audience, signs or logos. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sound System", "Backdrop", "Stage", "Seating"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.",
+          "scenario": "The sound system supplies audio. The backdrop is behind the presentation, the stage is the performance area, and seating provides audience places.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which equipment supplies the audio?",
             "options": ["Sound System", "Backdrop", "Stage"],
             "expectedAnswer": "Sound System"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Sound System as the central item; include Sound System, Backdrop, and Stage naturally where visually appropriate, but make the real-world use of Sound System the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A simple unbranded event sound system with speakers and mixer, no people or readable controls. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Press Area", "VIP Section", "Casting", "Fitting"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.",
+          "scenario": "The venue assigns the press area to reporting. The VIP section serves invited guests; casting selects participants, and fitting checks clothing fit.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which area is assigned to reporting in the venue plan?",
             "options": ["Press Area", "VIP Section", "Casting"],
             "expectedAnswer": "Press Area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or approaching the Press Area as the main location; include Press Area, VIP Section, and Casting naturally where visually appropriate, but make the real-world use of Press Area the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty event reporting area with plain camera stands; assignment is supplied in text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rehearsal", "Hair Styling", "Makeup"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.",
+          "scenario": "The rehearsal is the practice presentation before the event. Hair styling and makeup are different preparation activities.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity is the practice presentation?",
             "options": ["Rehearsal", "Hair Styling", "Makeup"],
             "expectedAnswer": "Rehearsal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Rehearsal through a realistic adult task; include Rehearsal, Hair Styling, and Makeup naturally where visually appropriate, but make the real-world use of Rehearsal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty runway rehearsal setup; timing and practice status are written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Runway Show",
-      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Catwalk, Backstage, Front Row, and Lighting Rig. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sound System, Backdrop, Stage, and Seating. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Press Area, VIP Section, Casting, and Fitting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rehearsal, Hair Styling, and Makeup. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Planning the presentation space",
+      "text": "An adult event team visits an empty fashion-show venue. The catwalk is the presentation platform; backstage is out of the audience's view. The front row is nearest the presentation area. A lighting rig holds lights, and the sound system supplies audio. A backdrop sits behind the presentation, while the stage is the performance area. Seating describes the audience places. The press area is assigned to reporting, and the VIP section is reserved for invited guests. Casting selects participants, fitting checks clothing fit, and rehearsal practices the presentation. Hair styling and makeup are preparation activities, not types of equipment. The team checks the venue plan and assigned roles. The vocabulary explains organization without prescribing a show's layout or judging anyone's appearance.",
+      "imageBrief": "Support for Planning the presentation space. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Catwalk, Backstage, Front Row, and Lighting Rig and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The team identifies the catwalk as the presentation platform. Backstage is out of the audience's view; front row names the nearest seats, and the lighting rig holds lights.\nWhich platform is used for the clothing presentation?",
         "answer": "Catwalk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sound System, Backdrop, Stage, and Seating and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The sound system supplies audio. The backdrop is behind the presentation, the stage is the performance area, and seating provides audience places.\nWhich equipment supplies the audio?",
         "answer": "Sound System",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Press Area, VIP Section, Casting, and Fitting and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The venue assigns the press area to reporting. The VIP section serves invited guests; casting selects participants, and fitting checks clothing fit.\nWhich area is assigned to reporting in the venue plan?",
         "answer": "Press Area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rehearsal, Hair Styling, and Makeup and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The rehearsal is the practice presentation before the event. Hair styling and makeup are different preparation activities.\nWhich activity is the practice presentation?",
         "answer": "Rehearsal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "An adult event team visits an empty fashion-show venue. The catwalk is the presentation platform; backstage is out of the audience's view. The front row is nearest the presentation area. A lighting rig holds lights, and the sound system supplies audio. A backdrop sits behind the presentation, while the stage is the performance area. Seating describes the audience places. The press area is assigned to reporting, and the VIP section is reserved for invited guests. Casting selects participants, fitting checks clothing fit, and rehearsal practices the presentation. Hair styling and makeup are preparation activities, not types of equipment. The team checks the venue plan and assigned roles. The vocabulary explains organization without prescribing a show's layout or judging anyone's appearance.\nWhy does the team consult the venue plan?",
+        "answer": "The vocabulary alone does not establish the event layout or assignments.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Catwalk"
+        "prompt": "Explain the difference between “Catwalk” and “Backstage” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Front Row"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Haute Couture” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the runway show task. Use Catwalk, Backstage, Front Row, Lighting Rig, Sound System, Backdrop, Stage, Seating, Press Area, VIP Section, Casting, Fitting, Rehearsal, Hair Styling, and Makeup in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Catwalk” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The team identifies the catwalk as the presentation platform. Backstage is out of the audience's view; front row names the nearest seats, and the lighting rig holds lights.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Runway Show: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Planning the presentation space",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "An adult event team visits an empty fashion-show venue. The catwalk is the presentation platform; backstage is out of the audience's view. The front row is nearest the presentation area. A lighting rig holds lights, and the sound system supplies audio. A backdrop sits behind the presentation, while the stage is the performance area. Seating describes the audience places. The press area is assigned to reporting, and the VIP section is reserved for invited guests. Casting selects participants, fitting checks clothing fit, and rehearsal practices the presentation. Hair styling and makeup are preparation activities, not types of equipment. The team checks the venue plan and assigned roles. The vocabulary explains organization without prescribing a show's layout or judging anyone's appearance. Ask: Why does the team consult the venue plan?"
     },
     "spacedReview": "1 lesson(s) back: Haute Couture, Prêt-à-Porter from fashion-design-3\n3 lesson(s) back: Seam, Dart from fashion-design-1\n7 lesson(s) back: Cotton, Silk from fabrics-textiles-1"
   },
@@ -206,8 +192,8 @@
     ],
     "targetWordsArabic": [
       "ارتداء الملابس",
-      "تشكيلة",
-      "تصميم الحركات",
+      "ترتيب ظهور العارضين أو الأزياء",
+      "تنظيم حركات العرض",
       "اختيار الموسيقى",
       "دعوات",
       "أسبوع الموضة",
@@ -215,143 +201,129 @@
       "ميلانو",
       "نيويورك",
       "لندن",
-      "مصمم",
+      "مصمم أزياء",
       "علامة تجارية",
-      "علامة",
-      "منزل",
+      "علامة أزياء",
+      "دار أزياء",
       "دار أزياء"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dressing", "Lineup", "Choreography", "Music Selection"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.",
+          "scenario": "Dressing is putting on the assigned clothes. The lineup sets the presentation order, choreography plans movement, and music selection chooses audio.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which activity means putting on the assigned clothes?",
             "options": ["Dressing", "Lineup", "Choreography"],
             "expectedAnswer": "Dressing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Dressing through a realistic adult task; include Dressing, Lineup, and Choreography naturally where visually appropriate, but make the real-world use of Dressing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty preparation rail holding modest garments; no dressing person or exposed body. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Invitations", "Fashion Week", "Paris", "Milan"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.",
+          "scenario": "Invitations ask the guests to attend. Fashion Week describes industry events; Paris and Milan are two of the cities discussed.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which items ask guests to attend?",
             "options": ["Invitations", "Fashion Week", "Paris"],
             "expectedAnswer": "Invitations"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Invitations as the central item; include Invitations, Fashion Week, and Paris naturally where visually appropriate, but make the real-world use of Invitations the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. Closed plain event envelopes, no text, names, dates or invitation-status claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["New York", "London", "Designer", "Brand"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.",
+          "scenario": "The schedule lists New York, a US city, separately from London. It then identifies the designer and brand involved in the fictional plan.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which named city in this comparison is in the United States?",
             "options": ["New York", "London", "Designer"],
             "expectedAnswer": "New York"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the New York as the central item; include New York, London, and Designer naturally where visually appropriate, but make the real-world use of New York the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An unlettered New-York-inspired skyline with diagnostic landmark arrangement; no event or date claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Label", "House", "Maison"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.",
+          "scenario": "Label here names a fashion business, as house and maison can also do. It does not mean a record company or a printed care tag in this example.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed term is being used for the fashion business rather than the care tag?",
             "options": ["Label", "House", "Maison"],
             "expectedAnswer": "Label"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Label as the central item; include Label, House, and Maison naturally where visually appropriate, but make the real-world use of Label the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A neutral empty fashion-business studio, no logo or company identity claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Runway Show",
-      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dressing, Lineup, Choreography, and Music Selection. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Invitations, Fashion Week, Paris, and Milan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers New York, London, Designer, and Brand. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Label, House, and Maison. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Coordinating show preparations",
+      "text": "The team reviews a fictional event schedule. Dressing means putting on the assigned clothes. The lineup is the order of looks or participants, while choreography plans movement and music selection chooses the audio. Invitations ask guests to attend. Fashion Week names a series of fashion-industry events rather than one universally fixed date. Paris, Milan, New York and London are cities associated with major fashion events, but the team checks the actual organizer's schedule. A designer develops the collection. Brand, label, house and maison can refer to a fashion business in this context; label can also have other meanings. The team asks which detail needs further refinement. It does not infer a company's identity, an event date or a person's invitation status from a photograph.",
+      "imageBrief": "Support for Coordinating show preparations. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dressing, Lineup, Choreography, and Music Selection and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Dressing is putting on the assigned clothes. The lineup sets the presentation order, choreography plans movement, and music selection chooses audio.\nWhich activity means putting on the assigned clothes?",
         "answer": "Dressing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Invitations, Fashion Week, Paris, and Milan and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Invitations ask the guests to attend. Fashion Week describes industry events; Paris and Milan are two of the cities discussed.\nWhich items ask guests to attend?",
         "answer": "Invitations",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare New York, London, Designer, and Brand and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The schedule lists New York, a US city, separately from London. It then identifies the designer and brand involved in the fictional plan.\nWhich named city in this comparison is in the United States?",
         "answer": "New York",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, House, and Maison and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Label here names a fashion business, as house and maison can also do. It does not mean a record company or a printed care tag in this example.\nWhich listed term is being used for the fashion business rather than the care tag?",
         "answer": "Label",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The team reviews a fictional event schedule. Dressing means putting on the assigned clothes. The lineup is the order of looks or participants, while choreography plans movement and music selection chooses the audio. Invitations ask guests to attend. Fashion Week names a series of fashion-industry events rather than one universally fixed date. Paris, Milan, New York and London are cities associated with major fashion events, but the team checks the actual organizer's schedule. A designer develops the collection. Brand, label, house and maison can refer to a fashion business in this context; label can also have other meanings. The team asks which detail needs further refinement. It does not infer a company's identity, an event date or a person's invitation status from a photograph.\nWhy does the team check the organizer’s schedule?",
+        "answer": "Fashion Week does not name one universal fixed date.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Dressing"
+        "prompt": "Explain the difference between “Dressing” and “Lineup” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Choreography"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Catwalk” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the runway show task. Use Dressing, Lineup, Choreography, Music Selection, Invitations, Fashion Week, Paris, Milan, New York, London, Designer, Brand, Label, House, and Maison in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Dressing” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Dressing is putting on the assigned clothes. The lineup sets the presentation order, choreography plans movement, and music selection chooses audio.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Runway Show: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Coordinating show preparations",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The team reviews a fictional event schedule. Dressing means putting on the assigned clothes. The lineup is the order of looks or participants, while choreography plans movement and music selection chooses the audio. Invitations ask guests to attend. Fashion Week names a series of fashion-industry events rather than one universally fixed date. Paris, Milan, New York and London are cities associated with major fashion events, but the team checks the actual organizer's schedule. A designer develops the collection. Brand, label, house and maison can refer to a fashion business in this context; label can also have other meanings. The team asks which detail needs further refinement. It does not infer a company's identity, an event date or a person's invitation status from a photograph. Ask: Why does the team check the organizer’s schedule?"
     },
     "spacedReview": "1 lesson(s) back: Catwalk, Backstage from runway-show-1\n3 lesson(s) back: Buckle, Lace-Up from fashion-design-2\n7 lesson(s) back: Lycra, Microfiber from fabrics-textiles-2"
   },
@@ -383,124 +355,110 @@
       "مدونة أزياء",
       "مجلة",
       "مراجعة",
-      "تغطية",
+      "تغطية إعلامية",
       "وسائل التواصل الاجتماعي",
       "مؤثر",
       "أزياء الشارع",
       "سجادة حمراء"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Fashion Editor", "Photographer", "Fashion Blog", "Magazine"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.",
+          "scenario": "The fashion editor selects the publication's fashion material. The photographer makes images; a fashion blog and magazine are publishing formats.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who selects the publication's fashion material in this example?",
             "options": ["Fashion Editor", "Photographer", "Fashion Blog"],
             "expectedAnswer": "Fashion Editor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Fashion Editor as the central item; include Fashion Editor, Photographer, and Fashion Blog naturally where visually appropriate, but make the real-world use of Fashion Editor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty editorial desk with unlettered garment-image sheets; professional identity comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Review", "Coverage", "Social Media", "Influencer"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.",
+          "scenario": "The review evaluates the event. Coverage means reporting more broadly; social media is a channel, and influencer names a person who may affect audience choices.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which report evaluates the event?",
             "options": ["Review", "Coverage", "Social Media"],
             "expectedAnswer": "Review"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Review through a realistic adult task; include Review, Coverage, and Social Media naturally where visually appropriate, but make the real-world use of Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty publication desk with blank pages; the report's evaluative function is written information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Street Style", "Red Carpet"],
-          "scenario": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.",
+          "scenario": "Street style concerns everyday clothing in public settings. Red carpet describes a different formal-event setting rather than everyday street clothing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression concerns everyday clothing in public settings?",
             "options": ["Street Style", "Red Carpet", "Fashion Editor"],
             "expectedAnswer": "Street Style"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Street Style as the central item; include Street Style, Red Carpet, and Fashion Editor naturally where visually appropriate, but make the real-world use of Street Style the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One modest male adult in ordinary street clothing on an otherwise empty street, no brands. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Runway Show",
-      "text": "At the runway show, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Editor, Photographer, Fashion Blog, and Magazine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Review, Coverage, Social Media, and Influencer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Street Style and Red Carpet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Runway Show. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing fashion reporting",
+      "text": "After the fictional show, a fashion editor selects material for publication. A photographer creates images, while a fashion blog and magazine are different publishing formats. A review evaluates the event; coverage is the broader reporting about it. Social media provides another distribution channel. An influencer may affect an audience's choices, but a large following is not proof of expertise or independence. Street style concerns clothing seen in everyday public settings, whereas red carpet refers to a formal event setting or its carpet. The class compares the purpose of each report and asks which claims need support. It does not invent quotations, ratings or endorsements. The lesson uses these words to discuss media choices rather than directs learners to follow a particular account or attend an event.",
+      "imageBrief": "Support for Comparing fashion reporting. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Editor, Photographer, Fashion Blog, and Magazine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The fashion editor selects the publication's fashion material. The photographer makes images; a fashion blog and magazine are publishing formats.\nWho selects the publication's fashion material in this example?",
         "answer": "Fashion Editor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, Coverage, Social Media, and Influencer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The review evaluates the event. Coverage means reporting more broadly; social media is a channel, and influencer names a person who may affect audience choices.\nWhich report evaluates the event?",
         "answer": "Review",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the runway show setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Street Style, and Red Carpet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Street style concerns everyday clothing in public settings. Red carpet describes a different formal-event setting rather than everyday street clothing.\nWhich expression concerns everyday clothing in public settings?",
         "answer": "Street Style",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "After the fictional show, a fashion editor selects material for publication. A photographer creates images, while a fashion blog and magazine are different publishing formats. A review evaluates the event; coverage is the broader reporting about it. Social media provides another distribution channel. An influencer may affect an audience's choices, but a large following is not proof of expertise or independence. Street style concerns clothing seen in everyday public settings, whereas red carpet refers to a formal event setting or its carpet. The class compares the purpose of each report and asks which claims need support. It does not invent quotations, ratings or endorsements. The lesson uses these words to discuss media choices rather than directs learners to follow a particular account or attend an event.\nHow does a review differ from coverage?",
+        "answer": "A review evaluates; coverage is the broader reporting about the event.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Fashion Editor"
+        "prompt": "Explain the difference between “Fashion Editor” and “Photographer” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Fashion Blog"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dressing” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the runway show task. Use Fashion Editor, Photographer, Fashion Blog, Magazine, Review, Coverage, Social Media, Influencer, Street Style, and Red Carpet in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Fashion Editor” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The fashion editor selects the publication's fashion material. The photographer makes images; a fashion blog and magazine are publishing formats.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Runway Show: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing fashion reporting",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "After the fictional show, a fashion editor selects material for publication. A photographer creates images, while a fashion blog and magazine are different publishing formats. A review evaluates the event; coverage is the broader reporting about it. Social media provides another distribution channel. An influencer may affect an audience's choices, but a large following is not proof of expertise or independence. Street style concerns clothing seen in everyday public settings, whereas red carpet refers to a formal event setting or its carpet. The class compares the purpose of each report and asks which claims need support. It does not invent quotations, ratings or endorsements. The lesson uses these words to discuss media choices rather than directs learners to follow a particular account or attend an event. Ask: How does a review differ from coverage?"
     },
     "spacedReview": "1 lesson(s) back: Dressing, Lineup from runway-show-2\n3 lesson(s) back: Haute Couture, Prêt-à-Porter from fashion-design-3\n7 lesson(s) back: Weave, Knit from fabrics-textiles-3"
   }

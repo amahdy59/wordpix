@@ -12,7 +12,7 @@
     "arabicTranslation": "كأس مخبري"
   },
   "flask": {
-    "definition": "The quantity a flask will hold.",
+    "definition": "A laboratory container with a narrow neck for holding liquids.",
     "arabicTranslation": "دورق"
   },
   "bunsen-burner": {
@@ -28,20 +28,20 @@
   "pipette": {
     "definition": "Measuring instrument consisting of a graduated glass tube used to measure or transfer precise volumes of a liquid by drawing the liquid up into the tube.",
     "arabicTranslation": "ماصة",
-    "exampleUsage": "The pipette was used during the activity."
+    "exampleUsage": "The researcher selected a calibrated pipette for transferring the specified liquid volume."
   },
   "graduated-cylinder": {
     "definition": "A narrow glass or plastic container has numbered marks for measuring liquid volume with reasonable accuracy.",
     "arabicTranslation": "أسطوانة مدرجة"
   },
   "funnel": {
-    "definition": "To move or pour through a funnel.",
+    "definition": "A wide-topped tool narrowing to a tube, used to direct material into a container.",
     "arabicTranslation": "قمع"
   },
   "tongs": {
-    "definition": "A hinged tool with two arms used to grip and lift hot ingredients.",
+    "definition": "A tool with two arms used to grip or lift objects without holding them directly.",
     "arabicTranslation": "ملقط",
-    "exampleUsage": "The tongs was used during the activity."
+    "exampleUsage": "The technician used suitable tongs to grip the sample holder."
   },
   "safety-goggles": {
     "definition": "Protective glasses worn to guard the eyes.",
@@ -52,16 +52,16 @@
     "arabicTranslation": "معطف مختبر"
   },
   "chemical": {
-    "definition": "Relating to or used in chemistry.",
+    "definition": "A substance with a particular chemical composition.",
     "arabicTranslation": "مادة كيميائية"
   },
   "element": {
-    "definition": "An artifact that is one of the individual parts of which a composite entity is made up.",
-    "arabicTranslation": "عنصر"
+    "definition": "A substance made of atoms with the same number of protons that cannot be broken into simpler substances by chemical reactions.",
+    "arabicTranslation": "عنصر كيميائي"
   },
   "compound": {
-    "definition": "Composed of more than one part.",
-    "arabicTranslation": "مركب"
+    "definition": "A substance made of two or more different elements chemically bonded together.",
+    "arabicTranslation": "مركّب كيميائي"
   },
   "molecule": {
     "definition": "(physics and chemistry) the simplest structural unit of an element or compound.",
@@ -76,11 +76,11 @@
     "arabicTranslation": "تفاعل"
   },
   "acid": {
-    "definition": "Having the characteristics of an acid.",
+    "definition": "A substance that can donate protons in an acid-base reaction; many aqueous acids have a pH below seven.",
     "arabicTranslation": "حمض"
   },
   "base": {
-    "definition": "(anatomy) the part of an organ nearest its point of attachment.",
+    "definition": "A substance that can accept protons in an acid-base reaction; many aqueous bases have a pH above seven.",
     "arabicTranslation": "قاعدة كيميائية"
   },
   "solution": {
@@ -92,20 +92,20 @@
     "arabicTranslation": "بلورة"
   },
   "gas": {
-    "definition": "The first known nerve agent, synthesized by German chemists in 1936.",
-    "arabicTranslation": "وقود"
+    "definition": "A state of matter that expands to fill its container.",
+    "arabicTranslation": "غاز"
   },
   "liquid": {
     "arabicTranslation": "سائل",
     "definition": "A substance that flows and takes the shape of its container."
   },
   "cell": {
-    "definition": "A device that delivers an electric current as the result of a chemical reaction.",
+    "definition": "The basic structural and functional unit of living organisms.",
     "arabicTranslation": "خلية",
-    "exampleUsage": "The cell was used during the activity."
+    "exampleUsage": "The microscope image showed a cell from the prepared tissue sample."
   },
   "bacteria": {
-    "definition": "(microbiology) single-celled or noncellular spherical or spiral or rod-shaped organisms lacking chlorophyll that reproduce by fission.",
+    "definition": "Single-celled organisms that lack a membrane-bound nucleus.",
     "arabicTranslation": "بكتيريا"
   },
   "virus": {
@@ -113,33 +113,33 @@
     "arabicTranslation": "فيروس"
   },
   "dna": {
-    "definition": "(biochemistry) a long linear polymer found in the nucleus of a cell and formed from nucleotides and shaped like a double helix.",
+    "definition": "The molecule that stores genetic information in cells and many viruses.",
     "arabicTranslation": "الحمض النووي DNA"
   },
   "gene": {
-    "definition": "(genetics) a segment of DNA that is involved in producing a polypeptide chain.",
+    "definition": "A region of genetic material associated with a functional product, such as a protein or RNA.",
     "arabicTranslation": "جين"
   },
   "organism": {
-    "definition": "A system considered analogous in structure or function to a living body.",
+    "definition": "An individual living thing, such as an animal, plant, or bacterium.",
     "arabicTranslation": "كائن حي"
   },
   "tissue": {
-    "definition": "A thin piece of soft paper used for wiping your nose, face, or hands.",
-    "arabicTranslation": "نسيج"
+    "definition": "A group of cells organized to perform related functions in an organism.",
+    "arabicTranslation": "نسيج حيوي"
   },
   "organ": {
-    "definition": "A government agency or instrument devoted to the performance of some specific function.",
+    "definition": "A body structure made of tissues that performs a particular function.",
     "arabicTranslation": "عضو",
-    "exampleUsage": "The organ was used during the activity."
+    "exampleUsage": "The instructor described the heart as an organ made of different tissues."
   },
   "photosynthesis": {
-    "definition": "Synthesis of compounds with the aid of radiant energy (especially in plants).",
-    "arabicTranslation": "تمثيل ضوئي"
+    "definition": "A process in which plants and some other organisms use light energy to make sugars from carbon dioxide and water.",
+    "arabicTranslation": "بناء ضوئي"
   },
   "evolution": {
-    "definition": "A process in which something passes by degrees to a different stage (especially a more advanced or mature stage).",
-    "arabicTranslation": "تطور"
+    "definition": "Changes in inherited characteristics of populations across generations.",
+    "arabicTranslation": "تطور حيوي"
   },
   "ecosystem": {
     "definition": "A system formed by the interaction of a community of organisms with their physical environment.",
@@ -152,10 +152,10 @@
   "magnet": {
     "definition": "(physics) a device that attracts iron and produces a magnetic field.",
     "arabicTranslation": "مغناطيس",
-    "exampleUsage": "The magnet was used during the activity."
+    "exampleUsage": "The magnet attracted the iron object in the demonstration."
   },
   "prism": {
-    "definition": "A polyhedron with two congruent and parallel faces (the bases) and whose lateral faces are parallelograms.",
+    "definition": "A transparent optical object with angled surfaces that can bend and separate light.",
     "arabicTranslation": "منشور بصري"
   },
   "lens": {
@@ -167,39 +167,39 @@
     "arabicTranslation": "بندول"
   },
   "circuit": {
-    "definition": "A journey or route all the way around a particular place or area.",
+    "definition": "A connected path through which electric current can flow.",
     "arabicTranslation": "دائرة كهربائية"
   },
   "battery": {
-    "definition": "A collection of related things intended for use together.",
+    "definition": "A device that supplies electrical energy through chemical reactions.",
     "arabicTranslation": "بطارية"
   },
   "wire": {
-    "definition": "To provide with electrical circuits.",
+    "definition": "A thin metal conductor used to carry electric current in a circuit.",
     "arabicTranslation": "سلك"
   },
   "switch": {
-    "definition": "Control consisting of a mechanical or electrical or electronic device for making or breaking or changing the connections in a circuit.",
-    "arabicTranslation": "مبدّل شبكي",
-    "exampleUsage": "The switch was used during the activity."
+    "definition": "A device used to open, close, or change an electrical circuit.",
+    "arabicTranslation": "مفتاح كهربائي",
+    "exampleUsage": "The instructor identified the switch controlling the circuit."
   },
   "pulley": {
     "definition": "A simple machine consisting of a wheel with a groove in which a rope can run to change the direction or point of application of a force applied to the rope.",
     "arabicTranslation": "بكرة",
-    "exampleUsage": "The pulley was used during the activity."
+    "exampleUsage": "The demonstration used a pulley to change the direction of the applied pull."
   },
   "lever": {
-    "definition": "A flat metal tumbler in a lever lock.",
+    "definition": "A rigid bar that pivots around a support to move or balance a load.",
     "arabicTranslation": "رافعة"
   },
   "spring": {
-    "definition": "The season between winter and summer.",
+    "definition": "An elastic mechanical part that stores energy when stretched or compressed.",
     "arabicTranslation": "نابض"
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
     "arabicTranslation": "مقياس حرارة",
-    "exampleUsage": "The thermometer was used during the activity."
+    "exampleUsage": "The thermometer showed the sample’s temperature."
   },
   "hypothesis": {
     "definition": "A tentative insight into the natural world.",
@@ -218,19 +218,19 @@
     "arabicTranslation": "بيانات"
   },
   "graph": {
-    "definition": "To represent by means of a graph.",
+    "definition": "A visual display showing relationships between measured values or quantities.",
     "arabicTranslation": "رسم بياني"
   },
   "chart": {
-    "definition": "To represent by means of a graph.",
-    "arabicTranslation": "خريطة ملاحية"
+    "definition": "A visual display organizing information or measurements.",
+    "arabicTranslation": "مخطط بياني"
   },
   "conclusion": {
     "definition": "A position or opinion or judgment reached after consideration.",
     "arabicTranslation": "استنتاج"
   },
   "variable": {
-    "definition": "Liable to or capable of change.",
+    "definition": "A factor that can change or be varied in an investigation.",
     "arabicTranslation": "متغير"
   },
   "control": {
@@ -242,13 +242,13 @@
     "arabicTranslation": "قياس"
   },
   "scale": {
-    "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم",
-    "exampleUsage": "The scale was used during the activity."
+    "definition": "An instrument used to measure the mass or weight of an object.",
+    "arabicTranslation": "ميزان",
+    "exampleUsage": "The technician weighed the sample on the laboratory scale."
   },
   "calculator": {
     "definition": "A device used for doing mathematical calculations.",
     "arabicTranslation": "آلة حاسبة",
-    "exampleUsage": "The calculator was used during the activity."
+    "exampleUsage": "She used a calculator to add the recorded measurements."
   }
 }

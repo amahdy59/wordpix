@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "116-146 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sedan", "Hatchback", "Coupe", "Convertible"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sedan, Hatchback, Coupe, and Convertible and choose the option that fits the situation.",
+          "scenario": "At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sedan", "Hatchback", "Coupe"],
-            "expectedAnswer": "Sedan"
+            "question": "Which car has a roof designed to fold or be removed?",
+            "options": ["Convertible", "Sedan", "Hatchback"],
+            "expectedAnswer": "Convertible"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Sedan as the central item; include Sedan, Hatchback, and Coupe naturally where visually appropriate, but make the real-world use of Sedan the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Convertible in a car types context. Use the written scenario as the source of meaning: At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Station Wagon", "Crossover", "SUV", "Minivan"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Station Wagon, Crossover, SUV, and Minivan and choose the option that fits the situation.",
+          "scenario": "A Station Wagon has an extended passenger body and rear cargo area. A Crossover combines car and SUV features, an SUV has a taller body, and a Minivan provides passenger space in a van-style layout.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which term describes the extended passenger body and rear cargo area?",
             "options": ["Station Wagon", "Crossover", "SUV"],
             "expectedAnswer": "Station Wagon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or approaching the Station Wagon as the main location; include Station Wagon, Crossover, and SUV naturally where visually appropriate, but make the real-world use of Station Wagon the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Station Wagon in a car types context. Use the written scenario as the source of meaning: A Station Wagon has an extended passenger body and rear cargo area. A Crossover combines car and SUV features, an SUV has a taller body, and a Minivan provides passenger space in a van-style layout. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sports Car", "Luxury Car", "Pickup Truck", "Van"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Car, Luxury Car, Pickup Truck, and Van and choose the option that fits the situation.",
+          "scenario": "The collection includes a Sports Car designed for performance and a Luxury Car emphasizing comfort and finish. A Pickup Truck has an open cargo bed, while a Van has an enclosed body.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sports Car", "Luxury Car", "Pickup Truck"],
-            "expectedAnswer": "Sports Car"
+            "question": "Which vehicle has an open cargo bed?",
+            "options": ["Pickup Truck", "Sports Car", "Luxury Car"],
+            "expectedAnswer": "Pickup Truck"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Sports Car as the central item; include Sports Car, Luxury Car, and Pickup Truck naturally where visually appropriate, but make the real-world use of Sports Car the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pickup Truck in a car types context. Use the written scenario as the source of meaning: The collection includes a Sports Car designed for performance and a Luxury Car emphasizing comfort and finish. A Pickup Truck has an open cargo bed, while a Van has an enclosed body. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Box Truck", "Semi-Truck", "Tow Truck"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Box Truck, Semi-Truck, and Tow Truck and choose the option that fits the situation.",
+          "scenario": "The guide shows a Box Truck with an enclosed cargo box and a Semi-Truck with a tractor and semitrailer. A Tow Truck is equipped to move other vehicles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Box Truck", "Semi-Truck", "Tow Truck"],
-            "expectedAnswer": "Box Truck"
+            "question": "Which vehicle is equipped to move other vehicles?",
+            "options": ["Tow Truck", "Box Truck", "Semi-Truck"],
+            "expectedAnswer": "Tow Truck"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Box Truck as the central item; include Box Truck, Semi-Truck, and Tow Truck naturally where visually appropriate, but make the real-world use of Box Truck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Tow Truck in a car types context. Use the written scenario as the source of meaning: The guide shows a Box Truck with an enclosed cargo box and a Semi-Truck with a tractor and semitrailer. A Tow Truck is equipped to move other vehicles. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Car Types: Practical Information",
-      "text": "At the car types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sedan, Hatchback, Coupe, and Convertible. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Station Wagon, Crossover, SUV, and Minivan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sports Car, Luxury Car, Pickup Truck, and Van. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Box Truck, Semi-Truck, and Tow Truck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Car Types: A visitor’s questions",
+      "text": "At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door. A Station Wagon has an extended passenger body and rear cargo area. A Crossover combines car and SUV features, an SUV has a taller body, and a Minivan provides passenger space in a van-style layout. The collection includes a Sports Car designed for performance and a Luxury Car emphasizing comfort and finish. A Pickup Truck has an open cargo bed, while a Van has an enclosed body. The guide shows a Box Truck with an enclosed cargo box and a Semi-Truck with a tractor and semitrailer. A Tow Truck is equipped to move other vehicles.",
+      "imageBrief": "One uncluttered car types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sedan, Hatchback, Coupe, and Convertible and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sedan",
+        "prompt": "At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door.\nWhich car has a roof designed to fold or be removed?",
+        "answer": "Convertible",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Station Wagon, Crossover, SUV, and Minivan and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "A Station Wagon has an extended passenger body and rear cargo area. A Crossover combines car and SUV features, an SUV has a taller body, and a Minivan provides passenger space in a van-style layout.\nWhich term describes the extended passenger body and rear cargo area?",
         "answer": "Station Wagon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sports Car, Luxury Car, Pickup Truck, and Van and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sports Car",
+        "prompt": "The collection includes a Sports Car designed for performance and a Luxury Car emphasizing comfort and finish. A Pickup Truck has an open cargo bed, while a Van has an enclosed body.\nWhich vehicle has an open cargo bed?",
+        "answer": "Pickup Truck",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Box Truck, Semi-Truck, and Tow Truck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Box Truck",
+        "prompt": "The guide shows a Box Truck with an enclosed cargo box and a Semi-Truck with a tractor and semitrailer. A Tow Truck is equipped to move other vehicles.\nWhich vehicle is equipped to move other vehicles?",
+        "answer": "Tow Truck",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door. A Station Wagon has an extended passenger body and rear cargo area. A Crossover combines car and SUV features, an SUV has a taller body, and a Minivan provides passenger space in a van-style layout. The collection includes a Sports Car designed for performance and a Luxury Car emphasizing comfort and finish. A Pickup Truck has an open cargo bed, while a Van has an enclosed body. The guide shows a Box Truck with an enclosed cargo box and a Semi-Truck with a tractor and semitrailer. A Tow Truck is equipped to move other vehicles.\nExplain the difference between Sedan and Hatchback using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Sedan"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sofa” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the car types task. Use Sedan, Hatchback, Coupe, Convertible, Station Wagon, Crossover, SUV, Minivan, Sports Car, Luxury Car, Pickup Truck, Van, Box Truck, Semi-Truck, and Tow Truck in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Sedan, Hatchback, Coupe, Convertible, Station Wagon, Crossover, SUV, Minivan, Sports Car, Luxury Car, Pickup Truck, Van, Box Truck, Semi-Truck, Tow Truck to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Car Types: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Car Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Sedan and Hatchback, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: At a vehicle display, Karim compares a Sedan, Hatchback, and Coupe. The Convertible has a roof designed to fold or be removed. The Hatchback instead has an upward-opening rear access door. Pause and answer: Which car has a roof designed to fold or be removed?"
     },
     "spacedReview": "1 lesson(s) back: Sofa, Bed Frame from moving-settling-in-3\n3 lesson(s) back: Moving Box, Packing Tape from moving-settling-in-1\n7 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dump Truck", "Flatbed", "Tanker", "Delivery Van"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dump Truck, Flatbed, Tanker, and Delivery Van and choose the option that fits the situation.",
+          "scenario": "A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Dump Truck", "Flatbed", "Tanker"],
-            "expectedAnswer": "Dump Truck"
+            "question": "Which truck has an open flat load platform?",
+            "options": ["Flatbed", "Dump Truck", "Tanker"],
+            "expectedAnswer": "Flatbed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Dump Truck as the central item; include Dump Truck, Flatbed, and Tanker naturally where visually appropriate, but make the real-world use of Dump Truck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Flatbed in a car types context. Use the written scenario as the source of meaning: A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Food Truck", "Electric Car", "Hybrid", "Muscle Car"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Truck, Electric Car, Hybrid, and Muscle Car and choose the option that fits the situation.",
+          "scenario": "A Food Truck contains facilities for selling food. An Electric Car uses electric propulsion; a Hybrid combines an engine with an electric motor. A Muscle Car is associated with powerful performance. Vehicle labels do not establish operating costs or legal access.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Food Truck", "Electric Car", "Hybrid"],
-            "expectedAnswer": "Food Truck"
+            "question": "Which vehicle combines an engine with an electric motor?",
+            "options": ["Hybrid", "Food Truck", "Electric Car"],
+            "expectedAnswer": "Hybrid"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Food Truck as the central item; include Food Truck, Electric Car, and Hybrid naturally where visually appropriate, but make the real-world use of Food Truck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Hybrid in a car types context. Use the written scenario as the source of meaning: A Food Truck contains facilities for selling food. An Electric Car uses electric propulsion; a Hybrid combines an engine with an electric motor. A Muscle Car is associated with powerful performance. Vehicle labels do not establish operating costs or legal access. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Classic Car", "Race Car", "Off-Road Vehicle", "Limousine"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classic Car, Race Car, Off-Road Vehicle, and Limousine and choose the option that fits the situation.",
+          "scenario": "The display includes a Classic Car valued for its history, a Race Car for competition, and an Off-Road Vehicle designed for rough terrain. A Limousine is a long luxury vehicle often used with a professional driver.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Classic Car", "Race Car", "Off-Road Vehicle"],
-            "expectedAnswer": "Classic Car"
+            "question": "Which term names the long luxury vehicle?",
+            "options": ["Limousine", "Classic Car", "Race Car"],
+            "expectedAnswer": "Limousine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Classic Car as the central item; include Classic Car, Race Car, and Off-Road Vehicle naturally where visually appropriate, but make the real-world use of Classic Car the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Limousine in a car types context. Use the written scenario as the source of meaning: The display includes a Classic Car valued for its history, a Race Car for competition, and an Off-Road Vehicle designed for rough terrain. A Limousine is a long luxury vehicle often used with a professional driver. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hearse", "Armored Car", "Golf Cart"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hearse, Armored Car, and Golf Cart and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes a Hearse used to transport a coffin, an Armored Car built with protective reinforcement, and a Golf Cart used around a golf course. These purposes come from the written account.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which vehicle transports a coffin?",
             "options": ["Hearse", "Armored Car", "Golf Cart"],
             "expectedAnswer": "Hearse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Hearse as the central item; include Hearse, Armored Car, and Golf Cart naturally where visually appropriate, but make the real-world use of Hearse the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Hearse in a car types context. Use the written scenario as the source of meaning: The guide distinguishes a Hearse used to transport a coffin, an Armored Car built with protective reinforcement, and a Golf Cart used around a golf course. These purposes come from the written account. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Car Types",
-      "text": "At the car types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dump Truck, Flatbed, Tanker, and Delivery Van. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Food Truck, Electric Car, Hybrid, and Muscle Car. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Classic Car, Race Car, Off-Road Vehicle, and Limousine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Hearse, Armored Car, and Golf Cart. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Car Types: Understanding the different roles",
+      "text": "A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body. A Food Truck contains facilities for selling food. An Electric Car uses electric propulsion; a Hybrid combines an engine with an electric motor. A Muscle Car is associated with powerful performance. Vehicle labels do not establish operating costs or legal access. The display includes a Classic Car valued for its history, a Race Car for competition, and an Off-Road Vehicle designed for rough terrain. A Limousine is a long luxury vehicle often used with a professional driver. The guide distinguishes a Hearse used to transport a coffin, an Armored Car built with protective reinforcement, and a Golf Cart used around a golf course. These purposes come from the written account.",
+      "imageBrief": "One uncluttered car types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dump Truck, Flatbed, Tanker, and Delivery Van and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Dump Truck",
+        "prompt": "A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body.\nWhich truck has an open flat load platform?",
+        "answer": "Flatbed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Food Truck, Electric Car, Hybrid, and Muscle Car and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Food Truck",
+        "prompt": "A Food Truck contains facilities for selling food. An Electric Car uses electric propulsion; a Hybrid combines an engine with an electric motor. A Muscle Car is associated with powerful performance. Vehicle labels do not establish operating costs or legal access.\nWhich vehicle combines an engine with an electric motor?",
+        "answer": "Hybrid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Classic Car, Race Car, Off-Road Vehicle, and Limousine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Classic Car",
+        "prompt": "The display includes a Classic Car valued for its history, a Race Car for competition, and an Off-Road Vehicle designed for rough terrain. A Limousine is a long luxury vehicle often used with a professional driver.\nWhich term names the long luxury vehicle?",
+        "answer": "Limousine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hearse, Armored Car, and Golf Cart and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide distinguishes a Hearse used to transport a coffin, an Armored Car built with protective reinforcement, and a Golf Cart used around a golf course. These purposes come from the written account.\nWhich vehicle transports a coffin?",
         "answer": "Hearse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body. A Food Truck contains facilities for selling food. An Electric Car uses electric propulsion; a Hybrid combines an engine with an electric motor. A Muscle Car is associated with powerful performance. Vehicle labels do not establish operating costs or legal access. The display includes a Classic Car valued for its history, a Race Car for competition, and an Off-Road Vehicle designed for rough terrain. A Limousine is a long luxury vehicle often used with a professional driver. The guide distinguishes a Hearse used to transport a coffin, an Armored Car built with protective reinforcement, and a Golf Cart used around a golf course. These purposes come from the written account.\nExplain the difference between Dump Truck and Flatbed using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Dump Truck"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sedan” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the car types task. Use Dump Truck, Flatbed, Tanker, Delivery Van, Food Truck, Electric Car, Hybrid, Muscle Car, Classic Car, Race Car, Off-Road Vehicle, Limousine, Hearse, Armored Car, and Golf Cart in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Dump Truck, Flatbed, Tanker, Delivery Van, Food Truck, Electric Car, Hybrid, Muscle Car, Classic Car, Race Car, Off-Road Vehicle, Limousine, Hearse, Armored Car, Golf Cart to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Car Types: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Car Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Dump Truck and Flatbed, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Dump Truck carries loose material in a tipping body. A Flatbed has an open flat load platform, a Tanker carries bulk material in a tank, and a Delivery Van carries goods in an enclosed van body. Pause and answer: Which truck has an open flat load platform?"
     },
     "spacedReview": "1 lesson(s) back: Sedan, Hatchback from car-types-1\n3 lesson(s) back: Sort, Donate from moving-settling-in-2\n7 lesson(s) back: Living Room, Bedroom from home-features-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss vehicles, service information, and road-safety rules and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the road or automotive service setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "86-116 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Motorcycle", "Scooter", "Moped", "Dirt Bike"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorcycle, Scooter, Moped, and Dirt Bike and choose the option that fits the situation.",
+          "scenario": "The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Motorcycle", "Scooter", "Moped"],
-            "expectedAnswer": "Motorcycle"
+            "question": "Which motorcycle is designed for rough off-road terrain?",
+            "options": ["Dirt Bike", "Motorcycle", "Scooter"],
+            "expectedAnswer": "Dirt Bike"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Motorcycle as the central item; include Motorcycle, Scooter, and Moped naturally where visually appropriate, but make the real-world use of Motorcycle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dirt Bike in a car types context. Use the written scenario as the source of meaning: The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Chopper", "Cruiser", "Sport Bike", "Touring Bike"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chopper, Cruiser, Sport Bike, and Touring Bike and choose the option that fits the situation.",
+          "scenario": "A Chopper has a customized extended appearance, a Cruiser suits relaxed riding, and a Sport Bike emphasizes performance. A Touring Bike is designed for longer journeys with comfort and luggage capacity.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Chopper", "Cruiser", "Sport Bike"],
-            "expectedAnswer": "Chopper"
+            "question": "Which bike is designed for longer journeys with luggage?",
+            "options": ["Touring Bike", "Chopper", "Cruiser"],
+            "expectedAnswer": "Touring Bike"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Chopper as the central item; include Chopper, Cruiser, and Sport Bike naturally where visually appropriate, but make the real-world use of Chopper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Touring Bike in a car types context. Use the written scenario as the source of meaning: A Chopper has a customized extended appearance, a Cruiser suits relaxed riding, and a Sport Bike emphasizes performance. A Touring Bike is designed for longer journeys with comfort and luggage capacity. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Electric Scooter", "Vespa"],
-          "scenario": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electric Scooter, and Vespa and choose the option that fits the situation.",
+          "scenario": "Karim compares a standing Electric Scooter powered by a battery with Vespa, a brand of motor scooter. Neither brand nor appearance determines legal road permission; the actual model and local rules matter.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Electric Scooter", "Vespa", "Motorcycle"],
-            "expectedAnswer": "Electric Scooter"
+            "question": "Which target is a motor-scooter brand?",
+            "options": ["Vespa", "Electric Scooter"],
+            "expectedAnswer": "Vespa"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a road or automotive service setting. Show an adult using or examining the Electric Scooter as the central item; include Electric Scooter, Vespa, and Motorcycle naturally where visually appropriate, but make the real-world use of Electric Scooter the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a road or automotive service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Vespa in a car types context. Use the written scenario as the source of meaning: Karim compares a standing Electric Scooter powered by a battery with Vespa, a brand of motor scooter. Neither brand nor appearance determines legal road permission; the actual model and local rules matter. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written car types situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Car Types",
-      "text": "At the car types, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Motorcycle, Scooter, Moped, and Dirt Bike. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Chopper, Cruiser, Sport Bike, and Touring Bike. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Electric Scooter and Vespa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Car Types. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Car Types: Comparing the equipment",
+      "text": "The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications. A Chopper has a customized extended appearance, a Cruiser suits relaxed riding, and a Sport Bike emphasizes performance. A Touring Bike is designed for longer journeys with comfort and luggage capacity. Karim compares a standing Electric Scooter powered by a battery with Vespa, a brand of motor scooter. Neither brand nor appearance determines legal road permission; the actual model and local rules matter.",
+      "imageBrief": "One uncluttered car types setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Motorcycle, Scooter, Moped, and Dirt Bike and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Motorcycle",
+        "prompt": "The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications.\nWhich motorcycle is designed for rough off-road terrain?",
+        "answer": "Dirt Bike",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chopper, Cruiser, Sport Bike, and Touring Bike and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Chopper",
+        "prompt": "A Chopper has a customized extended appearance, a Cruiser suits relaxed riding, and a Sport Bike emphasizes performance. A Touring Bike is designed for longer journeys with comfort and luggage capacity.\nWhich bike is designed for longer journeys with luggage?",
+        "answer": "Touring Bike",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the car types setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Electric Scooter, and Vespa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Electric Scooter",
+        "prompt": "Karim compares a standing Electric Scooter powered by a battery with Vespa, a brand of motor scooter. Neither brand nor appearance determines legal road permission; the actual model and local rules matter.\nWhich target is a motor-scooter brand?",
+        "answer": "Vespa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications. A Chopper has a customized extended appearance, a Cruiser suits relaxed riding, and a Sport Bike emphasizes performance. A Touring Bike is designed for longer journeys with comfort and luggage capacity. Karim compares a standing Electric Scooter powered by a battery with Vespa, a brand of motor scooter. Neither brand nor appearance determines legal road permission; the actual model and local rules matter.\nExplain the difference between Motorcycle and Scooter using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Motorcycle"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dump Truck” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the car types task. Use Motorcycle, Scooter, Moped, Dirt Bike, Chopper, Cruiser, Sport Bike, Touring Bike, Electric Scooter, and Vespa in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Motorcycle, Scooter, Moped, Dirt Bike, Chopper, Cruiser, Sport Bike, Touring Bike, Electric Scooter, Vespa to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Car Types: In Context",
-      "idea": "45-70 seconds contextual scene in the automotive setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the automotive setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Car Types: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Motorcycle and Scooter, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The two-wheel display includes a Motorcycle, a step-through Scooter, a light Moped, and a Dirt Bike designed for rough off-road terrain. Licensing categories and permitted use depend on local rules and vehicle specifications. Pause and answer: Which motorcycle is designed for rough off-road terrain?"
     },
     "spacedReview": "1 lesson(s) back: Dump Truck, Flatbed from car-types-2\n3 lesson(s) back: Sofa, Bed Frame from moving-settling-in-3\n7 lesson(s) back: Terrace, Porch from home-features-2"
   }

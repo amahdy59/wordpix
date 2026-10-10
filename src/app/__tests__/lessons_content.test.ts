@@ -28,9 +28,9 @@ describe("Vocabulary descriptions", () => {
     // All imported words have context-specific Arabic glosses, including
     // an explanatory gloss for the US tax term "1099".
     // Generic "The term X was used in Y lesson." examples have been stripped;
-    // 3571 words have individual example sentences in the catalogue.
-    expect(translated).toHaveLength(10333);
-    expect(examples).toHaveLength(3571);
+    // Preserve the imported baseline while allowing reviewed additions.
+    expect(translated.length).toBeGreaterThanOrEqual(10333);
+    expect(examples.length).toBeGreaterThanOrEqual(3571);
     expect(
       vocabulary.filter(
         (word) =>
@@ -118,15 +118,11 @@ describe("Vocabulary descriptions", () => {
       );
     });
 
-    for (const [unitId, reviewedCount] of [
-      ["fruits", 50],
-      ["vegetables", 60],
-      ["days-months", 49],
-    ] as const) {
-      const reviewed = (unitWords.get(unitId) ?? []).filter(
-        (word) => word.arabicTranslation !== undefined
-      );
-      expect(reviewed, `${unitId} catalogue coverage`).toHaveLength(reviewedCount);
+    for (const unitId of ["fruits", "vegetables", "days-months"] as const) {
+      const reviewed = unitWords.get(unitId) ?? [];
+      expect(reviewed.length, `${unitId} catalogue is loaded`).toBeGreaterThan(0);
+      // Every actual unit word needs reviewed content. A historical fixed
+      // count allowed an omitted row and rejected legitimate coverage repairs.
       reviewed.forEach((word) => {
         expect(word.arabicTranslation, `${unitId}/${word.id} missing Arabic`).toBeTruthy();
         expect(word.description, `${unitId}/${word.id} missing definition`).not.toBe(

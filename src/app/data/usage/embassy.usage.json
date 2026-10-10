@@ -35,7 +35,7 @@
       "قاعة استقبال",
       "غرفة انتظار",
       "قاعة اجتماعات",
-      "-",
+      "حديقة",
       "فناء",
       "جواز سفر",
       "تأشيرة",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Embassy Building", "Flag Pole", "National Flag", "Security Gate"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embassy Building, Flag Pole, National Flag, and Security Gate and choose the option that fits the situation.",
+          "scenario": "An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Embassy Building", "Flag Pole", "National Flag"],
-            "expectedAnswer": "Embassy Building"
+            "question": "Which feature controls entry?",
+            "options": ["Security Gate", "Embassy Building", "Flag Pole"],
+            "expectedAnswer": "Security Gate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Embassy Building through a realistic adult task; include Embassy Building, Flag Pole, and National Flag naturally where visually appropriate, but make the real-world use of Embassy Building the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Security Gate in a embassy context. Use the written scenario as the source of meaning: An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Guard Booth", "Reception Hall", "Waiting Room", "Conference Room"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard Booth, Reception Hall, Waiting Room, and Conference Room and choose the option that fits the situation.",
+          "scenario": "The visitor passes the Guard Booth and Reception Hall. Staff direct her to the Waiting Room until called; the Conference Room is reserved for meetings.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Guard Booth", "Reception Hall", "Waiting Room"],
-            "expectedAnswer": "Guard Booth"
+            "question": "Where does she wait until called?",
+            "options": ["Waiting Room", "Guard Booth", "Reception Hall"],
+            "expectedAnswer": "Waiting Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or approaching the Guard Booth as the main location; include Guard Booth, Reception Hall, and Waiting Room naturally where visually appropriate, but make the real-world use of Guard Booth the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Waiting Room in a embassy context. Use the written scenario as the source of meaning: The visitor passes the Guard Booth and Reception Hall. Staff direct her to the Waiting Room until called; the Conference Room is reserved for meetings. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Garden", "Courtyard", "Passport", "Visa"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden, Courtyard, Passport, and Visa and choose the option that fits the situation.",
+          "scenario": "From the Garden beside the Courtyard, the visitor enters the document-service area. Her Passport identifies her for international travel. A Visa concerns authorization under destination rules and does not necessarily guarantee admission.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Garden", "Courtyard", "Passport"],
-            "expectedAnswer": "Garden"
+            "question": "Which document identifies her for international travel?",
+            "options": ["Passport", "Garden", "Courtyard"],
+            "expectedAnswer": "Passport"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Garden as the central item; include Garden, Courtyard, and Passport naturally where visually appropriate, but make the real-world use of Garden the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Passport in a embassy context. Use the written scenario as the source of meaning: From the Garden beside the Courtyard, the visitor enters the document-service area. Her Passport identifies her for international travel. A Visa concerns authorization under destination rules and does not necessarily guarantee admission. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Application Form", "Identity Card", "Birth Certificate"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application Form, Identity Card, and Birth Certificate and choose the option that fits the situation.",
+          "scenario": "The appointment instructions mention an Application Form, Identity Card, and Birth Certificate. The Birth Certificate records a person’s birth; actual required documents depend on the service and authority.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Application Form", "Identity Card", "Birth Certificate"],
-            "expectedAnswer": "Application Form"
+            "question": "Which document records a person’s birth?",
+            "options": ["Birth Certificate", "Application Form", "Identity Card"],
+            "expectedAnswer": "Birth Certificate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Application Form as the central item; include Application Form, Identity Card, and Birth Certificate naturally where visually appropriate, but make the real-world use of Application Form the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Birth Certificate in a embassy context. Use the written scenario as the source of meaning: The appointment instructions mention an Application Form, Identity Card, and Birth Certificate. The Birth Certificate records a person’s birth; actual required documents depend on the service and authority. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Embassy",
-      "text": "At the embassy, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Embassy Building, Flag Pole, National Flag, and Security Gate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Guard Booth, Reception Hall, Waiting Room, and Conference Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Garden, Courtyard, Passport, and Visa. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Application Form, Identity Card, and Birth Certificate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Embassy: A visitor’s questions",
+      "text": "An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access. The visitor passes the Guard Booth and Reception Hall. Staff direct her to the Waiting Room until called; the Conference Room is reserved for meetings. From the Garden beside the Courtyard, the visitor enters the document-service area. Her Passport identifies her for international travel. A Visa concerns authorization under destination rules and does not necessarily guarantee admission. The appointment instructions mention an Application Form, Identity Card, and Birth Certificate. The Birth Certificate records a person’s birth; actual required documents depend on the service and authority.",
+      "imageBrief": "One uncluttered embassy setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Embassy Building, Flag Pole, National Flag, and Security Gate and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Embassy Building",
+        "prompt": "An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access.\nWhich feature controls entry?",
+        "answer": "Security Gate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard Booth, Reception Hall, Waiting Room, and Conference Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Guard Booth",
+        "prompt": "The visitor passes the Guard Booth and Reception Hall. Staff direct her to the Waiting Room until called; the Conference Room is reserved for meetings.\nWhere does she wait until called?",
+        "answer": "Waiting Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden, Courtyard, Passport, and Visa and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Garden",
+        "prompt": "From the Garden beside the Courtyard, the visitor enters the document-service area. Her Passport identifies her for international travel. A Visa concerns authorization under destination rules and does not necessarily guarantee admission.\nWhich document identifies her for international travel?",
+        "answer": "Passport",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application Form, Identity Card, and Birth Certificate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Application Form",
+        "prompt": "The appointment instructions mention an Application Form, Identity Card, and Birth Certificate. The Birth Certificate records a person’s birth; actual required documents depend on the service and authority.\nWhich document records a person’s birth?",
+        "answer": "Birth Certificate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access. The visitor passes the Guard Booth and Reception Hall. Staff direct her to the Waiting Room until called; the Conference Room is reserved for meetings. From the Garden beside the Courtyard, the visitor enters the document-service area. Her Passport identifies her for international travel. A Visa concerns authorization under destination rules and does not necessarily guarantee admission. The appointment instructions mention an Application Form, Identity Card, and Birth Certificate. The Birth Certificate records a person’s birth; actual required documents depend on the service and authority.\nExplain the difference between Embassy Building and Flag Pole using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Embassy Building"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Battery” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the embassy task. Use Embassy Building, Flag Pole, National Flag, Security Gate, Guard Booth, Reception Hall, Waiting Room, Conference Room, Garden, Courtyard, Passport, Visa, Application Form, Identity Card, and Birth Certificate in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Embassy Building, Flag Pole, National Flag, Security Gate, Guard Booth, Reception Hall, Waiting Room, Conference Room, Garden, Courtyard, Passport, Visa, Application Form, Identity Card, Birth Certificate to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Embassy: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Embassy: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Embassy Building and Flag Pole, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: An authorized visitor approaches the Embassy Building. A National Flag hangs from a Flag Pole. The Security Gate controls entry according to the mission’s visitor arrangements; a flag alone does not grant access. Pause and answer: Which feature controls entry?"
     },
     "spacedReview": "1 lesson(s) back: Battery, Cable from solar-farm-5\n3 lesson(s) back: Sunlight, Solar Cell from solar-farm-3\n7 lesson(s) back: Wheeled Robot, Walking Robot from robotics-lab-4"
   },
@@ -202,7 +185,7 @@
     ],
     "targetWordsArabic": [
       "صورة فوتوغرافية",
-      "طابع",
+      "ختم",
       "ختم",
       "خطاب",
       "مظروف",
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "113-143 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Photograph", "Stamp", "Seal", "Letter"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photograph, Stamp, Seal, and Letter and choose the option that fits the situation.",
+          "scenario": "The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Photograph", "Stamp", "Seal"],
-            "expectedAnswer": "Photograph"
+            "question": "Which target describes the official authentication mark?",
+            "options": ["Seal", "Photograph", "Stamp"],
+            "expectedAnswer": "Seal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Photograph as the central item; include Photograph, Stamp, and Seal naturally where visually appropriate, but make the real-world use of Photograph the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Seal in a embassy context. Use the written scenario as the source of meaning: The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Envelope", "Desk", "Computer", "Printer"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Envelope, Desk, Computer, and Printer and choose the option that fits the situation.",
+          "scenario": "An Envelope holds the visitor’s letter. At the Desk, a Computer handles digital records and a Printer produces paper output. The illustration must not expose real personal information.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item holds the letter?",
             "options": ["Envelope", "Desk", "Computer"],
             "expectedAnswer": "Envelope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Envelope as the central item; include Envelope, Desk, and Computer naturally where visually appropriate, but make the real-world use of Envelope the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Envelope in a embassy context. Use the written scenario as the source of meaning: An Envelope holds the visitor’s letter. At the Desk, a Computer handles digital records and a Printer produces paper output. The illustration must not expose real personal information. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Telephone", "Fax Machine", "Scanner", "Filing Cabinet"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telephone, Fax Machine, Scanner, and Filing Cabinet and choose the option that fits the situation.",
+          "scenario": "A Telephone carries calls, and a Fax Machine sends document copies through its supported connection. The Scanner converts paper records into digital images, while the Filing Cabinet stores paper files.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Telephone", "Fax Machine", "Scanner"],
-            "expectedAnswer": "Telephone"
+            "question": "Which device converts paper records to digital images?",
+            "options": ["Scanner", "Telephone", "Fax Machine"],
+            "expectedAnswer": "Scanner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Telephone as the central item; include Telephone, Fax Machine, and Scanner naturally where visually appropriate, but make the real-world use of Telephone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Scanner in a embassy context. Use the written scenario as the source of meaning: A Telephone carries calls, and a Fax Machine sends document copies through its supported connection. The Scanner converts paper records into digital images, while the Filing Cabinet stores paper files. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Safe", "Shredder", "Laminator"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safe, Shredder, and Laminator and choose the option that fits the situation.",
+          "scenario": "The clerk stores valuables in a Safe. A Shredder cuts paper into pieces, while a Laminator covers suitable material with plastic. Handling official documents follows the office’s retention and service rules.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Safe", "Shredder", "Laminator"],
-            "expectedAnswer": "Safe"
+            "question": "Which machine cuts paper into pieces?",
+            "options": ["Shredder", "Safe", "Laminator"],
+            "expectedAnswer": "Shredder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Safe as the central item; include Safe, Shredder, and Laminator naturally where visually appropriate, but make the real-world use of Safe the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Shredder in a embassy context. Use the written scenario as the source of meaning: The clerk stores valuables in a Safe. A Shredder cuts paper into pieces, while a Laminator covers suitable material with plastic. Handling official documents follows the office’s retention and service rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Embassy",
-      "text": "At the embassy, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Photograph, Stamp, Seal, and Letter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Envelope, Desk, Computer, and Printer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Telephone, Fax Machine, Scanner, and Filing Cabinet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Safe, Shredder, and Laminator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Embassy: Understanding the different roles",
+      "text": "The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose. An Envelope holds the visitor’s letter. At the Desk, a Computer handles digital records and a Printer produces paper output. The illustration must not expose real personal information. A Telephone carries calls, and a Fax Machine sends document copies through its supported connection. The Scanner converts paper records into digital images, while the Filing Cabinet stores paper files. The clerk stores valuables in a Safe. A Shredder cuts paper into pieces, while a Laminator covers suitable material with plastic. Handling official documents follows the office’s retention and service rules.",
+      "imageBrief": "One uncluttered embassy setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Photograph, Stamp, Seal, and Letter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Photograph",
+        "prompt": "The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose.\nWhich target describes the official authentication mark?",
+        "answer": "Seal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Envelope, Desk, Computer, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An Envelope holds the visitor’s letter. At the Desk, a Computer handles digital records and a Printer produces paper output. The illustration must not expose real personal information.\nWhich item holds the letter?",
         "answer": "Envelope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Telephone, Fax Machine, Scanner, and Filing Cabinet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Telephone",
+        "prompt": "A Telephone carries calls, and a Fax Machine sends document copies through its supported connection. The Scanner converts paper records into digital images, while the Filing Cabinet stores paper files.\nWhich device converts paper records to digital images?",
+        "answer": "Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Safe, Shredder, and Laminator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Safe",
+        "prompt": "The clerk stores valuables in a Safe. A Shredder cuts paper into pieces, while a Laminator covers suitable material with plastic. Handling official documents follows the office’s retention and service rules.\nWhich machine cuts paper into pieces?",
+        "answer": "Shredder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose. An Envelope holds the visitor’s letter. At the Desk, a Computer handles digital records and a Printer produces paper output. The illustration must not expose real personal information. A Telephone carries calls, and a Fax Machine sends document copies through its supported connection. The Scanner converts paper records into digital images, while the Filing Cabinet stores paper files. The clerk stores valuables in a Safe. A Shredder cuts paper into pieces, while a Laminator covers suitable material with plastic. Handling official documents follows the office’s retention and service rules.\nExplain the difference between Photograph and Stamp using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Photograph"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Embassy Building” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the embassy task. Use Photograph, Stamp, Seal, Letter, Envelope, Desk, Computer, Printer, Telephone, Fax Machine, Scanner, Filing Cabinet, Safe, Shredder, and Laminator in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Photograph, Stamp, Seal, Letter, Envelope, Desk, Computer, Printer, Telephone, Fax Machine, Scanner, Filing Cabinet, Safe, Shredder, Laminator to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Embassy: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Embassy: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Photograph and Stamp, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The clerk organizes a Photograph and Letter, then explains a Stamp used to print a mark and a Seal authenticating an official document within its specified use. The written account supplies the document purpose. Pause and answer: Which target describes the official authentication mark?"
     },
     "spacedReview": "1 lesson(s) back: Embassy Building, Flag Pole from embassy-1\n3 lesson(s) back: Hard Hat, Gloves from solar-farm-4\n7 lesson(s) back: Power Supply, Testing Mat from robotics-lab-5"
   },
@@ -384,7 +350,7 @@
       "بوابة دوارة",
       "نظام إنذار",
       "جهاز اتصال داخلي",
-      "زجاج مضاد للرصاص",
+      "زجاج مقاوم للرصاص",
       "سفير",
       "قنصل",
       "دبلوماسي",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "126-156 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Security Camera", "Metal Detector", "X-Ray Machine", "Security Guard"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Camera, Metal Detector, X-Ray Machine, and Security Guard and choose the option that fits the situation.",
+          "scenario": "The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Security Camera", "Metal Detector", "X-Ray Machine"],
-            "expectedAnswer": "Security Camera"
+            "question": "Which device detects metal objects?",
+            "options": ["Metal Detector", "Security Camera", "X-Ray Machine"],
+            "expectedAnswer": "Metal Detector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Security Camera as the central item; include Security Camera, Metal Detector, and X-Ray Machine naturally where visually appropriate, but make the real-world use of Security Camera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Metal Detector in a embassy context. Use the written scenario as the source of meaning: The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Badge", "Visitor Pass", "Turnstile", "Alarm System"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Badge, Visitor Pass, Turnstile, and Alarm System and choose the option that fits the situation.",
+          "scenario": "The visitor’s Badge indicates an affiliation, while her Visitor Pass grants the specified temporary access. A Turnstile regulates passage, and an Alarm System provides configured warnings. Actual permissions come from the office’s rules.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Badge", "Visitor Pass", "Turnstile"],
-            "expectedAnswer": "Badge"
+            "question": "Which document grants the specified temporary visitor access?",
+            "options": ["Visitor Pass", "Badge", "Turnstile"],
+            "expectedAnswer": "Visitor Pass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Badge as the central item; include Badge, Visitor Pass, and Turnstile naturally where visually appropriate, but make the real-world use of Badge the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Visitor Pass in a embassy context. Use the written scenario as the source of meaning: The visitor’s Badge indicates an affiliation, while her Visitor Pass grants the specified temporary access. A Turnstile regulates passage, and an Alarm System provides configured warnings. Actual permissions come from the office’s rules. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Intercom", "Bulletproof Glass", "Ambassador", "Consul"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Bulletproof Glass, Ambassador, and Consul and choose the option that fits the situation.",
+          "scenario": "An Intercom carries internal communication near rated Bulletproof Glass, more precisely ballistic-resistant glass. The Ambassador heads the diplomatic mission in this example. A Consul assists with consular functions such as citizen services under the office’s responsibilities.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Intercom", "Bulletproof Glass", "Ambassador"],
-            "expectedAnswer": "Intercom"
+            "question": "Which official handles the described consular functions?",
+            "options": ["Consul", "Intercom", "Bulletproof Glass"],
+            "expectedAnswer": "Consul"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Intercom as the central item; include Intercom, Bulletproof Glass, and Ambassador naturally where visually appropriate, but make the real-world use of Intercom the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Consul in a embassy context. Use the written scenario as the source of meaning: An Intercom carries internal communication near rated Bulletproof Glass, more precisely ballistic-resistant glass. The Ambassador heads the diplomatic mission in this example. A Consul assists with consular functions such as citizen services under the office’s responsibilities. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Diplomat", "Secretary", "Translator"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diplomat, Secretary, and Translator and choose the option that fits the situation.",
+          "scenario": "A Diplomat represents the country in official relations, and a Secretary supports office administration. A Translator works with written language in this account; spoken interpretation is a separate role.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Diplomat", "Secretary", "Translator"],
-            "expectedAnswer": "Diplomat"
+            "question": "Who works with written language here?",
+            "options": ["Translator", "Diplomat", "Secretary"],
+            "expectedAnswer": "Translator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Diplomat as the central item; include Diplomat, Secretary, and Translator naturally where visually appropriate, but make the real-world use of Diplomat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Translator in a embassy context. Use the written scenario as the source of meaning: A Diplomat represents the country in official relations, and a Secretary supports office administration. A Translator works with written language in this account; spoken interpretation is a separate role. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the embassy, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Security Camera, Metal Detector, X-Ray Machine, and Security Guard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Badge, Visitor Pass, Turnstile, and Alarm System. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Intercom, Bulletproof Glass, Ambassador, and Consul. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Diplomat, Secretary, and Translator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Embassy: Comparing the equipment",
+      "text": "The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat. The visitor’s Badge indicates an affiliation, while her Visitor Pass grants the specified temporary access. A Turnstile regulates passage, and an Alarm System provides configured warnings. Actual permissions come from the office’s rules. An Intercom carries internal communication near rated Bulletproof Glass, more precisely ballistic-resistant glass. The Ambassador heads the diplomatic mission in this example. A Consul assists with consular functions such as citizen services under the office’s responsibilities. A Diplomat represents the country in official relations, and a Secretary supports office administration. A Translator works with written language in this account; spoken interpretation is a separate role.",
+      "imageBrief": "One uncluttered embassy setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Security Camera, Metal Detector, X-Ray Machine, and Security Guard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Security Camera",
+        "prompt": "The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat.\nWhich device detects metal objects?",
+        "answer": "Metal Detector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Badge, Visitor Pass, Turnstile, and Alarm System and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Badge",
+        "prompt": "The visitor’s Badge indicates an affiliation, while her Visitor Pass grants the specified temporary access. A Turnstile regulates passage, and an Alarm System provides configured warnings. Actual permissions come from the office’s rules.\nWhich document grants the specified temporary visitor access?",
+        "answer": "Visitor Pass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Intercom, Bulletproof Glass, Ambassador, and Consul and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Intercom",
+        "prompt": "An Intercom carries internal communication near rated Bulletproof Glass, more precisely ballistic-resistant glass. The Ambassador heads the diplomatic mission in this example. A Consul assists with consular functions such as citizen services under the office’s responsibilities.\nWhich official handles the described consular functions?",
+        "answer": "Consul",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diplomat, Secretary, and Translator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Diplomat",
+        "prompt": "A Diplomat represents the country in official relations, and a Secretary supports office administration. A Translator works with written language in this account; spoken interpretation is a separate role.\nWho works with written language here?",
+        "answer": "Translator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat. The visitor’s Badge indicates an affiliation, while her Visitor Pass grants the specified temporary access. A Turnstile regulates passage, and an Alarm System provides configured warnings. Actual permissions come from the office’s rules. An Intercom carries internal communication near rated Bulletproof Glass, more precisely ballistic-resistant glass. The Ambassador heads the diplomatic mission in this example. A Consul assists with consular functions such as citizen services under the office’s responsibilities. A Diplomat represents the country in official relations, and a Secretary supports office administration. A Translator works with written language in this account; spoken interpretation is a separate role.\nExplain the difference between Security Camera and Metal Detector using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Security Camera"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Photograph” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the embassy task. Use Security Camera, Metal Detector, X-Ray Machine, Security Guard, Badge, Visitor Pass, Turnstile, Alarm System, Intercom, Bulletproof Glass, Ambassador, Consul, Diplomat, Secretary, and Translator in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Security Camera, Metal Detector, X-Ray Machine, Security Guard, Badge, Visitor Pass, Turnstile, Alarm System, Intercom, Bulletproof Glass, Ambassador, Consul, Diplomat, Secretary, Translator to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Embassy: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Embassy: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Security Camera and Metal Detector, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The entrance has a Security Camera and a Metal Detector. An X-Ray Machine examines bag contents, and a Security Guard manages the authorized screening process. The Metal Detector detects metal; equipment does not guarantee detection of every threat. Pause and answer: Which device detects metal objects?"
     },
     "spacedReview": "1 lesson(s) back: Photograph, Stamp from embassy-2\n3 lesson(s) back: Battery, Cable from solar-farm-5\n7 lesson(s) back: Solar Panel, Inverter from solar-farm-1"
   },
@@ -569,129 +518,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "126-156 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Protocol Officer", "Cultural Attaché", "Legal Advisor", "Driver"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Protocol Officer, Cultural Attaché, Legal Advisor, and Driver and choose the option that fits the situation.",
+          "scenario": "The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Protocol Officer", "Cultural Attaché", "Legal Advisor"],
-            "expectedAnswer": "Protocol Officer"
+            "question": "Which official handles cultural or educational relations?",
+            "options": ["Cultural Attaché", "Protocol Officer", "Legal Advisor"],
+            "expectedAnswer": "Cultural Attaché"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Protocol Officer; include Protocol Officer, Cultural Attaché, and Legal Advisor naturally where visually appropriate, but make the real-world use of Protocol Officer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Cultural Attaché in a embassy context. Use the written scenario as the source of meaning: The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Receptionist", "National Emblem", "Map", "Globe"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Receptionist, National Emblem, Map, and Globe and choose the option that fits the situation.",
+          "scenario": "At Reception, the Receptionist shows a National Emblem, Map, and Globe. The Globe is a round model of Earth, while the Map is a flat geographic representation. Symbols do not prove a document’s legal status.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Receptionist", "National Emblem", "Map"],
-            "expectedAnswer": "Receptionist"
+            "question": "Which item is the round model of Earth?",
+            "options": ["Globe", "Receptionist", "National Emblem"],
+            "expectedAnswer": "Globe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Receptionist as the central item; include Receptionist, National Emblem, and Map naturally where visually appropriate, but make the real-world use of Receptionist the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Globe in a embassy context. Use the written scenario as the source of meaning: At Reception, the Receptionist shows a National Emblem, Map, and Globe. The Globe is a round model of Earth, while the Map is a flat geographic representation. Symbols do not prove a document’s legal status. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clock with Time Zones", "Painting", "Sculpture", "Book"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock with Time Zones, Painting, Sculpture, and Book and choose the option that fits the situation.",
+          "scenario": "A Clock with Time Zones shows several regions’ times. A Painting uses paint, while a Sculpture has three-dimensional form. The visitor reads a Book about the exhibition; no artist identity is guessed from appearance.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Clock with Time Zones", "Painting", "Sculpture"],
-            "expectedAnswer": "Clock with Time Zones"
+            "question": "Which artwork has three-dimensional form?",
+            "options": ["Sculpture", "Clock with Time Zones", "Painting"],
+            "expectedAnswer": "Sculpture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Clock with Time Zones as the central item; include Clock with Time Zones, Painting, and Sculpture naturally where visually appropriate, but make the real-world use of Clock with Time Zones the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Sculpture in a embassy context. Use the written scenario as the source of meaning: A Clock with Time Zones shows several regions’ times. A Painting uses paint, while a Sculpture has three-dimensional form. The visitor reads a Book about the exhibition; no artist identity is guessed from appearance. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Gift", "Certificate", "Plaque"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift, Certificate, and Plaque and choose the option that fits the situation.",
+          "scenario": "The display includes a Gift, a Certificate confirming a stated fact, and a Plaque commemorating an event. The Plaque is a flat commemorative plate. Actual words are supplied by the account rather than read from a generated image.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gift", "Certificate", "Plaque"],
-            "expectedAnswer": "Gift"
+            "question": "Which target names the commemorative plate?",
+            "options": ["Plaque", "Gift", "Certificate"],
+            "expectedAnswer": "Plaque"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Gift as the central item; include Gift, Certificate, and Plaque naturally where visually appropriate, but make the real-world use of Gift the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Plaque in a embassy context. Use the written scenario as the source of meaning: The display includes a Gift, a Certificate confirming a stated fact, and a Plaque commemorating an event. The Plaque is a flat commemorative plate. Actual words are supplied by the account rather than read from a generated image. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Embassy",
-      "text": "At the embassy, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Protocol Officer, Cultural Attaché, Legal Advisor, and Driver. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Receptionist, National Emblem, Map, and Globe. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Clock with Time Zones, Painting, Sculpture, and Book. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Gift, Certificate, and Plaque. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Embassy: A guided walk",
+      "text": "The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle. At Reception, the Receptionist shows a National Emblem, Map, and Globe. The Globe is a round model of Earth, while the Map is a flat geographic representation. Symbols do not prove a document’s legal status. A Clock with Time Zones shows several regions’ times. A Painting uses paint, while a Sculpture has three-dimensional form. The visitor reads a Book about the exhibition; no artist identity is guessed from appearance. The display includes a Gift, a Certificate confirming a stated fact, and a Plaque commemorating an event. The Plaque is a flat commemorative plate. Actual words are supplied by the account rather than read from a generated image.",
+      "imageBrief": "One uncluttered embassy setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Protocol Officer, Cultural Attaché, Legal Advisor, and Driver and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Protocol Officer",
+        "prompt": "The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle.\nWhich official handles cultural or educational relations?",
+        "answer": "Cultural Attaché",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Receptionist, National Emblem, Map, and Globe and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Receptionist",
+        "prompt": "At Reception, the Receptionist shows a National Emblem, Map, and Globe. The Globe is a round model of Earth, while the Map is a flat geographic representation. Symbols do not prove a document’s legal status.\nWhich item is the round model of Earth?",
+        "answer": "Globe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clock with Time Zones, Painting, Sculpture, and Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Clock with Time Zones",
+        "prompt": "A Clock with Time Zones shows several regions’ times. A Painting uses paint, while a Sculpture has three-dimensional form. The visitor reads a Book about the exhibition; no artist identity is guessed from appearance.\nWhich artwork has three-dimensional form?",
+        "answer": "Sculpture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gift, Certificate, and Plaque and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gift",
+        "prompt": "The display includes a Gift, a Certificate confirming a stated fact, and a Plaque commemorating an event. The Plaque is a flat commemorative plate. Actual words are supplied by the account rather than read from a generated image.\nWhich target names the commemorative plate?",
+        "answer": "Plaque",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle. At Reception, the Receptionist shows a National Emblem, Map, and Globe. The Globe is a round model of Earth, while the Map is a flat geographic representation. Symbols do not prove a document’s legal status. A Clock with Time Zones shows several regions’ times. A Painting uses paint, while a Sculpture has three-dimensional form. The visitor reads a Book about the exhibition; no artist identity is guessed from appearance. The display includes a Gift, a Certificate confirming a stated fact, and a Plaque commemorating an event. The Plaque is a flat commemorative plate. Actual words are supplied by the account rather than read from a generated image.\nExplain the difference between Protocol Officer and Cultural Attaché using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Protocol Officer"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Security Camera” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the embassy task. Use Protocol Officer, Cultural Attaché, Legal Advisor, Driver, Receptionist, National Emblem, Map, Globe, Clock with Time Zones, Painting, Sculpture, Book, Gift, Certificate, and Plaque in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Protocol Officer, Cultural Attaché, Legal Advisor, Driver, Receptionist, National Emblem, Map, Globe, Clock with Time Zones, Painting, Sculpture, Book, Gift, Certificate, Plaque to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Embassy: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Embassy: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Protocol Officer and Cultural Attaché, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Protocol Officer arranges formal visits. A Cultural Attaché handles cultural or educational relations, a Legal Advisor gives legal guidance within qualifications, and a Driver operates the official vehicle. Pause and answer: Which official handles cultural or educational relations?"
     },
     "spacedReview": "1 lesson(s) back: Security Camera, Metal Detector from embassy-3\n3 lesson(s) back: Embassy Building, Flag Pole from embassy-1\n7 lesson(s) back: Conduit, Ground Rod from solar-farm-2"
   },
@@ -730,7 +662,7 @@
       "موظف",
       "ملحق دبلوماسي",
       "علم",
-      "استقبال",
+      "حفل استقبال",
       "مراسم",
       "معاهدة",
       "تفاوض",
@@ -741,129 +673,112 @@
       "goal": "Use precise, practical vocabulary to understand formal legal vocabulary and ask for clarification about procedures or documents and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the legal or public-service setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "121-151 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Application", "Identification", "Form", "Interpreter"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application, Identification, Form, and Interpreter and choose the option that fits the situation.",
+          "scenario": "The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Application", "Identification", "Form"],
-            "expectedAnswer": "Application"
+            "question": "Who conveys spoken communication between languages?",
+            "options": ["Interpreter", "Application", "Identification"],
+            "expectedAnswer": "Interpreter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Application through a realistic adult task; include Application, Identification, and Form naturally where visually appropriate, but make the real-world use of Application the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Interpreter in a embassy context. Use the written scenario as the source of meaning: The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Guard", "Clerk", "Attaché", "Flag"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard, Clerk, Attaché, and Flag and choose the option that fits the situation.",
+          "scenario": "A Guard handles security, and a Clerk processes office records. An Attaché is a diplomatic official assigned a particular responsibility; the Flag represents the country. Clothing cannot establish these roles.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Guard", "Clerk", "Attaché"],
-            "expectedAnswer": "Guard"
+            "question": "Which target names the official with a particular diplomatic responsibility?",
+            "options": ["Attaché", "Guard", "Clerk"],
+            "expectedAnswer": "Attaché"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Guard as the central item; include Guard, Clerk, and Attaché naturally where visually appropriate, but make the real-world use of Guard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Attaché in a embassy context. Use the written scenario as the source of meaning: A Guard handles security, and a Clerk processes office records. An Attaché is a diplomatic official assigned a particular responsibility; the Flag represents the country. Clothing cannot establish these roles. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Reception", "Ceremony", "Treaty", "Negotiation"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Ceremony, Treaty, and Negotiation and choose the option that fits the situation.",
+          "scenario": "At a formal Reception and Ceremony, the guide describes a Treaty as a written agreement between states or other eligible international parties. Negotiation is the discussion used to seek agreement; not every discussion produces a treaty.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Reception", "Ceremony", "Treaty"],
-            "expectedAnswer": "Reception"
+            "question": "Which target names the written international agreement?",
+            "options": ["Treaty", "Reception", "Ceremony"],
+            "expectedAnswer": "Treaty"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Reception through a realistic adult task; include Reception, Ceremony, and Treaty naturally where visually appropriate, but make the real-world use of Reception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Treaty in a embassy context. Use the written scenario as the source of meaning: At a formal Reception and Ceremony, the guide describes a Treaty as a written agreement between states or other eligible international parties. Negotiation is the discussion used to seek agreement; not every discussion produces a treaty. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Alliance", "Summit"],
-          "scenario": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alliance, and Summit and choose the option that fits the situation.",
+          "scenario": "An Alliance is a cooperative association under its stated arrangements. A Summit is a high-level meeting between leaders. The guide discusses these words without claiming that the pictured building hosts a current meeting.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Alliance", "Summit", "Application"],
-            "expectedAnswer": "Alliance"
+            "question": "Which term means the high-level leaders’ meeting?",
+            "options": ["Summit", "Alliance"],
+            "expectedAnswer": "Summit"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Alliance through a realistic adult task; include Alliance, Summit, and Application naturally where visually appropriate, but make the real-world use of Alliance the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Summit in a embassy context. Use the written scenario as the source of meaning: An Alliance is a cooperative association under its stated arrangements. A Summit is a high-level meeting between leaders. The guide discusses these words without claiming that the pictured building hosts a current meeting. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written embassy situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Embassy",
-      "text": "At the embassy, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Application, Identification, Form, and Interpreter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Guard, Clerk, Attaché, and Flag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reception, Ceremony, Treaty, and Negotiation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Alliance and Summit. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Embassy. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Embassy: A practical discussion",
+      "text": "The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment. A Guard handles security, and a Clerk processes office records. An Attaché is a diplomatic official assigned a particular responsibility; the Flag represents the country. Clothing cannot establish these roles. At a formal Reception and Ceremony, the guide describes a Treaty as a written agreement between states or other eligible international parties. Negotiation is the discussion used to seek agreement; not every discussion produces a treaty. An Alliance is a cooperative association under its stated arrangements. A Summit is a high-level meeting between leaders. The guide discusses these words without claiming that the pictured building hosts a current meeting.",
+      "imageBrief": "One uncluttered embassy setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Application, Identification, Form, and Interpreter and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Application",
+        "prompt": "The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment.\nWho conveys spoken communication between languages?",
+        "answer": "Interpreter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Guard, Clerk, Attaché, and Flag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Guard",
+        "prompt": "A Guard handles security, and a Clerk processes office records. An Attaché is a diplomatic official assigned a particular responsibility; the Flag represents the country. Clothing cannot establish these roles.\nWhich target names the official with a particular diplomatic responsibility?",
+        "answer": "Attaché",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Ceremony, Treaty, and Negotiation and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Reception",
+        "prompt": "At a formal Reception and Ceremony, the guide describes a Treaty as a written agreement between states or other eligible international parties. Negotiation is the discussion used to seek agreement; not every discussion produces a treaty.\nWhich target names the written international agreement?",
+        "answer": "Treaty",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the embassy setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Alliance, and Summit and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Alliance",
+        "prompt": "An Alliance is a cooperative association under its stated arrangements. A Summit is a high-level meeting between leaders. The guide discusses these words without claiming that the pictured building hosts a current meeting.\nWhich term means the high-level leaders’ meeting?",
+        "answer": "Summit",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment. A Guard handles security, and a Clerk processes office records. An Attaché is a diplomatic official assigned a particular responsibility; the Flag represents the country. Clothing cannot establish these roles. At a formal Reception and Ceremony, the guide describes a Treaty as a written agreement between states or other eligible international parties. Negotiation is the discussion used to seek agreement; not every discussion produces a treaty. An Alliance is a cooperative association under its stated arrangements. A Summit is a high-level meeting between leaders. The guide discusses these words without claiming that the pictured building hosts a current meeting.\nExplain the difference between Application and Identification using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Application"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Protocol Officer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the embassy task. Use Application, Identification, Form, Interpreter, Guard, Clerk, Attaché, Flag, Reception, Ceremony, Treaty, Negotiation, Alliance, and Summit in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Application, Identification, Form, Interpreter, Guard, Clerk, Attaché, Flag, Reception, Ceremony, Treaty, Negotiation, Alliance, Summit to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Embassy: In Context",
-      "idea": "45-70 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Embassy: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Application and Identification, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The visitor submits an Application and Identification on the required Form. An Interpreter conveys spoken communication between languages during the meeting. The office explains whether interpretation is available for the specific appointment. Pause and answer: Who conveys spoken communication between languages?"
     },
     "spacedReview": "1 lesson(s) back: Protocol Officer, Cultural Attaché from embassy-4\n3 lesson(s) back: Photograph, Stamp from embassy-2\n7 lesson(s) back: Sunlight, Solar Cell from solar-farm-3"
   }

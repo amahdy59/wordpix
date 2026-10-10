@@ -36,144 +36,149 @@
       "خنزير غينيا",
       "سمكة",
       "ثعبان",
-      "ابن عرس أليف",
+      "نمس أليف",
       "سماعة طبية",
       "مقياس حرارة",
-      "مقياس رسم",
+      "ميزان",
       "منظار الأذن",
-      "أشعة سينية"
+      "صورة بالأشعة السينية"
     ],
     "usage": {
-      "goal": "Learn to use common the vet clinic 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the vet clinic.",
-      "textType": "dialogue",
+      "goal": "Identify veterinary staff, spaces and equipment in a stated context and ask a qualified professional for information.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dog", "Cat", "Rabbit"],
-          "scenario": "During a routine care or examination situation, an adult reviews Dog, Cat, Rabbit. The next step focuses on Dog.",
+          "scenario": "Maya brings her dog to the clinic. The next appointments are for a cat and rabbit. The receptionist records the dog’s name.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which animal does Maya bring?",
             "options": ["Dog", "Cat", "Rabbit"],
             "expectedAnswer": "Dog"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Dog, Cat, Rabbit. The next step focuses on Dog. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Dog, Cat, Rabbit in a natural setting."
+          "imageBrief": "Closed secure dog carrier beside veterinary reception desk; no person, diagnosis or treatment.",
+          "imageAlt": "Closed secure dog carrier beside veterinary reception desk; no person, diagnosis or treatment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hamster", "Parrot", "Turtle"],
-          "scenario": "During a routine care or examination situation, an adult reviews Hamster, Parrot, Turtle. The next step focuses on Hamster.",
+          "scenario": "Omar brings a hamster in a secure carrier. A parrot and turtle have different appointments. The veterinarian asks about the hamster’s usual behaviour.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which animal does Omar bring?",
             "options": ["Hamster", "Parrot", "Turtle"],
             "expectedAnswer": "Hamster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Hamster, Parrot, Turtle. The next step focuses on Hamster. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Hamster, Parrot, Turtle in a natural setting."
+          "imageBrief": "Hamster in a secure spacious carrier with suitable bedding. No mixed-species enclosure or treatment.",
+          "imageAlt": "Hamster in a secure spacious carrier with suitable bedding."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Guinea Pig", "Fish", "Snake"],
-          "scenario": "During a routine care or examination situation, an adult reviews Guinea Pig, Fish, Snake. The next step focuses on Guinea Pig.",
+          "scenario": "Hana has an appointment for her guinea pig. Fish and snake appointments are scheduled later. The guinea pig is a small mammal, not an aquatic animal or reptile.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which small mammal has Hana’s appointment?",
             "options": ["Guinea Pig", "Fish", "Snake"],
             "expectedAnswer": "Guinea Pig"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Guinea Pig, Fish, Snake. The next step focuses on Guinea Pig. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Guinea Pig, Fish, Snake in a natural setting."
+          "imageBrief": "Guinea pig in a secure spacious carrier, without medical equipment touching it.",
+          "imageAlt": "Guinea pig in a secure spacious carrier, without medical equipment touching it."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ferret", "Stethoscope", "Thermometer"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ferret, Stethoscope, Thermometer. The next step focuses on Ferret.",
+          "scenario": "The receptionist checks a ferret’s appointment. A stethoscope and thermometer are tools used by the veterinarian. The ferret is the animal coming to the clinic.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which word names the animal in this situation?",
             "options": ["Ferret", "Stethoscope", "Thermometer"],
             "expectedAnswer": "Ferret"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Ferret, Stethoscope, Thermometer. The next step focuses on Ferret. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Ferret, Stethoscope, Thermometer in a natural setting."
+          "imageBrief": "A domestic ferret resting in a secure carrier. No black-footed wild-ferret substitution.",
+          "imageAlt": "A domestic ferret resting in a secure carrier."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Scale", "Otoscope", "X Ray"],
-          "scenario": "During a routine care or examination situation, an adult reviews Scale, Otoscope, X Ray. The next step focuses on Scale.",
+          "scenario": "The veterinarian checks the dog’s weight on a scale. An otoscope is for examining an ear, while an X ray is a medical image.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which device measures the dog’s weight?",
             "options": ["Scale", "Otoscope", "X Ray"],
             "expectedAnswer": "Scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Scale, Otoscope, X Ray. The next step focuses on Scale. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Scale, Otoscope, X Ray in a natural setting."
+          "imageBrief": "Unused veterinary weighing scale with flat stable platform; no readable weight or unrelated map scale.",
+          "imageAlt": "Unused veterinary weighing scale with flat stable platform; no readable weight or unrelated map scale."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Short Description",
-      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. The guide points out the dog, cat, and rabbit and asks the group to notice how the animals move or behave. The guide points out the hamster, parrot, and turtle and asks the group to notice how the animals move or behave. At the animal-care setting, staff and visitors focus on guinea pig, fish, and snake.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "A veterinarian has appointments for a dog, cat and rabbit. A hamster and guinea pig wait in secure carriers. Other appointments include a parrot, turtle, fish, snake and ferret. The vet uses a stethoscope to listen and a thermometer to check temperature. A scale measures weight. An otoscope helps examine an ear. The vet explains an X ray to the owner.",
+      "imageBrief": "Veterinary exam room with unused stethoscope, thermometer, weight scale and otoscope on a clean surface. Secure carrier on floor; no live procedure or X-ray diagnosis invented."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Dog, Cat, Rabbit. The next step focuses on Dog.\nWhich option is the focus of the next step?",
+        "prompt": "Maya brings her dog to the clinic. The next appointments are for a cat and rabbit. The receptionist records the dog’s name.\nWhich animal does Maya bring?",
         "answer": "Dog",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Hamster, Parrot, Turtle. The next step focuses on Hamster.\nWhich option is the focus of the next step?",
+        "prompt": "Omar brings a hamster in a secure carrier. A parrot and turtle have different appointments. The veterinarian asks about the hamster’s usual behaviour.\nWhich animal does Omar bring?",
         "answer": "Hamster",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Guinea Pig, Fish, Snake. The next step focuses on Guinea Pig.\nWhich option is the focus of the next step?",
+        "prompt": "Hana has an appointment for her guinea pig. Fish and snake appointments are scheduled later. The guinea pig is a small mammal, not an aquatic animal or reptile.\nWhich small mammal has Hana’s appointment?",
         "answer": "Guinea Pig",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ferret, Stethoscope, Thermometer. The next step focuses on Ferret.\nWhich option is the focus of the next step?",
+        "prompt": "The receptionist checks a ferret’s appointment. A stethoscope and thermometer are tools used by the veterinarian. The ferret is the animal coming to the clinic.\nWhich word names the animal in this situation?",
         "answer": "Ferret",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Scale, Otoscope, X Ray. The next step focuses on Scale.\nWhich option is the focus of the next step?",
+        "prompt": "The veterinarian checks the dog’s weight on a scale. An otoscope is for examining an ear, while an X ray is a medical image.\nWhich device measures the dog’s weight?",
         "answer": "Scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Dog"
+        "prompt": "Read the passage: A veterinarian has appointments for a dog, cat and rabbit. A hamster and guinea pig wait in secure carriers. Other appointments include a parrot, turtle, fish, snake and ferret. The vet uses a stethoscope to listen and a thermometer to check temperature. A scale measures weight. An otoscope helps examine an ear. The vet explains an X ray to the owner.\nWhich device measures weight?",
+        "answer": "a scale",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Rabbit"
+        "prompt": "Tell the receptionist which animal has an appointment.",
+        "answer": "I have an appointment for my dog.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pet” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend confuses an otoscope with a weighing scale. Explain the different purposes.",
+        "answer": "The scale measures weight; the otoscope helps examine an ear.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Vet Clinic: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At the Veterinary Clinic",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Maya brings her dog to the clinic. The next appointments are for a cat and rabbit. The receptionist records the dog’s name."
     },
     "spacedReview": "1 lesson(s) back: Pet, Adopt from pet-shop-8\n3 lesson(s) back: Terrarium, Fish Bowl from pet-shop-6\n7 lesson(s) back: Beagle, Chihuahua from pet-shop-2"
   },
@@ -205,153 +210,158 @@
       "Cone Collar"
     ],
     "targetWordsArabic": [
-      "موجات فوق صوتية",
+      "تصوير بالموجات فوق الصوتية",
       "فحص دم",
       "مجهر",
-      "حقنة",
+      "محقنة",
       "ضمادة",
       "تطعيم",
-      "جراحة",
+      "جراحة بيطرية",
       "تنظيف أسنان بيطري",
-      "شريحة إلكترونية",
-      "تعقيم الأنثى",
-      "تعقيم الحيوان",
+      "شريحة تعريف إلكترونية",
+      "يُعقّم أنثى الحيوان",
+      "يُعقّم الحيوان",
       "دواء",
       "غُرز جراحية",
-      "جبيرة جبسية",
+      "جبيرة",
       "طوق مخروطي واقٍ"
     ],
     "usage": {
-      "goal": "Learn to use common the vet clinic 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the vet clinic.",
-      "textType": "dialogue",
+      "goal": "Identify veterinary staff, spaces and equipment in a stated context and ask a qualified professional for information.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ultrasound", "Blood Test", "Microscope"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ultrasound, Blood Test, Microscope. The next step focuses on Ultrasound.",
+          "scenario": "The vet describes an ultrasound examination using sound waves to make images. A blood test examines a blood sample, and a microscope enlarges tiny objects.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which examination uses sound waves to make images?",
             "options": ["Ultrasound", "Blood Test", "Microscope"],
             "expectedAnswer": "Ultrasound"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Ultrasound, Blood Test, Microscope. The next step focuses on Ultrasound. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Ultrasound, Blood Test, Microscope in a natural setting."
+          "imageBrief": "Unused veterinary ultrasound machine with blank screen and probe on holder. No diagnosis or active examination.",
+          "imageAlt": "Unused veterinary ultrasound machine with blank screen and probe on holder."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Syringe", "Bandage", "Vaccination"],
-          "scenario": "During a routine care or examination situation, an adult reviews Syringe, Bandage, Vaccination. The next step focuses on Syringe.",
+          "scenario": "The veterinary technician prepares a syringe, a tube with a plunger for liquid. A bandage is covering material, and vaccination names giving a vaccine. These tasks belong to trained staff.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item is a tube with a plunger?",
             "options": ["Syringe", "Bandage", "Vaccination"],
             "expectedAnswer": "Syringe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Syringe, Bandage, Vaccination. The next step focuses on Syringe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Syringe, Bandage, Vaccination in a natural setting."
+          "imageBrief": "Unused sterile syringe with capped needle on a clean clinical tray. No injection, dosage marking or animal.",
+          "imageAlt": "Unused sterile syringe with capped needle on a clean clinical tray."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Surgery", "Dental Cleaning", "Microchip"],
-          "scenario": "During a routine care or examination situation, an adult reviews Surgery, Dental Cleaning, Microchip. The next step focuses on Surgery.",
+          "scenario": "The vet discusses surgery, an operation, with the owner. Dental cleaning and microchip identification are separate topics. The owner asks who will perform the operation.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which word names the operation?",
             "options": ["Surgery", "Dental Cleaning", "Microchip"],
             "expectedAnswer": "Surgery"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Surgery, Dental Cleaning, Microchip. The next step focuses on Surgery. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Surgery, Dental Cleaning, Microchip in a natural setting."
+          "imageBrief": "Closed consultation folder on an empty veterinary desk beside unused equipment. No surgery, incision or animal procedure.",
+          "imageAlt": "Closed consultation folder on an empty veterinary desk beside unused equipment."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Spay", "Neuter", "Medication"],
-          "scenario": "During a routine care or examination situation, an adult reviews Spay, Neuter, Medication. The next step focuses on Spay.",
+          "scenario": "The owner asks whether to spay a female cat. Spay means perform an operation to prevent the female animal reproducing. Neuter is a broader term, often used for males. Medication is a different topic.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb specifically describes the operation for the female cat here?",
             "options": ["Spay", "Neuter", "Medication"],
             "expectedAnswer": "Spay"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Spay, Neuter, Medication. The next step focuses on Spay. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Spay, Neuter, Medication in a natural setting."
+          "imageBrief": "Closed appointment folder in a veterinary consultation room. No reproductive anatomy, procedure or treatment recommendation.",
+          "imageAlt": "Closed appointment folder in a veterinary consultation room."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Stitches", "Cast", "Cone Collar"],
-          "scenario": "During a routine care or examination situation, an adult reviews Stitches, Cast, Cone Collar. The next step focuses on Stitches.",
+          "scenario": "The vet checks stitches that close an earlier surgical cut. A cast supports an injured body part. A cone collar helps prevent an animal reaching a wound. The written record says the vet is checking the stitches today.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "What is the vet checking today?",
             "options": ["Stitches", "Cast", "Cone Collar"],
             "expectedAnswer": "Stitches"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Stitches, Cast, Cone Collar. The next step focuses on Stitches. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Stitches, Cast, Cone Collar in a natural setting."
+          "imageBrief": "Closed veterinary follow-up record on a desk. No open wound, surgical close-up or owner performing treatment.",
+          "imageAlt": "Closed veterinary follow-up record on a desk."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Mini Dialogue",
-      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on ultrasound, blood test, and microscope. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on syringe, bandage, and vaccination. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "The vet explains an ultrasound and blood test. In the lab, staff use a microscope. A syringe and bandage are clinical supplies, not tools for the owner to use. The owner asks about vaccination, surgery and dental cleaning. They also discuss a microchip and whether to spay or neuter the animal. After treatment, prescribed medication may be needed. Staff check stitches, a cast or cone collar when relevant.",
+      "imageBrief": "Unused sealed clinical supplies in a veterinary room: capped syringe, bandage and closed medicine container; microscope on lab bench. No injection, operation, wound or owner treatment demonstration."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ultrasound, Blood Test, Microscope. The next step focuses on Ultrasound.\nWhich option is the focus of the next step?",
+        "prompt": "The vet describes an ultrasound examination using sound waves to make images. A blood test examines a blood sample, and a microscope enlarges tiny objects.\nWhich examination uses sound waves to make images?",
         "answer": "Ultrasound",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Syringe, Bandage, Vaccination. The next step focuses on Syringe.\nWhich option is the focus of the next step?",
+        "prompt": "The veterinary technician prepares a syringe, a tube with a plunger for liquid. A bandage is covering material, and vaccination names giving a vaccine. These tasks belong to trained staff.\nWhich item is a tube with a plunger?",
         "answer": "Syringe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Surgery, Dental Cleaning, Microchip. The next step focuses on Surgery.\nWhich option is the focus of the next step?",
+        "prompt": "The vet discusses surgery, an operation, with the owner. Dental cleaning and microchip identification are separate topics. The owner asks who will perform the operation.\nWhich word names the operation?",
         "answer": "Surgery",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Spay, Neuter, Medication. The next step focuses on Spay.\nWhich option is the focus of the next step?",
+        "prompt": "The owner asks whether to spay a female cat. Spay means perform an operation to prevent the female animal reproducing. Neuter is a broader term, often used for males. Medication is a different topic.\nWhich verb specifically describes the operation for the female cat here?",
         "answer": "Spay",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Stitches, Cast, Cone Collar. The next step focuses on Stitches.\nWhich option is the focus of the next step?",
+        "prompt": "The vet checks stitches that close an earlier surgical cut. A cast supports an injured body part. A cone collar helps prevent an animal reaching a wound. The written record says the vet is checking the stitches today.\nWhat is the vet checking today?",
         "answer": "Stitches",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Ultrasound"
+        "prompt": "Read the passage: The vet explains an ultrasound and blood test. In the lab, staff use a microscope. A syringe and bandage are clinical supplies, not tools for the owner to use. The owner asks about vaccination, surgery and dental cleaning. They also discuss a microchip and whether to spay or neuter the animal. After treatment, prescribed medication may be needed. Staff check stitches, a cast or cone collar when relevant.\nWho should use the clinical supplies in this context?",
+        "answer": "trained veterinary staff",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Microscope"
+        "prompt": "Ask a veterinarian to explain a blood test.",
+        "answer": "Can you explain the blood test, please?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dog” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend has questions about spaying an animal. Suggest the appropriate professional.",
+        "answer": "Ask the veterinarian to explain the options for your animal.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Vet Clinic: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At the Veterinary Clinic",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "The vet describes an ultrasound examination using sound waves to make images. A blood test examines a blood sample, and a microscope enlarges tiny objects."
     },
     "spacedReview": "1 lesson(s) back: Dog, Cat from vet-clinic-1\n3 lesson(s) back: Shelf, Tank from pet-shop-7\n7 lesson(s) back: Dog Food, Cat Food from pet-shop-3"
   },
@@ -386,150 +396,155 @@
       "غرفة انتظار",
       "طاولة فحص",
       "غرفة عمليات",
-      "بيت كلاب",
+      "بيت أو حظيرة للكلب",
       "صيدلية",
-      "استقبال",
+      "منطقة الاستقبال",
       "مختبر",
       "غرفة إفاقة",
       "منطقة العناية بالحيوانات",
       "ساحة خارجية مسوّرة للحيوانات",
       "مقود",
-      "حاملة حيوان",
-      "كمامة حيوان",
-      "مكافآت للحيوان",
+      "حاملة للحيوان",
+      "كمّامة للحيوان",
+      "مكافآت غذائية للحيوان",
       "وعاء طعام"
     ],
     "usage": {
-      "goal": "Learn to use common the vet clinic 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the vet clinic.",
-      "textType": "workplace-email",
+      "goal": "Identify veterinary staff, spaces and equipment in a stated context and ask a qualified professional for information.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Waiting Room", "Exam Table", "Operating Room"],
-          "scenario": "During a routine care or examination situation, an adult reviews Waiting Room, Exam Table, Operating Room. The next step focuses on Waiting Room.",
+          "scenario": "Maya sits in the waiting room before the appointment. The exam table is in the consultation room; the operating room is a separate clinical area.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does Maya wait before the appointment?",
             "options": ["Waiting Room", "Exam Table", "Operating Room"],
             "expectedAnswer": "Waiting Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Waiting Room, Exam Table, Operating Room. The next step focuses on Waiting Room. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Waiting Room, Exam Table, Operating Room in a natural setting."
+          "imageBrief": "Empty veterinary waiting room with seats and clear space for carriers; no clinical procedure.",
+          "imageAlt": "Empty veterinary waiting room with seats and clear space for carriers; no clinical procedure."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Kennel", "Pharmacy", "Reception"],
-          "scenario": "During a routine care or examination situation, an adult reviews Kennel, Pharmacy, Reception. The next step focuses on Kennel.",
+          "scenario": "The dog rests in a kennel while staff prepare for its owner’s return. The pharmacy stores prescribed medicines, and reception welcomes visitors.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where does the dog rest?",
             "options": ["Kennel", "Pharmacy", "Reception"],
             "expectedAnswer": "Kennel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Kennel, Pharmacy, Reception. The next step focuses on Kennel. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Kennel, Pharmacy, Reception in a natural setting."
+          "imageBrief": "Spacious clean veterinary kennel enclosure with bedding and water, no cramped cage or medicine in reach.",
+          "imageAlt": "Spacious clean veterinary kennel enclosure with bedding and water, no cramped cage or medicine in reach."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Lab", "Recovery Room", "Grooming Area"],
-          "scenario": "During a routine care or examination situation, an adult reviews Lab, Recovery Room, Grooming Area. The next step focuses on Lab.",
+          "scenario": "Staff take a sample to the lab for analysis. The recovery room is for monitoring animals after treatment. The grooming area is for coat care.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Where do staff take the sample for analysis?",
             "options": ["Lab", "Recovery Room", "Grooming Area"],
             "expectedAnswer": "Lab"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Lab, Recovery Room, Grooming Area. The next step focuses on Lab. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Lab, Recovery Room, Grooming Area in a natural setting."
+          "imageBrief": "Clean laboratory bench with unused microscope and sealed sample container. No sample result or biological-fluid close-up.",
+          "imageAlt": "Clean laboratory bench with unused microscope and sealed sample container."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Outdoor Run", "Leash", "Carrier"],
-          "scenario": "During a routine care or examination situation, an adult reviews Outdoor Run, Leash, Carrier. The next step focuses on Outdoor Run.",
+          "scenario": "The clinic has an outdoor run, a secure outdoor exercise enclosure. A leash is a strap for walking, and a carrier is a portable container.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the secure outdoor exercise enclosure?",
             "options": ["Outdoor Run", "Leash", "Carrier"],
             "expectedAnswer": "Outdoor Run"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Outdoor Run, Leash, Carrier. The next step focuses on Outdoor Run. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Outdoor Run, Leash, Carrier in a natural setting."
+          "imageBrief": "Empty secure outdoor animal exercise run with high intact fencing and shade, no loose animal near an exit.",
+          "imageAlt": "Empty secure outdoor animal exercise run with high intact fencing and shade, no loose animal near an exit."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Muzzle", "Treats", "Food Bowl"],
-          "scenario": "During a routine care or examination situation, an adult reviews Muzzle, Treats, Food Bowl. The next step focuses on Muzzle.",
+          "scenario": "The vet discusses whether a muzzle is appropriate for the dog. A muzzle covers the mouth to reduce biting risk. Treats and a food bowl are different items.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item covers the dog’s mouth in this description?",
             "options": ["Muzzle", "Treats", "Food Bowl"],
             "expectedAnswer": "Muzzle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Muzzle, Treats, Food Bowl. The next step focuses on Muzzle. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Muzzle, Treats, Food Bowl in a natural setting."
+          "imageBrief": "Unused basket-style muzzle on a consultation table. No animal restrained or suggestion that every animal needs one.",
+          "imageAlt": "Unused basket-style muzzle on a consultation table."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Simple Message",
-      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on waiting room, exam table, and operating room. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on kennel, pharmacy, and reception. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Maya checks in at reception and sits in the waiting room with her cat in a carrier. Staff prepare an exam table. The operating room and lab are for clinical work; the recovery room is separate. The clinic also has a pharmacy, grooming area, kennel and outdoor run. A leash, muzzle, treats and food bowl are stored for appropriate use by staff.",
+      "imageBrief": "Veterinary reception waiting area with closed secure pet carrier and seats. Clinical areas are not shown as accessible public spaces; no unsafe restraint or treatment."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Waiting Room, Exam Table, Operating Room. The next step focuses on Waiting Room.\nWhich option is the focus of the next step?",
+        "prompt": "Maya sits in the waiting room before the appointment. The exam table is in the consultation room; the operating room is a separate clinical area.\nWhere does Maya wait before the appointment?",
         "answer": "Waiting Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Kennel, Pharmacy, Reception. The next step focuses on Kennel.\nWhich option is the focus of the next step?",
+        "prompt": "The dog rests in a kennel while staff prepare for its owner’s return. The pharmacy stores prescribed medicines, and reception welcomes visitors.\nWhere does the dog rest?",
         "answer": "Kennel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Lab, Recovery Room, Grooming Area. The next step focuses on Lab.\nWhich option is the focus of the next step?",
+        "prompt": "Staff take a sample to the lab for analysis. The recovery room is for monitoring animals after treatment. The grooming area is for coat care.\nWhere do staff take the sample for analysis?",
         "answer": "Lab",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Outdoor Run, Leash, Carrier. The next step focuses on Outdoor Run.\nWhich option is the focus of the next step?",
+        "prompt": "The clinic has an outdoor run, a secure outdoor exercise enclosure. A leash is a strap for walking, and a carrier is a portable container.\nWhich term names the secure outdoor exercise enclosure?",
         "answer": "Outdoor Run",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Muzzle, Treats, Food Bowl. The next step focuses on Muzzle.\nWhich option is the focus of the next step?",
+        "prompt": "The vet discusses whether a muzzle is appropriate for the dog. A muzzle covers the mouth to reduce biting risk. Treats and a food bowl are different items.\nWhich item covers the dog’s mouth in this description?",
         "answer": "Muzzle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Waiting Room"
+        "prompt": "Read the passage: Maya checks in at reception and sits in the waiting room with her cat in a carrier. Staff prepare an exam table. The operating room and lab are for clinical work; the recovery room is separate. The clinic also has a pharmacy, grooming area, kennel and outdoor run. A leash, muzzle, treats and food bowl are stored for appropriate use by staff.\nWhere does Maya wait with her cat?",
+        "answer": "in the waiting room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Operating Room"
+        "prompt": "Ask staff where you should wait before an appointment.",
+        "answer": "Where is the waiting room, please?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ultrasound” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "You need prescribed medicine after an appointment. Ask where to collect it.",
+        "answer": "Where is the clinic pharmacy, please?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Vet Clinic: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At the Veterinary Clinic",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "Maya sits in the waiting room before the appointment. The exam table is in the consultation room; the operating room is a separate clinical area."
     },
     "spacedReview": "1 lesson(s) back: Ultrasound, Blood Test from vet-clinic-2\n3 lesson(s) back: Pet, Adopt from pet-shop-8\n7 lesson(s) back: Aquarium, Litter Box from pet-shop-4"
   },
@@ -564,150 +579,155 @@
       "وعاء ماء",
       "طوق",
       "بطاقة تعريف",
-      "ماكينة حلاقة ظفر",
+      "قصّافة مخالب",
       "فرشاة",
       "طبيب بيطري",
       "فني بيطري",
       "موظف استقبال",
       "مصفف حيوانات",
       "عامل رعاية بيوت الحيوانات",
-      "جرّاح",
-      "أخصائي",
-      "متدرب",
+      "جرّاح بيطري",
+      "أخصائي بيطري",
+      "طبيب بيطري متدرّب",
       "متطوع",
       "مالك حيوان أليف"
     ],
     "usage": {
-      "goal": "Learn to use common the vet clinic 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the vet clinic.",
-      "textType": "service-notice",
+      "goal": "Identify veterinary staff, spaces and equipment in a stated context and ask a qualified professional for information.",
+      "canDoStatement": "With the supplied context, can identify named animals, supplies and staff roles and ask a simple question about appropriate care.",
+      "textType": "short-narrative",
       "readingTarget": "45-70 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Water Dish", "Collar", "Tag"],
-          "scenario": "During a routine care or examination situation, an adult reviews Water Dish, Collar, Tag. The next step focuses on Water Dish.",
+          "scenario": "The kennel attendant fills a water dish so the animal can drink. A collar and tag identify the animal, but they do not hold water.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which item holds drinking water?",
             "options": ["Water Dish", "Collar", "Tag"],
             "expectedAnswer": "Water Dish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Water Dish, Collar, Tag. The next step focuses on Water Dish. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Water Dish, Collar, Tag in a natural setting."
+          "imageBrief": "Plain clean water dish filled with water on a kennel floor, collar and plain tag stored separately.",
+          "imageAlt": "Plain clean water dish filled with water on a kennel floor, collar and plain tag stored separately."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Nail Clippers", "Brush", "Veterinarian"],
-          "scenario": "During a routine care or examination situation, an adult reviews Nail Clippers, Brush, Veterinarian. The next step focuses on Nail Clippers.",
+          "scenario": "The groomer lays out nail clippers for trimming claws. A brush is for the coat. The veterinarian handles medical questions.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which tool is for trimming claws?",
             "options": ["Nail Clippers", "Brush", "Veterinarian"],
             "expectedAnswer": "Nail Clippers"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Nail Clippers, Brush, Veterinarian. The next step focuses on Nail Clippers. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Nail Clippers, Brush, Veterinarian in a natural setting."
+          "imageBrief": "Closed pet nail clippers and grooming brush on a clean table; no nail-trimming demonstration.",
+          "imageAlt": "Closed pet nail clippers and grooming brush on a clean table; no nail-trimming demonstration."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Vet Tech", "Receptionist", "Groomer"],
-          "scenario": "During a routine care or examination situation, an adult reviews Vet Tech, Receptionist, Groomer. The next step focuses on Vet Tech.",
+          "scenario": "A vet tech, or veterinary technician, helps the veterinarian prepare the examination room. The receptionist checks appointments, while the groomer handles coat care.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who helps prepare the examination room in this situation?",
             "options": ["Vet Tech", "Receptionist", "Groomer"],
             "expectedAnswer": "Vet Tech"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Vet Tech, Receptionist, Groomer. The next step focuses on Vet Tech. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Vet Tech, Receptionist, Groomer in a natural setting."
+          "imageBrief": "Empty prepared veterinary examination room with unused supplies. Written context supplies staff role; no uniform-based employment assumption.",
+          "imageAlt": "Empty prepared veterinary examination room with unused supplies."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Kennel Attendant", "Surgeon", "Specialist"],
-          "scenario": "During a routine care or examination situation, an adult reviews Kennel Attendant, Surgeon, Specialist. The next step focuses on Kennel Attendant.",
+          "scenario": "The kennel attendant checks food and water for animals staying at the clinic. The surgeon performs operations, and the specialist has expertise in a particular medical area.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who checks food and water for the animals staying at the clinic?",
             "options": ["Kennel Attendant", "Surgeon", "Specialist"],
             "expectedAnswer": "Kennel Attendant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Kennel Attendant, Surgeon, Specialist. The next step focuses on Kennel Attendant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Kennel Attendant, Surgeon, Specialist in a natural setting."
+          "imageBrief": "Clean kennel supplies with food and water bowls, no procedure or feeding amount specified.",
+          "imageAlt": "Clean kennel supplies with food and water bowls, no procedure or feeding amount specified."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Intern", "Volunteer", "Pet Owner"],
-          "scenario": "During a routine care or examination situation, an adult reviews Intern, Volunteer, Pet Owner. The next step focuses on Intern.",
+          "scenario": "An intern gains veterinary experience under supervision. A volunteer freely helps without pay. The pet owner is responsible for the animal at home.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Who gains veterinary experience under supervision?",
             "options": ["Intern", "Volunteer", "Pet Owner"],
             "expectedAnswer": "Intern"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the vet clinic context illustrating this situation: During a routine care or examination situation, an adult reviews Intern, Volunteer, Pet Owner. The next step focuses on Intern. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the vet clinic scene showing lesson-related items or actions including Intern, Volunteer, Pet Owner in a natural setting."
+          "imageBrief": "Empty clinical teaching room with closed reference books and clean unused supplies. No readable records or unsupported staff labels.",
+          "imageAlt": "Empty clinical teaching room with closed reference books and clean unused supplies."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "The Vet Clinic: Notice-Style Text",
-      "text": "Maya is in a situation connected to the vet clinic. She uses the new words to understand what she sees and what happens next. At the animal-care setting, staff and visitors focus on water dish, collar, and tag. The words connect to caring for, observing, or learning about animals. At the animal-care setting, staff and visitors focus on nail clippers, brush, and veterinarian. The words connect to caring for, observing, or learning about animals.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Vet Clinic. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "A pet owner speaks to the receptionist. The veterinarian and vet tech prepare for an examination. A groomer uses a brush and nail clippers in another room. The kennel attendant checks a water dish and collar tag. A surgeon and specialist discuss a referral, while an intern works under supervision. A volunteer helps organise supplies and keeps the entrance clear.",
+      "imageBrief": "Veterinary reception desk and organised closed supply shelves, with brush, nail clippers, water dish and plain collar tag on a separate grooming table. No procedure or readable pet-owner data."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Water Dish, Collar, Tag. The next step focuses on Water Dish.\nWhich option is the focus of the next step?",
+        "prompt": "The kennel attendant fills a water dish so the animal can drink. A collar and tag identify the animal, but they do not hold water.\nWhich item holds drinking water?",
         "answer": "Water Dish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Nail Clippers, Brush, Veterinarian. The next step focuses on Nail Clippers.\nWhich option is the focus of the next step?",
+        "prompt": "The groomer lays out nail clippers for trimming claws. A brush is for the coat. The veterinarian handles medical questions.\nWhich tool is for trimming claws?",
         "answer": "Nail Clippers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Vet Tech, Receptionist, Groomer. The next step focuses on Vet Tech.\nWhich option is the focus of the next step?",
+        "prompt": "A vet tech, or veterinary technician, helps the veterinarian prepare the examination room. The receptionist checks appointments, while the groomer handles coat care.\nWho helps prepare the examination room in this situation?",
         "answer": "Vet Tech",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Kennel Attendant, Surgeon, Specialist. The next step focuses on Kennel Attendant.\nWhich option is the focus of the next step?",
+        "prompt": "The kennel attendant checks food and water for animals staying at the clinic. The surgeon performs operations, and the specialist has expertise in a particular medical area.\nWho checks food and water for the animals staying at the clinic?",
         "answer": "Kennel Attendant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Intern, Volunteer, Pet Owner. The next step focuses on Intern.\nWhich option is the focus of the next step?",
+        "prompt": "An intern gains veterinary experience under supervision. A volunteer freely helps without pay. The pet owner is responsible for the animal at home.\nWho gains veterinary experience under supervision?",
         "answer": "Intern",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Water Dish"
+        "prompt": "Read the passage: A pet owner speaks to the receptionist. The veterinarian and vet tech prepare for an examination. A groomer uses a brush and nail clippers in another room. The kennel attendant checks a water dish and collar tag. A surgeon and specialist discuss a referral, while an intern works under supervision. A volunteer helps organise supplies and keeps the entrance clear.\nWho works under supervision?",
+        "answer": "an intern",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Tag"
+        "prompt": "Tell reception that you would like to speak to the veterinarian.",
+        "answer": "Can I speak to the veterinarian, please?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Waiting Room” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A friend does not know who handles appointments. Name the staff role.",
+        "answer": "The receptionist can help with the appointment.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Vet Clinic: In Context",
-      "idea": "30-45 seconds contextual scene in the animal-care setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the animal-care setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "At the Veterinary Clinic",
+      "idea": "Show the setting and reference objects from the first scene without procedures. Narration states the situation; do not infer care needs or medical facts from appearance.",
+      "scriptStarter": "The kennel attendant fills a water dish so the animal can drink. A collar and tag identify the animal, but they do not hold water."
     },
     "spacedReview": "1 lesson(s) back: Waiting Room, Exam Table from vet-clinic-3\n3 lesson(s) back: Dog, Cat from vet-clinic-1\n7 lesson(s) back: Parakeet, Kitten from pet-shop-5"
   }

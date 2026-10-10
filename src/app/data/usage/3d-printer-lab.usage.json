@@ -135,24 +135,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder.",
+        "prompt": "A designer visits the lab to compare printing methods. On one machine, a filament spool supplies the extruder, and the print head moves above the build plate. Melted material leaves through the nozzle. A stepper motor drives a belt along a guide rail, while a cooling fan moves air near the print. The LCD screen shows information about the job. The lab keeps PLA filament, ABS filament, PETG filament and nylon in separate storage areas. Resin belongs to a different printing process. The designer records the part names and asks about material differences before choosing a sample.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-1-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how print head relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-1-transfer"
+        "prompt": "Use Print Head, Build Plate, Filament Spool, Extruder, Nozzle, Stepper Motor, Belt, Guide Rail, Cooling Fan, LCD Screen, PLA Filament, ABS Filament, PETG Filament, Resin, Nylon to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: Which moving assembly sits above the build plate? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "During a printer demonstration, the technician identifies the moving print head above the build plate. A filament spool supplies material to the extruder."
     },
     "spacedReview": "1 lesson(s) back: Charging Speed, Time Remaining from electric-vehicle-station-4\n3 lesson(s) back: Thermal Management, Drive Unit from electric-vehicle-station-2\n7 lesson(s) back: Flight Controller, Gps Module from drone-workshop-2"
   },
@@ -297,24 +297,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material.",
+        "prompt": "The designer prepares a small model on the computer using 3D software and a mouse. A graphics tablet helps with drawing. The first plan is on grid paper in a sketchbook, beside a reference model. A ruler, caliper and protractor help compare lengths and angles. Flexible filament suits a sample that needs to bend; wood filament and metal filament give other material options. Support material is considered for overhanging sections. A glue stick remains with the craft supplies. The designer checks the measurements before saving the model.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-2-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how flexible filament relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-2-transfer"
+        "prompt": "Use Flexible Filament, Wood Filament, Metal Filament, Support Material, Glue Stick, Computer, 3D Software, Mouse, Graphics Tablet, Ruler, Caliper, Protractor, Grid Paper, Sketchbook, Reference Model to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: What material does the designer choose for the flexible sample? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "For a flexible sample, the designer chooses flexible filament. Wood filament and metal filament samples are displayed beside a piece of support material."
     },
     "spacedReview": "1 lesson(s) back: Print Head, Build Plate from 3d-printer-lab-1\n3 lesson(s) back: Rfid Card, Mobile App from electric-vehicle-station-3\n7 lesson(s) back: Soldering Iron, Multimeter from drone-workshop-3"
   },
@@ -360,7 +360,7 @@
       "غلاف هاتف",
       "ترس",
       "دعامة",
-      "زهرية (فازة)"
+      "مزهرية"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to discuss equipment, software, system status, and safe technical workflows and explain relevant choices.",
@@ -454,24 +454,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray.",
+        "prompt": "The team reviews several finished samples: a figurine, phone case, gear, bracket and vase. One sample has a rough edge, so the technician discusses sandpaper and a file. A craft knife, pliers and tweezers are separate tools with different purposes. Paint, a paintbrush and primer are available for suitable finishing work. A UV curing lamp belongs to the resin workflow. Acetone is kept in separate controlled storage. The language task is to identify these items and explain their roles, rather than to follow a treatment or chemical-handling procedure.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-3-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how sandpaper relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-3-transfer"
+        "prompt": "Use Sandpaper, File, Craft Knife, Pliers, Tweezers, Paint, Paintbrush, Primer, Acetone, UV Curing Lamp, Figurine, Phone Case, Gear, Bracket, Vase to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: Which sheet is identified for smoothing the rough edge? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "The finished sample has a rough edge. The technician identifies a sheet of sandpaper for smoothing it; a file, craft knife and pliers remain in the tool tray."
     },
     "spacedReview": "1 lesson(s) back: Flexible Filament, Wood Filament from 3d-printer-lab-2\n3 lesson(s) back: Charging Speed, Time Remaining from electric-vehicle-station-4\n7 lesson(s) back: Telemetry, Pid Tuning from drone-workshop-4"
   },
@@ -611,24 +611,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects.",
+        "prompt": "The maker arranges a keychain, cookie cutter, whistle and chess piece beside an architectural model. At the workstation, a storage shelf keeps spare parts organised, and a ventilation fan is part of the room setup. During a safety tour, the instructor identifies the fire extinguisher, safety glasses and gloves. Ordinary waste goes into the trash bin. A label maker identifies storage boxes. A zip bag and desiccant pack help organise stored material. The maker records where each item belongs before leaving the lab.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-4-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how keychain relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-4-transfer"
+        "prompt": "Use Keychain, Cookie Cutter, Whistle, Chess Piece, Architectural Model, Workstation, Storage Shelf, Ventilation Fan, Fire Extinguisher, Safety Glasses, Gloves, Trash Bin, Label Maker, Zip Bag, Desiccant Pack to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: Which project is attached to the keys? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "The maker attaches a keychain to a set of keys. A cookie cutter, whistle and chess piece are displayed as other small projects."
     },
     "spacedReview": "1 lesson(s) back: Sandpaper, File from 3d-printer-lab-3\n3 lesson(s) back: Print Head, Build Plate from 3d-printer-lab-1\n7 lesson(s) back: Charging Station, Connector from electric-vehicle-station-1"
   },
@@ -768,24 +768,24 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample.",
+        "prompt": "The designer starts with a digital design, then uses software to slice it before sending a print job. The printer’s frame supports the machine; a fan and display have separate roles. The materials list includes PLA, ABS, PETG, TPU, carbon fiber and wood fill. The designer compares these choices for the sample. During printing, the model forms one layer at a time. Support holds an overhanging section, and infill creates a pattern inside. The designer records the chosen material and checks the sample against the plan.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-5-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how frame relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-5-transfer"
+        "prompt": "Use Frame, Fan, Display, PLA, ABS, PETG, TPU, Carbon Fiber, Wood Fill, Design, Slice, Print, Layer, Support, Infill to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: Which structure supports the machine? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "The printer’s frame supports the machine. A fan sits beside the print head, and the display shows the job information for a PLA sample."
     },
     "spacedReview": "1 lesson(s) back: Keychain, Cookie Cutter from 3d-printer-lab-4\n3 lesson(s) back: Flexible Filament, Wood Filament from 3d-printer-lab-2\n7 lesson(s) back: Thermal Management, Drive Unit from electric-vehicle-station-2"
   },
@@ -836,24 +836,24 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Explain one part of the design task using two lesson words.",
-        "answer": "Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference.",
+        "prompt": "The technician wants to compare a prototype with its design. Before assessing the sample, the technician checks the printer’s accuracy against a known reference. The verb calibrate describes this checking or adjustment. A prototype is an early model used to test an idea. The team records what the prototype shows and decides what needs changing before making another version.\nExplain one distinction between two named parts, materials, tools, or design stages. Use evidence from the account.",
+        "answer": "Open response: identify two terms, distinguish their stated roles, and cite a detail from the account; do not invent handling instructions.",
         "questionType": "production",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-6-personal-use"
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Ask a colleague one question about a different model using a lesson word.",
-        "answer": "Could you explain how calibrate relates to this model?",
-        "questionType": "transfer",
-        "responseMode": "sentence",
-        "contextTag": "3d-printer-lab-6-transfer"
+        "prompt": "Use Calibrate, Prototype to prepare a short design-review glossary. Explain the contextual role of each term and identify one question you would ask the qualified technician before choosing a material or procedure.",
+        "answer": "Open response: use each term with the correct contextual sense and ask a relevant clarification question; do not claim appearance proves chemical identity or safety.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The 3D Printer Lab: In Context",
-      "idea": "45-70 seconds contextual scene in the technical setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the technical setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "3D Printer Lab: A design-review discussion",
+      "idea": "Narrate this account and display only stated features. Pause to ask: Which verb describes the accuracy check in the job record? Do not demonstrate chemical treatment, equipment adjustment, or safety procedures.",
+      "scriptStarter": "Before assessing a prototype, the technician checks the printer’s accuracy. The job record calls this check “calibrate”, meaning adjust or check the machine against a known reference."
     },
     "spacedReview": "1 lesson(s) back: Frame, Fan from 3d-printer-lab-5\n3 lesson(s) back: Sandpaper, File from 3d-printer-lab-3\n7 lesson(s) back: Rfid Card, Mobile App from electric-vehicle-station-3"
   }

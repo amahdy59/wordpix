@@ -27,10 +27,10 @@
       "Balcony"
     ],
     "targetWordsArabic": [
-      "-",
-      "-",
-      "-",
-      "-",
+      "غرفة معيشة",
+      "غرفة نوم",
+      "حمّام",
+      "مطبخ",
       "غرفة طعام",
       "مكتب منزلي",
       "غرفة غسيل",
@@ -40,136 +40,119 @@
       "فناء خلفي",
       "فناء أمامي",
       "فناء مرصوف",
-      "منصة خارجية خشبية",
+      "منصة خارجية مرتفعة",
       "شرفة"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "122-152 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Living Room", "Bedroom", "Bathroom", "Kitchen"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Room, Bedroom, Bathroom, and Kitchen and choose the option that fits the situation.",
+          "scenario": "During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Living Room", "Bedroom", "Bathroom"],
-            "expectedAnswer": "Living Room"
+            "question": "Which room contains the cooking area?",
+            "options": ["Kitchen", "Living Room", "Bedroom"],
+            "expectedAnswer": "Kitchen"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Living Room as the main location; include Living Room, Bedroom, and Bathroom naturally where visually appropriate, but make the real-world use of Living Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Kitchen in a home features context. Use the written scenario as the source of meaning: During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dining Room", "Home Office", "Laundry Room", "Basement"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dining Room, Home Office, Laundry Room, and Basement and choose the option that fits the situation.",
+          "scenario": "The agent shows the Dining Room and Home Office, then a Laundry Room equipped for washing clothes. The Basement is below ground level. Lina asks about its actual condition and permitted uses.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Dining Room", "Home Office", "Laundry Room"],
-            "expectedAnswer": "Dining Room"
+            "question": "Which space is below ground level?",
+            "options": ["Basement", "Dining Room", "Home Office"],
+            "expectedAnswer": "Basement"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Dining Room as the main location; include Dining Room, Home Office, and Laundry Room naturally where visually appropriate, but make the real-world use of Dining Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Basement in a home features context. Use the written scenario as the source of meaning: The agent shows the Dining Room and Home Office, then a Laundry Room equipped for washing clothes. The Basement is below ground level. Lina asks about its actual condition and permitted uses. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Attic", "Pantry", "Backyard", "Front Yard"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Attic, Pantry, Backyard, and Front Yard and choose the option that fits the situation.",
+          "scenario": "An Attic lies directly beneath the roof. The Pantry stores food, while the Backyard and Front Yard are outdoor grounds behind and in front of the house.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Attic", "Pantry", "Backyard"],
-            "expectedAnswer": "Attic"
+            "question": "Which storage space is used for food?",
+            "options": ["Pantry", "Attic", "Backyard"],
+            "expectedAnswer": "Pantry"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Attic as the main location; include Attic, Pantry, and Backyard naturally where visually appropriate, but make the real-world use of Attic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pantry in a home features context. Use the written scenario as the source of meaning: An Attic lies directly beneath the roof. The Pantry stores food, while the Backyard and Front Yard are outdoor grounds behind and in front of the house. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Patio", "Deck", "Balcony"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patio, Deck, and Balcony and choose the option that fits the situation.",
+          "scenario": "Outside, Lina compares a paved Patio with a raised Deck and a Balcony extending from an upper floor. The agent identifies each feature without implying that a railing or appearance alone proves its condition.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Patio", "Deck", "Balcony"],
-            "expectedAnswer": "Patio"
+            "question": "Which platform extends from an upper floor?",
+            "options": ["Balcony", "Patio", "Deck"],
+            "expectedAnswer": "Balcony"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or approaching the Patio as the main location; include Patio, Deck, and Balcony naturally where visually appropriate, but make the real-world use of Patio the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Balcony in a home features context. Use the written scenario as the source of meaning: Outside, Lina compares a paved Patio with a raised Deck and a Balcony extending from an upper floor. The agent identifies each feature without implying that a railing or appearance alone proves its condition. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: Home Features",
-      "text": "At the home features, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Living Room, Bedroom, Bathroom, and Kitchen. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dining Room, Home Office, Laundry Room, and Basement. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Attic, Pantry, Backyard, and Front Yard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Patio, Deck, and Balcony. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Home Features: A visitor’s questions",
+      "text": "During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property. The agent shows the Dining Room and Home Office, then a Laundry Room equipped for washing clothes. The Basement is below ground level. Lina asks about its actual condition and permitted uses. An Attic lies directly beneath the roof. The Pantry stores food, while the Backyard and Front Yard are outdoor grounds behind and in front of the house. Outside, Lina compares a paved Patio with a raised Deck and a Balcony extending from an upper floor. The agent identifies each feature without implying that a railing or appearance alone proves its condition.",
+      "imageBrief": "One uncluttered home features setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Living Room, Bedroom, Bathroom, and Kitchen and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Living Room",
+        "prompt": "During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property.\nWhich room contains the cooking area?",
+        "answer": "Kitchen",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dining Room, Home Office, Laundry Room, and Basement and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Dining Room",
+        "prompt": "The agent shows the Dining Room and Home Office, then a Laundry Room equipped for washing clothes. The Basement is below ground level. Lina asks about its actual condition and permitted uses.\nWhich space is below ground level?",
+        "answer": "Basement",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Attic, Pantry, Backyard, and Front Yard and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Attic",
+        "prompt": "An Attic lies directly beneath the roof. The Pantry stores food, while the Backyard and Front Yard are outdoor grounds behind and in front of the house.\nWhich storage space is used for food?",
+        "answer": "Pantry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Patio, Deck, and Balcony and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Patio",
+        "prompt": "Outside, Lina compares a paved Patio with a raised Deck and a Balcony extending from an upper floor. The agent identifies each feature without implying that a railing or appearance alone proves its condition.\nWhich platform extends from an upper floor?",
+        "answer": "Balcony",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property. The agent shows the Dining Room and Home Office, then a Laundry Room equipped for washing clothes. The Basement is below ground level. Lina asks about its actual condition and permitted uses. An Attic lies directly beneath the roof. The Pantry stores food, while the Backyard and Front Yard are outdoor grounds behind and in front of the house. Outside, Lina compares a paved Patio with a raised Deck and a Balcony extending from an upper floor. The agent identifies each feature without implying that a railing or appearance alone proves its condition.\nExplain the difference between Living Room and Bedroom using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Living Room"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Listing Agreement” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the home features task. Use Living Room, Bedroom, Bathroom, Kitchen, Dining Room, Home Office, Laundry Room, Basement, Attic, Pantry, Backyard, Front Yard, Patio, Deck, and Balcony in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Living Room, Bedroom, Bathroom, Kitchen, Dining Room, Home Office, Laundry Room, Basement, Attic, Pantry, Backyard, Front Yard, Patio, Deck, Balcony to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Home Features: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Home Features: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Living Room and Bedroom, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During a home viewing, Lina sees the Living Room for relaxing, Bedroom for sleeping, and Bathroom for washing. The Kitchen contains the cooking area. She asks which fittings are included rather than assuming the furniture comes with the property. Pause and answer: Which room contains the cooking area?"
     },
     "spacedReview": "1 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3\n3 lesson(s) back: Real Estate Agent, Broker from real-estate-agency-1\n7 lesson(s) back: Tuition, Scholarship from student-life-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "111-141 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Terrace", "Porch", "Gazebo", "Pergola"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrace, Porch, Gazebo, and Pergola and choose the option that fits the situation.",
+          "scenario": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Terrace", "Porch", "Gazebo"],
-            "expectedAnswer": "Terrace"
+            "question": "Which structure has an open framework for climbing plants?",
+            "options": ["Pergola", "Terrace", "Porch"],
+            "expectedAnswer": "Pergola"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Terrace as the central item; include Terrace, Porch, and Gazebo naturally where visually appropriate, but make the real-world use of Terrace the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pergola in a home features context. Use the written scenario as the source of meaning: The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Garden Shed", "Fireplace", "Walk-In Closet", "Built-In Shelves"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves and choose the option that fits the situation.",
+          "scenario": "A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Garden Shed", "Fireplace", "Walk-In Closet"],
-            "expectedAnswer": "Garden Shed"
+            "question": "Which storage area is large enough for a person to enter?",
+            "options": ["Walk-In Closet", "Garden Shed", "Fireplace"],
+            "expectedAnswer": "Walk-In Closet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Garden Shed as the central item; include Garden Shed, Fireplace, and Walk-In Closet naturally where visually appropriate, but make the real-world use of Garden Shed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Walk-In Closet in a home features context. Use the written scenario as the source of meaning: A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Crown Molding", "Hardwood Floor", "Tile Floor", "Vaulted Ceiling"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling and choose the option that fits the situation.",
+          "scenario": "The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which decorative feature runs along the wall-ceiling edge?",
             "options": ["Crown Molding", "Hardwood Floor", "Tile Floor"],
             "expectedAnswer": "Crown Molding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Crown Molding through a realistic adult task; include Crown Molding, Hardwood Floor, and Tile Floor naturally where visually appropriate, but make the real-world use of Crown Molding the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Crown Molding in a home features context. Use the written scenario as the source of meaning: The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Skylight", "Bay Window", "French Doors"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skylight, Bay Window, and French Doors and choose the option that fits the situation.",
+          "scenario": "A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which window admits daylight through the roof?",
             "options": ["Skylight", "Bay Window", "French Doors"],
             "expectedAnswer": "Skylight"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Skylight as the central item; include Skylight, Bay Window, and French Doors naturally where visually appropriate, but make the real-world use of Skylight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Skylight in a home features context. Use the written scenario as the source of meaning: A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "What You Need to Know: Home Features",
-      "text": "At the home features, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Terrace, Porch, Gazebo, and Pergola. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Skylight, Bay Window, and French Doors. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Home Features: Understanding the different roles",
+      "text": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.",
+      "imageBrief": "One uncluttered home features setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Terrace, Porch, Gazebo, and Pergola and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Terrace",
+        "prompt": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas.\nWhich structure has an open framework for climbing plants?",
+        "answer": "Pergola",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Garden Shed, Fireplace, Walk-In Closet, and Built-In Shelves and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Garden Shed",
+        "prompt": "A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room.\nWhich storage area is large enough for a person to enter?",
+        "answer": "Walk-In Closet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crown Molding, Hardwood Floor, Tile Floor, and Vaulted Ceiling and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward.\nWhich decorative feature runs along the wall-ceiling edge?",
         "answer": "Crown Molding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Skylight, Bay Window, and French Doors and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.\nWhich window admits daylight through the roof?",
         "answer": "Skylight",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. A Garden Shed stores tools outside. Indoors, Lina sees a Fireplace, a Walk-In Closet large enough to enter, and Built-In Shelves that form part of the room. The agent identifies Crown Molding along the wall-ceiling edge. A Hardwood Floor has a hardwood surface, a Tile Floor is covered with tiles, and a Vaulted Ceiling slopes or arches upward. A Skylight admits daylight through the roof. A Bay Window projects beyond the main wall, while French Doors are glazed doors connecting adjoining spaces in this home.\nExplain the difference between Terrace and Porch using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Terrace"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Living Room” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the home features task. Use Terrace, Porch, Gazebo, Pergola, Garden Shed, Fireplace, Walk-In Closet, Built-In Shelves, Crown Molding, Hardwood Floor, Tile Floor, Vaulted Ceiling, Skylight, Bay Window, and French Doors in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Terrace, Porch, Gazebo, Pergola, Garden Shed, Fireplace, Walk-In Closet, Built-In Shelves, Crown Molding, Hardwood Floor, Tile Floor, Vaulted Ceiling, Skylight, Bay Window, French Doors to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Home Features: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Home Features: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Terrace and Porch, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The garden includes a Terrace, a Porch at the entrance, and a roofed Gazebo. A Pergola has an open framework that can support climbing plants. The structures have different designs even when they provide sitting areas. Pause and answer: Which structure has an open framework for climbing plants?"
     },
     "spacedReview": "1 lesson(s) back: Living Room, Bedroom from home-features-1\n3 lesson(s) back: Negotiation, Appraisal from real-estate-agency-2\n7 lesson(s) back: House, Apartment from property-types-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "105-135 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["HVAC", "Central Air", "Furnace", "Water Heater"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare HVAC, Central Air, Furnace, and Water Heater and choose the option that fits the situation.",
+          "scenario": "The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["HVAC", "Central Air", "Furnace"],
-            "expectedAnswer": "HVAC"
+            "question": "Which appliance heats household water?",
+            "options": ["Water Heater", "HVAC", "Central Air"],
+            "expectedAnswer": "Water Heater"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the HVAC as the central item; include HVAC, Central Air, and Furnace naturally where visually appropriate, but make the real-world use of HVAC the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Water Heater in a home features context. Use the written scenario as the source of meaning: The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Plumbing", "Electrical Panel", "Circuit Breaker", "Thermostat"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumbing, Electrical Panel, Circuit Breaker, and Thermostat and choose the option that fits the situation.",
+          "scenario": "The guide describes Plumbing for water and wastewater, an Electrical Panel distributing electrical circuits, and a Circuit Breaker interrupting current under specified fault conditions. A Thermostat controls heating or cooling temperature. The viewing does not include opening electrical equipment.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Plumbing", "Electrical Panel", "Circuit Breaker"],
-            "expectedAnswer": "Plumbing"
+            "question": "Which device controls heating or cooling temperature?",
+            "options": ["Thermostat", "Plumbing", "Electrical Panel"],
+            "expectedAnswer": "Thermostat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Plumbing through a realistic adult task; include Plumbing, Electrical Panel, and Circuit Breaker naturally where visually appropriate, but make the real-world use of Plumbing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Thermostat in a home features context. Use the written scenario as the source of meaning: The guide describes Plumbing for water and wastewater, an Electrical Panel distributing electrical circuits, and a Circuit Breaker interrupting current under specified fault conditions. A Thermostat controls heating or cooling temperature. The viewing does not include opening electrical equipment. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Septic Tank", "Well Water"],
-          "scenario": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Septic Tank, and Well Water and choose the option that fits the situation.",
+          "scenario": "The rural property uses a Septic Tank as part of its wastewater-treatment system and Well Water from an underground source. Tank treatment alone does not complete every treatment stage, and the source of well water does not establish drinking-water quality.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Septic Tank", "Well Water", "HVAC"],
+            "question": "Which term names the tank in the wastewater-treatment system?",
+            "options": ["Septic Tank", "Well Water"],
             "expectedAnswer": "Septic Tank"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Septic Tank as the central item; include Septic Tank, Well Water, and HVAC naturally where visually appropriate, but make the real-world use of Septic Tank the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Septic Tank in a home features context. Use the written scenario as the source of meaning: The rural property uses a Septic Tank as part of its wastewater-treatment system and Well Water from an underground source. Tank treatment alone does not complete every treatment stage, and the source of well water does not establish drinking-water quality. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written home features situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the home features, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers HVAC, Central Air, Furnace, and Water Heater. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Plumbing, Electrical Panel, Circuit Breaker, and Thermostat. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Septic Tank and Well Water. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Home Features. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Home Features: Comparing the equipment",
+      "text": "The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs. The guide describes Plumbing for water and wastewater, an Electrical Panel distributing electrical circuits, and a Circuit Breaker interrupting current under specified fault conditions. A Thermostat controls heating or cooling temperature. The viewing does not include opening electrical equipment. The rural property uses a Septic Tank as part of its wastewater-treatment system and Well Water from an underground source. Tank treatment alone does not complete every treatment stage, and the source of well water does not establish drinking-water quality.",
+      "imageBrief": "One uncluttered home features setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare HVAC, Central Air, Furnace, and Water Heater and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "HVAC",
+        "prompt": "The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs.\nWhich appliance heats household water?",
+        "answer": "Water Heater",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plumbing, Electrical Panel, Circuit Breaker, and Thermostat and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Plumbing",
+        "prompt": "The guide describes Plumbing for water and wastewater, an Electrical Panel distributing electrical circuits, and a Circuit Breaker interrupting current under specified fault conditions. A Thermostat controls heating or cooling temperature. The viewing does not include opening electrical equipment.\nWhich device controls heating or cooling temperature?",
+        "answer": "Thermostat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the home features setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Septic Tank, and Well Water and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The rural property uses a Septic Tank as part of its wastewater-treatment system and Well Water from an underground source. Tank treatment alone does not complete every treatment stage, and the source of well water does not establish drinking-water quality.\nWhich term names the tank in the wastewater-treatment system?",
         "answer": "Septic Tank",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs. The guide describes Plumbing for water and wastewater, an Electrical Panel distributing electrical circuits, and a Circuit Breaker interrupting current under specified fault conditions. A Thermostat controls heating or cooling temperature. The viewing does not include opening electrical equipment. The rural property uses a Septic Tank as part of its wastewater-treatment system and Well Water from an underground source. Tank treatment alone does not complete every treatment stage, and the source of well water does not establish drinking-water quality.\nExplain the difference between HVAC and Central Air using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "HVAC"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Terrace” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the home features task. Use HVAC, Central Air, Furnace, Water Heater, Plumbing, Electrical Panel, Circuit Breaker, Thermostat, Septic Tank, and Well Water in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms HVAC, Central Air, Furnace, Water Heater, Plumbing, Electrical Panel, Circuit Breaker, Thermostat, Septic Tank, Well Water to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Home Features: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Home Features: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between HVAC and Central Air, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The description lists HVAC as heating, ventilation, and air conditioning. Central Air provides centrally distributed cooling, a Furnace provides space heating, and a Water Heater heats household water. Water heaters can be storage or tankless designs. Pause and answer: Which appliance heats household water?"
     },
     "spacedReview": "1 lesson(s) back: Terrace, Porch from home-features-2\n3 lesson(s) back: Listing Agreement, Purchase Agreement from real-estate-agency-3\n7 lesson(s) back: Shopping Center, Hotel from property-types-2"
   }

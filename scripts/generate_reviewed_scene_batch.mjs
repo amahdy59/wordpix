@@ -4,7 +4,11 @@ import crypto from "node:crypto";
 import { parseEnv } from "node:util";
 import { pathToFileURL } from "node:url";
 import sharp from "sharp";
-import { loadGenerationSource, assertGenerationReady } from "./lib/usage_generation_preflight.mjs";
+import {
+  loadGenerationSource,
+  assertGenerationReady,
+  referenceGenerationPrompt,
+} from "./lib/usage_generation_preflight.mjs";
 
 export const sha256 = (bytes) => crypto.createHash("sha256").update(bytes).digest("hex");
 export function validateJobs(items) {
@@ -50,6 +54,8 @@ export function assertCurrentScene(item, sourceRoot) {
     scene.check.question !== item.reviewedQuestion
   )
     throw new Error(`Question changed; review again: ${item.sceneId}`);
+  if (item.prompt !== referenceGenerationPrompt(scene))
+    throw new Error(`Generation prompt changed; rebuild the reviewed queue: ${item.sceneId}`);
   return scene;
 }
 export async function generateBatch(options) {

@@ -33,7 +33,7 @@
       "فخور",
       "ممتن أو شاكر",
       "راضٍ أو قنوع",
-      "مستمتع",
+      "مستمتع بما هو مضحك",
       "مسرور جدًا",
       "مرح أو بشوش",
       "متفائل",
@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to describe common positive and negative emotions in familiar adult situations.",
-      "canDoStatement": "Can use basic feeling words to say how someone feels after simple events.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a feeling that someone reports.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,7 +59,15 @@
             "expectedAnswer": "Happy"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Happy, Joyful, and Excited; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel happy, joyful, and excited. The person being discussed has received good news and feels pleased.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Happy",
+            "scenario": "Leila receives good news about her job application. She smiles and says, \"I feel happy today.\" Her colleague asks her to explain the news.",
+            "question": "Which word does Leila use to describe how she feels?",
+            "imageBrief": "Vocabulary-reference support only. A neutral workplace desk; written context supplies the reported feeling, not a diagnosis from a face. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 2,
@@ -71,7 +79,15 @@
             "expectedAnswer": "Proud"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Proud, Grateful, and Content; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel proud, grateful, and content. The person being discussed feels pleased about an achievement.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Proud",
+            "scenario": "Samir finishes a difficult project and says, “I feel proud of my work.” He is grateful for his team’s help and content with the result.",
+            "question": "Which word describes Samir’s feeling about his achievement?",
+            "imageBrief": "An unbranded completed project folder on an office desk. The written scenario supplies the reported emotion."
+          }
         },
         {
           "chunkNumber": 3,
@@ -83,7 +99,15 @@
             "expectedAnswer": "Amused"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Amused, Delighted, and Cheerful; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel amused, delighted, and cheerful. The person being discussed finds a harmless situation funny.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Amused",
+            "scenario": "Lina hears a harmless joke during a break. She laughs because she finds it funny. She describes herself as amused; delighted means very pleased, and cheerful means generally happy.",
+            "question": "Which word describes finding the joke funny?",
+            "imageBrief": "Office break table with cups and chairs. No facial diagnosis or readable joke."
+          }
         },
         {
           "chunkNumber": 4,
@@ -95,7 +119,15 @@
             "expectedAnswer": "Hopeful"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Hopeful, Sad, and Angry; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel hopeful, sad, and angry. The person being discussed believes the situation may improve.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Hopeful",
+            "scenario": "The team has not finished its work yet. Maya believes it can still succeed and says, “I am hopeful.” She is not sad or angry about the delay.",
+            "question": "Which word means Maya believes things can improve?",
+            "imageBrief": "Unfinished office project on a desk; no emotion inferred from a face."
+          }
         },
         {
           "chunkNumber": 5,
@@ -107,54 +139,93 @@
             "expectedAnswer": "Scared"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Scared, Worried, and Frustrated; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel scared, worried, and frustrated. The person being discussed feels afraid because of a possible danger.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Scared",
+            "scenario": "Karim hears a loud crash outside and says, “I feel scared because there may be danger.” Worried can mean concerned about a problem; frustrated can mean unable to achieve what you want.",
+            "question": "Which word describes Karim’s fear of possible danger?",
+            "imageBrief": "Quiet indoor hallway with a closed door. Do not depict violence, injury or exaggerated distress."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "After the Team Presentation",
-      "text": "After a team presentation, several colleagues react differently. Lina feels happy and proud because the client liked the work, while Samir is grateful for the team's support. Another colleague is excited about the next project. When a last-minute change appears, one person becomes worried and another feels frustrated, but the group stays hopeful.",
-      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+      "text": "Lina and Samir finish a team presentation. Lina feels happy and proud because the client likes their work. Samir is grateful for the help he received. Both are excited about the next project. A late change makes Lina worried, but the team stays hopeful because they have time to revise the work. She sounds joyful when she tells her colleague the good news.",
+      "imageBrief": "Adult colleagues after a presentation, with relaxed posture and a shared work folder. Do not use facial expression as proof of gratitude, pride or hope; these states are stated in the passage."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Happy"
+        "prompt": "During an adult workplace or travel situation, people may feel happy, joyful, and excited. The person being discussed has received good news and feels pleased.\nWhich word best describes the person's state in this situation?",
+        "answer": "Happy",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Proud"
+        "prompt": "During an adult workplace or travel situation, people may feel proud, grateful, and content. The person being discussed feels pleased about an achievement.\nWhich word best describes the person's state in this situation?",
+        "answer": "Proud",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Amused"
+        "prompt": "During an adult workplace or travel situation, people may feel amused, delighted, and cheerful. The person being discussed finds a harmless situation funny.\nWhich word best describes the person's state in this situation?",
+        "answer": "Amused",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Hopeful"
+        "prompt": "During an adult workplace or travel situation, people may feel hopeful, sad, and angry. The person being discussed believes the situation may improve.\nWhich word best describes the person's state in this situation?",
+        "answer": "Hopeful",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Scared"
+        "prompt": "During an adult workplace or travel situation, people may feel scared, worried, and frustrated. The person being discussed feels afraid because of a possible danger.\nWhich word best describes the person's state in this situation?",
+        "answer": "Scared",
+        "contextTag": "scene-5",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Happy"
+        "prompt": "Read the passage: Lina and Samir finish a team presentation. Lina feels happy and proud because the client likes their work. Samir is grateful for the help he received. Both are excited about the next project. A late change makes Lina worried, but the team stays hopeful because they have time to revise the work. She sounds joyful when she tells her colleague the good news.\nWhy is Lina proud?",
+        "answer": "because the client likes their work",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Joyful"
+        "prompt": "Read the passage: Lina and Samir finish a team presentation. Lina feels happy and proud because the client likes their work. Samir is grateful for the help he received. Both are excited about the next project. A late change makes Lina worried, but the team stays hopeful because they have time to revise the work. She sounds joyful when she tells her colleague the good news.\nWhy does the team stay hopeful?",
+        "answer": "because they have time to revise the work",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Content"
+        "prompt": "Say how you feel after receiving good news.",
+        "answer": "I feel happy about the good news.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "Thank a colleague for help using grateful.",
+        "answer": "I am grateful for your help.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Basic Emotions: See It, Say It",
-      "idea": "30–50 second contextual video set in a school day. Show happy, joyful, excited, proud, and grateful naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a work update, adults react differently: one is happy, another joyful, and another excited. The highlighted person looks happy."
+      "title": "Reporting Feelings",
+      "idea": "Adult workplace or travel context. Narration supplies the speaker’s exact words; neutral objects support the setting. No highlighted answer, diagnostic facial inference, medical procedure or treatment advice.",
+      "scriptStarter": "Leila receives good news about her job application. She smiles and says, \"I feel happy today.\" Her colleague asks her to explain the news."
     },
     "spacedReview": "1 lesson(s) back: Grid, Array from shapes-geometry-4\n3 lesson(s) back: Prism, Cuboid from shapes-geometry-2\n7 lesson(s) back: Red, Blue from colors-1"
   },
@@ -204,8 +275,8 @@
     ],
     "usage": {
       "goal": "Learn to describe everyday emotional states during work, travel, and social situations.",
-      "canDoStatement": "Can recognize and use common words for feelings such as tired, calm, confused, and surprised.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a feeling that someone reports.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -218,7 +289,15 @@
             "expectedAnswer": "Disappointed"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Disappointed, Upset, and Annoyed; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel disappointed, upset, and annoyed. The person being discussed is unhappy because the result was worse than expected.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Disappointed",
+            "scenario": "Hana expected to pass an exam, but the result was lower than she hoped. She says, “I am disappointed.” Upset is a broader word for being unhappy, and annoyed means irritated.",
+            "question": "Which word describes the result being worse than Hana hoped?",
+            "imageBrief": "Study desk with closed course book and unlettered result envelope. Passage supplies the result and emotion."
+          }
         },
         {
           "chunkNumber": 2,
@@ -230,7 +309,15 @@
             "expectedAnswer": "Bored"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Bored, Lonely, and Calm; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel bored, lonely, and calm. The person being discussed has nothing interesting to do during a long wait.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Bored",
+            "scenario": "Samir waits two hours with nothing interesting to do. He says, “I feel bored.” He is not lonely because his friend is with him, and calm means not nervous or upset.",
+            "question": "Which word describes having nothing interesting to do?",
+            "imageBrief": "Two empty waiting-room chairs beside a plain small table. No diagnosis from appearance."
+          }
         },
         {
           "chunkNumber": 3,
@@ -242,7 +329,15 @@
             "expectedAnswer": "Tired"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Tired, Surprised, and Confused; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel tired, surprised, and confused. The person being discussed needs rest after a long shift.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Tired",
+            "scenario": "After a long shift, Lina says, “I feel tired and need rest.” She understands the instructions, so she is not confused, and the ordinary result does not surprise her.",
+            "question": "Which word describes Lina’s need for rest?",
+            "imageBrief": "Office chair beside a closed work bag at the end of a shift. No readable times or dramatic collapse."
+          }
         },
         {
           "chunkNumber": 4,
@@ -254,7 +349,15 @@
             "expectedAnswer": "Curious"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Curious, Thoughtful, and Relaxed; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel curious, thoughtful, and relaxed. The person being discussed wants to know more about a new system.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Curious",
+            "scenario": "Rana sees a new tool and wants to learn how it works. She asks several questions because she is curious. Thoughtful can mean thinking carefully, and relaxed means free from tension.",
+            "question": "Which word means Rana wants to know more?",
+            "imageBrief": "Unbranded simple desk tool beside a closed manual. No readable instructions or face-based emotion inference."
+          }
         },
         {
           "chunkNumber": 5,
@@ -266,54 +369,93 @@
             "expectedAnswer": "Indifferent"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Indifferent, Sleepy, and Alert; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel indifferent, sleepy, and alert. The person being discussed does not care much about a minor change.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Indifferent",
+            "scenario": "Omar says, “Either folder colour is fine; I do not care which one we use.” He is indifferent to this choice. He is awake and alert, not sleepy.",
+            "question": "Which word means Omar does not care about the choice?",
+            "imageBrief": "Two plain differently coloured office folders on a desk. Written context supplies indifference."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "A Long Day at Work",
-      "text": "After a long shift, Hala feels tired and a little bored while waiting for transport. A delayed message leaves her confused, then a colleague calls with surprising news. During the ride home, she becomes calmer and more relaxed. By the time she arrives, she is still sleepy but alert enough to prepare for the next morning.",
-      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+      "text": "Hala has finished a long shift. She feels tired while waiting for the bus. She is surprised when it arrives earlier than expected. A confusing message arrives, so she calls her colleague to ask what it means. The colleague explains it clearly. Hala feels calm and relaxed on the ride home. She is sleepy when she reaches her door.",
+      "imageBrief": "An adult seated at a bus stop with a phone and work bag. No visible private messages. The passage supplies her feelings; the image must not claim to diagnose them."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Disappointed"
+        "prompt": "During an adult workplace or travel situation, people may feel disappointed, upset, and annoyed. The person being discussed is unhappy because the result was worse than expected.\nWhich word best describes the person's state in this situation?",
+        "answer": "Disappointed",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Bored"
+        "prompt": "During an adult workplace or travel situation, people may feel bored, lonely, and calm. The person being discussed has nothing interesting to do during a long wait.\nWhich word best describes the person's state in this situation?",
+        "answer": "Bored",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Tired"
+        "prompt": "During an adult workplace or travel situation, people may feel tired, surprised, and confused. The person being discussed needs rest after a long shift.\nWhich word best describes the person's state in this situation?",
+        "answer": "Tired",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Curious"
+        "prompt": "During an adult workplace or travel situation, people may feel curious, thoughtful, and relaxed. The person being discussed wants to know more about a new system.\nWhich word best describes the person's state in this situation?",
+        "answer": "Curious",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Indifferent"
+        "prompt": "During an adult workplace or travel situation, people may feel indifferent, sleepy, and alert. The person being discussed does not care much about a minor change.\nWhich word best describes the person's state in this situation?",
+        "answer": "Indifferent",
+        "contextTag": "scene-5",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Disappointed"
+        "prompt": "Read the passage: Hala has finished a long shift. She feels tired while waiting for the bus. She is surprised when it arrives earlier than expected. A confusing message arrives, so she calls her colleague to ask what it means. The colleague explains it clearly. Hala feels calm and relaxed on the ride home. She is sleepy when she reaches her door.\nWhy does Hala call her colleague?",
+        "answer": "to ask what the message means",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Upset"
+        "prompt": "Read the passage: Hala has finished a long shift. She feels tired while waiting for the bus. She is surprised when it arrives earlier than expected. A confusing message arrives, so she calls her colleague to ask what it means. The colleague explains it clearly. Hala feels calm and relaxed on the ride home. She is sleepy when she reaches her door.\nHow does Hala feel on the ride home?",
+        "answer": "calm and relaxed",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Calm"
+        "prompt": "Say that you need rest after a long shift.",
+        "answer": "I feel tired after my shift.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "You do not understand a message. Explain your feeling and ask for clarification.",
+        "answer": "I feel confused. Could you explain the message?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Basic Emotions: See It, Say It",
-      "idea": "30–50 second contextual video set in a school day. Show disappointed, upset, annoyed, bored, and lonely naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a quiet break, adults react differently: one is disappointed, another upset, and another annoyed. The highlighted person looks disappointed."
+      "title": "Reporting Feelings",
+      "idea": "Adult workplace or travel context. Narration supplies the speaker’s exact words; neutral objects support the setting. No highlighted answer, diagnostic facial inference, medical procedure or treatment advice.",
+      "scriptStarter": "Hana expected to pass an exam, but the result was lower than she hoped. She says, “I am disappointed.” Upset is a broader word for being unhappy, and annoyed means irritated."
     },
     "spacedReview": "1 lesson(s) back: Happy, Joyful from basic-emotions-1\n3 lesson(s) back: Area, Perimeter from shapes-geometry-3\n7 lesson(s) back: Violet, Coral from colors-2"
   },
@@ -353,8 +495,8 @@
     ],
     "usage": {
       "goal": "Learn to describe common physical feelings and comfort states in everyday life.",
-      "canDoStatement": "Can say when someone feels hungry, thirsty, hot, cold, tired, or comfortable.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a reported physical sensation.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -367,7 +509,15 @@
             "expectedAnswer": "Hungry"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Hungry, Thirsty, and Full; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel hungry, thirsty, and full. The person being discussed needs food after missing lunch.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Hungry",
+            "scenario": "Maya missed lunch and needs food. She says, “I am hungry.” She has had water and is not thirsty, and she is not full because she has not eaten.",
+            "question": "Which word means Maya needs food?",
+            "imageBrief": "Closed lunch box on an office break table beside water glass. No diagnosis from a face."
+          }
         },
         {
           "chunkNumber": 2,
@@ -379,7 +529,15 @@
             "expectedAnswer": "Cold"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Cold, Hot, and Dizzy; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel cold, hot, and dizzy. The person being discussed feels the temperature is too low.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Cold",
+            "scenario": "Samir says, “This room feels cold; the temperature is too low for me.” He puts on a cardigan. He does not feel hot or dizzy.",
+            "question": "Which word describes Samir’s feeling about the low temperature?",
+            "imageBrief": "Cardigan folded on a chair in an ordinary room. Passage states the temperature sensation; no thermometer diagnosis."
+          }
         },
         {
           "chunkNumber": 3,
@@ -391,7 +549,15 @@
             "expectedAnswer": "Nauseous"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Nauseous, Exhausted, and Energetic; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel nauseous, exhausted, and energetic. The person being discussed feels as if they may vomit.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Nauseous",
+            "scenario": "On the bus, Hana says, “I feel nauseous, as if I may vomit.” Exhausted means very tired, while energetic means having plenty of energy. These are different descriptions.",
+            "question": "Which word means feeling as if you may vomit?",
+            "imageBrief": "Empty ordinary bus seats and a closed travel bag. No vomiting, medical treatment or visual diagnosis."
+          }
         },
         {
           "chunkNumber": 4,
@@ -403,50 +569,86 @@
             "expectedAnswer": "Comfortable"
           },
           "imageBrief": "Photorealistic adult real-world scene with several people showing subtle, natural states related to Comfortable; workplace, transit, or community setting as appropriate, no text overlays, labels, logos, watermarks, or exaggerated cartoon expressions.",
-          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states."
+          "imageAlt": "Several adults in a real-world setting show different natural emotional or physical states.",
+          "learningContext": {
+            "sourceScenario": "During an adult workplace or travel situation, people may feel comfortable. The person being discussed feels physically at ease in the chair and room.",
+            "sourceQuestion": "Which word best describes the person's state in this situation?",
+            "sourceAnswer": "Comfortable",
+            "scenario": "Karim sits in a chair that supports him well. He says, “I feel comfortable here.” He feels physically at ease in the chair and room.",
+            "question": "Which word describes feeling physically at ease?",
+            "imageBrief": "Plain supportive armchair in an uncluttered room. No text or medical claims."
+          }
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Checking How You Feel",
-      "text": "During a busy afternoon, Omar tells a coworker that he feels hungry and thirsty. The room is hot, and after standing for a long time he becomes slightly dizzy, so he sits down and drinks water. Later he feels less tired and more comfortable. His coworker checks that he is okay before they return to work.",
-      "imageBrief": "One uncluttered basic emotions scene supporting the reading and showing the first six target words."
+      "text": "Omar missed lunch and feels hungry. He also feels thirsty after his walk. The office is hot, so he asks for a short break. His colleague gives him a seat in a cooler room. Omar feels comfortable there. He plans to eat his lunch and rest before returning to work.",
+      "imageBrief": "An adult seated comfortably in an office break room with a closed lunch box and drinking glass. No medical diagnosis, treatment demonstration or dramatic distress."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Hungry"
+        "prompt": "During an adult workplace or travel situation, people may feel hungry, thirsty, and full. The person being discussed needs food after missing lunch.\nWhich word best describes the person's state in this situation?",
+        "answer": "Hungry",
+        "contextTag": "scene-1",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Cold"
+        "prompt": "During an adult workplace or travel situation, people may feel cold, hot, and dizzy. The person being discussed feels the temperature is too low.\nWhich word best describes the person's state in this situation?",
+        "answer": "Cold",
+        "contextTag": "scene-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Nauseous"
+        "prompt": "During an adult workplace or travel situation, people may feel nauseous, exhausted, and energetic. The person being discussed feels as if they may vomit.\nWhich word best describes the person's state in this situation?",
+        "answer": "Nauseous",
+        "contextTag": "scene-3",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Comfortable"
+        "prompt": "During an adult workplace or travel situation, people may feel comfortable. The person being discussed feels physically at ease in the chair and room.\nWhich word best describes the person's state in this situation?",
+        "answer": "Comfortable",
+        "contextTag": "scene-4",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Hungry"
+        "prompt": "Read the passage: Omar missed lunch and feels hungry. He also feels thirsty after his walk. The office is hot, so he asks for a short break. His colleague gives him a seat in a cooler room. Omar feels comfortable there. He plans to eat his lunch and rest before returning to work.\nWhy does Omar feel hungry?",
+        "answer": "because he missed lunch",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Thirsty"
+        "prompt": "Read the passage: Omar missed lunch and feels hungry. He also feels thirsty after his walk. The office is hot, so he asks for a short break. His colleague gives him a seat in a cooler room. Omar feels comfortable there. He plans to eat his lunch and rest before returning to work.\nWhere does Omar feel comfortable?",
+        "answer": "in a cooler room",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Dizzy"
+        "prompt": "Say that you want something to eat.",
+        "answer": "I feel hungry. I would like some food.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "The room feels too warm for you. Tell a colleague using hot.",
+        "answer": "I feel hot in this room.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Basic Emotions: See It, Say It",
-      "idea": "30–50 second contextual video set in a school day. Show hungry, thirsty, full, cold, and hot naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: During a team meeting, adults show different physical states: hungry, thirsty, and full. The highlighted person appears hungry."
+      "title": "Describing Physical Sensations",
+      "idea": "Adult workplace or travel context. Narration supplies the speaker’s exact words; neutral objects support the setting. No highlighted answer, diagnostic facial inference, medical procedure or treatment advice.",
+      "scriptStarter": "Maya missed lunch and needs food. She says, “I am hungry.” She has had water and is not thirsty, and she is not full because she has not eaten."
     },
     "spacedReview": "1 lesson(s) back: Disappointed, Upset from basic-emotions-2\n3 lesson(s) back: Grid, Array from shapes-geometry-4\n7 lesson(s) back: Mix, Blend from colors-3"
   }

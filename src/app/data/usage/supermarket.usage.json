@@ -291,14 +291,14 @@
         {
           "chunkNumber": 5,
           "targetWords": ["Fig", "Broccoli", "Cauliflower"],
-          "scenario": "During a routine the supermarket task, an adult compares Fig, Broccoli, Cauliflower. The person selects Fig for the next step.",
+          "scenario": "In the organic produce display, soft tear-shaped purple figs with sweet pink flesh sit arranged in shallow paper baskets.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which sweet tear-shaped purple fruit with soft pink flesh rests in the paper basket?",
             "options": ["Fig", "Broccoli", "Cauliflower"],
             "expectedAnswer": "Fig"
           },
-          "imageBrief": "Adult learning visual support for this exact situation: During a routine the supermarket task, an adult compares Fig, Broccoli, Cauliflower. The person selects Fig for the next step. Question: Which option does the person select for the next step? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Visual reference for the supermarket situation; the final visible-content description requires image review."
+          "imageBrief": "Accurate word-reference image supporting the supermarket account, showing Fig as an identifiable fruit. Prefer one human-free composition. No readable text, logos, or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
@@ -338,7 +338,7 @@
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the supermarket task, an adult compares Fig, Broccoli, Cauliflower. The person selects Fig for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "In the organic produce display, soft tear-shaped purple figs with sweet pink flesh sit arranged in shallow paper baskets.\nWhich sweet tear-shaped purple fruit with soft pink flesh rests in the paper basket?",
         "answer": "Fig",
         "questionType": "meaning",
         "responseMode": "short-answer",
@@ -644,7 +644,15 @@
             "expectedAnswer": "Blackberry"
           },
           "imageBrief": "Adult learning visual support for this exact situation: During a routine the supermarket task, an adult compares Blackberry, Cranberry, Tangerine. The person selects Blackberry for the next step. Question: Which option does the person select for the next step? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Blackberry, Cranberry, Tangerine in a natural setting."
+          "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Blackberry, Cranberry, Tangerine in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "During a routine the supermarket task, an adult compares Blackberry, Cranberry, Tangerine. The person selects Blackberry for the next step.",
+            "sourceQuestion": "Which option does the person select for the next step?",
+            "sourceAnswer": "Blackberry",
+            "scenario": "Mina's shopping list asks for blackberries. She takes a pack of those berries and leaves the cranberries and tangerines on the display.",
+            "question": "Which fruit does Mina take from her list?",
+            "imageBrief": "Vocabulary-reference support only. Ripe blackberries in a plain produce punnet; no labels or person. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 3,
@@ -656,7 +664,15 @@
             "expectedAnswer": "Papaya"
           },
           "imageBrief": "Adult learning visual support for this exact situation: During a routine the supermarket task, an adult compares Papaya, Kale, Leek. The person selects Papaya for the next step. Question: Which option does the person select for the next step? Show only observable objects or actions. A single-object photograph must be labelled as a vocabulary reference, not as the full situation. No readable words, numbers, logos, watermarks, answer highlighting or incidental people. Keep assessed details visible without cropping.",
-          "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Papaya, Kale, Leek in a natural setting."
+          "imageAlt": "Adult the supermarket scene showing lesson-related items or actions including Papaya, Kale, Leek in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "During a routine the supermarket task, an adult compares Papaya, Kale, Leek. The person selects Papaya for the next step.",
+            "sourceQuestion": "Which option does the person select for the next step?",
+            "sourceAnswer": "Papaya",
+            "scenario": "The recipe asks for papaya. Mina selects that fruit for the salad. The kale and leek are for another meal.",
+            "question": "Which fruit does the recipe ask for?",
+            "imageBrief": "Vocabulary-reference support only. A ripe whole papaya and a cut half showing its seed cavity; no labels or person. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 4,

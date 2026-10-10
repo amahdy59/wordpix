@@ -30,7 +30,7 @@
       "حذاء رياضي",
       "أحذية قماشية",
       "أحذية سهلة الارتداء بلا أربطة",
-      "إسبادريل",
+      "أحذية إسبادريل",
       "موكاسين",
       "أحذية قوارب",
       "أحذية بنعل سميك مرتفع",
@@ -40,144 +40,138 @@
       "أحذية أوكسفورد",
       "أحذية ديربي",
       "حذاء لوفر",
-      "حذاء بروغ",
+      "أحذية بروغ مزخرفة بثقوب صغيرة",
       "حذاء بحزام ومشبك"
     ],
     "usage": {
-      "goal": "Learn to use footwear 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to footwear.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sneakers", "Canvas Shoes", "Slip-Ons"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Slip-Ons while also considering Sneakers and Canvas Shoes. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Omar wants shoes he can put on without tying laces. He chooses slip-ons. The sneakers and canvas shoes he tried have laces.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does Omar choose?",
             "options": ["Sneakers", "Canvas Shoes", "Slip-Ons"],
             "expectedAnswer": "Slip-Ons"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Sneakers, Canvas Shoes, and Slip-Ons visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Sneakers, Canvas Shoes, Slip-Ons in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of plain slip-on shoes with no laces or fasteners. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Espadrilles", "Moccasins", "Boat Shoes"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Espadrilles while also considering Moccasins and Boat Shoes. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Omar examines espadrilles with canvas uppers and woven rope around the soles. The moccasins and boat shoes beside them have different soles.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes have woven rope around the soles?",
             "options": ["Espadrilles", "Moccasins", "Boat Shoes"],
             "expectedAnswer": "Espadrilles"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Espadrilles, Moccasins, and Boat Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Espadrilles, Moccasins, Boat Shoes in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Canvas espadrilles with visibly woven rope-edged soles; no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Platform Shoes", "High-Tops", "Low-Tops"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices High-Tops while also considering Platform Shoes and Low-Tops. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Omar compares high-tops that rise above the ankles with low-tops that finish below them. The platform shoes have much thicker soles. The skate shoes have flat soles designed for skateboarding, but Omar is comparing ankle heights.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes rise above the ankles?",
             "options": ["Platform Shoes", "High-Tops", "Low-Tops"],
             "expectedAnswer": "High-Tops"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Platform Shoes, High-Tops, and Low-Tops visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Platform Shoes, High-Tops, Low-Tops in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. High-top sneakers with both ankle-height uppers clearly visible; no logo. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Skate Shoes", "Oxford Shoes", "Derby Shoes"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Derby Shoes while also considering Skate Shoes and Oxford Shoes. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "The assistant shows Derby shoes with open lacing. The lace panels sit on top of the upper. The Oxford shoes have closed lacing.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes have open lacing in the description?",
             "options": ["Skate Shoes", "Oxford Shoes", "Derby Shoes"],
             "expectedAnswer": "Derby Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Skate Shoes, Oxford Shoes, and Derby Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Skate Shoes, Oxford Shoes, Derby Shoes in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Derby shoes photographed to show separate open-lacing quarters on top of the vamp. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Loafers", "Brogues", "Monk Strap"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Loafers while also considering Brogues and Monk Strap. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Omar tries loafers that slip onto his feet. He leaves the brogues and the monk-strap shoes with buckles on the shelf.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does Omar try?",
             "options": ["Loafers", "Brogues", "Monk Strap"],
             "expectedAnswer": "Loafers"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Loafers, Brogues, and Monk Strap visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Loafers, Brogues, Monk Strap in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain low leather loafers with no laces, buckles or punched decorations. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Footwear: Email",
-      "text": "Omar has an everyday task connected to footwear. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare sneakers, canvas shoes, and slip-ons. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare espadrilles, moccasins, and boat shoes. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Footwear. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing shoes in a shop",
+      "text": "Omar asks a shop assistant for shoes without laces. He tries slip-ons first. Nearby, he sees espadrilles with woven rope around the soles and high-tops that cover the ankles. For an office meeting, he compares Oxford shoes with Derby shoes. He also tries loafers. Before buying anything, he walks a few steps to check the fit.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Comparing shoes in a shop. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Slip-Ons while also considering Sneakers and Canvas Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Omar wants shoes he can put on without tying laces. He chooses slip-ons. The sneakers and canvas shoes he tried have laces.\nWhich shoes does Omar choose?",
         "answer": "Slip-Ons",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Espadrilles while also considering Moccasins and Boat Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Omar examines espadrilles with canvas uppers and woven rope around the soles. The moccasins and boat shoes beside them have different soles.\nWhich shoes have woven rope around the soles?",
         "answer": "Espadrilles",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices High-Tops while also considering Platform Shoes and Low-Tops. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Omar compares high-tops that rise above the ankles with low-tops that finish below them. The platform shoes have much thicker soles. The skate shoes have flat soles designed for skateboarding, but Omar is comparing ankle heights.\nWhich shoes rise above the ankles?",
         "answer": "High-Tops",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Derby Shoes while also considering Skate Shoes and Oxford Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "The assistant shows Derby shoes with open lacing. The lace panels sit on top of the upper. The Oxford shoes have closed lacing.\nWhich shoes have open lacing in the description?",
         "answer": "Derby Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Loafers while also considering Brogues and Monk Strap. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Omar tries loafers that slip onto his feet. He leaves the brogues and the monk-strap shoes with buckles on the shelf.\nWhich shoes does Omar try?",
         "answer": "Loafers",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Sneakers"
+        "prompt": "Omar asks a shop assistant for shoes without laces. He tries slip-ons first. Nearby, he sees espadrilles with woven rope around the soles and high-tops that cover the ankles. For an office meeting, he compares Oxford shoes with Derby shoes. He also tries loafers. Before buying anything, he walks a few steps to check the fit.\nWhat does Omar do before buying shoes?",
+        "answer": "He walks a few steps to check the fit.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Espadrilles"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Umbrella” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Slip-Ons”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Omar wants shoes he can put on without tying laces. He chooses slip-ons. The sneakers and canvas shoes he tried have laces. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Footwear: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing shoes in a shop",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar asks a shop assistant for shoes without laces. He tries slip-ons first. Nearby, he sees espadrilles with woven rope around the soles and high-tops that cover the ankles. For an office meeting, he compares Oxford shoes with Derby shoes. He also tries loafers. Before buying anything, he walks a few steps to check the fit. Pause and ask: What does Omar do before buying shoes?"
     },
     "spacedReview": "1 lesson(s) back: Umbrella, Tie Pin from accessories-jewelry-4\n3 lesson(s) back: Bangle, Watch from accessories-jewelry-2\n7 lesson(s) back: Sweatpants, Cargo Pants from everyday-clothing-2"
   },
@@ -226,140 +220,134 @@
       "أحذية ركوب الخيل"
     ],
     "usage": {
-      "goal": "Learn to use footwear 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to footwear.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pumps", "Stilettos", "Kitten Heels"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Pumps while also considering Stilettos and Kitten Heels. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Mina puts low-cut closed pumps on the formal shelf. The stilettos have much thinner high heels, and the kitten heels have short slender heels.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which low-cut closed shoes does Mina put on the shelf?",
             "options": ["Pumps", "Stilettos", "Kitten Heels"],
             "expectedAnswer": "Pumps"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Pumps, Stilettos, and Kitten Heels visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Pumps, Stilettos, Kitten Heels in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain low-cut closed pumps with moderate heels, no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Block Heels", "Dress Shoes", "Ankle Boots"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dress Shoes while also considering Block Heels and Ankle Boots. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "A customer needs shoes for a formal meeting. Mina shows the dress shoes. The block heels and ankle boots are on another shelf.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which general category does Mina show for the formal meeting?",
             "options": ["Block Heels", "Dress Shoes", "Ankle Boots"],
             "expectedAnswer": "Dress Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Block Heels, Dress Shoes, and Ankle Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Block Heels, Dress Shoes, Ankle Boots in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of polished plain formal dress shoes with modest low heels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Knee-High Boots", "Combat Boots", "Chelsea Boots"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Chelsea Boots while also considering Knee-High Boots and Combat Boots. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Mina checks Chelsea boots with elastic panels at the sides. The knee-high boots are taller, and the combat boots have laces.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which boots have elastic side panels?",
             "options": ["Knee-High Boots", "Combat Boots", "Chelsea Boots"],
             "expectedAnswer": "Chelsea Boots"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Knee-High Boots, Combat Boots, and Chelsea Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Knee-High Boots, Combat Boots, Chelsea Boots in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Ankle-height Chelsea boots with elastic side panels and no laces. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cowboy Boots", "Rain Boots", "Snow Boots"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Cowboy Boots while also considering Rain Boots and Snow Boots. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Mina places cowboy boots on a separate shelf. They have tall shafts and angled heels. The rain boots and snow boots are elsewhere.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which boots does Mina place on a separate shelf?",
             "options": ["Cowboy Boots", "Rain Boots", "Snow Boots"],
             "expectedAnswer": "Cowboy Boots"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Cowboy Boots, Rain Boots, and Snow Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Cowboy Boots, Rain Boots, Snow Boots in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Western-style cowboy boots showing tall shafts and angled heels, no brand. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hiking Boots", "Work Boots", "Riding Boots"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Work Boots while also considering Hiking Boots and Riding Boots. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "The customer asks to see the work boots near the counter. Mina brings them over and leaves the hiking and riding boots on their shelves. The hiking boots are for walks on rough ground; the customer asks for work boots today.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which boots does the customer ask to see?",
             "options": ["Hiking Boots", "Work Boots", "Riding Boots"],
             "expectedAnswer": "Work Boots"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Hiking Boots, Work Boots, and Riding Boots visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Hiking Boots, Work Boots, Riding Boots in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Sturdy ankle-height work boots, no certification marks or unverified safety rating. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Footwear: Personal Message",
-      "text": "Omar has an everyday task connected to footwear. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare pumps, stilettos, and kitten heels. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare block heels, dress shoes, and ankle boots. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Footwear. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Organizing the footwear shelves",
+      "text": "Mina organizes the footwear shelves. Pumps and kitten heels go beside the formal dress shoes. She places Chelsea boots where their elastic side panels are easy to see. Cowboy boots go on a different shelf. Work boots remain near the counter because a customer asked to see them. Mina checks the order before opening the shop.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Organizing the footwear shelves. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Pumps while also considering Stilettos and Kitten Heels. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Mina puts low-cut closed pumps on the formal shelf. The stilettos have much thinner high heels, and the kitten heels have short slender heels.\nWhich low-cut closed shoes does Mina put on the shelf?",
         "answer": "Pumps",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dress Shoes while also considering Block Heels and Ankle Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "A customer needs shoes for a formal meeting. Mina shows the dress shoes. The block heels and ankle boots are on another shelf.\nWhich general category does Mina show for the formal meeting?",
         "answer": "Dress Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Chelsea Boots while also considering Knee-High Boots and Combat Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Mina checks Chelsea boots with elastic panels at the sides. The knee-high boots are taller, and the combat boots have laces.\nWhich boots have elastic side panels?",
         "answer": "Chelsea Boots",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Cowboy Boots while also considering Rain Boots and Snow Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Mina places cowboy boots on a separate shelf. They have tall shafts and angled heels. The rain boots and snow boots are elsewhere.\nWhich boots does Mina place on a separate shelf?",
         "answer": "Cowboy Boots",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Work Boots while also considering Hiking Boots and Riding Boots. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "The customer asks to see the work boots near the counter. Mina brings them over and leaves the hiking and riding boots on their shelves. The hiking boots are for walks on rough ground; the customer asks for work boots today.\nWhich boots does the customer ask to see?",
         "answer": "Work Boots",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Pumps"
+        "prompt": "Mina organizes the footwear shelves. Pumps and kitten heels go beside the formal dress shoes. She places Chelsea boots where their elastic side panels are easy to see. Cowboy boots go on a different shelf. Work boots remain near the counter because a customer asked to see them. Mina checks the order before opening the shop.\nWhy are the work boots near the counter?",
+        "answer": "A customer asked to see them.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Block Heels"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sneakers” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Pumps”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Mina puts low-cut closed pumps on the formal shelf. The stilettos have much thinner high heels, and the kitten heels have short slender heels. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Footwear: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Organizing the footwear shelves",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Mina organizes the footwear shelves. Pumps and kitten heels go beside the formal dress shoes. She places Chelsea boots where their elastic side panels are easy to see. Cowboy boots go on a different shelf. Work boots remain near the counter because a customer asked to see them. Mina checks the order before opening the shop. Pause and ask: Why are the work boots near the counter?"
     },
     "spacedReview": "1 lesson(s) back: Sneakers, Canvas Shoes from footwear-1\n3 lesson(s) back: Handbag, Backpack from accessories-jewelry-3\n7 lesson(s) back: Dress, Sundress from everyday-clothing-3"
   },
@@ -408,140 +396,134 @@
       "أحذية تنس"
     ],
     "usage": {
-      "goal": "Learn to use footwear 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to footwear.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sandals", "Flip-Flops", "Slides"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Flip-Flops while also considering Sandals and Slides. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Nabil checks flip-flops with a Y-shaped strap between the toes. The sandals and slides beside them have other strap designs.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which footwear has a Y-shaped strap between the toes?",
             "options": ["Sandals", "Flip-Flops", "Slides"],
             "expectedAnswer": "Flip-Flops"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Sandals, Flip-Flops, and Slides visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Sandals, Flip-Flops, Slides in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of plain flip-flops with Y-shaped toe straps. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gladiator Sandals", "Wedges", "Platform Sandals"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Platform Sandals while also considering Gladiator Sandals and Wedges. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Nabil checks platform sandals with thick raised soles. The gladiator sandals have many straps, and the wedges rise mainly under the heels.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which sandals have thick raised soles?",
             "options": ["Gladiator Sandals", "Wedges", "Platform Sandals"],
             "expectedAnswer": "Platform Sandals"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Gladiator Sandals, Wedges, and Platform Sandals visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Gladiator Sandals, Wedges, Platform Sandals in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Platform sandals with a visibly thick sole beneath the entire foot. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Strappy Sandals", "Huaraches", "Clogs"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Strappy Sandals while also considering Huaraches and Clogs. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Nabil packs strappy sandals with several narrow straps. The woven huaraches and closed clogs go in other boxes.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which sandals have several narrow straps?",
             "options": ["Strappy Sandals", "Huaraches", "Clogs"],
             "expectedAnswer": "Strappy Sandals"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Strappy Sandals, Huaraches, and Clogs visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Strappy Sandals, Huaraches, Clogs in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Opaque strappy sandals with several narrow straps, no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mules", "Running Shoes", "Cross-Trainers"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Running Shoes while also considering Mules and Cross-Trainers. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "The order list requests running shoes for a running club. Nabil packs those and leaves the mules and cross-trainers on the shelf.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does the running club order?",
             "options": ["Mules", "Running Shoes", "Cross-Trainers"],
             "expectedAnswer": "Running Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Mules, Running Shoes, and Cross-Trainers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Mules, Running Shoes, Cross-Trainers in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain cushioned running shoes; no brand or claim about medical benefits. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Basketball Shoes", "Soccer Cleats", "Tennis Shoes"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Tennis Shoes while also considering Basketball Shoes and Soccer Cleats. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "The tennis club orders tennis shoes. Nabil packs the requested pair, not the basketball shoes or soccer cleats.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does the tennis club order?",
             "options": ["Basketball Shoes", "Soccer Cleats", "Tennis Shoes"],
             "expectedAnswer": "Tennis Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Basketball Shoes, Soccer Cleats, and Tennis Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Basketball Shoes, Soccer Cleats, Tennis Shoes in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain tennis court shoes with non-studded soles; no sports logos or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Footwear: Short Dialogue",
-      "text": "Omar has an everyday task connected to footwear. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare sandals, flip-flops, and slides. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare gladiator sandals, wedges, and platform sandals. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Footwear. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Packing a sports-shop order",
+      "text": "Nabil packs an order for a sports shop. He checks a pair of flip-flops and some platform sandals first. Strappy sandals go into a separate box. The running shoes and tennis shoes have different product numbers in his order list. He checks both pairs carefully, closes the boxes and gives the order to the delivery driver.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Packing a sports-shop order. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Flip-Flops while also considering Sandals and Slides. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Nabil checks flip-flops with a Y-shaped strap between the toes. The sandals and slides beside them have other strap designs.\nWhich footwear has a Y-shaped strap between the toes?",
         "answer": "Flip-Flops",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Platform Sandals while also considering Gladiator Sandals and Wedges. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Nabil checks platform sandals with thick raised soles. The gladiator sandals have many straps, and the wedges rise mainly under the heels.\nWhich sandals have thick raised soles?",
         "answer": "Platform Sandals",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Strappy Sandals while also considering Huaraches and Clogs. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Nabil packs strappy sandals with several narrow straps. The woven huaraches and closed clogs go in other boxes.\nWhich sandals have several narrow straps?",
         "answer": "Strappy Sandals",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Running Shoes while also considering Mules and Cross-Trainers. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "The order list requests running shoes for a running club. Nabil packs those and leaves the mules and cross-trainers on the shelf.\nWhich shoes does the running club order?",
         "answer": "Running Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Tennis Shoes while also considering Basketball Shoes and Soccer Cleats. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "The tennis club orders tennis shoes. Nabil packs the requested pair, not the basketball shoes or soccer cleats.\nWhich shoes does the tennis club order?",
         "answer": "Tennis Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Sandals"
+        "prompt": "Nabil packs an order for a sports shop. He checks a pair of flip-flops and some platform sandals first. Strappy sandals go into a separate box. The running shoes and tennis shoes have different product numbers in his order list. He checks both pairs carefully, closes the boxes and gives the order to the delivery driver.\nWho collects the packed order?",
+        "answer": "The delivery driver.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Gladiator Sandals"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pumps” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Flip-Flops”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Nabil checks flip-flops with a Y-shaped strap between the toes. The sandals and slides beside them have other strap designs. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Footwear: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Packing a sports-shop order",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Nabil packs an order for a sports shop. He checks a pair of flip-flops and some platform sandals first. Strappy sandals go into a separate box. The running shoes and tennis shoes have different product numbers in his order list. He checks both pairs carefully, closes the boxes and gives the order to the delivery driver. Pause and ask: Who collects the packed order?"
     },
     "spacedReview": "1 lesson(s) back: Pumps, Stilettos from footwear-2\n3 lesson(s) back: Umbrella, Tie Pin from accessories-jewelry-4\n7 lesson(s) back: Pajamas, Nightgown from everyday-clothing-4"
   },
@@ -570,83 +552,77 @@
       "شبشب / خف منزلي"
     ],
     "usage": {
-      "goal": "Learn to use footwear 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to footwear.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Climbing Shoes", "Cycling Shoes", "Dance Shoes"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dance Shoes while also considering Climbing Shoes and Cycling Shoes. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "Sam brings dance shoes to his adult dance class. He leaves his climbing shoes and cycling shoes in the sports cupboard.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does Sam bring to the class?",
             "options": ["Climbing Shoes", "Cycling Shoes", "Dance Shoes"],
             "expectedAnswer": "Dance Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Climbing Shoes, Cycling Shoes, and Dance Shoes visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Climbing Shoes, Cycling Shoes, Dance Shoes in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of plain adult dance shoes on a studio floor; no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bowling Shoes", "Slippers"],
-          "scenario": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers. He chooses the pair that gives the right support, comfort, and protection.",
+          "scenario": "At the bowling alley, Sam collects bowling shoes from the desk. His soft slippers are at home.",
           "check": {
-            "question": "Which target does Sam notice first in this situation?",
+            "question": "Which shoes does Sam collect from the desk?",
             "options": ["Bowling Shoes", "Slippers", "Climbing Shoes"],
             "expectedAnswer": "Bowling Shoes"
           },
-          "imageBrief": "Show an adult in getting ready for an activity, with Bowling Shoes and Slippers visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult footwear scene showing lesson-related items or actions including Bowling Shoes, Slippers in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A pair of low bowling shoes on a bowling-alley shoe shelf, no readable text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Footwear: Tips/Notice",
-      "text": "Omar has an everyday task connected to footwear. The new vocabulary helps him follow the situation and respond clearly. The customer tries or compares the climbing shoes, cycling shoes, and dance shoes, then decides which items suit the occasion best. In the shop or studio, the stylist and customer compare bowling shoes and slippers. The words connect to appearance, materials, fit, or design. The learner can connect the vocabulary to an everyday purpose and reuse it in a short response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Footwear. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Collecting shoes for a class",
+      "text": "Sam helps organize an adult dance class. He asks each learner to bring dance shoes and checks that the changing area is clear. The neighboring sports club has climbing shoes and cycling shoes in its store. After the dance class, Sam visits the bowling alley. He collects bowling shoes at the desk and leaves his slippers at home.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Collecting shoes for a class. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Dance Shoes while also considering Climbing Shoes and Cycling Shoes. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "Sam brings dance shoes to his adult dance class. He leaves his climbing shoes and cycling shoes in the sports cupboard.\nWhich shoes does Sam bring to the class?",
         "answer": "Dance Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Before leaving for the day's activity, Sam checks the footwear by the door. Sam notices Bowling Shoes while also considering Slippers. He chooses the pair that gives the right support, comfort, and protection.\nWhich target does Sam notice first in this situation?",
+        "prompt": "At the bowling alley, Sam collects bowling shoes from the desk. His soft slippers are at home.\nWhich shoes does Sam collect from the desk?",
         "answer": "Bowling Shoes",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Climbing Shoes"
+        "prompt": "Sam helps organize an adult dance class. He asks each learner to bring dance shoes and checks that the changing area is clear. The neighboring sports club has climbing shoes and cycling shoes in its store. After the dance class, Sam visits the bowling alley. He collects bowling shoes at the desk and leaves his slippers at home.\nWhere does Sam collect bowling shoes?",
+        "answer": "At the bowling-alley desk.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Bowling Shoes"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sandals” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Dance Shoes”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Sam brings dance shoes to his adult dance class. He leaves his climbing shoes and cycling shoes in the sports cupboard. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Footwear: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Collecting shoes for a class",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Sam helps organize an adult dance class. He asks each learner to bring dance shoes and checks that the changing area is clear. The neighboring sports club has climbing shoes and cycling shoes in its store. After the dance class, Sam visits the bowling alley. He collects bowling shoes at the desk and leaves his slippers at home. Pause and ask: Where does Sam collect bowling shoes?"
     },
     "spacedReview": "1 lesson(s) back: Sandals, Flip-Flops from footwear-3\n3 lesson(s) back: Sneakers, Canvas Shoes from footwear-1\n7 lesson(s) back: Hat, Cap from accessories-jewelry-1"
   }

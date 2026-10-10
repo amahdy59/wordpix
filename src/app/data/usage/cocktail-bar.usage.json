@@ -40,140 +40,126 @@
       "كأس كوكتيل",
       "كأس هاي بول طويل",
       "كأس قصير عريض",
-      "كأس صغير لجرعة مشروب",
+      "كأس صغير",
       "كأس نبيذ"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bar Counter", "Bar Stool", "Back Bar", "Draft Taps"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Counter, Bar Stool, Back Bar, and Draft Taps and choose the option that fits the situation.",
+          "scenario": "The bar counter is the serving surface. Bar stool is a high seat, back bar contains shelving, and draft taps connect to dispensing lines.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which term names the serving surface?",
             "options": ["Bar Counter", "Bar Stool", "Back Bar"],
             "expectedAnswer": "Bar Counter"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Bar Counter as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty bar counter with no bottles, people or writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bottle Display", "Ice Well", "Speed Rail", "Garnish Tray"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bottle Display, Ice Well, Speed Rail, and Garnish Tray and choose the option that fits the situation.",
+          "scenario": "Bottle display names the arranged bottles. Ice well stores ice, speed rail holds containers close to the work area, and garnish tray separates decorative food items.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the arranged bottles?",
             "options": ["Bottle Display", "Ice Well", "Speed Rail"],
             "expectedAnswer": "Bottle Display"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Bottle Display as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A small bottle display with blank unbranded bottles on plain shelves. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bar Mat", "Lounge Area", "Cocktail Glass", "Highball Glass"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Mat, Lounge Area, Cocktail Glass, and Highball Glass and choose the option that fits the situation.",
+          "scenario": "The bar mat catches drips. Lounge area names seating; cocktail glass and highball glass name different shapes of glass.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which item catches drips on the counter?",
             "options": ["Bar Mat", "Lounge Area", "Cocktail Glass"],
             "expectedAnswer": "Bar Mat"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Bar Mat as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One textured rubber bar mat lying on an empty counter. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rocks Glass", "Shot Glass", "Wine Glass"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rocks Glass, Shot Glass, and Wine Glass and choose the option that fits the situation.",
+          "scenario": "The rocks glass is short and wide. Shot glass holds a small measure; wine glass is traditionally stemmed.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed glass is short and wide?",
             "options": ["Rocks Glass", "Shot Glass", "Wine Glass"],
             "expectedAnswer": "Rocks Glass"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Rocks Glass as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty short wide rocks glass with thick base on a neutral background. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Cocktail Bar: Practical Information",
-      "text": "At the cocktail bar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bar Counter, Bar Stool, Back Bar, and Draft Taps. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bottle Display, Ice Well, Speed Rail, and Garnish Tray. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bar Mat, Lounge Area, Cocktail Glass, and Highball Glass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rocks Glass, Shot Glass, and Wine Glass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Cocktail Bar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing an empty service area",
+      "text": "A hospitality trainee describes an empty service area. The bar counter is the work and serving surface; a bar stool is a high seat. The back bar contains shelving, and draft taps connect to a beverage system. A bottle display shows arranged bottles. An ice well stores ice, while a speed rail holds frequently used containers. A garnish tray separates decorative food items, and a bar mat catches drips. The lounge area provides seating. Cocktail glass and highball glass describe different glass shapes; rocks glass is short and wide. A shot glass holds a small measure, and wine glass names a traditionally stemmed glass. The trainee asks what each item does without serving, tasting or assuming that every bottle contains the same beverage.",
+      "imageBrief": "Support for Describing an empty service area. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Counter, Bar Stool, Back Bar, and Draft Taps and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The bar counter is the serving surface. Bar stool is a high seat, back bar contains shelving, and draft taps connect to dispensing lines.\nWhich term names the serving surface?",
         "answer": "Bar Counter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bottle Display, Ice Well, Speed Rail, and Garnish Tray and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Bottle display names the arranged bottles. Ice well stores ice, speed rail holds containers close to the work area, and garnish tray separates decorative food items.\nWhich term names the arranged bottles?",
         "answer": "Bottle Display",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Mat, Lounge Area, Cocktail Glass, and Highball Glass and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The bar mat catches drips. Lounge area names seating; cocktail glass and highball glass name different shapes of glass.\nWhich item catches drips on the counter?",
         "answer": "Bar Mat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rocks Glass, Shot Glass, and Wine Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The rocks glass is short and wide. Shot glass holds a small measure; wine glass is traditionally stemmed.\nWhich listed glass is short and wide?",
         "answer": "Rocks Glass",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A hospitality trainee describes an empty service area. The bar counter is the work and serving surface; a bar stool is a high seat. The back bar contains shelving, and draft taps connect to a beverage system. A bottle display shows arranged bottles. An ice well stores ice, while a speed rail holds frequently used containers. A garnish tray separates decorative food items, and a bar mat catches drips. The lounge area provides seating. Cocktail glass and highball glass describe different glass shapes; rocks glass is short and wide. A shot glass holds a small measure, and wine glass names a traditionally stemmed glass. The trainee asks what each item does without serving, tasting or assuming that every bottle contains the same beverage.\nWhy does the trainee describe function as well as shape?",
+        "answer": "Different service items have different purposes even when they look similar.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Bar Counter"
+        "prompt": "Explain the difference between “Bar Counter” and “Bar Stool” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Back Bar"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bordeaux” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the cocktail bar task. Use Bar Counter, Bar Stool, Back Bar, Draft Taps, Bottle Display, Ice Well, Speed Rail, Garnish Tray, Bar Mat, Lounge Area, Cocktail Glass, Highball Glass, Rocks Glass, Shot Glass, and Wine Glass in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Bar Counter” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The bar counter is the serving surface. Bar stool is a high seat, back bar contains shelving, and draft taps connect to dispensing lines.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Cocktail Bar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the cocktail bar in cultural or industry texts."
+      "title": "Describing an empty service area",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A hospitality trainee describes an empty service area. The bar counter is the work and serving surface; a bar stool is a high seat. The back bar contains shelving, and draft taps connect to a beverage system. A bottle display shows arranged bottles. An ice well stores ice, while a speed rail holds frequently used containers. A garnish tray separates decorative food items, and a bar mat catches drips. The lounge area provides seating. Cocktail glass and highball glass describe different glass shapes; rocks glass is short and wide. A shot glass holds a small measure, and wine glass names a traditionally stemmed glass. The trainee asks what each item does without serving, tasting or assuming that every bottle contains the same beverage. Ask: Why does the trainee describe function as well as shape?"
     },
     "spacedReview": "1 lesson(s) back: Bordeaux, Burgundy from wine-cellar-3\n3 lesson(s) back: Wine Rack, Temperature Control from wine-cellar-1\n7 lesson(s) back: Color, Clarity from wine-tasting-1"
   },
@@ -205,153 +191,139 @@
       "Zester"
     ],
     "targetWordsArabic": [
-      "ناي فلوت شمبانيا",
+      "كأس طويل ضيق",
       "قدح جعة",
       "كأس كولينز طويل",
       "كأس كوبيه",
       "كأس سنفتر",
       "رجاجة كوكتيل",
-      "مكيال بار",
+      "مكيال مشروبات",
       "مدق خلط",
       "ملعقة بار طويلة",
       "مصفاة",
       "ملقط ثلج",
       "فتاحة زجاجات",
-      "فتاحة زجاجات (مفتاح الفلين)",
+      "فتّاحة سدادات الفلين",
       "عصّارة حمضيات",
       "أداة بشر قشر الحمضيات"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Champagne Flute", "Beer Mug", "Collins Glass", "Coupe Glass"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Beer Mug, Collins Glass, and Coupe Glass and choose the option that fits the situation.",
+          "scenario": "The Champagne flute has a tall narrow bowl. Beer mug, Collins glass and coupe glass have different shapes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which glass has the tall narrow bowl?",
             "options": ["Champagne Flute", "Beer Mug", "Collins Glass"],
             "expectedAnswer": "Champagne Flute"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Champagne Flute as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty slender stemmed flute glass, no brand or beverage. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Snifter", "Cocktail Shaker", "Jigger", "Muddler"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snifter, Cocktail Shaker, Jigger, and Muddler and choose the option that fits the situation.",
+          "scenario": "The snifter has a rounded bowl and narrower opening. Cocktail shaker mixes, jigger measures, and muddler presses ingredients.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which glass has the rounded bowl and narrower opening?",
             "options": ["Snifter", "Cocktail Shaker", "Jigger"],
             "expectedAnswer": "Snifter"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Snifter as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One empty snifter with its rounded bowl and narrow top clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bar Spoon", "Strainer", "Ice Tongs", "Bottle Opener"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Spoon, Strainer, Ice Tongs, and Bottle Opener and choose the option that fits the situation.",
+          "scenario": "The bar spoon is the long stirring tool. Strainer separates solids, ice tongs grip ice, and bottle opener removes a closure.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which tool is used for stirring?",
             "options": ["Bar Spoon", "Strainer", "Ice Tongs"],
             "expectedAnswer": "Bar Spoon"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or approaching the Bar Spoon as the main location, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One long-handled bar spoon on a neutral surface, no people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Corkscrew", "Citrus Press", "Zester"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corkscrew, Citrus Press, and Zester and choose the option that fits the situation.",
+          "scenario": "The corkscrew removes corks with a spiral. Citrus press squeezes fruit, and zester removes thin outer-peel strips.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tool removes corks with a spiral?",
             "options": ["Corkscrew", "Citrus Press", "Zester"],
             "expectedAnswer": "Corkscrew"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Corkscrew as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One plain corkscrew with its spiral metal point clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: The Cocktail Bar",
-      "text": "At the cocktail bar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Champagne Flute, Beer Mug, Collins Glass, and Coupe Glass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Snifter, Cocktail Shaker, Jigger, and Muddler. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bar Spoon, Strainer, Ice Tongs, and Bottle Opener. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Corkscrew, Citrus Press, and Zester. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Cocktail Bar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Matching tools with their functions",
+      "text": "The trainee compares equipment rather than follows a recipe. A Champagne flute is tall and narrow; a beer mug has a mug shape. Collins glass is tall and straight-sided, whereas coupe glass has a shallow broad bowl. A snifter has a rounded bowl with a narrower opening. A cocktail shaker combines ingredients by shaking. A jigger measures quantities, a muddler presses ingredients, and a bar spoon stirs. A strainer separates solids, and ice tongs lift ice pieces. A bottle opener removes a closure, while a corkscrew specifically removes corks. A citrus press squeezes fruit; a zester removes thin outer-peel strips. The trainee checks the tool's purpose without assuming that its name fixes one serving size or that a glass identifies a beverage.",
+      "imageBrief": "Support for Matching tools with their functions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Champagne Flute, Beer Mug, Collins Glass, and Coupe Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Champagne flute has a tall narrow bowl. Beer mug, Collins glass and coupe glass have different shapes.\nWhich glass has the tall narrow bowl?",
         "answer": "Champagne Flute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snifter, Cocktail Shaker, Jigger, and Muddler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The snifter has a rounded bowl and narrower opening. Cocktail shaker mixes, jigger measures, and muddler presses ingredients.\nWhich glass has the rounded bowl and narrower opening?",
         "answer": "Snifter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bar Spoon, Strainer, Ice Tongs, and Bottle Opener and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The bar spoon is the long stirring tool. Strainer separates solids, ice tongs grip ice, and bottle opener removes a closure.\nWhich tool is used for stirring?",
         "answer": "Bar Spoon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corkscrew, Citrus Press, and Zester and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The corkscrew removes corks with a spiral. Citrus press squeezes fruit, and zester removes thin outer-peel strips.\nWhich tool removes corks with a spiral?",
         "answer": "Corkscrew",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The trainee compares equipment rather than follows a recipe. A Champagne flute is tall and narrow; a beer mug has a mug shape. Collins glass is tall and straight-sided, whereas coupe glass has a shallow broad bowl. A snifter has a rounded bowl with a narrower opening. A cocktail shaker combines ingredients by shaking. A jigger measures quantities, a muddler presses ingredients, and a bar spoon stirs. A strainer separates solids, and ice tongs lift ice pieces. A bottle opener removes a closure, while a corkscrew specifically removes corks. A citrus press squeezes fruit; a zester removes thin outer-peel strips. The trainee checks the tool's purpose without assuming that its name fixes one serving size or that a glass identifies a beverage.\nHow does the jigger differ from the shaker?",
+        "answer": "The jigger measures; the shaker mixes by shaking.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Champagne Flute"
+        "prompt": "Explain the difference between “Champagne Flute” and “Beer Mug” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Collins Glass"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bar Counter” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the cocktail bar task. Use Champagne Flute, Beer Mug, Collins Glass, Coupe Glass, Snifter, Cocktail Shaker, Jigger, Muddler, Bar Spoon, Strainer, Ice Tongs, Bottle Opener, Corkscrew, Citrus Press, and Zester in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Champagne Flute” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The Champagne flute has a tall narrow bowl. Beer mug, Collins glass and coupe glass have different shapes.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Cocktail Bar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the cocktail bar in cultural or industry texts."
+      "title": "Matching tools with their functions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The trainee compares equipment rather than follows a recipe. A Champagne flute is tall and narrow; a beer mug has a mug shape. Collins glass is tall and straight-sided, whereas coupe glass has a shallow broad bowl. A snifter has a rounded bowl with a narrower opening. A cocktail shaker combines ingredients by shaking. A jigger measures quantities, a muddler presses ingredients, and a bar spoon stirs. A strainer separates solids, and ice tongs lift ice pieces. A bottle opener removes a closure, while a corkscrew specifically removes corks. A citrus press squeezes fruit; a zester removes thin outer-peel strips. The trainee checks the tool's purpose without assuming that its name fixes one serving size or that a glass identifies a beverage. Ask: How does the jigger differ from the shaker?"
     },
     "spacedReview": "1 lesson(s) back: Bar Counter, Bar Stool from cocktail-bar-1\n3 lesson(s) back: Vintage, Bin Number from wine-cellar-2\n7 lesson(s) back: Earthy, Spicy from wine-tasting-2"
   },
@@ -378,129 +350,115 @@
       "Promoter"
     ],
     "targetWordsArabic": [
-      "ساقي بار",
+      "عامل تقديم مشروبات",
       "مساعد عامل البار",
       "مختص خلط مشروبات",
       "حارس مدخل",
-      "مضيف",
+      "موظف استقبال الضيوف",
       "نادلة في بار",
       "مدير",
-      "ساقي نبيذ متخصص",
+      "متخصص في اختيار النبيذ وتقديمه",
       "منسق موسيقى",
-      "منظم ترويجي"
+      "منظّم ترويجي"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bartender", "Barback", "Mixologist", "Bouncer"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bartender, Barback, Mixologist, and Bouncer and choose the option that fits the situation.",
+          "scenario": "The chart assigns drink preparation and service to the bartender. Barback supports the service area, mixologist specializes in mixed drinks, and bouncer handles security.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who prepares and serves drinks in the chart?",
             "options": ["Bartender", "Barback", "Mixologist"],
             "expectedAnswer": "Bartender"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Bartender as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One modest male worker behind an otherwise empty counter; assigned role comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Host", "Cocktail Waitress", "Manager", "Sommelier"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Host, Cocktail Waitress, Manager, and Sommelier and choose the option that fits the situation.",
+          "scenario": "The host welcomes guests. Cocktail waitress is a gendered serving role; manager coordinates operations, and sommelier handles specialist wine service.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who welcomes the guests in the chart?",
             "options": ["Host", "Cocktail Waitress", "Manager"],
             "expectedAnswer": "Host"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Host as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty reception station; the role is supplied by written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["DJ", "Promoter"],
-          "scenario": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DJ, and Promoter and choose the option that fits the situation.",
+          "scenario": "The DJ selects recorded music. The promoter instead advertises or organizes the event.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who selects recorded music in this chart?",
             "options": ["DJ", "Promoter", "Bartender"],
             "expectedAnswer": "DJ"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the DJ as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One modest male adult at an unlettered music console, no audience or bystanders. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: The Cocktail Bar",
-      "text": "At the cocktail bar, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Bartender, Barback, Mixologist, and Bouncer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Host, Cocktail Waitress, Manager, and Sommelier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers DJ and Promoter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Cocktail Bar. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a staffing chart",
+      "text": "A fictional staffing chart identifies responsibilities. The bartender prepares and serves drinks, and the barback stocks and organizes the service area. Mixologist describes a specialist in mixed-drink development or preparation. A bouncer handles venue security; the title does not grant unlimited authority. The host welcomes guests. Cocktail waitress is a gendered term for a woman serving drinks; server is a neutral alternative. The manager coordinates operations. A sommelier specializes in wine selection and service. A DJ selects recorded music, while a promoter advertises or organizes events. Responsibilities vary by workplace, so the trainee reads the actual assignments. Clothing and a generic venue photograph cannot establish any of these roles. The lesson practices professional terminology without requiring attendance, consumption or participation in an event.",
+      "imageBrief": "Support for Reading a staffing chart. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bartender, Barback, Mixologist, and Bouncer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The chart assigns drink preparation and service to the bartender. Barback supports the service area, mixologist specializes in mixed drinks, and bouncer handles security.\nWho prepares and serves drinks in the chart?",
         "answer": "Bartender",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Host, Cocktail Waitress, Manager, and Sommelier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The host welcomes guests. Cocktail waitress is a gendered serving role; manager coordinates operations, and sommelier handles specialist wine service.\nWho welcomes the guests in the chart?",
         "answer": "Host",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the cocktail bar setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare DJ, and Promoter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The DJ selects recorded music. The promoter instead advertises or organizes the event.\nWho selects recorded music in this chart?",
         "answer": "DJ",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A fictional staffing chart identifies responsibilities. The bartender prepares and serves drinks, and the barback stocks and organizes the service area. Mixologist describes a specialist in mixed-drink development or preparation. A bouncer handles venue security; the title does not grant unlimited authority. The host welcomes guests. Cocktail waitress is a gendered term for a woman serving drinks; server is a neutral alternative. The manager coordinates operations. A sommelier specializes in wine selection and service. A DJ selects recorded music, while a promoter advertises or organizes events. Responsibilities vary by workplace, so the trainee reads the actual assignments. Clothing and a generic venue photograph cannot establish any of these roles. The lesson practices professional terminology without requiring attendance, consumption or participation in an event.\nWhy does the trainee read the actual assignments?",
+        "answer": "Job titles and responsibilities vary among workplaces.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Bartender"
+        "prompt": "Explain the difference between “Bartender” and “Barback” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Mixologist"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Champagne Flute” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the cocktail bar task. Use Bartender, Barback, Mixologist, Bouncer, Host, Cocktail Waitress, Manager, Sommelier, DJ, and Promoter in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Bartender” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The chart assigns drink preparation and service to the bartender. Barback supports the service area, mixologist specializes in mixed drinks, and bouncer handles security.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Cocktail Bar: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from the cocktail bar in cultural or industry texts."
+      "title": "Reading a staffing chart",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A fictional staffing chart identifies responsibilities. The bartender prepares and serves drinks, and the barback stocks and organizes the service area. Mixologist describes a specialist in mixed-drink development or preparation. A bouncer handles venue security; the title does not grant unlimited authority. The host welcomes guests. Cocktail waitress is a gendered term for a woman serving drinks; server is a neutral alternative. The manager coordinates operations. A sommelier specializes in wine selection and service. A DJ selects recorded music, while a promoter advertises or organizes events. Responsibilities vary by workplace, so the trainee reads the actual assignments. Clothing and a generic venue photograph cannot establish any of these roles. The lesson practices professional terminology without requiring attendance, consumption or participation in an event. Ask: Why does the trainee read the actual assignments?"
     },
     "spacedReview": "1 lesson(s) back: Champagne Flute, Beer Mug from cocktail-bar-2\n3 lesson(s) back: Bordeaux, Burgundy from wine-cellar-3\n7 lesson(s) back: Dry, Sweet from wine-tasting-3"
   }

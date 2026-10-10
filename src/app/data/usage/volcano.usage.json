@@ -27,14 +27,14 @@
       "Tremor"
     ],
     "targetWordsArabic": [
-      "فوهة",
+      "فوهة بركانية",
       "حمم بركانية",
       "صهارة",
-      "فتحة تهوية",
-      "فوهة بركانية واسعة",
-      "قُمع",
+      "فتحة بركانية",
+      "كالديرا؛ منخفض بركاني واسع",
+      "مخروط بركاني",
       "أنبوب حمم بركانية",
-      "نابض ساخن",
+      "ينبوع حار",
       "نافورة مياه حارة طبيعية",
       "فوهة بخارية بركانية",
       "ثوران بركاني",
@@ -44,132 +44,115 @@
       "هزة أرضية خفيفة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "159-189 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Crater", "Lava", "Magma", "Vent"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.",
+          "scenario": "At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Crater", "Lava", "Magma"],
-            "expectedAnswer": "Crater"
+            "question": "Which term names molten rock beneath the surface?",
+            "options": ["Magma", "Crater", "Lava"],
+            "expectedAnswer": "Magma"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Crater as the central item; include Crater, Lava, and Magma naturally where visually appropriate, but make the real-world use of Crater the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Magma in the stated volcano account: At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Caldera", "Cone", "Lava Tube", "Hot Spring"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.",
+          "scenario": "The guide compares a Caldera, a large volcanic depression commonly associated with collapse, with a Cone built from erupted material. A Lava Tube is a passage formed within a lava flow, and a Hot Spring contains geothermally heated water. Visitors follow the authorized viewing arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the large volcanic depression?",
             "options": ["Caldera", "Cone", "Lava Tube"],
             "expectedAnswer": "Caldera"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Caldera as the central item; include Caldera, Cone, and Lava Tube naturally where visually appropriate, but make the real-world use of Caldera the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Caldera in the stated volcano account: The guide compares a Caldera, a large volcanic depression commonly associated with collapse, with a Cone built from erupted material. A Lava Tube is a passage formed within a lava flow, and a Hot Spring contains geothermally heated water. Visitors follow the authorized viewing arrangements. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Geyser", "Fumarole", "Eruption", "Lava Flow"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.",
+          "scenario": "A Geyser periodically ejects hot water and steam under its natural conditions. A Fumarole releases steam and gases from an opening. Eruption names the release of volcanic material, and Lava Flow names moving lava or its resulting deposit in the stated context.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Geyser", "Fumarole", "Eruption"],
-            "expectedAnswer": "Geyser"
+            "question": "Which opening releases steam and volcanic gases?",
+            "options": ["Fumarole", "Geyser", "Eruption"],
+            "expectedAnswer": "Fumarole"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Geyser as the central item; include Geyser, Fumarole, and Eruption naturally where visually appropriate, but make the real-world use of Geyser the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Fumarole in the stated volcano account: A Geyser periodically ejects hot water and steam under its natural conditions. A Fumarole releases steam and gases from an opening. Eruption names the release of volcanic material, and Lava Flow names moving lava or its resulting deposit in the stated context. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.",
+          "scenario": "The account distinguishes an Ash Cloud, a Pyroclastic Flow, and Tremor. A Pyroclastic Flow is a dangerous rapidly moving mixture of hot gas and volcanic particles near the ground. Tremor is shaking; no warning sign is interpreted as a guarantee that an area is safe.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Ash Cloud", "Pyroclastic Flow", "Tremor"],
-            "expectedAnswer": "Ash Cloud"
+            "question": "Which term names the dangerous rapidly moving hot mixture near the ground?",
+            "options": ["Pyroclastic Flow", "Ash Cloud", "Tremor"],
+            "expectedAnswer": "Pyroclastic Flow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Ash Cloud as the central item; include Ash Cloud, Pyroclastic Flow, and Tremor naturally where visually appropriate, but make the real-world use of Ash Cloud the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Pyroclastic Flow in the stated volcano account: The account distinguishes an Ash Cloud, a Pyroclastic Flow, and Tremor. A Pyroclastic Flow is a dangerous rapidly moving mixture of hot gas and volcanic particles near the ground. Tremor is shaking; no warning sign is interpreted as a guarantee that an area is safe. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The Volcano",
-      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Crater, Lava, Magma, and Vent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Caldera, Cone, Lava Tube, and Hot Spring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Geyser, Fumarole, Eruption, and Lava Flow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Ash Cloud, Pyroclastic Flow, and Tremor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Volcano: Comparing the named examples",
+      "text": "At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material. The guide compares a Caldera, a large volcanic depression commonly associated with collapse, with a Cone built from erupted material. A Lava Tube is a passage formed within a lava flow, and a Hot Spring contains geothermally heated water. Visitors follow the authorized viewing arrangements. A Geyser periodically ejects hot water and steam under its natural conditions. A Fumarole releases steam and gases from an opening. Eruption names the release of volcanic material, and Lava Flow names moving lava or its resulting deposit in the stated context. The account distinguishes an Ash Cloud, a Pyroclastic Flow, and Tremor. A Pyroclastic Flow is a dangerous rapidly moving mixture of hot gas and volcanic particles near the ground. Tremor is shaking; no warning sign is interpreted as a guarantee that an area is safe.",
+      "imageBrief": "One scientifically accurate volcano reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crater, Lava, Magma, and Vent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Crater",
+        "prompt": "At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material.\nWhich term names molten rock beneath the surface?",
+        "answer": "Magma",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Caldera, Cone, Lava Tube, and Hot Spring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide compares a Caldera, a large volcanic depression commonly associated with collapse, with a Cone built from erupted material. A Lava Tube is a passage formed within a lava flow, and a Hot Spring contains geothermally heated water. Visitors follow the authorized viewing arrangements.\nWhich term names the large volcanic depression?",
         "answer": "Caldera",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Geyser, Fumarole, Eruption, and Lava Flow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Geyser",
+        "prompt": "A Geyser periodically ejects hot water and steam under its natural conditions. A Fumarole releases steam and gases from an opening. Eruption names the release of volcanic material, and Lava Flow names moving lava or its resulting deposit in the stated context.\nWhich opening releases steam and volcanic gases?",
+        "answer": "Fumarole",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Ash Cloud, Pyroclastic Flow, and Tremor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Ash Cloud",
+        "prompt": "The account distinguishes an Ash Cloud, a Pyroclastic Flow, and Tremor. A Pyroclastic Flow is a dangerous rapidly moving mixture of hot gas and volcanic particles near the ground. Tremor is shaking; no warning sign is interpreted as a guarantee that an area is safe.\nWhich term names the dangerous rapidly moving hot mixture near the ground?",
+        "answer": "Pyroclastic Flow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material. The guide compares a Caldera, a large volcanic depression commonly associated with collapse, with a Cone built from erupted material. A Lava Tube is a passage formed within a lava flow, and a Hot Spring contains geothermally heated water. Visitors follow the authorized viewing arrangements. A Geyser periodically ejects hot water and steam under its natural conditions. A Fumarole releases steam and gases from an opening. Eruption names the release of volcanic material, and Lava Flow names moving lava or its resulting deposit in the stated context. The account distinguishes an Ash Cloud, a Pyroclastic Flow, and Tremor. A Pyroclastic Flow is a dangerous rapidly moving mixture of hot gas and volcanic particles near the ground. Tremor is shaking; no warning sign is interpreted as a guarantee that an area is safe.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Crater"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Vent"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Splash” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the volcano task. Use Crater, Lava, Magma, Vent, Caldera, Cone, Lava Tube, Hot Spring, Geyser, Fumarole, Eruption, Lava Flow, Ash Cloud, Pyroclastic Flow, and Tremor in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Crater, Lava, Magma, Vent, Caldera, Cone, Lava Tube, Hot Spring, Geyser, Fumarole, Eruption, Lava Flow, Ash Cloud, Pyroclastic Flow, Tremor. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Volcano: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Volcano: Comparing the named examples",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "At the visitor center, a diagram distinguishes the Crater and Vent from volcanic material. Magma is molten rock beneath the surface; once erupted, it is called Lava. A photograph cannot establish the location of unseen underground material. Which term names molten rock beneath the surface?"
     },
     "spacedReview": "1 lesson(s) back: Splash, Echo from jungle-5\n3 lesson(s) back: Liana, Canopy from jungle-3\n7 lesson(s) back: Drought, Dry Air from desert-4"
   },
@@ -203,9 +186,9 @@
     "targetWordsArabic": [
       "زلزال",
       "انفجار",
-      "فتحة تهوية يطبخ بالبخار",
+      "فتحة خروج بخار",
       "تدفّق طيني",
-      "انبعاث وقود",
+      "انبعاث غازات",
       "بازلت",
       "سبج",
       "حجر خفاف",
@@ -218,132 +201,115 @@
       "أحفورة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "145-175 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Earthquake", "Explosion", "Steam Vent", "Mudflow"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.",
+          "scenario": "An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Earthquake", "Explosion", "Steam Vent"],
-            "expectedAnswer": "Earthquake"
+            "question": "Which flow contains water, earth, and debris?",
+            "options": ["Mudflow", "Earthquake", "Explosion"],
+            "expectedAnswer": "Mudflow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Earthquake as the central item; include Earthquake, Explosion, and Steam Vent naturally where visually appropriate, but make the real-world use of Earthquake the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Mudflow in the stated volcano account: An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gas Emission", "Basalt", "Obsidian", "Pumice"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.",
+          "scenario": "Gas Emission means the release of gases. The rock display contrasts dark Basalt, glassy Obsidian, and porous Pumice. Pumice contains many cavities left by gas; appearance alone does not identify every unknown sample with certainty.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Gas Emission", "Basalt", "Obsidian"],
-            "expectedAnswer": "Gas Emission"
+            "question": "Which named rock is described as highly porous?",
+            "options": ["Pumice", "Gas Emission", "Basalt"],
+            "expectedAnswer": "Pumice"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Gas Emission as the central item; include Gas Emission, Basalt, and Obsidian naturally where visually appropriate, but make the real-world use of Gas Emission the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Pumice in the stated volcano account: Gas Emission means the release of gases. The rock display contrasts dark Basalt, glassy Obsidian, and porous Pumice. Pumice contains many cavities left by gas; appearance alone does not identify every unknown sample with certainty. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Granite", "Limestone", "Tuff", "Lava Rock"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes crystalline Granite from Limestone, a sedimentary rock rich in calcium carbonate. Tuff is formed largely from consolidated volcanic ash. Lava Rock is a broad name for rock formed from cooled lava, not a separate precise mineral species.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Granite", "Limestone", "Tuff"],
-            "expectedAnswer": "Granite"
+            "question": "Which rock is formed largely from consolidated volcanic ash?",
+            "options": ["Tuff", "Granite", "Limestone"],
+            "expectedAnswer": "Tuff"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Granite as the central item; include Granite, Limestone, and Tuff naturally where visually appropriate, but make the real-world use of Granite the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Tuff in the stated volcano account: The guide distinguishes crystalline Granite from Limestone, a sedimentary rock rich in calcium carbonate. Tuff is formed largely from consolidated volcanic ash. Lava Rock is a broad name for rock formed from cooled lava, not a separate precise mineral species. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.",
+          "scenario": "Volcanic Glass forms when molten material cools without developing a fully crystalline structure. A Mineral Crystal has ordered internal structure. A Fossil preserves remains or traces of past life; the display separates biological evidence from mineral structure.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Volcanic Glass", "Mineral Crystal", "Fossil"],
-            "expectedAnswer": "Volcanic Glass"
+            "question": "Which term names preserved remains or traces of past life?",
+            "options": ["Fossil", "Volcanic Glass", "Mineral Crystal"],
+            "expectedAnswer": "Fossil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Volcanic Glass as the central item; include Volcanic Glass, Mineral Crystal, and Fossil naturally where visually appropriate, but make the real-world use of Volcanic Glass the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Fossil in the stated volcano account: Volcanic Glass forms when molten material cools without developing a fully crystalline structure. A Mineral Crystal has ordered internal structure. A Fossil preserves remains or traces of past life; the display separates biological evidence from mineral structure. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Volcano",
-      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Earthquake, Explosion, Steam Vent, and Mudflow. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gas Emission, Basalt, Obsidian, and Pumice. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Granite, Limestone, Tuff, and Lava Rock. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Volcanic Glass, Mineral Crystal, and Fossil. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Volcano: Understanding the important distinctions",
+      "text": "An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction. Gas Emission means the release of gases. The rock display contrasts dark Basalt, glassy Obsidian, and porous Pumice. Pumice contains many cavities left by gas; appearance alone does not identify every unknown sample with certainty. The guide distinguishes crystalline Granite from Limestone, a sedimentary rock rich in calcium carbonate. Tuff is formed largely from consolidated volcanic ash. Lava Rock is a broad name for rock formed from cooled lava, not a separate precise mineral species. Volcanic Glass forms when molten material cools without developing a fully crystalline structure. A Mineral Crystal has ordered internal structure. A Fossil preserves remains or traces of past life; the display separates biological evidence from mineral structure.",
+      "imageBrief": "One scientifically accurate volcano reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Earthquake, Explosion, Steam Vent, and Mudflow and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Earthquake",
+        "prompt": "An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction.\nWhich flow contains water, earth, and debris?",
+        "answer": "Mudflow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gas Emission, Basalt, Obsidian, and Pumice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Gas Emission",
+        "prompt": "Gas Emission means the release of gases. The rock display contrasts dark Basalt, glassy Obsidian, and porous Pumice. Pumice contains many cavities left by gas; appearance alone does not identify every unknown sample with certainty.\nWhich named rock is described as highly porous?",
+        "answer": "Pumice",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Granite, Limestone, Tuff, and Lava Rock and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Granite",
+        "prompt": "The guide distinguishes crystalline Granite from Limestone, a sedimentary rock rich in calcium carbonate. Tuff is formed largely from consolidated volcanic ash. Lava Rock is a broad name for rock formed from cooled lava, not a separate precise mineral species.\nWhich rock is formed largely from consolidated volcanic ash?",
+        "answer": "Tuff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volcanic Glass, Mineral Crystal, and Fossil and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Volcanic Glass",
+        "prompt": "Volcanic Glass forms when molten material cools without developing a fully crystalline structure. A Mineral Crystal has ordered internal structure. A Fossil preserves remains or traces of past life; the display separates biological evidence from mineral structure.\nWhich term names preserved remains or traces of past life?",
+        "answer": "Fossil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction. Gas Emission means the release of gases. The rock display contrasts dark Basalt, glassy Obsidian, and porous Pumice. Pumice contains many cavities left by gas; appearance alone does not identify every unknown sample with certainty. The guide distinguishes crystalline Granite from Limestone, a sedimentary rock rich in calcium carbonate. Tuff is formed largely from consolidated volcanic ash. Lava Rock is a broad name for rock formed from cooled lava, not a separate precise mineral species. Volcanic Glass forms when molten material cools without developing a fully crystalline structure. A Mineral Crystal has ordered internal structure. A Fossil preserves remains or traces of past life; the display separates biological evidence from mineral structure.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Earthquake"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Mudflow"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Crater” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the volcano task. Use Earthquake, Explosion, Steam Vent, Mudflow, Gas Emission, Basalt, Obsidian, Pumice, Granite, Limestone, Tuff, Lava Rock, Volcanic Glass, Mineral Crystal, and Fossil in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Earthquake, Explosion, Steam Vent, Mudflow, Gas Emission, Basalt, Obsidian, Pumice, Granite, Limestone, Tuff, Lava Rock, Volcanic Glass, Mineral Crystal, Fossil. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Volcano: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Volcano: Understanding the important distinctions",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "An Earthquake shakes the ground, an Explosion releases energy suddenly, and a Steam Vent releases steam. A Mudflow moves water mixed with earth and debris; a volcanic lahar is one important example. The discussion identifies hazards without giving a route or timing prediction. Which flow contains water, earth, and debris?"
     },
     "spacedReview": "1 lesson(s) back: Crater, Lava from volcano-1\n3 lesson(s) back: Lagoon, Understory from jungle-4\n7 lesson(s) back: Sand Castle, Footprint from desert-5"
   },
@@ -381,7 +347,7 @@
       "كاميرا حرارية",
       "محطة GPS للرصد",
       "محطة طقس",
-      "طائرة مسيّرة",
+      "طائرة مسيرة",
       "صورة قمر صناعي",
       "عدة أخذ عينات",
       "كاشف إشعاع",
@@ -392,132 +358,115 @@
       "جرف"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "144-174 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Seismograph", "Tiltmeter", "Gas Analyzer", "Thermal Camera"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.",
+          "scenario": "A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Seismograph", "Tiltmeter", "Gas Analyzer"],
-            "expectedAnswer": "Seismograph"
+            "question": "Which instrument measures small changes in ground slope?",
+            "options": ["Tiltmeter", "Seismograph", "Gas Analyzer"],
+            "expectedAnswer": "Tiltmeter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Seismograph as the central item; include Seismograph, Tiltmeter, and Gas Analyzer naturally where visually appropriate, but make the real-world use of Seismograph the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Tiltmeter in the stated volcano account: A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["GPS Station", "Weather Station", "Drone", "Satellite Image"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.",
+          "scenario": "A GPS Station measures position changes using satellite signals. A Weather Station measures atmospheric conditions. An authorized Drone may gather remote observations, and a Satellite Image provides a view from an orbiting instrument. Equipment does not certify the area safe for visitors.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which fixed monitoring site measures position changes using satellite signals?",
             "options": ["GPS Station", "Weather Station", "Drone"],
             "expectedAnswer": "GPS Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or approaching the GPS Station as the main location; include GPS Station, Weather Station, and Drone naturally where visually appropriate, but make the real-world use of GPS Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for GPS Station in the stated volcano account: A GPS Station measures position changes using satellite signals. A Weather Station measures atmospheric conditions. An authorized Drone may gather remote observations, and a Satellite Image provides a view from an orbiting instrument. Equipment does not certify the area safe for visitors. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sample Kit", "Radiation Detector", "Lava Field", "Volcanic Island"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.",
+          "scenario": "A Sample Kit holds collection tools, while a Radiation Detector measures ionizing radiation for its specified task, not lava temperature. A Lava Field contains deposits from lava flows. A Volcanic Island is an island formed through volcanic activity.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sample Kit", "Radiation Detector", "Lava Field"],
-            "expectedAnswer": "Sample Kit"
+            "question": "Which landscape contains deposits from lava flows?",
+            "options": ["Lava Field", "Sample Kit", "Radiation Detector"],
+            "expectedAnswer": "Lava Field"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Sample Kit as the central item; include Sample Kit, Radiation Detector, and Lava Field naturally where visually appropriate, but make the real-world use of Sample Kit the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Lava Field in the stated volcano account: A Sample Kit holds collection tools, while a Radiation Detector measures ionizing radiation for its specified task, not lava temperature. A Lava Field contains deposits from lava flows. A Volcanic Island is an island formed through volcanic activity. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mountain Peak", "Valley", "Cliff"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.",
+          "scenario": "The Mountain Peak is the highest part of the mountain. A Valley lies between higher areas, and a Cliff has a steep face. These geographic descriptions do not authorize travel through a volcanic landscape.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature is the mountain’s highest part?",
             "options": ["Mountain Peak", "Valley", "Cliff"],
             "expectedAnswer": "Mountain Peak"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Mountain Peak as the central item; include Mountain Peak, Valley, and Cliff naturally where visually appropriate, but make the real-world use of Mountain Peak the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Mountain Peak in the stated volcano account: The Mountain Peak is the highest part of the mountain. A Valley lies between higher areas, and a Cliff has a steep face. These geographic descriptions do not authorize travel through a volcanic landscape. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: The Volcano",
-      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers GPS Station, Weather Station, Drone, and Satellite Image. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sample Kit, Radiation Detector, Lava Field, and Volcanic Island. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mountain Peak, Valley, and Cliff. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Volcano: Reading the observation record",
+      "text": "A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture. A GPS Station measures position changes using satellite signals. A Weather Station measures atmospheric conditions. An authorized Drone may gather remote observations, and a Satellite Image provides a view from an orbiting instrument. Equipment does not certify the area safe for visitors. A Sample Kit holds collection tools, while a Radiation Detector measures ionizing radiation for its specified task, not lava temperature. A Lava Field contains deposits from lava flows. A Volcanic Island is an island formed through volcanic activity. The Mountain Peak is the highest part of the mountain. A Valley lies between higher areas, and a Cliff has a steep face. These geographic descriptions do not authorize travel through a volcanic landscape.",
+      "imageBrief": "One scientifically accurate volcano reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seismograph, Tiltmeter, Gas Analyzer, and Thermal Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Seismograph",
+        "prompt": "A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture.\nWhich instrument measures small changes in ground slope?",
+        "answer": "Tiltmeter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare GPS Station, Weather Station, Drone, and Satellite Image and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "A GPS Station measures position changes using satellite signals. A Weather Station measures atmospheric conditions. An authorized Drone may gather remote observations, and a Satellite Image provides a view from an orbiting instrument. Equipment does not certify the area safe for visitors.\nWhich fixed monitoring site measures position changes using satellite signals?",
         "answer": "GPS Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample Kit, Radiation Detector, Lava Field, and Volcanic Island and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sample Kit",
+        "prompt": "A Sample Kit holds collection tools, while a Radiation Detector measures ionizing radiation for its specified task, not lava temperature. A Lava Field contains deposits from lava flows. A Volcanic Island is an island formed through volcanic activity.\nWhich landscape contains deposits from lava flows?",
+        "answer": "Lava Field",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mountain Peak, Valley, and Cliff and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Mountain Peak is the highest part of the mountain. A Valley lies between higher areas, and a Cliff has a steep face. These geographic descriptions do not authorize travel through a volcanic landscape.\nWhich feature is the mountain’s highest part?",
         "answer": "Mountain Peak",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture. A GPS Station measures position changes using satellite signals. A Weather Station measures atmospheric conditions. An authorized Drone may gather remote observations, and a Satellite Image provides a view from an orbiting instrument. Equipment does not certify the area safe for visitors. A Sample Kit holds collection tools, while a Radiation Detector measures ionizing radiation for its specified task, not lava temperature. A Lava Field contains deposits from lava flows. A Volcanic Island is an island formed through volcanic activity. The Mountain Peak is the highest part of the mountain. A Valley lies between higher areas, and a Cliff has a steep face. These geographic descriptions do not authorize travel through a volcanic landscape.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Seismograph"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Thermal Camera"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Earthquake” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the volcano task. Use Seismograph, Tiltmeter, Gas Analyzer, Thermal Camera, GPS Station, Weather Station, Drone, Satellite Image, Sample Kit, Radiation Detector, Lava Field, Volcanic Island, Mountain Peak, Valley, and Cliff in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Seismograph, Tiltmeter, Gas Analyzer, Thermal Camera, GPS Station, Weather Station, Drone, Satellite Image, Sample Kit, Radiation Detector, Lava Field, Volcanic Island, Mountain Peak, Valley, Cliff. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Volcano: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Volcano: Reading the observation record",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "A Seismograph records ground motion. A Tiltmeter measures small changes in slope, a Gas Analyzer examines gas composition or concentration, and a Thermal Camera maps infrared differences. Specialists interpret the measurements together rather than predicting an eruption from one picture. Which instrument measures small changes in ground slope?"
     },
     "spacedReview": "1 lesson(s) back: Earthquake, Explosion from volcano-2\n3 lesson(s) back: Splash, Echo from jungle-5\n7 lesson(s) back: Jaguar, Toucan from jungle-1"
   },
@@ -557,7 +506,7 @@
       "مسار إخلاء",
       "صفارة إنذار",
       "قناع واقٍ من الغازات",
-      "قبعة صلب",
+      "خوذة سلامة",
       "بدلة واقية",
       "مأوى طوارئ",
       "مروحية",
@@ -566,132 +515,115 @@
       "منطقة خطر"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "144-174 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cave", "Lake", "Steam Cloud", "Black Sand Beach"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.",
+          "scenario": "The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cave", "Lake", "Steam Cloud"],
-            "expectedAnswer": "Cave"
+            "question": "Which visible cloud consists of condensed droplets?",
+            "options": ["Steam Cloud", "Cave", "Lake"],
+            "expectedAnswer": "Steam Cloud"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Cave as the central item; include Cave, Lake, and Steam Cloud naturally where visually appropriate, but make the real-world use of Cave the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Steam Cloud in the stated volcano account: The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rock Formation", "Evacuation Route", "Warning Siren", "Gas Mask"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.",
+          "scenario": "A Rock Formation is a recognizable rock arrangement. An Evacuation Route is a path specified by authorities for leaving danger, and a Warning Siren alerts people. A Gas Mask is only suitable for its specified hazards and does not make approaching a volcano safe.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Rock Formation", "Evacuation Route", "Warning Siren"],
-            "expectedAnswer": "Rock Formation"
+            "question": "Which target names the authority-specified path for leaving danger?",
+            "options": ["Evacuation Route", "Rock Formation", "Warning Siren"],
+            "expectedAnswer": "Evacuation Route"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Rock Formation as the central item; include Rock Formation, Evacuation Route, and Warning Siren naturally where visually appropriate, but make the real-world use of Rock Formation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Evacuation Route in the stated volcano account: A Rock Formation is a recognizable rock arrangement. An Evacuation Route is a path specified by authorities for leaving danger, and a Warning Siren alerts people. A Gas Mask is only suitable for its specified hazards and does not make approaching a volcano safe. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hard Hat", "Protective Suit", "Emergency Shelter", "Helicopter"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.",
+          "scenario": "A Hard Hat and Protective Suit address specified workplace hazards under professional arrangements. An Emergency Shelter provides temporary assistance or protection, while a Helicopter is a rotor-powered aircraft. No item guarantees survival in every volcanic event.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Hard Hat", "Protective Suit", "Emergency Shelter"],
-            "expectedAnswer": "Hard Hat"
+            "question": "Which target names the place for temporary emergency assistance or protection?",
+            "options": ["Emergency Shelter", "Hard Hat", "Protective Suit"],
+            "expectedAnswer": "Emergency Shelter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Hard Hat as the central item; include Hard Hat, Protective Suit, and Emergency Shelter naturally where visually appropriate, but make the real-world use of Hard Hat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Emergency Shelter in the stated volcano account: A Hard Hat and Protective Suit address specified workplace hazards under professional arrangements. An Emergency Shelter provides temporary assistance or protection, while a Helicopter is a rotor-powered aircraft. No item guarantees survival in every volcanic event. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rescue Team", "Barrier", "Hazard Zone"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.",
+          "scenario": "A Rescue Team operates under authorized arrangements. A Barrier restricts entry to the Hazard Zone. The visitor stays within the permitted area and uses the official instructions rather than a generated illustration to understand restrictions.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Rescue Team", "Barrier", "Hazard Zone"],
-            "expectedAnswer": "Rescue Team"
+            "question": "Which physical structure restricts entry?",
+            "options": ["Barrier", "Rescue Team", "Hazard Zone"],
+            "expectedAnswer": "Barrier"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult working with or speaking to the Rescue Team; include Rescue Team, Barrier, and Hazard Zone naturally where visually appropriate, but make the real-world use of Rescue Team the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Barrier in the stated volcano account: A Rescue Team operates under authorized arrangements. A Barrier restricts entry to the Hazard Zone. The visitor stays within the permitted area and uses the official instructions rather than a generated illustration to understand restrictions. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The Volcano",
-      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Cave, Lake, Steam Cloud, and Black Sand Beach. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rock Formation, Evacuation Route, Warning Siren, and Gas Mask. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hard Hat, Protective Suit, Emergency Shelter, and Helicopter. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rescue Team, Barrier, and Hazard Zone. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Volcano: A guided visitor discussion",
+      "text": "The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock. A Rock Formation is a recognizable rock arrangement. An Evacuation Route is a path specified by authorities for leaving danger, and a Warning Siren alerts people. A Gas Mask is only suitable for its specified hazards and does not make approaching a volcano safe. A Hard Hat and Protective Suit address specified workplace hazards under professional arrangements. An Emergency Shelter provides temporary assistance or protection, while a Helicopter is a rotor-powered aircraft. No item guarantees survival in every volcanic event. A Rescue Team operates under authorized arrangements. A Barrier restricts entry to the Hazard Zone. The visitor stays within the permitted area and uses the official instructions rather than a generated illustration to understand restrictions.",
+      "imageBrief": "One scientifically accurate volcano reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cave, Lake, Steam Cloud, and Black Sand Beach and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cave",
+        "prompt": "The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock.\nWhich visible cloud consists of condensed droplets?",
+        "answer": "Steam Cloud",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Evacuation Route, Warning Siren, and Gas Mask and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Rock Formation",
+        "prompt": "A Rock Formation is a recognizable rock arrangement. An Evacuation Route is a path specified by authorities for leaving danger, and a Warning Siren alerts people. A Gas Mask is only suitable for its specified hazards and does not make approaching a volcano safe.\nWhich target names the authority-specified path for leaving danger?",
+        "answer": "Evacuation Route",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hard Hat, Protective Suit, Emergency Shelter, and Helicopter and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Hard Hat",
+        "prompt": "A Hard Hat and Protective Suit address specified workplace hazards under professional arrangements. An Emergency Shelter provides temporary assistance or protection, while a Helicopter is a rotor-powered aircraft. No item guarantees survival in every volcanic event.\nWhich target names the place for temporary emergency assistance or protection?",
+        "answer": "Emergency Shelter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rescue Team, Barrier, and Hazard Zone and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Rescue Team",
+        "prompt": "A Rescue Team operates under authorized arrangements. A Barrier restricts entry to the Hazard Zone. The visitor stays within the permitted area and uses the official instructions rather than a generated illustration to understand restrictions.\nWhich physical structure restricts entry?",
+        "answer": "Barrier",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock. A Rock Formation is a recognizable rock arrangement. An Evacuation Route is a path specified by authorities for leaving danger, and a Warning Siren alerts people. A Gas Mask is only suitable for its specified hazards and does not make approaching a volcano safe. A Hard Hat and Protective Suit address specified workplace hazards under professional arrangements. An Emergency Shelter provides temporary assistance or protection, while a Helicopter is a rotor-powered aircraft. No item guarantees survival in every volcanic event. A Rescue Team operates under authorized arrangements. A Barrier restricts entry to the Hazard Zone. The visitor stays within the permitted area and uses the official instructions rather than a generated illustration to understand restrictions.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Cave"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Black Sand Beach"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Seismograph” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the volcano task. Use Cave, Lake, Steam Cloud, Black Sand Beach, Rock Formation, Evacuation Route, Warning Siren, Gas Mask, Hard Hat, Protective Suit, Emergency Shelter, Helicopter, Rescue Team, Barrier, and Hazard Zone in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Cave, Lake, Steam Cloud, Black Sand Beach, Rock Formation, Evacuation Route, Warning Siren, Gas Mask, Hard Hat, Protective Suit, Emergency Shelter, Helicopter, Rescue Team, Barrier, Hazard Zone. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Volcano: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Volcano: A guided visitor discussion",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The display shows a Cave and Lake in separate settings. A Steam Cloud is visible because droplets form when water vapor condenses; water vapor itself is invisible. A Black Sand Beach contains dark grains often derived from volcanic rock. Which visible cloud consists of condensed droplets?"
     },
     "spacedReview": "1 lesson(s) back: Seismograph, Tiltmeter from volcano-3\n3 lesson(s) back: Crater, Lava from volcano-1\n7 lesson(s) back: Mosquito, Dragonfly from jungle-2"
   },
@@ -717,103 +649,86 @@
     ],
     "targetWordsArabic": [
       "الوشاح الأرضي",
-      "الكبريت",
+      "كبريت",
       "الكوارتز",
       "الفلسبار",
       "بلورة",
       "صفيحة تكتونية",
       "فتحة حرارية",
-      "خامد"
+      "خامد حاليًا"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "72-102 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Mantle", "Sulfur", "Quartz", "Feldspar"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.",
+          "scenario": "The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which layer lies between Earth’s crust and core?",
             "options": ["Mantle", "Sulfur", "Quartz"],
             "expectedAnswer": "Mantle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Mantle as the central item; include Mantle, Sulfur, and Quartz naturally where visually appropriate, but make the real-world use of Mantle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Mantle in the stated volcano account: The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crystal", "Tectonic Plate", "Thermal Vent", "Dormant"],
-          "scenario": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.",
+          "scenario": "A Crystal has ordered internal structure. A Tectonic Plate is a rigid part of Earth’s outer shell, and a Thermal Vent releases heated fluids or gases. Dormant means not erupting now but capable of erupting again; it does not mean safe or extinct.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Crystal", "Tectonic Plate", "Thermal Vent"],
-            "expectedAnswer": "Crystal"
+            "question": "Which target means not erupting now but capable of erupting again?",
+            "options": ["Dormant", "Crystal", "Tectonic Plate"],
+            "expectedAnswer": "Dormant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Crystal as the central item; include Crystal, Tectonic Plate, and Thermal Vent naturally where visually appropriate, but make the real-world use of Crystal the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Dormant in the stated volcano account: A Crystal has ordered internal structure. A Tectonic Plate is a rigid part of Earth’s outer shell, and a Thermal Vent releases heated fluids or gases. Dormant means not erupting now but capable of erupting again; it does not mean safe or extinct. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written volcano account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Volcano",
-      "text": "At the volcano, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Mantle, Sulfur, Quartz, and Feldspar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Crystal, Tectonic Plate, Thermal Vent, and Dormant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Volcano. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Volcano: Questions for the specialist",
+      "text": "The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma. A Crystal has ordered internal structure. A Tectonic Plate is a rigid part of Earth’s outer shell, and a Thermal Vent releases heated fluids or gases. Dormant means not erupting now but capable of erupting again; it does not mean safe or extinct.",
+      "imageBrief": "One scientifically accurate volcano reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mantle, Sulfur, Quartz, and Feldspar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma.\nWhich layer lies between Earth’s crust and core?",
         "answer": "Mantle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the volcano setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Crystal, Tectonic Plate, Thermal Vent, and Dormant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Crystal",
+        "prompt": "A Crystal has ordered internal structure. A Tectonic Plate is a rigid part of Earth’s outer shell, and a Thermal Vent releases heated fluids or gases. Dormant means not erupting now but capable of erupting again; it does not mean safe or extinct.\nWhich target means not erupting now but capable of erupting again?",
+        "answer": "Dormant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma. A Crystal has ordered internal structure. A Tectonic Plate is a rigid part of Earth’s outer shell, and a Thermal Vent releases heated fluids or gases. Dormant means not erupting now but capable of erupting again; it does not mean safe or extinct.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Mantle"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Feldspar"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cave” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the volcano task. Use Mantle, Sulfur, Quartz, Feldspar, Crystal, Tectonic Plate, Thermal Vent, and Dormant in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Mantle, Sulfur, Quartz, Feldspar, Crystal, Tectonic Plate, Thermal Vent, Dormant. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Volcano: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Volcano: Questions for the specialist",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The guide describes the Mantle as the rocky layer between Earth’s crust and core. Sulfur is a chemical element; Quartz and Feldspar are mineral groups or species represented in the rock collection. Not every mantle region is liquid magma. Which layer lies between Earth’s crust and core?"
     },
     "spacedReview": "1 lesson(s) back: Cave, Lake from volcano-4\n3 lesson(s) back: Earthquake, Explosion from volcano-2\n7 lesson(s) back: Liana, Canopy from jungle-3"
   }

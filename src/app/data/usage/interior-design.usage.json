@@ -27,16 +27,16 @@
       "Tile"
     ],
     "targetWordsArabic": [
-      "معاصر",
-      "تقليدي",
-      "إسكندنافي",
-      "صناعي",
-      "بوهيمي",
+      "تصميم معاصر",
+      "تصميم تقليدي",
+      "تصميم إسكندنافي",
+      "تصميم صناعي",
+      "تصميم بوهيمي",
       "منتصف القرن",
-      "ريفي",
+      "تصميم ريفي",
       "طراز آرت ديكو",
-      "ياباني",
-      "ساحلي",
+      "تصميم مستوحى من التقاليد اليابانية",
+      "تصميم ساحلي",
       "مجموعة ألوان متناسقة",
       "جدار مميز",
       "ورق حائط",
@@ -44,136 +44,122 @@
       "بلاط"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Contemporary", "Traditional", "Scandinavian", "Industrial"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contemporary, Traditional, Scandinavian, and Industrial and choose the option that fits the situation.",
+          "scenario": "Hana's first concept is Contemporary, reflecting current design approaches. Traditional draws on established forms; Scandinavian and Industrial describe different influences rather than the same style.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which label describes the first concept's current approach?",
             "options": ["Contemporary", "Traditional", "Scandinavian"],
             "expectedAnswer": "Contemporary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Contemporary as the central item; include Contemporary, Traditional, and Scandinavian naturally where visually appropriate, but make the real-world use of Contemporary the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A simple contemporary room with current furniture forms; no claim that appearance alone certifies its style. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bohemian", "Mid-Century", "Farmhouse", "Art Deco"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bohemian, Mid-Century, Farmhouse, and Art Deco and choose the option that fits the situation.",
+          "scenario": "Hana calls the expressive mix of fabrics and patterns Bohemian. Mid-Century, Farmhouse and Art Deco refer to other design influences.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which label names the expressive mix in the stated concept?",
             "options": ["Bohemian", "Mid-Century", "Farmhouse"],
             "expectedAnswer": "Bohemian"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Bohemian as the central item; include Bohemian, Mid-Century, and Farmhouse naturally where visually appropriate, but make the real-world use of Bohemian the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An empty Bohemian-inspired room with layered textiles and patterns, no people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Japanese", "Coastal", "Color Palette", "Accent Wall"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Japanese, Coastal, Color Palette, and Accent Wall and choose the option that fits the situation.",
+          "scenario": "The client chooses a Japanese-inspired concept rather than Coastal. Hana prepares the color palette and then decides which wall will be the accent wall.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which influence does the client choose in the text?",
             "options": ["Japanese", "Coastal", "Color Palette"],
             "expectedAnswer": "Japanese"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Japanese as the central item; include Japanese, Coastal, and Color Palette naturally where visually appropriate, but make the real-world use of Japanese the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A restrained Japanese-inspired room with low furniture and sliding partitions; no cultural stereotype or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Wallpaper", "Paint", "Tile"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wallpaper, Paint, and Tile and choose the option that fits the situation.",
+          "scenario": "Hana chooses wallpaper, a sheet covering for the wall. Paint is an applied coating, whereas tile consists of hard individual pieces.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which finish is the sheet wall covering?",
             "options": ["Wallpaper", "Paint", "Tile"],
             "expectedAnswer": "Wallpaper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Wallpaper as the central item; include Wallpaper, Paint, and Tile naturally where visually appropriate, but make the real-world use of Wallpaper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One partially unrolled wallpaper sheet beside a wall, pattern visible without letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Interior Design",
-      "text": "At the interior design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Contemporary, Traditional, Scandinavian, and Industrial. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bohemian, Mid-Century, Farmhouse, and Art Deco. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Japanese, Coastal, Color Palette, and Accent Wall. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Wallpaper, Paint, and Tile. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Interior Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing a room concept",
+      "text": "At a room-planning workshop, Hana compares style descriptions rather than assumes every room has one label. Contemporary reflects current approaches, Traditional draws on established forms, and Scandinavian often emphasizes simple function and light. Industrial may expose structural or service elements. Bohemian mixes expressive materials and patterns. Mid-Century refers here to mid-twentieth-century design influences, while Farmhouse draws on rural domestic forms. Art Deco often uses geometric decoration. Japanese describes influences from Japanese design traditions, and Coastal evokes a seaside setting. Hana prepares a color palette before selecting an accent wall. Wallpaper is a wall covering, paint is a coating, and tile is a hard modular finish. She explains how the choices address the brief without turning cultural labels into fixed rules about people's homes.",
+      "imageBrief": "Support for Discussing a room concept. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contemporary, Traditional, Scandinavian, and Industrial and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Hana's first concept is Contemporary, reflecting current design approaches. Traditional draws on established forms; Scandinavian and Industrial describe different influences rather than the same style.\nWhich label describes the first concept's current approach?",
         "answer": "Contemporary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bohemian, Mid-Century, Farmhouse, and Art Deco and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Hana calls the expressive mix of fabrics and patterns Bohemian. Mid-Century, Farmhouse and Art Deco refer to other design influences.\nWhich label names the expressive mix in the stated concept?",
         "answer": "Bohemian",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Japanese, Coastal, Color Palette, and Accent Wall and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The client chooses a Japanese-inspired concept rather than Coastal. Hana prepares the color palette and then decides which wall will be the accent wall.\nWhich influence does the client choose in the text?",
         "answer": "Japanese",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Wallpaper, Paint, and Tile and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Hana chooses wallpaper, a sheet covering for the wall. Paint is an applied coating, whereas tile consists of hard individual pieces.\nWhich finish is the sheet wall covering?",
         "answer": "Wallpaper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "At a room-planning workshop, Hana compares style descriptions rather than assumes every room has one label. Contemporary reflects current approaches, Traditional draws on established forms, and Scandinavian often emphasizes simple function and light. Industrial may expose structural or service elements. Bohemian mixes expressive materials and patterns. Mid-Century refers here to mid-twentieth-century design influences, while Farmhouse draws on rural domestic forms. Art Deco often uses geometric decoration. Japanese describes influences from Japanese design traditions, and Coastal evokes a seaside setting. Hana prepares a color palette before selecting an accent wall. Wallpaper is a wall covering, paint is a coating, and tile is a hard modular finish. She explains how the choices address the brief without turning cultural labels into fixed rules about people's homes.\nWhy does Hana explain the choices against the brief?",
+        "answer": "Style labels alone do not determine which materials suit the room.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Contemporary"
+        "prompt": "Explain the difference between “Contemporary” and “Traditional” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Scandinavian"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dome” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the interior design task. Use Contemporary, Traditional, Scandinavian, Industrial, Bohemian, Mid-Century, Farmhouse, Art Deco, Japanese, Coastal, Color Palette, Accent Wall, Wallpaper, Paint, and Tile in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Contemporary” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Hana's first concept is Contemporary, reflecting current design approaches. Traditional draws on established forms; Scandinavian and Industrial describe different influences rather than the same style.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Interior Design: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing a room concept",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "At a room-planning workshop, Hana compares style descriptions rather than assumes every room has one label. Contemporary reflects current approaches, Traditional draws on established forms, and Scandinavian often emphasizes simple function and light. Industrial may expose structural or service elements. Bohemian mixes expressive materials and patterns. Mid-Century refers here to mid-twentieth-century design influences, while Farmhouse draws on rural domestic forms. Art Deco often uses geometric decoration. Japanese describes influences from Japanese design traditions, and Coastal evokes a seaside setting. Hana prepares a color palette before selecting an accent wall. Wallpaper is a wall covering, paint is a coating, and tile is a hard modular finish. She explains how the choices address the brief without turning cultural labels into fixed rules about people's homes. Ask: Why does Hana explain the choices against the brief?"
     },
     "spacedReview": "1 lesson(s) back: Dome, Arch from architecture-styles-3\n3 lesson(s) back: Greek, Roman from architecture-styles-1\n7 lesson(s) back: Model Making Kit, Laser Cutter from architect-s-studio-3"
   },
@@ -206,7 +192,7 @@
     ],
     "targetWordsArabic": [
       "خشب صلب",
-      "موكيت / سجاد شامل",
+      "سجاد",
       "حجر",
       "رخام",
       "خرسانة",
@@ -214,7 +200,7 @@
       "مصباح معلّق",
       "إضاءة مسارية",
       "مصباح غائر",
-      "مصباح طابق",
+      "مصباح أرضي",
       "مصباح طاولة",
       "مصباح جداري",
       "إضاءة طبيعية",
@@ -222,136 +208,122 @@
       "شريط إضاءة LED"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hardwood", "Carpet", "Stone", "Marble"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hardwood, Carpet, Stone, and Marble and choose the option that fits the situation.",
+          "scenario": "Hana compares hardwood flooring with carpet, stone and marble. Hardwood is prepared wood; marble is a particular stone rather than a wood or textile.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which sample is the prepared timber flooring?",
             "options": ["Hardwood", "Carpet", "Stone"],
             "expectedAnswer": "Hardwood"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Hardwood as the central item; include Hardwood, Carpet, and Stone naturally where visually appropriate, but make the real-world use of Hardwood the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. Several joined hardwood floorboards with clear natural wood grain, no labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Concrete", "Chandelier", "Pendant Light", "Track Lighting"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Concrete, Chandelier, Pendant Light, and Track Lighting and choose the option that fits the situation.",
+          "scenario": "The concrete sample is a separate building material. Hana then compares a chandelier, a hanging pendant light and lights supported on a track.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which sample is the cement-based building material?",
             "options": ["Concrete", "Chandelier", "Pendant Light"],
             "expectedAnswer": "Concrete"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Concrete as the central item; include Concrete, Chandelier, and Pendant Light naturally where visually appropriate, but make the real-world use of Concrete the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A plain concrete slab sample with its surface and edge visible, no inferred strength rating. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Recessed Light", "Floor Lamp", "Table Lamp", "Sconce"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recessed Light, Floor Lamp, Table Lamp, and Sconce and choose the option that fits the situation.",
+          "scenario": "A recessed light fits within the ceiling. The floor lamp stands below, the table lamp rests on a table, and the sconce is fixed to the wall.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which light fits within the ceiling?",
             "options": ["Recessed Light", "Floor Lamp", "Table Lamp"],
             "expectedAnswer": "Recessed Light"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Recessed Light as the central item; include Recessed Light, Floor Lamp, and Table Lamp naturally where visually appropriate, but make the real-world use of Recessed Light the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One ceiling-mounted recessed light with its flush trim clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Natural Light", "Dimmer", "LED Strip"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Natural Light, Dimmer, and LED Strip and choose the option that fits the situation.",
+          "scenario": "Natural light enters through the window. A dimmer controls a compatible lamp's output, while an LED strip provides a line of small electric light sources.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which light comes from daylight?",
             "options": ["Natural Light", "Dimmer", "LED Strip"],
             "expectedAnswer": "Natural Light"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Natural Light as the central item; include Natural Light, Dimmer, and LED Strip naturally where visually appropriate, but make the real-world use of Natural Light the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An empty room receiving daylight through one window; no electric lights turned on. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: Interior Design",
-      "text": "At the interior design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Hardwood, Carpet, Stone, and Marble. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Concrete, Chandelier, Pendant Light, and Track Lighting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Recessed Light, Floor Lamp, Table Lamp, and Sconce. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Natural Light, Dimmer, and LED Strip. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Interior Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing finishes and light",
+      "text": "Hana compares floor samples before selecting lighting. Hardwood is timber flooring; carpet is a textile covering. Stone is a wider material category, while marble is one kind of stone. Concrete is a separate building material. A chandelier has several light sources, and a pendant light hangs from above. Track lighting supports lights along a track. A recessed light sits within the ceiling. A floor lamp stands on the floor, whereas a table lamp sits on furniture. A sconce is fixed to a wall. Natural light comes from daylight; a dimmer changes the light output of a suitable lamp. An LED strip is a flexible line of small light-emitting devices. Hana checks compatibility and the room's needs rather than infers electrical safety from a photograph.",
+      "imageBrief": "Support for Comparing finishes and light. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hardwood, Carpet, Stone, and Marble and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Hana compares hardwood flooring with carpet, stone and marble. Hardwood is prepared wood; marble is a particular stone rather than a wood or textile.\nWhich sample is the prepared timber flooring?",
         "answer": "Hardwood",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Concrete, Chandelier, Pendant Light, and Track Lighting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The concrete sample is a separate building material. Hana then compares a chandelier, a hanging pendant light and lights supported on a track.\nWhich sample is the cement-based building material?",
         "answer": "Concrete",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Recessed Light, Floor Lamp, Table Lamp, and Sconce and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A recessed light fits within the ceiling. The floor lamp stands below, the table lamp rests on a table, and the sconce is fixed to the wall.\nWhich light fits within the ceiling?",
         "answer": "Recessed Light",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Natural Light, Dimmer, and LED Strip and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Natural light enters through the window. A dimmer controls a compatible lamp's output, while an LED strip provides a line of small electric light sources.\nWhich light comes from daylight?",
         "answer": "Natural Light",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Hana compares floor samples before selecting lighting. Hardwood is timber flooring; carpet is a textile covering. Stone is a wider material category, while marble is one kind of stone. Concrete is a separate building material. A chandelier has several light sources, and a pendant light hangs from above. Track lighting supports lights along a track. A recessed light sits within the ceiling. A floor lamp stands on the floor, whereas a table lamp sits on furniture. A sconce is fixed to a wall. Natural light comes from daylight; a dimmer changes the light output of a suitable lamp. An LED strip is a flexible line of small light-emitting devices. Hana checks compatibility and the room's needs rather than infers electrical safety from a photograph.\nWhy does Hana check lighting compatibility?",
+        "answer": "Appearance alone does not establish that a light and control work safely together.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Hardwood"
+        "prompt": "Explain the difference between “Hardwood” and “Carpet” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Stone"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Contemporary” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the interior design task. Use Hardwood, Carpet, Stone, Marble, Concrete, Chandelier, Pendant Light, Track Lighting, Recessed Light, Floor Lamp, Table Lamp, Sconce, Natural Light, Dimmer, and LED Strip in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Hardwood” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Hana compares hardwood flooring with carpet, stone and marble. Hardwood is prepared wood; marble is a particular stone rather than a wood or textile.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Interior Design: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing finishes and light",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Hana compares floor samples before selecting lighting. Hardwood is timber flooring; carpet is a textile covering. Stone is a wider material category, while marble is one kind of stone. Concrete is a separate building material. A chandelier has several light sources, and a pendant light hangs from above. Track lighting supports lights along a track. A recessed light sits within the ceiling. A floor lamp stands on the floor, whereas a table lamp sits on furniture. A sconce is fixed to a wall. Natural light comes from daylight; a dimmer changes the light output of a suitable lamp. An LED strip is a flexible line of small light-emitting devices. Hana checks compatibility and the room's needs rather than infers electrical safety from a photograph. Ask: Why does Hana check lighting compatibility?"
     },
     "spacedReview": "1 lesson(s) back: Contemporary, Traditional from interior-design-1\n3 lesson(s) back: International Style, Mid-Century Modern from architecture-styles-2\n7 lesson(s) back: Foundation, Column from building-construction-1"
   },
@@ -378,129 +350,115 @@
       "Photo Frame"
     ],
     "targetWordsArabic": [
-      "سجادة منطقة",
+      "سجادة منفصلة",
       "ستائر",
       "وسادة زينة",
       "عمل فني",
       "مرآة",
-      "زهرية (فازة)",
+      "مزهرية",
       "شمعة",
-      "نبتة منزلية (زرع)",
+      "نبات",
       "منحوتة",
       "إطار صورة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Area Rug", "Curtains", "Throw Pillow", "Artwork"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Area Rug, Curtains, Throw Pillow, and Artwork and choose the option that fits the situation.",
+          "scenario": "Hana places an area rug on part of the floor. Curtains belong at the window; the throw pillow goes on a seat, and artwork is a creative piece.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which accessory covers part of the floor?",
             "options": ["Area Rug", "Curtains", "Throw Pillow"],
             "expectedAnswer": "Area Rug"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or approaching the Area Rug as the main location; include Area Rug, Curtains, and Throw Pillow naturally where visually appropriate, but make the real-world use of Area Rug the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One area rug fully visible on an otherwise bare floor, no clutter or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mirror", "Vase", "Candle", "Plant"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Vase, Candle, and Plant and choose the option that fits the situation.",
+          "scenario": "The mirror reflects the room. A vase is a container or decorative object, a candle has wax and a wick, and a plant is living.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which object reflects the room?",
             "options": ["Mirror", "Vase", "Candle"],
             "expectedAnswer": "Mirror"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Mirror as the central item; include Mirror, Vase, and Candle naturally where visually appropriate, but make the real-world use of Mirror the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A single plain wall mirror reflecting an empty neutral wall, no person or text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sculpture", "Photo Frame"],
-          "scenario": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpture, and Photo Frame and choose the option that fits the situation.",
+          "scenario": "Hana chooses a sculpture, a three-dimensional artwork. A photo frame instead surrounds a photograph.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which item is the three-dimensional artwork?",
             "options": ["Sculpture", "Photo Frame", "Area Rug"],
             "expectedAnswer": "Sculpture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult illustrating Sculpture through a realistic adult task; include Sculpture, Photo Frame, and Area Rug naturally where visually appropriate, but make the real-world use of Sculpture the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A single simple unlettered sculptural object on a plain pedestal, no human figure. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Interior Design",
-      "text": "At the interior design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Area Rug, Curtains, Throw Pillow, and Artwork. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mirror, Vase, Candle, and Plant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sculpture and Photo Frame. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Interior Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Selecting room accessories",
+      "text": "Hana prepares a small accessory board. An area rug covers part of the floor; curtains hang at the window, and a throw pillow adds a small cushion to a seat. Artwork may be a drawing, painting or another creative piece. A mirror reflects the room, whereas a vase holds flowers or serves as decoration. A candle is a wax object with a wick, and a plant is a living organism that may need care. A sculpture has three-dimensional form, while a photo frame surrounds a photograph. Hana asks whether each item has a practical purpose, a decorative purpose, or both. She leaves routes clear in the proposed layout. The board supports a conversation about choices rather than proves that a room meets an accessibility standard.",
+      "imageBrief": "Support for Selecting room accessories. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Area Rug, Curtains, Throw Pillow, and Artwork and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "Hana places an area rug on part of the floor. Curtains belong at the window; the throw pillow goes on a seat, and artwork is a creative piece.\nWhich accessory covers part of the floor?",
         "answer": "Area Rug",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mirror, Vase, Candle, and Plant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The mirror reflects the room. A vase is a container or decorative object, a candle has wax and a wick, and a plant is living.\nWhich object reflects the room?",
         "answer": "Mirror",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the interior design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sculpture, and Photo Frame and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Hana chooses a sculpture, a three-dimensional artwork. A photo frame instead surrounds a photograph.\nWhich item is the three-dimensional artwork?",
         "answer": "Sculpture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Hana prepares a small accessory board. An area rug covers part of the floor; curtains hang at the window, and a throw pillow adds a small cushion to a seat. Artwork may be a drawing, painting or another creative piece. A mirror reflects the room, whereas a vase holds flowers or serves as decoration. A candle is a wax object with a wick, and a plant is a living organism that may need care. A sculpture has three-dimensional form, while a photo frame surrounds a photograph. Hana asks whether each item has a practical purpose, a decorative purpose, or both. She leaves routes clear in the proposed layout. The board supports a conversation about choices rather than proves that a room meets an accessibility standard.\nWhat question does Hana ask about each accessory?",
+        "answer": "Whether it has a practical purpose, a decorative purpose, or both.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Area Rug"
+        "prompt": "Explain the difference between “Area Rug” and “Curtains” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Throw Pillow"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hardwood” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the interior design task. Use Area Rug, Curtains, Throw Pillow, Artwork, Mirror, Vase, Candle, Plant, Sculpture, and Photo Frame in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Area Rug” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Hana places an area rug on part of the floor. Curtains belong at the window; the throw pillow goes on a seat, and artwork is a creative piece.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Interior Design: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Selecting room accessories",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Hana prepares a small accessory board. An area rug covers part of the floor; curtains hang at the window, and a throw pillow adds a small cushion to a seat. Artwork may be a drawing, painting or another creative piece. A mirror reflects the room, whereas a vase holds flowers or serves as decoration. A candle is a wax object with a wick, and a plant is a living organism that may need care. A sculpture has three-dimensional form, while a photo frame surrounds a photograph. Hana asks whether each item has a practical purpose, a decorative purpose, or both. She leaves routes clear in the proposed layout. The board supports a conversation about choices rather than proves that a room meets an accessibility standard. Ask: What question does Hana ask about each accessory?"
     },
     "spacedReview": "1 lesson(s) back: Hardwood, Carpet from interior-design-2\n3 lesson(s) back: Dome, Arch from architecture-styles-3\n7 lesson(s) back: Stone, Aluminum from building-construction-2"
   }

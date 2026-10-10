@@ -44,136 +44,122 @@
       "فيلكرو"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Seam", "Dart", "Pleat", "Gather"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seam, Dart, Pleat, and Gather and choose the option that fits the situation.",
+          "scenario": "The seam joins two fabric pieces. A dart is a tapered sewn fold, a pleat is a defined fold, and gather means draw fabric into small folds.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature joins the two fabric pieces?",
             "options": ["Seam", "Dart", "Pleat"],
             "expectedAnswer": "Seam"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Seam as the central item; include Seam, Dart, and Pleat naturally where visually appropriate, but make the real-world use of Seam the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A macro view of one stitched fabric seam, construction visible without labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Hem", "Collar", "Cuff", "Sleeve"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hem, Collar, Cuff, and Sleeve and choose the option that fits the situation.",
+          "scenario": "The hem finishes the garment edge. The collar surrounds the neck, the cuff finishes the sleeve end, and the sleeve covers the arm.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which feature finishes the garment edge in this example?",
             "options": ["Hem", "Collar", "Cuff"],
             "expectedAnswer": "Hem"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Hem as the central item; include Hem, Collar, and Cuff naturally where visually appropriate, but make the real-world use of Hem the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A close view of a folded and stitched garment hem, no person. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bodice", "Waistband", "Zipper", "Button"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bodice, Waistband, Zipper, and Button and choose the option that fits the situation.",
+          "scenario": "The bodice is the part of this dress above the waist. The waistband goes around the waist; zipper and button are fasteners.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the dress's upper part?",
             "options": ["Bodice", "Waistband", "Zipper"],
             "expectedAnswer": "Bodice"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Bodice as the central item; include Bodice, Waistband, and Zipper naturally where visually appropriate, but make the real-world use of Bodice the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A modest dress on a nonhuman form with the upper constructed portion clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Snap", "Hook and Eye", "Velcro"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snap, Hook and Eye, and Velcro and choose the option that fits the situation.",
+          "scenario": "The snap has two parts that press together. The hook and eye uses a hook and loop; Velcro refers to a hook-and-loop fastening trademark.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which fastener has two parts that press together?",
             "options": ["Snap", "Hook and Eye", "Velcro"],
             "expectedAnswer": "Snap"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Snap as the central item; include Snap, Hook and Eye, and Velcro naturally where visually appropriate, but make the real-world use of Snap the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A single open two-part snap fastener showing socket and stud, no logo. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Fashion Design",
-      "text": "At the fashion design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Seam, Dart, Pleat, and Gather. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Hem, Collar, Cuff, and Sleeve. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Bodice, Waistband, Zipper, and Button. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Snap, Hook and Eye, and Velcro. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fashion Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing garment construction",
+      "text": "In a design critique, Rami describes the garment's construction. A seam joins fabric pieces, a dart shapes cloth with a tapered sewn fold, and a pleat creates a defined fold. Gather is used here as a verb for drawing fabric into small folds. The hem finishes an edge. A collar surrounds the neck, a cuff finishes a sleeve end, and a sleeve covers the arm. The bodice is the upper part of a dress. A waistband lies around the waist. A zipper joins two rows of teeth, while a button passes through a buttonhole. A snap has two parts that press together; a hook and eye uses a hook and loop. Velcro is a trademark associated with hook-and-loop fastening. Rami names the feature before explaining how it affects the silhouette.",
+      "imageBrief": "Support for Describing garment construction. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Seam, Dart, Pleat, and Gather and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The seam joins two fabric pieces. A dart is a tapered sewn fold, a pleat is a defined fold, and gather means draw fabric into small folds.\nWhich feature joins the two fabric pieces?",
         "answer": "Seam",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Hem, Collar, Cuff, and Sleeve and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The hem finishes the garment edge. The collar surrounds the neck, the cuff finishes the sleeve end, and the sleeve covers the arm.\nWhich feature finishes the garment edge in this example?",
         "answer": "Hem",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bodice, Waistband, Zipper, and Button and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The bodice is the part of this dress above the waist. The waistband goes around the waist; zipper and button are fasteners.\nWhich term names the dress's upper part?",
         "answer": "Bodice",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Snap, Hook and Eye, and Velcro and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The snap has two parts that press together. The hook and eye uses a hook and loop; Velcro refers to a hook-and-loop fastening trademark.\nWhich fastener has two parts that press together?",
         "answer": "Snap",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "In a design critique, Rami describes the garment's construction. A seam joins fabric pieces, a dart shapes cloth with a tapered sewn fold, and a pleat creates a defined fold. Gather is used here as a verb for drawing fabric into small folds. The hem finishes an edge. A collar surrounds the neck, a cuff finishes a sleeve end, and a sleeve covers the arm. The bodice is the upper part of a dress. A waistband lies around the waist. A zipper joins two rows of teeth, while a button passes through a buttonhole. A snap has two parts that press together; a hook and eye uses a hook and loop. Velcro is a trademark associated with hook-and-loop fastening. Rami names the feature before explaining how it affects the silhouette.\nWhat does Rami do before discussing the silhouette?",
+        "answer": "He names the construction feature he is discussing.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Seam"
+        "prompt": "Explain the difference between “Seam” and “Dart” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Pleat"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bleach” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion design task. Use Seam, Dart, Pleat, Gather, Hem, Collar, Cuff, Sleeve, Bodice, Waistband, Zipper, Button, Snap, Hook and Eye, and Velcro in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Seam” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The seam joins two fabric pieces. A dart is a tapered sewn fold, a pleat is a defined fold, and gather means draw fabric into small folds.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fashion Design: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Describing garment construction",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "In a design critique, Rami describes the garment's construction. A seam joins fabric pieces, a dart shapes cloth with a tapered sewn fold, and a pleat creates a defined fold. Gather is used here as a verb for drawing fabric into small folds. The hem finishes an edge. A collar surrounds the neck, a cuff finishes a sleeve end, and a sleeve covers the arm. The bodice is the upper part of a dress. A waistband lies around the waist. A zipper joins two rows of teeth, while a button passes through a buttonhole. A snap has two parts that press together; a hook and eye uses a hook and loop. Velcro is a trademark associated with hook-and-loop fastening. Rami names the feature before explaining how it affects the silhouette. Ask: What does Rami do before discussing the silhouette?"
     },
     "spacedReview": "1 lesson(s) back: Bleach, Tumble Dry from fabrics-textiles-4\n3 lesson(s) back: Lycra, Microfiber from fabrics-textiles-2\n7 lesson(s) back: Sewing Machine, Dress Form from fashion-atelier-1"
   },
@@ -219,139 +205,125 @@
       "شريط",
       "شريط حواف بارز",
       "تطريز على قماش مجمع",
-      "حروف اسم متشابكة"
+      "حروف تعريفية مزخرفة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Buckle", "Lace-Up", "Toggle", "Drawstring"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buckle, Lace-Up, Toggle, and Drawstring and choose the option that fits the situation.",
+          "scenario": "The buckle secures the strap. Lace-up uses threaded laces, a toggle passes through a loop, and a drawstring tightens an opening.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which fastener secures the strap in this description?",
             "options": ["Buckle", "Lace-Up", "Toggle"],
             "expectedAnswer": "Buckle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Buckle as the central item; include Buckle, Lace-Up, and Toggle naturally where visually appropriate, but make the real-world use of Buckle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One plain belt buckle with its frame and fastening pin clearly visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Magnetic Clasp", "Embroidery", "Beading", "Sequin"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnetic Clasp, Embroidery, Beading, and Sequin and choose the option that fits the situation.",
+          "scenario": "The magnetic clasp closes with magnetic parts. Embroidery uses stitches, beading adds beads, and a sequin is a shiny decorative piece.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which fastener closes with magnetic parts?",
             "options": ["Magnetic Clasp", "Embroidery", "Beading"],
             "expectedAnswer": "Magnetic Clasp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Magnetic Clasp as the central item; include Magnetic Clasp, Embroidery, and Beading naturally where visually appropriate, but make the real-world use of Magnetic Clasp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An open two-part magnetic clasp; magnetic action is supplied by written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Appliqué", "Fringe", "Ruffle", "Ribbon"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appliqué, Fringe, Ruffle, and Ribbon and choose the option that fits the situation.",
+          "scenario": "Appliqué attaches cut fabric shapes to a larger surface. Fringe hangs in strands; a ruffle uses gathered cloth, and ribbon is a narrow strip.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which technique attaches the fabric shapes?",
             "options": ["Appliqué", "Fringe", "Ruffle"],
             "expectedAnswer": "Appliqué"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Appliqué as the central item; include Appliqué, Fringe, and Ruffle naturally where visually appropriate, but make the real-world use of Appliqué the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A fabric swatch with a clearly stitched-on fabric shape, no letters or logos. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Piping", "Smocking", "Monogram"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Piping, Smocking, and Monogram and choose the option that fits the situation.",
+          "scenario": "Piping forms the raised trim along this edge. Smocking uses decorative stitching on gathered cloth; a monogram combines identifying letters.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term names the raised edge trim?",
             "options": ["Piping", "Smocking", "Monogram"],
             "expectedAnswer": "Piping"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Piping through a realistic adult task; include Piping, Smocking, and Monogram naturally where visually appropriate, but make the real-world use of Piping the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A close view of raised corded piping along a plain fabric seam; no monogram or writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Fashion Design",
-      "text": "At the fashion design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Buckle, Lace-Up, Toggle, and Drawstring. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Magnetic Clasp, Embroidery, Beading, and Sequin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Appliqué, Fringe, Ruffle, and Ribbon. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Piping, Smocking, and Monogram. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fashion Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing fasteners and decoration",
+      "text": "Rami's accessory board separates fastening from decoration. A buckle secures a strap. Lace-up means fastened with threaded laces; a toggle passes through a loop. A drawstring tightens an opening, and a magnetic clasp closes with magnetic parts. Embroidery decorates cloth with stitches; beading attaches small beads, and a sequin is a small shiny decorative piece. Appliqué attaches fabric shapes to a larger surface. Fringe hangs in strands along an edge, a ruffle uses gathered fabric, and ribbon is a narrow strip. Piping gives an edge a raised finish. Smocking decorates gathered cloth with stitching. A monogram combines identifying letters; it is different from an abstract sewn pattern. Rami asks which detail needs refinement rather than assumes every decoration has the same function.",
+      "imageBrief": "Support for Comparing fasteners and decoration. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buckle, Lace-Up, Toggle, and Drawstring and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The buckle secures the strap. Lace-up uses threaded laces, a toggle passes through a loop, and a drawstring tightens an opening.\nWhich fastener secures the strap in this description?",
         "answer": "Buckle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Magnetic Clasp, Embroidery, Beading, and Sequin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The magnetic clasp closes with magnetic parts. Embroidery uses stitches, beading adds beads, and a sequin is a shiny decorative piece.\nWhich fastener closes with magnetic parts?",
         "answer": "Magnetic Clasp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Appliqué, Fringe, Ruffle, and Ribbon and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Appliqué attaches cut fabric shapes to a larger surface. Fringe hangs in strands; a ruffle uses gathered cloth, and ribbon is a narrow strip.\nWhich technique attaches the fabric shapes?",
         "answer": "Appliqué",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Piping, Smocking, and Monogram and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Piping forms the raised trim along this edge. Smocking uses decorative stitching on gathered cloth; a monogram combines identifying letters.\nWhich term names the raised edge trim?",
         "answer": "Piping",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Rami's accessory board separates fastening from decoration. A buckle secures a strap. Lace-up means fastened with threaded laces; a toggle passes through a loop. A drawstring tightens an opening, and a magnetic clasp closes with magnetic parts. Embroidery decorates cloth with stitches; beading attaches small beads, and a sequin is a small shiny decorative piece. Appliqué attaches fabric shapes to a larger surface. Fringe hangs in strands along an edge, a ruffle uses gathered fabric, and ribbon is a narrow strip. Piping gives an edge a raised finish. Smocking decorates gathered cloth with stitching. A monogram combines identifying letters; it is different from an abstract sewn pattern. Rami asks which detail needs refinement rather than assumes every decoration has the same function.\nHow does appliqué differ from embroidery here?",
+        "answer": "Appliqué attaches fabric shapes; embroidery creates decoration with stitches.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Buckle"
+        "prompt": "Explain the difference between “Buckle” and “Lace-Up” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Toggle"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Seam” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion design task. Use Buckle, Lace-Up, Toggle, Drawstring, Magnetic Clasp, Embroidery, Beading, Sequin, Appliqué, Fringe, Ruffle, Ribbon, Piping, Smocking, and Monogram in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Buckle” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The buckle secures the strap. Lace-up uses threaded laces, a toggle passes through a loop, and a drawstring tightens an opening.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fashion Design: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing fasteners and decoration",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Rami's accessory board separates fastening from decoration. A buckle secures a strap. Lace-up means fastened with threaded laces; a toggle passes through a loop. A drawstring tightens an opening, and a magnetic clasp closes with magnetic parts. Embroidery decorates cloth with stitches; beading attaches small beads, and a sequin is a small shiny decorative piece. Appliqué attaches fabric shapes to a larger surface. Fringe hangs in strands along an edge, a ruffle uses gathered fabric, and ribbon is a narrow strip. Piping gives an edge a raised finish. Smocking decorates gathered cloth with stitching. A monogram combines identifying letters; it is different from an abstract sewn pattern. Rami asks which detail needs refinement rather than assumes every decoration has the same function. Ask: How does appliqué differ from embroidery here?"
     },
     "spacedReview": "1 lesson(s) back: Seam, Dart from fashion-design-1\n3 lesson(s) back: Weave, Knit from fabrics-textiles-3\n7 lesson(s) back: Pin Cushion, Measuring Tape from fashion-atelier-2"
   },
@@ -390,117 +362,103 @@
       "أزياء مستدامة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Haute Couture", "Prêt-à-Porter", "Collection", "Season"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Haute Couture, Prêt-à-Porter, Collection, and Season and choose the option that fits the situation.",
+          "scenario": "The supplied description calls the made-to-measure high-end work haute couture. It contrasts this with prêt-à-porter, ready-to-wear, and discusses a collection for a particular season.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which term describes the made-to-measure high-end work?",
             "options": ["Haute Couture", "Prêt-à-Porter", "Collection"],
             "expectedAnswer": "Haute Couture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult illustrating Haute Couture through a realistic adult task; include Haute Couture, Prêt-à-Porter, and Collection naturally where visually appropriate, but make the real-world use of Haute Couture the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A carefully constructed modest garment on a nonhuman form; formal couture status cannot be proved visually. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Lookbook", "Trend", "Silhouette", "Colorway"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lookbook, Trend, Silhouette, and Colorway and choose the option that fits the situation.",
+          "scenario": "The lookbook presents the collection through images. A trend describes a fashion direction, silhouette names the garment outline, and colorway names its color combination.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item presents the range through images?",
             "options": ["Lookbook", "Trend", "Silhouette"],
             "expectedAnswer": "Lookbook"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Lookbook as the central item; include Lookbook, Trend, and Silhouette naturally where visually appropriate, but make the real-world use of Lookbook the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An open unlettered garment-image portfolio with no text, logos or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Capsule", "Sustainable Fashion"],
-          "scenario": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Capsule, and Sustainable Fashion and choose the option that fits the situation.",
+          "scenario": "The studio calls its small coordinated range a capsule. Sustainable fashion is a separate approach whose claims need environmental and social evidence.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the small coordinated range?",
             "options": ["Capsule", "Sustainable Fashion", "Haute Couture"],
             "expectedAnswer": "Capsule"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Capsule as the central item; include Capsule, Sustainable Fashion, and Haute Couture naturally where visually appropriate, but make the real-world use of Capsule the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A few complementary modest garments on plain hangers; capsule identity is given in writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Fashion Design",
-      "text": "At the fashion design, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Haute Couture, Prêt-à-Porter, Collection, and Season. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lookbook, Trend, Silhouette, and Colorway. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Capsule and Sustainable Fashion. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Fashion Design. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing a collection",
+      "text": "The critique compares design and production terms. Haute couture describes high-end made-to-measure fashion, with specific industry recognition in its formal French use. Prêt-à-porter means ready-to-wear. A collection groups related garments, and season identifies a design or selling period. A lookbook presents the range through images. A trend describes a direction in current fashion, while silhouette concerns a garment's overall outline. A colorway is one color combination for a design. A capsule is a small coordinated collection. Sustainable fashion concerns efforts to reduce environmental harm and improve social responsibility across a product's life cycle; it is not established by a green color or natural-looking fabric. Rami asks what evidence supports the claim and how the chosen material affects the design brief.",
+      "imageBrief": "Support for Discussing a collection. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Haute Couture, Prêt-à-Porter, Collection, and Season and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "The supplied description calls the made-to-measure high-end work haute couture. It contrasts this with prêt-à-porter, ready-to-wear, and discusses a collection for a particular season.\nWhich term describes the made-to-measure high-end work?",
         "answer": "Haute Couture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lookbook, Trend, Silhouette, and Colorway and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The lookbook presents the collection through images. A trend describes a fashion direction, silhouette names the garment outline, and colorway names its color combination.\nWhich item presents the range through images?",
         "answer": "Lookbook",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion design setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Capsule, and Sustainable Fashion and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The studio calls its small coordinated range a capsule. Sustainable fashion is a separate approach whose claims need environmental and social evidence.\nWhich term names the small coordinated range?",
         "answer": "Capsule",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The critique compares design and production terms. Haute couture describes high-end made-to-measure fashion, with specific industry recognition in its formal French use. Prêt-à-porter means ready-to-wear. A collection groups related garments, and season identifies a design or selling period. A lookbook presents the range through images. A trend describes a direction in current fashion, while silhouette concerns a garment's overall outline. A colorway is one color combination for a design. A capsule is a small coordinated collection. Sustainable fashion concerns efforts to reduce environmental harm and improve social responsibility across a product's life cycle; it is not established by a green color or natural-looking fabric. Rami asks what evidence supports the claim and how the chosen material affects the design brief.\nCan green color establish sustainable fashion?",
+        "answer": "No; the claim needs evidence about environmental and social effects.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Haute Couture"
+        "prompt": "Explain the difference between “Haute Couture” and “Prêt-à-Porter” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Collection"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Buckle” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion design task. Use Haute Couture, Prêt-à-Porter, Collection, Season, Lookbook, Trend, Silhouette, Colorway, Capsule, and Sustainable Fashion in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Haute Couture” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The supplied description calls the made-to-measure high-end work haute couture. It contrasts this with prêt-à-porter, ready-to-wear, and discusses a collection for a particular season.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Fashion Design: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing a collection",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The critique compares design and production terms. Haute couture describes high-end made-to-measure fashion, with specific industry recognition in its formal French use. Prêt-à-porter means ready-to-wear. A collection groups related garments, and season identifies a design or selling period. A lookbook presents the range through images. A trend describes a direction in current fashion, while silhouette concerns a garment's overall outline. A colorway is one color combination for a design. A capsule is a small coordinated collection. Sustainable fashion concerns efforts to reduce environmental harm and improve social responsibility across a product's life cycle; it is not established by a green color or natural-looking fabric. Rami asks what evidence supports the claim and how the chosen material affects the design brief. Ask: Can green color establish sustainable fashion?"
     },
     "spacedReview": "1 lesson(s) back: Buckle, Lace-Up from fashion-design-2\n3 lesson(s) back: Bleach, Tumble Dry from fabrics-textiles-4\n7 lesson(s) back: Fashion Designer, Seamstress from fashion-atelier-3"
   }

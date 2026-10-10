@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "117-147 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Real Estate Agent", "Broker", "Appraiser", "Inspector"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.",
+          "scenario": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Real Estate Agent", "Broker", "Appraiser"],
-            "expectedAnswer": "Real Estate Agent"
+            "question": "Which professional estimates the property’s value?",
+            "options": ["Appraiser", "Real Estate Agent", "Broker"],
+            "expectedAnswer": "Appraiser"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Real Estate Agent as the central item; include Real Estate Agent, Broker, and Appraiser naturally where visually appropriate, but make the real-world use of Real Estate Agent the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Appraiser in a real estate agency context. Use the written scenario as the source of meaning: A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mortgage Lender", "Title Agent", "Property Manager", "Developer"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.",
+          "scenario": "The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mortgage Lender", "Title Agent", "Property Manager"],
-            "expectedAnswer": "Mortgage Lender"
+            "question": "Who handles daily property operations?",
+            "options": ["Property Manager", "Mortgage Lender", "Title Agent"],
+            "expectedAnswer": "Property Manager"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Mortgage Lender as the central item; include Mortgage Lender, Title Agent, and Property Manager naturally where visually appropriate, but make the real-world use of Mortgage Lender the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Property Manager in a real estate agency context. Use the written scenario as the source of meaning: The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Contractor", "Architect", "Listing", "Open House"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.",
+          "scenario": "A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Contractor", "Architect", "Listing"],
-            "expectedAnswer": "Contractor"
+            "question": "Which term names the property advertisement?",
+            "options": ["Listing", "Contractor", "Architect"],
+            "expectedAnswer": "Listing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult working with or speaking to the Contractor; include Contractor, Architect, and Listing naturally where visually appropriate, but make the real-world use of Contractor the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Listing in a real estate agency context. Use the written scenario as the source of meaning: A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Showing", "Offer", "Counter Offer"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.",
+          "scenario": "After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Showing", "Offer", "Counter Offer"],
-            "expectedAnswer": "Showing"
+            "question": "Which term names the seller’s changed proposal?",
+            "options": ["Counter Offer", "Showing", "Offer"],
+            "expectedAnswer": "Counter Offer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Showing through a realistic adult task; include Showing, Offer, and Counter Offer naturally where visually appropriate, but make the real-world use of Showing the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Counter Offer in a real estate agency context. Use the written scenario as the source of meaning: After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: The Real Estate Agency",
-      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Real Estate Agent, Broker, Appraiser, and Inspector. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Lender, Title Agent, Property Manager, and Developer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Contractor, Architect, Listing, and Open House. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Showing, Offer, and Counter Offer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Real Estate Agency: A visitor’s questions",
+      "text": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.",
+      "imageBrief": "One uncluttered real estate agency setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Real Estate Agent, Broker, Appraiser, and Inspector and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Real Estate Agent",
+        "prompt": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition.\nWhich professional estimates the property’s value?",
+        "answer": "Appraiser",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Lender, Title Agent, Property Manager, and Developer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mortgage Lender",
+        "prompt": "The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects.\nWho handles daily property operations?",
+        "answer": "Property Manager",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Contractor, Architect, Listing, and Open House and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Contractor",
+        "prompt": "A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it.\nWhich term names the property advertisement?",
+        "answer": "Listing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Showing, Offer, and Counter Offer and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Showing",
+        "prompt": "After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nWhich term names the seller’s changed proposal?",
+        "answer": "Counter Offer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. The Mortgage Lender provides financing under its terms. In this US example, a Title Agent assists with ownership records and closing documents. A Property Manager handles daily property operations, while a Developer creates or redevelops property projects. A Contractor performs contracted construction work, and an Architect designs buildings. The Listing advertises a property, while an Open House is a scheduled event when visitors can view it. After a Showing, Lina makes an Offer with proposed purchase terms. The seller responds with a Counter Offer changing the price. The written account supplies these negotiations, which an image cannot establish.\nExplain the difference between Real Estate Agent and Broker using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Real Estate Agent"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Square Footage” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Real Estate Agent, Broker, Appraiser, Inspector, Mortgage Lender, Title Agent, Property Manager, Developer, Contractor, Architect, Listing, Open House, Showing, Offer, and Counter Offer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Real Estate Agent, Broker, Appraiser, Inspector, Mortgage Lender, Title Agent, Property Manager, Developer, Contractor, Architect, Listing, Open House, Showing, Offer, Counter Offer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Real Estate Agency: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Real Estate Agency: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Real Estate Agent and Broker, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Real Estate Agent helps clients with property transactions; a Broker’s licensing and responsibilities depend on local rules. An Appraiser estimates value, while an Inspector examines the property’s condition. Pause and answer: Which professional estimates the property’s value?"
     },
     "spacedReview": "1 lesson(s) back: Square Footage, Lot Size from property-types-3\n3 lesson(s) back: House, Apartment from property-types-1\n7 lesson(s) back: Plagiarism, Reference from research-study-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "service-notice",
-      "readingTarget": "120-170 words",
+      "readingTarget": "121-151 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Negotiation", "Appraisal", "Inspection", "Closing"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.",
+          "scenario": "During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Negotiation", "Appraisal", "Inspection"],
-            "expectedAnswer": "Negotiation"
+            "question": "Which process estimates property value?",
+            "options": ["Appraisal", "Negotiation", "Inspection"],
+            "expectedAnswer": "Appraisal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Negotiation through a realistic adult task; include Negotiation, Appraisal, and Inspection naturally where visually appropriate, but make the real-world use of Negotiation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Appraisal in a real estate agency context. Use the written scenario as the source of meaning: During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Escrow", "Mortgage", "Down Payment", "Interest Rate"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.",
+          "scenario": "The glossary describes Escrow as funds or property held until agreed conditions are met. A Mortgage is secured by property, the Down Payment is the buyer’s initial contribution toward the price, and Interest Rate describes the borrowing rate.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term describes funds held until agreed conditions are met?",
             "options": ["Escrow", "Mortgage", "Down Payment"],
             "expectedAnswer": "Escrow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Escrow as the central item; include Escrow, Mortgage, and Down Payment naturally where visually appropriate, but make the real-world use of Escrow the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Escrow in a real estate agency context. Use the written scenario as the source of meaning: The glossary describes Escrow as funds or property held until agreed conditions are met. A Mortgage is secured by property, the Down Payment is the buyer’s initial contribution toward the price, and Interest Rate describes the borrowing rate. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Closing Costs", "Equity", "Appreciation", "Depreciation"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.",
+          "scenario": "The adviser distinguishes Closing Costs from the purchase price. Equity is the property’s value less claims against it, while Appreciation and Depreciation describe increases and decreases in value. Future appreciation is not guaranteed.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Closing Costs", "Equity", "Appreciation"],
-            "expectedAnswer": "Closing Costs"
+            "question": "Which term describes value less claims against the property?",
+            "options": ["Equity", "Closing Costs", "Appreciation"],
+            "expectedAnswer": "Equity"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Closing Costs as the central item; include Closing Costs, Equity, and Appreciation naturally where visually appropriate, but make the real-world use of Closing Costs the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Equity in a real estate agency context. Use the written scenario as the source of meaning: The adviser distinguishes Closing Costs from the purchase price. Equity is the property’s value less claims against it, while Appreciation and Depreciation describe increases and decreases in value. Future appreciation is not guaranteed. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.",
+          "scenario": "A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Tax Assessment", "HOA Fee", "Pre-Approval"],
-            "expectedAnswer": "Tax Assessment"
+            "question": "Which term names the tentative lending decision?",
+            "options": ["Pre-Approval", "Tax Assessment", "HOA Fee"],
+            "expectedAnswer": "Pre-Approval"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Tax Assessment through a realistic adult task; include Tax Assessment, HOA Fee, and Pre-Approval naturally where visually appropriate, but make the real-world use of Tax Assessment the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Pre-Approval in a real estate agency context. Use the written scenario as the source of meaning: A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "What You Need to Know: The Real Estate Agency",
-      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Negotiation, Appraisal, Inspection, and Closing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Escrow, Mortgage, Down Payment, and Interest Rate. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Closing Costs, Equity, Appreciation, and Depreciation. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Assessment, HOA Fee, and Pre-Approval. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Real Estate Agency: Understanding the different roles",
+      "text": "During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements. The glossary describes Escrow as funds or property held until agreed conditions are met. A Mortgage is secured by property, the Down Payment is the buyer’s initial contribution toward the price, and Interest Rate describes the borrowing rate. The adviser distinguishes Closing Costs from the purchase price. Equity is the property’s value less claims against it, while Appreciation and Depreciation describe increases and decreases in value. Future appreciation is not guaranteed. A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee.",
+      "imageBrief": "One uncluttered real estate agency setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiation, Appraisal, Inspection, and Closing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Negotiation",
+        "prompt": "During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements.\nWhich process estimates property value?",
+        "answer": "Appraisal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Escrow, Mortgage, Down Payment, and Interest Rate and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The glossary describes Escrow as funds or property held until agreed conditions are met. A Mortgage is secured by property, the Down Payment is the buyer’s initial contribution toward the price, and Interest Rate describes the borrowing rate.\nWhich term describes funds held until agreed conditions are met?",
         "answer": "Escrow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Closing Costs, Equity, Appreciation, and Depreciation and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Closing Costs",
+        "prompt": "The adviser distinguishes Closing Costs from the purchase price. Equity is the property’s value less claims against it, while Appreciation and Depreciation describe increases and decreases in value. Future appreciation is not guaranteed.\nWhich term describes value less claims against the property?",
+        "answer": "Equity",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Assessment, HOA Fee, and Pre-Approval and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Tax Assessment",
+        "prompt": "A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee.\nWhich term names the tentative lending decision?",
+        "answer": "Pre-Approval",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements. The glossary describes Escrow as funds or property held until agreed conditions are met. A Mortgage is secured by property, the Down Payment is the buyer’s initial contribution toward the price, and Interest Rate describes the borrowing rate. The adviser distinguishes Closing Costs from the purchase price. Equity is the property’s value less claims against it, while Appreciation and Depreciation describe increases and decreases in value. Future appreciation is not guaranteed. A Tax Assessment relates to the authority’s property-tax calculation, and an HOA Fee funds homeowners-association services under its rules. Pre-Approval indicates tentative lending eligibility subject to further checks, rather than a final loan guarantee.\nExplain the difference between Negotiation and Appraisal using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Negotiation"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Real Estate Agent” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Negotiation, Appraisal, Inspection, Closing, Escrow, Mortgage, Down Payment, Interest Rate, Closing Costs, Equity, Appreciation, Depreciation, Tax Assessment, HOA Fee, and Pre-Approval in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Negotiation, Appraisal, Inspection, Closing, Escrow, Mortgage, Down Payment, Interest Rate, Closing Costs, Equity, Appreciation, Depreciation, Tax Assessment, HOA Fee, Pre-Approval to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Real Estate Agency: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Real Estate Agency: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Negotiation and Appraisal, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: During Negotiation, Lina distinguishes an Appraisal estimating property value from an Inspection examining condition. Closing is the stage for completing the transaction under the applicable arrangements. Pause and answer: Which process estimates property value?"
     },
     "spacedReview": "1 lesson(s) back: Real Estate Agent, Broker from real-estate-agency-1\n3 lesson(s) back: Shopping Center, Hotel from property-types-2\n7 lesson(s) back: Dorm Room, Roommate from student-life-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to ask about properties, agreements, and moving arrangements and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the housing or property setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "89-119 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Listing Agreement", "Purchase Agreement", "Deed", "Title"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.",
+          "scenario": "The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Listing Agreement", "Purchase Agreement", "Deed"],
-            "expectedAnswer": "Listing Agreement"
+            "question": "Which document records the ownership transfer in this example?",
+            "options": ["Deed", "Listing Agreement", "Purchase Agreement"],
+            "expectedAnswer": "Deed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult illustrating Listing Agreement through a realistic adult task; include Listing Agreement, Purchase Agreement, and Deed naturally where visually appropriate, but make the real-world use of Listing Agreement the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Deed in a real estate agency context. Use the written scenario as the source of meaning: The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Mortgage Note", "Disclosure", "Survey", "Insurance Policy"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.",
+          "scenario": "The Mortgage Note records the borrower’s promise to repay. Disclosure supplies required or agreed information, a Survey records boundaries and features, and an Insurance Policy states coverage and conditions. Legal requirements vary by jurisdiction.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Mortgage Note", "Disclosure", "Survey"],
-            "expectedAnswer": "Mortgage Note"
+            "question": "Which record shows property boundaries and features?",
+            "options": ["Survey", "Mortgage Note", "Disclosure"],
+            "expectedAnswer": "Survey"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Mortgage Note as the central item; include Mortgage Note, Disclosure, and Survey naturally where visually appropriate, but make the real-world use of Mortgage Note the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Survey in a real estate agency context. Use the written scenario as the source of meaning: The Mortgage Note records the borrower’s promise to repay. Disclosure supplies required or agreed information, a Survey records boundaries and features, and an Insurance Policy states coverage and conditions. Legal requirements vary by jurisdiction. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tax Return", "Proof of Income"],
-          "scenario": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.",
+          "scenario": "The lender discusses a Tax Return reporting tax information and Proof of Income showing earnings. Required documents depend on the application and local rules; this vocabulary class does not determine loan eligibility.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tax Return", "Proof of Income", "Listing Agreement"],
-            "expectedAnswer": "Tax Return"
+            "question": "Which phrase names evidence showing earnings?",
+            "options": ["Proof of Income", "Tax Return"],
+            "expectedAnswer": "Proof of Income"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a housing or property setting. Show an adult using or examining the Tax Return as the central item; include Tax Return, Proof of Income, and Listing Agreement naturally where visually appropriate, but make the real-world use of Tax Return the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a housing or property setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Proof of Income in a real estate agency context. Use the written scenario as the source of meaning: The lender discusses a Tax Return reporting tax information and Proof of Income showing earnings. Required documents depend on the application and local rules; this vocabulary class does not determine loan eligibility. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written real estate agency situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the real estate agency, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Listing Agreement, Purchase Agreement, Deed, and Title. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Mortgage Note, Disclosure, Survey, and Insurance Policy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Tax Return and Proof of Income. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Real Estate Agency. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Real Estate Agency: Comparing the equipment",
+      "text": "The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right. The Mortgage Note records the borrower’s promise to repay. Disclosure supplies required or agreed information, a Survey records boundaries and features, and an Insurance Policy states coverage and conditions. Legal requirements vary by jurisdiction. The lender discusses a Tax Return reporting tax information and Proof of Income showing earnings. Required documents depend on the application and local rules; this vocabulary class does not determine loan eligibility.",
+      "imageBrief": "One uncluttered real estate agency setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Listing Agreement, Purchase Agreement, Deed, and Title and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Listing Agreement",
+        "prompt": "The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right.\nWhich document records the ownership transfer in this example?",
+        "answer": "Deed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mortgage Note, Disclosure, Survey, and Insurance Policy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Mortgage Note",
+        "prompt": "The Mortgage Note records the borrower’s promise to repay. Disclosure supplies required or agreed information, a Survey records boundaries and features, and an Insurance Policy states coverage and conditions. Legal requirements vary by jurisdiction.\nWhich record shows property boundaries and features?",
+        "answer": "Survey",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the real estate agency setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tax Return, and Proof of Income and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tax Return",
+        "prompt": "The lender discusses a Tax Return reporting tax information and Proof of Income showing earnings. Required documents depend on the application and local rules; this vocabulary class does not determine loan eligibility.\nWhich phrase names evidence showing earnings?",
+        "answer": "Proof of Income",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right. The Mortgage Note records the borrower’s promise to repay. Disclosure supplies required or agreed information, a Survey records boundaries and features, and an Insurance Policy states coverage and conditions. Legal requirements vary by jurisdiction. The lender discusses a Tax Return reporting tax information and Proof of Income showing earnings. Required documents depend on the application and local rules; this vocabulary class does not determine loan eligibility.\nExplain the difference between Listing Agreement and Purchase Agreement using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Listing Agreement"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Negotiation” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the real estate agency task. Use Listing Agreement, Purchase Agreement, Deed, Title, Mortgage Note, Disclosure, Survey, Insurance Policy, Tax Return, and Proof of Income in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Listing Agreement, Purchase Agreement, Deed, Title, Mortgage Note, Disclosure, Survey, Insurance Policy, Tax Return, Proof of Income to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Real Estate Agency: In Context",
-      "idea": "45-70 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Real Estate Agency: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Listing Agreement and Purchase Agreement, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The Listing Agreement covers the agent’s marketing arrangement, while the Purchase Agreement records purchase terms. In this example, a Deed documents a transfer of ownership, and Title refers to the legal ownership right. Pause and answer: Which document records the ownership transfer in this example?"
     },
     "spacedReview": "1 lesson(s) back: Negotiation, Appraisal from real-estate-agency-2\n3 lesson(s) back: Square Footage, Lot Size from property-types-3\n7 lesson(s) back: Newspaper, Radio Station from student-life-2"
   }

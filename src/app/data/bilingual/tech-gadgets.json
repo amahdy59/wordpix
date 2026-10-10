@@ -6,7 +6,7 @@
   "smartwatch": {
     "definition": "A wrist-worn digital device that tells time and performs computer tasks through wireless connections.",
     "arabicTranslation": "ساعة ذكية",
-    "exampleUsage": "The smartwatch was used during the activity."
+    "exampleUsage": "The smartwatch displayed a notification from the paired phone."
   },
   "wireless-earbuds": {
     "definition": "Small earphones that connect to a device wirelessly, usually by Bluetooth.",
@@ -31,7 +31,7 @@
   "stylus": {
     "definition": "A pen-shaped tool used to write or draw on a touch screen.",
     "arabicTranslation": "قلم لمس",
-    "exampleUsage": "The stylus was used during the activity."
+    "exampleUsage": "She drew on the compatible tablet with a stylus."
   },
   "webcam": {
     "definition": "A small camera that sends live video to a computer.",
@@ -48,9 +48,9 @@
     "arabicTranslation": "شاشة ذكية"
   },
   "smart-thermostat": {
-    "definition": "An internet-linked control device adjusts a building's heating, cooling, and airflow according to settings, household routines, and conditions such as outdoor temperature.",
+    "definition": "A thermostat with digital or network features for controlling compatible heating or cooling according to supported settings.",
     "arabicTranslation": "منظّم حرارة ذكي",
-    "exampleUsage": "The smart thermostat was used during the activity."
+    "exampleUsage": "The smart thermostat adjusted heating according to its selected settings."
   },
   "smart-lock": {
     "definition": "An electronic lock that can be controlled or monitored digitally.",
@@ -104,7 +104,7 @@
   },
   "smart-ring": {
     "definition": "A small wearable electronic ring that can contain sensors and connect to a phone or other device.",
-    "exampleUsage": "The smart ring synchronized activity data with the app.",
+    "exampleUsage": "The smart ring recorded the wellness measurements supported by its design.",
     "arabicTranslation": "خاتم ذكي"
   },
   "health-monitor": {
@@ -148,14 +148,14 @@
     "arabicTranslation": "فأرة مريحة هندسيًا"
   },
   "monitor": {
-    "definition": "Display produced by a device that takes signals and displays them on a television screen or a computer monitor.",
-    "arabicTranslation": "شاشة مراقبة",
-    "exampleUsage": "The monitor was used during the activity."
+    "definition": "A screen that displays visual output from a computer or another compatible device.",
+    "arabicTranslation": "شاشة حاسوب",
+    "exampleUsage": "The monitor displayed the file that the technician had opened."
   },
   "docking-station": {
     "definition": "A device that connects a laptop to several accessories at once.",
     "arabicTranslation": "محطة توصيل حاسوب محمول",
-    "exampleUsage": "The docking station was used during the activity."
+    "exampleUsage": "The docking station connected the laptop to a monitor and peripherals."
   },
   "external-ssd": {
     "definition": "A portable solid-state storage drive that connects externally to a computer or device.",
@@ -170,11 +170,11 @@
   "microphone": {
     "definition": "A device that changes sound into an electrical recording or signal.",
     "arabicTranslation": "ميكروفون",
-    "exampleUsage": "The microphone was used during the activity."
+    "exampleUsage": "The microphone picked up the speaker’s voice during the meeting."
   },
   "green-screen": {
     "definition": "A green background used to add different images during editing.",
-    "arabicTranslation": "شاشة أخضر"
+    "arabicTranslation": "خلفية خضراء"
   },
   "standing-desk-mat": {
     "definition": "A cushioned mat designed for standing on while using a standing desk.",
@@ -185,5 +185,13 @@
     "definition": "A clip, sleeve, tray, or other item used to keep cables arranged and reduce tangles.",
     "exampleUsage": "The cable organizer kept the charging cords together.",
     "arabicTranslation": "منظم كابلات"
+  },
+  "tablet": {
+    "definition": "A portable computer operated mainly through a touchscreen.",
+    "arabicTranslation": "حاسوب لوحي"
+  },
+  "laptop": {
+    "definition": "A portable computer with a built-in screen and keyboard.",
+    "arabicTranslation": "حاسوب محمول"
   }
 }

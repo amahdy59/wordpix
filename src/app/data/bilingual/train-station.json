@@ -1,25 +1,28 @@
 {
   "passenger-train": {
     "definition": "A train used to transport people rather than freight.",
-    "arabicTranslation": "قطار ركاب"
+    "arabicTranslation": "قطار ركاب",
+    "exampleUsage": "The passenger train carried travelers between the two cities."
   },
   "freight-train": {
     "definition": "A train used mainly to transport goods rather than passengers.",
-    "exampleUsage": "A freight train moved containers through the station yard.",
+    "exampleUsage": "The freight train carried containers through the yard.",
     "arabicTranslation": "قطار بضائع"
   },
   "high-speed-train": {
     "definition": "A passenger train designed to travel at very high speeds on suitable rail lines.",
-    "exampleUsage": "The high-speed train connects the two cities.",
+    "exampleUsage": "The high-speed train connects the cities on a suitable rail line.",
     "arabicTranslation": "قطار فائق السرعة"
   },
   "subway": {
-    "definition": "An electric railway operating below the surface of the ground (usually in a city).",
-    "arabicTranslation": "مترو"
+    "definition": "An urban rapid-transit railway system, often partly or largely underground.",
+    "arabicTranslation": "مترو",
+    "exampleUsage": "The subway provides rapid transit across the city."
   },
   "locomotive": {
     "arabicTranslation": "قاطرة",
-    "definition": "A railway engine that pulls or pushes train cars."
+    "definition": "A railway engine that pulls or pushes train cars.",
+    "exampleUsage": "The locomotive pulled the carriages from the station."
   },
   "train-car": {
     "definition": "One vehicle or carriage forming part of a train.",
@@ -28,7 +31,8 @@
   },
   "dining-car": {
     "definition": "A railway carriage that provides meals and drinks to passengers during a journey.",
-    "arabicTranslation": "عربة مطعم"
+    "arabicTranslation": "عربة مطعم",
+    "exampleUsage": "The dining car served meals during the journey."
   },
   "sleeper-car": {
     "definition": "A passenger train car containing beds or sleeping compartments for overnight travel.",
@@ -37,206 +41,242 @@
   },
   "caboose": {
     "definition": "A car on a freight train for use of the train crew.",
-    "arabicTranslation": "عربة طاقم في مؤخرة قطار بضائع"
+    "arabicTranslation": "عربة طاقم في مؤخرة قطار بضائع",
+    "exampleUsage": "The historical freight train had a caboose for its crew."
   },
   "monorail": {
     "definition": "A railway system in which trains run on a single rail.",
-    "arabicTranslation": "قطار أحادي السكة"
+    "arabicTranslation": "قطار أحادي السكة",
+    "exampleUsage": "The monorail runs on a single rail."
   },
   "platform": {
     "definition": "The area beside a railway track where passengers board or leave trains.",
-    "arabicTranslation": "رصيف المحطة"
+    "arabicTranslation": "رصيف المحطة",
+    "exampleUsage": "Passengers waited in the permitted area of the platform."
   },
   "track": {
     "definition": "The rails and supporting structure on which a train runs.",
-    "arabicTranslation": "سكة حديد"
+    "arabicTranslation": "سكة حديد",
+    "exampleUsage": "Staff kept visitors away from the operating track."
   },
   "ticket-office": {
     "definition": "A staffed office where passengers buy train tickets.",
-    "arabicTranslation": "مكتب التذاكر"
+    "arabicTranslation": "مكتب التذاكر",
+    "exampleUsage": "The traveler bought a ticket at the ticket office."
   },
   "waiting-room": {
     "definition": "A room where passengers sit while waiting for a train.",
-    "exampleUsage": "Travelers waited in the station waiting room.",
+    "exampleUsage": "Travelers rested in the waiting room.",
     "arabicTranslation": "غرفة انتظار"
   },
   "concourse": {
     "arabicTranslation": "ردهة رئيسية",
-    "definition": "A large open area in a station through which passengers move."
+    "definition": "A large open area in a station through which passengers move.",
+    "exampleUsage": "The traveler crossed the concourse toward the departure area."
   },
   "information-desk": {
     "definition": "A staffed service point helps visitors in public or institutional buildings find their way, ask questions, and obtain general assistance.",
-    "arabicTranslation": "مكتب استعلامات"
+    "arabicTranslation": "مكتب استعلامات",
+    "exampleUsage": "Staff at the information desk explained the current platform information."
   },
   "newsstand": {
     "definition": "A small shop or stand that sells newspapers and magazines.",
-    "arabicTranslation": "كشك صحف"
+    "arabicTranslation": "كشك صحف",
+    "exampleUsage": "The newsstand sells newspapers and magazines."
   },
   "vending-machine": {
     "definition": "A machine that dispenses products after a customer inserts payment.",
     "arabicTranslation": "آلة بيع ذاتي",
-    "exampleUsage": "The vending machine was used during the activity."
+    "exampleUsage": "The vending machine dispensed a drink after payment."
   },
   "restroom": {
     "definition": "A public room containing toilets and washing facilities.",
-    "arabicTranslation": "دورة مياه"
+    "arabicTranslation": "دورة مياه",
+    "exampleUsage": "The traveler asked where the restroom was."
   },
   "parking-garage": {
     "definition": "A building or covered structure with multiple vehicle-parking spaces.",
-    "exampleUsage": "The station parking garage is connected by a walkway.",
+    "exampleUsage": "The parking garage is connected to the station by a walkway.",
     "arabicTranslation": "مرآب سيارات"
   },
   "taxi-stand": {
     "definition": "A designated place where taxis wait to pick up passengers.",
-    "exampleUsage": "Passengers lined up at the taxi stand.",
+    "exampleUsage": "Passengers queued at the taxi stand.",
     "arabicTranslation": "موقف سيارات أجرة"
   },
   "bus-stop": {
     "definition": "A designated roadside location where buses collect passengers or let them off, often identified by a sign, shelter, or raised platform.",
-    "arabicTranslation": "موقف حافلات"
+    "arabicTranslation": "موقف حافلات",
+    "exampleUsage": "The bus stop is outside the station entrance."
   },
   "ticket": {
     "definition": "A printed or electronic document that permits travel on a train.",
-    "arabicTranslation": "تذكرة"
+    "arabicTranslation": "تذكرة",
+    "exampleUsage": "The traveler showed the ticket to the conductor."
   },
   "round-trip": {
     "definition": "A journey that carries someone to a destination and back to the place of departure, or the combined distance or fare for both legs.",
-    "arabicTranslation": "رحلة ذهاب وعودة"
+    "arabicTranslation": "رحلة ذهاب وعودة",
+    "exampleUsage": "The fare covered a round trip between the cities."
   },
   "one-way": {
     "definition": "Describing a journey or ticket to a destination without a return journey.",
-    "arabicTranslation": "ذهاب فقط"
+    "arabicTranslation": "ذهاب فقط",
+    "exampleUsage": "The traveler bought a one-way ticket without a return journey."
   },
   "schedule": {
     "arabicTranslation": "جدول",
-    "definition": "A plan showing when events or activities will happen."
+    "definition": "A plan showing when events or activities will happen.",
+    "exampleUsage": "The schedule lists the planned service times."
   },
   "timetable": {
     "definition": "A schedule listing events and the times at which they will take place.",
-    "arabicTranslation": "جدول مواعيد"
+    "arabicTranslation": "جدول مواعيد",
+    "exampleUsage": "The timetable shows the train's scheduled departure."
   },
   "departure-board": {
     "definition": "A display showing scheduled departures, destinations, platforms, and times.",
-    "exampleUsage": "The departure board showed a platform change.",
+    "exampleUsage": "The departure board showed the current platform.",
     "arabicTranslation": "لوحة المغادرة"
   },
   "arrival-board": {
     "definition": "A display showing incoming services, arrival times, and related information.",
-    "exampleUsage": "The arrival board listed the delayed train.",
+    "exampleUsage": "The arrival board listed the delayed incoming train.",
     "arabicTranslation": "لوحة الوصول"
   },
   "reservation": {
     "definition": "Something reserved in advance (as a hotel accommodation or a seat on a plane etc.).",
-    "arabicTranslation": "حجز"
+    "arabicTranslation": "حجز",
+    "exampleUsage": "The traveler made a reservation for a seat."
   },
   "seat-number": {
     "definition": "A number used to identify a specific passenger seat.",
-    "exampleUsage": "Her ticket showed seat number 24.",
+    "exampleUsage": "The ticket gives the booked seat number.",
     "arabicTranslation": "رقم المقعد"
   },
   "first-class": {
     "definition": "A higher service class on some trains, usually offering different seating or amenities from standard class.",
-    "exampleUsage": "The diagram marks the first-class car.",
+    "exampleUsage": "The traveler compared first class with the operator's other service categories.",
     "arabicTranslation": "الدرجة الأولى"
   },
   "economy-class": {
     "definition": "A travel section on a ship, train, or plane that costs less than first class.",
-    "arabicTranslation": "درجة اقتصادية"
+    "arabicTranslation": "درجة اقتصادية",
+    "exampleUsage": "The booking was for economy class under the operator's service terms."
   },
   "pass": {
     "definition": "A ticket that permits specified train journeys over a period of time.",
-    "arabicTranslation": "اشتراك سفر"
+    "arabicTranslation": "اشتراك سفر",
+    "exampleUsage": "The pass allows specified journeys during its validity period."
   },
   "turnstile": {
     "definition": "A gate consisting of a post that acts as a pivot for rotating arms.",
-    "arabicTranslation": "بوابة دوارة"
+    "arabicTranslation": "بوابة دوارة",
+    "exampleUsage": "The turnstile rotated to admit the passenger."
   },
   "signal": {
     "definition": "A railway light or sign that tells train drivers when to stop or proceed.",
-    "arabicTranslation": "إشارة"
+    "arabicTranslation": "إشارة",
+    "exampleUsage": "The signal displayed information for the train driver."
   },
   "crossing-gate": {
     "definition": "A movable barrier that blocks road or pedestrian traffic when a train is approaching a railway crossing.",
-    "exampleUsage": "The crossing gate lowered before the train arrived.",
+    "exampleUsage": "The crossing gate lowered before the train passed.",
     "arabicTranslation": "حاجز معبر سكك حديدية"
   },
   "bridge": {
     "definition": "A structure that carries a railway or road over water, a valley, or another route.",
-    "arabicTranslation": "جسر"
+    "arabicTranslation": "جسر",
+    "exampleUsage": "The railway bridge crosses the river."
   },
   "tunnel": {
-    "definition": "A narrow passage with an opening at both ends.",
-    "arabicTranslation": "نفق"
+    "definition": "An enclosed passage through or beneath land or another structure.",
+    "arabicTranslation": "نفق",
+    "exampleUsage": "The train traveled through a tunnel beneath the hill."
   },
   "overhead-wire": {
     "definition": "An electrical wire suspended above a railway line to supply power to electric trains.",
-    "exampleUsage": "The electric train draws power from the overhead wire.",
+    "exampleUsage": "The compatible electric train draws power from an overhead wire.",
     "arabicTranslation": "سلك كهربائي علوي"
   },
   "rail": {
     "arabicTranslation": "قضيب سكة حديد",
-    "definition": "A metal track on which a train runs."
+    "definition": "A metal track on which a train runs.",
+    "exampleUsage": "The wheel runs along the metal rail."
   },
   "switch": {
     "definition": "A movable section of railway track that guides a train onto another track.",
-    "arabicTranslation": "محوّل سكة حديد"
+    "arabicTranslation": "محوّل سكة حديد",
+    "exampleUsage": "The switch guides the train onto a different track."
   },
   "buffer-stop": {
-    "definition": "A barrier at the end of a railway track designed to prevent trains from moving beyond the track end.",
-    "exampleUsage": "The buffer stop stood at the end of the platform track.",
+    "definition": "A structure installed at the end of a railway track to limit movement beyond it under specified design conditions.",
+    "exampleUsage": "The buffer stop stands at the end of the track.",
     "arabicTranslation": "حاجز نهاية السكة"
   },
   "clock-tower": {
     "definition": "A tower designed with a large clock displayed high on an exterior wall.",
-    "arabicTranslation": "برج ساعة"
+    "arabicTranslation": "برج ساعة",
+    "exampleUsage": "The clock tower shows the time above the station entrance."
   },
   "conductor": {
     "definition": "A train crew member who checks tickets and assists passengers.",
-    "arabicTranslation": "محصل أو مشرف قطار"
+    "arabicTranslation": "محصل أو مشرف قطار",
+    "exampleUsage": "The conductor checked the passengers' tickets."
   },
   "engineer": {
     "definition": "The person who operates a locomotive; also called a train driver.",
-    "exampleUsage": "The glossary uses the term \"engineer\" in an educational description.",
+    "exampleUsage": "The engineer operated the locomotive in this US rail account.",
     "arabicTranslation": "سائق قطار"
   },
   "porter": {
     "definition": "A worker who helps passengers carry luggage.",
-    "arabicTranslation": "حمال أمتعة"
+    "arabicTranslation": "حمال أمتعة",
+    "exampleUsage": "The porter helped the traveler carry luggage."
   },
   "commuter": {
     "definition": "A person who regularly travels between home and work or study.",
-    "arabicTranslation": "راكب يتنقل يوميًا"
+    "arabicTranslation": "راكب يتنقل يوميًا",
+    "exampleUsage": "The commuter travels between home and work regularly."
   },
   "traveler": {
-    "definition": "A person who changes location.",
-    "arabicTranslation": "مسافر"
+    "definition": "A person making a journey.",
+    "arabicTranslation": "مسافر",
+    "exampleUsage": "The traveler asked about the onward connection."
   },
   "boarding": {
     "definition": "Getting onto a train.",
-    "arabicTranslation": "الصعود إلى القطار"
+    "arabicTranslation": "الصعود إلى القطار",
+    "exampleUsage": "Boarding began after the staff announcement."
   },
   "departing": {
-    "arabicTranslation": "المغادرة",
-    "definition": "That is going out or leaving."
+    "arabicTranslation": "يغادر",
+    "definition": "Leaving a place or beginning the outward journey.",
+    "exampleUsage": "The train is departing from the station."
   },
   "arriving": {
     "definition": "Getting to a place or the end of a trip.",
-    "arabicTranslation": "الوصول"
+    "arabicTranslation": "الوصول",
+    "exampleUsage": "The train is arriving at its destination."
   },
   "transferring": {
     "definition": "Changing from one train or transport service to another.",
-    "arabicTranslation": "الانتقال إلى قطار آخر"
+    "arabicTranslation": "الانتقال إلى قطار آخر",
+    "exampleUsage": "The traveler is transferring to another service."
   },
   "waiting": {
     "definition": "The act of waiting (remaining inactive in one place while expecting something).",
-    "arabicTranslation": "الانتظار"
+    "arabicTranslation": "الانتظار",
+    "exampleUsage": "The passengers are waiting for the next train."
   },
   "announcing": {
     "definition": "Giving passengers spoken information, such as a departure time.",
-    "arabicTranslation": "الإعلان"
+    "arabicTranslation": "الإعلان",
+    "exampleUsage": "The staff member is announcing the platform change."
   },
   "validating": {
     "definition": "Checking or marking a ticket to confirm that it can be used.",
-    "arabicTranslation": "التحقق من صلاحية التذكرة"
+    "arabicTranslation": "التحقق من صلاحية التذكرة",
+    "exampleUsage": "The operator requires validating the ticket before the stated journey."
   }
 }

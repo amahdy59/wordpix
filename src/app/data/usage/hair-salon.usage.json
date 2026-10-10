@@ -36,7 +36,7 @@
       "غرة",
       "قصة شعر قصيرة جدًا بالماكينة",
       "قصة شعر متدرجة مشعثة",
-      "قصة شعر قصيرة متساوية",
+      "قصة شعر قصيرة جدًا",
       "قصة موهوك",
       "غُرّة الشعر",
       "فرق جانبي للشعر",
@@ -44,135 +44,134 @@
       "ضفائر"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Trim", "Layers", "Bob"],
-          "scenario": "During a routine the hair salon task, an adult compares Trim, Layers, Bob. The person selects Trim for the next step.",
+          "scenario": "At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service fits Mona’s request to remove only a small amount?",
             "options": ["Trim", "Layers", "Bob"],
             "expectedAnswer": "Trim"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Trim, Layers, Bob. The person selects Trim for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Trim, Layers, Bob in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pixie", "Fade", "Undercut"],
-          "scenario": "During a routine the hair salon task, an adult compares Pixie, Fade, Undercut. The person selects Pixie for the next step.",
+          "scenario": "The stylist describes a pixie as a very short hairstyle. A fade gradually shortens hair near the sides and back. An undercut has much shorter hair beneath longer hair on top. These names describe styles rather than a person’s gender or character.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which style has shorter hair beneath longer hair on top?",
             "options": ["Pixie", "Fade", "Undercut"],
-            "expectedAnswer": "Pixie"
+            "expectedAnswer": "Undercut"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Pixie, Fade, Undercut. The person selects Pixie for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Pixie, Fade, Undercut in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: The stylist describes a pixie as a very short hairstyle. A fade gradually shortens hair near the sides and back. An undercut has much shorter hair beneath longer hair on top. These names describe styles rather than a person’s gender or character. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bangs", "Buzz Cut", "Shag"],
-          "scenario": "During a routine the hair salon task, an adult compares Bangs, Buzz Cut, Shag. The person selects Bangs for the next step.",
+          "scenario": "Ali asks about bangs, hair falling across the forehead. A buzz cut is very short overall, usually made with clippers. A shag uses layers for a loose, tousled appearance. He asks the stylist to explain before choosing.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names hair falling across the forehead?",
             "options": ["Bangs", "Buzz Cut", "Shag"],
             "expectedAnswer": "Bangs"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Bangs, Buzz Cut, Shag. The person selects Bangs for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Bangs, Buzz Cut, Shag in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: Ali asks about bangs, hair falling across the forehead. A buzz cut is very short overall, usually made with clippers. A shag uses layers for a loose, tousled appearance. He asks the stylist to explain before choosing. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Crew Cut", "Mohawk", "Bangs/Fringe"],
-          "scenario": "During a routine the hair salon task, an adult compares Crew Cut, Mohawk, Bangs/Fringe. The person selects Crew Cut for the next step.",
+          "scenario": "A style guide describes a crew cut as a very short cut, often longer on top than the sides. A mohawk leaves a central strip with much shorter sides. The combined label Bangs/Fringe explains that bangs is American English and fringe is British English.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which label gives American and British names for forehead hair?",
             "options": ["Crew Cut", "Mohawk", "Bangs/Fringe"],
-            "expectedAnswer": "Crew Cut"
+            "expectedAnswer": "Bangs/Fringe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Crew Cut, Mohawk, Bangs/Fringe. The person selects Crew Cut for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Crew Cut, Mohawk, Bangs/Fringe in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: A style guide describes a crew cut as a very short cut, often longer on top than the sides. A mohawk leaves a central strip with much shorter sides. The combined label Bangs/Fringe explains that bangs is American English and fringe is British English. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Side Part", "Comb Over", "Braids"],
-          "scenario": "During a routine the hair salon task, an adult compares Side Part, Comb Over, Braids. The person selects Side Part for the next step.",
+          "scenario": "At the mirror, the stylist shows a side part, dividing hair toward one side. A comb over sweeps hair across from one side. Braids weave strands together. The client describes the arrangement she prefers.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which arrangement weaves strands together?",
             "options": ["Side Part", "Comb Over", "Braids"],
-            "expectedAnswer": "Side Part"
+            "expectedAnswer": "Braids"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Side Part, Comb Over, Braids. The person selects Side Part for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Side Part, Comb Over, Braids in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: At the mirror, the stylist shows a side part, dividing hair toward one side. A comb over sweeps hair across from one side. Braids weave strands together. The client describes the arrangement she prefers. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 1: A short reading",
-      "text": "Maya shows the stylist a photograph of a bob. She wants a trim rather than a completely new style. Omar asks about a fade and an undercut for his next appointment. The stylist explains the choices and checks how much hair Maya wants removed. Maya confirms the length before the haircut begins.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Discussing a cut",
+      "text": "Mona visits a salon for a trim because she wants to keep most of her length. The stylist compares layers and a bob before confirming her request. At the consultation desk, other style examples include a pixie, fade, undercut, bangs, buzz cut and shag. A guide explains crew cut and mohawk. Bangs/Fringe gives American and British terms for hair across the forehead. At the mirror, Mona asks about a side part, comb over and braids. The stylist uses these names to understand the desired arrangement, not to judge identity, professionalism or character from someone’s hair.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Trim, Layers, Bob. The person selects Trim for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length.\nWhich service fits Mona’s request to remove only a small amount?",
         "answer": "Trim",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Pixie, Fade, Undercut. The person selects Pixie for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Pixie",
+        "prompt": "The stylist describes a pixie as a very short hairstyle. A fade gradually shortens hair near the sides and back. An undercut has much shorter hair beneath longer hair on top. These names describe styles rather than a person’s gender or character.\nWhich style has shorter hair beneath longer hair on top?",
+        "answer": "Undercut",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Bangs, Buzz Cut, Shag. The person selects Bangs for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Ali asks about bangs, hair falling across the forehead. A buzz cut is very short overall, usually made with clippers. A shag uses layers for a loose, tousled appearance. He asks the stylist to explain before choosing.\nWhich term names hair falling across the forehead?",
         "answer": "Bangs",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Crew Cut, Mohawk, Bangs/Fringe. The person selects Crew Cut for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Crew Cut",
+        "prompt": "A style guide describes a crew cut as a very short cut, often longer on top than the sides. A mohawk leaves a central strip with much shorter sides. The combined label Bangs/Fringe explains that bangs is American English and fringe is British English.\nWhich label gives American and British names for forehead hair?",
+        "answer": "Bangs/Fringe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Side Part, Comb Over, Braids. The person selects Side Part for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Side Part",
+        "prompt": "At the mirror, the stylist shows a side part, dividing hair toward one side. A comb over sweeps hair across from one side. Braids weave strands together. The client describes the arrangement she prefers.\nWhich arrangement weaves strands together?",
+        "answer": "Braids",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lens Edger” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Maya want rather than a completely new style?",
-        "answer": "A trim",
-        "questionType": "meaning",
+        "prompt": "Mona visits a salon for a trim because she wants to keep most of her length. The stylist compares layers and a bob before confirming her request. At the consultation desk, other style examples include a pixie, fade, undercut, bangs, buzz cut and shag. A guide explains crew cut and mohawk. Bangs/Fringe gives American and British terms for hair across the forehead. At the mirror, Mona asks about a side part, comb over and braids. The stylist uses these names to understand the desired arrangement, not to judge identity, professionalism or character from someone’s hair.\nWhy does Mona ask for a trim?",
+        "answer": "She wants to keep most of her length",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "Mona wants a trim because she wants to keep most of her length.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Discussing a cut",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "At a consultation, Mona asks for a trim, removing a small amount from the ends. The stylist explains layers, sections cut to different lengths, and a bob, a cut ending around the jaw or neck. Mona wants to keep most of her length."
     },
     "spacedReview": "1 lesson(s) back: Lens Edger, Pupilometer from eye-doctor-8\n3 lesson(s) back: Iris, Pupil from eye-doctor-6\n7 lesson(s) back: Biomicroscope, Amsler Grid from eye-doctor-2"
   },
@@ -221,135 +220,134 @@
       "دبوس شعر"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Cornrows", "Dreadlocks", "Extensions"],
-          "scenario": "During a routine the hair salon task, an adult compares Cornrows, Dreadlocks, Extensions. The person selects Cornrows for the next step.",
+          "scenario": "The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which option adds hair for length or fullness?",
             "options": ["Cornrows", "Dreadlocks", "Extensions"],
-            "expectedAnswer": "Cornrows"
+            "expectedAnswer": "Extensions"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Cornrows, Dreadlocks, Extensions. The person selects Cornrows for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Cornrows, Dreadlocks, Extensions in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wig", "Hair Net", "Blow Dry"],
-          "scenario": "During a routine the hair salon task, an adult compares Wig, Hair Net, Blow Dry. The person selects Wig for the next step.",
+          "scenario": "A wig is a hairpiece covering the head. A hair net is mesh that contains hair. Blow dry means drying or styling hair with airflow from a dryer. A wig and hair net are objects; blow dry names a service or action.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the airflow-based service?",
             "options": ["Wig", "Hair Net", "Blow Dry"],
-            "expectedAnswer": "Wig"
+            "expectedAnswer": "Blow Dry"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Wig, Hair Net, Blow Dry. The person selects Wig for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Wig, Hair Net, Blow Dry in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: A wig is a hairpiece covering the head. A hair net is mesh that contains hair. Blow dry means drying or styling hair with airflow from a dryer. A wig and hair net are objects; blow dry names a service or action. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Curl", "Straighten", "Braid"],
-          "scenario": "During a routine the hair salon task, an adult compares Curl, Straighten, Braid. The person selects Curl for the next step.",
+          "scenario": "The stylist asks whether the client wants to curl, straighten or braid the hair. Curl forms curved shapes, straighten makes it less curly, and braid weaves strands together. The discussion establishes the request before any styling starts.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which action weaves strands together?",
             "options": ["Curl", "Straighten", "Braid"],
-            "expectedAnswer": "Curl"
+            "expectedAnswer": "Braid"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Curl, Straighten, Braid. The person selects Curl for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Curl, Straighten, Braid in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: The stylist asks whether the client wants to curl, straighten or braid the hair. Curl forms curved shapes, straighten makes it less curly, and braid weaves strands together. The discussion establishes the request before any styling starts. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Updo", "Ponytail", "Bun"],
-          "scenario": "During a routine the hair salon task, an adult compares Updo, Ponytail, Bun. The person selects Updo for the next step.",
+          "scenario": "For an event, Leila compares an updo, with hair arranged up or back, with a ponytail, hair gathered to hang from one point. A bun gathers hair into a rounded shape. A bun can be part of an updo, so the terms are not always exclusive.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which style gathers hair into a rounded shape?",
             "options": ["Updo", "Ponytail", "Bun"],
-            "expectedAnswer": "Updo"
+            "expectedAnswer": "Bun"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Updo, Ponytail, Bun. The person selects Updo for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Updo, Ponytail, Bun in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: For an event, Leila compares an updo, with hair arranged up or back, with a ponytail, hair gathered to hang from one point. A bun gathers hair into a rounded shape. A bun can be part of an updo, so the terms are not always exclusive. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Waves", "Twist", "Pin"],
-          "scenario": "During a routine the hair salon task, an adult compares Waves, Twist, Pin. The person selects Waves for the next step.",
+          "scenario": "The client wants soft waves, gentle curves in the hair. The stylist may twist strands around one another and use a pin, a small fastener, to hold part of the style. Here, twist is an action and pin is an object.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the small fastener?",
             "options": ["Waves", "Twist", "Pin"],
-            "expectedAnswer": "Waves"
+            "expectedAnswer": "Pin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Waves, Twist, Pin. The person selects Waves for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Waves, Twist, Pin in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: The client wants soft waves, gentle curves in the hair. The stylist may twist strands around one another and use a pin, a small fastener, to hold part of the style. Here, twist is an action and pin is an object. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 2: A short reading",
-      "text": "Omar reads a hairstyle chart showing cornrows, dreadlocks, and extensions. Maya chooses a braid for an event. She asks the stylist to curl the loose ends instead of straightening them. A wig and hair net are in a separate display. The stylist checks Maya's photograph before starting the requested style.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing an arrangement",
+      "text": "Leila discusses an event hairstyle with the stylist. The examples include cornrows, dreadlocks and extensions. She also sees a wig and hair net and asks what a blow dry involves. The stylist explains curl, straighten and braid as actions. Leila compares an updo, ponytail and bun, learning that a bun may be part of an updo. She finally describes waves and asks whether the stylist can twist a section and hold it with a pin. The stylist confirms her wishes before touching her hair. The names help the conversation without assigning styles to a gender, ethnicity or personality.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing hairstyle examples at a salon mirror, with simple mannequin samples nearby. Support this written account: The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Cornrows, Dreadlocks, Extensions. The person selects Cornrows for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Cornrows",
+        "prompt": "The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality.\nWhich option adds hair for length or fullness?",
+        "answer": "Extensions",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Wig, Hair Net, Blow Dry. The person selects Wig for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Wig",
+        "prompt": "A wig is a hairpiece covering the head. A hair net is mesh that contains hair. Blow dry means drying or styling hair with airflow from a dryer. A wig and hair net are objects; blow dry names a service or action.\nWhich term names the airflow-based service?",
+        "answer": "Blow Dry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Curl, Straighten, Braid. The person selects Curl for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Curl",
+        "prompt": "The stylist asks whether the client wants to curl, straighten or braid the hair. Curl forms curved shapes, straighten makes it less curly, and braid weaves strands together. The discussion establishes the request before any styling starts.\nWhich action weaves strands together?",
+        "answer": "Braid",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Updo, Ponytail, Bun. The person selects Updo for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Updo",
+        "prompt": "For an event, Leila compares an updo, with hair arranged up or back, with a ponytail, hair gathered to hang from one point. A bun gathers hair into a rounded shape. A bun can be part of an updo, so the terms are not always exclusive.\nWhich style gathers hair into a rounded shape?",
+        "answer": "Bun",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Waves, Twist, Pin. The person selects Waves for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Waves",
+        "prompt": "The client wants soft waves, gentle curves in the hair. The stylist may twist strands around one another and use a pin, a small fastener, to hold part of the style. Here, twist is an action and pin is an object.\nWhich term names the small fastener?",
+        "answer": "Pin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Trim” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What hairstyle does Maya choose for an event?",
-        "answer": "A braid",
-        "questionType": "meaning",
+        "prompt": "Leila discusses an event hairstyle with the stylist. The examples include cornrows, dreadlocks and extensions. She also sees a wig and hair net and asks what a blow dry involves. The stylist explains curl, straighten and braid as actions. Leila compares an updo, ponytail and bun, learning that a bun may be part of an updo. She finally describes waves and asks whether the stylist can twist a section and hold it with a pin. The stylist confirms her wishes before touching her hair. The names help the conversation without assigning styles to a gender, ethnicity or personality.\nWhen does the stylist confirm Leila’s wishes?",
+        "answer": "Before touching her hair",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "Extensions add hair for length or fullness.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing an arrangement",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "The stylist explains cornrows, braids close to the scalp in rows. Dreadlocks, also called locs, are formed strands of locked hair. Extensions add natural or synthetic hair for length or fullness. The client’s choice does not establish ethnicity or personality."
     },
     "spacedReview": "1 lesson(s) back: Trim, Layers from hair-salon-1\n3 lesson(s) back: Fovea, Blind Spot from eye-doctor-7\n7 lesson(s) back: Reading Glasses, Safety Goggles from eye-doctor-3"
   },
@@ -398,135 +396,134 @@
       "مثبت شعر"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hair Rollers", "Curling Iron", "Flat Iron"],
-          "scenario": "During a routine the hair salon task, an adult compares Hair Rollers, Curling Iron, Flat Iron. The person selects Hair Rollers for the next step.",
+          "scenario": "At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool has flat heated plates?",
             "options": ["Hair Rollers", "Curling Iron", "Flat Iron"],
-            "expectedAnswer": "Hair Rollers"
+            "expectedAnswer": "Flat Iron"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Hair Rollers, Curling Iron, Flat Iron. The person selects Hair Rollers for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Hair Rollers, Curling Iron, Flat Iron in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Blow Dryer", "Diffuser", "Hair Cape"],
-          "scenario": "During a routine the hair salon task, an adult compares Blow Dryer, Diffuser, Hair Cape. The person selects Blow Dryer for the next step.",
+          "scenario": "The stylist shows a blow dryer that directs air onto hair. A diffuser is an attachment that spreads the airflow. A hair cape covers the client’s shoulders and clothing during a service.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item protects clothing?",
             "options": ["Blow Dryer", "Diffuser", "Hair Cape"],
-            "expectedAnswer": "Blow Dryer"
+            "expectedAnswer": "Hair Cape"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Blow Dryer, Diffuser, Hair Cape. The person selects Blow Dryer for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Blow Dryer, Diffuser, Hair Cape in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The stylist shows a blow dryer that directs air onto hair. A diffuser is an attachment that spreads the airflow. A hair cape covers the client’s shoulders and clothing during a service. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Neck Strip", "Barber Pole", "Shaving Cream"],
-          "scenario": "During a routine the hair salon task, an adult compares Neck Strip, Barber Pole, Shaving Cream. The person selects Neck Strip for the next step.",
+          "scenario": "A neck strip sits under a salon cape. A barber pole is a striped shop sign. Shaving cream is a product used during shaving. The pole is outside the shop, while the other items belong to the service setup.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which object is the shop sign?",
             "options": ["Neck Strip", "Barber Pole", "Shaving Cream"],
-            "expectedAnswer": "Neck Strip"
+            "expectedAnswer": "Barber Pole"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Neck Strip, Barber Pole, Shaving Cream. The person selects Neck Strip for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Neck Strip, Barber Pole, Shaving Cream in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: A neck strip sits under a salon cape. A barber pole is a striped shop sign. Shaving cream is a product used during shaving. The pole is outside the shop, while the other items belong to the service setup. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Aftershave", "Pomade", "Hair Gel"],
-          "scenario": "During a routine the hair salon task, an adult compares Aftershave, Pomade, Hair Gel. The person selects Aftershave for the next step.",
+          "scenario": "At a product display, aftershave is used on skin after shaving. Pomade shapes or smooths hair. Hair gel helps hold a hairstyle. The client asks which product the label refers to, rather than inferring contents from the container.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product is used after shaving?",
             "options": ["Aftershave", "Pomade", "Hair Gel"],
             "expectedAnswer": "Aftershave"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Aftershave, Pomade, Hair Gel. The person selects Aftershave for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Aftershave, Pomade, Hair Gel in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: At a product display, aftershave is used on skin after shaving. Pomade shapes or smooths hair. Hair gel helps hold a hairstyle. The client asks which product the label refers to, rather than inferring contents from the container. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Hair Wax", "Mousse", "Hair Spray"],
-          "scenario": "During a routine the hair salon task, an adult compares Hair Wax, Mousse, Hair Spray. The person selects Hair Wax for the next step.",
+          "scenario": "The stylist compares hair wax, a wax-textured shaping product, with mousse, a light foam. Hair spray applies a fine mist to help hold a style. Product texture and purpose come from the written description, not a label-free photograph.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product is a light foam?",
             "options": ["Hair Wax", "Mousse", "Hair Spray"],
-            "expectedAnswer": "Hair Wax"
+            "expectedAnswer": "Mousse"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Hair Wax, Mousse, Hair Spray. The person selects Hair Wax for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Hair Wax, Mousse, Hair Spray in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The stylist compares hair wax, a wax-textured shaping product, with mousse, a light foam. Hair spray applies a fine mist to help hold a style. Product texture and purpose come from the written description, not a label-free photograph. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 3: A short reading",
-      "text": "The stylist puts a hair cape around Maya and prepares a blow dryer with a diffuser. A flat iron and curling iron are nearby, but they are not needed for this appointment. Omar notices hair rollers on another station. The stylist clears unused tools away and checks that Maya is comfortable.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tools and products",
+      "text": "Before a service, the stylist explains a tool display. Hair rollers, a curling iron and a flat iron shape hair in different ways. A blow dryer directs air, while a diffuser spreads it. A hair cape protects clothing. A fresh neck strip belongs under a cape, and the barber pole is the sign outside. Shaving cream and aftershave are discussed as grooming products. Pomade, hair gel, hair wax, mousse and hair spray have different textures and purposes. The client learns the names but receives no blade-use, heating or chemical instructions from this vocabulary account.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Hair Rollers, Curling Iron, Flat Iron. The person selects Hair Rollers for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Hair Rollers",
+        "prompt": "At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions.\nWhich tool has flat heated plates?",
+        "answer": "Flat Iron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Blow Dryer, Diffuser, Hair Cape. The person selects Blow Dryer for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Blow Dryer",
+        "prompt": "The stylist shows a blow dryer that directs air onto hair. A diffuser is an attachment that spreads the airflow. A hair cape covers the client’s shoulders and clothing during a service.\nWhich item protects clothing?",
+        "answer": "Hair Cape",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Neck Strip, Barber Pole, Shaving Cream. The person selects Neck Strip for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Neck Strip",
+        "prompt": "A neck strip sits under a salon cape. A barber pole is a striped shop sign. Shaving cream is a product used during shaving. The pole is outside the shop, while the other items belong to the service setup.\nWhich object is the shop sign?",
+        "answer": "Barber Pole",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Aftershave, Pomade, Hair Gel. The person selects Aftershave for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "At a product display, aftershave is used on skin after shaving. Pomade shapes or smooths hair. Hair gel helps hold a hairstyle. The client asks which product the label refers to, rather than inferring contents from the container.\nWhich product is used after shaving?",
         "answer": "Aftershave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Hair Wax, Mousse, Hair Spray. The person selects Hair Wax for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Hair Wax",
+        "prompt": "The stylist compares hair wax, a wax-textured shaping product, with mousse, a light foam. Hair spray applies a fine mist to help hold a style. Product texture and purpose come from the written description, not a label-free photograph.\nWhich product is a light foam?",
+        "answer": "Mousse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Cornrows” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does the stylist put around Maya?",
-        "answer": "A hair cape",
-        "questionType": "meaning",
+        "prompt": "Before a service, the stylist explains a tool display. Hair rollers, a curling iron and a flat iron shape hair in different ways. A blow dryer directs air, while a diffuser spreads it. A hair cape protects clothing. A fresh neck strip belongs under a cape, and the barber pole is the sign outside. Shaving cream and aftershave are discussed as grooming products. Pomade, hair gel, hair wax, mousse and hair spray have different textures and purposes. The client learns the names but receives no blade-use, heating or chemical instructions from this vocabulary account.\nDoes this vocabulary account give heat settings or blade-use instructions?",
+        "answer": "No; it introduces names and purposes",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "The flat iron has flat heated plates.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tools and products",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "At a tool display, hair rollers are cylinders around which hair can be wrapped. A curling iron is a heated curling tool. A flat iron has flat heated plates commonly used for straightening. The learner identifies tools without receiving heat-setting instructions."
     },
     "spacedReview": "1 lesson(s) back: Cornrows, Dreadlocks from hair-salon-2\n3 lesson(s) back: Lens Edger, Pupilometer from eye-doctor-8\n7 lesson(s) back: Floaters, Macular Degeneration from eye-doctor-4"
   },
@@ -575,135 +572,134 @@
       "تدرّج حلاقة قريب جدًا"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Highlights", "Lowlights", "Balayage"],
-          "scenario": "During a routine the hair salon task, an adult compares Highlights, Lowlights, Balayage. The person selects Highlights for the next step.",
+          "scenario": "The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term describes darker sections?",
             "options": ["Highlights", "Lowlights", "Balayage"],
-            "expectedAnswer": "Highlights"
+            "expectedAnswer": "Lowlights"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Highlights, Lowlights, Balayage. The person selects Highlights for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Highlights, Lowlights, Balayage in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Ombre", "Root Touch Up", "Bleach"],
-          "scenario": "During a routine the hair salon task, an adult compares Ombre, Root Touch Up, Bleach. The person selects Ombre for the next step.",
+          "scenario": "Ombre describes a gradual color transition, often from darker roots to lighter ends. A root touch up addresses newly grown roots. Bleach is a lightening product, not a harmless ordinary conditioner. This lesson describes services without teaching chemical application.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service mainly addresses newly grown roots?",
             "options": ["Ombre", "Root Touch Up", "Bleach"],
-            "expectedAnswer": "Ombre"
+            "expectedAnswer": "Root Touch Up"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Ombre, Root Touch Up, Bleach. The person selects Ombre for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Ombre, Root Touch Up, Bleach in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: Ombre describes a gradual color transition, often from darker roots to lighter ends. A root touch up addresses newly grown roots. Bleach is a lightening product, not a harmless ordinary conditioner. This lesson describes services without teaching chemical application. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Toner", "Dye", "Foil"],
-          "scenario": "During a routine the hair salon task, an adult compares Toner, Dye, Foil. The person selects Toner for the next step.",
+          "scenario": "A toner adjusts hair-color tones. Dye changes or adds color. Foil is thin metal sheet that can separate sections during coloring. The client learns the names; the colorist follows professional product guidance for any service.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is the thin metal sheet?",
             "options": ["Toner", "Dye", "Foil"],
-            "expectedAnswer": "Toner"
+            "expectedAnswer": "Foil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Toner, Dye, Foil. The person selects Toner for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Toner, Dye, Foil in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: A toner adjusts hair-color tones. Dye changes or adds color. Foil is thin metal sheet that can separate sections during coloring. The client learns the names; the colorist follows professional product guidance for any service. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Color Wheel", "Perm Solution", "Neutralizer"],
-          "scenario": "During a routine the hair salon task, an adult compares Color Wheel, Perm Solution, Neutralizer. The person selects Color Wheel for the next step.",
+          "scenario": "The color wheel shows relationships between colors. Perm solution is used in a permanent-wave service. A neutralizer is part of some chemical hair treatments to help set the changed shape. The lesson supplies no mixing ratios or procedural steps.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item shows relationships between colors?",
             "options": ["Color Wheel", "Perm Solution", "Neutralizer"],
             "expectedAnswer": "Color Wheel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Color Wheel, Perm Solution, Neutralizer. The person selects Color Wheel for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Color Wheel, Perm Solution, Neutralizer in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The color wheel shows relationships between colors. Perm solution is used in a permanent-wave service. A neutralizer is part of some chemical hair treatments to help set the changed shape. The lesson supplies no mixing ratios or procedural steps. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Scalp Massage", "Hot Towel", "Razor Fade"],
-          "scenario": "During a routine the hair salon task, an adult compares Scalp Massage, Hot Towel, Razor Fade. The person selects Scalp Massage for the next step.",
+          "scenario": "The salon menu offers scalp massage, manual movement on the scalp, and a hot towel service using a comfortably warmed towel. A razor fade names a very close haircut that may involve professional shaving tools. None is a treatment recommendation.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which service involves manual movement on the scalp?",
             "options": ["Scalp Massage", "Hot Towel", "Razor Fade"],
             "expectedAnswer": "Scalp Massage"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Scalp Massage, Hot Towel, Razor Fade. The person selects Scalp Massage for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Scalp Massage, Hot Towel, Razor Fade in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The salon menu offers scalp massage, manual movement on the scalp, and a hot towel service using a comfortably warmed towel. A razor fade names a very close haircut that may involve professional shaving tools. None is a treatment recommendation. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 4: A short reading",
-      "text": "Maya asks about highlights and lowlights before choosing a color service. The stylist shows photographs of balayage and ombre. Omar books a root touch up for another day. Maya explains the result she wants, and the stylist discusses the process. They agree on the plan before any color is applied.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Asking about color",
+      "text": "A client asks the colorist about highlights, lowlights and balayage. She learns that ombre names a gradual color effect, while a root touch up focuses on regrowth. Bleach is a lightening product; toner and dye have different coloring roles. Foil helps separate sections, and a color wheel shows color relationships. The menu also names perm solution, neutralizer, scalp massage, hot towel and razor fade. The colorist explains services before the client chooses. Chemical products can cause reactions and need appropriate professional and product guidance. The lesson provides no treatment recommendation, mixing ratio or application procedure.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Highlights, Lowlights, Balayage. The person selects Highlights for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Highlights",
+        "prompt": "The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service.\nWhich term describes darker sections?",
+        "answer": "Lowlights",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Ombre, Root Touch Up, Bleach. The person selects Ombre for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Ombre",
+        "prompt": "Ombre describes a gradual color transition, often from darker roots to lighter ends. A root touch up addresses newly grown roots. Bleach is a lightening product, not a harmless ordinary conditioner. This lesson describes services without teaching chemical application.\nWhich service mainly addresses newly grown roots?",
+        "answer": "Root Touch Up",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Toner, Dye, Foil. The person selects Toner for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Toner",
+        "prompt": "A toner adjusts hair-color tones. Dye changes or adds color. Foil is thin metal sheet that can separate sections during coloring. The client learns the names; the colorist follows professional product guidance for any service.\nWhich item is the thin metal sheet?",
+        "answer": "Foil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Color Wheel, Perm Solution, Neutralizer. The person selects Color Wheel for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The color wheel shows relationships between colors. Perm solution is used in a permanent-wave service. A neutralizer is part of some chemical hair treatments to help set the changed shape. The lesson supplies no mixing ratios or procedural steps.\nWhich item shows relationships between colors?",
         "answer": "Color Wheel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Scalp Massage, Hot Towel, Razor Fade. The person selects Scalp Massage for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The salon menu offers scalp massage, manual movement on the scalp, and a hot towel service using a comfortably warmed towel. A razor fade names a very close haircut that may involve professional shaving tools. None is a treatment recommendation.\nWhich service involves manual movement on the scalp?",
         "answer": "Scalp Massage",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hair Rollers” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Omar book for another day?",
-        "answer": "A root touch up",
-        "questionType": "meaning",
+        "prompt": "A client asks the colorist about highlights, lowlights and balayage. She learns that ombre names a gradual color effect, while a root touch up focuses on regrowth. Bleach is a lightening product; toner and dye have different coloring roles. Foil helps separate sections, and a color wheel shows color relationships. The menu also names perm solution, neutralizer, scalp massage, hot towel and razor fade. The colorist explains services before the client chooses. Chemical products can cause reactions and need appropriate professional and product guidance. The lesson provides no treatment recommendation, mixing ratio or application procedure.\nDoes ombre name the same thing as a root touch up?",
+        "answer": "No; ombre is a color effect and a root touch up addresses regrowth",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "Lowlights are darker sections of hair.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Asking about color",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "The colorist explains highlights as lighter sections and lowlights as darker sections. Balayage is a technique of painting color onto selected sections for a blended effect. The client asks about the difference before choosing a service."
     },
     "spacedReview": "1 lesson(s) back: Hair Rollers, Curling Iron from hair-salon-3\n3 lesson(s) back: Trim, Layers from hair-salon-1\n7 lesson(s) back: Therapy, Medication from eye-doctor-5"
   },
@@ -752,135 +748,134 @@
       "شامبو"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 5 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Taper", "Bob Cut", "Scissors"],
-          "scenario": "During a routine the hair salon task, an adult compares Taper, Bob Cut, Scissors. The person selects Taper for the next step.",
+          "scenario": "The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the cutting tool?",
             "options": ["Taper", "Bob Cut", "Scissors"],
-            "expectedAnswer": "Taper"
+            "expectedAnswer": "Scissors"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Taper, Bob Cut, Scissors. The person selects Taper for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Taper, Bob Cut, Scissors in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Comb", "Brush", "Clipper"],
-          "scenario": "During a routine the hair salon task, an adult compares Comb, Brush, Clipper. The person selects Comb for the next step.",
+          "scenario": "On the clean work surface, a comb has a row of teeth and a brush has bristles. A clipper is an electric hair-cutting tool. The client asks for names rather than instructions for using a blade.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool has bristles?",
             "options": ["Comb", "Brush", "Clipper"],
-            "expectedAnswer": "Comb"
+            "expectedAnswer": "Brush"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Comb, Brush, Clipper. The person selects Comb for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Comb, Brush, Clipper in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: On the clean work surface, a comb has a row of teeth and a brush has bristles. A clipper is an electric hair-cutting tool. The client asks for names rather than instructions for using a blade. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Razor", "Cape", "Clip"],
-          "scenario": "During a routine the hair salon task, an adult compares Razor, Cape, Clip. The person selects Razor for the next step.",
+          "scenario": "A razor is a shaving tool. A cape protects the client’s clothes. A clip holds hair in place. The stylist prepares clean items before starting the agreed service.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item holds hair in place?",
             "options": ["Razor", "Cape", "Clip"],
-            "expectedAnswer": "Razor"
+            "expectedAnswer": "Clip"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Razor, Cape, Clip. The person selects Razor for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Razor, Cape, Clip in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: A razor is a shaving tool. A cape protects the client’s clothes. A clip holds hair in place. The stylist prepares clean items before starting the agreed service. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Hair Clipper", "Trimmer", "Straight Razor"],
-          "scenario": "During a routine the hair salon task, an adult compares Hair Clipper, Trimmer, Straight Razor. The person selects Hair Clipper for the next step.",
+          "scenario": "A hair clipper cuts hair with moving blades. A trimmer is used for close detail work. A straight razor has a long sharp blade, commonly folding into a handle. The display introduces their names without a shaving demonstration.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which tool has the long folding blade?",
             "options": ["Hair Clipper", "Trimmer", "Straight Razor"],
-            "expectedAnswer": "Hair Clipper"
+            "expectedAnswer": "Straight Razor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Hair Clipper, Trimmer, Straight Razor. The person selects Hair Clipper for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Hair Clipper, Trimmer, Straight Razor in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: A hair clipper cuts hair with moving blades. A trimmer is used for close detail work. A straight razor has a long sharp blade, commonly folding into a handle. The display introduces their names without a shaving demonstration. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Thinning Shears", "Sectioning Clips", "Shampoo"],
-          "scenario": "During a routine the hair salon task, an adult compares Thinning Shears, Sectioning Clips, Shampoo. The person selects Thinning Shears for the next step.",
+          "scenario": "Thinning shears remove selected strands to reduce bulk. Sectioning clips hold separate hair sections. Shampoo cleans hair and scalp. The stylist explains the purposes before choosing tools or products.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item cleans hair and scalp?",
             "options": ["Thinning Shears", "Sectioning Clips", "Shampoo"],
-            "expectedAnswer": "Thinning Shears"
+            "expectedAnswer": "Shampoo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Thinning Shears, Sectioning Clips, Shampoo. The person selects Thinning Shears for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Thinning Shears, Sectioning Clips, Shampoo in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: Thinning shears remove selected strands to reduce bulk. Sectioning clips hold separate hair sections. Shampoo cleans hair and scalp. The stylist explains the purposes before choosing tools or products. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 5: A short reading",
-      "text": "Omar sits in the salon chair while the stylist checks his haircut request. A comb, scissors, and clippers are on the station. Maya asks for a bob cut at the next chair. The stylist uses a clip to separate her hair. Both customers confirm the length they want before the cuts begin.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Knowing the tools",
+      "text": "At a consultation, the stylist compares taper and bob cut. Scissors, a comb and brush rest on a clean work surface beside a clipper. The client asks about a razor, cape and clip. A display includes a hair clipper, trimmer and straight razor, but the stylist does not perform a shaving demonstration for the lesson. Thinning shears remove selected strands, sectioning clips hold hair sections, and shampoo cleans hair and scalp. The client learns which words name styles, tools or products and asks questions before agreeing to a service.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Taper, Bob Cut, Scissors. The person selects Taper for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Taper",
+        "prompt": "The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length.\nWhich term names the cutting tool?",
+        "answer": "Scissors",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Comb, Brush, Clipper. The person selects Comb for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Comb",
+        "prompt": "On the clean work surface, a comb has a row of teeth and a brush has bristles. A clipper is an electric hair-cutting tool. The client asks for names rather than instructions for using a blade.\nWhich tool has bristles?",
+        "answer": "Brush",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Razor, Cape, Clip. The person selects Razor for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Razor",
+        "prompt": "A razor is a shaving tool. A cape protects the client’s clothes. A clip holds hair in place. The stylist prepares clean items before starting the agreed service.\nWhich item holds hair in place?",
+        "answer": "Clip",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Hair Clipper, Trimmer, Straight Razor. The person selects Hair Clipper for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Hair Clipper",
+        "prompt": "A hair clipper cuts hair with moving blades. A trimmer is used for close detail work. A straight razor has a long sharp blade, commonly folding into a handle. The display introduces their names without a shaving demonstration.\nWhich tool has the long folding blade?",
+        "answer": "Straight Razor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Thinning Shears, Sectioning Clips, Shampoo. The person selects Thinning Shears for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Thinning Shears",
+        "prompt": "Thinning shears remove selected strands to reduce bulk. Sectioning clips hold separate hair sections. Shampoo cleans hair and scalp. The stylist explains the purposes before choosing tools or products.\nWhich item cleans hair and scalp?",
+        "answer": "Shampoo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Highlights” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does the stylist use to separate Maya's hair?",
-        "answer": "A clip",
-        "questionType": "meaning",
+        "prompt": "At a consultation, the stylist compares taper and bob cut. Scissors, a comb and brush rest on a clean work surface beside a clipper. The client asks about a razor, cape and clip. A display includes a hair clipper, trimmer and straight razor, but the stylist does not perform a shaving demonstration for the lesson. Thinning shears remove selected strands, sectioning clips hold hair sections, and shampoo cleans hair and scalp. The client learns which words name styles, tools or products and asks questions before agreeing to a service.\nWhich two styles does the stylist compare first?",
+        "answer": "Taper and bob cut",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "Scissors are a cutting tool rather than a hairstyle.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Knowing the tools",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "The client compares a taper, with gradual shortening near the neckline and sides, with a bob cut, usually around jaw or neck length. Scissors are a cutting tool rather than a hairstyle. The stylist confirms the chosen length."
     },
     "spacedReview": "1 lesson(s) back: Highlights, Lowlights from hair-salon-4\n3 lesson(s) back: Cornrows, Dreadlocks from hair-salon-2\n7 lesson(s) back: Iris, Pupil from eye-doctor-6"
   },
@@ -929,135 +924,134 @@
       "مجلة"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 6 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Conditioner", "Hairspray", "Gel"],
-          "scenario": "During a routine the hair salon task, an adult compares Conditioner, Hairspray, Gel. The person selects Conditioner for the next step.",
+          "scenario": "Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product helps improve feel and manageability?",
             "options": ["Conditioner", "Hairspray", "Gel"],
             "expectedAnswer": "Conditioner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Conditioner, Hairspray, Gel. The person selects Conditioner for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Conditioner, Hairspray, Gel in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Serum", "Oil", "Mask"],
-          "scenario": "During a routine the hair salon task, an adult compares Serum, Oil, Mask. The person selects Serum for the next step.",
+          "scenario": "At the care display, serum is a hair-care product for feel or appearance. Oil is an oil-based conditioning or styling product. A mask is a conditioning treatment left on for a time according to its instructions. None is a costume face covering in this context.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the conditioning treatment described?",
             "options": ["Serum", "Oil", "Mask"],
-            "expectedAnswer": "Serum"
+            "expectedAnswer": "Mask"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Serum, Oil, Mask. The person selects Serum for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Serum, Oil, Mask in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: At the care display, serum is a hair-care product for feel or appearance. Oil is an oil-based conditioning or styling product. A mask is a conditioning treatment left on for a time according to its instructions. None is a costume face covering in this context. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dry Shampoo", "Leave In", "Hair Dye"],
-          "scenario": "During a routine the hair salon task, an adult compares Dry Shampoo, Leave In, Hair Dye. The person selects Dry Shampoo for the next step.",
+          "scenario": "Dry shampoo absorbs oil from dry hair without a water wash. Leave in describes a product intended to remain in the hair. Hair dye adds or changes color. Product instructions, suitability and reactions need separate attention; the picture cannot establish them.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which product is intended to remain in the hair?",
             "options": ["Dry Shampoo", "Leave In", "Hair Dye"],
-            "expectedAnswer": "Dry Shampoo"
+            "expectedAnswer": "Leave In"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Dry Shampoo, Leave In, Hair Dye. The person selects Dry Shampoo for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Dry Shampoo, Leave In, Hair Dye in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: Dry shampoo absorbs oil from dry hair without a water wash. Leave in describes a product intended to remain in the hair. Hair dye adds or changes color. Product instructions, suitability and reactions need separate attention; the picture cannot establish them. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chair", "Mirror", "Station"],
-          "scenario": "During a routine the hair salon task, an adult compares Chair, Mirror, Station. The person selects Chair for the next step.",
+          "scenario": "The client sits in a chair facing a mirror. The station is the stylist’s work area with the chair, mirror and tools. Here, station means a salon workspace rather than a train stop.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names the whole work area?",
             "options": ["Chair", "Mirror", "Station"],
-            "expectedAnswer": "Chair"
+            "expectedAnswer": "Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Chair, Mirror, Station. The person selects Chair for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Chair, Mirror, Station in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The client sits in a chair facing a mirror. The station is the stylist’s work area with the chair, mirror and tools. Here, station means a salon workspace rather than a train stop. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sink", "Waiting Area", "Magazine"],
-          "scenario": "During a routine the hair salon task, an adult compares Sink, Waiting Area, Magazine. The person selects Sink for the next step.",
+          "scenario": "The sink is used for washing hair. The waiting area has seats for clients before their appointment. A magazine provides reading material there. The receptionist invites the client to wait rather than use an unattended work area.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Where does the client wait before the appointment?",
             "options": ["Sink", "Waiting Area", "Magazine"],
-            "expectedAnswer": "Sink"
+            "expectedAnswer": "Waiting Area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Sink, Waiting Area, Magazine. The person selects Sink for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Sink, Waiting Area, Magazine in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: The sink is used for washing hair. The waiting area has seats for clients before their appointment. A magazine provides reading material there. The receptionist invites the client to wait rather than use an unattended work area. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 6: A short reading",
-      "text": "Maya asks which product was used after her haircut. The stylist shows her a conditioner and a leave-in product. Omar compares gel with hairspray in the shop display. He sees a serum and dry shampoo on another shelf. They check the product names and ask questions before choosing anything to take home.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Products and places",
+      "text": "The client asks about conditioner, hairspray and gel. The stylist compares serum, oil and a hair mask without promising a medical result. Dry shampoo, leave in and hair dye have different purposes, so the client checks the appropriate product guidance. She sits in a chair facing a mirror at the station. A sink is fitted for washing hair. Before the appointment, she waited in the waiting area and read a magazine. The receptionist keeps product questions separate from timing and seating arrangements. A photograph cannot establish ingredients, allergies or suitability for a particular person.",
+      "imageBrief": "Photorealistic scene: Adult client and stylist discussing tools and closed product containers on a clean salon display, beside a chair and mirror. Support this written account: Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Conditioner, Hairspray, Gel. The person selects Conditioner for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person.\nWhich product helps improve feel and manageability?",
         "answer": "Conditioner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Serum, Oil, Mask. The person selects Serum for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Serum",
+        "prompt": "At the care display, serum is a hair-care product for feel or appearance. Oil is an oil-based conditioning or styling product. A mask is a conditioning treatment left on for a time according to its instructions. None is a costume face covering in this context.\nWhich term names the conditioning treatment described?",
+        "answer": "Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Dry Shampoo, Leave In, Hair Dye. The person selects Dry Shampoo for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dry Shampoo",
+        "prompt": "Dry shampoo absorbs oil from dry hair without a water wash. Leave in describes a product intended to remain in the hair. Hair dye adds or changes color. Product instructions, suitability and reactions need separate attention; the picture cannot establish them.\nWhich product is intended to remain in the hair?",
+        "answer": "Leave In",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Chair, Mirror, Station. The person selects Chair for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Chair",
+        "prompt": "The client sits in a chair facing a mirror. The station is the stylist’s work area with the chair, mirror and tools. Here, station means a salon workspace rather than a train stop.\nWhich term names the whole work area?",
+        "answer": "Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Sink, Waiting Area, Magazine. The person selects Sink for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Sink",
+        "prompt": "The sink is used for washing hair. The waiting area has seats for clients before their appointment. A magazine provides reading material there. The receptionist invites the client to wait rather than use an unattended work area.\nWhere does the client wait before the appointment?",
+        "answer": "Waiting Area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Taper” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which two products does Omar compare?",
-        "answer": "Gel and hairspray",
-        "questionType": "meaning",
+        "prompt": "The client asks about conditioner, hairspray and gel. The stylist compares serum, oil and a hair mask without promising a medical result. Dry shampoo, leave in and hair dye have different purposes, so the client checks the appropriate product guidance. She sits in a chair facing a mirror at the station. A sink is fitted for washing hair. Before the appointment, she waited in the waiting area and read a magazine. The receptionist keeps product questions separate from timing and seating arrangements. A photograph cannot establish ingredients, allergies or suitability for a particular person.\nCan a photograph establish that a product suits a particular person?",
+        "answer": "No; suitability needs separate information",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "Conditioner helps improve the feel and manageability of hair.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Products and places",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "Conditioner helps improve the feel and manageability of hair. Hairspray helps keep a style in place. Gel is a thick styling product. The client discusses the desired result rather than assuming every product suits every person."
     },
     "spacedReview": "1 lesson(s) back: Taper, Bob Cut from hair-salon-5\n3 lesson(s) back: Hair Rollers, Curling Iron from hair-salon-3\n7 lesson(s) back: Fovea, Blind Spot from eye-doctor-7"
   },
@@ -1090,97 +1084,96 @@
       "محطة تصفيف الشعر"
     ],
     "usage": {
-      "goal": "Learn to use the hair salon 7 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the hair salon.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Distinguish salon services, tools, products and places in a supported consultation.",
+      "canDoStatement": "Can identify a stated request or purpose and ask a simple salon question. Specialist style and product terms extend the supported task level; this lesson does not teach professional salon procedures.",
+      "textType": "salon-consultation-account",
+      "readingTarget": "Supported linked adult salon visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Reception", "Appointment Book", "Tip Jar"],
-          "scenario": "During a routine the hair salon task, an adult compares Reception, Appointment Book, Tip Jar. The person selects Reception for the next step.",
+          "scenario": "At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item records planned times?",
             "options": ["Reception", "Appointment Book", "Tip Jar"],
-            "expectedAnswer": "Reception"
+            "expectedAnswer": "Appointment Book"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Reception, Appointment Book, Tip Jar. The person selects Reception for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Reception, Appointment Book, Tip Jar in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult receptionist welcoming an adult client beside a salon chair and wash basin. Support this written account: At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult receptionist welcoming an adult client beside a salon chair and wash basin."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Smock", "Salon Chair", "Wash Basin"],
-          "scenario": "During a routine the hair salon task, an adult compares Smock, Salon Chair, Wash Basin. The person selects Smock for the next step.",
+          "scenario": "The stylist wears a smock over clothing. The salon chair is adjustable for a client’s service. A wash basin is fitted for washing hair. The receptionist explains where the client will sit and where washing takes place.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is fitted for washing hair?",
             "options": ["Smock", "Salon Chair", "Wash Basin"],
-            "expectedAnswer": "Smock"
+            "expectedAnswer": "Wash Basin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Smock, Salon Chair, Wash Basin. The person selects Smock for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Smock, Salon Chair, Wash Basin in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult receptionist welcoming an adult client beside a salon chair and wash basin. Support this written account: The stylist wears a smock over clothing. The salon chair is adjustable for a client’s service. A wash basin is fitted for washing hair. The receptionist explains where the client will sit and where washing takes place. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult receptionist welcoming an adult client beside a salon chair and wash basin."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Styling Station"],
-          "scenario": "During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step.",
+          "scenario": "The styling station is the area where a stylist works with a mirror, chair, tools and storage. The client follows the receptionist there for the agreed appointment. The station is a place, rather than a particular product or hairstyle.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Styling Station", "Reception", "Appointment Book"],
-            "expectedAnswer": "Styling Station"
+            "question": "What is the styling station?",
+            "options": ["The stylist’s work area", "A train stop", "A hair-color product"],
+            "expectedAnswer": "The stylist’s work area"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the hair salon context illustrating this situation: During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the hair salon scene showing lesson-related items or actions including Styling Station in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult receptionist welcoming an adult client beside a salon chair and wash basin. Support this written account: The styling station is the area where a stylist works with a mirror, chair, tools and storage. The client follows the receptionist there for the agreed appointment. The station is a place, rather than a particular product or hairstyle. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers.",
+          "imageAlt": "Adult receptionist welcoming an adult client beside a salon chair and wash basin."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Hair Salon 7: A short reading",
-      "text": "Omar checks in at reception for his appointment. The receptionist finds his name in the appointment book. Maya waits while the stylist cleans the salon chair and styling station. A wash basin is at the back of the room. When the chair is ready, the receptionist tells Omar where to sit.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Hair Salon. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Arriving for an appointment",
+      "text": "At reception, Omar checks the time in the appointment book. A tip jar is available for voluntary gratuities; leaving money there is his choice. The stylist wears a smock and shows him the adjustable salon chair. A wash basin is ready if washing is part of the agreed service. The receptionist then directs him to the styling station, the work area with a mirror, chair, tools and storage. Omar asks what the appointment includes before it starts. Clear names for places and equipment help him follow the visit without needing to perform salon work himself.",
+      "imageBrief": "Photorealistic scene: Adult receptionist welcoming an adult client beside a salon chair and wash basin. Support this written account: At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available. No chemical mixing or application, blade use, heat-tool procedure or unverified before-and-after claims. Product purpose and suitability come from text. Do not infer identity or character from hairstyle. No readable labels, text overlays, logos, arrows or highlighted answers."
     },
     "exercises": [
       {
-        "prompt": "During a routine the hair salon task, an adult compares Reception, Appointment Book, Tip Jar. The person selects Reception for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Reception",
+        "prompt": "At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available.\nWhich item records planned times?",
+        "answer": "Appointment Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Smock, Salon Chair, Wash Basin. The person selects Smock for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Smock",
+        "prompt": "The stylist wears a smock over clothing. The salon chair is adjustable for a client’s service. A wash basin is fitted for washing hair. The receptionist explains where the client will sit and where washing takes place.\nWhich item is fitted for washing hair?",
+        "answer": "Wash Basin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the hair salon task, an adult compares Styling Station, Reception, Appointment Book. The person selects Styling Station for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Styling Station",
+        "prompt": "The styling station is the area where a stylist works with a mirror, chair, tools and storage. The client follows the receptionist there for the agreed appointment. The station is a place, rather than a particular product or hairstyle.\nWhat is the styling station?",
+        "answer": "The stylist’s work area",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Conditioner” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does the receptionist find Omar's name?",
-        "answer": "In the appointment book",
-        "questionType": "meaning",
+        "prompt": "At reception, Omar checks the time in the appointment book. A tip jar is available for voluntary gratuities; leaving money there is his choice. The stylist wears a smock and shows him the adjustable salon chair. A wash basin is ready if washing is part of the agreed service. The receptionist then directs him to the styling station, the work area with a mirror, chair, tools and storage. Omar asks what the appointment includes before it starts. Clear names for places and equipment help him follow the visit without needing to perform salon work himself.\nIs money in the tip jar a required service fee?",
+        "answer": "No; it is voluntary",
+        "questionType": "comparison",
         "responseMode": "short-answer",
         "contextTag": "reading"
+      },
+      {
+        "prompt": "At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available.\nExplain one service, tool or place in a complete sentence.",
+        "answer": "The appointment book records planned times.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Hair Salon: In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Arriving for an appointment",
+      "idea": "Perform the stated adult salon conversation and pause for one purpose distinction. Show no chemical application, cutting, shaving or heating procedure. Confirm the client’s request before service.",
+      "scriptStarter": "At reception, staff welcome clients. An appointment book records planned times. A tip jar holds voluntary gratuities; it is not a required service fee. The client asks when the stylist will be available."
     },
     "spacedReview": "1 lesson(s) back: Conditioner, Hairspray from hair-salon-6\n3 lesson(s) back: Highlights, Lowlights from hair-salon-4\n7 lesson(s) back: Lens Edger, Pupilometer from eye-doctor-8"
   }

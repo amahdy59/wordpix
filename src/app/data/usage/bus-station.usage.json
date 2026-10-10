@@ -33,10 +33,10 @@
       "حافلة صغيرة",
       "حافلة نقل ترددي",
       "حافلة مدرسية",
-      "حافلة كهربائية بسلك علوي",
+      "حافلة كهربائية بأسلاك علوية",
       "حافلة مفصلية",
       "حافلة ليلية",
-      "حافلة سريعة",
+      "حافلة سريعة قليلة التوقفات",
       "رصيف الحافلات",
       "مظلة انتظار الحافلات",
       "مقعد",
@@ -44,140 +44,134 @@
       "جدول الرحلات"
     ],
     "usage": {
-      "goal": "Learn to use the bus station 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the bus station.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated bus service, payment term, role or route update.",
+      "canDoStatement": "Can follow a supported adult travel account and ask about a practical distinction. Specialist transport terms extend the supported task level; operator rules vary.",
+      "textType": "bus-station-travel-account",
+      "readingTarget": "Supported connected adult bus journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["City Bus", "Double Decker", "Coach"],
-          "scenario": "During a routine travel task, an adult compares City Bus, Double Decker, Coach. The option needed for the next step is City Bus.",
+          "scenario": "Maya compares a city bus on a local route with a coach designed for longer journeys. A double decker has two passenger levels and may serve different kinds of route. She wants to describe the two levels, rather than the journey length.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes two levels?",
             "options": ["City Bus", "Double Decker", "Coach"],
-            "expectedAnswer": "City Bus"
+            "expectedAnswer": "Double Decker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares City Bus, Double Decker, Coach. The option needed for the next step is City Bus. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including City Bus, Double Decker, Coach in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Maya compares a city bus on a local route with a coach designed for longer journeys. A double decker has two passenger levels and may serve different kinds of route. She wants to describe the two levels, rather than the journey length. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Minibus", "Shuttle", "School Bus"],
-          "scenario": "During a routine travel task, an adult compares Minibus, Shuttle, School Bus. The option needed for the next step is Minibus.",
+          "scenario": "A minibus is a smaller bus. A shuttle travels repeatedly between specified places, while a school bus carries students on school-related journeys. Maya asks about the repeated service between the station and a venue.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which service matches her request?",
             "options": ["Minibus", "Shuttle", "School Bus"],
-            "expectedAnswer": "Minibus"
+            "expectedAnswer": "Shuttle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Minibus, Shuttle, School Bus. The option needed for the next step is Minibus. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Minibus, Shuttle, School Bus in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: A minibus is a smaller bus. A shuttle travels repeatedly between specified places, while a school bus carries students on school-related journeys. Maya asks about the repeated service between the station and a venue. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trolley", "Articulated Bus", "Night Bus"],
-          "scenario": "During a routine travel task, an adult compares Trolley, Articulated Bus, Night Bus. The option needed for the next step is Trolley.",
+          "scenario": "A trolley in this transport account means a trolleybus powered from overhead wires. An articulated bus has joined sections with a flexible connection. A night bus runs at night. The terms describe different features and may overlap.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes joined sections?",
             "options": ["Trolley", "Articulated Bus", "Night Bus"],
-            "expectedAnswer": "Trolley"
+            "expectedAnswer": "Articulated Bus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Trolley, Articulated Bus, Night Bus. The option needed for the next step is Trolley. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Trolley, Articulated Bus, Night Bus in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: A trolley in this transport account means a trolleybus powered from overhead wires. An articulated bus has joined sections with a flexible connection. A night bus runs at night. The terms describe different features and may overlap. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Express Bus", "Platform", "Shelter"],
-          "scenario": "During a routine travel task, an adult compares Express Bus, Platform, Shelter. The option needed for the next step is Express Bus.",
+          "scenario": "An express bus makes fewer stops on its stated route, but actual journey time depends on conditions. Maya waits at its platform under a shelter, which provides cover. She wants the covered waiting place rather than a type of service.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item provides cover?",
             "options": ["Express Bus", "Platform", "Shelter"],
-            "expectedAnswer": "Express Bus"
+            "expectedAnswer": "Shelter"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Express Bus, Platform, Shelter. The option needed for the next step is Express Bus. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Express Bus, Platform, Shelter in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: An express bus makes fewer stops on its stated route, but actual journey time depends on conditions. Maya waits at its platform under a shelter, which provides cover. She wants the covered waiting place rather than a type of service. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Bench", "Ticket Booth", "Schedule"],
-          "scenario": "During a routine travel task, an adult compares Bench, Ticket Booth, Schedule. The option needed for the next step is Bench.",
+          "scenario": "Omar sits on a bench near the ticket booth. He checks the schedule for planned departures before asking to buy a ticket. The bench is a seat, and the booth is a sales point.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which resource lists planned departures?",
             "options": ["Bench", "Ticket Booth", "Schedule"],
-            "expectedAnswer": "Bench"
+            "expectedAnswer": "Schedule"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Bench, Ticket Booth, Schedule. The option needed for the next step is Bench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Bench, Ticket Booth, Schedule in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Omar sits on a bench near the ticket booth. He checks the schedule for planned departures before asking to buy a ticket. The bench is a seat, and the booth is a sales point. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bus Station: Email",
-      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing city bus, double decker, and coach. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing minibus, shuttle, and school bus. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing and waiting",
+      "text": "Maya compares a city bus, double decker and coach before checking a minibus shuttle to a venue. A school bus serves school-related travel. Staff explain trolley, articulated bus and night bus as different features, rather than separate guaranteed destinations. An express bus makes fewer stops on its route, though conditions affect journey time. Maya waits at the platform under a shelter. Omar sits on a bench near the ticket booth and checks the schedule. They confirm the actual boarding point and service before travelling.",
+      "imageBrief": "Photorealistic adult bus-station account: Maya compares a city bus on a local route with a coach designed for longer journeys. A double decker has two passenger levels and may serve different kinds of route. She wants to describe the two levels, rather than the journey length. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares City Bus, Double Decker, Coach. The option needed for the next step is City Bus.\nWhich option is needed for the next step in the journey?",
-        "answer": "City Bus",
+        "prompt": "Maya compares a city bus on a local route with a coach designed for longer journeys. A double decker has two passenger levels and may serve different kinds of route. She wants to describe the two levels, rather than the journey length.\nWhich term describes two levels?",
+        "answer": "Double Decker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Minibus, Shuttle, School Bus. The option needed for the next step is Minibus.\nWhich option is needed for the next step in the journey?",
-        "answer": "Minibus",
+        "prompt": "A minibus is a smaller bus. A shuttle travels repeatedly between specified places, while a school bus carries students on school-related journeys. Maya asks about the repeated service between the station and a venue.\nWhich service matches her request?",
+        "answer": "Shuttle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Trolley, Articulated Bus, Night Bus. The option needed for the next step is Trolley.\nWhich option is needed for the next step in the journey?",
-        "answer": "Trolley",
+        "prompt": "A trolley in this transport account means a trolleybus powered from overhead wires. An articulated bus has joined sections with a flexible connection. A night bus runs at night. The terms describe different features and may overlap.\nWhich term describes joined sections?",
+        "answer": "Articulated Bus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Express Bus, Platform, Shelter. The option needed for the next step is Express Bus.\nWhich option is needed for the next step in the journey?",
-        "answer": "Express Bus",
+        "prompt": "An express bus makes fewer stops on its stated route, but actual journey time depends on conditions. Maya waits at its platform under a shelter, which provides cover. She wants the covered waiting place rather than a type of service.\nWhich item provides cover?",
+        "answer": "Shelter",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Bench, Ticket Booth, Schedule. The option needed for the next step is Bench.\nWhich option is needed for the next step in the journey?",
-        "answer": "Bench",
+        "prompt": "Omar sits on a bench near the ticket booth. He checks the schedule for planned departures before asking to buy a ticket. The bench is a seat, and the booth is a sales point.\nWhich resource lists planned departures?",
+        "answer": "Schedule",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "City Bus"
+        "prompt": "Maya compares a city bus, double decker and coach before checking a minibus shuttle to a venue. A school bus serves school-related travel. Staff explain trolley, articulated bus and night bus as different features, rather than separate guaranteed destinations. An express bus makes fewer stops on its route, though conditions affect journey time. Maya waits at the platform under a shelter. Omar sits on a bench near the ticket booth and checks the schedule. They confirm the actual boarding point and service before travelling.\nWhere does Maya wait?",
+        "answer": "At the platform under a shelter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Minibus"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Grease” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this account using City Bus and Double Decker.",
+        "answer": "The city bus follows a local route, while double decker describes its two passenger levels.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Bus Station: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing and waiting",
+      "idea": "Read this adult travel account and pause on a stated distinction. Keep vehicles stationary and personal data unreadable; text rather than appearance establishes roles and journey details.",
+      "scriptStarter": "Maya compares a city bus on a local route with a coach designed for longer journeys. A double decker has two passenger levels and may serve different kinds of route. She wants to describe the two levels, rather than the journey length."
     },
     "spacedReview": "1 lesson(s) back: Grease, Stand from bicycle-shop-4\n3 lesson(s) back: Seat, Brake from bicycle-shop-2\n7 lesson(s) back: Gym Gloves, Wrist Wrap from gym-4"
   },
@@ -213,7 +207,7 @@
       "آلة بيع ذاتي",
       "سلة مهملات",
       "دورة مياه",
-      "ساعة حائط / ساعة",
+      "ساعة",
       "تذكرة",
       "اشتراك مواصلات",
       "أجرة",
@@ -226,140 +220,134 @@
       "خصم للطلاب"
     ],
     "usage": {
-      "goal": "Learn to use the bus station 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the bus station.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated bus service, payment term, role or route update.",
+      "canDoStatement": "Can follow a supported adult travel account and ask about a practical distinction. Specialist transport terms extend the supported task level; operator rules vary.",
+      "textType": "bus-station-travel-account",
+      "readingTarget": "Supported connected adult bus journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Map", "Vending Machine", "Trash Can"],
-          "scenario": "During a routine travel task, an adult compares Map, Vending Machine, Trash Can. The option needed for the next step is Map.",
+          "scenario": "Maya checks a route map. A vending machine sells packaged products, and a trash can receives rubbish. She needs to find where the route goes rather than buy a snack.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which resource shows the route?",
             "options": ["Map", "Vending Machine", "Trash Can"],
             "expectedAnswer": "Map"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Map, Vending Machine, Trash Can. The option needed for the next step is Map. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Map, Vending Machine, Trash Can in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Maya checks a route map. A vending machine sells packaged products, and a trash can receives rubbish. She needs to find where the route goes rather than buy a snack. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Restroom", "Clock", "Ticket"],
-          "scenario": "During a routine travel task, an adult compares Restroom, Clock, Ticket. The option needed for the next step is Restroom.",
+          "scenario": "Omar finds the restroom, checks the clock and keeps his ticket ready. The ticket represents permission for specified travel; it does not replace checking the service, date and boarding point.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item represents his specified travel permission?",
             "options": ["Restroom", "Clock", "Ticket"],
-            "expectedAnswer": "Restroom"
+            "expectedAnswer": "Ticket"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Restroom, Clock, Ticket. The option needed for the next step is Restroom. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Restroom, Clock, Ticket in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Omar finds the restroom, checks the clock and keeps his ticket ready. The ticket represents permission for specified travel; it does not replace checking the service, date and boarding point. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pass", "Fare", "Tap Card"],
-          "scenario": "During a routine travel task, an adult compares Pass, Fare, Tap Card. The option needed for the next step is Pass.",
+          "scenario": "Staff compare a pass for specified travel over a period with the fare, the journey price. Tap card is a short label here for a contactless travel card; full instructions say tap your card on the reader. Payment and validation rules vary by system.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the journey price?",
             "options": ["Pass", "Fare", "Tap Card"],
-            "expectedAnswer": "Pass"
+            "expectedAnswer": "Fare"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Pass, Fare, Tap Card. The option needed for the next step is Pass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Pass, Fare, Tap Card in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Staff compare a pass for specified travel over a period with the fare, the journey price. Tap card is a short label here for a contactless travel card; full instructions say tap your card on the reader. Payment and validation rules vary by system. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Machine", "Receipt", "Zone"],
-          "scenario": "During a routine travel task, an adult compares Machine, Receipt, Zone. The option needed for the next step is Machine.",
+          "scenario": "Omar uses a ticket machine and keeps its receipt as a payment record. The zone is a fare area rather than the machine or payment record. He asks which zone his destination is in before choosing a ticket.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item records payment?",
             "options": ["Machine", "Receipt", "Zone"],
-            "expectedAnswer": "Machine"
+            "expectedAnswer": "Receipt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Machine, Receipt, Zone. The option needed for the next step is Machine. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Machine, Receipt, Zone in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Omar uses a ticket machine and keeps its receipt as a payment record. The zone is a fare area rather than the machine or payment record. He asks which zone his destination is in before choosing a ticket. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Transfer", "Day Pass", "Student Discount"],
-          "scenario": "During a routine travel task, an adult compares Transfer, Day Pass, Student Discount. The option needed for the next step is Transfer.",
+          "scenario": "A transfer changes between services. A day pass covers permitted journeys during its specified period, and a student discount reduces a price for eligible students. Maya checks validity and eligibility rather than assuming every transfer is free or every day pass lasts until midnight.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names a change between services?",
             "options": ["Transfer", "Day Pass", "Student Discount"],
             "expectedAnswer": "Transfer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Transfer, Day Pass, Student Discount. The option needed for the next step is Transfer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Transfer, Day Pass, Student Discount in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: A transfer changes between services. A day pass covers permitted journeys during its specified period, and a student discount reduces a price for eligible students. Maya checks validity and eligibility rather than assuming every transfer is free or every day pass lasts until midnight. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bus Station: Personal Message",
-      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing map, vending machine, and trash can. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing restroom, clock, and ticket. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking travel payment",
+      "text": "Maya reads a map while Omar passes a vending machine and trash can. He finds the restroom, checks the clock and keeps his ticket ready. Staff explain a pass, fare and tap card; full sentences say tap your card on the reader. Omar uses a machine and keeps the receipt. He asks which zone his destination is in. Maya checks a transfer, day pass and student discount, but does not assume a transfer is free or that a pass has universal hours. Validity and eligibility depend on the operator.",
+      "imageBrief": "Photorealistic adult bus-station account: Maya checks a route map. A vending machine sells packaged products, and a trash can receives rubbish. She needs to find where the route goes rather than buy a snack. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Map, Vending Machine, Trash Can. The option needed for the next step is Map.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Maya checks a route map. A vending machine sells packaged products, and a trash can receives rubbish. She needs to find where the route goes rather than buy a snack.\nWhich resource shows the route?",
         "answer": "Map",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Restroom, Clock, Ticket. The option needed for the next step is Restroom.\nWhich option is needed for the next step in the journey?",
-        "answer": "Restroom",
+        "prompt": "Omar finds the restroom, checks the clock and keeps his ticket ready. The ticket represents permission for specified travel; it does not replace checking the service, date and boarding point.\nWhich item represents his specified travel permission?",
+        "answer": "Ticket",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Pass, Fare, Tap Card. The option needed for the next step is Pass.\nWhich option is needed for the next step in the journey?",
-        "answer": "Pass",
+        "prompt": "Staff compare a pass for specified travel over a period with the fare, the journey price. Tap card is a short label here for a contactless travel card; full instructions say tap your card on the reader. Payment and validation rules vary by system.\nWhich term names the journey price?",
+        "answer": "Fare",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Machine, Receipt, Zone. The option needed for the next step is Machine.\nWhich option is needed for the next step in the journey?",
-        "answer": "Machine",
+        "prompt": "Omar uses a ticket machine and keeps its receipt as a payment record. The zone is a fare area rather than the machine or payment record. He asks which zone his destination is in before choosing a ticket.\nWhich item records payment?",
+        "answer": "Receipt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Transfer, Day Pass, Student Discount. The option needed for the next step is Transfer.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A transfer changes between services. A day pass covers permitted journeys during its specified period, and a student discount reduces a price for eligible students. Maya checks validity and eligibility rather than assuming every transfer is free or every day pass lasts until midnight.\nWhich term names a change between services?",
         "answer": "Transfer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Map"
+        "prompt": "Maya reads a map while Omar passes a vending machine and trash can. He finds the restroom, checks the clock and keeps his ticket ready. Staff explain a pass, fare and tap card; full sentences say tap your card on the reader. Omar uses a machine and keeps the receipt. He asks which zone his destination is in. Maya checks a transfer, day pass and student discount, but does not assume a transfer is free or that a pass has universal hours. Validity and eligibility depend on the operator.\nWhat does Omar keep as a payment record?",
+        "answer": "The receipt",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Restroom"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “City Bus” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this account using Map and Vending Machine.",
+        "answer": "The map shows a route, while the vending machine sells products.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Bus Station: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking travel payment",
+      "idea": "Read this adult travel account and pause on a stated distinction. Keep vehicles stationary and personal data unreadable; text rather than appearance establishes roles and journey details.",
+      "scriptStarter": "Maya checks a route map. A vending machine sells packaged products, and a trash can receives rubbish. She needs to find where the route goes rather than buy a snack."
     },
     "spacedReview": "1 lesson(s) back: City Bus, Double Decker from bus-station-1\n3 lesson(s) back: Jersey, Shorts from bicycle-shop-3\n7 lesson(s) back: Bench Press, Sit-Up from gym-5"
   },
@@ -396,152 +384,146 @@
       "قضيب للإمساك",
       "جرس",
       "زر طلب التوقف",
-      "نافذة (شباك)",
+      "نافذة",
       "باب",
       "مقعد السائق",
       "منحدر للكراسي المتحركة",
       "حامل أمتعة",
       "سائق",
       "راكب",
-      "راكب يتنقل يوميًا",
+      "شخص يتنقل بانتظام للعمل أو الدراسة",
       "مفتش تذاكر",
       "موظف خدمة الركاب"
     ],
     "usage": {
-      "goal": "Learn to use the bus station 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the bus station.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated bus service, payment term, role or route update.",
+      "canDoStatement": "Can follow a supported adult travel account and ask about a practical distinction. Specialist transport terms extend the supported task level; operator rules vary.",
+      "textType": "bus-station-travel-account",
+      "readingTarget": "Supported connected adult bus journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Seat", "Aisle", "Handrail"],
-          "scenario": "During a routine travel task, an adult compares Seat, Aisle, Handrail. The option needed for the next step is Seat.",
+          "scenario": "Omar sits in a seat. The aisle is the passage between seats, and a handrail provides support. He keeps the passage clear rather than placing his bag where others need to move.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the passage?",
             "options": ["Seat", "Aisle", "Handrail"],
-            "expectedAnswer": "Seat"
+            "expectedAnswer": "Aisle"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Seat, Aisle, Handrail. The option needed for the next step is Seat. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Seat, Aisle, Handrail in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Omar sits in a seat. The aisle is the passage between seats, and a handrail provides support. He keeps the passage clear rather than placing his bag where others need to move. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Bell", "Stop Button", "Window"],
-          "scenario": "During a routine travel task, an adult compares Bell, Stop Button, Window. The option needed for the next step is Bell.",
+          "scenario": "On this bus, a stop button sends a request to the driver and a bell sounds the request. Omar looks through the window before requesting his stop. The lesson describes this vehicle; stop-request systems vary.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item sends the request when pressed?",
             "options": ["Bell", "Stop Button", "Window"],
-            "expectedAnswer": "Bell"
+            "expectedAnswer": "Stop Button"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Bell, Stop Button, Window. The option needed for the next step is Bell. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Bell, Stop Button, Window in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: On this bus, a stop button sends a request to the driver and a bell sounds the request. Omar looks through the window before requesting his stop. The lesson describes this vehicle; stop-request systems vary. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Door", "Driver Seat", "Wheelchair Ramp"],
-          "scenario": "During a routine travel task, an adult compares Door, Driver Seat, Wheelchair Ramp. The option needed for the next step is Door.",
+          "scenario": "The door allows boarding. The driver seat is the driving position, while a wheelchair ramp provides a sloping boarding surface. Staff explain the available boarding support without assuming anyone’s access needs from appearance.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item provides the sloping surface?",
             "options": ["Door", "Driver Seat", "Wheelchair Ramp"],
-            "expectedAnswer": "Door"
+            "expectedAnswer": "Wheelchair Ramp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Door, Driver Seat, Wheelchair Ramp. The option needed for the next step is Door. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Door, Driver Seat, Wheelchair Ramp in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: The door allows boarding. The driver seat is the driving position, while a wheelchair ramp provides a sloping boarding surface. Staff explain the available boarding support without assuming anyone’s access needs from appearance. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Luggage Rack", "Driver", "Passenger"],
-          "scenario": "During a routine travel task, an adult compares Luggage Rack, Driver, Passenger. The option needed for the next step is Luggage Rack.",
+          "scenario": "The luggage rack holds suitable bags according to this operator’s rules. The driver operates the bus, while a passenger travels without driving it. Omar asks staff where his bag belongs before storing it.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who operates the bus?",
             "options": ["Luggage Rack", "Driver", "Passenger"],
-            "expectedAnswer": "Luggage Rack"
+            "expectedAnswer": "Driver"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Luggage Rack, Driver, Passenger. The option needed for the next step is Luggage Rack. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Luggage Rack, Driver, Passenger in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: The luggage rack holds suitable bags according to this operator’s rules. The driver operates the bus, while a passenger travels without driving it. Omar asks staff where his bag belongs before storing it. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Commuter", "Inspector", "Attendant"],
-          "scenario": "During a routine travel task, an adult compares Commuter, Inspector, Attendant. The option needed for the next step is Commuter.",
+          "scenario": "A commuter regularly travels between home and work or study. An inspector checks ticket validity, while an attendant helps passengers. Maya asks the attendant about the boarding area. Roles are established in the account, not by clothing.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Who helps with her boarding question?",
             "options": ["Commuter", "Inspector", "Attendant"],
-            "expectedAnswer": "Commuter"
+            "expectedAnswer": "Attendant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Commuter, Inspector, Attendant. The option needed for the next step is Commuter. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Commuter, Inspector, Attendant in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: A commuter regularly travels between home and work or study. An inspector checks ticket validity, while an attendant helps passengers. Maya asks the attendant about the boarding area. Roles are established in the account, not by clothing. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bus Station: Short Dialogue",
-      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing seat, aisle, and handrail. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing bell, stop button, and window. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Boarding and asking staff",
+      "text": "Omar takes a seat and keeps the aisle clear. A handrail provides support. On this vehicle, the bell and stop button communicate a stop request; he looks through the window before requesting his stop. The door allows boarding, and the driver seat is separate from passenger seating. Staff explain the wheelchair ramp when discussing boarding support. Omar asks where to put a bag before using the luggage rack. The driver operates the bus, while Omar is a passenger. A commuter travels regularly, an inspector checks tickets, and an attendant helps with Maya’s boarding question.",
+      "imageBrief": "Photorealistic adult bus-station account: Omar sits in a seat. The aisle is the passage between seats, and a handrail provides support. He keeps the passage clear rather than placing his bag where others need to move. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Seat, Aisle, Handrail. The option needed for the next step is Seat.\nWhich option is needed for the next step in the journey?",
-        "answer": "Seat",
+        "prompt": "Omar sits in a seat. The aisle is the passage between seats, and a handrail provides support. He keeps the passage clear rather than placing his bag where others need to move.\nWhich term names the passage?",
+        "answer": "Aisle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Bell, Stop Button, Window. The option needed for the next step is Bell.\nWhich option is needed for the next step in the journey?",
-        "answer": "Bell",
+        "prompt": "On this bus, a stop button sends a request to the driver and a bell sounds the request. Omar looks through the window before requesting his stop. The lesson describes this vehicle; stop-request systems vary.\nWhich item sends the request when pressed?",
+        "answer": "Stop Button",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Door, Driver Seat, Wheelchair Ramp. The option needed for the next step is Door.\nWhich option is needed for the next step in the journey?",
-        "answer": "Door",
+        "prompt": "The door allows boarding. The driver seat is the driving position, while a wheelchair ramp provides a sloping boarding surface. Staff explain the available boarding support without assuming anyone’s access needs from appearance.\nWhich item provides the sloping surface?",
+        "answer": "Wheelchair Ramp",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Luggage Rack, Driver, Passenger. The option needed for the next step is Luggage Rack.\nWhich option is needed for the next step in the journey?",
-        "answer": "Luggage Rack",
+        "prompt": "The luggage rack holds suitable bags according to this operator’s rules. The driver operates the bus, while a passenger travels without driving it. Omar asks staff where his bag belongs before storing it.\nWho operates the bus?",
+        "answer": "Driver",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Commuter, Inspector, Attendant. The option needed for the next step is Commuter.\nWhich option is needed for the next step in the journey?",
-        "answer": "Commuter",
+        "prompt": "A commuter regularly travels between home and work or study. An inspector checks ticket validity, while an attendant helps passengers. Maya asks the attendant about the boarding area. Roles are established in the account, not by clothing.\nWho helps with her boarding question?",
+        "answer": "Attendant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Seat"
+        "prompt": "Omar takes a seat and keeps the aisle clear. A handrail provides support. On this vehicle, the bell and stop button communicate a stop request; he looks through the window before requesting his stop. The door allows boarding, and the driver seat is separate from passenger seating. Staff explain the wheelchair ramp when discussing boarding support. Omar asks where to put a bag before using the luggage rack. The driver operates the bus, while Omar is a passenger. A commuter travels regularly, an inspector checks tickets, and an attendant helps with Maya’s boarding question.\nWho helps with Maya’s boarding question?",
+        "answer": "The attendant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Bell"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Map” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this account using Seat and Aisle.",
+        "answer": "The seat is for sitting, while the aisle is the passage between seats.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Bus Station: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Boarding and asking staff",
+      "idea": "Read this adult travel account and pause on a stated distinction. Keep vehicles stationary and personal data unreadable; text rather than appearance establishes roles and journey details.",
+      "scriptStarter": "Omar sits in a seat. The aisle is the passage between seats, and a handrail provides support. He keeps the passage clear rather than placing his bag where others need to move."
     },
     "spacedReview": "1 lesson(s) back: Map, Vending Machine from bus-station-2\n3 lesson(s) back: Grease, Stand from bicycle-shop-4\n7 lesson(s) back: Sauna, Swimming Pool from gym-6"
   },
@@ -575,8 +557,8 @@
     "targetWordsArabic": [
       "سائح",
       "طالب",
-      "مسن",
-      "والد",
+      "مسن / كبير في السن",
+      "أحد الوالدين",
       "طفل",
       "رقم الخط",
       "لافتة الوجهة",
@@ -590,140 +572,134 @@
       "تحويلة طريق"
     ],
     "usage": {
-      "goal": "Learn to use the bus station 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the bus station.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated bus service, payment term, role or route update.",
+      "canDoStatement": "Can follow a supported adult travel account and ask about a practical distinction. Specialist transport terms extend the supported task level; operator rules vary.",
+      "textType": "bus-station-travel-account",
+      "readingTarget": "Supported connected adult bus journey",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tourist", "Student", "Elderly"],
-          "scenario": "During a routine travel task, an adult compares Tourist, Student, Elderly. The option needed for the next step is Tourist.",
+          "scenario": "One visitor is a tourist, travelling for leisure. Maya is an adult student on an evening course. Another person describes herself as elderly; older person is often a natural respectful alternative. Age alone does not establish mobility, ability or fare eligibility.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes Maya’s course role?",
             "options": ["Tourist", "Student", "Elderly"],
-            "expectedAnswer": "Tourist"
+            "expectedAnswer": "Student"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Tourist, Student, Elderly. The option needed for the next step is Tourist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Tourist, Student, Elderly in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: One visitor is a tourist, travelling for leisure. Maya is an adult student on an evening course. Another person describes herself as elderly; older person is often a natural respectful alternative. Age alone does not establish mobility, ability or fare eligibility. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Parent", "Child", "Route Number"],
-          "scenario": "During a routine travel task, an adult compares Parent, Child, Route Number. The option needed for the next step is Parent.",
+          "scenario": "A parent asks about travelling with a child. Staff explain the operator’s family-travel rules, then confirm the route number identifying the service. The adult account discusses family passengers without turning the lesson into child mode.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item identifies the service?",
             "options": ["Parent", "Child", "Route Number"],
-            "expectedAnswer": "Parent"
+            "expectedAnswer": "Route Number"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Parent, Child, Route Number. The option needed for the next step is Parent. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Parent, Child, Route Number in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: A parent asks about travelling with a child. Staff explain the operator’s family-travel rules, then confirm the route number identifying the service. The adult account discusses family passengers without turning the lesson into child mode. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Destination Sign", "Timetable", "Delay Notice"],
-          "scenario": "During a routine travel task, an adult compares Destination Sign, Timetable, Delay Notice. The option needed for the next step is Destination Sign.",
+          "scenario": "The destination sign shows where the bus is going, while the timetable gives planned times. A delay notice reports a later departure. Omar checks current information as well as the plan.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which notice reports a later departure?",
             "options": ["Destination Sign", "Timetable", "Delay Notice"],
-            "expectedAnswer": "Destination Sign"
+            "expectedAnswer": "Delay Notice"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Destination Sign, Timetable, Delay Notice. The option needed for the next step is Destination Sign. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Destination Sign, Timetable, Delay Notice in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: The destination sign shows where the bus is going, while the timetable gives planned times. A delay notice reports a later departure. Omar checks current information as well as the plan. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Stop Sign", "Bus Lane", "No Entry"],
-          "scenario": "During a routine travel task, an adult compares Stop Sign, Bus Lane, No Entry. The option needed for the next step is Stop Sign.",
+          "scenario": "Staff distinguish a stop sign requiring road users to stop from a bus lane reserved under local rules. A no entry notice restricts entry to a specified area or direction. The passenger stays in the waiting area and does not use signs as instructions to walk into traffic.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which notice restricts entry?",
             "options": ["Stop Sign", "Bus Lane", "No Entry"],
-            "expectedAnswer": "Stop Sign"
+            "expectedAnswer": "No Entry"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Stop Sign, Bus Lane, No Entry. The option needed for the next step is Stop Sign. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Stop Sign, Bus Lane, No Entry in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: Staff distinguish a stop sign requiring road users to stop from a bus lane reserved under local rules. A no entry notice restricts entry to a specified area or direction. The passenger stays in the waiting area and does not use signs as instructions to walk into traffic. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Next Stop", "Final Stop", "Detour"],
-          "scenario": "During a routine travel task, an adult compares Next Stop, Final Stop, Detour. The option needed for the next step is Next Stop.",
+          "scenario": "The next stop is the following scheduled stop; the final stop ends the route. A detour uses another route, often temporarily because of a blockage. Maya’s information message says there is a detour, so she checks how her journey is affected.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the alternative route?",
             "options": ["Next Stop", "Final Stop", "Detour"],
-            "expectedAnswer": "Next Stop"
+            "expectedAnswer": "Detour"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the bus station context illustrating this situation: During a routine travel task, an adult compares Next Stop, Final Stop, Detour. The option needed for the next step is Next Stop. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the bus station scene showing lesson-related items or actions including Next Stop, Final Stop, Detour in a natural setting."
+          "imageBrief": "Photorealistic adult bus-station account: The next stop is the following scheduled stop; the final stop ends the route. A detour uses another route, often temporarily because of a blockage. Maya’s information message says there is a detour, so she checks how her journey is affected. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules.",
+          "imageAlt": "Adult passengers and staff discussing a journey beside stationary buses or in a clear cabin."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Bus Station: Everyday Description",
-      "text": "Omar has an everyday task connected to the bus station. The new vocabulary helps him follow the situation and respond clearly. The traveler moves through the journey using or noticing tourist, student, and elderly. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing parent, child, and route number. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Bus Station. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking the current route",
+      "text": "A tourist visits for leisure, while Maya is an adult student. A visitor describes herself as elderly; this does not tell Maya whether she needs assistance. A parent asks about a child’s travel rules. Staff confirm the route number and destination sign, then compare the timetable with a delay notice. They distinguish a road stop sign, bus lane and no entry notice without directing passengers into traffic. Maya checks the next stop and final stop. A detour may change the route, so she asks how the current message affects her journey.",
+      "imageBrief": "Photorealistic adult bus-station account: One visitor is a tourist, travelling for leisure. Maya is an adult student on an evening course. Another person describes herself as elderly; older person is often a natural respectful alternative. Age alone does not establish mobility, ability or fare eligibility. Show stationary vehicles and adult visitors or staff in a safe waiting area or seated cabin, with clear aisle and accessible boarding space. Do not identify roles, disability, age eligibility or destinations from appearance. No legible travel cards, faces of minors as central subjects, personal details, brands, readable route information, overlays or answer highlighting. Text establishes the specific service and local rules."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Tourist, Student, Elderly. The option needed for the next step is Tourist.\nWhich option is needed for the next step in the journey?",
-        "answer": "Tourist",
+        "prompt": "One visitor is a tourist, travelling for leisure. Maya is an adult student on an evening course. Another person describes herself as elderly; older person is often a natural respectful alternative. Age alone does not establish mobility, ability or fare eligibility.\nWhich term describes Maya’s course role?",
+        "answer": "Student",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Parent, Child, Route Number. The option needed for the next step is Parent.\nWhich option is needed for the next step in the journey?",
-        "answer": "Parent",
+        "prompt": "A parent asks about travelling with a child. Staff explain the operator’s family-travel rules, then confirm the route number identifying the service. The adult account discusses family passengers without turning the lesson into child mode.\nWhich item identifies the service?",
+        "answer": "Route Number",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Destination Sign, Timetable, Delay Notice. The option needed for the next step is Destination Sign.\nWhich option is needed for the next step in the journey?",
-        "answer": "Destination Sign",
+        "prompt": "The destination sign shows where the bus is going, while the timetable gives planned times. A delay notice reports a later departure. Omar checks current information as well as the plan.\nWhich notice reports a later departure?",
+        "answer": "Delay Notice",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Stop Sign, Bus Lane, No Entry. The option needed for the next step is Stop Sign.\nWhich option is needed for the next step in the journey?",
-        "answer": "Stop Sign",
+        "prompt": "Staff distinguish a stop sign requiring road users to stop from a bus lane reserved under local rules. A no entry notice restricts entry to a specified area or direction. The passenger stays in the waiting area and does not use signs as instructions to walk into traffic.\nWhich notice restricts entry?",
+        "answer": "No Entry",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Next Stop, Final Stop, Detour. The option needed for the next step is Next Stop.\nWhich option is needed for the next step in the journey?",
-        "answer": "Next Stop",
+        "prompt": "The next stop is the following scheduled stop; the final stop ends the route. A detour uses another route, often temporarily because of a blockage. Maya’s information message says there is a detour, so she checks how her journey is affected.\nWhich term names the alternative route?",
+        "answer": "Detour",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Tourist"
+        "prompt": "A tourist visits for leisure, while Maya is an adult student. A visitor describes herself as elderly; this does not tell Maya whether she needs assistance. A parent asks about a child’s travel rules. Staff confirm the route number and destination sign, then compare the timetable with a delay notice. They distinguish a road stop sign, bus lane and no entry notice without directing passengers into traffic. Maya checks the next stop and final stop. A detour may change the route, so she asks how the current message affects her journey.\nWhat may change the route?",
+        "answer": "A detour",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Parent"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Seat” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Explain a distinction from this account using Tourist and Student.",
+        "answer": "The tourist visits for leisure, while the adult student attends a course.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Bus Station: In Context",
-      "idea": "35-50 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking the current route",
+      "idea": "Read this adult travel account and pause on a stated distinction. Keep vehicles stationary and personal data unreadable; text rather than appearance establishes roles and journey details.",
+      "scriptStarter": "One visitor is a tourist, travelling for leisure. Maya is an adult student on an evening course. Another person describes herself as elderly; older person is often a natural respectful alternative. Age alone does not establish mobility, ability or fare eligibility."
     },
     "spacedReview": "1 lesson(s) back: Seat, Aisle from bus-station-3\n3 lesson(s) back: City Bus, Double Decker from bus-station-1\n7 lesson(s) back: Road Bike, Mountain Bike from bicycle-shop-1"
   }

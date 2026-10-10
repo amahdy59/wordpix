@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import airportPhrases from "../data/usagePhrases/airport.phrases.json";
 import { loadUnitUsageForEditorial } from "../data/usageRegistry";
+import { applySceneLearningContext } from "../data/sceneLearningContext.mjs";
 import generatedMedia from "../generated/reviewedGeneratedSceneMedia.json";
 import { unitUsagePhraseDataSchema } from "../data/usageTypes";
 
@@ -33,14 +34,16 @@ describe("image generation content repairs", () => {
       const lessons = await loadUnitUsageForEditorial(unit);
       expect(lessons, unit).not.toBeNull();
       for (const lesson of lessons ?? []) {
-        for (const scene of lesson.usage.scenes) {
+        for (const rawScene of lesson.usage.scenes) {
+          const scene = applySceneLearningContext(rawScene);
           expect(
             lesson.exercises.some(
               (e) =>
-                e.answer === scene.check.expectedAnswer &&
-                e.prompt === `${scene.scenario}\n${scene.check.question}`
+                e.answer === rawScene.check.expectedAnswer &&
+                (e.prompt === `${rawScene.scenario}\n${rawScene.check.question}` ||
+                  e.prompt === `${scene.scenario}\n${scene.check.question}`)
             ),
-            `${lesson.lessonId}/${scene.chunkNumber}`
+            `${lesson.lessonId}/${rawScene.chunkNumber}`
           ).toBe(true);
         }
       }

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { LEARNING_PATH_UNIT_IDS } from "../data/courseCatalog";
 import { loadUnitVocabulary } from "../data/vocabulary";
 import { loadUnitUsageForEditorial } from "../data/usageRegistry";
+import { applySceneLearningContext } from "../data/sceneLearningContext.mjs";
 import readingRepairs from "../../../scripts/reading_editorial_repairs.json";
 
 describe("editorial content regression", () => {
@@ -38,10 +39,18 @@ describe("editorial content regression", () => {
       const lessons = (await loadUnitUsageForEditorial(unit))!;
       for (const lesson of lessons) {
         if (!(lesson.lessonId in readingRepairs)) continue;
-        expect(lesson.usage.textType).toBe("short-narrative");
-        const checks = lesson.exercises.filter((ex) => ex.contextTag === "reading");
-        expect(checks, lesson.lessonId).toHaveLength(1);
-        expect(checks[0].answer).not.toMatch(/^Open response$/u);
+        // Later editorial work may refine the passage genre and add more
+        // comprehension checks. Verify the current passage and useful answers.
+        expect(lesson.reading.text.trim(), lesson.lessonId).not.toBe("");
+        const checks = lesson.exercises.filter((ex) => ex.contextTag?.startsWith("reading"));
+        expect(checks.length, lesson.lessonId).toBeGreaterThanOrEqual(1);
+        for (const check of checks) {
+          expect(check.prompt, lesson.lessonId).not.toMatch(/Why is the vocabulary useful/u);
+          expect(check.answer.trim(), lesson.lessonId).not.toBe("");
+          expect(check.answer, lesson.lessonId).not.toMatch(
+            /^(?:Open response|The main case described)$/u
+          );
+        }
         expect(lesson.exercises.map((ex) => ex.prompt).join("\n")).not.toMatch(
           /Which target word is linked to the main task|Which word appears later in the situation|Why is the vocabulary useful/u
         );
@@ -57,13 +66,19 @@ describe("editorial content regression", () => {
             "Context choice: Which target word best fits the scene?"
           );
           if (!exercise.contextTag?.startsWith("scene-")) continue;
-          const scene = lesson.usage.scenes.find(
+          const rawScene = lesson.usage.scenes.find(
             (item) => `scene-${item.chunkNumber}` === exercise.contextTag
           );
-          expect(scene, lesson.lessonId).toBeDefined();
-          expect(exercise.answer, lesson.lessonId).toBe(scene!.check.expectedAnswer);
-          expect(exercise.prompt, lesson.lessonId).toContain(scene!.scenario);
-          expect(exercise.prompt, lesson.lessonId).toContain(scene!.check.question);
+          expect(rawScene, lesson.lessonId).toBeDefined();
+          const scene = applySceneLearningContext(rawScene!);
+          expect(exercise.answer, lesson.lessonId).toBe(rawScene!.check.expectedAnswer);
+          const matchesRaw =
+            exercise.prompt.includes(rawScene!.scenario) &&
+            exercise.prompt.includes(rawScene!.check.question);
+          const matchesContext =
+            exercise.prompt.includes(scene.scenario) &&
+            exercise.prompt.includes(scene.check.question);
+          expect(matchesRaw || matchesContext, lesson.lessonId).toBe(true);
         }
       }
     }

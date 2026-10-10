@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "110-140 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dorm Room", "Roommate", "Resident Advisor", "Common Room"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dorm Room, Roommate, Resident Advisor, and Common Room and choose the option that fits the situation.",
+          "scenario": "Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Dorm Room", "Roommate", "Resident Advisor"],
-            "expectedAnswer": "Dorm Room"
+            "question": "Who supports residents and explains housing rules?",
+            "options": ["Resident Advisor", "Dorm Room", "Roommate"],
+            "expectedAnswer": "Resident Advisor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Dorm Room as the main location; include Dorm Room, Roommate, and Resident Advisor naturally where visually appropriate, but make the real-world use of Dorm Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Resident Advisor in a student life context. Use the written scenario as the source of meaning: Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Laundry Room", "Meal Plan", "Dorm Key", "Move-In"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Laundry Room, Meal Plan, Dorm Key, and Move-In and choose the option that fits the situation.",
+          "scenario": "On Move-In day, Farah receives a Dorm Key and asks about the Meal Plan’s included meals. The Laundry Room has machines for washing and drying clothes. Access and charges depend on the housing agreement.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which room contains washing and drying machines?",
             "options": ["Laundry Room", "Meal Plan", "Dorm Key"],
             "expectedAnswer": "Laundry Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or approaching the Laundry Room as the main location; include Laundry Room, Meal Plan, and Dorm Key naturally where visually appropriate, but make the real-world use of Laundry Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Laundry Room in a student life context. Use the written scenario as the source of meaning: On Move-In day, Farah receives a Dorm Key and asks about the Meal Plan’s included meals. The Laundry Room has machines for washing and drying clothes. Access and charges depend on the housing agreement. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Move-Out", "Off-Campus Housing", "Club", "Organization"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Move-Out, Off-Campus Housing, Club, and Organization and choose the option that fits the situation.",
+          "scenario": "After Move-Out, Farah considers Off-Campus Housing outside the university grounds. She remains a member of a Club and another Organization sharing a community-service purpose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Move-Out", "Off-Campus Housing", "Club"],
-            "expectedAnswer": "Move-Out"
+            "question": "Which housing is outside the university grounds?",
+            "options": ["Off-Campus Housing", "Move-Out", "Club"],
+            "expectedAnswer": "Off-Campus Housing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Move-Out as the central item; include Move-Out, Off-Campus Housing, and Club naturally where visually appropriate, but make the real-world use of Move-Out the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Off-Campus Housing in a student life context. Use the written scenario as the source of meaning: After Move-Out, Farah considers Off-Campus Housing outside the university grounds. She remains a member of a Club and another Organization sharing a community-service purpose. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fraternity", "Sorority", "Student Government"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fraternity, Sorority, and Student Government and choose the option that fits the situation.",
+          "scenario": "A US campus guide describes a Fraternity and Sorority as social organizations with their own membership rules. Student Government represents students in university decisions. These groups are not features of every university system.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Fraternity", "Sorority", "Student Government"],
-            "expectedAnswer": "Fraternity"
+            "question": "Which group represents students in university decisions?",
+            "options": ["Student Government", "Fraternity", "Sorority"],
+            "expectedAnswer": "Student Government"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Fraternity through a realistic adult task; include Fraternity, Sorority, and Student Government naturally where visually appropriate, but make the real-world use of Fraternity the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Student Government in a student life context. Use the written scenario as the source of meaning: A US campus guide describes a Fraternity and Sorority as social organizations with their own membership rules. Student Government represents students in university decisions. These groups are not features of every university system. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Student Life",
-      "text": "At the student life, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dorm Room, Roommate, Resident Advisor, and Common Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Laundry Room, Meal Plan, Dorm Key, and Move-In. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Move-Out, Off-Campus Housing, Club, and Organization. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Fraternity, Sorority, and Student Government. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Student Life: A visitor’s questions",
+      "text": "Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk. On Move-In day, Farah receives a Dorm Key and asks about the Meal Plan’s included meals. The Laundry Room has machines for washing and drying clothes. Access and charges depend on the housing agreement. After Move-Out, Farah considers Off-Campus Housing outside the university grounds. She remains a member of a Club and another Organization sharing a community-service purpose. A US campus guide describes a Fraternity and Sorority as social organizations with their own membership rules. Student Government represents students in university decisions. These groups are not features of every university system.",
+      "imageBrief": "One uncluttered student life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dorm Room, Roommate, Resident Advisor, and Common Room and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Dorm Room",
+        "prompt": "Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk.\nWho supports residents and explains housing rules?",
+        "answer": "Resident Advisor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Laundry Room, Meal Plan, Dorm Key, and Move-In and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "On Move-In day, Farah receives a Dorm Key and asks about the Meal Plan’s included meals. The Laundry Room has machines for washing and drying clothes. Access and charges depend on the housing agreement.\nWhich room contains washing and drying machines?",
         "answer": "Laundry Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Move-Out, Off-Campus Housing, Club, and Organization and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Move-Out",
+        "prompt": "After Move-Out, Farah considers Off-Campus Housing outside the university grounds. She remains a member of a Club and another Organization sharing a community-service purpose.\nWhich housing is outside the university grounds?",
+        "answer": "Off-Campus Housing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fraternity, Sorority, and Student Government and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Fraternity",
+        "prompt": "A US campus guide describes a Fraternity and Sorority as social organizations with their own membership rules. Student Government represents students in university decisions. These groups are not features of every university system.\nWhich group represents students in university decisions?",
+        "answer": "Student Government",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk. On Move-In day, Farah receives a Dorm Key and asks about the Meal Plan’s included meals. The Laundry Room has machines for washing and drying clothes. Access and charges depend on the housing agreement. After Move-Out, Farah considers Off-Campus Housing outside the university grounds. She remains a member of a Club and another Organization sharing a community-service purpose. A US campus guide describes a Fraternity and Sorority as social organizations with their own membership rules. Student Government represents students in university decisions. These groups are not features of every university system.\nExplain the difference between Dorm Room and Roommate using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Dorm Room"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Plagiarism” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the student life task. Use Dorm Room, Roommate, Resident Advisor, Common Room, Laundry Room, Meal Plan, Dorm Key, Move-In, Move-Out, Off-Campus Housing, Club, Organization, Fraternity, Sorority, and Student Government in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Dorm Room, Roommate, Resident Advisor, Common Room, Laundry Room, Meal Plan, Dorm Key, Move-In, Move-Out, Off-Campus Housing, Club, Organization, Fraternity, Sorority, Student Government to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Student Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Student Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Dorm Room and Roommate, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Farah shares a Dorm Room with a Roommate. A Resident Advisor supports residents and helps them understand housing rules. Students gather in the Common Room to relax and talk. Pause and answer: Who supports residents and explains housing rules?"
     },
     "spacedReview": "1 lesson(s) back: Plagiarism, Reference from research-study-3\n3 lesson(s) back: Textbook, Journal from research-study-1\n7 lesson(s) back: Orientation, Registration from university-campus-3"
   },
@@ -221,129 +204,112 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "122-152 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Newspaper", "Radio Station", "Volunteer", "Intramural Sports"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newspaper, Radio Station, Volunteer, and Intramural Sports and choose the option that fits the situation.",
+          "scenario": "Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Newspaper", "Radio Station", "Volunteer"],
-            "expectedAnswer": "Newspaper"
+            "question": "Which role helps without being paid?",
+            "options": ["Volunteer", "Newspaper", "Radio Station"],
+            "expectedAnswer": "Volunteer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Newspaper as the central item; include Newspaper, Radio Station, and Volunteer naturally where visually appropriate, but make the real-world use of Newspaper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Volunteer in a student life context. Use the written scenario as the source of meaning: Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Drama Club", "Party", "Concert", "Game Day"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drama Club, Party, Concert, and Game Day and choose the option that fits the situation.",
+          "scenario": "The Drama Club prepares a theatrical performance. Other calendar events include a Party, a Concert with musicians, and Game Day for an important sports match. Students choose activities according to their interests.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which group prepares the theatrical performance?",
             "options": ["Drama Club", "Party", "Concert"],
             "expectedAnswer": "Drama Club"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Drama Club as the central item; include Drama Club, Party, and Concert naturally where visually appropriate, but make the real-world use of Drama Club the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Drama Club in a student life context. Use the written scenario as the source of meaning: The Drama Club prepares a theatrical performance. Other calendar events include a Party, a Concert with musicians, and Game Day for an important sports match. Students choose activities according to their interests. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tailgate", "Study Date", "Coffee Shop", "Food Court"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tailgate, Study Date, Coffee Shop, and Food Court and choose the option that fits the situation.",
+          "scenario": "Some fans attend a Tailgate near parked vehicles before a game. Farah instead arranges a Study Date to revise with a classmate at the Coffee Shop near the Food Court. A study date can simply be a planned study meeting.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tailgate", "Study Date", "Coffee Shop"],
-            "expectedAnswer": "Tailgate"
+            "question": "Which arrangement brings Farah and her classmate together to revise?",
+            "options": ["Study Date", "Tailgate", "Coffee Shop"],
+            "expectedAnswer": "Study Date"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Tailgate as the central item; include Tailgate, Study Date, and Coffee Shop naturally where visually appropriate, but make the real-world use of Tailgate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Study Date in a student life context. Use the written scenario as the source of meaning: Some fans attend a Tailgate near parked vehicles before a game. Farah instead arranges a Study Date to revise with a classmate at the Coffee Shop near the Food Court. A study date can simply be a planned study meeting. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Movie Night", "Road Trip", "Spring Formal"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Movie Night, Road Trip, and Spring Formal and choose the option that fits the situation.",
+          "scenario": "The student calendar offers Movie Night, a Road Trip by car, and a Spring Formal, an organized formal social event during spring. The event invitation explains its actual arrangements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Movie Night", "Road Trip", "Spring Formal"],
-            "expectedAnswer": "Movie Night"
+            "question": "Which event is the formal social gathering during spring?",
+            "options": ["Spring Formal", "Movie Night", "Road Trip"],
+            "expectedAnswer": "Spring Formal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Movie Night as the central item; include Movie Night, Road Trip, and Spring Formal naturally where visually appropriate, but make the real-world use of Movie Night the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Spring Formal in a student life context. Use the written scenario as the source of meaning: The student calendar offers Movie Night, a Road Trip by car, and a Spring Formal, an organized formal social event during spring. The event invitation explains its actual arrangements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: Student Life",
-      "text": "At the student life, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Newspaper, Radio Station, Volunteer, and Intramural Sports. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Drama Club, Party, Concert, and Game Day. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tailgate, Study Date, Coffee Shop, and Food Court. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Movie Night, Road Trip, and Spring Formal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Student Life: Understanding the different roles",
+      "text": "Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university. The Drama Club prepares a theatrical performance. Other calendar events include a Party, a Concert with musicians, and Game Day for an important sports match. Students choose activities according to their interests. Some fans attend a Tailgate near parked vehicles before a game. Farah instead arranges a Study Date to revise with a classmate at the Coffee Shop near the Food Court. A study date can simply be a planned study meeting. The student calendar offers Movie Night, a Road Trip by car, and a Spring Formal, an organized formal social event during spring. The event invitation explains its actual arrangements.",
+      "imageBrief": "One uncluttered student life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Newspaper, Radio Station, Volunteer, and Intramural Sports and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Newspaper",
+        "prompt": "Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university.\nWhich role helps without being paid?",
+        "answer": "Volunteer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Drama Club, Party, Concert, and Game Day and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Drama Club prepares a theatrical performance. Other calendar events include a Party, a Concert with musicians, and Game Day for an important sports match. Students choose activities according to their interests.\nWhich group prepares the theatrical performance?",
         "answer": "Drama Club",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tailgate, Study Date, Coffee Shop, and Food Court and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tailgate",
+        "prompt": "Some fans attend a Tailgate near parked vehicles before a game. Farah instead arranges a Study Date to revise with a classmate at the Coffee Shop near the Food Court. A study date can simply be a planned study meeting.\nWhich arrangement brings Farah and her classmate together to revise?",
+        "answer": "Study Date",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Movie Night, Road Trip, and Spring Formal and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Movie Night",
+        "prompt": "The student calendar offers Movie Night, a Road Trip by car, and a Spring Formal, an organized formal social event during spring. The event invitation explains its actual arrangements.\nWhich event is the formal social gathering during spring?",
+        "answer": "Spring Formal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university. The Drama Club prepares a theatrical performance. Other calendar events include a Party, a Concert with musicians, and Game Day for an important sports match. Students choose activities according to their interests. Some fans attend a Tailgate near parked vehicles before a game. Farah instead arranges a Study Date to revise with a classmate at the Coffee Shop near the Food Court. A study date can simply be a planned study meeting. The student calendar offers Movie Night, a Road Trip by car, and a Spring Formal, an organized formal social event during spring. The event invitation explains its actual arrangements.\nExplain the difference between Newspaper and Radio Station using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Newspaper"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Dorm Room” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the student life task. Use Newspaper, Radio Station, Volunteer, Intramural Sports, Drama Club, Party, Concert, Game Day, Tailgate, Study Date, Coffee Shop, Food Court, Movie Night, Road Trip, and Spring Formal in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Newspaper, Radio Station, Volunteer, Intramural Sports, Drama Club, Party, Concert, Game Day, Tailgate, Study Date, Coffee Shop, Food Court, Movie Night, Road Trip, Spring Formal to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Student Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Student Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Newspaper and Radio Station, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Farah reads the student Newspaper and listens to the Radio Station. As a Volunteer, she helps at an event without pay, then watches Intramural Sports involving teams from within the university. Pause and answer: Which role helps without being paid?"
     },
     "spacedReview": "1 lesson(s) back: Dorm Room, Roommate from student-life-1\n3 lesson(s) back: Literature Review, Methodology from research-study-2\n7 lesson(s) back: Professor, Lecturer from academic-life-1"
   },
@@ -385,110 +351,93 @@
       "goal": "Use precise, practical vocabulary to discuss study requirements, research tasks, and university services and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the university setting with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "87-117 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tuition", "Scholarship", "Financial Aid", "Student Loan"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuition, Scholarship, Financial Aid, and Student Loan and choose the option that fits the situation.",
+          "scenario": "Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Tuition", "Scholarship", "Financial Aid"],
-            "expectedAnswer": "Tuition"
+            "question": "Which option is borrowed money to be repaid under its terms?",
+            "options": ["Student Loan", "Tuition", "Scholarship"],
+            "expectedAnswer": "Student Loan"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult illustrating Tuition through a realistic adult task; include Tuition, Scholarship, and Financial Aid naturally where visually appropriate, but make the real-world use of Tuition the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Student Loan in a student life context. Use the written scenario as the source of meaning: Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Work-Study", "Part-Time Job", "Budget", "Textbook Cost"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Work-Study, Part-Time Job, Budget, and Textbook Cost and choose the option that fits the situation.",
+          "scenario": "In a US aid example, Work-Study allows eligible students to earn money through part-time work. Farah compares it with a separate Part-Time Job and prepares a Budget that includes Textbook Cost.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Work-Study", "Part-Time Job", "Budget"],
-            "expectedAnswer": "Work-Study"
+            "question": "Which term names her plan for income and spending?",
+            "options": ["Budget", "Work-Study", "Part-Time Job"],
+            "expectedAnswer": "Budget"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Work-Study as the central item; include Work-Study, Part-Time Job, and Budget naturally where visually appropriate, but make the real-world use of Work-Study the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Budget in a student life context. Use the written scenario as the source of meaning: In a US aid example, Work-Study allows eligible students to earn money through part-time work. Farah compares it with a separate Part-Time Job and prepares a Budget that includes Textbook Cost. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Student Discount", "Grant"],
-          "scenario": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Discount, and Grant and choose the option that fits the situation.",
+          "scenario": "A shop offers a Student Discount to eligible students. A Grant provides awarded funding that generally does not need repayment if its conditions are met; Farah checks the award’s specific requirements.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Student Discount", "Grant", "Tuition"],
-            "expectedAnswer": "Student Discount"
+            "question": "Which term names the awarded funding described here?",
+            "options": ["Grant", "Student Discount"],
+            "expectedAnswer": "Grant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a university setting. Show an adult using or examining the Student Discount as the central item; include Student Discount, Grant, and Tuition naturally where visually appropriate, but make the real-world use of Student Discount the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a university setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Grant in a student life context. Use the written scenario as the source of meaning: A shop offers a Student Discount to eligible students. A Grant provides awarded funding that generally does not need repayment if its conditions are met; Farah checks the award’s specific requirements. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written student life situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: Student Life",
-      "text": "At the student life, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tuition, Scholarship, Financial Aid, and Student Loan. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Work-Study, Part-Time Job, Budget, and Textbook Cost. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Student Discount and Grant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about Student Life. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Student Life: Comparing the equipment",
+      "text": "Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions. In a US aid example, Work-Study allows eligible students to earn money through part-time work. Farah compares it with a separate Part-Time Job and prepares a Budget that includes Textbook Cost. A shop offers a Student Discount to eligible students. A Grant provides awarded funding that generally does not need repayment if its conditions are met; Farah checks the award’s specific requirements.",
+      "imageBrief": "One uncluttered student life setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tuition, Scholarship, Financial Aid, and Student Loan and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Tuition",
+        "prompt": "Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions.\nWhich option is borrowed money to be repaid under its terms?",
+        "answer": "Student Loan",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Work-Study, Part-Time Job, Budget, and Textbook Cost and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Work-Study",
+        "prompt": "In a US aid example, Work-Study allows eligible students to earn money through part-time work. Farah compares it with a separate Part-Time Job and prepares a Budget that includes Textbook Cost.\nWhich term names her plan for income and spending?",
+        "answer": "Budget",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the student life setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student Discount, and Grant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Student Discount",
+        "prompt": "A shop offers a Student Discount to eligible students. A Grant provides awarded funding that generally does not need repayment if its conditions are met; Farah checks the award’s specific requirements.\nWhich term names the awarded funding described here?",
+        "answer": "Grant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions. In a US aid example, Work-Study allows eligible students to earn money through part-time work. Farah compares it with a separate Part-Time Job and prepares a Budget that includes Textbook Cost. A shop offers a Student Discount to eligible students. A Grant provides awarded funding that generally does not need repayment if its conditions are met; Farah checks the award’s specific requirements.\nExplain the difference between Tuition and Scholarship using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Tuition"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Newspaper” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the student life task. Use Tuition, Scholarship, Financial Aid, Student Loan, Work-Study, Part-Time Job, Budget, Textbook Cost, Student Discount, and Grant in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Tuition, Scholarship, Financial Aid, Student Loan, Work-Study, Part-Time Job, Budget, Textbook Cost, Student Discount, Grant to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "Student Life: In Context",
-      "idea": "45-70 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Student Life: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Tuition and Scholarship, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Farah compares Tuition costs with a Scholarship, Financial Aid, and a Student Loan. A Student Loan is borrowed money repaid under its terms, while scholarships and other aid have their own eligibility and award conditions. Pause and answer: Which option is borrowed money to be repaid under its terms?"
     },
     "spacedReview": "1 lesson(s) back: Newspaper, Radio Station from student-life-2\n3 lesson(s) back: Plagiarism, Reference from research-study-3\n7 lesson(s) back: Syllabus, Prerequisite from academic-life-2"
   }

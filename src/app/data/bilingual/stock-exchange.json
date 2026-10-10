@@ -17,20 +17,20 @@
     "arabicTranslation": "القيمة السوقية"
   },
   "volume": {
-    "definition": "The property of something that is great in magnitude.",
-    "arabicTranslation": "شدة الصوت"
+    "definition": "The number of shares or contracts traded during a specified period.",
+    "arabicTranslation": "حجم التداول"
   },
   "volatility": {
-    "definition": "The trait of being unpredictably irresolute.",
-    "arabicTranslation": "تقلب"
+    "definition": "The degree to which market prices fluctuate over time.",
+    "arabicTranslation": "تقلب الأسعار"
   },
   "index": {
-    "definition": "A number or ratio (a value on a scale of measurement) derived from a series of observed facts.",
+    "definition": "A measure that tracks the performance of a selected group of securities.",
     "arabicTranslation": "مؤشر"
   },
   "nasdaq": {
-    "definition": "A computerized data system to provide brokers with price quotations for securities traded over the counter.",
-    "arabicTranslation": "ناسداك"
+    "definition": "A U.S. electronic stock exchange; the name also appears in several related market indexes.",
+    "arabicTranslation": "بورصة ناسداك"
   },
   "nyse": {
     "definition": "A stock exchange in New York, located at 11 Wall Street.",
@@ -42,41 +42,41 @@
     "arabicTranslation": "مؤشر داو جونز"
   },
   "buy": {
-    "definition": "To acquire by trade or sacrifice or exchange.",
-    "arabicTranslation": "شراء"
+    "definition": "To purchase a security or other asset.",
+    "arabicTranslation": "يشتري"
   },
   "sell": {
-    "definition": "The activity of persuading someone to buy.",
-    "arabicTranslation": "بيع"
+    "definition": "To transfer a security or asset to a buyer for an agreed price.",
+    "arabicTranslation": "يبيع"
   },
   "trade": {
-    "definition": "The commercial exchange (buying and selling on domestic or international markets) of goods and services.",
-    "arabicTranslation": "تداول"
+    "definition": "To buy and sell financial assets.",
+    "arabicTranslation": "يتداول"
   },
   "bid": {
-    "definition": "To ask for or request earnestly.",
-    "arabicTranslation": "عرض شراء"
+    "definition": "The price a buyer offers to pay for a security.",
+    "arabicTranslation": "سعر عرض الشراء"
   },
   "ask": {
-    "arabicTranslation": "يسأل",
-    "definition": "To request information or make a question."
+    "arabicTranslation": "سعر عرض البيع",
+    "definition": "The price a seller asks to receive for a security."
   },
   "spread": {
-    "definition": "A conspicuous disparity or difference as between two figures.",
-    "arabicTranslation": "فارق السعر"
+    "definition": "The difference between the bid price and the ask price for a security.",
+    "arabicTranslation": "فارق سعر الشراء والبيع"
   },
   "limit-order": {
     "definition": "An instruction to buy or sell a security only at a specified price or a more favorable one.",
-    "exampleUsage": "The textbook explains how a limit order differs from a market order.",
+    "exampleUsage": "The investor chose a limit order specifying the maximum acceptable purchase price.",
     "arabicTranslation": "أمر محدد السعر"
   },
   "market-order": {
-    "definition": "An instruction directs a broker to buy or sell stocks or commodities immediately at the price currently available in the market.",
+    "definition": "An instruction to buy or sell a security at the best available market price; the execution price is not guaranteed.",
     "arabicTranslation": "أمر شراء أو بيع بسعر السوق"
   },
   "stop-loss": {
     "definition": "An order designed to trigger a sale or purchase when a security reaches a specified price level.",
-    "exampleUsage": "The lesson describes a stop-loss order as one type of trading instruction.",
+    "exampleUsage": "The investor asked how a stop-loss order could execute at a different price from the trigger.",
     "arabicTranslation": "أمر إيقاف الخسارة"
   },
   "short-selling": {
@@ -84,11 +84,11 @@
     "arabicTranslation": "بيع على المكشوف"
   },
   "technical-analysis": {
-    "definition": "Examining a stock’s earlier price movements to forecast how its price may change in the future.",
+    "definition": "An approach to studying market price and trading-volume patterns to assess possible future movements.",
     "arabicTranslation": "تحليل فني"
   },
   "fundamental-analysis": {
-    "definition": "An investment approach that selects stocks by evaluating a company’s financial condition, operations, and prospects.",
+    "definition": "An approach to assessing an investment using financial information, business conditions, and economic factors.",
     "arabicTranslation": "تحليل أساسي"
   },
   "p-e-ratio": {
@@ -96,7 +96,7 @@
     "arabicTranslation": "نسبة السعر إلى الربحية"
   },
   "earnings-report": {
-    "definition": "A financial statement summarizes how a company performed during a specified period.",
+    "definition": "A report describing a company's financial results for a specified period.",
     "arabicTranslation": "تقرير أرباح"
   },
   "revenue": {
@@ -105,11 +105,11 @@
   },
   "profit-margin": {
     "definition": "The percentage of sales revenue a business keeps as profit once it has paid its costs.",
-    "exampleUsage": "The glossary uses the term \"Profit Margin\" in an educational description.",
+    "exampleUsage": "The report compared net profit margin as net profit divided by revenue.",
     "arabicTranslation": "هامش ربح"
   },
   "balance-sheet": {
-    "definition": "A dated financial report presents what an organization owns, owes, and retains for its shareholders.",
+    "definition": "A financial statement showing an organization's assets, liabilities, and equity at a specified date.",
     "arabicTranslation": "ميزانية عمومية"
   },
   "cash-flow": {
@@ -121,15 +121,15 @@
     "arabicTranslation": "اتجاه السوق"
   },
   "forecast": {
-    "definition": "A prediction about how something (as the weather) will develop.",
+    "definition": "A prediction of a future result based on available information; it is not a guarantee.",
     "arabicTranslation": "توقعات"
   },
   "trader": {
-    "definition": "A person who purchases and maintains an inventory of goods to be sold.",
+    "definition": "A person who buys and sells securities or other financial assets.",
     "arabicTranslation": "متداول"
   },
   "broker": {
-    "definition": "A businessman who buys or sells for another in exchange for a commission.",
+    "definition": "A person or firm that arranges financial transactions for clients, usually for a fee or commission.",
     "arabicTranslation": "وسيط"
   },
   "analyst": {
@@ -137,29 +137,29 @@
     "arabicTranslation": "محلل"
   },
   "floor": {
-    "definition": "A large room in a exchange where the trading is done.",
-    "arabicTranslation": "طابق"
+    "definition": "The physical trading area of an exchange.",
+    "arabicTranslation": "قاعة التداول"
   },
   "bell": {
     "definition": "A device that makes a ringing sound.",
     "arabicTranslation": "جرس",
-    "exampleUsage": "The bell was used during the activity."
+    "exampleUsage": "The exchange’s opening bell marked the start of the trading session."
   },
   "ticker": {
-    "definition": "A character printer that automatically prints stock quotations on ticker tape.",
-    "arabicTranslation": "شريط أسعار"
+    "definition": "A display or data feed showing security symbols and market information.",
+    "arabicTranslation": "شريط عرض أسعار الأسهم"
   },
   "screen": {
-    "definition": "To examine in order to test suitability.",
+    "definition": "A display showing market information to a trader.",
     "arabicTranslation": "شاشة"
   },
   "trading-desk": {
     "definition": "A workplace or team where financial-market transactions are handled for an institution.",
-    "exampleUsage": "The bank's trading desk monitors market activity during business hours.",
+    "exampleUsage": "The trading desk handled the institution’s market orders.",
     "arabicTranslation": "مكتب تداول"
   },
   "pit": {
-    "definition": "(commodity exchange) the part of the floor of a commodity exchange where trading in a particular commodity is carried on.",
+    "definition": "An area of a trading floor traditionally used for face-to-face trading in a particular commodity or contract.",
     "arabicTranslation": "حلقة تداول"
   },
   "exchange-rate": {

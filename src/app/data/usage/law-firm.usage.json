@@ -33,11 +33,11 @@
       "مساعد قانوني",
       "سكرتير قانوني",
       "موثق",
-      "وسيط",
+      "وسيط لتسوية النزاع",
       "محكم",
       "محامٍ توفره الدولة لمن لا يستطيع تحمل أتعاب الدفاع",
       "ممثل الادعاء العام",
-      "استقبال",
+      "منطقة الاستقبال",
       "غرفة مؤتمر",
       "مكتبة قانونية",
       "مكتب شريك في شركة المحاماة",
@@ -47,133 +47,112 @@
       "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
       "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
       "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "readingTarget": "130-160 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lawyer", "Attorney", "Judge", "Paralegal"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.",
+          "scenario": "A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Lawyer", "Attorney", "Judge"],
-            "expectedAnswer": "Lawyer"
+            "question": "Who assists lawyers within permitted responsibilities?",
+            "options": ["Paralegal", "Lawyer", "Attorney"],
+            "expectedAnswer": "Paralegal"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Lawyer; include Lawyer, Attorney, and Judge naturally where visually appropriate, but make the real-world use of Lawyer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Paralegal in a law firm context. Use the written scenario as the source of meaning: A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Legal Secretary", "Notary", "Mediator", "Arbitrator"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.",
+          "scenario": "A Legal Secretary handles office administration. A Notary performs specified authorized acts, a Mediator helps parties seek agreement, and an Arbitrator decides an arbitration dispute under its rules. Mediation does not normally impose a result on the parties.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Legal Secretary", "Notary", "Mediator"],
-            "expectedAnswer": "Legal Secretary"
+            "question": "Who helps parties seek their own agreement?",
+            "options": ["Mediator", "Legal Secretary", "Notary"],
+            "expectedAnswer": "Mediator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Legal Secretary as the central item; include Legal Secretary, Notary, and Mediator naturally where visually appropriate, but make the real-world use of Legal Secretary the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mediator in a law firm context. Use the written scenario as the source of meaning: A Legal Secretary handles office administration. A Notary performs specified authorized acts, a Mediator helps parties seek agreement, and an Arbitrator decides an arbitration dispute under its rules. Mediation does not normally impose a result on the parties. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Public Defender", "Prosecutor", "Reception", "Conference Room"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.",
+          "scenario": "A Public Defender represents eligible accused people under the system’s arrangements; a Prosecutor presents the criminal case for the state. Reception welcomes visitors, and the Conference Room holds meetings. These officials need not be employees of the private firm.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who represents eligible accused people in this account?",
             "options": ["Public Defender", "Prosecutor", "Reception"],
             "expectedAnswer": "Public Defender"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult working with or speaking to the Public Defender; include Public Defender, Prosecutor, and Reception naturally where visually appropriate, but make the real-world use of Public Defender the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Public Defender in a law firm context. Use the written scenario as the source of meaning: A Public Defender represents eligible accused people under the system’s arrangements; a Prosecutor presents the criminal case for the state. Reception welcomes visitors, and the Conference Room holds meetings. These officials need not be employees of the private firm. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Law Library", "Partner Office", "Associate Office"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.",
+          "scenario": "The Law Library holds legal research resources. A Partner Office is assigned to a firm partner, and an Associate Office to a lawyer who is not a partner. Firm titles and responsibilities vary.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which space holds legal research resources?",
             "options": ["Law Library", "Partner Office", "Associate Office"],
             "expectedAnswer": "Law Library"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Law Library as the central item; include Law Library, Partner Office, and Associate Office naturally where visually appropriate, but make the real-world use of Law Library the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Law Library in a law firm context. Use the written scenario as the source of meaning: The Law Library holds legal research resources. A Partner Office is assigned to a firm partner, and an Associate Office to a lawyer who is not a partner. Firm titles and responsibilities vary. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Law Firm",
-      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lawyer, Attorney, Judge, and Paralegal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Legal Secretary, Notary, Mediator, and Arbitrator. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Public Defender, Prosecutor, Reception, and Conference Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Law Library, Partner Office, and Associate Office. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Law Firm: A visitor’s questions",
+      "text": "A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities. A Legal Secretary handles office administration. A Notary performs specified authorized acts, a Mediator helps parties seek agreement, and an Arbitrator decides an arbitration dispute under its rules. Mediation does not normally impose a result on the parties. A Public Defender represents eligible accused people under the system’s arrangements; a Prosecutor presents the criminal case for the state. Reception welcomes visitors, and the Conference Room holds meetings. These officials need not be employees of the private firm. The Law Library holds legal research resources. A Partner Office is assigned to a firm partner, and an Associate Office to a lawyer who is not a partner. Firm titles and responsibilities vary.",
+      "imageBrief": "One uncluttered law firm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lawyer, Attorney, Judge, and Paralegal and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Lawyer",
+        "prompt": "A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities.\nWho assists lawyers within permitted responsibilities?",
+        "answer": "Paralegal",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Legal Secretary, Notary, Mediator, and Arbitrator and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Legal Secretary",
+        "prompt": "A Legal Secretary handles office administration. A Notary performs specified authorized acts, a Mediator helps parties seek agreement, and an Arbitrator decides an arbitration dispute under its rules. Mediation does not normally impose a result on the parties.\nWho helps parties seek their own agreement?",
+        "answer": "Mediator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Public Defender, Prosecutor, Reception, and Conference Room and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "A Public Defender represents eligible accused people under the system’s arrangements; a Prosecutor presents the criminal case for the state. Reception welcomes visitors, and the Conference Room holds meetings. These officials need not be employees of the private firm.\nWho represents eligible accused people in this account?",
         "answer": "Public Defender",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Law Library, Partner Office, and Associate Office and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Law Library holds legal research resources. A Partner Office is assigned to a firm partner, and an Associate Office to a lawyer who is not a partner. Firm titles and responsibilities vary.\nWhich space holds legal research resources?",
         "answer": "Law Library",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities. A Legal Secretary handles office administration. A Notary performs specified authorized acts, a Mediator helps parties seek agreement, and an Arbitrator decides an arbitration dispute under its rules. Mediation does not normally impose a result on the parties. A Public Defender represents eligible accused people under the system’s arrangements; a Prosecutor presents the criminal case for the state. Reception welcomes visitors, and the Conference Room holds meetings. These officials need not be employees of the private firm. The Law Library holds legal research resources. A Partner Office is assigned to a firm partner, and an Associate Office to a lawyer who is not a partner. Firm titles and responsibilities vary.\nExplain the difference between Lawyer and Attorney using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Lawyer"
-      },
-      {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Judge"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Communicate” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the law firm task. Use Lawyer, Attorney, Judge, Paralegal, Legal Secretary, Notary, Mediator, Arbitrator, Public Defender, Prosecutor, Reception, Conference Room, Law Library, Partner Office, and Associate Office in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Lawyer, Attorney, Judge, Paralegal, Legal Secretary, Notary, Mediator, Arbitrator, Public Defender, Prosecutor, Reception, Conference Room, Law Library, Partner Office, Associate Office to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Law Firm: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Law Firm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Lawyer and Attorney, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A law-office guide distinguishes Lawyer and Attorney, professional titles whose use varies by system, from a Judge deciding court issues. A Paralegal assists lawyers with legal work within permitted responsibilities. Pause and answer: Who assists lawyers within permitted responsibilities?"
     },
     "spacedReview": "1 lesson(s) back: Communicate from space-station-6\n3 lesson(s) back: Clock, Map Display from space-station-4\n7 lesson(s) back: Telescope, Flag from arctic-5"
   },
@@ -212,7 +191,7 @@
       "غرفة السجلات",
       "قانون جنائي",
       "قانون مدني",
-      "قانون عائلة",
+      "قانون الأسرة",
       "قانون الشركات",
       "قانون الضرائب",
       "قانون الهجرة",
@@ -225,133 +204,112 @@
       "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
       "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
       "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "readingTarget": "123-153 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Filing Room", "War Room", "Deposition Room", "Waiting Area"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.",
+          "scenario": "A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Filing Room", "War Room", "Deposition Room"],
-            "expectedAnswer": "Filing Room"
+            "question": "Which room supports coordinated case preparation?",
+            "options": ["War Room", "Filing Room", "Deposition Room"],
+            "expectedAnswer": "War Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or approaching the Filing Room as the main location; include Filing Room, War Room, and Deposition Room naturally where visually appropriate, but make the real-world use of Filing Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for War Room in a law firm context. Use the written scenario as the source of meaning: A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Records Room", "Criminal Law", "Civil Law", "Family Law"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.",
+          "scenario": "The Records Room preserves documents. Criminal Law addresses offenses and criminal proceedings, Civil Law here concerns noncriminal claims, and Family Law addresses family relationships. Civil law also has a different meaning as a legal-system category.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Records Room", "Criminal Law", "Civil Law"],
-            "expectedAnswer": "Records Room"
+            "question": "Which practice area concerns offenses and criminal proceedings?",
+            "options": ["Criminal Law", "Records Room", "Civil Law"],
+            "expectedAnswer": "Criminal Law"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or approaching the Records Room as the main location; include Records Room, Criminal Law, and Civil Law naturally where visually appropriate, but make the real-world use of Records Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Criminal Law in a law firm context. Use the written scenario as the source of meaning: The Records Room preserves documents. Criminal Law addresses offenses and criminal proceedings, Civil Law here concerns noncriminal claims, and Family Law addresses family relationships. Civil law also has a different meaning as a legal-system category. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Corporate Law", "Tax Law", "Immigration Law", "Real Estate Law"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.",
+          "scenario": "Corporate Law concerns companies, Tax Law concerns taxation, Immigration Law concerns entry and status, and Real Estate Law concerns land and property transactions. The applicable law depends on jurisdiction.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Corporate Law", "Tax Law", "Immigration Law"],
-            "expectedAnswer": "Corporate Law"
+            "question": "Which area concerns entry and immigration status?",
+            "options": ["Immigration Law", "Corporate Law", "Tax Law"],
+            "expectedAnswer": "Immigration Law"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Corporate Law through a realistic adult task; include Corporate Law, Tax Law, and Immigration Law naturally where visually appropriate, but make the real-world use of Corporate Law the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Immigration Law in a law firm context. Use the written scenario as the source of meaning: Corporate Law concerns companies, Tax Law concerns taxation, Immigration Law concerns entry and status, and Real Estate Law concerns land and property transactions. The applicable law depends on jurisdiction. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Employment Law", "Environmental Law", "Intellectual Property"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.",
+          "scenario": "Employment Law governs workplace relationships, and Environmental Law concerns environmental protection requirements. Intellectual Property concerns protected creations and related rights, including inventions, creative works, and certain signs. Protection is not automatic for every idea.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Employment Law", "Environmental Law", "Intellectual Property"],
-            "expectedAnswer": "Employment Law"
+            "question": "Which area concerns protected creations and related rights?",
+            "options": ["Intellectual Property", "Employment Law", "Environmental Law"],
+            "expectedAnswer": "Intellectual Property"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Employment Law through a realistic adult task; include Employment Law, Environmental Law, and Intellectual Property naturally where visually appropriate, but make the real-world use of Employment Law the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Intellectual Property in a law firm context. Use the written scenario as the source of meaning: Employment Law governs workplace relationships, and Environmental Law concerns environmental protection requirements. Intellectual Property concerns protected creations and related rights, including inventions, creative works, and certain signs. Protection is not automatic for every idea. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Law Firm",
-      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Filing Room, War Room, Deposition Room, and Waiting Area. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Records Room, Criminal Law, Civil Law, and Family Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Corporate Law, Tax Law, Immigration Law, and Real Estate Law. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Employment Law, Environmental Law, and Intellectual Property. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Law Firm: Understanding the different roles",
+      "text": "A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context. The Records Room preserves documents. Criminal Law addresses offenses and criminal proceedings, Civil Law here concerns noncriminal claims, and Family Law addresses family relationships. Civil law also has a different meaning as a legal-system category. Corporate Law concerns companies, Tax Law concerns taxation, Immigration Law concerns entry and status, and Real Estate Law concerns land and property transactions. The applicable law depends on jurisdiction. Employment Law governs workplace relationships, and Environmental Law concerns environmental protection requirements. Intellectual Property concerns protected creations and related rights, including inventions, creative works, and certain signs. Protection is not automatic for every idea.",
+      "imageBrief": "One uncluttered law firm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Filing Room, War Room, Deposition Room, and Waiting Area and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Filing Room",
+        "prompt": "A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context.\nWhich room supports coordinated case preparation?",
+        "answer": "War Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Records Room, Criminal Law, Civil Law, and Family Law and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Records Room",
+        "prompt": "The Records Room preserves documents. Criminal Law addresses offenses and criminal proceedings, Civil Law here concerns noncriminal claims, and Family Law addresses family relationships. Civil law also has a different meaning as a legal-system category.\nWhich practice area concerns offenses and criminal proceedings?",
+        "answer": "Criminal Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Corporate Law, Tax Law, Immigration Law, and Real Estate Law and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Corporate Law",
+        "prompt": "Corporate Law concerns companies, Tax Law concerns taxation, Immigration Law concerns entry and status, and Real Estate Law concerns land and property transactions. The applicable law depends on jurisdiction.\nWhich area concerns entry and immigration status?",
+        "answer": "Immigration Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Employment Law, Environmental Law, and Intellectual Property and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Employment Law",
+        "prompt": "Employment Law governs workplace relationships, and Environmental Law concerns environmental protection requirements. Intellectual Property concerns protected creations and related rights, including inventions, creative works, and certain signs. Protection is not automatic for every idea.\nWhich area concerns protected creations and related rights?",
+        "answer": "Intellectual Property",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context. The Records Room preserves documents. Criminal Law addresses offenses and criminal proceedings, Civil Law here concerns noncriminal claims, and Family Law addresses family relationships. Civil law also has a different meaning as a legal-system category. Corporate Law concerns companies, Tax Law concerns taxation, Immigration Law concerns entry and status, and Real Estate Law concerns land and property transactions. The applicable law depends on jurisdiction. Employment Law governs workplace relationships, and Environmental Law concerns environmental protection requirements. Intellectual Property concerns protected creations and related rights, including inventions, creative works, and certain signs. Protection is not automatic for every idea.\nExplain the difference between Filing Room and War Room using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Filing Room"
-      },
-      {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Deposition Room"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lawyer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the law firm task. Use Filing Room, War Room, Deposition Room, Waiting Area, Records Room, Criminal Law, Civil Law, Family Law, Corporate Law, Tax Law, Immigration Law, Real Estate Law, Employment Law, Environmental Law, and Intellectual Property in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Filing Room, War Room, Deposition Room, Waiting Area, Records Room, Criminal Law, Civil Law, Family Law, Corporate Law, Tax Law, Immigration Law, Real Estate Law, Employment Law, Environmental Law, Intellectual Property to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Law Firm: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Law Firm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Filing Room and War Room, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A Filing Room stores files, a War Room supports coordinated case preparation, a Deposition Room hosts recorded testimony sessions, and a Waiting Area holds visitors until called. War room is figurative in this office context. Pause and answer: Which room supports coordinated case preparation?"
     },
     "spacedReview": "1 lesson(s) back: Lawyer, Attorney from law-firm-1\n3 lesson(s) back: Lab Module, Crew Quarters from space-station-5\n7 lesson(s) back: Module, Airlock from space-station-1"
   },
@@ -380,127 +338,106 @@
     "targetWordsArabic": [
       "يستشير",
       "يمثل قانونيًا",
-      "ملف",
-      "استئناف",
+      "يودع مستندًا رسميًا",
+      "يستأنف",
       "يتفاوض",
       "يتقاضى",
       "يسوي نزاعًا",
-      "مسودة",
-      "مراجعة",
+      "يصوغ مسودة",
+      "يراجع",
       "يقدم مشورة"
     ],
     "usage": {
       "goal": "Develop precise control of language for situations where learners need to understand formal legal vocabulary and ask for clarification about procedures or documents, and respond flexibly in complex professional or public contexts.",
       "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the legal or public-service setting.",
       "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "readingTarget": "93-123 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Consult", "Represent", "File", "Appeal"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.",
+          "scenario": "A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success.",
           "check": {
-            "question": "Which option best describes the main action shown in the scene?",
-            "options": ["Consult", "Represent", "File"],
-            "expectedAnswer": "Consult"
+            "question": "Which verb means formally submit a document?",
+            "options": ["File", "Consult", "Represent"],
+            "expectedAnswer": "File"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult clearly carrying out the action Consult; include Consult, Represent, and File naturally where visually appropriate, but make the real-world use of Consult the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for File in a law firm context. Use the written scenario as the source of meaning: A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Negotiate", "Litigate", "Settle", "Draft"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.",
+          "scenario": "The lawyers may Negotiate terms, Litigate through proceedings, or Settle by agreement. Draft means prepare an initial written version of a document. In this verb list it is not the noun naming that version.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Negotiate", "Litigate", "Settle"],
-            "expectedAnswer": "Negotiate"
+            "question": "Which verb means prepare an initial written version?",
+            "options": ["Draft", "Negotiate", "Litigate"],
+            "expectedAnswer": "Draft"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult using or examining the Negotiate as the central item; include Negotiate, Litigate, and Settle naturally where visually appropriate, but make the real-world use of Negotiate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Draft in a law firm context. Use the written scenario as the source of meaning: The lawyers may Negotiate terms, Litigate through proceedings, or Settle by agreement. Draft means prepare an initial written version of a document. In this verb list it is not the noun naming that version. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Review", "Advise"],
-          "scenario": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.",
+          "scenario": "Before lawyers Advise the client, they Review the documents by examining them carefully. Recommendations depend on the facts, scope of engagement, and applicable law; the vocabulary exercise is not legal advice.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Review", "Advise", "Consult"],
+            "question": "Which verb means examine the documents carefully?",
+            "options": ["Review", "Advise"],
             "expectedAnswer": "Review"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a legal or public-service setting. Show an adult illustrating Review through a realistic adult task; include Review, Advise, and Consult naturally where visually appropriate, but make the real-world use of Review the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a legal or public-service setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Review in a law firm context. Use the written scenario as the source of meaning: Before lawyers Advise the client, they Review the documents by examining them carefully. Recommendations depend on the facts, scope of engagement, and applicable law; the vocabulary exercise is not legal advice. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written law firm situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "An Update Before the Next Step",
-      "text": "At the law firm, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Consult, Represent, File, and Appeal. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Negotiate, Litigate, Settle, and Draft. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Review and Advise. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Law Firm. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Law Firm: Comparing the equipment",
+      "text": "A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success. The lawyers may Negotiate terms, Litigate through proceedings, or Settle by agreement. Draft means prepare an initial written version of a document. In this verb list it is not the noun naming that version. Before lawyers Advise the client, they Review the documents by examining them carefully. Recommendations depend on the facts, scope of engagement, and applicable law; the vocabulary exercise is not legal advice.",
+      "imageBrief": "One uncluttered law firm setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Consult, Represent, File, and Appeal and choose the option that fits the situation.\nWhich option best describes the main action shown in the scene?",
-        "answer": "Consult",
+        "prompt": "A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success.\nWhich verb means formally submit a document?",
+        "answer": "File",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Negotiate, Litigate, Settle, and Draft and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Negotiate",
+        "prompt": "The lawyers may Negotiate terms, Litigate through proceedings, or Settle by agreement. Draft means prepare an initial written version of a document. In this verb list it is not the noun naming that version.\nWhich verb means prepare an initial written version?",
+        "answer": "Draft",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the law firm setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Review, and Advise and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "Before lawyers Advise the client, they Review the documents by examining them carefully. Recommendations depend on the facts, scope of engagement, and applicable law; the vocabulary exercise is not legal advice.\nWhich verb means examine the documents carefully?",
         "answer": "Review",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success. The lawyers may Negotiate terms, Litigate through proceedings, or Settle by agreement. Draft means prepare an initial written version of a document. In this verb list it is not the noun naming that version. Before lawyers Advise the client, they Review the documents by examining them carefully. Recommendations depend on the facts, scope of engagement, and applicable law; the vocabulary exercise is not legal advice.\nExplain the difference between Consult and Represent using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Consult"
-      },
-      {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "File"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Filing Room” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the law firm task. Use Consult, Represent, File, Appeal, Negotiate, Litigate, Settle, Draft, Review, and Advise in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Consult, Represent, File, Appeal, Negotiate, Litigate, Settle, Draft, Review, Advise to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Law Firm: In Context",
-      "idea": "50-80 seconds contextual scene in the legal or civic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the legal or civic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Law Firm: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Consult and Represent, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A client will Consult a lawyer about a matter; the lawyer may Represent the client within an engagement. File means formally submit a document here, while Appeal means seek permitted review of a decision. Neither act guarantees success. Pause and answer: Which verb means formally submit a document?"
     },
     "spacedReview": "1 lesson(s) back: Filing Room, War Room from law-firm-2\n3 lesson(s) back: Communicate from space-station-6\n7 lesson(s) back: Jet Pack, Tool Belt from space-station-2"
   }

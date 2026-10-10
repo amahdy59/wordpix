@@ -1,6 +1,6 @@
 {
   "capsule": {
-    "definition": "A pill in the form of a small rounded gelatinous container with medicine inside.",
+    "definition": "A medicine dose inside a small shell that dissolves after swallowing.",
     "arabicTranslation": "كبسولة"
   },
   "syrup": {
@@ -60,8 +60,9 @@
     "arabicTranslation": "أنبوب مرهم"
   },
   "lotion": {
-    "definition": "A smooth liquid put on the skin to protect or soften it.",
-    "arabicTranslation": "غسول أو لوشن"
+    "definition": "A liquid or light creamy preparation applied to the skin.",
+    "arabicTranslation": "لوشن للبشرة",
+    "exampleUsage": "The lotion is in a closed container on the shelf."
   },
   "injection-pen": {
     "definition": "A pen-shaped device used to inject a measured dose of medicine.",
@@ -74,7 +75,7 @@
   "cash-register": {
     "definition": "A store machine that records purchases, adds their prices, and prints a receipt for the customer.",
     "arabicTranslation": "آلة تسجيل النقد",
-    "exampleUsage": "The cash register was used during the activity."
+    "exampleUsage": "The cash register and medicine shelf are nearby."
   },
   "medicine-shelf": {
     "definition": "A shelf used to store or display medicines.",
@@ -83,12 +84,12 @@
   "scale": {
     "definition": "A device that measures how heavy a person or object is.",
     "arabicTranslation": "ميزان",
-    "exampleUsage": "The scale was used during the activity."
+    "exampleUsage": "A scale and mortar and pestle stand on the workbench."
   },
   "mortar-and-pestle": {
     "definition": "A bowl and a hand tool used together to crush or mix substances.",
     "arabicTranslation": "هاون ومدقّة",
-    "exampleUsage": "The mortar and pestle was used during the activity."
+    "exampleUsage": "A scale and mortar and pestle stand on the workbench."
   },
   "pill-counter": {
     "definition": "A device or tray used by pharmacy staff to count solid-dose medicines accurately.",
@@ -98,7 +99,7 @@
   "label-printer": {
     "definition": "A device that prints labels with medicine or patient information.",
     "arabicTranslation": "طابعة ملصقات",
-    "exampleUsage": "The label printer was used during the activity."
+    "exampleUsage": "The label printer and barcode scanner are beside it."
   },
   "barcode-scanner": {
     "definition": "An electronic device that reads printed barcodes to identify products or records.",
@@ -106,19 +107,19 @@
     "arabicTranslation": "ماسح باركود"
   },
   "computer": {
-    "definition": "A machine for performing calculations automatically.",
+    "definition": "An electronic device that processes and stores information.",
     "arabicTranslation": "حاسوب",
-    "exampleUsage": "The computer was used during the activity."
+    "exampleUsage": "The trainee opens a training program on the computer."
   },
   "pill-cutter": {
     "arabicTranslation": "قطّاعة أقراص",
-    "exampleUsage": "The pill cutter was used during the activity.",
+    "exampleUsage": "The pill cutter and pill organizer stay in the drawer.",
     "definition": "A small tool used to divide a pill into smaller pieces."
   },
   "pill-organizer": {
-    "definition": "A device for organizing pills.",
-    "arabicTranslation": "علبة تنظيم الحبوب",
-    "exampleUsage": "The pill organizer was used during the activity."
+    "definition": "A box with separate compartments for organizing medicine doses.",
+    "arabicTranslation": "علبة تنظيم الأدوية",
+    "exampleUsage": "The pill cutter and pill organizer stay in the drawer."
   },
   "medicine-cabinet": {
     "definition": "A cupboard used to store medicines and first-aid supplies.",
@@ -155,17 +156,17 @@
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
     "arabicTranslation": "مقياس حرارة",
-    "exampleUsage": "The thermometer was used during the activity."
+    "exampleUsage": "A small plaster and thermometer are in another box."
   },
   "blood-pressure-monitor": {
     "definition": "A device used to measure blood pressure.",
     "arabicTranslation": "جهاز قياس ضغط الدم",
-    "exampleUsage": "The blood pressure monitor was used during the activity."
+    "exampleUsage": "The pharmacist checks a blood pressure monitor with an arm cuff."
   },
   "glucose-meter": {
     "definition": "A device used to measure glucose levels in blood.",
     "arabicTranslation": "جهاز قياس سكر الدم",
-    "exampleUsage": "The glucose meter was used during the activity."
+    "exampleUsage": "The glucose meter and pregnancy test are different products in the delivery."
   },
   "pregnancy-test": {
     "definition": "A medical test used to find out whether a person is pregnant.",
@@ -176,15 +177,15 @@
     "arabicTranslation": "معقم يدين"
   },
   "disinfectant": {
-    "definition": "An agent (as heat or radiation or a chemical) that destroys microorganisms that might carry disease.",
-    "arabicTranslation": "مطهر"
+    "definition": "A substance used on surfaces or objects to reduce or destroy harmful microorganisms.",
+    "arabicTranslation": "مطهر للأسطح"
   },
   "cotton-ball": {
     "definition": "A small soft ball of cotton used for applying products or cleaning skin.",
     "arabicTranslation": "كرة قطنية"
   },
   "gauze": {
-    "definition": "(medicine) bleached cotton cloth of plain weave used for bandages and dressings.",
+    "definition": "A loosely woven fabric used in medical dressings.",
     "arabicTranslation": "شاش"
   },
   "vitamin-supplement": {
@@ -272,20 +273,21 @@
     "arabicTranslation": "قرص استحلاب للحلق"
   },
   "insulin": {
-    "definition": "Hormone secreted by the isles of Langerhans in the pancreas.",
-    "arabicTranslation": "إنسولين"
+    "definition": "A hormone that helps regulate blood glucose, also supplied as a prescribed medicine.",
+    "arabicTranslation": "إنسولين",
+    "exampleUsage": "The pharmacist checks the prescription before discussing insulin."
   },
   "drug-interaction-checker": {
-    "definition": "A tool used to check for drug interactions.",
+    "definition": "A tool that checks information about possible effects of using medicines together.",
     "arabicTranslation": "أداة للتحقق من التداخلات الدوائية",
-    "exampleUsage": "The drug interaction checker was used during the activity."
+    "exampleUsage": "Insulin is a different medicine, and a drug interaction checker is a tool."
   },
   "compounding-area": {
-    "definition": "A place where pharmaceutical products are compounded.",
+    "definition": "A designated workspace where trained staff prepare medicines from ingredients.",
     "arabicTranslation": "منطقة تحضير الأدوية المركبة"
   },
   "clean-room": {
-    "definition": "A specially engineered workspace keeps dust, chemical vapors, microbes, and other pollutants at extremely low levels for research and precision manufacturing.",
+    "definition": "A room with controlled airborne particles and contamination, used for certain preparation processes.",
     "arabicTranslation": "غرفة نظيفة مضبوطة التلوث"
   },
   "pharmacist": {
@@ -311,7 +313,7 @@
     "arabicTranslation": "سائق توصيل"
   },
   "manager": {
-    "definition": "A person who controls resources and expenditures.",
+    "definition": "A person responsible for organizing and supervising the work of a business or team.",
     "arabicTranslation": "مدير"
   },
   "stock-clerk": {
@@ -428,7 +430,7 @@
     "arabicTranslation": "طلب إعادة صرف وصفة عبر الإنترنت"
   },
   "courier-service": {
-    "definition": "A business service carries documents and packages between places, usually faster and more reliably than ordinary mail.",
+    "definition": "A service that collects and delivers documents or packages.",
     "arabicTranslation": "خدمة مندوب توصيل"
   },
   "vaccination-clinic": {
@@ -447,7 +449,7 @@
   "pestle": {
     "definition": "A club-shaped hand tool for grinding and mixing substances in a mortar.",
     "arabicTranslation": "مدقة",
-    "exampleUsage": "The pestle was used during the activity."
+    "exampleUsage": "A scale and mortar and pestle stand on the workbench."
   },
   "medicine-bottle": {
     "definition": "A container designed to hold medicine and carry its label and safety information.",
@@ -490,5 +492,15 @@
   "delivery": {
     "definition": "The act of delivering or distributing something (as goods or mail).",
     "arabicTranslation": "توصيل"
+  },
+  "tablet": {
+    "definition": "A solid dose of medicine made by compressing ingredients; this is not an electronic device.",
+    "arabicTranslation": "قرص دوائي",
+    "exampleUsage": "Omar asks the pharmacist whether his prescribed medicine comes as a tablet."
+  },
+  "refrigerator": {
+    "definition": "A cooling appliance; in this unit, equipment used to store pharmacy stock under its required conditions.",
+    "arabicTranslation": "ثلاجة أدوية",
+    "exampleUsage": "The supervisor shows the pharmacy refrigerator during the work-area tour."
   }
 }

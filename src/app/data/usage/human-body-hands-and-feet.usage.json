@@ -28,151 +28,157 @@
     ],
     "targetWordsArabic": [
       "يد",
-      "نخيل",
+      "راحة اليد",
       "ظهر اليد",
-      "رسغ",
+      "معصم",
       "مفصل الإصبع",
-      "إصبع",
+      "إصبع اليد",
       "إبهام",
-      "إصبع مؤشر",
-      "إصبع الوسطى",
-      "إصبع خاتم",
-      "إصبع الخنصر",
+      "سبابة",
+      "إصبع وسطى",
+      "بنصر",
+      "خنصر",
       "طرف الإصبع",
       "بصمة إصبع",
       "ظفر",
-      "جلدة حول الظفر"
+      "جلد حول الظفر"
     ],
     "usage": {
-      "goal": "Learn to use the human body (hands & feet) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Hand", "Palm", "Back of Hand"],
-          "scenario": "During a routine care or examination situation, an adult reviews Hand, Palm, Back of Hand. The next step focuses on Hand.",
+          "scenario": "Hand is the body part beyond the wrist. Palm is its inner surface, while back of hand is the opposite surface.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which general term names the body part beyond the wrist?",
             "options": ["Hand", "Palm", "Back of Hand"],
             "expectedAnswer": "Hand"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Hand, Palm, Back of Hand. The next step focuses on Hand. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Hand, Palm, Back of Hand in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving hand model with five coherent digits; no personal biometric information. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Wrist", "Knuckle", "Finger"],
-          "scenario": "During a routine care or examination situation, an adult reviews Wrist, Knuckle, Finger. The next step focuses on Wrist.",
+          "scenario": "Wrist joins hand and forearm. Knuckle is a finger joint area, while finger is a hand digit.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which region joins hand and forearm?",
             "options": ["Wrist", "Knuckle", "Finger"],
             "expectedAnswer": "Wrist"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Wrist, Knuckle, Finger. The next step focuses on Wrist. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Wrist, Knuckle, Finger in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving wrist-and-hand model. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Thumb", "Index Finger", "Middle Finger"],
-          "scenario": "During a routine care or examination situation, an adult reviews Thumb, Index Finger, Middle Finger. The next step focuses on Thumb.",
+          "scenario": "Thumb is the shorter opposing hand digit. Index finger is beside it, followed by the middle finger.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the shorter opposing digit?",
             "options": ["Thumb", "Index Finger", "Middle Finger"],
             "expectedAnswer": "Thumb"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Thumb, Index Finger, Middle Finger. The next step focuses on Thumb. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Thumb, Index Finger, Middle Finger in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving hand model with correctly placed thumb. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Ring Finger", "Little Finger", "Fingertip"],
-          "scenario": "During a routine care or examination situation, an adult reviews Ring Finger, Little Finger, Fingertip. The next step focuses on Ring Finger.",
+          "scenario": "Ring finger lies between middle and little finger. Fingertip is the end of a finger.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which finger lies between middle and little finger?",
             "options": ["Ring Finger", "Little Finger", "Fingertip"],
             "expectedAnswer": "Ring Finger"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Ring Finger, Little Finger, Fingertip. The next step focuses on Ring Finger. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Ring Finger, Little Finger, Fingertip in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified five-digit hand model; no jewelry requirement or cultural marriage claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Fingerprint", "Nail", "Cuticle"],
-          "scenario": "During a routine care or examination situation, an adult reviews Fingerprint, Nail, Cuticle. The next step focuses on Fingerprint.",
+          "scenario": "Fingerprint is an impression of finger-skin ridges. Nail is the hard plate above the fingertip, and cuticle is thin tissue at its base.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the ridge impression?",
             "options": ["Fingerprint", "Nail", "Cuticle"],
             "expectedAnswer": "Fingerprint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Fingerprint, Nail, Cuticle. The next step focuses on Fingerprint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Fingerprint, Nail, Cuticle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Clearly fictional educational ridge-pattern illustration, not copied biometric data or identifying fingerprint. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet) 1: A short reading",
-      "text": "Maya labels a hand drawing with palm, wrist, thumb, and index finger. Omar adds middle finger and knuckle. They turn to a photograph showing the back of a hand. The teacher asks which side contains the palm. Both learners compare the photograph with their drawing before checking the remaining finger labels.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The hand and fingers",
+      "text": "Dina reads a hand guide. The palm and back of hand are opposite surfaces. Wrist joins hand and forearm. Thumb, index finger, middle finger, ring finger and little finger name the digits. Fingertip names the end of a finger. A fingerprint is a pattern impression, and nail and cuticle describe nail structures. Dina learns anatomical names without recording anyone's biometric identity.",
+      "imageBrief": "Support for The hand and fingers. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Hand, Palm, Back of Hand. The next step focuses on Hand.\nWhich option is the focus of the next step?",
+        "prompt": "Hand is the body part beyond the wrist. Palm is its inner surface, while back of hand is the opposite surface.\nWhich general term names the body part beyond the wrist?",
         "answer": "Hand",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Wrist, Knuckle, Finger. The next step focuses on Wrist.\nWhich option is the focus of the next step?",
+        "prompt": "Wrist joins hand and forearm. Knuckle is a finger joint area, while finger is a hand digit.\nWhich region joins hand and forearm?",
         "answer": "Wrist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Thumb, Index Finger, Middle Finger. The next step focuses on Thumb.\nWhich option is the focus of the next step?",
+        "prompt": "Thumb is the shorter opposing hand digit. Index finger is beside it, followed by the middle finger.\nWhich term names the shorter opposing digit?",
         "answer": "Thumb",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Ring Finger, Little Finger, Fingertip. The next step focuses on Ring Finger.\nWhich option is the focus of the next step?",
+        "prompt": "Ring finger lies between middle and little finger. Fingertip is the end of a finger.\nWhich finger lies between middle and little finger?",
         "answer": "Ring Finger",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Fingerprint, Nail, Cuticle. The next step focuses on Fingerprint.\nWhich option is the focus of the next step?",
+        "prompt": "Fingerprint is an impression of finger-skin ridges. Nail is the hard plate above the fingertip, and cuticle is thin tissue at its base.\nWhich term names the ridge impression?",
         "answer": "Fingerprint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Kick” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What two labels does Omar add?",
-        "answer": "Middle finger and knuckle",
+        "prompt": "Dina reads a hand guide. The palm and back of hand are opposite surfaces. Wrist joins hand and forearm. Thumb, index finger, middle finger, ring finger and little finger name the digits. Fingertip names the end of a finger. A fingerprint is a pattern impression, and nail and cuticle describe nail structures. Dina learns anatomical names without recording anyone's biometric identity.\nDoes the lesson record biometric identity?",
+        "answer": "No. It teaches anatomical vocabulary.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Hand” and “Palm” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Hand” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Hand is the body part beyond the wrist. Palm is its inner surface, while back of hand is the opposite surface.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Hands & Feet): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The hand and fingers",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a hand guide. The palm and back of hand are opposite surfaces. Wrist joins hand and forearm. Thumb, index finger, middle finger, ring finger and little finger name the digits. Fingertip names the end of a finger. A fingerprint is a pattern impression, and nail and cuticle describe nail structures. Dina learns anatomical names without recording anyone's biometric identity. Ask: Does the lesson record biometric identity?"
     },
     "spacedReview": "1 lesson(s) back: Kick, Kneel from human-body-lower-body-4\n3 lesson(s) back: Fibula, Achilles Tendon from human-body-lower-body-2\n7 lesson(s) back: Elbow, Forearm from human-body-upper-body-2"
   },
@@ -207,149 +213,155 @@
       "مفصل",
       "سلامية",
       "نسيج بين الأصابع",
-      "ثنية",
-      "خط الحياة",
+      "ثنية جلدية",
+      "خط الكف",
       "قبضة",
-      "قرصة",
-      "إمساك",
-      "عصر",
-      "قبض بإحكام",
-      "يشير",
-      "فرقعة الأصابع",
-      "يلوّح",
-      "تصفيق",
-      "قبضة"
+      "يقرص بأطراف الأصابع",
+      "يمسك بإحكام",
+      "يعصر أو يضغط",
+      "يقبض بقوة",
+      "يشير بالإصبع",
+      "يفرقع أصابعه",
+      "يلوح بيده",
+      "يصفق",
+      "قبضة يد مغلقة"
     ],
     "usage": {
-      "goal": "Learn to use the human body (hands & feet) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Joint", "Phalanx", "Webbing"],
-          "scenario": "During a routine care or examination situation, an adult reviews Joint, Phalanx, Webbing. The next step focuses on Joint.",
+          "scenario": "Joint is where bones meet. A phalanx is a finger or toe bone, and webbing here is the skin between digits.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the place where bones meet?",
             "options": ["Joint", "Phalanx", "Webbing"],
             "expectedAnswer": "Joint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Joint, Phalanx, Webbing. The next step focuses on Joint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Joint, Phalanx, Webbing in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving articulated hand model with coherent joints. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crease", "Lifeline", "Grip"],
-          "scenario": "During a routine care or examination situation, an adult reviews Crease, Lifeline, Grip. The next step focuses on Crease.",
+          "scenario": "Crease is a fold line in the skin. Lifeline is a palmistry name, not a lifespan measure; grip here means a hold with the hand.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names a skin fold line?",
             "options": ["Crease", "Lifeline", "Grip"],
             "expectedAnswer": "Crease"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Crease, Lifeline, Grip. The next step focuses on Crease. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Crease, Lifeline, Grip in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving palm model with ordinary creases; no labeled palmistry prediction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pinch", "Grasp", "Squeeze"],
-          "scenario": "During a routine care or examination situation, an adult reviews Pinch, Grasp, Squeeze. The next step focuses on Pinch.",
+          "scenario": "Pinch means press between thumb and finger. Grasp means take hold, while squeeze means apply pressure by gripping.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb names pressing between thumb and finger?",
             "options": ["Pinch", "Grasp", "Squeeze"],
             "expectedAnswer": "Pinch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Pinch, Grasp, Squeeze. The next step focuses on Pinch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Pinch, Grasp, Squeeze in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving hand-pose model with verified thumb/finger geometry; no painful pinching of a person. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Clench", "Point", "Snap"],
-          "scenario": "During a routine care or examination situation, an adult reviews Clench, Point, Snap. The next step focuses on Clench.",
+          "scenario": "Clench means close the hand tightly. Point means indicate direction or location with a finger; snap here means make a finger-snap sound.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb names closing the hand tightly?",
             "options": ["Clench", "Point", "Snap"],
             "expectedAnswer": "Clench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Clench, Point, Snap. The next step focuses on Clench. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Clench, Point, Snap in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving closed-hand model, no aggressive threat or violence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Wave", "Clap", "Fist"],
-          "scenario": "During a routine care or examination situation, an adult reviews Wave, Clap, Fist. The next step focuses on Wave.",
+          "scenario": "Wave means move the hand in greeting or signal. Clap means bring the hands together, while fist is a closed hand.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which verb names moving the hand in greeting?",
             "options": ["Wave", "Clap", "Fist"],
             "expectedAnswer": "Wave"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Wave, Clap, Fist. The next step focuses on Wave. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Wave, Clap, Fist in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Hold a specific gesture unless verified reference and subject plan exist; text identifies action without cultural universality claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet) 2: A short reading",
-      "text": "Omar uses grip and grasp to describe someone holding a handle. Maya chooses pinch for a picture of fingers holding a tiny object. Another image shows a person squeezing a soft ball. On a hand diagram, they identify a joint, a crease, and webbing. They separate the movement words from the body-part labels.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Hand structures and actions",
+      "text": "Dina reads a guide to joints and hand actions. A phalanx is a finger or toe bone. Webbing and crease describe skin features. Lifeline is a palm-reading name, not evidence of lifespan. Dina then compares grip, pinch, grasp and squeeze. Clench means close tightly, while point, snap, wave and clap describe other actions. She learns the meanings from text without being required to make gestures.",
+      "imageBrief": "Support for Hand structures and actions. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Joint, Phalanx, Webbing. The next step focuses on Joint.\nWhich option is the focus of the next step?",
+        "prompt": "Joint is where bones meet. A phalanx is a finger or toe bone, and webbing here is the skin between digits.\nWhich term names the place where bones meet?",
         "answer": "Joint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Crease, Lifeline, Grip. The next step focuses on Crease.\nWhich option is the focus of the next step?",
+        "prompt": "Crease is a fold line in the skin. Lifeline is a palmistry name, not a lifespan measure; grip here means a hold with the hand.\nWhich term names a skin fold line?",
         "answer": "Crease",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Pinch, Grasp, Squeeze. The next step focuses on Pinch.\nWhich option is the focus of the next step?",
+        "prompt": "Pinch means press between thumb and finger. Grasp means take hold, while squeeze means apply pressure by gripping.\nWhich verb names pressing between thumb and finger?",
         "answer": "Pinch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Clench, Point, Snap. The next step focuses on Clench.\nWhich option is the focus of the next step?",
+        "prompt": "Clench means close the hand tightly. Point means indicate direction or location with a finger; snap here means make a finger-snap sound.\nWhich verb names closing the hand tightly?",
         "answer": "Clench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Wave, Clap, Fist. The next step focuses on Wave.\nWhich option is the focus of the next step?",
+        "prompt": "Wave means move the hand in greeting or signal. Clap means bring the hands together, while fist is a closed hand.\nWhich verb names moving the hand in greeting?",
         "answer": "Wave",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hand” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which action does Maya choose for holding a tiny object between fingers?",
-        "answer": "Pinch",
+        "prompt": "Dina reads a guide to joints and hand actions. A phalanx is a finger or toe bone. Webbing and crease describe skin features. Lifeline is a palm-reading name, not evidence of lifespan. Dina then compares grip, pinch, grasp and squeeze. Clench means close tightly, while point, snap, wave and clap describe other actions. She learns the meanings from text without being required to make gestures.\nDoes a palm lifeline establish lifespan?",
+        "answer": "No. It is a palm-reading name without scientific predictive evidence.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Joint” and “Phalanx” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Joint” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Joint is where bones meet. A phalanx is a finger or toe bone, and webbing here is the skin between digits.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Hands & Feet): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Hand structures and actions",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a guide to joints and hand actions. A phalanx is a finger or toe bone. Webbing and crease describe skin features. Lifeline is a palm-reading name, not evidence of lifespan. Dina then compares grip, pinch, grasp and squeeze. Clench means close tightly, while point, snap, wave and clap describe other actions. She learns the meanings from text without being required to make gestures. Ask: Does a palm lifeline establish lifespan?"
     },
     "spacedReview": "1 lesson(s) back: Hand, Palm from human-body-hands-and-feet-1\n3 lesson(s) back: Big Toe, Little Toe from human-body-lower-body-3\n7 lesson(s) back: Pectoral, Abdominal from human-body-upper-body-3"
   },
@@ -384,149 +396,155 @@
       "قدم",
       "كعب",
       "باطن القدم",
-      "قوس",
-      "مشط القدم",
+      "قوس القدم",
+      "مشط أو ظهر القدم",
       "كاحل",
       "إصبع القدم",
-      "مقدمة باطن القدم",
-      "قوس القدم",
+      "وسادة مقدمة القدم",
+      "قوس أو ظهر القدم",
       "ظفر القدم",
-      "عناية بالأظافر",
-      "عناية بأظافر القدم",
-      "تلميع ظفر",
-      "مِبرَد أظافر",
-      "غسول أو لوشن"
+      "عناية بأظافر اليدين",
+      "عناية بأظافر القدمين",
+      "طلاء أظافر",
+      "مبرد أظافر",
+      "غسول أو لوشن مرطب"
     ],
     "usage": {
-      "goal": "Learn to use the human body (hands & feet) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Foot", "Heel", "Sole"],
-          "scenario": "During a routine care or examination situation, an adult reviews Foot, Heel, Sole. The next step focuses on Foot.",
+          "scenario": "Foot is below the ankle. Heel is the rear region and sole the underside.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which general term names the body part below the ankle?",
             "options": ["Foot", "Heel", "Sole"],
             "expectedAnswer": "Foot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Foot, Heel, Sole. The next step focuses on Foot. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Foot, Heel, Sole in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving foot model, no real personal body. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Arch", "Instep", "Ankle"],
-          "scenario": "During a routine care or examination situation, an adult reviews Arch, Instep, Ankle. The next step focuses on Arch.",
+          "scenario": "Arch names the curved foot structure. Instep is the top curved area; ankle joins foot and lower leg.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the curved foot structure?",
             "options": ["Arch", "Instep", "Ankle"],
             "expectedAnswer": "Arch"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Arch, Instep, Ankle. The next step focuses on Arch. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Arch, Instep, Ankle in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving foot-profile model, no health classification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Toe", "Ball", "Bridge"],
-          "scenario": "During a routine care or examination situation, an adult reviews Toe, Ball, Bridge. The next step focuses on Toe.",
+          "scenario": "Toe is a foot digit. Ball here means the ball of the foot. Bridge is an ambiguous informal catalogue description; use arch or instep for the intended region.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names a foot digit?",
             "options": ["Toe", "Ball", "Bridge"],
             "expectedAnswer": "Toe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Toe, Ball, Bridge. The next step focuses on Toe. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Toe, Ball, Bridge in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving foot model; hold any unsupported anatomical use of bridge and use verified arch/instep references. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Toenail", "Manicure", "Pedicure"],
-          "scenario": "During a routine care or examination situation, an adult reviews Toenail, Manicure, Pedicure. The next step focuses on Toenail.",
+          "scenario": "Toenail is the hard nail plate on a toe. Manicure is hand-and-nail care, while pedicure is foot-and-toenail care.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names the nail plate on a toe?",
             "options": ["Toenail", "Manicure", "Pedicure"],
             "expectedAnswer": "Toenail"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Toenail, Manicure, Pedicure. The next step focuses on Toenail. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Toenail, Manicure, Pedicure in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving toe-and-nail model, no living procedure or health claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Nail Polish", "Nail File", "Lotion"],
-          "scenario": "During a routine care or examination situation, an adult reviews Nail Polish, Nail File, Lotion. The next step focuses on Nail Polish.",
+          "scenario": "Nail polish is a nail coating. Nail file shapes a nail edge, while lotion is a liquid or semi-liquid skin product.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which product coats the nail?",
             "options": ["Nail Polish", "Nail File", "Lotion"],
             "expectedAnswer": "Nail Polish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Nail Polish, Nail File, Lotion. The next step focuses on Nail Polish. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Nail Polish, Nail File, Lotion in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Closed plain nail-polish bottle beside nonliving nail sample; no application, ingredients or brand inferred. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet) 3: A short reading",
-      "text": "The class studies a diagram of a foot. Maya identifies the heel, sole, and arch. Omar finds the ankle and toes. A side view makes the instep easier to see. They compare the two views and describe where each part is located. Then they place the labels on a drawing without looking at the key.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Foot and nail-care terms",
+      "text": "Dina reads foot and nail-care words. Foot is below the ankle. Heel, sole, arch and instep name regions, while toe and toenail name digits and nails. The ball of the foot is its padded front underside. Manicure and pedicure describe care services. Nail polish adds a finish, and a nail file shapes edges. Dina asks about products and services without treating an image as proof of health or safety.",
+      "imageBrief": "Support for Foot and nail-care terms. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Foot, Heel, Sole. The next step focuses on Foot.\nWhich option is the focus of the next step?",
+        "prompt": "Foot is below the ankle. Heel is the rear region and sole the underside.\nWhich general term names the body part below the ankle?",
         "answer": "Foot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Arch, Instep, Ankle. The next step focuses on Arch.\nWhich option is the focus of the next step?",
+        "prompt": "Arch names the curved foot structure. Instep is the top curved area; ankle joins foot and lower leg.\nWhich term names the curved foot structure?",
         "answer": "Arch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Toe, Ball, Bridge. The next step focuses on Toe.\nWhich option is the focus of the next step?",
+        "prompt": "Toe is a foot digit. Ball here means the ball of the foot. Bridge is an ambiguous informal catalogue description; use arch or instep for the intended region.\nWhich term names a foot digit?",
         "answer": "Toe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Toenail, Manicure, Pedicure. The next step focuses on Toenail.\nWhich option is the focus of the next step?",
+        "prompt": "Toenail is the hard nail plate on a toe. Manicure is hand-and-nail care, while pedicure is foot-and-toenail care.\nWhich term names the nail plate on a toe?",
         "answer": "Toenail",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Nail Polish, Nail File, Lotion. The next step focuses on Nail Polish.\nWhich option is the focus of the next step?",
+        "prompt": "Nail polish is a nail coating. Nail file shapes a nail edge, while lotion is a liquid or semi-liquid skin product.\nWhich product coats the nail?",
         "answer": "Nail Polish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Joint” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which view makes the instep easier to see?",
-        "answer": "A side view",
+        "prompt": "Dina reads foot and nail-care words. Foot is below the ankle. Heel, sole, arch and instep name regions, while toe and toenail name digits and nails. The ball of the foot is its padded front underside. Manicure and pedicure describe care services. Nail polish adds a finish, and a nail file shapes edges. Dina asks about products and services without treating an image as proof of health or safety.\nWhat is the ball of the foot?",
+        "answer": "The padded front underside behind the toes.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Foot” and “Heel” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Foot” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Foot is below the ankle. Heel is the rear region and sole the underside.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Hands & Feet): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Foot and nail-care terms",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads foot and nail-care words. Foot is below the ankle. Heel, sole, arch and instep name regions, while toe and toenail name digits and nails. The ball of the foot is its padded front underside. Manicure and pedicure describe care services. Nail polish adds a finish, and a nail file shapes edges. Dina asks about products and services without treating an image as proof of health or safety. Ask: What is the ball of the foot?"
     },
     "spacedReview": "1 lesson(s) back: Joint, Phalanx from human-body-hands-and-feet-2\n3 lesson(s) back: Kick, Kneel from human-body-lower-body-4\n7 lesson(s) back: Scar, Wrinkle from human-body-upper-body-4"
   },
@@ -541,80 +559,92 @@
     "cefrStage": "A2",
     "stageName": "A2 Everyday Life",
     "targetWordsEnglish": ["Moisturizer", "Exfoliant", "Pumice Stone", "Cuticle Oil", "Hand Cream"],
-    "targetWordsArabic": ["مرطّب", "مقشّر", "حجر خفاف", "زيت الجلد المحيط بالأظافر", "كريمة يد"],
+    "targetWordsArabic": [
+      "كريم مرطب",
+      "مقشر جلدي",
+      "حجر خفاف",
+      "زيت مغذي للجلد حول الأظافر",
+      "كريم اليدين"
+    ],
     "usage": {
-      "goal": "Learn to use the human body (hands & feet) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (hands & feet).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Moisturizer", "Exfoliant", "Pumice Stone"],
-          "scenario": "During a routine care or examination situation, an adult reviews Moisturizer, Exfoliant, Pumice Stone. The next step focuses on Moisturizer.",
+          "scenario": "Moisturizer is a product intended to maintain skin moisture. Exfoliant removes surface cells; pumice stone is a porous volcanic stone.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which general product helps maintain skin moisture?",
             "options": ["Moisturizer", "Exfoliant", "Pumice Stone"],
             "expectedAnswer": "Moisturizer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Moisturizer, Exfoliant, Pumice Stone. The next step focuses on Moisturizer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Moisturizer, Exfoliant, Pumice Stone in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Closed plain skincare container supports written product sense; no guaranteed treatment claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cuticle Oil", "Hand Cream"],
-          "scenario": "During a routine care or examination situation, an adult reviews Cuticle Oil, Hand Cream, Moisturizer. The next step focuses on Cuticle Oil.",
+          "scenario": "Cuticle oil is a product for the tissue around nails. Hand cream is a cream moisturizer intended for hands.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which product is intended for the tissue around nails?",
             "options": ["Cuticle Oil", "Hand Cream", "Moisturizer"],
             "expectedAnswer": "Cuticle Oil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (hands & feet) context illustrating this situation: During a routine care or examination situation, an adult reviews Cuticle Oil, Hand Cream, Moisturizer. The next step focuses on Cuticle Oil. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (hands & feet) scene showing lesson-related items or actions including Cuticle Oil, Hand Cream in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Closed plain oil bottle beside nonliving nail model; no nail cutting, clinical treatment or ingredients inferred. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Hands & Feet) 4: A short reading",
-      "text": "Maya reads labels on hand-care products in a shop. She compares moisturizer with hand cream and notices a bottle of cuticle oil. Omar identifies a pumice stone by its rough surface. They ask the assistant what each product is called, then write the names beside the product pictures in their vocabulary notes.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Hands & Feet). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading skin-care product names",
+      "text": "Dina reads a product display. Moisturizer helps maintain skin moisture, while exfoliant removes some surface skin cells. Pumice stone is a rough volcanic stone sometimes used in foot care. Cuticle oil is a product for the nail area, and hand cream is a moisturizer for hands. Dina reads the instructions and asks a qualified professional about suitability rather than assuming all products suit every skin condition.",
+      "imageBrief": "Support for Reading skin-care product names. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Moisturizer, Exfoliant, Pumice Stone. The next step focuses on Moisturizer.\nWhich option is the focus of the next step?",
+        "prompt": "Moisturizer is a product intended to maintain skin moisture. Exfoliant removes surface cells; pumice stone is a porous volcanic stone.\nWhich general product helps maintain skin moisture?",
         "answer": "Moisturizer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Cuticle Oil, Hand Cream, Moisturizer. The next step focuses on Cuticle Oil.\nWhich option is the focus of the next step?",
+        "prompt": "Cuticle oil is a product for the tissue around nails. Hand cream is a cream moisturizer intended for hands.\nWhich product is intended for the tissue around nails?",
         "answer": "Cuticle Oil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Foot” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "How does Omar identify the pumice stone?",
-        "answer": "By its rough surface",
+        "prompt": "Dina reads a product display. Moisturizer helps maintain skin moisture, while exfoliant removes some surface skin cells. Pumice stone is a rough volcanic stone sometimes used in foot care. Cuticle oil is a product for the nail area, and hand cream is a moisturizer for hands. Dina reads the instructions and asks a qualified professional about suitability rather than assuming all products suit every skin condition.\nDoes the lesson assume every product suits every skin condition?",
+        "answer": "No. Suitability depends on the product and person.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Moisturizer” and “Exfoliant” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Moisturizer” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Moisturizer is a product intended to maintain skin moisture. Exfoliant removes surface cells; pumice stone is a porous volcanic stone.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Hands & Feet): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading skin-care product names",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a product display. Moisturizer helps maintain skin moisture, while exfoliant removes some surface skin cells. Pumice stone is a rough volcanic stone sometimes used in foot care. Cuticle oil is a product for the nail area, and hand cream is a moisturizer for hands. Dina reads the instructions and asks a qualified professional about suitability rather than assuming all products suit every skin condition. Ask: Does the lesson assume every product suits every skin condition?"
     },
     "spacedReview": "1 lesson(s) back: Foot, Heel from human-body-hands-and-feet-3\n3 lesson(s) back: Hand, Palm from human-body-hands-and-feet-1\n7 lesson(s) back: Thigh, Quadricep from human-body-lower-body-1"
   }

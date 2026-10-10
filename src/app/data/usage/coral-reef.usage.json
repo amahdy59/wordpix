@@ -44,132 +44,115 @@
       "خروف البحر"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Clownfish", "Angelfish", "Parrotfish", "Pufferfish"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.",
+          "scenario": "A brightly striped orange clownfish shelters safely within venomous sea anemone tentacles, protected by a specialized mucus coating. Angelfish swim reefs, and moray eels hunt holes. The small clownfish darts out to feed before darting home.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which brightly striped orange reef fish lives symbiotically in sea anemones?",
             "options": ["Clownfish", "Angelfish", "Parrotfish"],
             "expectedAnswer": "Clownfish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Clownfish as the central item; include Clownfish, Angelfish, and Parrotfish naturally where visually appropriate, but make the real-world use of Clownfish the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Clownfish as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Lionfish", "Surgeonfish", "Butterflyfish", "Grouper"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.",
+          "scenario": "A venomous lionfish fans out elaborate striped pectoral fins and toxic dorsal spines to herd small reef fry into corners. Groupers wait caves, and dolphins leap waves. The ornate lionfish hovers gracefully over the coral outcrop.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which invasive striped predatory reef fish bears venomous fan-like spines?",
             "options": ["Lionfish", "Surgeonfish", "Butterflyfish"],
             "expectedAnswer": "Lionfish"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Lionfish as the central item; include Lionfish, Surgeonfish, and Butterflyfish naturally where visually appropriate, but make the real-world use of Lionfish the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Lionfish as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Moray Eel", "Barracuda", "Seahorse", "Triggerfish"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.",
+          "scenario": "A predatory moray eel lurks inside narrow crevices of the coral limestone framework, opening and closing its sharp-toothed jaws to breathe. Barracudas patrol blue, and seahorses cling grass. The moray eel snaps at a passing fish from its dark lair.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which elongated predatory fish hides in coral crevices with sharp jaws?",
             "options": ["Moray Eel", "Barracuda", "Seahorse"],
             "expectedAnswer": "Moray Eel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Moray Eel as the central item; include Moray Eel, Barracuda, and Seahorse naturally where visually appropriate, but make the real-world use of Moray Eel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Moray Eel as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Dolphin", "Sea Turtle", "Manatee"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.",
+          "scenario": "A pod of sleek oceanic dolphins breaches gracefully through turquoise tropical reef lagoons, communicating with whistles and echolocation clicks. Sea turtles graze, and manatees chew. The playful dolphin leaps clear of the warm tropical water.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which intelligent marine mammal swims in social pods and uses echolocation?",
             "options": ["Dolphin", "Sea Turtle", "Manatee"],
             "expectedAnswer": "Dolphin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Dolphin as the central item; include Dolphin, Sea Turtle, and Manatee naturally where visually appropriate, but make the real-world use of Dolphin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Dolphin as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Clownfish, Angelfish, Parrotfish, and Pufferfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Lionfish, Surgeonfish, Butterflyfish, and Grouper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Moray Eel, Barracuda, Seahorse, and Triggerfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Dolphin, Sea Turtle, and Manatee. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Tropical reef teleosts, moray predators and marine cetaceans",
+      "text": "A brightly striped orange clownfish shelters safely within venomous sea anemone tentacles, protected by a specialized mucus coating. Angelfish swim reefs, and moray eels hunt holes. The small clownfish darts out to feed before darting home. A venomous lionfish fans out elaborate striped pectoral fins and toxic dorsal spines to herd small reef fry into corners. Groupers wait caves, and dolphins leap waves. The ornate lionfish hovers gracefully over the coral outcrop. A predatory moray eel lurks inside narrow crevices of the coral limestone framework, opening and closing its sharp-toothed jaws to breathe. Barracudas patrol blue, and seahorses cling grass. The moray eel snaps at a passing fish from its dark lair. A pod of sleek oceanic dolphins breaches gracefully through turquoise tropical reef lagoons, communicating with whistles and echolocation clicks. Sea turtles graze, and manatees chew. The playful dolphin leaps clear of the warm tropical water.",
+      "imageBrief": "Use independently inspected word references to support Tropical reef teleosts, moray predators and marine cetaceans; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Clownfish, Angelfish, Parrotfish, and Pufferfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A brightly striped orange clownfish shelters safely within venomous sea anemone tentacles, protected by a specialized mucus coating. Angelfish swim reefs, and moray eels hunt holes. The small clownfish darts out to feed before darting home.\nWhich brightly striped orange reef fish lives symbiotically in sea anemones?",
         "answer": "Clownfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lionfish, Surgeonfish, Butterflyfish, and Grouper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A venomous lionfish fans out elaborate striped pectoral fins and toxic dorsal spines to herd small reef fry into corners. Groupers wait caves, and dolphins leap waves. The ornate lionfish hovers gracefully over the coral outcrop.\nWhich invasive striped predatory reef fish bears venomous fan-like spines?",
         "answer": "Lionfish",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Moray Eel, Barracuda, Seahorse, and Triggerfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A predatory moray eel lurks inside narrow crevices of the coral limestone framework, opening and closing its sharp-toothed jaws to breathe. Barracudas patrol blue, and seahorses cling grass. The moray eel snaps at a passing fish from its dark lair.\nWhich elongated predatory fish hides in coral crevices with sharp jaws?",
         "answer": "Moray Eel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dolphin, Sea Turtle, and Manatee and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A pod of sleek oceanic dolphins breaches gracefully through turquoise tropical reef lagoons, communicating with whistles and echolocation clicks. Sea turtles graze, and manatees chew. The playful dolphin leaps clear of the warm tropical water.\nWhich intelligent marine mammal swims in social pods and uses echolocation?",
         "answer": "Dolphin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A brightly striped orange clownfish shelters safely within venomous sea anemone tentacles, protected by a specialized mucus coating. Angelfish swim reefs, and moray eels hunt holes. The small clownfish darts out to feed before darting home. A venomous lionfish fans out elaborate striped pectoral fins and toxic dorsal spines to herd small reef fry into corners. Groupers wait caves, and dolphins leap waves. The ornate lionfish hovers gracefully over the coral outcrop. A predatory moray eel lurks inside narrow crevices of the coral limestone framework, opening and closing its sharp-toothed jaws to breathe. Barracudas patrol blue, and seahorses cling grass. The moray eel snaps at a passing fish from its dark lair. A pod of sleek oceanic dolphins breaches gracefully through turquoise tropical reef lagoons, communicating with whistles and echolocation clicks. Sea turtles graze, and manatees chew. The playful dolphin leaps clear of the warm tropical water.\nCompare “Clownfish” and “Angelfish” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Clownfish"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Pufferfish"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Campfire” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Clownfish, Angelfish, Parrotfish, Pufferfish, Lionfish, Surgeonfish, Butterflyfish, Grouper, Moray Eel, Barracuda, Seahorse, Triggerfish, Dolphin, Sea Turtle, and Manatee in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Clownfish, Angelfish, Parrotfish, Pufferfish, Lionfish, Surgeonfish, Butterflyfish, Grouper, Moray Eel, Barracuda, Seahorse, Triggerfish, Dolphin, Sea Turtle, Manatee in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Tropical reef teleosts, moray predators and marine cetaceans",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A brightly striped orange clownfish shelters safely within venomous sea anemone tentacles, protected by a specialized mucus coating. Angelfish swim reefs, and moray eels hunt holes. The small clownfish darts out to feed before darting home. Which brightly striped orange reef fish lives symbiotically in sea anemones?"
     },
     "spacedReview": "1 lesson(s) back: Campfire, Ranger from savanna-4\n3 lesson(s) back: Baboon, Gazelle from savanna-2\n7 lesson(s) back: Beaver, Dragonfly from river-2"
   },
@@ -218,132 +201,115 @@
       "سلطعون"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "135-165 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Whale Shark", "Manta Ray", "Stingray", "Sea Snake"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.",
+          "scenario": "A gentle whale shark cruises open reef channels with an enormous wide mouth, filtering plankton, krill, and small fish through gill rakers. Manta rays glide wings, and sea snakes swim. The diver watches the spotted whale shark glide peacefully past.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which colossal spotted fish filters plankton through giant open jaws?",
             "options": ["Whale Shark", "Manta Ray", "Stingray"],
             "expectedAnswer": "Whale Shark"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Whale Shark as the central item; include Whale Shark, Manta Ray, and Stingray naturally where visually appropriate, but make the real-world use of Whale Shark the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Whale Shark as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Dugong", "Humpback Whale", "Otter", "Coral"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.",
+          "scenario": "A herbivorous marine dugong grazes peacefully on lush underwater seagrass beds in warm shallow coastal reef lagoons. Whales migrate deep, and otters float kelp. The dugong surfaces gently to breathe air through nostrils.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which gentle herbivorous marine mammal grazes on coastal seagrass beds?",
             "options": ["Dugong", "Humpback Whale", "Otter"],
             "expectedAnswer": "Dugong"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Dugong as the central item; include Dugong, Humpback Whale, and Otter naturally where visually appropriate, but make the real-world use of Dugong the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Dugong as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sea Anemone", "Starfish", "Sea Urchin", "Jellyfish"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.",
+          "scenario": "A colorful sea anemone anchors its muscular pedal disc to coral rock, extending stinging nematocyst tentacles to capture passing prey. Starfish crawl rocks, and jellyfish drift tides. The sea anemone sways gently with the tidal surge.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which flower-like cnidarian polyp captures prey with stinging tentacles?",
             "options": ["Sea Anemone", "Starfish", "Sea Urchin"],
             "expectedAnswer": "Sea Anemone"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Sea Anemone as the central item; include Sea Anemone, Starfish, and Sea Urchin naturally where visually appropriate, but make the real-world use of Sea Anemone the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Sea Anemone as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Octopus", "Squid", "Crab"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.",
+          "scenario": "A highly intelligent common octopus changes skin texture and color instantly to match surrounding reef coral while searching for crabs. Squids jet water, and crabs scuttle sand. The camouflaged octopus slips into a narrow limestone crevice.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which eight-armed soft-bodied cephalopod changes color to blend with corals?",
             "options": ["Octopus", "Squid", "Crab"],
             "expectedAnswer": "Octopus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Octopus as the central item; include Octopus, Squid, and Crab naturally where visually appropriate, but make the real-world use of Octopus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Octopus as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Whale Shark, Manta Ray, Stingray, and Sea Snake. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dugong, Humpback Whale, Otter, and Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sea Anemone, Starfish, Sea Urchin, and Jellyfish. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Octopus, Squid, and Crab. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Filter-feeding elasmobranchs, sirenians and cnidarians",
+      "text": "A gentle whale shark cruises open reef channels with an enormous wide mouth, filtering plankton, krill, and small fish through gill rakers. Manta rays glide wings, and sea snakes swim. The diver watches the spotted whale shark glide peacefully past. A herbivorous marine dugong grazes peacefully on lush underwater seagrass beds in warm shallow coastal reef lagoons. Whales migrate deep, and otters float kelp. The dugong surfaces gently to breathe air through nostrils. A colorful sea anemone anchors its muscular pedal disc to coral rock, extending stinging nematocyst tentacles to capture passing prey. Starfish crawl rocks, and jellyfish drift tides. The sea anemone sways gently with the tidal surge. A highly intelligent common octopus changes skin texture and color instantly to match surrounding reef coral while searching for crabs. Squids jet water, and crabs scuttle sand. The camouflaged octopus slips into a narrow limestone crevice.",
+      "imageBrief": "Use independently inspected word references to support Filter-feeding elasmobranchs, sirenians and cnidarians; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whale Shark, Manta Ray, Stingray, and Sea Snake and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A gentle whale shark cruises open reef channels with an enormous wide mouth, filtering plankton, krill, and small fish through gill rakers. Manta rays glide wings, and sea snakes swim. The diver watches the spotted whale shark glide peacefully past.\nWhich colossal spotted fish filters plankton through giant open jaws?",
         "answer": "Whale Shark",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dugong, Humpback Whale, Otter, and Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A herbivorous marine dugong grazes peacefully on lush underwater seagrass beds in warm shallow coastal reef lagoons. Whales migrate deep, and otters float kelp. The dugong surfaces gently to breathe air through nostrils.\nWhich gentle herbivorous marine mammal grazes on coastal seagrass beds?",
         "answer": "Dugong",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sea Anemone, Starfish, Sea Urchin, and Jellyfish and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A colorful sea anemone anchors its muscular pedal disc to coral rock, extending stinging nematocyst tentacles to capture passing prey. Starfish crawl rocks, and jellyfish drift tides. The sea anemone sways gently with the tidal surge.\nWhich flower-like cnidarian polyp captures prey with stinging tentacles?",
         "answer": "Sea Anemone",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Octopus, Squid, and Crab and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A highly intelligent common octopus changes skin texture and color instantly to match surrounding reef coral while searching for crabs. Squids jet water, and crabs scuttle sand. The camouflaged octopus slips into a narrow limestone crevice.\nWhich eight-armed soft-bodied cephalopod changes color to blend with corals?",
         "answer": "Octopus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A gentle whale shark cruises open reef channels with an enormous wide mouth, filtering plankton, krill, and small fish through gill rakers. Manta rays glide wings, and sea snakes swim. The diver watches the spotted whale shark glide peacefully past. A herbivorous marine dugong grazes peacefully on lush underwater seagrass beds in warm shallow coastal reef lagoons. Whales migrate deep, and otters float kelp. The dugong surfaces gently to breathe air through nostrils. A colorful sea anemone anchors its muscular pedal disc to coral rock, extending stinging nematocyst tentacles to capture passing prey. Starfish crawl rocks, and jellyfish drift tides. The sea anemone sways gently with the tidal surge. A highly intelligent common octopus changes skin texture and color instantly to match surrounding reef coral while searching for crabs. Squids jet water, and crabs scuttle sand. The camouflaged octopus slips into a narrow limestone crevice.\nCompare “Whale Shark” and “Manta Ray” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Whale Shark"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Sea Snake"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Clownfish” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Whale Shark, Manta Ray, Stingray, Sea Snake, Dugong, Humpback Whale, Otter, Coral, Sea Anemone, Starfish, Sea Urchin, Jellyfish, Octopus, Squid, and Crab in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Whale Shark, Manta Ray, Stingray, Sea Snake, Dugong, Humpback Whale, Otter, Coral, Sea Anemone, Starfish, Sea Urchin, Jellyfish, Octopus, Squid, Crab in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Filter-feeding elasmobranchs, sirenians and cnidarians",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A gentle whale shark cruises open reef channels with an enormous wide mouth, filtering plankton, krill, and small fish through gill rakers. Manta rays glide wings, and sea snakes swim. The diver watches the spotted whale shark glide peacefully past. Which colossal spotted fish filters plankton through giant open jaws?"
     },
     "spacedReview": "1 lesson(s) back: Clownfish, Angelfish from coral-reef-1\n3 lesson(s) back: Flamingo, Eagle from savanna-3\n7 lesson(s) back: Canoe, Kayak from river-3"
   },
@@ -378,7 +344,7 @@
       "كركند",
       "روبيان",
       "خيار البحر",
-      "إسفنجة",
+      "إسفنج بحري",
       "شعاب مرجان",
       "عشب بحري",
       "عشب بحري كبير",
@@ -392,132 +358,115 @@
       "أنبوب تنفس"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "136-166 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lobster", "Shrimp", "Sea Cucumber", "Sponge"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.",
+          "scenario": "A spiny reef lobster crawls across nocturnal coral ledges on long walking legs, using sensitive antennae to detect predators without large claws. Sponges filter water, and sea cucumbers graze. The spiny lobster retreats into a coral cave.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which nocturnal crustacean scavenges reef floors with long sensory antennae?",
             "options": ["Lobster", "Shrimp", "Sea Cucumber"],
             "expectedAnswer": "Lobster"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Lobster as the central item; include Lobster, Shrimp, and Sea Cucumber naturally where visually appropriate, but make the real-world use of Lobster the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Lobster as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Coral Reef", "Seagrass", "Kelp", "Algae"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.",
+          "scenario": "A living coral reef is a complex marine ecosystem built of calcium carbonate skeletons secreted by millions of tiny colonial coral polyps. Seagrass buffers coasts, and kelp forms forests. Countless fish species find shelter across the coral reef.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expansive marine ecosystem is built of limestone coral skeletons?",
             "options": ["Coral Reef", "Seagrass", "Kelp"],
             "expectedAnswer": "Coral Reef"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Coral Reef as the central item; include Coral Reef, Seagrass, and Kelp naturally where visually appropriate, but make the real-world use of Coral Reef the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Coral Reef as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tide Pool", "Lagoon", "Sand Bar", "Underwater Cave"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.",
+          "scenario": "A rocky intertidal tide pool holds trapped seawater, hermit crabs, and colorful anemones during low tide cycles along the reef flat. Lagoons calm waves, and sand bars shift. Children explore small fish darting across the shallow tide pool.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which shallow seawater pool remains trapped among rocks during low tide?",
             "options": ["Tide Pool", "Lagoon", "Sand Bar"],
             "expectedAnswer": "Tide Pool"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Tide Pool as the central item; include Tide Pool, Lagoon, and Sand Bar naturally where visually appropriate, but make the real-world use of Tide Pool the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Tide Pool as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Rock Formation", "Current", "Snorkel"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.",
+          "scenario": "An ancient limestone rock formation beneath the waves provides tunnels, overhangs, and archways where schooling fish seek refuge. Currents carry food, and snorkels breathe air. Divers swim through a natural underwater rock formation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which natural geological stone structure provides underwater arches and caves?",
             "options": ["Rock Formation", "Current", "Snorkel"],
             "expectedAnswer": "Rock Formation"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Rock Formation as the central item; include Rock Formation, Current, and Snorkel naturally where visually appropriate, but make the real-world use of Rock Formation the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Rock Formation as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lobster, Shrimp, Sea Cucumber, and Sponge. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Coral Reef, Seagrass, Kelp, and Algae. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Tide Pool, Lagoon, Sand Bar, and Underwater Cave. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Rock Formation, Current, and Snorkel. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Benthic crustaceans, limestone biomes and intertidal pools",
+      "text": "A spiny reef lobster crawls across nocturnal coral ledges on long walking legs, using sensitive antennae to detect predators without large claws. Sponges filter water, and sea cucumbers graze. The spiny lobster retreats into a coral cave. A living coral reef is a complex marine ecosystem built of calcium carbonate skeletons secreted by millions of tiny colonial coral polyps. Seagrass buffers coasts, and kelp forms forests. Countless fish species find shelter across the coral reef. A rocky intertidal tide pool holds trapped seawater, hermit crabs, and colorful anemones during low tide cycles along the reef flat. Lagoons calm waves, and sand bars shift. Children explore small fish darting across the shallow tide pool. An ancient limestone rock formation beneath the waves provides tunnels, overhangs, and archways where schooling fish seek refuge. Currents carry food, and snorkels breathe air. Divers swim through a natural underwater rock formation.",
+      "imageBrief": "Use independently inspected word references to support Benthic crustaceans, limestone biomes and intertidal pools; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lobster, Shrimp, Sea Cucumber, and Sponge and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A spiny reef lobster crawls across nocturnal coral ledges on long walking legs, using sensitive antennae to detect predators without large claws. Sponges filter water, and sea cucumbers graze. The spiny lobster retreats into a coral cave.\nWhich nocturnal crustacean scavenges reef floors with long sensory antennae?",
         "answer": "Lobster",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Coral Reef, Seagrass, Kelp, and Algae and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A living coral reef is a complex marine ecosystem built of calcium carbonate skeletons secreted by millions of tiny colonial coral polyps. Seagrass buffers coasts, and kelp forms forests. Countless fish species find shelter across the coral reef.\nWhich expansive marine ecosystem is built of limestone coral skeletons?",
         "answer": "Coral Reef",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tide Pool, Lagoon, Sand Bar, and Underwater Cave and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A rocky intertidal tide pool holds trapped seawater, hermit crabs, and colorful anemones during low tide cycles along the reef flat. Lagoons calm waves, and sand bars shift. Children explore small fish darting across the shallow tide pool.\nWhich shallow seawater pool remains trapped among rocks during low tide?",
         "answer": "Tide Pool",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rock Formation, Current, and Snorkel and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An ancient limestone rock formation beneath the waves provides tunnels, overhangs, and archways where schooling fish seek refuge. Currents carry food, and snorkels breathe air. Divers swim through a natural underwater rock formation.\nWhich natural geological stone structure provides underwater arches and caves?",
         "answer": "Rock Formation",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A spiny reef lobster crawls across nocturnal coral ledges on long walking legs, using sensitive antennae to detect predators without large claws. Sponges filter water, and sea cucumbers graze. The spiny lobster retreats into a coral cave. A living coral reef is a complex marine ecosystem built of calcium carbonate skeletons secreted by millions of tiny colonial coral polyps. Seagrass buffers coasts, and kelp forms forests. Countless fish species find shelter across the coral reef. A rocky intertidal tide pool holds trapped seawater, hermit crabs, and colorful anemones during low tide cycles along the reef flat. Lagoons calm waves, and sand bars shift. Children explore small fish darting across the shallow tide pool. An ancient limestone rock formation beneath the waves provides tunnels, overhangs, and archways where schooling fish seek refuge. Currents carry food, and snorkels breathe air. Divers swim through a natural underwater rock formation.\nCompare “Lobster” and “Shrimp” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Lobster"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Sponge"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Whale Shark” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Lobster, Shrimp, Sea Cucumber, Sponge, Coral Reef, Seagrass, Kelp, Algae, Tide Pool, Lagoon, Sand Bar, Underwater Cave, Rock Formation, Current, and Snorkel in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Lobster, Shrimp, Sea Cucumber, Sponge, Coral Reef, Seagrass, Kelp, Algae, Tide Pool, Lagoon, Sand Bar, Underwater Cave, Rock Formation, Current, Snorkel in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Benthic crustaceans, limestone biomes and intertidal pools",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A spiny reef lobster crawls across nocturnal coral ledges on long walking legs, using sensitive antennae to detect predators without large claws. Sponges filter water, and sea cucumbers graze. The spiny lobster retreats into a coral cave. Which nocturnal crustacean scavenges reef floors with long sensory antennae?"
     },
     "spacedReview": "1 lesson(s) back: Whale Shark, Manta Ray from coral-reef-2\n3 lesson(s) back: Campfire, Ranger from savanna-4\n7 lesson(s) back: Bucket, Waders from river-4"
   },
@@ -566,132 +515,115 @@
       "لافتة حماية البيئة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Diving Mask", "Fins", "Wetsuit", "Oxygen Tank"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.",
+          "scenario": "A tempered-glass diving mask creates a clear air space in front of the diver’s eyes and covers the nose to allow pressure equalization underwater. Fins propel feet, and wetsuits insulate. The diver spits anti-fog drops into the diving mask.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which watertight eyewear encloses eyes and nose for clear underwater vision?",
             "options": ["Diving Mask", "Fins", "Wetsuit"],
             "expectedAnswer": "Diving Mask"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Diving Mask as the central item; include Diving Mask, Fins, and Wetsuit naturally where visually appropriate, but make the real-world use of Diving Mask the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Diving Mask as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Regulator", "Dive Computer", "Underwater Camera", "Weight Belt"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.",
+          "scenario": "A scuba breathing regulator delivers breathable air from the pressurized tank at ambient water pressure through a comfortable silicone mouthpiece. Computers track depths, and weights sink divers. The diver inhales clean air smoothly through the regulator.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which essential diving device reduces high tank pressure for comfortable breathing?",
             "options": ["Regulator", "Dive Computer", "Underwater Camera"],
             "expectedAnswer": "Regulator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Regulator as the central item; include Regulator, Dive Computer, and Underwater Camera naturally where visually appropriate, but make the real-world use of Regulator the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Regulator as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Dive Flag", "Marine Reserve", "Coral Bleaching", "Pollution"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.",
+          "scenario": "A red-and-white dive flag flown from a surface float alerts boat captains that scuba divers are swimming submerged beneath the surface. Reserves protect fish, and signs mark zones. The dive boat displays the official red dive flag.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which recognized safety banner warns passing boats of divers swimming below?",
             "options": ["Dive Flag", "Marine Reserve", "Coral Bleaching"],
             "expectedAnswer": "Dive Flag"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Dive Flag as the central item; include Dive Flag, Marine Reserve, and Coral Bleaching naturally where visually appropriate, but make the real-world use of Dive Flag the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Dive Flag as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.",
+          "scenario": "Discarded plastic waste threatens marine life by degrading into toxic microplastics that coral polyps and grazing turtles accidentally ingest. Bleaching harms reefs, and nets entangle. Conservation divers collect bags of plastic waste from the reef.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which non-biodegradable synthetic trash poses severe ingestion risks to reef fauna?",
             "options": ["Plastic Waste", "Fishing Net", "Conservation Sign"],
             "expectedAnswer": "Plastic Waste"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Plastic Waste as the central item; include Plastic Waste, Fishing Net, and Conservation Sign naturally where visually appropriate, but make the real-world use of Plastic Waste the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Plastic Waste as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Diving Mask, Fins, Wetsuit, and Oxygen Tank. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Regulator, Dive Computer, Underwater Camera, and Weight Belt. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Dive Flag, Marine Reserve, Coral Bleaching, and Pollution. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Plastic Waste, Fishing Net, and Conservation Sign. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Sub-surface diving gear, regulatory flags and marine debris",
+      "text": "A tempered-glass diving mask creates a clear air space in front of the diver’s eyes and covers the nose to allow pressure equalization underwater. Fins propel feet, and wetsuits insulate. The diver spits anti-fog drops into the diving mask. A scuba breathing regulator delivers breathable air from the pressurized tank at ambient water pressure through a comfortable silicone mouthpiece. Computers track depths, and weights sink divers. The diver inhales clean air smoothly through the regulator. A red-and-white dive flag flown from a surface float alerts boat captains that scuba divers are swimming submerged beneath the surface. Reserves protect fish, and signs mark zones. The dive boat displays the official red dive flag. Discarded plastic waste threatens marine life by degrading into toxic microplastics that coral polyps and grazing turtles accidentally ingest. Bleaching harms reefs, and nets entangle. Conservation divers collect bags of plastic waste from the reef.",
+      "imageBrief": "Use independently inspected word references to support Sub-surface diving gear, regulatory flags and marine debris; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Diving Mask, Fins, Wetsuit, and Oxygen Tank and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A tempered-glass diving mask creates a clear air space in front of the diver’s eyes and covers the nose to allow pressure equalization underwater. Fins propel feet, and wetsuits insulate. The diver spits anti-fog drops into the diving mask.\nWhich watertight eyewear encloses eyes and nose for clear underwater vision?",
         "answer": "Diving Mask",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Regulator, Dive Computer, Underwater Camera, and Weight Belt and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A scuba breathing regulator delivers breathable air from the pressurized tank at ambient water pressure through a comfortable silicone mouthpiece. Computers track depths, and weights sink divers. The diver inhales clean air smoothly through the regulator.\nWhich essential diving device reduces high tank pressure for comfortable breathing?",
         "answer": "Regulator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dive Flag, Marine Reserve, Coral Bleaching, and Pollution and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A red-and-white dive flag flown from a surface float alerts boat captains that scuba divers are swimming submerged beneath the surface. Reserves protect fish, and signs mark zones. The dive boat displays the official red dive flag.\nWhich recognized safety banner warns passing boats of divers swimming below?",
         "answer": "Dive Flag",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Plastic Waste, Fishing Net, and Conservation Sign and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Discarded plastic waste threatens marine life by degrading into toxic microplastics that coral polyps and grazing turtles accidentally ingest. Bleaching harms reefs, and nets entangle. Conservation divers collect bags of plastic waste from the reef.\nWhich non-biodegradable synthetic trash poses severe ingestion risks to reef fauna?",
         "answer": "Plastic Waste",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A tempered-glass diving mask creates a clear air space in front of the diver’s eyes and covers the nose to allow pressure equalization underwater. Fins propel feet, and wetsuits insulate. The diver spits anti-fog drops into the diving mask. A scuba breathing regulator delivers breathable air from the pressurized tank at ambient water pressure through a comfortable silicone mouthpiece. Computers track depths, and weights sink divers. The diver inhales clean air smoothly through the regulator. A red-and-white dive flag flown from a surface float alerts boat captains that scuba divers are swimming submerged beneath the surface. Reserves protect fish, and signs mark zones. The dive boat displays the official red dive flag. Discarded plastic waste threatens marine life by degrading into toxic microplastics that coral polyps and grazing turtles accidentally ingest. Bleaching harms reefs, and nets entangle. Conservation divers collect bags of plastic waste from the reef.\nCompare “Diving Mask” and “Fins” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Diving Mask"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Oxygen Tank"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Lobster” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Diving Mask, Fins, Wetsuit, Oxygen Tank, Regulator, Dive Computer, Underwater Camera, Weight Belt, Dive Flag, Marine Reserve, Coral Bleaching, Pollution, Plastic Waste, Fishing Net, and Conservation Sign in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Diving Mask, Fins, Wetsuit, Oxygen Tank, Regulator, Dive Computer, Underwater Camera, Weight Belt, Dive Flag, Marine Reserve, Coral Bleaching, Pollution, Plastic Waste, Fishing Net, Conservation Sign in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Sub-surface diving gear, regulatory flags and marine debris",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A tempered-glass diving mask creates a clear air space in front of the diver’s eyes and covers the nose to allow pressure equalization underwater. Fins propel feet, and wetsuits insulate. The diver spits anti-fog drops into the diving mask. Which watertight eyewear encloses eyes and nose for clear underwater vision?"
     },
     "spacedReview": "1 lesson(s) back: Lobster, Shrimp from coral-reef-3\n3 lesson(s) back: Clownfish, Angelfish from coral-reef-1\n7 lesson(s) back: Lion, Elephant from savanna-1"
   },
@@ -740,132 +672,115 @@
       "قاع رملي"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "140-170 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Research Boat", "Water Sample", "Reef Restoration", "Aquarium"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.",
+          "scenario": "A marine research boat equipped with sonar scanners and water testing laboratories anchors beside the reef to monitor ocean acidification. Samples test chemistry, and aquariums house fish. Scientists haul coral health sensors onto the research boat.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which specialized scientific vessel supports marine biologists studying reef health?",
             "options": ["Research Boat", "Water Sample", "Reef Restoration"],
             "expectedAnswer": "Research Boat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Research Boat as the central item; include Research Boat, Water Sample, and Reef Restoration naturally where visually appropriate, but make the real-world use of Research Boat the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Research Boat as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Brain Coral", "Fan Coral", "Staghorn Coral", "Tube Coral"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.",
+          "scenario": "Massive brain coral colonies grow into dense rounded boulders with deeply grooved meandering ridges resembling the convolutions of an animal brain. Fan corals sway, and fire corals sting. The diver inspects a three-meter-wide brain coral.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which massive rounded stony coral features deeply grooved meandering ridges?",
             "options": ["Brain Coral", "Fan Coral", "Staghorn Coral"],
             "expectedAnswer": "Brain Coral"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Brain Coral as the central item; include Brain Coral, Fan Coral, and Staghorn Coral naturally where visually appropriate, but make the real-world use of Brain Coral the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Brain Coral as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Fire Coral", "Mushroom Coral", "Table Coral", "Soft Coral"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.",
+          "scenario": "Hydrozoan fire coral produces a mild stinging toxin that causes immediate burning skin welts if careless swimmers brush against its yellow-brown branches. Soft corals wave, and table corals tier. The guide warns divers not to touch the brittle fire coral.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which yellow-brown branched coral delivers a burning skin sting upon contact?",
             "options": ["Fire Coral", "Mushroom Coral", "Table Coral"],
             "expectedAnswer": "Fire Coral"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Fire Coral as the central item; include Fire Coral, Mushroom Coral, and Table Coral naturally where visually appropriate, but make the real-world use of Fire Coral the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Fire Coral as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Reef Wall", "Anemone", "Sandy Bottom"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.",
+          "scenario": "A dramatic reef wall drops vertically into deep oceanic abysses, offering thrilling drift dives past cascading sea fans and schooling pelagic fish. Soft corals bloom, and sandy bottoms flatten. Divers descend along the edge of the vertical reef wall.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which sheer underwater drop-off plunges vertically into deep oceanic water?",
             "options": ["Reef Wall", "Anemone", "Sandy Bottom"],
             "expectedAnswer": "Reef Wall"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Reef Wall as the central item; include Reef Wall, Anemone, and Sandy Bottom naturally where visually appropriate, but make the real-world use of Reef Wall the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Reef Wall as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Research Boat, Water Sample, Reef Restoration, and Aquarium. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Fire Coral, Mushroom Coral, Table Coral, and Soft Coral. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Reef Wall, Anemone, and Sandy Bottom. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Marine research vessels, hermatypic corals and barrier drop-offs",
+      "text": "A marine research boat equipped with sonar scanners and water testing laboratories anchors beside the reef to monitor ocean acidification. Samples test chemistry, and aquariums house fish. Scientists haul coral health sensors onto the research boat. Massive brain coral colonies grow into dense rounded boulders with deeply grooved meandering ridges resembling the convolutions of an animal brain. Fan corals sway, and fire corals sting. The diver inspects a three-meter-wide brain coral. Hydrozoan fire coral produces a mild stinging toxin that causes immediate burning skin welts if careless swimmers brush against its yellow-brown branches. Soft corals wave, and table corals tier. The guide warns divers not to touch the brittle fire coral. A dramatic reef wall drops vertically into deep oceanic abysses, offering thrilling drift dives past cascading sea fans and schooling pelagic fish. Soft corals bloom, and sandy bottoms flatten. Divers descend along the edge of the vertical reef wall.",
+      "imageBrief": "Use independently inspected word references to support Marine research vessels, hermatypic corals and barrier drop-offs; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Research Boat, Water Sample, Reef Restoration, and Aquarium and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A marine research boat equipped with sonar scanners and water testing laboratories anchors beside the reef to monitor ocean acidification. Samples test chemistry, and aquariums house fish. Scientists haul coral health sensors onto the research boat.\nWhich specialized scientific vessel supports marine biologists studying reef health?",
         "answer": "Research Boat",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Brain Coral, Fan Coral, Staghorn Coral, and Tube Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Massive brain coral colonies grow into dense rounded boulders with deeply grooved meandering ridges resembling the convolutions of an animal brain. Fan corals sway, and fire corals sting. The diver inspects a three-meter-wide brain coral.\nWhich massive rounded stony coral features deeply grooved meandering ridges?",
         "answer": "Brain Coral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fire Coral, Mushroom Coral, Table Coral, and Soft Coral and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Hydrozoan fire coral produces a mild stinging toxin that causes immediate burning skin welts if careless swimmers brush against its yellow-brown branches. Soft corals wave, and table corals tier. The guide warns divers not to touch the brittle fire coral.\nWhich yellow-brown branched coral delivers a burning skin sting upon contact?",
         "answer": "Fire Coral",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reef Wall, Anemone, and Sandy Bottom and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A dramatic reef wall drops vertically into deep oceanic abysses, offering thrilling drift dives past cascading sea fans and schooling pelagic fish. Soft corals bloom, and sandy bottoms flatten. Divers descend along the edge of the vertical reef wall.\nWhich sheer underwater drop-off plunges vertically into deep oceanic water?",
         "answer": "Reef Wall",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "A marine research boat equipped with sonar scanners and water testing laboratories anchors beside the reef to monitor ocean acidification. Samples test chemistry, and aquariums house fish. Scientists haul coral health sensors onto the research boat. Massive brain coral colonies grow into dense rounded boulders with deeply grooved meandering ridges resembling the convolutions of an animal brain. Fan corals sway, and fire corals sting. The diver inspects a three-meter-wide brain coral. Hydrozoan fire coral produces a mild stinging toxin that causes immediate burning skin welts if careless swimmers brush against its yellow-brown branches. Soft corals wave, and table corals tier. The guide warns divers not to touch the brittle fire coral. A dramatic reef wall drops vertically into deep oceanic abysses, offering thrilling drift dives past cascading sea fans and schooling pelagic fish. Soft corals bloom, and sandy bottoms flatten. Divers descend along the edge of the vertical reef wall.\nCompare “Research Boat” and “Water Sample” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Research Boat"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Aquarium"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Diving Mask” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Research Boat, Water Sample, Reef Restoration, Aquarium, Brain Coral, Fan Coral, Staghorn Coral, Tube Coral, Fire Coral, Mushroom Coral, Table Coral, Soft Coral, Reef Wall, Anemone, and Sandy Bottom in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Research Boat, Water Sample, Reef Restoration, Aquarium, Brain Coral, Fan Coral, Staghorn Coral, Tube Coral, Fire Coral, Mushroom Coral, Table Coral, Soft Coral, Reef Wall, Anemone, Sandy Bottom in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Marine research vessels, hermatypic corals and barrier drop-offs",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "A marine research boat equipped with sonar scanners and water testing laboratories anchors beside the reef to monitor ocean acidification. Samples test chemistry, and aquariums house fish. Scientists haul coral health sensors onto the research boat. Which specialized scientific vessel supports marine biologists studying reef health?"
     },
     "spacedReview": "1 lesson(s) back: Diving Mask, Fins from coral-reef-4\n3 lesson(s) back: Whale Shark, Manta Ray from coral-reef-2\n7 lesson(s) back: Baboon, Gazelle from savanna-2"
   },
@@ -882,75 +797,58 @@
     "targetWordsEnglish": ["Shipwreck"],
     "targetWordsArabic": ["حطام سفينة"],
     "usage": {
-      "goal": "Develop the language needed to describe natural features and follow practical outdoor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the outdoor field setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported B1 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "50-54 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Shipwreck"],
-          "scenario": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.",
+          "scenario": "An overgrown historic shipwreck resting on the sandy ocean floor serves as an artificial reef, offering structural habitat for corals, sponges, and schools of barracuda. Divers navigate the iron hull of the centuries-old shipwreck.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Shipwreck", "Option 1", "Option 2"],
+            "question": "Which submerged sunken vessel hull provides artificial habitat for reef life?",
+            "options": ["Shipwreck", "Clownfish", "Angelfish"],
             "expectedAnswer": "Shipwreck"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a outdoor field setting. Show an adult using or examining the Shipwreck as the central item; include Shipwreck, Option 1, and Option 2 naturally where visually appropriate, but make the real-world use of Shipwreck the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a outdoor field setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate word-reference image supporting the coral reef account, showing Shipwreck as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Important Information: The Coral Reef",
-      "text": "At the coral reef, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Shipwreck. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Coral Reef. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Historic submerged shipwrecks and artificial reef structures",
+      "text": "An overgrown historic shipwreck resting on the sandy ocean floor serves as an artificial reef, offering structural habitat for corals, sponges, and schools of barracuda. Divers navigate the iron hull of the centuries-old shipwreck.",
+      "imageBrief": "Use independently inspected word references to support Historic submerged shipwrecks and artificial reef structures; keep unrelated habitats and activities separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "In the coral reef setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Shipwreck and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An overgrown historic shipwreck resting on the sandy ocean floor serves as an artificial reef, offering structural habitat for corals, sponges, and schools of barracuda. Divers navigate the iron hull of the centuries-old shipwreck.\nWhich submerged sunken vessel hull provides artificial habitat for reef life?",
         "answer": "Shipwreck",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "An overgrown historic shipwreck resting on the sandy ocean floor serves as an artificial reef, offering structural habitat for corals, sponges, and schools of barracuda. Divers navigate the iron hull of the centuries-old shipwreck.\nExplain the role or meaning of “Shipwreck” using the stated account.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Shipwreck"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Shipwreck"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Research Boat” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the coral reef task. Use Shipwreck in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original short visitor or traveler account using Shipwreck in their supplied senses. Preserve the stated distinctions and make clear when references concern separate places or animals.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Coral Reef: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Historic submerged shipwrecks and artificial reef structures",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible habitats or roles separate.",
+      "scriptStarter": "An overgrown historic shipwreck resting on the sandy ocean floor serves as an artificial reef, offering structural habitat for corals, sponges, and schools of barracuda. Divers navigate the iron hull of the centuries-old shipwreck. Which submerged sunken vessel hull provides artificial habitat for reef life?"
     },
     "spacedReview": "1 lesson(s) back: Research Boat, Water Sample from coral-reef-5\n3 lesson(s) back: Lobster, Shrimp from coral-reef-3\n7 lesson(s) back: Flamingo, Eagle from savanna-3"
   }

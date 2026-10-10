@@ -35,7 +35,7 @@
       "مشبك شعر",
       "تاج صغير",
       "عمامة",
-      "واقٍ للعين",
+      "قبعة بواقٍ أمامي مفتوحة من الأعلى",
       "قبعة فيدورا",
       "قلادة",
       "دلاية",
@@ -44,10 +44,10 @@
       "سوار"
     ],
     "usage": {
-      "goal": "Learn to use accessories & jewelry 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to accessories & jewelry.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -59,63 +59,71 @@
             "expectedAnswer": "Beanie"
           },
           "imageBrief": "Show an adult in packing for a trip, with Hat, Cap, and Beanie visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Hat, Cap, Beanie in a natural setting."
+          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Hat, Cap, Beanie in a natural setting.",
+          "learningContext": {
+            "sourceScenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beanie while also considering Hat and Cap. She chooses one useful item for each activity and checks that everything is secure.",
+            "sourceQuestion": "Which target does Leila notice first in this situation?",
+            "sourceAnswer": "Beanie",
+            "scenario": "Nabil adds a knitted beanie to the winter display. A cap with a stiff visor and a wide-brimmed hat are on another shelf.",
+            "question": "Which item does Nabil add to the winter display?",
+            "imageBrief": "Vocabulary-reference support only. A plain knitted beanie with no brim or logo on a shelf. The question is answered from written context. No diagnosis, treatment, readable labels, logos, watermarks, highlighting or incidental people. Preserve details in 4:3 landscape."
+          }
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Beret", "Headband", "Hair Clip"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beret while also considering Headband and Hair Clip. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Nabil puts a soft round beret on the upper shelf. He puts the headband and hair clip in a small tray below it.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item goes on the upper shelf?",
             "options": ["Beret", "Headband", "Hair Clip"],
             "expectedAnswer": "Beret"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Beret, Headband, and Hair Clip visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Beret, Headband, Hair Clip in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A soft round beret with a flat crown, no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tiara", "Turban", "Visor"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Turban while also considering Tiara and Visor. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "The costume display contains a tiara and a visor. Nabil places a turban made from wrapped cloth on the middle stand.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item is made from wrapped cloth?",
             "options": ["Tiara", "Turban", "Visor"],
             "expectedAnswer": "Turban"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Tiara, Turban, and Visor visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Tiara, Turban, Visor in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Wrapped-cloth turban displayed alone on a neutral stand; no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fedora", "Necklace", "Pendant"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pendant while also considering Fedora and Necklace. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Nabil repairs the small pendant hanging from a necklace. The fedora is on a hat stand across the shop.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which part of the necklace does Nabil repair?",
             "options": ["Fedora", "Necklace", "Pendant"],
             "expectedAnswer": "Pendant"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Fedora, Necklace, and Pendant visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Fedora, Necklace, Pendant in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One pendant visibly hanging from a plain necklace chain. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Choker", "Chain", "Bracelet"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Choker while also considering Chain and Bracelet. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "A customer requests a necklace that fits closely around the neck. Nabil shows a choker, then leaves the loose chain and bracelet in the case.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which type of necklace does Nabil show?",
             "options": ["Choker", "Chain", "Bracelet"],
             "expectedAnswer": "Choker"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Choker, Chain, and Bracelet visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Choker, Chain, Bracelet in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A short close-fitting choker necklace displayed on a plain jewelry stand. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Accessories & Jewelry: Email",
-      "text": "Omar has an everyday task connected to accessories & jewelry. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare hat, cap, and beanie. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare beret, headband, and hair clip. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Accessories & Jewelry. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing a shop display",
+      "text": "Nabil prepares an accessories display before opening the shop. He puts a warm beanie beside a cap and hangs a scarf nearby. A round beret goes on the upper shelf. He checks the pendant on a necklace and closes the bracelet clasp. The jewelry stays inside the glass case. He locks the case before serving customers.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Preparing a shop display. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
@@ -126,58 +134,52 @@
         "contextTag": "scene-1"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Beret while also considering Headband and Hair Clip. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Nabil puts a soft round beret on the upper shelf. He puts the headband and hair clip in a small tray below it.\nWhich item goes on the upper shelf?",
         "answer": "Beret",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Turban while also considering Tiara and Visor. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "The costume display contains a tiara and a visor. Nabil places a turban made from wrapped cloth on the middle stand.\nWhich item is made from wrapped cloth?",
         "answer": "Turban",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pendant while also considering Fedora and Necklace. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Nabil repairs the small pendant hanging from a necklace. The fedora is on a hat stand across the shop.\nWhich part of the necklace does Nabil repair?",
         "answer": "Pendant",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Choker while also considering Chain and Bracelet. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "A customer requests a necklace that fits closely around the neck. Nabil shows a choker, then leaves the loose chain and bracelet in the case.\nWhich type of necklace does Nabil show?",
         "answer": "Choker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Hat"
+        "prompt": "Nabil prepares an accessories display before opening the shop. He puts a warm beanie beside a cap and hangs a scarf nearby. A round beret goes on the upper shelf. He checks the pendant on a necklace and closes the bracelet clasp. The jewelry stays inside the glass case. He locks the case before serving customers.\nWhere does Nabil keep the jewelry?",
+        "answer": "Inside the glass case.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Beret"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pajamas” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Beret”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Nabil puts a soft round beret on the upper shelf. He puts the headband and hair clip in a small tray below it. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Accessories & Jewelry: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing a shop display",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Nabil prepares an accessories display before opening the shop. He puts a warm beanie beside a cap and hangs a scarf nearby. A round beret goes on the upper shelf. He checks the pendant on a necklace and closes the bracelet clasp. The jewelry stays inside the glass case. He locks the case before serving customers. Pause and ask: Where does Nabil keep the jewelry?"
     },
     "spacedReview": "1 lesson(s) back: Pajamas, Nightgown from everyday-clothing-4\n3 lesson(s) back: Sweatpants, Cargo Pants from everyday-clothing-2\n7 lesson(s) back: Growth Spurt, Young Adult from ages-life-stages-2"
   },
@@ -226,140 +228,134 @@
       "ثقب للزينة"
     ],
     "usage": {
-      "goal": "Learn to use accessories & jewelry 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to accessories & jewelry.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bangle", "Watch", "Wristband"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Bangle while also considering Watch and Wristband. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Mina checks a rigid circular bangle that slips over the hand. The watch and soft wristband are in separate boxes.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item is a rigid circular bracelet?",
             "options": ["Bangle", "Watch", "Wristband"],
             "expectedAnswer": "Bangle"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Bangle, Watch, and Wristband visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Bangle, Watch, Wristband in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. One solid circular bangle, no opening or charms, beside an empty box. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cuff", "Charm Bracelet", "Ring"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Charm Bracelet while also considering Cuff and Ring. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "The customer wants a charm bracelet with small decorations hanging from it. Mina leaves the plain cuff and ring in their boxes.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item has small decorations hanging from it?",
             "options": ["Cuff", "Charm Bracelet", "Ring"],
             "expectedAnswer": "Charm Bracelet"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Cuff, Charm Bracelet, and Ring visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Cuff, Charm Bracelet, Ring in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A bracelet with several plain unlettered charms, no logo or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Engagement Ring", "Wedding Band", "Signet Ring"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Signet Ring while also considering Engagement Ring and Wedding Band. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Mina checks a signet ring with a raised oval face. The engagement ring and wedding band are already packed.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which ring does Mina still need to check?",
             "options": ["Engagement Ring", "Wedding Band", "Signet Ring"],
             "expectedAnswer": "Signet Ring"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Engagement Ring, Wedding Band, and Signet Ring visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Engagement Ring, Wedding Band, Signet Ring in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A signet ring with a broad plain oval face; no initials or crest. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Earring", "Stud", "Hoop"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Earring while also considering Stud and Hoop. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Mina checks that the earring clasp closes securely. A tiny stud and a large hoop are already in separate boxes.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which general piece of ear jewelry is Mina checking?",
             "options": ["Earring", "Stud", "Hoop"],
             "expectedAnswer": "Earring"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Earring, Stud, and Hoop visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Earring, Stud, Hoop in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain earring with its fastening visible on a jewelry tray. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dangle Earring", "Ear Cuff", "Piercing"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Ear Cuff while also considering Dangle Earring and Piercing. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "The customer wants an ear cuff that grips the outer ear. Mina packs it separately from the dangle earring and piercing jewelry.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item grips the outer ear?",
             "options": ["Dangle Earring", "Ear Cuff", "Piercing"],
             "expectedAnswer": "Ear Cuff"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Dangle Earring, Ear Cuff, and Piercing visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Dangle Earring, Ear Cuff, Piercing in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A curved ear cuff alone on a neutral tray; no ear or person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Accessories & Jewelry: Personal Message",
-      "text": "Omar has an everyday task connected to accessories & jewelry. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare bangle, watch, and wristband. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare cuff, charm bracelet, and ring. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Accessories & Jewelry. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Checking a jewelry order",
+      "text": "Mina checks a jewelry order against the customer's request. The order includes a rigid bangle and a charm bracelet with small decorations. The customer also wants a signet ring with a family design. Mina checks each earring and an ear cuff, then puts them in separate boxes. She asks her colleague to check the order before collection.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Checking a jewelry order. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Bangle while also considering Watch and Wristband. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Mina checks a rigid circular bangle that slips over the hand. The watch and soft wristband are in separate boxes.\nWhich item is a rigid circular bracelet?",
         "answer": "Bangle",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Charm Bracelet while also considering Cuff and Ring. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "The customer wants a charm bracelet with small decorations hanging from it. Mina leaves the plain cuff and ring in their boxes.\nWhich item has small decorations hanging from it?",
         "answer": "Charm Bracelet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Signet Ring while also considering Engagement Ring and Wedding Band. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Mina checks a signet ring with a raised oval face. The engagement ring and wedding band are already packed.\nWhich ring does Mina still need to check?",
         "answer": "Signet Ring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Earring while also considering Stud and Hoop. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Mina checks that the earring clasp closes securely. A tiny stud and a large hoop are already in separate boxes.\nWhich general piece of ear jewelry is Mina checking?",
         "answer": "Earring",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Ear Cuff while also considering Dangle Earring and Piercing. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "The customer wants an ear cuff that grips the outer ear. Mina packs it separately from the dangle earring and piercing jewelry.\nWhich item grips the outer ear?",
         "answer": "Ear Cuff",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Bangle"
+        "prompt": "Mina checks a jewelry order against the customer's request. The order includes a rigid bangle and a charm bracelet with small decorations. The customer also wants a signet ring with a family design. Mina checks each earring and an ear cuff, then puts them in separate boxes. She asks her colleague to check the order before collection.\nWhat does Mina ask her colleague to do?",
+        "answer": "Check the order.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Cuff"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Hat” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Bangle”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Mina checks a rigid circular bangle that slips over the hand. The watch and soft wristband are in separate boxes. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Accessories & Jewelry: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Checking a jewelry order",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Mina checks a jewelry order against the customer's request. The order includes a rigid bangle and a charm bracelet with small decorations. The customer also wants a signet ring with a family design. Mina checks each earring and an ear cuff, then puts them in separate boxes. She asks her colleague to check the order before collection. Pause and ask: What does Mina ask her colleague to do?"
     },
     "spacedReview": "1 lesson(s) back: Hat, Cap from accessories-jewelry-1\n3 lesson(s) back: Dress, Sundress from everyday-clothing-3\n7 lesson(s) back: Senior, Retiree from ages-life-stages-3"
   },
@@ -397,9 +393,9 @@
       "حقيبة كتف بحزام متقاطع",
       "حقيبة صغيرة",
       "محفظة",
-      "محفظة نقود",
+      "محفظة نقود صغيرة؛ وقد تعني حقيبة يد في الإنجليزية الأمريكية",
       "حقيبة أوراق",
-      "كيس سفر",
+      "حقيبة سفر أسطوانية",
       "حقيبة خصر",
       "نظارة شمسية",
       "نظارات (نظارة)",
@@ -408,140 +404,134 @@
       "حزام"
     ],
     "usage": {
-      "goal": "Learn to use accessories & jewelry 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to accessories & jewelry.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Handbag", "Backpack", "Tote Bag"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Backpack while also considering Handbag and Tote Bag. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Omar puts his laptop in a backpack with two shoulder straps. The handbag and open tote bag stay at home.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which bag does Omar use for his laptop?",
             "options": ["Handbag", "Backpack", "Tote Bag"],
             "expectedAnswer": "Backpack"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Handbag, Backpack, and Tote Bag visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Handbag, Backpack, Tote Bag in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain closed backpack with both shoulder straps visible, no person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Messenger Bag", "Clutch", "Wallet"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Wallet while also considering Messenger Bag and Clutch. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Omar puts his cards and banknotes in a wallet. His messenger bag is on the chair, and the clutch belongs to his colleague.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item holds Omar's cards and banknotes?",
             "options": ["Messenger Bag", "Clutch", "Wallet"],
             "expectedAnswer": "Wallet"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Messenger Bag, Clutch, and Wallet visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Messenger Bag, Clutch, Wallet in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain wallet opened to show empty card slots; no currency or lettering. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Purse", "Briefcase", "Duffel Bag"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Purse while also considering Briefcase and Duffel Bag. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Omar uses a small coin purse for the parking meter money. His briefcase holds documents, and his duffel bag holds clothes.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which small item holds the coins in this British English use?",
             "options": ["Purse", "Briefcase", "Duffel Bag"],
             "expectedAnswer": "Purse"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Purse, Briefcase, and Duffel Bag visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Purse, Briefcase, Duffel Bag in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A small coin purse with a clasp, closed; no coins or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Fanny Pack", "Sunglasses", "Glasses"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Sunglasses while also considering Fanny Pack and Glasses. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Omar packs sunglasses with dark lenses for the afternoon. His clear-lens glasses and fanny pack are already in his bag.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item has dark lenses?",
             "options": ["Fanny Pack", "Sunglasses", "Glasses"],
             "expectedAnswer": "Sunglasses"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Fanny Pack, Sunglasses, and Glasses visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Fanny Pack, Sunglasses, Glasses in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. Plain sunglasses with visibly dark lenses, no branding or person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Scarf", "Gloves", "Belt"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Belt while also considering Scarf and Gloves. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Omar threads a belt through the loops in his pants. His scarf and gloves stay in his bag.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item goes through the loops in Omar's pants?",
             "options": ["Scarf", "Gloves", "Belt"],
             "expectedAnswer": "Belt"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Scarf, Gloves, and Belt visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Scarf, Gloves, Belt in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain belt laid flat with a visible simple buckle, no wearer. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Accessories & Jewelry: Short Dialogue",
-      "text": "Omar has an everyday task connected to accessories & jewelry. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare handbag, backpack, and tote bag. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare messenger bag, clutch, and wallet. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Accessories & Jewelry. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing for a work trip",
+      "text": "Omar is going away for a work meeting. He packs his laptop in a backpack and puts his wallet in an inside pocket. His colleague gives him a small purse containing coins for the parking meter. Omar packs sunglasses for the sunny afternoon. Finally, he checks that his belt, scarf and gloves are in the bag.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Preparing for a work trip. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Backpack while also considering Handbag and Tote Bag. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Omar puts his laptop in a backpack with two shoulder straps. The handbag and open tote bag stay at home.\nWhich bag does Omar use for his laptop?",
         "answer": "Backpack",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Wallet while also considering Messenger Bag and Clutch. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Omar puts his cards and banknotes in a wallet. His messenger bag is on the chair, and the clutch belongs to his colleague.\nWhich item holds Omar's cards and banknotes?",
         "answer": "Wallet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Purse while also considering Briefcase and Duffel Bag. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Omar uses a small coin purse for the parking meter money. His briefcase holds documents, and his duffel bag holds clothes.\nWhich small item holds the coins in this British English use?",
         "answer": "Purse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Sunglasses while also considering Fanny Pack and Glasses. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Omar packs sunglasses with dark lenses for the afternoon. His clear-lens glasses and fanny pack are already in his bag.\nWhich item has dark lenses?",
         "answer": "Sunglasses",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Belt while also considering Scarf and Gloves. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Omar threads a belt through the loops in his pants. His scarf and gloves stay in his bag.\nWhich item goes through the loops in Omar's pants?",
         "answer": "Belt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Handbag"
+        "prompt": "Omar is going away for a work meeting. He packs his laptop in a backpack and puts his wallet in an inside pocket. His colleague gives him a small purse containing coins for the parking meter. Omar packs sunglasses for the sunny afternoon. Finally, he checks that his belt, scarf and gloves are in the bag.\nWhere does Omar put his wallet?",
+        "answer": "In an inside pocket.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Messenger Bag"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bangle” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Backpack”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Omar puts his laptop in a backpack with two shoulder straps. The handbag and open tote bag stay at home. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Accessories & Jewelry: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing for a work trip",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: Omar is going away for a work meeting. He packs his laptop in a backpack and puts his wallet in an inside pocket. His colleague gives him a small purse containing coins for the parking meter. Omar packs sunglasses for the sunny afternoon. Finally, he checks that his belt, scarf and gloves are in the bag. Pause and ask: Where does Omar put his wallet?"
     },
     "spacedReview": "1 lesson(s) back: Bangle, Watch from accessories-jewelry-2\n3 lesson(s) back: Pajamas, Nightgown from everyday-clothing-4\n7 lesson(s) back: Marriage, Parenthood from ages-life-stages-4"
   },
@@ -558,83 +548,77 @@
     "targetWordsEnglish": ["Umbrella", "Tie Pin", "Brooch", "Pocket Watch", "Cane"],
     "targetWordsArabic": ["مظلة", "دبوس ربطة عنق", "دبوس زينة", "ساعة جيب", "عصا"],
     "usage": {
-      "goal": "Learn to use accessories & jewelry 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to accessories & jewelry.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "goal": "Use clothing and accessory words to describe items, compare their visible features and ask a shop assistant for help.",
+      "canDoStatement": "Can describe clothing and accessories and ask simple questions about fit, an order or a purchase.",
+      "textType": "short-narrative",
+      "readingTarget": "55-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Umbrella", "Tie Pin", "Brooch"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Brooch while also considering Umbrella and Tie Pin. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "Karim finds a brooch with a pin fastening at reception. An umbrella and a tie pin are already in the lost-property cupboard.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which decorative item does Karim find at reception?",
             "options": ["Umbrella", "Tie Pin", "Brooch"],
             "expectedAnswer": "Brooch"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Umbrella, Tie Pin, and Brooch visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Umbrella, Tie Pin, Brooch in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A plain brooch with the pin fastening visible; no initials or logo. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Pocket Watch", "Cane"],
-          "scenario": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane. She chooses one useful item for each activity and checks that everything is secure.",
+          "scenario": "A visitor asks Karim for a pocket watch attached to a chain. The cane is still in the lost-property cupboard.",
           "check": {
-            "question": "Which target does Leila notice first in this situation?",
+            "question": "Which item is attached to a chain?",
             "options": ["Pocket Watch", "Cane", "Umbrella"],
             "expectedAnswer": "Pocket Watch"
           },
-          "imageBrief": "Show an adult in packing for a trip, with Pocket Watch and Cane visible in one coherent moment. The scene should support the context question without written labels, logos, or text and should not reveal the answer through a label or exaggerated emphasis.",
-          "imageAlt": "Adult accessories & jewelry scene showing lesson-related items or actions including Pocket Watch, Cane in a natural setting."
+          "imageBrief": "Vocabulary-reference support only. A closed pocket watch attached to a chain; no visible dial numerals. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
+          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Accessories & Jewelry: Tips/Notice",
-      "text": "Omar has an everyday task connected to accessories & jewelry. The new vocabulary helps him follow the situation and respond clearly. In the shop or studio, the stylist and customer compare umbrella, tie pin, and brooch. The words connect to appearance, materials, fit, or design. In the shop or studio, the stylist and customer compare pocket watch and cane. The words connect to appearance, materials, fit, or design.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Accessories & Jewelry. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Returning a lost item",
+      "text": "A visitor leaves a small brooch at the reception desk. Karim puts it in a box and records where he found it. An umbrella and a cane are already in the lost-property cupboard. Later, another visitor asks about a pocket watch. Karim checks its chain and returns it only after confirming the owner's description.",
+      "imageBrief": "Vocabulary-reference support for this written reading: Returning a lost item. Use the lesson's individually reviewed reference briefs; do not infer the story, role or invisible facts from a photograph."
     },
     "exercises": [
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Brooch while also considering Umbrella and Tie Pin. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "Karim finds a brooch with a pin fastening at reception. An umbrella and a tie pin are already in the lost-property cupboard.\nWhich decorative item does Karim find at reception?",
         "answer": "Brooch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "While packing for a short trip, Leila lays her accessories on the bed. Leila notices Pocket Watch while also considering Cane. She chooses one useful item for each activity and checks that everything is secure.\nWhich target does Leila notice first in this situation?",
+        "prompt": "A visitor asks Karim for a pocket watch attached to a chain. The cane is still in the lost-property cupboard.\nWhich item is attached to a chain?",
         "answer": "Pocket Watch",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Umbrella"
+        "prompt": "A visitor leaves a small brooch at the reception desk. Karim puts it in a box and records where he found it. An umbrella and a cane are already in the lost-property cupboard. Later, another visitor asks about a pocket watch. Karim checks its chain and returns it only after confirming the owner's description.\nWhat does Karim check before returning the pocket watch?",
+        "answer": "The owner's description.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Pocket Watch"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Handbag” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write one sentence about the written situation using “Brooch”. Describe what the person asks, names, packs or checks; do not add facts that the situation does not state.",
+        "answer": "Example: Karim finds a brooch with a pin fastening at reception. An umbrella and a tie pin are already in the lost-property cupboard. Other accurate sentences using the requested term are acceptable.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Accessories & Jewelry: In Context",
-      "idea": "35-50 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Returning a lost item",
+      "idea": "A short narrated version of the written situation. Present the approved word references without claiming that a photo proves the whole story.",
+      "scriptStarter": "Read the situation: A visitor leaves a small brooch at the reception desk. Karim puts it in a box and records where he found it. An umbrella and a cane are already in the lost-property cupboard. Later, another visitor asks about a pocket watch. Karim checks its chain and returns it only after confirming the owner's description. Pause and ask: What does Karim check before returning the pocket watch?"
     },
     "spacedReview": "1 lesson(s) back: Handbag, Backpack from accessories-jewelry-3\n3 lesson(s) back: Hat, Cap from accessories-jewelry-1\n7 lesson(s) back: T-Shirt, Shirt from everyday-clothing-1"
   }

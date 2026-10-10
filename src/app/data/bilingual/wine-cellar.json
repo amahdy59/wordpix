@@ -5,12 +5,12 @@
     "arabicTranslation": "رف زجاجات نبيذ"
   },
   "temperature-control": {
-    "definition": "The practice of maintaining a chosen temperature in a space or object by monitoring heat and changing the heating or cooling as needed.",
-    "arabicTranslation": "عامل ضابط درجة الحرارة"
+    "definition": "Equipment or procedures used to maintain a chosen storage temperature.",
+    "arabicTranslation": "التحكم في درجة الحرارة"
   },
   "humidity-control": {
-    "definition": "Maintaining moisture in indoor air at a desired level by adding or removing water vapor.",
-    "arabicTranslation": "عامل ضابط رطوبة"
+    "definition": "Equipment or procedures used to regulate moisture in the storage-room air.",
+    "arabicTranslation": "التحكم في الرطوبة"
   },
   "stone-wall": {
     "definition": "A wall built from stone that may support soil, enclose land, or mark the edge of a property.",
@@ -27,16 +27,16 @@
     "arabicTranslation": "طاولة تذوّق"
   },
   "dim-lighting": {
-    "definition": "A low level of light in a place makes fine details difficult to see while still allowing people to move around safely.",
+    "definition": "Low illumination that does not by itself establish adequate visibility or safety.",
     "arabicTranslation": "إضاءة خافتة"
   },
   "ventilation": {
-    "definition": "A mechanical system in a building that provides fresh air.",
+    "definition": "The exchange of indoor air with fresh air, by natural or mechanical means.",
     "arabicTranslation": "تهوية"
   },
   "insulation": {
-    "definition": "The state of being isolated or detached.",
-    "arabicTranslation": "عزل"
+    "definition": "Material or construction that reduces heat transfer into or out of the cellar.",
+    "arabicTranslation": "عزل حراري"
   },
   "wine-fridge": {
     "definition": "A refrigerator designed to store wine bottles at controlled temperatures.",
@@ -57,16 +57,16 @@
     "arabicTranslation": "فلين"
   },
   "capsule": {
-    "arabicTranslation": "كبسولة",
-    "definition": "A thin covering around the top of a wine bottle."
+    "arabicTranslation": "غطاء عنق الزجاجة",
+    "definition": "A thin covering around the neck and top of a wine bottle."
   },
   "label": {
-    "definition": "A brief description given for purposes of identification.",
-    "arabicTranslation": "علامة"
+    "definition": "Printed identification information attached to a bottle or its packaging.",
+    "arabicTranslation": "ملصق تعريف"
   },
   "vintage": {
-    "definition": "A season's yield of wine from a vineyard.",
-    "arabicTranslation": "سنة الإنتاج"
+    "definition": "The grape-harvest year identified for a wine under the relevant labeling rules.",
+    "arabicTranslation": "سنة حصاد العنب"
   },
   "bin-number": {
     "definition": "A number used to identify a particular storage location, compartment, or group of items.",
@@ -79,8 +79,8 @@
     "arabicTranslation": "سجل القبو"
   },
   "inventory": {
-    "definition": "The merchandise that a shop has on hand.",
-    "arabicTranslation": "مخزون"
+    "definition": "The stored stock of bottles or a record of that stock.",
+    "arabicTranslation": "مخزون أو سجل المخزون"
   },
   "collection": {
     "definition": "Several things grouped together or considered as a whole.",
@@ -101,8 +101,8 @@
     "arabicTranslation": "فتّاحة زجاجات نبيذ"
   },
   "aerator": {
-    "definition": "An apparatus for exposing something to the air (as sewage).",
-    "arabicTranslation": "مهوي"
+    "definition": "A device that exposes wine to air while it is poured.",
+    "arabicTranslation": "أداة تهوية النبيذ"
   },
   "wine-stopper": {
     "definition": "A reusable closure designed to seal an opened wine bottle.",
@@ -115,9 +115,9 @@
     "arabicTranslation": "فوهة صب للنبيذ"
   },
   "champagne-flute": {
-    "definition": "A slender wineglass with a tall bowl, designed for serving champagne.",
-    "exampleUsage": "The glossary uses the term \"Champagne Flute\" in an educational description.",
-    "arabicTranslation": "ناي فلوت شمبانيا"
+    "definition": "A slender stemmed glass with a tall narrow bowl.",
+    "exampleUsage": "The glassware display places an empty Champagne flute beside a coupe.",
+    "arabicTranslation": "كأس طويل ضيق"
   },
   "ice-bucket": {
     "definition": "An insulated container used to hold ice or keep a bottle cool.",
@@ -130,17 +130,17 @@
     "arabicTranslation": "مقياس حرارة للنبيذ"
   },
   "bordeaux": {
-    "definition": "A port city in southwestern France.",
-    "arabicTranslation": "بوردو"
+    "definition": "A wine-growing region around Bordeaux in southwestern France.",
+    "arabicTranslation": "منطقة بوردو"
   },
   "burgundy": {
-    "definition": "Red table wine from the Burgundy region of France (or any similar wine made elsewhere).",
-    "arabicTranslation": "بورغوندي"
+    "definition": "A region in eastern France associated with wine production.",
+    "arabicTranslation": "منطقة بورغوندي"
   },
   "champagne": {
-    "definition": "A white sparkling wine either produced in Champagne or resembling that produced there.",
-    "exampleUsage": "The glossary uses the term \"Champagne\" in an educational description.",
-    "arabicTranslation": "شمبانيا"
+    "definition": "A wine-growing region in northeastern France, also associated with a protected sparkling-wine designation.",
+    "exampleUsage": "The origin record identifies the vineyard as being in Champagne.",
+    "arabicTranslation": "منطقة شمبانيا"
   },
   "tuscany": {
     "definition": "A region in central Italy with capital Florence.",
@@ -152,8 +152,8 @@
     "arabicTranslation": "وادي نابا"
   },
   "rioja": {
-    "definition": "Dry red table wine from the Rioja region of northern Spain.",
-    "arabicTranslation": "ريوخا"
+    "definition": "A wine-growing region in northern Spain.",
+    "arabicTranslation": "منطقة ريوخا"
   },
   "barossa-valley": {
     "definition": "A region in South Australia known for vineyards and wine production.",
@@ -161,17 +161,21 @@
     "arabicTranslation": "وادي باروسا"
   },
   "mendoza": {
-    "definition": "Mendoza is a surname of Spanish origin, used by families in Spanish-speaking countries.",
+    "definition": "A province and wine-growing region in western Argentina.",
     "arabicTranslation": "مندوزا"
   },
   "douro-valley": {
-    "definition": "A river valley in northern Portugal and Spain, especially known for vineyards and historic wine production.",
+    "definition": "In this wine-region context, the Portuguese valley associated with Port and other wines.",
     "exampleUsage": "The Douro Valley follows the Douro River through a steep landscape.",
-    "arabicTranslation": "وادي دورو"
+    "arabicTranslation": "وادي دورو في البرتغال"
   },
   "mosel": {
-    "definition": "A river and region in western Germany, Luxembourg, and France, with a major wine-growing area along the Moselle River.",
+    "definition": "A German wine-growing region along the Moselle River and nearby tributaries.",
     "exampleUsage": "The map traces the Mosel wine region along the river valley.",
-    "arabicTranslation": "منطقة موزِل"
+    "arabicTranslation": "منطقة موزِل الألمانية"
+  },
+  "corkscrew": {
+    "definition": "A tool with a spiral metal point used to remove a cork from a bottle.",
+    "arabicTranslation": "فتّاحة سدادات الفلين"
   }
 }

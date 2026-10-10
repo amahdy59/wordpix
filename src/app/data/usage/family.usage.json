@@ -45,8 +45,8 @@
     ],
     "usage": {
       "goal": "Learn to identify close family members and describe basic family relationships.",
-      "canDoStatement": "Can name close family members and understand simple statements about family relationships.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a named family relationship or activity.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
@@ -59,101 +59,140 @@
             "expectedAnswer": "Mother"
           },
           "imageBrief": "Photorealistic respectful adult family setting illustrating Mother, Father, and Sister through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageAlt": "Family members take part in an everyday home or gathering scene.",
+          "learningContext": {
+            "sourceScenario": "At an adult family conversation or gathering, the situation includes Mother, Father, and Sister. The person, activity, or relationship to identify is the female parent.",
+            "sourceQuestion": "Which option best matches the family relationship, activity, or value described?",
+            "sourceAnswer": "Mother",
+            "scenario": "Nadia says, “This is my mother. She is my female parent. My father and sister are beside her in the photo.”",
+            "question": "Which word names Nadia’s female parent?",
+            "imageBrief": "Adult showing a family photo to a colleague. The passage defines relationships; no appearance-based claim of biological parentage."
+          }
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Brother", "Son", "Daughter"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Brother, Son, and Daughter. The person, activity, or relationship to identify is a male sibling.",
+          "scenario": "Omar introduces Ali: “We have the same parents. Ali is my brother.” Omar’s son and daughter join them for lunch.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "What is Ali’s relationship to Omar?",
             "options": ["Daughter", "Brother", "Son"],
             "expectedAnswer": "Brother"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Brother, Son, and Daughter through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adults meeting over lunch with a closed family-photo album. Relationship supplied only by the passage, without labels.",
+          "imageAlt": "Adults meeting over lunch with a closed family-photo album."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Parents", "Siblings", "Baby"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Parents, Siblings, and Baby. The person, activity, or relationship to identify are the mother and father or people acting as parents.",
+          "scenario": "Rana says, “My mother and father are visiting. My parents will meet my siblings and the new baby this afternoon.”",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which word refers to Rana’s mother and father together?",
             "options": ["Parents", "Siblings", "Baby"],
             "expectedAnswer": "Parents"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Parents, Siblings, and Baby through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Family gathering around a table, without written relationships or inference from age.",
+          "imageAlt": "Family gathering around a table, without written relationships or inference from age."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Twin", "Mom", "Dad"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Twin, Mom, and Dad. The person, activity, or relationship to identify is one of two children born at the same time to the same mother.",
+          "scenario": "Maya and Lina were born to the same mother on the same day. Maya says, “Lina is my twin.” Their mom and dad keep a photo of that day.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "What is Lina’s relationship to Maya?",
             "options": ["Mom", "Dad", "Twin"],
             "expectedAnswer": "Twin"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Twin, Mom, and Dad through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Two adults looking at a family photo album. Do not require identical appearance or claim all twins look alike.",
+          "imageAlt": "Two adults looking at a family photo album."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Big Sister", "Little Brother", "Oldest Child"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Big Sister, Little Brother, and Oldest Child. The person, activity, or relationship to identify is an older sister.",
+          "scenario": "Hana is twenty-eight and her sister Salma is twenty-four. Salma says, “Hana is my big sister.” Their little brother is twenty.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "What does Salma call Hana?",
             "options": ["Oldest Child", "Big Sister", "Little Brother"],
             "expectedAnswer": "Big Sister"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Big Sister, Little Brother, and Oldest Child through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adult siblings seated at a table. No appearance-based age inference; ages and relationship appear in the passage.",
+          "imageAlt": "Adult siblings seated at a table."
         }
       ]
     },
     "reading": {
       "title": "Talking About a Family Photo",
-      "text": "Nadia shows a new colleague a family photo on her phone. She points to her mother and father, then introduces her sister and brother. She also explains which people are her parents and siblings and mentions that one relative has a baby. The conversation stays simple and friendly, helping the colleague understand who each person is.",
-      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+      "text": "Nadia shows her colleague a family photo. Her mother and father stand beside each other; she calls them her parents, or mom and dad informally. Her brother holds his baby daughter and her sister sits beside him. Nadia calls her sister “my big sister” because she is the oldest child. Their little brother is also in the photo. A cousin and his twin are nearby. Nadia explains which relatives are her siblings.",
+      "imageBrief": "An adult holding a family-photo album at a table. Generic family members may appear in the photo, but do not infer biological relationships, gender identity or ages from appearance. The passage supplies relationships."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Mother"
+        "prompt": "At an adult family conversation or gathering, the situation includes Mother, Father, and Sister. The person, activity, or relationship to identify is the female parent.\nWhich option best matches the family relationship, activity, or value described?",
+        "answer": "Mother",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Brother"
+        "prompt": "Omar introduces Ali: “We have the same parents. Ali is my brother.” Omar’s son and daughter join them for lunch.\nWhat is Ali’s relationship to Omar?",
+        "answer": "Brother",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Parents"
+        "prompt": "Rana says, “My mother and father are visiting. My parents will meet my siblings and the new baby this afternoon.”\nWhich word refers to Rana’s mother and father together?",
+        "answer": "Parents",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Twin"
+        "prompt": "Maya and Lina were born to the same mother on the same day. Maya says, “Lina is my twin.” Their mom and dad keep a photo of that day.\nWhat is Lina’s relationship to Maya?",
+        "answer": "Twin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Big Sister"
+        "prompt": "Hana is twenty-eight and her sister Salma is twenty-four. Salma says, “Hana is my big sister.” Their little brother is twenty.\nWhat does Salma call Hana?",
+        "answer": "Big Sister",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Mother"
+        "prompt": "Read the passage: Nadia shows her colleague a family photo. Her mother and father stand beside each other; she calls them her parents, or mom and dad informally. Her brother holds his baby daughter and her sister sits beside him. Nadia calls her sister “my big sister” because she is the oldest child. Their little brother is also in the photo. A cousin and his twin are nearby. Nadia explains which relatives are her siblings.\nWho holds a baby daughter?",
+        "answer": "Nadia’s brother",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Father"
+        "prompt": "Read the passage: Nadia shows her colleague a family photo. Her mother and father stand beside each other; she calls them her parents, or mom and dad informally. Her brother holds his baby daughter and her sister sits beside him. Nadia calls her sister “my big sister” because she is the oldest child. Their little brother is also in the photo. A cousin and his twin are nearby. Nadia explains which relatives are her siblings.\nWho is the oldest child?",
+        "answer": "Nadia’s big sister",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-2"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Daughter"
+        "prompt": "Introduce one adult sibling to a colleague.",
+        "answer": "This is my sister. She lives in another city.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "A colleague asks who your parents are. Give a simple introduction.",
+        "answer": "These are my parents.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Family: See It, Say It",
-      "idea": "30–50 second contextual video set in a home. Show mother, father, sister, brother, and son naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In a family photo, the mother stands on the left, the father in the centre, and their adult daughter, who is also a sister, stands on the right. The mother is holding the photo album."
+      "title": "Talking About Family",
+      "idea": "Show a respectful home conversation or photo album. Narration supplies relationships and values; never infer biological ties, birth order or feelings from appearance.",
+      "scriptStarter": "Nadia says, “This is my mother. She is my female parent. My father and sister are beside her in the photo.”"
     },
     "spacedReview": "1 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n3 lesson(s) back: Happy, Joyful from basic-emotions-1\n7 lesson(s) back: Circle, Square from shapes-geometry-1"
   },
@@ -188,8 +227,8 @@
       "أصغر الأبناء",
       "الابن الأوسط",
       "ابن وحيد",
-      "زوجة الأب",
-      "زوج الأم",
+      "زوجة أحد الوالدين",
+      "زوج أحد الوالدين",
       "عشاء عائلي",
       "ليلة ألعاب",
       "رحلة برية بالسيارة",
@@ -203,115 +242,146 @@
     ],
     "usage": {
       "goal": "Learn to talk about family roles, shared routines, and common activities.",
-      "canDoStatement": "Can understand simple descriptions of family roles and everyday activities done together.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify a named family relationship or activity.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Youngest Child", "Middle Child", "Only Child"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Youngest Child, Middle Child, and Only Child. The person, activity, or relationship to identify is younger than all the other children in the family.",
+          "scenario": "Karim has three adult children. Leila is twenty-three, Samir is twenty-seven and Mona is thirty. Leila is his youngest child.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which phrase describes Leila’s place in the family by age?",
             "options": ["Only Child", "Youngest Child", "Middle Child"],
             "expectedAnswer": "Youngest Child"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Youngest Child, Middle Child, and Only Child through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Three adults looking at a family album; no visual birth-order labels or age claims.",
+          "imageAlt": "Three adults looking at a family album; no visual birth-order labels or age claims."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Stepmother", "Stepfather", "Family Dinner"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Stepmother, Stepfather, and Family Dinner. The person, activity, or relationship to identify is the father's wife who is not the biological mother.",
+          "scenario": "Nadia’s father marries Sara. Sara is not Nadia’s mother. Nadia introduces Sara as her stepmother at the family dinner.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "What is Sara’s relationship to Nadia?",
             "options": ["Stepmother", "Stepfather", "Family Dinner"],
             "expectedAnswer": "Stepmother"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Stepmother, Stepfather, and Family Dinner through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adult family meal with an album nearby. The passage supplies the step-family relationship; no stereotype or visual genealogy.",
+          "imageAlt": "Adult family meal with an album nearby."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Game Night", "Road Trip", "Holiday Gathering"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Game Night, Road Trip, and Holiday Gathering. The person, activity, or relationship to identify is an evening planned for playing games together.",
+          "scenario": "On Friday evening, Rana’s family stays home to play cards and a board game. They call the evening their game night. Their road trip is planned for Saturday.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which activity takes place on Friday evening?",
             "options": ["Road Trip", "Holiday Gathering", "Game Night"],
             "expectedAnswer": "Game Night"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Game Night, Road Trip, and Holiday Gathering through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adults playing a board game and cards around a home table. No branded board design or readable rules.",
+          "imageAlt": "Adults playing a board game and cards around a home table."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Movie Night", "Cooking Together", "Bedtime Story"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Movie Night, Cooking Together, and Bedtime Story. The person, activity, or relationship to identify is an evening planned for watching a film together.",
+          "scenario": "On Saturday evening, Samir’s family watches a film together. It is their movie night. They cooked together earlier, and a bedtime story comes later for a visiting child.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "What do they call the evening of watching a film?",
             "options": ["Bedtime Story", "Movie Night", "Cooking Together"],
             "expectedAnswer": "Movie Night"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Movie Night, Cooking Together, and Bedtime Story through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Family lounge with unbranded television showing an indistinct noncopyrighted scene and snacks. No written titles.",
+          "imageAlt": "Family lounge with unbranded television showing an indistinct noncopyrighted scene and snacks."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Morning Routine", "Family Photo", "Homework Help"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Morning Routine, Family Photo, and Homework Help. The person, activity, or relationship to identify is the usual set of activities done after waking.",
+          "scenario": "Each morning, Leila gets dressed, prepares breakfast and checks her work bag. These regular activities are her morning routine. She takes a family photo later, after work.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which phrase names Leila’s usual activities after waking?",
             "options": ["Morning Routine", "Family Photo", "Homework Help"],
             "expectedAnswer": "Morning Routine"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Morning Routine, Family Photo, and Homework Help through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adult breakfast table with a work bag and clothes ready on a nearby chair. No family-photo or homework task represented as a morning activity.",
+          "imageAlt": "Adult breakfast table with a work bag and clothes ready on a nearby chair."
         }
       ]
     },
     "reading": {
       "title": "Planning a Family Weekend",
-      "text": "A family is planning a weekend together. The youngest child wants game night, while the middle child suggests a movie night and the only child from another household joins the visit. Their stepmother and stepfather help organize a family dinner and a short road trip. Everyone also plans a family photo before the weekend ends.",
-      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+      "text": "Maya plans a holiday gathering with relatives. The youngest child chooses a game night, while the middle child prefers a movie night. An only child from another household joins the visit. Maya’s stepmother and stepfather organise a family dinner and a short road trip. Cooking together starts the weekend; a bedtime story ends the first evening. Before the family photo, Maya finishes her morning routine and offers homework help to a visiting relative.",
+      "imageBrief": "Adults gathered around a dining table with a board game nearby and a camera on a shelf. No visual assertion of step-family relationships or birth order."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Youngest Child"
+        "prompt": "Karim has three adult children. Leila is twenty-three, Samir is twenty-seven and Mona is thirty. Leila is his youngest child.\nWhich phrase describes Leila’s place in the family by age?",
+        "answer": "Youngest Child",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Stepmother"
+        "prompt": "Nadia’s father marries Sara. Sara is not Nadia’s mother. Nadia introduces Sara as her stepmother at the family dinner.\nWhat is Sara’s relationship to Nadia?",
+        "answer": "Stepmother",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Game Night"
+        "prompt": "On Friday evening, Rana’s family stays home to play cards and a board game. They call the evening their game night. Their road trip is planned for Saturday.\nWhich activity takes place on Friday evening?",
+        "answer": "Game Night",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Movie Night"
+        "prompt": "On Saturday evening, Samir’s family watches a film together. It is their movie night. They cooked together earlier, and a bedtime story comes later for a visiting child.\nWhat do they call the evening of watching a film?",
+        "answer": "Movie Night",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Morning Routine"
+        "prompt": "Each morning, Leila gets dressed, prepares breakfast and checks her work bag. These regular activities are her morning routine. She takes a family photo later, after work.\nWhich phrase names Leila’s usual activities after waking?",
+        "answer": "Morning Routine",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Youngest Child"
+        "prompt": "Read the passage: Maya plans a holiday gathering with relatives. The youngest child chooses a game night, while the middle child prefers a movie night. An only child from another household joins the visit. Maya’s stepmother and stepfather organise a family dinner and a short road trip. Cooking together starts the weekend; a bedtime story ends the first evening. Before the family photo, Maya finishes her morning routine and offers homework help to a visiting relative.\nWho chooses a game night?",
+        "answer": "the youngest child",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Middle Child"
+        "prompt": "Read the passage: Maya plans a holiday gathering with relatives. The youngest child chooses a game night, while the middle child prefers a movie night. An only child from another household joins the visit. Maya’s stepmother and stepfather organise a family dinner and a short road trip. Cooking together starts the weekend; a bedtime story ends the first evening. Before the family photo, Maya finishes her morning routine and offers homework help to a visiting relative.\nWho organises the family dinner and road trip?",
+        "answer": "Maya’s stepmother and stepfather",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-2"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Family Dinner"
+        "prompt": "Suggest a family activity for Friday evening.",
+        "answer": "Let’s have a game night on Friday.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "A relative visits for dinner. Ask whether they want to cook together.",
+        "answer": "Would you like to cook together?",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Family: See It, Say It",
-      "idea": "30–50 second contextual video set in a home. Show youngest child, middle child, only child, stepmother, and stepfather naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a video call, the people or family ideas youngest child, middle child, and only child are part of the situation. The highlighted detail represents youngest child."
+      "title": "Talking About Family",
+      "idea": "Show a respectful home conversation or photo album. Narration supplies relationships and values; never infer biological ties, birth order or feelings from appearance.",
+      "scriptStarter": "Karim has three adult children. Leila is twenty-three, Samir is twenty-seven and Mona is thirty. Leila is his youngest child."
     },
     "spacedReview": "1 lesson(s) back: Mother, Father from family-1\n3 lesson(s) back: Disappointed, Upset from basic-emotions-2\n7 lesson(s) back: Prism, Cuboid from shapes-geometry-2"
   },
@@ -351,99 +421,127 @@
     ],
     "usage": {
       "goal": "Learn to talk about support, care, trust, and other qualities in family relationships.",
-      "canDoStatement": "Can understand and use simple words for positive family support and relationships.",
-      "textType": "narrative",
+      "canDoStatement": "With the supplied context, can identify an explicitly described family value.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Love", "Trust", "Support"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Love, Trust, and Support. The person, activity, or relationship to identify is a strong feeling of affection and care.",
+          "scenario": "Rana describes her family: “We show love through affection and care. I trust my brother to keep a promise, and we offer support when someone needs help.”",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which word means the strong affection and care Rana describes?",
             "options": ["Love", "Trust", "Support"],
             "expectedAnswer": "Love"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Love, Trust, and Support through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adults listening to each other at home. Love, trust and support are language concepts supplied by the passage, not proven by faces.",
+          "imageAlt": "Adults listening to each other at home."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Care", "Protection", "Guidance"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Care, Protection, and Guidance. The person, activity, or relationship to identify means attending to someone's needs and well-being.",
+          "scenario": "Samir brings his grandmother a meal and asks what she needs. This attention to her needs is care. Protection concerns keeping her safe; guidance concerns helping her make choices.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which word describes attention to someone’s needs?",
             "options": ["Protection", "Guidance", "Care"],
             "expectedAnswer": "Care"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Care, Protection, and Guidance through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adult placing a meal on a table beside an older adult. No medical assistance or appearance-based judgment of dependency.",
+          "imageAlt": "Adult placing a meal on a table beside an older adult."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Discipline", "Affection", "Bond"],
-          "scenario": "At an adult family conversation or gathering, the situation includes Discipline, Affection, and Bond. The person, activity, or relationship to identify means controlled behaviour and fair rules.",
+          "scenario": "The family agrees to speak politely and follow fair rules at home. They describe this self-control as discipline. It does not mean punishment in this situation.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which word describes following fair rules with self-control?",
             "options": ["Bond", "Discipline", "Affection"],
             "expectedAnswer": "Discipline"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Discipline, Affection, and Bond through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Adult household members discussing arrangements around a table. No punishment, violence or written rules.",
+          "imageAlt": "Adult household members discussing arrangements around a table."
         },
         {
           "chunkNumber": 4,
-          "targetWords": "Heritage",
-          "scenario": "At an adult family conversation or gathering, the situation includes Heritage. The person, activity, or relationship to identify includes traditions and culture passed through generations.",
+          "targetWords": ["Heritage"],
+          "scenario": "Nadia learns a traditional song from her grandmother. They discuss stories and customs passed from earlier generations. These traditions are part of their heritage.",
           "check": {
-            "question": "Which option best matches the family relationship, activity, or value described?",
+            "question": "Which word names traditions passed through generations?",
             "options": ["Heritage", "Love", "Trust"],
             "expectedAnswer": "Heritage"
           },
-          "imageBrief": "Photorealistic respectful adult family setting illustrating Heritage through people, shared activities, or family objects; natural home environment, no text overlays, labels, logos, watermarks, or highlighted answer.",
-          "imageAlt": "Family members take part in an everyday home or gathering scene."
+          "imageBrief": "Two adult relatives sharing an old unlabelled family album in a home setting. Avoid national, religious or ethnic costume assumptions.",
+          "imageAlt": "Two adult relatives sharing an old unlabelled family album in a home setting."
         }
       ]
     },
     "reading": {
       "title": "Supporting Each Other",
-      "text": "Strong family relationships often grow through love, trust, support, and care. Adults may offer protection and guidance when someone faces a difficult decision. Affection can strengthen a bond, while fair discipline helps set clear limits. Families may also share stories, traditions, and heritage that connect younger and older generations. over time.",
-      "imageBrief": "One uncluttered the family scene supporting the reading and showing the first six target words."
+      "text": "Nadia trusts her brother with an important decision. He listens carefully and offers support. Their parents show care by asking what she needs. Nadia values their guidance, but makes the final choice herself. At dinner, they share a story from their heritage. Affection and love strengthen their bond. Fair discipline sets household rules, while protection means helping keep one another safe.",
+      "imageBrief": "Adult relatives listening to one another around a dinner table. Warm ordinary interaction without using appearance to prove love, trust, heritage or a biological family bond."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Love"
+        "prompt": "Rana describes her family: “We show love through affection and care. I trust my brother to keep a promise, and we offer support when someone needs help.”\nWhich word means the strong affection and care Rana describes?",
+        "answer": "Love",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Care"
+        "prompt": "Samir brings his grandmother a meal and asks what she needs. This attention to her needs is care. Protection concerns keeping her safe; guidance concerns helping her make choices.\nWhich word describes attention to someone’s needs?",
+        "answer": "Care",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Discipline"
+        "prompt": "The family agrees to speak politely and follow fair rules at home. They describe this self-control as discipline. It does not mean punishment in this situation.\nWhich word describes following fair rules with self-control?",
+        "answer": "Discipline",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Heritage"
+        "prompt": "Nadia learns a traditional song from her grandmother. They discuss stories and customs passed from earlier generations. These traditions are part of their heritage.\nWhich word names traditions passed through generations?",
+        "answer": "Heritage",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Love"
+        "prompt": "Read the passage: Nadia trusts her brother with an important decision. He listens carefully and offers support. Their parents show care by asking what she needs. Nadia values their guidance, but makes the final choice herself. At dinner, they share a story from their heritage. Affection and love strengthen their bond. Fair discipline sets household rules, while protection means helping keep one another safe.\nWho makes the final choice?",
+        "answer": "Nadia",
+        "contextTag": "reading",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Trust"
+        "prompt": "Read the passage: Nadia trusts her brother with an important decision. He listens carefully and offers support. Their parents show care by asking what she needs. Nadia values their guidance, but makes the final choice herself. At dinner, they share a story from their heritage. Affection and love strengthen their bond. Fair discipline sets household rules, while protection means helping keep one another safe.\nWhat does the family share at dinner?",
+        "answer": "a story from their heritage",
+        "contextTag": "reading-2",
+        "questionType": "meaning",
+        "responseMode": "short-answer"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Guidance"
+        "prompt": "Describe one way to support someone in a family.",
+        "answer": "I listen carefully and offer help.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
+      },
+      {
+        "prompt": "A relative asks for advice. Use guidance in a short response.",
+        "answer": "I can offer guidance, but the choice is yours.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "The Family: See It, Say It",
-      "idea": "30–50 second contextual video set in a home. Show love, trust, support, care, and protection naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At a holiday gathering, the people or family ideas love, trust, and support are part of the situation. The highlighted detail represents love."
+      "title": "Talking About Family",
+      "idea": "Show a respectful home conversation or photo album. Narration supplies relationships and values; never infer biological ties, birth order or feelings from appearance.",
+      "scriptStarter": "Rana describes her family: “We show love through affection and care. I trust my brother to keep a promise, and we offer support when someone needs help.”"
     },
     "spacedReview": "1 lesson(s) back: Youngest Child, Middle Child from family-2\n3 lesson(s) back: Hungry, Thirsty from basic-emotions-3\n7 lesson(s) back: Area, Perimeter from shapes-geometry-3"
   }

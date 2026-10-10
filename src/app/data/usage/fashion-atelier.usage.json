@@ -32,7 +32,7 @@
       "مانيكان",
       "طاولة قص",
       "مكواة",
-      "قدر البخار (حلة بخار / مبخرة)",
+      "جهاز تبخير الملابس",
       "ماكينة خياطة أوفرلوك",
       "ماكينة تطريز",
       "ورق باترون",
@@ -44,136 +44,122 @@
       "أداة فكّ الغرز"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Sewing Machine", "Dress Form", "Mannequin", "Cutting Table"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.",
+          "scenario": "The sewing machine joins fabric with linked stitches. The dress form supports fitting; the mannequin displays clothes, and the cutting table provides a flat work surface.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which machine joins fabric with stitches?",
             "options": ["Sewing Machine", "Dress Form", "Mannequin"],
             "expectedAnswer": "Sewing Machine"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Sewing Machine as the central item; include Sewing Machine, Dress Form, and Mannequin naturally where visually appropriate, but make the real-world use of Sewing Machine the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One sewing machine with needle assembly and fabric bed visible, no hands or lettering. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Iron", "Steamer", "Serger", "Embroidery Machine"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.",
+          "scenario": "An iron presses the fabric with a heated base. A steamer supplies steam, a serger finishes edges, and an embroidery machine makes decorative stitches.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which appliance presses fabric with a heated base?",
             "options": ["Iron", "Steamer", "Serger"],
             "expectedAnswer": "Iron"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Iron as the central item; include Iron, Steamer, and Serger naturally where visually appropriate, but make the real-world use of Iron the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One garment iron standing safely on an empty ironing board, no steam or people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pattern Paper", "Tailor's Chalk", "Needle", "Thread"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.",
+          "scenario": "Omar stores templates on pattern paper. Tailor's chalk makes temporary fabric marks; the needle carries thread through the cloth.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which material holds the garment templates?",
             "options": ["Pattern Paper", "Tailor's Chalk", "Needle"],
             "expectedAnswer": "Pattern Paper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Pattern Paper as the central item; include Pattern Paper, Tailor's Chalk, and Needle naturally where visually appropriate, but make the real-world use of Pattern Paper the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A few unlettered garment-pattern paper pieces with distinct cut shapes on a table. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Scissors", "Pinking Shears", "Seam Ripper"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.",
+          "scenario": "The scissors have two straight hinged blades. Pinking shears have zigzag blades, and the seam ripper removes unwanted stitches.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which cutting tool has the straight hinged blades?",
             "options": ["Scissors", "Pinking Shears", "Seam Ripper"],
             "expectedAnswer": "Scissors"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Scissors as the central item; include Scissors, Pinking Shears, and Seam Ripper naturally where visually appropriate, but make the real-world use of Scissors the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One pair of fabric scissors with straight blades, isolated on a neutral background. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Fashion Atelier",
-      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Sewing Machine, Dress Form, Mannequin, and Cutting Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Iron, Steamer, Serger, and Embroidery Machine. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Pattern Paper, Tailor's Chalk, Needle, and Thread. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Scissors, Pinking Shears, and Seam Ripper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Organizing the sewing station",
+      "text": "In a supervised atelier visit, Omar names the equipment before discussing a garment. A sewing machine joins fabric with stitches. A dress form supports fitting and draping, whereas a mannequin displays clothing. The cutting table provides a flat surface. An iron presses fabric, a steamer supplies steam, and a serger finishes edges, often trimming them as it stitches. An embroidery machine creates decorative stitched designs. Pattern paper holds the garment templates, and tailor's chalk makes temporary fabric marks. A needle carries thread through the fabric. Scissors cut it; pinking shears have zigzag blades. A seam ripper removes stitches. Omar asks about the correct tool's function rather than operates unfamiliar equipment. Knowing a tool's name does not replace practical training.",
+      "imageBrief": "Support for Organizing the sewing station. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sewing Machine, Dress Form, Mannequin, and Cutting Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The sewing machine joins fabric with linked stitches. The dress form supports fitting; the mannequin displays clothes, and the cutting table provides a flat work surface.\nWhich machine joins fabric with stitches?",
         "answer": "Sewing Machine",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Iron, Steamer, Serger, and Embroidery Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "An iron presses the fabric with a heated base. A steamer supplies steam, a serger finishes edges, and an embroidery machine makes decorative stitches.\nWhich appliance presses fabric with a heated base?",
         "answer": "Iron",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pattern Paper, Tailor's Chalk, Needle, and Thread and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Omar stores templates on pattern paper. Tailor's chalk makes temporary fabric marks; the needle carries thread through the cloth.\nWhich material holds the garment templates?",
         "answer": "Pattern Paper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scissors, Pinking Shears, and Seam Ripper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The scissors have two straight hinged blades. Pinking shears have zigzag blades, and the seam ripper removes unwanted stitches.\nWhich cutting tool has the straight hinged blades?",
         "answer": "Scissors",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "In a supervised atelier visit, Omar names the equipment before discussing a garment. A sewing machine joins fabric with stitches. A dress form supports fitting and draping, whereas a mannequin displays clothing. The cutting table provides a flat surface. An iron presses fabric, a steamer supplies steam, and a serger finishes edges, often trimming them as it stitches. An embroidery machine creates decorative stitched designs. Pattern paper holds the garment templates, and tailor's chalk makes temporary fabric marks. A needle carries thread through the fabric. Scissors cut it; pinking shears have zigzag blades. A seam ripper removes stitches. Omar asks about the correct tool's function rather than operates unfamiliar equipment. Knowing a tool's name does not replace practical training.\nWhat does Omar do before using unfamiliar equipment?",
+        "answer": "He asks about its function rather than operating it without training.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Sewing Machine"
+        "prompt": "Explain the difference between “Sewing Machine” and “Dress Form” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Mannequin"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Area Rug” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Sewing Machine, Dress Form, Mannequin, Cutting Table, Iron, Steamer, Serger, Embroidery Machine, Pattern Paper, Tailor's Chalk, Needle, Thread, Scissors, Pinking Shears, and Seam Ripper in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Sewing Machine” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The sewing machine joins fabric with linked stitches. The dress form supports fitting; the mannequin displays clothes, and the cutting table provides a flat work surface.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Fashion Atelier: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Organizing the sewing station",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "In a supervised atelier visit, Omar names the equipment before discussing a garment. A sewing machine joins fabric with stitches. A dress form supports fitting and draping, whereas a mannequin displays clothing. The cutting table provides a flat surface. An iron presses fabric, a steamer supplies steam, and a serger finishes edges, often trimming them as it stitches. An embroidery machine creates decorative stitched designs. Pattern paper holds the garment templates, and tailor's chalk makes temporary fabric marks. A needle carries thread through the fabric. Scissors cut it; pinking shears have zigzag blades. A seam ripper removes stitches. Omar asks about the correct tool's function rather than operates unfamiliar equipment. Knowing a tool's name does not replace practical training. Ask: What does Omar do before using unfamiliar equipment?"
     },
     "spacedReview": "1 lesson(s) back: Area Rug, Curtains from interior-design-3\n3 lesson(s) back: Contemporary, Traditional from interior-design-1\n7 lesson(s) back: General Contractor, Foreman from building-construction-3"
   },
@@ -208,7 +194,7 @@
       "وسادة دبابيس",
       "شريط قياس",
       "كشتبان",
-      "مكوك خيط",
+      "بكرة خيط صغيرة",
       "قدم سحاب لماكينة الخياطة",
       "رسم تخطيطي",
       "تشكيل القماش على المانيكان",
@@ -216,142 +202,128 @@
       "قماش موسلين",
       "نموذج تجريبي للملبس",
       "تجربة المقاس",
-      "تعديل مقاس الملبس",
+      "تعديل الملبس",
       "عينة",
       "نموذج أولي",
       "إنتاج الملابس"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pin Cushion", "Measuring Tape", "Thimble", "Bobbin"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.",
+          "scenario": "Omar puts loose pins in a pin cushion. Measuring tape measures length; a thimble protects a finger, and a bobbin carries sewing thread.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item holds the loose pins?",
             "options": ["Pin Cushion", "Measuring Tape", "Thimble"],
             "expectedAnswer": "Pin Cushion"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Pin Cushion as the central item; include Pin Cushion, Measuring Tape, and Thimble naturally where visually appropriate, but make the real-world use of Pin Cushion the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. One padded pin cushion containing a few sewing pins, no hands. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Zipper Foot", "Sketch", "Draping", "Pattern Making"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.",
+          "scenario": "The machine's zipper foot allows stitching close to the zipper. The sketch communicates an idea, draping shapes cloth on a form, and pattern making creates templates.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which machine attachment is used close to the zipper?",
             "options": ["Zipper Foot", "Sketch", "Draping"],
             "expectedAnswer": "Zipper Foot"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Zipper Foot as the central item; include Zipper Foot, Sketch, and Draping naturally where visually appropriate, but make the real-world use of Zipper Foot the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A narrow zipper presser foot isolated beside a sewing-machine bed; attachment detail visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Muslin", "Toile", "Fitting", "Alteration"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.",
+          "scenario": "The team makes its toile from muslin, a plain cotton test fabric. The toile is the garment; fitting checks its fit, and an alteration changes it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word names the fabric rather than the test garment?",
             "options": ["Muslin", "Toile", "Fitting"],
             "expectedAnswer": "Muslin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Muslin as the central item; include Muslin, Toile, and Fitting naturally where visually appropriate, but make the real-world use of Muslin the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A plain-woven cotton muslin swatch with visible weave; fiber identity comes from the supplied record. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sample", "Prototype", "Production"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.",
+          "scenario": "The studio calls its trial garment a sample. It tests details before production; prototype is another development term whose use depends on the studio.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "What does this studio call the trial garment?",
             "options": ["Sample", "Prototype", "Production"],
             "expectedAnswer": "Sample"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Sample as the central item; include Sample, Prototype, and Production naturally where visually appropriate, but make the real-world use of Sample the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A modest test garment on a nonhuman dress form; sample status is supplied by written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Fashion Atelier",
-      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pin Cushion, Measuring Tape, Thimble, and Bobbin. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Zipper Foot, Sketch, Draping, and Pattern Making. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Muslin, Toile, Fitting, and Alteration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sample, Prototype, and Production. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "From a sketch to a test garment",
+      "text": "Omar records how a design develops. A pin cushion holds pins, measuring tape records lengths, and a thimble protects a finger during hand sewing. The bobbin carries a supply of thread in a sewing machine. A zipper foot lets the machine stitch close to a zipper. The designer starts with a sketch. Draping develops a shape directly on a dress form, while pattern making produces cutting templates. Muslin is a fabric often used for testing; a toile is a test garment rather than a fiber name. During a fitting, the team checks the fit and plans an alteration. A sample and prototype can support development before production. Their exact uses differ across studios, so Omar asks how this team uses the terms.",
+      "imageBrief": "Support for From a sketch to a test garment. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pin Cushion, Measuring Tape, Thimble, and Bobbin and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Omar puts loose pins in a pin cushion. Measuring tape measures length; a thimble protects a finger, and a bobbin carries sewing thread.\nWhich item holds the loose pins?",
         "answer": "Pin Cushion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Zipper Foot, Sketch, Draping, and Pattern Making and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The machine's zipper foot allows stitching close to the zipper. The sketch communicates an idea, draping shapes cloth on a form, and pattern making creates templates.\nWhich machine attachment is used close to the zipper?",
         "answer": "Zipper Foot",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Muslin, Toile, Fitting, and Alteration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The team makes its toile from muslin, a plain cotton test fabric. The toile is the garment; fitting checks its fit, and an alteration changes it.\nWhich word names the fabric rather than the test garment?",
         "answer": "Muslin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sample, Prototype, and Production and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The studio calls its trial garment a sample. It tests details before production; prototype is another development term whose use depends on the studio.\nWhat does this studio call the trial garment?",
         "answer": "Sample",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Omar records how a design develops. A pin cushion holds pins, measuring tape records lengths, and a thimble protects a finger during hand sewing. The bobbin carries a supply of thread in a sewing machine. A zipper foot lets the machine stitch close to a zipper. The designer starts with a sketch. Draping develops a shape directly on a dress form, while pattern making produces cutting templates. Muslin is a fabric often used for testing; a toile is a test garment rather than a fiber name. During a fitting, the team checks the fit and plans an alteration. A sample and prototype can support development before production. Their exact uses differ across studios, so Omar asks how this team uses the terms.\nHow do muslin and toile differ?",
+        "answer": "Muslin names a fabric; toile names a test garment.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Pin Cushion"
+        "prompt": "Explain the difference between “Pin Cushion” and “Measuring Tape” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Thimble"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Sewing Machine” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Pin Cushion, Measuring Tape, Thimble, Bobbin, Zipper Foot, Sketch, Draping, Pattern Making, Muslin, Toile, Fitting, Alteration, Sample, Prototype, and Production in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Pin Cushion” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Omar puts loose pins in a pin cushion. Measuring tape measures length; a thimble protects a finger, and a bobbin carries sewing thread.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Fashion Atelier: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "From a sketch to a test garment",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Omar records how a design develops. A pin cushion holds pins, measuring tape records lengths, and a thimble protects a finger during hand sewing. The bobbin carries a supply of thread in a sewing machine. A zipper foot lets the machine stitch close to a zipper. The designer starts with a sketch. Draping develops a shape directly on a dress form, while pattern making produces cutting templates. Muslin is a fabric often used for testing; a toile is a test garment rather than a fiber name. During a fitting, the team checks the fit and plans an alteration. A sample and prototype can support development before production. Their exact uses differ across studios, so Omar asks how this team uses the terms. Ask: How do muslin and toile differ?"
     },
     "spacedReview": "1 lesson(s) back: Sewing Machine, Dress Form from fashion-atelier-1\n3 lesson(s) back: Hardwood, Carpet from interior-design-2\n7 lesson(s) back: Greek, Roman from architecture-styles-1"
   },
@@ -390,117 +362,103 @@
       "عارض أزياء"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to describe clothing, materials, fitting, and design decisions and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the fashion workplace.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Explain garment, textile and event terms using supplied composition and context, and ask what supports a claim.",
+      "canDoStatement": "Can compare the stated functions of textile and fashion terms and explain a choice.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Fashion Designer", "Seamstress", "Tailor", "Pattern Maker"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.",
+          "scenario": "The team assigns the overall clothing concept to the fashion designer. The seamstress sews garments, the tailor fits or alters them, and the pattern maker creates templates.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who is assigned the overall clothing concept?",
             "options": ["Fashion Designer", "Seamstress", "Tailor"],
             "expectedAnswer": "Fashion Designer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Fashion Designer as the central item; include Fashion Designer, Seamstress, and Tailor naturally where visually appropriate, but make the real-world use of Fashion Designer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty fashion-concept desk with unlettered garment sketches; professional identity comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Textile Designer", "Stylist", "Fashion Illustrator", "Merchandiser"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.",
+          "scenario": "The textile designer develops fabric patterns and structures. The stylist coordinates outfits, the fashion illustrator draws ideas, and the merchandiser plans product presentation.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who develops the fabric patterns in this team?",
             "options": ["Textile Designer", "Stylist", "Fashion Illustrator"],
             "expectedAnswer": "Textile Designer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult using or examining the Textile Designer as the central item; include Textile Designer, Stylist, and Fashion Illustrator naturally where visually appropriate, but make the real-world use of Textile Designer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. An empty textile-design desk with unlettered pattern samples, no people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Buyer", "Model"],
-          "scenario": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.",
+          "scenario": "The buyer selects products for the store. The model displays the garments; displaying an outfit is different from choosing the store's range.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Who selects the store's product range?",
             "options": ["Buyer", "Model", "Fashion Designer"],
             "expectedAnswer": "Buyer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a fashion workplace. Show an adult working with or speaking to the Buyer; include Buyer, Model, and Fashion Designer naturally where visually appropriate, but make the real-world use of Buyer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a fashion workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written fashion and textiles task. A neutral product-selection desk with modest garment samples; purchasing responsibility is written context. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Fashion Atelier",
-      "text": "At the fashion atelier, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Fashion Designer, Seamstress, Tailor, and Pattern Maker. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Textile Designer, Stylist, Fashion Illustrator, and Merchandiser. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Buyer and Model. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about The Fashion Atelier. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing atelier roles",
+      "text": "The visitor asks who handles each part of a collection. The fashion designer creates the clothing concept. A seamstress is a woman whose work includes sewing or alteration; a tailor makes, fits or alters garments. A pattern maker develops garment templates. The textile designer creates fabric patterns, textures or structures. A stylist coordinates clothing and accessories, while a fashion illustrator communicates ideas through drawings. A merchandiser plans product presentation and promotion. The buyer chooses products for the store's range. A model displays garments for fittings, photography or shows. These responsibilities may overlap, so Omar checks the project's actual assignments. A person standing near cloth is not enough evidence of a professional role, and a tool does not establish qualifications.",
+      "imageBrief": "Support for Comparing atelier roles. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Fashion Designer, Seamstress, Tailor, and Pattern Maker and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The team assigns the overall clothing concept to the fashion designer. The seamstress sews garments, the tailor fits or alters them, and the pattern maker creates templates.\nWho is assigned the overall clothing concept?",
         "answer": "Fashion Designer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Textile Designer, Stylist, Fashion Illustrator, and Merchandiser and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The textile designer develops fabric patterns and structures. The stylist coordinates outfits, the fashion illustrator draws ideas, and the merchandiser plans product presentation.\nWho develops the fabric patterns in this team?",
         "answer": "Textile Designer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the fashion atelier setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Buyer, and Model and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
+        "prompt": "The buyer selects products for the store. The model displays the garments; displaying an outfit is different from choosing the store's range.\nWho selects the store's product range?",
         "answer": "Buyer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The visitor asks who handles each part of a collection. The fashion designer creates the clothing concept. A seamstress is a woman whose work includes sewing or alteration; a tailor makes, fits or alters garments. A pattern maker develops garment templates. The textile designer creates fabric patterns, textures or structures. A stylist coordinates clothing and accessories, while a fashion illustrator communicates ideas through drawings. A merchandiser plans product presentation and promotion. The buyer chooses products for the store's range. A model displays garments for fittings, photography or shows. These responsibilities may overlap, so Omar checks the project's actual assignments. A person standing near cloth is not enough evidence of a professional role, and a tool does not establish qualifications.\nWhy does Omar check actual assignments?",
+        "answer": "Responsibilities can overlap and cannot be established from appearance alone.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Fashion Designer"
+        "prompt": "Explain the difference between “Fashion Designer” and “Seamstress” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Tailor"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Pin Cushion” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the fashion atelier task. Use Fashion Designer, Seamstress, Tailor, Pattern Maker, Textile Designer, Stylist, Fashion Illustrator, Merchandiser, Buyer, and Model in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Fashion Designer” in its supplied fashion and textiles sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The team assigns the overall clothing concept to the fashion designer. The seamstress sews garments, the tailor fits or alters them, and the pattern maker creates templates.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Fashion Atelier: In Context",
-      "idea": "50-80 seconds contextual scene in the shop or studio. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the shop or studio. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing atelier roles",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The visitor asks who handles each part of a collection. The fashion designer creates the clothing concept. A seamstress is a woman whose work includes sewing or alteration; a tailor makes, fits or alters garments. A pattern maker develops garment templates. The textile designer creates fabric patterns, textures or structures. A stylist coordinates clothing and accessories, while a fashion illustrator communicates ideas through drawings. A merchandiser plans product presentation and promotion. The buyer chooses products for the store's range. A model displays garments for fittings, photography or shows. These responsibilities may overlap, so Omar checks the project's actual assignments. A person standing near cloth is not enough evidence of a professional role, and a tool does not establish qualifications. Ask: Why does Omar check actual assignments?"
     },
     "spacedReview": "1 lesson(s) back: Pin Cushion, Measuring Tape from fashion-atelier-2\n3 lesson(s) back: Area Rug, Curtains from interior-design-3\n7 lesson(s) back: International Style, Mid-Century Modern from architecture-styles-2"
   }

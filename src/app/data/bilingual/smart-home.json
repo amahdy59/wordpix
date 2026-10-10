@@ -1,13 +1,13 @@
 {
   "smart-speaker": {
     "definition": "An internet-connected speaker that can play audio and respond to voice commands through a digital assistant.",
-    "exampleUsage": "The smart speaker played a timer when asked.",
+    "exampleUsage": "The smart speaker set a timer in response to the supported request.",
     "arabicTranslation": "مكبر صوت ذكي"
   },
   "voice-command": {
     "definition": "A spoken request that directs a device or program to carry out an action.",
     "arabicTranslation": "أمر صوتي",
-    "exampleUsage": "The voice command was used during the activity."
+    "exampleUsage": "She used a voice command to request a supported action from the assistant."
   },
   "wake-word": {
     "definition": "A word or short phrase that activates a voice-controlled device so it starts listening for a command.",
@@ -15,20 +15,20 @@
     "arabicTranslation": "كلمة تنبيه"
   },
   "routine": {
-    "definition": "Found in the ordinary course of events.",
-    "arabicTranslation": "روتين"
+    "definition": "A configured group of smart-home actions triggered by supported events, times, or commands.",
+    "arabicTranslation": "روتين آلي"
   },
   "reminder": {
     "definition": "A message that helps you remember something.",
     "arabicTranslation": "تذكير"
   },
   "timer": {
-    "definition": "A device that measures or signals the end of baking time.",
+    "definition": "A feature or device that measures a time interval and signals when it ends.",
     "arabicTranslation": "مؤقت",
-    "exampleUsage": "The timer was used during the activity."
+    "exampleUsage": "The timer signaled the end of the selected interval."
   },
   "playlist": {
-    "definition": "A list of musical selections for performance or for broadcast by radio.",
+    "definition": "An ordered selection of audio or video items prepared for playback.",
     "arabicTranslation": "قائمة تشغيل"
   },
   "news-briefing": {
@@ -51,7 +51,7 @@
     "arabicTranslation": "مصباح ذكي"
   },
   "dimmer": {
-    "definition": "A rheostat that varies the current through an electric light in order to control the level of illumination.",
+    "definition": "A control that adjusts the light output of compatible lighting.",
     "arabicTranslation": "مخفّض إضاءة"
   },
   "color-changing": {
@@ -71,14 +71,14 @@
   },
   "schedule": {
     "arabicTranslation": "جدول",
-    "definition": "A plan showing when events or activities will happen."
+    "definition": "A plan specifying when supported smart-home actions should run."
   },
   "scene": {
-    "definition": "The place where some action occurs.",
-    "arabicTranslation": "مشهد"
+    "definition": "A saved group of device settings used together in a smart-home system.",
+    "arabicTranslation": "مجموعة إعدادات محفوظة"
   },
   "brightness": {
-    "definition": "The location of a visual perception along a continuum from black to white.",
+    "definition": "The light-output level of a lamp or display, adjustable where supported.",
     "arabicTranslation": "سطوع"
   },
   "warm-white": {
@@ -87,7 +87,7 @@
     "arabicTranslation": "أبيض دافئ"
   },
   "daylight": {
-    "definition": "The time after sunrise and before sunset while it is light outside.",
+    "definition": "In this lighting context, a cooler white light-color setting named for the appearance of daylight.",
     "arabicTranslation": "ضوء النهار"
   },
   "smart-lock": {
@@ -113,15 +113,15 @@
   "alarm-system": {
     "definition": "A device or network of devices that identifies dangers such as break-ins, fires, or equipment problems and then issues a sound, light, or remote alert.",
     "arabicTranslation": "نظام إنذار",
-    "exampleUsage": "The alarm system was used during the activity."
+    "exampleUsage": "The alarm system sent the warning configured for the detected event."
   },
   "keypad": {
-    "definition": "A keyboard that is a data input device for computers.",
+    "definition": "A set of buttons used to enter a code or other information into a device.",
     "arabicTranslation": "لوحة أرقام",
-    "exampleUsage": "The keypad was used during the activity."
+    "exampleUsage": "She entered the access code on the keypad."
   },
   "fingerprint": {
-    "definition": "A print made by an impression of the ridges in the skin of a finger.",
+    "definition": "The distinctive ridge pattern on a finger, which compatible devices can use for identity verification.",
     "arabicTranslation": "بصمة إصبع"
   },
   "app-alert": {
@@ -131,22 +131,22 @@
   },
   "cloud-storage": {
     "definition": "Online space used to save and access your files from different devices.",
-    "arabicTranslation": "تخزين سحابة",
-    "exampleUsage": "The cloud storage was used during the activity."
+    "arabicTranslation": "تخزين سحابي",
+    "exampleUsage": "The service stored the permitted recordings in cloud storage."
   },
   "night-vision": {
     "definition": "The capacity to see clearly when light levels are low, such as at night.",
     "arabicTranslation": "رؤية ليلية"
   },
   "smart-thermostat": {
-    "definition": "An internet-linked control device adjusts a building's heating, cooling, and airflow according to settings, household routines, and conditions such as outdoor temperature.",
+    "definition": "A thermostat with digital or network features for controlling compatible heating or cooling according to supported settings.",
     "arabicTranslation": "منظّم حرارة ذكي",
-    "exampleUsage": "The smart thermostat was used during the activity."
+    "exampleUsage": "The smart thermostat followed the selected temperature schedule."
   },
   "temperature-sensor": {
     "definition": "A device that senses temperature, measures its value, and sends the result as a signal for display or automatic control.",
     "arabicTranslation": "مستشعر درجة الحرارة",
-    "exampleUsage": "The temperature sensor was used during the activity."
+    "exampleUsage": "The temperature sensor reported the room’s temperature."
   },
   "humidity-sensor": {
     "definition": "A device that measures the amount of water vapor in the air.",
@@ -154,8 +154,8 @@
     "arabicTranslation": "مستشعر رطوبة"
   },
   "zone": {
-    "definition": "To separate or apportion into sections.",
-    "arabicTranslation": "منطقة"
+    "definition": "A defined area controlled or monitored separately within a home system.",
+    "arabicTranslation": "منطقة تحكم"
   },
   "eco-mode": {
     "definition": "A setting designed to reduce energy or resource use while a device operates.",
@@ -179,7 +179,7 @@
   "fan": {
     "definition": "A device for creating a current of air by movement of a surface or surfaces.",
     "arabicTranslation": "مروحة",
-    "exampleUsage": "The fan was used during the activity."
+    "exampleUsage": "The fan circulated air through the equipment enclosure."
   },
   "streaming-device": {
     "definition": "A device that receives media over the internet and plays it on a television or other screen.",
@@ -199,7 +199,7 @@
   "projector": {
     "definition": "A device that displays images on a wall or screen.",
     "arabicTranslation": "جهاز عرض",
-    "exampleUsage": "The projector was used during the activity."
+    "exampleUsage": "The projector displayed the presentation on the wall."
   },
   "gaming-console": {
     "definition": "An electronic system designed mainly for playing video games on a screen.",
@@ -212,23 +212,23 @@
     "arabicTranslation": "جهاز تحكم شامل"
   },
   "hdmi": {
-    "definition": "Describes devices, cables, and connectors that follow the HDMI standard for sending digital video and audio.",
-    "arabicTranslation": "منفذ HDMI",
-    "exampleUsage": "The hdmi was used during the activity."
+    "definition": "A standard interface for transmitting digital video and audio between compatible equipment.",
+    "arabicTranslation": "واجهة HDMI",
+    "exampleUsage": "The HDMI cable carried the supported audiovisual signal to the display."
   },
   "bluetooth": {
-    "definition": "A hardware component uses Bluetooth to let nearby devices exchange information through radio signals.",
+    "definition": "A wireless communication technology that allows compatible devices to exchange data by radio.",
     "arabicTranslation": "بلوتوث",
-    "exampleUsage": "The bluetooth was used during the activity."
+    "exampleUsage": "The speaker paired with a compatible phone using Bluetooth."
   },
   "wi-fi": {
-    "definition": "A technology that lets devices connect wirelessly to a local network and the internet.",
+    "definition": "A wireless networking technology linking compatible devices to a local network, which may provide internet access.",
     "exampleUsage": "The smart devices connect through the home's Wi-Fi.",
     "arabicTranslation": "واي فاي"
   },
   "casting": {
-    "definition": "The act of creating something by casting it in a mold.",
-    "arabicTranslation": "اختيار العارضين"
+    "definition": "Sending or controlling media playback from one device to a compatible receiving screen or speaker.",
+    "arabicTranslation": "إرسال الوسائط إلى جهاز آخر"
   },
   "robot-vacuum": {
     "definition": "A small autonomous cleaning machine that moves around floors and vacuums dust and debris.",
@@ -246,11 +246,11 @@
     "arabicTranslation": "فرن ذكي"
   },
   "washer": {
-    "definition": "A person who washes things for a living.",
+    "definition": "An appliance that washes clothes.",
     "arabicTranslation": "غسالة"
   },
   "dryer": {
-    "definition": "(of liquor) having a low residual sugar content because of decomposition of sugar during fermentation.",
+    "definition": "An appliance that removes moisture from washed clothes.",
     "arabicTranslation": "مجفف"
   },
   "irrigation": {
@@ -261,5 +261,17 @@
     "definition": "A motorized device that opens and closes a garage door, often controlled by a remote or app.",
     "exampleUsage": "The garage opener raised the door when the authorized remote was used.",
     "arabicTranslation": "جهاز فتح باب المرآب"
+  },
+  "coffee-maker": {
+    "definition": "An appliance used to prepare coffee.",
+    "arabicTranslation": "ماكينة قهوة"
+  },
+  "refrigerator": {
+    "definition": "An appliance that keeps food or other suitable contents cold.",
+    "arabicTranslation": "ثلاجة"
+  },
+  "dishwasher": {
+    "definition": "A machine for washing dishes automatically.",
+    "arabicTranslation": "غسالة أطباق"
   }
 }

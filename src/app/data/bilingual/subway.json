@@ -4,7 +4,7 @@
     "arabicTranslation": "رصيف المحطة"
   },
   "tunnel": {
-    "definition": "A narrow passage with an opening at both ends.",
+    "definition": "An underground or covered passage through which the railway runs.",
     "arabicTranslation": "نفق"
   },
   "track": {
@@ -18,7 +18,7 @@
   "elevator": {
     "definition": "A machine that carries people or goods up and down between floors.",
     "arabicTranslation": "مصعد",
-    "exampleUsage": "The elevator was used during the activity."
+    "exampleUsage": "Omar asks whether the elevator is available for his route."
   },
   "turnstile": {
     "definition": "A gate consisting of a post that acts as a pivot for rotating arms.",
@@ -33,7 +33,7 @@
     "definition": "A large open area in a station through which passengers move."
   },
   "entrance": {
-    "definition": "Something that provides access (to get in or get out).",
+    "definition": "A route or opening used to enter a station.",
     "arabicTranslation": "مدخل"
   },
   "exit": {
@@ -76,7 +76,7 @@
   },
   "metro-card": {
     "definition": "A stored-value or travel card used to pay fares on a metro or other public-transport system.",
-    "exampleUsage": "She tapped her metro card at the gate.",
+    "exampleUsage": "Omar asks which actual metro cards this operator accepts.",
     "arabicTranslation": "بطاقة مترو"
   },
   "tap": {
@@ -88,7 +88,7 @@
     "definition": "The price paid for a journey on public transport."
   },
   "gate": {
-    "definition": "A movable barrier in a fence or wall.",
+    "definition": "A barrier controlling entry to a station or fare-paid area.",
     "arabicTranslation": "بوابة"
   },
   "top-up": {
@@ -102,7 +102,7 @@
   },
   "weekly-pass": {
     "definition": "A transport pass that allows specified travel for one week.",
-    "exampleUsage": "The weekly pass is valid for seven days.",
+    "exampleUsage": "Maya checks the weekly pass’s dates and coverage.",
     "arabicTranslation": "اشتراك أسبوعي"
   },
   "monthly-pass": {
@@ -111,9 +111,9 @@
     "arabicTranslation": "اشتراك شهري"
   },
   "contactless": {
-    "definition": "Operating without touch, as when a card makes a payment or a device takes a measurement remotely.",
-    "arabicTranslation": "دون تلامس",
-    "exampleUsage": "The contactless was used during the activity."
+    "definition": "Describing a supported card or device communicating near a reader without a wired connection for payment or validation.",
+    "arabicTranslation": "لا تلامسي",
+    "exampleUsage": "Omar asks whether his card supports contactless payment."
   },
   "line-map": {
     "definition": "A diagram showing the routes, stations, and connections of a transit system.",
@@ -164,8 +164,8 @@
     "arabicTranslation": "طوارئ"
   },
   "commuter": {
-    "definition": "A person who regularly travels between home and work or study.",
-    "arabicTranslation": "راكب يتنقل يوميًا"
+    "definition": "A person regularly travelling between home and work or study, not necessarily every day.",
+    "arabicTranslation": "شخص يتنقل بانتظام للعمل أو الدراسة"
   },
   "tourist": {
     "definition": "A person who travels for pleasure.",
@@ -211,21 +211,22 @@
   "cctv": {
     "definition": "A CCTV installation consists of cameras, recording devices, and related equipment serving a specific location.",
     "arabicTranslation": "نظام كاميرات مراقبة",
-    "exampleUsage": "The cctv was used during the activity."
+    "exampleUsage": "A CCTV camera monitors part of the concourse."
   },
   "emergency-phone": {
-    "definition": "A telephone placed outdoors for urgent calls.",
-    "arabicTranslation": "هاتف طوارئ"
+    "definition": "A phone provided for contacting urgent assistance, indoors or outdoors.",
+    "arabicTranslation": "هاتف طوارئ",
+    "exampleUsage": "The emergency phone is provided for contacting urgent assistance."
   },
   "fire-extinguisher": {
     "definition": "A portable or fixed device that releases a suitable substance to put out or contain a small fire.",
     "arabicTranslation": "طفاية حريق",
-    "exampleUsage": "The fire extinguisher was used during the activity."
+    "exampleUsage": "The fire extinguisher remains in its designated place."
   },
   "defibrillator": {
-    "definition": "A device that gives an electric shock to help restore a normal heart rhythm.",
+    "definition": "A device delivering an electric shock to treat certain dangerous heart rhythms when appropriate.",
     "arabicTranslation": "جهاز مزيل الرجفان",
-    "exampleUsage": "The defibrillator was used during the activity."
+    "exampleUsage": "A defibrillator is installed near the help point."
   },
   "help-point": {
     "definition": "A fixed station where passengers can contact staff or emergency assistance.",
@@ -233,7 +234,7 @@
     "arabicTranslation": "نقطة مساعدة"
   },
   "alarm": {
-    "definition": "An automatic signal (usually a sound) warning of danger.",
+    "definition": "A sound, signal or system warning of danger.",
     "arabicTranslation": "إنذار"
   },
   "barrier": {
@@ -246,7 +247,22 @@
     "arabicTranslation": "لافتة إخلاء"
   },
   "first-aid-kit": {
-    "definition": "A portable set of medical supplies and equipment provides immediate help for minor injuries or sudden illness while professional care is unavailable.",
+    "definition": "A collection of supplies for initial care of an injury or illness.",
     "arabicTranslation": "حقيبة إسعافات أولية"
+  },
+  "door": {
+    "definition": "A movable panel allowing entry to or exit from a train car.",
+    "arabicTranslation": "باب",
+    "exampleUsage": "The door opens for boarding while the train is stationary."
+  },
+  "window": {
+    "definition": "A glazed opening allowing a view outside a train car.",
+    "arabicTranslation": "نافذة",
+    "exampleUsage": "Maya sits beside the window."
+  },
+  "speaker": {
+    "definition": "A device producing announcements or other sound.",
+    "arabicTranslation": "مكبر صوت",
+    "exampleUsage": "An announcement plays through the speaker."
   }
 }

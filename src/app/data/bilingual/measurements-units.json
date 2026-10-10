@@ -8,7 +8,7 @@
     "arabicTranslation": "سنتيمتر"
   },
   "meter": {
-    "arabicTranslation": "عداد",
+    "arabicTranslation": "متر",
     "definition": "A metric unit of length equal to one hundred centimeters."
   },
   "kilometer": {
@@ -20,8 +20,8 @@
     "arabicTranslation": "بوصة"
   },
   "foot": {
-    "definition": "The part of the leg of a human being below the ankle joint.",
-    "arabicTranslation": "قدم"
+    "definition": "A customary unit of length equal to twelve inches.",
+    "arabicTranslation": "قدم كوحدة طول"
   },
   "yard": {
     "definition": "A unit of length equal to three feet or 0.9144 meters.",
@@ -34,14 +34,14 @@
   "ruler": {
     "definition": "A straight tool used for measuring and drawing lines.",
     "arabicTranslation": "مسطرة",
-    "exampleUsage": "The ruler was used during the activity."
+    "exampleUsage": "Dina measures the short edge of the box with a ruler."
   },
   "tape-measure": {
     "definition": "A flexible strip used for measuring length.",
     "arabicTranslation": "شريط قياس"
   },
   "gram": {
-    "definition": "A metric unit of weight equal to one thousandth of a kilogram.",
+    "definition": "A metric unit of mass equal to one thousandth of a kilogram.",
     "arabicTranslation": "غرام"
   },
   "kilogram": {
@@ -65,17 +65,18 @@
     "arabicTranslation": "رطل"
   },
   "stone": {
-    "definition": "An avoirdupois unit used to measure the weight of a human body.",
-    "arabicTranslation": "حجر"
+    "definition": "A customary mass unit equal to fourteen pounds.",
+    "arabicTranslation": "ستون؛ وحدة كتلة تساوي أربعة عشر رطلًا"
   },
   "scale": {
-    "definition": "A device that measures how heavy a person or object is.",
-    "arabicTranslation": "مقياس رسم",
-    "exampleUsage": "The scale was used during the activity."
+    "definition": "An instrument used to measure mass or weight.",
+    "arabicTranslation": "ميزان",
+    "exampleUsage": "Dina reads the parcel’s mass on the scale."
   },
   "balance": {
-    "definition": "Harmonious arrangement or relation of parts or elements within a whole (as in a design).",
-    "arabicTranslation": "توازن"
+    "definition": "An instrument for measuring or comparing masses, often using opposing pans.",
+    "arabicTranslation": "ميزان لمقارنة الكتل",
+    "exampleUsage": "Dina compares the two samples on a balance."
   },
   "heavy": {
     "definition": "Having a large weight or being difficult to lift.",
@@ -94,19 +95,19 @@
     "arabicTranslation": "غالون"
   },
   "quart": {
-    "definition": "A United States liquid unit equal to 32 fluid ounces.",
+    "definition": "A volume unit equal to one quarter of a gallon in the specified system; US and imperial values differ.",
     "arabicTranslation": "كوارت"
   },
   "pint": {
-    "definition": "A United States liquid unit equal to 16 fluid ounces.",
+    "definition": "A volume unit equal to one eighth of a gallon in the specified system; US and imperial values differ.",
     "arabicTranslation": "باينت"
   },
   "tablespoon": {
-    "definition": "As much as a tablespoon will hold.",
+    "definition": "A volume measure used in recipes; its size depends on the specified system.",
     "arabicTranslation": "ملعقة كبيرة"
   },
   "teaspoon": {
-    "definition": "As much as a teaspoon will hold.",
+    "definition": "A small volume measure used in recipes; its size depends on the specified system.",
     "arabicTranslation": "ملعقة صغيرة"
   },
   "fluid-ounce": {
@@ -114,7 +115,7 @@
     "arabicTranslation": "أونصة سائلة"
   },
   "barrel": {
-    "definition": "The quantity that a barrel (of any size) will hold.",
+    "definition": "A volume unit with different specified capacities for different products or systems.",
     "arabicTranslation": "برميل"
   },
   "celsius": {
@@ -122,11 +123,11 @@
     "arabicTranslation": "درجة مئوية"
   },
   "fahrenheit": {
-    "definition": "Of or relating to a temperature scale proposed by the inventor of the mercury thermometer.",
+    "definition": "A temperature scale on which water freezes at about 32 degrees and boils at about 212 degrees at standard atmospheric pressure.",
     "arabicTranslation": "فهرنهايت"
   },
   "kelvin": {
-    "definition": "An absolute temperature scale whose zero is absolute zero.",
+    "definition": "The SI unit of thermodynamic temperature, on an absolute scale whose zero is absolute zero.",
     "arabicTranslation": "كلفن"
   },
   "degree": {
@@ -143,17 +144,17 @@
     "arabicTranslation": "نقطة التجمّد"
   },
   "body-temperature": {
-    "definition": "The amount of heat inside a living organism, determined by taking a thermometer reading.",
-    "arabicTranslation": "درجة الحرارة جسم"
+    "definition": "The temperature of a living body, measured with a suitable instrument.",
+    "arabicTranslation": "درجة حرارة الجسم"
   },
   "room-temperature": {
-    "definition": "Describes a substance or condition at the usual indoor temperature, without deliberate cooling or heating.",
-    "arabicTranslation": "درجة الحرارة غرفة"
+    "definition": "The temperature of an indoor environment, or a usual indoor temperature specified in context.",
+    "arabicTranslation": "درجة حرارة الغرفة"
   },
   "thermometer": {
     "definition": "Measuring instrument for measuring temperature.",
     "arabicTranslation": "مقياس حرارة",
-    "exampleUsage": "The thermometer was used during the activity."
+    "exampleUsage": "The thermometer measures the room’s temperature."
   },
   "heat": {
     "definition": "A form of energy that is transferred by a difference in temperature.",
@@ -164,9 +165,9 @@
     "arabicTranslation": "ملي ثانية"
   },
   "second": {
-    "definition": "A part or voice or instrument or orchestra section lower in pitch than or subordinate to the first.",
-    "arabicTranslation": "الثاني",
-    "exampleUsage": "The second was used during the activity."
+    "definition": "A unit of time; sixty seconds make one minute.",
+    "arabicTranslation": "ثانية",
+    "exampleUsage": "The timer records the event to the nearest second."
   },
   "minute": {
     "definition": "A unit of time equal to 60 seconds or 1/60th of an hour.",
@@ -178,10 +179,10 @@
   },
   "day": {
     "arabicTranslation": "يوم",
-    "definition": "A point or period in time."
+    "definition": "A period commonly equal to twenty-four hours, or the daylight part of a day in context."
   },
   "speed": {
-    "definition": "A rate (usually rapid) at which something happens.",
+    "definition": "The distance traveled per unit of time, without specifying direction.",
     "arabicTranslation": "سرعة"
   },
   "velocity": {
@@ -197,7 +198,12 @@
     "definition": "The amount of space between two places or objects."
   },
   "rate": {
-    "definition": "A magnitude or frequency relative to a time unit.",
+    "definition": "A quantity expressed in relation to another quantity, often per unit of time.",
     "arabicTranslation": "معدل"
+  },
+  "cup": {
+    "definition": "A volume measure used in recipes; its exact size depends on the specified measurement system.",
+    "arabicTranslation": "كوب كوحدة حجم",
+    "exampleUsage": "The recipe specifies a metric cup measure."
   }
 }

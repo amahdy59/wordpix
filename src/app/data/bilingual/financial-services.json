@@ -31,7 +31,7 @@
   },
   "principal": {
     "definition": "The original amount of a loan or investment, before interest.",
-    "arabicTranslation": "أصل القرض"
+    "arabicTranslation": "أصل القرض أو مبلغ الاستثمار الأصلي"
   },
   "collateral": {
     "definition": "A security pledged for the repayment of a loan.",
@@ -47,7 +47,7 @@
     "arabicTranslation": "تأمين صحي"
   },
   "car-insurance": {
-    "definition": "Coverage purchased from an insurance company protects people from financial losses linked to owning or using a car.",
+    "definition": "Insurance that covers specified financial losses connected with a vehicle under the policy terms.",
     "arabicTranslation": "تأمين سيارة"
   },
   "life-insurance": {
@@ -86,7 +86,7 @@
     "arabicTranslation": "وثيقة تأمين"
   },
   "stock": {
-    "definition": "The capital raised by a corporation through the issue of shares entitling holders to an ownership interest (equity).",
+    "definition": "A share representing an ownership interest in a company.",
     "arabicTranslation": "سهم"
   },
   "bond": {
@@ -94,7 +94,7 @@
     "arabicTranslation": "سند"
   },
   "mutual-fund": {
-    "definition": "Money from many investors is combined to purchase a broad range of assets.",
+    "definition": "An investment fund that pools money from investors to buy assets according to its stated investment objectives.",
     "arabicTranslation": "صندوق استثمار مشترك"
   },
   "etf": {
@@ -102,7 +102,7 @@
     "arabicTranslation": "صندوق متداول"
   },
   "portfolio": {
-    "definition": "A list of the financial assets held by an individual or a bank or other financial institution.",
+    "definition": "The collection of investments held by a person or organization.",
     "arabicTranslation": "محفظة استثمارية"
   },
   "dividend": {
@@ -110,7 +110,7 @@
     "arabicTranslation": "توزيعات أرباح"
   },
   "capital-gain": {
-    "definition": "The profit created when stocks, property, or a business become more valuable between purchase and sale.",
+    "definition": "The increase in an asset's value above its purchase cost, realized when it is sold.",
     "arabicTranslation": "ربح رأسمالي"
   },
   "risk": {
@@ -122,16 +122,16 @@
     "arabicTranslation": "عائد استثمار"
   },
   "diversification": {
-    "definition": "The act of introducing variety (especially in investments or in the variety of goods and services offered).",
-    "arabicTranslation": "تنويع"
+    "definition": "Spreading investments across different assets to reduce concentration risk; it does not eliminate investment risk.",
+    "arabicTranslation": "تنويع الاستثمارات"
   },
   "401k": {
     "definition": "A U.S. employer-sponsored retirement savings plan funded through employee contributions and sometimes employer contributions.",
     "arabicTranslation": "خطة تقاعد 401(k)"
   },
   "ira": {
-    "definition": "A retirement plan that allows you to contribute a limited yearly sum toward your retirement.",
-    "arabicTranslation": "حساب تقاعد فردي"
+    "definition": "A U.S. individual retirement arrangement with tax treatment and eligibility governed by its specific type and applicable rules.",
+    "arabicTranslation": "حساب تقاعد فردي أمريكي"
   },
   "pension": {
     "arabicTranslation": "معاش تقاعدي",
@@ -150,11 +150,11 @@
     "arabicTranslation": "صندوق تقاعد"
   },
   "compound-interest": {
-    "definition": "Interest is added to the original amount, so later interest also grows on those earlier additions.",
+    "definition": "Interest calculated on both the original amount and previously accumulated interest.",
     "arabicTranslation": "فائدة مركبة"
   },
   "contribution": {
-    "definition": "An amount of money contributed.",
+    "definition": "Money paid into a retirement plan or other savings arrangement.",
     "arabicTranslation": "مساهمة"
   },
   "vesting": {

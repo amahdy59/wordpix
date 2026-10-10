@@ -14,7 +14,7 @@
   "radio-telescope": {
     "definition": "An astronomical instrument detects radio waves emitted by stars, galaxies, and other objects beyond Earth.",
     "arabicTranslation": "تلسكوب راديوي",
-    "exampleUsage": "The radio telescope was used during the activity."
+    "exampleUsage": "The radio telescope collected radio signals from astronomical sources."
   },
   "telescope-mount": {
     "definition": "A mechanical support that holds a telescope and allows it to point accurately at different parts of the sky.",
@@ -24,7 +24,7 @@
   "eyepiece": {
     "definition": "Combination of lenses at the viewing end of optical instruments.",
     "arabicTranslation": "عدسة عينية",
-    "exampleUsage": "The eyepiece was used during the activity."
+    "exampleUsage": "The observer looked through the telescope’s eyepiece."
   },
   "finder-scope": {
     "definition": "A small auxiliary telescope with a wide field of view used to help aim a larger telescope.",
@@ -34,7 +34,7 @@
   "lens": {
     "definition": "A transparent optical device used to converge or diverge transmitted light and to form images.",
     "arabicTranslation": "عدسة",
-    "exampleUsage": "The lens was used during the activity."
+    "exampleUsage": "The telescope’s lens gathered and focused incoming light."
   },
   "tripod": {
     "definition": "A three-legged stand that keeps a camera steady.",
@@ -69,7 +69,7 @@
     "arabicTranslation": "سديم"
   },
   "galaxy": {
-    "definition": "(astronomy) a collection of star systems.",
+    "definition": "A vast system of stars, gas, dust, and other matter held together by gravity.",
     "arabicTranslation": "مجرة"
   },
   "constellation": {
@@ -81,8 +81,8 @@
     "arabicTranslation": "شهاب"
   },
   "dome": {
-    "arabicTranslation": "قُبّة",
-    "definition": "A stadium that has a roof."
+    "arabicTranslation": "قبة المرصد",
+    "definition": "A rounded roof or enclosure protecting a telescope, often with an opening for observation."
   },
   "rotating-roof": {
     "definition": "A roof or dome structure that can turn so an opening can align with a telescope's viewing direction.",
@@ -95,11 +95,11 @@
     "arabicTranslation": "منصة مشاهدة"
   },
   "control-room": {
-    "definition": "A room where staff monitor and control a television broadcast.",
-    "arabicTranslation": "غرفة عامل ضابط"
+    "definition": "A room where observatory staff monitor instruments and coordinate observations.",
+    "arabicTranslation": "غرفة تحكم"
   },
   "computer-lab": {
-    "definition": "Designed to recreate a computer lab through its equipment, physical arrangement, and digital resources.",
+    "definition": "A room equipped with computers for scientific work and learning.",
     "arabicTranslation": "مختبر حاسوب"
   },
   "lecture-hall": {
@@ -115,8 +115,8 @@
     "arabicTranslation": "موقف سيارات"
   },
   "pathway": {
-    "definition": "A bundle of myelinated nerve fibers following a path through the brain.",
-    "arabicTranslation": "ممر"
+    "definition": "A route for people to walk through the observatory grounds.",
+    "arabicTranslation": "ممر للمشاة"
   },
   "spectrograph": {
     "definition": "An instrument that separates incoming light into a spectrum and records it.",
@@ -139,7 +139,7 @@
   "computer-monitor": {
     "definition": "A screen device that presents visual information sent from a computer.",
     "arabicTranslation": "شاشة مراقبة حاسوب",
-    "exampleUsage": "The computer monitor was used during the activity."
+    "exampleUsage": "The computer monitor displayed the observation data."
   },
   "data-server": {
     "definition": "A computer system that stores, manages, or provides data to other computers over a network.",
@@ -157,8 +157,8 @@
     "arabicTranslation": "مصباح يدوي أحمر"
   },
   "logbook": {
-    "definition": "A book in which the log is written.",
-    "arabicTranslation": "سجل الرحلة"
+    "definition": "A book or digital record of observations and instrument activity.",
+    "arabicTranslation": "سجل الرصد"
   },
   "mercury": {
     "definition": "The smallest planet and the nearest to the sun.",
@@ -181,15 +181,15 @@
     "arabicTranslation": "المشتري"
   },
   "saturn": {
-    "definition": "A giant planet that is surrounded by three planar concentric rings of ice particles.",
+    "definition": "The sixth planet from the Sun, a gas giant with an extensive ring system.",
     "arabicTranslation": "زحل"
   },
   "uranus": {
-    "definition": "A giant planet with a ring of ice particles.",
+    "definition": "The seventh planet from the Sun, an ice giant with faint rings.",
     "arabicTranslation": "أورانوس"
   },
   "neptune": {
-    "definition": "A giant planet with a ring of ice particles.",
+    "definition": "The eighth planet from the Sun, an ice giant with faint rings.",
     "arabicTranslation": "نبتون"
   },
   "pluto": {
@@ -255,24 +255,24 @@
   "photometer": {
     "definition": "Measuring instrument for measuring the luminous intensity of a source by comparing it (visually or photoelectrically) with a standard source.",
     "arabicTranslation": "مقياس شدة الضوء",
-    "exampleUsage": "The photometer was used during the activity."
+    "exampleUsage": "The photometer measured the brightness of the observed source."
   },
   "computer": {
     "definition": "A machine for performing calculations automatically.",
     "arabicTranslation": "حاسوب",
-    "exampleUsage": "The computer was used during the activity."
+    "exampleUsage": "The computer processed the measurements and saved the results."
   },
   "antenna": {
     "definition": "A device that sends or receives radio and television signals.",
     "arabicTranslation": "هوائي",
-    "exampleUsage": "The antenna was used during the activity."
+    "exampleUsage": "The antenna carried signals for the supported communication system."
   },
   "magnitude": {
     "definition": "A numerical measure of how bright a celestial object appears or actually is.",
     "arabicTranslation": "قدر فلكي"
   },
   "orbit": {
-    "definition": "An area in which something acts or operates or has power or control:.",
+    "definition": "The path followed by an object as it moves around another object under gravity.",
     "arabicTranslation": "مدار"
   },
   "light-year": {
@@ -282,7 +282,7 @@
   },
   "spectrum": {
     "definition": "An ordered array of the components of an emission or wave.",
-    "exampleUsage": "The glossary uses the term \"Spectrum\" in an educational description.",
+    "exampleUsage": "The spectrometer recorded the light’s spectrum.",
     "arabicTranslation": "طيف"
   },
   "rotation": {
@@ -296,10 +296,22 @@
   "transit": {
     "definition": "The passage of a celestial object across the apparent face of another.",
     "arabicTranslation": "عبور فلكي",
-    "exampleUsage": "The transit was used during the activity."
+    "exampleUsage": "The observers recorded the planet’s transit across the star’s apparent disk."
   },
   "discovery": {
     "definition": "The act of discovering something.",
     "arabicTranslation": "اكتشاف"
+  },
+  "mirror": {
+    "definition": "A reflective surface that forms an image; in an optical instrument it directs or focuses light.",
+    "arabicTranslation": "مرآة"
+  },
+  "library": {
+    "definition": "A room or building containing books and other resources for reading, study, or reference.",
+    "arabicTranslation": "مكتبة"
+  },
+  "clock": {
+    "definition": "A device that shows or measures time.",
+    "arabicTranslation": "ساعة"
   }
 }

@@ -1,0 +1,1652 @@
+{
+  "archive": "output/content-finish/editorial-helpers-2026-10-10.zip",
+  "sha256": "0078752fb371d06c7574db41907c60db821238b9643a5b03dcb77af6f8675b09",
+  "bytes": 1567807,
+  "files": [
+    {
+      "path": "a-apply-reviewed.mjs",
+      "bytes": 6945,
+      "sha256": "9c427a81342516980051d5f45794f94b33f9fb9d417672493333dde85024f21d"
+    },
+    {
+      "path": "a-batch1-scenes.mjs",
+      "bytes": 37063,
+      "sha256": "41609f1249a3eb3a88451c3e4335daebeb9b3359294aa3e6b2caa1791bc5c839"
+    },
+    {
+      "path": "a-food-categories-scenes.mjs",
+      "bytes": 30465,
+      "sha256": "dacdd7aca956cc5c578be266d8060ccbf411b6e3832ea12dee00e0be2988fae8"
+    },
+    {
+      "path": "a-nature-community-scenes.mjs",
+      "bytes": 51751,
+      "sha256": "f589b2b5a75e98480ec17dec5638516ab47adb53d78d2cb9a16ec13b7b7eb1d3"
+    },
+    {
+      "path": "amusement-lessons.mjs",
+      "bytes": 8913,
+      "sha256": "9c48f39155e2f93c01c178a525554b259dafe97c98fae0f583d9702de2b2706a"
+    },
+    {
+      "path": "amusement-lexicon.mjs",
+      "bytes": 8170,
+      "sha256": "c82fa7a6f8e3853e22f3a98f505949058cc831b2ef71ebc4c532222e3e252d8f"
+    },
+    {
+      "path": "apply-amusement.mjs",
+      "bytes": 3371,
+      "sha256": "a73d51d5319358b0ec666bfd2e92e1453b51faea1f79ebd7fa30f1387a397994"
+    },
+    {
+      "path": "apply-authored-section.mjs",
+      "bytes": 6947,
+      "sha256": "f724330e1fd2ce2e906e8e23c60d87b201017583b3f34ad395bc1b71353468cf"
+    },
+    {
+      "path": "apply-bar.mjs",
+      "bytes": 2260,
+      "sha256": "311e57983c8752d96ecf0a245f667d7c7e1f62dc4f60f86e47e1d729118430af"
+    },
+    {
+      "path": "apply-body.mjs",
+      "bytes": 45814,
+      "sha256": "60841f46256cb70b936d401a4a7cec03dfba883086cf12d9f56169bb3c31ef8a"
+    },
+    {
+      "path": "apply-fashion.mjs",
+      "bytes": 1827,
+      "sha256": "1932af9ac44993a8bfdb678faf965ec4ac5ad464d270b49da3661136298586a3"
+    },
+    {
+      "path": "apply-legal-authored.mjs",
+      "bytes": 3486,
+      "sha256": "fc692ece93a40fb42fcffdbd17f33f86eadda739b6940925e676780cb0728a47"
+    },
+    {
+      "path": "apply-middle-material.mjs",
+      "bytes": 9122,
+      "sha256": "517fa76a72553be1ed784772afb2805d19459f58a8a8fb15dbe263d63d07d9c8"
+    },
+    {
+      "path": "apply-middle-measure.mjs",
+      "bytes": 8630,
+      "sha256": "a41e059498af89f279034529950f8a2eda5daa8905f15a823e0474e51b92c8fb"
+    },
+    {
+      "path": "apply-middle-spatial.mjs",
+      "bytes": 2446,
+      "sha256": "8f7da4482c7adba3e0e919f3546626a7af5dffb2c20d0d965140e5f8af33e3b4"
+    },
+    {
+      "path": "apply-middle-sport-beach.mjs",
+      "bytes": 10082,
+      "sha256": "e2072161fba1f2aa3a43494c7d6781a8d29063ca58ec129b48dc8d0bc77428e0"
+    },
+    {
+      "path": "apply-next-batch.mjs",
+      "bytes": 4176,
+      "sha256": "3127934a2e85263ce5f3c11ab74874ba100dc0cac1aac3c10c9d7b0fc2ab47f4"
+    },
+    {
+      "path": "apply-parent-final.mjs",
+      "bytes": 22821,
+      "sha256": "19bdb42ced9457f3dcedefbbf46349daf250cfe28b9ab64d7fee34e020376ab7"
+    },
+    {
+      "path": "apply-protected-contexts.mjs",
+      "bytes": 1611,
+      "sha256": "6a36167ed493083afee439f8beddd8ba6b706c710f0de6e4571d0e427c711f0b"
+    },
+    {
+      "path": "apply-space.mjs",
+      "bytes": 1567,
+      "sha256": "c3f6289a4ac1605d7a6638128209a4da2fb353b75bdf14330ae37035f0d7cb15"
+    },
+    {
+      "path": "apply-wine.mjs",
+      "bytes": 2400,
+      "sha256": "82de4253825f356aba674c142e74c55eeedbd4c8dd777095efe04630305b0b1d"
+    },
+    {
+      "path": "assign.mjs",
+      "bytes": 821,
+      "sha256": "db8083d379e8310a4d2bc02ec622eb2a9928cb946f297f7d0d7b99461a0f53fb"
+    },
+    {
+      "path": "assignments.json",
+      "bytes": 16394,
+      "sha256": "cba8caa25697968f05c7a17d7f935f9da8331bf10bd532db4f8eb6665006a1fb"
+    },
+    {
+      "path": "author-section-b-anatomy.mjs",
+      "bytes": 17838,
+      "sha256": "75209905953cbbd836e6cc62aae3e343f4576492f106bebc55bc0959aec7eb47"
+    },
+    {
+      "path": "author-section-b-art.mjs",
+      "bytes": 19383,
+      "sha256": "798e9e8edf09d138470ae78bc7e05b8fb471af3029a7f4e9e81268ba38d4d308"
+    },
+    {
+      "path": "author-section-b-barber.mjs",
+      "bytes": 12249,
+      "sha256": "e140fad83fd32bdd774b2012ad2d25ead0b572f2722f0c24074eb6c3229bae94"
+    },
+    {
+      "path": "author-section-b-birthday.mjs",
+      "bytes": 15680,
+      "sha256": "9c039c799caf0ffb6a5b8e1958d09f4d8b6827db43a2bb083ae994d28fe35655"
+    },
+    {
+      "path": "author-section-b-bus.mjs",
+      "bytes": 13781,
+      "sha256": "9afdf51f162f1b61f56d2e505c0192a9f03c9551faa5e79c4ee8073d243d2442"
+    },
+    {
+      "path": "author-section-b-car-wash.mjs",
+      "bytes": 13812,
+      "sha256": "6abb868cda9835fad8218d174cb1206980bcfe4c43c7405dced560793ad8ee32"
+    },
+    {
+      "path": "author-section-b-creative.mjs",
+      "bytes": 13261,
+      "sha256": "815e4087426d655bddb45f27a6d23d675594f62062859a96a64bdb6793ec019e"
+    },
+    {
+      "path": "author-section-b-facial.mjs",
+      "bytes": 6972,
+      "sha256": "ce12155198081918b6538647b0a05c8d2ce0f9b6a4a9980595dac226ff012c45"
+    },
+    {
+      "path": "author-section-b-feelings.mjs",
+      "bytes": 9042,
+      "sha256": "6b8035184347a7adf7c35a3e2148756d8919bf8186fbbaa33388b28b86a01fd4"
+    },
+    {
+      "path": "author-section-b-graduation.mjs",
+      "bytes": 16270,
+      "sha256": "5f81dd28360489ccf9ac230c300854d76aec633504846279ae5ac732c8cb7a04"
+    },
+    {
+      "path": "author-section-b-hair.mjs",
+      "bytes": 18750,
+      "sha256": "d39dde26385dcd6049d45129734d1d9c0d8bf578ff675a1f3b8bd94312e4e388"
+    },
+    {
+      "path": "author-section-b-hospital.mjs",
+      "bytes": 17062,
+      "sha256": "9a8e0b0fee7b1ba0faf299f32c366de71cb6a1b4020694c0cca24e9bdd9e62df"
+    },
+    {
+      "path": "author-section-b-hotel.mjs",
+      "bytes": 14300,
+      "sha256": "2b6b93aba7ff229d724e8615636c0eb96bc2166ec38a4c25278de44e0c8f3429"
+    },
+    {
+      "path": "author-section-b-indoor.mjs",
+      "bytes": 12134,
+      "sha256": "a7c7d0bb8da161395941f8cb47a4579befb0ad4a5bddbae596f7505800b6b0c6"
+    },
+    {
+      "path": "author-section-b-laundry.mjs",
+      "bytes": 16163,
+      "sha256": "6ba96b661c4ede3effcd46790b7c54aa6cb3c1a29e9516ff626ebf830ff1ceed"
+    },
+    {
+      "path": "author-section-b-library.mjs",
+      "bytes": 13567,
+      "sha256": "7ed8ff072a063852bd72ce8f55c789b53bb4206f91f47a3600b583ac7a8b927e"
+    },
+    {
+      "path": "author-section-b-life-events.mjs",
+      "bytes": 15037,
+      "sha256": "f1380d94ceb14dc03feebda4a5ebdc8933a992b28fde7e86ed57a41176d437af"
+    },
+    {
+      "path": "author-section-b-music.mjs",
+      "bytes": 13686,
+      "sha256": "986b63133789132a47b6029dbd2624b0d88a7e5b4af52dc7e4ff97b510a2e52f"
+    },
+    {
+      "path": "author-section-b-personality.mjs",
+      "bytes": 8006,
+      "sha256": "4cf2533fa99321629a7eb591c2a29ba227bc134e52eb68db44ec3bcfebe3ea88"
+    },
+    {
+      "path": "author-section-b-photo.mjs",
+      "bytes": 17964,
+      "sha256": "d5d62f40d322e9dce970b16d2e6ebac018f261c8b6971f6fa0d7e9544cbd00f6"
+    },
+    {
+      "path": "author-section-b-senses.mjs",
+      "bytes": 10310,
+      "sha256": "b3afe15fc0e0e3297c76355f49572dbf4938caef1e783121e1cbbe15ca2de0c4"
+    },
+    {
+      "path": "author-section-b-social.mjs",
+      "bytes": 11104,
+      "sha256": "48a6dd88c8414fcdad2ec1f6fcecf89d9993b3caadc26c9456ab1607ada3bbd2"
+    },
+    {
+      "path": "author-section-b-subway.mjs",
+      "bytes": 14014,
+      "sha256": "a732d03ec442230e728c22e10559318b62980ebb07258060d0d3de8d1e5ccf08"
+    },
+    {
+      "path": "author-section-b-wedding.mjs",
+      "bytes": 15536,
+      "sha256": "56629a2ee52ef72ac2b0d4024fe1d63df411e766f2922ed1d24b5a2a43d58f95"
+    },
+    {
+      "path": "b-apply-reviewed.mjs",
+      "bytes": 6848,
+      "sha256": "8df56e12217d012c1e648900aaa1a2959126d7907bc0c45a5eb7f9c3c7d1a75c"
+    },
+    {
+      "path": "b-batch1-scenes.mjs",
+      "bytes": 56134,
+      "sha256": "dbc23efb7bc4b621e3c3ed886d598213d1335fa84f3dfb025224ac0166069b57"
+    },
+    {
+      "path": "b-batch2-scenes.mjs",
+      "bytes": 44012,
+      "sha256": "4e0502827eaa4503852b22a9e7595cfa840c021572e697ff88a4a41f7c53554f"
+    },
+    {
+      "path": "b-batch3-scenes.mjs",
+      "bytes": 51408,
+      "sha256": "52463190f0d63edbbe7a886baae0f954173abaf10b2182816937d1d18df45bd9"
+    },
+    {
+      "path": "bakery-raw.json",
+      "bytes": 8834,
+      "sha256": "f8147971992584eb49effe9e260358906589f68841035e075a3b3cd09bbab17f"
+    },
+    {
+      "path": "bar-authored.mjs",
+      "bytes": 24046,
+      "sha256": "95a681dd43d5d12d76e9d28942ab277d050eef98ce4f05509c47d08f53073317"
+    },
+    {
+      "path": "baseline-next-units.json",
+      "bytes": 312598,
+      "sha256": "721345f408c6c44019ce0e1ad12bbc6284b2aa304c121d59eab31742c2b808fd"
+    },
+    {
+      "path": "body-lessons.mjs",
+      "bytes": 26738,
+      "sha256": "044e6bde3702da1ba4bc6b8e736ae95031bac165adac8e82567739c9ee4fd1d7"
+    },
+    {
+      "path": "body-vocab-ids.json",
+      "bytes": 3225,
+      "sha256": "1ea1ac39704f9b13add176067761ee5180373a72957f582e58dbdcd7e6528091"
+    },
+    {
+      "path": "c-authored-scenes.mjs",
+      "bytes": 175734,
+      "sha256": "3edd6efdd35ead32950712acb885eea8a18d3efed79cd40758738793b48a0166"
+    },
+    {
+      "path": "c-concrete-examples.mjs",
+      "bytes": 15987,
+      "sha256": "06431a35caa3a15e4a9175b66fed403fb2dc72d317c2832f0d17b5c4e7e638cf"
+    },
+    {
+      "path": "c-dictionary-example-review.json",
+      "bytes": 39344,
+      "sha256": "2476248083ec7f118f5c5b537384a22211191ea2b86911b500c8d13dda3d9c05"
+    },
+    {
+      "path": "c-existing-examples-final.mjs",
+      "bytes": 2922,
+      "sha256": "30795ea5ab952126f1dc5cc750edba83d23512f9daf68dddbb5e50fd96b1f9c4"
+    },
+    {
+      "path": "c-extension-apply-reviewed.mjs",
+      "bytes": 7244,
+      "sha256": "cc74e4b85fa884612a10cc9cf16eca5dda66a114d95c023db9d2d8440e89522e"
+    },
+    {
+      "path": "c-extension-culture-scenes.mjs",
+      "bytes": 18895,
+      "sha256": "a97dbb7f1e9d64412492c4e36a3a3079e323591685b3865cc20b85dcffaedae2"
+    },
+    {
+      "path": "c-extension-media-broadcast-scenes.mjs",
+      "bytes": 26346,
+      "sha256": "6074347ad183b30d5449defa456d9e2a2de401f2fb4cd2068953395573ae96f6"
+    },
+    {
+      "path": "c-extension-nature-defs.mjs",
+      "bytes": 11133,
+      "sha256": "d0c6f79536d32a9e2e250f1e28c4c09d92eed413a1837047a50a13931b522d17"
+    },
+    {
+      "path": "c-extension-nature-examples.mjs",
+      "bytes": 19262,
+      "sha256": "b324bd99add5ef43901778cc79bd345e91834ab289f7e3230ae5bfd50c6c5a58"
+    },
+    {
+      "path": "c-extension-nature-final.mjs",
+      "bytes": 8568,
+      "sha256": "8cdf3cdc4a2ef80ead58a2d5e03125419ab2cc52704b4552d9469747376f88ee"
+    },
+    {
+      "path": "c-extension-performance-lexicon.mjs",
+      "bytes": 16005,
+      "sha256": "aa7470091c6c0e59963e36e5d09e36ddb5ef1f000a703e5a52edb1829579a9de"
+    },
+    {
+      "path": "c-extension-performance-scenes.mjs",
+      "bytes": 17812,
+      "sha256": "3c8a5ba3d91531b406b2af02e880535999cce2d919b5f14dfb83735b5b25f226"
+    },
+    {
+      "path": "c-extension-scenes.mjs",
+      "bytes": 29642,
+      "sha256": "30ca15abdec2cea212c84daaf51b9b1b9c30a1133f23e2444830139dc4f16078"
+    },
+    {
+      "path": "c-extension-studio-lab-scenes.mjs",
+      "bytes": 24499,
+      "sha256": "399b25dda0484bd5b561ce5e1bdfe439c5c9307c91eb506c048731f4695e4cb4"
+    },
+    {
+      "path": "c-extension-transport-apply.mjs",
+      "bytes": 9409,
+      "sha256": "5f9a258fc44998dfc6ec727f5845e2d330d741142882952c8386b4f24dc3610b"
+    },
+    {
+      "path": "c-extension-transport-defs.mjs",
+      "bytes": 7178,
+      "sha256": "ffeb802339594ea4a1ca810e28f263dbe4e359e63df7f6dc871dc7598af541fc"
+    },
+    {
+      "path": "c-extension-transport-examples.mjs",
+      "bytes": 18813,
+      "sha256": "5d1cad611e0477a42b5a7b1fec517f4e1e039401e59d5393769761a0b7bd58fa"
+    },
+    {
+      "path": "c-extension-transport-scenes.mjs",
+      "bytes": 24388,
+      "sha256": "f78aed3dcbdb6cfa43c58eec2f7fc6207dda103dd04c1841b149e7723988af37"
+    },
+    {
+      "path": "c-final-notes.mjs",
+      "bytes": 5685,
+      "sha256": "feb0b2c121fc803ecae39c74110ed9975861dd2d3f0369323b7a2947c0db1f86"
+    },
+    {
+      "path": "c-final-science-approve.mjs",
+      "bytes": 4534,
+      "sha256": "24c3e5fb6ac6b20d5cc17e5f7b047004a64cf17dad7d90e8003b361fe9f4fd0d"
+    },
+    {
+      "path": "c-final-science-scenes.mjs",
+      "bytes": 24761,
+      "sha256": "5a9e87a4fff80eb16e356ccabc86b02ccb8b306e6979ccb001b4235848f976a0"
+    },
+    {
+      "path": "c-final-science.mjs",
+      "bytes": 9817,
+      "sha256": "49ad0d4741e6977721776f4c55a24167d3a09d34dcb036b3262af017615a5222"
+    },
+    {
+      "path": "c-legal-final.mjs",
+      "bytes": 3087,
+      "sha256": "ade4a25dd40161dd0674a19ae89f6ced1ca66b6a296a4a791128e964172e8109"
+    },
+    {
+      "path": "c-missing-common.mjs",
+      "bytes": 4182,
+      "sha256": "177824107623704cc89b9438f99b577f623c6b7f053dde808dc73e31ea9ddbc5"
+    },
+    {
+      "path": "c-office-contexts.mjs",
+      "bytes": 11142,
+      "sha256": "a5ec95d0290dfa1cd9cfec911b0791db8e5f3cee0f59f52f56eea348e0ddb00d"
+    },
+    {
+      "path": "c-office-existing-asset-inspection.json",
+      "bytes": 5008,
+      "sha256": "264a948d587b550e2c410d764f77861154de025bcf1ab0326f16d969f5bc36f4"
+    },
+    {
+      "path": "c-review-ledger.mjs",
+      "bytes": 12150,
+      "sha256": "27d63422ee4220edd5e821d7988216d12fde27fc77d09c5d02aaea87c705320f"
+    },
+    {
+      "path": "c-scoped-validate.mjs",
+      "bytes": 2497,
+      "sha256": "fcd8ab2927fd1cc19e3e5b38689681d6b0e110fee838a3419f321958ab7e5313"
+    },
+    {
+      "path": "c-single-target-final.mjs",
+      "bytes": 1022,
+      "sha256": "ba890b724b385a8dbff9a148835c7b37c9fd55df2db88a4f590e6236f704734f"
+    },
+    {
+      "path": "capture.mjs",
+      "bytes": 351,
+      "sha256": "369f51a41d2fa1c175aaee2f52b115ce623369ce05a1d9960bede125bdd937ea"
+    },
+    {
+      "path": "check-a-arabic.mjs",
+      "bytes": 584,
+      "sha256": "9f79346c5b0b028dc89e86041a311e5fec2590cd444c95bd0d35cf16c599c070"
+    },
+    {
+      "path": "check-b-assets.mjs",
+      "bytes": 1044,
+      "sha256": "bcc0fdc96d4eea5251b8a4fce3eb5d19ee8a674843f6269cbac8ea6084e0f27c"
+    },
+    {
+      "path": "check-b-phrase-issues.mjs",
+      "bytes": 972,
+      "sha256": "937067c57dc280535de503e944b4bf3ab97b6f243d71a50eb37ed8174b71e7a9"
+    },
+    {
+      "path": "check-protected.mjs",
+      "bytes": 408,
+      "sha256": "df413c30fb1612a0c6f4304ad7b4ceb0e3a60789ffa9bfcc9d9b1313762f751f"
+    },
+    {
+      "path": "check-section-a-protected.mjs",
+      "bytes": 716,
+      "sha256": "ae81af3dd5c0c7ccfe6ec850fcce17eb8ceef8c59106b160e0c0d5a54b1436ee"
+    },
+    {
+      "path": "check-section-b-protected.mjs",
+      "bytes": 557,
+      "sha256": "3cdf789bd7cdeb35cfe257205fbd35e1e35ebecd73b617e966c6ddfea3300ece"
+    },
+    {
+      "path": "check-unit-ts.mjs",
+      "bytes": 219,
+      "sha256": "b93f683ad925199121cb5d8139b7ba0f58af92bc6a50d6daa3d8fb0639764e8a"
+    },
+    {
+      "path": "complete-section-b-coverage.mjs",
+      "bytes": 5660,
+      "sha256": "10a45c3878fdcc71f06d49edf6ee979a150805eccb7fb7b4225eee458bc15296"
+    },
+    {
+      "path": "computer-lab-raw-items.json",
+      "bytes": 10389,
+      "sha256": "46d121398c099157eb83383cff185d24b1fc66d79c35b1bf6223f745f85b504a"
+    },
+    {
+      "path": "construction-definitions.mjs",
+      "bytes": 7422,
+      "sha256": "15404f4fee2509bb7e0250d33a75baf8bccbcd8eb88fa81188b59d50271fba09"
+    },
+    {
+      "path": "correct-accessory-sources.mjs",
+      "bytes": 464,
+      "sha256": "4d46a573a8d62e39906072029f830e6a298488802fa13fdf7a5ec79242d5e2cf"
+    },
+    {
+      "path": "curated-next-batch.mjs",
+      "bytes": 50207,
+      "sha256": "ab5e9806fc2df2106fd1e7f3b26fd0662b79d60bb045bcace443702c10cb2285"
+    },
+    {
+      "path": "design-authored.mjs",
+      "bytes": 26163,
+      "sha256": "207e28d075b04b79b1388eba382c4e03b5a280cb5ddf26e1c00cf0aa8f92a12b"
+    },
+    {
+      "path": "dump-a-batch1.mjs",
+      "bytes": 490,
+      "sha256": "c0a23056c0d91faf74a07259dbcb1657c87345b5e5b77ff703f5973c276149a3"
+    },
+    {
+      "path": "dump-b-batch1.mjs",
+      "bytes": 550,
+      "sha256": "e5a6871dc5979cfa8dab2be5038f12437b3fd921b3139ae583c32d99e5d01d07"
+    },
+    {
+      "path": "dump-b-batch2.mjs",
+      "bytes": 571,
+      "sha256": "4e4d800cc15bdeaa291ca28587fa6e745a6c980abf3ddcfcf1ece55152c3ec7e"
+    },
+    {
+      "path": "dump-b-batch3.mjs",
+      "bytes": 593,
+      "sha256": "9a99fe41d5749530cdb597ea08ede0a3f0f5d51b98e4df3b374ae7f00c5a95ad"
+    },
+    {
+      "path": "dump-food-categories.mjs",
+      "bytes": 518,
+      "sha256": "e356ebe21a280e88cd7de22c37678e16163fa89571314e3d471a2bd11ed2b94c"
+    },
+    {
+      "path": "dump-nature-community.mjs",
+      "bytes": 525,
+      "sha256": "474592a4eb57b33e532f9a5c9de7dd9415df0d25971ee5787001e9b94d09bf59"
+    },
+    {
+      "path": "extract-a-units-vocab.mjs",
+      "bytes": 617,
+      "sha256": "cee6273e4616c00804b85b7541110e82dc37b94dfdf90a826cdde64d1f70c7bf"
+    },
+    {
+      "path": "extract-vocab-definitions.mjs",
+      "bytes": 640,
+      "sha256": "2a0d5828d5d17d097c456cbd2b205060db8f513e3f1a9fded8f4fe55d80be39c"
+    },
+    {
+      "path": "farm-raw.json",
+      "bytes": 10914,
+      "sha256": "6754172c367f3e30616016734029931afbc1032fd2f688192de52c43dcd60e09"
+    },
+    {
+      "path": "fashion-authored.mjs",
+      "bytes": 26641,
+      "sha256": "aab2eea171083a952aa9974370ff3cc0af7644f2d45edba80abf34ed01386353"
+    },
+    {
+      "path": "final-section-ledger.mjs",
+      "bytes": 3170,
+      "sha256": "c0d74f94d3f8a47593ed5fc8790b042c2416319b42f44b4aa2c1a06a70ac1056"
+    },
+    {
+      "path": "final-word-examples.mjs",
+      "bytes": 8297,
+      "sha256": "da92003d3f0492ce1fcd6d74d87210b8411a8228e5b59ec3be9205e3e491c1cf"
+    },
+    {
+      "path": "find-dashes.mjs",
+      "bytes": 534,
+      "sha256": "b01b77b887f11b81d978a5e67159c31b76c7e32ab3fec5a1bf59feb0d0d77b4a"
+    },
+    {
+      "path": "focused.log",
+      "bytes": 1184,
+      "sha256": "c4f7ff1b029b84a8062ae01f4fbb47c15ec6cdfb7594051608bb65a8520fa38d"
+    },
+    {
+      "path": "garden-raw.json",
+      "bytes": 8533,
+      "sha256": "70de203bb96db50b68f6ba2fd0357efbe70dc68ca63ddc4babc29a5ec2c159fb"
+    },
+    {
+      "path": "inspect-a-missing-bilingual.mjs",
+      "bytes": 1142,
+      "sha256": "2ed8fdb5f1289fd0634a044101a56f86d91f3ce4af0712ee2c7ae2c90bfc4719"
+    },
+    {
+      "path": "inspect-b-ledger.mjs",
+      "bytes": 451,
+      "sha256": "35a25dc10c60ca5a139640fafc8316166c91d9175a39a9e37139fe8229a61720"
+    },
+    {
+      "path": "inspect-b-missing-bilingual.mjs",
+      "bytes": 933,
+      "sha256": "395fca7eced3e48b3f0dad83ccdcc4886c2ad44d1234d68a9ec9eaa16a9c5d91"
+    },
+    {
+      "path": "inspect-c-ext-vocab.mjs",
+      "bytes": 974,
+      "sha256": "ec119b2a90b7be110209a8d46514b3a6f1009112bfe070cbf74fa845e764aabe"
+    },
+    {
+      "path": "inspect-dentist-1-4.mjs",
+      "bytes": 367,
+      "sha256": "9b85785302ca5783d41baacad40ec767239e6fa2e965e6004e2d86c877febf75"
+    },
+    {
+      "path": "inspect-mall-scenes.mjs",
+      "bytes": 313,
+      "sha256": "f18b1caf025cabad0935df4a31ebbbd5fd8512157bb38809cf5477537227d96f"
+    },
+    {
+      "path": "inspect-middle-material.mjs",
+      "bytes": 659,
+      "sha256": "e6e88043f21b9f8d6c7043005a76b8d922a06d4c571f7477aa4e5d11aee8bdc9"
+    },
+    {
+      "path": "inspect-section-b-scenes.mjs",
+      "bytes": 661,
+      "sha256": "0c03fe541b528a2cf7b960e72efa3755de3d640a31485a5e81549604373f51af"
+    },
+    {
+      "path": "inspect-supermarket-missing.mjs",
+      "bytes": 511,
+      "sha256": "2a9e036db0490cd7c59a8f1b1c2520d763568972fae98d69d8365a6ce411f08e"
+    },
+    {
+      "path": "inspect-unapproved-summary.mjs",
+      "bytes": 563,
+      "sha256": "588d7e15cbcca70f5e64ca9f01db9179dc458985e7e57cd00c8e7fb65d946bfd"
+    },
+    {
+      "path": "inspect-unit-lexicon.mjs",
+      "bytes": 810,
+      "sha256": "c30892ea6a6495d54dc8f82991d162c206444871388810079ccdca57aa669be9"
+    },
+    {
+      "path": "inspect-unit-scenes.mjs",
+      "bytes": 626,
+      "sha256": "033dbfaa78a0d06b02f4d6d5b8f0284da2bcb29b95a0d349fe4e660b0cf9c2eb"
+    },
+    {
+      "path": "legal-authored.mjs",
+      "bytes": 19489,
+      "sha256": "b117ef2f685c854c67b01b794f575ea890d6bffa97d372497be06ff3b9dc3b63"
+    },
+    {
+      "path": "lint-full.log",
+      "bytes": 12,
+      "sha256": "cc5a0b39c7052d24c24888403c48018b4fcccc9d799f81be6c9c30c9e19c85fc"
+    },
+    {
+      "path": "middle-material-authored.mjs",
+      "bytes": 24850,
+      "sha256": "fa429bae1ed7b92077c6fa1b21257177b870d576d2a4b7c51080318a02efb71e"
+    },
+    {
+      "path": "middle-measure-authored.mjs",
+      "bytes": 19542,
+      "sha256": "9693d51bd141f0442b7825701adb55434f1862ffd957b55902407d7aac6f8a86"
+    },
+    {
+      "path": "middle-spatial-authored.mjs",
+      "bytes": 17229,
+      "sha256": "eef66fe915aba8836ac49b3443133c3f33a82adeed43d3270212625f68d386ae"
+    },
+    {
+      "path": "middle-sport-beach.mjs",
+      "bytes": 17349,
+      "sha256": "2b029c4b9bdf2a112c8025bed3e6e69acc3e320e8a32428b74e43a36c8eeb734"
+    },
+    {
+      "path": "newspaper-office-raw-items.json",
+      "bytes": 10267,
+      "sha256": "f59f73de5f37834a6f149b3b472be31c1e02323f7694a629f90fe8eb4d11fbc2"
+    },
+    {
+      "path": "next-batch-changes.json",
+      "bytes": 141,
+      "sha256": "496ef91e7ddcd42b562c011adc5c2c87802482647007521ea8d045e60f361fc7"
+    },
+    {
+      "path": "next-image-queue.json",
+      "bytes": 453255,
+      "sha256": "f6b1424046db1dbcf7c1c53380b80a15e9f1cc58cad0844ede6731fc51e3c40a"
+    },
+    {
+      "path": "parent-reviewed-refinements.mjs",
+      "bytes": 2164,
+      "sha256": "582c1eb1ab326ec64d53b57fbf8e9a47531d91a05e0b127ee0af475ff8c64c98"
+    },
+    {
+      "path": "park-raw.json",
+      "bytes": 8963,
+      "sha256": "dbcae41da7fb3cd85747e7a3050f02bf0861093394f3eb33fbcada776c1cf3e5"
+    },
+    {
+      "path": "patch-remaining-a.mjs",
+      "bytes": 6088,
+      "sha256": "c772a1a8f03acf4bd74d708d81a9a168bdb54a960fc6eb7502cdfe0aa493b1cc"
+    },
+    {
+      "path": "patch-saut.mjs",
+      "bytes": 568,
+      "sha256": "649b6a5e3e8d8a84fb5ee645b7b2aa1cf6176b9924b5bce1a263b3f20779d491"
+    },
+    {
+      "path": "playground-raw.json",
+      "bytes": 7332,
+      "sha256": "7f3aebb79d3500f86438636db862a1775890147a5e954fd7e1cad251f208ba36"
+    },
+    {
+      "path": "protected-issues.mjs",
+      "bytes": 736,
+      "sha256": "5c144a378c90484a772c1a0d2971dd5602b7573898871b5fcf75187cadf0b231"
+    },
+    {
+      "path": "protected-learning-contexts.mjs",
+      "bytes": 5699,
+      "sha256": "50bde5fc6715b0304c3f096ab30d0ed96719e20b8c712069675d9c4f104de139"
+    },
+    {
+      "path": "protected-scenes.json",
+      "bytes": 80048,
+      "sha256": "d530a333f282cab01c567e8ade5b178259e73841b29e712efb41e8d94af70f86"
+    },
+    {
+      "path": "protected.mjs",
+      "bytes": 900,
+      "sha256": "114fe909741c6fa31e1ee791968890ec0f5cad96c437bba2bcd8db640ee651fc"
+    },
+    {
+      "path": "readiness-after-next-batch.json",
+      "bytes": 675459,
+      "sha256": "fffba7b1f732690f0fc748c24f1705b1fb943478de02ff66f0037189a84447a7"
+    },
+    {
+      "path": "readiness-current.json",
+      "bytes": 535744,
+      "sha256": "b3644a77ee5866f5c874b83f5b5c7bb5b540c466938c1d9420145b7d91ef1e8d"
+    },
+    {
+      "path": "readiness-final.json",
+      "bytes": 669860,
+      "sha256": "00b0868a70801d9394b0e52c3d8c088bb3e7e2b4f78ce3bb85f3727819a7486d"
+    },
+    {
+      "path": "record-next-review.mjs",
+      "bytes": 5680,
+      "sha256": "7c6790ccdaf39a64b4dac77e9899eef8d5b3ad0c6e2a58ddd833ce869e7f16a2"
+    },
+    {
+      "path": "refresh-parent-after-coverage.mjs",
+      "bytes": 897,
+      "sha256": "b2b18c26b86432aa234f623dac018c86987c31b4c1569df12b8a7098586ad0da"
+    },
+    {
+      "path": "register-section-b-bus.mjs",
+      "bytes": 2357,
+      "sha256": "a66386fd2ea08b396b5b83d527dc52e2952f103b355119566544f72317614764"
+    },
+    {
+      "path": "register-section-b-car-wash.mjs",
+      "bytes": 2233,
+      "sha256": "85ff3bafc36a885099688c792f2544db65baa229a8d74f6686c61a78d842d8e8"
+    },
+    {
+      "path": "register-section-b-hotel.mjs",
+      "bytes": 2337,
+      "sha256": "3294805e84c131b6268332d7d169eb1de4f7b1a62fcab13641983671e9cf6daf"
+    },
+    {
+      "path": "register-section-b-laundry.mjs",
+      "bytes": 2240,
+      "sha256": "9db5e931db676e7527978bd2139ff2087c17dd993295716d10fc05033bdd1998"
+    },
+    {
+      "path": "register-section-b-library.mjs",
+      "bytes": 2707,
+      "sha256": "078c265fbdb883bf595ef399608b398dc3a11bdaf2683f84b41a309512388e4e"
+    },
+    {
+      "path": "register-section-b-music.mjs",
+      "bytes": 2462,
+      "sha256": "8731fd2a39eacdf396b844596a817316caac6b0b37cd57e8f968a920c6ec6f09"
+    },
+    {
+      "path": "register-section-b-photo.mjs",
+      "bytes": 2986,
+      "sha256": "240ac618e466c8ee1069611457cb196b2f593867a9c80cd336c6e53bdb79e462"
+    },
+    {
+      "path": "register-section-b-subway.mjs",
+      "bytes": 2611,
+      "sha256": "d1e6fbfb027555545a64bf1d0cd3992ecd3131ec1e2def20ff740e7f77c33686"
+    },
+    {
+      "path": "repair-c-definitions.mjs",
+      "bytes": 20354,
+      "sha256": "2b6179b04adeb95be29f1a063865f87d823dfc20a17c83259e324e821661a8a1"
+    },
+    {
+      "path": "repair-section-b-anatomy-phrases.mjs",
+      "bytes": 3926,
+      "sha256": "4ecf4122dca6a15e555573825d66017f712137415ba46f1ccff4ab492c2f6ed8"
+    },
+    {
+      "path": "repair-section-b-dental-eye.mjs",
+      "bytes": 5823,
+      "sha256": "35392190d12f5d30621260ae850e7be7a391915bdf26e880d469a962c4040782"
+    },
+    {
+      "path": "repair-section-b-other-phrases.mjs",
+      "bytes": 15225,
+      "sha256": "25df3252bfed138c078bb0d27e29663612d92022002c7475465c0ca52b76d8c3"
+    },
+    {
+      "path": "repair-section-b-reviewed-examples.mjs",
+      "bytes": 8937,
+      "sha256": "15b90ea60abb095aa0a82582812aef721a613c9c757d053bd7465032a0cb8e06"
+    },
+    {
+      "path": "repair-section-b-senses-phrases.mjs",
+      "bytes": 3898,
+      "sha256": "e32ddc8438f0091665a1b7ee7f3a565d1312d7cdad57eb09a9e4304afeace7c8"
+    },
+    {
+      "path": "repair-section-b-specialist-senses.mjs",
+      "bytes": 4398,
+      "sha256": "52d023db3087524787d17ff6a7d6477614934a3359eec8af77fc3575bc8e3d5b"
+    },
+    {
+      "path": "repair-section-b.mjs",
+      "bytes": 12574,
+      "sha256": "ac832fa7f6967a2e46413b744930d2889438baa46aaa82795a528de90a645a6d"
+    },
+    {
+      "path": "repair-section-c.mjs",
+      "bytes": 21659,
+      "sha256": "6ea12f97b99a94c60c5b53db4f9c1b501d1d2bf48078679e7d4a3782220a5835"
+    },
+    {
+      "path": "repair-senses.mjs",
+      "bytes": 5706,
+      "sha256": "d2559ee0d882fa6868f249ba66518695f4c416fa09c98569a817fe349c2d1523"
+    },
+    {
+      "path": "save-section-b-review.mjs",
+      "bytes": 27270,
+      "sha256": "996bf0bcd4e284836527f75300b3b64c1b2210f05581c42eea2f41fb32bd6be2"
+    },
+    {
+      "path": "section-b-context-check.log",
+      "bytes": 260,
+      "sha256": "3884cdadb240eef35e71ad8058988d41ef0b59614ce18ec3d5a6d4db397d04c7"
+    },
+    {
+      "path": "section-b-facial-format.log",
+      "bytes": 170,
+      "sha256": "a465ed7f3cac99043ab85aa1a0fadae81aec6e26b08c14e1dc24f2d304ae66e7"
+    },
+    {
+      "path": "section-b-feelings-format.log",
+      "bytes": 178,
+      "sha256": "7ecc5351d8b90ad9e1add497ff80bb3a54c862a0d3c2bffdcd08f2d1f09ff0ed"
+    },
+    {
+      "path": "section-b-files.json",
+      "bytes": 3596,
+      "sha256": "e12c29d57188a824016ab3eaca4323f89e1884fc61c1ca7553b7712426aeefc1"
+    },
+    {
+      "path": "section-b-format.log",
+      "bytes": 4643,
+      "sha256": "6dafd5036f34f6221ccf0386d91f82692a0f33f31192ca23b9d52162191442fd"
+    },
+    {
+      "path": "section-b-hospital-format.log",
+      "bytes": 162,
+      "sha256": "e97599a065f8891505d219cc19f3c6c80ee8f191f547a7843f015ed43594c808"
+    },
+    {
+      "path": "section-b-personality-format.log",
+      "bytes": 188,
+      "sha256": "9b599196ee1b0825d69924be5e7f9b798b725a8b48a8494a7c708b2b6b0d8b16"
+    },
+    {
+      "path": "section_a-active-units.json",
+      "bytes": 3254,
+      "sha256": "3f38bfd98a48bd518bd4791e64f8b4f320200b339dab48af5483387fd3e35065"
+    },
+    {
+      "path": "section_a-apply-number-contexts.mjs",
+      "bytes": 1269,
+      "sha256": "a87c0b44dbb40af4b590b3572df9631fb2365b268ae6f251bbca1abaaf143c17"
+    },
+    {
+      "path": "section_a-assessment-pass.mjs",
+      "bytes": 1041,
+      "sha256": "109ced333f57b83d913adf3a14a7b060f8338489eeeac9ef4b6ff116f75f99ee"
+    },
+    {
+      "path": "section_a-bathroom-lexicon.mjs",
+      "bytes": 8355,
+      "sha256": "4679fc514ecc49284872c20357443a302564b2f84d15493cdf859dc2f2490395"
+    },
+    {
+      "path": "section_a-bathroom-review.mjs",
+      "bytes": 5832,
+      "sha256": "c6bd9b2972450b354b8ea7e2dcdeaae112d670370121517ed51c7e6721746420"
+    },
+    {
+      "path": "section_a-bathroom-scenes.mjs",
+      "bytes": 7933,
+      "sha256": "6acffe1bae04e8915485e8772f9bab5d683b471558e0c6e6b5ea9df17d26ab30"
+    },
+    {
+      "path": "section_a-bedroom-lexicon.mjs",
+      "bytes": 6868,
+      "sha256": "fe4d726ab515aaab3a6bf2f4c4eab52e04dfc9386728da117f00a79268b5c94e"
+    },
+    {
+      "path": "section_a-bedroom-review.mjs",
+      "bytes": 6278,
+      "sha256": "ba89a6d8021fa85f06431488316f5f8662e6e4b9401bd78e7042e5ff80f7f39f"
+    },
+    {
+      "path": "section_a-bedroom-scenes.mjs",
+      "bytes": 6029,
+      "sha256": "3f9e70acd0c69492bcf58d8113a9bbb35f908bf3e61ecf390a52e3de11199c6b"
+    },
+    {
+      "path": "section_a-checkpoint.mjs",
+      "bytes": 2061,
+      "sha256": "d46e6fde402e1e829f7a8e4be50933125a50c8393d39846e603e7dbdd46ab78d"
+    },
+    {
+      "path": "section_a-classroom-lexicon.mjs",
+      "bytes": 9353,
+      "sha256": "e6c3eeb9ecb1cbc616b87c40cbaa3b278ad967b8a25de076eee294cb66771499"
+    },
+    {
+      "path": "section_a-classroom-review.mjs",
+      "bytes": 7430,
+      "sha256": "f3855dc6f68206611c1444b6df6d7c97df18a2f8e96a67fcf2bc824e2105848c"
+    },
+    {
+      "path": "section_a-classroom-scenes.mjs",
+      "bytes": 6547,
+      "sha256": "e9a48412ce77ef2eb5f6b4b7be150303d27e687808aeea5553dc309efa1226b4"
+    },
+    {
+      "path": "section_a-color-scenes.mjs",
+      "bytes": 4718,
+      "sha256": "800c47455e24a600af1862bf2ac312037509877b830e00934af4587b94ebb9be"
+    },
+    {
+      "path": "section_a-colors-review.mjs",
+      "bytes": 5610,
+      "sha256": "ad4a08a8f5284799a5ae58f82b91367b8ee7a0f5ecdcf19fbf1d9ace1ca2a532"
+    },
+    {
+      "path": "section_a-coverage-fixes.mjs",
+      "bytes": 8300,
+      "sha256": "40c77396196b7e63ee489b602ae1bfae61a1f5913478bc226febe7320e0ab724"
+    },
+    {
+      "path": "section_a-daily-review.mjs",
+      "bytes": 15434,
+      "sha256": "0996a624dd5071c7ce947e90e60b7fd3271b8f969d197758fc7c69a20e30f6df"
+    },
+    {
+      "path": "section_a-daily-scenes.mjs",
+      "bytes": 10056,
+      "sha256": "4e989c45cce07029078d0fe52bb27fae48299802d1e5b39790c97fd45ff7622d"
+    },
+    {
+      "path": "section_a-daily-tests.log",
+      "bytes": 2670,
+      "sha256": "d529fc43948e78fa5c635a82f1e089d8654077222dc2f45d2c9bddc2a487a826"
+    },
+    {
+      "path": "section_a-days-lexicon.mjs",
+      "bytes": 3585,
+      "sha256": "2f4519fde5f958753c12e1ab62849f6d4ea1c665725f0cbfa85bed95b77a4f91"
+    },
+    {
+      "path": "section_a-days-review.mjs",
+      "bytes": 5559,
+      "sha256": "795fcfab422085f747433806f111e2955581767d6026c0f9b58be3266bfabfcf"
+    },
+    {
+      "path": "section_a-days-scenes.mjs",
+      "bytes": 5286,
+      "sha256": "21e1f7633a790f912964879447bacbc71e33ce870cbef62fc2834c227757e136"
+    },
+    {
+      "path": "section_a-directions-review.mjs",
+      "bytes": 16454,
+      "sha256": "422ec06b3b79da2ba059a6f60468ef00e762553fdc2f8a6e4a1c4010a02bf39f"
+    },
+    {
+      "path": "section_a-emotion-contexts.mjs",
+      "bytes": 5049,
+      "sha256": "a4951270be12a7bda0a4fecdfe490a40270ea6a0c9a9da76c5292ef975833831"
+    },
+    {
+      "path": "section_a-emotions-review.mjs",
+      "bytes": 5798,
+      "sha256": "3369bde9a100f70d5c9a3b590d039a2cf7b417a43b0dfc150da7577be12ef04d"
+    },
+    {
+      "path": "section_a-extended-review.mjs",
+      "bytes": 16322,
+      "sha256": "8ae31e3592ba80bea46614ca327d5db976ec7dd07eb7b1bd95b57c60e7f62ae8"
+    },
+    {
+      "path": "section_a-family-review.mjs",
+      "bytes": 2474,
+      "sha256": "faea747b133dc0df5ecca110ed87d64207d958e74fe805dc5c96037c15d5a97d"
+    },
+    {
+      "path": "section_a-finish-family.mjs",
+      "bytes": 4380,
+      "sha256": "595f033a85bacd35f4716e713ffa8ac3210bddcab883f72881185bbc47c7e9c4"
+    },
+    {
+      "path": "section_a-finish-pet-vet-dictionaries.mjs",
+      "bytes": 5063,
+      "sha256": "3e71c02fda89b89463353b44c9cc08e1fd82b41813fd86225b0074daf83e9506"
+    },
+    {
+      "path": "section_a-finish-pet-vet-exercises.mjs",
+      "bytes": 4360,
+      "sha256": "d2772a09df090f7217829617f7a0df641216261b5070c2999c7d8fb7bf84401d"
+    },
+    {
+      "path": "section_a-finish-spatial.mjs",
+      "bytes": 5852,
+      "sha256": "d0b654535dbc85d670a2168bbed6ccf868fde0b83c06cadd277002bc1b736016"
+    },
+    {
+      "path": "section_a-foundation-scenes.mjs",
+      "bytes": 10603,
+      "sha256": "46c685e720e6c43b77d41bae903714bca569e76e79326195ca665ff9f59516bc"
+    },
+    {
+      "path": "section_a-foundations.mjs",
+      "bytes": 9980,
+      "sha256": "2698425c27703c4709daff7e57c01e16256719cbf47fc725f557aed02d9bd0f6"
+    },
+    {
+      "path": "section_a-fruit-lexicon.mjs",
+      "bytes": 3051,
+      "sha256": "c4db6f2595b3c56131ae8ae6f5f4685d48ab70cb8ff5e4d1f62c126aa203e907"
+    },
+    {
+      "path": "section_a-fruit-scenes.mjs",
+      "bytes": 5481,
+      "sha256": "7a7f7d4472f563b5434a061098b2ad813eeb82bc9d025872a03368b8eb2931fa"
+    },
+    {
+      "path": "section_a-fruits-review.mjs",
+      "bytes": 4768,
+      "sha256": "bf71e2f72c81a721e7b76c01fa0f63124d5d15546e5504718f3b206583898abf"
+    },
+    {
+      "path": "section_a-household-readings.mjs",
+      "bytes": 20103,
+      "sha256": "e435fa7fd579885ac9e54cb21066fa1cf2fb6486d1917e849ae103089af531da"
+    },
+    {
+      "path": "section_a-household-tests.log",
+      "bytes": 588,
+      "sha256": "bc902ae72f22a5fd62e47a32f26f6cde3cb2309915e4f946a03cfc0cd35b930b"
+    },
+    {
+      "path": "section_a-kitchen-lexicon.mjs",
+      "bytes": 8378,
+      "sha256": "215aa80419a9f117360bfc2091cb2e4d775fba8c8c0c0c31d4aac0f6dfaa41a5"
+    },
+    {
+      "path": "section_a-kitchen-review.mjs",
+      "bytes": 6489,
+      "sha256": "919380fe41883b0e44ee8a2269bb6bff1a0baada18eb18cf44aeb8ad11f99c7e"
+    },
+    {
+      "path": "section_a-kitchen-scenes.mjs",
+      "bytes": 7081,
+      "sha256": "9ead404d736feda2f2c094c2ec8e208b838282c386264eab4ff8fc36860715f8"
+    },
+    {
+      "path": "section_a-living-lexicon.mjs",
+      "bytes": 8712,
+      "sha256": "d3d5abf4b025aba2e70f2068e3435c5c82e7b81c9d535700a8e5e25ef978837c"
+    },
+    {
+      "path": "section_a-living-review.mjs",
+      "bytes": 6313,
+      "sha256": "f0aadc9f66b846ac63267752937cf4c8e86fcb4b803118ce16b8f763d60f7558"
+    },
+    {
+      "path": "section_a-living-scenes.mjs",
+      "bytes": 7646,
+      "sha256": "dc59f0ad1507e88516ced41c990ffd60abd649075113613bfdf99a83a52e6f33"
+    },
+    {
+      "path": "section_a-motion-family-tests.log",
+      "bytes": 1339,
+      "sha256": "7e7727e74bfd448edf454bc4aca9bfc2dce42f1951cef5131a32a665285730a7"
+    },
+    {
+      "path": "section_a-motion-review.mjs",
+      "bytes": 13894,
+      "sha256": "31a9d4faf96ac5cb4edcb873eaafe58177690359687ad213cbb2c4e92bff778b"
+    },
+    {
+      "path": "section_a-motion-scenes.mjs",
+      "bytes": 10724,
+      "sha256": "8587f1b06b4e7c5bb72b805bcf57b176eb62720006a7a47e955dbc86319bf062"
+    },
+    {
+      "path": "section_a-nature-readings.mjs",
+      "bytes": 11276,
+      "sha256": "6b877522f17360d9e021ef9e6c50a5ff10ba1d7cd3d05d50e459b2849bf35e68"
+    },
+    {
+      "path": "section_a-notes-update.mjs",
+      "bytes": 2332,
+      "sha256": "320371283fedb494bcfc45c623dbe5b111bb8f7fb47cb96e8f9f6c858d8daf96"
+    },
+    {
+      "path": "section_a-number-symbols.mjs",
+      "bytes": 2459,
+      "sha256": "d5496f5df16b8339688fadfb6006013f7c430ccad36e13cd40bb6ad525c0ea8a"
+    },
+    {
+      "path": "section_a-numbers-review.mjs",
+      "bytes": 6863,
+      "sha256": "40df58dc1fb67a77f277773028829b5ff68cd31f0068c944641bf067ccb4ee26"
+    },
+    {
+      "path": "section_a-pet-scenes.mjs",
+      "bytes": 11830,
+      "sha256": "09328fb34cf6e6b8f3dfbc285c3abff365983bdc3ac9f3b61a15fa63f34874a3"
+    },
+    {
+      "path": "section_a-pet-vet-lexicon.mjs",
+      "bytes": 10152,
+      "sha256": "d2957c87dee8ae8b9652822c842f6cb63a2b2eee29a3b5637e0b976c3b432727"
+    },
+    {
+      "path": "section_a-pet-vet-readings.mjs",
+      "bytes": 8175,
+      "sha256": "5f0f49c7a8cd4480b7c922bcb234fd4f19bf69b5c42e96a790f3c8e615bfe3c6"
+    },
+    {
+      "path": "section_a-pet-vet-review.mjs",
+      "bytes": 8180,
+      "sha256": "b8c6f2dab61f36bc34323003fdf24a262aefebf499476e688a0c6fc77599f492"
+    },
+    {
+      "path": "section_a-produce-content-recheck.log",
+      "bytes": 298,
+      "sha256": "8af53ee699254bae38743b5a87f4ae861ab36b7cf07708f223a6051b87c535a6"
+    },
+    {
+      "path": "section_a-produce-time-tests.log",
+      "bytes": 1571,
+      "sha256": "84342315a254ee3fdea06d460aff7f91b82101601139741b45a75b7c9ffe3672"
+    },
+    {
+      "path": "section_a-question-realign.mjs",
+      "bytes": 1896,
+      "sha256": "46e343a457af280961e1b11b6df9ad6895fc5929f6ec1fad7cb1bbf3499941c1"
+    },
+    {
+      "path": "section_a-reconcile-pet-arabic.mjs",
+      "bytes": 1356,
+      "sha256": "0f69b1efa07cdee7117297b558ccc46e709dc9bb2b4b5a13f5cedc4dc6b255af"
+    },
+    {
+      "path": "section_a-refresh-ledger.mjs",
+      "bytes": 1930,
+      "sha256": "bb2433b657714d5f923b1fcc8c11138958d058a604395db0a5aebabfb133d260"
+    },
+    {
+      "path": "section_a-save-ledger.mjs",
+      "bytes": 2201,
+      "sha256": "f07a6ee620a5cb57369de3a385445572e8ad4485632ddbc1c41220581a6604c8"
+    },
+    {
+      "path": "section_a-scene-writer.mjs",
+      "bytes": 1404,
+      "sha256": "b01b23b5ded3f109ae362be83af31bfd336c2abc28a060b104b3d3b5bb655a61"
+    },
+    {
+      "path": "section_a-shape-scenes.mjs",
+      "bytes": 6545,
+      "sha256": "29fa021c09b34de5a8e5f6a1e734ea05d11099021401aa2a580cf0417e13d169"
+    },
+    {
+      "path": "section_a-shapes-review.mjs",
+      "bytes": 6235,
+      "sha256": "f4f86f190fd282822cc2f921ea9765e7fe377f544a5bd4a607e9459307043d7c"
+    },
+    {
+      "path": "section_a-spatial-review.mjs",
+      "bytes": 2921,
+      "sha256": "9bdc9b2bc8fb3f71eabd7e410889411330da7c86ee641ddd664a47f160789f2b"
+    },
+    {
+      "path": "section_a-spatial-scenes.mjs",
+      "bytes": 5053,
+      "sha256": "05a148b77a9980a3671556e9faaf49fabfb47eb80837a3059c6c795a4e55c98c"
+    },
+    {
+      "path": "section_a-tests-checkpoint.log",
+      "bytes": 588,
+      "sha256": "1a2100f7694bf207e039571f996f060283341f14ff63275f1de0dba90966aab3"
+    },
+    {
+      "path": "section_a-tests-final.log",
+      "bytes": 1561,
+      "sha256": "3c9dd7b29082727ea27e5474d71921b2cdeebc7ab86e551d32ec1ddfb4579f3d"
+    },
+    {
+      "path": "section_a-tests.log",
+      "bytes": 1364,
+      "sha256": "ecb7c0f85698d21f9a18ca35a7ce2c1dab71d4b0013ca8ff5560002ac498fbb3"
+    },
+    {
+      "path": "section_a-time-lexicon.mjs",
+      "bytes": 3754,
+      "sha256": "2b9782769e5ce7c4b1936fb6b605a0bb61b7dc54dbe27af91d6e696bb46f644b"
+    },
+    {
+      "path": "section_a-time-review.mjs",
+      "bytes": 5040,
+      "sha256": "8349742ea34f0e4ca341a8dc865417e34b7007028ba27bb8ba30d0a7a273ba6c"
+    },
+    {
+      "path": "section_a-time-scenes.mjs",
+      "bytes": 5835,
+      "sha256": "1781ba9ab9bc8fa49326dcb45d3772294bdb53da2650f6fc2c6f1702a94b209a"
+    },
+    {
+      "path": "section_a-toys-review.mjs",
+      "bytes": 12963,
+      "sha256": "aa499f448ee386548465e7673ed6097a447b0004b04817c7279310815cf15f01"
+    },
+    {
+      "path": "section_a-transfer-repair.mjs",
+      "bytes": 661,
+      "sha256": "6b01557c36abb4c890780c2079f758b24e375e4f42b711f6455155f675e50687"
+    },
+    {
+      "path": "section_a-vegetable-lexicon.mjs",
+      "bytes": 4165,
+      "sha256": "a6e8c8fb712305a90d7eae3e98f64294af049a0cbef61f0410ea5986438c8c36"
+    },
+    {
+      "path": "section_a-vegetable-scenes.mjs",
+      "bytes": 6613,
+      "sha256": "07dba2b0f388d249223d38f7205c1c5fff508fb2b2232c8a6da097c67f4e406d"
+    },
+    {
+      "path": "section_a-vegetables-review.mjs",
+      "bytes": 4697,
+      "sha256": "6aa74364625d17a50baec005c8137efe92c9aa9c61146508e073163fd09bce4f"
+    },
+    {
+      "path": "section_a-vet-scenes.mjs",
+      "bytes": 7724,
+      "sha256": "4b87af277a024472d9e846054cae2218dcdb625607b4c3adc1d0542f78a2bfc6"
+    },
+    {
+      "path": "section_c-scoped-validation.json",
+      "bytes": 72,
+      "sha256": "36b4d5693868c5a3a0ed4b9016cdda14ae3047728fe57c2ee8fed841efa20118"
+    },
+    {
+      "path": "setup-a-bilingual.mjs",
+      "bytes": 18701,
+      "sha256": "51ad585bd8ae013aeedf2d72850e71c44c143021cffee79b4893d816e3043131"
+    },
+    {
+      "path": "setup-b-bilingual.mjs",
+      "bytes": 8383,
+      "sha256": "36ae205d9688206312203facaa0fc26211deefd6a486ef03d768fed0f80c3ae9"
+    },
+    {
+      "path": "setup-c-ext-bilingual.mjs",
+      "bytes": 13682,
+      "sha256": "816474c5847b9243614d683517b7b395f5d9bb54079721f8e31b4b4a074a51ba"
+    },
+    {
+      "path": "space-authored.mjs",
+      "bytes": 8648,
+      "sha256": "f9be661e4cd711be49ca77a6352dab58e489cb6fec1c45ad7260723cf8878614"
+    },
+    {
+      "path": "test-supermarket.mjs",
+      "bytes": 2740,
+      "sha256": "e5f8f978eeeb9a09cd15c45a491308d69d3ab45ded07cd8a6763617bbfcd0419"
+    },
+    {
+      "path": "tv-studio-raw-items.json",
+      "bytes": 10300,
+      "sha256": "4580bc69c9046564867f67ed74508f57a2ed06bfbb642eb3cac137d49a4cf231"
+    },
+    {
+      "path": "vitest-full.log",
+      "bytes": 280,
+      "sha256": "84aa7dfe59104722f13be1a14b59b2411e65cc72e7daafc1825dac317faa7c4f"
+    },
+    {
+      "path": "vitest.log",
+      "bytes": 11739,
+      "sha256": "0a31f094d55b03b5d8f824280a0adac260c367c20113404d0ef4a1da7bf1a895"
+    },
+    {
+      "path": "weather-station-raw.json",
+      "bytes": 8800,
+      "sha256": "fa71e1b8830aa1e3346fafde404dd1611c38c072cd2f9bc290e371b3c247c254"
+    },
+    {
+      "path": "wine-authored.mjs",
+      "bytes": 27176,
+      "sha256": "1da6ab35d94ddaedb5d22a19eb56f7e1ef70fc9fe864913302b5daac44e962b5"
+    },
+    {
+      "path": "section_a/ages-life-stages.before.json",
+      "bytes": 34890,
+      "sha256": "9621bcacdf7d6849786241696973d0846d65e33470ee5e5743ccb0818fdfb45b"
+    },
+    {
+      "path": "section_a/amusement-park.before.json",
+      "bytes": 51855,
+      "sha256": "af58405e5d7126193ef993307b028f58deace49508a845bc73e62812f7f06d59"
+    },
+    {
+      "path": "section_a/bakery.before.json",
+      "bytes": 49960,
+      "sha256": "7cc584a343923b1dfcba3cb2076858ec7ec0d55fa8be7c67e3a72ce0fed6b1c3"
+    },
+    {
+      "path": "section_a/basic-emotions.before.json",
+      "bytes": 23142,
+      "sha256": "d58108ff36e57ea02976822e47ecdb068b80723572ac141d01b17661bad2abf8"
+    },
+    {
+      "path": "section_a/bathroom.before.json",
+      "bytes": 51777,
+      "sha256": "498b06bb1e009ce29c9a29f9cfe09559d62521e9b4b472c2d3801704b01e8da9"
+    },
+    {
+      "path": "section_a/beach.before.json",
+      "bytes": 49979,
+      "sha256": "9e32b2640e60728ef2f2da7888fc3b0ebc11558e31c72941082ab0e31ff8ed3d"
+    },
+    {
+      "path": "section_a/bedroom.before.json",
+      "bytes": 33413,
+      "sha256": "7e402b03970fabc6d51e81a9c57bda02b182df5939306416c1d31ea44a33f331"
+    },
+    {
+      "path": "section_a/beverages.before.json",
+      "bytes": 36411,
+      "sha256": "11244fa5f7718a05d0f87ef62a4a1f5c8e33d38adb3b11a87df4f15529af0a8c"
+    },
+    {
+      "path": "section_a/classroom.before.json",
+      "bytes": 53311,
+      "sha256": "420f3e2669d9ee2a478df718171ac1e11bbd54e693d5e1c85025a0bb6fcfe36f"
+    },
+    {
+      "path": "section_a/coffee-shop.before.json",
+      "bytes": 41085,
+      "sha256": "16a6b7c138db32787d95b9dcb02c89a7fdf79845a91aae8c15612f698eb00811"
+    },
+    {
+      "path": "section_a/colors.before.json",
+      "bytes": 22195,
+      "sha256": "261188db03dc4da31e12d7e86554d986f14f949c9b60fbb126b3aeea6a0c952b"
+    },
+    {
+      "path": "section_a/communication-verbs.before.json",
+      "bytes": 37710,
+      "sha256": "e4a4ad7ea645472a5bb47f33a7e424159a00b59346e61507b89f8a4f0c68cba1"
+    },
+    {
+      "path": "section_a/community-center.before.json",
+      "bytes": 43107,
+      "sha256": "29c842da6d54f8314cf7221e25768929151bc9517bbf15fcc25aa9e2f7a85645"
+    },
+    {
+      "path": "section_a/cooking-methods.before.json",
+      "bytes": 36959,
+      "sha256": "77fafd1deffda6709d77c98430e2f99dfcfca6c3e518770646febfc0c1760a7e"
+    },
+    {
+      "path": "section_a/daily-action-verbs.before.json",
+      "bytes": 31684,
+      "sha256": "d646c654a882db5e6ca22d13d9037ac01b334bb66e58f3bcd9b76b45c3978931"
+    },
+    {
+      "path": "section_a/daily-routines.before.json",
+      "bytes": 32742,
+      "sha256": "a020541db4c5c9d0ff91e4a7db053e5cc0145885cfd7d7ebe5111182014c6176"
+    },
+    {
+      "path": "section_a/days-months.before.json",
+      "bytes": 32453,
+      "sha256": "16446cab04151e610fc4a77da764c87e2ff3e8567f72431f28a53979623e61fe"
+    },
+    {
+      "path": "section_a/extended-family.before.json",
+      "bytes": 32022,
+      "sha256": "e99b95457e9789ce2c9fb9eb9b1366ead883254a41022e5673ea7b8c450c00d2"
+    },
+    {
+      "path": "section_a/family.before.json",
+      "bytes": 23579,
+      "sha256": "42a9d7a376be5c5245b6d64b9e58aff4d7bcbb1575f42abcd3f02180dce6a315"
+    },
+    {
+      "path": "section_a/farm.before.json",
+      "bytes": 59120,
+      "sha256": "79b5544a0fb890ce9999773f1a48156725d990f70af69552db20ce46010766be"
+    },
+    {
+      "path": "section_a/fruits.before.json",
+      "bytes": 40915,
+      "sha256": "edfbb91b77a0fb4b95c4b2975a4820eacc61c59ef685bb4e1a766f17245bd274"
+    },
+    {
+      "path": "section_a/garden.before.json",
+      "bytes": 48468,
+      "sha256": "99df0b95c647ddea9c1a032c83c91ec6e98d192fd855cd8cd4de257260ccb74c"
+    },
+    {
+      "path": "section_a/gas-station.before.json",
+      "bytes": 42354,
+      "sha256": "ba83f44e3633626edd4846e4ce7a65920c40d7427c34f6af7453ca3283011ebb"
+    },
+    {
+      "path": "section_a/giving-directions.before.json",
+      "bytes": 32100,
+      "sha256": "259321f1289d74f9ea7c1e7dfca4dfa38254321740b8204c9f600b1d12ad4f45"
+    },
+    {
+      "path": "section_a/grains-dairy.before.json",
+      "bytes": 35996,
+      "sha256": "65c720547b08655c40287ac96422de1b340063433a26ecf0a9eae19779a7a0d7"
+    },
+    {
+      "path": "section_a/hand-actions.before.json",
+      "bytes": 28233,
+      "sha256": "36bb65dca5943d5eb339a45e4443f1e582a2820587ca3a5d037d950dfa58fb02"
+    },
+    {
+      "path": "section_a/human-body-hands-and-feet.before.json",
+      "bytes": 36895,
+      "sha256": "92c5fca18bbff5af446caf053ff7e909a2b566830217e743980ee79cd02dd9ce"
+    },
+    {
+      "path": "section_a/human-body-head-and-face.before.json",
+      "bytes": 41892,
+      "sha256": "c69f794b49e5241ac1c2c04d871aedea74df8d393fc39fd7e1561244d722cc5c"
+    },
+    {
+      "path": "section_a/human-body-lower-body.before.json",
+      "bytes": 37016,
+      "sha256": "68fbed7f5ebcc7da8d270b85328bca45e258cb46652bacf754da8cf7a3a10d1b"
+    },
+    {
+      "path": "section_a/human-body-upper-body.before.json",
+      "bytes": 36687,
+      "sha256": "91fe618a948faee37fb06d5ce39a3bf9d7958618f9deefeb6adf25b36a571c06"
+    },
+    {
+      "path": "section_a/ice-cream-shop.before.json",
+      "bytes": 42241,
+      "sha256": "c76392e9accb6471cf0fce2b79a760490f5fe2c36c60cc175ca06abdb9b4ad46"
+    },
+    {
+      "path": "section_a/kitchen-utensils.before.json",
+      "bytes": 37751,
+      "sha256": "f2ae581912db53950dd943da03e61760f0c9b1bde28e3af4816469e0a8070924"
+    },
+    {
+      "path": "section_a/kitchen.before.json",
+      "bytes": 47309,
+      "sha256": "240b334a59504c79fef891624414b2e14fbb7de9d682cef8161e20c14add9bc1"
+    },
+    {
+      "path": "section_a/living-room.before.json",
+      "bytes": 49670,
+      "sha256": "5c9ab73b251d9aea92427d9418a9dce36f2c06b119b016803fbb096872848ea0"
+    },
+    {
+      "path": "section_a/maps-navigation.before.json",
+      "bytes": 30026,
+      "sha256": "5acae6677b8f6a7e43aed1af8e1ad33b0958f106035e91fa0a5f6364128132b0"
+    },
+    {
+      "path": "section_a/market.before.json",
+      "bytes": 54473,
+      "sha256": "2dda2cffcb87461349c12ed0fc986bf856d741573274786f7c4b840db18ffb04"
+    },
+    {
+      "path": "section_a/materials.before.json",
+      "bytes": 37974,
+      "sha256": "2ec53989878a3712246a2ea6495659ab14a0e43ca8e223c0ab5d2854a355bd2f"
+    },
+    {
+      "path": "section_a/measurements-units.before.json",
+      "bytes": 38036,
+      "sha256": "6b4705bbce70092fc34c66f294f06b8c3bbd10edb4ff41dc651dc795a9a2c1f6"
+    },
+    {
+      "path": "section_a/meat-seafood.before.json",
+      "bytes": 35901,
+      "sha256": "05e20f395e55e101caf466e394905051c95de4a5ae2d11b3e2169a1767faba8c"
+    },
+    {
+      "path": "section_a/money-currency.before.json",
+      "bytes": 36812,
+      "sha256": "497da0479be5e73fb6f7b80026c43eadcea5c816c5bb6faee15f28f825cd54bf"
+    },
+    {
+      "path": "section_a/movement-verbs.before.json",
+      "bytes": 31627,
+      "sha256": "c48d0c53c29ee2c91e74df965bd7a3f09acdcd9e8c2c0e75d24565ad1f0a6523"
+    },
+    {
+      "path": "section_a/numbers-counting.before.json",
+      "bytes": 24971,
+      "sha256": "f245c9e64e5ff9a7cde8c96225dc6bccf8ec6537a84a49d656be10ab0c42846e"
+    },
+    {
+      "path": "section_a/park.before.json",
+      "bytes": 49275,
+      "sha256": "a908c2c2c6321011545ef213f1ef6bb2603a10453526e60c133c1d8ec5aa52a9"
+    },
+    {
+      "path": "section_a/patterns-textures.before.json",
+      "bytes": 32060,
+      "sha256": "c76ba5a5fe8c7871aae7e364025dd673a50e8e8fe34f8bf66243d0f15d8553b3"
+    },
+    {
+      "path": "section_a/pet-shop.before.json",
+      "bytes": 77782,
+      "sha256": "2dd305a67d38f93f8592422e7d38dc37bfcb490e7a796b1362b66f16730ca395"
+    },
+    {
+      "path": "section_a/physical-appearance.before.json",
+      "bytes": 45226,
+      "sha256": "c554e80f0824913cb040478d810bab0aa8a23fbd9c64aba2bf8e661d72f48335"
+    },
+    {
+      "path": "section_a/pizza-shop.before.json",
+      "bytes": 41306,
+      "sha256": "7bd51e7eaf54d2e3f0d2232c82cd3946c12d6f902fe1672b2a60d5ab3d531e3e"
+    },
+    {
+      "path": "section_a/playground.before.json",
+      "bytes": 42242,
+      "sha256": "b4e983573e5e8cb67405b371b90b9578ad2710a6494e45f54ac6fb437071f46d"
+    },
+    {
+      "path": "section_a/police-station.before.json",
+      "bytes": 42937,
+      "sha256": "a5a34a2724a2bb727583c97d46f7df34c872e9f410399ad3afda0ae1c4e866b0"
+    },
+    {
+      "path": "section_a/prepositions-of-place.before.json",
+      "bytes": 25459,
+      "sha256": "4a596441ebb56577b4ab302d47353357f746e2bd16674d1cb1bd83705f559a0a"
+    },
+    {
+      "path": "section_a/restaurant.before.json",
+      "bytes": 55525,
+      "sha256": "cf104a5c59a17993537ba2e0c92327fee4fd92c0adfcf93cc7484e9baa393749"
+    },
+    {
+      "path": "section_a/seasonings-condiments.before.json",
+      "bytes": 38021,
+      "sha256": "4cd0ef5f0852311c03b0cf1435b9fbdce03a01a3fde764fe8f22e874659443be"
+    },
+    {
+      "path": "section_a/seasons-weather.before.json",
+      "bytes": 38718,
+      "sha256": "72e59d6e05a9d703c54c7a58abbc0472e83f88ad73f526f2f92256f5614b432a"
+    },
+    {
+      "path": "section_a/shades-tones.before.json",
+      "bytes": 38877,
+      "sha256": "1deeacc51e243a42795eee43569c076da1a603d25a696db6e99ef6c675904225"
+    },
+    {
+      "path": "section_a/shapes-geometry.before.json",
+      "bytes": 30392,
+      "sha256": "db50cf2e1533d2be211b10ebe47508ce963af0397caa31efa623e10bec6e07ca"
+    },
+    {
+      "path": "section_a/skin-hair.before.json",
+      "bytes": 38028,
+      "sha256": "71e37e50cc80c5eb1c52d0787a43e6ed7e0d7e94ad3574def8fe3b0d56e73123"
+    },
+    {
+      "path": "section_a/spatial-relations.before.json",
+      "bytes": 30227,
+      "sha256": "b2d2426787943dcd1bf8fbf1fe9de8a306510412447b6a8c0955dfd80547c337"
+    },
+    {
+      "path": "section_a/sports-center.before.json",
+      "bytes": 51341,
+      "sha256": "cb91ca1fcb98dd46a396c47ea90a16b92abf0aea55adc54a64e823201932404f"
+    },
+    {
+      "path": "section_a/sports-equipment.before.json",
+      "bytes": 38941,
+      "sha256": "c2d5afac498ec8f4577d230233472462c47e448bd3ef9c3fe5a91ca7509a37dc"
+    },
+    {
+      "path": "section_a/supermarket.before.json",
+      "bytes": 294273,
+      "sha256": "e38086559353395f1ece88038dfc0c4346393bfe2d937001f7e285081c0b349d"
+    },
+    {
+      "path": "section_a/telling-time.before.json",
+      "bytes": 32465,
+      "sha256": "9276ea1b73eac0eabe1fdb30340cd6fbf54f8565e086c0c5c2088745a0c5d1bb"
+    },
+    {
+      "path": "section_a/toys-games.before.json",
+      "bytes": 25710,
+      "sha256": "6987b6dc4f8aa0bc3e5467677473b5d16ec626fa7db37f922648a7d804844cc7"
+    },
+    {
+      "path": "section_a/vegetables.before.json",
+      "bytes": 45699,
+      "sha256": "1b874dbb7dca8d0bd705df2bf49a7199b7a2591fd1eb757cedfba40766ba1c0a"
+    },
+    {
+      "path": "section_a/vet-clinic.before.json",
+      "bytes": 41759,
+      "sha256": "a76269fbd7bdff342f1e6f2c5aece039cc76ee353e63e094e5125d7c87e39270"
+    },
+    {
+      "path": "section_a/weather-station.before.json",
+      "bytes": 52626,
+      "sha256": "7461fadfc45ecf6c3a17613488afb6329c3ddabcdf6b3e362e3cce1f6a816d9c"
+    }
+  ]
+}

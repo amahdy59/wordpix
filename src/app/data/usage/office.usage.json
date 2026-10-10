@@ -30,7 +30,7 @@
       "مكتب",
       "كرسي مكتب",
       "خزانة ملفات",
-      "رف الكتب / مكتبة حائطية",
+      "رف كتب",
       "حجرة عمل مقسمة",
       "مكتب للوقوف",
       "طاولة اجتماعات",
@@ -47,129 +47,112 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "92-122 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Desk", "Office Chair", "Filing Cabinet", "Bookshelf"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.",
+          "scenario": "On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Desk", "Office Chair", "Filing Cabinet"],
-            "expectedAnswer": "Desk"
+            "question": "Where does Hana store the signed paper records?",
+            "options": ["Filing Cabinet", "Desk", "Office Chair"],
+            "expectedAnswer": "Filing Cabinet"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Desk as the central item; include Desk, Office Chair, and Filing Cabinet naturally where visually appropriate, but make the real-world use of Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Filing Cabinet in a office context. Use the written scenario as the source of meaning: On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cubicle", "Standing Desk", "Conference Table", "Whiteboard"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.",
+          "scenario": "The tour includes a Cubicle, Standing Desk, and Conference Table. At the planning area, the team writes an erasable outline on a Whiteboard.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Cubicle", "Standing Desk", "Conference Table"],
-            "expectedAnswer": "Cubicle"
+            "question": "On what surface does the team write its erasable outline?",
+            "options": ["Whiteboard", "Cubicle", "Standing Desk"],
+            "expectedAnswer": "Whiteboard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Cubicle as the central item; include Cubicle, Standing Desk, and Conference Table naturally where visually appropriate, but make the real-world use of Cubicle the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Whiteboard in a office context. Use the written scenario as the source of meaning: The tour includes a Cubicle, Standing Desk, and Conference Table. At the planning area, the team writes an erasable outline on a Whiteboard. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Bulletin Board", "Partition", "Computer", "Monitor"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.",
+          "scenario": "A Bulletin Board holds staff notices. A Partition separates two work areas. At her Computer, Hana uses a Monitor to view the documents.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Bulletin Board", "Partition", "Computer"],
-            "expectedAnswer": "Bulletin Board"
+            "question": "Which feature separates the two work areas?",
+            "options": ["Partition", "Bulletin Board", "Computer"],
+            "expectedAnswer": "Partition"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Bulletin Board as the central item; include Bulletin Board, Partition, and Computer naturally where visually appropriate, but make the real-world use of Bulletin Board the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Partition in a office context. Use the written scenario as the source of meaning: A Bulletin Board holds staff notices. A Partition separates two work areas. At her Computer, Hana uses a Monitor to view the documents. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Keyboard", "Mouse", "Printer"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.",
+          "scenario": "Hana enters text with the Keyboard and moves the pointer with the Mouse. She then sends the finished document to the Printer for a paper copy.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Keyboard", "Mouse", "Printer"],
-            "expectedAnswer": "Keyboard"
+            "question": "Which device produces the paper copy?",
+            "options": ["Printer", "Keyboard", "Mouse"],
+            "expectedAnswer": "Printer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Keyboard as the central item; include Keyboard, Mouse, and Printer naturally where visually appropriate, but make the real-world use of Keyboard the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Printer in a office context. Use the written scenario as the source of meaning: Hana enters text with the Keyboard and moves the pointer with the Mouse. She then sends the finished document to the Printer for a paper copy. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Office",
-      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Desk, Office Chair, Filing Cabinet, and Bookshelf. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Cubicle, Standing Desk, Conference Table, and Whiteboard. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Bulletin Board, Partition, Computer, and Monitor. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Keyboard, Mouse, and Printer. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Office: A visitor’s questions",
+      "text": "On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers. The tour includes a Cubicle, Standing Desk, and Conference Table. At the planning area, the team writes an erasable outline on a Whiteboard. A Bulletin Board holds staff notices. A Partition separates two work areas. At her Computer, Hana uses a Monitor to view the documents. Hana enters text with the Keyboard and moves the pointer with the Mouse. She then sends the finished document to the Printer for a paper copy.",
+      "imageBrief": "One uncluttered office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Desk, Office Chair, Filing Cabinet, and Bookshelf and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Desk",
+        "prompt": "On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers.\nWhere does Hana store the signed paper records?",
+        "answer": "Filing Cabinet",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cubicle, Standing Desk, Conference Table, and Whiteboard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Cubicle",
+        "prompt": "The tour includes a Cubicle, Standing Desk, and Conference Table. At the planning area, the team writes an erasable outline on a Whiteboard.\nOn what surface does the team write its erasable outline?",
+        "answer": "Whiteboard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bulletin Board, Partition, Computer, and Monitor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Bulletin Board",
+        "prompt": "A Bulletin Board holds staff notices. A Partition separates two work areas. At her Computer, Hana uses a Monitor to view the documents.\nWhich feature separates the two work areas?",
+        "answer": "Partition",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Keyboard, Mouse, and Printer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Keyboard",
+        "prompt": "Hana enters text with the Keyboard and moves the pointer with the Mouse. She then sends the finished document to the Printer for a paper copy.\nWhich device produces the paper copy?",
+        "answer": "Printer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers. The tour includes a Cubicle, Standing Desk, and Conference Table. At the planning area, the team writes an erasable outline on a Whiteboard. A Bulletin Board holds staff notices. A Partition separates two work areas. At her Computer, Hana uses a Monitor to view the documents. Hana enters text with the Keyboard and moves the pointer with the Mouse. She then sends the finished document to the Printer for a paper copy.\nExplain the difference between Desk and Office Chair using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Desk"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “lever” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office task. Use Desk, Office Chair, Filing Cabinet, Bookshelf, Cubicle, Standing Desk, Conference Table, Whiteboard, Bulletin Board, Partition, Computer, Monitor, Keyboard, Mouse, and Printer in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Desk, Office Chair, Filing Cabinet, Bookshelf, Cubicle, Standing Desk, Conference Table, Whiteboard, Bulletin Board, Partition, Computer, Monitor, Keyboard, Mouse, Printer to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Office: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Desk and Office Chair, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: On her first day, Hana arranges a Desk and Office Chair for work. She puts reference books on a Bookshelf and signed paper records in a Filing Cabinet with drawers. Pause and answer: Where does Hana store the signed paper records?"
     },
     "spacedReview": "1 lesson(s) back: lever, spring from science-lab-4\n3 lesson(s) back: molecule, atom from science-lab-2\n7 lesson(s) back: Spectrograph, CCD Camera from observatory-3"
   },
@@ -206,7 +189,7 @@
       "آلة تمزيق الورق",
       "جهاز فاكس",
       "آلة تصوير مستندات",
-      "حاسوب محمول (لابتوب)",
+      "حاسوب محمول",
       "سماعة رأس بميكروفون",
       "كاميرا ويب",
       "موجّه",
@@ -214,136 +197,119 @@
       "ذاكرة USB",
       "قرص صلب خارجي",
       "محطة توصيل حاسوب محمول",
-      "نظام هاتف",
+      "نظام اتصالات هاتفية",
       "عقد اجتماعات عبر الفيديو"
     ],
     "usage": {
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "dialogue",
-      "readingTarget": "120-170 words",
+      "readingTarget": "113-143 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Scanner", "Projector", "Shredder", "Fax Machine"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.",
+          "scenario": "The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Scanner", "Projector", "Shredder"],
-            "expectedAnswer": "Scanner"
+            "question": "Which machine destroys paper approved for disposal?",
+            "options": ["Shredder", "Scanner", "Projector"],
+            "expectedAnswer": "Shredder"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Scanner as the central item; include Scanner, Projector, and Shredder naturally where visually appropriate, but make the real-world use of Scanner the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Shredder in a office context. Use the written scenario as the source of meaning: The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Copier", "Laptop", "Headset", "Webcam"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.",
+          "scenario": "Hana makes paper copies with the Copier, then joins a call on her Laptop. Her Headset carries sound, and her Webcam captures her video.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Copier", "Laptop", "Headset"],
-            "expectedAnswer": "Copier"
+            "question": "Which device captures Hana’s video?",
+            "options": ["Webcam", "Copier", "Laptop"],
+            "expectedAnswer": "Webcam"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Copier as the central item; include Copier, Laptop, and Headset naturally where visually appropriate, but make the real-world use of Copier the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Webcam in a office context. Use the written scenario as the source of meaning: Hana makes paper copies with the Copier, then joins a call on her Laptop. Her Headset carries sound, and her Webcam captures her video. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Router", "Server", "USB Drive", "External Hard Drive"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.",
+          "scenario": "The Router connects networks, and the Server provides shared services. A USB Drive carries one permitted file, while an External Hard Drive stores a larger authorized backup. The written account specifies the backup rather than appearance proving it.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Router", "Server", "USB Drive"],
-            "expectedAnswer": "Router"
+            "question": "Which separate storage device holds the larger backup in this account?",
+            "options": ["External Hard Drive", "Router", "Server"],
+            "expectedAnswer": "External Hard Drive"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Router as the central item; include Router, Server, and USB Drive naturally where visually appropriate, but make the real-world use of Router the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for External Hard Drive in a office context. Use the written scenario as the source of meaning: The Router connects networks, and the Server provides shared services. A USB Drive carries one permitted file, while an External Hard Drive stores a larger authorized backup. The written account specifies the backup rather than appearance proving it. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Docking Station", "Phone System", "Video Conferencing"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.",
+          "scenario": "Hana connects her Laptop to a Docking Station so several accessories connect at once. The Phone System handles calls, and Video Conferencing lets colleagues meet with sound and video.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
+            "question": "Which device connects several laptop accessories at once?",
             "options": ["Docking Station", "Phone System", "Video Conferencing"],
             "expectedAnswer": "Docking Station"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Docking Station as the main location; include Docking Station, Phone System, and Video Conferencing naturally where visually appropriate, but make the real-world use of Docking Station the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Docking Station in a office context. Use the written scenario as the source of meaning: Hana connects her Laptop to a Docking Station so several accessories connect at once. The Phone System handles calls, and Video Conferencing lets colleagues meet with sound and video. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Office",
-      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Scanner, Projector, Shredder, and Fax Machine. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Copier, Laptop, Headset, and Webcam. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Router, Server, USB Drive, and External Hard Drive. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Docking Station, Phone System, and Video Conferencing. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Office: Understanding the different roles",
+      "text": "The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task. Hana makes paper copies with the Copier, then joins a call on her Laptop. Her Headset carries sound, and her Webcam captures her video. The Router connects networks, and the Server provides shared services. A USB Drive carries one permitted file, while an External Hard Drive stores a larger authorized backup. The written account specifies the backup rather than appearance proving it. Hana connects her Laptop to a Docking Station so several accessories connect at once. The Phone System handles calls, and Video Conferencing lets colleagues meet with sound and video.",
+      "imageBrief": "One uncluttered office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scanner, Projector, Shredder, and Fax Machine and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Scanner",
+        "prompt": "The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task.\nWhich machine destroys paper approved for disposal?",
+        "answer": "Shredder",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Copier, Laptop, Headset, and Webcam and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Copier",
+        "prompt": "Hana makes paper copies with the Copier, then joins a call on her Laptop. Her Headset carries sound, and her Webcam captures her video.\nWhich device captures Hana’s video?",
+        "answer": "Webcam",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Router, Server, USB Drive, and External Hard Drive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Router",
+        "prompt": "The Router connects networks, and the Server provides shared services. A USB Drive carries one permitted file, while an External Hard Drive stores a larger authorized backup. The written account specifies the backup rather than appearance proving it.\nWhich separate storage device holds the larger backup in this account?",
+        "answer": "External Hard Drive",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Docking Station, Phone System, and Video Conferencing and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "Hana connects her Laptop to a Docking Station so several accessories connect at once. The Phone System handles calls, and Video Conferencing lets colleagues meet with sound and video.\nWhich device connects several laptop accessories at once?",
         "answer": "Docking Station",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task. Hana makes paper copies with the Copier, then joins a call on her Laptop. Her Headset carries sound, and her Webcam captures her video. The Router connects networks, and the Server provides shared services. A USB Drive carries one permitted file, while an External Hard Drive stores a larger authorized backup. The written account specifies the backup rather than appearance proving it. Hana connects her Laptop to a Docking Station so several accessories connect at once. The Phone System handles calls, and Video Conferencing lets colleagues meet with sound and video.\nExplain the difference between Scanner and Projector using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Scanner"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Desk” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office task. Use Scanner, Projector, Shredder, Fax Machine, Copier, Laptop, Headset, Webcam, Router, Server, USB Drive, External Hard Drive, Docking Station, Phone System, and Video Conferencing in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Scanner, Projector, Shredder, Fax Machine, Copier, Laptop, Headset, Webcam, Router, Server, USB Drive, External Hard Drive, Docking Station, Phone System, Video Conferencing to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Office: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Scanner and Projector, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: The records team uses a Scanner to create digital copies and a Projector to display a presentation. A Shredder destroys paper approved for disposal; a Fax Machine handles a separate document-transmission task. Pause and answer: Which machine destroys paper approved for disposal?"
     },
     "spacedReview": "1 lesson(s) back: Desk, Office Chair from office-1\n3 lesson(s) back: tissue, organ from science-lab-3\n7 lesson(s) back: Saturn, Uranus from observatory-4"
   },
@@ -378,7 +344,7 @@
       "استقبال",
       "ردهة",
       "غرفة استراحة",
-      "-",
+      "مطبخ",
       "غرفة اجتماع",
       "مكتب في زاوية المبنى",
       "مخطط مكتبي مفتوح",
@@ -395,129 +361,112 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "instructional-guide",
-      "readingTarget": "120-170 words",
+      "readingTarget": "108-138 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Reception", "Lobby", "Break Room", "Kitchen"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.",
+          "scenario": "A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Where does the visitor check in?",
             "options": ["Reception", "Lobby", "Break Room"],
             "expectedAnswer": "Reception"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult illustrating Reception through a realistic adult task; include Reception, Lobby, and Break Room naturally where visually appropriate, but make the real-world use of Reception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Reception in a office context. Use the written scenario as the source of meaning: A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Meeting Room", "Corner Office", "Open Floor Plan", "Mailroom"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.",
+          "scenario": "The host points out a Meeting Room, a Corner Office, and an Open Floor Plan. The visitor’s delivered parcel is waiting in the Mailroom, where post is handled.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Meeting Room", "Corner Office", "Open Floor Plan"],
-            "expectedAnswer": "Meeting Room"
+            "question": "Where is the visitor’s delivered parcel waiting?",
+            "options": ["Mailroom", "Meeting Room", "Corner Office"],
+            "expectedAnswer": "Mailroom"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Meeting Room as the main location; include Meeting Room, Corner Office, and Open Floor Plan naturally where visually appropriate, but make the real-world use of Meeting Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Mailroom in a office context. Use the written scenario as the source of meaning: The host points out a Meeting Room, a Corner Office, and an Open Floor Plan. The visitor’s delivered parcel is waiting in the Mailroom, where post is handled. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Storage Room", "Restroom", "Dress Code", "Happy Hour"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.",
+          "scenario": "The host identifies the Storage Room and Restroom, then explains the Dress Code in the staff guide. An optional Happy Hour event offers discounted drinks, with alcohol-free choices available. Attendance is not part of the visitor’s work task.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Storage Room", "Restroom", "Dress Code"],
-            "expectedAnswer": "Storage Room"
+            "question": "Which term names the workplace clothing rules?",
+            "options": ["Dress Code", "Storage Room", "Restroom"],
+            "expectedAnswer": "Dress Code"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Storage Room as the main location; include Storage Room, Restroom, and Dress Code naturally where visually appropriate, but make the real-world use of Storage Room the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Dress Code in a office context. Use the written scenario as the source of meaning: The host identifies the Storage Room and Restroom, then explains the Dress Code in the staff guide. An optional Happy Hour event offers discounted drinks, with alcohol-free choices available. Attendance is not part of the visitor’s work task. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Team Building", "Performance Review", "Onboarding"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.",
+          "scenario": "New colleagues attend Onboarding to learn their roles and systems. Team Building supports cooperation, while a Performance Review assesses work during a defined period.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
-            "options": ["Team Building", "Performance Review", "Onboarding"],
-            "expectedAnswer": "Team Building"
+            "question": "Which process introduces new colleagues to their roles and systems?",
+            "options": ["Onboarding", "Team Building", "Performance Review"],
+            "expectedAnswer": "Onboarding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult working with or speaking to the Team Building; include Team Building, Performance Review, and Onboarding naturally where visually appropriate, but make the real-world use of Team Building the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Onboarding in a office context. Use the written scenario as the source of meaning: New colleagues attend Onboarding to learn their roles and systems. Team Building supports cooperation, while a Performance Review assesses work during a defined period. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Office",
-      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Reception, Lobby, Break Room, and Kitchen. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Meeting Room, Corner Office, Open Floor Plan, and Mailroom. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Next, the colleague considers Storage Room, Restroom, Dress Code, and Happy Hour. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Team Building, Performance Review, and Onboarding. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Office: Comparing the equipment",
+      "text": "A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen. The host points out a Meeting Room, a Corner Office, and an Open Floor Plan. The visitor’s delivered parcel is waiting in the Mailroom, where post is handled. The host identifies the Storage Room and Restroom, then explains the Dress Code in the staff guide. An optional Happy Hour event offers discounted drinks, with alcohol-free choices available. Attendance is not part of the visitor’s work task. New colleagues attend Onboarding to learn their roles and systems. Team Building supports cooperation, while a Performance Review assesses work during a defined period.",
+      "imageBrief": "One uncluttered office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reception, Lobby, Break Room, and Kitchen and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen.\nWhere does the visitor check in?",
         "answer": "Reception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Meeting Room, Corner Office, Open Floor Plan, and Mailroom and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Meeting Room",
+        "prompt": "The host points out a Meeting Room, a Corner Office, and an Open Floor Plan. The visitor’s delivered parcel is waiting in the Mailroom, where post is handled.\nWhere is the visitor’s delivered parcel waiting?",
+        "answer": "Mailroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storage Room, Restroom, Dress Code, and Happy Hour and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
-        "answer": "Storage Room",
+        "prompt": "The host identifies the Storage Room and Restroom, then explains the Dress Code in the staff guide. An optional Happy Hour event offers discounted drinks, with alcohol-free choices available. Attendance is not part of the visitor’s work task.\nWhich term names the workplace clothing rules?",
+        "answer": "Dress Code",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Team Building, Performance Review, and Onboarding and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Team Building",
+        "prompt": "New colleagues attend Onboarding to learn their roles and systems. Team Building supports cooperation, while a Performance Review assesses work during a defined period.\nWhich process introduces new colleagues to their roles and systems?",
+        "answer": "Onboarding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen. The host points out a Meeting Room, a Corner Office, and an Open Floor Plan. The visitor’s delivered parcel is waiting in the Mailroom, where post is handled. The host identifies the Storage Room and Restroom, then explains the Dress Code in the staff guide. An optional Happy Hour event offers discounted drinks, with alcohol-free choices available. Attendance is not part of the visitor’s work task. New colleagues attend Onboarding to learn their roles and systems. Team Building supports cooperation, while a Performance Review assesses work during a defined period.\nExplain the difference between Reception and Lobby using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Reception"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Scanner” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office task. Use Reception, Lobby, Break Room, Kitchen, Meeting Room, Corner Office, Open Floor Plan, Mailroom, Storage Room, Restroom, Dress Code, Happy Hour, Team Building, Performance Review, and Onboarding in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Reception, Lobby, Break Room, Kitchen, Meeting Room, Corner Office, Open Floor Plan, Mailroom, Storage Room, Restroom, Dress Code, Happy Hour, Team Building, Performance Review, Onboarding to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Office: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Reception and Lobby, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: A visitor enters the Lobby and checks in at Reception. The host explains that staff eat or rest in the Break Room and prepare food in the Kitchen. Pause and answer: Where does the visitor check in?"
     },
     "spacedReview": "1 lesson(s) back: Scanner, Projector from office-2\n3 lesson(s) back: lever, spring from science-lab-4\n7 lesson(s) back: Telescope, Camera from observatory-5"
   },
@@ -549,91 +498,74 @@
       "goal": "Use precise, practical vocabulary to exchange workplace information and complete routine office tasks and explain relevant choices.",
       "canDoStatement": "Can understand detailed information and explain choices or procedures related to the office with reasonable fluency.",
       "textType": "workplace-email",
-      "readingTarget": "120-170 words",
+      "readingTarget": "60-79 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Remote Work", "Flex Hours", "Open Door Policy", "Water Cooler"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.",
+          "scenario": "Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Remote Work", "Flex Hours", "Open Door Policy"],
-            "expectedAnswer": "Remote Work"
+            "question": "Which arrangement allows agreed variations in starting and finishing times?",
+            "options": ["Flex Hours", "Remote Work", "Open Door Policy"],
+            "expectedAnswer": "Flex Hours"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or examining the Remote Work as the central item; include Remote Work, Flex Hours, and Open Door Policy naturally where visually appropriate, but make the real-world use of Remote Work the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Flex Hours in a office context. Use the written scenario as the source of meaning: Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Office Party"],
-          "scenario": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.",
+          "scenario": "The team organizes an optional Office Party to celebrate a completed project. Colleagues can join the social gathering after the workday, with refreshments including alcohol-free drinks.",
           "check": {
-            "question": "Which option identifies the main place or facility shown in the scene?",
-            "options": ["Office Party", "Remote Work", "Flex Hours"],
+            "question": "What workplace social gathering does the team organize?",
+            "options": ["Office Party"],
             "expectedAnswer": "Office Party"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a office. Show an adult using or approaching the Office Party as the main location; include Office Party, Remote Work, and Flex Hours naturally where visually appropriate, but make the real-world use of Office Party the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a office completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic vocabulary reference for Office Party in a office context. Use the written scenario as the source of meaning: The team organizes an optional Office Party to celebrate a completed project. Colleagues can join the social gathering after the workday, with refreshments including alcohol-free drinks. Show the relevant object or setting accurately; do not try to prove a job title, legal status, a fluid's chemical identity, or an invisible service from appearance. Prefer a human-free composition. No readable text, logos, overlays, arrows or answer highlighting. Keep non-target objects secondary. The question is answered from the supplied text, not an invented visual cue.",
+          "imageAlt": "Illustration supporting the written office situation; the accompanying text gives the details needed for the question."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: The Office",
-      "text": "At the office, a colleague handles a real-world responsibility and must make a clear decision. First, the colleague considers Remote Work, Flex Hours, Open Door Policy, and Water Cooler. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. Finally, the colleague considers Office Party. The choice depends on the role of each term in the context, so the colleague checks the details before moving on. By the end, the colleague can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B2-level visual for the reading about The Office. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Office: A guided walk",
+      "text": "Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water. The team organizes an optional Office Party to celebrate a completed project. Colleagues can join the social gathering after the workday, with refreshments including alcohol-free drinks.",
+      "imageBrief": "One uncluttered office setting supporting this written account. Show only details actually described, without invented procedures, readable text or implied official approval. The text supplies facts that cannot be seen."
     },
     "exercises": [
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Remote Work, Flex Hours, Open Door Policy, and Water Cooler and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Remote Work",
+        "prompt": "Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water.\nWhich arrangement allows agreed variations in starting and finishing times?",
+        "answer": "Flex Hours",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the office setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Office Party and choose the option that fits the situation.\nWhich option identifies the main place or facility shown in the scene?",
+        "prompt": "The team organizes an optional Office Party to celebrate a completed project. Colleagues can join the social gathering after the workday, with refreshments including alcohol-free drinks.\nWhat workplace social gathering does the team organize?",
         "answer": "Office Party",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Gist: What decision, issue, or consequence is central to the text?",
-        "answer": "The main case described"
+        "prompt": "Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water. The team organizes an optional Office Party to celebrate a completed project. Colleagues can join the social gathering after the workday, with refreshments including alcohol-free drinks.\nExplain the difference between Remote Work and Flex Hours using the account above.",
+        "answer": "Open response: distinguish the two terms in their stated context; do not infer properties absent from the text.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Precision: Which target term gives the most precise description early in the text?",
-        "answer": "Remote Work"
-      },
-      {
-        "prompt": "Consequence: What could change if one part of the situation is handled differently?",
-        "answer": "The outcome or response"
-      },
-      {
-        "prompt": "Inference: What can be inferred from the relationship between the ideas?",
-        "answer": "A context-supported inference"
-      },
-      {
-        "prompt": "Production: Summarize the case using three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Reception” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the office task. Use Remote Work, Flex Hours, Open Door Policy, Water Cooler, and Office Party in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Use the terms Remote Work, Flex Hours, Open Door Policy, Water Cooler, Office Party to write a short visitor's question-and-answer guide. State a correct meaning or role for each term, and ask a qualified staff member about any uncertain service or procedure.",
+        "answer": "Open response: each named term must have the correct contextual sense; explanations must not invent procedures or legal guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Office: In Context",
-      "idea": "45-70 seconds contextual scene in the workplace. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the workplace. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Office: A guided discussion",
+      "idea": "Show the setting and three details explicitly described in this lesson. Narrate the distinction between Remote Work and Flex Hours, then pause for the first scene question. Supply written or spoken facts for anything that appearance cannot establish.",
+      "scriptStarter": "Listen to the guide's account: Hana discusses Remote Work and Flex Hours with her manager. Flex Hours allow varying start and finish times within agreed limits. The Open Door Policy encourages questions; the Water Cooler provides drinking water. Pause and answer: Which arrangement allows agreed variations in starting and finishing times?"
     },
     "spacedReview": "1 lesson(s) back: Reception, Lobby from office-3\n3 lesson(s) back: Desk, Office Chair from office-1\n7 lesson(s) back: microscope, test tube from science-lab-1"
   }

@@ -32,148 +32,134 @@
       "بيزنطي",
       "رومانسكي",
       "قوطي",
-      "عصر النهضة",
-      "باروكي",
+      "عمارة عصر النهضة",
+      "عمارة باروكية",
       "كلاسيكي جديد",
       "طراز بوزار",
       "بالادي",
       "طراز الفن الجديد",
       "طراز آرت ديكو",
-      "باوهاوس",
+      "طراز باوهاوس",
       "حداثي",
       "بروتالي؛ من طراز العمارة الوحشية"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Greek", "Roman", "Byzantine", "Romanesque"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Greek, Roman, Byzantine, and Romanesque and choose the option that fits the situation.",
+          "scenario": "The seminar's documented first example is Greek architecture. The next three examples are classified separately as Roman, Byzantine and Romanesque; Lea does not assume that similar columns make them identical.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which tradition is assigned to the first example in the text?",
             "options": ["Greek", "Roman", "Byzantine"],
             "expectedAnswer": "Greek"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Greek as the central item; include Greek, Roman, and Byzantine naturally where visually appropriate, but make the real-world use of Greek the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A clearly documented-inspired classical Greek temple model with columns and pediment; no dating claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gothic", "Renaissance", "Baroque", "Neoclassical"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gothic, Renaissance, Baroque, and Neoclassical and choose the option that fits the situation.",
+          "scenario": "The seminar compares Gothic with Renaissance, Baroque and Neoclassical examples. The supplied description associates Gothic with pointed arches and ribbed vaults, while warning that one feature alone cannot date a building.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which label does the supplied description associate with pointed arches and ribbed vaults?",
             "options": ["Gothic", "Renaissance", "Baroque"],
             "expectedAnswer": "Gothic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Gothic as the central item; include Gothic, Renaissance, and Baroque naturally where visually appropriate, but make the real-world use of Gothic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A Gothic-inspired architectural interior model with clearly visible pointed arches and ribbed vaults. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Beaux-Arts", "Palladian", "Art Nouveau", "Art Deco"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaux-Arts, Palladian, Art Nouveau, and Art Deco and choose the option that fits the situation.",
+          "scenario": "A documented Beaux-Arts example is discussed before Palladian, Art Nouveau and Art Deco examples. Lea names the first label using the record rather than one ornament.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which label is first in this documented group?",
             "options": ["Beaux-Arts", "Palladian", "Art Nouveau"],
             "expectedAnswer": "Beaux-Arts"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Beaux-Arts as the central item; include Beaux-Arts, Palladian, and Art Nouveau naturally where visually appropriate, but make the real-world use of Beaux-Arts the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A Beaux-Arts-inspired symmetrical building model with an elaborate central entrance; context supplies classification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bauhaus", "Modernist", "Brutalist"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bauhaus, Modernist, and Brutalist and choose the option that fits the situation.",
+          "scenario": "The text identifies Bauhaus as the design school founded in 1919. It distinguishes this school from the broader Modernist label and from Brutalist architecture.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which school was founded in 1919?",
             "options": ["Bauhaus", "Modernist", "Brutalist"],
             "expectedAnswer": "Bauhaus"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Bauhaus as the central item; include Bauhaus, Modernist, and Brutalist naturally where visually appropriate, but make the real-world use of Bauhaus the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An unlettered geometric design-study model; the school and date are supplied by written evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Update: Architecture Styles",
-      "text": "At the architecture styles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Greek, Roman, Byzantine, and Romanesque. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Gothic, Renaissance, Baroque, and Neoclassical. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Beaux-Arts, Palladian, Art Nouveau, and Art Deco. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Bauhaus, Modernist, and Brutalist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Comparing historical labels",
+      "text": "In an architecture seminar, Lea compares historical labels rather than dates an unknown building by appearance alone. Greek and Roman traditions influenced later design. Byzantine, Romanesque and Gothic buildings developed distinct approaches, though buildings can combine features. Renaissance and Baroque are not interchangeable; Neoclassical refers to a later renewed use of classical forms. Beaux-Arts and Palladian describe other traditions of composition. Art Nouveau often uses flowing ornament, whereas Art Deco often uses stylized geometric decoration. The Bauhaus was a school founded in 1919; its influence extends beyond one building style. Modernist and Brutalist labels have different histories and emphases. Lea uses documented examples and asks which feature supports a comparison. One column, arch or concrete wall is insufficient to establish a complete historical classification.",
+      "imageBrief": "Support for Comparing historical labels. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Greek, Roman, Byzantine, and Romanesque and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The seminar's documented first example is Greek architecture. The next three examples are classified separately as Roman, Byzantine and Romanesque; Lea does not assume that similar columns make them identical.\nWhich tradition is assigned to the first example in the text?",
         "answer": "Greek",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Gothic, Renaissance, Baroque, and Neoclassical and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The seminar compares Gothic with Renaissance, Baroque and Neoclassical examples. The supplied description associates Gothic with pointed arches and ribbed vaults, while warning that one feature alone cannot date a building.\nWhich label does the supplied description associate with pointed arches and ribbed vaults?",
         "answer": "Gothic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Beaux-Arts, Palladian, Art Nouveau, and Art Deco and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A documented Beaux-Arts example is discussed before Palladian, Art Nouveau and Art Deco examples. Lea names the first label using the record rather than one ornament.\nWhich label is first in this documented group?",
         "answer": "Beaux-Arts",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Bauhaus, Modernist, and Brutalist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The text identifies Bauhaus as the design school founded in 1919. It distinguishes this school from the broader Modernist label and from Brutalist architecture.\nWhich school was founded in 1919?",
         "answer": "Bauhaus",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "In an architecture seminar, Lea compares historical labels rather than dates an unknown building by appearance alone. Greek and Roman traditions influenced later design. Byzantine, Romanesque and Gothic buildings developed distinct approaches, though buildings can combine features. Renaissance and Baroque are not interchangeable; Neoclassical refers to a later renewed use of classical forms. Beaux-Arts and Palladian describe other traditions of composition. Art Nouveau often uses flowing ornament, whereas Art Deco often uses stylized geometric decoration. The Bauhaus was a school founded in 1919; its influence extends beyond one building style. Modernist and Brutalist labels have different histories and emphases. Lea uses documented examples and asks which feature supports a comparison. One column, arch or concrete wall is insufficient to establish a complete historical classification.\nWhy does Lea ask for documented examples?",
+        "answer": "A single visible feature is insufficient for a complete historical classification.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Greek"
+        "prompt": "Explain the difference between “Greek” and “Roman” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Byzantine"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “General Contractor” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architecture styles task. Use Greek, Roman, Byzantine, Romanesque, Gothic, Renaissance, Baroque, Neoclassical, Beaux-Arts, Palladian, Art Nouveau, Art Deco, Bauhaus, Modernist, and Brutalist in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Greek” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The seminar's documented first example is Greek architecture. The next three examples are classified separately as Roman, Byzantine and Romanesque; Lea does not assume that similar columns make them identical.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Architecture Styles: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Comparing historical labels",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "In an architecture seminar, Lea compares historical labels rather than dates an unknown building by appearance alone. Greek and Roman traditions influenced later design. Byzantine, Romanesque and Gothic buildings developed distinct approaches, though buildings can combine features. Renaissance and Baroque are not interchangeable; Neoclassical refers to a later renewed use of classical forms. Beaux-Arts and Palladian describe other traditions of composition. Art Nouveau often uses flowing ornament, whereas Art Deco often uses stylized geometric decoration. The Bauhaus was a school founded in 1919; its influence extends beyond one building style. Modernist and Brutalist labels have different histories and emphases. Lea uses documented examples and asks which feature supports a comparison. One column, arch or concrete wall is insufficient to establish a complete historical classification. Ask: Why does Lea ask for documented examples?"
     },
     "spacedReview": "1 lesson(s) back: General Contractor, Foreman from building-construction-3\n3 lesson(s) back: Foundation, Column from building-construction-1\n7 lesson(s) back: Treaty, Convention from rights-regulations-3"
   },
@@ -206,26 +192,26 @@
     ],
     "targetWordsArabic": [
       "الطراز الدولي في العمارة",
-      "منتصف قرن حديث",
-      "ما بعد حداثي",
+      "حداثة منتصف القرن",
+      "عمارة ما بعد الحداثة",
       "تفكيكي",
-      "تقنية مرتفع",
-      "تبسيطي",
+      "عمارة التقنيات المتقدمة",
+      "عمارة تبسيطية",
       "مستدام",
-      "بارامتري",
+      "تصميم بارامتري",
       "عضوي",
       "محبّ للطبيعة",
       "مبنى ذكي",
       "إعادة استخدام تكيفي",
-      "صفر صافي",
-      "منزل سلبي",
+      "مبنى بصافي استهلاك طاقة صفري",
+      "منزل منخفض الطاقة وفق نهج باسيف هاوس",
       "وحداتي"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
@@ -235,128 +221,114 @@
             "Postmodern",
             "Deconstructivist"
           ],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare International Style, Mid-Century Modern, Postmodern, and Deconstructivist and choose the option that fits the situation.",
+          "scenario": "Lea's documented study begins with International Style, then compares Mid-Century Modern, Postmodern and Deconstructivist examples. The written record supplies the first movement's name.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which movement starts this documented study?",
             "options": ["International Style", "Mid-Century Modern", "Postmodern"],
             "expectedAnswer": "International Style"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the International Style as the central item; include International Style, Mid-Century Modern, and Postmodern naturally where visually appropriate, but make the real-world use of International Style the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An International-Style-inspired rectilinear building model with flat roof and plain unornamented surfaces. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["High-Tech", "Minimalist", "Sustainable", "Parametric"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare High-Tech, Minimalist, Sustainable, and Parametric and choose the option that fits the situation.",
+          "scenario": "The High-Tech example emphasizes exposed structural and technological expression. Minimalist concerns reduced elements, Sustainable addresses environmental effects, and Parametric concerns relationships between design parameters.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which label emphasizes structural and technological expression in this comparison?",
             "options": ["High-Tech", "Minimalist", "Sustainable"],
             "expectedAnswer": "High-Tech"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the High-Tech as the central item; include High-Tech, Minimalist, and Sustainable naturally where visually appropriate, but make the real-world use of High-Tech the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A High-Tech-inspired building model with visible structural frame and service elements; no performance certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Organic", "Biophilic", "Smart Building", "Adaptive Reuse"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organic, Biophilic, Smart Building, and Adaptive Reuse and choose the option that fits the situation.",
+          "scenario": "Organic design relates forms to context. Biophilic design connects occupants with nature; smart building concerns controls, and adaptive reuse gives an existing building a new use.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which approach relates forms to their context in this explanation?",
             "options": ["Organic", "Biophilic", "Smart Building"],
             "expectedAnswer": "Organic"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Organic as the central item; include Organic, Biophilic, and Smart Building naturally where visually appropriate, but make the real-world use of Organic the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. An Organic-inspired building model integrated with a simple landscape; written context supplies approach. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Net Zero", "Passive House", "Modular"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net Zero, Passive House, and Modular and choose the option that fits the situation.",
+          "scenario": "Net zero here refers to a specified annual energy balance. Passive House uses defined performance requirements, while modular construction uses separately made building units.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which expression refers to the annual energy balance in this lesson?",
             "options": ["Net Zero", "Passive House", "Modular"],
             "expectedAnswer": "Net Zero"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Net Zero as the central item; include Net Zero, Passive House, and Modular naturally where visually appropriate, but make the real-world use of Net Zero the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A building model with rooftop solar panels; the photograph cannot establish net-zero energy performance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Guide: Architecture Styles",
-      "text": "At the architecture styles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers International Style, Mid-Century Modern, Postmodern, and Deconstructivist. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers High-Tech, Minimalist, Sustainable, and Parametric. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Organic, Biophilic, Smart Building, and Adaptive Reuse. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Net Zero, Passive House, and Modular. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Separating styles from performance",
+      "text": "Lea notices that the next list mixes movements, design approaches and performance aims. International Style and Mid-Century Modern are historical labels. Postmodern work may refer to earlier forms, while Deconstructivist compositions may disrupt familiar geometry. High-Tech design emphasizes technological or structural expression; Minimalist design reduces elements. Sustainable design addresses wider environmental effects. Parametric design uses relationships between parameters, Organic design relates forms to context, and Biophilic design incorporates connections with nature. A smart building uses systems and controls. Adaptive reuse gives an existing building a new use. Net zero here concerns an annual energy balance under a specified definition; Passive House concerns a defined energy-performance approach. Modular construction uses separately made units. Lea asks for measurements and documentation before accepting a performance claim.",
+      "imageBrief": "Support for Separating styles from performance. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare International Style, Mid-Century Modern, Postmodern, and Deconstructivist and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Lea's documented study begins with International Style, then compares Mid-Century Modern, Postmodern and Deconstructivist examples. The written record supplies the first movement's name.\nWhich movement starts this documented study?",
         "answer": "International Style",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare High-Tech, Minimalist, Sustainable, and Parametric and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The High-Tech example emphasizes exposed structural and technological expression. Minimalist concerns reduced elements, Sustainable addresses environmental effects, and Parametric concerns relationships between design parameters.\nWhich label emphasizes structural and technological expression in this comparison?",
         "answer": "High-Tech",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Organic, Biophilic, Smart Building, and Adaptive Reuse and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Organic design relates forms to context. Biophilic design connects occupants with nature; smart building concerns controls, and adaptive reuse gives an existing building a new use.\nWhich approach relates forms to their context in this explanation?",
         "answer": "Organic",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net Zero, Passive House, and Modular and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Net zero here refers to a specified annual energy balance. Passive House uses defined performance requirements, while modular construction uses separately made building units.\nWhich expression refers to the annual energy balance in this lesson?",
         "answer": "Net Zero",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Lea notices that the next list mixes movements, design approaches and performance aims. International Style and Mid-Century Modern are historical labels. Postmodern work may refer to earlier forms, while Deconstructivist compositions may disrupt familiar geometry. High-Tech design emphasizes technological or structural expression; Minimalist design reduces elements. Sustainable design addresses wider environmental effects. Parametric design uses relationships between parameters, Organic design relates forms to context, and Biophilic design incorporates connections with nature. A smart building uses systems and controls. Adaptive reuse gives an existing building a new use. Net zero here concerns an annual energy balance under a specified definition; Passive House concerns a defined energy-performance approach. Modular construction uses separately made units. Lea asks for measurements and documentation before accepting a performance claim.\nWhy does Lea request measurements for a performance claim?",
+        "answer": "A building photograph cannot establish an annual energy balance or a performance standard.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "International Style"
+        "prompt": "Explain the difference between “International Style” and “Mid-Century Modern” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Postmodern"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Greek” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architecture styles task. Use International Style, Mid-Century Modern, Postmodern, Deconstructivist, High-Tech, Minimalist, Sustainable, Parametric, Organic, Biophilic, Smart Building, Adaptive Reuse, Net Zero, Passive House, and Modular in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “International Style” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Lea's documented study begins with International Style, then compares Mid-Century Modern, Postmodern and Deconstructivist examples. The written record supplies the first movement's name.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Architecture Styles: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Separating styles from performance",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Lea notices that the next list mixes movements, design approaches and performance aims. International Style and Mid-Century Modern are historical labels. Postmodern work may refer to earlier forms, while Deconstructivist compositions may disrupt familiar geometry. High-Tech design emphasizes technological or structural expression; Minimalist design reduces elements. Sustainable design addresses wider environmental effects. Parametric design uses relationships between parameters, Organic design relates forms to context, and Biophilic design incorporates connections with nature. A smart building uses systems and controls. Adaptive reuse gives an existing building a new use. Net zero here concerns an annual energy balance under a specified definition; Passive House concerns a defined energy-performance approach. Modular construction uses separately made units. Lea asks for measurements and documentation before accepting a performance claim. Ask: Why does Lea request measurements for a performance claim?"
     },
     "spacedReview": "1 lesson(s) back: Greek, Roman from architecture-styles-1\n3 lesson(s) back: Stone, Aluminum from building-construction-2\n7 lesson(s) back: Blueprint, Floor Plan from architect-s-studio-1"
   },
@@ -383,129 +355,115 @@
       "Minaret"
     ],
     "targetWordsArabic": [
-      "قُبّة",
-      "قوس",
-      "قبو معماري",
+      "قبة",
+      "قوس معماري",
+      "سقف معماري مقبّب",
       "كابولي",
       "واجهة",
-      "ردهة داخلية",
+      "ردهة داخلية مفتوحة",
       "نافذة سقفية",
       "رواق أعمدة",
       "رواق مدخل",
       "مئذنة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to discuss plans, design choices, and construction-related information and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the design or construction planning setting.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Compare stated functions, design approaches and supporting evidence without inferring certification from appearance.",
+      "canDoStatement": "Can explain distinctions between design terms using the supplied examples.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Dome", "Arch", "Vault", "Cantilever"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dome, Arch, Vault, and Cantilever and choose the option that fits the situation.",
+          "scenario": "Lea identifies the dome as the rounded covering. The arch spans an opening, the vault extends an arched covering, and the cantilever projects beyond its support.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which element is the rounded covering?",
             "options": ["Dome", "Arch", "Vault"],
             "expectedAnswer": "Dome"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Dome as the central item; include Dome, Arch, and Vault naturally where visually appropriate, but make the real-world use of Dome the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A standalone unlettered architectural dome model with rounded exterior and open cutaway edge. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Facade", "Atrium", "Skylight", "Colonnade"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Facade, Atrium, Skylight, and Colonnade and choose the option that fits the situation.",
+          "scenario": "Lea describes the facade as the exterior face. The atrium is the large interior space, the skylight is in the roof, and the colonnade is a row of columns.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word names the exterior face of the building?",
             "options": ["Facade", "Atrium", "Skylight"],
             "expectedAnswer": "Facade"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Facade as the central item; include Facade, Atrium, and Skylight naturally where visually appropriate, but make the real-world use of Facade the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. A clear frontal view of one plain building facade, no signs or incidental people. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Portico", "Minaret"],
-          "scenario": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portico, and Minaret and choose the option that fits the situation.",
+          "scenario": "The portico is a covered entrance supported by columns. A minaret is the mosque-associated tower, a different architectural element.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word names the column-supported covered entrance?",
             "options": ["Portico", "Minaret", "Dome"],
             "expectedAnswer": "Portico"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a design or construction planning setting. Show an adult using or examining the Portico as the central item; include Portico, Minaret, and Dome naturally where visually appropriate, but make the real-world use of Portico the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a design or construction planning setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written architectural design task. One freestanding model of a column-supported entrance portico with its roof visible. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Architecture Styles",
-      "text": "At the architecture styles, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Dome, Arch, Vault, and Cantilever. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Facade, Atrium, Skylight, and Colonnade. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Portico and Minaret. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Architecture Styles. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Describing architectural elements",
+      "text": "Lea describes a building's parts before debating its style. A dome covers a space with a rounded form. An arch spans an opening, while a vault covers a longer space with an arched structure. A cantilever projects beyond its support. The facade is an exterior face of a building, not its complete plan. An atrium is a large interior space, often open through several levels, and a skylight admits light through the roof. A colonnade is a sequence of columns. A portico is a covered entrance or porch supported by columns. A minaret is a tower associated with a mosque. Lea compares these visible forms while respecting their context. The words describe elements and functions; they do not establish a building's age, location or certification.",
+      "imageBrief": "Support for Describing architectural elements. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Dome, Arch, Vault, and Cantilever and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Lea identifies the dome as the rounded covering. The arch spans an opening, the vault extends an arched covering, and the cantilever projects beyond its support.\nWhich element is the rounded covering?",
         "answer": "Dome",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Facade, Atrium, Skylight, and Colonnade and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Lea describes the facade as the exterior face. The atrium is the large interior space, the skylight is in the roof, and the colonnade is a row of columns.\nWhich word names the exterior face of the building?",
         "answer": "Facade",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the architecture styles setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Portico, and Minaret and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The portico is a covered entrance supported by columns. A minaret is the mosque-associated tower, a different architectural element.\nWhich word names the column-supported covered entrance?",
         "answer": "Portico",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "Lea describes a building's parts before debating its style. A dome covers a space with a rounded form. An arch spans an opening, while a vault covers a longer space with an arched structure. A cantilever projects beyond its support. The facade is an exterior face of a building, not its complete plan. An atrium is a large interior space, often open through several levels, and a skylight admits light through the roof. A colonnade is a sequence of columns. A portico is a covered entrance or porch supported by columns. A minaret is a tower associated with a mosque. Lea compares these visible forms while respecting their context. The words describe elements and functions; they do not establish a building's age, location or certification.\nWhat can these words describe without establishing age?",
+        "answer": "Architectural elements and their stated functions.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Dome"
+        "prompt": "Explain the difference between “Dome” and “Arch” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Vault"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “International Style” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the architecture styles task. Use Dome, Arch, Vault, Cantilever, Facade, Atrium, Skylight, Colonnade, Portico, and Minaret in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Dome” in its supplied architectural design sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Lea identifies the dome as the rounded covering. The arch spans an opening, the vault extends an arched covering, and the cantilever projects beyond its support.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Architecture Styles: In Context",
-      "idea": "50-80 seconds contextual scene in the property or design setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the property or design setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Describing architectural elements",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Lea describes a building's parts before debating its style. A dome covers a space with a rounded form. An arch spans an opening, while a vault covers a longer space with an arched structure. A cantilever projects beyond its support. The facade is an exterior face of a building, not its complete plan. An atrium is a large interior space, often open through several levels, and a skylight admits light through the roof. A colonnade is a sequence of columns. A portico is a covered entrance or porch supported by columns. A minaret is a tower associated with a mosque. Lea compares these visible forms while respecting their context. The words describe elements and functions; they do not establish a building's age, location or certification. Ask: What can these words describe without establishing age?"
     },
     "spacedReview": "1 lesson(s) back: International Style, Mid-Century Modern from architecture-styles-2\n3 lesson(s) back: General Contractor, Foreman from building-construction-3\n7 lesson(s) back: Drafting Table, Tracing Paper from architect-s-studio-2"
   }

@@ -31,9 +31,9 @@
       "مفتاح الخريطة",
       "مقياس رسم",
       "وردة البوصلة",
-      "شبكة كهربائية",
+      "شبكة إحداثيات",
       "إحداثيات",
-      "خط عرض",
+      "دائرة عرض",
       "خط طول",
       "خط تساوي الارتفاع",
       "حد",
@@ -44,136 +44,141 @@
       "منظار ثنائي"
     ],
     "usage": {
-      "goal": "Learn to use common maps & navigation 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to maps & navigation.",
-      "textType": "dialogue",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Map", "Legend", "Scale"],
-          "scenario": "During a routine travel task, an adult compares Map, Legend, Scale. The option needed for the next step is Map.",
+          "scenario": "The map shows places. Its legend explains symbols, and its scale relates drawing distances to actual distances.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which item shows the places in this description?",
             "options": ["Map", "Legend", "Scale"],
             "expectedAnswer": "Map"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Map, Legend, Scale. The option needed for the next step is Map. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Map, Legend, Scale in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A simple unlettered map illustration with distinct routes and places; no fake destination labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Compass Rose", "Grid", "Coordinates"],
-          "scenario": "During a routine travel task, an adult compares Compass Rose, Grid, Coordinates. The option needed for the next step is Compass Rose.",
+          "scenario": "The compass rose shows directions. A grid is a pattern of lines; coordinates are numbers that locate a point.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which map feature shows directions?",
             "options": ["Compass Rose", "Grid", "Coordinates"],
             "expectedAnswer": "Compass Rose"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Compass Rose, Grid, Coordinates. The option needed for the next step is Compass Rose. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Compass Rose, Grid, Coordinates in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An unlettered map compass-rose symbol with clear directional points, no letters. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Latitude", "Longitude", "Contour"],
-          "scenario": "During a routine travel task, an adult compares Latitude, Longitude, Contour. The option needed for the next step is Latitude.",
+          "scenario": "Latitude describes angular position north or south of the equator. Longitude describes east or west position; a contour joins equal-height points.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term describes north or south position?",
             "options": ["Latitude", "Longitude", "Contour"],
             "expectedAnswer": "Latitude"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Latitude, Longitude, Contour. The option needed for the next step is Latitude. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Latitude, Longitude, Contour in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An unlettered globe diagram with equator and latitude circles, scientific illustration clearly identified. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Boundary", "GPS", "Compass"],
-          "scenario": "During a routine travel task, an adult compares Boundary, GPS, Compass. The option needed for the next step is Boundary.",
+          "scenario": "The boundary marks the area's edge. GPS uses satellite signals to estimate position; a compass helps find direction.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the area's edge?",
             "options": ["Boundary", "GPS", "Compass"],
             "expectedAnswer": "Boundary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Boundary, GPS, Compass. The option needed for the next step is Boundary. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Boundary, GPS, Compass in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A simple unlettered map area with a clear perimeter, no geopolitical claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Satellite", "Radar", "Binoculars"],
-          "scenario": "During a routine travel task, an adult compares Satellite, Radar, Binoculars. The option needed for the next step is Satellite.",
+          "scenario": "An artificial satellite is a machine in space. Radar uses radio waves for detection; binoculars help view distant objects.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which listed machine operates in space?",
             "options": ["Satellite", "Radar", "Binoculars"],
             "expectedAnswer": "Satellite"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Satellite, Radar, Binoculars. The option needed for the next step is Satellite. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Satellite, Radar, Binoculars in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A generic artificial satellite model with antenna and solar panels, no mission insignia. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Maps & Navigation: Mini Dialogue",
-      "text": "Maya is in a situation connected to maps & navigation. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing map, legend, and scale. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing compass rose, grid, and coordinates. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Maps & Navigation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a simple map key",
+      "text": "Mona takes a map to an information desk. The compass rose shows directions. Latitude helps describe north or south position. The boundary marks the edge of the area. A satellite helps the GPS system find a position. Mona asks what the symbols mean and reads the legend. She checks the scale before comparing distances. The map is a simplified guide, and the current route may need checking.",
+      "imageBrief": "Support for Reading a simple map key. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Map, Legend, Scale. The option needed for the next step is Map.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The map shows places. Its legend explains symbols, and its scale relates drawing distances to actual distances.\nWhich item shows the places in this description?",
         "answer": "Map",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Compass Rose, Grid, Coordinates. The option needed for the next step is Compass Rose.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The compass rose shows directions. A grid is a pattern of lines; coordinates are numbers that locate a point.\nWhich map feature shows directions?",
         "answer": "Compass Rose",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Latitude, Longitude, Contour. The option needed for the next step is Latitude.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Latitude describes angular position north or south of the equator. Longitude describes east or west position; a contour joins equal-height points.\nWhich term describes north or south position?",
         "answer": "Latitude",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Boundary, GPS, Compass. The option needed for the next step is Boundary.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The boundary marks the area's edge. GPS uses satellite signals to estimate position; a compass helps find direction.\nWhich term names the area's edge?",
         "answer": "Boundary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Satellite, Radar, Binoculars. The option needed for the next step is Satellite.\nWhich option is needed for the next step in the journey?",
+        "prompt": "An artificial satellite is a machine in space. Radar uses radio waves for detection; binoculars help view distant objects.\nWhich listed machine operates in space?",
         "answer": "Satellite",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Map"
+        "prompt": "Mona takes a map to an information desk. The compass rose shows directions. Latitude helps describe north or south position. The boundary marks the edge of the area. A satellite helps the GPS system find a position. Mona asks what the symbols mean and reads the legend. She checks the scale before comparing distances. The map is a simplified guide, and the current route may need checking.\nWhat does Mona check before comparing distances?",
+        "answer": "The map scale.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Scale"
+        "prompt": "Explain the difference between “Map” and “Legend” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Horizontal” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Map” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The map shows places. Its legend explains symbols, and its scale relates drawing distances to actual distances.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Maps & Navigation: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Reading a simple map key",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona takes a map to an information desk. The compass rose shows directions. Latitude helps describe north or south position. The boundary marks the edge of the area. A satellite helps the GPS system find a position. Mona asks what the symbols mean and reads the legend. She checks the scale before comparing distances. The map is a simplified guide, and the current route may need checking. Ask: What does Mona check before comparing distances?"
     },
     "spacedReview": "1 lesson(s) back: Horizontal, Vertical from spatial-relations-3\n3 lesson(s) back: Big, Small from spatial-relations-1\n7 lesson(s) back: Gas Pump, Nozzle from gas-station-1"
   },
@@ -206,7 +211,7 @@
     ],
     "targetWordsArabic": [
       "تلسكوب",
-      "مقياس ارتفاع",
+      "مقياس الارتفاع",
       "عداد سرعة",
       "عداد المسافة",
       "آلة السدس للملاحة",
@@ -222,136 +227,141 @@
       "نقطة تفتيش"
     ],
     "usage": {
-      "goal": "Learn to use common maps & navigation 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to maps & navigation.",
-      "textType": "workplace-email",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Telescope", "Altimeter", "Speedometer"],
-          "scenario": "During a routine travel task, an adult compares Telescope, Altimeter, Speedometer. The option needed for the next step is Telescope.",
+          "scenario": "A telescope helps view distant objects. An altimeter measures altitude relative to a reference; a speedometer shows vehicle speed.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which instrument helps view distant objects?",
             "options": ["Telescope", "Altimeter", "Speedometer"],
             "expectedAnswer": "Telescope"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Telescope, Altimeter, Speedometer. The option needed for the next step is Telescope. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Telescope, Altimeter, Speedometer in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One plain telescope on a tripod, no person or readable branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Odometer", "Sextant", "Route"],
-          "scenario": "During a routine travel task, an adult compares Odometer, Sextant, Route. The option needed for the next step is Odometer.",
+          "scenario": "The odometer records distance traveled. A sextant measures angles; route names a planned way to a place.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which instrument records distance traveled?",
             "options": ["Odometer", "Sextant", "Route"],
             "expectedAnswer": "Odometer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Odometer, Sextant, Route. The option needed for the next step is Odometer. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Odometer, Sextant, Route in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A blank unbranded instrument display in a model vehicle; the measured quantity comes from text. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Path", "Trail", "Shortcut"],
-          "scenario": "During a routine travel task, an adult compares Path, Trail, Shortcut. The option needed for the next step is Path.",
+          "scenario": "The path is the way Mona follows. A trail is a path through a natural area; a shortcut is shorter than the usual route.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which word does the note use for the way Mona follows?",
             "options": ["Path", "Trail", "Shortcut"],
             "expectedAnswer": "Path"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Path, Trail, Shortcut. The option needed for the next step is Path. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Path, Trail, Shortcut in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One clear walking path through an empty open area, no current-access claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Detour", "Destination", "Origin"],
-          "scenario": "During a routine travel task, an adult compares Detour, Destination, Origin. The option needed for the next step is Detour.",
+          "scenario": "The detour changes the usual route. Destination is the endpoint, and origin the starting place.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which word names the change from the usual route?",
             "options": ["Detour", "Destination", "Origin"],
             "expectedAnswer": "Detour"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Detour, Destination, Origin. The option needed for the next step is Detour. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Detour, Destination, Origin in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An unlettered route diagram showing an alternative path around an obstruction. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Waypoint", "Milestone", "Checkpoint"],
-          "scenario": "During a routine travel task, an adult compares Waypoint, Milestone, Checkpoint. The option needed for the next step is Waypoint.",
+          "scenario": "The waypoint is a specified reference location. A milestone marks road distance; a checkpoint is a place for a specified check or inspection.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which word names the specified reference location?",
             "options": ["Waypoint", "Milestone", "Checkpoint"],
             "expectedAnswer": "Waypoint"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Waypoint, Milestone, Checkpoint. The option needed for the next step is Waypoint. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Waypoint, Milestone, Checkpoint in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An unlettered map with one reference dot on a route; identity is supplied in writing. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Maps & Navigation: Simple Message",
-      "text": "Maya is in a situation connected to maps & navigation. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing telescope, altimeter, and speedometer. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing odometer, sextant, and route. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Maps & Navigation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing a route and reading instruments",
+      "text": "Mona reads a walking-route note. A telescope is on the viewing platform. The vehicle's odometer records distance traveled. The path leads toward the visitor center. A detour changes the usual route today. A waypoint marks a reference place along the route. Mona checks the note's date and asks staff about the change. She does not treat an old route image as proof that the path is open.",
+      "imageBrief": "Support for Choosing a route and reading instruments. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Telescope, Altimeter, Speedometer. The option needed for the next step is Telescope.\nWhich option is needed for the next step in the journey?",
+        "prompt": "A telescope helps view distant objects. An altimeter measures altitude relative to a reference; a speedometer shows vehicle speed.\nWhich instrument helps view distant objects?",
         "answer": "Telescope",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Odometer, Sextant, Route. The option needed for the next step is Odometer.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The odometer records distance traveled. A sextant measures angles; route names a planned way to a place.\nWhich instrument records distance traveled?",
         "answer": "Odometer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Path, Trail, Shortcut. The option needed for the next step is Path.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The path is the way Mona follows. A trail is a path through a natural area; a shortcut is shorter than the usual route.\nWhich word does the note use for the way Mona follows?",
         "answer": "Path",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Detour, Destination, Origin. The option needed for the next step is Detour.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The detour changes the usual route. Destination is the endpoint, and origin the starting place.\nWhich word names the change from the usual route?",
         "answer": "Detour",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Waypoint, Milestone, Checkpoint. The option needed for the next step is Waypoint.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The waypoint is a specified reference location. A milestone marks road distance; a checkpoint is a place for a specified check or inspection.\nWhich word names the specified reference location?",
         "answer": "Waypoint",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Telescope"
+        "prompt": "Mona reads a walking-route note. A telescope is on the viewing platform. The vehicle's odometer records distance traveled. The path leads toward the visitor center. A detour changes the usual route today. A waypoint marks a reference place along the route. Mona checks the note's date and asks staff about the change. She does not treat an old route image as proof that the path is open.\nWhy does Mona check the note’s date?",
+        "answer": "The route or detour may have changed.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Speedometer"
+        "prompt": "Explain the difference between “Telescope” and “Altimeter” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Map” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Telescope” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: A telescope helps view distant objects. An altimeter measures altitude relative to a reference; a speedometer shows vehicle speed.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Maps & Navigation: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing a route and reading instruments",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona reads a walking-route note. A telescope is on the viewing platform. The vehicle's odometer records distance traveled. The path leads toward the visitor center. A detour changes the usual route today. A waypoint marks a reference place along the route. Mona checks the note's date and asks staff about the change. She does not treat an old route image as proof that the path is open. Ask: Why does Mona check the note’s date?"
     },
     "spacedReview": "1 lesson(s) back: Map, Legend from maps-navigation-1\n3 lesson(s) back: Remote, Proximate from spatial-relations-2\n7 lesson(s) back: Chips, Gum from gas-station-2"
   },
@@ -379,7 +389,7 @@
     ],
     "targetWordsArabic": [
       "تطبيق ملاحة",
-      "دبوس",
+      "علامة موقع",
       "يبحث",
       "إرشادات الطريق",
       "حركة المرور",
@@ -390,117 +400,122 @@
       "مشاركة الموقع"
     ],
     "usage": {
-      "goal": "Learn to use common maps & navigation 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to maps & navigation.",
-      "textType": "service-notice",
-      "readingTarget": "45-70 words",
+      "goal": "Recognize the stated word in a short familiar description and ask for clarification.",
+      "canDoStatement": "Can identify a described item or action using the supplied words and context.",
+      "textType": "guided-description",
+      "readingTarget": "45-75 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Navigation App", "Pin", "Search"],
-          "scenario": "During a routine travel task, an adult compares Navigation App, Pin, Search. The option needed for the next step is Navigation App.",
+          "scenario": "The navigation app provides maps and routes. A pin marks a map location; search looks for a place or information.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which tool provides the maps and routes?",
             "options": ["Navigation App", "Pin", "Search"],
             "expectedAnswer": "Navigation App"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Navigation App, Pin, Search. The option needed for the next step is Navigation App. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Navigation App, Pin, Search in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. One plain phone with an unlettered map interface, no private location or branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Directions", "Traffic", "Estimated Time"],
-          "scenario": "During a routine travel task, an adult compares Directions, Traffic, Estimated Time. The option needed for the next step is Directions.",
+          "scenario": "Directions explain how to reach a place. Traffic means road vehicles; estimated time is an approximate journey duration.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which term names the route instructions?",
             "options": ["Directions", "Traffic", "Estimated Time"],
             "expectedAnswer": "Directions"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Directions, Traffic, Estimated Time. The option needed for the next step is Directions. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Directions, Traffic, Estimated Time in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A simple unlettered route illustration; written text supplies the instructions. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Reroute", "Satellite View", "Street View"],
-          "scenario": "During a routine travel task, an adult compares Reroute, Satellite View, Street View. The option needed for the next step is Reroute.",
+          "scenario": "Reroute means change the route. Satellite view uses overhead imagery; street view uses ground-level photographs.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which verb means change the route?",
             "options": ["Reroute", "Satellite View", "Street View"],
             "expectedAnswer": "Reroute"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Reroute, Satellite View, Street View. The option needed for the next step is Reroute. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Reroute, Satellite View, Street View in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. An unlettered map illustration with two distinct alternative routes, no current traffic claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Share Location"],
-          "scenario": "During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location.",
+          "scenario": "Share location means send a chosen or current position to someone. Mona checks the intended recipient first.",
           "check": {
-            "question": "Which option is needed for the next step in the journey?",
+            "question": "Which phrase names sending the position to someone?",
             "options": ["Share Location", "Navigation App", "Pin"],
             "expectedAnswer": "Share Location"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a maps & navigation context illustrating this situation: During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult maps & navigation scene showing lesson-related items or actions including Share Location in a natural setting."
+          "imageBrief": "Word-reference support for the written supported spatial and communication vocabulary task. A blank phone map illustration, no names, real coordinates or private location. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Maps & Navigation: Notice-Style Text",
-      "text": "Maya is in a situation connected to maps & navigation. She uses the new words to understand what she sees and what happens next. The traveler moves through the journey using or noticing navigation app, pin, and search. Each term marks a different part of the travel process. The traveler moves through the journey using or noticing directions, traffic, and estimated time. Each term marks a different part of the travel process.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about Maps & Navigation. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Clarifying a navigation-app task",
+      "text": "Mona opens a navigation app before she walks. She reads the directions and checks the route. Traffic may affect the estimated time. If the route changes, the app may reroute the journey. Mona can share location with a chosen contact, but she checks whom she is sending it to. She looks at the screen while stopped. A map view may be old and does not guarantee current access.",
+      "imageBrief": "Support for Clarifying a navigation-app task. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "During a routine travel task, an adult compares Navigation App, Pin, Search. The option needed for the next step is Navigation App.\nWhich option is needed for the next step in the journey?",
+        "prompt": "The navigation app provides maps and routes. A pin marks a map location; search looks for a place or information.\nWhich tool provides the maps and routes?",
         "answer": "Navigation App",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Directions, Traffic, Estimated Time. The option needed for the next step is Directions.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Directions explain how to reach a place. Traffic means road vehicles; estimated time is an approximate journey duration.\nWhich term names the route instructions?",
         "answer": "Directions",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Reroute, Satellite View, Street View. The option needed for the next step is Reroute.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Reroute means change the route. Satellite view uses overhead imagery; street view uses ground-level photographs.\nWhich verb means change the route?",
         "answer": "Reroute",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine travel task, an adult compares Share Location, Navigation App, Pin. The option needed for the next step is Share Location.\nWhich option is needed for the next step in the journey?",
+        "prompt": "Share location means send a chosen or current position to someone. Mona checks the intended recipient first.\nWhich phrase names sending the position to someone?",
         "answer": "Share Location",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Reading detail: Which target word is used first in the text?",
-        "answer": "Navigation App"
+        "prompt": "Mona opens a navigation app before she walks. She reads the directions and checks the route. Traffic may affect the estimated time. If the route changes, the app may reroute the journey. Mona can share location with a chosen contact, but she checks whom she is sending it to. She looks at the screen while stopped. A map view may be old and does not guarantee current access.\nWhat does Mona check before sharing location?",
+        "answer": "Whom she is sending it to.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Reading detail: Which other target word appears in the scene?",
-        "answer": "Search"
+        "prompt": "Explain the difference between “Navigation App” and “Pin” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Telescope” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Navigation App” in its supplied supported spatial and communication vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The navigation app provides maps and routes. A pin marks a map location; search looks for a place or information.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Maps & Navigation: In Context",
-      "idea": "30-45 seconds contextual scene in the travel setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the travel setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Clarifying a navigation-app task",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Mona opens a navigation app before she walks. She reads the directions and checks the route. Traffic may affect the estimated time. If the route changes, the app may reroute the journey. Mona can share location with a chosen contact, but she checks whom she is sending it to. She looks at the screen while stopped. A map view may be old and does not guarantee current access. Ask: What does Mona check before sharing location?"
     },
     "spacedReview": "1 lesson(s) back: Telescope, Altimeter from maps-navigation-2\n3 lesson(s) back: Horizontal, Vertical from spatial-relations-3\n7 lesson(s) back: Canopy, Parking Spot from gas-station-3"
   }

@@ -28,12 +28,12 @@
     ],
     "targetWordsArabic": [
       "فودكا",
-      "جين",
+      "جين؛ مشروب كحولي مقطّر",
       "روم",
       "تيكيلا",
       "ويسكي",
       "بوربون",
-      "سكوتش",
+      "ويسكي سكوتش",
       "براندي",
       "كونياك",
       "ميزكال",
@@ -44,136 +44,122 @@
       "غراند مارنييه"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "service-notice",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Vodka", "Gin", "Rum", "Tequila"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vodka, Gin, Rum, and Tequila and choose the option that fits the situation.",
+          "scenario": "The worksheet lists vodka before gin, rum and tequila. It identifies vodka as the first distilled-spirit category rather than a guaranteed flavor.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which category is listed first?",
             "options": ["Vodka", "Gin", "Rum"],
             "expectedAnswer": "Vodka"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Vodka as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A blank closed bottle; vodka identity cannot be established visually. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Whiskey", "Bourbon", "Scotch", "Brandy"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whiskey, Bourbon, Scotch, and Brandy and choose the option that fits the situation.",
+          "scenario": "Whiskey is the grain-spirit category. Bourbon and Scotch have more specific requirements; brandy concerns wine or fermented fruit products.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the broader grain-spirit category?",
             "options": ["Whiskey", "Bourbon", "Scotch"],
             "expectedAnswer": "Whiskey"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Whiskey as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A closed unlettered bottle; category requires the supplied product record. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cognac", "Mezcal", "Triple Sec", "Amaretto"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cognac, Mezcal, Triple Sec, and Amaretto and choose the option that fits the situation.",
+          "scenario": "Cognac is the protected geographical designation in this group. Mezcal is an agave spirit; triple sec and amaretto are liqueur descriptions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which listed name is the protected geographical designation?",
             "options": ["Cognac", "Mezcal", "Triple Sec"],
             "expectedAnswer": "Cognac"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cognac as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A neutral closed bottle; no invented geographical seal, brand or certification. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Kahlúa", "Baileys", "Grand Marnier"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kahlúa, Baileys, and Grand Marnier and choose the option that fits the situation.",
+          "scenario": "Kahlúa is a branded coffee-flavored liqueur name. Baileys and Grand Marnier are other brands, not alternative spellings of the same name.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which brand is identified as coffee-flavored?",
             "options": ["Kahlúa", "Baileys", "Grand Marnier"],
             "expectedAnswer": "Kahlúa"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Kahlúa as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A plain closed sample bottle; brand authenticity cannot be shown without forbidden branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Spirits & Liqueurs: Practical Information",
-      "text": "At the spirits & liqueurs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vodka, Gin, Rum, and Tequila. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whiskey, Bourbon, Scotch, and Brandy. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cognac, Mezcal, Triple Sec, and Amaretto. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Kahlúa, Baileys, and Grand Marnier. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Spirits & Liqueurs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Separating categories from brands",
+      "text": "A product-literacy worksheet distinguishes categories and branded names. Vodka is a distilled spirit; gin emphasizes juniper flavor, rum derives from sugarcane products, and tequila is an agave spirit under relevant rules. Whiskey concerns distilled grain products. Bourbon and Scotch have distinct product requirements; Scotch is produced in Scotland. Brandy comes from wine or fermented fruit products, while Cognac is a protected geographical designation. Mezcal is an agave spirit, not a cactus. Triple sec and amaretto describe liqueur types. Kahlúa, Baileys and Grand Marnier are branded names. The trainee checks the producer's information rather than infers identity from color or bottle shape. The lesson reads labels and categories without offering a purchase recommendation, serving instruction or claim that all products within a category taste alike.",
+      "imageBrief": "Support for Separating categories from brands. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vodka, Gin, Rum, and Tequila and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The worksheet lists vodka before gin, rum and tequila. It identifies vodka as the first distilled-spirit category rather than a guaranteed flavor.\nWhich category is listed first?",
         "answer": "Vodka",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whiskey, Bourbon, Scotch, and Brandy and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Whiskey is the grain-spirit category. Bourbon and Scotch have more specific requirements; brandy concerns wine or fermented fruit products.\nWhich term names the broader grain-spirit category?",
         "answer": "Whiskey",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cognac, Mezcal, Triple Sec, and Amaretto and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Cognac is the protected geographical designation in this group. Mezcal is an agave spirit; triple sec and amaretto are liqueur descriptions.\nWhich listed name is the protected geographical designation?",
         "answer": "Cognac",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Kahlúa, Baileys, and Grand Marnier and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Kahlúa is a branded coffee-flavored liqueur name. Baileys and Grand Marnier are other brands, not alternative spellings of the same name.\nWhich brand is identified as coffee-flavored?",
         "answer": "Kahlúa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "A product-literacy worksheet distinguishes categories and branded names. Vodka is a distilled spirit; gin emphasizes juniper flavor, rum derives from sugarcane products, and tequila is an agave spirit under relevant rules. Whiskey concerns distilled grain products. Bourbon and Scotch have distinct product requirements; Scotch is produced in Scotland. Brandy comes from wine or fermented fruit products, while Cognac is a protected geographical designation. Mezcal is an agave spirit, not a cactus. Triple sec and amaretto describe liqueur types. Kahlúa, Baileys and Grand Marnier are branded names. The trainee checks the producer's information rather than infers identity from color or bottle shape. The lesson reads labels and categories without offering a purchase recommendation, serving instruction or claim that all products within a category taste alike.\nWhy are bottle shape and color insufficient?",
+        "answer": "They do not establish product category, brand authenticity or geographical designation.",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Vodka"
+        "prompt": "Explain the difference between “Vodka” and “Gin” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Rum"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Bartender” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the spirits & liqueurs task. Use Vodka, Gin, Rum, Tequila, Whiskey, Bourbon, Scotch, Brandy, Cognac, Mezcal, Triple Sec, Amaretto, Kahlúa, Baileys, and Grand Marnier in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Vodka” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The worksheet lists vodka before gin, rum and tequila. It identifies vodka as the first distilled-spirit category rather than a guaranteed flavor.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spirits & Liqueurs: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from spirits & liqueurs in cultural or industry texts."
+      "title": "Separating categories from brands",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "A product-literacy worksheet distinguishes categories and branded names. Vodka is a distilled spirit; gin emphasizes juniper flavor, rum derives from sugarcane products, and tequila is an agave spirit under relevant rules. Whiskey concerns distilled grain products. Bourbon and Scotch have distinct product requirements; Scotch is produced in Scotland. Brandy comes from wine or fermented fruit products, while Cognac is a protected geographical designation. Mezcal is an agave spirit, not a cactus. Triple sec and amaretto describe liqueur types. Kahlúa, Baileys and Grand Marnier are branded names. The trainee checks the producer's information rather than infers identity from color or bottle shape. The lesson reads labels and categories without offering a purchase recommendation, serving instruction or claim that all products within a category taste alike. Ask: Why are bottle shape and color insufficient?"
     },
     "spacedReview": "1 lesson(s) back: Bartender, Barback from cocktail-bar-3\n3 lesson(s) back: Bar Counter, Bar Stool from cocktail-bar-1\n7 lesson(s) back: Main Course, Palate Cleanser from wine-tasting-4"
   },
@@ -210,148 +196,134 @@
       "أبيرول؛ مشروب كحولي فاتح للشهية",
       "درامبوي",
       "كوانترو",
-      "ماء منشط",
+      "ماء تونيك",
       "مياه غازية",
-      "جعة زنجبيل",
-      "كولا",
+      "مشروب زنجبيل",
+      "مشروب كولا",
       "عصير التوت البري",
-      "عصير برتقالي",
+      "عصير برتقال",
       "عصير ليمون أخضر",
       "شراب سكري بسيط",
       "شراب غرينادين",
       "مُرّات عطرية"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "workplace-email",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Chartreuse", "Campari", "Aperol", "Drambuie"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chartreuse, Campari, Aperol, and Drambuie and choose the option that fits the situation.",
+          "scenario": "Chartreuse is the first branded herbal-liqueur name in this list. Campari, Aperol and Drambuie are separate branded products.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which brand is listed first as the herbal liqueur?",
             "options": ["Chartreuse", "Campari", "Aperol"],
             "expectedAnswer": "Chartreuse"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Chartreuse as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A blank closed sample bottle; brand identity must remain a written fact. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Cointreau", "Tonic Water", "Soda Water", "Ginger Beer"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cointreau, Tonic Water, Soda Water, and Ginger Beer and choose the option that fits the situation.",
+          "scenario": "Cointreau is the branded orange-liqueur name in this group. Tonic water, soda water and ginger beer are separate beverage descriptions.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which name is the branded orange liqueur?",
             "options": ["Cointreau", "Tonic Water", "Soda Water"],
             "expectedAnswer": "Cointreau"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cointreau as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A plain closed bottle; no logo or imitation brand package. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Cola", "Cranberry Juice", "Orange Juice", "Lime Juice"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cola, Cranberry Juice, Orange Juice, and Lime Juice and choose the option that fits the situation.",
+          "scenario": "Cola names the soft drink. Cranberry juice, orange juice and lime juice name fruit drinks from different fruits.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the soft drink rather than a fruit juice?",
             "options": ["Cola", "Cranberry Juice", "Orange Juice"],
             "expectedAnswer": "Cola"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Cola as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A neutral glass of dark carbonated liquid; exact composition comes from the written record. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Simple Syrup", "Grenadine", "Bitters"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Simple Syrup, Grenadine, and Bitters and choose the option that fits the situation.",
+          "scenario": "Simple syrup names dissolved sugar in water. Grenadine and bitters are different flavoring descriptions whose actual contents need checking.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names dissolved sugar in water?",
             "options": ["Simple Syrup", "Grenadine", "Bitters"],
             "expectedAnswer": "Simple Syrup"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Simple Syrup as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. A plain closed syrup container; ingredients are given by the text, not visual chemistry. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Preparing for the Next Task: Spirits & Liqueurs",
-      "text": "At the spirits & liqueurs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Chartreuse, Campari, Aperol, and Drambuie. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cointreau, Tonic Water, Soda Water, and Ginger Beer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Cola, Cranberry Juice, Orange Juice, and Lime Juice. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Simple Syrup, Grenadine, and Bitters. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Spirits & Liqueurs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Reading a mixer list",
+      "text": "The next list contains both branded products and other beverage terms. Chartreuse, Campari, Aperol, Drambuie and Cointreau are branded liqueur or aperitif names with different product descriptions. Tonic water contains quinine flavoring, while soda water is carbonated water. Ginger beer has ginger character, but its alcohol content varies by product. Cola is a soft drink, and cranberry juice is a fruit drink. Orange juice and lime juice come from different citrus fruits. Simple syrup names dissolved sugar in water; grenadine is a sweet red syrup traditionally associated with pomegranate. Bitters is a flavoring category that may contain alcohol. The trainee checks composition and alcohol information on the actual product. A familiar name, color or garnish is insufficient to establish alcohol-free status, ingredients or suitability.",
+      "imageBrief": "Support for Reading a mixer list. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chartreuse, Campari, Aperol, and Drambuie and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Chartreuse is the first branded herbal-liqueur name in this list. Campari, Aperol and Drambuie are separate branded products.\nWhich brand is listed first as the herbal liqueur?",
         "answer": "Chartreuse",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cointreau, Tonic Water, Soda Water, and Ginger Beer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Cointreau is the branded orange-liqueur name in this group. Tonic water, soda water and ginger beer are separate beverage descriptions.\nWhich name is the branded orange liqueur?",
         "answer": "Cointreau",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Cola, Cranberry Juice, Orange Juice, and Lime Juice and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Cola names the soft drink. Cranberry juice, orange juice and lime juice name fruit drinks from different fruits.\nWhich term names the soft drink rather than a fruit juice?",
         "answer": "Cola",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Simple Syrup, Grenadine, and Bitters and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Simple syrup names dissolved sugar in water. Grenadine and bitters are different flavoring descriptions whose actual contents need checking.\nWhich term names dissolved sugar in water?",
         "answer": "Simple Syrup",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The next list contains both branded products and other beverage terms. Chartreuse, Campari, Aperol, Drambuie and Cointreau are branded liqueur or aperitif names with different product descriptions. Tonic water contains quinine flavoring, while soda water is carbonated water. Ginger beer has ginger character, but its alcohol content varies by product. Cola is a soft drink, and cranberry juice is a fruit drink. Orange juice and lime juice come from different citrus fruits. Simple syrup names dissolved sugar in water; grenadine is a sweet red syrup traditionally associated with pomegranate. Bitters is a flavoring category that may contain alcohol. The trainee checks composition and alcohol information on the actual product. A familiar name, color or garnish is insufficient to establish alcohol-free status, ingredients or suitability.\nDoes the name ginger beer establish alcohol content?",
+        "answer": "No; alcohol content depends on the actual product.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Chartreuse"
+        "prompt": "Explain the difference between “Chartreuse” and “Campari” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Aperol"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Vodka” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the spirits & liqueurs task. Use Chartreuse, Campari, Aperol, Drambuie, Cointreau, Tonic Water, Soda Water, Ginger Beer, Cola, Cranberry Juice, Orange Juice, Lime Juice, Simple Syrup, Grenadine, and Bitters in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Chartreuse” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Chartreuse is the first branded herbal-liqueur name in this list. Campari, Aperol and Drambuie are separate branded products.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spirits & Liqueurs: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from spirits & liqueurs in cultural or industry texts."
+      "title": "Reading a mixer list",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The next list contains both branded products and other beverage terms. Chartreuse, Campari, Aperol, Drambuie and Cointreau are branded liqueur or aperitif names with different product descriptions. Tonic water contains quinine flavoring, while soda water is carbonated water. Ginger beer has ginger character, but its alcohol content varies by product. Cola is a soft drink, and cranberry juice is a fruit drink. Orange juice and lime juice come from different citrus fruits. Simple syrup names dissolved sugar in water; grenadine is a sweet red syrup traditionally associated with pomegranate. Bitters is a flavoring category that may contain alcohol. The trainee checks composition and alcohol information on the actual product. A familiar name, color or garnish is insufficient to establish alcohol-free status, ingredients or suitability. Ask: Does the name ginger beer establish alcohol content?"
     },
     "spacedReview": "1 lesson(s) back: Vodka, Gin from spirits-liqueurs-1\n3 lesson(s) back: Champagne Flute, Beer Mug from cocktail-bar-2\n7 lesson(s) back: Wine Rack, Temperature Control from wine-cellar-1"
   },
@@ -380,7 +352,7 @@
     "targetWordsArabic": [
       "شريط ملتف من قشر الليمون",
       "شريحة مثلثة من الليمون الأخضر",
-      "يقشّر برتقالي",
+      "قشر البرتقال",
       "كرز",
       "زيتونة",
       "غصن نعناع",
@@ -390,117 +362,103 @@
       "مظلّة ورقية صغيرة للزينة"
     ],
     "usage": {
-      "goal": "Use nuanced domain vocabulary to understand adult hospitality vocabulary, age-verification rules, and alcohol-free service options and respond precisely in complex professional or public situations.",
-      "canDoStatement": "Can interpret detailed or specialized information and communicate flexibly and precisely about issues related to the adult hospitality workplace.",
-      "textType": "dialogue",
-      "readingTarget": "150-220 words",
+      "goal": "Read venue and product descriptions, distinguish functions and ask for clarification of the applicable policy.",
+      "canDoStatement": "Can compare stated hospitality terms and clarify an ambiguous request or policy.",
+      "textType": "educational-explanation",
+      "readingTarget": "100-190 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Lemon Twist", "Lime Wedge", "Orange Peel", "Cherry"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lemon Twist, Lime Wedge, Orange Peel, and Cherry and choose the option that fits the situation.",
+          "scenario": "The lemon twist is the strip of lemon peel. Lime wedge is a cut wedge, orange peel another citrus covering, and cherry the small stone fruit.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the strip of lemon peel?",
             "options": ["Lemon Twist", "Lime Wedge", "Orange Peel"],
             "expectedAnswer": "Lemon Twist"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Lemon Twist as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One curled strip of yellow lemon peel isolated on a neutral surface. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Olive", "Mint Sprig", "Cinnamon Stick", "Salt Rim"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Olive, Mint Sprig, Cinnamon Stick, and Salt Rim and choose the option that fits the situation.",
+          "scenario": "The olive is the small oval fruit. Mint sprig is a leafy stem, cinnamon stick rolled bark, and salt rim a glass-edge coating.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item is the small oval fruit in this description?",
             "options": ["Olive", "Mint Sprig", "Cinnamon Stick"],
             "expectedAnswer": "Olive"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Olive as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. One olive fruit on a neutral surface, no people or labels. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sugar Rim", "Cocktail Umbrella"],
-          "scenario": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sugar Rim, and Cocktail Umbrella and choose the option that fits the situation.",
+          "scenario": "Sugar rim is the coating specified as sugar in the record. Cocktail umbrella instead names the tiny paper decoration.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term names the sugar coating?",
             "options": ["Sugar Rim", "Cocktail Umbrella", "Lemon Twist"],
             "expectedAnswer": "Sugar Rim"
           },
-          "imageBrief": "Photorealistic adult hospitality workplace scene. Show trained adult staff using or examining the Sugar Rim as the central item, with the other two options present only as secondary workplace or menu-related context. No one is shown drinking alcohol. Emphasize responsible service, professional handling, and age-restricted workplace context. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in an adult hospitality workplace completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Word-reference support for the written hospitality vocabulary task. An empty glass with white crystals around its edge; sugar identity requires written composition evidence. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting the Information You Need: Spirits & Liqueurs",
-      "text": "At the spirits & liqueurs, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Lemon Twist, Lime Wedge, Orange Peel, and Cherry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Olive, Mint Sprig, Cinnamon Stick, and Salt Rim. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Sugar Rim and Cocktail Umbrella. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent C1-level visual for the reading about Spirits & Liqueurs. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Naming garnish shapes",
+      "text": "The trainee examines a food-decoration display. A lemon twist is a strip of lemon peel; a lime wedge is a wedge-shaped piece of lime. Orange peel names the fruit's outer covering, and cherry names the fruit rather than wood. An olive is another small fruit. A mint sprig is a stem with mint leaves; cinnamon stick is rolled dried bark. Salt rim and sugar rim name different coatings around a glass edge. A cocktail umbrella is a tiny paper decoration. The trainee compares shapes before reading the composition record. White crystals are not reliably identified as salt or sugar by a photograph, and a colored fruit piece does not establish allergens or product treatment. The display teaches terms without mixing, tasting or requiring an alcoholic beverage.",
+      "imageBrief": "Support for Naming garnish shapes. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Lemon Twist, Lime Wedge, Orange Peel, and Cherry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The lemon twist is the strip of lemon peel. Lime wedge is a cut wedge, orange peel another citrus covering, and cherry the small stone fruit.\nWhich item is the strip of lemon peel?",
         "answer": "Lemon Twist",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Olive, Mint Sprig, Cinnamon Stick, and Salt Rim and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The olive is the small oval fruit. Mint sprig is a leafy stem, cinnamon stick rolled bark, and salt rim a glass-edge coating.\nWhich item is the small oval fruit in this description?",
         "answer": "Olive",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the spirits & liqueurs setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sugar Rim, and Cocktail Umbrella and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Sugar rim is the coating specified as sugar in the record. Cocktail umbrella instead names the tiny paper decoration.\nWhich term names the sugar coating?",
         "answer": "Sugar Rim",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "Interpretation: What is the central issue or interpretation in the text?",
-        "answer": "The central issue described"
+        "prompt": "The trainee examines a food-decoration display. A lemon twist is a strip of lemon peel; a lime wedge is a wedge-shaped piece of lime. Orange peel names the fruit's outer covering, and cherry names the fruit rather than wood. An olive is another small fruit. A mint sprig is a stem with mint leaves; cinnamon stick is rolled dried bark. Salt rim and sugar rim name different coatings around a glass edge. A cocktail umbrella is a tiny paper decoration. The trainee compares shapes before reading the composition record. White crystals are not reliably identified as salt or sugar by a photograph, and a colored fruit piece does not establish allergens or product treatment. The display teaches terms without mixing, tasting or requiring an alcoholic beverage.\nCan white crystals identify salt versus sugar reliably in a photograph?",
+        "answer": "No; their identity needs the composition record.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "Precision: Which target term is most useful for a precise explanation?",
-        "answer": "Lemon Twist"
+        "prompt": "Explain the difference between “Lemon Twist” and “Lime Wedge” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Nuance: Which term could change the tone or interpretation of the situation?",
-        "answer": "Orange Peel"
-      },
-      {
-        "prompt": "Implication: What implication follows from the way the concepts are connected?",
-        "answer": "A text-supported implication"
-      },
-      {
-        "prompt": "Synthesis: How do two target terms work together in the text?",
-        "answer": "A synthesized explanation"
-      },
-      {
-        "prompt": "Production: Give a concise professional summary using at least three target terms.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Chartreuse” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the spirits & liqueurs task. Use Lemon Twist, Lime Wedge, Orange Peel, Cherry, Olive, Mint Sprig, Cinnamon Stick, Salt Rim, Sugar Rim, and Cocktail Umbrella in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write an original sentence using “Lemon Twist” in its supplied hospitality vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The lemon twist is the strip of lemon peel. Lime wedge is a cut wedge, orange peel another citrus covering, and cherry the small stone fruit.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "Spirits & Liqueurs: In Context",
-      "idea": "50-80 seconds neutral cultural/industry vocabulary explainer. Show labels, documents, or historical/hospitality context only; no preparation, purchase, or consumption guidance.",
-      "scriptStarter": "This lesson focuses only on recognizing specialist vocabulary from spirits & liqueurs in cultural or industry texts."
+      "title": "Naming garnish shapes",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "The trainee examines a food-decoration display. A lemon twist is a strip of lemon peel; a lime wedge is a wedge-shaped piece of lime. Orange peel names the fruit's outer covering, and cherry names the fruit rather than wood. An olive is another small fruit. A mint sprig is a stem with mint leaves; cinnamon stick is rolled dried bark. Salt rim and sugar rim name different coatings around a glass edge. A cocktail umbrella is a tiny paper decoration. The trainee compares shapes before reading the composition record. White crystals are not reliably identified as salt or sugar by a photograph, and a colored fruit piece does not establish allergens or product treatment. The display teaches terms without mixing, tasting or requiring an alcoholic beverage. Ask: Can white crystals identify salt versus sugar reliably in a photograph?"
     },
     "spacedReview": "1 lesson(s) back: Chartreuse, Campari from spirits-liqueurs-2\n3 lesson(s) back: Bartender, Barback from cocktail-bar-3\n7 lesson(s) back: Vintage, Bin Number from wine-cellar-2"
   }

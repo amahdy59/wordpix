@@ -22,14 +22,20 @@ const steps = [
     description: "Validating strict types across all source files",
   },
   {
-    name: "ESLint Validation",
-    command: "pnpm run lint",
-    description: "Checking code style, React 19 compiler rules & a11y lints",
+    name: "Unit & Integration Test Suite",
+    command: "pnpm test --maxWorkers=2",
+    description: "Running all Vitest unit, regression, and component tests",
   },
   {
-    name: "Unit & Integration Test Suite",
-    command: "pnpm test",
-    description: "Running all Vitest unit, regression, and component tests",
+    name: "ESLint Validation",
+    command: "pnpm run lint",
+    description: "Checking React hooks and accessibility lints",
+  },
+  {
+    name: "Image Generation Safety Guards",
+    command:
+      "node --test scripts/tests/check-generation-preflight.mjs scripts/tests/check-gemini-scene-batch.mjs scripts/tests/check-image-review-policy.mjs",
+    description: "Checking review digests, explicit holds, prompt integrity and no-text policy",
   },
   {
     name: "Production Bundle Build",
@@ -69,7 +75,10 @@ async function runPrepushVerification() {
   }
 
   const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
-  log(`🎉 All pre-push checks passed successfully in ${totalTime}s! Ready to push.\n`, `${colors.bold}${colors.green}`);
+  log(
+    `🎉 All pre-push checks passed successfully in ${totalTime}s! Ready to push.\n`,
+    `${colors.bold}${colors.green}`
+  );
 }
 
 runPrepushVerification().catch((err) => {

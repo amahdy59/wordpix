@@ -37,154 +37,141 @@
       "أطلس خرائط",
       "سيرة شخص",
       "كتاب شعر",
-      "رف الكتب / مكتبة حائطية",
+      "رف كتب",
       "طاولة قراءة",
       "مكتب دراسة",
       "كرسي",
       "مقعد مملوء بحبيبات"
     ],
     "usage": {
-      "goal": "Learn to locate resources and ask about borrowing or reference services in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the library.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated library request, resource, action or role.",
+      "canDoStatement": "Can follow a supported library visit and explain a practical distinction. Specialist collection terms extend the supported task level; access, copying and borrowing rules are local.",
+      "textType": "library-visit-account",
+      "readingTarget": "Supported connected adult library visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Novel", "Picture Book", "Reference Book"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.",
+          "scenario": "Maya wants a long invented story, so the librarian suggests a novel. A picture book uses images as a major part of its story or information. A reference book is for looking up particular facts. Maya chooses the invented story today.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which book matches Maya’s request?",
             "options": ["Novel", "Picture Book", "Reference Book"],
             "expectedAnswer": "Novel"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Novel as the central item; include Novel, Picture Book, and Reference Book naturally where visually appropriate, but make the real-world use of Novel the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya wants a long invented story, so the librarian suggests a novel. A picture book uses images as a major part of its story or information. A reference book is for looking up particular facts. Maya chooses the invented story today. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Comic Book", "Magazine", "Newspaper"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.",
+          "scenario": "Omar compares a comic book, telling a story through drawn panels, with a magazine of regularly published articles. The newspaper reports recent news. He wants drawn panels with characters speaking.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which publication matches Omar’s request?",
             "options": ["Comic Book", "Magazine", "Newspaper"],
             "expectedAnswer": "Comic Book"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Comic Book as the central item; include Comic Book, Magazine, and Newspaper naturally where visually appropriate, but make the real-world use of Comic Book the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar compares a comic book, telling a story through drawn panels, with a magazine of regularly published articles. The newspaper reports recent news. He wants drawn panels with characters speaking. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Encyclopedia", "Atlas", "Biography"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.",
+          "scenario": "For her research, Maya looks at an encyclopedia covering many subjects, an atlas of maps and a biography about someone’s life. She needs to locate a region on a map before reading its history.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which resource provides maps?",
             "options": ["Encyclopedia", "Atlas", "Biography"],
-            "expectedAnswer": "Encyclopedia"
+            "expectedAnswer": "Atlas"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Encyclopedia as the central item; include Encyclopedia, Atlas, and Biography naturally where visually appropriate, but make the real-world use of Encyclopedia the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: For her research, Maya looks at an encyclopedia covering many subjects, an atlas of maps and a biography about someone’s life. She needs to locate a region on a map before reading its history. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Poetry Book", "Bookshelf", "Reading Table"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.",
+          "scenario": "Omar takes a poetry book from the bookshelf and sits at the reading table. The book contains poems, the shelf stores books and the table gives him a surface for reading.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which object stores books?",
             "options": ["Poetry Book", "Bookshelf", "Reading Table"],
-            "expectedAnswer": "Poetry Book"
+            "expectedAnswer": "Bookshelf"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Poetry Book as the central item; include Poetry Book, Bookshelf, and Reading Table naturally where visually appropriate, but make the real-world use of Poetry Book the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar takes a poetry book from the bookshelf and sits at the reading table. The book contains poems, the shelf stores books and the table gives him a surface for reading. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Study Desk", "Chair", "Bean Bag"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.",
+          "scenario": "Maya chooses a study desk with a chair for taking notes. A bean bag is a soft seat filled with loose material. She wants a firm working surface rather than a soft seat for relaxing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item provides the working surface?",
             "options": ["Study Desk", "Chair", "Bean Bag"],
             "expectedAnswer": "Study Desk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Study Desk as the central item; include Study Desk, Chair, and Bean Bag naturally where visually appropriate, but make the real-world use of Study Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya chooses a study desk with a chair for taking notes. A bean bag is a soft seat filled with loose material. She wants a firm working surface rather than a soft seat for relaxing. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Practical Conversation: The Library",
-      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Novel, Picture Book, and Reference Book. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Comic Book, Magazine, and Newspaper. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Encyclopedia, Atlas, and Biography. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Poetry Book, Bookshelf, and Reading Table. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Study Desk, Chair, and Bean Bag. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing a book and a place",
+      "text": "Maya visits the library for a novel, while Omar chooses a comic book. They compare these stories with a picture book and reference book. A magazine and newspaper offer other reading. Maya later consults an encyclopedia, atlas and biography for a course. Omar takes a poetry book from the bookshelf to a reading table. Maya wants to take notes, so she chooses a study desk and chair rather than the bean bag. They ask staff which items may be borrowed before taking anything home.",
+      "imageBrief": "Photorealistic adult public-library account: Maya wants a long invented story, so the librarian suggests a novel. A picture book uses images as a major part of its story or information. A reference book is for looking up particular facts. Maya chooses the invented story today. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance."
     },
     "exercises": [
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Novel, Picture Book, and Reference Book and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Maya wants a long invented story, so the librarian suggests a novel. A picture book uses images as a major part of its story or information. A reference book is for looking up particular facts. Maya chooses the invented story today.\nWhich book matches Maya’s request?",
         "answer": "Novel",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Comic Book, Magazine, and Newspaper and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Omar compares a comic book, telling a story through drawn panels, with a magazine of regularly published articles. The newspaper reports recent news. He wants drawn panels with characters speaking.\nWhich publication matches Omar’s request?",
         "answer": "Comic Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Encyclopedia, Atlas, and Biography and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Encyclopedia",
+        "prompt": "For her research, Maya looks at an encyclopedia covering many subjects, an atlas of maps and a biography about someone’s life. She needs to locate a region on a map before reading its history.\nWhich resource provides maps?",
+        "answer": "Atlas",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Poetry Book, Bookshelf, and Reading Table and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Poetry Book",
+        "prompt": "Omar takes a poetry book from the bookshelf and sits at the reading table. The book contains poems, the shelf stores books and the table gives him a surface for reading.\nWhich object stores books?",
+        "answer": "Bookshelf",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Study Desk, Chair, and Bean Bag and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Maya chooses a study desk with a chair for taking notes. A bean bag is a soft seat filled with loose material. She wants a firm working surface rather than a soft seat for relaxing.\nWhich item provides the working surface?",
         "answer": "Study Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Novel"
+        "prompt": "Maya visits the library for a novel, while Omar chooses a comic book. They compare these stories with a picture book and reference book. A magazine and newspaper offer other reading. Maya later consults an encyclopedia, atlas and biography for a course. Omar takes a poetry book from the bookshelf to a reading table. Maya wants to take notes, so she chooses a study desk and chair rather than the bean bag. They ask staff which items may be borrowed before taking anything home.\nWhy does Maya choose a study desk?",
+        "answer": "To take notes",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Comic Book"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Timer” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the library task. Use Novel, Picture Book, Reference Book, Comic Book, Magazine, Newspaper, Encyclopedia, Atlas, Biography, Poetry Book, Bookshelf, Reading Table, Study Desk, Chair, and Bean Bag in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this visit using Novel and Picture Book.",
+        "answer": "A novel tells a long imagined story, while a picture book uses images as a major part of its content.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Library: In Context",
-      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing a book and a place",
+      "idea": "Read this adult library visit in short sections. Pause on a stated distinction and ask its question. Use anonymous documents, invented covers and no private account data.",
+      "scriptStarter": "Maya wants a long invented story, so the librarian suggests a novel. A picture book uses images as a major part of its story or information. A reference book is for looking up particular facts. Maya chooses the invented story today."
     },
     "spacedReview": "1 lesson(s) back: Timer, Basket from laundromat-5\n3 lesson(s) back: Sort, Load from laundromat-3\n7 lesson(s) back: Breakfast Buffet, Shuttle from hotel-4"
   },
@@ -218,7 +205,7 @@
     "targetWordsArabic": [
       "مقعد صغير بدرجات",
       "عربة",
-      "مصباح (أباجورة)",
+      "مصباح",
       "مكتب حاسوب",
       "كرسي بذراعين",
       "أدب خيالي",
@@ -233,147 +220,134 @@
       "أرشيف"
     ],
     "usage": {
-      "goal": "Learn to locate resources and ask about borrowing or reference services in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the library.",
-      "textType": "service-notice",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated library request, resource, action or role.",
+      "canDoStatement": "Can follow a supported library visit and explain a practical distinction. Specialist collection terms extend the supported task level; access, copying and borrowing rules are local.",
+      "textType": "library-visit-account",
+      "readingTarget": "Supported connected adult library visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Step Stool", "Cart", "Lamp"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.",
+          "scenario": "A staff member uses a step stool to reach a high shelf safely. A cart carries returned books between shelves, and a lamp lights a desk. Maya needs help moving several books, rather than reaching upwards.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item carries books?",
             "options": ["Step Stool", "Cart", "Lamp"],
-            "expectedAnswer": "Step Stool"
+            "expectedAnswer": "Cart"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Step Stool as the central item; include Step Stool, Cart, and Lamp naturally where visually appropriate, but make the real-world use of Step Stool the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: A staff member uses a step stool to reach a high shelf safely. A cart carries returned books between shelves, and a lamp lights a desk. Maya needs help moving several books, rather than reaching upwards. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Computer Desk", "Armchair", "Fiction"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.",
+          "scenario": "Omar sits at a computer desk to check the catalog. Later he reads fiction, writing based on imagined people or events, in an armchair. The desk and chair are furniture; fiction describes a kind of writing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term describes a kind of writing?",
             "options": ["Computer Desk", "Armchair", "Fiction"],
-            "expectedAnswer": "Computer Desk"
+            "expectedAnswer": "Fiction"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Computer Desk as the central item; include Computer Desk, Armchair, and Fiction naturally where visually appropriate, but make the real-world use of Computer Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar sits at a computer desk to check the catalog. Later he reads fiction, writing based on imagined people or events, in an armchair. The desk and chair are furniture; fiction describes a kind of writing. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Non-Fiction", "Children's Section", "Reference Section"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.",
+          "scenario": "Maya asks for non-fiction about birds. The children’s section offers materials for children and adults choosing for them. The reference section holds works for looking up facts; borrowing rules vary. She wants factual writing rather than an invented story.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term describes the writing Maya wants?",
             "options": ["Non-Fiction", "Children's Section", "Reference Section"],
             "expectedAnswer": "Non-Fiction"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Non-Fiction as the central item; include Non-Fiction, Children's Section, and Reference Section naturally where visually appropriate, but make the real-world use of Non-Fiction the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya asks for non-fiction about birds. The children’s section offers materials for children and adults choosing for them. The reference section holds works for looking up facts; borrowing rules vary. She wants factual writing rather than an invented story. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Periodicals", "Media Center", "Study Room"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.",
+          "scenario": "Omar finds magazines among the periodicals, publications appearing repeatedly. The media center provides access to media resources. He books a study room for quiet work with his adult classmates.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which space has Omar booked?",
             "options": ["Periodicals", "Media Center", "Study Room"],
-            "expectedAnswer": "Periodicals"
+            "expectedAnswer": "Study Room"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Periodicals as the central item; include Periodicals, Media Center, and Study Room naturally where visually appropriate, but make the real-world use of Periodicals the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar finds magazines among the periodicals, publications appearing repeatedly. The media center provides access to media resources. He books a study room for quiet work with his adult classmates. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Return Desk", "Help Desk", "Archive"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.",
+          "scenario": "Maya takes borrowed books to the return desk, then asks at the help desk about local history. Staff explain that the archive preserves records and that access rules may differ from ordinary borrowing.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Where does Maya return books?",
             "options": ["Return Desk", "Help Desk", "Archive"],
             "expectedAnswer": "Return Desk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Return Desk as the central item; include Return Desk, Help Desk, and Archive naturally where visually appropriate, but make the real-world use of Return Desk the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya takes borrowed books to the return desk, then asks at the help desk about local history. Staff explain that the archive preserves records and that access rules may differ from ordinary borrowing. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "What You Need to Know: The Library",
-      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Step Stool, Cart, and Lamp. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Computer Desk, Armchair, and Fiction. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Non-Fiction, Children's Section, and Reference Section. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Periodicals, Media Center, and Study Room. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Return Desk, Help Desk, and Archive. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Finding the right section",
+      "text": "A staff member moves books on a cart and uses a step stool for a high shelf. Maya notices a lamp at the computer desk before choosing an armchair to read. She wants non-fiction about birds; Omar chooses fiction. An adult visitor asks about the children’s section for a family reading visit. Staff explain the reference section and periodicals, then show the media center. Omar books a study room. Maya takes finished books to the return desk and asks at the help desk about records in the archive. Access and borrowing rules depend on the collection.",
+      "imageBrief": "Photorealistic adult public-library account: A staff member uses a step stool to reach a high shelf safely. A cart carries returned books between shelves, and a lamp lights a desk. Maya needs help moving several books, rather than reaching upwards. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance."
     },
     "exercises": [
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Step Stool, Cart, and Lamp and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Step Stool",
+        "prompt": "A staff member uses a step stool to reach a high shelf safely. A cart carries returned books between shelves, and a lamp lights a desk. Maya needs help moving several books, rather than reaching upwards.\nWhich item carries books?",
+        "answer": "Cart",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Computer Desk, Armchair, and Fiction and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Computer Desk",
+        "prompt": "Omar sits at a computer desk to check the catalog. Later he reads fiction, writing based on imagined people or events, in an armchair. The desk and chair are furniture; fiction describes a kind of writing.\nWhich term describes a kind of writing?",
+        "answer": "Fiction",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Non-Fiction, Children's Section, and Reference Section and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Maya asks for non-fiction about birds. The children’s section offers materials for children and adults choosing for them. The reference section holds works for looking up facts; borrowing rules vary. She wants factual writing rather than an invented story.\nWhich term describes the writing Maya wants?",
         "answer": "Non-Fiction",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Periodicals, Media Center, and Study Room and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Periodicals",
+        "prompt": "Omar finds magazines among the periodicals, publications appearing repeatedly. The media center provides access to media resources. He books a study room for quiet work with his adult classmates.\nWhich space has Omar booked?",
+        "answer": "Study Room",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Return Desk, Help Desk, and Archive and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "Maya takes borrowed books to the return desk, then asks at the help desk about local history. Staff explain that the archive preserves records and that access rules may differ from ordinary borrowing.\nWhere does Maya return books?",
         "answer": "Return Desk",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Step Stool"
+        "prompt": "A staff member moves books on a cart and uses a step stool for a high shelf. Maya notices a lamp at the computer desk before choosing an armchair to read. She wants non-fiction about birds; Omar chooses fiction. An adult visitor asks about the children’s section for a family reading visit. Staff explain the reference section and periodicals, then show the media center. Omar books a study room. Maya takes finished books to the return desk and asks at the help desk about records in the archive. Access and borrowing rules depend on the collection.\nWhich room does Omar book?",
+        "answer": "A study room",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Computer Desk"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Novel” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the library task. Use Step Stool, Cart, Lamp, Computer Desk, Armchair, Fiction, Non-Fiction, Children's Section, Reference Section, Periodicals, Media Center, Study Room, Return Desk, Help Desk, and Archive in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this visit using Step Stool and Cart.",
+        "answer": "The step stool helps staff reach a shelf, and the cart carries books.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Library: In Context",
-      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Finding the right section",
+      "idea": "Read this adult library visit in short sections. Pause on a stated distinction and ask its question. Use anonymous documents, invented covers and no private account data.",
+      "scriptStarter": "A staff member uses a step stool to reach a high shelf safely. A cart carries returned books between shelves, and a lamp lights a desk. Maya needs help moving several books, rather than reaching upwards."
     },
     "spacedReview": "1 lesson(s) back: Novel, Picture Book from library-1\n3 lesson(s) back: Clock, Sign from laundromat-4\n7 lesson(s) back: Bellhop, Checkout from hotel-5"
   },
@@ -417,152 +391,139 @@
       "الهمس",
       "بطاقة مكتبة",
       "ماسح باركود",
-      "طابع",
+      "ختم",
       "علامة صفحة",
       "غلاف الكتاب"
     ],
     "usage": {
-      "goal": "Learn to locate resources and ask about borrowing or reference services in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the library.",
-      "textType": "instructional-guide",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated library request, resource, action or role.",
+      "canDoStatement": "Can follow a supported library visit and explain a practical distinction. Specialist collection terms extend the supported task level; access, copying and borrowing rules are local.",
+      "textType": "library-visit-account",
+      "readingTarget": "Supported connected adult library visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Reading", "Borrowing", "Returning"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.",
+          "scenario": "Reading means understanding written text. Borrowing lets Maya take an eligible library item for an agreed time, while returning means bringing it back. She has finished with her book and takes it back today.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which action is Maya completing today?",
             "options": ["Reading", "Borrowing", "Returning"],
-            "expectedAnswer": "Reading"
+            "expectedAnswer": "Returning"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult illustrating Reading through a realistic adult task; include Reading, Borrowing, and Returning naturally where visually appropriate, but make the real-world use of Reading the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Reading means understanding written text. Borrowing lets Maya take an eligible library item for an agreed time, while returning means bringing it back. She has finished with her book and takes it back today. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Searching", "Studying", "Browsing"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.",
+          "scenario": "Omar is searching for one named title. Maya is browsing without a particular title in mind, then studying a chapter carefully for her course. These actions differ by the purpose stated in their account.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which action describes Maya looking without a particular title?",
             "options": ["Searching", "Studying", "Browsing"],
-            "expectedAnswer": "Searching"
+            "expectedAnswer": "Browsing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult illustrating Searching through a realistic adult task; include Searching, Studying, and Browsing naturally where visually appropriate, but make the real-world use of Searching the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar is searching for one named title. Maya is browsing without a particular title in mind, then studying a chapter carefully for her course. These actions differ by the purpose stated in their account. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Reserving", "Photocopying", "Typing"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.",
+          "scenario": "A book is unavailable, so Maya asks about reserving it for later. Omar is typing a catalog search. Before photocopying a page, he checks library rules and any relevant permission; access alone does not establish permission to copy.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which action requests an unavailable book for later?",
             "options": ["Reserving", "Photocopying", "Typing"],
             "expectedAnswer": "Reserving"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult illustrating Reserving through a realistic adult task; include Reserving, Photocopying, and Typing naturally where visually appropriate, but make the real-world use of Reserving the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: A book is unavailable, so Maya asks about reserving it for later. Omar is typing a catalog search. Before photocopying a page, he checks library rules and any relevant permission; access alone does not establish permission to copy. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Whispering", "Library Card", "Barcode Scanner"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.",
+          "scenario": "Maya speaks quietly, whispering a question at the desk. Staff use her library card to identify her borrowing record and a barcode scanner to identify the book. The card represents a service account rather than universal permission to enter every library area.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which device identifies the book’s barcode?",
             "options": ["Whispering", "Library Card", "Barcode Scanner"],
-            "expectedAnswer": "Whispering"
+            "expectedAnswer": "Barcode Scanner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult illustrating Whispering through a realistic adult task; include Whispering, Library Card, and Barcode Scanner naturally where visually appropriate, but make the real-world use of Whispering the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya speaks quietly, whispering a question at the desk. Staff use her library card to identify her borrowing record and a barcode scanner to identify the book. The card represents a service account rather than universal permission to enter every library area. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Stamp", "Bookmark", "Book Cover"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.",
+          "scenario": "A stamp can make a date mark on paper. Maya puts a bookmark between pages to keep her place. The book cover protects the outside of the book. She wants to keep her place without writing on a borrowed page.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which item keeps her place?",
             "options": ["Stamp", "Bookmark", "Book Cover"],
-            "expectedAnswer": "Stamp"
+            "expectedAnswer": "Bookmark"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Stamp as the central item; include Stamp, Bookmark, and Book Cover naturally where visually appropriate, but make the real-world use of Stamp the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: A stamp can make a date mark on paper. Maya puts a bookmark between pages to keep her place. The book cover protects the outside of the book. She wants to keep her place without writing on a borrowed page. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Before You Begin: The Library",
-      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Reading, Borrowing, and Returning. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Searching, Studying, and Browsing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Reserving, Photocopying, and Typing. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Whispering, Library Card, and Barcode Scanner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stamp, Bookmark, and Book Cover. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Borrowing and keeping your place",
+      "text": "Maya enjoys reading, but borrowing and returning also require attention to library rules. She is browsing the shelves while Omar is searching for a named book. Later she is studying a chapter for her course. An unavailable title leads her to ask about reserving it. Omar is typing a search and asks about photocopying permitted notes. Maya is whispering at the desk, where staff check her library card and use a barcode scanner for the book. A stamp marks paper, a bookmark keeps her place and a book cover protects the outside.",
+      "imageBrief": "Photorealistic adult public-library account: Reading means understanding written text. Borrowing lets Maya take an eligible library item for an agreed time, while returning means bringing it back. She has finished with her book and takes it back today. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance."
     },
     "exercises": [
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reading, Borrowing, and Returning and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Reading",
+        "prompt": "Reading means understanding written text. Borrowing lets Maya take an eligible library item for an agreed time, while returning means bringing it back. She has finished with her book and takes it back today.\nWhich action is Maya completing today?",
+        "answer": "Returning",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Searching, Studying, and Browsing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Searching",
+        "prompt": "Omar is searching for one named title. Maya is browsing without a particular title in mind, then studying a chapter carefully for her course. These actions differ by the purpose stated in their account.\nWhich action describes Maya looking without a particular title?",
+        "answer": "Browsing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Reserving, Photocopying, and Typing and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "A book is unavailable, so Maya asks about reserving it for later. Omar is typing a catalog search. Before photocopying a page, he checks library rules and any relevant permission; access alone does not establish permission to copy.\nWhich action requests an unavailable book for later?",
         "answer": "Reserving",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Whispering, Library Card, and Barcode Scanner and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Whispering",
+        "prompt": "Maya speaks quietly, whispering a question at the desk. Staff use her library card to identify her borrowing record and a barcode scanner to identify the book. The card represents a service account rather than universal permission to enter every library area.\nWhich device identifies the book’s barcode?",
+        "answer": "Barcode Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stamp, Bookmark, and Book Cover and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Stamp",
+        "prompt": "A stamp can make a date mark on paper. Maya puts a bookmark between pages to keep her place. The book cover protects the outside of the book. She wants to keep her place without writing on a borrowed page.\nWhich item keeps her place?",
+        "answer": "Bookmark",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Reading"
+        "prompt": "Maya enjoys reading, but borrowing and returning also require attention to library rules. She is browsing the shelves while Omar is searching for a named book. Later she is studying a chapter for her course. An unavailable title leads her to ask about reserving it. Omar is typing a search and asks about photocopying permitted notes. Maya is whispering at the desk, where staff check her library card and use a barcode scanner for the book. A stamp marks paper, a bookmark keeps her place and a book cover protects the outside.\nWhat keeps Maya’s place in the book?",
+        "answer": "A bookmark",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Searching"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Step Stool” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the library task. Use Reading, Borrowing, Returning, Searching, Studying, Browsing, Reserving, Photocopying, Typing, Whispering, Library Card, Barcode Scanner, Stamp, Bookmark, and Book Cover in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this visit using Reading and Borrowing.",
+        "answer": "Reading is understanding text, while borrowing means taking an eligible item for an agreed time.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Library: In Context",
-      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Borrowing and keeping your place",
+      "idea": "Read this adult library visit in short sections. Pause on a stated distinction and ask its question. Use anonymous documents, invented covers and no private account data.",
+      "scriptStarter": "Reading means understanding written text. Borrowing lets Maya take an eligible library item for an agreed time, while returning means bringing it back. She has finished with her book and takes it back today."
     },
     "spacedReview": "1 lesson(s) back: Step Stool, Cart from library-2\n3 lesson(s) back: Timer, Basket from laundromat-5\n7 lesson(s) back: Washing Machine, Dryer from laundromat-1"
   },
@@ -600,7 +561,7 @@
       "طابعة",
       "ماسح ضوئي",
       "أمين مكتبة",
-      "مساعد المكتبة",
+      "مساعد مكتبة",
       "متطوع",
       "قارئ",
       "طالب",
@@ -611,147 +572,134 @@
       "عامل نظافة"
     ],
     "usage": {
-      "goal": "Learn to locate resources and ask about borrowing or reference services in a clear, practical adult-life situation.",
-      "canDoStatement": "Can ask and answer simple questions and understand short practical information related to the library.",
-      "textType": "narrative",
-      "readingTarget": "65-95 words",
+      "goal": "Identify a stated library request, resource, action or role.",
+      "canDoStatement": "Can follow a supported library visit and explain a practical distinction. Specialist collection terms extend the supported task level; access, copying and borrowing rules are local.",
+      "textType": "library-visit-account",
+      "readingTarget": "Supported connected adult library visit",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Label", "Catalog", "Computer"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.",
+          "scenario": "A shelf label helps Maya locate a category. The catalog lists the library’s resources, and she searches it on a computer. Finding a record does not guarantee the item is available to borrow now.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which resource lists the library’s holdings?",
             "options": ["Label", "Catalog", "Computer"],
-            "expectedAnswer": "Label"
+            "expectedAnswer": "Catalog"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Label as the central item; include Label, Catalog, and Computer naturally where visually appropriate, but make the real-world use of Label the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: A shelf label helps Maya locate a category. The catalog lists the library’s resources, and she searches it on a computer. Finding a record does not guarantee the item is available to borrow now. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Printer", "Scanner", "Librarian"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.",
+          "scenario": "Omar asks the librarian for help with a document. The printer produces a paper copy from a file, while the scanner creates a digital image from paper. He needs a digital image of permitted notes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which device creates the digital image?",
             "options": ["Printer", "Scanner", "Librarian"],
-            "expectedAnswer": "Printer"
+            "expectedAnswer": "Scanner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Printer as the central item; include Printer, Scanner, and Librarian naturally where visually appropriate, but make the real-world use of Printer the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Omar asks the librarian for help with a document. The printer produces a paper copy from a file, while the scanner creates a digital image from paper. He needs a digital image of permitted notes. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Assistant", "Volunteer", "Reader"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.",
+          "scenario": "An assistant helps organize returned books. A volunteer offers agreed help without pay, while a reader uses written materials. These roles are established by the account, rather than guessed from clothing.",
           "check": {
-            "question": "Which option identifies the person or role central to the situation shown?",
+            "question": "Which role offers agreed help without pay?",
             "options": ["Assistant", "Volunteer", "Reader"],
-            "expectedAnswer": "Assistant"
+            "expectedAnswer": "Volunteer"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult working with or speaking to the Assistant; include Assistant, Volunteer, and Reader naturally where visually appropriate, but make the real-world use of Assistant the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: An assistant helps organize returned books. A volunteer offers agreed help without pay, while a reader uses written materials. These roles are established by the account, rather than guessed from clothing. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Student", "Researcher", "Author"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.",
+          "scenario": "Maya is an adult student taking a course. A researcher investigates a question using evidence, and an author writes a work. Today the author speaks about her new book while Maya takes notes.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who wrote the new book?",
             "options": ["Student", "Researcher", "Author"],
-            "expectedAnswer": "Student"
+            "expectedAnswer": "Author"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Student as the central item; include Student, Researcher, and Author naturally where visually appropriate, but make the real-world use of Student the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: Maya is an adult student taking a course. A researcher investigates a question using evidence, and an author writes a work. Today the author speaks about her new book while Maya takes notes. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Storyteller", "Guard", "Cleaner"],
-          "scenario": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.",
+          "scenario": "A storyteller tells a tale at an adult event. A guard helps look after people and property, and a cleaner cleans the room afterwards. The story event does not make every staff member a storyteller.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Who cleans the room afterwards?",
             "options": ["Storyteller", "Guard", "Cleaner"],
-            "expectedAnswer": "Storyteller"
+            "expectedAnswer": "Cleaner"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a library. Show an adult using or examining the Storyteller as the central item; include Storyteller, Guard, and Cleaner naturally where visually appropriate, but make the real-world use of Storyteller the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a library completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic adult public-library account: A storyteller tells a tale at an adult event. A guard helps look after people and property, and a cleaner cleans the room afterwards. The story event does not make every staff member a storyteller. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance.",
+          "imageAlt": "Adult visitors and staff in a library with shelves and reading furniture."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "A Real-World Task: The Library",
-      "text": "At the library, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Label, Catalog, and Computer. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Printer, Scanner, and Librarian. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Assistant, Volunteer, and Reader. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Student, Researcher, and Author. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Storyteller, Guard, and Cleaner. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Library. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Resources and people",
+      "text": "Maya follows a label to the correct shelf and searches the catalog on a computer. A librarian explains a record, while an assistant organizes returned books. A volunteer helps with an agreed event. Omar, a reader, asks about a scanner for permitted notes rather than the printer for paper copies. Maya is an adult student, and a researcher studies local records. An author presents her new book. At another event, a storyteller tells a tale. A guard looks after the building, and a cleaner tidies the room afterwards. Their roles are stated rather than inferred from appearances.",
+      "imageBrief": "Photorealistic adult public-library account: A shelf label helps Maya locate a category. The catalog lists the library’s resources, and she searches it on a computer. Finding a record does not guarantee the item is available to borrow now. Show adult visitors, shelves and relevant furnishings or devices in an accessible reading area. Keep private account details and documents unreadable. Do not reproduce copyrighted covers or named characters. No logos, readable signage, overlays or answer highlighting. Stated publication type, staff role, access and permissions are established in text rather than appearance."
     },
     "exercises": [
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Label, Catalog, and Computer and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Label",
+        "prompt": "A shelf label helps Maya locate a category. The catalog lists the library’s resources, and she searches it on a computer. Finding a record does not guarantee the item is available to borrow now.\nWhich resource lists the library’s holdings?",
+        "answer": "Catalog",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Printer, Scanner, and Librarian and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Printer",
+        "prompt": "Omar asks the librarian for help with a document. The printer produces a paper copy from a file, while the scanner creates a digital image from paper. He needs a digital image of permitted notes.\nWhich device creates the digital image?",
+        "answer": "Scanner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Assistant, Volunteer, and Reader and choose the option that fits the situation.\nWhich option identifies the person or role central to the situation shown?",
-        "answer": "Assistant",
+        "prompt": "An assistant helps organize returned books. A volunteer offers agreed help without pay, while a reader uses written materials. These roles are established by the account, rather than guessed from clothing.\nWhich role offers agreed help without pay?",
+        "answer": "Volunteer",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Student, Researcher, and Author and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Student",
+        "prompt": "Maya is an adult student taking a course. A researcher investigates a question using evidence, and an author writes a work. Today the author speaks about her new book while Maya takes notes.\nWho wrote the new book?",
+        "answer": "Author",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "In the library setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Storyteller, Guard, and Cleaner and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Storyteller",
+        "prompt": "A storyteller tells a tale at an adult event. A guard helps look after people and property, and a cleaner cleans the room afterwards. The story event does not make every staff member a storyteller.\nWho cleans the room afterwards?",
+        "answer": "Cleaner",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Label"
+        "prompt": "Maya follows a label to the correct shelf and searches the catalog on a computer. A librarian explains a record, while an assistant organizes returned books. A volunteer helps with an agreed event. Omar, a reader, asks about a scanner for permitted notes rather than the printer for paper copies. Maya is an adult student, and a researcher studies local records. An author presents her new book. At another event, a storyteller tells a tale. A guard looks after the building, and a cleaner tidies the room afterwards. Their roles are stated rather than inferred from appearances.\nWho presents her new book?",
+        "answer": "The author",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Printer"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Reading” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the library task. Use Label, Catalog, Computer, Printer, Scanner, Librarian, Assistant, Volunteer, Reader, Student, Researcher, Author, Storyteller, Guard, and Cleaner in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this visit using Label and Catalog.",
+        "answer": "A label identifies a shelf category, and the catalog lists the resources.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Library: In Context",
-      "idea": "35-50 seconds contextual scene in the academic setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the academic setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Resources and people",
+      "idea": "Read this adult library visit in short sections. Pause on a stated distinction and ask its question. Use anonymous documents, invented covers and no private account data.",
+      "scriptStarter": "A shelf label helps Maya locate a category. The catalog lists the library’s resources, and she searches it on a computer. Finding a record does not guarantee the item is available to borrow now."
     },
     "spacedReview": "1 lesson(s) back: Reading, Borrowing from library-3\n3 lesson(s) back: Novel, Picture Book from library-1\n7 lesson(s) back: Lint Roller, Clothespin from laundromat-2"
   }

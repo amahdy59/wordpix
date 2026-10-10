@@ -33,151 +33,145 @@
       "قصاصات احتفال",
       "قبعة حفلة",
       "مفرش طاولة",
-      "قطعة زينة مركزية",
+      "قطعة زينة وسط المائدة",
       "إكليل زينة",
       "بنياتا",
-      "أعلام زينة",
+      "أعلام زينة متصلة بخيط",
       "كعكة",
       "كب كيك",
-      "كريمة ثلج",
+      "آيس كريم",
       "بيتزا",
       "حلوى"
     ],
     "usage": {
-      "goal": "Learn to use the birthday party 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the birthday party.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish birthday objects and activities in an adult party plan.",
+      "canDoStatement": "Can identify objects and optional activities in a supported adult celebration account. Specialist game names extend the supported task level; inherited child-related labels are explained as family vocabulary, not a child-learning mode.",
+      "textType": "adult-party-planning-account",
+      "readingTarget": "Supported linked adult party account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Balloon", "Banner", "Streamer"],
-          "scenario": "During a routine the birthday party task, an adult compares Balloon, Banner, Streamer. The person selects Balloon for the next step.",
+          "scenario": "Adult friends decorate Mona’s birthday room. A balloon is inflated and tied near the door. A banner hangs on the wall, while a streamer is a narrow strip of paper hanging from the ceiling.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which decoration is inflated?",
             "options": ["Balloon", "Banner", "Streamer"],
             "expectedAnswer": "Balloon"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Balloon, Banner, Streamer. The person selects Balloon for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Balloon, Banner, Streamer in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult friends decorating a room with a tied balloon, blank banner and paper streamers. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult friends decorating a room with a tied balloon, blank banner and paper streamers."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Confetti", "Party Hat", "Tablecloth"],
-          "scenario": "During a routine the birthday party task, an adult compares Confetti, Party Hat, Tablecloth. The person selects Confetti for the next step.",
+          "scenario": "Salma covers the table with a tablecloth. A paper party hat waits beside each place. Small pieces of confetti decorate one corner of the table rather than covering the food.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item covers the table?",
             "options": ["Confetti", "Party Hat", "Tablecloth"],
-            "expectedAnswer": "Confetti"
+            "expectedAnswer": "Tablecloth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Confetti, Party Hat, Tablecloth. The person selects Confetti for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Confetti, Party Hat, Tablecloth in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult organizer setting a table with a cloth, paper hats and a little confetti away from food. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult organizer setting a table with a cloth, paper hats and a little confetti away from food."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Centerpiece", "Garland", "Pinata"],
-          "scenario": "During a routine the birthday party task, an adult compares Centerpiece, Garland, Pinata. The person selects Centerpiece for the next step.",
+          "scenario": "The centerpiece is a flower arrangement in the middle of the table. A garland stretches across the wall. A piñata is a decorated container traditionally filled with sweets for a party game; the adult hosts display it unopened today.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which decoration is in the middle of the table?",
             "options": ["Centerpiece", "Garland", "Pinata"],
             "expectedAnswer": "Centerpiece"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Centerpiece, Garland, Pinata. The person selects Centerpiece for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Centerpiece, Garland, Pinata in a natural setting."
+          "imageBrief": "Photorealistic scene: Flower centerpiece on a table, wall garland and an unopened decorative piñata beside adult hosts. No hitting or blindfolded action. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Flower centerpiece on a table, wall garland and an unopened decorative piñata beside adult hosts. No hitting or blindfolded action."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Bunting", "Cake", "Cupcake"],
-          "scenario": "During a routine the birthday party task, an adult compares Bunting, Cake, Cupcake. The person selects Bunting for the next step.",
+          "scenario": "Bunting is a line of small flags above the serving table. The large cake will be cut into portions. A cupcake is a small individual cake, so each guest can take one without cutting the large cake.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is a small individual cake?",
             "options": ["Bunting", "Cake", "Cupcake"],
-            "expectedAnswer": "Bunting"
+            "expectedAnswer": "Cupcake"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Bunting, Cake, Cupcake. The person selects Bunting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Bunting, Cake, Cupcake in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests beside a large cake, individual cupcakes and decorative bunting. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult guests beside a large cake, individual cupcakes and decorative bunting."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Ice Cream", "Pizza", "Candy"],
-          "scenario": "During a routine the birthday party task, an adult compares Ice Cream, Pizza, Candy. The person selects Ice Cream for the next step.",
+          "scenario": "The hosts offer pizza as savory food. Ice cream is a frozen dessert, and candy consists of sweets. Guests choose what they want; a photograph cannot establish ingredients or dietary suitability.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which option is the frozen dessert?",
             "options": ["Ice Cream", "Pizza", "Candy"],
             "expectedAnswer": "Ice Cream"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Ice Cream, Pizza, Candy. The person selects Ice Cream for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Ice Cream, Pizza, Candy in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult hosts presenting pizza, a small bowl of ice cream and wrapped sweets on separate serving dishes. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult hosts presenting pizza, a small bowl of ice cream and wrapped sweets on separate serving dishes."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Birthday Party: Email",
-      "text": "Omar has an everyday task connected to the birthday party. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss balloon, banner, and streamer. The context makes the relationship between the words clear. In the social situation, the people experience or discuss confetti, party hat, and tablecloth. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Birthday Party. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Preparing Mona’s room",
+      "text": "Adult friends prepare Mona’s birthday room. A balloon stands near the door, with a banner and streamer above it. Salma spreads a tablecloth, places a party hat at each seat and adds a little confetti away from food. A centerpiece stands in the middle, and a garland crosses the wall. An unopened piñata is displayed as a decoration. Bunting hangs above the large cake and individual cupcakes. Pizza comes first, with ice cream and candy among the desserts. The hosts ask about preferences rather than guessing ingredients from pictures. Nobody must wear a hat or choose a particular food to join the celebration.",
+      "imageBrief": "Photorealistic scene: Adult friends decorating a room with a tied balloon, blank banner and paper streamers. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine the birthday party task, an adult compares Balloon, Banner, Streamer. The person selects Balloon for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Adult friends decorate Mona’s birthday room. A balloon is inflated and tied near the door. A banner hangs on the wall, while a streamer is a narrow strip of paper hanging from the ceiling.\nWhich decoration is inflated?",
         "answer": "Balloon",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Confetti, Party Hat, Tablecloth. The person selects Confetti for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Confetti",
+        "prompt": "Salma covers the table with a tablecloth. A paper party hat waits beside each place. Small pieces of confetti decorate one corner of the table rather than covering the food.\nWhich item covers the table?",
+        "answer": "Tablecloth",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Centerpiece, Garland, Pinata. The person selects Centerpiece for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The centerpiece is a flower arrangement in the middle of the table. A garland stretches across the wall. A piñata is a decorated container traditionally filled with sweets for a party game; the adult hosts display it unopened today.\nWhich decoration is in the middle of the table?",
         "answer": "Centerpiece",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Bunting, Cake, Cupcake. The person selects Bunting for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Bunting",
+        "prompt": "Bunting is a line of small flags above the serving table. The large cake will be cut into portions. A cupcake is a small individual cake, so each guest can take one without cutting the large cake.\nWhich item is a small individual cake?",
+        "answer": "Cupcake",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Ice Cream, Pizza, Candy. The person selects Ice Cream for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The hosts offer pizza as savory food. Ice cream is a frozen dessert, and candy consists of sweets. Guests choose what they want; a photograph cannot establish ingredients or dietary suitability.\nWhich option is the frozen dessert?",
         "answer": "Ice Cream",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Balloon"
+        "prompt": "Adult friends prepare Mona’s birthday room. A balloon stands near the door, with a banner and streamer above it. Salma spreads a tablecloth, places a party hat at each seat and adds a little confetti away from food. A centerpiece stands in the middle, and a garland crosses the wall. An unopened piñata is displayed as a decoration. Bunting hangs above the large cake and individual cupcakes. Pizza comes first, with ice cream and candy among the desserts. The hosts ask about preferences rather than guessing ingredients from pictures. Nobody must wear a hat or choose a particular food to join the celebration.\nWill guests play a game with the piñata today?",
+        "answer": "No; it is displayed unopened",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Confetti"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Oath” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Adult friends decorate Mona’s birthday room. A balloon is inflated and tied near the door. A banner hangs on the wall, while a streamer is a narrow strip of paper hanging from the ceiling.\nExplain how one object is used in this plan in a complete sentence.",
+        "answer": "The balloon is inflated and tied near the door.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Birthday Party: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Preparing Mona’s room",
+      "idea": "Narrate the adult party plan and pause for one object or activity question. Participation is optional; explain complete natural instructions without performing risky games or flame handling.",
+      "scriptStarter": "Adult friends decorate Mona’s birthday room. A balloon is inflated and tied near the door. A banner hangs on the wall, while a streamer is a narrow strip of paper hanging from the ceiling."
     },
     "spacedReview": "1 lesson(s) back: Oath, Pledge from life-events-4\n3 lesson(s) back: Getting Married, Having a Baby from life-events-2\n7 lesson(s) back: Friend, Best Friend from relationships-roles-1"
   },
@@ -213,153 +207,147 @@
       "علبة عصير صغيرة",
       "ليمونادة",
       "فاكهة",
-      "رقائق",
+      "رقائق بطاطس مقرمشة",
       "لعبة الكراسي الموسيقية",
       "لعبة تثبيت الذيل",
       "لعبة البحث عن الكنز",
-      "لوحة فنية وجه",
+      "الرسم على الوجه",
       "أشكال حيوانات من البالونات",
       "سباق تتابع",
       "كاريوكي",
       "رقص",
-      "لعبة الليمبو",
-      "بطاقة تعريف"
+      "رقص أو لعبة الليمبو",
+      "لعبة المطاردة واللمس"
     ],
     "usage": {
-      "goal": "Learn to use the birthday party 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the birthday party.",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish birthday objects and activities in an adult party plan.",
+      "canDoStatement": "Can identify objects and optional activities in a supported adult celebration account. Specialist game names extend the supported task level; inherited child-related labels are explained as family vocabulary, not a child-learning mode.",
+      "textType": "adult-party-planning-account",
+      "readingTarget": "Supported linked adult party account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Popcorn", "Juice Box", "Lemonade"],
-          "scenario": "During a routine the birthday party task, an adult compares Popcorn, Juice Box, Lemonade. The person selects Popcorn for the next step.",
+          "scenario": "At the refreshment table, popcorn sits in a bowl. A juice box is a small carton of juice. Homemade lemonade is made with lemon, water and sugar here; other places may use the word for a different soft drink.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which drink is served in a small carton?",
             "options": ["Popcorn", "Juice Box", "Lemonade"],
-            "expectedAnswer": "Popcorn"
+            "expectedAnswer": "Juice Box"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Popcorn, Juice Box, Lemonade. The person selects Popcorn for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Popcorn, Juice Box, Lemonade in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests at a table with popcorn, plain small juice cartons and a jug of lemonade. No readable packaging. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult guests at a table with popcorn, plain small juice cartons and a jug of lemonade. No readable packaging."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Fruit", "Chips", "Musical Chairs"],
-          "scenario": "During a routine the birthday party task, an adult compares Fruit, Chips, Musical Chairs. The person selects Fruit for the next step.",
+          "scenario": "The host puts fruit and potato chips on separate dishes. Here, chips means thin crisp potato slices in American English, also called crisps in British English. Musical chairs is a game of finding a seat when music stops; the adults choose a seated quiz instead.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the thin crisp potato slices here?",
             "options": ["Fruit", "Chips", "Musical Chairs"],
-            "expectedAnswer": "Fruit"
+            "expectedAnswer": "Chips"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Fruit, Chips, Musical Chairs. The person selects Fruit for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Fruit, Chips, Musical Chairs in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult host arranging fruit and a bowl of thin potato crisps beside chairs set for a seated quiz. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult host arranging fruit and a bowl of thin potato crisps beside chairs set for a seated quiz."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Pin The Tail", "Treasure Hunt", "Face Painting"],
-          "scenario": "During a routine the birthday party task, an adult compares Pin The Tail, Treasure Hunt, Face Painting. The person selects Pin The Tail for the next step.",
+          "scenario": "The organizer explains pin the tail, a game of placing a paper tail on a picture, usually while blindfolded. A treasure hunt follows clues to hidden objects. Face painting decorates a face with suitable cosmetic colors. Guests may choose an activity or simply watch.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity follows clues to hidden objects?",
             "options": ["Pin The Tail", "Treasure Hunt", "Face Painting"],
-            "expectedAnswer": "Pin The Tail"
+            "expectedAnswer": "Treasure Hunt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Pin The Tail, Treasure Hunt, Face Painting. The person selects Pin The Tail for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Pin The Tail, Treasure Hunt, Face Painting in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult organizer laying out a simple picture, paper tail, clue envelopes and closed cosmetic supplies on a table. No blindfolded movement or face-painting procedure. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult organizer laying out a simple picture, paper tail, clue envelopes and closed cosmetic supplies on a table. No blindfolded movement or face-painting procedure."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Balloon Animals", "Relay Race", "Karaoke"],
-          "scenario": "During a routine the birthday party task, an adult compares Balloon Animals, Relay Race, Karaoke. The person selects Balloon Animals for the next step.",
+          "scenario": "The entertainer makes balloon animals by twisting long balloons. A relay race has team members completing stages in turn. Karaoke lets people sing with recorded accompaniment. At this adult party, volunteers choose karaoke and others listen.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity uses recorded accompaniment for singers?",
             "options": ["Balloon Animals", "Relay Race", "Karaoke"],
-            "expectedAnswer": "Balloon Animals"
+            "expectedAnswer": "Karaoke"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Balloon Animals, Relay Race, Karaoke. The person selects Balloon Animals for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Balloon Animals, Relay Race, Karaoke in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult singer holding a microphone near an entertainer’s finished balloon animal display. No readable lyrics. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult singer holding a microphone near an entertainer’s finished balloon animal display. No readable lyrics."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Dance", "Limbo", "Tag"],
-          "scenario": "During a routine the birthday party task, an adult compares Dance, Limbo, Tag. The person selects Dance for the next step.",
+          "scenario": "The host explains three movement activities. Dance means moving to music. Limbo involves passing under a bar while leaning backward. Tag is a chasing game in which one player touches another. The adults choose ordinary dancing; nobody must attempt a physical game.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity involves passing under a bar?",
             "options": ["Dance", "Limbo", "Tag"],
-            "expectedAnswer": "Dance"
+            "expectedAnswer": "Limbo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Dance, Limbo, Tag. The person selects Dance for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Dance, Limbo, Tag in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests dancing naturally in a clear indoor space. Do not depict extreme bending, chasing, collisions or compulsory participation. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult guests dancing naturally in a clear indoor space. Do not depict extreme bending, chasing, collisions or compulsory participation."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Birthday Party: Personal Message",
-      "text": "Omar has an everyday task connected to the birthday party. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss popcorn, juice box, and lemonade. The context makes the relationship between the words clear. In the social situation, the people experience or discuss fruit, chips, and musical chairs. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Birthday Party. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Choosing activities",
+      "text": "At the adult party, popcorn, a juice box and homemade lemonade are available. Fruit sits beside potato chips, meaning thin crisps in the American English used here. The organizer describes musical chairs, pin the tail, a treasure hunt and face painting. An entertainer displays balloon animals. Other ideas include a relay race, karaoke, dance, limbo and tag. The guests choose a seated quiz, optional karaoke and ordinary dancing. They do not need to attempt every game or a difficult movement. Some guests simply talk or listen to the music. The organizer explains the names while respecting different interests and access needs.",
+      "imageBrief": "Photorealistic scene: Adult guests at a table with popcorn, plain small juice cartons and a jug of lemonade. No readable packaging. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine the birthday party task, an adult compares Popcorn, Juice Box, Lemonade. The person selects Popcorn for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Popcorn",
+        "prompt": "At the refreshment table, popcorn sits in a bowl. A juice box is a small carton of juice. Homemade lemonade is made with lemon, water and sugar here; other places may use the word for a different soft drink.\nWhich drink is served in a small carton?",
+        "answer": "Juice Box",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Fruit, Chips, Musical Chairs. The person selects Fruit for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Fruit",
+        "prompt": "The host puts fruit and potato chips on separate dishes. Here, chips means thin crisp potato slices in American English, also called crisps in British English. Musical chairs is a game of finding a seat when music stops; the adults choose a seated quiz instead.\nWhich word names the thin crisp potato slices here?",
+        "answer": "Chips",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Pin The Tail, Treasure Hunt, Face Painting. The person selects Pin The Tail for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Pin The Tail",
+        "prompt": "The organizer explains pin the tail, a game of placing a paper tail on a picture, usually while blindfolded. A treasure hunt follows clues to hidden objects. Face painting decorates a face with suitable cosmetic colors. Guests may choose an activity or simply watch.\nWhich activity follows clues to hidden objects?",
+        "answer": "Treasure Hunt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Balloon Animals, Relay Race, Karaoke. The person selects Balloon Animals for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Balloon Animals",
+        "prompt": "The entertainer makes balloon animals by twisting long balloons. A relay race has team members completing stages in turn. Karaoke lets people sing with recorded accompaniment. At this adult party, volunteers choose karaoke and others listen.\nWhich activity uses recorded accompaniment for singers?",
+        "answer": "Karaoke",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Dance, Limbo, Tag. The person selects Dance for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Dance",
+        "prompt": "The host explains three movement activities. Dance means moving to music. Limbo involves passing under a bar while leaning backward. Tag is a chasing game in which one player touches another. The adults choose ordinary dancing; nobody must attempt a physical game.\nWhich activity involves passing under a bar?",
+        "answer": "Limbo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Popcorn"
+        "prompt": "At the adult party, popcorn, a juice box and homemade lemonade are available. Fruit sits beside potato chips, meaning thin crisps in the American English used here. The organizer describes musical chairs, pin the tail, a treasure hunt and face painting. An entertainer displays balloon animals. Other ideas include a relay race, karaoke, dance, limbo and tag. The guests choose a seated quiz, optional karaoke and ordinary dancing. They do not need to attempt every game or a difficult movement. Some guests simply talk or listen to the music. The organizer explains the names while respecting different interests and access needs.\nDo guests need to attempt every game?",
+        "answer": "No; participation and activities are optional",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Fruit"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Balloon” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "At the refreshment table, popcorn sits in a bowl. A juice box is a small carton of juice. Homemade lemonade is made with lemon, water and sugar here; other places may use the word for a different soft drink.\nExplain how one object is used in this plan in a complete sentence.",
+        "answer": "The juice box contains a small serving of juice.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Birthday Party: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Choosing activities",
+      "idea": "Narrate the adult party plan and pause for one object or activity question. Participation is optional; explain complete natural instructions without performing risky games or flame handling.",
+      "scriptStarter": "At the refreshment table, popcorn sits in a bowl. A juice box is a small carton of juice. Homemade lemonade is made with lemon, water and sugar here; other places may use the word for a different soft drink."
     },
     "spacedReview": "1 lesson(s) back: Balloon, Banner from birthday-party-1\n3 lesson(s) back: Award, Certificate from life-events-3\n7 lesson(s) back: Girlfriend, Fiancé from relationships-roles-2"
   },
@@ -396,152 +384,146 @@
       "فيونكة",
       "كيس هدايا",
       "بطاقة",
-      "شريط",
+      "شريط زينة",
       "ورق حريري",
       "مفاجأة",
       "رسالة شكر",
-      "طبق / صحن",
-      "فنجان",
+      "طبق",
+      "كوب",
       "منديل",
       "شوكة",
       "شمعة",
       "ولاعة"
     ],
     "usage": {
-      "goal": "Learn to use the birthday party 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the birthday party.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish birthday objects and activities in an adult party plan.",
+      "canDoStatement": "Can identify objects and optional activities in a supported adult celebration account. Specialist game names extend the supported task level; inherited child-related labels are explained as family vocabulary, not a child-learning mode.",
+      "textType": "adult-party-planning-account",
+      "readingTarget": "Supported linked adult party account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Present", "Wrapping Paper", "Bow"],
-          "scenario": "During a routine the birthday party task, an adult compares Present, Wrapping Paper, Bow. The person selects Present for the next step.",
+          "scenario": "Karim packs a present for Mona. Wrapping paper covers the box, and a bow made from ribbon decorates the top. Here, bow means a looped knot, rather than the front of a boat.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which decoration is the looped knot?",
             "options": ["Present", "Wrapping Paper", "Bow"],
-            "expectedAnswer": "Present"
+            "expectedAnswer": "Bow"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Present, Wrapping Paper, Bow. The person selects Present for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Present, Wrapping Paper, Bow in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult wrapping a gift box in decorated paper with a ribbon bow on top. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult wrapping a gift box in decorated paper with a ribbon bow on top."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Gift Bag", "Card", "Ribbon"],
-          "scenario": "During a routine the birthday party task, an adult compares Gift Bag, Card, Ribbon. The person selects Gift Bag for the next step.",
+          "scenario": "Nadia puts a gift in a gift bag. She adds a greeting card with birthday wishes and ties ribbon to the handle. The card contains a message; it is not an identity document.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item contains the birthday message?",
             "options": ["Gift Bag", "Card", "Ribbon"],
-            "expectedAnswer": "Gift Bag"
+            "expectedAnswer": "Card"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Gift Bag, Card, Ribbon. The person selects Gift Bag for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Gift Bag, Card, Ribbon in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult placing a folded greeting card into a gift bag tied with ribbon. No readable message. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult placing a folded greeting card into a gift bag tied with ribbon. No readable message."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Tissue Paper", "Surprise", "Thank You Note"],
-          "scenario": "During a routine the birthday party task, an adult compares Tissue Paper, Surprise, Thank You Note. The person selects Tissue Paper for the next step.",
+          "scenario": "Tissue paper cushions the gift inside the bag. Mona says the unexpected visit is a pleasant surprise. The next day she writes a thank you note to show appreciation for the gift and company.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is a written message of appreciation?",
             "options": ["Tissue Paper", "Surprise", "Thank You Note"],
-            "expectedAnswer": "Tissue Paper"
+            "expectedAnswer": "Thank You Note"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Tissue Paper, Surprise, Thank You Note. The person selects Tissue Paper for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Tissue Paper, Surprise, Thank You Note in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult at a desk with a gift bag and tissue paper, writing on a blank card. Written text establishes the timing and surprise. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult at a desk with a gift bag and tissue paper, writing on a blank card. Written text establishes the timing and surprise."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Plate", "Cup", "Napkin"],
-          "scenario": "During a routine the birthday party task, an adult compares Plate, Cup, Napkin. The person selects Plate for the next step.",
+          "scenario": "Each place has a plate for food, a cup for a drink and a napkin for wiping the mouth or protecting clothing. The hosts keep extra napkins nearby so guests can help themselves.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is used for a drink?",
             "options": ["Plate", "Cup", "Napkin"],
-            "expectedAnswer": "Plate"
+            "expectedAnswer": "Cup"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Plate, Cup, Napkin. The person selects Plate for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Plate, Cup, Napkin in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult setting a place with a plate, cup and napkin. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult setting a place with a plate, cup and napkin."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Fork", "Candle", "Lighter"],
-          "scenario": "During a routine the birthday party task, an adult compares Fork, Candle, Lighter. The person selects Fork for the next step.",
+          "scenario": "A fork is ready for eating cake. A candle stands in the cake, and an adult host has a lighter for lighting it. The lighter makes a flame; it is a tool rather than a decoration or piece of cutlery.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item is cutlery for eating?",
             "options": ["Fork", "Candle", "Lighter"],
             "expectedAnswer": "Fork"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Fork, Candle, Lighter. The person selects Fork for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Fork, Candle, Lighter in a natural setting."
+          "imageBrief": "Photorealistic scene: Fork beside a cake with an unlit candle; a closed lighter rests separately beside an adult host. No flame-handling demonstration. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Fork beside a cake with an unlit candle; a closed lighter rests separately beside an adult host. No flame-handling demonstration."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Birthday Party: Short Dialogue",
-      "text": "Omar has an everyday task connected to the birthday party. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss present, wrapping paper, and bow. The context makes the relationship between the words clear. In the social situation, the people experience or discuss gift bag, card, and ribbon. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Birthday Party. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Gifts and the table",
+      "text": "Karim covers a present with wrapping paper and ties a bow. Nadia brings a gift bag, greeting card and ribbon. Tissue paper cushions her gift. Mona enjoys the surprise visit and later writes a thank you note. At the meal, each place has a plate, cup and napkin. A fork is ready for the cake. An adult host places a candle in it and keeps the lighter separate. Guests give gifts if they wish; the hosts do not judge the value of a present. The thank you note expresses appreciation for both gifts and time spent together.",
+      "imageBrief": "Photorealistic scene: Adult wrapping a gift box in decorated paper with a ribbon bow on top. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine the birthday party task, an adult compares Present, Wrapping Paper, Bow. The person selects Present for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Present",
+        "prompt": "Karim packs a present for Mona. Wrapping paper covers the box, and a bow made from ribbon decorates the top. Here, bow means a looped knot, rather than the front of a boat.\nWhich decoration is the looped knot?",
+        "answer": "Bow",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Gift Bag, Card, Ribbon. The person selects Gift Bag for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Gift Bag",
+        "prompt": "Nadia puts a gift in a gift bag. She adds a greeting card with birthday wishes and ties ribbon to the handle. The card contains a message; it is not an identity document.\nWhich item contains the birthday message?",
+        "answer": "Card",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Tissue Paper, Surprise, Thank You Note. The person selects Tissue Paper for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Tissue Paper",
+        "prompt": "Tissue paper cushions the gift inside the bag. Mona says the unexpected visit is a pleasant surprise. The next day she writes a thank you note to show appreciation for the gift and company.\nWhich item is a written message of appreciation?",
+        "answer": "Thank You Note",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Plate, Cup, Napkin. The person selects Plate for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Plate",
+        "prompt": "Each place has a plate for food, a cup for a drink and a napkin for wiping the mouth or protecting clothing. The hosts keep extra napkins nearby so guests can help themselves.\nWhich item is used for a drink?",
+        "answer": "Cup",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Fork, Candle, Lighter. The person selects Fork for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A fork is ready for eating cake. A candle stands in the cake, and an adult host has a lighter for lighting it. The lighter makes a flame; it is a tool rather than a decoration or piece of cutlery.\nWhich item is cutlery for eating?",
         "answer": "Fork",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Present"
+        "prompt": "Karim covers a present with wrapping paper and ties a bow. Nadia brings a gift bag, greeting card and ribbon. Tissue paper cushions her gift. Mona enjoys the surprise visit and later writes a thank you note. At the meal, each place has a plate, cup and napkin. A fork is ready for the cake. An adult host places a candle in it and keeps the lighter separate. Guests give gifts if they wish; the hosts do not judge the value of a present. The thank you note expresses appreciation for both gifts and time spent together.\nWhat does the thank you note express appreciation for?",
+        "answer": "Gifts and time spent together",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Gift Bag"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Popcorn” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Karim packs a present for Mona. Wrapping paper covers the box, and a bow made from ribbon decorates the top. Here, bow means a looped knot, rather than the front of a boat.\nExplain how one object is used in this plan in a complete sentence.",
+        "answer": "The wrapping paper covers Karim’s present.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Birthday Party: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Gifts and the table",
+      "idea": "Narrate the adult party plan and pause for one object or activity question. Participation is optional; explain complete natural instructions without performing risky games or flame handling.",
+      "scriptStarter": "Karim packs a present for Mona. Wrapping paper covers the box, and a bow made from ribbon decorates the top. Here, bow means a looped knot, rather than the front of a boat."
     },
     "spacedReview": "1 lesson(s) back: Popcorn, Juice Box from birthday-party-2\n3 lesson(s) back: Oath, Pledge from life-events-4\n7 lesson(s) back: Teacher, Student from relationships-roles-3"
   },
@@ -588,140 +570,134 @@
       "يحتفل"
     ],
     "usage": {
-      "goal": "Learn to use the birthday party 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the birthday party.",
-      "textType": "dialogue",
-      "readingTarget": "65-95 words",
+      "goal": "Distinguish birthday objects and activities in an adult party plan.",
+      "canDoStatement": "Can identify objects and optional activities in a supported adult celebration account. Specialist game names extend the supported task level; inherited child-related labels are explained as family vocabulary, not a child-learning mode.",
+      "textType": "adult-party-planning-account",
+      "readingTarget": "Supported linked adult party account",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Party Horn", "Whistle", "Glow Stick"],
-          "scenario": "During a routine the birthday party task, an adult compares Party Horn, Whistle, Glow Stick. The person selects Party Horn for the next step.",
+          "scenario": "The host compares a party horn, which makes a noise when blown, with a whistle, which makes a sharp signal. A glow stick gives light without being blown. The party uses gentle music instead of loud noisemakers.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which item gives light rather than being blown?",
             "options": ["Party Horn", "Whistle", "Glow Stick"],
-            "expectedAnswer": "Party Horn"
+            "expectedAnswer": "Glow Stick"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Party Horn, Whistle, Glow Stick. The person selects Party Horn for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Party Horn, Whistle, Glow Stick in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult host arranging unused party horns, a whistle and sealed glow sticks on a table. No loud-noise performance. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult host arranging unused party horns, a whistle and sealed glow sticks on a table. No loud-noise performance."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sticker", "Birthday Child", "Guest"],
-          "scenario": "During a routine the birthday party task, an adult compares Sticker, Birthday Child, Guest. The person selects Sticker for the next step.",
+          "scenario": "An adult planner reviews family-event vocabulary. A sticker has an adhesive back. Birthday child names the child whose birthday a family party celebrates; at an adult party, use birthday person instead. A guest is someone invited to the event.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which term names a person invited to the event?",
             "options": ["Sticker", "Birthday Child", "Guest"],
-            "expectedAnswer": "Sticker"
+            "expectedAnswer": "Guest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Sticker, Birthday Child, Guest. The person selects Sticker for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Sticker, Birthday Child, Guest in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult event planner showing invitation envelopes and adhesive stickers at a desk. Adult-focused composition; no child learner. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult event planner showing invitation envelopes and adhesive stickers at a desk. Adult-focused composition; no child learner."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Clown", "Magician", "Wish"],
-          "scenario": "During a routine the birthday party task, an adult compares Clown, Magician, Wish. The person selects Clown for the next step.",
+          "scenario": "At a performance demonstration, a clown uses comic costume and actions. A magician performs tricks and illusions. Mona makes a wish, something she hopes will happen; the performers do not promise to make it come true.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which performer uses tricks and illusions?",
             "options": ["Clown", "Magician", "Wish"],
-            "expectedAnswer": "Clown"
+            "expectedAnswer": "Magician"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Clown, Magician, Wish. The person selects Clown for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Clown, Magician, Wish in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult entertainers demonstrating comic performance and a simple stage illusion to adult organizers. Do not depict magic as a real supernatural claim. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult entertainers demonstrating comic performance and a simple stage illusion to adult organizers. Do not depict magic as a real supernatural claim."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Blow Candles", "Open Gifts", "Group Photo"],
-          "scenario": "During a routine the birthday party task, an adult compares Blow Candles, Open Gifts, Group Photo. The person selects Blow Candles for the next step.",
+          "scenario": "The invitation describes the sequence: blow out the candles, open gifts, then take a group photo with everyone’s agreement. The historical target label “Blow Candles” names the first action, but the natural instruction is “blow out the candles.” Guests can decline a photo.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which activity creates a picture of several people together?",
             "options": ["Blow Candles", "Open Gifts", "Group Photo"],
-            "expectedAnswer": "Blow Candles"
+            "expectedAnswer": "Group Photo"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Blow Candles, Open Gifts, Group Photo. The person selects Blow Candles for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Blow Candles, Open Gifts, Group Photo in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult guests gathering for an agreed photograph, with a cake and wrapped gifts nearby. Candles remain unlit; do not imply consent from appearance. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult guests gathering for an agreed photograph, with a cake and wrapped gifts nearby. Candles remain unlit; do not imply consent from appearance."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Sing", "Celebrate"],
-          "scenario": "During a routine the birthday party task, an adult compares Sing, Celebrate, Party Horn. The person selects Sing for the next step.",
+          "scenario": "The friends sing a birthday song and celebrate Mona’s birthday together. Sing means making music with the voice; celebrate means marking a special occasion. Mona is happy for guests to listen quietly rather than sing.",
           "check": {
-            "question": "Which option does the person select for the next step?",
-            "options": ["Sing", "Celebrate", "Party Horn"],
+            "question": "Which verb means making music with the voice?",
+            "options": ["Sing", "Celebrate"],
             "expectedAnswer": "Sing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the birthday party context illustrating this situation: During a routine the birthday party task, an adult compares Sing, Celebrate, Party Horn. The person selects Sing for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the birthday party scene showing lesson-related items or actions including Sing, Celebrate in a natural setting."
+          "imageBrief": "Photorealistic scene: Adult friends sharing a relaxed birthday gathering around a cake. No readable lyrics; do not require every person to perform. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting.",
+          "imageAlt": "Adult friends sharing a relaxed birthday gathering around a cake. No readable lyrics; do not require every person to perform."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Birthday Party: Everyday Description",
-      "text": "Omar has an everyday task connected to the birthday party. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss party horn, whistle, and glow stick. The context makes the relationship between the words clear. In the social situation, the people experience or discuss sticker, birthday child, and guest. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Birthday Party. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Welcoming different guests",
+      "text": "An adult planner sets aside a party horn and whistle because the hosts prefer gentle music. Sealed glow sticks and stickers provide other decorations. She explains that birthday child belongs to a family celebration for a child; birthday person fits this adult event. Each guest can choose how to participate. A clown and magician describe their performances to the hosts. Mona makes a wish but expects no guarantee. The natural instruction is “blow out the candles,” though the vocabulary keeps the historical label “Blow Candles.” She may open gifts before an agreed group photo. Friends sing and celebrate, while others listen quietly.",
+      "imageBrief": "Photorealistic scene: Adult host arranging unused party horns, a whistle and sealed glow sticks on a table. No loud-noise performance. Natural adult-focused party or event-planning composition. Food ingredients, sounds, timing, choice and personal feelings come from text, not the picture. No readable packaging, lyrics, labels, logos, overlays, arrows or answer highlighting."
     },
     "exercises": [
       {
-        "prompt": "During a routine the birthday party task, an adult compares Party Horn, Whistle, Glow Stick. The person selects Party Horn for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Party Horn",
+        "prompt": "The host compares a party horn, which makes a noise when blown, with a whistle, which makes a sharp signal. A glow stick gives light without being blown. The party uses gentle music instead of loud noisemakers.\nWhich item gives light rather than being blown?",
+        "answer": "Glow Stick",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Sticker, Birthday Child, Guest. The person selects Sticker for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Sticker",
+        "prompt": "An adult planner reviews family-event vocabulary. A sticker has an adhesive back. Birthday child names the child whose birthday a family party celebrates; at an adult party, use birthday person instead. A guest is someone invited to the event.\nWhich term names a person invited to the event?",
+        "answer": "Guest",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Clown, Magician, Wish. The person selects Clown for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Clown",
+        "prompt": "At a performance demonstration, a clown uses comic costume and actions. A magician performs tricks and illusions. Mona makes a wish, something she hopes will happen; the performers do not promise to make it come true.\nWhich performer uses tricks and illusions?",
+        "answer": "Magician",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Blow Candles, Open Gifts, Group Photo. The person selects Blow Candles for the next step.\nWhich option does the person select for the next step?",
-        "answer": "Blow Candles",
+        "prompt": "The invitation describes the sequence: blow out the candles, open gifts, then take a group photo with everyone’s agreement. The historical target label “Blow Candles” names the first action, but the natural instruction is “blow out the candles.” Guests can decline a photo.\nWhich activity creates a picture of several people together?",
+        "answer": "Group Photo",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the birthday party task, an adult compares Sing, Celebrate, Party Horn. The person selects Sing for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The friends sing a birthday song and celebrate Mona’s birthday together. Sing means making music with the voice; celebrate means marking a special occasion. Mona is happy for guests to listen quietly rather than sing.\nWhich verb means making music with the voice?",
         "answer": "Sing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Party Horn"
+        "prompt": "An adult planner sets aside a party horn and whistle because the hosts prefer gentle music. Sealed glow sticks and stickers provide other decorations. She explains that birthday child belongs to a family celebration for a child; birthday person fits this adult event. Each guest can choose how to participate. A clown and magician describe their performances to the hosts. Mona makes a wish but expects no guarantee. The natural instruction is “blow out the candles,” though the vocabulary keeps the historical label “Blow Candles.” She may open gifts before an agreed group photo. Friends sing and celebrate, while others listen quietly.\nWhat is the natural complete instruction for the candles?",
+        "answer": "Blow out the candles",
+        "questionType": "inference",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Sticker"
-      },
-      {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Present” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "The host compares a party horn, which makes a noise when blown, with a whistle, which makes a sharp signal. A glow stick gives light without being blown. The party uses gentle music instead of loud noisemakers.\nExplain how one object is used in this plan in a complete sentence.",
+        "answer": "The glow stick provides light without being blown.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Birthday Party: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Welcoming different guests",
+      "idea": "Narrate the adult party plan and pause for one object or activity question. Participation is optional; explain complete natural instructions without performing risky games or flame handling.",
+      "scriptStarter": "The host compares a party horn, which makes a noise when blown, with a whistle, which makes a sharp signal. A glow stick gives light without being blown. The party uses gentle music instead of loud noisemakers."
     },
     "spacedReview": "1 lesson(s) back: Present, Wrapping Paper from birthday-party-3\n3 lesson(s) back: Balloon, Banner from birthday-party-1\n7 lesson(s) back: Birthday, Wedding from life-events-1"
   }

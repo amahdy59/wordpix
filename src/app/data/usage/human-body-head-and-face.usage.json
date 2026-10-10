@@ -30,8 +30,8 @@
       "رأس",
       "جمجمة",
       "فروة الرأس",
-      "ذراع النظارة",
-      "تاج",
+      "صدغ",
+      "قمة الرأس",
       "جبهة",
       "فك",
       "ذقن",
@@ -41,128 +41,144 @@
       "حاجب",
       "جفن",
       "رمش",
-      "بؤبؤ"
+      "بؤبؤ العين"
     ],
     "usage": {
-      "goal": "Learn to use the human body (head & face) 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "workplace-email",
-      "readingTarget": "65-95 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Head", "Skull", "Scalp"],
-          "scenario": "After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy.",
+          "scenario": "The head contains the skull. Scalp is the skin covering the head, not the bone beneath it.",
           "check": {
-            "question": "Which part of Lina's head feels tender?",
+            "question": "Which term names the skin covering the head?",
             "options": ["Head", "Skull", "Scalp"],
             "expectedAnswer": "Scalp"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: After bumping her head on an open cupboard, Lina feels a tender spot on her scalp. The doctor checks her skull and asks whether she felt dizzy. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Head, Skull, Scalp in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Exterior head-model reference; do not expose living tissue. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Temple", "Crown", "Forehead"],
-          "scenario": "At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\"",
+          "scenario": "Temple is the side area between forehead and ear. Crown here is the top of the head; forehead is above the eyebrows.",
           "check": {
-            "question": "Where does Maya want to leave more hair?",
+            "question": "Which term here names the top of the head?",
             "options": ["Temple", "Crown", "Forehead"],
             "expectedAnswer": "Crown"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At the salon, Maya points to her temple. \"Please cut this hair shorter, but leave more on the crown of my head. Keep my forehead clear, too.\" Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Temple, Crown, Forehead in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Plain educational head form; do not substitute a royal or dental crown. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Jaw", "Chin", "Neck"],
-          "scenario": "Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\"",
+          "scenario": "The jaw forms the mouth's bony framework. The chin is its projecting lower front area, while the neck connects head and trunk.",
           "check": {
-            "question": "What does the photographer ask Sam to lift?",
+            "question": "Which term names the projecting lower front area?",
             "options": ["Jaw", "Chin", "Neck"],
             "expectedAnswer": "Chin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Sam is having a passport photo taken. \"Relax your jaw and lift your chin a little,\" says the photographer. \"Is that comfortable for your neck?\" Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Jaw, Chin, Neck in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent head-and-neck model in side view. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Throat", "Eye", "Eyebrow"],
-          "scenario": "Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream.",
+          "scenario": "Throat names the passage behind the mouth. Eye is the organ of sight, and eyebrow is hair above the eye.",
           "check": {
-            "question": "Which body part does Noor say is sore?",
+            "question": "Which term names the passage behind the mouth?",
             "options": ["Throat", "Eye", "Eyebrow"],
             "expectedAnswer": "Throat"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Noor tells the pharmacist that her throat is sore and one eye feels itchy. She raises an eyebrow when he asks whether she has changed her face cream. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Throat, Eye, Eyebrow in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified head-section model; internal route must be independently checked. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Eyelid", "Eyelash", "Pupil"],
-          "scenario": "Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light.",
+          "scenario": "An eyelid covers the eye, and an eyelash is a hair at its edge. The pupil is the opening in the middle of the iris.",
           "check": {
-            "question": "What does the optometrist check with the light?",
+            "question": "Which term names the central opening?",
             "options": ["Eyelid", "Eyelash", "Pupil"],
             "expectedAnswer": "Pupil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Amir notices an eyelash on his cheek before his eye test. \"Keep your eyelid open, please,\" says the optometrist as she checks his pupil with a small light. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Eyelid, Eyelash, Pupil in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent eye-model close-up with an anatomically accurate central pupil. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face): Email",
-      "text": "Hi Maya, I have three appointments tomorrow. First, I need a passport photo. Last time, the photographer asked me to lift my chin and relax my jaw. Then I'm going to the salon. I want shorter hair around my temples, but more hair on the crown of my head. Finally, I have an eye test.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Parts of the head and face",
+      "text": "Dina reads a simple anatomy guide. The head contains the skull, and the scalp is the skin over it. Temple and crown name areas of the head. The forehead is above the eyebrows. The chin is below the mouth. Dina compares neck and throat, then eye and eyelid. She uses the written guide and an educational model to learn names, rather than to diagnose a person.",
+      "imageBrief": "Support for Parts of the head and face. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "Where does Lina feel a tender spot after bumping her head?",
-        "answer": "Scalp"
+        "prompt": "The head contains the skull. Scalp is the skin covering the head, not the bone beneath it.\nWhich term names the skin covering the head?",
+        "answer": "Scalp",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Where does Maya want the stylist to leave more hair?",
-        "answer": "Crown"
+        "prompt": "Temple is the side area between forehead and ear. Crown here is the top of the head; forehead is above the eyebrows.\nWhich term here names the top of the head?",
+        "answer": "Crown",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "What does the photographer ask Sam to lift?",
-        "answer": "Chin"
+        "prompt": "The jaw forms the mouth's bony framework. The chin is its projecting lower front area, while the neck connects head and trunk.\nWhich term names the projecting lower front area?",
+        "answer": "Chin",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Which body part does Noor describe as sore?",
-        "answer": "Throat"
+        "prompt": "Throat names the passage behind the mouth. Eye is the organ of sight, and eyebrow is hair above the eye.\nWhich term names the passage behind the mouth?",
+        "answer": "Throat",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "What does the optometrist check with a small light?",
-        "answer": "Pupil"
+        "prompt": "An eyelid covers the eye, and an eyelash is a hair at its edge. The pupil is the opening in the middle of the iris.\nWhich term names the central opening?",
+        "answer": "Pupil",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "In Sam's email, what does he need before his visit to the salon?",
-        "answer": "A passport photo"
+        "prompt": "Dina reads a simple anatomy guide. The head contains the skull, and the scalp is the skin over it. Temple and crown name areas of the head. The forehead is above the eyebrows. The chin is below the mouth. Dina compares neck and throat, then eye and eyelid. She uses the written guide and an educational model to learn names, rather than to diagnose a person.\nWhat is the scalp?",
+        "answer": "The skin covering the head.",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading-specific-information"
       },
       {
-        "prompt": "What will Sam tell the optometrist about his eyes?",
-        "answer": "They feel dry after work."
+        "prompt": "Explain the difference between “Head” and “Skull” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
       },
       {
-        "prompt": "Why does Sam mention the crown of his head when describing his haircut?",
-        "answer": "He wants to leave more hair there."
-      },
-      {
-        "prompt": "Use it: Tell a photographer how you feel about your pose. Use chin, jaw, or neck in your reply.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Use it: Ask a stylist for a haircut. Say where you want shorter hair and where you want to keep it longer.",
-        "answer": "Open response"
+        "prompt": "Write an original sentence using “Head” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The head contains the skull. Scalp is the skin covering the head, not the bone beneath it.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Head & Face): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Parts of the head and face",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a simple anatomy guide. The head contains the skull, and the scalp is the skin over it. Temple and crown name areas of the head. The forehead is above the eyebrows. The chin is below the mouth. Dina compares neck and throat, then eye and eyelid. She uses the written guide and an educational model to learn names, rather than to diagnose a person. Ask: What is the scalp?"
     },
     "spacedReview": "1 lesson(s) back: Go-Kart, Swing Ride from amusement-park-5\n3 lesson(s) back: Cotton Candy, Funnel Cake from amusement-park-3\n7 lesson(s) back: barbecue, bonfire from beach-4"
   },
@@ -194,9 +210,9 @@
       "Gums"
     ],
     "targetWordsArabic": [
-      "قزحية",
-      "شبكية",
-      "قرنية",
+      "قزحية العين",
+      "شبكية العين",
+      "قرنية العين",
       "قناة دمعية",
       "محجر العين",
       "أنف",
@@ -204,142 +220,148 @@
       "جسر الأنف",
       "فم",
       "شفة",
-      "الشفة العليا",
-      "الشفة السفلى",
+      "شفة علوية",
+      "شفة سفلية",
       "لسان",
-      "حنك",
+      "سقف الحلق",
       "لثة"
     ],
     "usage": {
-      "goal": "Learn to use the human body (head & face) 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Iris", "Retina", "Cornea"],
-          "scenario": "At an eye clinic, Salma looks at a bright target while the optometrist examines her eye. The coloured iris surrounds the pupil, the clear cornea is at the front, and the retina is at the back.",
+          "scenario": "The iris is the colored structure around the pupil. Retina is light-sensitive tissue at the back of the eye; cornea is the clear front covering.",
           "check": {
-            "question": "Which part of the eye is at the back and receives the image?",
+            "question": "Which structure is light-sensitive tissue at the back?",
             "options": ["Iris", "Retina", "Cornea"],
             "expectedAnswer": "Retina"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At an eye clinic, Salma looks at a bright target while the optometrist examines her eye. The coloured iris surrounds the pupil, the clear cornea is at the front, and the retina is at the back. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Iris, Retina, Cornea in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified eye-section model; correct retina and cornea placement, no answer highlighting. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Tear Duct", "Eye Socket", "Nose"],
-          "scenario": "After a windy walk, Omar's eye waters. The nurse explains that tears drain through a tear duct near the nose, while the eye socket protects the eye behind the face.",
+          "scenario": "A tear duct drains tears from the eye. Eye socket is the surrounding bony cavity, while nose is part of the face.",
           "check": {
-            "question": "Where do Omar's tears drain?",
+            "question": "Which passage drains tears?",
             "options": ["Tear Duct", "Eye Socket", "Nose"],
             "expectedAnswer": "Tear Duct"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: After a windy walk, Omar's eye waters. The nurse explains that tears drain through a tear duct near the nose, while the eye socket protects the eye behind the face. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Tear Duct, Eye Socket, Nose in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified head-section model showing a coherent tear-drainage passage. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nostril", "Bridge of Nose", "Mouth"],
-          "scenario": "Before a portrait session, the photographer asks Hana to turn her face slightly. The bridge of her nose catches the light, and she checks that one nostril is not blocked before she smiles.",
+          "scenario": "A nostril is an external nose opening. The bridge of the nose is its upper firm area; mouth is the opening leading to the oral cavity.",
           "check": {
-            "question": "What does Hana check before she smiles?",
+            "question": "Which term names an external nose opening?",
             "options": ["Nostril", "Bridge of Nose", "Mouth"],
             "expectedAnswer": "Nostril"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Before a portrait session, the photographer asks Hana to turn her face slightly. The bridge of her nose catches the light, and she checks that one nostril is not blocked before she smiles. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Nostril, Bridge of Nose, Mouth in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving nose-and-mouth model with coherent nostrils. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Lip", "Upper Lip", "Lower Lip"],
-          "scenario": "At a makeup counter, Rania tests a lip balm. She applies a little to her upper lip and lower lip, then checks the colour in a small mirror.",
+          "scenario": "Lip names either soft edge of the mouth. Upper lip is above the opening; lower lip is below it.",
           "check": {
-            "question": "Where does Rania apply the lip balm?",
+            "question": "Which general term names either soft edge?",
             "options": ["Lip", "Upper Lip", "Lower Lip"],
             "expectedAnswer": "Lip"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a makeup counter, Rania tests a lip balm. She applies a little to her upper lip and lower lip, then checks the colour in a small mirror. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Lip, Upper Lip, Lower Lip in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving mouth model, no real person or makeup branding. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Tongue", "Palate", "Gums"],
-          "scenario": "At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate.",
+          "scenario": "Tongue is the muscular organ inside the mouth. Palate is the roof of the mouth, and gums surround the teeth.",
           "check": {
-            "question": "What is the roof of David's mouth called?",
+            "question": "Which term names the roof of the mouth?",
             "options": ["Tongue", "Palate", "Gums"],
             "expectedAnswer": "Palate"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Tongue, Palate, Gums in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified oral-cavity model with palate distinct from tongue and gums. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face) 2: A short reading",
-      "text": "Maya studies a diagram of the eye. She identifies the iris, retina, and cornea. Another diagram shows a tear duct beside the eye. Omar labels the nose, nostril, and mouth on a face drawing. They compare their answers with the key, then practice describing where each part is located.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Eye, nose and mouth terms",
+      "text": "Dina reads about the iris and retina. The iris controls the pupil opening, and the retina is light-sensitive tissue inside the eye. A tear duct drains tears. Dina then learns nostril, bridge of the nose and lip. The palate is the roof of the mouth. She reads tongue and gums as well. Internal structures need accurate diagrams; a face photograph alone cannot show them.",
+      "imageBrief": "Support for Eye, nose and mouth terms. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "At an eye clinic, Salma looks at a bright target while the optometrist examines her eye. The coloured iris surrounds the pupil, the clear cornea is at the front, and the retina is at the back.\nWhich part of the eye is at the back and receives the image?",
+        "prompt": "The iris is the colored structure around the pupil. Retina is light-sensitive tissue at the back of the eye; cornea is the clear front covering.\nWhich structure is light-sensitive tissue at the back?",
         "answer": "Retina",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "After a windy walk, Omar's eye waters. The nurse explains that tears drain through a tear duct near the nose, while the eye socket protects the eye behind the face.\nWhere do Omar's tears drain?",
+        "prompt": "A tear duct drains tears from the eye. Eye socket is the surrounding bony cavity, while nose is part of the face.\nWhich passage drains tears?",
         "answer": "Tear Duct",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Before a portrait session, the photographer asks Hana to turn her face slightly. The bridge of her nose catches the light, and she checks that one nostril is not blocked before she smiles.\nWhat does Hana check before she smiles?",
+        "prompt": "A nostril is an external nose opening. The bridge of the nose is its upper firm area; mouth is the opening leading to the oral cavity.\nWhich term names an external nose opening?",
         "answer": "Nostril",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "At a makeup counter, Rania tests a lip balm. She applies a little to her upper lip and lower lip, then checks the colour in a small mirror.\nWhere does Rania apply the lip balm?",
+        "prompt": "Lip names either soft edge of the mouth. Upper lip is above the opening; lower lip is below it.\nWhich general term names either soft edge?",
         "answer": "Lip",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "At a dental check-up, the dentist asks David to open his mouth. She checks his gums, asks him to lift his tongue, and looks at the roof of his mouth, called the palate.\nWhat is the roof of David's mouth called?",
+        "prompt": "Tongue is the muscular organ inside the mouth. Palate is the roof of the mouth, and gums surround the teeth.\nWhich term names the roof of the mouth?",
         "answer": "Palate",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Head” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which three parts does Omar label on the face drawing?",
-        "answer": "The nose, nostril, and mouth",
+        "prompt": "Dina reads about the iris and retina. The iris controls the pupil opening, and the retina is light-sensitive tissue inside the eye. A tear duct drains tears. Dina then learns nostril, bridge of the nose and lip. The palate is the roof of the mouth. She reads tongue and gums as well. Internal structures need accurate diagrams; a face photograph alone cannot show them.\nCan a face photograph show all the internal structures?",
+        "answer": "No. Accurate diagrams or models are needed.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Iris” and “Retina” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Iris” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: The iris is the colored structure around the pupil. Retina is light-sensitive tissue at the back of the eye; cornea is the clear front covering.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Head & Face): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Eye, nose and mouth terms",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads about the iris and retina. The iris controls the pupil opening, and the retina is light-sensitive tissue inside the eye. A tear duct drains tears. Dina then learns nostril, bridge of the nose and lip. The palate is the roof of the mouth. She reads tongue and gums as well. Internal structures need accurate diagrams; a face photograph alone cannot show them. Ask: Can a face photograph show all the internal structures?"
     },
     "spacedReview": "1 lesson(s) back: Head, Skull from human-body-head-and-face-1\n3 lesson(s) back: Lost and Found, Souvenir Shop from amusement-park-4\n7 lesson(s) back: seaweed, sea urchin from beach-5"
   },
@@ -377,9 +399,9 @@
       "طبلة الأذن",
       "أذن داخلية",
       "أذن خارجية",
-      "سمع",
-      "يلوّح صوت",
-      "توازن",
+      "حاسة السمع",
+      "موجة صوتية",
+      "توازن جسدي",
       "قوقعة الأذن",
       "سن",
       "قاطع",
@@ -388,135 +410,141 @@
       "ضاحك"
     ],
     "usage": {
-      "goal": "Learn to use the human body (head & face) 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Ear", "Earlobe", "Ear Canal"],
-          "scenario": "At a jewellery shop, Leila tries on a small earring. The assistant checks that the clasp is comfortable on her earlobe and reminds her never to push it into the ear canal.",
+          "scenario": "Ear names the hearing organ and its structures. Earlobe is the soft lower outer part; ear canal is the passage toward the eardrum.",
           "check": {
-            "question": "Where does the earring sit?",
+            "question": "Which term names the soft lower outer part?",
             "options": ["Ear", "Earlobe", "Ear Canal"],
             "expectedAnswer": "Earlobe"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a jewellery shop, Leila tries on a small earring. The assistant checks that the clasp is comfortable on her earlobe and reminds her never to push it into the ear canal. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Ear, Earlobe, Ear Canal in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Coherent nonliving outer-ear model. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Eardrum", "Inner Ear", "Outer Ear"],
-          "scenario": "During a hearing test, the specialist looks at Maya's outer ear before checking the eardrum. She explains that the inner ear helps the body hear and stay balanced.",
+          "scenario": "The eardrum is a vibrating membrane. Inner ear contains hearing and balance structures; outer ear includes the visible part and ear canal.",
           "check": {
-            "question": "What does the specialist look at first?",
+            "question": "Which region includes the visible ear and ear canal?",
             "options": ["Eardrum", "Inner Ear", "Outer Ear"],
             "expectedAnswer": "Outer Ear"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: During a hearing test, the specialist looks at Maya's outer ear before checking the eardrum. She explains that the inner ear helps the body hear and stay balanced. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Eardrum, Inner Ear, Outer Ear in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified ear-section model; regional boundaries must be accurate. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Hearing", "Sound Wave", "Balance"],
-          "scenario": "At the clinic, a short sound wave plays through Daniel's headphones. The specialist records his hearing and asks whether he feels any change in his balance.",
+          "scenario": "Hearing is the sense involved in perceiving sound. A sound wave is a traveling disturbance; balance here means maintaining stable body position.",
           "check": {
-            "question": "What does the specialist record?",
+            "question": "Which term names the sense for perceiving sound?",
             "options": ["Hearing", "Sound Wave", "Balance"],
             "expectedAnswer": "Hearing"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At the clinic, a short sound wave plays through Daniel's headphones. The specialist records his hearing and asks whether he feels any change in his balance. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Hearing, Sound Wave, Balance in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving ear reference supports text; sense or ability cannot be judged from appearance. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Cochlea", "Tooth", "Incisor"],
-          "scenario": "At a science museum, the guide compares a model of the cochlea with a model tooth. She points out that an incisor is the sharp front tooth used for cutting food.",
+          "scenario": "Cochlea is a coiled inner-ear structure. Tooth is a hard mouth structure, and an incisor is a front cutting tooth.",
           "check": {
-            "question": "Which tooth is used for cutting food?",
+            "question": "Which term names the front cutting tooth?",
             "options": ["Cochlea", "Tooth", "Incisor"],
             "expectedAnswer": "Incisor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a science museum, the guide compares a model of the cochlea with a model tooth. She points out that an incisor is the sharp front tooth used for cutting food. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Cochlea, Tooth, Incisor in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified nonliving tooth-set model with anatomically correct tooth shapes. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Canine", "Molar", "Premolar"],
-          "scenario": "At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding.",
+          "scenario": "Canine is a pointed tooth. Molar is a back grinding tooth; premolar lies between canine and molar in an adult set.",
           "check": {
-            "question": "Which tooth does most of the grinding?",
+            "question": "Which term names the back grinding tooth?",
             "options": ["Canine", "Molar", "Premolar"],
             "expectedAnswer": "Molar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Canine, Molar, Premolar in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified adult dental model with correct molar and premolar geometry. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face) 3: A short reading",
-      "text": "Omar reads a diagram showing the outer ear, ear canal, and eardrum. The text explains how sound waves travel through the ear. Maya identifies the inner ear on another diagram. They match the labels carefully and ask their teacher about hearing and balance before completing the short vocabulary exercise.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Hearing structures and teeth",
+      "text": "Dina reads a guide to the ear. Sound enters the ear canal and reaches the eardrum. The outer ear includes the visible ear and canal, while the inner ear contains hearing and balance structures. Dina then looks at a tooth model. Incisor, canine, premolar and molar name different teeth. She compares the written meanings without testing hearing, balance or dental health.",
+      "imageBrief": "Support for Hearing structures and teeth. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "At a jewellery shop, Leila tries on a small earring. The assistant checks that the clasp is comfortable on her earlobe and reminds her never to push it into the ear canal.\nWhere does the earring sit?",
+        "prompt": "Ear names the hearing organ and its structures. Earlobe is the soft lower outer part; ear canal is the passage toward the eardrum.\nWhich term names the soft lower outer part?",
         "answer": "Earlobe",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a hearing test, the specialist looks at Maya's outer ear before checking the eardrum. She explains that the inner ear helps the body hear and stay balanced.\nWhat does the specialist look at first?",
+        "prompt": "The eardrum is a vibrating membrane. Inner ear contains hearing and balance structures; outer ear includes the visible part and ear canal.\nWhich region includes the visible ear and ear canal?",
         "answer": "Outer Ear",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "At the clinic, a short sound wave plays through Daniel's headphones. The specialist records his hearing and asks whether he feels any change in his balance.\nWhat does the specialist record?",
+        "prompt": "Hearing is the sense involved in perceiving sound. A sound wave is a traveling disturbance; balance here means maintaining stable body position.\nWhich term names the sense for perceiving sound?",
         "answer": "Hearing",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "At a science museum, the guide compares a model of the cochlea with a model tooth. She points out that an incisor is the sharp front tooth used for cutting food.\nWhich tooth is used for cutting food?",
+        "prompt": "Cochlea is a coiled inner-ear structure. Tooth is a hard mouth structure, and an incisor is a front cutting tooth.\nWhich term names the front cutting tooth?",
         "answer": "Incisor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "At a dental lesson, the teacher asks students to compare their teeth. A canine tears food, a premolar helps crush it, and a molar does most of the grinding.\nWhich tooth does most of the grinding?",
+        "prompt": "Canine is a pointed tooth. Molar is a back grinding tooth; premolar lies between canine and molar in an adult set.\nWhich term names the back grinding tooth?",
         "answer": "Molar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Iris” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does the text explain?",
-        "answer": "How sound waves travel through the ear",
+        "prompt": "Dina reads a guide to the ear. Sound enters the ear canal and reaches the eardrum. The outer ear includes the visible ear and canal, while the inner ear contains hearing and balance structures. Dina then looks at a tooth model. Incisor, canine, premolar and molar name different teeth. She compares the written meanings without testing hearing, balance or dental health.\nWhat does sound reach after traveling through the ear canal?",
+        "answer": "The eardrum.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Ear” and “Earlobe” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Ear” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Ear names the hearing organ and its structures. Earlobe is the soft lower outer part; ear canal is the passage toward the eardrum.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Head & Face): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Hearing structures and teeth",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina reads a guide to the ear. Sound enters the ear canal and reaches the eardrum. The outer ear includes the visible ear and canal, while the inner ear contains hearing and balance structures. Dina then looks at a tooth model. Incisor, canine, premolar and molar name different teeth. She compares the written meanings without testing hearing, balance or dental health. Ask: What does sound reach after traveling through the ear canal?"
     },
     "spacedReview": "1 lesson(s) back: Iris, Retina from human-body-head-and-face-2\n3 lesson(s) back: Go-Kart, Swing Ride from amusement-park-5\n7 lesson(s) back: Roller Coaster, Ferris Wheel from amusement-park-1"
   },
@@ -548,150 +576,156 @@
     ],
     "targetWordsArabic": [
       "ضرس العقل",
-      "سن رضيع",
+      "سن لبني",
       "مينا الأسنان",
-      "جذر",
+      "جذر السن",
       "شعر",
-      "خط نمو الشعر",
-      "جزء",
-      "خصلة شعر",
+      "خط الشعر",
+      "مفرق الشعر",
+      "خصلة أو شعرة",
       "لحية",
       "شارب",
       "سوالف",
-      "شعر لحية قصير",
-      "لحية على الذقن",
+      "شعر لحية خفيف",
+      "لحية صغيرة على الذقن",
       "ضفيرة"
     ],
     "usage": {
-      "goal": "Learn to use the human body (head & face) 4 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to the human body (head & face).",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Identify anatomical structures, body regions and movements described in an educational guide without clinical self-diagnosis.",
+      "canDoStatement": "Can identify and explain anatomical terms and bodily movements using supplied descriptions.",
+      "textType": "guided-description",
+      "readingTarget": "45-90 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Wisdom Tooth", "Baby Tooth", "Enamel"],
-          "scenario": "At a dental appointment, Yasmin asks why her wisdom tooth hurts. The dentist explains that enamel protects each tooth, while a baby tooth is the first kind of tooth children have.",
+          "scenario": "Wisdom tooth is a third molar. Baby tooth is an early deciduous tooth, while enamel covers a tooth's crown.",
           "check": {
-            "question": "What is hurting Yasmin?",
+            "question": "Which term names a third molar?",
             "options": ["Wisdom Tooth", "Baby Tooth", "Enamel"],
             "expectedAnswer": "Wisdom Tooth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At a dental appointment, Yasmin asks why her wisdom tooth hurts. The dentist explains that enamel protects each tooth, while a baby tooth is the first kind of tooth children have. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Wisdom Tooth, Baby Tooth, Enamel in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Verified dental model; no claim every adult has an erupted wisdom tooth. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Root", "Hair", "Hairline"],
-          "scenario": "At the salon, Karim asks for a shorter haircut but wants a clean hairline. The barber trims each section of hair carefully and avoids pulling at the root.",
+          "scenario": "The tooth root extends below the crown. Hair is a threadlike skin growth; hairline is the margin where scalp hair begins.",
           "check": {
-            "question": "What does Karim want the barber to keep clean?",
+            "question": "Which term names the margin of scalp hair?",
             "options": ["Root", "Hair", "Hairline"],
             "expectedAnswer": "Hairline"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: At the salon, Karim asks for a shorter haircut but wants a clean hairline. The barber trims each section of hair carefully and avoids pulling at the root. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Root, Hair, Hairline in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving head model with synthetic hair; no plant root substituted for tooth root. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Part", "Strand", "Beard"],
-          "scenario": "Before a job interview, Nabil checks his beard in the mirror. He changes the part of his hair and removes one loose strand from his jacket.",
+          "scenario": "A part is the line separating combed hair sections. A strand is a thin length of hair, while beard is hair on the lower face.",
           "check": {
-            "question": "What does Nabil check in the mirror?",
+            "question": "Which term names hair on the lower face?",
             "options": ["Part", "Strand", "Beard"],
             "expectedAnswer": "Beard"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: Before a job interview, Nabil checks his beard in the mirror. He changes the part of his hair and removes one loose strand from his jacket. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Part, Strand, Beard in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving modest head model with synthetic facial hair, no real identity inference. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mustache", "Sideburns", "Stubble"],
-          "scenario": "For a formal event, Tarek trims his stubble and shortens his sideburns. He leaves his mustache neat so his face looks tidy in the photographs.",
+          "scenario": "Mustache is hair above the upper lip. Sideburns are hair beside the ears; stubble is short facial-hair growth.",
           "check": {
-            "question": "What does Tarek leave neat?",
+            "question": "Which term names hair above the upper lip?",
             "options": ["Mustache", "Sideburns", "Stubble"],
             "expectedAnswer": "Mustache"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: For a formal event, Tarek trims his stubble and shortens his sideburns. He leaves his mustache neat so his face looks tidy in the photographs. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Mustache, Sideburns, Stubble in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving facial-hair model with coherent upper-lip hair; no religious or gender identity assumption. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Goatee", "Braid"],
-          "scenario": "During a routine care or examination situation, an adult reviews Goatee, Braid, Wisdom Tooth. The next step focuses on Goatee.",
+          "scenario": "Goatee is a chin beard. Braid is an arrangement of interwoven strands of hair.",
           "check": {
-            "question": "Which option is the focus of the next step?",
+            "question": "Which term names a chin beard?",
             "options": ["Goatee", "Braid", "Wisdom Tooth"],
             "expectedAnswer": "Goatee"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the human body (head & face) context illustrating this situation: During a routine care or examination situation, an adult reviews Goatee, Braid, Wisdom Tooth. The next step focuses on Goatee. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the human body (head & face) scene showing lesson-related items or actions including Goatee, Braid in a natural setting."
+          "imageBrief": "Word-reference support for the written supported human anatomy vocabulary task. Use a coherent nonliving educational anatomy model, verified against a primary anatomical reference. No real body, nudity, personal identity, labels or diagnostic claim; hold if the required detail cannot be shown accurately. Nonliving chin-beard model; no unrequested real person or identity claim. No readable text, logos, answer highlighting or incidental people; 4:3 landscape. Written context supplies facts that cannot be established visually.",
+          "imageAlt": "Reference image pending independent visual inspection and literal alternative text."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Human Body (Head & Face) 4: A short reading",
-      "text": "Maya looks at a dental diagram and finds a baby tooth and a wisdom tooth. She labels the enamel and root on a larger drawing. Omar uses a face picture to identify a beard, hairline, and mustache. They keep the dental labels separate from the hair words to make their notes easier to read.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about The Human Body (Head & Face). It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Dental and hair vocabulary",
+      "text": "Dina compares a wisdom tooth with a baby tooth in the guide. Enamel covers the tooth crown, and the root extends into its socket. A separate page describes hair. Hairline and part describe its edge and arrangement; strand names a thin length. Beard, mustache, sideburns, stubble and goatee describe facial hair. Dina reads braid as a woven hair arrangement, without making judgments about identity or appearance.",
+      "imageBrief": "Support for Dental and hair vocabulary. Reuse independently reviewed word references; the text supplies historical, technical or personal facts."
     },
     "exercises": [
       {
-        "prompt": "At a dental appointment, Yasmin asks why her wisdom tooth hurts. The dentist explains that enamel protects each tooth, while a baby tooth is the first kind of tooth children have.\nWhat is hurting Yasmin?",
+        "prompt": "Wisdom tooth is a third molar. Baby tooth is an early deciduous tooth, while enamel covers a tooth's crown.\nWhich term names a third molar?",
         "answer": "Wisdom Tooth",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "At the salon, Karim asks for a shorter haircut but wants a clean hairline. The barber trims each section of hair carefully and avoids pulling at the root.\nWhat does Karim want the barber to keep clean?",
+        "prompt": "The tooth root extends below the crown. Hair is a threadlike skin growth; hairline is the margin where scalp hair begins.\nWhich term names the margin of scalp hair?",
         "answer": "Hairline",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "Before a job interview, Nabil checks his beard in the mirror. He changes the part of his hair and removes one loose strand from his jacket.\nWhat does Nabil check in the mirror?",
+        "prompt": "A part is the line separating combed hair sections. A strand is a thin length of hair, while beard is hair on the lower face.\nWhich term names hair on the lower face?",
         "answer": "Beard",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "For a formal event, Tarek trims his stubble and shortens his sideburns. He leaves his mustache neat so his face looks tidy in the photographs.\nWhat does Tarek leave neat?",
+        "prompt": "Mustache is hair above the upper lip. Sideburns are hair beside the ears; stubble is short facial-hair growth.\nWhich term names hair above the upper lip?",
         "answer": "Mustache",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine care or examination situation, an adult reviews Goatee, Braid, Wisdom Tooth. The next step focuses on Goatee.\nWhich option is the focus of the next step?",
+        "prompt": "Goatee is a chin beard. Braid is an arrangement of interwoven strands of hair.\nWhich term names a chin beard?",
         "answer": "Goatee",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Ear” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which dental structures does Maya label on the larger drawing?",
-        "answer": "The enamel and root",
+        "prompt": "Dina compares a wisdom tooth with a baby tooth in the guide. Enamel covers the tooth crown, and the root extends into its socket. A separate page describes hair. Hairline and part describe its edge and arrangement; strand names a thin length. Beard, mustache, sideburns, stubble and goatee describe facial hair. Dina reads braid as a woven hair arrangement, without making judgments about identity or appearance.\nWhat covers the tooth crown?",
+        "answer": "Enamel.",
         "questionType": "meaning",
         "responseMode": "short-answer",
-        "contextTag": "reading"
+        "contextTag": "reading-specific-information"
+      },
+      {
+        "prompt": "Explain the difference between “Wisdom Tooth” and “Baby Tooth” using the supplied examples.",
+        "answer": "Accept an accurate comparison of the two stated meanings. A reference photograph does not establish hidden performance, history or certification.",
+        "questionType": "comparison",
+        "responseMode": "sentence",
+        "contextTag": "guided-comparison"
+      },
+      {
+        "prompt": "Write an original sentence using “Wisdom Tooth” in its supplied supported human anatomy vocabulary sense.",
+        "answer": "Accept an accurate original sentence in the supplied sense. Example: Wisdom tooth is a third molar. Baby tooth is an early deciduous tooth, while enamel covers a tooth's crown.",
+        "questionType": "production",
+        "responseMode": "sentence",
+        "contextTag": "guided-production"
       }
     ],
     "video": {
-      "title": "The Human Body (Head & Face): In Context",
-      "idea": "35-50 seconds contextual scene in the clinic or health setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the clinic or health setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Dental and hair vocabulary",
+      "idea": "Narrated comparison with a pause to explain the stated difference.",
+      "scriptStarter": "Dina compares a wisdom tooth with a baby tooth in the guide. Enamel covers the tooth crown, and the root extends into its socket. A separate page describes hair. Hairline and part describe its edge and arrangement; strand names a thin length. Beard, mustache, sideburns, stubble and goatee describe facial hair. Dina reads braid as a woven hair arrangement, without making judgments about identity or appearance. Ask: What covers the tooth crown?"
     },
     "spacedReview": "1 lesson(s) back: Ear, Earlobe from human-body-head-and-face-3\n3 lesson(s) back: Head, Skull from human-body-head-and-face-1\n7 lesson(s) back: Flying Swings, Boat Ride from amusement-park-2"
   }

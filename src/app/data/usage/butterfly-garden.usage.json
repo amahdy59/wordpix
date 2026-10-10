@@ -35,7 +35,7 @@
       "فراشة بيضاء الملفوف",
       "فراشة سكيبر",
       "فراشة فريتيلاري",
-      "فراشة الكبريت",
+      "فراشة صفراء؛ فراشة الكبريت",
       "فراشة نائب الملك",
       "بيضة (بيض)",
       "يرقة",
@@ -44,132 +44,115 @@
       "تحول كامل"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "137-167 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Monarch", "Swallowtail", "Painted Lady", "Blue Morpho"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monarch, Swallowtail, Painted Lady, and Blue Morpho and choose the option that fits the situation.",
+          "scenario": "The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Monarch", "Swallowtail", "Painted Lady"],
-            "expectedAnswer": "Monarch"
+            "question": "Which group often has tail-like hindwing extensions?",
+            "options": ["Swallowtail", "Monarch", "Painted Lady"],
+            "expectedAnswer": "Swallowtail"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Monarch as the central item; include Monarch, Swallowtail, and Painted Lady naturally where visually appropriate, but make the real-world use of Monarch the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Swallowtail in the stated butterfly garden account: The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Admiral", "Cabbage White", "Skipper", "Fritillary"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Admiral, Cabbage White, Skipper, and Fritillary and choose the option that fits the situation.",
+          "scenario": "Admiral and Cabbage White are butterfly common names. Skipper names a butterfly group often having a stout body and quick flight, not a boat captain. Fritillary names various patterned butterflies; the display uses verified references for each species.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Admiral", "Cabbage White", "Skipper"],
-            "expectedAnswer": "Admiral"
+            "question": "Which target names the stout-bodied quick-flying group in this account?",
+            "options": ["Skipper", "Admiral", "Cabbage White"],
+            "expectedAnswer": "Skipper"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Admiral as the central item; include Admiral, Cabbage White, and Skipper naturally where visually appropriate, but make the real-world use of Admiral the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Skipper in the stated butterfly garden account: Admiral and Cabbage White are butterfly common names. Skipper names a butterfly group often having a stout body and quick flight, not a boat captain. Fritillary names various patterned butterflies; the display uses verified references for each species. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Sulphur", "Viceroy", "Egg", "Caterpillar"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sulphur, Viceroy, Egg, and Caterpillar and choose the option that fits the situation.",
+          "scenario": "The guide compares Sulphur and Viceroy butterflies with the life stages Egg and Caterpillar. The Caterpillar is the larval stage that grows and feeds before pupation. Sulphur names butterflies here, not a chemical treatment.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sulphur", "Viceroy", "Egg"],
-            "expectedAnswer": "Sulphur"
+            "question": "Which target names the larval stage?",
+            "options": ["Caterpillar", "Sulphur", "Viceroy"],
+            "expectedAnswer": "Caterpillar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Sulphur as the central item; include Sulphur, Viceroy, and Egg naturally where visually appropriate, but make the real-world use of Sulphur the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Caterpillar in the stated butterfly garden account: The guide compares Sulphur and Viceroy butterflies with the life stages Egg and Caterpillar. The Caterpillar is the larval stage that grows and feeds before pupation. Sulphur names butterflies here, not a chemical treatment. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Chrysalis", "Butterfly", "Metamorphosis"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Butterfly, and Metamorphosis and choose the option that fits the situation.",
+          "scenario": "A Chrysalis is the butterfly’s pupa, distinct from a surrounding silk cocoon. Butterfly names the adult form. Metamorphosis describes the developmental transformation through the life cycle, rather than an instant magical change.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the butterfly’s pupa?",
             "options": ["Chrysalis", "Butterfly", "Metamorphosis"],
             "expectedAnswer": "Chrysalis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Chrysalis as the central item; include Chrysalis, Butterfly, and Metamorphosis naturally where visually appropriate, but make the real-world use of Chrysalis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Chrysalis in the stated butterfly garden account: A Chrysalis is the butterfly’s pupa, distinct from a surrounding silk cocoon. Butterfly names the adult form. Metamorphosis describes the developmental transformation through the life cycle, rather than an instant magical change. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Butterfly Garden: Practical Information",
-      "text": "At the butterfly garden, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Monarch, Swallowtail, Painted Lady, and Blue Morpho. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Admiral, Cabbage White, Skipper, and Fritillary. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sulphur, Viceroy, Egg, and Caterpillar. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Chrysalis, Butterfly, and Metamorphosis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Butterfly Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Butterfly Garden: Comparing the named examples",
+      "text": "The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof. Admiral and Cabbage White are butterfly common names. Skipper names a butterfly group often having a stout body and quick flight, not a boat captain. Fritillary names various patterned butterflies; the display uses verified references for each species. The guide compares Sulphur and Viceroy butterflies with the life stages Egg and Caterpillar. The Caterpillar is the larval stage that grows and feeds before pupation. Sulphur names butterflies here, not a chemical treatment. A Chrysalis is the butterfly’s pupa, distinct from a surrounding silk cocoon. Butterfly names the adult form. Metamorphosis describes the developmental transformation through the life cycle, rather than an instant magical change.",
+      "imageBrief": "One scientifically accurate butterfly garden reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Monarch, Swallowtail, Painted Lady, and Blue Morpho and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Monarch",
+        "prompt": "The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof.\nWhich group often has tail-like hindwing extensions?",
+        "answer": "Swallowtail",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Admiral, Cabbage White, Skipper, and Fritillary and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Admiral",
+        "prompt": "Admiral and Cabbage White are butterfly common names. Skipper names a butterfly group often having a stout body and quick flight, not a boat captain. Fritillary names various patterned butterflies; the display uses verified references for each species.\nWhich target names the stout-bodied quick-flying group in this account?",
+        "answer": "Skipper",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sulphur, Viceroy, Egg, and Caterpillar and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sulphur",
+        "prompt": "The guide compares Sulphur and Viceroy butterflies with the life stages Egg and Caterpillar. The Caterpillar is the larval stage that grows and feeds before pupation. Sulphur names butterflies here, not a chemical treatment.\nWhich target names the larval stage?",
+        "answer": "Caterpillar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Chrysalis, Butterfly, and Metamorphosis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Chrysalis is the butterfly’s pupa, distinct from a surrounding silk cocoon. Butterfly names the adult form. Metamorphosis describes the developmental transformation through the life cycle, rather than an instant magical change.\nWhich target names the butterfly’s pupa?",
         "answer": "Chrysalis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof. Admiral and Cabbage White are butterfly common names. Skipper names a butterfly group often having a stout body and quick flight, not a boat captain. Fritillary names various patterned butterflies; the display uses verified references for each species. The guide compares Sulphur and Viceroy butterflies with the life stages Egg and Caterpillar. The Caterpillar is the larval stage that grows and feeds before pupation. Sulphur names butterflies here, not a chemical treatment. A Chrysalis is the butterfly’s pupa, distinct from a surrounding silk cocoon. Butterfly names the adult form. Metamorphosis describes the developmental transformation through the life cycle, rather than an instant magical change.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Monarch"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Blue Morpho"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Preen” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the butterfly garden task. Use Monarch, Swallowtail, Painted Lady, Blue Morpho, Admiral, Cabbage White, Skipper, Fritillary, Sulphur, Viceroy, Egg, Caterpillar, Chrysalis, Butterfly, and Metamorphosis in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Monarch, Swallowtail, Painted Lady, Blue Morpho, Admiral, Cabbage White, Skipper, Fritillary, Sulphur, Viceroy, Egg, Caterpillar, Chrysalis, Butterfly, Metamorphosis. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Butterfly Garden: In Context",
-      "idea": "40-60 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Butterfly Garden: Comparing the named examples",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The collection has separate verified references for Monarch, Swallowtail, Painted Lady, and Blue Morpho. Many Swallowtail species have tail-like hindwing extensions. Butterfly appearance varies by species, sex, and viewing side, so the guide supplies the identification rather than treating color alone as proof. Which group often has tail-like hindwing extensions?"
     },
     "spacedReview": "1 lesson(s) back: Preen, Soar from bird-sanctuary-4\n3 lesson(s) back: Flamingo, Crane from bird-sanctuary-2\n7 lesson(s) back: Seismograph, Tiltmeter from volcano-3"
   },
@@ -202,148 +185,131 @@
     ],
     "targetWordsArabic": [
       "انسلاخ",
-      "طور يرقي",
-      "يخرج",
-      "جاف جناح",
+      "طور بين انسلاخين",
+      "يخرج من طور العذراء",
+      "جفاف الأجنحة",
       "أول طيران",
       "جناح",
-      "هوائي",
-      "خرطوم",
+      "قرن استشعار",
+      "خرطوم امتصاص",
       "صدر",
-      "بطن",
+      "بطن الحشرة",
       "عين",
-      "ساق",
-      "مقياس رسم",
+      "رجل الحشرة",
+      "حرشفة جناح",
       "عرق الجناح",
       "فتحة تنفس"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "147-177 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Molt", "Instar", "Emerge", "Wing Dry"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Molt, Instar, Emerge, and Wing Dry and choose the option that fits the situation.",
+          "scenario": "Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Molt", "Instar", "Emerge"],
-            "expectedAnswer": "Molt"
+            "question": "Which target names the stage between molts?",
+            "options": ["Instar", "Molt", "Emerge"],
+            "expectedAnswer": "Instar"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Molt as the central item; include Molt, Instar, and Emerge naturally where visually appropriate, but make the real-world use of Molt the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Instar in the stated butterfly garden account: Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["First Flight", "Wing", "Antenna", "Proboscis"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Flight, Wing, Antenna, and Proboscis and choose the option that fits the situation.",
+          "scenario": "After its First Flight, the observed adult rests on a flower. A Wing supports flight, an Antenna senses the environment, and the Proboscis is the elongated mouthpart used for liquids. The guide describes the body parts without touching the insect.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["First Flight", "Wing", "Antenna"],
-            "expectedAnswer": "First Flight"
+            "question": "Which mouthpart takes in liquids?",
+            "options": ["Proboscis", "First Flight", "Wing"],
+            "expectedAnswer": "Proboscis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the First Flight as the central item; include First Flight, Wing, and Antenna naturally where visually appropriate, but make the real-world use of First Flight the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Proboscis in the stated butterfly garden account: After its First Flight, the observed adult rests on a flower. A Wing supports flight, an Antenna senses the environment, and the Proboscis is the elongated mouthpart used for liquids. The guide describes the body parts without touching the insect. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Thorax", "Abdomen", "Eye", "Leg"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thorax, Abdomen, Eye, and Leg and choose the option that fits the situation.",
+          "scenario": "The Thorax is the insect’s middle body region, and the Abdomen is the rear region. Eye and Leg name a vision organ and a walking appendage. The guide points out that the legs attach to the thorax in an adult insect.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which body region has the attached legs?",
             "options": ["Thorax", "Abdomen", "Eye"],
             "expectedAnswer": "Thorax"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Thorax as the central item; include Thorax, Abdomen, and Eye naturally where visually appropriate, but make the real-world use of Thorax the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Thorax in the stated butterfly garden account: The Thorax is the insect’s middle body region, and the Abdomen is the rear region. Eye and Leg name a vision organ and a walking appendage. The guide points out that the legs attach to the thorax in an adult insect. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Scale", "Vein", "Spiracle"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Vein, and Spiracle and choose the option that fits the situation.",
+          "scenario": "The reference describes a Scale as a tiny covering structure on the butterfly’s wing. A Vein supports wing tissues, while a Spiracle is a breathing opening on the body. Scale does not mean a weighing instrument here.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which target names the tiny wing-covering structure?",
             "options": ["Scale", "Vein", "Spiracle"],
             "expectedAnswer": "Scale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Scale as the central item; include Scale, Vein, and Spiracle naturally where visually appropriate, but make the real-world use of Scale the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Scale in the stated butterfly garden account: The reference describes a Scale as a tiny covering structure on the butterfly’s wing. A Vein supports wing tissues, while a Spiracle is a breathing opening on the body. Scale does not mean a weighing instrument here. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Butterfly Garden",
-      "text": "At the butterfly garden, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Molt, Instar, Emerge, and Wing Dry. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers First Flight, Wing, Antenna, and Proboscis. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Thorax, Abdomen, Eye, and Leg. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Scale, Vein, and Spiracle. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Butterfly Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Butterfly Garden: Understanding the important distinctions",
+      "text": "Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion. After its First Flight, the observed adult rests on a flower. A Wing supports flight, an Antenna senses the environment, and the Proboscis is the elongated mouthpart used for liquids. The guide describes the body parts without touching the insect. The Thorax is the insect’s middle body region, and the Abdomen is the rear region. Eye and Leg name a vision organ and a walking appendage. The guide points out that the legs attach to the thorax in an adult insect. The reference describes a Scale as a tiny covering structure on the butterfly’s wing. A Vein supports wing tissues, while a Spiracle is a breathing opening on the body. Scale does not mean a weighing instrument here.",
+      "imageBrief": "One scientifically accurate butterfly garden reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Molt, Instar, Emerge, and Wing Dry and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Molt",
+        "prompt": "Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion.\nWhich target names the stage between molts?",
+        "answer": "Instar",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare First Flight, Wing, Antenna, and Proboscis and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "First Flight",
+        "prompt": "After its First Flight, the observed adult rests on a flower. A Wing supports flight, an Antenna senses the environment, and the Proboscis is the elongated mouthpart used for liquids. The guide describes the body parts without touching the insect.\nWhich mouthpart takes in liquids?",
+        "answer": "Proboscis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Thorax, Abdomen, Eye, and Leg and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The Thorax is the insect’s middle body region, and the Abdomen is the rear region. Eye and Leg name a vision organ and a walking appendage. The guide points out that the legs attach to the thorax in an adult insect.\nWhich body region has the attached legs?",
         "answer": "Thorax",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Scale, Vein, and Spiracle and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The reference describes a Scale as a tiny covering structure on the butterfly’s wing. A Vein supports wing tissues, while a Spiracle is a breathing opening on the body. Scale does not mean a weighing instrument here.\nWhich target names the tiny wing-covering structure?",
         "answer": "Scale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion. After its First Flight, the observed adult rests on a flower. A Wing supports flight, an Antenna senses the environment, and the Proboscis is the elongated mouthpart used for liquids. The guide describes the body parts without touching the insect. The Thorax is the insect’s middle body region, and the Abdomen is the rear region. Eye and Leg name a vision organ and a walking appendage. The guide points out that the legs attach to the thorax in an adult insect. The reference describes a Scale as a tiny covering structure on the butterfly’s wing. A Vein supports wing tissues, while a Spiracle is a breathing opening on the body. Scale does not mean a weighing instrument here.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Molt"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Wing Dry"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Monarch” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the butterfly garden task. Use Molt, Instar, Emerge, Wing Dry, First Flight, Wing, Antenna, Proboscis, Thorax, Abdomen, Eye, Leg, Scale, Vein, and Spiracle in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Molt, Instar, Emerge, Wing Dry, First Flight, Wing, Antenna, Proboscis, Thorax, Abdomen, Eye, Leg, Scale, Vein, Spiracle. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Butterfly Garden: In Context",
-      "idea": "40-60 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Butterfly Garden: Understanding the important distinctions",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "Molt names the shedding of the outer covering. An Instar is a stage between molts. Emerge describes the adult coming out of the pupal casing, while Wing Dry is the inherited label for wings drying and hardening after expansion. Which target names the stage between molts?"
     },
     "spacedReview": "1 lesson(s) back: Monarch, Swallowtail from butterfly-garden-1\n3 lesson(s) back: Beak, Feather from bird-sanctuary-3\n7 lesson(s) back: Cave, Lake from volcano-4"
   },
@@ -376,11 +342,11 @@
     ],
     "targetWordsArabic": [
       "حشيشة اللبن",
-      "خزامي",
+      "خزامى",
       "زينيا",
       "قطيفة",
       "دوار الشمس",
-      "إشنسا",
+      "زهرة مخروطية",
       "أستر",
       "لانتانا",
       "لويزة",
@@ -392,132 +358,115 @@
       "هجرة"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "151-181 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Milkweed", "Lavender", "Zinnia", "Marigold"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Milkweed, Lavender, Zinnia, and Marigold and choose the option that fits the situation.",
+          "scenario": "The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which plant is described as the monarch caterpillar’s host?",
             "options": ["Milkweed", "Lavender", "Zinnia"],
             "expectedAnswer": "Milkweed"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Milkweed as the central item; include Milkweed, Lavender, and Zinnia naturally where visually appropriate, but make the real-world use of Milkweed the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Milkweed in the stated butterfly garden account: The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Sunflower", "Coneflower", "Aster", "Lantana"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunflower, Coneflower, Aster, and Lantana and choose the option that fits the situation.",
+          "scenario": "Sunflower, Coneflower, Aster, and Lantana are flowering-plant names in the collection. Coneflower refers to plants with a prominent central flower-head cone, including Echinacea and Rudbeckia. Staff manage species choice and local suitability; visitors do not collect plants.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Sunflower", "Coneflower", "Aster"],
-            "expectedAnswer": "Sunflower"
+            "question": "Which plant common name refers to the prominent central flower-head cone?",
+            "options": ["Coneflower", "Sunflower", "Aster"],
+            "expectedAnswer": "Coneflower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Sunflower as the central item; include Sunflower, Coneflower, and Aster naturally where visually appropriate, but make the real-world use of Sunflower the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Coneflower in the stated butterfly garden account: Sunflower, Coneflower, Aster, and Lantana are flowering-plant names in the collection. Coneflower refers to plants with a prominent central flower-head cone, including Echinacea and Rudbeckia. Staff manage species choice and local suitability; visitors do not collect plants. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Verbena", "Buddleia", "Nectar Feeding", "Basking"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Verbena, Buddleia, Nectar Feeding, and Basking and choose the option that fits the situation.",
+          "scenario": "The collection includes Verbena and Buddleia among the described flowers. Nectar Feeding means taking sugary liquid from flowers. Basking means resting in sunlight to warm the body. The observer records the warming behavior rather than assuming every flower visit is feeding.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Verbena", "Buddleia", "Nectar Feeding"],
-            "expectedAnswer": "Verbena"
+            "question": "Which behavior means resting in sunlight to warm the body?",
+            "options": ["Basking", "Verbena", "Buddleia"],
+            "expectedAnswer": "Basking"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Verbena as the central item; include Verbena, Buddleia, and Nectar Feeding naturally where visually appropriate, but make the real-world use of Verbena the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Basking in the stated butterfly garden account: The collection includes Verbena and Buddleia among the described flowers. Nectar Feeding means taking sugary liquid from flowers. Basking means resting in sunlight to warm the body. The observer records the warming behavior rather than assuming every flower visit is feeding. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Mating", "Laying Eggs", "Migration"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mating, Laying Eggs, and Migration and choose the option that fits the situation.",
+          "scenario": "The guide distinguishes Mating from Laying Eggs and Migration. Laying Eggs deposits the next developmental stage on a suitable site, while Migration moves between regions. The behavior is identified from the supplied observation, not guessed from two insects being nearby.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
-            "options": ["Mating", "Laying Eggs", "Migration"],
-            "expectedAnswer": "Mating"
+            "question": "Which behavior deposits the next developmental stage?",
+            "options": ["Laying Eggs", "Mating", "Migration"],
+            "expectedAnswer": "Laying Eggs"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult illustrating Mating through a realistic adult task; include Mating, Laying Eggs, and Migration naturally where visually appropriate, but make the real-world use of Mating the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Laying Eggs in the stated butterfly garden account: The guide distinguishes Mating from Laying Eggs and Migration. Laying Eggs deposits the next developmental stage on a suitable site, while Migration moves between regions. The behavior is identified from the supplied observation, not guessed from two insects being nearby. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Butterfly Garden",
-      "text": "At the butterfly garden, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Milkweed, Lavender, Zinnia, and Marigold. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Sunflower, Coneflower, Aster, and Lantana. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Verbena, Buddleia, Nectar Feeding, and Basking. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Mating, Laying Eggs, and Migration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Butterfly Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Butterfly Garden: Reading the observation record",
+      "text": "The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region. Sunflower, Coneflower, Aster, and Lantana are flowering-plant names in the collection. Coneflower refers to plants with a prominent central flower-head cone, including Echinacea and Rudbeckia. Staff manage species choice and local suitability; visitors do not collect plants. The collection includes Verbena and Buddleia among the described flowers. Nectar Feeding means taking sugary liquid from flowers. Basking means resting in sunlight to warm the body. The observer records the warming behavior rather than assuming every flower visit is feeding. The guide distinguishes Mating from Laying Eggs and Migration. Laying Eggs deposits the next developmental stage on a suitable site, while Migration moves between regions. The behavior is identified from the supplied observation, not guessed from two insects being nearby.",
+      "imageBrief": "One scientifically accurate butterfly garden reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Milkweed, Lavender, Zinnia, and Marigold and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region.\nWhich plant is described as the monarch caterpillar’s host?",
         "answer": "Milkweed",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Sunflower, Coneflower, Aster, and Lantana and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Sunflower",
+        "prompt": "Sunflower, Coneflower, Aster, and Lantana are flowering-plant names in the collection. Coneflower refers to plants with a prominent central flower-head cone, including Echinacea and Rudbeckia. Staff manage species choice and local suitability; visitors do not collect plants.\nWhich plant common name refers to the prominent central flower-head cone?",
+        "answer": "Coneflower",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Verbena, Buddleia, Nectar Feeding, and Basking and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Verbena",
+        "prompt": "The collection includes Verbena and Buddleia among the described flowers. Nectar Feeding means taking sugary liquid from flowers. Basking means resting in sunlight to warm the body. The observer records the warming behavior rather than assuming every flower visit is feeding.\nWhich behavior means resting in sunlight to warm the body?",
+        "answer": "Basking",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Mating, Laying Eggs, and Migration and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Mating",
+        "prompt": "The guide distinguishes Mating from Laying Eggs and Migration. Laying Eggs deposits the next developmental stage on a suitable site, while Migration moves between regions. The behavior is identified from the supplied observation, not guessed from two insects being nearby.\nWhich behavior deposits the next developmental stage?",
+        "answer": "Laying Eggs",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region. Sunflower, Coneflower, Aster, and Lantana are flowering-plant names in the collection. Coneflower refers to plants with a prominent central flower-head cone, including Echinacea and Rudbeckia. Staff manage species choice and local suitability; visitors do not collect plants. The collection includes Verbena and Buddleia among the described flowers. Nectar Feeding means taking sugary liquid from flowers. Basking means resting in sunlight to warm the body. The observer records the warming behavior rather than assuming every flower visit is feeding. The guide distinguishes Mating from Laying Eggs and Migration. Laying Eggs deposits the next developmental stage on a suitable site, while Migration moves between regions. The behavior is identified from the supplied observation, not guessed from two insects being nearby.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Milkweed"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Marigold"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Molt” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the butterfly garden task. Use Milkweed, Lavender, Zinnia, Marigold, Sunflower, Coneflower, Aster, Lantana, Verbena, Buddleia, Nectar Feeding, Basking, Mating, Laying Eggs, and Migration in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Milkweed, Lavender, Zinnia, Marigold, Sunflower, Coneflower, Aster, Lantana, Verbena, Buddleia, Nectar Feeding, Basking, Mating, Laying Eggs, Migration. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Butterfly Garden: In Context",
-      "idea": "40-60 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Butterfly Garden: Reading the observation record",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "The garden labels distinguish Milkweed, Lavender, Zinnia, and Marigold in the written account. Milkweed is a host plant used by monarch caterpillars. Plant roles depend on species; the illustration is a reference rather than advice to introduce a plant into an unsuitable region. Which plant is described as the monarch caterpillar’s host?"
     },
     "spacedReview": "1 lesson(s) back: Molt, Instar from butterfly-garden-2\n3 lesson(s) back: Preen, Soar from bird-sanctuary-4\n7 lesson(s) back: Mantle, Sulfur from volcano-5"
   },
@@ -553,7 +502,7 @@
       "محاكاة",
       "التجمع على التربة الرطبة",
       "المبيت",
-      "إقليمي",
+      "يدافع عن منطقة",
       "ممر",
       "مقعد",
       "نافورة",
@@ -561,137 +510,120 @@
       "بيت زجاجي",
       "علامة",
       "عدسة مكبرة",
-      "صافي",
+      "شبكة",
       "كتاب دليل",
       "كاميرا"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe animals or habitats and understand visitor guidance in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the wildlife visitor setting.",
-      "textType": "service-notice",
-      "readingTarget": "90-130 words",
+      "goal": "Compare the stated natural-history terms and interpret a guided visitor account using its supplied evidence.",
+      "canDoStatement": "Can explain straightforward distinctions using a clear account with the specialist terms defined; this is a supported B1 task.",
+      "textType": "educational-explanation",
+      "readingTarget": "138-168 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Camouflage", "Mimicry", "Puddling", "Roosting"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camouflage, Mimicry, Puddling, and Roosting and choose the option that fits the situation.",
+          "scenario": "Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Camouflage", "Mimicry", "Puddling"],
-            "expectedAnswer": "Camouflage"
+            "question": "Which behavior involves taking liquid from damp ground?",
+            "options": ["Puddling", "Camouflage", "Mimicry"],
+            "expectedAnswer": "Puddling"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Camouflage as the central item; include Camouflage, Mimicry, and Puddling naturally where visually appropriate, but make the real-world use of Camouflage the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Puddling in the stated butterfly garden account: Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Territorial", "Pathway", "Bench", "Fountain"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Territorial, Pathway, Bench, and Fountain and choose the option that fits the situation.",
+          "scenario": "Territorial describes behavior associated with occupying or defending an area. Along the Pathway, the visitor rests on a Bench beside a Fountain. Bench means the seat here, not substitute players on a sports team.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Territorial", "Pathway", "Bench"],
-            "expectedAnswer": "Territorial"
+            "question": "Which target names the visitor’s seat?",
+            "options": ["Bench", "Territorial", "Pathway"],
+            "expectedAnswer": "Bench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Territorial as the central item; include Territorial, Pathway, and Bench naturally where visually appropriate, but make the real-world use of Territorial the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Bench in the stated butterfly garden account: Territorial describes behavior associated with occupying or defending an area. Along the Pathway, the visitor rests on a Bench beside a Fountain. Bench means the seat here, not substitute players on a sports team. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Trellis", "Greenhouse", "Sign", "Magnifying Glass"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trellis, Greenhouse, Sign, and Magnifying Glass and choose the option that fits the situation.",
+          "scenario": "A Trellis supports climbing plants. A Greenhouse provides a controlled growing space, a Sign supplies information, and a Magnifying Glass enlarges nearby details. The visitor reads the written information rather than relying on invented text in the illustration.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which framework supports climbing plants?",
             "options": ["Trellis", "Greenhouse", "Sign"],
             "expectedAnswer": "Trellis"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Trellis as the central item; include Trellis, Greenhouse, and Sign naturally where visually appropriate, but make the real-world use of Trellis the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Trellis in the stated butterfly garden account: A Trellis supports climbing plants. A Greenhouse provides a controlled growing space, a Sign supplies information, and a Magnifying Glass enlarges nearby details. The visitor reads the written information rather than relying on invented text in the illustration. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Net", "Guide Book", "Camera"],
-          "scenario": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net, Guide Book, and Camera and choose the option that fits the situation.",
+          "scenario": "A Net belongs to the garden’s authorized equipment; visitors do not catch butterflies without permission. A Guide Book helps identify species, and a Camera records views. Species identity requires a reliable reference, not an invented pattern on generated wings.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Net", "Guide Book", "Camera"],
-            "expectedAnswer": "Net"
+            "question": "Which item helps identify species through a reference?",
+            "options": ["Guide Book", "Net", "Camera"],
+            "expectedAnswer": "Guide Book"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a wildlife visitor setting. Show an adult using or examining the Net as the central item; include Net, Guide Book, and Camera naturally where visually appropriate, but make the real-world use of Net the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a wildlife visitor setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Accurate photorealistic vocabulary reference for Guide Book in the stated butterfly garden account: A Net belongs to the garden’s authorized equipment; visitors do not catch butterflies without permission. A Guide Book helps identify species, and a Camera records views. Species identity requires a reliable reference, not an invented pattern on generated wings. Use a reliable species or scientific reference for anatomical and geographic accuracy. Do not imply all named organisms coexist, invent chemical composition or hazard predictions, or demonstrate dangerous operations. Prefer a human-free composition. No readable text, logos, arrows, overlays or answer highlighting. The written context supplies facts that appearance cannot establish.",
+          "imageAlt": "Vocabulary illustration supporting the written butterfly garden account; the text supplies the question’s evidence."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Butterfly Garden: Practical Information",
-      "text": "At the butterfly garden, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Camouflage, Mimicry, Puddling, and Roosting. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Territorial, Pathway, Bench, and Fountain. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Trellis, Greenhouse, Sign, and Magnifying Glass. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Net, Guide Book, and Camera. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Butterfly Garden. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Butterfly Garden: A guided visitor discussion",
+      "text": "Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable. Territorial describes behavior associated with occupying or defending an area. Along the Pathway, the visitor rests on a Bench beside a Fountain. Bench means the seat here, not substitute players on a sports team. A Trellis supports climbing plants. A Greenhouse provides a controlled growing space, a Sign supplies information, and a Magnifying Glass enlarges nearby details. The visitor reads the written information rather than relying on invented text in the illustration. A Net belongs to the garden’s authorized equipment; visitors do not catch butterflies without permission. A Guide Book helps identify species, and a Camera records views. Species identity requires a reliable reference, not an invented pattern on generated wings.",
+      "imageBrief": "One scientifically accurate butterfly garden reference supporting this account. Do not invent mixed habitats or identify hidden conditions by color alone. No readable text, logos, arrows or answer cues."
     },
     "exercises": [
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Camouflage, Mimicry, Puddling, and Roosting and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Camouflage",
+        "prompt": "Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable.\nWhich behavior involves taking liquid from damp ground?",
+        "answer": "Puddling",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Territorial, Pathway, Bench, and Fountain and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Territorial",
+        "prompt": "Territorial describes behavior associated with occupying or defending an area. Along the Pathway, the visitor rests on a Bench beside a Fountain. Bench means the seat here, not substitute players on a sports team.\nWhich target names the visitor’s seat?",
+        "answer": "Bench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Trellis, Greenhouse, Sign, and Magnifying Glass and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A Trellis supports climbing plants. A Greenhouse provides a controlled growing space, a Sign supplies information, and a Magnifying Glass enlarges nearby details. The visitor reads the written information rather than relying on invented text in the illustration.\nWhich framework supports climbing plants?",
         "answer": "Trellis",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the butterfly garden setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Net, Guide Book, and Camera and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Net",
+        "prompt": "A Net belongs to the garden’s authorized equipment; visitors do not catch butterflies without permission. A Guide Book helps identify species, and a Camera records views. Species identity requires a reliable reference, not an invented pattern on generated wings.\nWhich item helps identify species through a reference?",
+        "answer": "Guide Book",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
+        "prompt": "Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable. Territorial describes behavior associated with occupying or defending an area. Along the Pathway, the visitor rests on a Bench beside a Fountain. Bench means the seat here, not substitute players on a sports team. A Trellis supports climbing plants. A Greenhouse provides a controlled growing space, a Sign supplies information, and a Magnifying Glass enlarges nearby details. The visitor reads the written information rather than relying on invented text in the illustration. A Net belongs to the garden’s authorized equipment; visitors do not catch butterflies without permission. A Guide Book helps identify species, and a Camera records views. Species identity requires a reliable reference, not an invented pattern on generated wings.\nExplain one distinction the guide makes, using the exact relevant terms and the evidence from the account.",
+        "answer": "Open response: name both terms and explain their stated difference accurately; do not infer unreported properties.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Camouflage"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Roosting"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Milkweed” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the butterfly garden task. Use Camouflage, Mimicry, Puddling, Roosting, Territorial, Pathway, Bench, Fountain, Trellis, Greenhouse, Sign, Magnifying Glass, Net, Guide Book, and Camera in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Write a concise visitor guide using Camouflage, Mimicry, Puddling, Roosting, Territorial, Pathway, Bench, Fountain, Trellis, Greenhouse, Sign, Magnifying Glass, Net, Guide Book, Camera. Give each term its correct contextual meaning, and separate any non-insect, non-Arctic, unrelated habitat or hidden-property comparison when relevant.",
+        "answer": "Open response: all listed terms must be used in the correct stated sense with scientifically accurate distinctions and no invented procedures or guarantees.",
         "questionType": "production",
         "responseMode": "extended-response",
         "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Butterfly Garden: In Context",
-      "idea": "40-60 seconds contextual scene in the farm or garden. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the farm or garden. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Butterfly Garden: A guided visitor discussion",
+      "idea": "Show accurate references for three details stated in the account. Narrate the first scene and its specific distinction. Supply written or spoken evidence where a still image cannot establish the fact, and do not combine incompatible habitats.",
+      "scriptStarter": "Camouflage makes an organism less noticeable, while Mimicry resembles another organism or signal. Puddling involves taking water and dissolved substances from damp ground. Roosting means resting at a sheltered site, often overnight. These behaviors are not interchangeable. Which behavior involves taking liquid from damp ground?"
     },
     "spacedReview": "1 lesson(s) back: Milkweed, Lavender from butterfly-garden-3\n3 lesson(s) back: Monarch, Swallowtail from butterfly-garden-1\n7 lesson(s) back: Robin, Sparrow from bird-sanctuary-1"
   }

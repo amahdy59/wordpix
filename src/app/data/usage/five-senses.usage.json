@@ -44,132 +44,108 @@
       "حدّة الصوت"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Describe sensory information in an adult educational setting.",
+      "canDoStatement": "Can understand a supported explanation and distinguish words for sensory structures and qualities. Specialist anatomy words extend the task level; images do not prove taste, smell, sound, or medical function.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported science explanation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Vision", "Eye", "Pupil", "Lens"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.",
+          "scenario": "A tutor shows an eye model. The pupil is the opening that admits light, and the lens helps focus it. Vision is the ability to see using information from the eye and brain.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which opening admits light?",
             "options": ["Vision", "Eye", "Pupil"],
-            "expectedAnswer": "Vision"
+            "expectedAnswer": "Pupil"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Vision as the central item; include Vision, Eye, and Pupil naturally where visually appropriate, but make the real-world use of Vision the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: An anatomically correct eye teaching model on an adult classroom table. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "An anatomically correct eye teaching model on an adult classroom table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Retina", "Cornea", "Optic Nerve", "Color Vision"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.",
+          "scenario": "The tutor identifies the cornea at the eye’s front and the retina at its back. The optic nerve carries visual information to the brain. Color vision helps distinguish colors.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which structure carries visual information to the brain?",
             "options": ["Retina", "Cornea", "Optic Nerve"],
-            "expectedAnswer": "Retina"
+            "expectedAnswer": "Optic Nerve"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Retina as the central item; include Retina, Cornea, and Optic Nerve naturally where visually appropriate, but make the real-world use of Retina the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: A correct eye teaching model with optic nerve visible; no text labels or arrows. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "A correct eye teaching model with optic nerve visible; no text labels or arrows."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Depth Perception", "Peripheral Vision", "Sound", "Ear"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.",
+          "scenario": "At an exhibit, Leila hears a sound with her ear. She judges the distance to a chair using depth perception. Peripheral vision helps her notice something beside her while looking forward.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which ability helps judge distance?",
             "options": ["Depth Perception", "Peripheral Vision", "Sound"],
             "expectedAnswer": "Depth Perception"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Depth Perception through a realistic adult task; include Depth Perception, Peripheral Vision, and Sound naturally where visually appropriate, but make the real-world use of Depth Perception the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: An adult viewing an exhibit from a clear open walkway with a chair nearby; sensory abilities are established by written text. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "An adult viewing an exhibit from a clear open walkway with a chair nearby; sensory abilities are established by written text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Eardrum", "Cochlea", "Pitch"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.",
+          "scenario": "An ear model shows an eardrum that vibrates and a spiral-shaped cochlea in the inner ear. The tutor plays two gentle notes and calls the higher or lower quality pitch.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which part is spiral-shaped?",
             "options": ["Eardrum", "Cochlea", "Pitch"],
-            "expectedAnswer": "Eardrum"
+            "expectedAnswer": "Cochlea"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Eardrum as the central item; include Eardrum, Cochlea, and Pitch naturally where visually appropriate, but make the real-world use of Eardrum the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: An anatomically correct ear teaching model beside a speaker; no loud-volume depiction or labels. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "An anatomically correct ear teaching model beside a speaker; no loud-volume depiction or labels."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Five Senses",
-      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Vision, Eye, Pupil, and Lens. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Retina, Cornea, Optic Nerve, and Color Vision. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Depth Perception, Peripheral Vision, Sound, and Ear. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Eardrum, Cochlea, and Pitch. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Five Senses 1: a sensory exhibit",
+      "text": "At an adult science exhibit, a tutor uses eye and ear models. The eye supports vision. Its pupil admits light, its lens focuses light, and its retina detects it. The cornea forms the clear front surface, while the optic nerve carries visual information to the brain. Color vision distinguishes colors, depth perception helps judge distance, and peripheral vision notices objects beside the direction of gaze. In the ear, an eardrum vibrates and a cochlea helps turn sound into nerve signals. Pitch describes how high or low a sound is.",
+      "imageBrief": "Photorealistic educational scene: An anatomically correct eye teaching model on an adult classroom table. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage."
     },
     "exercises": [
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Vision, Eye, Pupil, and Lens and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Vision",
+        "prompt": "A tutor shows an eye model. The pupil is the opening that admits light, and the lens helps focus it. Vision is the ability to see using information from the eye and brain.\nWhich opening admits light?",
+        "answer": "Pupil",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Retina, Cornea, Optic Nerve, and Color Vision and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Retina",
+        "prompt": "The tutor identifies the cornea at the eye’s front and the retina at its back. The optic nerve carries visual information to the brain. Color vision helps distinguish colors.\nWhich structure carries visual information to the brain?",
+        "answer": "Optic Nerve",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Depth Perception, Peripheral Vision, Sound, and Ear and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
+        "prompt": "At an exhibit, Leila hears a sound with her ear. She judges the distance to a chair using depth perception. Peripheral vision helps her notice something beside her while looking forward.\nWhich ability helps judge distance?",
         "answer": "Depth Perception",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Eardrum, Cochlea, and Pitch and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Eardrum",
+        "prompt": "An ear model shows an eardrum that vibrates and a spiral-shaped cochlea in the inner ear. The tutor plays two gentle notes and calls the higher or lower quality pitch.\nWhich part is spiral-shaped?",
+        "answer": "Cochlea",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Vision"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Lens"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “harmony” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the five senses task. Use Vision, Eye, Pupil, Lens, Retina, Cornea, Optic Nerve, Color Vision, Depth Perception, Peripheral Vision, Sound, Ear, Eardrum, Cochlea, and Pitch in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this example in a complete sentence.\nA tutor shows an eye model. The pupil is the opening that admits light, and the lens helps focus it. Vision is the ability to see using information from the eye and brain.",
+        "answer": "The pupil is an opening that admits light into the eye.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Five Senses: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Five Senses 1: a sensory exhibit",
+      "idea": "Narrate the text beside accurate teaching models and objects. Establish invisible sensory qualities in narration without testing the learner’s senses.",
+      "scriptStarter": "A tutor shows an eye model. The pupil is the opening that admits light, and the lens helps focus it. Vision is the ability to see using information from the eye and brain."
     },
     "spacedReview": "1 lesson(s) back: harmony, dynamics from music-room-4\n3 lesson(s) back: oboe, bassoon from music-room-2\n7 lesson(s) back: Brush Tool, Layer from photography-studio-4"
   },
@@ -218,132 +194,108 @@
       "تجويف أنفي"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "dialogue",
-      "readingTarget": "90-130 words",
+      "goal": "Describe sensory information in an adult educational setting.",
+      "canDoStatement": "Can understand a supported explanation and distinguish words for sensory structures and qualities. Specialist anatomy words extend the task level; images do not prove taste, smell, sound, or medical function.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported science explanation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Volume", "Frequency", "Echo", "Vibration"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.",
+          "scenario": "In a sound lesson, volume means loudness and frequency means how often a vibration repeats. An echo is a reflected sound heard again. The tutor keeps the demonstration at a comfortable level.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which term means loudness?",
             "options": ["Volume", "Frequency", "Echo"],
             "expectedAnswer": "Volume"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Volume as the central item; include Volume, Frequency, and Echo naturally where visually appropriate, but make the real-world use of Volume the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Adult classroom with a small speaker and tuning fork on a table. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Adult classroom with a small speaker and tuning fork on a table."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Auditory Nerve", "Nose", "Nostril", "Olfactory"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.",
+          "scenario": "The tutor explains that an auditory nerve carries hearing information. Olfactory relates to smell. Air enters the nose through a nostril.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Auditory Nerve", "Nose", "Nostril"],
-            "expectedAnswer": "Auditory Nerve"
+            "question": "Which adjective relates to smell?",
+            "options": ["Auditory Nerve", "Nose", "Nostril", "Olfactory"],
+            "expectedAnswer": "Olfactory"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Auditory Nerve as the central item; include Auditory Nerve, Nose, and Nostril naturally where visually appropriate, but make the real-world use of Auditory Nerve the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: An adult classroom with ear and nose teaching models, without labeling or procedures. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "An adult classroom with ear and nose teaching models, without labeling or procedures."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Aroma", "Fragrance", "Odor", "Scent"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.",
+          "scenario": "A cafe visitor notices the aroma of fresh coffee and the fragrance of flowers. Odor is a general word for a smell, and scent can describe a distinctive smell. The written description establishes the smells.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which option is the general word for a smell?",
             "options": ["Aroma", "Fragrance", "Odor"],
-            "expectedAnswer": "Aroma"
+            "expectedAnswer": "Odor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Aroma as the central item; include Aroma, Fragrance, and Odor naturally where visually appropriate, but make the real-world use of Aroma the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Coffee cup and flowers on a cafe table; smells cannot be inferred from an image. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Coffee cup and flowers on a cafe table; smells cannot be inferred from an image."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Stench", "Pungent", "Nasal Cavity"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.",
+          "scenario": "In a vocabulary discussion, a stench is an unpleasant smell, while pungent describes a sharp strong smell or taste. The nasal cavity is the space inside the nose.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word specifically describes an unpleasant smell?",
             "options": ["Stench", "Pungent", "Nasal Cavity"],
             "expectedAnswer": "Stench"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Stench as the central item; include Stench, Pungent, and Nasal Cavity naturally where visually appropriate, but make the real-world use of Stench the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Adult learners at a classroom table beside a nose model; no person portrayed as smelling unpleasant. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Adult learners at a classroom table beside a nose model; no person portrayed as smelling unpleasant."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Clarifying the Next Step: The Five Senses",
-      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Volume, Frequency, Echo, and Vibration. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Auditory Nerve, Nose, Nostril, and Olfactory. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Aroma, Fragrance, Odor, and Scent. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stench, Pungent, and Nasal Cavity. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Five Senses 2: a sensory exhibit",
+      "text": "The sound demonstration stays at a comfortable volume. The tutor explains frequency as the number of repeating vibrations each second, and shows how a vibration can produce sound. An echo is heard after sound reflects from a surface. The auditory nerve carries hearing information. At another table, a nose model shows a nostril and the nasal cavity. Olfactory means related to smell. Visitors discuss a coffee aroma, a flower fragrance, and an animal’s scent. Odor is a general word; stench is unpleasant, and pungent describes a sharp strong smell or taste.",
+      "imageBrief": "Photorealistic educational scene: Adult classroom with a small speaker and tuning fork on a table. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage."
     },
     "exercises": [
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Volume, Frequency, Echo, and Vibration and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In a sound lesson, volume means loudness and frequency means how often a vibration repeats. An echo is a reflected sound heard again. The tutor keeps the demonstration at a comfortable level.\nWhich term means loudness?",
         "answer": "Volume",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Auditory Nerve, Nose, Nostril, and Olfactory and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Auditory Nerve",
+        "prompt": "The tutor explains that an auditory nerve carries hearing information. Olfactory relates to smell. Air enters the nose through a nostril.\nWhich adjective relates to smell?",
+        "answer": "Olfactory",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Aroma, Fragrance, Odor, and Scent and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Aroma",
+        "prompt": "A cafe visitor notices the aroma of fresh coffee and the fragrance of flowers. Odor is a general word for a smell, and scent can describe a distinctive smell. The written description establishes the smells.\nWhich option is the general word for a smell?",
+        "answer": "Odor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stench, Pungent, and Nasal Cavity and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "In a vocabulary discussion, a stench is an unpleasant smell, while pungent describes a sharp strong smell or taste. The nasal cavity is the space inside the nose.\nWhich word specifically describes an unpleasant smell?",
         "answer": "Stench",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Volume"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Vibration"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Vision” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the five senses task. Use Volume, Frequency, Echo, Vibration, Auditory Nerve, Nose, Nostril, Olfactory, Aroma, Fragrance, Odor, Scent, Stench, Pungent, and Nasal Cavity in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this example in a complete sentence.\nIn a sound lesson, volume means loudness and frequency means how often a vibration repeats. An echo is a reflected sound heard again. The tutor keeps the demonstration at a comfortable level.",
+        "answer": "Volume means how loud or quiet a sound is.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Five Senses: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Five Senses 2: a sensory exhibit",
+      "idea": "Narrate the text beside accurate teaching models and objects. Establish invisible sensory qualities in narration without testing the learner’s senses.",
+      "scriptStarter": "In a sound lesson, volume means loudness and frequency means how often a vibration repeats. An echo is a reflected sound heard again. The tutor keeps the demonstration at a comfortable level."
     },
     "spacedReview": "1 lesson(s) back: Vision, Eye from five-senses-1\n3 lesson(s) back: piano, keyboard from music-room-3\n7 lesson(s) back: Camera, Light Box from photography-studio-5"
   },
@@ -392,132 +344,108 @@
       "ملمس"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "narrative",
-      "readingTarget": "90-130 words",
+      "goal": "Describe sensory information in an adult educational setting.",
+      "canDoStatement": "Can understand a supported explanation and distinguish words for sensory structures and qualities. Specialist anatomy words extend the task level; images do not prove taste, smell, sound, or medical function.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported science explanation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tongue", "Taste Bud", "Sweet", "Sour"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.",
+          "scenario": "An educator uses a tongue model to explain a taste bud. Sugar gives a sweet taste, while lemon juice tastes sour. The class discusses the terms without asking learners to eat anything.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Tongue", "Taste Bud", "Sweet"],
-            "expectedAnswer": "Tongue"
+            "question": "Which word describes the taste of lemon juice?",
+            "options": ["Tongue", "Taste Bud", "Sweet", "Sour"],
+            "expectedAnswer": "Sour"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Tongue as the central item; include Tongue, Taste Bud, and Sweet naturally where visually appropriate, but make the real-world use of Tongue the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Tongue teaching model beside sealed containers and a lemon on a table; no tasting experiment. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Tongue teaching model beside sealed containers and a lemon on a table; no tasting experiment."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Salty", "Bitter", "Umami", "Flavor"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.",
+          "scenario": "A menu discussion compares salty crackers, bitter coffee, and umami in mushrooms. Flavor combines taste and smell, so an image alone cannot establish these qualities.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word names a savory taste associated with mushrooms?",
             "options": ["Salty", "Bitter", "Umami"],
-            "expectedAnswer": "Salty"
+            "expectedAnswer": "Umami"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Salty as the central item; include Salty, Bitter, and Umami naturally where visually appropriate, but make the real-world use of Salty the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Crackers, coffee, and mushrooms on separate plates in a kitchen; no tasting or allergy assumptions. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Crackers, coffee, and mushrooms on separate plates in a kitchen; no tasting or allergy assumptions."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Palate", "Savor", "Skin", "Nerve Ending"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.",
+          "scenario": "A tutor explains that the palate is the roof of the mouth. To savor a meal means enjoy its flavor slowly. Skin contains nerve endings that help detect sensations.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word means enjoy a flavor slowly?",
             "options": ["Palate", "Savor", "Skin"],
-            "expectedAnswer": "Palate"
+            "expectedAnswer": "Savor"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Palate as the central item; include Palate, Savor, and Skin naturally where visually appropriate, but make the real-world use of Palate the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: An adult discussing a meal beside a mouth teaching model; sensations come from the text. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "An adult discussing a meal beside a mouth teaching model; sensations come from the text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Pressure", "Temperature", "Texture"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.",
+          "scenario": "At a materials exhibit, a visitor lightly touches a permitted sample. Pressure is force against the skin, temperature means how hot or cold something is, and texture describes its surface.",
           "check": {
-            "question": "Which option best identifies the process or concept illustrated by the main action?",
+            "question": "Which word describes the surface of the sample?",
             "options": ["Pressure", "Temperature", "Texture"],
-            "expectedAnswer": "Pressure"
+            "expectedAnswer": "Texture"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult illustrating Pressure through a realistic adult task; include Pressure, Temperature, and Texture naturally where visually appropriate, but make the real-world use of Pressure the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Adult visitor examining permitted fabric and wood samples on a display table. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Adult visitor examining permitted fabric and wood samples on a display table."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Making a Practical Decision: The Five Senses",
-      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Tongue, Taste Bud, Sweet, and Sour. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Salty, Bitter, Umami, and Flavor. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Palate, Savor, Skin, and Nerve Ending. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Pressure, Temperature, and Texture. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Five Senses 3: a sensory exhibit",
+      "text": "A tutor shows the tongue, a taste bud, and the palate on a teaching model. The class distinguishes sweet sugar, sour lemon, salty crackers, bitter coffee, and umami in mushrooms. Flavor involves taste and smell. To savor food means enjoy it slowly. The skin provides another source of information: a nerve ending helps communicate a sensation. At a materials table, texture describes the surface, pressure means force against it, and temperature describes heat or cold. The activity teaches words through examples; visitors do not taste or touch anything without permission.",
+      "imageBrief": "Photorealistic educational scene: Tongue teaching model beside sealed containers and a lemon on a table; no tasting experiment. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage."
     },
     "exercises": [
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Tongue, Taste Bud, Sweet, and Sour and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Tongue",
+        "prompt": "An educator uses a tongue model to explain a taste bud. Sugar gives a sweet taste, while lemon juice tastes sour. The class discusses the terms without asking learners to eat anything.\nWhich word describes the taste of lemon juice?",
+        "answer": "Sour",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Salty, Bitter, Umami, and Flavor and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Salty",
+        "prompt": "A menu discussion compares salty crackers, bitter coffee, and umami in mushrooms. Flavor combines taste and smell, so an image alone cannot establish these qualities.\nWhich word names a savory taste associated with mushrooms?",
+        "answer": "Umami",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Palate, Savor, Skin, and Nerve Ending and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Palate",
+        "prompt": "A tutor explains that the palate is the roof of the mouth. To savor a meal means enjoy its flavor slowly. Skin contains nerve endings that help detect sensations.\nWhich word means enjoy a flavor slowly?",
+        "answer": "Savor",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pressure, Temperature, and Texture and choose the option that fits the situation.\nWhich option best identifies the process or concept illustrated by the main action?",
-        "answer": "Pressure",
+        "prompt": "At a materials exhibit, a visitor lightly touches a permitted sample. Pressure is force against the skin, temperature means how hot or cold something is, and texture describes its surface.\nWhich word describes the surface of the sample?",
+        "answer": "Texture",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Tongue"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Sour"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Volume” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the five senses task. Use Tongue, Taste Bud, Sweet, Sour, Salty, Bitter, Umami, Flavor, Palate, Savor, Skin, Nerve Ending, Pressure, Temperature, and Texture in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this example in a complete sentence.\nAn educator uses a tongue model to explain a taste bud. Sugar gives a sweet taste, while lemon juice tastes sour. The class discusses the terms without asking learners to eat anything.",
+        "answer": "Sour describes the taste of lemon juice.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Five Senses: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Five Senses 3: a sensory exhibit",
+      "idea": "Narrate the text beside accurate teaching models and objects. Establish invisible sensory qualities in narration without testing the learner’s senses.",
+      "scriptStarter": "An educator uses a tongue model to explain a taste bud. Sugar gives a sweet taste, while lemon juice tastes sour. The class discusses the terms without asking learners to eat anything."
     },
     "spacedReview": "1 lesson(s) back: Volume, Frequency from five-senses-2\n3 lesson(s) back: harmony, dynamics from music-room-4\n7 lesson(s) back: Portfolio, Gallery from photography-studio-6"
   },
@@ -559,139 +487,115 @@
       "عَطِر",
       "لذيذ",
       "طري",
-      "داكن",
+      "مظلم",
       "هادئ",
       "كريه الرائحة",
       "عديم النكهة",
       "صلب"
     ],
     "usage": {
-      "goal": "Develop the language needed to describe basic anatomy and understand clear health information in a realistic adult context.",
-      "canDoStatement": "Can understand the main points of clear practical information and exchange straightforward details related to the health education setting.",
-      "textType": "instructional-guide",
-      "readingTarget": "90-130 words",
+      "goal": "Describe sensory information in an adult educational setting.",
+      "canDoStatement": "Can understand a supported explanation and distinguish words for sensory structures and qualities. Specialist anatomy words extend the task level; images do not prove taste, smell, sound, or medical function.",
+      "textType": "educational-explanation",
+      "readingTarget": "Supported science explanation",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Pain", "Tickle", "Itch", "Smooth"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.",
+          "scenario": "An educator distinguishes pain, tickle, and itch as different sensations. The class describes a polished smooth stone without diagnosing any person’s symptoms.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
-            "options": ["Pain", "Tickle", "Itch"],
-            "expectedAnswer": "Pain"
+            "question": "Which word describes a surface without rough bumps?",
+            "options": ["Pain", "Tickle", "Itch", "Smooth"],
+            "expectedAnswer": "Smooth"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Pain as the central item; include Pain, Tickle, and Itch naturally where visually appropriate, but make the real-world use of Pain the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: A smooth polished stone on a teaching table beside ordinary tactile samples. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "A smooth polished stone on a teaching table beside ordinary tactile samples."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Rough", "Bright", "Loud", "Fragrant"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.",
+          "scenario": "A visitor compares a rough wood sample with a smooth one. The room has bright light and a fragrant bunch of flowers. The speaker is described as loud in the written example, not judged from the photograph.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word describes the uneven wood surface?",
             "options": ["Rough", "Bright", "Loud"],
             "expectedAnswer": "Rough"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Rough as the central item; include Rough, Bright, and Loud naturally where visually appropriate, but make the real-world use of Rough the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Rough and polished wood samples beside a vase of flowers in a well-lit room; no labels or highlighted choice. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Rough and polished wood samples beside a vase of flowers in a well-lit room; no labels or highlighted choice."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Delicious", "Soft", "Dark", "Quiet"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.",
+          "scenario": "Leila calls her meal delicious, but this is her personal opinion. A soft cushion sits beside her in a quiet room. Later the room becomes dark when she switches off the lamp.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which adjective describes the cushion?",
             "options": ["Delicious", "Soft", "Dark"],
-            "expectedAnswer": "Delicious"
+            "expectedAnswer": "Soft"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Delicious as the central item; include Delicious, Soft, and Dark naturally where visually appropriate, but make the real-world use of Delicious the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: A fabric cushion near a lamp in a living room; taste and sound are established by text. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "A fabric cushion near a lamp in a living room; taste and sound are established by text."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Stinky", "Bland", "Hard"],
-          "scenario": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.",
+          "scenario": "The written example says the food is bland, meaning it has little flavor. A hard wooden chair contrasts with a soft cushion. The word stinky means having an unpleasant smell.",
           "check": {
-            "question": "Which option best identifies the item or feature central to the adult's task?",
+            "question": "Which word means having little flavor?",
             "options": ["Stinky", "Bland", "Hard"],
-            "expectedAnswer": "Stinky"
+            "expectedAnswer": "Bland"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a health education setting. Show an adult using or examining the Stinky as the central item; include Stinky, Bland, and Hard naturally where visually appropriate, but make the real-world use of Stinky the main action or focal relationship. No text overlays, labels, arrows, highlighting, logos, watermarks, or written answer cues.",
-          "imageAlt": "Adult in a health education setting completing a lesson-related task with several relevant people, items, places, or actions visible."
+          "imageBrief": "Photorealistic educational scene: Plain meal and wooden chair in an ordinary kitchen; do not depict smell, disgust, labels, or answer highlighting. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage.",
+          "imageAlt": "Plain meal and wooden chair in an ordinary kitchen; do not depict smell, disgust, labels, or answer highlighting."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "Getting Ready: The Five Senses",
-      "text": "At the five senses, an adult learner handles a real-world responsibility and must make a clear decision. First, the adult learner considers Pain, Tickle, Itch, and Smooth. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Rough, Bright, Loud, and Fragrant. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Next, the adult learner considers Delicious, Soft, Dark, and Quiet. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. Finally, the adult learner considers Stinky, Bland, and Hard. The choice depends on the role of each term in the context, so the adult learner checks the details before moving on. By the end, the adult learner can explain the decision clearly and use the new words in a connected response.",
-      "imageBrief": "Create one coherent B1-level visual for the reading about The Five Senses. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "The Five Senses 4: a sensory exhibit",
+      "text": "Visitors describe a smooth stone and a rough wood sample. A soft cushion differs from a hard wooden chair. They use bright and dark for light levels, and loud and quiet for sound levels. Fragrant describes a pleasant smell, while stinky describes an unpleasant one. Delicious expresses a positive personal judgment about food; bland means it has little flavor. Pain, tickle, and itch name different sensations. The exhibit’s photographs support objects and settings, but the written examples establish sensations, smells, tastes, and personal opinions.",
+      "imageBrief": "Photorealistic educational scene: A smooth polished stone on a teaching table beside ordinary tactile samples. Anatomical models must be accurate manufactured teaching aids. Written text, not the photograph, establishes sensory qualities and internal functions. No labels, arrows, overlays, answer highlighting, medical testing, stereotyped reactions, logos, or readable signage."
     },
     "exercises": [
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Pain, Tickle, Itch, and Smooth and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Pain",
+        "prompt": "An educator distinguishes pain, tickle, and itch as different sensations. The class describes a polished smooth stone without diagnosing any person’s symptoms.\nWhich word describes a surface without rough bumps?",
+        "answer": "Smooth",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Rough, Bright, Loud, and Fragrant and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
+        "prompt": "A visitor compares a rough wood sample with a smooth one. The room has bright light and a fragrant bunch of flowers. The speaker is described as loud in the written example, not judged from the photograph.\nWhich word describes the uneven wood surface?",
         "answer": "Rough",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Delicious, Soft, Dark, and Quiet and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Delicious",
+        "prompt": "Leila calls her meal delicious, but this is her personal opinion. A soft cushion sits beside her in a quiet room. Later the room becomes dark when she switches off the lamp.\nWhich adjective describes the cushion?",
+        "answer": "Soft",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "In the five senses setting, the adult completes a realistic task and uses the lesson vocabulary accurately. The task requires the learner to compare Stinky, Bland, and Hard and choose the option that fits the situation.\nWhich option best identifies the item or feature central to the adult's task?",
-        "answer": "Stinky",
+        "prompt": "The written example says the food is bland, meaning it has little flavor. A hard wooden chair contrasts with a soft cushion. The word stinky means having an unpleasant smell.\nWhich word means having little flavor?",
+        "answer": "Bland",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Gist: What is the main situation in the reading?",
-        "answer": "A practical situation related to the unit"
-      },
-      {
-        "prompt": "Detail: Which target term is important early in the situation?",
-        "answer": "Pain"
-      },
-      {
-        "prompt": "Detail: Which other term supports the task?",
-        "answer": "Smooth"
-      },
-      {
-        "prompt": "Inference: What practical problem or purpose connects the vocabulary?",
-        "answer": "The task or situation described"
-      },
-      {
-        "prompt": "Production: Explain the situation using two target words.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Tongue” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Apply the lesson vocabulary in the five senses task. Use Pain, Tickle, Itch, Smooth, Rough, Bright, Loud, Fragrant, Delicious, Soft, Dark, Quiet, Stinky, Bland, and Hard in a connected response and explain one choice.",
-        "answer": "Open response: use each target term accurately and explain the choice.",
+        "prompt": "Explain one distinction from this example in a complete sentence.\nAn educator distinguishes pain, tickle, and itch as different sensations. The class describes a polished smooth stone without diagnosing any person’s symptoms.",
+        "answer": "Smooth describes a surface without rough bumps.",
         "questionType": "production",
-        "responseMode": "extended-response",
-        "contextTag": "target-coverage-review"
+        "responseMode": "sentence",
+        "contextTag": "production"
       }
     ],
     "video": {
-      "title": "The Five Senses: In Context",
-      "idea": "40-60 seconds contextual scene in the field or science setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the field or science setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "The Five Senses 4: a sensory exhibit",
+      "idea": "Narrate the text beside accurate teaching models and objects. Establish invisible sensory qualities in narration without testing the learner’s senses.",
+      "scriptStarter": "An educator distinguishes pain, tickle, and itch as different sensations. The class describes a polished smooth stone without diagnosing any person’s symptoms."
     },
     "spacedReview": "1 lesson(s) back: Tongue, Taste Bud from five-senses-3\n3 lesson(s) back: Vision, Eye from five-senses-1\n7 lesson(s) back: guitar, violin from music-room-1"
   }

@@ -29,13 +29,13 @@
     "targetWordsArabic": [
       "صالة رياضية",
       "قاعة محاضرات",
-      "-",
-      "-",
+      "مطبخ مجتمعي",
+      "قاعة تعليمية",
       "غرفة فنون",
       "غرفة موسيقى",
       "مختبر حاسوب",
       "غرفة اجتماع",
-      "-",
+      "مكتبة قراءة",
       "رعاية نهارية",
       "حصة يوغا",
       "حصة رقص",
@@ -44,135 +44,134 @@
       "حصة فخّار"
     ],
     "usage": {
-      "goal": "Learn to use common the community center 1 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "120-150 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Gymnasium", "Auditorium", "Kitchen"],
-          "scenario": "During a routine the community center task, an adult compares Gymnasium, Auditorium, Kitchen. The person selects Gymnasium for the next step.",
+          "scenario": "A spacious hardwood gymnasium hosts community basketball leagues, badminton and evening fitness classes. Classrooms and halls sit down the corridor. Players squeak sneakers in the gymnasium.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which large indoor sports hall accommodates basketball games and court sports?",
             "options": ["Gymnasium", "Auditorium", "Kitchen"],
             "expectedAnswer": "Gymnasium"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Gymnasium, Auditorium, Kitchen. The person selects Gymnasium for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Gymnasium, Auditorium, Kitchen in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Gymnasium as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Classroom", "Art Room", "Music Room"],
-          "scenario": "During a routine the community center task, an adult compares Classroom, Art Room, Music Room. The person selects Classroom for the next step.",
+          "scenario": "A well-lit seminar classroom with whiteboards and desks accommodates neighborhood adult education workshops. Gyms and pools host athletics. Students take notes inside the classroom.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which learning room equipped with desks and whiteboards hosts lectures?",
             "options": ["Classroom", "Art Room", "Music Room"],
             "expectedAnswer": "Classroom"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Classroom, Art Room, Music Room. The person selects Classroom for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Classroom, Art Room, Music Room in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Classroom as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Computer Lab", "Meeting Room", "Library"],
-          "scenario": "During a routine the community center task, an adult compares Computer Lab, Meeting Room, Library. The person selects Computer Lab for the next step.",
+          "scenario": "A row of desktop terminals in the computer lab provides neighborhood residents with internet access and digital literacy courses. Offices sit nearby. Learners practice skills in the computer lab.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which dedicated digital facility provides public desktop terminals and access?",
             "options": ["Computer Lab", "Meeting Room", "Library"],
             "expectedAnswer": "Computer Lab"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Computer Lab, Meeting Room, Library. The person selects Computer Lab for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Computer Lab, Meeting Room, Library in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Computer Lab as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Daycare", "Yoga Class", "Dance Class"],
-          "scenario": "During a routine the community center task, an adult compares Daycare, Yoga Class, Dance Class. The person selects Daycare for the next step.",
+          "scenario": "A licensed daycare facility inside the centre provides supervised play and preschool learning for toddlers. Adult gyms run separately. Toddlers play safely in the daycare.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which supervised childcare facility nurtures toddlers while parents work?",
             "options": ["Daycare", "Yoga Class", "Dance Class"],
             "expectedAnswer": "Daycare"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Daycare, Yoga Class, Dance Class. The person selects Daycare for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Daycare, Yoga Class, Dance Class in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Daycare as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cooking Class", "Painting Class", "Pottery Class"],
-          "scenario": "During a routine the community center task, an adult compares Cooking Class, Painting Class, Pottery Class. The person selects Cooking Class for the next step.",
+          "scenario": "Residents gather around commercial stainless-steel prep counters for a community cooking class in culinary skills. Lecture halls host discussions. The instructor demonstrates techniques in cooking class.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which instructional culinary workshop teaches recipes and food preparation?",
             "options": ["Cooking Class", "Painting Class", "Pottery Class"],
             "expectedAnswer": "Cooking Class"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Cooking Class, Painting Class, Pottery Class. The person selects Cooking Class for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Cooking Class, Painting Class, Pottery Class in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Cooking Class as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Community Center 1: A short reading",
-      "text": "Maya visits the community center to choose a course. The art room has a painting class, and the kitchen hosts a cooking class. Omar prefers the computer lab. They ask about a dance class in the gymnasium too. Before enrolling, they check the timetable and find a course that fits their work schedules.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Indoor sports gymnasiums, learning classrooms and public computer labs",
+      "text": "A spacious hardwood gymnasium hosts community basketball leagues, badminton and evening fitness classes. Classrooms and halls sit down the corridor. Players squeak sneakers in the gymnasium. A well-lit seminar classroom with whiteboards and desks accommodates neighborhood adult education workshops. Gyms and pools host athletics. Students take notes inside the classroom. A row of desktop terminals in the computer lab provides neighborhood residents with internet access and digital literacy courses. Offices sit nearby. Learners practice skills in the computer lab. A licensed daycare facility inside the centre provides supervised play and preschool learning for toddlers. Adult gyms run separately. Toddlers play safely in the daycare. Residents gather around commercial stainless-steel prep counters for a community cooking class in culinary skills. Lecture halls host discussions. The instructor demonstrates techniques in cooking class.",
+      "imageBrief": "Use independently inspected word references to support Indoor sports gymnasiums, learning classrooms and public computer labs; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the community center task, an adult compares Gymnasium, Auditorium, Kitchen. The person selects Gymnasium for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A spacious hardwood gymnasium hosts community basketball leagues, badminton and evening fitness classes. Classrooms and halls sit down the corridor. Players squeak sneakers in the gymnasium.\nWhich large indoor sports hall accommodates basketball games and court sports?",
         "answer": "Gymnasium",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Classroom, Art Room, Music Room. The person selects Classroom for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A well-lit seminar classroom with whiteboards and desks accommodates neighborhood adult education workshops. Gyms and pools host athletics. Students take notes inside the classroom.\nWhich learning room equipped with desks and whiteboards hosts lectures?",
         "answer": "Classroom",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Computer Lab, Meeting Room, Library. The person selects Computer Lab for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A row of desktop terminals in the computer lab provides neighborhood residents with internet access and digital literacy courses. Offices sit nearby. Learners practice skills in the computer lab.\nWhich dedicated digital facility provides public desktop terminals and access?",
         "answer": "Computer Lab",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Daycare, Yoga Class, Dance Class. The person selects Daycare for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A licensed daycare facility inside the centre provides supervised play and preschool learning for toddlers. Adult gyms run separately. Toddlers play safely in the daycare.\nWhich supervised childcare facility nurtures toddlers while parents work?",
         "answer": "Daycare",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Cooking Class, Painting Class, Pottery Class. The person selects Cooking Class for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Residents gather around commercial stainless-steel prep counters for a community cooking class in culinary skills. Lecture halls host discussions. The instructor demonstrates techniques in cooking class.\nWhich instructional culinary workshop teaches recipes and food preparation?",
         "answer": "Cooking Class",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
+        "prompt": "A spacious hardwood gymnasium hosts community basketball leagues, badminton and evening fitness classes. Classrooms and halls sit down the corridor. Players squeak sneakers in the gymnasium. A well-lit seminar classroom with whiteboards and desks accommodates neighborhood adult education workshops. Gyms and pools host athletics. Students take notes inside the classroom. A row of desktop terminals in the computer lab provides neighborhood residents with internet access and digital literacy courses. Offices sit nearby. Learners practice skills in the computer lab. A licensed daycare facility inside the centre provides supervised play and preschool learning for toddlers. Adult gyms run separately. Toddlers play safely in the daycare. Residents gather around commercial stainless-steel prep counters for a community cooking class in culinary skills. Lecture halls host discussions. The instructor demonstrates techniques in cooking class.\nCompare “Gymnasium” and “Auditorium” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Sunny” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Which room does Omar prefer?",
-        "answer": "The computer lab",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short account using Gymnasium, Auditorium, Kitchen, Classroom, Art Room, Music Room, Computer Lab, Meeting Room, Library, Daycare, Yoga Class, Dance Class, Cooking Class, Painting Class, Pottery Class in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Community Center: In Context",
-      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Indoor sports gymnasiums, learning classrooms and public computer labs",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A spacious hardwood gymnasium hosts community basketball leagues, badminton and evening fitness classes. Classrooms and halls sit down the corridor. Players squeak sneakers in the gymnasium. Which large indoor sports hall accommodates basketball games and court sports?"
     },
     "spacedReview": "1 lesson(s) back: Sunny, Cloudy from weather-station-5\n3 lesson(s) back: Thunderstorm, Lightning from weather-station-3\n7 lesson(s) back: Hot, Warm from seasons-weather-3"
   },
@@ -221,135 +220,134 @@
       "تمدد"
     ],
     "usage": {
-      "goal": "Learn to use common the community center 2 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "118-148 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Language Class", "Tutoring", "Meditation"],
-          "scenario": "During a routine the community center task, an adult compares Language Class, Tutoring, Meditation. The person selects Language Class for the next step.",
+          "scenario": "Immigrant adults practice conversational English in a supportive evening language class led by volunteer teachers. Art rooms sit nearby. Students practice dialogues in language class.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which educational group teaches foreign language skills to adult learners?",
             "options": ["Language Class", "Tutoring", "Meditation"],
             "expectedAnswer": "Language Class"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Language Class, Tutoring, Meditation. The person selects Language Class for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Language Class, Tutoring, Meditation in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Language Class as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Book Club", "Film Night", "Basketball"],
-          "scenario": "During a routine the community center task, an adult compares Book Club, Film Night, Basketball. The person selects Book Club for the next step.",
+          "scenario": "Neighborhood readers gather monthly for a lively book club discussion of historical fiction novels. Chess clubs meet on Fridays. Readers debate character motives in book club.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which literary gathering meets regularly to discuss selected shared books?",
             "options": ["Book Club", "Film Night", "Basketball"],
             "expectedAnswer": "Book Club"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Book Club, Film Night, Basketball. The person selects Book Club for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Book Club, Film Night, Basketball in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Book Club as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Volleyball", "Badminton", "Table Tennis"],
-          "scenario": "During a routine the community center task, an adult compares Volleyball, Badminton, Table Tennis. The person selects Volleyball for the next step.",
+          "scenario": "Recreation league teams bump, set and spike the ball over the net during an evening volleyball tournament. Basketball courts run alongside. Cheering fans support the volleyball match.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which team court sport involves hitting an inflated ball over a high net?",
             "options": ["Volleyball", "Badminton", "Table Tennis"],
             "expectedAnswer": "Volleyball"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Volleyball, Badminton, Table Tennis. The person selects Volleyball for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Volleyball, Badminton, Table Tennis in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Volleyball as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Swimming", "Karate", "Zumba"],
-          "scenario": "During a routine the community center task, an adult compares Swimming, Karate, Zumba. The person selects Swimming for the next step.",
+          "scenario": "Community members practice lap swimming inside the heated six-lane indoor pool under lifeguard supervision. Saunas and locker rooms flank the deck. Swimmers enjoy therapeutic swimming.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which aquatic propulsion exercise takes place in the municipal pool?",
             "options": ["Swimming", "Karate", "Zumba"],
             "expectedAnswer": "Swimming"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Swimming, Karate, Zumba. The person selects Swimming for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Swimming, Karate, Zumba in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Swimming as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Aerobics", "Weight Training", "Stretching"],
-          "scenario": "During a routine the community center task, an adult compares Aerobics, Weight Training, Stretching. The person selects Aerobics for the next step.",
+          "scenario": "An upbeat instructor leads high-energy aerobics choreography set to rhythmic music in the mirrored dance studio. Yoga groups meet next door. Energetic aerobics burns calories.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which rhythmic cardiovascular exercise class is performed to upbeat music?",
             "options": ["Aerobics", "Weight Training", "Stretching"],
             "expectedAnswer": "Aerobics"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Aerobics, Weight Training, Stretching. The person selects Aerobics for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Aerobics, Weight Training, Stretching in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Aerobics as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Community Center 2: A short reading",
-      "text": "Omar joins a language class and a book club. Maya chooses table tennis instead of volleyball. The center also offers meditation and film night. They compare the activity times before paying. On Tuesday, Omar brings his book, while Maya takes her sports clothes for a game after work.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Adult language courses, shared book clubs, volleyball and lap swimming",
+      "text": "Immigrant adults practice conversational English in a supportive evening language class led by volunteer teachers. Art rooms sit nearby. Students practice dialogues in language class. Neighborhood readers gather monthly for a lively book club discussion of historical fiction novels. Chess clubs meet on Fridays. Readers debate character motives in book club. Recreation league teams bump, set and spike the ball over the net during an evening volleyball tournament. Basketball courts run alongside. Cheering fans support the volleyball match. Community members practice lap swimming inside the heated six-lane indoor pool under lifeguard supervision. Saunas and locker rooms flank the deck. Swimmers enjoy therapeutic swimming. An upbeat instructor leads high-energy aerobics choreography set to rhythmic music in the mirrored dance studio. Yoga groups meet next door. Energetic aerobics burns calories.",
+      "imageBrief": "Use independently inspected word references to support Adult language courses, shared book clubs, volleyball and lap swimming; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the community center task, an adult compares Language Class, Tutoring, Meditation. The person selects Language Class for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Immigrant adults practice conversational English in a supportive evening language class led by volunteer teachers. Art rooms sit nearby. Students practice dialogues in language class.\nWhich educational group teaches foreign language skills to adult learners?",
         "answer": "Language Class",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Book Club, Film Night, Basketball. The person selects Book Club for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Neighborhood readers gather monthly for a lively book club discussion of historical fiction novels. Chess clubs meet on Fridays. Readers debate character motives in book club.\nWhich literary gathering meets regularly to discuss selected shared books?",
         "answer": "Book Club",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Volleyball, Badminton, Table Tennis. The person selects Volleyball for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Recreation league teams bump, set and spike the ball over the net during an evening volleyball tournament. Basketball courts run alongside. Cheering fans support the volleyball match.\nWhich team court sport involves hitting an inflated ball over a high net?",
         "answer": "Volleyball",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Swimming, Karate, Zumba. The person selects Swimming for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Community members practice lap swimming inside the heated six-lane indoor pool under lifeguard supervision. Saunas and locker rooms flank the deck. Swimmers enjoy therapeutic swimming.\nWhich aquatic propulsion exercise takes place in the municipal pool?",
         "answer": "Swimming",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Aerobics, Weight Training, Stretching. The person selects Aerobics for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "An upbeat instructor leads high-energy aerobics choreography set to rhythmic music in the mirrored dance studio. Yoga groups meet next door. Energetic aerobics burns calories.\nWhich rhythmic cardiovascular exercise class is performed to upbeat music?",
         "answer": "Aerobics",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
+        "prompt": "Immigrant adults practice conversational English in a supportive evening language class led by volunteer teachers. Art rooms sit nearby. Students practice dialogues in language class. Neighborhood readers gather monthly for a lively book club discussion of historical fiction novels. Chess clubs meet on Fridays. Readers debate character motives in book club. Recreation league teams bump, set and spike the ball over the net during an evening volleyball tournament. Basketball courts run alongside. Cheering fans support the volleyball match. Community members practice lap swimming inside the heated six-lane indoor pool under lifeguard supervision. Saunas and locker rooms flank the deck. Swimmers enjoy therapeutic swimming. An upbeat instructor leads high-energy aerobics choreography set to rhythmic music in the mirrored dance studio. Yoga groups meet next door. Energetic aerobics burns calories.\nCompare “Language Class” and “Tutoring” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Gymnasium” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "What does Maya choose instead of volleyball?",
-        "answer": "Table tennis",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short account using Language Class, Tutoring, Meditation, Book Club, Film Night, Basketball, Volleyball, Badminton, Table Tennis, Swimming, Karate, Zumba, Aerobics, Weight Training, Stretching in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Community Center: In Context",
-      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Adult language courses, shared book clubs, volleyball and lap swimming",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Immigrant adults practice conversational English in a supportive evening language class led by volunteer teachers. Art rooms sit nearby. Students practice dialogues in language class. Which educational group teaches foreign language skills to adult learners?"
     },
     "spacedReview": "1 lesson(s) back: Gymnasium, Auditorium from community-center-1\n3 lesson(s) back: Hygrometer, Weather Satellite from weather-station-4\n7 lesson(s) back: Weather Map, Forecast from seasons-weather-4"
   },
@@ -398,135 +396,134 @@
       "مرحلة"
     ],
     "usage": {
-      "goal": "Learn to use common the community center 3 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "125-155 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Bake Sale", "Talent Show", "Holiday Party"],
-          "scenario": "During a routine the community center task, an adult compares Bake Sale, Talent Show, Holiday Party. The person selects Bake Sale for the next step.",
+          "scenario": "Volunteers organize a weekend charity bake sale in the lobby to raise funds for library youth programs. Ticket booths sit nearby. Homemade cakes and pies fill the bake sale.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which community fundraising event sells homemade pastries and cakes?",
             "options": ["Bake Sale", "Talent Show", "Holiday Party"],
             "expectedAnswer": "Bake Sale"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Bake Sale, Talent Show, Holiday Party. The person selects Bake Sale for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Bake Sale, Talent Show, Holiday Party in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Bake Sale as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Workshop", "Seminar", "Concert"],
-          "scenario": "During a routine the community center task, an adult compares Workshop, Seminar, Concert. The person selects Workshop for the next step.",
+          "scenario": "A hands-on carpentry workshop teaches residents how to build raised garden planters safely. Lecture halls host talks. Power tools and wood scraps fill the active workshop.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which practical instructional session teaches craft or trade skills?",
             "options": ["Workshop", "Seminar", "Concert"],
             "expectedAnswer": "Workshop"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Workshop, Seminar, Concert. The person selects Workshop for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Workshop, Seminar, Concert in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Workshop as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Exhibition", "Farmers Market", "Blood Drive"],
-          "scenario": "During a routine the community center task, an adult compares Exhibition, Farmers Market, Blood Drive. The person selects Exhibition for the next step.",
+          "scenario": "A gallery exhibition showcasing original oil paintings and pottery from neighborhood artists opens this Friday. Gyms host tournaments. Art patrons admire the community exhibition.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which public display of artwork and cultural artifacts is held in a gallery?",
             "options": ["Exhibition", "Farmers Market", "Blood Drive"],
             "expectedAnswer": "Exhibition"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Exhibition, Farmers Market, Blood Drive. The person selects Exhibition for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Exhibition, Farmers Market, Blood Drive in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Exhibition as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Voting", "Bulletin Board", "Water Fountain"],
-          "scenario": "During a routine the community center task, an adult compares Voting, Bulletin Board, Water Fountain. The person selects Voting for the next step.",
+          "scenario": "Civic election workers set up polling booths in the main hall so registered citizens can participate in voting. Meeting rooms host seminars. Citizens cast private ballots during voting.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which formal civic process allows citizens to cast ballots in elections?",
             "options": ["Voting", "Bulletin Board", "Water Fountain"],
             "expectedAnswer": "Voting"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Voting, Bulletin Board, Water Fountain. The person selects Voting for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Voting, Bulletin Board, Water Fountain in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Voting as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Locker", "Bench", "Stage"],
-          "scenario": "During a routine the community center task, an adult compares Locker, Bench, Stage. The person selects Locker for the next step.",
+          "scenario": "A metal storage locker with a combination padlock secures gym clothes and backpacks while users exercise. Benches line the changing room. The patron closes the steel locker door.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which lockable steel storage compartment safeguards personal belongings?",
             "options": ["Locker", "Bench", "Stage"],
             "expectedAnswer": "Locker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Locker, Bench, Stage. The person selects Locker for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Locker, Bench, Stage in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Locker as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Community Center 3: A short reading",
-      "text": "The community center plans a bake sale and a talent show. Volunteers put a notice on the bulletin board. A stage is ready for singers, and an exhibition fills another room. Maya offers to help at the farmers market. Omar asks the coordinator where the workshop will take place.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Charity bake sales, hands-on craft workshops, art galleries and voting",
+      "text": "Volunteers organize a weekend charity bake sale in the lobby to raise funds for library youth programs. Ticket booths sit nearby. Homemade cakes and pies fill the bake sale. A hands-on carpentry workshop teaches residents how to build raised garden planters safely. Lecture halls host talks. Power tools and wood scraps fill the active workshop. A gallery exhibition showcasing original oil paintings and pottery from neighborhood artists opens this Friday. Gyms host tournaments. Art patrons admire the community exhibition. Civic election workers set up polling booths in the main hall so registered citizens can participate in voting. Meeting rooms host seminars. Citizens cast private ballots during voting. A metal storage locker with a combination padlock secures gym clothes and backpacks while users exercise. Benches line the changing room. The patron closes the steel locker door.",
+      "imageBrief": "Use independently inspected word references to support Charity bake sales, hands-on craft workshops, art galleries and voting; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the community center task, an adult compares Bake Sale, Talent Show, Holiday Party. The person selects Bake Sale for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Volunteers organize a weekend charity bake sale in the lobby to raise funds for library youth programs. Ticket booths sit nearby. Homemade cakes and pies fill the bake sale.\nWhich community fundraising event sells homemade pastries and cakes?",
         "answer": "Bake Sale",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Workshop, Seminar, Concert. The person selects Workshop for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A hands-on carpentry workshop teaches residents how to build raised garden planters safely. Lecture halls host talks. Power tools and wood scraps fill the active workshop.\nWhich practical instructional session teaches craft or trade skills?",
         "answer": "Workshop",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Exhibition, Farmers Market, Blood Drive. The person selects Exhibition for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A gallery exhibition showcasing original oil paintings and pottery from neighborhood artists opens this Friday. Gyms host tournaments. Art patrons admire the community exhibition.\nWhich public display of artwork and cultural artifacts is held in a gallery?",
         "answer": "Exhibition",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Voting, Bulletin Board, Water Fountain. The person selects Voting for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Civic election workers set up polling booths in the main hall so registered citizens can participate in voting. Meeting rooms host seminars. Citizens cast private ballots during voting.\nWhich formal civic process allows citizens to cast ballots in elections?",
         "answer": "Voting",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Locker, Bench, Stage. The person selects Locker for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A metal storage locker with a combination padlock secures gym clothes and backpacks while users exercise. Benches line the changing room. The patron closes the steel locker door.\nWhich lockable steel storage compartment safeguards personal belongings?",
         "answer": "Locker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
+        "prompt": "Volunteers organize a weekend charity bake sale in the lobby to raise funds for library youth programs. Ticket booths sit nearby. Homemade cakes and pies fill the bake sale. A hands-on carpentry workshop teaches residents how to build raised garden planters safely. Lecture halls host talks. Power tools and wood scraps fill the active workshop. A gallery exhibition showcasing original oil paintings and pottery from neighborhood artists opens this Friday. Gyms host tournaments. Art patrons admire the community exhibition. Civic election workers set up polling booths in the main hall so registered citizens can participate in voting. Meeting rooms host seminars. Citizens cast private ballots during voting. A metal storage locker with a combination padlock secures gym clothes and backpacks while users exercise. Benches line the changing room. The patron closes the steel locker door.\nCompare “Bake Sale” and “Talent Show” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Language Class” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where do volunteers put the notice?",
-        "answer": "On the bulletin board",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short account using Bake Sale, Talent Show, Holiday Party, Workshop, Seminar, Concert, Exhibition, Farmers Market, Blood Drive, Voting, Bulletin Board, Water Fountain, Locker, Bench, Stage in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Community Center: In Context",
-      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Charity bake sales, hands-on craft workshops, art galleries and voting",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "Volunteers organize a weekend charity bake sale in the lobby to raise funds for library youth programs. Ticket booths sit nearby. Homemade cakes and pies fill the bake sale. Which community fundraising event sells homemade pastries and cakes?"
     },
     "spacedReview": "1 lesson(s) back: Language Class, Tutoring from community-center-2\n3 lesson(s) back: Sunny, Cloudy from weather-station-5\n7 lesson(s) back: Sunshine, Clear Sky from weather-station-1"
   },
@@ -561,8 +558,8 @@
       "جهاز عرض",
       "سبورة بيضاء",
       "ميكروفون",
-      "مكبر صوت (سبيكر / سماعة)",
-      "ساعة حائط / ساعة",
+      "مكبر صوت الإعلانات",
+      "ساعة جدارية",
       "مدرب",
       "منسق",
       "متطوع",
@@ -575,135 +572,134 @@
       "عامل نظافة"
     ],
     "usage": {
-      "goal": "Learn to use common the community center 4 vocabulary to handle a familiar adult everyday task.",
-      "canDoStatement": "Can use simple words and phrases to handle familiar situations related to the community center.",
-      "textType": "short-narrative",
-      "readingTarget": "45-75 words",
+      "goal": "Compare the stated terms and interpret the supplied practical account using its evidence.",
+      "canDoStatement": "Can explain straightforward distinctions in a clear supported A1-A2 account with specialist terms defined.",
+      "textType": "educational-explanation",
+      "readingTarget": "110-140 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Projector", "Whiteboard", "Microphone"],
-          "scenario": "During a routine the community center task, an adult compares Projector, Whiteboard, Microphone. The person selects Projector for the next step.",
+          "scenario": "A ceiling-mounted digital projector displays presentation slides and documentary films onto the wide auditorium screen. Monitors line halls. The technician aligns the bright projector.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which optical display device projects computer video onto large screens?",
             "options": ["Projector", "Whiteboard", "Microphone"],
             "expectedAnswer": "Projector"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Projector, Whiteboard, Microphone. The person selects Projector for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Projector, Whiteboard, Microphone in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Projector as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Speaker", "Clock", "Instructor"],
-          "scenario": "During a routine the community center task, an adult compares Speaker, Clock, Instructor. The person selects Speaker for the next step.",
+          "scenario": "A wall-mounted public address audio speaker broadcasts community announcements and music clearly across the recreation hall. Microphones connect at desks. Sound carries from the speaker.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which acoustic transducer device amplifies and broadcasts spoken audio?",
             "options": ["Speaker", "Clock", "Instructor"],
             "expectedAnswer": "Speaker"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Speaker, Clock, Instructor. The person selects Speaker for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Speaker, Clock, Instructor in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Speaker as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Coordinator", "Volunteer", "Member"],
-          "scenario": "During a routine the community center task, an adult compares Coordinator, Volunteer, Member. The person selects Coordinator for the next step.",
+          "scenario": "The municipal recreation coordinator schedules room bookings, oversees program budgets and organizes seasonal festivals. Clerks staff reception. The coordinator welcomes event organizers.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which administrative professional manages community center programs?",
             "options": ["Coordinator", "Volunteer", "Member"],
             "expectedAnswer": "Coordinator"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Coordinator, Volunteer, Member. The person selects Coordinator for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Coordinator, Volunteer, Member in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Coordinator as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Child", "Senior", "Lifeguard"],
-          "scenario": "During a routine the community center task, an adult compares Child, Senior, Lifeguard. The person selects Child for the next step.",
+          "scenario": "A smiling neighborhood child builds colorful plastic block towers in the supervised after-school playroom. Teenagers and adults meet elsewhere. The young child shares toys cheerfully.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which young human individual participates in after-school playroom activities?",
             "options": ["Child", "Senior", "Lifeguard"],
             "expectedAnswer": "Child"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Child, Senior, Lifeguard. The person selects Child for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Child, Senior, Lifeguard in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Child as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Coach", "Receptionist", "Janitor"],
-          "scenario": "During a routine the community center task, an adult compares Coach, Receptionist, Janitor. The person selects Coach for the next step.",
+          "scenario": "A certified volunteer basketball coach blows a whistle and demonstrates defensive footwork to youth league players. Referees watch nearby. The enthusiastic coach encourages players.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which sports instructor trains athletic teams and directs game tactics?",
             "options": ["Coach", "Receptionist", "Janitor"],
             "expectedAnswer": "Coach"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a the community center context illustrating this situation: During a routine the community center task, an adult compares Coach, Receptionist, Janitor. The person selects Coach for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult the community center scene showing lesson-related items or actions including Coach, Receptionist, Janitor in a natural setting."
+          "imageBrief": "Accurate word-reference image supporting the community center account, showing Coach as an identifiable object, structure, animal or stated action. Use verified species and equipment references. Prefer one human-free composition. Do not merge unrelated habitats, manufacture official documents or signals, infer a role from clothing, or show hazardous operations. Written context supplies facts that appearance cannot establish. No readable text, logos, arrows, overlays or answer highlighting.",
+          "imageAlt": "Word-reference image awaiting independent visual inspection and a truthful description of its visible content."
         }
       ],
       "phrases": []
     },
     "reading": {
-      "title": "The Community Center 4: A short reading",
-      "text": "The coordinator checks the projector, microphone, and speaker before the event. A volunteer writes the schedule on a whiteboard. The instructor welcomes members at the door, while the receptionist answers questions. Omar helps move chairs, and Maya checks the clock. Everyone knows which task to finish before the audience arrives.",
-      "imageBrief": "Create one coherent A1-level visual for the reading about The Community Center. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "title": "Auditorium projectors, public address speakers and program coordinators",
+      "text": "A ceiling-mounted digital projector displays presentation slides and documentary films onto the wide auditorium screen. Monitors line halls. The technician aligns the bright projector. A wall-mounted public address audio speaker broadcasts community announcements and music clearly across the recreation hall. Microphones connect at desks. Sound carries from the speaker. The municipal recreation coordinator schedules room bookings, oversees program budgets and organizes seasonal festivals. Clerks staff reception. The coordinator welcomes event organizers. A smiling neighborhood child builds colorful plastic block towers in the supervised after-school playroom. Teenagers and adults meet elsewhere. The young child shares toys cheerfully. A certified volunteer basketball coach blows a whistle and demonstrates defensive footwork to youth league players. Referees watch nearby. The enthusiastic coach encourages players.",
+      "imageBrief": "Use independently inspected word references to support Auditorium projectors, public address speakers and program coordinators; keep unrelated items separate. The written account supplies hidden identity, schedules, permissions and roles. No readable text or logos."
     },
     "exercises": [
       {
-        "prompt": "During a routine the community center task, an adult compares Projector, Whiteboard, Microphone. The person selects Projector for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A ceiling-mounted digital projector displays presentation slides and documentary films onto the wide auditorium screen. Monitors line halls. The technician aligns the bright projector.\nWhich optical display device projects computer video onto large screens?",
         "answer": "Projector",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Speaker, Clock, Instructor. The person selects Speaker for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A wall-mounted public address audio speaker broadcasts community announcements and music clearly across the recreation hall. Microphones connect at desks. Sound carries from the speaker.\nWhich acoustic transducer device amplifies and broadcasts spoken audio?",
         "answer": "Speaker",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Coordinator, Volunteer, Member. The person selects Coordinator for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The municipal recreation coordinator schedules room bookings, oversees program budgets and organizes seasonal festivals. Clerks staff reception. The coordinator welcomes event organizers.\nWhich administrative professional manages community center programs?",
         "answer": "Coordinator",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Child, Senior, Lifeguard. The person selects Child for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A smiling neighborhood child builds colorful plastic block towers in the supervised after-school playroom. Teenagers and adults meet elsewhere. The young child shares toys cheerfully.\nWhich young human individual participates in after-school playroom activities?",
         "answer": "Child",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine the community center task, an adult compares Coach, Receptionist, Janitor. The person selects Coach for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "A certified volunteer basketball coach blows a whistle and demonstrates defensive footwork to youth league players. Referees watch nearby. The enthusiastic coach encourages players.\nWhich sports instructor trains athletic teams and directs game tactics?",
         "answer": "Coach",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Use it: Choose one word and say one short sentence about the scene.",
-        "answer": "Open response"
+        "prompt": "A ceiling-mounted digital projector displays presentation slides and documentary films onto the wide auditorium screen. Monitors line halls. The technician aligns the bright projector. A wall-mounted public address audio speaker broadcasts community announcements and music clearly across the recreation hall. Microphones connect at desks. Sound carries from the speaker. The municipal recreation coordinator schedules room bookings, oversees program budgets and organizes seasonal festivals. Clerks staff reception. The coordinator welcomes event organizers. A smiling neighborhood child builds colorful plastic block towers in the supervised after-school playroom. Teenagers and adults meet elsewhere. The young child shares toys cheerfully. A certified volunteer basketball coach blows a whistle and demonstrates defensive footwork to youth league players. Referees watch nearby. The enthusiastic coach encourages players.\nCompare “Projector” and “Whiteboard” using their stated roles or meanings. Explain any overlap rather than inventing a unique difference.",
+        "answer": "Accept an accurate comparison grounded in the supplied account, including any stated overlap; appearances do not establish hidden purpose or guarantees.",
+        "questionType": "comparison",
+        "responseMode": "extended-response",
+        "contextTag": "reading-comparison"
       },
       {
-        "prompt": "Spaced retrieval: Use the earlier word “Bake Sale” in a sentence connected to this lesson.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Where does the volunteer write the schedule?",
-        "answer": "On a whiteboard",
-        "questionType": "meaning",
-        "responseMode": "short-answer",
-        "contextTag": "reading"
+        "prompt": "Write an original short account using Projector, Whiteboard, Microphone, Speaker, Clock, Instructor, Coordinator, Volunteer, Member, Child, Senior, Lifeguard, Coach, Receptionist, Janitor in their supplied senses. Preserve the stated distinctions and make clear when references concern separate items or places.",
+        "answer": "Accept correct contextual uses of all listed terms, accurate grammatical agreement and clear distinctions without invented access permission, operating instructions or service guarantees.",
+        "questionType": "production",
+        "responseMode": "extended-response",
+        "contextTag": "target-coverage-review"
       }
     ],
     "video": {
-      "title": "The Community Center: In Context",
-      "idea": "30-45 seconds contextual scene in the public-service setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the public-service setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Auditorium projectors, public address speakers and program coordinators",
+      "idea": "Narrate the stated distinctions using independently verified vocabulary references; pause for the first question and keep incompatible items separate.",
+      "scriptStarter": "A ceiling-mounted digital projector displays presentation slides and documentary films onto the wide auditorium screen. Monitors line halls. The technician aligns the bright projector. Which optical display device projects computer video onto large screens?"
     },
     "spacedReview": "1 lesson(s) back: Bake Sale, Talent Show from community-center-3\n3 lesson(s) back: Gymnasium, Auditorium from community-center-1\n7 lesson(s) back: Rainbow, Umbrella from weather-station-2"
   }

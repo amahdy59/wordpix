@@ -28,13 +28,13 @@
     ],
     "targetWordsArabic": [
       "يسار",
-      "حق",
+      "يمين",
       "مباشرة دون انعطاف",
       "إلى الأمام",
       "إلى الخلف",
       "إلى الأعلى",
       "إلى الأسفل",
-      "يدير",
+      "ينعطف",
       "يتوقف",
       "يذهب",
       "شمال",
@@ -45,116 +45,140 @@
     ],
     "usage": {
       "goal": "Learn to recognize and use key giving directions 1 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a direction or landmark and ask for a route.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Left", "Right", "Straight"],
-          "scenario": "A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left.",
+          "scenario": "Nora’s instructions say, “Turn left at the corner, not right. Then go straight.” Left and right are from Nora’s facing direction.",
           "check": {
-            "question": "What direction matches the route?",
+            "question": "Which way should Nora turn at the corner?",
             "options": ["Straight", "Left", "Right"],
             "expectedAnswer": "Left"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Left, Right, Straight in a natural setting."
+          "imageBrief": "Adult pedestrian at quiet corner seen from behind, facing ahead. Context supplies left turn; no route arrow, readable signs or traffic-crossing instruction.",
+          "imageAlt": "Adult pedestrian at quiet corner seen from behind, facing ahead."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Forward", "Backward", "Up"],
-          "scenario": "A visitor checks a route where forward, backward, up are possible movement cues. The route arrow at the current point indicates forward.",
+          "scenario": "Nora moves forward towards the entrance. Backward would mean towards her back; up would mean to a higher level.",
           "check": {
-            "question": "Which way should the visitor go?",
+            "question": "Which word describes moving towards the entrance ahead?",
             "options": ["Forward", "Backward", "Up"],
             "expectedAnswer": "Forward"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where forward, backward, up are possible movement cues. The route arrow at the current point indicates forward. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Forward, Backward, Up in a natural setting."
+          "imageBrief": "Adult facing building entrance with clear path ahead. No backwards walking near road, direction arrows or text.",
+          "imageAlt": "Adult facing building entrance with clear path ahead."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Down", "Turn", "Stop"],
-          "scenario": "A visitor checks a route where down, turn, stop are possible movement cues. The route arrow at the current point indicates down.",
+          "scenario": "The reception is on a lower floor. Nora goes down in the lift; she will turn at the corridor and stop at reception.",
           "check": {
-            "question": "Which direction word fits the next step?",
+            "question": "Which word describes going to the lower floor?",
             "options": ["Turn", "Stop", "Down"],
             "expectedAnswer": "Down"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor checks a route where down, turn, stop are possible movement cues. The route arrow at the current point indicates down. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Down, Turn, Stop in a natural setting."
+          "imageBrief": "Adult waiting beside closed lift doors indoors. Context supplies floor direction, no floor digits or text.",
+          "imageAlt": "Adult waiting beside closed lift doors indoors."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Go", "North", "South"],
-          "scenario": "In the office area, a visitor follows a route that uses go, north, and south. The highlighted route cue or landmark is go.",
+          "scenario": "Nora is told, “Go to reception.” Go means move or travel. North and south are compass directions.",
           "check": {
-            "question": "Which way should the visitor go in the example with go, north?",
+            "question": "Which verb tells Nora to move to reception?",
             "options": ["South", "Go", "North"],
             "expectedAnswer": "Go"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses go, north, and south. The highlighted route cue or landmark is go. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Go, North, South in a natural setting."
+          "imageBrief": "Adult entering an indoor reception area with plain desk. No readable signs or map arrows.",
+          "imageAlt": "Adult entering an indoor reception area with plain desk."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["East", "West", "Northeast"],
-          "scenario": "In the neighbourhood route, a visitor follows a route that uses east, west, and northeast. The highlighted route cue or landmark is east.",
+          "scenario": "The route description says the library is east of the station. West is the opposite direction; northeast is between north and east.",
           "check": {
-            "question": "Which direction word fits the next step in the example with east, west?",
+            "question": "In which direction is the library from the station?",
             "options": ["East", "West", "Northeast"],
             "expectedAnswer": "East"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses east, west, and northeast. The highlighted route cue or landmark is east. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including East, West, Northeast in a natural setting."
+          "imageBrief": "Generic town overview with station-like building and library-like building. Written description supplies cardinal directions; no arrows, letters or readable signs.",
+          "imageAlt": "Generic town overview with station-like building and library-like building."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Giving Directions 1: Finding an Appointment",
-      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use left, right, straight, forward, and backward. The map also shows up, down, turn, stop, and go. Near the destination, the visitor looks for north, south, east, west, and northeast. The visitor checks the route at each major turn instead of guessing.",
-      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+      "text": "Nora follows the instructions: go forward, turn left, then go straight. A right turn leads elsewhere. She does not walk backward. Inside, she goes up in a lift, then down to reception and stops. The town map shows north and south, east and west. The library is northeast of the station.",
+      "imageBrief": "Adult visitor discussing a route beside a blank town map. Context supplies all directions, distances and destinations; no readable map labels, directional arrows, numeric distances or traffic-safety guarantees."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Left"
+        "prompt": "Nora’s instructions say, “Turn left at the corner, not right. Then go straight.” Left and right are from Nora’s facing direction.\nWhich way should Nora turn at the corner?",
+        "answer": "Left",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Forward"
+        "prompt": "Nora moves forward towards the entrance. Backward would mean towards her back; up would mean to a higher level.\nWhich word describes moving towards the entrance ahead?",
+        "answer": "Forward",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Down"
+        "prompt": "The reception is on a lower floor. Nora goes down in the lift; she will turn at the corridor and stop at reception.\nWhich word describes going to the lower floor?",
+        "answer": "Down",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Go"
+        "prompt": "Nora is told, “Go to reception.” Go means move or travel. North and south are compass directions.\nWhich verb tells Nora to move to reception?",
+        "answer": "Go",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "East"
+        "prompt": "The route description says the library is east of the station. West is the opposite direction; northeast is between north and east.\nIn which direction is the library from the station?",
+        "answer": "East",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Left"
+        "prompt": "Read the passage: Nora follows the instructions: go forward, turn left, then go straight. A right turn leads elsewhere. She does not walk backward. Inside, she goes up in a lift, then down to reception and stops. The town map shows north and south, east and west. The library is northeast of the station.\nWhich way does Nora turn before going straight?",
+        "answer": "Left",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Right"
+        "prompt": "Tell a visitor to turn left at the next corner.",
+        "answer": "Turn left at the next corner.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Up"
+        "prompt": "A visitor needs the lower floor. Explain the movement using down.",
+        "answer": "Go down to the lower floor.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Giving Directions: See It, Say It",
-      "idea": "30–50 second contextual video set in a town. Show left, right, straight, forward, and backward naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: A visitor checks a route where left, right, straight are possible movement cues. The route arrow at the current point indicates left."
+      "title": "Finding a Place",
+      "idea": "Adult visitor asks for a route. Narration supplies orientation, left/right from traveller viewpoint, distance and purposes of buildings. No generated map labels or traffic instructions, and no assumption a still image proves cardinal direction or a safe crossing.",
+      "scriptStarter": "Nora’s instructions say, “Turn left at the corner, not right. Then go straight.” Left and right are from Nora’s facing direction."
     },
     "spacedReview": "1 lesson(s) back: Customer, Butcher from market-6\n3 lesson(s) back: Cake, Pie from market-4\n7 lesson(s) back: Bicycle, Skateboard from toys-games-3"
   },
@@ -194,126 +218,150 @@
       "قريب",
       "بعيد",
       "قريب",
-      "قريب",
+      "بالقرب",
       "بعيد",
       "هنا",
       "هناك",
       "في كل مكان",
-      "لا مكان",
+      "في لا مكان",
       "في مكان ما"
     ],
     "usage": {
       "goal": "Learn to recognize and use key giving directions 2 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a direction or landmark and ask for a route.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Northwest", "Southeast", "Southwest"],
-          "scenario": "At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest.",
+          "scenario": "Nora’s map description puts the park northwest of the station, between north and west. Southeast is opposite; southwest is between south and west.",
           "check": {
-            "question": "Which direction word fits the next step in the example with northwest, southeast?",
+            "question": "In which direction is the park from the station?",
             "options": ["Northwest", "Southeast", "Southwest"],
             "expectedAnswer": "Northwest"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Northwest, Southeast, Southwest in a natural setting."
+          "imageBrief": "Generic town overview with park and station. Context supplies orientation; no compass rose letters, arrows or readable text.",
+          "imageAlt": "Generic town overview with park and station."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Compass", "Direction", "Near"],
-          "scenario": "In the hospital district, a visitor follows a route that uses compass, direction, and near. The highlighted route cue or landmark is compass.",
+          "scenario": "Nora uses a compass to find a direction. Her destination is near the station.",
           "check": {
-            "question": "What direction matches the route in the example with compass, direction?",
+            "question": "Which instrument helps her find a direction?",
             "options": ["Direction", "Near", "Compass"],
             "expectedAnswer": "Compass"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the hospital district, a visitor follows a route that uses compass, direction, and near. The highlighted route cue or landmark is compass. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Compass, Direction, Near in a natural setting."
+          "imageBrief": "Adult holding navigation compass with unlettered dial. No drawing compass, readable labels or claimed precise magnetic/true-north equivalence.",
+          "imageAlt": "Adult holding navigation compass with unlettered dial."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Far", "Close", "Nearby"],
-          "scenario": "A visitor compares the location words far, close, nearby on a simple map. The marked destination is described as far.",
+          "scenario": "The hospital is far from Nora: ten kilometres away. The café is close, and a small shop is nearby.",
           "check": {
-            "question": "How should the visitor continue from here?",
+            "question": "Which word describes the hospital’s distance?",
             "options": ["Nearby", "Far", "Close"],
             "expectedAnswer": "Far"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: A visitor compares the location words far, close, nearby on a simple map. The marked destination is described as far. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Far, Close, Nearby in a natural setting."
+          "imageBrief": "Adult at quiet station entrance with nearby café-like frontage. Distance supplied in context; no readable numbers or map scale.",
+          "imageAlt": "Adult at quiet station entrance with nearby café-like frontage."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Distant", "Here", "There"],
-          "scenario": "In the neighbourhood route, a visitor follows a route that uses distant, here, and there. The highlighted route cue or landmark is distant.",
+          "scenario": "Nora says, “The distant tower is far away. I am here at the station; the park is there beside the café.”",
           "check": {
-            "question": "What direction matches the route in the example with distant, here?",
+            "question": "Which word describes the faraway tower?",
             "options": ["Distant", "Here", "There"],
             "expectedAnswer": "Distant"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses distant, here, and there. The highlighted route cue or landmark is distant. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Distant, Here, There in a natural setting."
+          "imageBrief": "Distant tower on town skyline behind nearer station area. No exaggerated perspective, arrows or text.",
+          "imageAlt": "Distant tower on town skyline behind nearer station area."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Everywhere", "Nowhere", "Somewhere"],
-          "scenario": "In the city centre, a visitor follows a route that uses everywhere, nowhere, and somewhere. The highlighted route cue or landmark is everywhere.",
+          "scenario": "Trees grow everywhere in this park: throughout the area. Nora’s bag is somewhere nearby; she has searched nowhere outside the park.",
           "check": {
-            "question": "Which way should the visitor go in the example with everywhere, nowhere?",
+            "question": "Which word means throughout the park?",
             "options": ["Nowhere", "Somewhere", "Everywhere"],
             "expectedAnswer": "Everywhere"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the city centre, a visitor follows a route that uses everywhere, nowhere, and somewhere. The highlighted route cue or landmark is everywhere. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Everywhere, Nowhere, Somewhere in a natural setting."
+          "imageBrief": "Park with trees distributed across foreground and background. Context defines throughout, no bag-search action montage or text.",
+          "imageAlt": "Park with trees distributed across foreground and background."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Giving Directions 2: Finding an Appointment",
-      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use northwest, southeast, southwest, compass, and direction. The map also shows near, far, close, nearby, and distant. Near the destination, the visitor looks for here, there, everywhere, nowhere, and somewhere. The visitor checks the route at each major turn instead of guessing.",
-      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+      "text": "Nora uses a compass to check her direction. The park is northwest of the station, the office southeast and the school southwest. The café is near and close to the station; a shop is nearby. The hospital is far away, beyond a distant tower. Nora waits here, not there. Trees grow everywhere in the park. Her keys are somewhere in her bag, nowhere on the bench.",
+      "imageBrief": "Adult visitor discussing a route beside a blank town map. Context supplies all directions, distances and destinations; no readable map labels, directional arrows, numeric distances or traffic-safety guarantees."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Northwest"
+        "prompt": "Nora’s map description puts the park northwest of the station, between north and west. Southeast is opposite; southwest is between south and west.\nIn which direction is the park from the station?",
+        "answer": "Northwest",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Compass"
+        "prompt": "Nora uses a compass to find a direction. Her destination is near the station.\nWhich instrument helps her find a direction?",
+        "answer": "Compass",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Far"
+        "prompt": "The hospital is far from Nora: ten kilometres away. The café is close, and a small shop is nearby.\nWhich word describes the hospital’s distance?",
+        "answer": "Far",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Distant"
+        "prompt": "Nora says, “The distant tower is far away. I am here at the station; the park is there beside the café.”\nWhich word describes the faraway tower?",
+        "answer": "Distant",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Everywhere"
+        "prompt": "Trees grow everywhere in this park: throughout the area. Nora’s bag is somewhere nearby; she has searched nowhere outside the park.\nWhich word means throughout the park?",
+        "answer": "Everywhere",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Northwest"
+        "prompt": "Read the passage: Nora uses a compass to check her direction. The park is northwest of the station, the office southeast and the school southwest. The café is near and close to the station; a shop is nearby. The hospital is far away, beyond a distant tower. Nora waits here, not there. Trees grow everywhere in the park. Her keys are somewhere in her bag, nowhere on the bench.\nWhere are Nora’s keys?",
+        "answer": "Somewhere in her bag",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Southeast"
+        "prompt": "Ask which direction the station is in.",
+        "answer": "Which direction is the station?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Near"
+        "prompt": "A café is only a short distance away. Say it is nearby.",
+        "answer": "The café is nearby.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Giving Directions: See It, Say It",
-      "idea": "30–50 second contextual video set in a town. Show northwest, southeast, southwest, compass, and direction naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: At the station exit, a visitor follows a route that uses northwest, southeast, and southwest. The highlighted route cue or landmark is northwest."
+      "title": "Finding a Place",
+      "idea": "Adult visitor asks for a route. Narration supplies orientation, left/right from traveller viewpoint, distance and purposes of buildings. No generated map labels or traffic instructions, and no assumption a still image proves cardinal direction or a safe crossing.",
+      "scriptStarter": "Nora’s map description puts the park northwest of the station, between north and west. Southeast is opposite; southwest is between south and west."
     },
     "spacedReview": "1 lesson(s) back: Left, Right from giving-directions-1\n3 lesson(s) back: Barcode, Shopping Bag from market-5\n7 lesson(s) back: Apple, Banana from market-1"
   },
@@ -351,128 +399,152 @@
       "ممر مشاة",
       "إشارة مرور",
       "دوار مروري",
-      "اتجاه واحد",
+      "باتجاه واحد",
       "طريق مسدود",
-      "طريق سريع",
+      "طريق رئيسي",
       "رصيف مشاة",
       "مبنى",
-      "قوس القدم",
+      "جسر",
       "نصب تذكاري",
       "نافورة",
       "تمثال"
     ],
     "usage": {
       "goal": "Learn to recognize and use key giving directions 3 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a direction or landmark and ask for a route.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Intersection", "Corner", "Block"],
-          "scenario": "In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection.",
+          "scenario": "Two roads meet at an intersection. Nora waits at a corner, then walks one block along the pavement.",
           "check": {
-            "question": "Which landmark or street feature should the visitor look for?",
+            "question": "Which feature is the meeting of the roads?",
             "options": ["Corner", "Block", "Intersection"],
             "expectedAnswer": "Intersection"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Intersection, Corner, Block in a natural setting."
+          "imageBrief": "Quiet road intersection viewed from pedestrian area. No active road crossing, readable signs or directions.",
+          "imageAlt": "Quiet road intersection viewed from pedestrian area."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Crosswalk", "Traffic Light", "Roundabout"],
-          "scenario": "In the office area, a visitor follows a route that uses crosswalk, traffic light, and roundabout. The highlighted route cue or landmark is crosswalk.",
+          "scenario": "A crosswalk is the marked place intended for pedestrians to cross. A traffic light controls road traffic; a roundabout surrounds a central island.",
           "check": {
-            "question": "Which landmark helps the visitor continue?",
+            "question": "Which feature is intended for pedestrian crossing?",
             "options": ["Roundabout", "Crosswalk", "Traffic Light"],
             "expectedAnswer": "Crosswalk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses crosswalk, traffic light, and roundabout. The highlighted route cue or landmark is crosswalk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Crosswalk, Traffic Light, Roundabout in a natural setting."
+          "imageBrief": "Empty marked pedestrian crossing seen from sidewalk, with junction in background. No guarantee of safety, walking into traffic, signal instructions or text.",
+          "imageAlt": "Empty marked pedestrian crossing seen from sidewalk, with junction in background."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["One-Way", "Dead End", "Highway"],
-          "scenario": "In the neighbourhood route, a visitor follows a route that uses one-way, dead end, and highway. The highlighted route cue or landmark is one-way.",
+          "scenario": "The one-way street allows vehicles in one direction only. A dead end has no continuing road; a highway is a main road.",
           "check": {
-            "question": "Which landmark or street feature should the visitor look for in the example with one-way, dead end?",
+            "question": "Which term describes the street allowing one traffic direction?",
             "options": ["One-Way", "Dead End", "Highway"],
             "expectedAnswer": "One-Way"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses one-way, dead end, and highway. The highlighted route cue or landmark is one-way. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including One-Way, Dead End, Highway in a natural setting."
+          "imageBrief": "Quiet street with parked vehicles aligned consistently. Context supplies traffic rule; no invented traffic signs, text or arrow.",
+          "imageAlt": "Quiet street with parked vehicles aligned consistently."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Sidewalk", "Building", "Bridge"],
-          "scenario": "In the city centre, a visitor follows a route that uses sidewalk, building, and bridge. The highlighted route cue or landmark is sidewalk.",
+          "scenario": "Nora walks on the sidewalk beside a building. Ahead a bridge carries a path across the river.",
           "check": {
-            "question": "Which landmark helps the visitor continue in the example with sidewalk, building?",
+            "question": "Which feature is the pedestrian path beside the road?",
             "options": ["Building", "Bridge", "Sidewalk"],
             "expectedAnswer": "Sidewalk"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the city centre, a visitor follows a route that uses sidewalk, building, and bridge. The highlighted route cue or landmark is sidewalk. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Sidewalk, Building, Bridge in a natural setting."
+          "imageBrief": "Adult walking along separated sidewalk beside building. Bridge visible far ahead, no traffic conflict or text.",
+          "imageAlt": "Adult walking along separated sidewalk beside building."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Monument", "Fountain", "Statue"],
-          "scenario": "At the station exit, a visitor follows a route that uses monument, fountain, and statue. The highlighted route cue or landmark is monument.",
+          "scenario": "Nora meets her friend at a monument built to commemorate an event. The fountain sends water upward; the statue is a figure in the square.",
           "check": {
-            "question": "What place or road feature is marked on the route?",
+            "question": "Which feature commemorates the event?",
             "options": ["Statue", "Monument", "Fountain"],
             "expectedAnswer": "Monument"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: At the station exit, a visitor follows a route that uses monument, fountain, and statue. The highlighted route cue or landmark is monument. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Monument, Fountain, Statue in a natural setting."
+          "imageBrief": "Town square with simple memorial structure, fountain and human figure statue. Context distinguishes overlapping landmark types; no inscriptions or text.",
+          "imageAlt": "Town square with simple memorial structure, fountain and human figure statue."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Giving Directions 3: Finding an Appointment",
-      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use intersection, corner, block, crosswalk, and traffic light. The map also shows roundabout, one-way, dead end, highway, and sidewalk. Near the destination, the visitor looks for building, bridge, monument, fountain, and statue. The visitor checks the route at each major turn instead of guessing.",
-      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+      "text": "Nora walks one block to an intersection and waits at the corner. A crosswalk and traffic light are near the roundabout. A one-way street leads to a dead end; the highway is outside town. She stays on the sidewalk beside a building. A bridge crosses the river. She meets her friend near a monument, fountain and statue.",
+      "imageBrief": "Adult visitor discussing a route beside a blank town map. Context supplies all directions, distances and destinations; no readable map labels, directional arrows, numeric distances or traffic-safety guarantees."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Intersection"
+        "prompt": "Two roads meet at an intersection. Nora waits at a corner, then walks one block along the pavement.\nWhich feature is the meeting of the roads?",
+        "answer": "Intersection",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Crosswalk"
+        "prompt": "A crosswalk is the marked place intended for pedestrians to cross. A traffic light controls road traffic; a roundabout surrounds a central island.\nWhich feature is intended for pedestrian crossing?",
+        "answer": "Crosswalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "One-Way"
+        "prompt": "The one-way street allows vehicles in one direction only. A dead end has no continuing road; a highway is a main road.\nWhich term describes the street allowing one traffic direction?",
+        "answer": "One-Way",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-3"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Sidewalk"
+        "prompt": "Nora walks on the sidewalk beside a building. Ahead a bridge carries a path across the river.\nWhich feature is the pedestrian path beside the road?",
+        "answer": "Sidewalk",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-4"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Monument"
+        "prompt": "Nora meets her friend at a monument built to commemorate an event. The fountain sends water upward; the statue is a figure in the square.\nWhich feature commemorates the event?",
+        "answer": "Monument",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-5"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Intersection"
+        "prompt": "Read the passage: Nora walks one block to an intersection and waits at the corner. A crosswalk and traffic light are near the roundabout. A one-way street leads to a dead end; the highway is outside town. She stays on the sidewalk beside a building. A bridge crosses the river. She meets her friend near a monument, fountain and statue.\nWhat crosses the river?",
+        "answer": "A bridge",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Corner"
+        "prompt": "Ask where the bridge is.",
+        "answer": "Where is the bridge?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Roundabout"
+        "prompt": "Someone asks what a one-way street means. Explain the traffic direction.",
+        "answer": "Traffic travels in only one direction on a one-way street.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Giving Directions: See It, Say It",
-      "idea": "30–50 second contextual video set in a town. Show intersection, corner, block, crosswalk, and traffic light naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In the hospital district, a visitor follows a route that uses intersection, corner, and block. The highlighted route cue or landmark is intersection."
+      "title": "Finding a Place",
+      "idea": "Adult visitor asks for a route. Narration supplies orientation, left/right from traveller viewpoint, distance and purposes of buildings. No generated map labels or traffic instructions, and no assumption a still image proves cardinal direction or a safe crossing.",
+      "scriptStarter": "Two roads meet at an intersection. Nora waits at a corner, then walks one block along the pavement."
     },
     "spacedReview": "1 lesson(s) back: Northwest, Southeast from giving-directions-2\n3 lesson(s) back: Customer, Butcher from market-6\n7 lesson(s) back: Pepper, Tomato from market-2"
   },
@@ -487,71 +559,86 @@
     "cefrStage": "Pre-A1",
     "stageName": "Pre-A1 Starter",
     "targetWordsEnglish": ["Tower", "Church", "Park", "School", "Hospital"],
-    "targetWordsArabic": ["برج", "كنيسة", "حديقة عامة", "مدرسة", "-"],
+    "targetWordsArabic": ["برج", "كنيسة", "حديقة عامة", "مدرسة", "مستشفى"],
     "usage": {
       "goal": "Learn to recognize and use key giving directions 4 vocabulary in a simple adult everyday situation.",
-      "canDoStatement": "Can recognize and use a few familiar words related to giving directions in very simple everyday situations.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a direction or landmark and ask for a route.",
+      "textType": "short-narrative",
       "readingTarget": "35-60 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Tower", "Church", "Park"],
-          "scenario": "In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower.",
+          "scenario": "The tall narrow tower stands beside a church. The park is across the square.",
           "check": {
-            "question": "What place or road feature is marked on the route in the example with tower, church?",
+            "question": "Which landmark is the tall narrow structure?",
             "options": ["Park", "Tower", "Church"],
             "expectedAnswer": "Tower"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including Tower, Church, Park in a natural setting."
+          "imageBrief": "Town square with tall narrow tower and separate church-like building, green park beyond. No readable signs, religious-role stereotyping or text.",
+          "imageAlt": "Town square with tall narrow tower and separate church-like building, green park beyond."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["School", "Hospital"],
-          "scenario": "In the neighbourhood route, a visitor follows a route that uses school and hospital. The highlighted route cue or landmark is school.",
+          "scenario": "Nora attends a course at the school, a place for education. Her appointment for medical care is at the hospital later.",
           "check": {
-            "question": "What route feature should the visitor identify?",
+            "question": "Which place does Nora attend for education?",
             "options": ["School", "Hospital", "Tower"],
             "expectedAnswer": "School"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a giving directions context illustrating this situation: In the neighbourhood route, a visitor follows a route that uses school and hospital. The highlighted route cue or landmark is school. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult giving directions scene showing lesson-related items or actions including School, Hospital in a natural setting."
+          "imageBrief": "Adult arriving at generic education building. Context names school; no invented hospital markings, signs or text.",
+          "imageAlt": "Adult arriving at generic education building."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Giving Directions 4: Finding an Appointment",
-      "text": "A visitor is trying to reach an appointment in an unfamiliar area. The first instructions use tower, church, park, school, and hospital. The visitor checks the route at each major turn instead of guessing. The vocabulary is used in a realistic giving directions context that an adult could meet at home, at work, or in the community.",
-      "imageBrief": "One uncluttered giving directions scene supporting the reading and showing the first six target words."
+      "text": "Nora meets a friend at the park beside a tower. A church is across the square. Nora asks for the school, where her course meets. Her friend explains the route. Nora has a later appointment at the hospital, so she checks both destinations before leaving.",
+      "imageBrief": "Adult visitor discussing a route beside a blank town map. Context supplies all directions, distances and destinations; no readable map labels, directional arrows, numeric distances or traffic-safety guarantees."
     },
     "exercises": [
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "Tower"
+        "prompt": "The tall narrow tower stands beside a church. The park is across the square.\nWhich landmark is the tall narrow structure?",
+        "answer": "Tower",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-1"
       },
       {
-        "prompt": "Image Recognition: Which word best matches the picture?",
-        "answer": "School"
+        "prompt": "Nora attends a course at the school, a place for education. Her appointment for medical care is at the hospital later.\nWhich place does Nora attend for education?",
+        "answer": "School",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "scene-2"
       },
       {
-        "prompt": "Reading Comprehension: Which word comes first in this lesson group?",
-        "answer": "Tower"
+        "prompt": "Read the passage: Nora meets a friend at the park beside a tower. A church is across the square. Nora asks for the school, where her course meets. Her friend explains the route. Nora has a later appointment at the hospital, so she checks both destinations before leaving.\nWhere does Nora’s course meet?",
+        "answer": "At the school",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Reading Comprehension: Name one other word you see or hear in the story.",
-        "answer": "Church"
+        "prompt": "Ask for directions to the school.",
+        "answer": "How do I get to the school?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Reading Comprehension: Which target word appears near the end of the story?",
-        "answer": "Hospital"
+        "prompt": "A visitor needs medical care at their appointment. Name the destination.",
+        "answer": "The hospital",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Giving Directions: See It, Say It",
-      "idea": "30–50 second contextual video set in a town. Show tower, church, park, school, and hospital naturally, pause once for the learner to identify a word, then reveal the answer.",
-      "scriptStarter": "Watch the situation: In the office area, a visitor follows a route that uses tower, church, and park. The highlighted route cue or landmark is tower."
+      "title": "Finding a Place",
+      "idea": "Adult visitor asks for a route. Narration supplies orientation, left/right from traveller viewpoint, distance and purposes of buildings. No generated map labels or traffic instructions, and no assumption a still image proves cardinal direction or a safe crossing.",
+      "scriptStarter": "The tall narrow tower stands beside a church. The park is across the square."
     },
     "spacedReview": "1 lesson(s) back: Intersection, Corner from giving-directions-3\n3 lesson(s) back: Left, Right from giving-directions-1\n7 lesson(s) back: Ham, Bacon from market-3"
   }

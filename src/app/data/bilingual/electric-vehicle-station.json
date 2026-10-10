@@ -7,7 +7,7 @@
   "connector": {
     "definition": "The part at the end of a charging cable that connects to a vehicle.",
     "arabicTranslation": "موصل",
-    "exampleUsage": "The connector was used during the activity."
+    "exampleUsage": "The driver checked that the connector was compatible with the vehicle."
   },
   "plug": {
     "definition": "A small object that fits into a socket to connect an appliance to electricity.",
@@ -18,9 +18,9 @@
     "arabicTranslation": "كابل"
   },
   "adapter": {
-    "definition": "A device that lets equipment with different connectors work together.",
+    "definition": "A device joining compatible interfaces under specified electrical and communication requirements.",
     "arabicTranslation": "مهايئ",
-    "exampleUsage": "The adapter was used during the activity."
+    "exampleUsage": "The driver checked whether the manufacturer permitted the proposed charging adapter."
   },
   "level-1": {
     "definition": "In North American terminology, AC vehicle charging using a standard 120-volt supply.",
@@ -53,7 +53,7 @@
   "electric-motor": {
     "definition": "A machine that converts electrical energy into rotational motion, usually by using coils and magnets to create a turning force.",
     "arabicTranslation": "محرك كهربائي",
-    "exampleUsage": "The electric motor was used during the activity."
+    "exampleUsage": "The electric motor converted electrical energy into mechanical movement."
   },
   "regenerative-braking": {
     "definition": "A braking system in electric and hybrid vehicles that changes some energy from motion into electricity and stores it in the battery.",
@@ -103,7 +103,7 @@
   "solar-panel": {
     "definition": "A device with linked semiconductor cells that changes sunlight directly into electrical power.",
     "arabicTranslation": "لوح شمسي",
-    "exampleUsage": "The solar panel was used during the activity."
+    "exampleUsage": "The solar panel converted sunlight into electrical energy."
   },
   "lighting": {
     "definition": "Lights installed to illuminate the charging area.",
@@ -142,7 +142,7 @@
   "qr-code": {
     "definition": "A square pattern that a device can scan to read information.",
     "arabicTranslation": "رمز استجابة سريعة",
-    "exampleUsage": "The qr code was used during the activity."
+    "exampleUsage": "The visitor used the provider’s verified QR code to open the supported service page."
   },
   "account": {
     "definition": "A registered user's record for accessing and paying for charging services.",
@@ -182,7 +182,7 @@
   "state-of-charge": {
     "definition": "The amount of charge remaining in a battery, often shown as a percentage.",
     "arabicTranslation": "مستوى شحن البطارية",
-    "exampleUsage": "The state of charge was used during the activity."
+    "exampleUsage": "The display reported the battery’s state of charge."
   },
   "range": {
     "definition": "The distance an electric vehicle can travel with its available battery charge.",
@@ -208,7 +208,7 @@
   },
   "energy-used": {
     "definition": "The amount of electrical energy consumed or transferred during a period or session.",
-    "exampleUsage": "The receipt shows the energy used during charging.",
+    "exampleUsage": "The receipt listed energy used during the charging session.",
     "arabicTranslation": "الطاقة المستخدمة"
   },
   "cost": {
@@ -225,30 +225,30 @@
     "arabicTranslation": "عطل تسريب أرضي"
   },
   "emergency-stop": {
-    "definition": "A control that immediately stops equipment in an emergency.",
+    "definition": "A control designed to request or initiate an emergency stop under the equipment’s specified behavior; it is not necessarily energy isolation.",
     "arabicTranslation": "زر توقف طارئ",
-    "exampleUsage": "The emergency stop was used during the activity."
+    "exampleUsage": "The guide identified the emergency stop without treating it as proof of complete energy isolation."
   },
   "ventilation": {
-    "definition": "A mechanical system in a building that provides fresh air.",
+    "definition": "The movement or replacement of air in a space, through natural or mechanical means.",
     "arabicTranslation": "تهوية"
   },
   "inspection": {
-    "definition": "A formal or official examination.",
+    "definition": "A professional examination of equipment or site condition within a defined scope.",
     "arabicTranslation": "فحص"
   },
   "firmware-update": {
-    "definition": "A manufacturer-provided software package changes the built-in instructions that control a hardware device. It may fix faults, close security gaps, or add new functions.",
+    "definition": "A change to software controlling a hardware device, supplied or approved for that device.",
     "arabicTranslation": "تحديث البرنامج الثابت",
-    "exampleUsage": "The firmware update was used during the activity."
+    "exampleUsage": "The authorized technician checked the release information before the supported firmware update."
   },
   "weatherproof": {
-    "definition": "Able to withstand exposure to weather without damage.",
-    "arabicTranslation": "مقاوم للعوامل الجوية"
+    "definition": "Designed to resist specified weather exposure within the equipment’s rated limits.",
+    "arabicTranslation": "مقاوم للعوامل الجوية ضمن حدود محددة"
   },
   "tamper-proof": {
     "definition": "Designed to resist unauthorized opening, alteration, or interference.",
-    "exampleUsage": "The outdoor connector uses a tamper-proof cover.",
+    "exampleUsage": "The provider describes the cover as tamper-proof, but the guide explains that this does not guarantee immunity from interference.",
     "arabicTranslation": "مقاوم للعبث"
   },
   "lockout": {
@@ -262,5 +262,9 @@
   "warranty": {
     "definition": "A written assurance that some product or service will be provided or will meet certain specifications.",
     "arabicTranslation": "ضمان"
+  },
+  "trash-can": {
+    "definition": "A container for discarded waste.",
+    "arabicTranslation": "سلة مهملات"
   }
 }

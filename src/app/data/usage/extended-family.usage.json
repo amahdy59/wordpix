@@ -29,155 +29,156 @@
     "targetWordsArabic": [
       "جدة",
       "جد",
-      "جدة",
-      "جد",
+      "جدّة (غير رسمي)",
+      "جدّ (غير رسمي)",
       "أم الجد أو الجدة",
       "أب الجد أو الجدة",
-      "جدة (تعبير عائلي)",
+      "جدّة (اسم عائلي غير رسمي)",
       "أب (تعبير عائلي)",
-      "جدة",
+      "جدّة (غير رسمي)",
       "جد أو جدة",
       "عمة أو خالة",
       "عم أو خال",
-      "ابن أو ابنة العم أو الخال",
-      "ابن أو ابنة العم أو الخال أول",
-      "ابن أو ابنة العم أو الخال الثاني"
+      "ابن أو ابنة العم أو العمة أو الخال أو الخالة",
+      "ابن أو ابنة العم أو العمة أو الخال أو الخالة",
+      "قريب من الدرجة الثانية في أبناء العمومة: أحد والديه ابن عم أو ابن خال لأحد والديك"
     ],
     "usage": {
       "goal": "Learn to use extended family 1 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to extended family.",
-      "textType": "workplace-email",
+      "canDoStatement": "With the supplied context, can identify a family relationship or occasion and introduce it.",
+      "textType": "short-narrative",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Grandmother", "Grandfather", "Grandma"],
-          "scenario": "During a routine extended family task, an adult compares Grandmother, Grandfather, Grandma. The person selects Grandmother for the next step.",
+          "scenario": "Omar’s mother’s mother is his grandmother. Her husband is his grandfather; Omar calls her Grandma informally.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which formal word names Omar’s mother’s mother?",
             "options": ["Grandmother", "Grandfather", "Grandma"],
             "expectedAnswer": "Grandmother"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Grandmother, Grandfather, Grandma. The person selects Grandmother for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Grandmother, Grandfather, Grandma in a natural setting."
+          "imageBrief": "Adults talking beside family photos turned away from viewer. Context supplies relationships; no family-tree labels or assumption age proves kinship.",
+          "imageAlt": "Adults talking beside family photos turned away from viewer."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Grandpa", "Great-Grandmother", "Great-Grandfather"],
-          "scenario": "During a routine extended family task, an adult compares Grandpa, Great-Grandmother, Great-Grandfather. The person selects Grandpa for the next step.",
+          "scenario": "Omar calls his grandfather Grandpa. A great-grandmother is a grandparent’s mother; a great-grandfather is a grandparent’s father.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which informal word does Omar use for his grandfather?",
             "options": ["Grandpa", "Great-Grandmother", "Great-Grandfather"],
             "expectedAnswer": "Grandpa"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Grandpa, Great-Grandmother, Great-Grandfather. The person selects Grandpa for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Grandpa, Great-Grandmother, Great-Grandfather in a natural setting."
+          "imageBrief": "Adult relatives talking at home. Relationships and names supplied by context, no readable names or age-based inference.",
+          "imageAlt": "Adult relatives talking at home."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Nana", "Papa", "Granny"],
-          "scenario": "During a routine extended family task, an adult compares Nana, Papa, Granny. The person selects Nana for the next step.",
+          "scenario": "In Omar’s family his grandmother is called Nana. His father is Papa; Nora calls her own grandmother Granny.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which name does Omar’s family use for his grandmother?",
             "options": ["Nana", "Papa", "Granny"],
             "expectedAnswer": "Nana"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Nana, Papa, Granny. The person selects Nana for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Nana, Papa, Granny in a natural setting."
+          "imageBrief": "Adults visiting at home with tea cups. Context supplies family nicknames; no labels or assumed universal nickname.",
+          "imageAlt": "Adults visiting at home with tea cups."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Grandparent", "Aunt", "Uncle"],
-          "scenario": "During a routine extended family task, an adult compares Grandparent, Aunt, Uncle. The person selects Grandparent for the next step.",
+          "scenario": "Omar’s grandmother is a grandparent. His aunt is his mother’s sister; his uncle is his father’s brother.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which general word describes his grandmother’s family role?",
             "options": ["Grandparent", "Aunt", "Uncle"],
             "expectedAnswer": "Grandparent"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Grandparent, Aunt, Uncle. The person selects Grandparent for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Grandparent, Aunt, Uncle in a natural setting."
+          "imageBrief": "Adults in family gathering, blank photos nearby. No inferred biological ties, labels or text.",
+          "imageAlt": "Adults in family gathering, blank photos nearby."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Cousin", "First Cousin", "Second Cousin"],
-          "scenario": "During a routine extended family task, an adult compares Cousin, First Cousin, Second Cousin. The person selects Cousin for the next step.",
+          "scenario": "Omar calls his aunt’s daughter his cousin; she is specifically a first cousin. Second cousins have parents who are first cousins.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which general one-word term does Omar use for his aunt’s daughter?",
             "options": ["Cousin", "First Cousin", "Second Cousin"],
             "expectedAnswer": "Cousin"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Cousin, First Cousin, Second Cousin. The person selects Cousin for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Cousin, First Cousin, Second Cousin in a natural setting."
+          "imageBrief": "Two adult relatives greeting. Context supplies exact degree of cousin relationship, no labelled tree or text.",
+          "imageAlt": "Two adult relatives greeting."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Extended Family: Email",
-      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss grandmother, grandfather, and grandma. The context makes the relationship between the words clear. In the social situation, the people experience or discuss grandpa, great-grandmother, and great-grandfather. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Omar writes to Nora: “My grandmother and grandfather are visiting. I call them Grandma and Grandpa. Their parents are my great-grandmother and great-grandfather. Our family also uses Nana and Granny for a grandmother; Papa means my father. Each grandparent has relatives too. My aunt and uncle are my parents’ siblings. Their child is my cousin, specifically my first cousin. Second cousins have parents who are first cousins.”",
+      "imageBrief": "Adult relatives talking in a home or gathering venue. Supplied passage identifies all relationships and occasions; no family-tree text, readable labels or inference from age, clothing or appearance."
     },
     "exercises": [
       {
-        "prompt": "During a routine extended family task, an adult compares Grandmother, Grandfather, Grandma. The person selects Grandmother for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s mother’s mother is his grandmother. Her husband is his grandfather; Omar calls her Grandma informally.\nWhich formal word names Omar’s mother’s mother?",
         "answer": "Grandmother",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Grandpa, Great-Grandmother, Great-Grandfather. The person selects Grandpa for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar calls his grandfather Grandpa. A great-grandmother is a grandparent’s mother; a great-grandfather is a grandparent’s father.\nWhich informal word does Omar use for his grandfather?",
         "answer": "Grandpa",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Nana, Papa, Granny. The person selects Nana for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "In Omar’s family his grandmother is called Nana. His father is Papa; Nora calls her own grandmother Granny.\nWhich name does Omar’s family use for his grandmother?",
         "answer": "Nana",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Grandparent, Aunt, Uncle. The person selects Grandparent for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s grandmother is a grandparent. His aunt is his mother’s sister; his uncle is his father’s brother.\nWhich general word describes his grandmother’s family role?",
         "answer": "Grandparent",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Cousin, First Cousin, Second Cousin. The person selects Cousin for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar calls his aunt’s daughter his cousin; she is specifically a first cousin. Second cousins have parents who are first cousins.\nWhich general one-word term does Omar use for his aunt’s daughter?",
         "answer": "Cousin",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Grandmother"
+        "prompt": "Read the passage: Omar writes to Nora: “My grandmother and grandfather are visiting. I call them Grandma and Grandpa. Their parents are my great-grandmother and great-grandfather. Our family also uses Nana and Granny for a grandmother; Papa means my father. Each grandparent has relatives too. My aunt and uncle are my parents’ siblings. Their child is my cousin, specifically my first cousin. Second cousins have parents who are first cousins.”\nWhat does Papa mean in Omar’s message?",
+        "answer": "His father",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Grandpa"
+        "prompt": "Introduce your mother’s mother using grandmother.",
+        "answer": "She is my grandmother.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Climbing Shoes” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Your parent’s sister has a child. Name the general relationship to you.",
+        "answer": "My cousin",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Extended Family: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Family Relationships and Gatherings",
+      "idea": "Adult introductions state the relationship explicitly. Family nicknames and informal in-law descriptions are contextual, not universal standard titles. Narration supplies exact relationships and celebrations; no genealogy labels, age-based kinship inference or assumption all families celebrate the same holidays.",
+      "scriptStarter": "Omar’s mother’s mother is his grandmother. Her husband is his grandfather; Omar calls her Grandma informally."
     },
     "spacedReview": "1 lesson(s) back: Climbing Shoes, Cycling Shoes from footwear-4\n3 lesson(s) back: Pumps, Stilettos from footwear-2\n7 lesson(s) back: Bangle, Watch from accessories-jewelry-2"
   },
@@ -213,7 +214,7 @@
       "عم أو خال أحد الوالدين",
       "ابنة الأخ أو الأخت",
       "ابن الأخ أو الأخت",
-      "قريب بالمصاهرة من جهة أبناء العمومة",
+      "زوج أو زوجة أحد أبناء العمومة أو الخؤولة",
       "أم الزوج أو الزوجة",
       "أب الزوج أو الزوجة",
       "أخت الزوج أو الزوجة، أو زوجة الأخ",
@@ -223,143 +224,144 @@
       "أقارب بالمصاهرة",
       "عائلة الزوج أو الزوجة",
       "أقارب المصاهرة الأبعد",
-      "عائلة بالمصاهرة"
+      "العائلة المرتبطة بالمصاهرة"
     ],
     "usage": {
       "goal": "Learn to use extended family 2 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to extended family.",
-      "textType": "workplace-email",
+      "canDoStatement": "With the supplied context, can identify a family relationship or occasion and introduce it.",
+      "textType": "short-narrative",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Great-Aunt", "Great-Uncle", "Niece"],
-          "scenario": "During a routine extended family task, an adult compares Great-Aunt, Great-Uncle, Niece. The person selects Great-Aunt for the next step.",
+          "scenario": "Omar’s grandfather’s sister is his great-aunt. A grandparent’s brother is a great-uncle; a sibling’s daughter is a niece.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What is Omar’s grandfather’s sister called?",
             "options": ["Great-Aunt", "Great-Uncle", "Niece"],
             "expectedAnswer": "Great-Aunt"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Great-Aunt, Great-Uncle, Niece. The person selects Great-Aunt for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Great-Aunt, Great-Uncle, Niece in a natural setting."
+          "imageBrief": "Adults discussing family photographs. Context states relationship, no age-based inference, labels or text.",
+          "imageAlt": "Adults discussing family photographs."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Nephew", "Cousin-in-Law", "Mother-in-Law"],
-          "scenario": "During a routine extended family task, an adult compares Nephew, Cousin-in-Law, Mother-in-Law. The person selects Nephew for the next step.",
+          "scenario": "Omar’s brother’s son is his nephew. A cousin-in-law can informally mean a cousin’s spouse; a mother-in-law is a spouse’s mother.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What is Omar’s brother’s son called?",
             "options": ["Nephew", "Cousin-in-Law", "Mother-in-Law"],
             "expectedAnswer": "Nephew"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Nephew, Cousin-in-Law, Mother-in-Law. The person selects Nephew for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Nephew, Cousin-in-Law, Mother-in-Law in a natural setting."
+          "imageBrief": "Adult family visitors seated at table. Context supplies roles, no forced child subject or labelled relationships.",
+          "imageAlt": "Adult family visitors seated at table."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Father-in-Law", "Sister-in-Law", "Brother-in-Law"],
-          "scenario": "During a routine extended family task, an adult compares Father-in-Law, Sister-in-Law, Brother-in-Law. The person selects Father-in-Law for the next step.",
+          "scenario": "Omar’s wife’s father is his father-in-law. Her sister is his sister-in-law; her brother is his brother-in-law.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What is Omar’s wife’s father called?",
             "options": ["Father-in-Law", "Sister-in-Law", "Brother-in-Law"],
             "expectedAnswer": "Father-in-Law"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Father-in-Law, Sister-in-Law, Brother-in-Law. The person selects Father-in-Law for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Father-in-Law, Sister-in-Law, Brother-in-Law in a natural setting."
+          "imageBrief": "Adults greeting at doorway. Context supplies marriage connections, no stereotypes or readable labels.",
+          "imageAlt": "Adults greeting at doorway."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Son-in-Law", "Daughter-in-Law", "In-Laws"],
-          "scenario": "During a routine extended family task, an adult compares Son-in-Law, Daughter-in-Law, In-Laws. The person selects Son-in-Law for the next step.",
+          "scenario": "Nora’s daughter’s husband is her son-in-law. Her son’s wife is her daughter-in-law; both are in-laws.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "What is Nora’s daughter’s husband called?",
             "options": ["Son-in-Law", "Daughter-in-Law", "In-Laws"],
             "expectedAnswer": "Son-in-Law"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Son-in-Law, Daughter-in-Law, In-Laws. The person selects Son-in-Law for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Son-in-Law, Daughter-in-Law, In-Laws in a natural setting."
+          "imageBrief": "Adult relatives visiting Nora at home. Context states relationships, no wedding certificate or readable text.",
+          "imageAlt": "Adult relatives visiting Nora at home."
         },
         {
           "chunkNumber": 5,
           "targetWords": ["Spouse's Family", "Extended In-Laws", "Family-in-Law"],
-          "scenario": "During a routine extended family task, an adult compares Spouse's Family, Extended In-Laws, Family-in-Law. The person selects Spouse's Family for the next step.",
+          "scenario": "Spouse’s family means the relatives of a husband or wife. Extended in-laws is an informal description for more distant marriage connections; family-in-law is less usual than in-laws.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which phrase means the relatives of a husband or wife?",
             "options": ["Spouse's Family", "Extended In-Laws", "Family-in-Law"],
             "expectedAnswer": "Spouse's Family"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Spouse's Family, Extended In-Laws, Family-in-Law. The person selects Spouse's Family for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Spouse's Family, Extended In-Laws, Family-in-Law in a natural setting."
+          "imageBrief": "Adult couple visiting relatives in ordinary living room. Context supplies connection, no readable relationship labels or text.",
+          "imageAlt": "Adult couple visiting relatives in ordinary living room."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Extended Family: Personal Message",
-      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss great-aunt, great-uncle, and niece. The context makes the relationship between the words clear. In the social situation, the people experience or discuss nephew, cousin-in-law, and mother-in-law. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Omar tells Nora, “My great-aunt is my grandfather’s sister, and my great-uncle is my grandmother’s brother. My sister’s daughter is my niece; my brother’s son is my nephew. I informally call my cousin’s husband a cousin-in-law. My wife’s parents are my mother-in-law and father-in-law; her siblings are my sister-in-law and brother-in-law.” Nora replies, “My daughter’s husband is my son-in-law; my son’s wife is my daughter-in-law. In-laws are family connections through marriage. Spouse’s family is clear wording; extended in-laws and family-in-law are informal descriptions.”",
+      "imageBrief": "Adult relatives talking in a home or gathering venue. Supplied passage identifies all relationships and occasions; no family-tree text, readable labels or inference from age, clothing or appearance."
     },
     "exercises": [
       {
-        "prompt": "During a routine extended family task, an adult compares Great-Aunt, Great-Uncle, Niece. The person selects Great-Aunt for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s grandfather’s sister is his great-aunt. A grandparent’s brother is a great-uncle; a sibling’s daughter is a niece.\nWhat is Omar’s grandfather’s sister called?",
         "answer": "Great-Aunt",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Nephew, Cousin-in-Law, Mother-in-Law. The person selects Nephew for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s brother’s son is his nephew. A cousin-in-law can informally mean a cousin’s spouse; a mother-in-law is a spouse’s mother.\nWhat is Omar’s brother’s son called?",
         "answer": "Nephew",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Father-in-Law, Sister-in-Law, Brother-in-Law. The person selects Father-in-Law for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Omar’s wife’s father is his father-in-law. Her sister is his sister-in-law; her brother is his brother-in-law.\nWhat is Omar’s wife’s father called?",
         "answer": "Father-in-Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Son-in-Law, Daughter-in-Law, In-Laws. The person selects Son-in-Law for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Nora’s daughter’s husband is her son-in-law. Her son’s wife is her daughter-in-law; both are in-laws.\nWhat is Nora’s daughter’s husband called?",
         "answer": "Son-in-Law",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Spouse's Family, Extended In-Laws, Family-in-Law. The person selects Spouse's Family for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Spouse’s family means the relatives of a husband or wife. Extended in-laws is an informal description for more distant marriage connections; family-in-law is less usual than in-laws.\nWhich phrase means the relatives of a husband or wife?",
         "answer": "Spouse's Family",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-5"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Great-Aunt"
+        "prompt": "Read the passage: Omar tells Nora, “My great-aunt is my grandfather’s sister, and my great-uncle is my grandmother’s brother. My sister’s daughter is my niece; my brother’s son is my nephew. I informally call my cousin’s husband a cousin-in-law. My wife’s parents are my mother-in-law and father-in-law; her siblings are my sister-in-law and brother-in-law.” Nora replies, “My daughter’s husband is my son-in-law; my son’s wife is my daughter-in-law. In-laws are family connections through marriage. Spouse’s family is clear wording; extended in-laws and family-in-law are informal descriptions.”\nWho is Omar’s niece?",
+        "answer": "His sister’s daughter",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Nephew"
+        "prompt": "Introduce your wife’s father using father-in-law.",
+        "answer": "He is my father-in-law.",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Grandmother” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "Your brother has a son. Name your relationship to the son.",
+        "answer": "He is my nephew.",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Extended Family: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Family Relationships and Gatherings",
+      "idea": "Adult introductions state the relationship explicitly. Family nicknames and informal in-law descriptions are contextual, not universal standard titles. Narration supplies exact relationships and celebrations; no genealogy labels, age-based kinship inference or assumption all families celebrate the same holidays.",
+      "scriptStarter": "Omar’s grandfather’s sister is his great-aunt. A grandparent’s brother is a great-uncle; a sibling’s daughter is a niece."
     },
     "spacedReview": "1 lesson(s) back: Grandmother, Grandfather from extended-family-1\n3 lesson(s) back: Sandals, Flip-Flops from footwear-3\n7 lesson(s) back: Handbag, Backpack from accessories-jewelry-3"
   },
@@ -393,126 +395,127 @@
       "عيد القيامة",
       "احتفال بعيد ميلاد",
       "ذكرى سنوية",
-      "يشوي على الشواية",
+      "وجبة شواء في الهواء الطلق",
       "نزهة مع طعام",
-      "زفاف عائلة"
+      "زفاف عائلي"
     ],
     "usage": {
       "goal": "Learn to use extended family 3 vocabulary to exchange practical information and complete a routine adult-life task.",
-      "canDoStatement": "Can exchange simple information and complete routine tasks related to extended family.",
-      "textType": "dialogue",
+      "canDoStatement": "With the supplied context, can identify a family relationship or occasion and introduce it.",
+      "textType": "short-narrative",
       "readingTarget": "65-95 words",
       "scenes": [
         {
           "chunkNumber": 1,
           "targetWords": ["Reunion", "Holiday Dinner", "Thanksgiving"],
-          "scenario": "During a routine extended family task, an adult compares Reunion, Holiday Dinner, Thanksgiving. The person selects Reunion for the next step.",
+          "scenario": "Relatives who have been apart meet again at a reunion. They share a holiday dinner; some have a separate Thanksgiving celebration in the United States.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the gathering after time apart?",
             "options": ["Reunion", "Holiday Dinner", "Thanksgiving"],
             "expectedAnswer": "Reunion"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Reunion, Holiday Dinner, Thanksgiving. The person selects Reunion for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Reunion, Holiday Dinner, Thanksgiving in a natural setting."
+          "imageBrief": "Adults greeting at home before a shared meal. Occasion supplied by context, no claim all families celebrate same holiday, labels or text.",
+          "imageAlt": "Adults greeting at home before a shared meal."
         },
         {
           "chunkNumber": 2,
           "targetWords": ["Christmas", "Easter", "Birthday Celebration"],
-          "scenario": "During a routine extended family task, an adult compares Christmas, Easter, Birthday Celebration. The person selects Christmas for the next step.",
+          "scenario": "Nora’s Christian relatives celebrate Christmas as the celebration of Christ’s birth. Easter celebrates his resurrection; a birthday celebration marks someone’s birth date.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which named holiday celebrates Christ’s birth?",
             "options": ["Christmas", "Easter", "Birthday Celebration"],
             "expectedAnswer": "Christmas"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Christmas, Easter, Birthday Celebration. The person selects Christmas for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Christmas, Easter, Birthday Celebration in a natural setting."
+          "imageBrief": "Adult relatives at seasonal gathering with simple decorative greenery. Context identifies holiday; no religious text, date labels or claim decorations alone prove occasion.",
+          "imageAlt": "Adult relatives at seasonal gathering with simple decorative greenery."
         },
         {
           "chunkNumber": 3,
           "targetWords": ["Anniversary", "Barbecue", "Picnic"],
-          "scenario": "During a routine extended family task, an adult compares Anniversary, Barbecue, Picnic. The person selects Anniversary for the next step.",
+          "scenario": "The couple’s wedding anniversary marks the date of their wedding in a later year. A barbecue is an outdoor grilled meal; a picnic is a meal outdoors.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which word names the recurring wedding date?",
             "options": ["Anniversary", "Barbecue", "Picnic"],
             "expectedAnswer": "Anniversary"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Anniversary, Barbecue, Picnic. The person selects Anniversary for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Anniversary, Barbecue, Picnic in a natural setting."
+          "imageBrief": "Adult couple sharing meal in garden. Occasion supplied by passage, no dates, labels or fire instructions.",
+          "imageAlt": "Adult couple sharing meal in garden."
         },
         {
           "chunkNumber": 4,
           "targetWords": ["Family Wedding"],
-          "scenario": "During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step.",
+          "scenario": "The relatives attend a family wedding when a couple marries. Later they plan a reunion and holiday dinner.",
           "check": {
-            "question": "Which option does the person select for the next step?",
+            "question": "Which event is the couple’s marriage celebration?",
             "options": ["Family Wedding", "Reunion", "Holiday Dinner"],
             "expectedAnswer": "Family Wedding"
           },
-          "imageBrief": "Photorealistic adult real-world scene in a extended family context illustrating this situation: During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step. Show the relevant people, objects, and actions naturally. No text overlays, labels, arrows, highlighting, logos, watermarks, or visual cues that explicitly reveal the correct option.",
-          "imageAlt": "Adult extended family scene showing lesson-related items or actions including Family Wedding in a natural setting."
+          "imageBrief": "Adult wedding gathering in plain venue. Context states occasion, no religious stereotype, readable signs or labels.",
+          "imageAlt": "Adult wedding gathering in plain venue."
         }
       ],
       "phrases": []
     },
     "reading": {
       "title": "Extended Family: Short Dialogue",
-      "text": "Omar has an everyday task connected to extended family. The new vocabulary helps him follow the situation and respond clearly. In the social situation, the people experience or discuss reunion, holiday dinner, and thanksgiving. The context makes the relationship between the words clear. In the social situation, the people experience or discuss christmas, easter, and birthday celebration. The context makes the relationship between the words clear.",
-      "imageBrief": "Create one coherent A2-level visual for the reading about Extended Family. It should support several comprehension questions, so include the main setting and 3-5 important visual details without making the scene crowded."
+      "text": "Nora plans a reunion and holiday dinner. Some relatives in the United States celebrate Thanksgiving; her Christian friends celebrate Christmas and Easter. In summer the group has a birthday celebration, then marks a wedding anniversary. They choose an outdoor barbecue one weekend and a picnic another. At a family wedding, relatives meet the newly married couple.",
+      "imageBrief": "Adult relatives talking in a home or gathering venue. Supplied passage identifies all relationships and occasions; no family-tree text, readable labels or inference from age, clothing or appearance."
     },
     "exercises": [
       {
-        "prompt": "During a routine extended family task, an adult compares Reunion, Holiday Dinner, Thanksgiving. The person selects Reunion for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Relatives who have been apart meet again at a reunion. They share a holiday dinner; some have a separate Thanksgiving celebration in the United States.\nWhich word names the gathering after time apart?",
         "answer": "Reunion",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-1"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Christmas, Easter, Birthday Celebration. The person selects Christmas for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "Nora’s Christian relatives celebrate Christmas as the celebration of Christ’s birth. Easter celebrates his resurrection; a birthday celebration marks someone’s birth date.\nWhich named holiday celebrates Christ’s birth?",
         "answer": "Christmas",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-2"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Anniversary, Barbecue, Picnic. The person selects Anniversary for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The couple’s wedding anniversary marks the date of their wedding in a later year. A barbecue is an outdoor grilled meal; a picnic is a meal outdoors.\nWhich word names the recurring wedding date?",
         "answer": "Anniversary",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-3"
       },
       {
-        "prompt": "During a routine extended family task, an adult compares Family Wedding, Reunion, Holiday Dinner. The person selects Family Wedding for the next step.\nWhich option does the person select for the next step?",
+        "prompt": "The relatives attend a family wedding when a couple marries. Later they plan a reunion and holiday dinner.\nWhich event is the couple’s marriage celebration?",
         "answer": "Family Wedding",
         "questionType": "meaning",
         "responseMode": "short-answer",
         "contextTag": "scene-4"
       },
       {
-        "prompt": "Specific information: Which target word is linked to the main task?",
-        "answer": "Reunion"
+        "prompt": "Read the passage: Nora plans a reunion and holiday dinner. Some relatives in the United States celebrate Thanksgiving; her Christian friends celebrate Christmas and Easter. In summer the group has a birthday celebration, then marks a wedding anniversary. They choose an outdoor barbecue one weekend and a picnic another. At a family wedding, relatives meet the newly married couple.\nAt which event do relatives meet the newly married couple?",
+        "answer": "A family wedding",
+        "questionType": "meaning",
+        "responseMode": "short-answer",
+        "contextTag": "reading"
       },
       {
-        "prompt": "Specific information: Which word appears later in the situation?",
-        "answer": "Christmas"
+        "prompt": "Invite a relative to a family reunion.",
+        "answer": "Would you like to come to our family reunion?",
+        "questionType": "production",
+        "responseMode": "spoken",
+        "contextTag": "personal-use"
       },
       {
-        "prompt": "Simple reason: Why is the vocabulary useful in this situation?",
-        "answer": "It helps complete or understand the task"
-      },
-      {
-        "prompt": "Use it: Use two target words in one connected sentence.",
-        "answer": "Open response"
-      },
-      {
-        "prompt": "Spaced retrieval: Use the earlier word “Great-Aunt” in a sentence connected to this lesson.",
-        "answer": "Open response"
+        "prompt": "A couple marks the date of their wedding again the next year. Name the occasion.",
+        "answer": "A wedding anniversary",
+        "questionType": "transfer",
+        "responseMode": "spoken",
+        "contextTag": "new-setting"
       }
     ],
     "video": {
-      "title": "Extended Family: In Context",
-      "idea": "35-50 seconds contextual scene in the social setting. Reuse the lesson characters and 4-6 target words; pause once for retrieval and end with a short real-life application question.",
-      "scriptStarter": "Watch what happens in the social setting. Listen for the key words, then answer one short question before the scene continues."
+      "title": "Family Relationships and Gatherings",
+      "idea": "Adult introductions state the relationship explicitly. Family nicknames and informal in-law descriptions are contextual, not universal standard titles. Narration supplies exact relationships and celebrations; no genealogy labels, age-based kinship inference or assumption all families celebrate the same holidays.",
+      "scriptStarter": "Relatives who have been apart meet again at a reunion. They share a holiday dinner; some have a separate Thanksgiving celebration in the United States."
     },
     "spacedReview": "1 lesson(s) back: Great-Aunt, Great-Uncle from extended-family-2\n3 lesson(s) back: Climbing Shoes, Cycling Shoes from footwear-4\n7 lesson(s) back: Umbrella, Tie Pin from accessories-jewelry-4"
   }
