@@ -1,14 +1,37 @@
 {
-  "version": "0.1.16",
+  "version": "0.1.17",
   "notes": [
-    "Six number and maths vocabulary pictures now use clear diagrams with accurate counts, equations and percentages.",
-    "Existing clear number pictures are retained, and ten number and maths scene references have been checked against their visible content."
+    "Full image coverage across all 1,246 curriculum phrase cards, collocations, phrasal verbs and idioms.",
+    "Integrated responsive illustration cards in lesson practice and published optimized assets to Cloudflare R2."
   ],
   "notesAr": [
-    "تستخدم ست صور لمفردات الأعداد والرياضيات الآن رسومًا واضحة بأعداد ومعادلات ونسب مئوية دقيقة.",
-    "احتُفظ بصور الأعداد الواضحة الموجودة، وتم التحقق من عشر صور مرجعية لمشاهد الأعداد والرياضيات وفقًا لما يظهر فيها فعلًا."
+    "تغطية بصرية كاملة عبر جميع بطاقات عبارات المنهج البالغ عددها 1,246 عبارة وتعبيرًا وأفعالاً مركبة.",
+    "دمج بطاقات توضيحية متجاوبة داخل تمارين الدروس ونشر الوسائط المحسنة على Cloudflare R2."
   ],
   "releases": [
+    {
+      "id": "0.1.17",
+      "version": "0.1.17",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Comprehensive curriculum phrase illustrations",
+        "ar": "رسوم توضيحية شاملة لعبارات المنهج"
+      },
+      "changes": [
+        {
+          "id": "full-phrase-image-coverage",
+          "category": "added",
+          "en": "Full image coverage across all 1,246 curriculum phrase cards, collocations, phrasal verbs and idioms.",
+          "ar": "تغطية بصرية كاملة عبر جميع بطاقات عبارات المنهج البالغ عددها 1,246 عبارة وتعبيرًا وأفعالاً مركبة."
+        },
+        {
+          "id": "r2-phrase-assets-published",
+          "category": "improved",
+          "en": "Integrated responsive illustration cards in lesson practice and published optimized assets to Cloudflare R2.",
+          "ar": "دمج بطاقات توضيحية متجاوبة داخل تمارين الدروس ونشر الوسائط المحسنة على Cloudflare R2."
+        }
+      ]
+    },
     {
       "id": "0.1.16",
       "version": "0.1.16",
