@@ -167,6 +167,9 @@ export const usagePhraseSchema = z
       reviewer: z.string().trim().min(1),
       revision: z.string().trim().min(1),
     }),
+    /** Optional visual reference for phrase concepts and action idioms */
+    imagePath: z.string().trim().min(1).optional(),
+    imageAlt: z.string().trim().min(1).optional(),
   })
   .strict();
 

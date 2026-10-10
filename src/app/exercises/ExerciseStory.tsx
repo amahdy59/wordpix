@@ -1065,6 +1065,16 @@ export const ExerciseStory = memo(function ExerciseStory({
                           key={phrase.id}
                           className="flex flex-col gap-2 rounded-2xl border border-border bg-secondary/40 p-4"
                         >
+                          {phrase.imagePath && (
+                            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border/60 bg-wp-card">
+                              <img
+                                src={resolveAssetUrl(phrase.imagePath)}
+                                alt={phrase.imageAlt || phrase.phrase}
+                                className="size-full object-cover"
+                                loading="lazy"
+                              />
+                            </div>
+                          )}
                           <div className="flex items-start justify-between gap-2">
                             <h4 className="font-bold text-foreground">{phrase.phrase}</h4>
                             <button

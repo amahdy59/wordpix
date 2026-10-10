@@ -140,4 +140,19 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
       screen.getByText("A large domesticated animal raised for milk or beef.")
     ).toBeInTheDocument();
   });
+
+  it("renders phrase illustration image when phrase has imagePath mapped", async () => {
+    const dispatch = vi.fn();
+    render(<ExerciseStory step={5} words={[]} lessonId="airport-1" dispatch={dispatch} />);
+
+    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
+    fireEvent.click(usageButton);
+
+    const checkInImg = await screen.findByAltText(/check the gate number/i);
+    expect(checkInImg).toBeInTheDocument();
+    expect(checkInImg).toHaveAttribute(
+      "src",
+      expect.stringContaining("check-the-gate-number.webp")
+    );
+  });
 });
