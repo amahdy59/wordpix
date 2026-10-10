@@ -840,57 +840,78 @@ export const ExerciseStory = memo(function ExerciseStory({
 
                         {/* Show a scene-specific visual when authored; retain the brief as
                             accessible context and a useful fallback when no image exists. */}
-                        {currentChunk.imageBrief && (
-                          <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
-                            {currentChunk.imagePath &&
-                            !failedSceneImages[currentChunk.imagePath] ? (
-                              <QuestionImage
-                                media={{
-                                  imagePath: currentChunk.imagePath,
-                                  imageAlt: currentChunk.imageAlt ?? currentChunk.imageBrief,
-                                  imageFallbacks: currentChunk.imageFallbacks,
-                                }}
-                                loading="eager"
-                                className="aspect-video w-full object-contain"
-                                onExhausted={() =>
-                                  setFailedSceneImages((current) => ({
-                                    ...current,
-                                    [currentChunk.imagePath!]: true,
-                                  }))
-                                }
-                              />
-                            ) : (
-                              <div
-                                role="img"
-                                aria-label={t("story.imagePendingAria")}
-                                className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-secondary px-6 text-center text-muted-foreground"
-                              >
-                                <ImageOff className="size-8 text-primary" aria-hidden="true" />
-                                <span className="font-bold text-foreground">
-                                  {t("story.imagePending")}
-                                </span>
-                                <span className="text-xs">
-                                  {t("story.imagePendingDescription")}
-                                </span>
-                              </div>
-                            )}
-                            <figcaption className="p-3 text-xs text-muted-foreground">
-                              <span className="font-bold text-foreground">
-                                {t(
-                                  currentChunk.imagePurpose === "word-reference"
-                                    ? "story.vocabularyReference"
-                                    : "story.chunkVisualBrief"
+                        {currentChunk.imageBrief &&
+                          (() => {
+                            const matchingWord = !currentChunk.imagePath
+                              ? words.find(
+                                  (w) =>
+                                    w.label.toLowerCase() ===
+                                      currentChunk.check.expectedAnswer.toLowerCase() ||
+                                    w.id.toLowerCase() ===
+                                      currentChunk.check.expectedAnswer.toLowerCase()
+                                )
+                              : undefined;
+                            const effectiveImagePath = currentChunk.imagePath ?? matchingWord?.img;
+                            const isWordRef =
+                              currentChunk.imagePurpose === "word-reference" ||
+                              Boolean(!currentChunk.imagePath && matchingWord);
+                            const effectiveAlt = isWordRef
+                              ? !currentChunk.imagePath && matchingWord?.description
+                                ? matchingWord.description
+                                : (currentChunk.imageAlt ??
+                                  matchingWord?.description ??
+                                  currentChunk.imageBrief)
+                              : (currentChunk.imageAlt ?? currentChunk.imageBrief);
+
+                            return (
+                              <figure className="overflow-hidden rounded-2xl border border-border/60 bg-muted/40">
+                                {effectiveImagePath && !failedSceneImages[effectiveImagePath] ? (
+                                  <QuestionImage
+                                    media={{
+                                      imagePath: effectiveImagePath,
+                                      imageAlt: effectiveAlt,
+                                      imageFallbacks: currentChunk.imageFallbacks,
+                                    }}
+                                    loading="eager"
+                                    className="aspect-video w-full object-contain"
+                                    onExhausted={() =>
+                                      setFailedSceneImages((current) => ({
+                                        ...current,
+                                        [effectiveImagePath]: true,
+                                      }))
+                                    }
+                                  />
+                                ) : (
+                                  <div
+                                    role="img"
+                                    aria-label={t("story.imagePendingAria")}
+                                    className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-secondary px-6 text-center text-muted-foreground"
+                                  >
+                                    <ImageOff className="size-8 text-primary" aria-hidden="true" />
+                                    <span className="font-bold text-foreground">
+                                      {t("story.imagePending")}
+                                    </span>
+                                    <span className="text-xs">
+                                      {t("story.imagePendingDescription")}
+                                    </span>
+                                  </div>
                                 )}
-                                :{" "}
-                              </span>
-                              <span lang="en" dir="ltr">
-                                {currentChunk.imagePurpose === "word-reference"
-                                  ? currentChunk.imageAlt
-                                  : currentChunk.imageBrief}
-                              </span>
-                            </figcaption>
-                          </figure>
-                        )}
+                                <figcaption className="p-3 text-xs text-muted-foreground">
+                                  <span className="font-bold text-foreground">
+                                    {t(
+                                      isWordRef
+                                        ? "story.vocabularyReference"
+                                        : "story.chunkVisualBrief"
+                                    )}
+                                    :{" "}
+                                  </span>
+                                  <span lang="en" dir="ltr">
+                                    {effectiveAlt}
+                                  </span>
+                                </figcaption>
+                              </figure>
+                            );
+                          })()}
 
                         {/* Interactive Context Check Question */}
                         {currentChunk.check?.question && (

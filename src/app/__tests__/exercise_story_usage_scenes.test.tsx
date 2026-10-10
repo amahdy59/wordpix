@@ -125,4 +125,19 @@ describe("ExerciseStory — Curriculum Usage Scenes Integration", () => {
       ])
     );
   });
+
+  it("reconciles un-illustrated scene chunks with approved matching vocabulary word image", async () => {
+    const dispatch = vi.fn();
+    render(<ExerciseStory step={5} words={mockFarmWords} lessonId="farm-1" dispatch={dispatch} />);
+
+    const usageButton = await screen.findByRole("button", { name: /3\. Usage Scenes/i });
+    fireEvent.click(usageButton);
+
+    // Verify vocabulary reference label is shown for the matched word
+    expect(await screen.findByText(/Vocabulary reference:/i)).toBeInTheDocument();
+    // And that the word description is rendered as the visual brief
+    expect(
+      screen.getByText("A large domesticated animal raised for milk or beef.")
+    ).toBeInTheDocument();
+  });
 });
