@@ -1,0 +1,387 @@
+[
+  {
+    "phrase": "check the gate number",
+    "meaning": "find or confirm the boarding gate assigned to your flight",
+    "example": "Check the gate number on your boarding pass before going to the departure area.",
+    "kind": "collocation",
+    "units": ["airport", "airport"],
+    "items": [
+      {
+        "id": "airport-1-core-1",
+        "file": "airport.phrases.json"
+      },
+      {
+        "id": "airport-4-core-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "check in",
+    "meaning": "complete the airline registration process before a flight",
+    "example": "Omar checks in online before travelling to the airport.",
+    "kind": "phrasal-verb",
+    "units": ["airport", "airport"],
+    "items": [
+      {
+        "id": "airport-1-optional-1",
+        "file": "airport.phrases.json"
+      },
+      {
+        "id": "airport-4-optional-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "collect your luggage",
+    "meaning": "pick up your bags at baggage claim after a flight",
+    "example": "After landing, collect your luggage at baggage claim.",
+    "kind": "collocation",
+    "units": ["airport"],
+    "items": [
+      {
+        "id": "airport-2-core-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "set off",
+    "meaning": "begin a journey",
+    "example": "Omar sets off for the airport early to leave time for check-in.",
+    "kind": "phrasal-verb",
+    "units": ["airport"],
+    "items": [
+      {
+        "id": "airport-2-optional-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "check the departure time",
+    "meaning": "verify when a flight is scheduled to leave",
+    "example": "Omar checks the departure time before leaving for the airport.",
+    "kind": "collocation",
+    "units": ["airport"],
+    "items": [
+      {
+        "id": "airport-3-core-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "board the plane",
+    "meaning": "get onto an aircraft before a flight",
+    "example": "Passengers board the plane after the gate agent calls their group.",
+    "kind": "collocation",
+    "units": ["airport"],
+    "items": [
+      {
+        "id": "airport-3-optional-1",
+        "file": "airport.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "wake up",
+    "meaning": "Stop sleeping.",
+    "example": "I wake up at seven, but I stay in bed for ten more minutes.",
+    "kind": "phrasal-verb",
+    "units": ["daily-routines"],
+    "items": [
+      {
+        "id": "daily-routines-1-core-1",
+        "file": "daily-routines.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "cite a source",
+    "meaning": "acknowledge the source of information in academic work",
+    "example": "The student cited a source in the literature review.",
+    "kind": "collocation",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-1-core-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "catch up on",
+    "meaning": "do work that was missed or delayed",
+    "example": "He used the weekend to catch up on his reading.",
+    "kind": "phrasal-verb",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-1-optional-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "take notes",
+    "meaning": "write brief information while reading or listening",
+    "example": "I took notes during the research seminar.",
+    "kind": "collocation",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-2-core-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "look up",
+    "meaning": "search for information in a reference source",
+    "example": "I looked up the article before writing the summary.",
+    "kind": "phrasal-verb",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-2-optional-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "review a draft",
+    "meaning": "read an unfinished version and improve it",
+    "example": "She reviewed the draft before submitting the assignment.",
+    "kind": "collocation",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-3-core-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "hand in",
+    "meaning": "submit work to a teacher or institution",
+    "example": "She handed in the assignment before the deadline.",
+    "kind": "phrasal-verb",
+    "units": ["academic-life"],
+    "items": [
+      {
+        "id": "academic-life-3-optional-1",
+        "file": "academic-life.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "complete a task",
+    "meaning": "finish a practical piece of work",
+    "example": "She completed the task before the scheduled deadline.",
+    "kind": "collocation",
+    "units": ["computer-lab", "computer-lab"],
+    "items": [
+      {
+        "id": "computer-lab-1-core-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-4-core-1",
+        "file": "computer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "sort out",
+    "meaning": "resolve a problem or organize something successfully",
+    "example": "The team sorted out the issue before the deadline.",
+    "kind": "phrasal-verb",
+    "units": ["computer-lab", "computer-lab"],
+    "items": [
+      {
+        "id": "computer-lab-1-optional-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-4-optional-1",
+        "file": "computer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "check the details",
+    "meaning": "review important information carefully",
+    "example": "He checked the details before confirming the request.",
+    "kind": "collocation",
+    "units": ["computer-lab", "computer-lab"],
+    "items": [
+      {
+        "id": "computer-lab-2-core-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-5-core-1",
+        "file": "computer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "find out",
+    "meaning": "discover information",
+    "example": "I found out the answer after asking the service desk.",
+    "kind": "phrasal-verb",
+    "units": ["computer-lab", "computer-lab"],
+    "items": [
+      {
+        "id": "computer-lab-2-optional-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-5-optional-1",
+        "file": "computer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "follow the instructions",
+    "meaning": "do what the instructions say",
+    "example": "They followed the instructions before continuing.",
+    "kind": "collocation",
+    "units": ["computer-lab", "computer-lab"],
+    "items": [
+      {
+        "id": "computer-lab-3-core-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-6-core-1",
+        "file": "computer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "follow up",
+    "meaning": "take further action after an earlier step",
+    "example": "She followed up after the first conversation.",
+    "kind": "phrasal-verb",
+    "units": ["computer-lab", "computer-lab", "driving-road-rules"],
+    "items": [
+      {
+        "id": "computer-lab-3-optional-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "computer-lab-6-optional-1",
+        "file": "computer-lab.phrases.json"
+      },
+      {
+        "id": "driving-road-rules-3-optional-1",
+        "file": "driving-road-rules.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "update the software",
+    "meaning": "install a newer approved version of software",
+    "example": "The team updated the software during the planned maintenance window.",
+    "kind": "collocation",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-1-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-4-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "back up",
+    "meaning": "make a copy of data so it can be recovered",
+    "example": "The team backed up the project files before maintenance.",
+    "kind": "phrasal-verb",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-1-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-4-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "check system status",
+    "meaning": "examine the current operating condition of a system",
+    "example": "The technician checked system status before the scheduled test.",
+    "kind": "collocation",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-2-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-5-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "shut down",
+    "meaning": "stop a computer or system in a controlled way",
+    "example": "The technician shut down the system after the test finished.",
+    "kind": "phrasal-verb",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-2-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-5-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "review the log",
+    "meaning": "examine a record of system events or activity",
+    "example": "The engineer reviewed the log before the maintenance meeting.",
+    "kind": "collocation",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-3-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-6-core-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  },
+  {
+    "phrase": "log in",
+    "meaning": "enter a computer system using an authorized account",
+    "example": "The employee logged in with the account provided by the organization.",
+    "kind": "phrasal-verb",
+    "units": ["3d-printer-lab", "3d-printer-lab"],
+    "items": [
+      {
+        "id": "3d-printer-lab-3-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      },
+      {
+        "id": "3d-printer-lab-6-optional-1",
+        "file": "3d-printer-lab.phrases.json"
+      }
+    ]
+  }
+]

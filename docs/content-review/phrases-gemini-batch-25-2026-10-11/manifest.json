@@ -1,0 +1,596 @@
+{
+  "batchId": "phrases-gemini-batch-25-2026-10-11",
+  "model": "gemini-nano-banana-2.1",
+  "totalItems": 25,
+  "successful": 25,
+  "results": [
+    {
+      "phrase": "check in",
+      "slug": "check-in",
+      "status": "reused",
+      "path": "./phrase-images/check-in.webp",
+      "bytes": 80240,
+      "sha256": "befae6d52b143bae1da66143efff55dc8ada341e1e085171468bfe3d7a9098cc",
+      "candidate": {
+        "phrase": "check in",
+        "meaning": "complete the airline registration process before a flight",
+        "example": "Omar checks in online before travelling to the airport.",
+        "kind": "phrasal-verb",
+        "units": ["airport", "airport"],
+        "items": [
+          {
+            "id": "airport-1-optional-1",
+            "file": "airport.phrases.json"
+          },
+          {
+            "id": "airport-4-optional-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "collect your luggage",
+      "slug": "collect-your-luggage",
+      "status": "reused",
+      "path": "./phrase-images/collect-your-luggage.webp",
+      "bytes": 89056,
+      "sha256": "05f248b1c8668e15729916154740885efd1d2d4ab92ee352d003a5ce45538e9b",
+      "candidate": {
+        "phrase": "collect your luggage",
+        "meaning": "pick up your bags at baggage claim after a flight",
+        "example": "After landing, collect your luggage at baggage claim.",
+        "kind": "collocation",
+        "units": ["airport"],
+        "items": [
+          {
+            "id": "airport-2-core-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "set off",
+      "slug": "set-off",
+      "status": "reused",
+      "path": "./phrase-images/set-off.webp",
+      "bytes": 72886,
+      "sha256": "67d9f47964ee8b36aa911af5bb94213f516b5a0486a40b0c6b9f8b41a9315497",
+      "candidate": {
+        "phrase": "set off",
+        "meaning": "begin a journey",
+        "example": "Omar sets off for the airport early to leave time for check-in.",
+        "kind": "phrasal-verb",
+        "units": ["airport"],
+        "items": [
+          {
+            "id": "airport-2-optional-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "check the departure time",
+      "slug": "check-the-departure-time",
+      "status": "reused",
+      "path": "./phrase-images/check-the-departure-time.webp",
+      "bytes": 109342,
+      "sha256": "72273b67e495ca243b68536fc9f4a92b0151b016da288bda1fdedd691b6c5a13",
+      "candidate": {
+        "phrase": "check the departure time",
+        "meaning": "verify when a flight is scheduled to leave",
+        "example": "Omar checks the departure time before leaving for the airport.",
+        "kind": "collocation",
+        "units": ["airport"],
+        "items": [
+          {
+            "id": "airport-3-core-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "board the plane",
+      "slug": "board-the-plane",
+      "status": "reused",
+      "path": "./phrase-images/board-the-plane.webp",
+      "bytes": 61044,
+      "sha256": "4f34a5e9ced7b763790b447b8bb0178aeb63f00bb9eda8ad4def792f5dc9443a",
+      "candidate": {
+        "phrase": "board the plane",
+        "meaning": "get onto an aircraft before a flight",
+        "example": "Passengers board the plane after the gate agent calls their group.",
+        "kind": "collocation",
+        "units": ["airport"],
+        "items": [
+          {
+            "id": "airport-3-optional-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "wake up",
+      "slug": "wake-up",
+      "status": "reused",
+      "path": "./phrase-images/wake-up.webp",
+      "bytes": 70632,
+      "sha256": "d86dea4d1dcbc6ecdc630f89c900ed046362e1132bfb152b19f692fb818a1b7c",
+      "candidate": {
+        "phrase": "wake up",
+        "meaning": "Stop sleeping.",
+        "example": "I wake up at seven, but I stay in bed for ten more minutes.",
+        "kind": "phrasal-verb",
+        "units": ["daily-routines"],
+        "items": [
+          {
+            "id": "daily-routines-1-core-1",
+            "file": "daily-routines.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "cite a source",
+      "slug": "cite-a-source",
+      "status": "reused",
+      "path": "./phrase-images/cite-a-source.webp",
+      "bytes": 70942,
+      "sha256": "7d1262fc4b736147e67b8a1d458ac487ba67f77c83ecaec6b588224072181c74",
+      "candidate": {
+        "phrase": "cite a source",
+        "meaning": "acknowledge the source of information in academic work",
+        "example": "The student cited a source in the literature review.",
+        "kind": "collocation",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-1-core-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "catch up on",
+      "slug": "catch-up-on",
+      "status": "reused",
+      "path": "./phrase-images/catch-up-on.webp",
+      "bytes": 63218,
+      "sha256": "92712c85b6debe280ce66c31a5faff79f7bab7d8151a43a912f0c2ea8e7f0fbd",
+      "candidate": {
+        "phrase": "catch up on",
+        "meaning": "do work that was missed or delayed",
+        "example": "He used the weekend to catch up on his reading.",
+        "kind": "phrasal-verb",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-1-optional-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "take notes",
+      "slug": "take-notes",
+      "status": "reused",
+      "path": "./phrase-images/take-notes.webp",
+      "bytes": 65608,
+      "sha256": "1d29935d58ad14dd53222ff592535ab8213cfc0da8af39e1fa65ca0397a1926f",
+      "candidate": {
+        "phrase": "take notes",
+        "meaning": "write brief information while reading or listening",
+        "example": "I took notes during the research seminar.",
+        "kind": "collocation",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-2-core-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "look up",
+      "slug": "look-up",
+      "status": "reused",
+      "path": "./phrase-images/look-up.webp",
+      "bytes": 184134,
+      "sha256": "24a1fc13c25ce6b86e2d262583c78dd9ddffa4880f933fbeb41fad79647b84b7",
+      "candidate": {
+        "phrase": "look up",
+        "meaning": "search for information in a reference source",
+        "example": "I looked up the article before writing the summary.",
+        "kind": "phrasal-verb",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-2-optional-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "check the gate number",
+      "slug": "check-the-gate-number",
+      "status": "generated",
+      "path": "./phrase-images/check-the-gate-number.webp",
+      "bytes": 106400,
+      "sha256": "b211875ff910ed94ee8867bea2a9c91f63a5503781fc13d75e0206218b2427f2",
+      "prompt": "Realistic adult-learning educational reference illustration. Concept: \"check the gate number\". Scene: A clean airport terminal concourse with digital flight departure display boards mounted above modern boarding gates. No readable text or letters. Human-free architectural view with large windows showing airport tarmac in daylight. Style: clean, modern, natural lighting, high quality. No women added. Human-free preferred; if a person is required, use one modest adult man. Strictly no readable text, words, letters, numbers, signs, watermarks or logos. 4:3 landscape aspect ratio. Return one image.",
+      "candidate": {
+        "phrase": "check the gate number",
+        "meaning": "find or confirm the boarding gate assigned to your flight",
+        "example": "Check the gate number on your boarding pass before going to the departure area.",
+        "kind": "collocation",
+        "units": ["airport", "airport"],
+        "items": [
+          {
+            "id": "airport-1-core-1",
+            "file": "airport.phrases.json"
+          },
+          {
+            "id": "airport-4-core-1",
+            "file": "airport.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "review a draft",
+      "slug": "review-a-draft",
+      "status": "reused",
+      "path": "./phrase-images/review-a-draft.webp",
+      "bytes": 77646,
+      "sha256": "8bd8a4a3b9e89fe9b2ed219715a5f0d729518972c231dae50e994f1ab7fcd71c",
+      "candidate": {
+        "phrase": "review a draft",
+        "meaning": "read an unfinished version and improve it",
+        "example": "She reviewed the draft before submitting the assignment.",
+        "kind": "collocation",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-3-core-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "complete a task",
+      "slug": "complete-a-task",
+      "status": "reused",
+      "path": "./phrase-images/complete-a-task.webp",
+      "bytes": 51644,
+      "sha256": "f610be1f6d9cefa7ecba5177ae260bdbb3b95a51ffbd711c276884eaca59a3a5",
+      "candidate": {
+        "phrase": "complete a task",
+        "meaning": "finish a practical piece of work",
+        "example": "She completed the task before the scheduled deadline.",
+        "kind": "collocation",
+        "units": ["computer-lab", "computer-lab"],
+        "items": [
+          {
+            "id": "computer-lab-1-core-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-4-core-1",
+            "file": "computer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "hand in",
+      "slug": "hand-in",
+      "status": "generated",
+      "path": "./phrase-images/hand-in.webp",
+      "bytes": 47004,
+      "sha256": "b124e80545026c09321ce12efd873bdfebbacfb875f9bbe89575cf5dd7008c73",
+      "prompt": "Realistic adult-learning educational reference illustration. Concept: \"hand in\". Scene: An adult male student placing a completed paper folder into a wooden submission inbox tray on an instructor's office desk. No women. No readable text or logos. Style: clean, modern, natural lighting, high quality. No women added. Human-free preferred; if a person is required, use one modest adult man. Strictly no readable text, words, letters, numbers, signs, watermarks or logos. 4:3 landscape aspect ratio. Return one image.",
+      "candidate": {
+        "phrase": "hand in",
+        "meaning": "submit work to a teacher or institution",
+        "example": "She handed in the assignment before the deadline.",
+        "kind": "phrasal-verb",
+        "units": ["academic-life"],
+        "items": [
+          {
+            "id": "academic-life-3-optional-1",
+            "file": "academic-life.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "check the details",
+      "slug": "check-the-details",
+      "status": "reused",
+      "path": "./phrase-images/check-the-details.webp",
+      "bytes": 74972,
+      "sha256": "1ac09a82fb5605943c9d1f4d37829fbbea2ed96dde3d1d8f2a4ee4391b181438",
+      "candidate": {
+        "phrase": "check the details",
+        "meaning": "review important information carefully",
+        "example": "He checked the details before confirming the request.",
+        "kind": "collocation",
+        "units": ["computer-lab", "computer-lab"],
+        "items": [
+          {
+            "id": "computer-lab-2-core-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-5-core-1",
+            "file": "computer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "find out",
+      "slug": "find-out",
+      "status": "reused",
+      "path": "./phrase-images/find-out.webp",
+      "bytes": 95836,
+      "sha256": "4e6cf94b4df628f262ecfa3d09aed5d64731ab9d034580fc1f1ba12845a36237",
+      "candidate": {
+        "phrase": "find out",
+        "meaning": "discover information",
+        "example": "I found out the answer after asking the service desk.",
+        "kind": "phrasal-verb",
+        "units": ["computer-lab", "computer-lab"],
+        "items": [
+          {
+            "id": "computer-lab-2-optional-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-5-optional-1",
+            "file": "computer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "sort out",
+      "slug": "sort-out",
+      "status": "generated",
+      "path": "./phrase-images/sort-out.webp",
+      "bytes": 94114,
+      "sha256": "60a189988165dd4074ba5dfbf91fc9c938e4b111a475172e6bc857dca878f491",
+      "prompt": "Realistic adult-learning educational reference illustration. Concept: \"sort out\". Scene: A workshop or office organization desk with divided storage compartments neatly arranging office tools, cables, and supplies into clean order. Human-free. No text. Style: clean, modern, natural lighting, high quality. No women added. Human-free preferred; if a person is required, use one modest adult man. Strictly no readable text, words, letters, numbers, signs, watermarks or logos. 4:3 landscape aspect ratio. Return one image.",
+      "candidate": {
+        "phrase": "sort out",
+        "meaning": "resolve a problem or organize something successfully",
+        "example": "The team sorted out the issue before the deadline.",
+        "kind": "phrasal-verb",
+        "units": ["computer-lab", "computer-lab"],
+        "items": [
+          {
+            "id": "computer-lab-1-optional-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-4-optional-1",
+            "file": "computer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "follow the instructions",
+      "slug": "follow-the-instructions",
+      "status": "reused",
+      "path": "./phrase-images/follow-the-instructions.webp",
+      "bytes": 103572,
+      "sha256": "393e63deb8e58e94b91fbabc6c9d871f259fe38727de4f8745b85a6fd0434e13",
+      "candidate": {
+        "phrase": "follow the instructions",
+        "meaning": "do what the instructions say",
+        "example": "They followed the instructions before continuing.",
+        "kind": "collocation",
+        "units": ["computer-lab", "computer-lab"],
+        "items": [
+          {
+            "id": "computer-lab-3-core-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-6-core-1",
+            "file": "computer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "follow up",
+      "slug": "follow-up",
+      "status": "reused",
+      "path": "./phrase-images/follow-up.webp",
+      "bytes": 56072,
+      "sha256": "5bec5a72cce6ba9a155f5a4edc233c7e1bbd34a15bd9a3ff06e1434be727845b",
+      "candidate": {
+        "phrase": "follow up",
+        "meaning": "take further action after an earlier step",
+        "example": "She followed up after the first conversation.",
+        "kind": "phrasal-verb",
+        "units": ["computer-lab", "computer-lab", "driving-road-rules"],
+        "items": [
+          {
+            "id": "computer-lab-3-optional-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "computer-lab-6-optional-1",
+            "file": "computer-lab.phrases.json"
+          },
+          {
+            "id": "driving-road-rules-3-optional-1",
+            "file": "driving-road-rules.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "update the software",
+      "slug": "update-the-software",
+      "status": "reused",
+      "path": "./phrase-images/update-the-software.webp",
+      "bytes": 48368,
+      "sha256": "400914b829bf5ce585e883fd3e502886d5cb5bcaff8f1b6dc3c876c39125bdea",
+      "candidate": {
+        "phrase": "update the software",
+        "meaning": "install a newer approved version of software",
+        "example": "The team updated the software during the planned maintenance window.",
+        "kind": "collocation",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-1-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-4-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "back up",
+      "slug": "back-up",
+      "status": "reused",
+      "path": "./phrase-images/back-up.webp",
+      "bytes": 60378,
+      "sha256": "8a366bf341c6d9da158f76d955528189467dab180574f185714ac4baeb619e36",
+      "candidate": {
+        "phrase": "back up",
+        "meaning": "make a copy of data so it can be recovered",
+        "example": "The team backed up the project files before maintenance.",
+        "kind": "phrasal-verb",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-1-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-4-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "check system status",
+      "slug": "check-system-status",
+      "status": "reused",
+      "path": "./phrase-images/check-system-status.webp",
+      "bytes": 160054,
+      "sha256": "b9f2fd33dccfc79e639eedaec369660b46f3927b44661c0beb2dd23bc597846f",
+      "candidate": {
+        "phrase": "check system status",
+        "meaning": "examine the current operating condition of a system",
+        "example": "The technician checked system status before the scheduled test.",
+        "kind": "collocation",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-2-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-5-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "shut down",
+      "slug": "shut-down",
+      "status": "reused",
+      "path": "./phrase-images/shut-down.webp",
+      "bytes": 40284,
+      "sha256": "73f47b62677d5d70889b7b4494a3f72efc06ba1f98cb4b2e3424920ace72903e",
+      "candidate": {
+        "phrase": "shut down",
+        "meaning": "stop a computer or system in a controlled way",
+        "example": "The technician shut down the system after the test finished.",
+        "kind": "phrasal-verb",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-2-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-5-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "review the log",
+      "slug": "review-the-log",
+      "status": "reused",
+      "path": "./phrase-images/review-the-log.webp",
+      "bytes": 106202,
+      "sha256": "fe3a0d7fea84e1a74f3974e6c75d41a695dbe2d097c98fe4fd18bcccb1c058b6",
+      "candidate": {
+        "phrase": "review the log",
+        "meaning": "examine a record of system events or activity",
+        "example": "The engineer reviewed the log before the maintenance meeting.",
+        "kind": "collocation",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-3-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-6-core-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    },
+    {
+      "phrase": "log in",
+      "slug": "log-in",
+      "status": "reused",
+      "path": "./phrase-images/log-in.webp",
+      "bytes": 46348,
+      "sha256": "b32519486503e57bc1eebdab506ac9508a96bd4993c232b414081599d2dddc78",
+      "candidate": {
+        "phrase": "log in",
+        "meaning": "enter a computer system using an authorized account",
+        "example": "The employee logged in with the account provided by the organization.",
+        "kind": "phrasal-verb",
+        "units": ["3d-printer-lab", "3d-printer-lab"],
+        "items": [
+          {
+            "id": "3d-printer-lab-3-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          },
+          {
+            "id": "3d-printer-lab-6-optional-1",
+            "file": "3d-printer-lab.phrases.json"
+          }
+        ]
+      }
+    }
+  ]
+}
