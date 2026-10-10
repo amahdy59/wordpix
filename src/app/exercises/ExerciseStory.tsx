@@ -842,14 +842,26 @@ export const ExerciseStory = memo(function ExerciseStory({
                             accessible context and a useful fallback when no image exists. */}
                         {currentChunk.imageBrief &&
                           (() => {
+                            const normalize = (s: string) =>
+                              s
+                                .toLowerCase()
+                                .replace(/['’]/g, "")
+                                .replace(/[^a-z0-9]+/g, "-")
+                                .replace(/^-+|-+$/g, "");
+                            const targetNorm = normalize(currentChunk.check.expectedAnswer);
                             const matchingWord = !currentChunk.imagePath
-                              ? words.find(
-                                  (w) =>
+                              ? words.find((w) => {
+                                  const labelNorm = normalize(w.label);
+                                  const idNorm = normalize(w.id);
+                                  return (
+                                    labelNorm === targetNorm ||
+                                    idNorm === targetNorm ||
                                     w.label.toLowerCase() ===
                                       currentChunk.check.expectedAnswer.toLowerCase() ||
                                     w.id.toLowerCase() ===
                                       currentChunk.check.expectedAnswer.toLowerCase()
-                                )
+                                  );
+                                })
                               : undefined;
                             const effectiveImagePath = currentChunk.imagePath ?? matchingWord?.img;
                             const isWordRef =
