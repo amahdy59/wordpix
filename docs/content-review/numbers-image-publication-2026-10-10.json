@@ -1,0 +1,117 @@
+{
+  "release": "0.1.16",
+  "date": "2026-10-10",
+  "approval": {
+    "by": "Ahmed Mahdy",
+    "evidence": "I'm viewing the images as you're creating them and I do approve them. no need to get back to me for reviewal unless critical."
+  },
+  "reviewedConcepts": 10,
+  "newVocabularyDisplaySelections": 6,
+  "reusedVocabularyImages": 4,
+  "existingSceneImagesRetained": 10,
+  "allExistingMediaMappingsPreserved": true,
+  "allOriginalLocalAndR2AssetsPreserved": true,
+  "paidGenerationCostUsd": 0,
+  "r2Deletes": 0,
+  "r2Overwrites": 0,
+  "items": [
+    {
+      "word": "Eighteen",
+      "originalPath": "word-images/numbers-counting/eighteen.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-eighteen-reviewed/3ac1667dcfc485e3fb7c20b57754b5c93c553dde427cd3756eeef8deafbdb637.webp",
+      "sha256": "3ac1667dcfc485e3fb7c20b57754b5c93c553dde427cd3756eeef8deafbdb637",
+      "bytes": 7060,
+      "imageAlt": "The numeral 18 and the word Eighteen appear beside eighteen teal dots arranged in three rows of six.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/eighteen.svg",
+      "reason": "The original shows 20 objects beside 18, so its visual count contradicts the headword."
+    },
+    {
+      "word": "Twenty",
+      "originalPath": "word-images/numbers-counting/twenty.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-twenty-reviewed/ede110179a5e5a75849df117d2af9001db7745865f5dd607b510c835dbd9c814.webp",
+      "sha256": "ede110179a5e5a75849df117d2af9001db7745865f5dd607b510c835dbd9c814",
+      "bytes": 8094,
+      "imageAlt": "The numeral 20 and the word Twenty appear beside twenty teal dots arranged in four rows of five.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/twenty.svg",
+      "reason": "Each group labelled TEN contains 12 objects; together they show 24 rather than 20."
+    },
+    {
+      "word": "Eighty",
+      "originalPath": "word-images/numbers-counting/eighty.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-eighty-reviewed/6407ef849d6240f3a429ee4f15fa52e26d0e97f62d157b011f8e9a2d888750aa.webp",
+      "sha256": "6407ef849d6240f3a429ee4f15fa52e26d0e97f62d157b011f8e9a2d888750aa",
+      "bytes": 10674,
+      "imageAlt": "A large numeral 80 appears above the word Eighty and the equation 8 × 10 = 80.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/eighty.svg",
+      "reason": "The surrounding object arrays and stray letter-like shapes do not clearly represent eighty."
+    },
+    {
+      "word": "Equals",
+      "originalPath": "word-images/numbers-counting/equals.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-equals-reviewed/73e6b5702ac7ef9ff4a956d216207221ae194c94054339c8730b2b219046b006.webp",
+      "sha256": "73e6b5702ac7ef9ff4a956d216207221ae194c94054339c8730b2b219046b006",
+      "bytes": 5928,
+      "imageAlt": "Two equal-length teal horizontal bars form an equals sign beneath the word Equals; the equation 2 + 3 = 5 appears below.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/equals.svg",
+      "reason": "The original shows two apples plus one block equal to two apples and two blocks, contradicting both equality and its printed 2 + 3 = 5."
+    },
+    {
+      "word": "Minus",
+      "originalPath": "word-images/numbers-counting/minus.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-minus-reviewed/277d5953814e4b96e5f98ddee2ac8e18514cf1f85ef158a1e975ea31a85e1022.webp",
+      "sha256": "277d5953814e4b96e5f98ddee2ac8e18514cf1f85ef158a1e975ea31a85e1022",
+      "bytes": 5500,
+      "imageAlt": "A single teal horizontal bar forms a minus sign beneath the word Minus; the equation 5 − 2 = 3 appears below.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/minus.svg",
+      "reason": "The original star example shows four stars with one crossed out beside 3 − 1 = 2, and includes a child."
+    },
+    {
+      "word": "Percentage",
+      "originalPath": "word-images/numbers-counting/percentage.avif",
+      "preferredPath": "question-images/v3/shared/numbers-counting-percentage-reviewed/70c5f7ba1a18e1e3e185a9bc017e65983d80edcc836d61253266af4329b327d5.webp",
+      "sha256": "70c5f7ba1a18e1e3e185a9bc017e65983d80edcc836d61253266af4329b327d5",
+      "bytes": 13166,
+      "imageAlt": "The words Percentage and 25 out of 100 accompany 25%; a ten-by-ten grid has twenty-five teal squares and seventy-five white outlined squares.",
+      "created": true,
+      "verified": true,
+      "sourceSvg": "docs/content-review/numbers-diagrams/percentage.svg",
+      "reason": "The original pie gives the 60% sector exactly half the circle, and the other sectors and bar widths do not match their labels."
+    }
+  ],
+  "reusedWords": [
+    {
+      "word": "Sixty",
+      "imageAlt": "The numeral 60 is filled with colorful decorative motifs, with the word SIXTY beneath it.",
+      "sha256": "463c798718c593de8b318ff49a846fa91da548d3be7a1bfde42a6111f7ce2822",
+      "reason": "The large numeral 60 and correctly spelled SIXTY clearly identify the number; small motifs decorate the numeral rather than form a count diagram."
+    },
+    {
+      "word": "Million",
+      "imageAlt": "The number 1,000,000 appears above the words ONE MILLION, surrounded by colorful decorative shapes.",
+      "sha256": "ff0dea81e918ee818cef7b20609308b2619cc8ef2f3257f2583f83f966c8134a",
+      "reason": "The grouping in 1,000,000 and the words ONE MILLION are correct and clear."
+    },
+    {
+      "word": "Fifth",
+      "imageAlt": "A blue-and-gold award rosette shows 5 and FIFTH PLACE; its ribbons also show 5th.",
+      "sha256": "fecba270f7a7ce928b5b85a581bc3fcfdfe9cbdbcf3574979b5b570a9b5f9adb",
+      "reason": "The badge shows 5, FIFTH PLACE and the correct ordinal 5th, with no conflicting count."
+    },
+    {
+      "word": "Tenth",
+      "imageAlt": "A colorful numeral 10 has the suffix th above it and the word TENTH below, beside a decorative curved arrow.",
+      "sha256": "8057e075817eaf816019f39a104f61d110d13b5a37806b4fca0108c7807086a3",
+      "reason": "The numeral 10 with th and the word TENTH correctly convey the ordinal."
+    }
+  ]
+}

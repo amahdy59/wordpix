@@ -1,14 +1,37 @@
 {
-  "version": "0.1.15",
+  "version": "0.1.16",
   "notes": [
-    "41 reviewed vocabulary pictures now support first-aid and pharmacy scenes, including clear labelled illustrations and five reused reference images.",
-    "Hot Pack now uses the approved person-free picture. Picture descriptions reflect what is actually visible."
+    "Six number and maths vocabulary pictures now use clear diagrams with accurate counts, equations and percentages.",
+    "Existing clear number pictures are retained, and ten number and maths scene references have been checked against their visible content."
   ],
   "notesAr": [
-    "تدعم 41 صورة مفردات تمت مراجعتها مشاهد الإسعافات الأولية والصيدلية، بما فيها رسوم توضيحية واضحة تحمل تسميات وخمس صور مرجعية أُعيد استخدامها.",
-    "تستخدم مفردة الكمّادة الساخنة الآن الصورة المعتمدة الخالية من الأشخاص. وتعكس أوصاف الصور ما يظهر فيها فعلًا."
+    "تستخدم ست صور لمفردات الأعداد والرياضيات الآن رسومًا واضحة بأعداد ومعادلات ونسب مئوية دقيقة.",
+    "احتُفظ بصور الأعداد الواضحة الموجودة، وتم التحقق من عشر صور مرجعية لمشاهد الأعداد والرياضيات وفقًا لما يظهر فيها فعلًا."
   ],
   "releases": [
+    {
+      "id": "0.1.16",
+      "version": "0.1.16",
+      "date": "2026-10-10",
+      "title": {
+        "en": "Accurate number and maths pictures",
+        "ar": "صور دقيقة للأعداد والرياضيات"
+      },
+      "changes": [
+        {
+          "id": "accurate-counting-diagrams",
+          "category": "fixed",
+          "en": "Six number and maths vocabulary pictures now use clear diagrams with accurate counts, equations and percentages.",
+          "ar": "تستخدم ست صور لمفردات الأعداد والرياضيات الآن رسومًا واضحة بأعداد ومعادلات ونسب مئوية دقيقة."
+        },
+        {
+          "id": "reviewed-number-references",
+          "category": "improved",
+          "en": "Existing clear number pictures are retained, and ten number and maths scene references have been checked against their visible content.",
+          "ar": "احتُفظ بصور الأعداد الواضحة الموجودة، وتم التحقق من عشر صور مرجعية لمشاهد الأعداد والرياضيات وفقًا لما يظهر فيها فعلًا."
+        }
+      ]
+    },
     {
       "id": "0.1.15",
       "version": "0.1.15",
