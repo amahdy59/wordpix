@@ -106,9 +106,9 @@
             "options": ["Cold Pack", "Heat Pack", "Finger Splint"],
             "expectedAnswer": "Cold Pack"
           },
-          "imageBrief": "Vocabulary-reference support only. One intact plain cold-pack pouch on a training table; no frost, label or patient. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A single soft blue reusable gel pouch on a pale table. A small blue snowflake graphic beside it communicates cooling, without asserting visible frost. Printed label on the pouch reads exactly \"Cold Pack\". No body or treatment.",
+          "imageAlt": "A blue gel pouch labelled “Cold Pack” lies on a table beside a blue snowflake symbol.",
+          "imageLabels": ["Cold Pack"]
         }
       ],
       "phrases": []
@@ -271,9 +271,9 @@
             "options": ["Hot Pack", "Stethoscope", "Thermometer"],
             "expectedAnswer": "Hot Pack"
           },
-          "imageBrief": "Vocabulary-reference support only. An intact plain hot-pack pouch lying unused; temperature is supplied by the written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A single soft orange reusable warming pouch on a pale table, with three simple orange heat-wave graphics above it. The pouch label reads exactly \"Hot Pack\". The waves are diagram symbols, not steam or a temperature measurement. No person.",
+          "imageAlt": "An orange pouch labelled “Hot Pack” rests on a table beneath three orange heat-wave symbols; no person is shown.",
+          "imageLabels": ["Hot Pack"]
         },
         {
           "chunkNumber": 5,
@@ -448,9 +448,9 @@
             "options": ["Saline Solution", "Hydrogen Peroxide", "Iodine"],
             "expectedAnswer": "Saline Solution"
           },
-          "imageBrief": "Vocabulary-reference support only. A sealed plain clinical solution bottle; identity comes from written context, not liquid appearance. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A sealed clear solution bottle bearing the large exact label \"Saline Solution\". Beside it, a simple inset with a water droplet and a few salt-crystal shapes, connected by a plus sign, captioned exactly \"Salt + water\". No mixing instructions, concentration, syringe or treatment.",
+          "imageAlt": "A bottle labelled “Saline Solution” stands beside a water droplet and salt-crystal diagram captioned “Salt + water”.",
+          "imageLabels": ["Saline Solution", "Salt + water"]
         },
         {
           "chunkNumber": 5,
@@ -589,9 +589,8 @@
             "options": ["Suture Kit", "Wound Closure Strip", "Skin Stapler"],
             "expectedAnswer": "Suture Kit"
           },
-          "imageBrief": "Vocabulary-reference support only. A closed unbranded clinical suture kit on a tray, no use or exposed patient. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary-reference support only. One unused sealed transparent suture instrument tray on a plain pale table. Through the clear closed lid, show a curved surgical needle attached to a loop of fine thread, a ring-handled needle holder with short jaws, and small surgical scissors in separate fitted compartments. These visible instruments distinguish a suture kit from a generic opaque box. No patient, wound, use, procedure, packaging print, letters, numbers, labels, logos, arrows or people. Natural soft light, complete kit visible in 4:3 landscape. The written context supplies its clinical purpose; the image does not give treatment instructions.",
+          "imageAlt": "A clear closed tray contains curved needles, loops of dark thread, a ring-handled metal instrument, and small scissors."
         },
         {
           "chunkNumber": 2,
@@ -614,9 +613,8 @@
             "options": ["Iodine Solution", "Defibrillator", "Oxygen Mask"],
             "expectedAnswer": "Iodine Solution"
           },
-          "imageBrief": "Vocabulary-reference support only. A closed plain antiseptic bottle; its specific substance is taught by the written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary reference: A brown bottle with a white cap is labelled “Povidone-Iodine Topical Solution 10%”. The picture supports recognition of Iodine Solution; the written task supplies invisible properties, roles and events.",
+          "imageAlt": "A brown bottle with a white cap is labelled “Povidone-Iodine Topical Solution 10%”."
         },
         {
           "chunkNumber": 4,
@@ -627,9 +625,8 @@
             "options": ["Oxygen Tank", "EpiPen", "Tourniquet"],
             "expectedAnswer": "Oxygen Tank"
           },
-          "imageBrief": "Vocabulary-reference support only. An unused upright medical oxygen cylinder secured in a stand, no text or treatment. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary-reference support only. One unused upright portable medical gas cylinder secured with a strap in a narrow two-wheeled trolley. Show its rounded cylinder body, plain top valve, a SIMPLE compact regulator with a single unmarked knob, and coiled clear delivery tubing ending in a nasal cannula with two short soft prongs. Absolutely NO gauge, gauge dial, meter, display, scales, graduations, letters, numbers, labels, print, logos or symbols anywhere. No masks, patients, people, treatment or use. Whole cylinder and trolley visible against a plain wall in 4:3 landscape, soft natural light. Medical gas equipment is illustrated; the written context identifies its oxygen contents, which are not visually provable.",
+          "imageAlt": "A silver cylinder with a green top is strapped to a two-wheeled trolley, with a valve and coiled clear tubing ending in two small prongs."
         },
         {
           "chunkNumber": 5,
@@ -768,9 +765,8 @@
             "options": ["Emergency Phone", "Alarm Button", "Inhaler"],
             "expectedAnswer": "Emergency Phone"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain wall-mounted telephone near a door; no numbers, sign or person. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary reference: A red telephone unit with an “Emergency” button is mounted on an outdoor concrete wall. The picture supports recognition of Emergency Phone; the written task supplies invisible properties, roles and events.",
+          "imageAlt": "A red telephone unit with an “Emergency” button is mounted on an outdoor concrete wall."
         },
         {
           "chunkNumber": 2,
@@ -969,9 +965,9 @@
             "options": ["Poison Control Poster", "CPR Poster", "Fire Extinguisher"],
             "expectedAnswer": "Poison Control Poster"
           },
-          "imageBrief": "Vocabulary-reference support only. An unlettered wall poster in a clinic setting; written context identifies its topic. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "An illustrated wall poster clearly headed \"Poison Control\" with a telephone icon and short line \"Contact information\". Beneath it use two deliberately blank contact-information fields with no invented telephone number. Include a small crossed-out ingestion pictogram, but no treatment instructions or frightening imagery.",
+          "imageAlt": "A poster headed “Poison Control” shows a telephone icon, blank contact fields, a man reading a bottle and a crossed-out drinking symbol.",
+          "imageLabels": ["Poison Control", "Contact information"]
         },
         {
           "chunkNumber": 4,
@@ -994,9 +990,9 @@
             "options": ["Burn", "Sprain", "Fracture"],
             "expectedAnswer": "Burn"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral first-aid training table; no injured skin or visual diagnosis. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A calm non-graphic educational illustration: a simplified cropped male forearm with a small flat pink skin patch and a separate orange heat icon. A small annotation points to the pink patch and reads \"Burn\"; heading \"Skin injury\". No open wound, gore, flames touching a person, blistering or treatment sequence. This is an explanatory illustration, not a diagnostic photograph.",
+          "imageAlt": "An illustrated forearm has a small pink patch labelled “Burn”, with the heading “Skin injury” and a separate heat symbol.",
+          "imageLabels": ["Burn", "Skin injury"]
         }
       ],
       "phrases": []
@@ -1123,9 +1119,9 @@
             "options": ["Nosebleed", "Bee Sting", "Rash"],
             "expectedAnswer": "Nosebleed"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral clinic telephone and tissue box; no bleeding, patient or diagnosis cues. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A modestly dressed adult man in a calm profile portrait with a tiny red droplet immediately below one nostril and a clean tissue held below his nose, not inserted. A simple pointer identifies the droplet, labelled \"Nosebleed\". No other blood, distress or treatment posture instructions.",
+          "imageAlt": "An illustrated man holds a tissue below his nose, with a small red drop at one nostril labelled “Nosebleed”.",
+          "imageLabels": ["Nosebleed"]
         },
         {
           "chunkNumber": 2,
@@ -1136,9 +1132,9 @@
             "options": ["Blister", "Splinter", "Concussion"],
             "expectedAnswer": "Blister"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral medical training model on a table; no wound, graphic skin or diagnosis cues. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A large simplified educational skin cross-section with a single smooth translucent fluid-filled dome lifting the upper skin layer. One annotation \"Fluid\" inside the dome and a heading \"Blister\". Clean beige and blue shapes, accurate basic anatomy, no pus, rupture, blood, people or treatment.",
+          "imageAlt": "An illustrated skin cross-section has a raised translucent dome labelled “Fluid” beneath the heading “Blister”.",
+          "imageLabels": ["Blister", "Fluid"]
         },
         {
           "chunkNumber": 3,
@@ -1149,9 +1145,9 @@
             "options": ["Dislocation", "Fainting", "Choking"],
             "expectedAnswer": "Dislocation"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral unlettered anatomical joint model, no injured person or treatment. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A clean educational diagram of a shoulder ball-and-socket joint in two panels. First panel: rounded upper-arm bone head seated in the shoulder socket, labelled \"Normal position\". Second: same head clearly outside and below the socket, labelled \"Dislocation\". Bone remains unbroken in both panels. A single pointer to the displaced head, no reduction or treatment steps, people or gore.",
+          "imageAlt": "Two shoulder-joint diagrams compare a bone head seated in its socket, “Normal position”, with one outside it, “Dislocation”.",
+          "imageLabels": ["Normal position", "Dislocation"]
         },
         {
           "chunkNumber": 4,
@@ -1162,9 +1158,8 @@
             "options": ["Allergic Reaction", "Heat Stroke", "Hypothermia"],
             "expectedAnswer": "Allergic Reaction"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral consultation desk without medicines, patient, rash or diagnosis cues. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary reference: A close-up photograph shows raised pink bumps across the skin of a forearm. The picture supports recognition of Allergic Reaction; the written task supplies invisible properties, roles and events.",
+          "imageAlt": "A close-up photograph shows raised pink bumps across the skin of a forearm."
         },
         {
           "chunkNumber": 5,
@@ -1293,9 +1288,9 @@
             "options": ["Compress", "Gloves", "CPR"],
             "expectedAnswer": "Compress"
           },
-          "imageBrief": "Vocabulary-reference support only. One folded clean cloth compress on a training tray, no patient or procedure. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "One neatly folded white absorbent cloth pad on a clean tray, drawn large with visible woven texture. A slim pointer identifies it with \"Compress\" and a short caption \"Cloth or pad\". No person, injury, liquids, use or care instructions.",
+          "imageAlt": "A folded white cloth on a tray is labelled “Compress” with the caption “Cloth or pad”.",
+          "imageLabels": ["Compress", "Cloth or pad"]
         },
         {
           "chunkNumber": 2,
@@ -1306,9 +1301,9 @@
             "options": ["Wound Care", "Check Pulse", "Apply Pressure"],
             "expectedAnswer": "Wound Care"
           },
-          "imageBrief": "Vocabulary-reference support only. A clean unused wound-dressing supply tray, no patient, procedure or instructions. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A simple illustrated composition of one clean dressing pad, a bandage roll and a tiny simplified male forearm with a closed dressing already in place. Heading \"Wound Care\" and caption \"Care of a skin injury\". Show an overview, not numbered steps; no open wounds, procedures, medicine or promises.",
+          "imageAlt": "An illustration labelled “Wound Care” shows a cloth pad, bandage roll and forearm with a dressing, captioned “Care of a skin injury”.",
+          "imageLabels": ["Wound Care", "Care of a skin injury"]
         },
         {
           "chunkNumber": 3,
@@ -1319,9 +1314,9 @@
             "options": ["Elevate", "Immobilize", "Call Emergency"],
             "expectedAnswer": "Elevate"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral raised platform supporting an unused training model; no treatment demonstration. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Two faint-to-solid positions of the SAME small unbranded box: lower position on a table shown as a pale outline, higher position held just above by two cropped adult male hands. One upward arrow shows movement. Heading \"Elevate\" and caption \"Raise something\". No body, clinical limb positioning or treatment.",
+          "imageAlt": "Male hands lift a box above its faded lower position, with an upward arrow and the labels “Elevate” and “Raise something”.",
+          "imageLabels": ["Elevate", "Raise something"]
         },
         {
           "chunkNumber": 4,
@@ -1332,9 +1327,9 @@
             "options": ["Monitor", "Compress", "Gloves"],
             "expectedAnswer": "Monitor"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral observation desk with a blank notebook, no patient or clinical readings. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A clear three-panel time-sequence illustration showing the same adult man calmly checking the same small potted plant at three different times. A simple clock icon between panels indicates passage of time. Heading \"Monitor\" and caption \"Watch or check over time\". No computer monitor as the main object, extra people or medical readings.",
+          "imageAlt": "Three panels show the same man checking a potted plant over time, with clocks and the caption “Watch or check over time”.",
+          "imageLabels": ["Monitor", "Watch or check over time"]
         }
       ],
       "phrases": []

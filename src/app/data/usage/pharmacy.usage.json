@@ -70,9 +70,9 @@
             "options": ["Cream", "Ointment", "Eye Drops"],
             "expectedAnswer": "Cream"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain closed cream container; appearance cannot establish its contents or use. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A small open cream jar with a smooth white cream swirl and its lid beside it. Exact large jar label \"Cream\" with a small skin icon nearby; caption \"A medicine form for the skin\". No application steps, specific drug, dosage, treatment promises or people.",
+          "imageAlt": "An open jar labelled “Cream” holds white cream beside its lid, with the caption “A medicine form for the skin”.",
+          "imageLabels": ["Cream", "A medicine form for the skin"]
         },
         {
           "chunkNumber": 3,
@@ -95,9 +95,9 @@
             "options": ["Lozenge", "Pill Bottle", "Blister Pack"],
             "expectedAnswer": "Lozenge"
           },
-          "imageBrief": "Vocabulary-reference support only. One plain unmarked lozenge on a clean tray; no dosage or edible candy claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A single smooth oval solid lozenge beside an unbranded plain blister strip. A small inset mouth icon with the same lozenge and a few fading dots communicates dissolving. Heading \"Lozenge\" and caption \"Dissolves in the mouth\". No candy branding, chewing, dosage or swallowing instructions.",
+          "imageAlt": "An illustration labelled “Lozenge” shows an oval solid and a blister strip, with a mouth inset captioned “Dissolves in the mouth”.",
+          "imageLabels": ["Lozenge", "Dissolves in the mouth"]
         },
         {
           "chunkNumber": 5,
@@ -236,9 +236,9 @@
             "options": ["Ointment Tube", "Lotion", "Injection Pen"],
             "expectedAnswer": "Ointment Tube"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain closed ointment tube, no printed medicine identity or dose. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "One capped soft metal tube with a visibly folded crimped tail and a plain label reading exactly \"Ointment\". Heading \"Ointment Tube\". Clear silhouette and cap, no application, drug identity, dosage or people.",
+          "imageAlt": "A capped metal tube labelled “Ointment” has a crimped end beneath the heading “Ointment Tube”.",
+          "imageLabels": ["Ointment", "Ointment Tube"]
         },
         {
           "chunkNumber": 2,
@@ -249,9 +249,9 @@
             "options": ["Prescription Counter", "Cash Register", "Medicine Shelf"],
             "expectedAnswer": "Prescription Counter"
           },
-          "imageBrief": "Vocabulary-reference support only. A clean pharmacy prescription-service counter with no customer or readable text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A small pharmacy service counter with a clear overhead sign \"Prescription Counter\". One modest adult male staff member behind it accepts a blank paper from one adult male customer. A simple paper-and-bottle icon supports the service context; no private details, dosage, brand or other people.",
+          "imageAlt": "Two illustrated men exchange a paper across a pharmacy counter beneath a “Prescription Counter” sign.",
+          "imageLabels": ["Prescription Counter"]
         },
         {
           "chunkNumber": 3,
@@ -414,9 +414,8 @@
             "options": ["Medicine Cabinet", "Refrigerated Medicine", "Pharmacist Coat"],
             "expectedAnswer": "Medicine Cabinet"
           },
-          "imageBrief": "Vocabulary-reference support only. A closed secure medicine storage cabinet in a pharmacy, no labels or visible contents. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary reference: A glass-front storage cabinet has several shelves filled with medicine boxes and bottles. The picture supports recognition of Medicine Cabinet; the written task supplies invisible properties, roles and events.",
+          "imageAlt": "A glass-front storage cabinet has several shelves filled with medicine boxes and bottles."
         },
         {
           "chunkNumber": 2,
@@ -463,9 +462,9 @@
             "options": ["Hand Sanitizer", "Disinfectant", "Cotton Ball"],
             "expectedAnswer": "Hand Sanitizer"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain capped hand-sanitizer pump bottle; identity is supplied by written context, not bottle appearance. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A pump bottle prominently labelled \"Hand Sanitizer\" beside a simple icon of two hands. The bottle is the main subject; no person, germ-killing percentages, efficacy promise, ingredients, instructional sequence or medical dose.",
+          "imageAlt": "A clear pump bottle labelled “Hand Sanitizer” stands beside a graphic of two hands.",
+          "imageLabels": ["Hand Sanitizer"]
         }
       ],
       "phrases": []
@@ -604,9 +603,9 @@
             "options": ["Herbal Remedy", "Antibiotic", "Painkiller"],
             "expectedAnswer": "Herbal Remedy"
           },
-          "imageBrief": "Vocabulary-reference support only. A closed plain pharmacy product container; no healing claims, herbs used as proof or readable labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A closed plain product jar labelled \"Herbal Remedy\" with a simple plant-leaf illustration beside it. Caption \"Plant-based product\". Educational product-category illustration only: no claims that natural means safe or effective, no instructions or depicted healing.",
+          "imageAlt": "A brown jar labelled “Herbal Remedy” stands beside leaves, above the caption “Plant-based product”.",
+          "imageLabels": ["Herbal Remedy", "Plant-based product"]
         },
         {
           "chunkNumber": 3,
@@ -617,9 +616,9 @@
             "options": ["Anti-inflammatory", "Antihistamine", "Antacid"],
             "expectedAnswer": "Anti-inflammatory"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk, no medicine identification, diagnosis or readable text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A clean educational graphic: a plain generic medicine container labelled \"Anti-inflammatory\" beside two small simplified tissue drawings representing greater and reduced inflammation. A conceptual arrow between the tissue drawings is labelled \"Reduces inflammation\". No specific medicine, patient, dose, treatment steps, guaranteed cure or before-and-after photograph.",
+          "imageAlt": "A bottle labelled “Anti-inflammatory” stands beside tissue diagrams joined by an arrow captioned “Reduces inflammation”.",
+          "imageLabels": ["Anti-inflammatory", "Reduces inflammation"]
         },
         {
           "chunkNumber": 4,
@@ -630,9 +629,9 @@
             "options": ["Shampoo", "Conditioner", "Body Lotion"],
             "expectedAnswer": "Shampoo"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain closed shampoo bottle; written context supplies its contents. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A tall bottle labelled \"Shampoo\" beside a small stylized inset of cropped male hair with soap bubbles. Bottle dominates, caption \"For washing hair\". No full person, women, medicinal claim, brand or instructions.",
+          "imageAlt": "A bottle labelled “Shampoo” stands beside an inset of a man’s hair with soap bubbles, captioned “For washing hair”.",
+          "imageLabels": ["Shampoo", "For washing hair"]
         },
         {
           "chunkNumber": 5,
@@ -643,9 +642,9 @@
             "options": ["Sunscreen", "Lip Balm", "Deodorant"],
             "expectedAnswer": "Sunscreen"
           },
-          "imageBrief": "Vocabulary-reference support only. A plain sunscreen tube on a shelf, no SPF value, brand or treatment claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A capped tube clearly labelled \"Sunscreen\" with a sun icon and a simple skin-protection shield symbol beside it. No SPF values, claim of total protection, application steps or people.",
+          "imageAlt": "A tube labelled “Sunscreen” has a sun symbol beside a shield graphic.",
+          "imageLabels": ["Sunscreen"]
         }
       ],
       "phrases": []
@@ -772,9 +771,9 @@
             "options": ["Contact Lens Solution", "Vitamin", "Supplement"],
             "expectedAnswer": "Contact Lens Solution"
           },
-          "imageBrief": "Vocabulary-reference support only. A closed plain lens-care bottle beside an empty lens case; no instructions or brand. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A closed bottle labelled exactly \"Contact Lens Solution\" beside an open two-well contact-lens case containing two transparent curved contact lenses. Keep lenses visibly separate from the bottle. No instructions, water substitution, ingredients, dosage, branding or people.",
+          "imageAlt": "A bottle labelled “Contact Lens Solution” stands beside an open two-well case holding transparent contact lenses.",
+          "imageLabels": ["Contact Lens Solution"]
         },
         {
           "chunkNumber": 2,
@@ -785,9 +784,9 @@
             "options": ["Probiotic", "Laxative", "Cough Syrup"],
             "expectedAnswer": "Probiotic"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk; no microbes, treatment effects or identification by packaging. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A generic closed product bottle labelled \"Probiotic\" beside a magnified circular schematic inset of a few stylized rod-shaped microorganisms. Caption \"Live microorganisms\". This is a concept diagram, not a microscope photograph or proof of product contents. No cure, benefit, safety or dosage claims.",
+          "imageAlt": "A bottle labelled “Probiotic” stands beside a circular microorganism diagram labelled “Live microorganisms”.",
+          "imageLabels": ["Probiotic", "Live microorganisms"]
         },
         {
           "chunkNumber": 3,
@@ -798,9 +797,9 @@
             "options": ["Throat Lozenge", "Insulin", "Drug Interaction Checker"],
             "expectedAnswer": "Throat Lozenge"
           },
-          "imageBrief": "Vocabulary-reference support only. One plain unmarked throat lozenge with sealed plain wrapper; no dose or benefit claim. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "One solid oval lozenge and an unbranded blister strip, with a small simple side-profile male mouth-and-throat outline. Heading \"Throat Lozenge\" and caption \"Dissolves in the mouth\". No dosage, treatment instructions, chewing, specific medicine or relief guarantee.",
+          "imageAlt": "An illustration labelled “Throat Lozenge” shows oval solids, a blister strip and a male mouth-and-throat outline, captioned “Dissolves in the mouth”.",
+          "imageLabels": ["Throat Lozenge", "Dissolves in the mouth"]
         },
         {
           "chunkNumber": 4,
@@ -823,9 +822,9 @@
             "options": ["Pharmacy Technician", "Cashier", "Customer"],
             "expectedAnswer": "Pharmacy Technician"
           },
-          "imageBrief": "Vocabulary-reference support only. One modest adult male pharmacy technician at a stock workbench, no patient, logo or text; role comes from context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A clear pharmacy role illustration: one adult man in a modest plain long-sleeved work shirt checks a boxed order beside a male pharmacist in a white coat. Point to the work-shirt man with the exact role label \"Pharmacy Technician\" and to the white-coat man with \"Pharmacist\". No inference of role from clothing alone, women, bystanders, real prescriptions or drug-use instructions.",
+          "imageAlt": "Two men check an order beside a box; arrows label the man in a blue shirt “Pharmacy Technician” and the man in a white coat “Pharmacist”.",
+          "imageLabels": ["Pharmacy Technician", "Pharmacist"]
         }
       ],
       "phrases": []
@@ -964,9 +963,9 @@
             "options": ["Consultant", "Security Guard", "Cleaner"],
             "expectedAnswer": "Consultant"
           },
-          "imageBrief": "Vocabulary-reference support only. One modest adult male consultant at an empty meeting table; the role is supplied by written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Two modestly dressed adult men at a simple project meeting. A visiting male consultant holds a small plain portfolio and discusses a simple unlabeled project diagram with the manager. Role labels \"Consultant\" and \"Manager\" clearly identify each person. No security guard, cleaner, women or unnecessary people.",
+          "imageAlt": "A standing man points to a project diagram while a seated man watches; the figures are labelled “Consultant” and “Manager”.",
+          "imageLabels": ["Consultant", "Manager"]
         },
         {
           "chunkNumber": 3,
@@ -977,9 +976,9 @@
             "options": ["Pharmacy Assistant", "Pharmacy Intern", "Pharmacy Manager"],
             "expectedAnswer": "Pharmacy Assistant"
           },
-          "imageBrief": "Vocabulary-reference support only. One modest adult male pharmacy assistant at a plain counter, no patient or labels; role comes from context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "One adult male pharmacy assistant in a long-sleeved plain shirt arranging blank order trays at a pharmacy service counter. A pointer and large label \"Pharmacy Assistant\" identifies him explicitly. No customers, other staff, women, medicine dispensing steps or private data.",
+          "imageAlt": "A man sorts trays at a pharmacy counter beneath an arrow labelled “Pharmacy Assistant”.",
+          "imageLabels": ["Pharmacy Assistant"]
         },
         {
           "chunkNumber": 4,
@@ -990,9 +989,9 @@
             "options": ["Pharmacy Owner", "Pharmacy Representative", "Pharmacy Trainee"],
             "expectedAnswer": "Pharmacy Owner"
           },
-          "imageBrief": "Vocabulary-reference support only. One modest adult male business owner at a plain office desk; no readable papers, logos or role labels. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Two adult men meeting at a pharmacy office desk with plain supply cartons nearby. Clearly label the seated proprietor \"Pharmacy Owner\" and the visitor \"Representative\" with small role annotations. No women, trainees, bystanders, implied ownership from appearance, signatures or financial figures.",
+          "imageAlt": "Two men meet at a desk beside supply boxes; annotations label them “Pharmacy Owner” and “Representative”.",
+          "imageLabels": ["Pharmacy Owner", "Representative"]
         },
         {
           "chunkNumber": 5,
@@ -1131,9 +1130,9 @@
             "options": ["Prescription Drop-Off", "Pick-Up Counter", "Health Poster"],
             "expectedAnswer": "Prescription Drop-Off"
           },
-          "imageBrief": "Vocabulary-reference support only. An empty pharmacy prescription drop-off service desk with blank paper tray, no readable signs. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "One adult male customer hands a plain blank prescription sheet across a pharmacy intake desk to one male staff member. The overhead sign reads exactly \"Prescription Drop-Off\". A single small arrow indicates submitting the paper into an intake tray. No pick-up counter, patient names, actual medicine instructions, women or extra people.",
+          "imageAlt": "Two men pass a paper across a counter beneath a “Prescription Drop-Off” sign, with an arrow pointing to an intake tray.",
+          "imageLabels": ["Prescription Drop-Off"]
         },
         {
           "chunkNumber": 2,
@@ -1156,9 +1155,9 @@
             "options": ["Loyalty Card", "Parking Lot", "Wheelchair Access"],
             "expectedAnswer": "Loyalty Card"
           },
-          "imageBrief": "Vocabulary-reference support only. A blank generic customer card beside a plain wallet; no number, barcode or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A simple store card labelled \"Loyalty Card\" beside a wallet and three small reward-star icons. Caption \"Store rewards\". No bank or insurance symbolism, personal details, barcode, real points or monetary promise.",
+          "imageAlt": "A card labelled “Loyalty Card” lies beside a wallet and three stars, above the caption “Store rewards”.",
+          "imageLabels": ["Loyalty Card", "Store rewards"]
         },
         {
           "chunkNumber": 4,
@@ -1169,9 +1168,9 @@
             "options": ["Pharmacy App", "Online Refill", "Courier Service"],
             "expectedAnswer": "Pharmacy App"
           },
-          "imageBrief": "Vocabulary-reference support only. A smartphone with a blank screen on a counter; written context supplies app identity. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A large smartphone screen with a simple readable app header \"Pharmacy App\" and a single large tile \"Order status\" featuring a parcel icon. Clean app-like graphic with no logos, notifications, names, drug names, personal details, women or other devices.",
+          "imageAlt": "A man holds a phone displaying “Pharmacy App” and an “Order status” tile with a parcel icon.",
+          "imageLabels": ["Pharmacy App", "Order status"]
         },
         {
           "chunkNumber": 5,
@@ -1182,9 +1181,8 @@
             "options": ["Vaccination Clinic", "Pill", "Mortar"],
             "expectedAnswer": "Vaccination Clinic"
           },
-          "imageBrief": "Vocabulary-reference support only. An empty clean vaccination consultation room, no needle, patient, procedure or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "Vocabulary reference: A bright room has four chairs in screened bays and a sign reading “Vaccination Clinic”. The picture supports recognition of Vaccination Clinic; the written task supplies invisible properties, roles and events.",
+          "imageAlt": "A bright room has four chairs in screened bays and a sign reading “Vaccination Clinic”."
         }
       ],
       "phrases": []
@@ -1315,9 +1313,9 @@
             "options": ["Prescription Pad", "Counter", "Prescription"],
             "expectedAnswer": "Prescription Pad"
           },
-          "imageBrief": "Vocabulary-reference support only. A blank prescription-style paper pad on a plain desk, no names, medical directions or text. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A plain paper pad on a desk beside a pen. Its top sheet has the heading \"Prescription\" and blank lined fields; an external annotation reads \"Prescription Pad\". No names, signatures, medicine names, strengths, actual doses, private data or people.",
+          "imageAlt": "A lined paper pad headed “Prescription” lies beside a pen, with a pointer labelled “Prescription Pad”.",
+          "imageLabels": ["Prescription", "Prescription Pad"]
         },
         {
           "chunkNumber": 3,
@@ -1328,9 +1326,9 @@
             "options": ["Dosage", "Consultation", "Refill"],
             "expectedAnswer": "Dosage"
           },
-          "imageBrief": "Vocabulary-reference support only. A neutral pharmacy consultation desk with closed plain packaging; no dose, numbers or medicine-use demonstration. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A clear two-part vocabulary infographic headed \"Dosage\". Left: a simple measuring-container icon labelled \"Amount\". Right: a clock icon labelled \"How often\". Join them beneath the title to show the two parts of the meaning. No numeric values, medicine names, schedule, dose recommendation, ingestion, patient or treatment instructions.",
+          "imageAlt": "A diagram headed “Dosage” branches to a measuring cup labelled “Amount” and a clock labelled “How often”, without numeric dose values.",
+          "imageLabels": ["Dosage", "Amount", "How often"]
         },
         {
           "chunkNumber": 4,
@@ -1341,9 +1339,9 @@
             "options": ["Insurance", "Delivery", "Pestle"],
             "expectedAnswer": "Insurance"
           },
-          "imageBrief": "Vocabulary-reference support only. A blank generic benefits card beside closed plain documents; coverage is supplied only by written context. The written scenario supplies roles, substance identity, intentions and other invisible information. Do not depict diagnosis, treatment steps, product efficacy, numeric readings or a medical dose. No readable text, labels, logos, highlighting or incidental people. Preserve relevant shape details in 4:3 landscape.",
-          "imageAlt": "Image pending independent visual review; final alternative text must describe the delivered reference.",
-          "imageGenerationHold": "The current composition cannot distinguish the intended substance, temperature, role, service or condition from similar alternatives without labels or unobservable claims. Keep the written task; hold new imagery pending a diagnostic visual brief."
+          "imageBrief": "A simple concept infographic headed \"Insurance\". Show a generic benefits card, a pharmacy-cost document with NO figures, and an umbrella icon suggesting a coverage arrangement. Caption \"May cover costs\" and smaller line \"Coverage varies\". No claim of guaranteed coverage, company logo, real policy, money amounts or people.",
+          "imageAlt": "An illustration headed “Insurance” shows a card, umbrella and document, with “May cover costs” and “Coverage varies”.",
+          "imageLabels": ["Insurance", "May cover costs", "Coverage varies"]
         }
       ],
       "phrases": []

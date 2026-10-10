@@ -38,6 +38,13 @@ export const usageSceneChunkSchema = z
     imageGenerationHold: z.string().trim().min(1).optional(),
     /** Reject historical readable-glyph exceptions in current authoring data. */
     imageSymbols: z.never().optional(),
+    /** Explicit labels approved for a particular educational illustration. */
+    imageLabels: z
+      .array(z.string().trim().min(1).max(80))
+      .min(1)
+      .max(5)
+      .refine((labels) => new Set(labels).size === labels.length, "Image labels must be unique.")
+      .optional(),
     /** Written-task repair anchored to the preserved, read-only media evidence. */
     learningContext: z
       .object({

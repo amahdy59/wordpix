@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import generated from "../generated/reviewedGeneratedSceneMedia.json";
 import previous from "../generated/reviewedFigmaObjectScenes.json";
 import classroom from "../data/usage/classroom.usage.json";
+import publication from "../../../docs/content-review/approved-image-publication-2026-10-10.json";
 import { unitUsageDataSchema } from "../data/usageTypes";
 import { attachReviewedUsageIllustrations } from "../data/reviewedUsageIllustrations";
 
@@ -9,9 +10,16 @@ describe("independently reviewed generated scene media", () => {
   it("adds new scene identities without replacing established object mappings", () => {
     for (const [id, media] of Object.entries(generated)) {
       expect(previous).not.toHaveProperty(id);
-      expect(media.imagePath).toMatch(
-        /^question-images\/(?:v2\/[a-z0-9-]+|v3\/shared\/[a-z0-9-]+)\/[a-f0-9]{64}\.webp$/
+      const reused = publication.items.find(
+        (item) => item.sceneId === id && item.selection === "reuse-existing"
       );
+      if (reused) {
+        expect(media.imagePath).toBe(reused.imagePath);
+        expect(media).toHaveProperty("imagePurpose", "word-reference");
+      } else
+        expect(media.imagePath).toMatch(
+          /^question-images\/(?:v2\/[a-z0-9-]+|v3\/shared\/[a-z0-9-]+)\/[a-f0-9]{64}\.webp$/
+        );
       expect(media.imageAlt.trim().length).toBeGreaterThan(20);
       expect(media.reviewedQuestion.trim()).not.toBe("");
     }

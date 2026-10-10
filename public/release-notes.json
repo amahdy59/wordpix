@@ -1,16 +1,37 @@
 {
-  "version": "0.1.14",
+  "version": "0.1.15",
   "notes": [
-    "More compact Home, Learn, Practice, Library and Profile layouts, with sticky Library search and settings available from Profile.",
-    "Responsive reference tables, compact warm-ups and answer choices, and discussion guidance grouped with its question.",
-    "Submitted answer choices keep keyboard focus while preventing further changes."
+    "41 reviewed vocabulary pictures now support first-aid and pharmacy scenes, including clear labelled illustrations and five reused reference images.",
+    "Hot Pack now uses the approved person-free picture. Picture descriptions reflect what is actually visible."
   ],
   "notesAr": [
-    "تنسيق أكثر اختصارًا للرئيسية والتعلّم والتدريب والمكتبة والملف الشخصي، مع تثبيت بحث المكتبة وإتاحة الإعدادات من الملف الشخصي.",
-    "جداول مرجعية متجاوبة وتمهيدات وخيارات إجابة مختصرة، مع تجميع إرشادات النقاش بجانب السؤال.",
-    "تحتفظ خيارات الإجابة المرسلة بتركيز لوحة المفاتيح مع منع تغيير الإجابة."
+    "تدعم 41 صورة مفردات تمت مراجعتها مشاهد الإسعافات الأولية والصيدلية، بما فيها رسوم توضيحية واضحة تحمل تسميات وخمس صور مرجعية أُعيد استخدامها.",
+    "تستخدم مفردة الكمّادة الساخنة الآن الصورة المعتمدة الخالية من الأشخاص. وتعكس أوصاف الصور ما يظهر فيها فعلًا."
   ],
   "releases": [
+    {
+      "id": "0.1.15",
+      "version": "0.1.15",
+      "date": "2026-10-10",
+      "title": {
+        "en": "Clearer first-aid and pharmacy pictures",
+        "ar": "صور أوضح للإسعافات الأولية والصيدلية"
+      },
+      "changes": [
+        {
+          "id": "first-aid-pharmacy-references",
+          "category": "added",
+          "en": "41 reviewed vocabulary pictures now support first-aid and pharmacy scenes, including clear labelled illustrations and five reused reference images.",
+          "ar": "تدعم 41 صورة مفردات تمت مراجعتها مشاهد الإسعافات الأولية والصيدلية، بما فيها رسوم توضيحية واضحة تحمل تسميات وخمس صور مرجعية أُعيد استخدامها."
+        },
+        {
+          "id": "person-free-hot-pack",
+          "category": "fixed",
+          "en": "Hot Pack now uses the approved person-free picture. Picture descriptions reflect what is actually visible.",
+          "ar": "تستخدم مفردة الكمّادة الساخنة الآن الصورة المعتمدة الخالية من الأشخاص. وتعكس أوصاف الصور ما يظهر فيها فعلًا."
+        }
+      ]
+    },
     {
       "id": "0.1.14",
       "version": "0.1.14",

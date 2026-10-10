@@ -24,7 +24,9 @@ export function contentDigest(lesson, phrases, bilingual = {}) {
     .digest("hex");
 }
 export function referenceGenerationPrompt(scene) {
-  const textPolicy = imageTextPolicy(scene.imageSymbols);
+  const textPolicy = imageTextPolicy(scene.imageSymbols, scene.imageLabels);
+  if (scene.imageLabels !== undefined)
+    return `Create one clear educational visual for adult English vocabulary. Concept: ${scene.check.expectedAnswer}. ${scene.imageBrief} Use a polished editorial educational illustration, realistic proportions, calm natural colors, uncluttered pale background, strong dark readable labels and landscape 4:3 composition. Minimum people needed; every person must be an adult man in modest clothing. Absolutely no women, girls, children or female silhouettes, including posters or screens. ${textPolicy} Labels explain vocabulary and must not invent medical treatment, identity or coverage. No commercial branding or watermarks. Return exactly one image.`;
   return `Create one realistic adult-learning vocabulary reference. Concept: ${scene.check.expectedAnswer}. ${scene.imageBrief} Prefer a human-free composition. Essential non-gender-specific roles use one modest adult man; any indispensable woman wears hijab covering hair and neck, loose opaque full-length clothing and long sleeves. No incidental people, arrows, circles or answer highlighting. ${textPolicy} 4:3 landscape; preserve meaningful details at mobile size. Return one image.`;
 }
 export function loadGenerationReviews(sourceRoot, reviewFile) {

@@ -186,6 +186,29 @@ test("numeric glyph exceptions cannot bypass the strict no-readable-text policy"
   );
 });
 
+test("reviewed illustration labels are bounded and do not permit historical symbol exceptions", () => {
+  const scene = { ...lesson.usage.scenes[0], imageLabels: ["Cold Pack"] };
+  assert.match(referenceGenerationPrompt(scene), /ONLY these exact readable labels: "Cold Pack"/);
+  assert.match(referenceGenerationPrompt(scene), /Absolutely no women/);
+  assert.match(referenceGenerationPrompt(scene), /No other text, numbers/);
+  for (const imageLabels of [
+    [],
+    [""],
+    ["A", "A"],
+    ["A", "B", "C", "D", "E", "F"],
+    [" A"],
+    ["A".repeat(81)],
+  ])
+    assert.throws(
+      () => referenceGenerationPrompt({ ...scene, imageLabels }),
+      /reviewed image labels/
+    );
+  assert.throws(
+    () => referenceGenerationPrompt({ ...scene, imageSymbols: ["2"] }),
+    /symbols are prohibited/
+  );
+});
+
 test("an approved written lesson can hold imagery; queues and paid preflight exclude it", (t) => {
   const { root, item } = fixture(t);
   const revised = structuredClone(lesson);

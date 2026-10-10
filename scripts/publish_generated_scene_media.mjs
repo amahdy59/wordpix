@@ -1,4 +1,5 @@
 import fs from "node:fs";
+import path from "node:path";
 import { parseEnv } from "node:util";
 import { createRequire } from "node:module";
 import sharp from "sharp";
@@ -67,6 +68,8 @@ else {
   if (!base || new URL(base).protocol !== "https:")
     throw new Error("An HTTPS media base is required.");
   const receipt = [];
+  const receiptFile = args.receipt || "output/generated-media-publication/receipt.json";
+  fs.mkdirSync(path.dirname(receiptFile), { recursive: true });
   for (const { r, bytes, entry } of prepared) {
     const created = await client.putIfAbsent(entry.imagePath, bytes, { contentType: "image/webp" });
     const remote = await client.get(entry.imagePath);
@@ -90,11 +93,7 @@ else {
       created,
       verified: true,
     });
-    fs.mkdirSync("output/generated-media-publication", { recursive: true });
-    fs.writeFileSync(
-      "output/generated-media-publication/receipt.json",
-      JSON.stringify(receipt, null, 2)
-    );
+    fs.writeFileSync(receiptFile, JSON.stringify(receipt, null, 2));
     console.log(`Verified new media: ${r.sceneId}`);
   }
   console.log(JSON.stringify({ verified: receipt.length, existingMappingsPreserved: true }));

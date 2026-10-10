@@ -1,5 +1,6 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { resolveAssetUrl } from "../../utils/assetUrl";
+import selections from "../generated/reviewedVocabularyImageSelections.json";
 
 /**
  * The regression: vocabulary stores image paths rooted at the site root
@@ -50,5 +51,14 @@ describe("resolveAssetUrl", () => {
 
   it("passes empty input straight through", () => {
     expect(resolveAssetUrl("")).toBe("");
+  });
+  it("selects the approved person-free Hot Pack reference without changing other vocabulary images", () => {
+    vi.stubEnv("BASE_URL", "/wordpix/");
+    const selected = `/wordpix/${selections["word-images/first-aid-room/hot-pack.avif"]}`;
+    expect(resolveAssetUrl("/word-images/first-aid-room/hot-pack.avif")).toBe(selected);
+    expect(resolveAssetUrl(selected)).toBe(selected);
+    expect(resolveAssetUrl("/word-images/first-aid-room/cold-pack.avif")).toBe(
+      "/wordpix/word-images/first-aid-room/cold-pack.avif"
+    );
   });
 });

@@ -1,4 +1,5 @@
 import { FIGMA_IMAGE_REPLACEMENTS } from "../generated/figmaImageReplacements";
+import vocabularySelections from "../app/generated/reviewedVocabularyImageSelections.json";
 
 /**
  * Resolves an app-relative asset path against Vite's configured base.
@@ -20,7 +21,12 @@ export function resolveAssetUrl(path: string): string {
     return path;
   }
 
-  const relative = path.replace(/^\.?\//, "");
+  const originalRelative = path.replace(/^\.?\//, "");
+  // A human-approved display choice preserves the original vocabulary mapping
+  // and its R2 object while selecting the preferred immutable reference.
+  const selections: Readonly<Record<string, string>> = vocabularySelections;
+  const relative = selections[originalRelative] ?? originalRelative;
+  if (relative !== originalRelative) path = relative;
 
   // Reviewed usage illustrations use immutable, content-hashed object keys.
   // Shared references have their own namespace; unverified paths stay local.
