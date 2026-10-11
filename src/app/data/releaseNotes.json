@@ -1,14 +1,37 @@
 {
-  "version": "0.1.17",
+  "version": "0.1.18",
   "notes": [
-    "Full image coverage across all 1,246 curriculum phrase cards, collocations, phrasal verbs and idioms.",
-    "Integrated responsive illustration cards in lesson practice and published optimized assets to Cloudflare R2."
+    "Upgraded 85 core visual assets across app shell, section hero banners, and lesson exercise scenes.",
+    "Replaced blank placeholder heroes, fixed broken conductor vocabulary, and resolved visual ambiguities across produce and home settings."
   ],
   "notesAr": [
-    "تغطية بصرية كاملة عبر جميع بطاقات عبارات المنهج البالغ عددها 1,246 عبارة وتعبيرًا وأفعالاً مركبة.",
-    "دمج بطاقات توضيحية متجاوبة داخل تمارين الدروس ونشر الوسائط المحسنة على Cloudflare R2."
+    "ترقية 85 عنصرًا بصريًا أساسيًا عبر واجهة التطبيق ولافتات الأقسام الرئيسية ومشاهد تمارين الدروس.",
+    "استبدال اللافتات الفارغة وإصلاح بطاقة المايسترو وحل الغموض البصري في المنتجات ومشاهد المنزل."
   ],
   "releases": [
+    {
+      "id": "0.1.18",
+      "version": "0.1.18",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Enhanced curriculum hero banners and lesson clarity illustrations",
+        "ar": "تحسين لافتات الأقسام والرسوم التوضيحية لتمارين الدروس"
+      },
+      "changes": [
+        {
+          "id": "hero-banners-and-clarity-enhancements",
+          "category": "improved",
+          "en": "Upgraded 85 core visual assets across app shell, section hero banners, and lesson exercise scenes.",
+          "ar": "ترقية 85 عنصرًا بصريًا أساسيًا عبر واجهة التطبيق ولافتات الأقسام الرئيسية ومشاهد تمارين الدروس."
+        },
+        {
+          "id": "placeholder-and-ambiguity-fixes",
+          "category": "fixed",
+          "en": "Replaced blank placeholder heroes, fixed broken conductor vocabulary, and resolved visual ambiguities across produce and home settings.",
+          "ar": "استبدال اللافتات الفارغة وإصلاح بطاقة المايسترو وحل الغموض البصري في المنتجات ومشاهد المنزل."
+        }
+      ]
+    },
     {
       "id": "0.1.17",
       "version": "0.1.17",
