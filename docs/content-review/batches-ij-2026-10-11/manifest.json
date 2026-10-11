@@ -1,0 +1,426 @@
+{
+  "runDate": "2026-10-11T07:35:08.015Z",
+  "selectedBatch": "ALL",
+  "summary": {
+    "batchI": {
+      "total": 29,
+      "failed": 0
+    },
+    "batchJ": {
+      "total": 22,
+      "failed": 0
+    }
+  },
+  "batchI": [
+    {
+      "id": "bathroom-1-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-shower-above-bathtub.webp",
+      "bytes": 56348,
+      "sha256": "6af0a97638e58d359f90940d82b7206de9c15f541f49b3c3c1b0a28741712cbb",
+      "prompt": "Photorealistic modern bathroom interior photography. A clean, bright residential bathroom showing a white bathtub with a chrome shower head and riser rail mounted directly above the bathtub on tiled walls, with a white toilet neatly positioned beside the bath. Clean glass splash screen. Natural daylight. Strictly human-free composition. Strictly no text, labels, soap brand names, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-1-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-sink-faucet-drain.webp",
+      "bytes": 19260,
+      "sha256": "054228aeeeaeb93ffe844ec2f03b4819f74df6bd6c69c907062bbb2963c19f6d",
+      "prompt": "Photorealistic macro interior photography. A pristine white ceramic bathroom vanity sink with a gleaming chrome faucet mixer tap. The central chrome circular drain opening at the bottom of the basin is distinctly visible, open, uncovered, and sharp in focus. Fresh clean lighting. Strictly human-free composition. Strictly no text, brand logos, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-1-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-blue-wall-tiles.webp",
+      "bytes": 109918,
+      "sha256": "94c91612aa2804b9d2a283dfc8e7e00c503394ada1e1d5e70b0c0a90e5b1c1d8",
+      "prompt": "Photorealistic bathroom interior photography. A stylish modern bathroom wall clad in glossy azure blue ceramic subway tiles with clean white grout lines, illuminated by warm vanity lighting, with a simple chrome towel bar holding a neutral gray folded towel. Clean modern aesthetic. Strictly human-free composition. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-2-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-haircare-bottles.webp",
+      "bytes": 71944,
+      "sha256": "4f82220f019543b72d03663c5da5288210a3aed2af191dca9effba2228bb85bd",
+      "prompt": "Photorealistic still life photography. A teak shower ledge displaying two distinct elegant pump bottles: one tall amber translucent bottle containing liquid hair shampoo, and one opaque white squeeze tube bottle containing rich hair conditioner, beside a plain soap dish with a bar of soap. Fresh ambient lighting. Strictly human-free composition. Plain cosmetic packaging with strictly no readable text, brand names, letters, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-2-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-comb-brush-lotion.webp",
+      "bytes": 80188,
+      "sha256": "884e4582822eba6fc8b0bc80564f8239a50747ebc1d9290c50078a11f0be302e",
+      "prompt": "Photorealistic still life flat lay. On a marble bathroom countertop, a fine-toothed wooden hair comb, an oval natural-bristle hairbrush, and an open pump dispenser bottle with a small dollop of creamy white moisturizing hand lotion clearly visible beside it. Elegant adult grooming setting. Strictly human-free composition. Plain bottle with strictly no text, letters, logos, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-3-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-medical-thermometer.webp",
+      "bytes": 53408,
+      "sha256": "dd81d0968c7a0de9c6ab222b9268324b5dabb84f136d3b7c7c07f399e962d104",
+      "prompt": "Photorealistic still life photography. A digital oral clinical body thermometer resting on a white bedside tray next to a glass of water and a folded washcloth, clearly showing a digital medical probe used for checking fever. Soft indoor lighting. Strictly human-free composition. Generic digital display without readable numerals or letters. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-4-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-shower-gel-dispenser.webp",
+      "bytes": 68958,
+      "sha256": "ce5bc075114933ea7ddcb3459a60c055dc95a2b6fbe477bc0b1443df3d9c53ce",
+      "prompt": "Photorealistic bathroom still life. In a tiled shower niche, a sleek clear plastic pump bottle filled with vibrant translucent amber-gold bubbling liquid shower gel, with natural soap suds resting on a natural loofah sponge beside it. Wet glossy tile background. Strictly human-free composition. Plain bottle with strictly no text, labels, words, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-5-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-sunscreen-face-cream.webp",
+      "bytes": 142328,
+      "sha256": "15f00e6ed0564b162ad766c802c09ea59da8381480cd17ab8e95abf895d2f9f2",
+      "prompt": "Photorealistic cosmetic flat lay. On a clean stone vanity shelf, an unlabelled yellow squeeze tube of sunscreen with a small dab of white protective sun cream visible at the nozzle, beside a round glass jar of facial moisturizer and a twist-up lip balm stick. Summer skincare aesthetic. Strictly human-free composition. Completely blank cosmetic packaging with strictly no readable text, brand names, letters, SPF numbers, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-5-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-hand-soap-counter.webp",
+      "bytes": 69514,
+      "sha256": "465b9a490280aca89e1da954067da6c0cce89d8abfbf739994edee8bf67e7cf3",
+      "prompt": "Photorealistic bathroom vanity still life. A frosted glass pump bottle of liquid hand soap beside a ceramic sink with a small puddle of soapy lather near the spout, accompanied by an opaque body wash bottle and a clear bottle of teal mouthwash. Warm natural daylight. Strictly human-free composition. Plain containers with strictly no labels, letters, brand names, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-5-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-dental-floss-care.webp",
+      "bytes": 34668,
+      "sha256": "037f1ef25e086d682e88dc0008d7d688a187b56c4f5d1a714d9ffc51101b6019",
+      "prompt": "Photorealistic still life photography. A compact curved white plastic container of dental floss with a taut length of fine white floss thread extended from the cutter, resting prominently on a vanity next to a facial wash tube and a clear pump bottle of hand sanitizer. Bright crisp bathroom lighting. Strictly human-free composition. Strictly no text, logos, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-5-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-wet-wipes-dispenser.webp",
+      "bytes": 67934,
+      "sha256": "9ef0e69dcfa88f559ef171e91c1cba73d676bde30eb98fb79dcbaad0449f428c",
+      "prompt": "Photorealistic still life photography. A resealable soft moisture pack with a flip-top lid, with one moist, textured white cleansing wet wipe distinctly pulled partially out of the opening, showing its damp, woven cloth texture on a bathroom shelf. Clean ambient lighting. Strictly human-free composition. Plain packaging with strictly no text, brand names, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-6-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-plunger-squeegee-tools.webp",
+      "bytes": 39662,
+      "sha256": "6f0201f757cc4024f1545ac3d12a6047c7ca57965189367f97f0aa47fc88f16f",
+      "prompt": "Photorealistic utility still life. In a tiled bathroom corner, a classic red rubber cup toilet plunger with a sturdy wooden handle, standing neatly beside a chrome glass-shower squeegee wiper blade with a black rubber strip, and a box of facial tissues on a shelf. Tidy, hygienic presentation. Strictly human-free composition. Strictly no labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-6-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-action-washing-hands.webp",
+      "bytes": 58730,
+      "sha256": "d858d639ab48573ffb7b9888e8bbef81c2692bc9811bdf1eba6da1bef8c4a30d",
+      "prompt": "Photorealistic action photography. A pair of modest adult male hands lathering together under a gentle stream of running tap water above a sleek ceramic sink, with rich foamy soap bubbles coating the hands. Clean, modern hotel bathroom. Focused on hands and wrists only. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-6-usage-scene-5",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-action-combing-hair.webp",
+      "bytes": 115108,
+      "sha256": "2ef2ec5ae8c31aebeb2631c415f2d084437aaa0fbb3cfa20fabe60a9116b3844",
+      "prompt": "Photorealistic grooming photography. Viewed from behind and slightly to the side, a modest adult man in a white robe standing before a bathroom vanity mirror, using a wooden comb to neatly part and comb his short dark hair. Warm bathroom lighting. Male figure only. Strictly no text, mirror text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bathroom-6-usage-scene-6",
+      "status": "reused",
+      "targetFile": "public/scene-images/bathroom-action-applying-lotion.webp",
+      "bytes": 50620,
+      "sha256": "5d435691025bf77167c7cfaf646fe76d8d770723c81166f12c424c5b5347ee06",
+      "prompt": "Photorealistic skincare photography. Close-up of modest adult male hands smoothly massaging rich white moisturizing skin lotion into the back of his hand and wrist above a clean stone bathroom counter. Soft natural window light. Focused on hands only. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-1-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-bed-nightstand-dresser.webp",
+      "bytes": 67898,
+      "sha256": "588a191a750beb61408dd597a4d62433fe0e09b9b18a2bb5931244dd5deb5c3a",
+      "prompt": "Photorealistic adult bedroom interior photography. An elegant modern master bedroom featuring a made bed with neutral linen duvets on the left, a solid oak bedside nightstand with a small lamp and book in the center, and a matching low chest of drawers (dresser) on the right. Warm ambient daylight. Strictly human-free composition, with abstract framed landscape art on the wall (no people depicted in pictures). Strictly no text, logos, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-2-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-thick-padded-comforter.webp",
+      "bytes": 89526,
+      "sha256": "2929a4e73bfa2639251b811766345ea48fbca770f9ff556a4f928c161c97eaeb",
+      "prompt": "Photorealistic bedroom photography. An adult king-size bed dressed with a luxurious, thick, plushly padded down comforter duvet with visible diamond baffle-box stitching, folded neatly across the mattress, beside soft pillowcases and a decorative velvet cushion. Cozy, refined bedroom lighting. Strictly human-free composition. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-2-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-sturdy-bed-frame.webp",
+      "bytes": 78052,
+      "sha256": "796be67c6327ce1105252e124bcd306cfaeef8581a5d089412be44e4ffb1faa6",
+      "prompt": "Photorealistic furniture photography. A stylish modern adult bed viewed from a low three-quarter angle, clearly showcasing the sturdy solid oak wooden bed frame with visible support slats and tapered wooden legs elevating the mattress off the hardwood floor, with an integrated wooden headboard behind. Clean architectural lighting. Strictly human-free composition. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-2-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-wall-to-wall-carpet.webp",
+      "bytes": 149924,
+      "sha256": "2b29f833a5c41c31cf7990b9f7a2ac7270f6cb56cc82aa25454b27577b59979f",
+      "prompt": "Photorealistic interior photography. A spacious adult master bedroom featuring seamless, wall-to-wall plush beige fitted carpet covering the entire floor from corner to corner, with the foot of a bed and an accent armchair resting directly upon it. Warm overhead ceiling pendant lighting. Strictly human-free composition. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-3-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-hangers-pajamas-slippers.webp",
+      "bytes": 64896,
+      "sha256": "a0c9f7bf9d7630061e105113d505d8dd4f16dd3bf0d8593fa7e3885b83b72995",
+      "prompt": "Photorealistic bedroom still life. In an open wardrobe, three sleek curved wooden coat hangers hanging from a chrome rail, with a set of classic lightweight striped cotton button-down pajama sleepwear folded neatly on a shelf, and a pair of soft woolen slippers resting on the floor below. Organized adult wardrobe aesthetic. Strictly human-free composition. Plain garments with strictly no brand tags, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-3-usage-scene-5",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-adult-robe-chair.webp",
+      "bytes": 122466,
+      "sha256": "0658ddb2cab55a4f6a7a189c9ddb7c3fe3d9fcc3fd3dd0b776e9c6a2fcdb83b3",
+      "prompt": "Photorealistic adult interior photography. A sophisticated adult bedroom with neutral tones, showing a plush charcoal gray waffle-weave adult bathrobe draped gracefully over a mid-century accent armchair beside a reading lamp, with an architectural travel poster on the wall. Sophisticated mature setting. Strictly human-free composition. Strictly no toys, no teddy bears, and no readable text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-4-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-backpack-jewelry-box.webp",
+      "bytes": 115194,
+      "sha256": "5c3339a5f2d2272610e00b3aa38bc3f31dc1ca58c4310fd47bb504d9f3cec591",
+      "prompt": "Photorealistic still life flat lay. On a dresser in an adult bedroom, a durable canvas travel backpack with padded shoulder straps, an elegant polished rosewood jewelry box with a brass clasp open to reveal velvet compartments for cufflinks and rings, and a smartphone resting nearby. Sophisticated adult travel accessories. Strictly human-free composition. Blank accessories with strictly no logos, brand text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "bedroom-4-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/bedroom-wall-charger-laptop.webp",
+      "bytes": 60740,
+      "sha256": "7b4629ddac8bcb34546ff2307929e42bbe8b8ff8b7a9d9fb44b05d62b6927893",
+      "prompt": "Photorealistic tech still life. On an oak bedroom work desk, a compact white wall power adapter plug with a USB-C charging cable visibly plugged into a modern slim laptop, charging its battery, with a pair of over-ear headphones lying beside it. Tidy home office desk setup. Strictly human-free composition. Laptop screen is dark and blank. Strictly no text, brand logos, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-1-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-dining-seating-scene.webp",
+      "bytes": 113728,
+      "sha256": "8815c9fa8d0f0d7b6418fa390384918e20a70abdd800ec7f8c5d25cab680c3c0",
+      "prompt": "Photorealistic dining photography. A warm family dining area showing an oak dining table set for a meal. Exactly three modest adult men are seated eating lunch: two men sit on individual wooden dining chairs with high backs, and one man sits comfortably on a wooden dining bench along the near side of the table. Natural lunchtime window light. No women. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-2-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-remote-speaker-console.webp",
+      "bytes": 49120,
+      "sha256": "8a214b2b4af5657df7a7fb021ca2587f248491febc68b170a428d38d0df9e7c1",
+      "prompt": "Photorealistic living room still life. On a sleek TV credenza, a black handheld TV remote control with distinct rubber buttons resting prominently in front, next to a cylindrical mesh wireless speaker, and a matte black video game entertainment console unit with cooling vents standing beside the television. Cozy evening living room lighting. Strictly human-free composition. Remote buttons have generic geometric symbols without letters or brand logos. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-3-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-floor-lamp-sofa.webp",
+      "bytes": 74570,
+      "sha256": "8e33f28418add832ac385a36d1b4696b9b74d9895d6c3fe7da1cbaf1ab6ef59c",
+      "prompt": "Photorealistic living room interior photography. A comfortable contemporary living room with a large gray fabric three-seater sofa, a tall arched brass floor lamp standing directly beside the sofa illuminating the corner, a small side table holding a ceramic table lamp, and an overhead flush ceiling light illuminating the whole room. Balanced evening interior glow. Strictly human-free composition. Strictly no text, posters, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-3-usage-scene-5",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-area-rug-carpet.webp",
+      "bytes": 140950,
+      "sha256": "5426277edea23618a8ef57eb323f1272b299787ff2c00ef03652abb7a95d5bf8",
+      "prompt": "Photorealistic interior photography. A contemporary living room with smooth polished light wood flooring, featuring a distinct rectangular woven patterned wool area rug with fringed edges placed beneath a coffee table, with floor-to-ceiling linen curtains framing the window. Clear distinction showing the standalone loose area rug on top of the bare flooring. Bright daylight. Strictly human-free composition. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-4-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-framed-painting-vase.webp",
+      "bytes": 43048,
+      "sha256": "5806f138d53adef78d506d24befbd5be3da1163af057425bd15cecbe4bfeec9b",
+      "prompt": "Photorealistic interior decor photography. A wooden console table against a painted wall, holding a clear glass vase filled with fresh colorful tulips and a small standing tabletop photo frame. Directly mounted on the wall hanging centered above the table is a framed landscape canvas painting. Soft gallery lighting. Strictly human-free composition. Painting shows rolling green hills without people or text. Strictly no text or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-5-usage-scene-5",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-action-taking-nap.webp",
+      "bytes": 104796,
+      "sha256": "df615e4a7149ee8d96efcb77bc63f6f0d6e36e35b4d62b6e3a44e6f66bf5085a",
+      "prompt": "Photorealistic cozy lifestyle photography. In a quiet living room with drawn sheer curtains, a modest adult man is peacefully resting and taking a nap lying on a comfortable sofa, his head on a soft cushion with a light knitted blanket draped over him. Quiet, tranquil afternoon atmosphere. Male figure only. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    }
+  ],
+  "batchJ": [
+    {
+      "id": "kitchen-1-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-warming-bread-oven.webp",
+      "bytes": 87808,
+      "sha256": "ab1b3ebe93b2966e976471a10dd6f2e12720623dd527cf51ba95e65a01a86086",
+      "prompt": "Photorealistic kitchen photography. Inside a clean modern built-in electric wall oven with the interior oven light on and visible through the glass door, a baking sheet holding several warm, golden artisanal crusty bread rolls warming on the middle rack, with a stainless steel cooktop nearby. Warm culinary glow. Strictly human-free composition. Strictly no labels, digital clock numbers, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-1-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-microwave-reheating-soup.webp",
+      "bytes": 83176,
+      "sha256": "003066a428b4ff7a53e4937297fa6bfb5eebc2429acafa666f32a9dc6e29f1e4",
+      "prompt": "Photorealistic kitchen appliance photography. Inside a clean modern countertop microwave oven with its glass door slightly ajar and interior light shining, a deep ceramic bowl filled with steaming hot vegetable soup rests on the glass turntable tray, beside a stainless steel toaster on the granite counter. Bright daytime kitchen lighting. Strictly human-free composition. Microwave digital timer display is blank without readable numerals. Strictly no brand logos, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-1-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-blender-fruit-breakfast.webp",
+      "bytes": 76082,
+      "sha256": "9591c4323ae9d32a6a3e3a1fafc913fcaa5502018e7d15bcab35d6634a02d6c9",
+      "prompt": "Photorealistic breakfast appliances still life. On a bright kitchen marble island, a clear glass pitcher blender containing fresh sliced strawberries, banana chunks, and chopped orange pieces ready to blend, sitting next to a polished electric tea kettle and an espresso coffee maker with a ceramic mug. Morning sunlit kitchen. Strictly human-free composition. Strictly fruit in blender (no greens or vegetables). Strictly no brand logos, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-3-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-soup-coffee-water.webp",
+      "bytes": 136686,
+      "sha256": "d7a7f8528abd0d89aeaf4b23291b22510f9da8b4cfea897cd3f8115a5fd8b115",
+      "prompt": "Photorealistic culinary flat lay. On a rustic wooden dining table, a white ceramic soup bowl filled with warm golden broth soup with a soup spoon, a stoneware coffee mug with freshly brewed steaming black coffee, and a clear tall drinking glass filled with pure transparent water with a few ice cubes. Clean honest meal setting. Strictly human-free composition. Strictly no salads or colored juice. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-5-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-cooking-oil-salt-sugar.webp",
+      "bytes": 93746,
+      "sha256": "22cbe6487bdc35467ec1a4249f2a92ab2eb220d3f33015ed743ed3445771a286",
+      "prompt": "Photorealistic kitchen seasonings still life. A clear glass cruet bottle filled with golden yellow liquid olive oil with a stainless steel pourer spout standing in the center. To its left sits a classic glass salt shaker with fine white grains, and to its right sits a wide glass sugar bowl with brown raw cane sugar crystals and a small ceramic sugar spoon, creating clear visual distinction between sugar and salt. Warm culinary atmosphere. Strictly human-free composition. Plain containers with strictly no labels, letters, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-5-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-black-pepper-flour-vinegar.webp",
+      "bytes": 64844,
+      "sha256": "d8e9f509b9814411e279676e078e527fbe019f0f70fc315f6b6b3ac4535a9b1c",
+      "prompt": "Photorealistic kitchen ingredients still life. A tall dark wooden peppermill grinder standing beside a small ceramic pinch bowl overflowing with whole black peppercorns in the front focus, next to a ceramic jar of white powdery baking flour and a slim glass bottle of dark balsamic vinegar. Professional baking prep station. Strictly human-free composition. Plain containers with strictly no printed labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "kitchen-5-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/kitchen-honey-apple-juice.webp",
+      "bytes": 84192,
+      "sha256": "2ba1e204e344e3c9b21da826b5b6aaed5b3ee6a7d319309ee8640d06b1eefa7d",
+      "prompt": "Photorealistic culinary still life. An elegant hexagonal glass jar of thick golden amber honey with a wooden honey dipper drizzling honey into a small glass dish, sitting next to a crisp whole red honeycrisp apple, and a tall clear glass filled with freshly pressed bright orange-yellow citrus fruit juice. Sunlit kitchen prep table. Strictly human-free composition. Plain glassware with strictly no labels, brand text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "fruits-1-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/fruits-grapes-strawberry-watermelon.webp",
+      "bytes": 121936,
+      "sha256": "fe2cb52407931d55f11b10f20809e35ce81a2799b94dee45e102e82e7fc67c88",
+      "prompt": "Photorealistic market produce photography. On a wooden market display crate, a full bunch of distinct small red and purple grapes on their vine, a punnet of bright red ripe strawberries with green calyx stems, and a large slice of fresh red watermelon with dark seeds showing its green rind. Clear distinct fruits identifiable at mobile screen size. Crisp natural morning light. Strictly human-free composition. Strictly no signs, price tags, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "fruits-2-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/fruits-berries-mulberry-boysenberry-acai.webp",
+      "bytes": 49232,
+      "sha256": "f8485f6cb0fd7aab502da529e31f7e6f6ede5afb576fca70ced6ad952bddb25f",
+      "prompt": "Photorealistic macro berry comparison still life. Three separate shallow white ceramic tasting dishes arranged side by side on a marble counter: the left dish holds elongated, bumpy fresh black mulberries; the middle dish holds plump, rounded deep-purple boysenberries with glossy drupelets; the right dish holds small, perfectly spherical, firm dark purple acai berries. Clear visual botanical distinction. Natural daylight. Strictly human-free composition. Strictly no labels, cards, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "fruits-3-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/fruits-citrus-tangerine-clementine.webp",
+      "bytes": 144312,
+      "sha256": "98be920a7723f397cfca25424f3b52435d9a33b962280f60bd5ab9e5f961f99d",
+      "prompt": "Photorealistic citrus comparison photography. Three wicker baskets on a market table displaying distinct citrus varieties: the first basket has small, easy-to-peel spherical glossy clementines with a couple peeled into segments; the second basket has slightly larger, pebbled-skin bright orange tangerines; the third has flatter, pale-orange satsuma mandarins with green leaves. Fresh, vibrant citrus textures. Crisp daylight. Strictly human-free composition. Strictly no stickers, brand labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "vegetables-1-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/vegetables-parsnip-ginger-yam.webp",
+      "bytes": 251682,
+      "sha256": "e8a237fb7ea6b6b74780f8cbf9c70ca3e3c1348d7b0b95f31e79b2756f583162",
+      "prompt": "Photorealistic root vegetable market display. On burlap sacking, three clearly separated root vegetables: long, slender pale-cream tapered parsnips; knobby, multi-branched light brown fresh ginger rhizome roots; and rough, bark-like cylindrical brown sweet yams with orange interior visible at one cut edge (distinctly a yam, not a beet). Earthy market aesthetic. Strictly human-free composition. Strictly no signs, price tags, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "vegetables-2-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/vegetables-rapini-cabbage-comparison.webp",
+      "bytes": 210652,
+      "sha256": "c02c7760503164cda7cd19ff9e958b2a47b96746113db4493fcb5069e2a06058",
+      "prompt": "Photorealistic fresh produce photography. On a wooden produce table, a fresh bunch of rapini (broccoli rabe) showing dark green jagged leaves and distinct tiny clusters of broccoli-like florets tied with natural twine, beside a tight crinkly head of pale green oblong Napa cabbage, and a firm round head of deep purple-red cabbage. Fresh grocery aesthetic. Crisp overhead lighting. Strictly human-free composition. Strictly no price tags, stickers, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "vegetables-3-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/vegetables-gourd-chayote-bitter-melon.webp",
+      "bytes": 150252,
+      "sha256": "79508f9d28a83c966ae778d8b2650068fc439901eff66b8f849f866d2310ed99",
+      "prompt": "Photorealistic exotic vegetable comparison photography. In three wooden produce bins side by side: the first bin displays smooth, pale-green pear-shaped chayote squash with furrowed ridges; the second bin displays long bottle gourds with smooth pale green skin; the third bin displays distinct warty, heavily bumpy dark-green bitter melon gourds. Sharp botanical detail. Natural market light. Strictly human-free composition. Strictly no price signs, labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "human-body-head-and-face-1-usage-scene-1",
+      "status": "reused",
+      "targetFile": "public/scene-images/head-scalp-examination-medical.webp",
+      "bytes": 55624,
+      "sha256": "09a8d91d6c4ec7bab3319a7eeb0270c9b2808c97cbf15e6b4a1348857c2b18a3",
+      "prompt": "Photorealistic medical clinic photography. In a bright, professional examination room, a doctor wearing a clinical white coat gently examines the scalp on the crown of a modest adult male patient's head, parting the hair carefully with gloved fingers to inspect for bruising. Professional, empathetic clinical setting. Male patient and doctor only. No women. Strictly no readable charts, labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "human-body-head-and-face-1-usage-scene-2",
+      "status": "reused",
+      "targetFile": "public/scene-images/head-haircut-temple-forehead.webp",
+      "bytes": 81482,
+      "sha256": "53b61aa0f05c377ff653f89acd24ba9ca5a820ce477a9f83b92395aac6e44cfa",
+      "prompt": "Photorealistic barbershop photography. A clean modern barbershop chair where a modest adult man is consulting with a male barber, the barber gently combing hair near the man's temple and forehead to show the desired trim line before clipping. High-end grooming salon aesthetic. Male figures only. No women. Strictly no mirror writing, signage, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "human-body-head-and-face-1-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/head-passport-photo-jaw-chin.webp",
+      "bytes": 36562,
+      "sha256": "bac76f1f86b4903433a20997ab5a3f83a39f460bbc2e85492fffd03a105844a9",
+      "prompt": "Photorealistic photography studio portrait session. A modest adult man seated upright against a neutral off-white studio backdrop having his passport portrait taken, with soft studio softbox lighting highlighting his relaxed jawline, lifted chin, and neck posture. Dignified, professional composition. Male subject only. Strictly no text, camera brand watermarks, or logos. Aspect ratio 4:3."
+    },
+    {
+      "id": "human-body-head-and-face-1-usage-scene-4",
+      "status": "reused",
+      "targetFile": "public/scene-images/head-pharmacy-consultation-throat-eye.webp",
+      "bytes": 63028,
+      "sha256": "745c393ef6beb17deb3283ba50bcacd71df89e692a224a0fff082fc4ed7d528d",
+      "prompt": "Photorealistic healthcare consultation photography. Across a clean pharmacy consultation counter, a male pharmacist wearing a white coat listens attentively as a modest adult male customer gestures gently toward his throat and eyebrow area while explaining minor allergy symptoms. Professional pharmacy interior. Male figures only. No women. Strictly no readable medicine boxes, labels, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "human-body-head-and-face-1-usage-scene-5",
+      "status": "reused",
+      "targetFile": "public/scene-images/head-optometrist-eye-pupil-test.webp",
+      "bytes": 50434,
+      "sha256": "ff957f652fbf6c6390969b5324a42e649f0bea53e4bc5567c84ffd69094180d3",
+      "prompt": "Photorealistic optometry clinical photography. In a softly lit clinic examination room, an optometrist uses a small medical penlight to examine the pupil and eyelid of a seated modest adult male patient, checking his eye focus. High-detail medical equipment in soft focus background. Male patient and practitioner only. No women. Strictly no charts with letters, posters, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "sentence:seventy",
+      "status": "reused",
+      "targetFile": "public/learning-scenes/numbers-counting/numbers-counting-2-seventy-grandfather.webp",
+      "bytes": 101874,
+      "sha256": "f18fc6043c059464b78340e9551f3a37f3ea3472305f49881128f6b1eaaa189c",
+      "prompt": "Photorealistic warm portrait photography. A dignified, kind elderly grandfather in his early seventies with silver hair and a neat gray beard, dressed in a warm woolen cardigan, sitting peacefully in an armchair in a sunlit home library holding a hardbound book with reading glasses. Warm, dignified family portrait. Elderly adult man only. Strictly no birthday numerals, numbers, text, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "reading:colors-primary-bright",
+      "status": "reused",
+      "targetFile": "public/scene-images/colors-painting-primary-canvas.webp",
+      "bytes": 121782,
+      "sha256": "5909557763ab566f050dc1bd7e2c75308a711bd7cbcc856ba03e18fe6b25869d",
+      "prompt": "Photorealistic artist studio photography. An artist's wooden easel holding a stretched canvas with an oil painting in progress: the painting distinctly depicts a bright red painted apple resting on green grass, a radiant yellow sun in the sky above, blue flowing river water, and a wooden orange park bench. Wooden palette with paint brushes resting on a table beside the easel. Studio daylight. Strictly human-free composition. Strictly no text, labels, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "reading:colors-light-and-optics",
+      "status": "reused",
+      "targetFile": "public/scene-images/colors-rain-rainbow-spectrum.webp",
+      "bytes": 83384,
+      "sha256": "48c24935699ace427de12e2c583b24fc4f68581d897c43d3996cc13100f36960",
+      "prompt": "Photorealistic landscape nature photography. Gentle rain showers falling over a lush green rural valley while the sun breaks through parting storm clouds, creating a magnificent, vivid natural circular rainbow spectrum arching across the sky through the falling raindrops. Crisp atmospheric lighting. Strictly human-free composition. Strictly no text, typography, or watermarks. Aspect ratio 4:3."
+    },
+    {
+      "id": "living-room-5-usage-scene-3",
+      "status": "reused",
+      "targetFile": "public/scene-images/living-room-family-evening-activities.webp",
+      "bytes": 124494,
+      "sha256": "849ed2085c0784b52a97d4e32a7ac521d747783038cbfb83037412faf77fe474",
+      "prompt": "Photorealistic warm living room photography. An inviting living room after dinner where three modest adult men are enjoying a peaceful evening together: one sits reading an open book in an armchair, one sits playing a wooden chess game at the coffee table, and one rests on the sofa enjoying acoustic music from a record player. Warm ambient living room glow. Male figures only. No women. Strictly no book text, album cover text, or watermarks. Aspect ratio 4:3."
+    }
+  ]
+}
