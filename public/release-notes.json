@@ -1,14 +1,49 @@
 {
-  "version": "0.1.21",
+  "version": "0.1.22",
   "notes": [
-    "Achieved 100% dual-format WebP and AVIF asset parity across all learning scenes, scene images, and pronunciation curricula.",
-    "Resolved missing foundation cat and fish lesson assets, synchronized 476 assets to Cloudflare R2, and verified zero visual gaps across the entire app."
+    "Integrated the upgraded ElevenLabs v4 expressive speech model and completed 100% audio coverage across all phrases, short sentences, idioms, Can-Do transfer challenges, and specialist curriculum terms.",
+    "Generated all 22 remaining bilingual Hadith passages, verified zero audio gaps across 12,650 managed clips in Cloudflare R2, and completed a comprehensive audio health audit."
   ],
   "notesAr": [
-    "تحقيق تطابق كامل بنسبة 100% بين تنسيقي WebP و AVIF لجميع مشاهد التعلّم ومشاهد التمارين ومنهج النطق.",
-    "إصلاح عناصر القط والسمك في درس النطق التأسيسي، ومزامنة 476 ملفًا على Cloudflare R2، والتحقق من انعدام أي فجوات بصرية في التطبيق."
+    "دمج نموذج ElevenLabs v4 التعبيري المطور وتحقيق تغطية صوتية بنسبة 100% لكافة العبارات والجمل القصيرة والأمثال وتحديات Can-Do ومصطلحات المناهج التخصصية.",
+    "توليد كافة فقرات الحديث النبوي الـ 22 المتبقية باللغتين، والتأكد من انعدام الفجوات الصوتية عبر 12,650 مقطعًا صوتيًا في Cloudflare R2، وإجراء تدقيق شامل لجودة الصوت."
   ],
   "releases": [
+    {
+      "id": "0.1.22",
+      "version": "0.1.22",
+      "date": "2026-10-11",
+      "title": {
+        "en": "ElevenLabs v4 Expressive Audio Integration & 100% Corpus Completeness",
+        "ar": "دمج نموذج ElevenLabs v4 الصوتي التعبيري واكتمال التسجيلات بنسبة 100%"
+      },
+      "changes": [
+        {
+          "id": "elevenlabs-v4-expressive-integration",
+          "category": "improved",
+          "en": "Configured upgraded ElevenLabs Creator Tier with eleven_v4 expressive speech model, delivering human-like prosody, natural pitch modulation, and 3x credit efficiency.",
+          "ar": "تفعيل حساب ElevenLabs المطور بفئة Creator مع نموذج eleven_v4 الصوتي التعبيري لتقديم نبرة طبيعية ونطق واقعي وكفاءة مضاعفة في استهلاك الرصيد."
+        },
+        {
+          "id": "universal-audio-coverage",
+          "category": "improved",
+          "en": "Generated and uploaded all missing phrases, collocations, idioms, short sentence examples, and Can-Do transfer challenge model responses and key phrases with eleven_v4.",
+          "ar": "توليد ورفع كافة العبارات والأمثال والجمل التوضيحية وإجابات تحديات Can-Do النموذجية الناقصة باستخدام نموذج eleven_v4."
+        },
+        {
+          "id": "curriculum-specialist-and-hadith-parity",
+          "category": "improved",
+          "en": "Achieved 100% audio completion across 1,232 specialist curriculum terms (Business, Conversation, Hadith) and all 84 bilingual Hadith passages (42 English + 42 Arabic).",
+          "ar": "تحقيق اكتمال صوتي بنسبة 100% لـ 1,232 مصطلحًا تخصصيًا في مسارات الأعمال والمحادثة والحديث الشريف، وجميع تسجيلات الأحاديث الـ 84 باللغتين العربية والإنجليزية."
+        },
+        {
+          "id": "zero-deletion-audio-safety",
+          "category": "improved",
+          "en": "Preserved 100% of historical audio locally and in Cloudflare R2 under strict additive-only policy; audited 12,650 clips with zero missing and zero corrupted files.",
+          "ar": "الحفاظ على 100% من الملفات الصوتية محليًا وعلى Cloudflare R2 وفق سياسة الإضافة الآمنة دون أي حذف، وتدقيق 12,650 ملفًا والتأكد من سلامتها التامة."
+        }
+      ]
+    },
     {
       "id": "0.1.21",
       "version": "0.1.21",
