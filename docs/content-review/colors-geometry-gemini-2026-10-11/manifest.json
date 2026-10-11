@@ -1,0 +1,465 @@
+{
+  "status": "local-staging-only",
+  "model": "gemini-nano-banana-2.1",
+  "items": [
+    {
+      "unitId": "shapes-geometry",
+      "id": "acute-angle",
+      "word": "Acute Angle",
+      "originalPath": "word-images/shapes-geometry/acute-angle.avif",
+      "selectedPath": "word-images/shapes-geometry/acute-angle.avif",
+      "productionObjectPath": "word-images/shapes-geometry/acute-angle-73ac3fb467e9.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/acute-angle-73ac3fb467e9.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. A clear accurate two-ray angle diagram. Both rays share one vertex at lower left. First ray is horizontal to the right; second ray rises diagonally up and right making precisely 45 degrees. A small orange angle arc INSIDE the two rays, directly at the shared vertex. Label the arc \"45°\". Heading \"Acute Angle\". Only those two labels. No triangle or third ray.",
+      "originalSha256": "cbb593e834540c3c9d3100628402674a2e724ac2422567eb0f99705d22911a13",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "c926ef256e7021df20d7fd98e100dc892c4ede1f5c6b80fe5c67f3999d7bb3cd",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.719Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 170,
+        "candidatesTokenCount": 1436,
+        "totalTokenCount": 2507,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 170
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 901,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "de96234d75803cae6722041c8c7549c467be8aec8f50e3f452182a5eb31cb98d",
+      "sha256": "abc56502a76a2442a81837266ae70eabc2b5c6894952222532c509dcdb688ece",
+      "bytes": 25444,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 14456,
+      "localStagingWebp": "assets/acute-angle-abc56502a76a2442a81837266ae70eabc2b5c6894952222532c509dcdb688ece.webp",
+      "localStagingAvif": "assets/acute-angle-62fa6d6bae0725aec1437239ae5a92d40fd6cc5a09ba2a1643904fba05e7cb21.avif",
+      "avifSha256": "62fa6d6bae0725aec1437239ae5a92d40fd6cc5a09ba2a1643904fba05e7cb21",
+      "imageAlt": "Two teal rays meet at a shared vertex, with an orange arc and a 45° label inside the acute opening.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original angle marker extends outside the opening; the production arrangement lacks a clear shared vertex and angle marker."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "circumference",
+      "word": "Circumference",
+      "originalPath": "word-images/shapes-geometry/circumference.avif",
+      "selectedPath": "word-images/shapes-geometry/circumference.avif",
+      "productionObjectPath": "word-images/shapes-geometry/circumference-ec49f3d77ed1.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/circumference-ec49f3d77ed1.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. An accurate circular outline. Highlight the ENTIRE outer circular boundary in orange with one small callout line pointing to the upper-right perimeter. Label the callout \"Circumference\". Leave the interior completely empty: no radius, diameter, divided circle or formulas. Only text \"Circumference\".",
+      "originalSha256": "fa94a859cc2f5228bd3c35d0470aa5904023b908f41c7a9c5e8c9b6cffa69da7",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "6f8b0156d08a3d20eee14959bf067905613e95504f61788ca3b54ced951dc93a",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:17.176Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 150,
+        "candidatesTokenCount": 1441,
+        "totalTokenCount": 2158,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 150
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 567,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "78954f11f33fb2bab991ea88c567004e37f8b1597b92e8c8175d29d5cd80dde5",
+      "sha256": "1413d5dc712b58a4a87de9453ecd51f4897e5523b9e8331baf4d1a1541d47e67",
+      "bytes": 31946,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 14861,
+      "localStagingWebp": "assets/circumference-1413d5dc712b58a4a87de9453ecd51f4897e5523b9e8331baf4d1a1541d47e67.webp",
+      "localStagingAvif": "assets/circumference-635509ed769ec9b3713af69310420962230ad2566b7525242bacfa694013368a.avif",
+      "avifSha256": "635509ed769ec9b3713af69310420962230ad2566b7525242bacfa694013368a",
+      "imageAlt": "An orange circle outline is identified by a callout labelled Circumference; its interior is empty.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original combines inconsistent r/d annotations; the production object still leaves the intended boundary ambiguous."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "hemisphere",
+      "word": "Hemisphere",
+      "originalPath": "word-images/shapes-geometry/hemisphere.avif",
+      "selectedPath": "word-images/shapes-geometry/hemisphere.avif",
+      "productionObjectPath": "word-images/shapes-geometry/hemisphere-0c77be784cc9.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/hemisphere-0c77be784cc9.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. One isolated solid hemisphere: precisely half of a sphere, with one flat circular cut face clearly visible and a curved dome below it in three-quarter view. Turquoise dome, pale orange flat face. Do not draw a whole sphere or a ball in a bowl. Heading \"Hemisphere\" only.",
+      "originalSha256": "7f51ff83daa5c7a7ba5da28601b02b5b707ad2ec27cd64fbcc174e8574700373",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "710ede6932343b0fec6bef5eddf4a76a2a84665ab611f3c3d5199a091f1e92f2",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.714Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 148,
+        "candidatesTokenCount": 1633,
+        "totalTokenCount": 2500,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 148
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 719,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "75cd3bdaef59eae829d9b3ff173d6d799eab682307593dcffd2a9ca7d2cc3282",
+      "sha256": "e54d563f93748e8cb416a557dcded6f796653fee7010de0b02dcb12aec8549c9",
+      "bytes": 36620,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 23105,
+      "localStagingWebp": "assets/hemisphere-e54d563f93748e8cb416a557dcded6f796653fee7010de0b02dcb12aec8549c9.webp",
+      "localStagingAvif": "assets/hemisphere-ff774256b2382da782fbe2c8325658505d63d654d22b22a99f3a2a83f2a2ed69.avif",
+      "avifSha256": "ff774256b2382da782fbe2c8325658505d63d654d22b22a99f3a2a83f2a2ed69",
+      "imageAlt": "A turquoise half-sphere with a flat orange circular face is shown beneath the heading HEMISPHERE.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The existing original diagram depicts a complete sphere; the current production composition does not clearly isolate half a sphere."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "obtuse-angle",
+      "word": "Obtuse Angle",
+      "originalPath": "word-images/shapes-geometry/obtuse-angle.avif",
+      "selectedPath": "word-images/shapes-geometry/obtuse-angle.avif",
+      "productionObjectPath": "word-images/shapes-geometry/obtuse-angle-61a50fbdff8c.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/obtuse-angle-61a50fbdff8c.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. A clear accurate two-ray angle diagram. Both rays share a central vertex. First ray points horizontally RIGHT. Second ray points diagonally UP LEFT, exactly 120 degrees counterclockwise from the first ray. A small orange angle arc INSIDE the 120 degree opening at the shared vertex. Label the arc \"120°\". Heading \"Obtuse Angle\". Only those two labels. Never draw an acute opening or down-left ray.",
+      "originalSha256": "0e2aae3f1efba87adf8d9b3acfe7592f095b0403da0975924f8a5c21a7ceb184",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "ca62d2bfa2866814891d5ce773de0cd42982cd2c2b59c933d22d15936c445ff9",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.720Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 182,
+        "candidatesTokenCount": 1486,
+        "totalTokenCount": 2675,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 182
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1007,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "aff86d73402c220cedbb59dd7c778c3e6f7f8e9f2dd3d2c48159bd5b47503276",
+      "sha256": "7c932267f75c6dc3950263da58f248b4634faf2ce5c1d057629e8d7da2f4e42b",
+      "bytes": 26658,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 17274,
+      "localStagingWebp": "assets/obtuse-angle-7c932267f75c6dc3950263da58f248b4634faf2ce5c1d057629e8d7da2f4e42b.webp",
+      "localStagingAvif": "assets/obtuse-angle-5e7c5267515ef124f41fd497b98b1e7e9001e1c28309f686e4e87581b1f8018d.avif",
+      "avifSha256": "5e7c5267515ef124f41fd497b98b1e7e9001e1c28309f686e4e87581b1f8018d",
+      "imageAlt": "A right-pointing horizontal ray and an up-left ray meet at a vertex, with an orange arc labelled 120° inside the obtuse opening.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original labelled >90° diagram shows an acute opening; the production photograph obscures the relevant rays and vertex."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "perpendicular",
+      "word": "Perpendicular",
+      "originalPath": "word-images/shapes-geometry/perpendicular.avif",
+      "selectedPath": "word-images/shapes-geometry/perpendicular.avif",
+      "productionObjectPath": "word-images/shapes-geometry/perpendicular-a5fa4f3ca288.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/perpendicular-a5fa4f3ca288.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. Exactly two straight dark teal lines: one horizontal and one vertical, crossing at the center at 90 degrees. Mark one quadrant with a small orange right-angle square and label it \"90°\". Heading \"Perpendicular\". Only those labels. No diagonal lines, radial spokes or objects.",
+      "originalSha256": "7528e43b7a67b0655b030d4fae4061d6b9521f3808a02c677fe4e8f637fe1eb2",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "2f130429c43c21d9c0a8699eff64d326aed5425488290d3d5a3d9c70e1765a0e",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.722Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 149,
+        "candidatesTokenCount": 1412,
+        "totalTokenCount": 2556,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 149
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 995,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "a3c77c40be8eb02a3a287a9e4c2fb77c1b4d72a7a8f297b2d92b670462b64290",
+      "sha256": "06bd075cec8fda48491d616a66a2e6d6d9df00fb8296757e25c1f853e652de0e",
+      "bytes": 15788,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 15105,
+      "localStagingWebp": "assets/perpendicular-06bd075cec8fda48491d616a66a2e6d6d9df00fb8296757e25c1f853e652de0e.webp",
+      "localStagingAvif": "assets/perpendicular-89b538a80927d03ec17582404fa7c83c7de46f53e53c9c5729cffc9f949c02f6.avif",
+      "avifSha256": "89b538a80927d03ec17582404fa7c83c7de46f53e53c9c5729cffc9f949c02f6",
+      "imageAlt": "A vertical teal line crosses a horizontal teal line, with an orange right-angle marker and a 90° label.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original shows four intersecting lines with mixed angles; the production arrangement does not clearly isolate two perpendicular lines."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "prism",
+      "word": "Prism",
+      "originalPath": "word-images/shapes-geometry/prism.avif",
+      "selectedPath": "word-images/shapes-geometry/prism.avif",
+      "productionObjectPath": "word-images/shapes-geometry/prism-c7a77f95c097.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/prism-c7a77f95c097.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. One isolated solid triangular prism in isometric perspective. Exactly two congruent parallel triangular end faces joined by three rectangular faces. Use turquoise fill and dark clean edges; dashed hidden edges if useful. Exactly six vertices, nine edges and five faces. No other solids. Heading \"Prism\" only.",
+      "originalSha256": "9d6a6b495921a312de5296958238fcb71d4fd6b37605a58ea419247a6cf0d44c",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "9fb51ae99f32f7a50371523bd6bd8196c860a8372b40a84d60fa0aabd5a5d245",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.686Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 146,
+        "candidatesTokenCount": 1481,
+        "totalTokenCount": 2871,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 146
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1244,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "d9406debbf2a1dbd0e09e20981cb222cc719ac114d3f7550a61d2b7de0e8efdd",
+      "sha256": "c0ad4e462447f6618caabc1c85d177bd3dd7f224f598deec52dbb23f3b4ed00b",
+      "bytes": 72270,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 22971,
+      "localStagingWebp": "assets/prism-c0ad4e462447f6618caabc1c85d177bd3dd7f224f598deec52dbb23f3b4ed00b.webp",
+      "localStagingAvif": "assets/prism-d5994955518c05f251e1e36e03951870da680e01a116b1cb3a5ba61ef9a37326.avif",
+      "avifSha256": "d5994955518c05f251e1e36e03951870da680e01a116b1cb3a5ba61ef9a37326",
+      "imageAlt": "A turquoise triangular prism has labelled faces, an edge and a vertex, plus the counts 5 faces, 9 edges and 6 vertices.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "Current production image presents several solids without a clear prism focus; original diagram calls a rectangular prism a triangular prism."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "radius",
+      "word": "Radius",
+      "originalPath": "word-images/shapes-geometry/radius.avif",
+      "selectedPath": "word-images/shapes-geometry/radius.avif",
+      "productionObjectPath": "word-images/shapes-geometry/radius-ab7d73d83ae8.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/radius-ab7d73d83ae8.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. An accurate circle outline centered in the image. One orange straight line segment starts precisely at the center and ends precisely at the right-hand circumference; it must NOT extend outside the circle. A small filled dot marks the center. Place label \"Radius\" beside this segment. No diameter, arrows, extra dimensions or duplicated heading. Only text \"Radius\".",
+      "originalSha256": "a6581eb25c3110493c969f822445ee74684273d89f37e13b643eb0b0d77cbe66",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "04a835de31a4b392e9069b2c9dc6b6b92726f48cb872c50f927f6f554541eb90",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.723Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 159,
+        "candidatesTokenCount": 1441,
+        "totalTokenCount": 2748,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 159
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1148,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "bb55f85eb79688aeb637e8d8ebc1d029b1e485ee0f52342c4e5864b356226c84",
+      "sha256": "76535118c1d4058285e9b21e08076b7d9cf1fe02c4548af85fe2a8b671249f6b",
+      "bytes": 24470,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 20406,
+      "localStagingWebp": "assets/radius-76535118c1d4058285e9b21e08076b7d9cf1fe02c4548af85fe2a8b671249f6b.webp",
+      "localStagingAvif": "assets/radius-ae3b6d64be620688bde53ac6ab206e7be7e454756986c293e95974878ab662c3.avif",
+      "avifSha256": "ae3b6d64be620688bde53ac6ab206e7be7e454756986c293e95974878ab662c3",
+      "imageAlt": "An orange segment runs from a marked circle center to its right-hand circumference and is labelled Radius.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original marked radius extends beyond the circumference; the production display does not isolate a center-to-boundary segment."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "spiral",
+      "word": "Spiral",
+      "originalPath": "word-images/shapes-geometry/spiral.avif",
+      "selectedPath": "word-images/shapes-geometry/spiral.avif",
+      "productionObjectPath": "word-images/shapes-geometry/spiral-cdb36dcb70df.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/spiral-cdb36dcb70df.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. One dark teal continuous Archimedean spiral on white, starting at its center and continuously winding outward for three turns with steadily increasing radius. It must be one unbroken curve; never concentric disconnected circles. Heading \"Spiral\" only.",
+      "originalSha256": "9724576ee9e5294fe135ca69668af73928b78bb93b10e72f5f9c71635179d7ba",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "4dc55a5359a880deb0070af30d7c25ad220391420eb47f7518fa7e6264843904",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.717Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 134,
+        "candidatesTokenCount": 1991,
+        "totalTokenCount": 3265,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 134
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 1140,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "64c0941709201f5df651cb4ac3b7135c95cc4101bc805ef4ca14d04079cf4c40",
+      "sha256": "0502c7aa5ae0376020f62bff100a4fcd5f81313eee49be05de3f77bd702fabcd",
+      "bytes": 47662,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 34428,
+      "localStagingWebp": "assets/spiral-0502c7aa5ae0376020f62bff100a4fcd5f81313eee49be05de3f77bd702fabcd.webp",
+      "localStagingAvif": "assets/spiral-4fc1e09e9f6c149c01dc05eb363d8cef6f9db671e33338e92057a29088b69bea.avif",
+      "avifSha256": "4fc1e09e9f6c149c01dc05eb363d8cef6f9db671e33338e92057a29088b69bea",
+      "imageAlt": "A single teal curve winds continuously outward from a marked center to form a spiral beneath the heading SPIRAL.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original uses disconnected circular arcs rather than one continuous outward-winding curve; current production contains multiple decorative objects."
+    },
+    {
+      "unitId": "shapes-geometry",
+      "id": "tetrahedron",
+      "word": "Tetrahedron",
+      "originalPath": "word-images/shapes-geometry/tetrahedron.avif",
+      "selectedPath": "word-images/shapes-geometry/tetrahedron.avif",
+      "productionObjectPath": "word-images/shapes-geometry/tetrahedron-66d864cb6b1d.avif",
+      "productionUrl": "https://pub-e84a3f9882a141ac9f33296bbad85e2a.r2.dev/images/v1/word-images/shapes-geometry/tetrahedron-66d864cb6b1d.avif",
+      "localOriginalExists": true,
+      "localSelectedObjectExists": false,
+      "prompt": "Use case: scientific-educational. Create a mathematically accurate, simple adult English learning reference illustration, 4:3 landscape, white background, crisp dark teal outlines and large readable dark sans-serif text. Generous spacing, one main concept that is recognizable as a thumbnail. Restrained turquoise and orange accents. No people, photographs, scenery, logos, watermark, decorative objects or tiny explanatory text. Educational labels explicitly specified below are permitted. One isolated solid regular tetrahedron in isometric perspective: a pyramid with a TRIANGULAR base, exactly four vertices, six edges and four triangular faces. Three base vertices and one apex only. Turquoise faces and dark edges; show the hidden base edge dashed. No square base, extra vertex or internal subdivision. Heading \"Tetrahedron\" only.",
+      "originalSha256": "f79d4375442f5b7d014f8488209118d8686054d1e1a497d5709156a099e6d4bf",
+      "model": "gemini-nano-banana-2.1",
+      "identity": "cdee35c4a3599a7279d552e5637f772ea5cf0d16b153e003a46e6d096d33677c",
+      "status": "generated",
+      "startedAt": "2026-10-11T13:52:02.715Z",
+      "reviewStatus": "agent-visually-reviewed-under-standing-user-approval",
+      "httpStatus": 200,
+      "usage": {
+        "promptTokenCount": 157,
+        "candidatesTokenCount": 1478,
+        "totalTokenCount": 2276,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 157
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "IMAGE",
+            "tokenCount": 1120
+          }
+        ],
+        "thoughtsTokenCount": 641,
+        "serviceTier": "standard"
+      },
+      "finishReason": "STOP",
+      "rawSha256": "4bc5037ca064179f3a806f24c22324336ce8a792d0e20920f1315a45a77eb0c3",
+      "sha256": "9620ef3a7ceb4e0a6837378b6152947bdc1d72eb30b14ca38d256fb27f904bb6",
+      "bytes": 40716,
+      "width": 1200,
+      "height": 896,
+      "elapsedMs": 16685,
+      "localStagingWebp": "assets/tetrahedron-9620ef3a7ceb4e0a6837378b6152947bdc1d72eb30b14ca38d256fb27f904bb6.webp",
+      "localStagingAvif": "assets/tetrahedron-e3a7e5e73e2c0758b936edd81c29bf4528f024b7c8468a50641d6ada4669bf8a.avif",
+      "avifSha256": "e3a7e5e73e2c0758b936edd81c29bf4528f024b7c8468a50641d6ada4669bf8a",
+      "imageAlt": "A turquoise tetrahedron has four orange corner marks, six connecting edges and one dashed hidden edge beneath the heading Tetrahedron.",
+      "reviewNotes": "Inspected contact sheet; solids additionally inspected at full resolution. Prism has extra educational labels beyond the requested heading; labels are accurate and accepted under user permission for explanatory graphics.",
+      "reason": "The original depicts a square-based pyramid with five vertices; the production decorative frame does not clearly establish four triangular faces."
+    }
+  ]
+}
