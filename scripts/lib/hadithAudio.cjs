@@ -1,17 +1,17 @@
 const { audioHash } = require("./assetKey.cjs");
 
-const HADITH_AUDIO_PROFILE_VERSION = 1;
+const HADITH_AUDIO_PROFILE_VERSION = 2;
 
 const HADITH_AUDIO_PROFILES = {
   ar: {
-    voiceId: process.env.ELEVENLABS_HADITH_AR_VOICE_ID || "xvhpbk8otnNHtT3fjCpr",
+    voiceId: process.env.ELEVENLABS_HADITH_AR_VOICE_ID || "MI88rOZjXbH22N8KHXUo", // Ali - deep, calm Saudi narrator
     modelId: "eleven_multilingual_v2",
-    stability: 0.78,
-    similarityBoost: 0.78,
+    stability: 0.75,
+    similarityBoost: 0.8,
   },
   en: {
-    voiceId: process.env.ELEVENLABS_HADITH_EN_VOICE_ID || "XfNU2rGpBa01ckF309OY",
-    modelId: "eleven_multilingual_v2",
+    voiceId: process.env.ELEVENLABS_HADITH_EN_VOICE_ID || "XfNU2rGpBa01ckF309OY", // Expressive English narrator
+    modelId: "eleven_v4",
     stability: 0.72,
     similarityBoost: 0.75,
   },

@@ -9,7 +9,7 @@ const clipSchema = z.object({
 
 const manifestSchema = z.object({
   schemaVersion: z.literal(1),
-  profileVersion: z.literal(1),
+  profileVersion: z.union([z.literal(1), z.literal(2)]),
   lessons: z
     .array(
       z.object({
@@ -25,14 +25,14 @@ const parsed = manifestSchema.parse(manifest);
 
 export const HADITH_AUDIO_PROFILES = {
   ar: {
-    voiceId: "xvhpbk8otnNHtT3fjCpr",
+    voiceId: "MI88rOZjXbH22N8KHXUo",
     modelId: "eleven_multilingual_v2",
-    stability: 0.78,
-    similarityBoost: 0.78,
+    stability: 0.75,
+    similarityBoost: 0.8,
   },
   en: {
     voiceId: "XfNU2rGpBa01ckF309OY",
-    modelId: "eleven_multilingual_v2",
+    modelId: "eleven_v4",
     stability: 0.72,
     similarityBoost: 0.75,
   },

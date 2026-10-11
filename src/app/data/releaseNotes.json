@@ -1,14 +1,43 @@
 {
-  "version": "0.1.22",
+  "version": "0.1.23",
   "notes": [
-    "Integrated the upgraded ElevenLabs v4 expressive speech model and completed 100% audio coverage across all phrases, short sentences, idioms, Can-Do transfer challenges, and specialist curriculum terms.",
-    "Generated all 22 remaining bilingual Hadith passages, verified zero audio gaps across 12,650 managed clips in Cloudflare R2, and completed a comprehensive audio health audit."
+    "Completed a comprehensive audio overhaul of all 42 Hadith curriculum lessons with rich classical Fusha Arabic narration by Ali and expressive English narration by Narrator (eleven_v4).",
+    "Upgraded full canonical Arabic Hadith texts with complete Tashkeel (diacritics > 0.70 density), full reverent honorifics, and verified 100% Cloudflare R2 delivery with zero gaps."
   ],
   "notesAr": [
-    "دمج نموذج ElevenLabs v4 التعبيري المطور وتحقيق تغطية صوتية بنسبة 100% لكافة العبارات والجمل القصيرة والأمثال وتحديات Can-Do ومصطلحات المناهج التخصصية.",
-    "توليد كافة فقرات الحديث النبوي الـ 22 المتبقية باللغتين، والتأكد من انعدام الفجوات الصوتية عبر 12,650 مقطعًا صوتيًا في Cloudflare R2، وإجراء تدقيق شامل لجودة الصوت."
+    "إتمام تحديث صوتي شامل لكافة دروس الحديث النبوي الـ 42 بقراءة فصيحة رخيمة بصوت علي باللغة العربية ونطق تعبيري باللغة الإنجليزية عبر نموذج eleven_v4.",
+    "تحديث النصوص العربية التراثية بالتشكيل الكامل (كثافة حركات > 0.70) والصلوات والترضيات الكاملة دون أي اختصار، والتحقق من تطابق كافة التسجيلات على Cloudflare R2 بنسبة 100%."
   ],
   "releases": [
+    {
+      "id": "0.1.23",
+      "version": "0.1.23",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Canonical Hadith Audio Overhaul with Classical Tashkeel & Fusha Narration",
+        "ar": "تحديث شامل لتسجيلات الحديث النبوي الشريف بالتشكيل التام وقراءة فصيحة متقنة"
+      },
+      "changes": [
+        {
+          "id": "hadith-canonical-tashkeel-and-honorifics",
+          "category": "improved",
+          "en": "Updated all 42 Hadith lesson texts with full classical Arabic Tashkeel (vowel diacritics > 0.70 density) and complete canonical honorifics (صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ and رَضِيَ اللَّهُ عَنْهُ / عَنْهَا / عَنْهُمَا).",
+          "ar": "تحديث نصوص دروس الحديث الـ 42 بالتشكيل الكامل (كثافة حركات تتجاوز 0.70) والصيغ الكاملة للصلوات والترضيات (صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ ورَضِيَ اللَّهُ عَنْهُ / عَنْهَا / عَنْهُمَا)."
+        },
+        {
+          "id": "hadith-fusha-ali-voice-and-eleven-v4",
+          "category": "improved",
+          "en": "Generated 84 studio-quality audio recordings (42 Arabic narrated by Ali with authoritative Fusha elocution + 42 English narrated via eleven_v4).",
+          "ar": "توليد 84 تسجيلًا صوتيًا عالي النقاء (42 باللغة العربية بصوت علي بفصاحة تامة وأداء متقن + 42 باللغة الإنجليزية عبر نموذج eleven_v4 التعبيري)."
+        },
+        {
+          "id": "hadith-manifest-v2-and-r2-verification",
+          "category": "improved",
+          "en": "Deployed Hadith Audio Manifest Profile Version 2 with content-addressed SHA-256 keys; verified 84/84 clips live on Cloudflare R2 and synced to local backup.",
+          "ar": "نشر الإصدار الثاني من بيان صوتيات الحديث (Profile Version 2) بمفاتيح SHA-256 موثوقة؛ والتحقق من توافر كافة المقاطع الـ 84 على Cloudflare R2 ومزامنتها محليًا."
+        }
+      ]
+    },
     {
       "id": "0.1.22",
       "version": "0.1.22",

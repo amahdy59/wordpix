@@ -33,6 +33,14 @@ const MANIFEST_PATH = path.join(
   "hadith",
   "hadithAudioManifest.json"
 );
+const RECORDED_PATH = path.join(
+  ROOT,
+  "src",
+  "app",
+  "learning",
+  "hadith",
+  "hadithRecordedSourceTexts.json"
+);
 
 const arg = (name) =>
   process.argv.find((value) => value.startsWith(`--${name}=`))?.slice(name.length + 3);
@@ -46,6 +54,13 @@ const MAX_CHARS = Number(arg("max-chars") ?? 0);
 function writeManifest(curriculum) {
   const manifest = createHadithAudioManifest(curriculum);
   fs.writeFileSync(MANIFEST_PATH, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+  const recorded = Object.fromEntries(
+    curriculum.lessons.map((l) => [
+      l.id,
+      { arabic: l.source.arabic, translation: l.source.translation },
+    ])
+  );
+  fs.writeFileSync(RECORDED_PATH, `${JSON.stringify(recorded, null, 2)}\n`, "utf8");
   return manifest;
 }
 
@@ -102,8 +117,8 @@ async function main() {
   console.log(`lessons    : ${LESSON || curriculum.lessons.length}`);
   console.log(`clips      : ${corpus.length}`);
   console.log(`characters : ${plannedChars.toLocaleString()}`);
-  console.log(`Arabic     : Omar / eleven_multilingual_v2`);
-  console.log(`English    : Nichalia / eleven_multilingual_v2`);
+  console.log(`Arabic     : Ali / eleven_multilingual_v2`);
+  console.log(`English    : Narrator / eleven_v4`);
 
   if (VERIFY_ONLY) {
     const r2 = createClient();
