@@ -1,14 +1,43 @@
 {
-  "version": "0.1.19",
+  "version": "0.1.20",
   "notes": [
-    "Completed 100% of all section and curriculum heroes (101 hero banners upgraded to photorealistic dual-format WebP and AVIF scenes).",
-    "Generated 31 exact-count and concept sentence scenes for lesson exercises, and synced authentic Islamic studies vocabulary."
+    "Resolved all 51 flagged exercise scene ambiguities across Household, Kitchen, Produce, Anatomy, Math and Reading with dedicated dual-format WebP and AVIF artwork.",
+    "Generated and synced 100% AVIF companion optimization for all 247 curriculum phrase illustrations, achieving zero remaining image gaps across the entire app."
   ],
   "notesAr": [
-    "إكمال 100% من لافتات الأقسام والمنهج (ترقية 101 لافتة رئيسية إلى رسوم واقعية بتنسيقي WebP و AVIF).",
-    "توليد 31 مشهد جمل تعليمية لحساب الأعداد والمفاهيم بدقة، ومزامنة مفردات الدراسات الإسلامية الأصيلة."
+    "حل جميع المشاهد الـ 51 الملتبسة في تمارين ودروس المنزل والمطبخ والمنتجات والتشريح والرياضيات والقراءة برسوم واقعية بتنسيقي WebP و AVIF.",
+    "توليد ومزامنة نسخ AVIF عالية الكفاءة بنسبة 100% لجميع بطاقات عبارات المنهج الـ 247، مع الوصول لنسبة فراغات بصرية صفرية في كامل التطبيق."
   ],
   "releases": [
+    {
+      "id": "0.1.20",
+      "version": "0.1.20",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Complete curriculum scene clarity and phrase AVIF companion optimization",
+        "ar": "وضوح شامل لمشاهد المنهج وتوليد نسخ AVIF لبطاقات العبارات"
+      },
+      "changes": [
+        {
+          "id": "exercise-scene-clarity-resolution",
+          "category": "improved",
+          "en": "Resolved all 51 flagged exercise scene ambiguities across Household, Kitchen, Produce, Anatomy, Math and Reading with dedicated high-resolution dual-format WebP and AVIF compositions.",
+          "ar": "حل جميع المشاهد الـ 51 الملتبسة في تمارين المنزل والمطبخ والمنتجات والتشريح والرياضيات والقراءة بمشاهد دقيقة وعالية الدقة بتنسيقي WebP و AVIF."
+        },
+        {
+          "id": "phrase-illustrations-avif-parity",
+          "category": "improved",
+          "en": "Generated and deployed 247 high-efficiency AVIF companion assets for all curriculum phrase cards, cutting image transfer overhead and ensuring zero visual gaps.",
+          "ar": "توليد ونشر 247 صورة بصيغة AVIF فائقة الكفاءة لكافة بطاقات العبارات في المنهج لتقليل استهلاك البيانات وضمان خلو التطبيق من أي فجوات بصرية."
+        },
+        {
+          "id": "exercise-image-ledger-zero-deficit",
+          "category": "fixed",
+          "en": "Achieved zero remaining image replacements in the exercise ledger with 100% cloud parity on Cloudflare R2.",
+          "ar": "الوصول إلى صفر استبدالات متبقية في سجل صور التمارين مع تطابق سحابي كامل على Cloudflare R2."
+        }
+      ]
+    },
     {
       "id": "0.1.19",
       "version": "0.1.19",
