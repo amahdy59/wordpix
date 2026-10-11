@@ -1,8 +1,8 @@
 # WordPix Listening Scenarios Tracker (ElevenLabs v4 Master)
 
 > **Model**: `eleven_v4` (Most Expressive, 72% launch promo active)
-> **Last Updated**: 2026-10-11T21:15:10.457Z
-> **Account Remaining Quota**: **111,166** characters
+> **Last Updated**: 2026-10-11T21:23:14.610Z
+> **Account Remaining Quota**: **110,894** characters
 > **Overall Progress**: **37** listening lessons completed
 
 ## Units Overview
