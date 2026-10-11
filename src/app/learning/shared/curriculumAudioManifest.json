@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-25T19:16:44.040Z",
+  "generatedAt": "2026-10-11T17:17:16.449Z",
   "profile": {
     "voiceId": "XfNU2rGpBa01ckF309OY",
     "modelId": "eleven_turbo_v2_5",
@@ -8,23 +8,9 @@
     "similarityBoost": 0.75
   },
   "clips": {
-    "act on": {
-      "objectKey": "audio/17/17c639c6aa751ac042c10e9b7d23ed923cf120a7ad6f1c40f6ccfbba7ec720e9.mp3",
-      "synthesisText": "act on",
-      "category": "phrasal-verb",
-      "domains": ["hadith"],
-      "chars": 6
-    },
     "own up": {
       "objectKey": "audio/70/701ab455dd432d800758d2a6ed484b9256efe0d20726a588b098e52120d48cf3.mp3",
       "synthesisText": "own up",
-      "category": "phrasal-verb",
-      "domains": ["hadith"],
-      "chars": 6
-    },
-    "add up": {
-      "objectKey": "audio/41/4103c4f9413c8f1586089e5d19be0457fd491399827d4e1e80437a07c203c9fe.mp3",
-      "synthesisText": "add up",
       "category": "phrasal-verb",
       "domains": ["hadith"],
       "chars": 6
@@ -71,6 +57,13 @@
       "domains": ["hadith"],
       "chars": 7
     },
+    "pass on": {
+      "objectKey": "audio/59/594a002f57071851ea0bb7b163c5efe1e43e24a97628a9f88cbb8551cb35a527.mp3",
+      "synthesisText": "pass on",
+      "category": "phrasal-verb",
+      "domains": ["hadith", "conversation", "business"],
+      "chars": 7
+    },
     "step in": {
       "objectKey": "audio/a7/a75de9421e88834df52bfe869a9b4418437f67e2bd902a37c7dfde0c69b5ae3f.mp3",
       "synthesisText": "step in",
@@ -78,11 +71,11 @@
       "domains": ["hadith", "business"],
       "chars": 7
     },
-    "rely on": {
-      "objectKey": "audio/2e/2e15830e04e8a0c38ff40788156219ccbef554d99cae2687e63993e659781dc9.mp3",
-      "synthesisText": "rely on",
+    "turn to": {
+      "objectKey": "audio/e4/e43c1baa68133a09a94ca5b767e90ba099907f3b8826305d86aa74bde831e66e.mp3",
+      "synthesisText": "turn to",
       "category": "phrasal-verb",
-      "domains": ["hadith", "conversation", "business"],
+      "domains": ["hadith"],
       "chars": 7
     },
     "hold on": {
@@ -127,20 +120,6 @@
       "domains": ["hadith"],
       "chars": 7
     },
-    "pass on": {
-      "objectKey": "audio/59/594a002f57071851ea0bb7b163c5efe1e43e24a97628a9f88cbb8551cb35a527.mp3",
-      "synthesisText": "pass on",
-      "category": "phrasal-verb",
-      "domains": ["hadith", "conversation", "business"],
-      "chars": 7
-    },
-    "turn to": {
-      "objectKey": "audio/e4/e43c1baa68133a09a94ca5b767e90ba099907f3b8826305d86aa74bde831e66e.mp3",
-      "synthesisText": "turn to",
-      "category": "phrasal-verb",
-      "domains": ["hadith"],
-      "chars": 7
-    },
     "move on": {
       "objectKey": "audio/ad/ad93701b4146b414024effbba59881a56057dfcf398098551768eb499127a731.mp3",
       "synthesisText": "move on",
@@ -167,6 +146,13 @@
       "synthesisText": "move in",
       "category": "Phrasal verb",
       "domains": ["conversation"],
+      "chars": 7
+    },
+    "rely on": {
+      "objectKey": "audio/2e/2e15830e04e8a0c38ff40788156219ccbef554d99cae2687e63993e659781dc9.mp3",
+      "synthesisText": "rely on",
+      "category": "Phrasal verb / expression",
+      "domains": ["conversation", "business"],
       "chars": 7
     },
     "hand in": {
@@ -393,13 +379,6 @@
       "domains": ["hadith"],
       "chars": 8
     },
-    "help out": {
-      "objectKey": "audio/0e/0e14134566c170a050c4e2e36e4a26d32ebf810d3c837fc4fc1fbc57c26dbf7a.mp3",
-      "synthesisText": "help out",
-      "category": "phrasal-verb",
-      "domains": ["hadith", "business"],
-      "chars": 8
-    },
     "pitch in": {
       "objectKey": "audio/b0/b010c85ad578a791977fce8c28db5c088205305569bdba2c17ec4f04d7a57fd4.mp3",
       "synthesisText": "pitch in",
@@ -426,6 +405,13 @@
       "synthesisText": "sort out",
       "category": "phrasal-verb",
       "domains": ["hadith", "business"],
+      "chars": 8
+    },
+    "swear in": {
+      "objectKey": "audio/b6/b60d1404ddad6b3290751b16f392cf6b0fed59c65d32b70a0eeeffb3292097cd.mp3",
+      "synthesisText": "swear in",
+      "category": "phrasal-verb",
+      "domains": ["hadith"],
       "chars": 8
     },
     "call out": {
@@ -522,6 +508,13 @@
     "bring up": {
       "objectKey": "audio/a1/a1f8f6d6131453312b73b851e47015b7033bc6825357580132459fb591a606d5.mp3",
       "synthesisText": "bring up",
+      "category": "Phrasal verb",
+      "domains": ["business"],
+      "chars": 8
+    },
+    "help out": {
+      "objectKey": "audio/0e/0e14134566c170a050c4e2e36e4a26d32ebf810d3c837fc4fc1fbc57c26dbf7a.mp3",
+      "synthesisText": "help out",
       "category": "Phrasal verb",
       "domains": ["business"],
       "chars": 8
@@ -673,6 +666,20 @@
       "domains": ["hadith", "conversation"],
       "chars": 9
     },
+    "put right": {
+      "objectKey": "audio/45/450cef537cbdfc1f85aa27e325b9553273d84459ae99f50ded3dbb1a0d1caa2f.mp3",
+      "synthesisText": "put right",
+      "category": "phrasal-verb",
+      "domains": ["hadith", "business"],
+      "chars": 9
+    },
+    "next step": {
+      "objectKey": "audio/f8/f8b30cc7731170543f57440b6d5ed831f897ca851a2d719d585ce4401ae0937a.mp3",
+      "synthesisText": "next step",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 9
+    },
     "hold back": {
       "objectKey": "audio/2c/2ce999ea3b86cdbd0308312dc1948b8c88bc0b5b0889a7ecc69f7ab5e3b2fb2d.mp3",
       "synthesisText": "hold back",
@@ -687,11 +694,11 @@
       "domains": ["hadith"],
       "chars": 9
     },
-    "give away": {
-      "objectKey": "audio/56/5688e8665ff9c78646faa37cc6483ff86278f665f3deacdfcc7a151b69b89be9.mp3",
-      "synthesisText": "give away",
+    "give back": {
+      "objectKey": "audio/62/628f95788d0ce3b2edd7dbf3c61e1338020e3b77d0e354cdb06b7c151f62fcde.mp3",
+      "synthesisText": "give back",
       "category": "phrasal-verb",
-      "domains": ["hadith", "conversation"],
+      "domains": ["hadith"],
       "chars": 9
     },
     "hand down": {
@@ -701,18 +708,11 @@
       "domains": ["hadith"],
       "chars": 9
     },
-    "let go of": {
-      "objectKey": "audio/6e/6ea6f371e23badb75111f909924403f16335b755544b7574d136f58cc6f694a5.mp3",
-      "synthesisText": "let go of",
+    "give away": {
+      "objectKey": "audio/56/5688e8665ff9c78646faa37cc6483ff86278f665f3deacdfcc7a151b69b89be9.mp3",
+      "synthesisText": "give away",
       "category": "phrasal-verb",
-      "domains": ["hadith"],
-      "chars": 9
-    },
-    "point out": {
-      "objectKey": "audio/46/467cf2d1e83743a10d1a31f35f1d1f90a2ae38b2f2f662b581d1c321f8beb9d0.mp3",
-      "synthesisText": "point out",
-      "category": "phrasal-verb",
-      "domains": ["hadith", "business"],
+      "domains": ["hadith", "conversation"],
       "chars": 9
     },
     "look into": {
@@ -820,16 +820,16 @@
       "domains": ["business"],
       "chars": 9
     },
-    "put right": {
-      "objectKey": "audio/45/450cef537cbdfc1f85aa27e325b9553273d84459ae99f50ded3dbb1a0d1caa2f.mp3",
-      "synthesisText": "put right",
+    "start off": {
+      "objectKey": "audio/7f/7faa638366156153e9990d831aa12031db0dc3e0a584451745f0b95e986449d8.mp3",
+      "synthesisText": "start off",
       "category": "Phrasal verb",
       "domains": ["business"],
       "chars": 9
     },
-    "start off": {
-      "objectKey": "audio/7f/7faa638366156153e9990d831aa12031db0dc3e0a584451745f0b95e986449d8.mp3",
-      "synthesisText": "start off",
+    "point out": {
+      "objectKey": "audio/46/467cf2d1e83743a10d1a31f35f1d1f90a2ae38b2f2f662b581d1c321f8beb9d0.mp3",
+      "synthesisText": "point out",
       "category": "Phrasal verb",
       "domains": ["business"],
       "chars": 9
@@ -890,6 +890,13 @@
       "domains": ["business"],
       "chars": 9
     },
+    "look ahead": {
+      "objectKey": "audio/5f/5f5bf2eb15751898eb1df92efa8a1e0e5f6b400fcf15c00265eac54953b66422.mp3",
+      "synthesisText": "look ahead",
+      "category": "phrasal-verb",
+      "domains": ["hadith"],
+      "chars": 10
+    },
     "answer for": {
       "objectKey": "audio/40/40cc2737fcf1b6ac25b6fe762a3adfdf8208e441e08f833b179cb8b078f7c7ef.mp3",
       "synthesisText": "answer for",
@@ -915,6 +922,13 @@
       "objectKey": "audio/60/600dd5b8f4450301670e1f065576330b047c7f6326c22a5115af2c0ffc4d8436.mp3",
       "synthesisText": "look after",
       "category": "phrasal-verb",
+      "domains": ["hadith"],
+      "chars": 10
+    },
+    "firm trust": {
+      "objectKey": "audio/6e/6ead06a1fe6dca93ef0c259917194b906142b7c2a386f794446c9f5b141d8b23.mp3",
+      "synthesisText": "firm trust",
+      "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 10
     },
@@ -946,13 +960,6 @@
       "domains": ["hadith"],
       "chars": 10
     },
-    "do without": {
-      "objectKey": "audio/02/0255a11a14e3d3be5c40a5a7d4eea478e6d494b56ebc194a49c7b0497ed61fec.mp3",
-      "synthesisText": "do without",
-      "category": "phrasal-verb",
-      "domains": ["hadith"],
-      "chars": 10
-    },
     "watch over": {
       "objectKey": "audio/f7/f7e893d497fac944d05eb3b1ffa03010c3ad7ab007d8232ab32c7258ce8611b2.mp3",
       "synthesisText": "watch over",
@@ -964,13 +971,6 @@
       "objectKey": "audio/65/65536fe5648d2015fb4a29c1f64b5fb21477b73228824173a89a8a99eff12235.mp3",
       "synthesisText": "fair price",
       "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 10
-    },
-    "set out to": {
-      "objectKey": "audio/ed/ed5a12e94832769c2d291d89d4cb7f6917f2e7d160dce77e9f8db545330ec910.mp3",
-      "synthesisText": "set out to",
-      "category": "phrasal-verb",
       "domains": ["hadith"],
       "chars": 10
     },
@@ -1121,11 +1121,11 @@
       "domains": ["hadith"],
       "chars": 11
     },
-    "get through": {
-      "objectKey": "audio/b7/b764c8879d4d1561543136b41e216e14cde737ec9d3ad57a104e774ea1455494.mp3",
-      "synthesisText": "get through",
+    "make up for": {
+      "objectKey": "audio/cf/cf288ffc734151ef8602015419e371bc9b8a9bcbcd623e0b21ee9d08f10cdb15.mp3",
+      "synthesisText": "make up for",
       "category": "phrasal-verb",
-      "domains": ["hadith"],
+      "domains": ["hadith", "conversation", "business"],
       "chars": 11
     },
     "push around": {
@@ -1145,6 +1145,27 @@
     "inner voice": {
       "objectKey": "audio/be/be8aaed2e9ce3c6f388f0919516b232c325c31825fe02594fb9a5a65e4a15d11.mp3",
       "synthesisText": "inner voice",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 11
+    },
+    "cut down on": {
+      "objectKey": "audio/c6/c6f865d2362a07bf2ea1b2a29cd9f9eb2d3bc84a2a2f17fb6c45db07b37f2abc.mp3",
+      "synthesisText": "cut down on",
+      "category": "phrasal-verb",
+      "domains": ["hadith", "conversation"],
+      "chars": 11
+    },
+    "inner peace": {
+      "objectKey": "audio/f7/f7b364bc6070a97e2aa8ec3ffbab5abdc64fab657b809fbe71c711572d799d69.mp3",
+      "synthesisText": "inner peace",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 11
+    },
+    "legal claim": {
+      "objectKey": "audio/24/240b0ba0e989e65959f496291a6d52906932945452248221d614cfd5ab09c098.mp3",
+      "synthesisText": "legal claim",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 11
@@ -1170,13 +1191,6 @@
       "domains": ["conversation"],
       "chars": 11
     },
-    "cut down on": {
-      "objectKey": "audio/c6/c6f865d2362a07bf2ea1b2a29cd9f9eb2d3bc84a2a2f17fb6c45db07b37f2abc.mp3",
-      "synthesisText": "cut down on",
-      "category": "Phrasal verb",
-      "domains": ["conversation"],
-      "chars": 11
-    },
     "pass off as": {
       "objectKey": "audio/e7/e79f333816d72c0f0f44596efdbbc58799c1273b2657e8c3500c8a71e1574df6.mp3",
       "synthesisText": "pass off as",
@@ -1194,13 +1208,6 @@
     "fall behind": {
       "objectKey": "audio/65/65fa91c94daf4903f4c8baaba68e653ed67d93703424c118d27770327945925f.mp3",
       "synthesisText": "fall behind",
-      "category": "Phrasal verb",
-      "domains": ["conversation", "business"],
-      "chars": 11
-    },
-    "make up for": {
-      "objectKey": "audio/cf/cf288ffc734151ef8602015419e371bc9b8a9bcbcd623e0b21ee9d08f10cdb15.mp3",
-      "synthesisText": "make up for",
       "category": "Phrasal verb",
       "domains": ["conversation", "business"],
       "chars": 11
@@ -1334,13 +1341,6 @@
     "helpful path": {
       "objectKey": "audio/6a/6a873e84684a821ec224958f89f5129a39a4fa37ff1d6902c757db5be567155a.mp3",
       "synthesisText": "helpful path",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 12
-    },
-    "prevent harm": {
-      "objectKey": "audio/4b/4bd20224bfe7ba5f47d79d32e3fb1acecd39329843566bb0b6047776cdab7b6c.mp3",
-      "synthesisText": "prevent harm",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 12
@@ -1513,9 +1513,9 @@
       "domains": ["hadith"],
       "chars": 13
     },
-    "factual claim": {
-      "objectKey": "audio/6c/6cb42628c80ac5628ccc6e8385c094c9cdcb7f10bbcf2feb8b36180f1828e254.mp3",
-      "synthesisText": "factual claim",
+    "fair decision": {
+      "objectKey": "audio/eb/eb6cdd7c3e501fc0bdc13d1a069b5f86b82e990030350ccff2bae633231f51c0.mp3",
+      "synthesisText": "fair decision",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 13
@@ -1530,6 +1530,20 @@
     "safe response": {
       "objectKey": "audio/a9/a95fc42fa1ac24d02267fbab4170b79df6d090b3f7b4b87cd7f518b5d8b06a81.mp3",
       "synthesisText": "safe response",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 13
+    },
+    "carry through": {
+      "objectKey": "audio/38/380cf6134e28c5218a5b6e9d00a04234f4f706fd6ab5a3c87cc812c453657949.mp3",
+      "synthesisText": "carry through",
+      "category": "phrasal-verb",
+      "domains": ["hadith"],
+      "chars": 13
+    },
+    "recorded deed": {
+      "objectKey": "audio/75/75daf5cf171a190a2040722f4f776a1dbf4fe1493f5ff95476027fd96e4a6eb0.mp3",
+      "synthesisText": "recorded deed",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 13
@@ -1688,6 +1702,13 @@
       "domains": ["hadith", "conversation"],
       "chars": 14
     },
+    "honest apology": {
+      "objectKey": "audio/8a/8aae8a02e8db25fd259634f722d2f018994c5edb2bf3f008e3a7cdd36c3e21b0.mp3",
+      "synthesisText": "honest apology",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 14
+    },
     "long term goal": {
       "objectKey": "audio/6a/6a183a31840c25ad33b96e1a04a9ae24bb9df012f680be58a6ab1823854aaced.mp3",
       "synthesisText": "long term goal",
@@ -1716,6 +1737,13 @@
       "domains": ["hadith"],
       "chars": 14
     },
+    "positive habit": {
+      "objectKey": "audio/aa/aa581c88616325294aca776be9f9eace45816da888327f6303deb1be0f74843e.mp3",
+      "synthesisText": "positive habit",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 14
+    },
     "follow through": {
       "objectKey": "audio/ea/ea62b0575adf75d6e34d71ae84672d695a82c5cac48c6c54a159a1ae055d5fdf.mp3",
       "synthesisText": "follow through",
@@ -1730,6 +1758,20 @@
       "domains": ["hadith"],
       "chars": 14
     },
+    "mutual benefit": {
+      "objectKey": "audio/a6/a60426173aae30e7e5480d83d7113c96918e001110ed8adb7b07e99542847c5e.mp3",
+      "synthesisText": "mutual benefit",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 14
+    },
+    "mutual respect": {
+      "objectKey": "audio/2c/2cea94a406538decc8f82d712b1342027ebc9d2b8ab58427f1d3d3ea72292624.mp3",
+      "synthesisText": "mutual respect",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 14
+    },
     "practical help": {
       "objectKey": "audio/79/793f260359d31267b64edab61911d20c850b524fedf8448b0a039f015933854e.mp3",
       "synthesisText": "practical help",
@@ -1737,10 +1779,10 @@
       "domains": ["hadith"],
       "chars": 14
     },
-    "written record": {
-      "objectKey": "audio/12/12bfe1d0069829949c5e7ddf67075d65dd65ed5d2f32ffb9c58f8cdbde31837a.mp3",
-      "synthesisText": "written record",
-      "category": "collocation-idiom",
+    "hold back from": {
+      "objectKey": "audio/d9/d974d0b9351bfae7e33267ccdd7d7b68343b148cbcc05f029c25ec34a1d94770.mp3",
+      "synthesisText": "hold back from",
+      "category": "phrasal-verb",
       "domains": ["hadith"],
       "chars": 14
     },
@@ -1877,18 +1919,18 @@
       "domains": ["hadith"],
       "chars": 15
     },
-    "come into being": {
-      "objectKey": "audio/c7/c77693ed173238fe563d993f5f34cbac81547daa07bfe64bce97522d2f0bcb9f.mp3",
-      "synthesisText": "come into being",
-      "category": "phrasal-verb",
+    "finite lifespan": {
+      "objectKey": "audio/d9/d92fa351de25cba827a6af3a71bf356c55255f96dc0baf1d7cf328397b10b7cb.mp3",
+      "synthesisText": "finite lifespan",
+      "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 15
     },
-    "informed choice": {
-      "objectKey": "audio/5b/5b07e316b2a7581b30141de699fac4541818e156833259acdf2753a31a2a1cd1.mp3",
-      "synthesisText": "informed choice",
+    "moral integrity": {
+      "objectKey": "audio/58/58be57594c5fb35efcc541280804f9eb8f24a6fa5dc7e3fb4799976770a97b78.mp3",
+      "synthesisText": "moral integrity",
       "category": "collocation-idiom",
-      "domains": ["hadith", "conversation"],
+      "domains": ["hadith"],
       "chars": 15
     },
     "respectful tone": {
@@ -1926,9 +1968,9 @@
       "domains": ["hadith"],
       "chars": 15
     },
-    "trusted support": {
-      "objectKey": "audio/ed/ed6159cc79ed9827710e86aa32ea4f813e630d161854d04f65ab7b110cbdf635.mp3",
-      "synthesisText": "trusted support",
+    "positive action": {
+      "objectKey": "audio/b0/b00229cc7c15334c18a94ddb97a6dbdad9e0bcd55804d01ad4d2c925275862b3.mp3",
+      "synthesisText": "positive action",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 15
@@ -1961,16 +2003,16 @@
       "domains": ["hadith"],
       "chars": 15
     },
-    "charitable gift": {
-      "objectKey": "audio/c3/c37a130c5fe725bc55116956753205fdce51600d2b88c5b86a7e6f487e38aa5f.mp3",
-      "synthesisText": "charitable gift",
+    "fair settlement": {
+      "objectKey": "audio/82/82214676af52509920175e9390f6d52f29bb5c909288c61798b93a9b3d9279db.mp3",
+      "synthesisText": "fair settlement",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 15
     },
-    "strong evidence": {
-      "objectKey": "audio/6f/6f41a6c22bbd8f08816c4a5372213892f2e4ea4eafa4c616a76aa524820e7e0d.mp3",
-      "synthesisText": "strong evidence",
+    "sworn statement": {
+      "objectKey": "audio/f3/f3aa2cbca157f0200a7c264783ca2f74ab18a555dbb898f7f11e17585ce44427.mp3",
+      "synthesisText": "sworn statement",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 15
@@ -2062,13 +2104,6 @@
     "shared framework": {
       "objectKey": "audio/69/6905c5e90a715608f654562912fc5e662a7b4e753061de2a571c4027ae2db6bd.mp3",
       "synthesisText": "shared framework",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 16
-    },
-    "reasonable doubt": {
-      "objectKey": "audio/b0/b051b4f722953041cf2a753b54c37596718908d60f1f2aba4ded60ec76b74b6a.mp3",
-      "synthesisText": "reasonable doubt",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 16
@@ -2192,16 +2227,9 @@
       "domains": ["hadith"],
       "chars": 17
     },
-    "human development": {
-      "objectKey": "audio/28/28de1617de80c1a9a2c1f8bd3b182581cc0a6ce8ac54b3babcdf3cc170da3245.mp3",
-      "synthesisText": "human development",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 17
-    },
-    "deliberate action": {
-      "objectKey": "audio/94/94fe1f212be2c4f7ac686526aa2294aecee105788a5b34107f68e9faeed6e160.mp3",
-      "synthesisText": "deliberate action",
+    "clear distinction": {
+      "objectKey": "audio/51/51b8a09b97fc92e279267a3ed26feef277135efd0147e43e7b1f3f2d6e52da79.mp3",
+      "synthesisText": "clear distinction",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 17
@@ -2209,13 +2237,6 @@
     "measured response": {
       "objectKey": "audio/79/79950d6310aeb02481c475451b9d560a6b060ce3709a0e1b662ab9c1e59e1b7b.mp3",
       "synthesisText": "measured response",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 17
-    },
-    "uncertain outcome": {
-      "objectKey": "audio/92/928d0a81a1c80d5148dfb12a6f065de436d1edb952eeaa0860116c1dacf6a10e.mp3",
-      "synthesisText": "uncertain outcome",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 17
@@ -2234,23 +2255,9 @@
       "domains": ["hadith"],
       "chars": 17
     },
-    "voluntary service": {
-      "objectKey": "audio/e1/e19c68940b817b875998b10d88605a3a37b07aef4434baa637be1c9b0f4c9100.mp3",
-      "synthesisText": "voluntary service",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 17
-    },
-    "peaceful solution": {
-      "objectKey": "audio/76/763d714ea2e4d442de061895edaaabbd403add549fe737db1e8f6b81aa4d4006.mp3",
-      "synthesisText": "peaceful solution",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 17
-    },
-    "secure protection": {
-      "objectKey": "audio/8b/8b5beda1f2716d6f860f2f848d175f7e7e5a7b665e694f2dd6aa4a84e1753c05.mp3",
-      "synthesisText": "secure protection",
+    "sincere intention": {
+      "objectKey": "audio/f5/f5d6d0286924cfafa25acd757e783405e00890dfadc5ae88de6616bdb6cf6037.mp3",
+      "synthesisText": "sincere intention",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 17
@@ -2325,6 +2332,13 @@
       "domains": ["business"],
       "chars": 17
     },
+    "destined provision": {
+      "objectKey": "audio/47/472d39697f2276b3b4a07bbd13c3134dd37d7772461cae134e7c6a5424b99e16.mp3",
+      "synthesisText": "destined provision",
+      "category": "collocation-idiom",
+      "domains": ["hadith"],
+      "chars": 18
+    },
     "responsible action": {
       "objectKey": "audio/c3/c39b79bbc3d1fe807658b9576eb6dd13d96b7cda234a42dab99b3b1fd34f9e00.mp3",
       "synthesisText": "responsible action",
@@ -2388,13 +2402,6 @@
       "domains": ["hadith"],
       "chars": 19
     },
-    "material possession": {
-      "objectKey": "audio/4a/4adbc29bdf61dcc5efabb40ee91c21f3508916d1a4dcb2f6009374c020360d23.mp3",
-      "synthesisText": "material possession",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 19
-    },
     "too good to be true": {
       "objectKey": "audio/19/19274ea694b9f4ae4a94c2a6b12f5076cce1dbd70ec98f918359c136469e3607.mp3",
       "synthesisText": "too good to be true",
@@ -2440,13 +2447,6 @@
     "established practice": {
       "objectKey": "audio/86/86c4875809169806760e9c015005b50c8f7a4df99edb73952d0aea328cb6ce04.mp3",
       "synthesisText": "established practice",
-      "category": "collocation-idiom",
-      "domains": ["hadith"],
-      "chars": 20
-    },
-    "deliberate intention": {
-      "objectKey": "audio/6a/6a270f2f726f9b547c20dbe24f3b97c537cb40b85e20d02b02eb1dcddb20ebed.mp3",
-      "synthesisText": "deliberate intention",
       "category": "collocation-idiom",
       "domains": ["hadith"],
       "chars": 20
@@ -2731,6 +2731,27 @@
       "domains": ["hadith"],
       "chars": 4
     },
+    "wali": {
+      "objectKey": "audio/1f/1f97e20c19ba82b4fda2455244fcfd15ae14e5b5f07f038c45318b5d36d7d03b.mp3",
+      "synthesisText": "wali",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 4
+    },
+    "hope": {
+      "objectKey": "audio/d3/d3c0f77780f42f00f00b9a18cbec1274dac62bcf59e41ec6174aeadd73de818b.mp3",
+      "synthesisText": "hope",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 4
+    },
+    "sins": {
+      "objectKey": "audio/c1/c1965512b8cfb208e3b49e41305454ab6213418116b1c54735ee68fdbbb88b1e.mp3",
+      "synthesisText": "sins",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 4
+    },
     "risk": {
       "objectKey": "audio/30/3097d52574107f0864d8a9a84be49d57f6f05266aac71227a1bab6c5cfb534c5.mp3",
       "synthesisText": "risk",
@@ -2826,6 +2847,20 @@
       "objectKey": "audio/74/74ba60a2aecea2ee6e49d4fd6c203f809a41c69f04cddbe112749dcee3ec680c.mp3",
       "synthesisText": "marry",
       "category": "extra-vocabulary",
+      "domains": ["hadith"],
+      "chars": 5
+    },
+    "proof": {
+      "objectKey": "audio/55/552086a3176e500342df3dac0580db28fa6a13fdc5075045459679b518df50fb.mp3",
+      "synthesisText": "proof",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 5
+    },
+    "joint": {
+      "objectKey": "audio/55/559653920e7c5c812f2fdaa036d89d39c58fcf9d2c5c50f6c68c3f9bc65d0039.mp3",
+      "synthesisText": "joint",
+      "category": "vocabulary",
       "domains": ["hadith"],
       "chars": 5
     },
@@ -3007,6 +3042,34 @@
     "pardon": {
       "objectKey": "audio/29/29cc7a5ce39e30f8c0663946e68b049dd27991801fbd69d4a6f21396dd0f34e5.mp3",
       "synthesisText": "pardon",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 6
+    },
+    "expect": {
+      "objectKey": "audio/ff/ff16aeddc54dcd07842c486bb40a70bf51503f47deaf49892dd7aaf0ea54b20e.mp3",
+      "synthesisText": "expect",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 6
+    },
+    "health": {
+      "objectKey": "audio/70/70c3075093e1c1a5999dec01f4f2e24eca1fc339ed720ffc142ec91bc5fa6182.mp3",
+      "synthesisText": "health",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 6
+    },
+    "desire": {
+      "objectKey": "audio/95/95ea871836d68a3ceb9048fe07826bab3b773d753cb96a7d9cd138deeb5172b3.mp3",
+      "synthesisText": "desire",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 6
+    },
+    "invoke": {
+      "objectKey": "audio/2f/2f05af7348754a8561d8f6729990880e88a0a2343b69e7262259a9b65c698bcc.mp3",
+      "synthesisText": "invoke",
       "category": "vocabulary",
       "domains": ["hadith"],
       "chars": 6
@@ -3519,6 +3582,27 @@
       "objectKey": "audio/35/35a5b6f157a2261e39a8c1568246b45f230eecd87f76ce34f1b605657f949910.mp3",
       "synthesisText": "property",
       "category": "visual-vocabulary",
+      "domains": ["hadith"],
+      "chars": 8
+    },
+    "stranger": {
+      "objectKey": "audio/32/323632063b1cbd5c8e4d7aaa844beaa02874ed4ce7a066738cd680d017e3c49b.mp3",
+      "synthesisText": "stranger",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 8
+    },
+    "wayfarer": {
+      "objectKey": "audio/4f/4f96791e45474a14dc640f7ff4abf1d4ea43694792b0fccd6e7895956f87fe5f.mp3",
+      "synthesisText": "wayfarer",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 8
+    },
+    "guidance": {
+      "objectKey": "audio/e4/e43403907fa646415e059e89ff8ae00753ebc2c3d4758f9ab56c5e48878ad82f.mp3",
+      "synthesisText": "guidance",
+      "category": "vocabulary",
       "domains": ["hadith"],
       "chars": 8
     },
@@ -4320,6 +4404,13 @@
       "domains": ["hadith"],
       "chars": 10
     },
+    "right tool": {
+      "objectKey": "audio/c3/c3567c0e822e405ca32af11293721c3dd3bd5a81101edfc0ce606a5a733f7797.mp3",
+      "synthesisText": "right tool",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 10
+    },
     "convenient": {
       "objectKey": "audio/72/72b12731af71b385796867022ff3f455c3151977c25d0286186528ad88368fae.mp3",
       "synthesisText": "convenient",
@@ -4782,6 +4873,13 @@
       "domains": ["hadith"],
       "chars": 11
     },
+    "subservient": {
+      "objectKey": "audio/d6/d6da481a138556e13121aaac2686c0198b8000d4c4f87b0fafab35e29b5fde05.mp3",
+      "synthesisText": "subservient",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 11
+    },
     "distraction": {
       "objectKey": "audio/ca/ca6c62b90836205c3c5e47083b075ddcde5a3c9cc6511bc7b09cd1cf53fc34de.mp3",
       "synthesisText": "distraction",
@@ -5188,6 +5286,27 @@
       "domains": ["hadith"],
       "chars": 12
     },
+    "supplication": {
+      "objectKey": "audio/97/97acdf615b985a7d050b75471e53a5dca48de6800ce33c4fb78173d8993271ea.mp3",
+      "synthesisText": "supplication",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 12
+    },
+    "both do well": {
+      "objectKey": "audio/95/95b822007abc38abf8f80a2bfdf2e424a657952d4f8b10a9aa0c3eda10c62248.mp3",
+      "synthesisText": "both do well",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 12
+    },
+    "great matter": {
+      "objectKey": "audio/a9/a91ca7bbc2cb79068e8a57fa6eb56fa4df5633bbcd30e5dbbf355dbc1c140887.mp3",
+      "synthesisText": "great matter",
+      "category": "vocabulary",
+      "domains": ["hadith"],
+      "chars": 12
+    },
     "independence": {
       "objectKey": "audio/b8/b8ba57bd5b155f187923a80fd416fb39e85e05af428243bb7c03fda894b2ab42.mp3",
       "synthesisText": "independence",
@@ -5472,13 +5591,6 @@
       "objectKey": "audio/5f/5f472265e1eefd985b326950399260c0c90310230f430243e34b23eaaf52e5bc.mp3",
       "synthesisText": "PHRASAL VERBS",
       "category": "extra-vocabulary",
-      "domains": ["hadith"],
-      "chars": 13
-    },
-    "wali (friend)": {
-      "objectKey": "audio/41/416e76389af21c62a6bf57bb1df23c5566dc572fa5040c734bbe2c206eb32075.mp3",
-      "synthesisText": "wali (friend)",
-      "category": "vocabulary",
       "domains": ["hadith"],
       "chars": 13
     },
@@ -6004,6 +6116,13 @@
       "objectKey": "audio/68/6802f63deb8af159baaca4fa6ba5585058e8ac5c2ed268168ed4095b7d278d9b.mp3",
       "synthesisText": "relieve hardship",
       "category": "visual-vocabulary",
+      "domains": ["hadith"],
+      "chars": 16
+    },
+    "hope you succeed": {
+      "objectKey": "audio/81/8125d22b1c95209c74ef500e49ebcd85107e08b17bfbcc8703a05037816afd34.mp3",
+      "synthesisText": "hope you succeed",
+      "category": "vocabulary",
       "domains": ["hadith"],
       "chars": 16
     },
@@ -7249,6 +7368,13 @@
     "burden of proof": {
       "objectKey": "audio/68/68942b11feb89f9141a04d8713bbeb983083d368fb1233ab2a3a4ce08b0cb4e4.mp3",
       "synthesisText": "burden of proof",
+      "category": "Collocation",
+      "domains": ["conversation"],
+      "chars": 15
+    },
+    "informed choice": {
+      "objectKey": "audio/5b/5b07e316b2a7581b30141de699fac4541818e156833259acdf2753a31a2a1cd1.mp3",
+      "synthesisText": "informed choice",
       "category": "Collocation",
       "domains": ["conversation"],
       "chars": 15
