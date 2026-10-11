@@ -1,23 +1,23 @@
 # WordPix Listening Scenarios Tracker (ElevenLabs v4 Master)
 
 > **Model**: `eleven_v4` (Most Expressive, 72% launch promo active)
-> **Last Updated**: 2026-10-11T21:13:31.713Z
-> **Account Remaining Quota**: **111,254** characters
-> **Overall Progress**: **32** listening lessons completed
+> **Last Updated**: 2026-10-11T21:15:10.457Z
+> **Account Remaining Quota**: **111,166** characters
+> **Overall Progress**: **37** listening lessons completed
 
 ## Units Overview
 
-| Unit ID            | Unit Name              | CEFR   | Completed / Total Lessons | Status         |
-| :----------------- | :--------------------- | :----- | :------------------------ | :------------- |
-| `numbers-counting` | **Numbers & Counting** | Pre-A1 | 4 / 4                     | ✅ Completed   |
-| `colors`           | **Colors**             | Pre-A1 | 3 / 3                     | ✅ Completed   |
-| `shapes-geometry`  | **Shapes & Geometry**  | Pre-A1 | 4 / 4                     | ✅ Completed   |
-| `basic-emotions`   | **Basic Emotions**     | Pre-A1 | 3 / 3                     | ✅ Completed   |
-| `family`           | **The Family**         | Pre-A1 | 3 / 3                     | ✅ Completed   |
-| `bedroom`          | **The Bedroom**        | Pre-A1 | 4 / 4                     | ✅ Completed   |
-| `bathroom`         | **The Bathroom**       | Pre-A1 | 6 / 6                     | ✅ Completed   |
-| `kitchen`          | **The Kitchen**        | Pre-A1 | 5 / 5                     | ✅ Completed   |
-| `living-room`      | **The Living Room**    | Pre-A1 | 0 / 5                     | 🔄 In Progress |
+| Unit ID            | Unit Name              | CEFR   | Completed / Total Lessons | Status       |
+| :----------------- | :--------------------- | :----- | :------------------------ | :----------- |
+| `numbers-counting` | **Numbers & Counting** | Pre-A1 | 4 / 4                     | ✅ Completed |
+| `colors`           | **Colors**             | Pre-A1 | 3 / 3                     | ✅ Completed |
+| `shapes-geometry`  | **Shapes & Geometry**  | Pre-A1 | 4 / 4                     | ✅ Completed |
+| `basic-emotions`   | **Basic Emotions**     | Pre-A1 | 3 / 3                     | ✅ Completed |
+| `family`           | **The Family**         | Pre-A1 | 3 / 3                     | ✅ Completed |
+| `bedroom`          | **The Bedroom**        | Pre-A1 | 4 / 4                     | ✅ Completed |
+| `bathroom`         | **The Bathroom**       | Pre-A1 | 6 / 6                     | ✅ Completed |
+| `kitchen`          | **The Kitchen**        | Pre-A1 | 5 / 5                     | ✅ Completed |
+| `living-room`      | **The Living Room**    | Pre-A1 | 5 / 5                     | ✅ Completed |
 
 ---
 
@@ -548,10 +548,10 @@
 
 #### 🎵 The Living Room 1 — _The Majlis Seating Arrangement_ (ترتيب مقاعد المجلس)
 
-- **Status**: `APPROVED_DRY_RUN`
+- **Status**: `RECORDED`
 - **Duration**: ~44.8s (103 words, 622 characters)
 - **Vocabulary Covered (15/15)**: `sofa`, `armchair`, `coffee-table`, `side-table`, `ottoman`, `rocking-chair`, `dining-table`, `dining-chair`, `bench`, `stool`, `bookshelf`, `tv-stand`, `cabinet`, `sideboard`, `shelf`
-- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-1_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-1_full.mp3) (0.0 KB)
+- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-1_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-1_full.mp3) (586.3 KB)
 - **Dialogue Clips**: 5 synthesized files
 
 **Script Dialogue:**
@@ -564,10 +564,10 @@
 
 #### 🎵 The Living Room 2 — _Electronics & Foyer Organization_ (تنظيم المدخل والأجهزة الإلكترونية)
 
-- **Status**: `APPROVED_DRY_RUN`
+- **Status**: `RECORDED`
 - **Duration**: ~40.9s (94 words, 624 characters)
 - **Vocabulary Covered (15/15)**: `drawer`, `magazine-rack`, `display-case`, `coat-rack`, `shoe-rack`, `television`, `remote-control`, `speaker`, `game-console`, `dvd-player`, `sound-bar`, `wi-fi-router`, `power-strip`, `cable`, `plug`
-- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-2_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-2_full.mp3) (0.0 KB)
+- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-2_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-2_full.mp3) (580.6 KB)
 - **Dialogue Clips**: 5 synthesized files
 
 **Script Dialogue:**
@@ -580,10 +580,10 @@
 
 #### 🎵 The Living Room 3 — _Twilight Ambience & Textiles_ (أجواء الغسق والمنسوجات الدافئة)
 
-- **Status**: `APPROVED_DRY_RUN`
+- **Status**: `RECORDED`
 - **Duration**: ~43s (99 words, 613 characters)
 - **Vocabulary Covered (15/15)**: `floor-lamp`, `table-lamp`, `ceiling-light`, `chandelier`, `light-bulb`, `candle`, `candle-holder`, `string-lights`, `picture-frame`, `wall-clock`, `cushion`, `throw-blanket`, `rug`, `carpet`, `curtain`
-- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-3_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-3_full.mp3) (0.0 KB)
+- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-3_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-3_full.mp3) (583.1 KB)
 - **Dialogue Clips**: 5 synthesized files
 
 **Script Dialogue:**
@@ -596,10 +596,10 @@
 
 #### 🎵 The Living Room 4 — _Hospitality Table & Family Games_ (مائدة الضيافة والألعاب العائلية)
 
-- **Status**: `APPROVED_DRY_RUN`
+- **Status**: `RECORDED`
 - **Duration**: ~40.9s (94 words, 597 characters)
 - **Vocabulary Covered (15/15)**: `tablecloth`, `placemat`, `coaster`, `doormat`, `tapestry`, `plant`, `vase`, `photo-frame`, `painting`, `book`, `magazine`, `newspaper`, `board-game`, `puzzle`, `playing-cards`
-- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-4_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-4_full.mp3) (0.0 KB)
+- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-4_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-4_full.mp3) (577.8 KB)
 - **Dialogue Clips**: 5 synthesized files
 
 **Script Dialogue:**
@@ -612,10 +612,10 @@
 
 #### 🎵 The Living Room 5 — _Peaceful Evening Reflection_ (أمسية التأمل والاسترخاء)
 
-- **Status**: `APPROVED_DRY_RUN`
+- **Status**: `RECORDED`
 - **Duration**: ~42.2s (97 words, 550 characters)
 - **Vocabulary Covered (13/13)**: `lamp`, `phone`, `tablet`, `charger`, `headphones`, `watch-tv`, `read-book`, `play-games`, `listen-to-music`, `relax`, `sit-down`, `chat`, `take-a-nap`
-- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-5_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-5_full.mp3) (0.0 KB)
+- **Full Scenario Audio**: [`assets/audio/scenarios/living-room/living-room-5_full.mp3`](file:///C:/Users/AhmedMahdy/OneDrive - Advansys IS/Documents/Antigravity/WordPix/assets/audio/scenarios/living-room/living-room-5_full.mp3) (555.3 KB)
 - **Dialogue Clips**: 5 synthesized files
 
 **Script Dialogue:**
