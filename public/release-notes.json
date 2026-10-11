@@ -1,14 +1,43 @@
 {
-  "version": "0.1.20",
+  "version": "0.1.21",
   "notes": [
-    "Resolved all 51 flagged exercise scene ambiguities across Household, Kitchen, Produce, Anatomy, Math and Reading with dedicated dual-format WebP and AVIF artwork.",
-    "Generated and synced 100% AVIF companion optimization for all 247 curriculum phrase illustrations, achieving zero remaining image gaps across the entire app."
+    "Achieved 100% dual-format WebP and AVIF asset parity across all learning scenes, scene images, and pronunciation curricula.",
+    "Resolved missing foundation cat and fish lesson assets, synchronized 476 assets to Cloudflare R2, and verified zero visual gaps across the entire app."
   ],
   "notesAr": [
-    "حل جميع المشاهد الـ 51 الملتبسة في تمارين ودروس المنزل والمطبخ والمنتجات والتشريح والرياضيات والقراءة برسوم واقعية بتنسيقي WebP و AVIF.",
-    "توليد ومزامنة نسخ AVIF عالية الكفاءة بنسبة 100% لجميع بطاقات عبارات المنهج الـ 247، مع الوصول لنسبة فراغات بصرية صفرية في كامل التطبيق."
+    "تحقيق تطابق كامل بنسبة 100% بين تنسيقي WebP و AVIF لجميع مشاهد التعلّم ومشاهد التمارين ومنهج النطق.",
+    "إصلاح عناصر القط والسمك في درس النطق التأسيسي، ومزامنة 476 ملفًا على Cloudflare R2، والتحقق من انعدام أي فجوات بصرية في التطبيق."
   ],
   "releases": [
+    {
+      "id": "0.1.21",
+      "version": "0.1.21",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Universal dual-format parity and pronunciation foundation completeness",
+        "ar": "تطابق شامل للتنسيق المزدوج واكتمال مفردات النطق التأسيسية"
+      },
+      "changes": [
+        {
+          "id": "universal-dual-format-parity",
+          "category": "improved",
+          "en": "Generated 168 companion WebP and AVIF assets with zero API overhead, achieving 100% format parity across learning scenes (116/116), scene images (302/302), and pronunciation cards.",
+          "ar": "توليد 168 ملفًا مرافقًا بتنسيقي WebP و AVIF دون أي استهلاك للواجهة البرمجية، وتحقيق تطابق 100% لمشاهد التعلّم (116/116) ومشاهد التمارين (302/302) وبطاقات النطق."
+        },
+        {
+          "id": "pronunciation-foundation-completeness",
+          "category": "fixed",
+          "en": "Added missing high-resolution cat and fish dual-format visual assets for Pronunciation Lesson 1 and verified seamless asset resolution.",
+          "ar": "إضافة صور عالية الدقة بتنسيقي WebP و AVIF لمفردتي القط والسمك في الدرس الأول من منهج النطق والتحقق من سلامة تحميلها."
+        },
+        {
+          "id": "r2-companion-cloud-sync",
+          "category": "improved",
+          "en": "Synchronized 476 companion assets to Cloudflare R2 bucket with zero errors and strict additive-only safety.",
+          "ar": "مزامنة 476 ملفًا مرافقًا إلى خادم Cloudflare R2 دون أي أخطاء ووفق سياسة الإضافة الآمنة دون حذف."
+        }
+      ]
+    },
     {
       "id": "0.1.20",
       "version": "0.1.20",
