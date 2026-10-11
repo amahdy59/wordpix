@@ -1,14 +1,43 @@
 {
-  "version": "0.1.18",
+  "version": "0.1.19",
   "notes": [
-    "Upgraded 85 core visual assets across app shell, section hero banners, and lesson exercise scenes.",
-    "Replaced blank placeholder heroes, fixed broken conductor vocabulary, and resolved visual ambiguities across produce and home settings."
+    "Completed 100% of all section and curriculum heroes (101 hero banners upgraded to photorealistic dual-format WebP and AVIF scenes).",
+    "Generated 31 exact-count and concept sentence scenes for lesson exercises, and synced authentic Islamic studies vocabulary."
   ],
   "notesAr": [
-    "ترقية 85 عنصرًا بصريًا أساسيًا عبر واجهة التطبيق ولافتات الأقسام الرئيسية ومشاهد تمارين الدروس.",
-    "استبدال اللافتات الفارغة وإصلاح بطاقة المايسترو وحل الغموض البصري في المنتجات ومشاهد المنزل."
+    "إكمال 100% من لافتات الأقسام والمنهج (ترقية 101 لافتة رئيسية إلى رسوم واقعية بتنسيقي WebP و AVIF).",
+    "توليد 31 مشهد جمل تعليمية لحساب الأعداد والمفاهيم بدقة، ومزامنة مفردات الدراسات الإسلامية الأصيلة."
   ],
   "releases": [
+    {
+      "id": "0.1.19",
+      "version": "0.1.19",
+      "date": "2026-10-11",
+      "title": {
+        "en": "Complete curriculum hero coverage and exact-count lesson scenes",
+        "ar": "تغطية شاملة للافتات المنهج ومشاهد الدروس دقيقة الأعداد"
+      },
+      "changes": [
+        {
+          "id": "full-hero-coverage",
+          "category": "improved",
+          "en": "Completed 100% of all section and curriculum heroes (101 hero banners upgraded to photorealistic dual-format WebP and AVIF scenes).",
+          "ar": "إكمال 100% من لافتات الأقسام والمنهج (ترقية 101 لافتة رئيسية إلى رسوم واقعية بتنسيقي WebP و AVIF)."
+        },
+        {
+          "id": "exact-count-lesson-scenes",
+          "category": "improved",
+          "en": "Generated 31 exact-count and concept sentence scenes for lesson exercises, eliminating count discrepancies.",
+          "ar": "توليد 31 مشهد جمل تعليمية لحساب الأعداد والمفاهيم بدقة، وإزالة أي تباين في الأعداد."
+        },
+        {
+          "id": "islamic-studies-vocab-sync",
+          "category": "fixed",
+          "en": "Synced authentic dual-format Islamic studies vocabulary assets, eliminating cloned placeholders.",
+          "ar": "مزامنة مفردات الدراسات الإسلامية الأصيلة بكلا التنسيقين، وإزالة الصور المكررة غير ذات الصلة."
+        }
+      ]
+    },
     {
       "id": "0.1.18",
       "version": "0.1.18",
