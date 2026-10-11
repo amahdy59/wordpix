@@ -15,6 +15,7 @@ import {
   PenLine,
   Mic,
   Route,
+  Sliders,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import type { Action } from "../types";
@@ -219,6 +220,15 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
 
             {/* Account actions; global appearance and accessibility live in the sidebar. */}
             <motion.div variants={staggerItem} className="flex flex-wrap items-center gap-2.5">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowSettings(true)}
+                aria-label={t("settings.title")}
+                iconLeft={<Sliders className="size-4" aria-hidden />}
+              >
+                <span>{t("settings.title")}</span>
+              </Button>
               {user ? (
                 <Button
                   variant="secondary"
@@ -258,8 +268,8 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                 icon={<Brain className="size-6" aria-hidden />}
                 className="min-h-48 flex-1"
                 action={
-                  <Button onClick={() => dispatch({ type: "GO", to: "practice" })}>
-                    {t("dashboard.practiseSkill")}
+                  <Button onClick={() => dispatch({ type: "GO", to: "learn" })}>
+                    {t("nav.learn")}
                   </Button>
                 }
               />

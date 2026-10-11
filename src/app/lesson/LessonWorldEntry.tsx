@@ -312,8 +312,21 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
                       max={g.wordIds.length}
                     />
                   )}
-                  {/* Lesson Options Dropdown Trigger Button */}
-                  <div className="absolute bottom-2 end-2 sm:relative sm:bottom-auto sm:end-auto">
+                  {/* Lesson Options Dropdown Trigger Button & Preview Shortcut */}
+                  <div className="absolute bottom-2 end-2 sm:relative sm:bottom-auto sm:end-auto flex items-center gap-1.5">
+                    <button
+                      type="button"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleBrowseWords(g.id);
+                      }}
+                      title={t("lesson.browseWords")}
+                      aria-label={`${t("lesson.browseWords")} - ${g.name}`}
+                      className="hidden sm:flex min-w-[44px] min-h-[44px] px-3 items-center justify-center gap-1.5 rounded-xl border border-border bg-wp-card hover:bg-secondary text-foreground hover:text-primary transition-all outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 font-sans font-semibold text-sm cursor-pointer"
+                    >
+                      <BookOpen className="size-4 text-primary" aria-hidden />
+                      <span>{t("lesson.browseWords")}</span>
+                    </button>
                     <button
                       type="button"
                       id={`menu-trigger-${g.id}`}

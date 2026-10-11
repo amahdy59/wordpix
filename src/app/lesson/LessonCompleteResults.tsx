@@ -369,6 +369,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                       dispatch({
                         type: "START_LESSON",
                         lessonId: nextGroup.id,
+                        unitId: resolveUnitForLesson(nextGroup.id).id,
                         mode: "NEW_LESSON",
                         wordQueue: nextGroup.wordIds,
                       })

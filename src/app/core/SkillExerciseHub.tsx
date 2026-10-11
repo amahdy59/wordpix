@@ -30,7 +30,7 @@ interface Props {
   dispatch: React.Dispatch<Action>;
 }
 
-const REVIEW_SESSION_SIZE = 5;
+const DEFAULT_REVIEW_SESSION_SIZE = 5;
 
 /**
  * Practice Tab: Consolidates Spaced-Repetition Daily Review and Multimodal Skill Drills.
@@ -69,8 +69,9 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
     [memoryItems]
   );
 
+  const [selectedBatchSize, setSelectedBatchSize] = useState<number>(DEFAULT_REVIEW_SESSION_SIZE);
   const totalDue = overdueList.length + dueTodayList.length;
-  const sessionSize = Math.min(REVIEW_SESSION_SIZE, totalDue);
+  const sessionSize = Math.min(selectedBatchSize, totalDue);
 
   const hasLearningHistory =
     (learnerState.learnerProgress?.sessionsCompleted ?? 0) > 0 ||
@@ -90,7 +91,7 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
 
   const startReviewSession = () => {
     const queue = [...overdueList, ...dueTodayList]
-      .slice(0, REVIEW_SESSION_SIZE)
+      .slice(0, sessionSize)
       .map((item) => item.wordId);
     if (queue.length === 0) return;
 
@@ -161,6 +162,34 @@ export const SkillExerciseHub = memo(function SkillExerciseHub({ dispatch }: Pro
             </div>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+              {totalDue > 5 && (
+                <div
+                  className="flex items-center gap-1.5 self-start sm:self-center"
+                  role="group"
+                  aria-label={t("masteryReview.wordsDue")}
+                >
+                  {[5, 10, totalDue]
+                    .filter((size, i, arr) => arr.indexOf(size) === i)
+                    .map((size) => (
+                      <button
+                        key={size}
+                        type="button"
+                        onClick={() => setSelectedBatchSize(size)}
+                        className={`min-h-[44px] px-3 py-1.5 rounded-xl text-sm font-bold font-sans transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary ${
+                          selectedBatchSize === size
+                            ? "bg-primary text-primary-foreground shadow-wp-xs"
+                            : "bg-wp-card text-foreground hover:bg-muted border border-border"
+                        }`}
+                        aria-pressed={selectedBatchSize === size}
+                      >
+                        {size === totalDue
+                          ? `${formatNumber(size, numeralSystem)} (${t("action.all", { defaultValue: "All" })})`
+                          : formatNumber(size, numeralSystem)}
+                      </button>
+                    ))}
+                </div>
+              )}
+
               <Button
                 variant="primary"
                 size="lg"
