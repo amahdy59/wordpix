@@ -1,14 +1,43 @@
 {
-  "version": "0.1.23",
+  "version": "0.1.24",
   "notes": [
-    "Completed a comprehensive audio overhaul of all 42 Hadith curriculum lessons with rich classical Fusha Arabic narration by Ali and expressive English narration by Narrator (eleven_v4).",
-    "Upgraded full canonical Arabic Hadith texts with complete Tashkeel (diacritics > 0.70 density), full reverent honorifics, and verified 100% Cloudflare R2 delivery with zero gaps."
+    "Hardened Hadith audio streaming resilience by extending network buffer thresholds to 15 seconds, preventing premature synthesis fallbacks on long canonical passages.",
+    "Generated and uploaded all 23 missing Hadith vocabulary phrases using eleven_v4, achieving 100% audio coverage across all 42 lessons on Cloudflare R2."
   ],
   "notesAr": [
-    "إتمام تحديث صوتي شامل لكافة دروس الحديث النبوي الـ 42 بقراءة فصيحة رخيمة بصوت علي باللغة العربية ونطق تعبيري باللغة الإنجليزية عبر نموذج eleven_v4.",
-    "تحديث النصوص العربية التراثية بالتشكيل الكامل (كثافة حركات > 0.70) والصلوات والترضيات الكاملة دون أي اختصار، والتحقق من تطابق كافة التسجيلات على Cloudflare R2 بنسبة 100%."
+    "تعزيز موثوقية البث الصوتي لأحاديث المنهج عبر تمديد مهلة التحميل إلى 15 ثانية لمنع التحويل الخاطئ إلى محرك النطق الآلي في النصوص الطويلة.",
+    "توليد ورفع كافة المفردات والتعبيرات الـ 23 المتبقية في دروس الحديث عبر نموذج eleven_v4 التعبيري لتحقيق تغطية صوتية تامة بنسبة 100% على Cloudflare R2."
   ],
   "releases": [
+    {
+      "id": "0.1.24",
+      "version": "0.1.24",
+      "date": "2026-10-12",
+      "title": {
+        "en": "Hadith Audio Playback Resilience & 100% Vocabulary Coverage",
+        "ar": "تعزيز استقرار تشغيل صوتيات الحديث واستكمال تغطية المفردات بنسبة 100%"
+      },
+      "changes": [
+        {
+          "id": "hadith-audio-stream-timeout-resilience",
+          "category": "improved",
+          "en": "Extended audio streaming buffer timeout from 4s to 15s in useAudio with auto-preload, ensuring long Hadith passages buffer smoothly without aborting to device synthesis.",
+          "ar": "تمديد مهلة تحميل البث الصوتي من 4 إلى 15 ثانية مع التحميل المسبق التلقائي، لضمان تحميل نصوص الأحاديث الطويلة بسلاسة دون انقطاع."
+        },
+        {
+          "id": "hadith-missing-vocab-eleven-v4-generation",
+          "category": "added",
+          "en": "Synthesised and uploaded 23 core Hadith vocabulary expressions using eleven_v4 expressive model; registered keys in curriculumAudioManifest.",
+          "ar": "توليد ورفع 23 تعبيرًا ومفردة أساسية في دروس الحديث باستخدام نموذج eleven_v4 التعبيري وإدراجها في بيان الصوتيات."
+        },
+        {
+          "id": "hadith-arabic-synthesis-voice-safeguard",
+          "category": "improved",
+          "en": "Strengthened speech synthesis fallback so Arabic passages strictly require authentic Arabic voices, preventing garbled non-Arabic speech engine fallbacks.",
+          "ar": "تحصين محرك النطق لضمان عدم استخدام أي أصوات غير عربية عند طلب نطق النصوص العربية الفصحى."
+        }
+      ]
+    },
     {
       "id": "0.1.23",
       "version": "0.1.23",
