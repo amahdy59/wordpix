@@ -9,14 +9,12 @@ function showGroups(groupName) {
     console.log(`${groupName} not found`);
     return;
   }
-  const endMarker = `];`;
+  const endMarker = `];\n`;
   const endIdx = text.indexOf(endMarker, idx);
   console.log(`=== ${groupName} ===`);
-  console.log(text.slice(idx, endIdx + 2));
+  console.log(text.slice(idx, endIdx + 3));
 }
 
-showGroups("FRUITS_GROUPS");
-showGroups("VEGETABLES_GROUPS");
-showGroups("TELLING_TIME_GROUPS");
-showGroups("DAYS_MONTHS_GROUPS");
-showGroups("DAILY_ACTION_VERBS_GROUPS");
+showGroups("DAILY_ROUTINES_GROUPS");
+showGroups("CLASSROOM_GROUPS");
+showGroups("TOYS_GAMES_GROUPS");

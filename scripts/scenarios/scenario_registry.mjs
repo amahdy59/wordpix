@@ -7,6 +7,30 @@ import { BEDROOM_SCENARIOS } from "./units/bedroom.mjs";
 import { BATHROOM_SCENARIOS } from "./units/bathroom.mjs";
 import { KITCHEN_SCENARIOS } from "./units/kitchen.mjs";
 import { LIVING_ROOM_SCENARIOS } from "./units/living_room.mjs";
+import { FRUITS_SCENARIOS } from "./units/fruits.mjs";
+import { VEGETABLES_SCENARIOS } from "./units/vegetables.mjs";
+import { TELLING_TIME_SCENARIOS } from "./units/telling_time.mjs";
+import { DAYS_MONTHS_SCENARIOS } from "./units/days_months.mjs";
+import { DAILY_ACTION_VERBS_SCENARIOS } from "./units/daily_action_verbs.mjs";
+import { PREPOSITIONS_OF_PLACE_SCENARIOS } from "./units/prepositions_of_place.mjs";
+import { DAILY_ROUTINES_SCENARIOS } from "./units/daily_routines.mjs";
+import { CLASSROOM_SCENARIOS } from "./units/classroom.mjs";
+import { TOYS_GAMES_SCENARIOS } from "./units/toys_games.mjs";
+import { MARKET_SCENARIOS } from "./units/market.mjs";
+import { GIVING_DIRECTIONS_SCENARIOS } from "./units/giving_directions.mjs";
+import { MOVEMENT_VERBS_SCENARIOS } from "./units/movement_verbs.mjs";
+import { HAND_ACTIONS_SCENARIOS } from "./units/hand_actions.mjs";
+import { FARM_SCENARIOS } from "./units/farm.mjs";
+import { GARDEN_SCENARIOS } from "./units/garden.mjs";
+import { PARK_SCENARIOS } from "./units/park.mjs";
+import { PLAYGROUND_SCENARIOS } from "./units/playground.mjs";
+import { PET_SHOP_SCENARIOS } from "./units/pet_shop.mjs";
+import { VET_CLINIC_SCENARIOS } from "./units/vet_clinic.mjs";
+import { BAKERY_SCENARIOS } from "./units/bakery.mjs";
+import { COFFEE_SHOP_SCENARIOS } from "./units/coffee_shop.mjs";
+import { ICE_CREAM_SHOP_SCENARIOS } from "./units/ice_cream_shop.mjs";
+import { PIZZA_SHOP_SCENARIOS } from "./units/pizza_shop.mjs";
+import { RESTAURANT_SCENARIOS } from "./units/restaurant.mjs";
 
 export const SCENARIO_CATALOG = {
   "numbers-counting": NUMBERS_COUNTING_SCENARIOS,
@@ -18,6 +42,30 @@ export const SCENARIO_CATALOG = {
   bathroom: BATHROOM_SCENARIOS,
   kitchen: KITCHEN_SCENARIOS,
   "living-room": LIVING_ROOM_SCENARIOS,
+  fruits: FRUITS_SCENARIOS,
+  vegetables: VEGETABLES_SCENARIOS,
+  "telling-time": TELLING_TIME_SCENARIOS,
+  "days-months": DAYS_MONTHS_SCENARIOS,
+  "daily-action-verbs": DAILY_ACTION_VERBS_SCENARIOS,
+  "prepositions-of-place": PREPOSITIONS_OF_PLACE_SCENARIOS,
+  "daily-routines": DAILY_ROUTINES_SCENARIOS,
+  classroom: CLASSROOM_SCENARIOS,
+  "toys-games": TOYS_GAMES_SCENARIOS,
+  market: MARKET_SCENARIOS,
+  "giving-directions": GIVING_DIRECTIONS_SCENARIOS,
+  "movement-verbs": MOVEMENT_VERBS_SCENARIOS,
+  "hand-actions": HAND_ACTIONS_SCENARIOS,
+  farm: FARM_SCENARIOS,
+  garden: GARDEN_SCENARIOS,
+  park: PARK_SCENARIOS,
+  playground: PLAYGROUND_SCENARIOS,
+  "pet-shop": PET_SHOP_SCENARIOS,
+  "vet-clinic": VET_CLINIC_SCENARIOS,
+  bakery: BAKERY_SCENARIOS,
+  "coffee-shop": COFFEE_SHOP_SCENARIOS,
+  "ice-cream-shop": ICE_CREAM_SHOP_SCENARIOS,
+  "pizza-shop": PIZZA_SHOP_SCENARIOS,
+  restaurant: RESTAURANT_SCENARIOS,
 };
 
 export function getUnitScenarios(unitId) {
@@ -47,9 +95,22 @@ export function reviewScenario(lesson) {
   const missingWords = [];
 
   for (const wordId of lesson.wordIds) {
-    const parts = wordId.toLowerCase().split("-").map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
-    const patternStr = `\\b` + parts.join("(?:[-\\s]+(?:a|an|the|my|your|his|her|our|their)[-\\s]+|[-\\s]+)") + `(s|es|d|ed|ing)?\\b`;
-    const pattern = new RegExp(patternStr, "i");
+    let pattern;
+    if (wordId === "jalape-o") {
+      pattern = /\bjalape[ñn]o(s)?\b/i;
+    } else if (wordId === "o-clock") {
+      pattern = /\bo['\s]?clock\b/i;
+    } else if (wordId === "a-m-") {
+      pattern = /(?:^|[\s\d:])a\.?m\.?(?=[\s,.;!?]|$)/i;
+    } else if (wordId === "p-m-") {
+      pattern = /(?:^|[\s\d:])p\.?m\.?(?=[\s,.;!?]|$)/i;
+    } else if (wordId === "clair") {
+      pattern = /(?:^|[\s"'])[eé]?clair(s)?\b/i;
+    } else {
+      const parts = wordId.toLowerCase().split("-").filter(Boolean).map((p) => p.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+      const patternStr = `\\b` + parts.join("(?:[-\\s]+(?:a|an|the|my|your|his|her|our|their)[-\\s]+|[-\\s]+)") + `(s|es|d|ed|ing)?\\b`;
+      pattern = new RegExp(patternStr, "i");
+    }
 
     if (pattern.test(allText)) {
       coveredWords.push(wordId);
