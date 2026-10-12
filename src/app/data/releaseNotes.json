@@ -1,14 +1,43 @@
 {
-  "version": "0.1.24",
+  "version": "0.1.25",
   "notes": [
-    "Hardened Hadith audio streaming resilience by extending network buffer thresholds to 15 seconds, preventing premature synthesis fallbacks on long canonical passages.",
-    "Generated and uploaded all 23 missing Hadith vocabulary phrases using eleven_v4, achieving 100% audio coverage across all 42 lessons on Cloudflare R2."
+    "Completed 100% of the 200-unit curriculum listening scenarios (840 lessons across Pre-A1 through C1) with an authentic 5-character ensemble powered by ElevenLabs v4.",
+    "Generated 1,680 synchronized SRT and VTT subtitle files and a master video timing manifest for full transcription and video production readiness."
   ],
   "notesAr": [
-    "تعزيز موثوقية البث الصوتي لأحاديث المنهج عبر تمديد مهلة التحميل إلى 15 ثانية لمنع التحويل الخاطئ إلى محرك النطق الآلي في النصوص الطويلة.",
-    "توليد ورفع كافة المفردات والتعبيرات الـ 23 المتبقية في دروس الحديث عبر نموذج eleven_v4 التعبيري لتحقيق تغطية صوتية تامة بنسبة 100% على Cloudflare R2."
+    "اكتمال تسجيلات وسيناريوهات الاستماع الصوتي بنسبة 100% لجميع وحدات المنهج الـ 200 (840 درساً من Pre-A1 إلى C1) بطاقم من 5 شخصيات واقعية مدعومة بنموذج ElevenLabs v4.",
+    "توليد 1680 ملف ترجمة متزامن بصيغتي SRT وVTT وبيان توقيت شامل يربط الحوارات النصية بدقة لإنتاج الفيديو وتصدير النصوص."
   ],
   "releases": [
+    {
+      "id": "0.1.25",
+      "version": "0.1.25",
+      "date": "2026-10-13",
+      "title": {
+        "en": "100% Complete 200-Unit Curriculum Spoken Listening Scenarios Engine & Synchronized Subtitles",
+        "ar": "اكتمال محرك سيناريوهات الاستماع الصوتي لكامل المنهج (200 وحدة، 840 درساً) والترجمة المتزامنة"
+      },
+      "changes": [
+        {
+          "id": "curriculum-listening-scenarios-engine-100-percent",
+          "category": "added",
+          "en": "Penned and voice-acted 840 natural conversational scenarios across all 200 units (Pre-A1 to C1) using an authentic 5-character ensemble (Tariq, Adam, Omar, Layla, Hana) powered by ElevenLabs v4 expressive speech synthesis.",
+          "ar": "تأليف وتسجيل 840 سيناريو حواري طبيعي عبر جميع وحدات المنهج الـ 200 (من Pre-A1 حتى C1) بطاقم من 5 شخصيات واقعية (طارق، آدم، عمر، ليلى، هنا) مدعومة بنموذج ElevenLabs v4 التعبيري."
+        },
+        {
+          "id": "synchronized-subtitles-and-timing-manifest",
+          "category": "added",
+          "en": "Created 1,680 synchronized SRT and VTT subtitle files and a master video timing manifest documenting line-level start/end timestamps, speaker cues, and audio asset mappings.",
+          "ar": "إنشاء 1680 ملف ترجمة متزامن بصيغتي SRT وVTT وبيان توقيت شامل يوثق البدايات والنهايات الزمنية لكل جملة، وأدوار الشخصيات، ومسارات المقاطع الصوتية."
+        },
+        {
+          "id": "listening-scenarios-interactive-studio-player",
+          "category": "added",
+          "en": "Shipped an interactive audio and transcript player studio allowing instant playback of full scenario mixes and individual dialogue lines with live speaker and vocabulary highlighting.",
+          "ar": "إطلاق استوديو تفاعلي للاستماع وقراءة النصوص يتيح التشغيل الفوري للسيناريوهات الكاملة والجمل الفردية مع إبراز المتحدثين والمفردات المستهدفة."
+        }
+      ]
+    },
     {
       "id": "0.1.24",
       "version": "0.1.24",

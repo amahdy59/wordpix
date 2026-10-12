@@ -3,6 +3,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { getUnitScenarios, reviewScenario } from "./scenarios/scenario_registry.mjs";
 import { buildListeningPlayer } from "./build_listening_player.mjs";
+import { generateVideoAndSubtitlesManifest } from "./build_video_manifest.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT_DIR = path.resolve(__dirname, "..");
@@ -84,6 +85,20 @@ async function synthesizeLine(voiceId, text, outPath, force = false) {
   return { skipped: false, size: buffer.length, chars: text.length };
 }
 
+// Helper: Retry-based file writer to handle Windows/OneDrive temporary sync locks
+function safeWriteFileSync(filePath, content, retries = 5) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      fs.mkdirSync(path.dirname(filePath), { recursive: true });
+      fs.writeFileSync(filePath, content, "utf8");
+      return;
+    } catch (err) {
+      if (i === retries - 1) throw err;
+      Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, 300);
+    }
+  }
+}
+
 // 4. Update Tracker Manifest & Markdown Report
 function updateTracker(unitData, lessonResults, subQuota) {
   const trackerJsonPath = path.join(ROOT_DIR, "docs", "LISTENING_SCENARIOS_TRACKER.json");
@@ -116,8 +131,7 @@ function updateTracker(unitData, lessonResults, subQuota) {
     lessons: lessonResults,
   };
 
-  fs.mkdirSync(path.dirname(trackerJsonPath), { recursive: true });
-  fs.writeFileSync(trackerJsonPath, JSON.stringify(tracker, null, 2), "utf8");
+  safeWriteFileSync(trackerJsonPath, JSON.stringify(tracker, null, 2));
 
   // Render Markdown Report
   const totalCompleted = Object.values(tracker.units).reduce(
@@ -159,8 +173,9 @@ function updateTracker(unitData, lessonResults, subQuota) {
     }
   }
 
-  fs.writeFileSync(trackerMdPath, md, "utf8");
+  safeWriteFileSync(trackerMdPath, md);
   buildListeningPlayer();
+  generateVideoAndSubtitlesManifest();
 }
 
 // 5. Main Execution Flow

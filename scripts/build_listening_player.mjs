@@ -196,7 +196,14 @@ export function buildListeningPlayer() {
           <div class="text-xs font-bold uppercase text-slate-400 tracking-wider mb-3">Dialogue Lines &amp; Lip-Sync Clips:</div>
           <div class="space-y-2.5">
             \${lesson.script.map((line, idx) => {
-              const speakerColor = line.speaker === 'Tariq' ? 'text-purple-300 bg-purple-500/20 border-purple-500/30' : line.speaker === 'Adam' ? 'text-sky-300 bg-sky-500/20 border-sky-500/30' : 'text-amber-300 bg-amber-500/20 border-amber-500/30';
+              const speakerColors = {
+                Tariq: 'text-purple-300 bg-purple-500/20 border-purple-500/30',
+                Adam: 'text-sky-300 bg-sky-500/20 border-sky-500/30',
+                Omar: 'text-amber-300 bg-amber-500/20 border-amber-500/30',
+                Layla: 'text-emerald-300 bg-emerald-500/20 border-emerald-500/30',
+                Hana: 'text-rose-300 bg-rose-500/20 border-rose-500/30',
+              };
+              const speakerColor = speakerColors[line.speaker] || 'text-slate-300 bg-slate-500/20 border-slate-500/30';
               const lineAudioSrc = '../assets/audio/scenarios/' + lesson.fullAudioRelative.split('/')[3] + '/' + lesson.id + '/' + line.id + '.mp3';
               return \`
                 <div class="p-3.5 rounded-xl bg-[#0d1424] border border-[#232f48] flex items-start justify-between gap-3 hover:border-slate-600 transition-colors">
