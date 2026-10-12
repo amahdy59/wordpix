@@ -315,25 +315,50 @@ export const ExerciseQuickQuiz = memo(function ExerciseQuickQuiz({
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
               transition={reduceMotion ? { duration: 0 } : { delay: 0.3 }}
-              className={`shrink-0 rounded-2xl px-5 py-3 flex items-center justify-between gap-3 border ${
+              className={`shrink-0 rounded-2xl px-5 py-3 flex flex-col gap-2 border ${
                 feedback === "correct"
                   ? "bg-wp-green/10 border-wp-green/30"
                   : "bg-wp-rose/10 border-wp-rose/30"
               }`}
             >
-              <span className="font-sans font-semibold text-foreground text-sm">
-                {feedback === "correct"
-                  ? `✓ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
-                  : `✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
-              </span>
-              <button
-                type="button"
-                onClick={handleContinue}
-                className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
-              >
-                {t("action.continue")}
-                <ArrowRight className="size-4" aria-hidden />
-              </button>
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-sans font-semibold text-foreground text-sm">
+                  {feedback === "correct"
+                    ? `✓ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`
+                    : `✗ ${identifySentence(currentTargetWord.label, currentTargetWord.topic)}`}
+                </span>
+                <button
+                  type="button"
+                  onClick={handleContinue}
+                  className="flex items-center gap-1.5 px-4 min-h-[44px] rounded-xl bg-primary text-primary-foreground font-sans font-bold text-sm shadow-sm transition-opacity focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary shrink-0"
+                >
+                  {t("action.continue")}
+                  <ArrowRight className="size-4" aria-hidden />
+                </button>
+              </div>
+              {/* "Why incorrect" contextual explanation */}
+              {feedback === "incorrect" && (
+                <div className="flex flex-col gap-0.5">
+                  {currentTargetWord.description && (
+                    <p
+                      className="font-sans text-xs text-foreground/80 leading-snug"
+                      lang="en"
+                      dir="ltr"
+                    >
+                      {currentTargetWord.description}
+                    </p>
+                  )}
+                  {currentTargetWord.arabicTranslation && (
+                    <p
+                      className="font-arabic text-sm text-foreground/80 font-semibold"
+                      dir="rtl"
+                      lang="ar"
+                    >
+                      {currentTargetWord.arabicTranslation}
+                    </p>
+                  )}
+                </div>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

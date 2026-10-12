@@ -204,7 +204,35 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
               title={
                 feedback === "correct" ? t("exercise.correctTitle") : t("exercise.notQuiteTitle")
               }
-              description={fullSentence}
+              description={
+                feedback === "incorrect" ? (
+                  <span className="flex flex-col gap-1">
+                    <span
+                      className="text-sm font-medium leading-relaxed text-muted-foreground"
+                      lang="en"
+                      dir="ltr"
+                    >
+                      {fullSentence}
+                    </span>
+                    {currentTargetWord.description && (
+                      <span className="text-xs leading-snug text-foreground/75" lang="en" dir="ltr">
+                        {currentTargetWord.description}
+                      </span>
+                    )}
+                    {currentTargetWord.arabicTranslation && (
+                      <span
+                        className="font-arabic text-sm font-semibold text-foreground/80"
+                        dir="rtl"
+                        lang="ar"
+                      >
+                        {currentTargetWord.arabicTranslation}
+                      </span>
+                    )}
+                  </span>
+                ) : (
+                  fullSentence
+                )
+              }
               icon={
                 feedback === "correct" ? (
                   <CheckCircle2 className="size-6 text-wp-green" aria-hidden />
