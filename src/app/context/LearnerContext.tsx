@@ -140,6 +140,7 @@ export interface LearnerProgressStats {
   daysActive: number;
   sessionsCompleted: number;
   completedSessionIds: string[];
+  streakFreezeAvailable?: number;
 }
 
 export interface SessionRecord {
@@ -184,6 +185,7 @@ export const INITIAL_LEARNER_STATE: LearnerStateSchema = {
     daysActive: 0,
     sessionsCompleted: 0,
     completedSessionIds: [],
+    streakFreezeAvailable: 1,
   },
   wordMemory: {},
   sessionHistory: [],
@@ -500,6 +502,7 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           {
             currentStreak: prev.learnerProgress.streak,
             lastActiveDate: prev.learnerProgress.lastStudiedDate,
+            freezeAvailable: prev.learnerProgress.streakFreezeAvailable ?? 1,
           },
           new Date()
         );
@@ -584,6 +587,8 @@ export function LearnerProvider({ children }: { children: React.ReactNode }) {
           xp: prev.learnerProgress.xp + xpEarned,
           sessionsCompleted: prev.learnerProgress.sessionsCompleted + 1,
           streak: streakRes.currentStreak,
+          streakFreezeAvailable:
+            streakRes.freezeAvailable ?? prev.learnerProgress.streakFreezeAvailable ?? 1,
           daysActive: isFirstSessionToday
             ? prev.learnerProgress.daysActive + 1
             : prev.learnerProgress.daysActive,

@@ -14,6 +14,7 @@ import { useExerciseHotkeys } from "../shared/useExerciseHotkeys";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 import { SentenceQuestionSupport, resolveSentenceMedia } from "../shared/SentenceQuestionSupport";
@@ -36,6 +37,7 @@ export const ExerciseContextGapFill = memo(function ExerciseContextGapFill({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const queue = useDrillQueue(words);
+  usePrefetchImage(queue.next);
   const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
   const [selectedId, setSelectedId] = useState<string | null>(null);

@@ -189,7 +189,14 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
         </div>
         <button
           type="button"
-          onClick={() => dispatch({ type: "GO", to: "lesson-entry", unitId: recommendedUnit.id })}
+          onClick={() =>
+            dispatch({
+              type: "GO",
+              to: "lesson-entry",
+              unitId: recommendedUnit.id,
+              returnTo: "learn",
+            })
+          }
           className="flex min-h-[52px] w-full items-center justify-center gap-2 rounded-2xl bg-primary px-6 py-3 font-bold text-primary-foreground shadow-wp-md motion-safe:active:scale-[0.98] focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary motion-reduce:transform-none lg:w-auto"
         >
           <BookOpen className="size-5" aria-hidden />
@@ -326,7 +333,12 @@ export const LearningPath = memo(function LearningPath({ dispatch }: Props) {
                                   : "text-muted-foreground font-semibold"
                               }
                               onClick={() =>
-                                dispatch({ type: "GO", to: "lesson-entry", unitId: unit.id })
+                                dispatch({
+                                  type: "GO",
+                                  to: "lesson-entry",
+                                  unitId: unit.id,
+                                  returnTo: "learn",
+                                })
                               }
                             />
                           </li>

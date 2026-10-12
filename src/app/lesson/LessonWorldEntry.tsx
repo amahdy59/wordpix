@@ -26,9 +26,15 @@ import { buildUnitAssessmentSample } from "./assessmentBlueprint";
 interface Props {
   unitId?: string;
   dispatch: React.Dispatch<Action>;
+  /** Where the back button should navigate. Defaults to "explore". */
+  returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
 }
 
-export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatch }: Props) {
+export const LessonWorldEntry = memo(function LessonWorldEntry({
+  unitId,
+  dispatch,
+  returnTo = "explore",
+}: Props) {
   const { t } = useI18n();
   const world = COURSE_UNITS[unitId ?? DEFAULT_UNIT_ID] ?? COURSE_UNITS[DEFAULT_UNIT_ID];
   const isHadithUnit = world.id === "hadith-niyyah";
@@ -130,7 +136,7 @@ export const LessonWorldEntry = memo(function LessonWorldEntry({ unitId, dispatc
           <button
             type="button"
             aria-label={t("action.back")}
-            onClick={() => dispatch({ type: "GO", to: "explore" })}
+            onClick={() => dispatch({ type: "GO", to: returnTo })}
             className="min-h-11 min-w-11 px-3 inline-flex items-center justify-center gap-2 rounded-xl border border-border focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <ArrowRight className="size-5 rotate-180 rtl:rotate-0" aria-hidden />

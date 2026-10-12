@@ -30,7 +30,8 @@ export function reducer(state: Screen, action: Action): Screen {
       : { id: "home" };
   }
   if (action.type === "GO") {
-    if (action.to === "lesson-entry") return { id: "lesson-entry", unitId: action.unitId };
+    if (action.to === "lesson-entry")
+      return { id: "lesson-entry", unitId: action.unitId, returnTo: action.returnTo };
     if (action.to === "learning-materials")
       return {
         id: "learning-materials",

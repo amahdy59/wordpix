@@ -30,6 +30,9 @@ interface Options {
 /** How long to wait for onstart before treating the utterance as failed. */
 const SPEECH_START_TIMEOUT_MS = 4000;
 
+/** How long to wait for network media buffering/streaming before treating the stream as stalled. */
+const MEDIA_STREAM_TIMEOUT_MS = 15000;
+
 function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisVoice | null {
   const voices = synth.getVoices();
   if (voices.length === 0) return null;
@@ -81,8 +84,7 @@ function pickVoice(synth: SpeechSynthesis, targetLang: string): SpeechSynthesisV
   return (
     voices.find((v) => v.lang.toLowerCase() === langLower) ??
     voices.find((v) => v.lang.toLowerCase().startsWith(prefix)) ??
-    voices[0] ??
-    null
+    (prefix === "ar" ? null : (voices[0] ?? null))
   );
 }
 
@@ -520,6 +522,7 @@ export function useAudio({
             return;
           }
           const audio = new Audio(url);
+          audio.preload = "auto";
           audio.playbackRate = rateRef.current;
           audio.volume = volume;
           let started = false;
@@ -587,7 +590,7 @@ export function useAudio({
               audio.onplaying = () => audio.pause();
               settle(false);
             }
-          }, SPEECH_START_TIMEOUT_MS);
+          }, MEDIA_STREAM_TIMEOUT_MS);
 
           audio.play().catch(() => {
             if (!isCurrent()) {

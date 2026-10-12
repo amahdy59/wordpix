@@ -12,6 +12,7 @@ import { useSound } from "../shared/useSound";
 import { useAutoAdvance, ADVANCE_DELAY_MS } from "../shared/useAutoAdvance";
 import { useAccessibility } from "../shared/useAccessibilityPreferences";
 import { useDrillQueue } from "./useDrillQueue";
+import { usePrefetchImage } from "../shared/usePrefetchImage";
 import { useI18n } from "../context/I18nContext";
 import { useLessonUsage } from "../data/useLessonUsage";
 
@@ -35,6 +36,7 @@ export const ExerciseSentenceBuilder = memo(function ExerciseSentenceBuilder({
   const { accessibility } = useAccessibility();
   const { playCorrect, playIncorrect, playClick } = useSound();
   const queue = useDrillQueue(words);
+  usePrefetchImage(queue.next);
   const usageState = useLessonUsage(lessonId);
   const currentTargetWord = queue.current ?? words[0];
   const usage = usageState.status === "ready" ? usageState.data : null;

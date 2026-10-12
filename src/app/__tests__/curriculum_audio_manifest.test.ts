@@ -19,6 +19,18 @@ describe("curriculumAudioManifest", () => {
     );
   });
 
+  it("resolves newly added Hadith vocabulary phrases", () => {
+    expect(getCurriculumAudioKey("give sincere advice")).toMatch(
+      /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/
+    );
+    expect(getCurriculumAudioKey("change through lawful action")).toMatch(
+      /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/
+    );
+    expect(getCurriculumAudioKey("reach the clouds")).toMatch(
+      /^audio\/[0-9a-f]{2}\/[0-9a-f]{64}\.mp3$/
+    );
+  });
+
   it("handles case-insensitivity gracefully", () => {
     const lowerKey = getCurriculumAudioKey("motive");
     const upperKey = getCurriculumAudioKey("Motive");

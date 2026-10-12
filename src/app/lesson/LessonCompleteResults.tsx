@@ -1,4 +1,5 @@
 import { memo, useEffect } from "react";
+import { motion, useReducedMotion } from "framer-motion";
 import type { Action, AnswerAttempt, LearnerMode } from "../types";
 import { HomeIndicator } from "../shared/HomeIndicator";
 import { PrimaryButton } from "../shared/PrimaryButton";
@@ -37,6 +38,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
   const { progress, recordSessionCompletion, recordUnitAssessmentCompletion } = useProgress();
   const { playLevelUp } = useSound();
   const { t } = useI18n();
+  const reduceMotion = useReducedMotion();
 
   const group = resolveGroup(lessonId, wordQueue);
 
@@ -104,9 +106,16 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         <div className="absolute -top-24 -end-24 size-72 rounded-full bg-secondary blur-3xl pointer-events-none" />
         <div className="absolute -bottom-24 -start-24 size-72 rounded-full bg-wp-amber/20 blur-3xl pointer-events-none" />
         <div className="relative z-10 flex flex-col items-center gap-6 text-center">
-          <div className="size-32 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl">
+          <motion.div
+            initial={reduceMotion ? false : { scale: 0.7, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={
+              reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 350, damping: 20 }
+            }
+            className="size-32 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center shadow-2xl"
+          >
             <Trophy className="size-16 text-wp-amber-foreground" aria-hidden />
-          </div>
+          </motion.div>
           <div>
             <span className="font-sans font-bold text-xs text-wp-amber-foreground bg-wp-amber/10 border border-wp-amber/20 px-3 py-1 rounded-full uppercase tracking-wider">
               {isAssessment
@@ -134,7 +143,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   : `You completed practice for ${groupWords.length} words.`}
             </p>
           </div>
-          <div
+          <motion.div
+            initial={reduceMotion ? false : { y: 10, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={
+              reduceMotion
+                ? { duration: 0 }
+                : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
+            }
             className="flex gap-3 items-center"
             aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
           >
@@ -145,7 +161,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                 aria-hidden
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
 
@@ -154,9 +170,16 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
         <div className="flex-1 flex flex-col items-center justify-center w-full max-w-md mx-auto px-6 gap-6 py-8 overflow-y-auto">
           {/* Mobile header */}
           <div className="lg:hidden flex flex-col items-center gap-3 text-center">
-            <div className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center">
+            <motion.div
+              initial={reduceMotion ? false : { scale: 0.7, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={
+                reduceMotion ? { duration: 0 } : { type: "spring", stiffness: 350, damping: 20 }
+              }
+              className="size-20 rounded-3xl bg-wp-amber/20 border border-wp-amber/30 flex items-center justify-center"
+            >
               <Trophy className="size-10 text-wp-amber-foreground" aria-hidden />
-            </div>
+            </motion.div>
             <div>
               <span className="font-sans font-bold text-xs text-primary bg-secondary border border-primary/20 px-3 py-1 rounded-full uppercase tracking-wider">
                 {isAssessment
@@ -180,7 +203,14 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   ? `Recalled ${groupWords.length} vocabulary words well in this session.`
                   : `Completed session for ${groupWords.length} words.`}
             </p>
-            <div
+            <motion.div
+              initial={reduceMotion ? false : { y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={
+                reduceMotion
+                  ? { duration: 0 }
+                  : { delay: 0.2, type: "spring", stiffness: 300, damping: 20 }
+              }
               className="flex gap-2 items-center"
               aria-label={`${stars.filter(Boolean).length} out of 3 stars`}
             >
@@ -191,7 +221,7 @@ export const LessonCompleteResults = memo(function LessonCompleteResults({
                   aria-hidden
                 />
               ))}
-            </div>
+            </motion.div>
           </div>
 
           <div className="hidden lg:block text-center">

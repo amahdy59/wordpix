@@ -351,7 +351,13 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
     if (state.id === "profile") return <ProfileStats dispatch={dispatch} />;
     if (state.id === "release-notes") return <ReleaseNotesPage dispatch={dispatch} />;
     if (state.id === "lesson-entry")
-      return <LessonWorldEntry unitId={state.unitId ?? DEFAULT_UNIT_ID} dispatch={dispatch} />;
+      return (
+        <LessonWorldEntry
+          unitId={state.unitId ?? DEFAULT_UNIT_ID}
+          dispatch={dispatch}
+          returnTo={state.returnTo}
+        />
+      );
     if (state.id === "learn-words")
       return <LearnWordsScreen lessonId={state.lessonId} dispatch={dispatch} />;
     if (state.id === "learning-materials")

@@ -38,7 +38,7 @@ interface Props {
 
 export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
   const { t } = useI18n();
-  const { progress } = useProgress();
+  const { progress, setPreferences } = useProgress();
   const { user, signOut } = useAuth();
 
   const [showAuthModal, setShowAuthModal] = useState(false);
@@ -200,13 +200,19 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
               </div>
 
               <div className="flex flex-col items-center md:items-start gap-1">
-                <div className="flex items-center gap-2 mt-1">
+                <div className="flex flex-wrap items-center gap-2 mt-1">
                   <span className="bg-secondary text-primary font-sans font-semibold text-sm px-3 py-1 rounded-full border border-primary/20 flex items-center gap-1.5">
                     <Flame className="size-3.5 text-wp-amber-foreground" />
                     {progress.streak > 0
                       ? t("profile.streakActive", { streak: progress.streak })
                       : t("profile.streakReady")}
                   </span>
+                  {progress.streakFreezeAvailable > 0 && (
+                    <span className="bg-secondary text-foreground font-sans font-medium text-xs px-2.5 py-1 rounded-full border border-border flex items-center gap-1.5">
+                      <ShieldCheck className="size-3.5 text-wp-green" />
+                      {t("profile.streakShieldActive")}
+                    </span>
+                  )}
                 </div>
                 <p className="text-sm text-muted-foreground font-medium mt-1">
                   {user
@@ -248,6 +254,41 @@ export const ProfileStats = memo(function ProfileStats({ dispatch }: Props) {
                   {t("profile.signInSync")}
                 </Button>
               )}
+            </motion.div>
+
+            {/* Target CEFR Level Quick-Switcher */}
+            <motion.div
+              variants={staggerItem}
+              className="flex flex-col gap-1.5 border-t border-border pt-3 md:border-t-0 md:pt-0 xl:border-t xl:pt-3"
+            >
+              <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground">
+                {t("settings.targetLevel")}
+              </span>
+              <div
+                role="radiogroup"
+                aria-label={t("settings.targetLevel")}
+                className="flex flex-wrap items-center gap-1 rounded-xl border border-border bg-muted/40 p-1"
+              >
+                {(["A1", "A2", "B1", "B2", "C1"] as const).map((lvl) => {
+                  const selected = progress.englishLevel === lvl;
+                  return (
+                    <button
+                      key={lvl}
+                      type="button"
+                      role="radio"
+                      aria-checked={selected}
+                      onClick={() => setPreferences({ englishLevel: lvl })}
+                      className={`min-h-[44px] min-w-[44px] flex-1 rounded-lg px-2.5 py-1.5 text-xs font-bold transition-all focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary ${
+                        selected
+                          ? "bg-primary text-primary-foreground shadow-xs"
+                          : "text-muted-foreground hover:bg-secondary hover:text-foreground"
+                      }`}
+                    >
+                      {lvl}
+                    </button>
+                  );
+                })}
+              </div>
             </motion.div>
           </Surface>
 

@@ -78,7 +78,11 @@ export type Screen =
   | { id: "review" }
   | { id: "profile" }
   | { id: "release-notes" }
-  | { id: "lesson-entry"; unitId?: string }
+  | {
+      id: "lesson-entry";
+      unitId?: string;
+      returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
+    }
   /** Self-paced word browsing for one group — no session, no scoring. */
   | { id: "learn-words"; lessonId: string }
   /** Reference and self-paced practice for one unit, imported from Figma. */
@@ -142,7 +146,12 @@ export type GoTarget =
 export type Action =
   | { type: "ONBOARD_NEXT" }
   | { type: "GO"; to: Exclude<GoTarget, "lesson-entry" | "learning-materials"> }
-  | { type: "GO"; to: "lesson-entry"; unitId?: string }
+  | {
+      type: "GO";
+      to: "lesson-entry";
+      unitId?: string;
+      returnTo?: "explore" | "library" | "learn" | "profile" | "practice";
+    }
   | { type: "GO"; to: "learning-materials"; unitId?: string; area?: string; nodeId?: string }
   | { type: "OPEN_SKILL_EXERCISE"; exerciseId: SkillExerciseId }
   /** Enters self-paced word browsing for one group. */

@@ -88,6 +88,7 @@ const learnerProgressSchema = z
     daysActive: nonNegativeInteger,
     sessionsCompleted: nonNegativeInteger,
     completedSessionIds: z.array(z.string().min(1).max(200)).max(100_000),
+    streakFreezeAvailable: nonNegativeInteger.optional(),
   })
   .strict();
 
