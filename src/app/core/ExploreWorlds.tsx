@@ -17,25 +17,63 @@ interface Props {
 
 export type MasteryFilter = "all" | "mastered" | "in-progress" | "not-started";
 
+function normalizeSearchText(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[\u064B-\u065F\u0670]/g, "")
+    .replace(/[أإآ]/g, "ا")
+    .replace(/ة/g, "ه")
+    .replace(/ى/g, "ي")
+    .trim();
+}
+
 /**
- * Filter units by query string across name, description, CEFR level, topics, and word IDs.
+ * Filter units by query string across name, description, groups, CEFR level, topics, and word IDs.
  */
 function searchUnits(units: CourseUnit[], query: string): CourseUnit[] {
   if (!query.trim()) return units;
-  const q = query.toLowerCase().trim();
+  const rawQ = query.toLowerCase().trim();
+  const normQ = normalizeSearchText(query);
 
   return units.filter((unit) => {
-    if (unit.name.toLowerCase().includes(q)) return true;
-    if (unit.description.toLowerCase().includes(q)) return true;
+    if (unit.name.toLowerCase().includes(rawQ) || normalizeSearchText(unit.name).includes(normQ))
+      return true;
     if (
-      unit.topics?.some((t) => t.name.toLowerCase().includes(q) || t.id.toLowerCase().includes(q))
+      unit.description.toLowerCase().includes(rawQ) ||
+      normalizeSearchText(unit.description).includes(normQ)
+    )
+      return true;
+    if (
+      unit.topics?.some(
+        (t) =>
+          t.name.toLowerCase().includes(rawQ) ||
+          t.id.toLowerCase().includes(rawQ) ||
+          normalizeSearchText(t.name).includes(normQ) ||
+          (t.description && normalizeSearchText(t.description).includes(normQ))
+      )
+    )
+      return true;
+    if (
+      unit.groups?.some(
+        (g) =>
+          g.name.toLowerCase().includes(rawQ) ||
+          g.description.toLowerCase().includes(rawQ) ||
+          normalizeSearchText(g.name).includes(normQ) ||
+          normalizeSearchText(g.description).includes(normQ)
+      )
     )
       return true;
     const design = getUnitCurriculumDesign(unit);
-    if (design.cefr.toLowerCase().includes(q)) return true;
-    if (design.outcome.toLowerCase().includes(q)) return true;
+    if (design.cefr.toLowerCase().includes(rawQ)) return true;
+    if (
+      design.outcome.toLowerCase().includes(rawQ) ||
+      normalizeSearchText(design.outcome).includes(normQ)
+    )
+      return true;
     // Search individual word IDs in the unit
-    return unit.wordIds.some((id) => id.replace(/-/g, " ").includes(q));
+    return unit.wordIds.some((id) => id.replace(/-/g, " ").includes(rawQ));
   });
 }
 

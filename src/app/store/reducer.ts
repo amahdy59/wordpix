@@ -15,6 +15,7 @@ export const TABBED_IDS: ReadonlySet<string> = new Set([
   "library",
   "practice",
   "review",
+  "skill-hub",
   "profile",
 ]);
 

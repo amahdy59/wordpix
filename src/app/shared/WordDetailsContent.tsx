@@ -153,6 +153,25 @@ export function WordDetailsContent({
         </p>
       </section>
 
+      {/* IPA Phonetic Transcription */}
+      {baseEntry.phonetic && (
+        <div className="flex flex-col gap-1">
+          <p
+            className="font-sans text-xl font-semibold tracking-wide text-primary"
+            lang="en"
+            dir="ltr"
+            aria-label={t("wordDetails.phonetic")}
+          >
+            {baseEntry.phonetic}
+          </p>
+          {baseEntry.pronunciationTip && (
+            <p className="font-sans text-xs text-muted-foreground leading-relaxed">
+              {baseEntry.pronunciationTip}
+            </p>
+          )}
+        </div>
+      )}
+
       {/* Arabic Translation Card. The part of speech is worth showing on
       its own, so the card stays when the gloss is missing and only
       the Arabic line drops out — see `hasArabicGloss`. */}

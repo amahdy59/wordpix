@@ -1,4 +1,4 @@
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 import { answerLayout } from "./answerLayout";
 
@@ -19,6 +19,8 @@ interface Props<T extends string> {
   correctValue?: T;
   revealFeedback?: boolean;
   className?: string;
+  /** Show 1-N keyboard shortcut badges on pointer-fine devices. Defaults to true. */
+  showHotkeys?: boolean;
 }
 
 export function ChoiceOptionGroup<T extends string>({
@@ -30,6 +32,7 @@ export function ChoiceOptionGroup<T extends string>({
   correctValue,
   revealFeedback = false,
   className,
+  showHotkeys = true,
 }: Props<T>) {
   const refs = useRef<Array<HTMLButtonElement | null>>([]);
 
@@ -42,6 +45,28 @@ export function ChoiceOptionGroup<T extends string>({
     refs.current[nextIndex]?.focus();
   };
 
+  // Global 1–4 keyboard shortcuts (pointer-fine devices only)
+  useEffect(() => {
+    if (disabled || !showHotkeys) return;
+    const handler = (e: KeyboardEvent) => {
+      if (e.metaKey || e.ctrlKey || e.altKey) return;
+      const active = document.activeElement?.tagName;
+      if (active === "INPUT" || active === "TEXTAREA") return;
+      const numericKey = parseInt(e.key, 10);
+      if (numericKey >= 1 && numericKey <= options.length) {
+        const target = options[numericKey - 1];
+        if (target) {
+          e.preventDefault();
+          onChange(target.value);
+          refs.current[numericKey - 1]?.focus();
+        }
+      }
+    };
+    const fine = window.matchMedia("(pointer: fine)").matches;
+    if (fine) window.addEventListener("keydown", handler);
+    return () => window.removeEventListener("keydown", handler);
+  }, [disabled, showHotkeys, options, onChange]);
+
   return (
     <div
       className={className ?? answerLayout(options.map((option) => option.accessibleLabel))}
@@ -53,6 +78,7 @@ export function ChoiceOptionGroup<T extends string>({
         const correct = revealFeedback && option.value === correctValue;
         const incorrect = revealFeedback && selected && option.value !== correctValue;
         const muted = revealFeedback && !correct && !incorrect;
+        const hotkeyBadge = showHotkeys && !option.prefix && index < 4 ? String(index + 1) : null;
         return (
           <button
             key={option.value}
@@ -105,7 +131,7 @@ export function ChoiceOptionGroup<T extends string>({
                       : "border-border bg-card text-foreground hover:border-primary hover:bg-secondary"
             }`}
           >
-            {option.prefix && (
+            {(option.prefix || hotkeyBadge) && (
               <span
                 className={`hidden sm:flex size-8 shrink-0 items-center justify-center rounded-xl text-sm font-bold transition-colors ${
                   correct
@@ -117,7 +143,7 @@ export function ChoiceOptionGroup<T extends string>({
                         : "bg-muted/80 text-muted-foreground group-hover:bg-secondary group-hover:text-primary"
                 }`}
               >
-                {option.prefix}
+                {option.prefix ?? hotkeyBadge}
               </span>
             )}
             <span className="min-w-0 flex-1 break-words leading-normal">

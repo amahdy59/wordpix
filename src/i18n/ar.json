@@ -484,7 +484,8 @@
     "posNoun": "اسم",
     "posVerb": "فعل",
     "posAdjective": "صفة",
-    "posAdverb": "حال / ظرف"
+    "posAdverb": "حال / ظرف",
+    "phonetic": "النسخ الصوتي"
   },
   "practice": {
     "title": "جلسة التدريب",
@@ -1254,7 +1255,11 @@
     "practiceSpeakingFor": "تدرّب على نطق {word}",
     "detailsFor": "تفاصيل {word}",
     "exerciseSection": "تمرين الاستماع والترديد لمجموعة {group}",
-    "playbackOptions": "خيارات الاستماع"
+    "playbackOptions": "خيارات الاستماع",
+    "slowPlay": "تشغيل ببطء",
+    "normalSpeed": "السرعة الطبيعية",
+    "slowPlayFor": "تشغيل {word} ببطء (65% من السرعة)",
+    "normalSpeedFor": "تشغيل {word} بالسرعة الطبيعية"
   },
   "router": {
     "lessonWordsMissingTitle": "لا توجد كلمات متاحة لهذا الدرس",

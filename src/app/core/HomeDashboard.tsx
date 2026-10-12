@@ -284,7 +284,7 @@ export const HomeDashboard = memo(function HomeDashboard({ dispatch }: Props) {
                     </p>
                     <button
                       type="button"
-                      onClick={() => dispatch({ type: "GO", to: "skill-hub" })}
+                      onClick={() => dispatch({ type: "GO", to: "practice" })}
                       className="mt-2 min-h-11 rounded-xl border border-wp-green/30 bg-background px-4 py-2 text-base font-bold text-foreground focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-offset-2 focus-visible:outline-primary"
                     >
                       {t("dashboard.practiseSkill")}

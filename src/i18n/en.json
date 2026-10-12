@@ -484,7 +484,8 @@
     "posNoun": "Noun",
     "posVerb": "Verb",
     "posAdjective": "Adjective",
-    "posAdverb": "Adverb"
+    "posAdverb": "Adverb",
+    "phonetic": "Phonetic transcription"
   },
   "practice": {
     "title": "Practice Session",
@@ -1254,7 +1255,11 @@
     "practiceSpeakingFor": "Practice speaking {word}",
     "detailsFor": "Details for {word}",
     "exerciseSection": "{group} Listen & repeat exercise",
-    "playbackOptions": "Listening options"
+    "playbackOptions": "Listening options",
+    "slowPlay": "Play slowly",
+    "normalSpeed": "Normal speed",
+    "slowPlayFor": "Play {word} slowly (65% speed)",
+    "normalSpeedFor": "Play {word} at normal speed"
   },
   "router": {
     "lessonWordsMissingTitle": "No words available for this lesson",

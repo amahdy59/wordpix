@@ -473,7 +473,7 @@ export function RouterView({ state, dispatch }: RouterViewProps) {
           <SkipLink />
           <AppShell
             activeTab={
-              (state.id === "review"
+              (state.id === "review" || state.id === "skill-hub"
                 ? "practice"
                 : state.id === "explore"
                   ? "learn"

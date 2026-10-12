@@ -40,6 +40,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const [continuous, setContinuous] = useState(false);
   const [playbackError, setPlaybackError] = useState(false);
   const [showExit, setShowExit] = useState(false);
+  const [slowMode, setSlowMode] = useState(false);
   const reportedSpeechAttempts = useRef(new Set<string>());
   const { lexicon, lexiconFailed, retryLexicon } = useLexicon(
     words.slice(activeWordIndex, activeWordIndex + 1).map((word) => word.id)
@@ -55,7 +56,7 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
   const speed = accessibility.speechRate;
   const { speak, stop, isPlaying, isSupported, isError } = useAudio({
     lang: "en-US",
-    rate: speed,
+    rate: slowMode ? speed * 0.65 : speed,
     onError: () => {
       setPlaybackError(true);
       setContinuous(false);
@@ -466,6 +467,30 @@ export const ExerciseListenRepeat = memo(function ExerciseListenRepeat({
                       {isPlaying || continuous
                         ? t("listenRepeat.stopAudio")
                         : t("listenRepeat.listen")}
+                    </span>
+                  </button>
+
+                  {/* Slow / Normal speed toggle */}
+                  <button
+                    type="button"
+                    onClick={() => {
+                      stop();
+                      setSlowMode((prev) => !prev);
+                    }}
+                    aria-pressed={slowMode}
+                    aria-label={
+                      slowMode
+                        ? t("listenRepeat.normalSpeedFor", { word: currentWord.label })
+                        : t("listenRepeat.slowPlayFor", { word: currentWord.label })
+                    }
+                    className={`min-h-[48px] px-3 py-2 rounded-xl transition-all flex items-center justify-center gap-2 border font-sans font-bold text-sm shadow-xs focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary cursor-pointer ${
+                      slowMode
+                        ? "bg-secondary border-primary text-primary"
+                        : "bg-card border-border text-muted-foreground hover:border-primary hover:bg-secondary"
+                    }`}
+                  >
+                    <span>
+                      {slowMode ? t("listenRepeat.normalSpeed") : t("listenRepeat.slowPlay")}
                     </span>
                   </button>
 
