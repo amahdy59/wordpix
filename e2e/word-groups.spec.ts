@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 for (const width of [320, 390, 768, 1280, 1600]) {
@@ -9,7 +10,8 @@ for (const width of [320, 390, 768, 1280, 1600]) {
     await page.addInitScript(() =>
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }))
     );
-    await page.goto("/#/learn/bathroom");
+    await page.goto("/#/learn/bathroom", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     const list = page.getByRole("region", { name: "Word groups" });
     await expect(list.getByRole("heading", { name: "Select a Word Group" })).toBeVisible();
     const cards = list.locator("li[data-menu-container]");

@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import path from "node:path";
 import sharp from "sharp";
@@ -34,10 +35,12 @@ const seedStorage = async (page: import("@playwright/test").Page) => {
 
 test("mobile listen-and-repeat keeps one focused learning path", async ({ page }) => {
   await seedStorage(page);
-  await page.goto("/");
+  await page.goto("/", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.waitForLoadState("networkidle");
 
-  await page.goto("/#/learn/construction-site");
+  await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page.getByRole("heading", { name: /Construction Site/i }).waitFor({ timeout: 15000 });
   await page
     .getByRole("button", { name: /^Start lesson:/ })
@@ -87,6 +90,7 @@ for (const viewport of [
   test(`listen layout uses available space at ${viewport.width}px`, async ({ page }, testInfo) => {
     await page.setViewportSize(viewport);
     await page.goto("/#/learn/construction-site", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page
       .getByRole("button", { name: /^Start lesson:/ })
       .first()

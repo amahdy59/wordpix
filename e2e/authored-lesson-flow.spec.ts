@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -13,7 +14,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
 
-    await page.goto("/#/learn/colors");
+    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
 
     // Verify first lesson card is visible and accessible
@@ -51,7 +53,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
 
-    await page.goto("/#/learn/numbers-counting");
+    await page.goto("/#/learn/numbers-counting", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("heading", { name: /Numbers & Counting/i }).waitFor({ timeout: 15_000 });
 
     const startButton = page.getByRole("button", { name: /^Start lesson:/ }).first();
@@ -87,7 +90,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors");
+    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
       .getByRole("button", { name: /^Start lesson:/ })
@@ -127,7 +131,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors");
+    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
       .getByRole("button", { name: /^Start lesson:/ })
@@ -167,7 +172,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "explore" }));
     });
-    await page.goto("/#/learn/colors");
+    await page.goto("/#/learn/colors", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("heading", { name: /Colors/i }).waitFor({ timeout: 15_000 });
     await page
       .getByRole("button", { name: /^Start lesson:/ })
@@ -202,7 +208,8 @@ test.describe("Authored lesson flow (Phase 4 & 5)", () => {
     await page.addInitScript(() => {
       localStorage.setItem("wordpix:learner-state:v4", JSON.stringify({ id: "home" }));
     });
-    await page.goto("/#/home");
+    await page.goto("/#/home", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await page.getByRole("button", { name: "Profile", exact: true }).click();
 
     await expect(page.getByRole("heading", { name: "How you can use your words" })).toBeVisible();

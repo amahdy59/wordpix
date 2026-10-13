@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 
 test("conversation curriculum is discoverable and allows browsing without answering", async ({
@@ -14,7 +15,8 @@ test("conversation curriculum is discoverable and allows browsing without answer
     if (response.status() >= 400) errors.push(`${response.status()} ${response.url()}`);
   });
 
-  await page.goto("/#/conversation");
+  await page.goto("/#/conversation", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
 
   // Wait for the lazy curriculum route, as we do for its lesson route below.
   await expect(page.getByRole("heading", { name: "Conversation & Debate" })).toBeVisible({

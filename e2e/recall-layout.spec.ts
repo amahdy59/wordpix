@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import { resolveGroup } from "../src/app/data/lessons";
 
@@ -31,7 +32,8 @@ for (const viewport of [
       { lessonId: lesson.id, wordQueue: lesson.wordIds }
     );
 
-    await page.goto("/#/learn/construction-site/step-2");
+    await page.goto("/#/learn/construction-site/step-2", { waitUntil: "domcontentloaded" });
+    await waitForStyles(page);
     await expect(page.getByRole("heading", { name: "Audio Match" })).toBeVisible();
 
     const choices = page.getByRole("group", { name: "Choose matching picture for audio prompt" });

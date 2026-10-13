@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 
 test("Hadith curriculum exposes all 42 lessons and opens the canonical source", async ({
@@ -8,6 +9,7 @@ test("Hadith curriculum exposes all 42 lessons and opens the canonical source", 
   page.on("pageerror", (error) => errors.push(error.message));
 
   await page.goto("/#/hadith", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
 
   await expect(page.getByRole("heading", { name: "Hadith English curriculum" })).toBeVisible();
   const results = page.getByRole("tabpanel");
@@ -64,6 +66,7 @@ test("pronunciation curriculum is grouped, searchable, and uses R2-backed artwor
   });
 
   await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
 
   await expect(page.getByRole("heading", { name: "Pronunciation curriculum" })).toBeVisible();
   await expect(page.getByRole("heading", { name: /Sound contrasts/i })).toBeVisible();

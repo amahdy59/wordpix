@@ -1,3 +1,4 @@
+import { waitForStyles } from "./waitForStyles";
 import { expect, test } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
@@ -8,6 +9,7 @@ test.beforeEach(async ({ page }) => {
 test("phone tabs and skill choices remain visible with enlarged text", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 720 });
   await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await page
     .getByRole("banner", { name: "Mobile navigation" })
     .getByRole("button", { name: "Settings & Accessibility", exact: true })
@@ -40,7 +42,8 @@ test("phone tabs and skill choices remain visible with enlarged text", async ({ 
 
 test("the guided path comes before specialist courses", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/#/learn");
+  await page.goto("/#/learn", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   const path = page.getByRole("button", { name: /View full learning path/ });
   const courses = page.getByRole("region", { name: "Specialized learning curricula" });
   await expect(path).toBeVisible();
@@ -53,7 +56,8 @@ test("the guided path comes before specialist courses", async ({ page }) => {
 
 test("library lookup announces results and exposes optional filters", async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 720 });
-  await page.goto("/#/library");
+  await page.goto("/#/library", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   const levels = page.getByRole("radiogroup", { name: "Filter vocabulary collections" });
   await expect(levels).toBeHidden();
   const search = page.getByRole("searchbox", { name: "Search units or vocabulary" });
@@ -75,6 +79,7 @@ test("Arabic practice cards and mobile utilities have translated names", async (
   await page.addInitScript(() => localStorage.setItem("wordpix:interface-lang", "ar"));
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/#/practice", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.locator("html")).toHaveAttribute("dir", "rtl");
   await expect(page.getByRole("heading", { name: "مطابقة الكلمات", exact: true })).toBeVisible();
   await expect(
@@ -86,6 +91,7 @@ test("Arabic practice cards and mobile utilities have translated names", async (
 test("main tabs retain enhanced text contrast on phones", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/#/home", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(page.locator("main h1")).toBeVisible();
   await expect(page.getByRole("complementary", { name: "Sidebar navigation" })).toBeHidden();
   for (const tab of ["home", "learn", "practice", "library", "profile"]) {
@@ -109,6 +115,7 @@ test("pronunciation lesson cards do not overflow their phone scroll container", 
 }) => {
   await page.setViewportSize({ width: 320, height: 720 });
   await page.goto("/#/pronunciation", { waitUntil: "domcontentloaded" });
+  await waitForStyles(page);
   await expect(
     page.getByRole("heading", { name: "Pronunciation curriculum", exact: true })
   ).toBeVisible();
