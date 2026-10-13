@@ -2,11 +2,13 @@
   "version": "0.1.32",
   "notes": [
     "More focused speaking activities and clearer audio recovery.",
-    "Safer pronunciation resume preserves previous learning evidence."
+    "Safer pronunciation resume preserves previous learning evidence.",
+    "Upgraded full pronunciation curriculum with studio-grade eleven_v4 dual-speaker audio."
   ],
   "notesAr": [
     "أنشطة تحدث أكثر تركيزًا وإرشادات أوضح لاستعادة الصوت.",
-    "استئناف أكثر أمانًا للنطق مع الحفاظ على أدلة التعلم السابقة."
+    "استئناف أكثر أمانًا للنطق مع الحفاظ على أدلة التعلم السابقة.",
+    "ترقية منهاج النطق بالكامل بتسجيلات eleven_v4 فائقة النقاء مع دعم النقل الصوتي متعدد الأصوات."
   ],
   "releases": [
     {
@@ -35,6 +37,12 @@
           "category": "fixed",
           "en": "Audio failures explain how to retry online or offline. Business speaking uses the private recorder, and closing a recording panel stops hidden playback and microphone activity. Pronunciation playback failures can be retried without leaving the lesson.",
           "ar": "توضح أخطاء الصوت كيفية إعادة المحاولة مع الاتصال أو بدونه. يستخدم تدريب الأعمال المسجّل الخاص، ويوقف إغلاق لوحة التسجيل تشغيل الصوت والميكروفون المخفيين. يمكن إعادة محاولة تشغيل الصوت في دروس النطق دون مغادرة الدرس."
+        },
+        {
+          "id": "eleven-v4-pronunciation-upgrade",
+          "category": "improved",
+          "en": "Regenerated and verified all 68 pronunciation lessons with the studio-grade eleven_v4 speech model, introducing dual-speaker acoustic transfer challenges with Alice and contextual model delivery sentences.",
+          "ar": "إعادة توليد وتدقيق جميع دروس النطق البالغ عددها 68 درسًا باستخدام نموذج eleven_v4 الصوتي فائق النقاء، مع إضافة تحديات النقل الصوتي متعددة الأصوات بصوت أليس وجمل التوصيل النموذجية في سياقها."
         }
       ]
     },
