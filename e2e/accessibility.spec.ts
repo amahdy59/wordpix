@@ -158,10 +158,14 @@ test("conversation curriculum and warm-up have no detectable accessibility issue
     .analyze();
   expect(curriculumResults.violations).toEqual([]);
 
-  await page
-    .getByRole("button", { name: /Unit 01: Could You Live Without Your Smartphone/ })
-    .click();
-  await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible();
+  const unitButton = page.getByRole("button", {
+    name: /Unit 01: Could You Live Without Your Smartphone/,
+  });
+  await expect(unitButton).toBeVisible();
+  await unitButton.click();
+  await expect(page.getByRole("radiogroup", { name: "Quick vote options" })).toBeVisible({
+    timeout: 15_000,
+  });
   await expect(page.getByRole("main")).toHaveCount(1);
   await expect(page.getByRole("heading", { level: 1 })).toHaveCount(1);
 
